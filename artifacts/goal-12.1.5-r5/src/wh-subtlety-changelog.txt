@@ -1,0 +1,233 @@
+https://www.wowhead.com/ko/guide/changelog?id=3216
+HTTP 202 · 2026-10-18T15:54:53.151Z
+
+[Skip to Main Content]
+와우
+본 서버
+[FOREVER]
+클래식
+불성
+판다
+···
+라이브
+PTR
+12.1.7
+PTR
+12.1.5
+로그인 하기:
+배틀넷
+이메일
+회원가입
+뉴스[HOUSING TOOLS]디스코드 웹훅데이터베이스도구가이드커뮤니티광고 없애기
+직업
+인기 주제
+한밤
+12.1.5 패치
+한밤 2 시즌
+순위 목록
+전문 기술들
+플레이어 하우징
+가이드
+신규 플레이어
+"Best Subtlety Rogue Talent Tree Builds - Midnight" 변경 기록
+2 일 전: Small update. fuu1 (이)가 작성함
+2 일 전: small update. fuu1 (이)가 작성함
+2 일 전: Small correction for talent updates. fuu1 (이)가 작성함
+4 일 전: Reviewed for Patch 12.1.5 Whispyr (이)가 작성함
+5 일 전: small typo fixes. fuu1 (이)가 작성함
+5 일 전: small update fuu1 (이)가 작성함
+14 일 전: update for hotfix fuu1 (이)가 작성함
+14 일 전: update for hotfix fuu1 (이)가 작성함
+14 일 전: update for hotfix fuu1 (이)가 작성함
+2026/08/20 시간 06:48: small tpyo fix fuu1 (이)가 작성함
+2026/08/20 시간 06:47: Make talent suggestions more obvious. fuu1 (이)가 작성함
+2026/08/12 시간 22:54: Reviewed for Patch 12.1 and Season 2 Whispyr (이)가 작성함
+2026/08/10 시간 21:06: Updated for Patch 12.1 Whispyr (이)가 작성함
+2026/05/24 시간 03:33: small update fuu1 (이)가 작성함
+2026/05/18 시간 03:36: correction fuu1 (이)가 작성함
+2026/05/09 시간 07:58: small update to adjust for bugs. fuu1 (이)가 작성함
+2026/05/04 시간 02:59: small update. fuu1 (이)가 작성함
+2026/05/04 시간 02:50: update for hotfix changes. fuu1 (이)가 작성함
+2026/04/24 시간 02:48: small update/clarification. fuu1 (이)가 작성함
+2026/04/22 시간 11:35: small update. fuu1 (이)가 작성함
+2026/04/22 시간 11:03: small fix. fuu1 (이)가 작성함
+2026/04/22 시간 05:29: small update/correction. fuu1 (이)가 작성함
+2026/04/22 시간 05:27: small update. fuu1 (이)가 작성함
+2026/04/22 시간 05:25: small addition. fuu1 (이)가 작성함
+2026/04/22 시간 04:46: small typo fixes fuu1 (이)가 작성함
+2026/04/22 시간 04:45: small update/clarification. fuu1 (이)가 작성함
+2026/04/20 시간 12:58: small update. fuu1 (이)가 작성함
+2026/04/20 시간 12:55: small update fuu1 (이)가 작성함
+2026/04/20 시간 11:36: small adjustment for 12.0.5. fuu1 (이)가 작성함
+2026/04/15 시간 04:27: small update fuu1 (이)가 작성함
+2026/03/20 시간 04:39: added marginal corrections. fuu1 (이)가 작성함
+2026/03/20 시간 04:33: small talent swap updates. fuu1 (이)가 작성함
+2026/03/18 시간 06:19: small update to talent swap suggestions. fuu1 (이)가 작성함
+2026/03/16 시간 08:05: fixed wrong talent link fuu1 (이)가 작성함
+2026/03/15 시간 09:30: updated talent suggestions. fuu1 (이)가 작성함
+2026/03/12 시간 06:24: fixed typo fuu1 (이)가 작성함
+2026/03/05 시간 01:36: small update. fuu1 (이)가 작성함
+2026/02/26 시간 06:07: fix leveling link Whispyr (이)가 작성함
+2026/02/24 시간 15:11: Midnight Launch Update Whispyr (이)가 작성함
+2026/02/11 시간 08:07: fixed typo fuu1 (이)가 작성함
+2026/01/18 시간 14:53: small update. fuu1 (이)가 작성함
+2026/01/18 시간 14:41: Minor Edit Anshlun (이)가 작성함
+2026/01/18 시간 14:11: Midnight Update Anshlun (이)가 작성함
+2025/12/02 시간 13:06: Reviewed for Patch 11.2.7 Anshlun (이)가 작성함
+2025/08/13 시간 04:45: A small addition to talent variations. fuu1 (이)가 작성함
+2025/08/13 시간 04:41: update fuu1 (이)가 작성함
+2025/08/08 시간 05:57: update fuu1 (이)가 작성함
+2025/08/07 시간 00:45: small correction for baseline talent change fuu1 (이)가 작성함
+2025/08/06 시간 06:23: small typo fix fuu1 (이)가 작성함
+2025/08/06 시간 06:20: added shadowcraft -> dark brew talent switch details. fuu1 (이)가 작성함
+2025/08/04 시간 15:32: small update for hero talent difference. fuu1 (이)가 작성함
+2025/08/04 시간 14:56: update. fuu1 (이)가 작성함
+2025/08/04 시간 07:52: spacing fuu1 (이)가 작성함
+2025/08/04 시간 07:51: update fuu1 (이)가 작성함
+2025/08/04 시간 07:49: explained talent swaps better. fuu1 (이)가 작성함
+2025/08/04 시간 04:39: small correction fuu1 (이)가 작성함
+2025/08/03 시간 18:40: Reviewed for Patch 11.2 Anshlun (이)가 작성함
+2025/08/03 시간 17:44: 사소한 편집 iMX3 (이)가 작성함
+2025/05/14 시간 15:57: 11.1 grammar and editing pass MagdalenaDK (이)가 작성함
+2025/02/25 시간 04:18: removed irrelevant paragraph. fuu1 (이)가 작성함
+2025/02/25 시간 04:11: fixed another typo fuu1 (이)가 작성함
+2025/02/25 시간 01:56: fixed typos fuu1 (이)가 작성함
+2025/02/23 시간 21:17: Reviewed for Patch 11.1 Anshlun (이)가 작성함
+2025/02/23 시간 18:32: 11.1 Paryah (이)가 작성함
+2024/12/15 시간 17:22: Reviewed for Patch 11.0.7 Anshlun (이)가 작성함
+2024/11/26 시간 01:54: updated talents fuu1 (이)가 작성함
+2024/11/07 시간 12:14: updated talent order fuu1 (이)가 작성함
+2024/10/23 시간 02:45: forgot to remove dust, fixed fuu1 (이)가 작성함
+2024/10/22 시간 09:10: fixed missing ] fuu1 (이)가 작성함
+2024/10/21 시간 22:58: Reviewed for Patch 11.0.5 Anshlun (이)가 작성함
+2024/10/21 시간 22:57: Reviewed for Patch 11.0.5 Anshlun (이)가 작성함
+2024/10/21 시간 21:18: 사소한 편집 Anshlun (이)가 작성함
+2024/10/09 시간 01:40: updates to talent builds. fuu1 (이)가 작성함
+2024/09/10 시간 11:08: Reviewed for TWW Season 1 Anshlun (이)가 작성함
+2024/09/09 시간 07:25: I updated talent suggestions. fuu1 (이)가 작성함
+2024/08/22 시간 05:19: Reviewed for The War Within Launch Anshlun (이)가 작성함
+2024/08/22 시간 02:55: updated a color typo fuu1 (이)가 작성함
+2024/08/22 시간 02:54: - fixed the wrong spell link - updated icons to fit the rogue theme fuu1 (이)가 작성함
+2024/08/21 시간 21:18: updated for tww launch perculia (이)가 작성함
+2024/07/29 시간 08:58: removed beta db fuu1 (이)가 작성함
+2024/07/29 시간 08:57: disabled heading fuu1 (이)가 작성함
+2024/07/22 시간 23:52: 사소한 편집 Anshlun (이)가 작성함
+2024/02/05 시간 08:50: added dark bew for m+ fuu1 (이)가 작성함
+2024/01/17 시간 01:13: changed naming fuu1 (이)가 작성함
+2024/01/16 시간 12:22: small changes fuu1 (이)가 작성함
+2024/01/16 시간 12:17: small clarification fuu1 (이)가 작성함
+2024/01/15 시간 18:17: Reviewed for Patch 10.2.5 Anshlun (이)가 작성함
+2023/11/14 시간 10:28: fixed link fuu1 (이)가 작성함
+2023/11/12 시간 02:48: fixed button text fuu1 (이)가 작성함
+2023/11/10 시간 13:40: switched to talent macros fuu1 (이)가 작성함
+2023/11/10 시간 04:54: fix fuu1 (이)가 작성함
+2023/11/10 시간 04:53: test fuu1 (이)가 작성함
+2023/11/09 시간 03:54: updated hash fuu1 (이)가 작성함
+2023/11/09 시간 01:20: fixed talent ordering fuu1 (이)가 작성함
+2023/11/08 시간 04:17: small edit fuu1 (이)가 작성함
+2023/11/08 시간 04:14: rewrote on sentence. fuu1 (이)가 작성함
+2023/11/07 시간 12:23: small fix fuu1 (이)가 작성함
+2023/11/07 시간 12:20: small update fuu1 (이)가 작성함
+2023/11/07 시간 12:19: added pre season builds fuu1 (이)가 작성함
+2023/11/07 시간 10:09: fix fuu1 (이)가 작성함
+2023/11/07 시간 10:08: fixed title fuu1 (이)가 작성함
+2023/11/07 시간 02:27: 사소한 편집 Anshlun (이)가 작성함
+2023/09/06 시간 00:38: added more talent options fuu1 (이)가 작성함
+2023/05/30 시간 07:50: moved sentence to the right paragraph fuu1 (이)가 작성함
+2023/05/30 시간 07:49: updated builds fuu1 (이)가 작성함
+2023/05/27 시간 08:54: small fix fuu1 (이)가 작성함
+2023/05/11 시간 09:21: small correction fuu1 (이)가 작성함
+2023/05/03 시간 04:10: adjusted talents for tier fuu1 (이)가 작성함
+2023/05/02 시간 01:34: Reviewed for Patch 10.1.0 Anshlun (이)가 작성함
+2023/05/01 시간 19:14: 사소한 편집 Anshlun (이)가 작성함
+2023/01/30 시간 15:56: small update to naming fuu1 (이)가 작성함
+2023/01/30 시간 09:48: added flagallation fuu1 (이)가 작성함
+2023/01/28 시간 08:25: fixed a typo fuu1 (이)가 작성함
+2023/01/23 시간 16:42: updated a color highlight fuu1 (이)가 작성함
+2023/01/23 시간 01:17: updated headline fuu1 (이)가 작성함
+2023/01/23 시간 01:17: 10.0.5 update fuu1 (이)가 작성함
+2022/12/04 시간 01:28: 사소한 편집 Squishei (이)가 작성함
+2022/11/28 시간 02:39: Updates from feedback fuu1 (이)가 작성함
+2022/11/28 시간 00:52: Updated for Dragonflight Launch Anshlun (이)가 작성함
+2022/11/27 시간 21:25: 사소한 편집 Neryssa (이)가 작성함
+2022/11/12 시간 22:12: 사소한 편집 Anshlun (이)가 작성함
+2022/10/27 시간 16:38: added talent import section Paryah (이)가 작성함
+2022/10/27 시간 12:24: updated "copy build" button fuu1 (이)가 작성함
+2022/10/27 시간 11:27: updated text to fit the updated build fuu1 (이)가 작성함
+2022/10/27 시간 07:34: Updated Builds fuu1 (이)가 작성함
+2022/10/25 시간 07:46: added "copy build" buttons fuu1 (이)가 작성함
+2022/10/24 시간 20:32: seo pass Paryah (이)가 작성함
+2022/10/24 시간 16:14: 사소한 편집 Anshlun (이)가 작성함
+2022/05/31 시간 13:28: Reviewed for Patch 9.2.5 Anshlun (이)가 작성함
+2022/02/22 시간 02:14: Reviewed for Patch 9.2.0 Anshlun (이)가 작성함
+2022/02/18 시간 12:16: fixed typos fuu1 (이)가 작성함
+2022/02/18 시간 01:26: - initial 9.2 update fuu1 (이)가 작성함
+2021/12/03 시간 17:45: 사소한 편집 Anshlun (이)가 작성함
+2021/11/04 시간 00:14: Reviewed for Patch 9.1.5 Anshlun (이)가 작성함
+2021/10/29 시간 07:23: corrected typo fuu1 (이)가 작성함
+2021/10/29 시간 04:00: minor changes to talent choices fuu1 (이)가 작성함
+승인됨 상태로 변경됨: 2021/10/21 시간 10:19
+뉴스
+[Housing Tools]
+디스코드 웹훅
+데이터베이스
+도구
+가이드
+커뮤니티
+광고 없애기
+와우 가이드들
+직업 가이드들
+Delve 가이드들
+레벨링 가이드들
+신화 쐐기돌 가이드들
+전문 기술 가이드들
+공격대 가이드들
+특성 계산기
+목록들단계
+한밤
+MOP CLASSIC 가이드들
+직업 가이드들
+전문 기술 가이드들
+던전 가이드들
+공격대 가이드들
+퀘스트 가이드들
+평판 가이드들
+애완동물 대전 가이드들
+시나리오 가이드들
+도전 난이도 가이드들
+특성 계산기
+순위 목록
+와우 클래식 가이드들
+요구 조건 가이드
+칸에 들어갈 베스트 아이템 가이드들
+직업 가이드들
+던전 가이드들
+레벨링 가이드들
+전문 기술 가이드들
+PvP 가이드들
+퀘스트 가이드들
+공격대 가이드들
+평판 가이드들
+디아블로 IV 가이드들
+Lord of Hatred Expansion
+13 시즌
+엔드게임 목록단계
+목록단계s
+야만용사 빌드
+드루이드 빌드
+강령술사 빌드
+성기사 빌드
+도적 빌드
+원소술사 빌드
+혼령사 빌드
+도움이 필요하신가요?
+사용자 도구
+회사 소개
+광고
+랜덤 페이지
+프리미엄
+개인정보 보호정책
+이용 약관
+advertisement
+advertisement
+advertisement

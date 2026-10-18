@@ -1,0 +1,444 @@
+[Skip to Main Content]
+와우
+본 서버
+[FOREVER]
+클래식
+불성
+판다
+···
+라이브
+PTR
+12.1.7
+PTR
+12.1.5
+로그인 하기:
+배틀넷
+이메일
+회원가입
+뉴스[HOUSING TOOLS]디스코드 웹훅데이터베이스도구가이드커뮤니티광고 없애기
+직업
+인기 주제
+한밤
+12.1.5 패치
+한밤 2 시즌
+순위 목록
+전문 기술들
+플레이어 하우징
+Report ad
+모든 광고 제거
+가이드
+신화 쐐기돌 던전
+...
+가이드 콘텐츠
+12.1.5 패치
+4.2/5  (44 표)
+Midnight Season 2
+Midnight Season 2
+Season 2 Mythic+
+The Venomous Abyss
+Midnight
+Cheat Sheet
+Talent Builds
+Talent Import Codes
+Raid Talents
+Mythic+ Talents
+Delve Talents
+Leveling
+Rotation
+BiS Gear
+Consumables
+Spec Basics
+Overview
+Basics
+Abilities
+Stat Priority
+UI & Macros
+Leveling
+가이드 정보
+변경 기록
+Best Discipline Priest Talent Tree Builds - Midnight
+AutomaticJak (이)가 작성함
+업데이트됨: 2026/10/13
+AutomaticJak
+현재 트위치 오프라인
+팔로우
+This guide provides all of the best Discipline Priest talent tree builds in the Midnight Season 2 for raids and Mythic+, including export links to import these builds directly into the game.
+
+Overview
+BiS Gear
+Rotation
+Talent Builds
+Consumables
+Stats
+Basics
+[Drop the Ads.]
+[Keep the Loot.]
+광고 신고
+Report ad
+모든 광고 제거
+DISCIPLINE PRIEST TALENT IMPORT CODES
+Below, we've provided a list of import codes for the strongest Discipline Priest builds for Midnight Season 2. Builds marked with the  icon are the Current Recommendations. Use the copy buttons to generate an import code.
+
+
+ORACLE
+Build	Import Code	Link
+ Raid	복사 Raid	Build
+ Mythic+	복사 Mythic+	Build
+	
+VOIDWEAVER
+Build	Import Code	Link
+ Raid (Best)	복사 Raid	Build
+ Mythic+ (Best)	복사 Mythic+	Build
+ Delves	복사 Delves	Build
+
+
+Voidweaver is a stronger overall hero talent for both raiding and mythic+ in Midnight Season 2.
+BEST DISCIPLINE PRIEST RAID TALENT BUILD
+Voidweaver
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+2/2
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+BEST DISCIPLINE PRIEST MYTHIC+ TALENT BUILD
+Voidweaver
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+2/2
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+BEST DISCIPLINE PRIEST DELVE TALENT BUILD
+Voidweaver
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+2/2
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+DISCIPLINE PRIEST LEVELING BUILDS
+If you're searching for advice on both the best talents to pick while leveling and the optimal order in which to take them, our leveling tips page has got you covered. There, you will find information about different leveling talent builds, the recommended order in which to pick them, and information about your spec's rotation and cooldowns.
+
+
+Discipline Priest Leveling Tips
+Our Discipline Priest guides are always updated with the latest information from in-game experience, simulations, and logs. Make sure to check our changelog for this page by clicking on View Changelog in the Quick Facts column or on the book icon at the top of the page. If you are interested in more in-depth Discipline Priest guides for Midnight Season 2, make sure to browse the Navigation Bar at the top of the page, along with our list of Related Guides just beneath the Table of Contents.
+AutomaticJak
+Holy/Discipline Priest Retail Guide Writer
+작성자 프로필
+AutomaticJak has been playing Priest for over a decade with every 0.1% Mythic+ Title in both specializations and every Cutting Edge Raid achievement since Siege of Orgrimmar in 2013, with the highest World Raid Ranking of World 13th in Sanctum of Domination.
+
+He currently raids in <Incarnate> on Tichondrius (World 39th Liberation of Undermine), commentates Race to World First events, writes guides for Wowhead, makes YouTube content for a variety of healer specializations, and streams his Raid and Mythic+ progress on Twitch.tv daily.
+태그: PvE
+댓글
+영어 댓글들 (10)
+아직 댓글이 없습니다.
+댓글을 남기려면 로그인하거나, 계정이 없다면 회원가입을 해 주세요.
+기여
+댓글 달기
+댓글을 달 때에는 다음과 같은 사항들을 기억해 주십시오:
+주석은 한국어로만 작성해야하며 그렇지 않으면 삭제됩니다.
+어떻게 댓글을 써야할지 모르시겠나요? 저희의 댓글 가이드를 확인하세요!
+댓글을 제출하기 전에 쓴 댓글을 다시 한번 읽어보세요.
+더 빠른 답을 원하신다면 저희의 토론장에 대신 질문해 보세요.
+댓글 달기
+로그인이 되어있지 않습니다. 댓글을 남기려면 로그인하거나, 회원가입을 해 주세요.
+Report ad
+모든 광고 제거
+뉴스
+[Housing Tools]
+디스코드 웹훅
+데이터베이스
+도구
+가이드
+커뮤니티
+광고 없애기
+와우 가이드들
+직업 가이드들
+Delve 가이드들
+레벨링 가이드들
+신화 쐐기돌 가이드들
+전문 기술 가이드들
+공격대 가이드들
+특성 계산기
+목록들단계
+한밤
+MOP CLASSIC 가이드들
+직업 가이드들
+전문 기술 가이드들
+던전 가이드들
+공격대 가이드들
+퀘스트 가이드들
+평판 가이드들
+애완동물 대전 가이드들
+시나리오 가이드들
+도전 난이도 가이드들
+특성 계산기
+순위 목록
+와우 클래식 가이드들
+요구 조건 가이드
+칸에 들어갈 베스트 아이템 가이드들
+직업 가이드들
+던전 가이드들
+레벨링 가이드들
+전문 기술 가이드들
+PvP 가이드들
+퀘스트 가이드들
+공격대 가이드들
+평판 가이드들
+디아블로 IV 가이드들
+Lord of Hatred Expansion
+13 시즌
+엔드게임 목록단계
+목록단계s
+야만용사 빌드
+드루이드 빌드
+강령술사 빌드
+성기사 빌드
+도적 빌드
+원소술사 빌드
+혼령사 빌드
+상단
+도움이 필요하신가요?
+사용자 도구
+회사 소개
+광고
+Cookies Settings
+랜덤 페이지
+프리미엄
+개인정보 보호정책
+이용 약관
+광고 신고
+Report ad
+모든 광고 제거
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings
+Reject All
+Accept All Cookies

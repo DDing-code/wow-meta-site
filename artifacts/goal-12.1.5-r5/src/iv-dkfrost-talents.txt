@@ -1,0 +1,298 @@
+https://www.icy-veins.com/wow/frost-death-knight-pve-dps-spec-builds-talents
+HTTP 200 · 2026-10-18T15:55:37.242Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Death Knight
+/
+Frost Death Knight
+/
+Talents
+12.1.5
+Frost Death Knight DPS Spec, Builds, and Talents — 12.1.5
+Death Knight
+Frost
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Taeznak
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Frost Death Knight in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Frost Death Knight
+2. Omnium Folio
+3. Apex Talent: Chosen of Frostbrood
+4. Hero Talents
+5. PvP Talents (War Mode)
+Best Midnight Talents for Frost Death Knight
+
+Welcome to our talent guide for Frost Death Knight. Here we will discuss all matters associated with your talent choices, providing the best available builds, as well as details regarding alternative picks and potential talent swaps.
+
+Frost Death Knight has one major choice in its talent tree: whether or not to route into  Shattering Blade and  Frostbane. These talents rely on Dual-Wield builds that pick up  Rune of Razorice as a Runeforging option on the Main hand. The alternative is to run a pure  Breath of Sindragosa setup, which works well with both 2H and Dual-Wield.
+
+We recommend running the Dual-Wield  Breath of Sindragosa build in all content.
+
+ADVERTISEMENT
+
+Quick Start Import Codes:
+
+Frost Single Target
+Copy
+Frost Mythic+
+Copy
+Frost Delves
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Deathbringer
+Raid
+RECOMMENDED
+Mythic+
+RECOMMENDED
+Delves
+RECOMMENDED
+Rider of the Apocalypse
+Raid
+Mythic+
+Delves
+ Deathbringer Raid Build
+
+ Deathbringer is slightly ahead of  Rider of the Apocalypse in Raid. It runs the same spec and class talent as Rider, picking up  Dark Talons as the one important choice in the Hero Talent tree.
+
+Your primary flex point comes in the form of  Cryogenic Chamber. This talent is essentially equal in DPS compared to  Icy Onslaught,  Runic Overflow and  Northwinds. Cryo provides some nice AoE which is why we recommend it by default but overall there is a lot of choice.
+
+Death Knight
+
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Deathbringer
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Frost
+
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have it's own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+The Omnium Folio is a new system introduced in Midnight's Patch 12.0.7, and offers some minor performance-enhancing customization options after a multi-week quest series. Some of these bonuses affect your damage output, while others are more defensive in nature.
+
+ADVERTISEMENT
+
+We recommend you pick the following bonuses in the first couple of weeks, but as you can freely switch between them at any time, feel free to experiment with other options yourself if you feel you do not get enough mileage out of the recommended options:
+
+Week 1: Rune of Unleashed Fire
+Week 2: Rune of Void-Tainted Shell
+Week 3: Rune of Lingering
+Week 4: Rune of Critical Power
+Week 5: Rune of Overload
+Apex Talent:  Chosen of Frostbrood
+
+Frost Death Knight gets access to  Chosen of Frostbrood Apex Talents as you level up from 80 to 90 in Midnight. The first rank buffs  Frostwyrm's Fury by 100% and provides a Haste buff when you use the ability. The second rank  Chosen of Frostbrood extends your active  Pillar of Frost by 2/4 seconds when you cast  Frostwyrm's Fury in it, and improves the power of  Enduring Strength. The final rank  Chosen of Frostbrood provides a flat 10% Frost damage buff, an additional 100% increase to  Frostwyrm's Fury damage and allows you to recast the ability at 50% effectiveness for 45 seconds after the first use.
+
+The Apex Talents significantly incentivise picking up  Frostwyrm's Fury and additionally using it in our  Pillar of Frost windows. We send both charges in our first window to avoid missing the next one, making sure to spread them out to not overlap the buffs.
+
+ADVERTISEMENT
+Hero Talents
+
+Available at level 71, Hero talents are mutually exclusive trees you can choose to slightly alter gameplay. Frost Death Knight can choose between  Rider of the Apocalypse and  Deathbringer.
+
+ Rider of the Apocalypse
+
+The  Rider of the Apocalypse Hero Talents provide more focus on minion damage with your Riders being summoned both passively as well as actively via  Frostwyrm's Fury. It also has nice synergy with  Frostbane via the  Hungering Thirst talent which increases  Frost Strike damage. It brings great utility through the  Death Charge ability as well as more emphasis is but on your 1.5 minute Cooldown window with  Apocalypse Now.
+
+ Deathbringer
+
+ Deathbringer focuses on your 45-seconds burst windows with  Reaper's Mark both dealing significant damage on its own, but also buffing your other abilities. It comes with lots of extra procs and benefits, providing multiple extra procs of  Killing Machine via  Exterminate and free  Frost Fever applications.
+
+ADVERTISEMENT
+PvP Talents (War Mode)
+
+In this section, we will rank the PvP talents that are best for leveling and doing open-world content.
+
+PvP talents enabled in the outdoor world.
+15% more experience and quest awards gained while leveling.
+
+With the benefits of enabling War Mode for leveling and PvE content, it is recommended to enable the feature to maximize your leveling and rewards at maximum level. However, you will make yourself available for open-world PvP, and the possibility of being "ganked" while leveling or doing World Quests exists.
+
+In this section, we will rank the PvP talents best for leveling and doing solo / small group PvE content. Below is a ranking of both General PvP Talents and Frost Death Knight-specific PvE talents.
+
+ADVERTISEMENT
+ Deathchill roots enemies for 4 seconds. It is applied either via the direct cast of  Remorseless Winter, or by casting  Chains of Ice on a target already affected by  Chains of Ice. Not valuable in PvE content.
+ Delirium causes your  Howling Blast and  Frost Strike to apply  Delirium to the target. Delirium reduces the cooldown recovery rate of movement abilities by 50% for 12 seconds.
+ Shroud of Winter reduces the cast range of enemies within 8 yards around you by 30%. Not useful in PvE.
+ Dark Simulacrum places a debuff on your enemy, activating when they cast a spell that uses mana. It allows you to use that same spell for some time. Not useful in PvE content.
+ Strangulate silences your target for 4 seconds. Inferior to just running  Asphyxiate (it replaces the talent) and a pretty useless PvE talent.
+ Bitter Chill reduces the target's haste by 8% when affected by  Chains of Ice.  Frost Strike extends its duration. Not useful in PvE.
+ Rot and Wither adds an absorption shield to any target hit by  Death and Decay for 100% of the damage amount. Not useful in PvE.
+ Bloodforged Armor provides 4 seconds of 25% physical damage reduction whenever you press  Death Strike. Solid defensive gain!
+ Spellwarden lowers the cooldown of  Anti-Magic Shell by 10 seconds and allows you to use it on allies. It's just a nice defensive gain because it allows more AMS usage.
+ Death's Cold Embrace empowers your  Pillar of Frost to cast a  Remorseless Winter at 400% increase damage and 150% increased radius. Your movement speed is heavily reduced and the cooldown of  Pillar of Frost is increased by 15 seconds. Generally not worth it in PvE.
+
+ Bloodforged Armor is a solid defensive upgrade and  Deathchill helps to control your enemies. All other talents are not very impactful or simply worse for our damage throughput!
+
+Taeznak
+Guide Author
+Follow Taeznak
+
+This guide is written written by Taeznak, who is a Death Knight Theorycrafter, SimCraft Maintainer, Analyst for Method during the RWF, and Acherus Moderator. He is incredibly passionate about Death Knight as a whole, and spends countless hours pondering even the little things that help DPS Death Knights maximize their potential.
+
+Changelog
+12 Oct. 2026: Reviewed for Patch 12.1.5.
+14 Sep. 2026: Updated recommended builds to Deathbringer.
+Show more
+In The Same Category
+Frost Death Knight Guide
+Unholy Death Knight Talents
+Unholy Death Knight Guide
+Frost Death Knight Mythic+
+Unholy Death Knight Gear
+Frost Death Knight Enchants
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

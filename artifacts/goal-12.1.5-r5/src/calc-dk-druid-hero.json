@@ -1,0 +1,2084 @@
+[
+  {
+    "code": "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMLzMz0MLGjxMGAAAAwMmZmZmZYGDAYmZmZGAAADMwMW0YZBklBsBYGzAAAmZghB",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMLzMz0MLGjxMGAAAAwMmZmZmZYGDAYmZmZGAAADMwMW0YZBklBsBYGzAAAmZghB",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/death-knight/blood/sanlayn/EAPRVWYAURURVRFYkQBAOVVIFUFVRRFVREdBAFFVVVUCAA",
+    "title": "혈기 죽음의 기사 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "산레인",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "6",
+        "title": "죽음의 기사",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "250",
+        "title": "혈기",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65567",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 31,
+        "selected": [
+          {
+            "name": "얼음같은 인내력",
+            "spell": 48792,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음의 일격",
+            "spell": 49998,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "시체 되살리기",
+            "spell": 46585,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "룬 감쇠",
+            "spell": 207104,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음의 일격 연마",
+            "spell": 374277,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "쪼개기 강타",
+            "spell": 316916,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정신 얼리기",
+            "spell": 47528,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "눈부신 진눈깨비",
+            "spell": 207167,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "암울한 수호물",
+            "spell": 391571,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "망령 걸음",
+            "spell": 391546,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부정의 기세",
+            "spell": 374265,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "영구 결빙",
+            "spell": 207200,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "3차 대전쟁의 역전용사",
+            "spell": 48263,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "연약함",
+            "spell": 374504,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "얼음 발톱",
+            "spell": 194878,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음의 기록",
+            "spell": 1266819,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "대마법 지대",
+            "spell": 51052,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부정한 결속",
+            "spell": 374261,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "섬뜩한 죽음",
+            "spell": 221562,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "동화 작용",
+            "spell": 374383,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "대마법 방벽",
+            "spell": 205727,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "망자의 움켜쥠",
+            "spell": 273952,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "억제",
+            "spell": 374049,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부정의 인내",
+            "spell": 389682,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "음험한 한기",
+            "spell": 391566,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "룬 방어",
+            "spell": 454788,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "혈기 주입",
+            "spell": 374598,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "룬 특화",
+            "spell": 374574,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "죽음의 요새의 결의",
+            "spell": 206967,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "마법 무효화",
+            "spell": 454842,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음의 메아리",
+            "spell": 356367,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 30,
+        "selected": [
+          {
+            "name": "심장 강타",
+            "spell": 206930,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "골수분쇄",
+            "spell": 195182,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "피의 소용돌이",
+            "spell": 50842,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "흡혈",
+            "spell": 55233,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "뼈 수집가",
+            "spell": 458572,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "납골당",
+            "spell": 219786,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "심장 강타 연마",
+            "spell": 374717,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "심장파괴자",
+            "spell": 221536,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부정의 보루",
+            "spell": 206974,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "춤추는 룬 무기",
+            "spell": 49028,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "지혈",
+            "spell": 273946,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "흉물 사지",
+            "spell": 108199,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "뼈 보호막 강화",
+            "spell": 374715,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "굶주린 도끼",
+            "spell": 377637,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명적인 접촉",
+            "spell": 1264235,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신속한 부패",
+            "spell": 194662,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "끓는점",
+            "spell": 1265790,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영원한 결속",
+            "spell": 377668,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "탐식",
+            "spell": 273953,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "역병 주입",
+            "spell": 1265869,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강철 심장",
+            "spell": 391395,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "피투성이 칼날",
+            "spell": 458753,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "혈우병",
+            "spell": 391477,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "핏빛 안개",
+            "spell": 1263743,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "핏빛 대지",
+            "spell": 391458,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "혈안",
+            "spell": 391398,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "붉은 갈증",
+            "spell": 205723,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "연옥",
+            "spell": 114556,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "흡혈의 구",
+            "spell": 391517,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "한밤의 춤",
+            "spell": 1264351,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "산레인",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "흡혈의 일격",
+            "spell": 433901,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "흡혈귀의 신속함",
+            "spell": 433934,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "황폐화",
+            "spell": 434033,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "핏빛 인내",
+            "spell": 434100,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "핏빛 전율",
+            "spell": 1265547,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "슬픔의 고통",
+            "spell": 434143,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "광적인 피의 갈증",
+            "spell": 434075,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "피는 곧 생명",
+            "spell": 434260,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "원초적 본능의 힘",
+            "spell": 434157,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "불가피",
+            "spell": 1280658,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "공포 유발",
+            "spell": 434151,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "핏빛 향기",
+            "spell": 434261,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "수혈",
+            "spell": 1265574,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "산레인의 선물",
+            "spell": 434152,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "3ebc2500bec1b48f12b402f4140409107bae6f209dc807285daa315c764f569f",
+    "checkedAt": "2026-10-18T15:57:35.298Z"
+  },
+  {
+    "code": "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTjZmxYGDAAAAAAAAzDMMGAsMDzsZmxMzYgBmxiGLbA2mYDAzAYmZmZMDmZwMzYA",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTjZmxYGDAAAAAAAAzDMMGAsMDzsZmxMzYgBmxiGLbA2mYDAzAYmZmZMDmZwMzYA",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/death-knight/unholy/sanlayn/EAPUVSIQVRVRUVFIkQBQNVVVUUFRFRWJU0BQFFVVVUCRA",
+    "title": "부정 죽음의 기사 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "산레인",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "6",
+        "title": "죽음의 기사",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "252",
+        "title": "부정",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65567",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 31,
+        "selected": [
+          {
+            "name": "얼음같은 인내력",
+            "spell": 48792,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음의 일격",
+            "spell": 49998,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "시체 되살리기",
+            "spell": 46585,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "룬 감쇠",
+            "spell": 207104,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음의 일격 연마",
+            "spell": 374277,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "쪼개기 강타",
+            "spell": 316916,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정신 얼리기",
+            "spell": 47528,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "암울한 수호물",
+            "spell": 391571,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "부정의 기세",
+            "spell": 374265,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "쇠약",
+            "spell": 392566,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영구 결빙",
+            "spell": 207200,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "3차 대전쟁의 역전용사",
+            "spell": 48263,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음의 서약",
+            "spell": 48743,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "연약함",
+            "spell": 374504,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "얼음 발톱",
+            "spell": 194878,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음의 기록",
+            "spell": 1266819,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "대마법 지대",
+            "spell": 51052,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음 저항",
+            "spell": 1266818,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부정한 결속",
+            "spell": 374261,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "섬뜩한 죽음",
+            "spell": 276079,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "동화 작용",
+            "spell": 374383,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "대마법 방벽",
+            "spell": 205727,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "억제",
+            "spell": 374049,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "피냄새",
+            "spell": 374030,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부정의 인내",
+            "spell": 389682,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "음험한 한기",
+            "spell": 391566,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "룬 방어",
+            "spell": 454788,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "룬 특화",
+            "spell": 374574,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "죽음의 요새의 결의",
+            "spell": 206967,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "마법 무효화",
+            "spell": 454842,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음의 메아리",
+            "spell": 356367,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 29,
+        "selected": [
+          {
+            "name": "돌발 열병",
+            "spell": 77575,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "스컬지의 일격",
+            "spell": 55090,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "불시의 파멸",
+            "spell": 49530,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "할퀴는 어둠",
+            "spell": 1241567,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부패",
+            "spell": 1247378,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 변신",
+            "spell": 1233448,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부정한 감염",
+            "spell": 455396,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무덤의 지배자",
+            "spell": 1238900,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강령술사의 간계",
+            "spell": 288848,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "칠흑 열병",
+            "spell": 207269,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부패의 낫",
+            "spell": 455397,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영혼 수확자",
+            "spell": 343294,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽은 자의 학자",
+            "spell": 390196,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "황폐의 고리",
+            "spell": 390270,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "사자의 군대",
+            "spell": 42650,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "수확",
+            "spell": 377514,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "구울의 광란",
+            "spell": 377587,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "파멸의 전조",
+            "spell": 276023,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "가고일 부르기",
+            "spell": 1242608,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부정한 헌신",
+            "spell": 1241858,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "파멸의 역병 폭발",
+            "spell": 1254552,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부패의 메아리",
+            "spell": 377580,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "파멸의 제안",
+            "spell": 455386,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고초",
+            "spell": 1242604,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "부정의 오라",
+            "spell": 377440,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "망자의 사령관",
+            "spell": 390259,
+            "points": 1,
+            "full": false
+          },
+          {
+            "name": "역병내림",
+            "spell": 1271974,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽은 자의 군주",
+            "spell": 1256813,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "금단의 지식",
+            "spell": 1256566,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "산레인",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "흡혈의 일격",
+            "spell": 433901,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "흡혈귀의 신속함",
+            "spell": 434028,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "황폐화",
+            "spell": 434033,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "핏빛 인내",
+            "spell": 434136,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "핏빛 전율",
+            "spell": 1265547,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "슬픔의 고통",
+            "spell": 434143,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "광적인 피의 갈증",
+            "spell": 434075,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "피는 곧 생명",
+            "spell": 434260,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "원초적 본능의 힘",
+            "spell": 434157,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "불가피",
+            "spell": 1280658,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "공포 유발",
+            "spell": 434151,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "핏빛 향기",
+            "spell": 434261,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "수혈",
+            "spell": 1265574,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "산레인의 선물",
+            "spell": 434152,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "06f09bf52a497217b261064f5ad117f16f87cc65ac9e1a59afbf9eca9d700e0b",
+    "checkedAt": "2026-10-18T15:57:39.191Z"
+  },
+  {
+    "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzCzMzYMzMAAAAAAAGAAAABAz2MLNLzssBmZAWMzwAAYmBAD",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzCzMzYMzMAAAAAAAGAAAABAz2MLNLzssBmZAWMzwAAYmBAD",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/druid/feral/wildstalker/EASEEQFCEhVFRZBVkQEIECBAOVBGVVUVEShUUHQCUAFFVVVUCQA",
+    "title": "야성 드루이드 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "야생추적자",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "11",
+        "title": "드루이드",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "103",
+        "title": "야성",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65558",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 32,
+        "selected": [
+          {
+            "name": "갈퀴 발톱",
+            "spell": 1822,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "광포한 재생력",
+            "spell": 22842,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명상",
+            "spell": 474526,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "휘둘러치기",
+            "spell": 213764,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "우르속의 영혼",
+            "spell": 449182,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "도려내기",
+            "spell": 1079,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "신록의 심장",
+            "spell": 301768,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "해제",
+            "spell": 2782,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "살수의 본능",
+            "spell": 108299,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "나무 껍질 연마",
+            "spell": 327993,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "회복의 본능",
+            "spell": 33873,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "야수의 분노",
+            "spell": 159286,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "두꺼운 가죽",
+            "spell": 16931,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "두개골 강타",
+            "spell": 106839,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "자연 회복",
+            "spell": 377796,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "범의 질주",
+            "spell": 102401,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "회오리바람",
+            "spell": 2908,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "아에시나의 소생",
+            "spell": 474678,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고양이의 민첩함",
+            "spell": 131768,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "갈고 닦은 본능",
+            "spell": 377847,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "헝클어진 꼬리털",
+            "spell": 385786,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "쇄도의 포효",
+            "spell": 106898,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "우르솔의 회오리",
+            "spell": 102793,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "떡갈나무 껍질",
+            "spell": 449191,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "완벽하게 갈고 닦은 본능",
+            "spell": 1213597,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "발톱의 본능",
+            "spell": 449184,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "리카라의 가르침",
+            "spell": 378988,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "숲의 전승",
+            "spell": 449185,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "야생의 선물",
+            "spell": 1262034,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "천상의 굴레",
+            "spell": 474530,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "숲걸음",
+            "spell": 400129,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "정신 자극",
+            "spell": 29166,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 28,
+        "selected": [
+          {
+            "name": "호랑이의 분노",
+            "spell": 5217,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "청명의 전조",
+            "spell": 16864,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "터져 나오는 탄력",
+            "spell": 449537,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "포식자",
+            "spell": 202021,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "칼날이빨",
+            "spell": 202031,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "지치지 않는 기력",
+            "spell": 383352,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "암습의 일격",
+            "spell": 390772,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "피의 맛",
+            "spell": 384665,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "생존 본능",
+            "spell": 61336,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "섬뜩한 출혈",
+            "spell": 391045,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기습 공격",
+            "spell": 384667,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "청명의 시간",
+            "spell": 236068,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "야성의 격노",
+            "spell": 449645,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "광폭화",
+            "spell": 106951,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "표범의 기만",
+            "spell": 1280316,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "감염된 상처",
+            "spell": 48484,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "호랑이의 끈기",
+            "spell": 391872,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "광폭화: 사자의 심장",
+            "spell": 391174,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "숲의 영혼",
+            "spell": 158476,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "부산한 움직임",
+            "spell": 391875,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "표범의 아귀",
+            "spell": 421432,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "야성의 광기",
+            "spell": 274837,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영혼 소집",
+            "spell": 391528,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "톱날 발톱",
+            "spell": 1244632,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "물어뜯기",
+            "spell": 155580,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "날뛰는 광란",
+            "spell": 1244544,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "생사의 순환",
+            "spell": 400320,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "보이지 않는 포식자",
+            "spell": 1263660,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "야생추적자",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "번성하는 성장물",
+            "spell": 439528,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "창공 아래의 사냥",
+            "spell": 439868,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "전략적 주입",
+            "spell": 439890,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "야생추적자의 힘",
+            "spell": 439926,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "원예의 재능",
+            "spell": 1270565,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명적인 보존",
+            "spell": 455461,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "꽃의 걸음",
+            "spell": 439901,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "조화로운 체질",
+            "spell": 439929,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "폭발하는 성장물",
+            "spell": 440120,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "뿌리 연결망",
+            "spell": 439880,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "침착한 관리인",
+            "spell": 1270592,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "식재",
+            "spell": 440117,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "광분증",
+            "spell": 1270586,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "활력의 덩굴",
+            "spell": 440119,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "4a55d5c2600332e2327f6453741aaece7f4a84affed260ba0f4f4e9852ee1a5b",
+    "checkedAt": "2026-10-18T15:57:43.633Z"
+  },
+  {
+    "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYLY2MwMzUzYWMzMzsMmxAAAAAAwADAAAgmZZWmZmBEYBmZGgFGMAAAmZDD",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYLY2MwMzUzYWMzMzsMmxAAAAAAwADAAAgmZZWmZmBEYBmZGgFGMAAAmZDD",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/druid/feral/druid-of-the-claw/EASEEQFGEBVFRZFRgVFAUCRAOUVUVVUFFWFVEHQCVQFFVVVUBQ",
+    "title": "야성 드루이드 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "발톱의 드루이드",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "11",
+        "title": "드루이드",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "103",
+        "title": "야성",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65557",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 34,
+        "selected": [
+          {
+            "name": "갈퀴 발톱",
+            "spell": 1822,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "광포한 재생력",
+            "spell": 22842,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명상",
+            "spell": 474526,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "휘둘러치기",
+            "spell": 213764,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "우르속의 영혼",
+            "spell": 449182,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "도려내기",
+            "spell": 1079,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "신록의 심장",
+            "spell": 301768,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "해제",
+            "spell": 2782,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무력화",
+            "spell": 22570,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "살수의 본능",
+            "spell": 108299,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "나무 껍질 연마",
+            "spell": 327993,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "야수의 분노",
+            "spell": 159286,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "두꺼운 가죽",
+            "spell": 16931,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "두개골 강타",
+            "spell": 106839,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "자연 회복",
+            "spell": 377796,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "범의 질주",
+            "spell": 252216,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "회오리바람",
+            "spell": 2908,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "아에시나의 소생",
+            "spell": 474678,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고양이의 민첩함",
+            "spell": 131768,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "갈고 닦은 본능",
+            "spell": 377847,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "헝클어진 꼬리털",
+            "spell": 385786,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "쇄도의 포효",
+            "spell": 106898,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "태풍",
+            "spell": 132469,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "우르솔의 회오리",
+            "spell": 102793,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "떡갈나무 껍질",
+            "spell": 449191,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "발톱의 본능",
+            "spell": 449184,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "리카라의 가르침",
+            "spell": 378988,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "야생의 선물",
+            "spell": 1262034,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "거센 강타",
+            "spell": 99,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "곰의 활기",
+            "spell": 377842,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "천상의 굴레",
+            "spell": 474530,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "리카라의 영감",
+            "spell": 1232897,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "야생의 정수",
+            "spell": 1261867,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정신 자극",
+            "spell": 29166,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 30,
+        "selected": [
+          {
+            "name": "호랑이의 분노",
+            "spell": 5217,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "청명의 전조",
+            "spell": 16864,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "원시 분노",
+            "spell": 285381,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "날뛰는 야성",
+            "spell": 391709,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "포식자",
+            "spell": 202021,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "이중 발톱 갈퀴",
+            "spell": 391700,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "칼날이빨",
+            "spell": 202031,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "암습의 일격",
+            "spell": 390772,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "피의 맛",
+            "spell": 384665,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "생존 본능",
+            "spell": 61336,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "섬뜩한 출혈",
+            "spell": 391045,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기습 공격",
+            "spell": 384667,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "청명의 시간",
+            "spell": 236068,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "야성의 격노",
+            "spell": 449645,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "광폭화",
+            "spell": 106951,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "감염된 상처",
+            "spell": 48484,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "호랑이의 끈기",
+            "spell": 391872,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "광폭화: 사자의 심장",
+            "spell": 391174,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "흩뿌려진 선혈",
+            "spell": 1244532,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "숲의 영혼",
+            "spell": 158476,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "맹수의 본능",
+            "spell": 390902,
+            "points": 1,
+            "full": false
+          },
+          {
+            "name": "부산한 움직임",
+            "spell": 391875,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "최상위 포식자의 갈망",
+            "spell": 391881,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "야성의 광기",
+            "spell": 274837,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영혼 소집",
+            "spell": 391528,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "톱날 발톱",
+            "spell": 1244632,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "찢고 도려내리",
+            "spell": 391347,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "날뛰는 광란",
+            "spell": 1243807,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "생사의 순환",
+            "spell": 400320,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "보이지 않는 포식자",
+            "spell": 1263660,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "발톱의 드루이드",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "찢어발기기",
+            "spell": 441583,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "샘솟는 힘",
+            "spell": 441675,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "섬뜩한 상처",
+            "spell": 441809,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "야수의 힘",
+            "spell": 441841,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "사지 분쇄",
+            "spell": 1271540,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "야생형상 특화",
+            "spell": 441678,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "상처 악화",
+            "spell": 1271839,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무리의 인내심",
+            "spell": 441844,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "목숨을 끊는 일격",
+            "spell": 441824,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "솟구치는 자연력",
+            "spell": 441689,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "상처 악화",
+            "spell": 441829,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강자를 꺾어라",
+            "spell": 441845,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "이중 발톱",
+            "spell": 1271635,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "발톱 광란",
+            "spell": 441835,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "c9fcdc8255a431e2aa98a5541a3ff9f9e1b7909192cda39b62146980bc9e1053",
+    "checkedAt": "2026-10-18T15:57:47.690Z"
+  }
+]

@@ -1,0 +1,16 @@
+{
+ "generatedAt": "2026-10-18T15:50:20.412Z",
+ "scope": "랭킹 첫 페이지(최대 100행) 상위 행만 본 관측치다. 전체 사용률 전수 조사가 아니며, 영웅 트리 간 성능 우열을 뜻하지 않는다. 쐐기는 시즌 전체 상위 100행 중 12.1.5 이후 행만 남긴 것이라 표본이 작고 최고 단수 쪽으로 치우친다.",
+ "thresholdNote": "KR 이외 지역 행: 2026-10-13T15:00:00Z 이후(미국 12.1.5 적용 2026-10-13 기준). KR 행: 2026-10-15T06:00:00+09:00 이후 — 한국 적용 시각이 확인되지 않아 보수적으로 잡은 값. server.region 이 없는 행은 기준 판정에서 빼고 missingRegion 으로 따로 셌다.",
+ "traitSource": {
+  "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\goal-12.1.5\\talents\\trait_data.inc",
+  "build": "12.1.5.70448",
+  "simc": "midnight 5537d8813dfc59707927722b1e23ffa6fd67ee59",
+  "heroTreeChangesVs1210": 0
+ },
+ "raidPartition": "WCL 존 53 파티션 2 \"12.1.5\"(기본값) — 레이드 랭킹은 이 파티션",
+ "mythicPartition": "WCL 존 55 \"Season 2\" 단일 파티션 — 시각 필터로만 12.1.5 이후를 거름",
+ "entries": 160,
+ "rankingsRequests": 80,
+ "combatFiles": 208
+}

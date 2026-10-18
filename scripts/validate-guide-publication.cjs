@@ -47,4 +47,9 @@ assert.equal(getGuidePublication('rogue-outlaw', guideManuscripts['rogue-outlaw'
 for (const id of ['mage-arcane', 'mage-fire', 'mage-frost']) {
   assert.equal(getGuidePublication(id, guideManuscripts[id]).partial, true);
 }
+// 목록 화면 공사 중 안내는 패치 번호를 직접 쓰지 않고 레지스트리 값을 쓴다.
+const listPage = fs.readFileSync(path.join(root, 'src/pages/GuidePage.js'), 'utf8');
+assert.ok(listPage.includes('{CURRENT_PATCH_LABEL} 전환·검수 중'), 'Guide list notice must use CURRENT_PATCH_LABEL');
+assert.doesNotMatch(listPage, /12\.\d+(\.\d+)? 전환/, 'Guide list must not hardcode a patch label');
+assert.equal(getGuidePublication('x', { patch: P, status: `${P} 부분 검수` }).detail, `${P} · 부분 검수`);
 console.log(`Guide publication metadata verified for ${ids.size} specializations.`);

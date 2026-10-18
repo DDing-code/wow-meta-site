@@ -1,0 +1,1040 @@
+[
+  {
+    "code": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAziWoFbYGwMDmxA",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAziWoFbYGwMDmxA",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/rogue/subtlety/trickster/EAPEFVUVRUVRFWYIFQCUROVURRFRVFVRSgUNBVFFVVVUCAQ",
+    "title": "잠행 도적 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "기만자",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "4",
+        "title": "도적",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "261",
+        "title": "잠행",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65587",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 32,
+        "selected": [
+          {
+            "name": "실명",
+            "spell": 2094,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "그림자 망토",
+            "spell": 31224,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "빠른 발",
+            "spell": 378813,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "공수 자극제",
+            "spell": 200733,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "전율의 추구자",
+            "spell": 394931,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠질주",
+            "spell": 378807,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "독의 대가",
+            "spell": 378436,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "구사일생",
+            "spell": 31230,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "가죽곤봉",
+            "spell": 57934,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "날렵한 손가락",
+            "spell": 378427,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무감각한 신경",
+            "spell": 231719,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빠른 손가락",
+            "spell": 1267210,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "전력 질주 연마",
+            "spell": 231691,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "회피",
+            "spell": 5277,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강철 위장",
+            "spell": 193546,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명적인 독",
+            "spell": 381543,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "우아한 기만",
+            "spell": 423647,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "깃털발",
+            "spell": 423683,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "위축의 독",
+            "spell": 381637,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명적인 정밀함",
+            "spell": 381542,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "깊은 자상",
+            "spell": 1267216,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "위기 감각",
+            "spell": 1267220,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신속의 베기",
+            "spell": 381988,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "절약 정신",
+            "spell": 381620,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "착취 독",
+            "spell": 280716,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명상",
+            "spell": 382238,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "설욕",
+            "spell": 378996,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기민함",
+            "spell": 193539,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "초자력 충전기",
+            "spell": 470347,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "냉혈한 학살자",
+            "spell": 382245,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강제 유도",
+            "spell": 470668,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "심오한 책략",
+            "spell": 193531,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 29,
+        "selected": [
+          {
+            "name": "약점 포착",
+            "spell": 91023,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기습 연마",
+            "spell": 319949,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 칼날",
+            "spell": 121471,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "표창 폭풍 연마",
+            "spell": 319951,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "사전계획",
+            "spell": 343160,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고요한 폭풍",
+            "spell": 385722,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "환희에 찬 처형",
+            "spell": 428486,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무로의 소실",
+            "spell": 382514,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 대가",
+            "spell": 196976,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 집중",
+            "spell": 108209,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "은밀한 기술 연마",
+            "spell": 1279444,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "가혹한 일격",
+            "spell": 58423,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "경고 표지",
+            "spell": 426555,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "양면의 춤",
+            "spell": 394930,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠에 물든 마무리 일격",
+            "spell": 382511,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "비밀 책략",
+            "spell": 394320,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "암영의 칼날",
+            "spell": 1281468,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "깊어지는 어둠",
+            "spell": 185314,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "피아귀의 이빨",
+            "spell": 426591,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "장막에 물듦",
+            "spell": 382017,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "복제의 그림자",
+            "spell": 382506,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "약점 포착 연마",
+            "spell": 382512,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "머무는 그림자",
+            "spell": 382524,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "깊은 단검",
+            "spell": 382517,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음 인식",
+            "spell": 469642,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "짙은 어둠",
+            "spell": 245687,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "어둠추적자",
+            "spell": 426594,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음의 무도",
+            "spell": 382528,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고대의 기술",
+            "spell": 1268939,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "기만자",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "무형검",
+            "spell": 441146,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "기습의 일격",
+            "spell": 441273,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "거울",
+            "spell": 441247,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무결한 형상",
+            "spell": 441321,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "농락",
+            "spell": 1276626,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "수상한 사람 아닙니다",
+            "spell": 441403,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "음험한 주의 분산",
+            "spell": 441263,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "명멸타격",
+            "spell": 441346,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "번쩍이는 강철",
+            "spell": 1276630,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "혼란을 부르는 일격",
+            "spell": 441274,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무양심",
+            "spell": 441398,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "날렵한 질풍",
+            "spell": 441367,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영리한 전투원",
+            "spell": 1276679,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "최후의 일격",
+            "spell": 441423,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "426be463e94306fdb1890eaefda69d562501f4ffce0ee8a6ad49587f4cd8eafa",
+    "checkedAt": "2026-10-18T16:00:19.030Z"
+  },
+  {
+    "code": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZMMzMzwMbzYGbbzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZMMzMzwMbzYGbbzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/rogue/subtlety/trickster/EAPEFVUVRUVRFWYIFQCUROVURRFRVFVRWgQNBUFFVVVUCAA",
+    "title": "잠행 도적 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "기만자",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "4",
+        "title": "도적",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "261",
+        "title": "잠행",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65587",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 32,
+        "selected": [
+          {
+            "name": "실명",
+            "spell": 2094,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "그림자 망토",
+            "spell": 31224,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "빠른 발",
+            "spell": 378813,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "공수 자극제",
+            "spell": 200733,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "전율의 추구자",
+            "spell": 394931,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠질주",
+            "spell": 378807,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "독의 대가",
+            "spell": 378436,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "구사일생",
+            "spell": 31230,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "가죽곤봉",
+            "spell": 57934,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "날렵한 손가락",
+            "spell": 378427,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무감각한 신경",
+            "spell": 231719,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빠른 손가락",
+            "spell": 1267210,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "전력 질주 연마",
+            "spell": 231691,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "회피",
+            "spell": 5277,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강철 위장",
+            "spell": 193546,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명적인 독",
+            "spell": 381543,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "우아한 기만",
+            "spell": 423647,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "깃털발",
+            "spell": 423683,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "위축의 독",
+            "spell": 381637,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명적인 정밀함",
+            "spell": 381542,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "깊은 자상",
+            "spell": 1267216,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "위기 감각",
+            "spell": 1267220,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신속의 베기",
+            "spell": 381988,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "절약 정신",
+            "spell": 381620,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "착취 독",
+            "spell": 280716,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명상",
+            "spell": 382238,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "설욕",
+            "spell": 378996,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기민함",
+            "spell": 193539,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "초자력 충전기",
+            "spell": 470347,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "냉혈한 학살자",
+            "spell": 382245,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강제 유도",
+            "spell": 470668,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "심오한 책략",
+            "spell": 193531,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 29,
+        "selected": [
+          {
+            "name": "약점 포착",
+            "spell": 91023,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기습 연마",
+            "spell": 319949,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 칼날",
+            "spell": 121471,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "표창 폭풍 연마",
+            "spell": 319951,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "사전계획",
+            "spell": 343160,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고요한 폭풍",
+            "spell": 385722,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "환희에 찬 처형",
+            "spell": 428486,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무로의 소실",
+            "spell": 382514,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 대가",
+            "spell": 196976,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 집중",
+            "spell": 108209,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "은밀한 기술 연마",
+            "spell": 1279444,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "가혹한 일격",
+            "spell": 58423,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "경고 표지",
+            "spell": 382508,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "양면의 춤",
+            "spell": 394930,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠에 물든 마무리 일격",
+            "spell": 382511,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "비밀 책략",
+            "spell": 394320,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "암영의 칼날",
+            "spell": 1281468,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "깊어지는 어둠",
+            "spell": 185314,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "피아귀의 이빨",
+            "spell": 426591,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "장막에 물듦",
+            "spell": 382017,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "복제의 그림자",
+            "spell": 382506,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "약점 포착 연마",
+            "spell": 382512,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "머무는 그림자",
+            "spell": 382524,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "깊은 단검",
+            "spell": 382517,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강력한 가루",
+            "spell": 1265952,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "죽음 인식",
+            "spell": 469642,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "짙은 어둠",
+            "spell": 245687,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "어둠추적자",
+            "spell": 426594,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고대의 기술",
+            "spell": 1268939,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "기만자",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "무형검",
+            "spell": 441146,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "기습의 일격",
+            "spell": 441273,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "거울",
+            "spell": 441247,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무결한 형상",
+            "spell": 441321,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "농락",
+            "spell": 1276626,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "수상한 사람 아닙니다",
+            "spell": 441403,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "음험한 주의 분산",
+            "spell": 441263,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "명멸타격",
+            "spell": 441346,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "번쩍이는 강철",
+            "spell": 1276630,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "혼란을 부르는 일격",
+            "spell": 441274,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무양심",
+            "spell": 441429,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "날렵한 질풍",
+            "spell": 441367,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영리한 전투원",
+            "spell": 1276679,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "최후의 일격",
+            "spell": 441423,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "4f015ddb8a263374e71a06b83a73b7b61812749055ba730ef320a61b296aedf1",
+    "checkedAt": "2026-10-18T16:00:22.819Z"
+  }
+]

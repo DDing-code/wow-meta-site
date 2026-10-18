@@ -1,0 +1,467 @@
+[Skip to Main Content]
+와우
+본 서버
+[FOREVER]
+클래식
+불성
+판다
+···
+라이브
+PTR
+12.1.7
+PTR
+12.1.5
+로그인 하기:
+배틀넷
+이메일
+회원가입
+뉴스[HOUSING TOOLS]디스코드 웹훅데이터베이스도구가이드커뮤니티광고 없애기
+직업
+인기 주제
+한밤
+12.1.5 패치
+한밤 2 시즌
+순위 목록
+전문 기술들
+플레이어 하우징
+Report ad
+모든 광고 제거
+가이드
+이벤트
+...
+가이드 콘텐츠
+12.1.5 패치
+4.1/5  (35 표)
+Midnight Season 2
+Midnight Season 2
+Season 2 Mythic+
+The Venomous Abyss
+Midnight
+Cheat Sheet
+Talent Builds
+Talent Import Codes
+Tenacious
+Raid Talents
+Mythic+ Talents
+Delve Talents
+Leveling
+Rotation
+BiS Gear
+Consumables
+Spec Basics
+Overview
+Basics
+Abilities
+Stat Priority
+UI & Macros
+Leveling
+가이드 정보
+변경 기록
+Best Marksmanship Hunter Talent Tree Builds - Midnight
+TheAzortharion (이)가 작성함
+업데이트됨: 2026/10/13
+This guide provides all of the best Marksmanship Hunter talent tree builds in the Midnight Season 2 for raids and Mythic+, including export links to import these builds directly into the game.
+
+
+Overview
+BiS Gear
+Rotation
+Talent Builds
+Consumables
+Stats
+Basics
+[Drop the Ads.]
+[Keep the Loot.]
+광고 신고
+모든 광고 제거
+MARKSMANSHIP HUNTER TALENT IMPORT CODES
+Below, we've provided a list of import codes for the strongest Marksmanship Hunter builds for Midnight Season 2.
+
+
+Builds marked with the  icon are the Current Recommendations. Use the copy buttons to generate an import code.
+SENTINEL
+Build	Import Code	Link
+ Single Target  (Best)	복사 Single Target	Build
+ Raid AoE/Cleave  (Best)	복사 Raid AoE/Cleave	Build
+ Mythic+  (Best)	복사 Mythic+	Build
+ Delves  (Best)	복사 Delves	Build
+	
+DARK RANGER
+Build	Import Code	Link
+ Single Target	복사 Single Target	Build
+ Mythic+	복사 Mythic+	Build
+ Delves	복사 Delves	Build
+
+
+Marksmanship plays  Sentinel in all content, with no exceptions. We provide  Dark Ranger builds above for those who prefer the playstyle or fantasy.
+Single Target - Our pure single-target build. It keeps  폭발 사격 and  연발 공격 (with  연사), which the Season 2 tier set is built around, and focuses on generating and spending  정밀 사격.
+AoE - We run  교묘한 사격 in AoE, swapping out  신비한 사격 for  일제 사격 to make our abilities do AoE damage. For raid cleave, we like  히드라의 상-based builds. They grab efficient AoE talents like Hydra and  경탄약 to dish out excellent cleave damage while essentially just performing a single-target rotation.
+For Raiding, since the raid is so heavy on cleave fights, the cleave build is the most common throughout the raid. Any time pure single-target is called for, swap to the single-target build. On fights that are overwhelmingly single-target, but still have occasional bouts of cleave and burst AoE, we can play our Mythic+ build, but that is not a decision to be taken lightly as padding AoE is rarely the most effective way to improve your group's chances of success.
+TRADING SURVIVABILITY FOR DPS
+ 불굴 and  교활 are the MM version of having a pet. You get to choose between +5% HP + 3% damage reduction, or 8% Movement Speed +  주인의 부름, which is a freedom effect for you or anyone else. Neither does any damage.
+
+Every build above takes  불굴. 12.1 moved the node off the path to  정조준, so it costs DPS now where it used to be free. Survivability is always useful and for competitive content we'd give up about 1-2% damage for it. If you would rather have the damage, here is what talent swaps you would make for each build.
+ Sentinel Single Target - take  죽음의 강타, about 0.6% damage.
+ Sentinel Raid AoE/Cleave - take  물량 공세, about 1.3%.
+ Sentinel Mythic+ and Delves - take  물량 공세, about 1.4%.
+ Dark Ranger Single Target - take  총알 세례, about 1.4%.
+ Dark Ranger Mythic+ and Delves - take  총알 세례, about 1.7%.
+BEST MARKSMANSHIP HUNTER RAID TALENT BUILD
+Sentinel Single-Target
+Sentinel Raid AoE/Cleave
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+BEST MARKSMANSHIP HUNTER MYTHIC+ TALENT BUILD
+Marksmanship loses fairly little single-target in order to do excellent AoE, as we pick up our primary AoE toolkit by grabbing  교묘한 사격, which we do not run otherwise. Then, we pick up some nodes to enhance the damage of  일제 사격. We also pick up  경탄약 to extend our ability to AoE large packs. This is almost always used in Mythic+, especially later in a season where routes are more locked in, and pulls tend to get bigger and bigger.
+Sentinel
+Dark Ranger
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/2
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+
+
+
+ Further Details 
+BEST MARKSMANSHIP HUNTER DELVE TALENT BUILD
+Our Delve Build differs from our Mythic+ build in the Utility talents picked, as we assume that you have no tank.
+Sentinel
+Dark Ranger
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+2/2
+1/1
+2/2
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+MARKSMANSHIP HUNTER LEVELING BUILDS
+If you're searching for advice on both the best talents to pick while leveling and the optimal order in which to take them, our leveling tips page has got you covered. There, you will find information about different leveling talent builds, the recommended order in which to pick them, and information about your spec's rotation and cooldowns.
+
+
+Marksmanship Hunter Leveling Tips
+Our Marksmanship Hunter guides are always updated with the latest information from in-game experience, simulations, and logs. Make sure to check our changelog for this page by clicking on View Changelog in the Quick Facts column or on the book icon at the top of the page. If you are interested in more in-depth Marksmanship Hunter guides for Midnight Season 2, make sure to browse the Navigation Bar at the top of the page, along with our list of Related Guides just beneath the Table of Contents.
+TheAzortharion
+World of Warcraft Retail Marksmanship Hunter Guidewriter
+작성자 프로필
+Azortharion is a veteran World of Warcraft Hunter Specialist whose deep theorycrafting, guidewriting, fact-based, truth-seeking, and objectively-slanted content creation and community leadership have been a significant force and presence in the WoW and Hunter Community for over a decade.
+Azortharion has raided in the World’s Top 20 raiding guilds and holds numerous World First/Top Mythic+ keys as a Hunter.
+Widely considered the highest-DPS'ing Hunter in the world with the logs to prove it over a decade, and has regularly coached Race To World First Hunters on matters of rotation and character optimization.
+Pioneer of simulation-driven theorycrafting using SimulationCraft and Raidbots, and is continually refining tool-driven methodologies to get closer to the truth of maximizing DPS.
+Leader of The Trueshot Lodge, a 100,000+ member Hunter Discord fostering peer learning, discussion, and theorycrafting.
+Hunter content creator with over 3 million total views on in-depth tutorials, Rank 1 parses/Mythic+ runs, commentaries, and more.
+Year-long contributor and writer for leading WoW outlets, Wowhead chief among them, on all things Hunter-related.
+Recognized community voice, relaying feedback to Blizzard to ensure Hunter bugs are fixed and popular feedback is implemented.
+태그: PvE
+댓글
+아직 댓글이 없습니다.
+댓글을 남기려면 로그인하거나, 계정이 없다면 회원가입을 해 주세요.
+기여
+댓글 달기
+댓글을 달 때에는 다음과 같은 사항들을 기억해 주십시오:
+주석은 한국어로만 작성해야하며 그렇지 않으면 삭제됩니다.
+어떻게 댓글을 써야할지 모르시겠나요? 저희의 댓글 가이드를 확인하세요!
+댓글을 제출하기 전에 쓴 댓글을 다시 한번 읽어보세요.
+더 빠른 답을 원하신다면 저희의 토론장에 대신 질문해 보세요.
+댓글 달기
+로그인이 되어있지 않습니다. 댓글을 남기려면 로그인하거나, 회원가입을 해 주세요.
+Report ad
+모든 광고 제거
+뉴스
+[Housing Tools]
+디스코드 웹훅
+데이터베이스
+도구
+가이드
+커뮤니티
+광고 없애기
+와우 가이드들
+직업 가이드들
+Delve 가이드들
+레벨링 가이드들
+신화 쐐기돌 가이드들
+전문 기술 가이드들
+공격대 가이드들
+특성 계산기
+목록들단계
+한밤
+MOP CLASSIC 가이드들
+직업 가이드들
+전문 기술 가이드들
+던전 가이드들
+공격대 가이드들
+퀘스트 가이드들
+평판 가이드들
+애완동물 대전 가이드들
+시나리오 가이드들
+도전 난이도 가이드들
+특성 계산기
+순위 목록
+와우 클래식 가이드들
+요구 조건 가이드
+칸에 들어갈 베스트 아이템 가이드들
+직업 가이드들
+던전 가이드들
+레벨링 가이드들
+전문 기술 가이드들
+PvP 가이드들
+퀘스트 가이드들
+공격대 가이드들
+평판 가이드들
+디아블로 IV 가이드들
+Lord of Hatred Expansion
+13 시즌
+엔드게임 목록단계
+목록단계s
+야만용사 빌드
+드루이드 빌드
+강령술사 빌드
+성기사 빌드
+도적 빌드
+원소술사 빌드
+혼령사 빌드
+상단
+도움이 필요하신가요?
+사용자 도구
+회사 소개
+광고
+Cookies Settings
+랜덤 페이지
+프리미엄
+개인정보 보호정책
+이용 약관
+광고 신고
+Report ad
+모든 광고 제거
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings
+Reject All
+Accept All Cookies

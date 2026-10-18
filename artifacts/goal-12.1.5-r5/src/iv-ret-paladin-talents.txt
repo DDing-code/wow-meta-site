@@ -1,0 +1,281 @@
+https://www.icy-veins.com/wow/retribution-paladin-pve-dps-spec-builds-talents
+HTTP 200 · 2026-10-18T15:54:00.439Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Paladin
+/
+Retribution Paladin
+/
+Talents
+12.1.5
+Retribution Paladin DPS Spec, Builds, and Talents — 12.1.5
+Paladin
+Retribution
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Bolas
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Retribution Paladin in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Retribution Paladin
+2. Omnium Folio
+3. Apex Talent: Light Within
+4. Hero Talents for Retribution Paladin
+5. PvP Talents (War Mode)
+Best Midnight Talents for Retribution Paladin
+
+Retribution can choose between  Crusading Strikes and  Templar Strikes for different types of Holy Power generation in its builds. Currently,  Crusading Strikes is significantly stronger than  Templar Strikes, so all builds recommended on this page will be using  Crusading Strikes, but if you want to play the alternative style then no additional talent swaps are needed.
+
+For Hero Talents, both are strong choices with different niches.  Templar has stronger single-target damage and better defensives.  Herald of the Sun has stronger burst inside  Avenging Wrath and better sustained cleave damage.
+
+Single Target - Both are viable on single-target, with  Templar having a small edge.  Herald of the Sun tends to do better with  Power Infusion.
+AoE -  Herald of the Sun performs much better on low target cleave, but the difference is smaller on large target counts. For burst AoE,  Templar is much stronger.
+
+In practice it is optimal to play both Hero trees depending on the specific situation, but the default builds recommended here use  Herald of the Sun because it is a better all-round choice, especially given the prominance of sustained cleave in The Venomous Abyss.
+
+ADVERTISEMENT
+
+Quick Start Import Codes:
+
+Retribution Single Target - Herald of the Sun
+Copy
+Retribution AoE - Herald of the Sun
+Copy
+Retribution Delves - Templar
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Templar
+Single-Target/Raid Build
+Cleave/Mythic+ Build
+Delves/Open World
+Herald of the Sun
+Raid/Single-Target
+RECOMMENDED
+Cleave/Mythic+
+RECOMMENDED
+ Templar Single-Target Talents
+
+This build is best for pure single-target situations. Using  Divine Exaction and  Quickened Invocation instead will provide some extra passive cleave.
+
+Paladin
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Templar
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Retribution
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have its own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+The Omnium Folio is a system introduced in Midnight's Patch 12.0.7, and offers some minor performance-enhancing customization options after a multi-week quest series. Some of these bonuses affect your damage output, while others are more defensive in nature.
+
+ADVERTISEMENT
+
+We recommend the following bonuses for each rank:
+
+Tier 1:  Rune of Unleashed Fire
+Tier 2:  Rune of Void-Tainted Shell
+Tier 3:  Rune of Lingering
+Tier 4:  Rune of Masterful Cunning
+Tier 5:  Rune of Overload
+Apex Talent:  Light Within
+
+The Apex Talent for Retribution is  Light Within. This provides bonus effects to  Art of War or  Righteous Cause, increasing the damage of the next  Blade of Justice cast and causing it to also deal additional AoE damage. It also increases Holy Power spender damage during  Avenging Wrath. Prioritizing using  Blade of Justice when at 2 stacks is a sizeable damage increase.
+
+Hero Talents for Retribution Paladin
+
+Retribution has two Hero Talent trees,  Templar and  Herald of the Sun. These each have different visuals and gameplay, augmenting the core Retribution talents and abilities.
+
+ADVERTISEMENT
+ Templar
+
+ Templar gives you access to  Hammer of Light after casting  Wake of Ashes, which is a separate Holy Power spender that does significant AoE damage. It also has extra bonus effects such as  Divine Hammer and  Empyrean Hammer that do additional AoE damage passively.
+
+ Herald of the Sun
+
+ Herald of the Sun procs  Dawnlights when  Wake of Ashes is cast, which are powerful DoT effects that grant extra bonuses while active. It also significantly increases the power of  Hammer of Wrath through talents like  Walk Into Light.
+
+PvP Talents (War Mode)
+
+"War Mode" is an opt-in feature that enables cross-faction PvP combat in the open-world. Enabling War Mode provides the following benefits:
+
+ADVERTISEMENT
+PvP talents enabled in the outdoor world.
+10% increase in World Quest rewards at maximum level.
+10% more experience gained while leveling.
+Earn Conquest Points, which can reward gear every week.
+
+With the benefits of enabling War Mode for leveling and PvE content, it is recommended enabling the feature to maximize your leveling and rewards at maximum level. However, you will make yourself available for open-world PvP, and the possibility of being "ganked" while leveling or doing World Quests exists.
+
+No War Mode talents have any impact on open-world PvE content for Retribution.
+
+Bolas
+Guide Author
+Follow Bolas
+
+This guide has been written by Bolas, a long time Retribution Paladin enthusiast, theorycrafter, and high-end raider in the #1 Oceanic guild Honestly. You can find him in the Paladin Discord as bolas.ret.
+
+Changelog
+12 Oct. 2026: Updated for Patch 12.1.5.
+25 Aug. 2026: Updated for hotfixes.
+Show more
+In The Same Category
+Retribution Paladin Stats
+Retribution Paladin Guide
+Retribution Paladin Enchants
+Retribution Paladin Easy Mode
+Retribution Paladin Rotation
+Retribution Paladin Mythic+
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

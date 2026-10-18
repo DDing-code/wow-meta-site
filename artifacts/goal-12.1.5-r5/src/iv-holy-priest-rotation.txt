@@ -1,0 +1,232 @@
+https://www.icy-veins.com/wow/holy-priest-pve-healing-rotation-cooldowns-abilities
+HTTP 200 · 2026-10-18T15:43:16.779Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Priest
+/
+Holy Priest
+/
+Rotation
+12.1.5
+Holy Priest Healing Rotation, Cooldowns, and Abilities — 12.1.5
+Priest
+Holy
+Rotation
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Niphyr
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will learn how to optimize the rotation of your Holy Priest, depending on the type of damage your group is receiving. We also have advanced sections about cooldowns, procs, etc. in order to minmax your healing output and your mana efficiency. All our content is updated for World of Warcraft Patch 12.1.5.
+
+Table of Contents
+1. Holy Priest Gameplay and Rotation Guide
+2. Midnight Season 2 Tier Set
+3. Class and Spec Mechanics Explained
+4. Important Cooldowns for Holy Priest
+Holy Priest Gameplay and Rotation Guide
+
+Welcome to our Holy Priest Rotation section. Here you will learn everything you need to know about properly healing as a Holy Priest in Raiding and Mythic+ scenarios.
+
+Healing is primarily based on your ability to react to the damage that the group takes, and as such, there is no set rotation. Rather, you must understand what spells are best suited to the different situations that can occur during an encounter.
+
+TIPS
+How Do I Heal While Moving?
+Archon
+Raid
+Mythic+
+Oracle
+Raid
+BEST CHOICE
+Mythic+
+BEST CHOICE
+Active Talents
+Passive Talents
+Raid Healing Rotation
+Mythic+ Rotation
+Damage
+
+Raid healing is primarily focused on group healing and priority triage on targets that may be in danger of death. The next section outlines the priority you should follow in raids. You should not cast a spell that will mostly overheal, so keep this in mind as you work through the priority list. Skip an item if there is likely to be significant overheal.
+
+ Apotheosis and  Divine Hymn are powerful cooldowns you should be using regularly. For more information on how and when to use them, see the Major Cooldowns section below.
+
+ Holy Word: Serenity on an injured ally.
+ Prayer of Mending on cooldown, preferably on an injured ally.
+ Benediction on an injured ally.
+ Flash Heal on an injured ally.
+ Holy Nova while moving or when little healing is required.
+ Smite an enemy when no healing is required.
+
+Your general goal while healing is casting as many short-cooldown spells as possible.  Holy Word: Serenity,  Holy Word: Sanctify, and  Prayer of Mending — despite all having a cooldown — should be thought of as rotational spells and cast almost as soon as they are available. Using lower priority spells when one of your Holy Words is available is considered a mistake as it wastes mana and does less healing. An example of this mistake would be casting  Flash Heal instead of  Holy Word: Serenity;  Prayer of Healing instead of  Holy Word: Sanctify.
+
+Some tips for utilising your talents:
+
+With  Oracle,  Prayer of Mending should be cast on injured allies where possible to make the most of  Prompt Prognosis. You should not delay your cast of  Prayer of Mending if you are at maximum charges to wait for an injured ally. Instead, cast  Prayer of Mending once to get it on cooldown immediately.
+Mana Management Tips
+
+If you're struggling with mana on longer encounters, here are some quick tips to help improve your efficiency without sacrificing too much healing done.
+
+Make the most of our efficient cooldown abilities. These should be thought of as rotational spells and used as often as possible when your raid is injured. This includes:
+
+Longer cooldowns  Divine Hymn and  Apotheosis.
+Short cooldown spells  Holy Word: Serenity and  Prayer of Mending.
+
+Cast plenty of  Holy Nova and  Smite whenever your allies don't need healing. Not only does this help by triggering more  Surge of Light, but it also saves you mana you may ordinarily use on casts into healthy allies that will overheal.
+
+Midnight Season 2 Tier Set
+
+The Season 2 tier set is largely a passive bonus. The set bonus has no major gameplay implications and encourages you to cast  Prayer of Mending as often as possible to maximise the amount of additional healing the set bonus provides through the stat buff and additional  Renews.
+
+ADVERTISEMENT
+Class and Spec Mechanics Explained
+Holy Words and  Serendipity
+ Echo of Light
+ Divine Image
+ Benediction Apex Talent
+Other Talents
+Holy Words
+
+Casting your Holy Words as often as possible is an important part of playing Holy Priest. Each Holy Word gains cooldown reduction through  Serendipity when an associated spell is cast, allowing you to cast them even more frequently:
+
+ Holy Word: Serenity - 6 seconds each from  Flash Heal.
+ Holy Word: Sanctify - 6 seconds from  Prayer of Healing.
+ Holy Word: Chastise - 4 seconds each from  Smite and  Holy Nova.
+
+When talented into  Voice of Harmony you also gain cooldown reduction from additional spells:
+
+ Holy Word: Serenity - 4 seconds from  Prayer of Mending.
+ Holy Word: Sanctify - 4 seconds from  Halo.
+ Holy Word: Chastise - 4 seconds from  Holy Fire.
+
+When talented into  Ultimate Serenity, anything that would ordinarily trigger cooldown reduction for  Holy Word: Sanctify instead reduces the cooldown of  Holy Word: Serenity.
+
+There are multiple ways to further increase the cooldown reduction you gain from casting spells:
+
+ Apotheosis - While this buff is active, you gain 3 times as much cooldown reduction to all Holy Words.
+ Light of the Naaru - When talented, you gain 10% increased cooldown reduction to all Holy Words per point.
+ Archons  Energy Cycle - When talented, provides Holy Word cooldown reduction when consuming  Surge of Light.
+
+While you do not need to actively manage this mechanic in any way, it is very important that you are aware of its existence and that you constantly monitor the remaining cooldowns of your Holy Words so that you can use them as soon as they become available.
+
+Combat Information
+Talents and Gear
+Knowing how to play your rotation is only half the battle. Make sure to grab the best talent build for every situation, and check out which trinkets and other items are worth getting ASAP!
+Talents
+Gear
+Important Cooldowns for Holy Priest
+ Apotheosis
+ Divine Hymn
+ Guardian Spirit
+Apotheosis
+
+ Apotheosis is a major cooldown you want to be pressing as often as possible. There are several talents that improve Apotheosis:
+
+ Eternal Sanctity increases duration of Apotheosis.
+ Divinity improves the burst healing of Apotheosis making it more potent and increasing your mobility.
+ Divine Image has no direct interactions, but more Holy Words make Divine Image a more effective talent.
+ Archon's  Perfected Form increases healing done while Apotheosis is active.
+ Archon's  Sustained Potency is great at granting an extra few seconds of Apotheosis uptime per minute.
+
+Because  Apotheosis also increases the Holy Word cooldown reduction gained from casting abilities, it amplifies the priority of some spells during Apotheosis to help get Holy Words back off cooldown quickly:
+
+ Prayer of Mending - When talented into  Voice of Harmony and  Divine Image, Prayer of Mending becomes a high priority cast. Due to the number of Holy Word casts during  Apotheosis, if you are talented into  Epiphany, the resets on Prayer of Mending cooldowns are frequent.
+ Flash Heal - When talented into  Archon's  Energy Cycle and with a  Surge of Light proc, Flash Heal is a high priority due to the additional cooldown reduction.
+ Halo - Due to  Archon's  Manifested Power, Halo either just before, or during  Apotheosis is important for the additional  Surge of Light procs. This is in addition to the extra healing from  Archon's  Resonant Energy.
+
+While not always possible due to how things line up, an ideal usage of  Apotheosis with  Archon would look like:
+
+ Holy Word: Sanctify - if talented, to get it off cooldown.
+ Holy Word: Serenity - to get it off cooldown.
+ Holy Word: Chastise - if talented, to get it off cooldown.
+ Prayer of Mending - to get it off cooldown.
+ Halo - to start generating  Surge of Light procs and start stacking  Resonant Energy.
+ Apotheosis - getting back a charge of each Holy Word.
+ Power Infusion - if you do not need to use it at a specific time.
+Resume normal rotation.
+Niphyr
+Guide Author
+Follow Niphyr
+
+This guide has been written by Niphyr, a long-time healing Priest and theorycrafter. You can follow him on Twitter.
+
+Changelog
+12 Oct. 2026: Reviewed for Patch 12.1.5.
+25 Aug. 2026: Updated rotation to match talent build updates.
+Show more
+In The Same Category
+Discipline Priest Guide
+Discipline Priest DPS
+Holy Priest Easy Mode
+Holy Priest Macros
+Discipline Priest Mythic+
+Holy Priest Spell List and Glossary
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

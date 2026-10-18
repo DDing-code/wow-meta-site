@@ -1,0 +1,533 @@
+[
+  {
+    "id": "list",
+    "width": 320,
+    "overflow": false,
+    "notice": "공사 중 표시가 있는 36개 가이드는 12.1.5 전환·검수 중입니다. 이전 패치 내용이 남아 있을 수 있습니다.",
+    "construction": 36,
+    "errors": []
+  },
+  {
+    "id": "list",
+    "width": 390,
+    "overflow": false,
+    "notice": "공사 중 표시가 있는 36개 가이드는 12.1.5 전환·검수 중입니다. 이전 패치 내용이 남아 있을 수 있습니다.",
+    "construction": 36,
+    "errors": []
+  },
+  {
+    "id": "list",
+    "width": 1440,
+    "overflow": false,
+    "notice": "공사 중 표시가 있는 36개 가이드는 12.1.5 전환·검수 중입니다. 이전 패치 내용이 남아 있을 수 있습니다.",
+    "construction": 36,
+    "errors": []
+  },
+  {
+    "id": "deathknight-unholy",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "산레인",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "deathknight-unholy",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "산레인",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "deathknight-unholy",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "산레인",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "demonhunter-havoc",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "지옥상흔",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "demonhunter-havoc",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "지옥상흔",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "demonhunter-havoc",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "지옥상흔",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "druid-feral",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "발톱의 드루이드",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "druid-feral",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "발톱의 드루이드",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "druid-feral",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "발톱의 드루이드",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "evoker-augmentation",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "시간 감시자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "evoker-augmentation",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "시간 감시자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "evoker-augmentation",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "시간 감시자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "hunter-beastmastery",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "무리의 지도자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "hunter-beastmastery",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "무리의 지도자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "hunter-beastmastery",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "무리의 지도자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "성난태양",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "성난태양",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "성난태양",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "음영파",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 4,
+    "errors": []
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "음영파",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 4,
+    "errors": []
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "음영파",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 4,
+    "errors": []
+  },
+  {
+    "id": "paladin-protection",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "빛의 대장장이",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "paladin-protection",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "빛의 대장장이",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "paladin-protection",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "빛의 대장장이",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "priest-holy",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "예언자",
+      "피해 준비"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "priest-holy",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "예언자",
+      "피해 준비"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "priest-holy",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "예언자",
+      "피해 준비"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "기만자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "기만자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "기만자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "shaman-elemental",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "선견자",
+      "오프닝"
+    ],
+    "chapters": 16,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "shaman-elemental",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "선견자",
+      "오프닝"
+    ],
+    "chapters": 16,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "shaman-elemental",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "선견자",
+      "오프닝"
+    ],
+    "chapters": 16,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "warlock-demonology",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "악마학자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "warlock-demonology",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "악마학자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "warlock-demonology",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "악마학자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "warrior-arms",
+    "width": 320,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "학살자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "warrior-arms",
+    "width": 390,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "학살자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  },
+  {
+    "id": "warrior-arms",
+    "width": 1440,
+    "overflow": false,
+    "brokenImg": 0,
+    "pressed": [
+      "학살자",
+      "오프닝"
+    ],
+    "chapters": 17,
+    "timelines": 3,
+    "errors": []
+  }
+]

@@ -1,7 +1,7 @@
 {
-  "patch": "12.1",
+  "patch": "12.1.5",
   "researchedAt": "2026-10-18",
-  "status": "12.1 실전 심화 공략",
+  "status": "실전 심화 공략",
   "graphCenterSkillId": "471306",
   "summary": "포식은 흡수와 수확으로 격노와 영혼 파편을 모아 공허 탈태에 들어가는 지능 전문화입니다. 이 가이드는 준비 → 원리 → 연습 → 실전 → 심화 순서로 읽도록 짰습니다. 스킬 묶음을 먼저 보고, 두 자원과 탈태의 시작·끝, 공허 광선 완주, 근접 연계, 종료 뒤 보상을 익힌 뒤, 허수아비 타임라인과 궤멸자·공허상흔 운용으로 넘어갑니다. 10월 13일(미국) 적용된 변경 뒤 공개 가이드가 궤멸자를 거의 모든 콘텐츠에 추천해 이 가이드도 궤멸자를 기준으로 삼고, 공허상흔은 근접 강화 기술을 먼저 쓴 뒤 붕괴하는 별로 사냥을 초기화하는 대안으로 다룹니다. 두 영웅 특성 모두 탈태 안에서 붕괴하는 별을 최대한 많이 쓰는 것이 핵심입니다.",
   "sourceStatus": "2026-10-18 12.1.5(10월 13일 미국 적용) 공식 노트·한국어 툴팁과 변경 뒤 갱신된 SimulationCraft·Wowhead·Icy Veins로 영웅 특성 기준(궤멸자)과 두 분기의 딜사이클을 다시 맞춤. 2026-10-10 한국 레이드 2건·쐐기 1건은 변경 전 기록입니다.",
@@ -311,6 +311,27 @@
       "url": "https://nether.wowhead.com/tooltip/spell/1272432?locale=1",
       "updated": "2026-10-18 직접 확인",
       "note": "굶주린 베기와 공허칼날의 치명타 및 극대화율 18% 증가."
+    },
+    {
+      "tier": "A",
+      "label": "Icy Veins Voodoo·Wordup 12.1.5판 영웅 특성 추천",
+      "url": "https://www.icy-veins.com/wow/devourer-demon-hunter-pve-dps-spec-builds-talents",
+      "updated": "Oct 12, 2026 (12.1.5 표기) / 2026-10-19 확인",
+      "note": "12.1.5 변경 뒤 단일과 광역 모두 궤멸자를 권합니다. 공허상흔은 이론상 잠재력이 가장 높지만 끊기기 쉽고 조작할 수 없는 구간이 길어 레이드·쐐기에서 덜 안정적이라고 적고, 빠른 시작 코드는 단일·광역 궤멸자, 구렁 공허상흔입니다."
+    },
+    {
+      "tier": "S",
+      "label": "WCL 12.1.5 이후 신화 레이드 상위 랭킹 궤멸자 최상위 전투",
+      "url": "https://www.warcraftlogs.com/reports/vA8gdTVNkM1hFxCL#fight=24&source=977",
+      "updated": "2026-10-19 확인",
+      "note": "2026-10-14T10:55Z · 궤멸자 · Nymrissa Wavecaller · 신화 · 440초. 12.1.5 파티션 랭킹 첫 100행 중 궤멸자 85행(85%), 한국 51행 중 42행(82%). 랭킹 상위 행이며 전체 사용률이 아닙니다."
+    },
+    {
+      "tier": "S",
+      "label": "WCL 12.1.5 이후 쐐기 상위 랭킹 궤멸자 최상위 전투",
+      "url": "https://www.warcraftlogs.com/reports/rPBA6jM4WGQHfm79#fight=5&source=1",
+      "updated": "2026-10-19 확인",
+      "note": "2026-10-14T08:35Z · 궤멸자 · 23단 · 1788초. 시즌 2 쐐기 랭킹 첫 100행 중 12.1.5 이후 판정 62행의 궤멸자 50행(81%), 한국 15행 중 14행(93%). 높은 단수 쪽으로 치우친 랭킹 상위 행이며 전체 사용률이 아닙니다."
     }
   ],
   "evidence": [
@@ -333,6 +354,7 @@
     "Icy Veins 포식 운용(2026-10-12 갱신, 12.1.5 표기)과 Wowhead 특성 안내(2026-10-13 수정)는 12.1.5에서 궤멸자를 거의 모든 콘텐츠에 추천하고, 공허상흔은 잠재력은 높지만 쉽게 흐트러진다고 설명합니다. 사용률 통계가 아니라 작성자 추천입니다.",
     "Wowhead 포식 운용 가이드(2026-10-14 수정) 궤멸자: 단일 탈태 안은 영혼분출 발동 집어삼키기 → 공허 광선(영혼이 넘치지 않으면) → 붕괴하는 별 → 도태(4개 이상) → 공허칼날(포식자의 이빨 선택 시) → 집어삼키기, 탈태가 끝날 때 영혼 제물입니다. 광역은 영혼 40개를 넘기 전 별 → 발동 집어삼키기 → 박멸(파편 10개 또는 공허내림 발동) → 공허 광선 → 별 → 도태 → 집어삼키기입니다. 탈태마다 별 목표는 단일 4~5회, 광역 5회 이상입니다.",
     "SimulationCraft 기본 포식 우선순위(2026-10-13) 궤멸자: 탈태 밖에서 포식자의 이빨을 골랐다면 영혼이 다 찼을 때 공허칼날 → 탈태, 탈태 안에서는 공허 광선 쿨다운이 돌고 있을 때 붕괴하는 별을 쓰고 4개 이상 도태로 다음 별을 엽니다.",
+    "12.1.5 이후(10월 13일 미국 적용 뒤) WCL 상위 랭킹을 다시 집계했습니다. 신화 님리사는 전 지역 100행 중 궤멸자 85행(85%), 한국 51행 중 42행(82%)이고, 쐐기는 시즌 2 랭킹 첫 100행 중 12.1.5 이후 판정 62행에서 궤멸자 50행(81%), 한국 15행 중 14행(93%)입니다. Wowhead 12.1.5판(10월 13일)은 레이드 단일·레이드 광역·쐐기 Best를 궤멸자에 두고, Icy Veins 12.1.5판(10월 12일)도 단일·광역 모두 궤멸자를 권해 로그와 공개 저자가 같은 쪽입니다. 랭킹 상위 행은 전체 사용률이 아닙니다.",
     "개념서형 개편(2026-10-18): 기존 검수 본문과 KB 공식 툴팁을 처음 하는 사람이 읽는 순서(준비 → 원리 → 연습 → 실전 → 심화)로 다시 엮었습니다. 같은 날 12.1.5(10월 13일 미국 적용) 반영으로 영웅 특성 기준을 궤멸자로 바꾸고(3부 궤멸자·4부 공허상흔), 두 분기의 우선순위·오프닝을 변경 뒤 갱신된 Wowhead(10월 13·14일)·SimulationCraft(10월 13일) 순서로 고쳤습니다. 현장의 목소리는 아직 모으지 않았습니다."
   ],
   "caveats": [
@@ -1460,7 +1482,7 @@
         }
       ],
       "paragraphs": [
-        "10월 13일 변경 뒤 갱신된 Wowhead 특성 안내(10월 13일)와 Icy Veins(12.1.5 표기)는 붕괴하는 별이 12.1 동안 꾸준히 강해진 데다 12.1.5 변경까지 더해져 궤멸자를 거의 모든 콘텐츠에 추천합니다. 공허상흔은 잠재력은 높지만 끊기기 쉽고 시전이 길어 지금은 추천하지 않는다고 적었습니다. 그래서 이 가이드는 궤멸자를 기준으로 삼고 특성 견본도 Wowhead 12.1.5 궤멸자 견본을 따릅니다. 사용률 통계가 아니라 작성자 추천이라는 점은 기억하세요.",
+        "10월 13일 변경 뒤 갱신된 Wowhead 특성 안내(10월 13일)와 Icy Veins(12.1.5 표기)는 붕괴하는 별이 12.1 동안 꾸준히 강해진 데다 12.1.5 변경까지 더해져 궤멸자를 거의 모든 콘텐츠에 추천합니다. 공허상흔은 잠재력은 높지만 끊기기 쉽고 시전이 길어 지금은 추천하지 않는다고 적었습니다. 그래서 이 가이드는 궤멸자를 기준으로 삼고 특성 견본도 Wowhead 12.1.5 궤멸자 견본을 따릅니다. 12.1.5 이후(10월 13일 미국 적용 뒤) WCL 상위 랭킹도 같은 쪽이라, 신화 님리사는 100행 중 85%(한국 51행 중 82%), 쐐기는 판정한 62행 중 81%(한국 15행 중 93%)가 궤멸자였습니다. 랭킹 상위 기록이지 전체 사용률이 아니므로 확정 순위로 읽지는 않습니다.",
         "붕괴하는 별의 기본 비용은 탈태 중 수확한 영혼 30개입니다. 10월 13일 이후 Wowhead의 궤멸자 단일 순서는 영혼분출 발동 집어삼키기 → 공허 광선(영혼이 넘치지 않으면) → 붕괴하는 별 → 4개 이상 도태 → 포식자의 이빨을 골랐다면 공허칼날 → 집어삼키기이고, 탈태가 끝날 무렵 영혼 제물을 씁니다. 탈태 한 번에 별을 단일 4~5번, 광역 5번 이상 쓰는 것이 목표입니다. 예전 한 작성자의 단일 목록은 35영혼 이상에서 별을 앞세웠지만 9월 조정 전 자료이고 기본 비용을 바꾼 수치도 아니니, 30을 기준으로 실제 남은 탈태와 파편 상태를 보고 씁니다.",
         "붕괴하는 별의 시전도 10월 13일에 바뀌었습니다. 시전을 시작한 뒤에는 사거리가 늘어나 대상이 사거리 밖으로 나가 시전이 실패하는 일이 줄었고, 시전이 취소되어도 5초 쿨다운이 걸리지 않습니다. 그래서 피해야 할 패턴이 오면 망설이지 말고 시전을 끊고 움직인 뒤 다시 시전하면 됩니다. 다만 별이 시전 도중 격노 소모 속도를 줄이는 것은 이제 일정 시간 동안뿐입니다. 취소한 뒤 다시 시전해도 격노 소모가 줄어드는 시간은 시전을 1.5회 완료하는 시간만큼이고, 그 뒤에는 시전을 끊든 다시 시작하든 격노가 정상 속도로 빠집니다. 별을 일부러 끊었다 다시 시작해 탈태를 늘리는 방식은 기대하지 마세요.",
         "공허내림은 한국어 툴팁 기준 집어삼키기를 쓸 때 35% 확률로 중첩이 생기고, 3중첩 뒤 수확이 중첩 하나를 소모해 대상 위치에 유성을 부릅니다. 세계 학살자를 골랐다면 세 번째 유성의 반경과 피해가 각각 50% 늘고 영혼 파편도 하나 생깁니다. 네임드가 곧 움직이면 유성이 빗나갈 수 있으니 수확 시점을 맞춥니다. 한밤은 단계마다 효과가 다릅니다. 첫 단계는 별을 항상 치명타로 만들고, 마지막 단계까지 찍어야 탈태 진입 직후 영혼 파편 5개와 즉시 별을 얻습니다.",
@@ -2446,48 +2468,12 @@
     {
       "id": "single-target",
       "label": "단일",
-      "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAAegxsNYGAAAAAAAAmxMMmZmZMzMzYmtZGjNttAgAGgZMzMbzMTz2MLzMjZMA",
-      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAAegxsNYGAAAAAAAAmxMMmZmZMzMzYmtZGjNttAgAGgZMzMbzMTz2MLzMjZMA",
+      "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAALPwY2GMDAAAAAAAAzYwMzMzMmZmZMziZMW0yCzMzMbtNzMDgZMAE4BGDGGA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAALPwY2GMDAAAAAAAAzYwMzMzMmZmZMziZMW0yCzMzMbtNzMDgZMAE4BGDGGA",
       "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps",
-      "sourceLabel": "Raid ST (Best)",
-      "checkedAt": "2026-10-08",
-      "note": "단일 네임드 전투용 견본입니다.",
-      "validation": {
-        "specId": 1480,
-        "heroTreeId": 126,
-        "points": {
-          "1": 34,
-          "2": 34,
-          "3": 13,
-          "4": 1
-        },
-        "checkedAt": "2026-10-08",
-        "traitDataCommit": "db768b52b425db274e4ebd3ce3d5efc26c8882b5",
-        "gameBuild": "12.1.0.69933",
-        "browser": {
-          "checkedAt": "2026-10-08",
-          "points": [
-            34,
-            34,
-            13
-          ],
-          "parentConnections": true,
-          "available": true,
-          "sha256": "db3a505aa87e232abaf26157653cac557bd7d6ac1dfd2136d5685231d06fe05a"
-        },
-        "scope": "현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
-      },
-      "heroLabel": "공허상흔"
-    },
-    {
-      "id": "mythic-plus",
-      "label": "쐐기",
-      "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAYxY2GMDAAAAAAAAzYwMzMzMzMzMjZWMjxiWWYmZmZrtZmZAMMAEwYwYGA",
-      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAYxY2GMDAAAAAAAAzYwMzMzMzMzMjZWMjxiWWYmZmZrtZmZAMMAEwYwYGA",
-      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps",
-      "sourceLabel": "Mythic+ (Best)",
-      "checkedAt": "2026-10-08",
-      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "sourceLabel": "Annihilator Raid ST (Best)",
+      "checkedAt": "2026-10-18",
+      "note": "기존 견본은 12.1.5 트리에서 한국어 Wowhead 계산기가 전문화 33/34로 불러와(특성 위치 이동으로 한 칸이 빠짐) 그대로 쓸 수 없습니다. Wowhead 빌드 페이지(2026-10-13 갱신)가 12.1.5의 공허상흔·전문화 트리 변경 뒤 궤멸자를 거의 모든 상황의 추천으로 바꿔, 단일 레이드 견본을 궤멸자 Raid ST (Best)로 교체합니다. 사냥·박멸이 중간 관문으로 내려온 새 트리 기준입니다. 영웅 특성이 공허상흔에서 궤멸자로 바뀝니다.",
       "validation": {
         "specId": 1480,
         "heroTreeId": 124,
@@ -2497,11 +2483,11 @@
           "3": 13,
           "4": 1
         },
-        "checkedAt": "2026-10-08",
-        "traitDataCommit": "db768b52b425db274e4ebd3ce3d5efc26c8882b5",
-        "gameBuild": "12.1.0.69933",
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
         "browser": {
-          "checkedAt": "2026-10-08",
+          "checkedAt": "2026-10-18",
           "points": [
             34,
             34,
@@ -2509,35 +2495,35 @@
           ],
           "parentConnections": true,
           "available": true,
-          "sha256": "8f495ac99430ded2d3e6586d4f4b2938c57dd61ff8172138b462c321f4d88cc6"
+          "sha256": "1ea19c5ed09471f8d10e4233912749c8e881c3a9c593c8dfc5955e56d4652d61"
         },
-        "scope": "현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
       },
       "heroLabel": "궤멸자"
     },
     {
-      "id": "raid",
-      "label": "레이드",
-      "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAAWMmZmZmZmBmBAAAAAAY7BGz2gZAAAAAAAAYGzwYmZmZmZmZMz2Mjxm2WAQADwDMmZmtZmpZbmlZmxYGA",
-      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAAWMmZmZmZmBmBAAAAAAY7BGz2gZAAAAAAAAYGzwYmZmZmZmZMz2Mjxm2WAQADwDMmZmtZmpZbmlZmxYGA",
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAALGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAALGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
       "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps",
-      "sourceLabel": "Raid Cleave (Best)",
-      "checkedAt": "2026-10-08",
-      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "sourceLabel": "Annihilator Mythic+ (Best)",
+      "checkedAt": "2026-10-18",
+      "note": "기존 견본은 12.1.5 트리에서 한국어 Wowhead 계산기가 전문화 33/34로 불러와(공허정화 자리 이동으로 한 칸이 빠짐) 그대로 쓸 수 없습니다. Wowhead 빌드 페이지(2026-10-13 갱신)의 궤멸자 Mythic+ (Best)로 교체합니다.",
       "validation": {
         "specId": 1480,
-        "heroTreeId": 126,
+        "heroTreeId": 124,
         "points": {
           "1": 34,
           "2": 34,
           "3": 13,
           "4": 1
         },
-        "checkedAt": "2026-10-08",
-        "traitDataCommit": "db768b52b425db274e4ebd3ce3d5efc26c8882b5",
-        "gameBuild": "12.1.0.69933",
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
         "browser": {
-          "checkedAt": "2026-10-08",
+          "checkedAt": "2026-10-18",
           "points": [
             34,
             34,
@@ -2545,11 +2531,47 @@
           ],
           "parentConnections": true,
           "available": true,
-          "sha256": "9b93c96d0ce27e6f37bc92acce5f0d197c964c087e2ac0673457698a7f138b98"
+          "sha256": "16432044305b165c9a5512faad6d01fee78a4db93e97a8e0d540e69fa61b13ed"
         },
-        "scope": "현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
       },
-      "heroLabel": "공허상흔"
+      "heroLabel": "궤멸자"
+    },
+    {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmBmBAAAAAAY5BGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmBmBAAAAAAY5BGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps",
+      "sourceLabel": "Annihilator Raid Cleave (Best)",
+      "checkedAt": "2026-10-18",
+      "note": "Wowhead 빌드 페이지(2026-10-13 갱신)가 12.1.5 변경 뒤 궤멸자를 추천으로 바꿔, 추가 대상이 있는 레이드 견본을 궤멸자 Raid Cleave (Best)로 교체합니다. 페이지는 대상이 거의 하나인 전투라면 악마의 본능 대신 두 번째 포식을 고르라고 안내합니다. 영웅 특성이 공허상흔에서 궤멸자로 바뀝니다.",
+      "validation": {
+        "specId": 1480,
+        "heroTreeId": 124,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "1432bd0125daf1944f8f63065235e4c2dff50cfd190348a2d35b558ef4fe4a5b"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "궤멸자"
     }
   ],
   "logReview": {
@@ -3045,9 +3067,9 @@
       "scope": "10월 13일(미국) 12.1.5 적용 전 기록입니다. 한국 랭킹 첫 100위의 최근 사례에서 영웅별 1건까지 확인. 처음 조회에서 빈 콘텐츠는 다른 네임드·던전을 추가 조회. 전투의 시전·버프·영웅 선택 확인이며 전체 사용률과 인과 성능 비교가 아님."
     },
     "heroConclusion": {
-      "checkedAt": "2026-10-10",
+      "checkedAt": "2026-10-19",
       "sourceUrl": "https://www.icy-veins.com/wow/devourer-demon-hunter-pve-dps-spec-builds-talents",
-      "conclusion": "10월 13일(미국) 12.1.5 적용 전 기록입니다. 오래된 공개 저자는 공허상흔을 추천하지만 9월·10월 궤멸자 관련 단일 상향 뒤 한국 사례는 두 분기를 확인합니다. 궤멸자의 단일 피해와 공허상흔의 반복 광역을 다시 비교하며 상향 전 공허상흔 우위 문장을 현재 확정 순위로 쓰지 않습니다. 변경 뒤 Wowhead·Icy Veins는 궤멸자를 거의 모든 콘텐츠에 추천해 이 가이드도 궤멸자를 기준으로 바꿨습니다.",
+      "conclusion": "단일·쐐기·레이드 모두 궤멸자를 기준으로 둡니다. 12.1.5 이후(10월 13일 미국 적용 뒤) WCL 상위 랭킹에서 신화 님리사는 100행 중 궤멸자 85%(한국 51행 중 82%), 쐐기는 판정 62행 중 81%(한국 15행 중 93%)이고, Wowhead 12.1.5판(10월 13일)과 Icy Veins 12.1.5판(10월 12일)도 구렁을 뺀 모든 콘텐츠에 궤멸자를 권합니다. 공허상흔은 잠재력은 높지만 쉽게 흐트러진다는 이유로 공개 저자가 추천하지 않는 대안입니다. 10월 10일 한국 사례 두 분기는 12.1.5 적용 전 기록입니다. 랭킹 상위 행은 전체 사용률이 아니며 확정 순위로 쓰지 않습니다.",
       "confirmedRanking": false
     }
   },

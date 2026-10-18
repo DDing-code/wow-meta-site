@@ -1,0 +1,320 @@
+https://www.icy-veins.com/wow/windwalker-monk-pve-dps-spec-builds-talents
+HTTP 200 · 2026-10-18T15:54:00.413Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Monk
+/
+Windwalker Monk
+/
+Talents
+12.1.5
+Windwalker Monk DPS Spec, Builds, and Talents — 12.1.5
+Monk
+Windwalker
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Babylonius
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Windwalker Monk in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Windwalker Monk
+2. Omnium Folio
+3. Apex Talent: Tigereye Brew
+4. Hero Talents
+5. PvP Talents (War Mode)
+Best Midnight Talents for Windwalker Monk
+
+In Season 2, thanks to a few recent changes, Windwalker finally has a bit more talent variation than before. The main differences now depend on what Hero talents you're playing.
+
+Single-Target - Both hero talents are very similar and it is generally recommended to use the one that you are most comfortable with.  Shado-Pan likely has a slightly lower maximum, but is significantly simpler and less punishing to play.  Conduit of the Celestials has a slightly higher ceiling but is noticeably more difficult to use, and mistakes tend to be more punishing.
+AoE - Similar to single target, both hero talents are very similar in strength and the players performance and comfort can make the difference between the two.  Shado-Pan should be a safer pick for newer players or for people playing in PUG groups where careful planning isn't as common.  Conduit of the Celestials has the best chance to shine in groups where things are planned in advance to maximize everyone's performance, like in a high-level or MDI-type situation.
+
+In pure single target scenarios,  Shado-Pan is ahead of  Conduit of the Celestials, while also doing a decent amount of cleave damage, or easily swapping into a few more cleave-focused talents. Due to this, we recommend playing it on all boss fights this tier. In AoE encounters,  Shado-Pan is ahead due to its more flexible cooldowns, simpler gameplay loop, and AOE damage.
+
+Quick Start Import Codes:
+
+ADVERTISEMENT
+Windwalker Raids - Shado-Pan
+Copy
+Windwalker Mythic+ - Conduit of the Celestials
+Copy
+Windwalker Delves - Conduit of the Celestials
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Shado-Pan
+Raid
+RECOMMENDED
+Mythic+
+WEEKLY-KEYS
+Delves
+Conduit of the Celestials
+Raid
+ADVANCED
+Mythic+
+HIGH-KEYS
+Delves
+RECOMMENDED
+ Shado-Pan Raid Talents
+
+This single-target build is very straightforward, and both cleave and AoE are totally ignored here. Many raid fights are either wholly or predominantly single-target. In many cases, even if a fight has AoE moments like add spawns, if those add spawns are not especially important or dangerous, playing a single-target build can be optimal.
+
+Monk
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Shado-Pan
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Windwalker
+
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/4
+Export Talents
+Open in Calculator
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have it's own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+The Omnium Folio was a new system introduced in Midnight's Patch 12.0.7, and offers some minor performance-enhancing customization options after a multi-week quest series. Some of these bonuses affect your damage output, while others are more defensive in nature.
+
+We recommend you pick the following bonuses, but as you can freely switch between them at any time, feel free to experiment with other options yourself if you feel you do not get enough mileage out of the recommended options:
+
+ADVERTISEMENT
+Row 1: Rune of Unleashed Fire for all content
+Row 2: Rune of Void-Tainted Shell
+Row 3: Rune of Lingering
+Row 4: Rune of Critical Power as a default, best to sim your character for other options
+Row 5: Rune of Overload
+Apex Talent:  Tigereye Brew
+
+Midnight introduces new Apex Talents, unlocked between Level 80 and 90. Windwalker Monk gets:
+
+ Tigereye Brew
+ Tigereye Brew
+ Tigereye Brew
+
+ Tigereye Brew is the new Apex talent node and is a callback to Windwalker's original damage cooldown, although mostly in name only. As the tooltip suggests, during combat you generate stacks that are then spent when you cast  Zenith to increase your chance to Crit. Outside of combat it stacks back up to 10 very quickly, or will maintain its stacks if you are already at or above 10.
+
+Generally you do not have to play around this buff, as you should be naturally using  Zenith frequently enough to not need to worry about the cap of 20 stacks. The primary way that this buff affect's your thought process is that it lessens the incentive to use both charges of  Zenith back-to-back because the second use will have very few stacks. Most of the time, spreading them out is a reasonable choice to make, but sometimes you will still want to use them one after the other. This talent can be taken and ignored outside of the more extreme min-maxing situations that may be figured out as time goes on.
+
+ADVERTISEMENT
+
+After the first talent point, the other three are passive damage increases that don't change anything.
+
+Hero Talents
+
+Windwalker gets to pick between two distinct Hero Talent choices:  Shado-Pan and  Conduit of the Celestials. These are available at level 71 and are mutually exclusive.
+
+ Shado-Pan
+
+ Shado-Pan can be described as "baseline" Windwalker, with no additional buttons or mechanics that you need to worry about. This Hero Talent tree is focused around increasing the power of the base kit that Windwalker has to work with.
+
+ADVERTISEMENT
+
+The tree does add the damage source of  Flurry Strikes, which are additional strikes of damage when you cast abilities like  Fists of Fury or  Rising Sun Kick, and  Spinning Crane Kick during  Zenith. These are further augmented into AoE damage with  Shado Over the Battlefield and become a decently large source of additional damage.
+
+This Hero Talent tree is recommended for beginners, as none of the talents or  Flurry Strikes change how the spec is played at all.
+
+ Conduit of the Celestials
+
+ Conduit of the Celestials leans heavily into the lore of Monks and Windwalker, leveraging the assistance of the August Celestials to provide additional power. This Hero Talent tree comes with the familiar spell of  Invoke Xuen, the White Tiger and  Celestial Conduit and is generally considered to be noticeably more complex and different from  Shado-Pan.
+
+ADVERTISEMENT
+
+Playing as  Conduit of the Celestials revolves around managing the windows of  Heart of the Jade Serpent that are generated when  Zenith,  Celestial Conduit,  Strike of the Windlord, or  Whirling Dragon Punch are used. These buff windows dramatically increase the speed that the spec plays, with faster channeling of  Fists of Fury, and dramatically reduced cooldown times on abilities. Learning how to balance and manage these buff windows is essential to maximizing the power of  Conduit of the Celestials and contribute to the belief that it is both more complicated and faster than  Shado-Pan.
+
+PvP Talents (War Mode)
+
+War Mode offers several benefits for you in the open world.
+
+PvP talents enabled in the outdoor world.
+At least 10% increase in World Quest rewards at maximum level.
+10% more experience gained while leveling.
+Earn Conquest Points, which can reward gear every week.
+
+With the benefits of enabling War Mode for leveling and PvE content, it is recommended to enable the feature to maximize your leveling and rewards at maximum level. However, you will make yourself available for open-world PvP, and the possibility of being "ganked" while leveling or doing World Quests exists.
+
+ADVERTISEMENT
+
+In this section, we will rank the PvP talents best for leveling and doing solo / small group PvE content. Below is a ranking of all PvP Talents for Windwalker Monk
+
+ Wind Waker grants you and allies affected by  Windwalking an effect that makes them immune to slow and snare effects once every 30 seconds.
+ Reverse Harm doubles the healing of  Expel Harm and provides an extra Chi when used.
+ Disabling Reach increases the range of your  Disable to 10 yards.
+ Alpha Tiger grants you 30% Haste upon attacking a new target with  Tiger Palm. This can happen once every 30 seconds per target.
+ Grapple Weapon grants you an additional spell which prevents your target from using their weapons for 6 seconds.
+ Turbo Fists causes  Fists of Fury to deal full damage to all targets hit and reduce their movement speed by 90%. It additionally grants you 100% Parry chance during the channel.
+ Ride the Wind causes  Flying Serpent Kick to increase the movement speed of allies in its path by 30%. This applies to yourself. It also increases Flying Serpent Kick's cooldown by 10 seconds.
+ Pressure Points reduces the cooldown of  Touch of Death by 60 seconds if you kill a player with it.
+ Tigereye Brew generates stacks of Tigereye Brew whenever you spend 3 Chi. Using these stacks makes your attacks bypass armor but deal slightly less damage for 2 seconds per stack.
+
+ Turbo Fists,  Reverse Harm, and  Alpha Tiger are the three talents that will benefit you the most when doing PvE content. They grant you sustainability, as well as survivability.
+
+Babylonius
+Guide Author
+Follow Babylonius
+
+This guide is written and maintained by Babylonius; Long time raider in Occasional Excellence; Thirteen year veteran of Windwalker; Founder and owner of the dedicated Monk website, Peak of Serenity; and Admin/Owner of the Monk Discord, PeakofSerenity. You can find him on Twitch, Twitter, and occasionally YouTube.
+
+Changelog
+12 Oct. 2026: Reviewed for Patch 12.1.5.
+11 Aug. 2026: Updated for Midnight Season 2, updated talent builds.
+Show more
+In The Same Category
+Windwalker Monk Guide
+Windwalker Monk Macros
+Windwalker Monk Mythic+
+Windwalker Monk Spell List and Glossary
+Mistweaver Monk Leveling
+Brewmaster Monk Leveling
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

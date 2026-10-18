@@ -66,7 +66,7 @@ function loadRegistry() {
     .replace(/\bexport const\b/g, 'const')
     .replace(/\bexport function\b/g, 'function')
     .replace(/export default [^;]+;/g, '');
-  return new Function(`${source}\nreturn { guides: getAllGuideSpecs(), patch: CURRENT_PATCH_LABEL };`)();
+  return new Function(`${source}\nreturn { guides: getAllGuideSpecs(), patch: CURRENT_PATCH_LABEL, dataPatches: CURRENT_DATA_PATCHES };`)();
 }
 
 // "이 스킬이 이 가이드 범위인가"는 화면(GuideDetailPage.js 의 recordMatchesGuide)과 같은 규칙을 쓴다.
@@ -209,13 +209,13 @@ function main() {
     return;
   }
 
-  const { guides, patch } = loadRegistry();
+  const { guides, patch, dataPatches } = loadRegistry();
   const guide = resolveGuide(options.query, guides);
   const matches = loadScopeRule();
   const inScope = skill => matches(skill, guide, false, COMMON_SPECS) || (COMMON_SPECS.has(skill.spec) && matches(skill, guide, true, COMMON_SPECS));
   const scoped = everything.filter(inScope);
   // 화면과 같은 기준: Spell ID 가 숫자이고 지금 패치로 표시된 것만.
-  const current = scoped.filter(skill => /^\d+$/.test(String(skill.id)) && skill.patch === patch);
+  const current = scoped.filter(skill => /^\d+$/.test(String(skill.id)) && dataPatches.includes(skill.patch));
   const dropped = scoped.filter(skill => !current.includes(skill));
 
   const isHero = skill => skill.type === 'hero-talent' || skill.type === 'hero-tree';
@@ -245,7 +245,7 @@ function main() {
   else if (folders.length) out.push(`KB 노트 폴더: ${folders.join(' , ')} (노트는 고치거나 새로 쓸 때만 연다)`);
   const how = full ? '설명 전체' : `설명은 ${SHORT_LIMIT}자에서 자름(--full 전체, --id <Spell ID…> 하나만 전체)`;
   out.push(`${terms.length ? `찾는 낱말 "${options.find.join('", "')}": ` : ''}전문화 ${groups.spec.length}개 · 영웅 특성 ${groups.hero.length}개 · 공용 ${options.noClass ? `뺌(${commonHidden}개)` : `${groups.common.length}개`} · ${how}`);
-  if (dropped.length) out.push(`패치 표기가 ${patch} 이 아니거나 ID 가 숫자가 아니라서 뺀 것 ${dropped.length}개: ${dropped.map(skill => `${clean(skill.name)}(${skill.id}, ${skill.patch})`).join(', ')}`);
+  if (dropped.length) out.push(`패치 표기가 현재 데이터(${dataPatches.join('·')})가 아니거나 ID 가 숫자가 아니라서 뺀 것 ${dropped.length}개: ${dropped.map(skill => `${clean(skill.name)}(${skill.id}, ${skill.patch})`).join(', ')}`);
 
   const section = (title, skills) => {
     if (!skills.length) return;

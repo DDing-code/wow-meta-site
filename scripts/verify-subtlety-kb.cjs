@@ -76,7 +76,8 @@ assert.match(skills['185314'].description, /가속의 150%.*항상 0초.*아니�
 assert.match(skills['185313'].description, /6초.*위협.*20초.*1회/);
 assert.match(skills['121471'].description, /16초.*20%.*두 배.*90초/);
 assert.equal(skills['280719'].resourceCost, '기력 30 + 연계 점수');
-assert.match(skills['280719'].description, /세 부분.*물리.*25초.*가속/);
+// 설명은 ko.wowhead 툴팁 원문(2026-10-19). 재사용 대기시간 25초와 가속 감소는 노트의 운용 구획에 있다.
+assert.match(skills['280719'].description, /복제된 그림자.*관통 공격으로 물리 피해.*연계 점수 7점/s);
 assert.match(skills['1279444'].description, /피해를 15%.*지속 효과/);
 assert.equal(skills['53'].resourceCost, '기력 40');
 assert.match(skills['53'].description, /1점.*뒤.*20%/);

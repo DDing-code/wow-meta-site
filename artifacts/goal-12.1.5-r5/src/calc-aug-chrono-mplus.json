@@ -1,0 +1,527 @@
+[
+  {
+    "code": "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAwMMzAjpGzMzAAAAgZmZMmZ2GzMwMMwYGLsADMDDNiFMmZmBAG",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAwMMzAjpGzMzAAAAgZmZMmZ2GzMwMMwYGLsADMDDNiFMmZmBAG",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/evoker/augmentation/chronowarden/EAQBVJFESZJgRFARERVBQPVVVVUEVEEBUVRRNBFFFVVVUBA",
+    "title": "증강 기원사 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "시간 감시자",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "13",
+        "title": "기원사",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "1473",
+        "title": "증강",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65574",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 31,
+        "selected": [
+          {
+            "name": "산사태",
+            "spell": 358385,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "흑요석 비늘",
+            "spell": 363916,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "말소",
+            "spell": 365585,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "자연의 합일",
+            "spell": 369913,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무거운 날개짓",
+            "spell": 368838,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신록의 품",
+            "spell": 360995,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "선천적인 마법",
+            "spell": 375520,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "흑요석 보루",
+            "spell": 375406,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "진홍빛 적응",
+            "spell": 372469,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "내면의 광휘",
+            "spell": 386405,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강대한 휘둘러치기",
+            "spell": 375443,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "소작의 불길",
+            "spell": 374251,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "본능의 비전력",
+            "spell": 376164,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "전세역전",
+            "spell": 370553,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "꿈과 조율",
+            "spell": 376930,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "몽유병",
+            "spell": 360806,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "선천적인 저항",
+            "spell": 375544,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "용족의 유산",
+            "spell": 376166,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "장기 비행",
+            "spell": 375517,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "격노의 가열로",
+            "spell": 375510,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "소생의 불길",
+            "spell": 374348,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "만병통치약",
+            "spell": 387761,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "시간 증폭",
+            "spell": 410352,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "구출",
+            "spell": 370665,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "마법의 원천",
+            "spell": 369459,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "화염 도약",
+            "spell": 369939,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "체공 특화",
+            "spell": 365933,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강력한 마나",
+            "spell": 418101,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "하늘의 공포",
+            "spell": 371032,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "공간의 역설",
+            "spell": 406732,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "미풍",
+            "spell": 374227,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 31,
+        "selected": [
+          {
+            "name": "칠흑의 힘",
+            "spell": 395152,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "분출",
+            "spell": 395160,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정수 폭발",
+            "spell": 396187,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "진압",
+            "spell": 351338,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "튕기는 화산 쇄설암",
+            "spell": 406659,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정수의 조화",
+            "spell": 375722,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "메아리치는 강타",
+            "spell": 407814,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "지각 변동",
+            "spell": 396286,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영겁의 숨결",
+            "spell": 403631,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "역천",
+            "spell": 404195,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "점화 질주",
+            "spell": 408775,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "힘의 연결체",
+            "spell": 369908,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "화산성",
+            "spell": 406904,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "시간 수호물",
+            "spell": 409676,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "역천 연마",
+            "spell": 1268881,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "용족의 조율",
+            "spell": 403208,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "예지",
+            "spell": 409311,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "땅의 구심점",
+            "spell": 408002,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "가속 전환",
+            "spell": 408004,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "운명의 거울",
+            "spell": 412774,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "비축한 힘",
+            "spell": 375796,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "가능성의 티끌",
+            "spell": 409267,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "시대착오",
+            "spell": 407869,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "침식 가속",
+            "spell": 407876,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "임박한 파괴",
+            "spell": 459537,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "시간 건너뛰기",
+            "spell": 404977,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신통력",
+            "spell": 1250914,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "지축을 울리는 대지",
+            "spell": 459120,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "미래 계획",
+            "spell": 407866,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "군주",
+            "spell": 410260,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "복제",
+            "spell": 1259175,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "시간 감시자",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "시간의 불꽃",
+            "spell": 431442,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "공간 이동",
+            "spell": 429483,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "시간의 폭발",
+            "spell": 431695,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "시간은혜",
+            "spell": 1260484,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "반향",
+            "spell": 431615,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "가속의 티끌",
+            "spell": 431873,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "노즈도르무의 숙련병",
+            "spell": 431715,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "시간 발전체",
+            "spell": 1291522,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "수위",
+            "spell": 431657,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "시간의 합일",
+            "spell": 431874,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "불안정 행렬",
+            "spell": 431484,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "과조작",
+            "spell": 1260647,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "황금빛 기회",
+            "spell": 432004,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "잔상",
+            "spell": 431875,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "ae66ec49da0fb706ba7a19ad63453298492ef75f6d921176b9d0d4c15d99a6fa",
+    "checkedAt": "2026-10-18T16:00:19.544Z"
+  }
+]

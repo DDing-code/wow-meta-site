@@ -83,7 +83,8 @@ for (const spec of registry) {
   }
   assert.equal(m.logReview.KoreaAppliedAt, null, '공식 한국 적용 시각이 확인되기 전에는 적용 완료로 기록하지 않음');
   assert.equal(m.logReview.KoreaScheduledEndsAt, '2026-10-08T06:00:00+09:00', '공식 한국 주간 점검 예정 종료를 실측 적용 시각과 구분');
-  assert.equal(m.logReview.heroConclusion.checkedAt, '2026-10-10', spec.id);
+  // 결론은 10월 10일 재검수 이후 날짜여야 한다(12.1.5 이후 로그 대조로 다시 확인한 가이드는 그 날짜).
+  assert(/^\d{4}-\d{2}-\d{2}$/.test(m.logReview.heroConclusion.checkedAt) && m.logReview.heroConclusion.checkedAt >= '2026-10-10', spec.id);
   assert.equal(m.logReview.heroConclusion.confirmedRanking, false, '공개 추천과 관측 사례를 인과 성능 순위로 승격하지 않음');
   const currentKorea = m.logReview.currentKorea;
   assert(currentKorea.raid.length > 0 && currentKorea.mythicPlus.length > 0, spec.id);

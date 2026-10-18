@@ -1,7 +1,7 @@
 {
-  "patch": "12.1",
+  "patch": "12.1.5",
   "researchedAt": "2026-10-10",
-  "status": "12.1 전환 검수 중",
+  "status": "전환 검수 중",
   "graphCenterSkillId": "51271",
   "summary": "냉기는 룬과 룬 마력을 번갈아 쓰며 도살기·단단한 얼음 발동을 덮어쓰지 않는 전문화입니다. 얼음 기둥 구간에 사신의 징표·신드라고사의 숨결·서리고룡의 격노를 모으고, 숨결 중에도 소비기를 멈추지 않습니다. 이 가이드는 준비 → 원리 → 연습 → 실전 → 심화 순서로 읽도록 짰고, 레이드·쐐기 모두 죽음의 인도자·숨결을 먼저 비교하며 종말의 기수는 대안으로 다룹니다.",
   "sourceStatus": "2026-10-10 영웅 특성 2종의 공개 추천·한국 레이드 1건·쐐기 1건 재검수. 추천의 충돌과 같은 조건 성능 비교의 한계는 본문에 표시합니다.",
@@ -2252,11 +2252,11 @@
           "3": 13,
           "4": 1
         },
-        "checkedAt": "2026-10-08",
-        "traitDataCommit": "db768b52b425db274e4ebd3ce3d5efc26c8882b5",
-        "gameBuild": "12.1.0.69933",
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
         "browser": {
-          "checkedAt": "2026-10-08",
+          "checkedAt": "2026-10-18",
           "points": [
             34,
             34,
@@ -2266,7 +2266,7 @@
           "available": true,
           "sha256": "51ed7b13ee9f54351736ec7ca3166305480c7aeb5c406818afe01540ac5d1f5c"
         },
-        "scope": "현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
       },
       "heroLabel": "죽음의 인도자"
     },
@@ -2288,11 +2288,11 @@
           "3": 13,
           "4": 1
         },
-        "checkedAt": "2026-10-08",
-        "traitDataCommit": "db768b52b425db274e4ebd3ce3d5efc26c8882b5",
-        "gameBuild": "12.1.0.69933",
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
         "browser": {
-          "checkedAt": "2026-10-08",
+          "checkedAt": "2026-10-18",
           "points": [
             34,
             34,
@@ -2302,7 +2302,7 @@
           "available": true,
           "sha256": "266ddede9410dc5eef3c8b089c01e089120c0b214a907221d18b7c21735c3205"
         },
-        "scope": "현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
       },
       "heroLabel": "죽음의 인도자"
     },
@@ -2324,11 +2324,11 @@
           "3": 13,
           "4": 1
         },
-        "checkedAt": "2026-10-08",
-        "traitDataCommit": "db768b52b425db274e4ebd3ce3d5efc26c8882b5",
-        "gameBuild": "12.1.0.69933",
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
         "browser": {
-          "checkedAt": "2026-10-08",
+          "checkedAt": "2026-10-18",
           "points": [
             34,
             34,
@@ -2338,7 +2338,7 @@
           "available": true,
           "sha256": "51ed7b13ee9f54351736ec7ca3166305480c7aeb5c406818afe01540ac5d1f5c"
         },
-        "scope": "현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
       },
       "heroLabel": "죽음의 인도자"
     }

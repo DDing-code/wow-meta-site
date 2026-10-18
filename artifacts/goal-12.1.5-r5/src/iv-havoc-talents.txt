@@ -1,0 +1,312 @@
+https://www.icy-veins.com/wow/havoc-demon-hunter-pve-dps-spec-builds-talents
+HTTP 200 · 2026-10-18T15:54:07.357Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Demon Hunter
+/
+Havoc Demon Hunter
+/
+Talents
+12.1.5
+Havoc Demon Hunter DPS Spec, Builds, and Talents — 12.1.5
+Demon Hunter
+Havoc
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Wordup
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Havoc Demon Hunter in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Havoc Demon Hunter
+2. Omnium Folio
+3. Apex Talent: Eternal Hunt
+4. Hero Talents
+5. PvP Talents (War Mode)
+Best Midnight Talents for Havoc Demon Hunter
+
+In Midnight, Havoc saw some restructuring within its tree, and Season 2 has broadened some options to allow for less strict build requirements. It still has to specialize a little more than it did previously, but has some good tools available, in particular the Apex Talent -  Eternal Hunt - cementing  The Hunt as a powerful 1-minute cooldown.
+
+Raid – Both trees are capable of performing in raids, but  Aldrachi Reaver has the higher ceiling following repeated buffs.  Fel-Scarred is still very capable on cleave encounters though, so both can be played.
+Mythic+ – Similarly, both Hero Trees are strong, with different specialties.  Fel-Scarred excels at raw overall throughput, while  Aldrachi Reaver exists as a priority target specialist for higher key levels.
+
+The release of Season 2 brought with it a lot of tuning to try and bring both Hero Trees together, but  Aldrachi Reaver needed follow-up buffs to hit that mark. Now by Patch 12.1.5, both are competitive, carving out specialties that allow for them to shine in different areas.  Fel-Scarred is easy to execute, bringing punchy up-front burst and free cleave throughout, suiting it well to Mythic+ and raid encounters with multiple targets or damage amp windows.  Aldrachi Reaver on the other hand brings potent funnel with  Wounded Quarry and similarly good cleave tools for lower target counts, allowing it to stand out in the more difficult raid encounters and high-level Mythic+.
+
+Quick Start Import Codes:
+
+ADVERTISEMENT
+Raid / Single-Target – Aldrachi Reaver
+Copy
+AoE / Mythic+ – Fel-Scarred
+Copy
+High Mythic+ Keys – Aldrachi Reaver
+Copy
+Delves – Fel-Scarred
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Aldrachi Reaver
+Single-Target
+RECOMMENDED
+Mythic+
+HIGH KEY
+Delves
+Fel-Scarred
+Raid/Cleave
+Raid/Single-Target
+Mythic+
+RECOMMENDED
+Delves
+RECOMMENDED
+ Aldrachi Reaver Single-Target Build
+
+In Season 2,  Aldrachi Reaver has benefited from many of the changes made to Havoc, in particular the additional Fury from  Demon Blades. Due both to the power of the new Tier Set and repeated tuning buffs, it now stands as the strongest single-target option, while bringing enough cleave and funnel to stand out in The Venomous Abyss. As such, it's our recommended choice:
+
+Demon Hunter
+
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Aldrachi Reaver
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Havoc
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+4/4
+Export Talents
+Open in Calculator
+
+In single-target,  Aldrachi Reaver picks up all of the  Throw Glaive talents to empower  Reaver's Glaive, and uses  Screaming Brutality to pull value out of them rotationally. It picks up both  Exergy and  Tactical Retreat to integrate movement into the build, and takes  Shattered Destiny on the final choice node.
+
+
+
+
+ Cycle of Hatred is a key pickup at the bottom of the tree, enabling the 20-second burst cycle for  Eye Beam and  Demonic. Due to the Season 2 Tier Set effects, it also picks up  Essence Break. Finally, it invests all four points into  Eternal Hunt, granting increased access to  The Hunt and, by extension,  Reaver's Glaive triggers.
+
+The builds listed above are recommendations based on strength and popularity, covering each area of content in endgame PvE. Each build has its own rotation to execute, with unique aspects to master, with their own tricks up their sleeve to assist your group in different encounters.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+Introduced in Patch 12.0.7, the Omnium Folio is a player power system that provides a small number of performance boosting effects, unlocked through a series of quests. These bonuses aren't related to any gear pieces, and are always active on your character. Some provide additional damage, while others grant some healing and extra defensive tools.
+
+Below, we've listed recommendations for each of the five Runes, unlocked as you complete the Folio quest chain:
+
+ADVERTISEMENT
+Rune 1 –  Rune of Unleashed Fire
+Rune 2 –  Rune of Self-Mending
+Rune 3 –  Rune of Lingering
+Rune 4 –  Rune of Critical Power
+Rune 5 –  Rune of Overload
+
+It's worth noting that the difference between most of these effects is very minor. The fourth stat boosting Rune is relevant, however, providing a solid amount of your chosen secondary through regular procs. Due to the uniquely powerful benefits for Havoc, Critical Strike is recommended.
+
+Apex Talent:  Eternal Hunt
+
+The Havoc Apex Talent,  Eternal Hunt, focuses on both  The Hunt and  Eye Beam, adding additional combo effects to each cast. All four points are extremely powerful, and each node has unique interactions for both  Aldrachi Reaver and  Fel-Scarred:
+
+ Eternal Hunt first point – causes  The Hunt to empower your next  Eye Beam cast, increasing its damage by 100% and increasing the range of the beam.
+ Eternal Hunt second and third points – reduces the cooldown of  The Hunt by 15 seconds and increases the number of targets hit by the DoT effect by 2 for each point.
+ Eternal Hunt fourth point – increases  Blade Dance damage by 20%, and fully channelling  Eye Beam causes your next Blade Dance cast to reset its own cooldown.
+
+This turns  The Hunt into a 1-minute burst cooldown, dealing high AoE damage on its own, while also causing each follow-up  Demonic window to guarantee two  Death Sweep casts. This significantly improves 20-second burst cycles for each tree, leaning toward  Fel-Scarred's high focus on these windows.  Aldrachi Reaver instead benefits greatly from the reduced cooldown, providing a reliable way to guarantee  Reaver's Glaive procs.
+
+ADVERTISEMENT
+Hero Talents
+
+Havoc has two distinct Hero Tree choices available that, as covered in the above sections, drastically alter your gameplay goals depending on which you pick. These two Hero Talents are  Aldrachi Reaver and  Fel-Scarred.
+
+ Aldrachi Reaver
+
+This tree grants access to  Reaver's Glaive, triggered via consuming Souls, and replaces your next  Throw Glaive with a significantly more powerful version. Specific mechanics are:
+
+After casting  Reaver's Glaive, a combo sequence is initiated. Your next  Chaos Strike and  Blade Dance will trigger a bonus effect, and after both you gain  Thrill of the Fight.
+ Reaver's Mark is applied via  Chaos Strike from this combo. This causes all Physical damage you deal to duplicate a portion as Chaos onto the affected target through  Wounded Quarry.
+
+This makes  Aldrachi Reaver a powerful funnel specialization, which is often extremely sought after. The addition of  Bladecraft in Midnight causes  Blade Dance casts to convert a significant amount of AoE damage directly into your marked target, allowing it to pick off priority targets.
+
+ADVERTISEMENT
+ Fel-Scarred
+
+ Fel-Scarred focuses on your  Metamorphosis windows - both the 2-minute cooldown and activations through  Demonic. It comes with a number of buffs and effects to your core abilities, and some specific mechanics:
+
+After entering  Metamorphosis via any means, your next cast of both  Annihilation and  Death Sweep will trigger  Demonsurge, dealing high AoE Chaos damage.
+After casting  Metamorphosis, your next  Eye Beam and  Immolation Aura also trigger a  Demonsurge. When transformed, they also convert to  Abyssal Gaze and  Consuming Fire, respectively.
+
+This means  Fel-Scarred's damage is centered around its 20-second burst cycle, making use of  Cycle of Hatred to lower  Eye Beam's cooldown to enter  Demonic. This is then amplified even more every two minutes during  Metamorphosis, dealing potent front-loaded burst through  Demonsurge chains.
+
+PvP Talents (War Mode)
+
+"War Mode" is an optional feature that enables open-world PvP encounters that confer some benefits when active:
+
+ADVERTISEMENT
+Grants access to PvP talents in the open world.
+10% increase in World Quest rewards at max level.
+10% more experience gained while leveling.
+Earn Conquest Points which can reward gear every week.
+
+With the benefits of War Mode for leveling and PvE content, it is an optional way to maximize your leveling speed and reward potential. However, you will open yourself up to open-world PvP, so be aware of hostile enemy players who could interfere with you; this is a risk you will have to decide on your own if you want to take.
+
+Here, we'll only be looking at PvP talents that have use cases for aiding with leveling or open-world PvE scenarios, as their PvP benefits are discussed on our PvP page. Generally, the selections are made to optimize your ability to kill enemies faster, increasing your pace when moving through content.
+
+ Unending Hatred is just free Fury generation as you will take damage in the open world.
+ Rain from Above can be helpful to deal with dangerous enemies while staying safe, though it's not as strong as simply using your abilities.
+ Blood Moon can provide a small amount of extra healing and Soul generation.
+
+ Reverse Magic,  Detainment,  Cover of Darkness,  Cleansed by Flame and  Glimpse all have minimal uses in PvE, due to them being very focused on crowd control tools or pressuring enemy players into spending more resources than they would otherwise want to.
+
+ADVERTISEMENT
+Wordup
+Guide Author
+Follow Wordup
+
+This guide has been written by Wordup, a frequent theorycrafter involved in a number of class communities. He is also an experienced player who has been in the world top 100 since the days of Sunwell, currently raiding in Echoes. You can follow him on Twitter.
+
+Changelog
+12 Oct. 2026: Updated for Patch 12.1.5, adjusted Aldrachi to recommended to align with mid Season 2 buffs.
+30 Aug. 2026: Switched recommendations in raid to Fel-Scarred due to current performance.
+Show more
+In The Same Category
+Havoc Demon Hunter Stats
+Havoc Demon Hunter Easy Mode
+Havoc Demon Hunter Macros
+Havoc Demon Hunter Rotation
+Havoc Demon Hunter Gear
+Havoc Demon Hunter Mythic+
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

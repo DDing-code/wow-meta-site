@@ -1,0 +1,628 @@
+[Skip to Main Content]
+와우
+본 서버
+[FOREVER]
+클래식
+불성
+판다
+···
+라이브
+PTR
+12.1.7
+PTR
+12.1.5
+로그인 하기:
+배틀넷
+이메일
+회원가입
+뉴스[HOUSING TOOLS]디스코드 웹훅데이터베이스도구가이드커뮤니티광고 없애기
+직업
+인기 주제
+한밤
+12.1.5 패치
+한밤 2 시즌
+순위 목록
+전문 기술들
+플레이어 하우징
+가이드
+신규 플레이어
+가이드 콘텐츠
+12.1.5 패치
+4.4/5  (40 표)
+Midnight Season 2
+Midnight Season 2
+Season 2 Mythic+
+The Venomous Abyss
+Midnight
+Cheat Sheet
+Talent Builds
+Talent Import Codes
+Raid Talents
+Mythic+ Talents
+Delve Talents
+Leveling
+Rotation
+BiS Gear
+Consumables
+Spec Basics
+Overview
+Basics
+Abilities
+Stat Priority
+UI & Macros
+Leveling
+가이드 정보
+변경 기록
+Best Assassination Rogue Talent Tree Builds - Midnight
+Whispyr (이)가 작성함
+업데이트됨: 2026/10/13
+Whispyr
+현재 트위치 오프라인
+팔로우
+This guide provides all of the best Assassination Rogue talent tree builds in the Midnight Season 2 for raids and Mythic+, including export links to import these builds directly into the game.
+
+Overview
+BiS Gear
+Rotation
+Talent Builds
+Consumables
+Stats
+Basics
+[Drop the Ads.]
+[Keep the Loot.]
+ASSASSINATION ROGUE TALENT IMPORT CODES
+Below, we've provided a list of import codes for the strongest Assassination Rogue builds for Midnight Season 2. Builds marked with the  icon are the Current Recommendations. Use the copy buttons to generate an import code.
+DEATHSTALKER
+Build	Import Code	Link
+ Raid Single Target	복사 Raid Single Target	Build
+ Raid	복사 Raid	Build
+ Mythic+	복사 Mythic+	Build
+ Delves  (Best)	복사 Delves	Build
+	
+FATEBOUND
+Build	Import Code	Link
+ Raid Single Target  (Best)	복사 Raid Single Target	Build
+ Raid  (Best)	복사 Raid	Build
+ Mythic+  (Best)	복사 Mythic+	Build
+ Delves	복사 Delves	Build
+Venomous Abyss Talents
+ Deathstalker finds itself being roughly 2-5% stronger than  Fatebound in all content.  Deathstalker is, however, much harder to play and can be frustrating to manage the associated debuff. Deathstalker also requires several extra buttons in Single Target as part of its rotation, adding even more complexity. Often, Deathstalker isn't worth the hassle and performs worse.
+
+An important note for Mythic+ is that top players will tend to gravitate towards  Deathstalker for the increased funnel damage from  하나 된 집중력 and the extra defensive layer, regardless of damage output. For most players who will not be running the highest-level keys, it is generally recommended to play  Fatebound instead, as its improved quality of life will often outweigh the benefits of  Deathstalker. This minor damage loss is rarely the reason keys aren't timed. If you are playing above the 1% title range cutoff, this added funnel might be necessary.
+
+It should also be noted that the added funnel/priority damage added by  Deathstalker is not an intrinsic gain by itself. Tank grouping, the route, group composition, and more heavily influence whether you can leverage  Deathstalker's strengths. For example, if a tank doesn't pull additional mobs onto a boss,  Deathstalker loses a lot of value. Keep this in mind for your dungeon runs, especially when pugging.
+BEST ASSASSINATION ROGUE RAID TALENT BUILD
+Raid builds for Assassination have a surprising amount of choice, but will generally funnel into one of two buckets: a general raid build that takes our AoE suite of talents, or a full single-target build that avoids them. Trying to go somewhere in-between is possible, but typically only serves to hinder the single-target potential of the spec while not providing a significant gain in AoE.
+
+With the variance in fights and the difficulties uniquely facing your own raid group, it is encouraged to experiment with your talents to better deal with those challenges.
+Fatebound
+Deathstalker
+ Fatebound is between 2-3% behind  Deathstalker across the raid, but it's easier, more forgiving of mistakes, and has better quality of life. For the vast majority of players,  Fatebound will simply perform better.
+
+The talents below are a sample mixture of Cleave and Single Target that should serve well enough for most situations. On a lot of the Mythic encounters in the raid, talents like  피의 향기 can be preferred and are discussed below.
+
+
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+More AoE Talents
+Sometimes  피의 향기 value can be incredibly impactful to a fight, and should be opted into. The breakpoint where this generally becomes worth it is between 2 and 3 targets. Something like the Lost Explorers encounter, where players can spread bleeds between two targets and an occasional third, is a perfect opportunity to take more AoE talents.
+
+I would also recommend taking  정확한 투척술 in any cleave situation. We are pressing Fan of Knives in 2-target situations, which means that we are getting immense value from Thrown Precision.  날아가는 단검 can be taken as a comfort pick for more spread targets, but can be swapped out interchangeably for  치명적인 혼합물 instead, which should do more damage. In some encounters,  갑작스러운 최후 can be worth considering in place of the last Apex Point. This is discussed further below.
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+2/2
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+Single Target Talents
+For pure single-target, you can drop every AoE talent in the top two gates. The bottom area is the only room for any swaps.  사각 지대 is technically viable here depending on your haste/crit values, but generally isn't worth taking over something like  시해의 보상 instead.
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+Sudden Demise
+ 갑작스러운 최후 is a potent talent on a lot of fights that offers more AoE and add damage. This is especially good on something like Vashnik or Twin Fangs where there are frequent add spawns that need quick swaps to kill them off. In order to take this, the easiest swap to make would be taking the AoE build and dropping the last Apex Talent,  불구대천, and using that point for Sudden Demise instead. This does come with a roughly 2% loss in single-target, so make sure that you are definitely getting value from Sudden Demise when testing it in your raids.
+BEST ASSASSINATION ROGUE MYTHIC+ TALENT BUILD
+With the changes to Assassination Rogue in Midnight, the "Bleed Build" of the past isn't a dedicated build anymore and is instead going to be referenced as a possible talent swap in the builds below.
+Fatebound
+Deathstalker
+Sometimes you just want to have fun in your weekly keys, and enemies are dying way too quickly. If you're trying out the spec, don't want to manage the mark on  Deathstalker, and want to bring Sudden Demise into the mix, this is the way to do it!
+
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+3/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+Apex Talent
+For higher-level keys where a little more single target/prio damage is wanted, players may opt to take  불구대천 instead of  갑작스러운 최후. Sudden Demise should be more overall damage and more AoE, but comes at the cost of having that up-front single-target damage from the Apex. For push keys, this is the recommended swap, and will serve as the base for the other alternatives below.
+No-Zoldyck Builds
+Some players have experimented with builds that do not take  졸디크의 비전 at all. Before discussing these swaps, it is important to be clear that these swaps are not recommended builds, and are included in this guide only to explain swaps that have been tested, could be viable, and you might encounter them in your research through data aggregation pages such as Archon or Murlok.
+
+This build has been popularized by some of the early push groups, the argument being that chain-pulled enemies are funnel for the next pack being pulled, where  졸디크의 비전 would be "wasting" damage or "padding". Simply put, this is mathematically incorrect. The damage that is being "lost" in this way is more than offset by the damage gained against the priority targets during the window itself. If targets must die,  졸디크의 비전 works on most every single target ability, including all poisons and  독살. Not taking Zoldyck also hurts Assassination's single target significantly and removes synergy from  갑작스러운 최후, which makes for an incredibly awkward blend of downsides across the board while attempting to capitalize on a very nebulous and cryptic upside.
+Avulsion
+Another attempted setup drops  갑작스러운 최후 for the apex, and then drops an additional one point of  피의 향기 to get  박리. This can technically be more single-target and is a decent idea, but it usually falls flat, as players tend to heavily underestimate the time spent fighting 2-5 targets. It is very easy to look at a route for a dungeon, find the big pull, and say "look, there's a bunch of targets, 2/2 Scent is bad". It's often very difficult to think about all the smaller enemies that die in those packs, often leaving the group in situations with 3-4 enemies left. In general, it's hard to say that this is worth considering, but it definitely isn't terrible.
+Dashing Scoundrel
+This setup drops  갑작스러운 최후 for the apex, and then drops an additional one point of  피의 향기 to get  늠름한 불한당. This is similar to the Avulsion setup discussed earlier, but might be a better variant in some situations. While  박리 serves as an all-around pick useful in all situations,  늠름한 불한당 is more targeted at single-target, and because it gives base energy regen, it does not have any scaling into AoE. If you find yourself in low-target situations or a lot of single-target (King's Rest is a good example), Dashing + 1/2 Scent might be a small improvement. Some people also prefer it simply for the extra energy it provides, which can matter in high keys that ask the rogue to press  교란 nearly on cooldown.
+BEST ASSASSINATION ROGUE DELVE TALENT BUILD
+For Delves, the Mythic+ build works great. We'll take Deathstalker again due to its increased defensive capabilities and frequent resets of  어둡고 어두운 밤. In Delves with solo content, the awkward gameplay of Deathstalker can be mostly ignored, making it much more bearable. If you want to be more chill in your runs,  Fatebound is totally fine as well.
+Deathstalker
+There is plenty of priority damage and funnel required in delves that can be exploited with  하나 된 집중력, an extra defensive layer from  미끼 상술, and frequent resets for  어둡고 어두운 밤.
+
+If you are having trouble tanking, or your tank Valeera is dying often to melee hits, consider swapping  위축의 독 for  마취 독.  핏빛 약병 can also be a solid choice to take for additional healing.
+
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+3/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+ASSASSINATION ROGUE LEVELING BUILDS
+If you're searching for advice on both the best talents to pick while leveling and the optimal order in which to take them, our leveling tips page has got you covered. There, you will find information about different leveling talent builds, the recommended order in which to pick them, and information about your spec's rotation and cooldowns.
+
+
+Assassination Rogue Leveling Tips
+Our Assassination Rogue guides are always updated with the latest information from in-game experience, simulations, and logs. Make sure to check our changelog for this page by clicking on View Changelog in the Quick Facts column or on the book icon at the top of the page. If you are interested in more in-depth Assassination Rogue guides for Midnight Season 2, make sure to browse the Navigation Bar at the top of the page, along with our list of Related Guides just beneath the Table of Contents.
+Whispyr
+Wowhead Class Guide Manager, Rogue Theorycrafter, Diablo 4 News Lead
+작성자 프로필
+Hiya! I'm Whispyr, Moderator and Theorycrafter in the Rogue Discord. I've been playing Assassination at a high level for many years now, offering people help with the spec, contributing to SimulationCraft, and doing what I can to educate on all things rogue!
+I also stream regularly on Twitch (whispyrttv) and make content on YouTube. Feel free to message me directly on Discord (@whispyr) for any one-on-one questions you may have.
+태그: PvE
+댓글
+영어 댓글들 (10)
+아직 댓글이 없습니다.
+댓글을 남기려면 로그인하거나, 계정이 없다면 회원가입을 해 주세요.
+기여
+댓글 달기
+댓글을 달 때에는 다음과 같은 사항들을 기억해 주십시오:
+주석은 한국어로만 작성해야하며 그렇지 않으면 삭제됩니다.
+어떻게 댓글을 써야할지 모르시겠나요? 저희의 댓글 가이드를 확인하세요!
+댓글을 제출하기 전에 쓴 댓글을 다시 한번 읽어보세요.
+더 빠른 답을 원하신다면 저희의 토론장에 대신 질문해 보세요.
+댓글 달기
+로그인이 되어있지 않습니다. 댓글을 남기려면 로그인하거나, 회원가입을 해 주세요.
+뉴스
+[Housing Tools]
+디스코드 웹훅
+데이터베이스
+도구
+가이드
+커뮤니티
+광고 없애기
+와우 가이드들
+직업 가이드들
+Delve 가이드들
+레벨링 가이드들
+신화 쐐기돌 가이드들
+전문 기술 가이드들
+공격대 가이드들
+특성 계산기
+목록들단계
+한밤
+MOP CLASSIC 가이드들
+직업 가이드들
+전문 기술 가이드들
+던전 가이드들
+공격대 가이드들
+퀘스트 가이드들
+평판 가이드들
+애완동물 대전 가이드들
+시나리오 가이드들
+도전 난이도 가이드들
+특성 계산기
+순위 목록
+와우 클래식 가이드들
+요구 조건 가이드
+칸에 들어갈 베스트 아이템 가이드들
+직업 가이드들
+던전 가이드들
+레벨링 가이드들
+전문 기술 가이드들
+PvP 가이드들
+퀘스트 가이드들
+공격대 가이드들
+평판 가이드들
+디아블로 IV 가이드들
+Lord of Hatred Expansion
+13 시즌
+엔드게임 목록단계
+목록단계s
+야만용사 빌드
+드루이드 빌드
+강령술사 빌드
+성기사 빌드
+도적 빌드
+원소술사 빌드
+혼령사 빌드
+상단
+도움이 필요하신가요?
+사용자 도구
+회사 소개
+광고
+Cookies Settings
+랜덤 페이지
+프리미엄
+개인정보 보호정책
+이용 약관
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings
+Reject All
+Accept All Cookies

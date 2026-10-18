@@ -1,0 +1,299 @@
+https://www.icy-veins.com/wow/demonology-warlock-pve-dps-spec-builds-talents
+HTTP 200 · 2026-10-18T16:04:41.496Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Warlock
+/
+Demonology Warlock
+/
+Talents
+12.1.5
+Demonology Warlock DPS Spec, Builds, and Talents — 12.1.5
+Warlock
+Demonology
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Motoko
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Demonology Warlock in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Demonology Warlock
+2. Omnium Folio
+3. Apex Talent: Dominion of Argus
+4. Hero Talents
+5. PvP Talents (War Mode)
+Best Midnight Talents for Demonology Warlock
+
+For Season 2, Demonology talent selections remain mostly unchanged, with  Soul Harvester becoming the slightly better choice in pure single-target. Whilst there are still some opportunities for personal preferences and situational adjustments, below are our current recommendations:
+
+Single-Target—  Soul Harvester is tuned around 3% higher than  Diabolist in pure single-target, but suffers from a substantial lack of cleave in comparison.
+AoE—  Diabolist is the better choice at any key level. The Mythic+ builds offers comparable single-target to  Soul Harvester, whilst retaining superior AoE.
+
+Quick Start Import Codes:
+
+Demonology Single-Target - Soul Harvester
+Copy
+Demonology AoE - Diabolist
+Copy
+Demonology Delves - Soul Harvester
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Diabolist
+Single-Target
+Mythic+
+RECOMMENDED
+Soul Harvester
+Single-Target
+RECOMMENDED
+Mythic+
+Delves
+Single-Target Talents
+
+Demonology single-target revolves around maximising  Dominion of Argus windows in order to spawn as many demons as possible. Currently,  Diabolist offers much more free cleave at the expense of 3% worse performance in single-target, compared to  Soul Harvester.
+
+Warlock
+
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Diabolist
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Demonology
+
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have it's own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+ADVERTISEMENT
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+Introduced in Patch 12.0.7, Omnium Folio is a new source of player power that unlocks over the course of few weeks and offers a choice of small but flexible bonuses that can be swapped at any time to match the desired content. The selection of Runes can be tailored to offer throughput, or pivot to survivability and utility.
+
+The following list is the recommended guideline, point by point:
+
+ Rune of Unleashed Fire
+ Rune of Self-Mending or  Rune of Void-Tainted Shell
+ Rune of Lingering
+ Rune of Critical Power
+ Rune of Residual Energy and  Rune of Overload offer similar output
+FAQ
+Which Secondary Stat Rune is Best?
+Apex Talent:  Dominion of Argus
+
+Available during the leveling in Midnight, these talents are separated from the rest of the spec tree and require subsequent points investment in order to unlock the later ranks.
+
+ADVERTISEMENT
+ Dominion of Argus
+ Dominion of Argus
+ Dominion of Argus
+
+These talents are strong enough to warrant building the rotation around them, with a shift from a Tyrant setup to a post Tyrant one, aimed at maximising the amount of  Hand of Gul'dan casts and thus additional summons.
+
+Hero Talents
+
+Available at level 71 Hero talents are mutually exclusive trees you can choose to slightly alter gameplay and visuals. Demonology Warlocks can choose between  Diabolist and  Soul Harvester.
+
+ Diabolist
+
+ Diabolist is themed around Demons and the cycle of Overlord, Mother of Chaos and Pit Lord summoned with  Diabolic Ritual. The gameplay as a result is of predictable cadence with a higher degree of burst potential, tied with the Hero Tree summons and spell empowerments.
+
+ADVERTISEMENT
+
+In terms of utility  Soul-Etched Circles gives snare and root immunity on  Demonic Circle: Teleport on top of 50% movement speed but on the other hand  Annihilan's Bellow coupled with  Oppressive Darkness enables 25s cooldown  Howl of Terror that can affect up to 10 targets.
+
+ Soul Harvester
+
+ Soul Harvester identity lies in spending shards very aggressively, in order to benefit from the various DoT effects triggered, and generating more Demonic Core procs through  Sataiel's Volition.
+
+As for utility  Gorebound Fortitude guarantees stronger Healthstones without the need of Soulburn shards,  Friends In Dark Places increase the active mitigation, and  Gorefiend's Resolve brings  Soulstone on par with alternative combat resurrection spells.
+
+ADVERTISEMENT
+PvP Talents (War Mode)
+
+Under our Talents section, there is the option to enter "War Mode." Enabling War Mode provides the following benefits:
+
+PvP talents enabled in the outdoor world
+10% increase in World Quest rewards at maximum level
+10% more experience gained while leveling
+Earn Conquest Points, which can reward gear every week
+
+With the benefits of enabling War Mode for leveling and PvE content, it is recommended you enable the feature. In most situations, this will allow for the maximum returns despite the risks. You will make yourself available for open-world PvP and the possibility to be "ganked" while leveling or doing World Quests exists.
+
+Best War Mode Talents
+
+In this section, we will rank the PvP talents best for leveling and doing solo / small group PvE content. Below is a ranking of both General PvP Talents and Demonology Warlock-specific PvE talents.
+
+ADVERTISEMENT
+ Bonds of Fel allows to burst targets by dragging them away from the marked location.
+ Gateway Mastery increases your gateway's range by 20 yards and reduces the duration of the debuff placed on players using it by 15 seconds, making it a good choice when increased mobility is needed.
+ Nether Ward summons a shield lasting 3 seconds and reflecting back all harmful spells targeted at you.
+ Call Observer is only relevant when dealing with a lot of casting mobs.
+ Call Fel Lord guards a location for 15 seconds; any enemies that come within range take up to 5% of maximum Health as damage. This can be used very strategically in certain situations and is capable of dealing some nice burst damage.
+ Call Observer guards a location for 20 seconds; any enemies that cast spells in the radius will take up to 5% of maximum Health as damage. This has a lot more limited use but can have absurd value in specific situations.
+ Master Summoner makes  Call Dreadstalkers an instant cast. Since we are often using  Demonic Calling, the quality of life of this talent is diminished. It can be used if you prefer the consistency, but there are generally better choices.
+Motoko
+Guide Author
+Follow Motoko
+
+This guide has been written by Motoko, Warlock main since The Burning Crusade, co-admin in the Warlock Discord, and theorycrafter and contributor for LockOneStopShop.
+
+Changelog
+12 Oct. 2026: Reviewed for Patch 12.1.5.
+11 Aug. 2026: Updated Talent choices.
+Show more
+In The Same Category
+Destruction Warlock Leveling
+Affliction Warlock Easy Mode
+Demonology Warlock Guide
+Destruction Warlock Talents
+Affliction Warlock Enchants
+Affliction Warlock Leveling
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

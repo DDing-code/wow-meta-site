@@ -1,0 +1,297 @@
+https://www.icy-veins.com/wow/holy-paladin-pve-healing-spec-builds-talents
+HTTP 200 · 2026-10-18T15:44:59.539Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Paladin
+/
+Holy Paladin
+/
+Talents
+12.1.5
+Holy Paladin Healing Spec, Builds, and Talents — 12.1.5
+Paladin
+Holy
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Mytholxgy
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Holy Paladin in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Holy Paladin
+2. Omnium Folio
+3. Apex Talent: Beacon of the Savior
+4. Hero Talents
+5. PvP Talents (War Mode)
+Best Midnight Talents for Holy Paladin
+
+For Season 2, after receiving numerous buffs through the start of Midnight, Holy Paladin has one playstyle standing above the rest for raiding, while in Mythic+ you have a more competitive choice.
+
+Raiding -  Herald of the Sun is the go to choice for raiding largely for the passive boosts it provides that amplify  Light of Dawn,  Eternal Flame, and  Holy Shock. Unfortunately  Lightsmith is not competitive in raiding and shouldn't be played outside of wanting to have fun.
+Mythic+ - In Mythic+ you have a much more competitive choice with  Lightsmith offering a bit higher damage but lacking the reliable healing that  Herald of the Sun can provide. For that reason, we advise players to play  Herald of the Sun builds.
+
+The choice for raiding is fairly straightforward, but in Mythic+ with both Hero Talents being competitive we will provide builds for both in order to allow you to experiment and find out what clicks. Again, a general rule is that  Herald of the Sun will provide better healing while  Lightsmith can offer more damage.
+
+Quick Start Import Codes:
+
+ADVERTISEMENT
+Herald of the Sun Raiding
+Copy
+Herald of the Sun Mythic+
+Copy
+Lightsmith Mythic+
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Herald of the Sun
+Raiding - Standard
+RECOMMENDED
+Mythic+
+RECOMMENDED
+Lightsmith
+Raiding - Avenging Crusader Build
+Mythic+/Delves
+ Herald of the Sun Standard Build
+
+This is your standard Holy Paladin build. You will primarily be rotating between casting  Holy Shock and  Flash of Light to build Holy Power before spending with  Light of Dawn or  Eternal Flame. Because Flash of Light also generates a Holy Power and does not have a cooldown, you will often find yourself using it heavily to help continue the building and spending cycle. Many talents are set in stone but you could consider changing between  Beacon of Faith and  Beacon of Virtue depending on the fight and your playstyle. When playing  Beacon of Faith, you will want to change  Pillars of Light to  Rising Sunlight. Additionally, you may want to consider dropping points in  Glistening Radiance and  Saved by the Light to  Divine Favor and  Protection of Tyr.
+
+FAQ
+Should I Play Liberation?
+
+Paladin
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Herald Of The Sun
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Holy
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have it's own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+The Omnium Folio is a new system introduced in Midnight's Patch 12.0.7, and offers some minor performance-enhancing customization options after a multi-week quest series. Some of these bonuses affect your damage output, while others are more defensive in nature.
+
+Below we will recommend you with the best setup, but most bonuses are comparable in power and you can change them around as you wish. Specifically,  Rune of Masterful Cunning can be changed out for any other secondary bonus you desire.
+
+ADVERTISEMENT
+ Rune of Unleashed Fire
+ Rune of Self-Mending
+ Rune of Lingering
+ Rune of Masterful Cunning
+ Rune of Overload
+Apex Talent:  Beacon of the Savior
+
+In Midnight, you will gain access to  Beacon of the Savior, the new Apex talent. This ability has 3 separate ranks that all increase its power. Below we will break down what each individual rank does:
+
+Rank 1 — While in combat, you will gain an additional beacon called  Beacon of the Savior. This beacon will automatically be placed on the lowest health ally and will transfer to the new lowest health ally if it heals a player above 50% or another ally drops below 50%.
+Rank 2 — Increases the amount of healing transferred by  Beacon of the Savior and increases the amount of healing you do to the target with Beacon of the Savior.
+Rank 3 — Every 8 seconds or when  Beacon of the Savior transfers, an absorb shield is placed on the target that also provides damage reduction until the shield is broken.
+
+The most important aspect of  Beacon of the Savior is that it also benefits from any talents that amplify  Beacon of Light. This means that  Commanding Light,  Saved by the Light,  Light's Protection and even  Beacon of the Lightbringer all buff  Beacon of the Savior. This effectively means that you have an extra Beacon at all times. Additionally, due Rank 2 of Beacon of the Savior also increasing the healing you do to Savior targets, it is significantly less punishing than normal to heal directly into your Beacon of the Savior. At some times it can even be beneficial compared to standard beacons where you tend to avoid healing into them.
+
+Hero Talents
+
+Holy Paladin gets to pick between two distinct Hero Talent choices:  Herald of the Sun and  Lightsmith.
+
+ADVERTISEMENT
+ Herald of the Sun
+
+ Herald of the Sun tends to be the stronger choice for both raiding and Mythic+. While it may offer slightly less damage than the alternative choice, in increases the healing output of  Avenging Wrath thanks to  Sun's Avatar. Additionally, you gain access to  Dawnlight which helps to add throughput during your main cooldown, as well as outside of it.
+
+ Lightsmith
+
+ Lightsmith emphasizes the use of  Judgment due to  Hammer and Anvil. While this isn't controllable healing, it is still extremely powerful. This has very high synergy with  Avenging Crusader builds, and you will often be utilizing this Hero Talent when playing Avenging Crusader. While Lightsmith may be weaker at the moment, it can provide a nice DPS increase for players who are looking to deal as much damage as possible.
+
+PvP Talents (War Mode)
+
+War Mode offers several benefits for you in the open world.
+
+ADVERTISEMENT
+PvP talents enabled in the outdoor world.
+At least 10% increase in World Quest rewards at maximum level.
+10% more experience gained while leveling.
+Earn Conquest Points, which can reward gear every week.
+
+With the benefits of enabling War Mode for leveling and PvE content, it is recommended to enable the feature to maximize your leveling and rewards at maximum level. However, you will be available for open-world PvP, and the possibility of being "ganked" while leveling or doing World Quests exists.
+
+In this section, we will rank the PvP talents best for leveling and doing solo / small group PvE content. Below is a ranking of all PvP Talents for Holy Paladin
+
+ Blessed Hands gives you an extra charge of  Blessing of Freedom and  Blessing of Protection, making it extremely powerful.
+ Divine Vision increases the range of your Aura while also reducing the cooldown of  Aura Mastery, making it very helpful in increasing survivability.
+ Searing Glare can be quite difficult to use, but also can boost your own survivability when timed well.
+
+You can consider the other options essentially down to preference.
+
+ADVERTISEMENT
+Mytholxgy
+Guide Author
+Follow Mytholxgy
+
+This guide has been written by Mytholxgy, a former RWF progression raider and analyst for Pieces and Liquid. He is also a Templar in the Paladin Class Discord, as well as one of the class experts in the Evoker Discord. You can reach him on Twitter and watch him stream occasionally on Twitch.
+
+Changelog
+12 Oct. 2026: Lightsmith Mythic+ build updated.
+10 Aug. 2026: Updated for Patch 12.1.
+Show more
+In The Same Category
+Holy Paladin Macros
+Holy Paladin Guide
+Holy Paladin Gear
+Holy Paladin Easy Mode
+Holy Paladin Stats
+Holy Paladin Enchants
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

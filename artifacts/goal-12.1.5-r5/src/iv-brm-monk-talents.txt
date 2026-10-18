@@ -1,0 +1,326 @@
+https://www.icy-veins.com/wow/brewmaster-monk-pve-tank-spec-builds-talents
+HTTP 200 · 2026-10-18T15:54:00.423Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Monk
+/
+Brewmaster Monk
+/
+Talents
+12.1.5
+Brewmaster Monk Tank Spec, Builds, and Talents — 12.1.5
+Monk
+Brewmaster
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Sinzhu
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Brewmaster Monk in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Brewmaster Monk
+2. Omnium Folio
+3. Apex Talent: Bring Me Another
+4. Choice Talent Cases
+5. Hero Talents
+6. PvP Talents (War Mode)
+Best Midnight Talents for Brewmaster Monk
+
+Brewmaster Monk is a specialization that offers a fairly firm foundational set of talents across all builds. You will rarely be picking up or dropping core components of your overall rotation, instead using your talent points to flexibly adjust your available cooldowns or defensive needs to match the content being run. Make no mistake, there are still plenty of points available to move around; you just get the benefit of your gameplay staying fairly consistent no matter what it is you are doing.
+
+With that in mind, there are a few starting builds you can begin at for the main activities of Midnight, modifying a few talents here or there as needed. These are the following:
+
+Raiding (Defensive) — In raid environments, you will generally want to be more defensive and optimize for single-target damage while opting out of certain utilities. The  Master of Harmony Hero Talents are best for this, though regular add spawns favor a  Shado-Pan Brewmaster seeking to "pad".
+Mythic+ (Standard) — Mythic+ dungeons are where you will need to be the most flexible with your talents, switching your damage focus between AoE and priority-target based on the group or dungeon, along with your defensive choices. Here, the  Shado-Pan talents excel, though  Master of Harmony is just as effective and gains value at higher key levels. Ultimately, you have a lot of personal preference.
+Delves/Open World — The standard content of Midnight rarely requires a tank to focus much on their defense, allowing you to opt into more damage. Due to this, the  Master of Harmony Hero Talents are most useful for their single-target focus.
+
+Brewmasters are somewhat rare among specializations in that their Hero Talents tend to be fairly interchangeable across all content. Both are completely passive and have plenty of helpful effects for both damage and defense. What really separates them is in the way you engage with each.  Shado-Pan Brewmasters emphasize dealing damage in bursts revolving around the  Invoke Niuzao, the Black Ox cooldown while gaining lasting damage reduction after dodging attacks. A  Master of Harmony Brewmaster, meanwhile, will deal more consistent amounts of damage that are focused on a single foe while buffing the normal defensive abilities of  Purifying Brew and  Celestial Infusion/Brew in your rotation. You are free to use whichever you enjoy more, knowing that both are viable and have seen play in the toughest content available!
+
+ADVERTISEMENT
+
+Quick Start Import Codes:
+
+Brewmaster Raiding (Defensive) - Master of Harmony
+Copy
+Brewmaster Mythic+ (Standard) - Shado Pan
+Copy
+Brewmaster Delves/Open World - Master of Harmony
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Master of Harmony
+Defensive Raid Build
+RECOMMENDED
+Mythic+
+HIGH-KEYS
+Delves/Open World
+Shado-Pan
+Offensive Raid Build
+ADVANCED
+Mythic+
+WEEKLY-KEYS
+Legacy Content
+Default/Defensive Raiding Talents
+
+The following build is focused on your performance within raid encounters. As such, it does not opt into utility that is rarely seen within a raid or can be covered by another player instead. Although it opts into some additional defensive talents, it also aims for a slightly more simple rotation. Depending on an encounter's needs, you may still need to switch between  Celestial Infusion and  Celestial Brew or consider dropping  Niuzao's Resolve. If you would like to be even more defensive, remove  Empty the Cellar and  Dragonfire Brew for  High Tolerance,  Elixir of Determination, or even  Ox Stance, though be warned that this will come with some fairly significant damage losses.
+
+As for Hero Talents, the  Master of Harmony tree's second charge of  Celestial Infusion and strong single-target performance make it well-tailored to raid environments in particular. Plus, your  Purifying Brew will also purify more  Stagger with each cast, and  Overwhelming Force still enables extra cleave damage in suitable encounters.
+
+Monk
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+
+Master Of Harmony
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Brewmaster
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have its own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+A new feature introduced in Patch 12.0.7 and around for the remainder of Midnight, the Omnium Folio acts as a passive source of player power by harnessing Runes representing the various schools of magic. Over the course of a short questline, more Runes become available to select by gathering  Mote of Omnial Inquiry, impacting both your damage and healing.
+
+ADVERTISEMENT
+
+While you are able to switch between your unlocked Runes at any time while out of combat, the following are our general recommendations for Brewmaster Monks.
+
+ Omnium Folio Runes
+ Rune of Unleashed Fire
+ Rune of Self-Mending
+ Rune of Lingering
+ Rune of the Versatile Warrior
+ Rune of Overload
+
+Due to the relatively small contribution these provide to your character's overall strength, feel free to experiment with a setup that feels right for your needs; in particular, your fourth rune will likely shift between  Rune of Critical Power,  Rune of Masterful Cunning, or  Rune of the Versatile Warrior depending on if Critical Strike, Mastery, or Versatility is your lowest secondary stat.
+
+Apex Talent:  Bring Me Another
+
+One of the key new developments for all specializations in Midnight is the introduction of Apex Talents. These are new, isolated talent nodes accessible from the specialization tree beginning at Level 81, and you can spend up to four points on them to gain a series of effects with increasing strength. However, you must spend all three earlier points if you want the effect of the fourth; it is sequential. Alternatively, you can make use of these four additional points elsewhere in your specialization tree for greater build flexibility. The choice is yours!
+
+ADVERTISEMENT
+
+The Apex Talent for Brewmaster Monks is called Bring Me Another, and focuses on empowering your  Keg Smash spell when you make use of your "Brew" abilities. As you continue to invest points in it, you will also unlock substantial Energy savings, improved Physical damage, and even a consistent source of extra healing for both you and up to two nearby allies! These four versions of the talent are below.
+
+ Bring Me Another — Using an ability with Brew in its name has a chance to generate an Empty Barrel (max 1). When you next cast  Keg Smash, your Empty Barrel will also be thrown at your target to deal bonus damage and can ricochet to up to three additional enemies. These bounces will not occur in single-target.
+ Bring Me Another — Increase all Physical damage dealt by 10/20%. In addition, the cooldown of  Keg Smash is reset and the Energy cost of its next cast reduced by 50/100% whenever you generate an Empty Barrel.
+ Bring Me Another — Whenever you cast  Fortifying Brew or  Celestial Brew/ Celestial Infusion, you and up to two nearby allies gain a  Refreshing Drink, along with an Empty Barrel for yourself. Upon taking damage, Refreshing Drink is consumed to trigger a substantial heal-over-time effect. The damage of Empty Barrels is also increased by 100%.
+
+For the most part, Bring Me Another is entirely passive in how it is used, but it also is a key element that ties your entire rotation together as a Brewmaster. In particular, the cooldown and Energy cost reductions to  Keg Smash add up to a substantial amount of casts over time. Where a Brewmaster may have opted into a talent like  Rushing Jade Wind before to fill in the "empty" space of the rotation rather than waiting around or spending extra Energy, these bonus casts from the middle points of  Bring Me Another can now fill the same role while also dealing a lot more damage! Finally, the guaranteed Empty Barrels from  Bring Me Another's final point means that you will fully invest into this talent at all times, especially when the only alternative talents in the specialization tree are (mostly) weaker defensive ones.
+
+Choice Talent Cases
+
+Brewmasters have access to more choice nodes among their talent trees than many specializations. While most of them have an ultimately small effect on your total damage or defensive breakdown, changing multiple at once can create large swings in the Brewmaster playstyle despite mostly being passive in nature. Some of the most important choices are broken down below, and their individual use-cases.
+
+ Special Delivery or  Rushing Jade Wind
+ Celestial Brew or  Celestial Infusion
+ Dragonfire Brew or  Charred Passions
+When to Use Special Delivery or Rushing Jade Wind
+
+Despite being a very early choice node in the Brewmaster specialization tree, your decision between  Special Delivery and  Rushing Jade Wind will make a large difference in the pacing and feel of your rotation. Indeed, this node represents a very real choice, where one option is sometimes better than the other depending on how well you can use either of them and how many targets are being fought.
+
+ Special Delivery acts as a "simpler" option between these two talents, being a passive damage increase that also offers a hefty 50% snare to targets that are hit by all of the falling kegs. It is also somewhat unique among AoE damage sources in that it does not deal reduced damage until hitting a massive 20 targets or more. The main thing to bear in mind when using this talent, however, is that you may have more "empty" moments in the rotation where you will need to not press any abilities while waiting to restore Energy. In addition, there may be times when a crowd-controlled enemy is accidentally freed by a stray falling keg.
+
+ Rushing Jade Wind, meanwhile, is the much more "active" option of the two talents, requiring you to press its button very frequently in the rotation. However, in exchange, it provides a useful amount of passive damage and Threat, particularly in the opening moments of a pull; note that compared to  Special Delivery, this talent instead begins dealing reduced damage beyond 5 targets. It is also uniquely powerful with effects that trigger from dealing damage, as each of its hits may count as activators.
+
+Overall, this makes the choice between  Special Delivery and  Rushing Jade Wind rather complicated. If you are having a hard time managing your rotation or just want to deal damage without any fuss, then  Special Delivery will usually be better, though you will have to be more careful about managing your Energy. On the other hand, the continuous AoE threat of Rushing Jade Wind can still be an advantage, especially in open-world content or areas where you are concerned about Threat. You will not be able to activate it very often with all of the free Empty Barrels created by  Bring Me Another. Still, feel free to experiment and use which of the two you prefer, based on your own comfort level!
+
+Hero Talents
+
+In Midnight, Brewmaster Monks also have access to two unique Hero Talent trees to supplement gameplay with unique themes that let you really stand out from others. For Brewmasters, these Hero Talent trees are the  Shado-Pan, which is all about unleashing unrelenting bursts of damage on your foes, and becoming a  Master of Harmony by balancing damage and defense. Both are great for embracing the fantasy of playing a Monk, but you also need a reason to consider each of them.
+
+ADVERTISEMENT
+ Shado-Pan
+
+The  Shado-Pan Hero Talents excel at providing burst AoE damage and passive defense. Whether this is through the numerous  Flurry Strikes triggered with every cast of  Keg Smash (dealing further AoE damage with  Shado Over the Battlefield), or empowering  Invoke Niuzao, the Black Ox with  Wisdom of the Wall, there is plenty of power available. Tying it all together, a Brewmaster even gains passive damage resistance when dodging due to  Predictive Training. Due to this playstyle, this tree is often tailored to the larger pulls of Mythic+, though it can still remain viable in smaller target counts, too.
+
+ Master of Harmony
+
+A  Master of Harmony Brewmaster still has access to some bonus AoE damage through  Overwhelming Force, but mainly plays around generating vitality from all of their damage and healing. This is then spent when triggering  Celestial Brew or  Celestial Infusion to deal bonus damage for a short time. In addition, these Hero Talents offer a second charge of these abilities while also increasing the strength of  Purifying Brew! Finally, with the help of  Meditative Focus and  Harmonic Surge, this set of Hero Talents pushes a Brewmaster's single-target damage to its highest level, making it an excellent overall choice for progression raiding.
+
+PvP Talents (War Mode)
+
+PvP talents are PvP-centric options that activate out in the world when you enable War Mode in the talent pane or when participating in instanced PvP content. If you are comfortable with being flagged for PvP, some offer great benefits to questing.
+
+ADVERTISEMENT
+
+You are permitted to choose three talents from the PvP Talents list. Here is a recommendation of those most helpful for questing.
+
+ Double Barrel is an active ability that is off the global cooldown. When used, it increases the damage of your next  Keg Smash by 50% and stuns enemies for 3 seconds. Note that its cooldown does not begin until this buff has been consumed. This is great for larger packs but requires a keybind, which is not useful in Raids and Dungeons. Fortunately, as it is off the global cooldown, it can be cast at the same time as Keg Smash with the help of a macro if you want to passively benefit from it.
+ Hot Trub causes your  Purifying Brew to also deal split damage to enemies around you based on 20% of how much damage you have Purified. While this is often a small amount of damage due to low  Stagger amounts in world content, it is entirely passive and does not require any special planning.
+ Microbrew allows you to use  Fortifying Brew more frequently without reducing its strength as your most powerful defensive cooldown.
+ Eerie Fermentation, while not offering a strong benefit most of the time, will allow you to gain increased movement speed and a little extra defense against magic attacks while questing. Magic damage from players or NPCs is normally a little more dangerous to a Brewmaster.
+ Dematerialize acts as a form of stun protection, providing you with temporary damage reduction while stunned. However, its amount decreases with every second you are stunned, completely depleting after only three seconds.
+ Admonishment is also worth mentioning. It causes your  Provoke to increase the damage a target takes by 3%. However, this amount can increase all the way to 15% bonus damage for every unique player that attacks the target. While this is not very useful while completely solo, if you are taking on elites with other people who happen to be in the zone or questing in a group, it can be worth taking. Be careful using this on world Bosses — they will still attack you when you Provoke them!
+
+For most situations, a solid combo is  Double Barrel,  Eerie Fermentation, and  Microbrew, as these provide largely-passive benefits while increasing your damage-dealing and defensive potential.
+
+Sinzhu
+Guide Author
+Follow Sinzhu
+
+This guide has been written by Sinzhu, a Mythic raider on US-Kiljaeden who has passionately played Brewmaster for the past ten years. He also contributes to the Peak of Serenity and is a Moderator of the Monk Class Discord.
+
+Changelog
+12 Oct. 2026: Reviewed for Patch 12.1.5.
+10 Aug. 2026: Updated standard raid, weekly Mythic+, and high-key Mythic+ builds for Patch 12.1.
+Show more
+In The Same Category
+Brewmaster Monk Enchants
+Brewmaster Monk Easy Mode
+Brewmaster Monk Rotation
+Brewmaster Monk Macros
+Brewmaster Monk Spell List and Glossary
+Brewmaster Monk Mythic+
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

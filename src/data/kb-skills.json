@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-18T15:22:52.454Z",
+    "generatedAt": "2026-10-18T16:14:07.194Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
@@ -13431,11 +13431,11 @@
       "icon": "spell_shaman_lavaburst",
       "iconName": "spell_shaman_lavaburst",
       "school": "",
-      "cooldown": "충전 기반",
-      "castTime": "시전",
-      "resourceCost": "마나",
+      "cooldown": "8초",
+      "castTime": "2초",
+      "resourceCost": "기본 마나 0.5%",
       "range": "40야드",
-      "description": "# 용암 폭발 (Lava Burst)",
+      "description": "대상에게 용해된 용암을 날려 (주문력의 181%)의 화염 피해를 입힙니다. 대상에게 화염 충격이 걸려 있으면 용암 폭발은 언제나 극대화 효과를 발휘하며, 치명타 및 극대화율에 따라 추가 피해를 입힙니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -13457,7 +13457,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.053,
+        "linkDensity": 0.03,
         "hasWikilinks": true
       },
       "source": {
@@ -24502,7 +24502,7 @@
       "quality": {
         "wikilinkCount": 10,
         "synergyCount": 4,
-        "linkDensity": 0.037,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -26127,9 +26127,9 @@
       "school": "",
       "cooldown": "없음",
       "castTime": "즉시",
-      "resourceCost": "마나",
+      "resourceCost": "기본 마나 0.3%",
       "range": "40야드",
-      "description": "# 화염 충격 (Flame Shock)",
+      "description": "대상을 불로 그을려 (주문력의 22.425%)의 화산 피해를 입히고, 추가로 18초에 걸쳐 총 (주문력의 120.06%)의 화산 피해를 입힙니다.  최대 6명의 대상에게 화염 충격을 부여할 수 있습니다.",
       "category": "ability",
       "tags": [],
       "patch": "12.1",
@@ -26153,7 +26153,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.062,
+        "linkDensity": 0.032,
         "hasWikilinks": true
       },
       "source": {
@@ -42812,10 +42812,10 @@
       "castTime": "즉시",
       "resourceCost": "기력 30 + 연계 점수",
       "range": "근접",
-      "description": "기력 30과 연계 점수를 사용하는 마무리 일격이다. 자신과 복제된 그림자가 대상 주변 적에게 총 세 부분의 물리 공격을 가하며 주 대상보다 주변 대상의 피해가 낮다. 기본 재사용 대기시간은 25초이며 가속으로 줄어든다. 툴팁의 기본 1~5점 표기를 특성으로 늘어난 최대 점수의 상한으로 오해하지 않는다.",
+      "description": "마무리 일격을 가하며 자신의 복제된 그림자를 만들어냅니다. 자신과 복제된 그림자는 대상 주위에 있는 모든 적에게 관통 공격으로 물리 피해를 입힙니다. 주 대상이 가장 큰 피해를 입고, 다른 대상들에게는 피해가 감소합니다.   연계 점수 1점: 총 [(전투력의 28.08%) * 3]의 피해   연계 점수 2점: 총 [(전투력의 28.08%) * 2 * 3]의 피해   연계 점수 3점: 총 [(전투력의 28.08%) * 3 * 3]의 피해   연계 점수 4점: 총 [(전투력의 28.08%) * 4 * 3]의 피해   연계 점수 5점: 총 [(전투력의 28.08%) * 5 * 3]의 피해 [   연계 점수 6점: 총 [(전투력의 28.08%) * 6 * 3]의 피해] [   연계 점수 7점: 총 [(전투력의 28.08%) * 7 * 3]의 피해]",
       "category": "ability",
       "tags": [],
-      "patch": "12.1",
+      "patch": "12.1.5",
       "created": "",
       "updated": "",
       "nonAtomic": false,
@@ -42837,7 +42837,7 @@
       "quality": {
         "wikilinkCount": 3,
         "synergyCount": 2,
-        "linkDensity": 0.025,
+        "linkDensity": 0.011,
         "hasWikilinks": true
       },
       "source": {
@@ -90445,7 +90445,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 2,
-        "linkDensity": 0.029,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {

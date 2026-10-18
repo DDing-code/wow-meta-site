@@ -220,7 +220,7 @@ export const GUIDE_PUBLICATION_PATCH = '12.1.5';
 export function getGuidePublication(id, manuscript) {
   const update = guideUpdates.find(entry => entry.guideIds.includes(id));
   const patch = manuscript?.patch || '확인 중';
-  const status = (manuscript?.status || '').replace(/^12.1(.5)?s*/, '');
+  const status = (manuscript?.status || '').replace(/^12\.1(\.5)?\s*/, '');
   const partial = Boolean(manuscript) && (patch !== GUIDE_PUBLICATION_PATCH || Boolean(update?.partial));
   return {
     partial,

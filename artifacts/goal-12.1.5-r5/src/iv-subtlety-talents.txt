@@ -1,0 +1,303 @@
+https://www.icy-veins.com/wow/subtlety-rogue-pve-dps-spec-builds-talents
+HTTP 200 · 2026-10-18T15:54:09.654Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Rogue
+/
+Subtlety Rogue
+/
+Talents
+12.1.5
+Subtlety Rogue DPS Spec, Builds, and Talents — 12.1.5
+Rogue
+Subtlety
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Eleem
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Subtlety Rogue in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Subtlety Rogue
+2. Omnium Folio
+3. Apex Talent: Ancient Arts
+4. Hero Talents for Subtlety Rogue
+5. PvP Talents (War Mode)
+Best Midnight Talents for Subtlety Rogue
+
+For Season 2, Subtlety has a bit more flexibility and balance again when it comes to choosing its Hero Talent tree. Our current recommendations are as follows:
+
+Single-Target -  Deathstalker provides the strongest single-target damage.
+AoE - Both hero talents are viable:  Trickster provides more burst, while  Deathstalker provides better single-target damage, priority-target damage, and better sustained AoE DPS, which is often more desirable in high keys.
+
+If you are not yet familiar with how Subtlety Rogue plays, then we recommend starting out with the  Trickster talent tree below for AoE/Mythic+, as there are more intricacies to playing  Deathstalker.
+
+Quick Start Import Codes:
+
+ADVERTISEMENT
+Single-Target - Deathstalker
+Copy
+Weekly Mythic+ - Trickster
+Copy
+High-key Mythic+ - Deathstalker
+Copy
+Delves - Trickster
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Deathstalker
+Raid/Single-Target
+RECOMMENDED
+Mythic+/AoE
+HIGH-KEYS
+Trickster
+Raid/Single-Target
+Mythic+/AoE
+WEEKLY-KEYS
+Delves
+RECOMMENDED
+ Deathstalker Raid Build
+
+ Deathstalker deals very high damage in single-target situations, as well as strong priority-target damage in AoE. If you have not yet acquired the  Rogue Subtlety 12.1 Class Set 4pc set bonus de-select  Lingering Shadow and put that point in  Dark Shadow.
+
+Rogue
+
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Deathstalker
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Subtlety
+
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have it's own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+The Omnium Folio is a system introduced in Midnight's Patch 12.0.7, it provides some very small performance-enhancing options. A couple of these bonuses increase throughput, while others are more defensively oriented.
+
+We recommend you pick the following bonuses:
+
+ADVERTISEMENT
+Node 1: Rune of Unleashed Fire
+Node 2: Rune of Void-Tainted Shell
+Node 3: Rune of Lingering
+Node 4: Rune of Masterful Cunning
+Node 5: Rune of Residual Energy
+Apex Talent:  Ancient Arts
+
+These are the new talent added in Midnight, they are located below the specialization talent tree and are immensely powerful. All four of the talents focus on shadowy clones that spawn when you interact with  Shadow Techniques in different ways. While the tooltips might look complicated, especially if you are not very familiar with how  Shadow Techniques works (you can read an in-depth explanation of how those work on the Rotation page), but in practice Ancient Arts are fairly straightforward.
+
+ Ancient Arts — Whenever something expends (consumes/uses) your  Shadow Techniques stacks, there is a chance that a shadow clone will spawn and deal additional damage based on what spell expended those stacks.
+ Ancient Arts — Passively increases all shadow damage dealt, and also makes it so when a shadow clone spawns from  Ancient Arts or  Secret Technique you gain a stack of  Shadow Techniques.
+ Ancient Arts — If you have 5 or more stacks of  Shadow Techniques left after casting a combo point generator you will activate a buff. This buff makes your next combo point finisher also expend your  Shadow Techniques stacks, which means you get a full set of combo points back right after using a finisher. This will also trigger a shadow clone from  Ancient Arts that will deal damage based on the finisher used.
+
+These Apex Talents allows us to utilize our  Shadow Techniques more efficiently during our burst windows and cast finishers like  Eviscerate back-to-back without needing to use any combo point generators in between. You also get passively more damage and passively more combo points through the  Shadow Techniques stacks generated by  Ancient Arts which helps smooth out the rotation.
+
+Hero Talents for Subtlety Rogue
+
+Starting from level 71 Hero Talents are a set of mutually exclusive trees you can choose between which slightly alter the gameplay and identity of the spec. For Subtlety Rogue the choice is between  Trickster and  Deathstalker.
+
+ADVERTISEMENT
+ Trickster
+
+ Tricksters theme is based around deception. In game this takes the form of talents like  So Tricky increasing the duration of  Tricks of the Trade to an hour instead of mere seconds, striking with an  Unseen Blade at times as well as spawning a huge cloud of smoke through  Cloud Cover.
+
+In terms of gameplay the Hero Tree is very much focused around big burst windows with  Shadow Blades and  Secret Technique, allowing Subtlety Rogue to truly shine in situations that demand big on-demand damage.
+
+ Deathstalker
+
+Tracking down and focusing on a single target is what  Deathstalker is all about. Its central mechanic  Deathstalker's Mark is tied to a specific target and allows you to prioritize a lot of your damage straight into that enemy even in AoE scenarios thanks to  Singular Focus. Talents like  Shadewalker make it very hard for your target to escape you and  Bait and Switch is an excellent defensive option for when your enemy decides to fight back.
+
+ADVERTISEMENT
+
+This hero tree is all about managing  Deathstalker's Mark, putting it on the right targets at the right time. Once all the stacks of the mark has been used up the big payoff is  Darkest Night, which makes your next  Eviscerate do enormous damage.
+
+PvP Talents (War Mode)
+
+If you choose to, you can enable "War Mode." Enabling War Mode provides the following benefits:
+
+PvP talents enabled in the outdoor world.
+10% increase in World Quest rewards at maximum level.
+15% more experience gained while leveling.
+Earn Conquest Points, which can reward gear every week.
+
+With the benefits of enabling War Mode for leveling and PvE content, it is recommended to enable the feature to maximize your leveling and rewards at maximum level. However, you will make yourself available for open-world PvP, and the possibility of being "ganked" while leveling or doing World Quests exists.
+
+ADVERTISEMENT
+
+In this section, we will rank the PvP talents best for leveling and doing solo / small group PvE content. Below is a ranking of both General PvP Talents and Subtlety Rogue-specific PvP talents.
+
+ Death from Above is just a stronger  Eviscerate.
+ Dagger in the Dark — Whenever Stealth is active, you apply a debuff to nearby enemies that causes them to take an additional 5% damage from your next Shadowstrike. Stacks up to 8 times. This is nothing special, but still a slight damage boost.
+Only two of the Honor Talents increase our DPS while outdoors, so the last choice is up to you on which one you think suits you the best.
+
+ Veil of Midnight,  Shadowy Duel,  Silhouette,  Smoke Bomb,  Thick as Thieves,  Distracting Mirage,  Control is King,  Dismantle and  Maneuverability have limited use in PvE content in terms of increasing your damage in the open-world.
+
+Eleem
+Guide Author
+Follow Eleem
+
+This guide has been written by Eleem, who has been a rogue player, enjoyer and theorycrafter since Legion. He is currently raiding in a top 100 guild and has been known to dabble in Mythic+ from time to time. You can find him in the Ravenholdt Discord as Eleem.
+
+Changelog
+12 Oct. 2026: Updated for Patch 12.1.5.
+10 Aug. 2026: Updated for Patch 12.1.
+Show more
+In The Same Category
+Assassination Rogue Leveling
+Subtlety Rogue Stats
+Subtlety Rogue Leveling
+Outlaw Rogue Spell List and Glossary
+Subtlety Rogue Enchants
+Outlaw Rogue Gear
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

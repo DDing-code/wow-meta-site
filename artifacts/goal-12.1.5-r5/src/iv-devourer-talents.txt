@@ -1,0 +1,322 @@
+https://www.icy-veins.com/wow/devourer-demon-hunter-pve-dps-spec-builds-talents
+HTTP 200 · 2026-10-18T15:54:08.972Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Demon Hunter
+/
+Devourer Demon Hunter
+/
+Talents
+12.1.5
+Devourer Demon Hunter DPS Spec, Builds, and Talents — 12.1.5
+Demon Hunter
+Devourer
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Voodoo
+Wordup
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Devourer Demon Hunter in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Devourer Demon Hunter
+2. Omnium Folio
+3. Apex Talent: Midnight
+4. Hero Talents
+5. PvP Talents (War Mode)
+Best Midnight Talents for Devourer Demon Hunter
+
+Devourer has seen significant changes going into patch 12.1.5, with some big shake ups in its preferred builds. While both Hero Talents are viable, in-game scenarios may limit the output of some builds. Our current recommendations are as follows:
+
+Single Target - Following the 12.1.5 changes,  Annihilator is recommended over  Void-Scarred in all Season 2 encounters. Despite  Void-Scarred's higher potential throughput, it's prone to disruption and puts itself in unnecessary danger.
+AoE - Similarly in AoE situations,  Annihilator is also the recommended choice. While  Void-Scarred does have the potential for both strong single-target and burst AoE, it runs into the same issues with disruption alongside falling behind in larger pulls commonly found in Mythic+.
+
+In general,  Annihilator's damage is high, and much easier to execute than  Void-Scarred in practice. While  Void-Scarred theoretically offers the highest potential when playing Devourer, the long periods with no control over your character and the heavy impact mechanics have on your combos make it far less reliable. This is such a disadvantage in both Raids and Mythic+ that, unless you enjoy the playstyle, we'd recommend sticking with the more consistent  Annihilator in endgame content.
+
+Quick Start Import Codes:
+
+ADVERTISEMENT
+Devourer Single Target - Annihilator
+Copy
+Devourer AoE - Annihilator
+Copy
+Devourer Delves - Void-Scarred
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Annihilator
+Single-Target
+RECOMMENDED
+Raid-Cleave
+RECOMMENDED
+Mythic+
+RECOMMENDED
+Delves
+Void-Scarred
+Single-Target
+Raid-Cleave
+Mythic+
+Delves
+RECOMMENDED
+ Annihilator Single-Target Build
+
+ Annihilator has seen significant improvements in Patch 12.1.5 due to the repeated buffs to  Collapsing Star. It features strong Single-Target damage, and has the ability to ramp its burst to line up with priority targets or damage amp windows. Its rotation is also less prone to disruption compared to  Void-Scarred, so is our recommended choice:
+
+Demon Hunter
+
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Annihilator
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Devourer
+
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+2/2
+1/1
+1/2
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+
+ Annihilator builds play very similarly in both single-target and AoE, sharing many of the same abilities and priorities. Its goal is to cycle Fury and Souls as quickly as possible for  Void Metamorphosis. When paired with  Emptiness, this allows for longer windows that leverage  Impending Apocalypse, allowing for big  Collapsing Star payoffs. Some additional notes are:
+
+ Emptiness is always taken in single-target builds on the final choice node. The ramping Haste provided is key to extending  Void Metamorphosis as long as possible.
+ Tempered Soul is always taken over  Spontaneous Immolation, as the two charges allow for a smoother rotation and shorter ramp time.
+Since  Doomsayer only activates a single time during single-target encounters, it opts for the raw  Voidfall throughput provided by  Harness the Cosmos.
+
+The builds listed above are recommendations based on strength and popularity, covering each area of content in endgame PvE. Each build has its own rotation to execute, with unique aspects to master, with their own tricks up their sleeve to assist your group in different encounters.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+Introduced in Patch 12.0.7, the Omnium Folio is a player power system that provides a small number of performance boosting effects, unlocked through a series of quests. These bonuses aren't related to any gear pieces, and are always active on your character. Some provide additional damage, while others grant some healing and extra defensive tools.
+
+Below, we've listed recommendations on each of the five Runes, unlocked as you complete the Folio quest:
+
+ADVERTISEMENT
+Rune 1: Rune of Unleashed Fire
+Rune 2: Rune of Void-Tainted Shell
+Rune 3: Rune of Lingering
+Rune 4: Rune of Masterful Cunning
+Rune 5: Rune of Overload
+
+It's worth noting that the difference between most of these effects is very minor. The fourth stat boosting Rune is relevant, however, providing a solid amount of your chosen secondary through regular procs.
+
+Apex Talent:  Midnight
+
+New in Midnight is the Apex Talent system, a sequential group of talents which unlock as you acquire each specialization tree talent point on the journey from 80 to 90. These are grouped together in 4, with different effects at each level. Unlike other talents, they are all in one node, with each point invested enhancing the effect. The Devourer Demon Hunter Apex is  Midnight, providing significant benefits to  Collapsing Star:
+
+ Midnight — Your  Collapsing Star will now always Critically Strike.
+ Midnight — Has two points, increasing all Cosmic damage dealt by 3%, and increases the Critical Strike damage of  Collapsing Star by 50% of your Critical Strike chance per point. This bonus is additive with  Calamitous.
+ Midnight — Upon entering  Void Metamorphosis, instantly spawn 5 Soul Fragments and immediately gain access to one cast of  Collapsing Star.
+
+The Apex Talents significantly increase the power of  Collapsing Star, turning it into one of our strongest damage sources. The final point in particular also provides access to an immediate cast, making each  Void Metamorphosis entry impactful.
+
+ADVERTISEMENT
+Hero Talents
+
+Beyond being a brand new specialization already, Devourer also brings with it a new Hero tree,  Annihilator. This is shared with Vengeance, while  Void-Scarred is functionally equivalent to Havoc's  Fel-Scarred. In the two tabs below we've covered the major talents and key effects that influence your build depending on your selection.
+
+ Annihilator
+
+ Annihilator focuses on its keystone effect,  Voidfall. A variety of Devourer abilities (most importantly  Consume and  Void Ray) grant a stack, and upon reaching three, your next  Reap cast will consume them. Each stack consumed calls down a powerful Void Meteor, dealing heavy Cosmic damage to targets and generating 2 Soul Fragments. The playstyle is relatively simple, only requiring you to slot in additional Reap casts to consume stacks as they cap out.
+
+For the offensive choice node,  Harness the Cosmos provides a more general throughput increase to  Voidfall, while  Doomsayer is tailored to Mythic+ and situations where you can consistently leave combat to refresh the effect.
+
+ADVERTISEMENT
+
+For defense and mobility,  Phase Shift grants 2% damage reduction per stack of  Voidfall present, with  Final Hour allowing it to persist after you consume them.  Path to Oblivion adds 3% movement speed on top of that, though adding a third charge to  Shift with  State of Matter is generally preferable.
+
+ Void-Scarred
+
+ Void-Scarred provides a variety of benefits during your  Void Metamorphosis effect. Most importantly,  Voidblade,  Hungering Slash, and  The Hunt are upgraded into more powerful versions while active. Additionally, the first cast of each of these trigger a  Voidsurge for extra AoE Cosmic damage. This slots in over the regular Devourer playstyle, but heavily encourages using a hybrid melee approach, leaping in and out of range to activate these effects.
+
+For the three choice nodes on the tree, there are the following options:
+
+ADVERTISEMENT
+ Wave of Debilitation vs.  Pursuit of Angriness - both are niche effects, with  Pursuit of Angriness generally being better for the small amount of extra mobility vs. the extra CC utility of  Wave of Debilitation.
+ Set Fire to the Pain vs.  Improved Soul Rending - this is a choice between passive damage reduction or self sustain. Generally speaking, staggering some damage with  Set Fire to the Pain so you can leech it back up is the preferred choice, but it's quite minor.
+ Student of Suffering vs.  Flamebound - both of these options are powerful, with  Flamebound being stronger for Single Target and low cleave scenarios, while  Student of Suffering edges it out in AoE situations.
+PvP Talents (War Mode)
+
+"War Mode" is an optional feature that enables open-world PvP encounters that confer some benefits when active:
+
+Grants access to PvP talents in the open world.
+10% increase in World Quest rewards at max level.
+10% more experience gained while leveling.
+Earn Conquest Points which can reward gear every week.
+
+With the benefits of War Mode for leveling and PvE content, it is an optional way to maximize your leveling speed and reward potential. However, you will open yourself up to open-world PvP, so be aware of hostile enemy players who could interfere with you; this is a risk you will have to decide on your own if you want to take.
+
+Here, we'll only be looking at PvP talents that have use cases for aiding with leveling or open-world PvE scenarios, as their PvP benefits are discussed on our PvP page. Generally, the selections are made to optimize your ability to kill enemies faster, increasing your pace when moving through content.
+
+ADVERTISEMENT
+ Armor of Souls provides additional Soul generation when you're being attacked, ramping up the speed at which you can enter  Void Metamorphosis.
+ Inevitable End increases the damage of  Collapsing Star and, more importantly, prevents it from being interrupted by any effect.
+ Beckon allows you to follow up each  Reap cast with an instant  Consume, providing faster setup on targets.
+
+ Surrender to the Void however has a big impact on slowing down the rate at which you can enter  Void Metamorphosis. While it does make these windows more explosive, the hit to frequency means it's not worth using.
+
+ Detainment,  Cover of Darkness,  Cleansed by Flame and  Glimpse all have minimal uses in PvE, due to being more focused on crowd control tools, or pressuring enemy players, so aren't worth considering.
+
+Wordup and Voodoo
+Guide Authors
+Follow Wordup,Voodoo
+
+This guide was written by Wordup and Voodoo.
+
+Wordup has been writing high-end WoW Class Guides for almost a decade, with extensive theorycrafting experience across multiple classes. He raids in the Top 100 guild Echoes, and you can follow him on Twitter.
+
+Voodoo raids in the guild Sacred Lotus, and has been a well-respected figure in the DH theorycrafting community for years. You can follow him on Twitter and his YouTube.
+
+Changelog
+12 Oct. 2026: Updated for Patch 12.1.5.
+18 Aug. 2026: Updated for August 18th tuning.
+Show more
+In The Same Category
+Devourer Demon Hunter Guide
+Devourer Demon Hunter Gear
+Devourer Demon Hunter Macros
+Devourer Demon Hunter Easy Mode
+Devourer Demon Hunter Stats
+Devourer Demon Hunter Enchants
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

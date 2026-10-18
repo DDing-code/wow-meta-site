@@ -1,0 +1,1559 @@
+[
+  {
+    "code": "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAYWmtZmZrBBAAsAYAwYGmBzYmZDYmZYMjBD",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAYWmtZmZrBBAAsAYAwYGmBzYmZDYmZYMjBD",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/paladin/retribution/herald-of-the-sun/EASQBQVAFFlkFRREQVCgFCUQMVRVVFoFGZUF0CVEFFVVVUBU",
+    "title": "징벌 성기사 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "태양의 사자",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "2",
+        "title": "성기사",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "70",
+        "title": "징벌",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65586",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 33,
+        "selected": [
+          {
+            "name": "신의 축복",
+            "spell": 633,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "결의의 오라",
+            "spell": 385633,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "천벌의 망치",
+            "spell": 1241288,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "심판의 주먹",
+            "spell": 234299,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "눈부신 빛",
+            "spell": 115750,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치유의 축복",
+            "spell": 326734,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "인도된 기원",
+            "spell": 404357,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "천상의 군마",
+            "spell": 190784,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "상급 심판",
+            "spell": 231663,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "복수의 방패",
+            "spell": 1261562,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기병",
+            "spell": 230332,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "자유의 축복",
+            "spell": 1044,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "비난",
+            "spell": 96231,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "완고함",
+            "spell": 385427,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "천상의 종",
+            "spell": 375576,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "해방된 자유",
+            "spell": 305394,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "축성된 판금",
+            "spell": 402964,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "처벌",
+            "spell": 403530,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "희생의 축복",
+            "spell": 6940,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "촉진된 기원",
+            "spell": 384027,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "보호의 축복",
+            "spell": 1022,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 대지",
+            "spell": 204054,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 아이기스",
+            "spell": 385515,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 목적",
+            "spell": 408459,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "불굴의 정신력",
+            "spell": 114154,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "약진 앞으로",
+            "spell": 469780,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "축복받은 부름",
+            "spell": 469770,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "감화된 보호",
+            "spell": 469439,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛의 파기",
+            "spell": 146956,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "힘의 문장",
+            "spell": 385450,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "복수의 천벌",
+            "spell": 1241958,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "빛 전도사",
+            "spell": 469416,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "황혼의 축복",
+            "spell": 1241945,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 27,
+        "selected": [
+          {
+            "name": "심판의 칼날",
+            "spell": 184575,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "천상의 폭풍",
+            "spell": 53385,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정화",
+            "spell": 383344,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정의의 빛",
+            "spell": 404436,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "응징의 격노",
+            "spell": 31884,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "최후의 선고",
+            "spell": 383328,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 검",
+            "spell": 383342,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "전쟁의 기술",
+            "spell": 406064,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "심판권",
+            "spell": 402971,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛의 수호자의 폭풍우",
+            "spell": 383396,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛의 질주",
+            "spell": 407067,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 불길",
+            "spell": 406545,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무궁한 심판",
+            "spell": 405461,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "광신도의 열정",
+            "spell": 403509,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "성전사의 심장",
+            "spell": 406154,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "대영주의 진노",
+            "spell": 404512,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "성전의 강타",
+            "spell": 404542,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "불타는 성전",
+            "spell": 403026,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛의 칼날",
+            "spell": 403664,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "파멸의 재",
+            "spell": 255937,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 격노",
+            "spell": 406872,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "사형 선고",
+            "spell": 343527,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "굽이치는 불길",
+            "spell": 405355,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "최고천의 유산",
+            "spell": 387170,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "재가 되어라",
+            "spell": 446663,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "성전",
+            "spell": 1253598,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "내면의 빛",
+            "spell": 1261159,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "태양의 사자",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "새벽빛",
+            "spell": 431377,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "일렁이는 빛줄기",
+            "spell": 431480,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영원의 불꽃",
+            "spell": 156322,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영롱함",
+            "spell": 431402,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무한한 광채",
+            "spell": 1263787,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "여명의 의지",
+            "spell": 431406,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "잔존하는 광휘",
+            "spell": 445200,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "불사르는 태양",
+            "spell": 431413,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "태양의 은총",
+            "spell": 431404,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "서광",
+            "spell": 439760,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛을 향하여",
+            "spell": 1263782,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "두 번째 일출",
+            "spell": 431474,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "햇빛 태생",
+            "spell": 1263920,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "태양의 화신",
+            "spell": 431425,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "8af3235830e32ec5c41b3768052704898f4ffcf2182d85a3e75fc613a0768017",
+    "checkedAt": "2026-10-18T15:56:37.746Z"
+  },
+  {
+    "code": "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxCbAYWmtZmZrBBAAsAYAwYGGYGzMbAzMDjZMYA",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxCbAYWmtZmZrBBAAsAYAwYGGYGzMbAzMDjZMYA",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/paladin/retribution/herald-of-the-sun/EASQRQVAFFlkFRREQFCgFCUQMVRVVFhFWZUF0CVEFFVVVUBU",
+    "title": "징벌 성기사 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "태양의 사자",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "2",
+        "title": "성기사",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "70",
+        "title": "징벌",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65586",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 33,
+        "selected": [
+          {
+            "name": "신의 축복",
+            "spell": 633,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "결의의 오라",
+            "spell": 385633,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "천벌의 망치",
+            "spell": 1241288,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "독소 정화",
+            "spell": 213644,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "심판의 주먹",
+            "spell": 234299,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "눈부신 빛",
+            "spell": 115750,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치유의 축복",
+            "spell": 326734,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "인도된 기원",
+            "spell": 404357,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "천상의 군마",
+            "spell": 190784,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "상급 심판",
+            "spell": 231663,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "복수의 방패",
+            "spell": 1261562,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기병",
+            "spell": 230332,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "자유의 축복",
+            "spell": 1044,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "비난",
+            "spell": 96231,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "완고함",
+            "spell": 385427,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "천상의 종",
+            "spell": 375576,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "해방된 자유",
+            "spell": 305394,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "축성된 판금",
+            "spell": 402964,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "처벌",
+            "spell": 403530,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "희생의 축복",
+            "spell": 6940,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "촉진된 기원",
+            "spell": 384027,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "보호의 축복",
+            "spell": 1022,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 대지",
+            "spell": 204054,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 아이기스",
+            "spell": 385515,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 목적",
+            "spell": 408459,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "불굴의 정신력",
+            "spell": 114154,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "약진 앞으로",
+            "spell": 469780,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "감화된 보호",
+            "spell": 469439,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛의 파기",
+            "spell": 146956,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "힘의 문장",
+            "spell": 385450,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "복수의 천벌",
+            "spell": 1241958,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "빛 전도사",
+            "spell": 469416,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "황혼의 축복",
+            "spell": 1241945,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 28,
+        "selected": [
+          {
+            "name": "심판의 칼날",
+            "spell": 184575,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "천상의 폭풍",
+            "spell": 53385,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정화",
+            "spell": 383344,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정의의 빛",
+            "spell": 404436,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "응징의 격노",
+            "spell": 31884,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "최후의 선고",
+            "spell": 383328,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 검",
+            "spell": 383342,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "전쟁의 기술",
+            "spell": 406064,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "심판권",
+            "spell": 402971,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛의 수호자의 폭풍우",
+            "spell": 383396,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛의 질주",
+            "spell": 407067,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 불길",
+            "spell": 406545,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무궁한 심판",
+            "spell": 405461,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "광신도의 열정",
+            "spell": 403509,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "복수의 칼날",
+            "spell": 403826,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "대영주의 진노",
+            "spell": 404512,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "성전의 강타",
+            "spell": 404542,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "축복받은 용사",
+            "spell": 403010,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "불타는 성전",
+            "spell": 403026,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛의 칼날",
+            "spell": 403664,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "파멸의 재",
+            "spell": 255937,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성한 격노",
+            "spell": 406872,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "사형 선고",
+            "spell": 343527,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "굽이치는 불길",
+            "spell": 405355,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "최고천의 유산",
+            "spell": 387170,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "재가 되어라",
+            "spell": 446663,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "성전",
+            "spell": 1253598,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "내면의 빛",
+            "spell": 1261159,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "태양의 사자",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "새벽빛",
+            "spell": 431377,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "일렁이는 빛줄기",
+            "spell": 431480,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영원의 불꽃",
+            "spell": 156322,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영롱함",
+            "spell": 431402,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무한한 광채",
+            "spell": 1263787,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "여명의 의지",
+            "spell": 431406,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "잔존하는 광휘",
+            "spell": 445200,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "불사르는 태양",
+            "spell": 431413,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "태양의 은총",
+            "spell": 431404,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "서광",
+            "spell": 439760,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛을 향하여",
+            "spell": 1263782,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "두 번째 일출",
+            "spell": 431474,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "햇빛 태생",
+            "spell": 1263920,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "태양의 화신",
+            "spell": 431425,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "6f070fa495ef5f48b5a638d34389fe30ad5443d3448ce2ec2fe16ba47f692238",
+    "checkedAt": "2026-10-18T15:56:42.079Z"
+  },
+  {
+    "code": "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmx2MAAAAAAAAAAAALDzEmhhBMjhZmZGmthZYWmJAgFmtxMmZmZAAsYmlZZMBBAMjBwMAjlBiZmZzA",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmx2MAAAAAAAAAAAALDzEmhhBMjhZmZGmthZYWmJAgFmtxMmZmZAAsYmlZZMBBAMjBwMAjlBiZmZzA",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/monk/windwalker/conduit-of-the-celestials/EARAEURRUlEJFUUFQhJRCAQQVSFVBRUURVQUQFENCRAFFVVVUBE",
+    "title": "풍운 수도사 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "천신의 대변자",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "10",
+        "title": "수도사",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "269",
+        "title": "풍운",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65600",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 32,
+        "selected": [
+          {
+            "name": "마비",
+            "spell": 115078,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "해오름차기",
+            "spell": 107428,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "범의 욕망",
+            "spell": 116841,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빠른 발",
+            "spell": 388809,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "주학의 은총",
+            "spell": 388811,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "안정의 존재",
+            "spell": 388664,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "해독",
+            "spell": 218164,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "쾌활한 생기화",
+            "spell": 388812,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "비취 걸음",
+            "spell": 450553,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "혈점 포착",
+            "spell": 450432,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "손날 찌르기",
+            "spell": 116705,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고대의 기술",
+            "spell": 344359,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "범의 송곳니",
+            "spell": 1272781,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "해탈",
+            "spell": 101643,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기공탄",
+            "spell": 115173,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "쉬엔의 맹렬함",
+            "spell": 388674,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "츠지의 노래",
+            "spell": 116844,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "호랑이 꼬리 휩쓸기",
+            "spell": 264348,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "절명의 손길 연마",
+            "spell": 322113,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "게걸스러운 배출",
+            "spell": 392900,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "위론의 은총",
+            "spell": 414131,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강화주",
+            "spell": 115203,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "바람의 춤",
+            "spell": 432181,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "심오한 반박",
+            "spell": 387276,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정점의 발구르기",
+            "spell": 1272694,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "효율적인 강화",
+            "spell": 388813,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기 능률",
+            "spell": 450426,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "바람걸음",
+            "spell": 157411,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무인의 본능",
+            "spell": 450427,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "허공답보",
+            "spell": 449582,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "기의 흐름",
+            "spell": 450569,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "치명적인 손길",
+            "spell": 394123,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 30,
+        "selected": [
+          {
+            "name": "분노의 주먹",
+            "spell": 113656,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "여세몰이",
+            "spell": 451294,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "전투의 지혜",
+            "spell": 121817,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "날카로운 반사신경",
+            "spell": 261917,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "흉포성",
+            "spell": 458623,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "기세등등",
+            "spell": 115396,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "이중 위협",
+            "spell": 451823,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "수도원의 가르침",
+            "spell": 116645,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영광의 여명",
+            "spell": 392958,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "학의 회오리",
+            "spell": 388848,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "등선",
+            "spell": 1249625,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "타격 연계",
+            "spell": 196740,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "비취 점화",
+            "spell": 392979,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "분쇄권",
+            "spell": 1248747,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영혼 집중점",
+            "spell": 391370,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "강제 연계",
+            "spell": 137384,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "츠지의 춤",
+            "spell": 325201,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "소용돌이 용의 주먹",
+            "spell": 152175,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "내면의 평화",
+            "spell": 397768,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "순차 타격",
+            "spell": 451515,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "태양불꽃 와류",
+            "spell": 1272415,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "바람과의 교감",
+            "spell": 451576,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "메아리의 기술",
+            "spell": 451524,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "질풍차기",
+            "spell": 1250566,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "쉬엔의 전투장비",
+            "spell": 392993,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "바람의 무기",
+            "spell": 1272678,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "하늘불꽃 찍기",
+            "spell": 1248704,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "조화로운 연계",
+            "spell": 1250041,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "무인의 민첩성",
+            "spell": 1272685,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "호안주",
+            "spell": 1261849,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "천신의 대변자",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "백호 쉬엔의 원령",
+            "spell": 123904,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "쉬엔의 인도",
+            "spell": 442743,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "백호의 용기",
+            "spell": 443087,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "쉬엔의 결속",
+            "spell": 392986,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "옥룡의 마음",
+            "spell": 443294,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "츠지의 날렵함",
+            "spell": 443566,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "흑우의 힘",
+            "spell": 443110,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "별똥별의 길",
+            "spell": 1273154,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "위론의 화신",
+            "spell": 1262667,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "비취 성역",
+            "spell": 442747,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "천신합일",
+            "spell": 1248989,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "내면의 나침반",
+            "spell": 443571,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "흐르는 지혜",
+            "spell": 1262672,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "내면의 단결",
+            "spell": 443589,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "1b4e6d0fa62d4b93dede47ba6b46be4771da9985a090e75aab8f07abb574ed71",
+    "checkedAt": "2026-10-18T15:56:46.060Z"
+  }
+]

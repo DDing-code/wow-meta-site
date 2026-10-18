@@ -1,0 +1,448 @@
+[Skip to Main Content]
+와우
+본 서버
+[FOREVER]
+클래식
+불성
+판다
+···
+라이브
+PTR
+12.1.7
+PTR
+12.1.5
+로그인 하기:
+배틀넷
+이메일
+회원가입
+뉴스[HOUSING TOOLS]디스코드 웹훅데이터베이스도구가이드커뮤니티광고 없애기
+직업
+인기 주제
+한밤
+12.1.5 패치
+한밤 2 시즌
+순위 목록
+전문 기술들
+플레이어 하우징
+가이드
+형상변환
+...
+가이드 콘텐츠
+12.1.5 패치
+4.3/5  (31 표)
+Midnight Season 2
+Midnight Season 2
+Season 2 Mythic+
+The Venomous Abyss
+Midnight
+Cheat Sheet
+Talent Builds
+Talent Import Codes
+Raid Talents
+Mythic+ Talents
+Delve Talents
+Leveling
+Rotation
+BiS Gear
+Consumables
+Spec Basics
+Overview
+Basics
+Abilities
+Stat Priority
+UI & Macros
+Leveling
+가이드 정보
+변경 기록
+Best Brewmaster Monk Talent Tree Builds - Midnight
+Sinzhu (이)가 작성함
+업데이트됨: 2026/10/13
+This guide provides all of the best Brewmaster Monk talent tree builds in the Midnight Season 2 for raids and Mythic+, including export links to import these builds directly into the game.
+
+Overview
+BiS Gear
+Rotation
+Talent Builds
+Consumables
+Stats
+Basics
+[Drop the Ads.]
+[Keep the Loot.]
+BREWMASTER MONK TALENT IMPORT CODES
+Below, we've provided a list of import codes for the strongest Brewmaster Monk builds for Midnight Season 2. Builds marked with the  icon are the Current Recommendations. Use the copy buttons to generate an import code.
+
+
+SHADO-PAN
+Build	Import Code	Link
+ Raid (Standard)	복사 Standard Raid	Build
+ Mythic+ (Best)	복사 Mythic+	Build
+ Delves/Open World	복사 Delves	Build
+	
+MASTER OF HARMONY
+Build	Import Code	Link
+ Raid (Standard) (Best)	복사 Standard Raid	Build
+ Mythic+	복사 Mythic+	Build
+ Delves/Open World (Best)	복사 Delves	Build
+
+
+Although both sets of Hero Talents for Brewmaster Monks offer similar amounts of defensive power, each provides it in a different way. The Master of Harmony talents emphasize empowering your defensive abilities such as  정화주 and  천신주/ 천신의 주입, which often make them more suited for progression raiding, while the Shado-Pan talents offer passive damage reduction from consistent dodging like you would experience in an AoE environment such as Mythic+. However, the decision can ultimately come down to personal preference or tuning in a given season; though at present, Shado-Pan's damage quickly gains an advantage at two or more targets while remaining effectively equal in single-target combat.
+BEST BREWMASTER MONK RAID TALENT BUILD
+Your main focus in determining a single-target raid build will be how much you need to bolster your defenses. In particular, are you comfortable playing with  해악 축출 in a way that rewards quick reactions, or would you benefit more from the steady healing offered by turning  치유의 구슬s into a HoT with  니우짜오의 결의? Are you overwhelmed by the rotation already, or can you handle  흑우주 and altering your rotation during  흑우 니우짜오의 원령? These questions form the core differences between the Standard and Advanced builds below, though other distinctions are noted for each. Make sure to check the "Talent Choices Explained" tab to see the other nodes you may wish to talent into or out of based on a given encounter for a more flexible build in between the two!
+Master of Harmony (Standard)
+Shado Pan (Advanced)
+Raid Talent Choices Explained
+This build sacrifices a bit of offensive power for an overall simpler and safer experience, making it an ideal build for players learning to play Brewmaster Monk in a raid setting. It's also a great setup for players in progression raiding environments looking to maximize survivability. In particular, it opts into  니우짜오의 결의,  생기의 불길, and  평온한 정신 for a fair bit of passive defense. If you need even more defense, consider dropping the point of  황소와 함께 걷기 for  강한 내성 or  건우지세.
+
+
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+BEST BREWMASTER MONK MYTHIC+ TALENT BUILD
+Mythic+ is often an environment where a combination of AoE and priority-target damage is helpful. Similarly, as there is only one healer present, tanks are expected to be a bit more self-sufficient, though they also frequently take less significant damage than a raid until reaching sufficiently high keystone levels. Due to this, you'll find that a more standard Mythic+ build opts into damage-dealing while an advanced one opts into defense—the opposite of what usually happens in builds made for raiding instead.
+Shado Pan (Standard)
+Master of Harmony (High Key)
+Mythic+ Talent Choices Explained
+With the massive amount of different scenarios you'll encounter in a mythic+ dungeon, there is a lot more flexibility to consider. For example, this build defaults to  니우짜오의 결의 and  흑우주 to gain additional bursts of defense alongside a smoother healing experience, but like the advanced raid build above you will eventually be expected to handle regular use of  해악 축출 in higher keystone levels. Likewise,  해독 and  혈점 포착 are not always required in a dungeon, but be warned that not having them when you do need them can be a serious mistake. Further decision making can be found on the "Talent Choices Explained" tab.
+
+
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+BEST BREWMASTER MONK DELVE TALENT BUILD
+Delves are frequently run solo by players, which creates an emphasis on self-healing and perhaps even some additional passive defense. Here, the Master of Harmony Hero Talents again have a slight advantage due to the buffs they provide to  범의 장풍 especially. Regardless, in this type of content especially, you can certainly complete it even with the Shado-Pan talents and may even prefer the more passive AoE from  대기 준비.
+Master of Harmony (Delves/Open World)
+Shado Pan (Legacy/Speed)
+Due to Delves and Open World content not expecting you to have a healer present, your incoming damage will be easier to handle and allow you to opt into more offensive talents by default. Although it still selects  니우짜오의 결의 by default, you can certainly play without it here, or even try out  역동의 유동성 for an even faster rotation emphasizing single-target damage.
+
+
+
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+BREWMASTER MONK LEVELING BUILDS
+If you're searching for advice on both the best talents to pick while leveling and the optimal order in which to take them, our leveling tips page has got you covered. There, you will find information about different leveling talent builds, the recommended order in which to pick them, and information about your spec's rotation and cooldowns.
+
+
+Brewmaster Monk Leveling Tips
+Our Brewmaster Monk guides are always updated with the latest information from in-game experience, simulations, and logs. Make sure to check our changelog for this page by clicking on View Changelog in the Quick Facts column or on the book icon at the top of the page. If you are interested in more in-depth Brewmaster Monk guides for Midnight Season 2, make sure to browse the Navigation Bar at the top of the page, along with our list of Related Guides just beneath the Table of Contents.
+Sinzhu
+World of Warcraft Brewmaster Monk Specialist (Modern and Classic)
+작성자 프로필
+Sinzhu (Sin, not Shin) has been a passionate fan of MMOs and gaming in general since the days of the Playstation 1 and Nintendo 64. After achieving his first Ahead of the Curve in Warlords of Draenor, he was hooked on WoW and actively began to learn all he could about the Monk class, helping out with the Peak of Serenity fansite/class discord and taking up guide writing to share that knowledge with others.
+
+When not reading Wiki articles for fun or working toward entering the Hall of Fame for the latest raid, he can often be found watching Jeopardy! or cooking up something in the kitchen. Sinzhu's been a Brewmaster Monk player in WoW for the past 10 years, a Titan in Destiny 2 for 7, and a Runescape (modern and old school) player for nearly 20. He has approximate knowledge of many things.
+태그: PvE
+댓글
+영어 댓글들 (14)
+아직 댓글이 없습니다.
+댓글을 남기려면 로그인하거나, 계정이 없다면 회원가입을 해 주세요.
+기여
+댓글 달기
+댓글을 달 때에는 다음과 같은 사항들을 기억해 주십시오:
+주석은 한국어로만 작성해야하며 그렇지 않으면 삭제됩니다.
+어떻게 댓글을 써야할지 모르시겠나요? 저희의 댓글 가이드를 확인하세요!
+댓글을 제출하기 전에 쓴 댓글을 다시 한번 읽어보세요.
+더 빠른 답을 원하신다면 저희의 토론장에 대신 질문해 보세요.
+댓글 달기
+로그인이 되어있지 않습니다. 댓글을 남기려면 로그인하거나, 회원가입을 해 주세요.
+뉴스
+[Housing Tools]
+디스코드 웹훅
+데이터베이스
+도구
+가이드
+커뮤니티
+광고 없애기
+와우 가이드들
+직업 가이드들
+Delve 가이드들
+레벨링 가이드들
+신화 쐐기돌 가이드들
+전문 기술 가이드들
+공격대 가이드들
+특성 계산기
+목록들단계
+한밤
+MOP CLASSIC 가이드들
+직업 가이드들
+전문 기술 가이드들
+던전 가이드들
+공격대 가이드들
+퀘스트 가이드들
+평판 가이드들
+애완동물 대전 가이드들
+시나리오 가이드들
+도전 난이도 가이드들
+특성 계산기
+순위 목록
+와우 클래식 가이드들
+요구 조건 가이드
+칸에 들어갈 베스트 아이템 가이드들
+직업 가이드들
+던전 가이드들
+레벨링 가이드들
+전문 기술 가이드들
+PvP 가이드들
+퀘스트 가이드들
+공격대 가이드들
+평판 가이드들
+디아블로 IV 가이드들
+Lord of Hatred Expansion
+13 시즌
+엔드게임 목록단계
+목록단계s
+야만용사 빌드
+드루이드 빌드
+강령술사 빌드
+성기사 빌드
+도적 빌드
+원소술사 빌드
+혼령사 빌드
+상단
+도움이 필요하신가요?
+사용자 도구
+회사 소개
+광고
+랜덤 페이지
+프리미엄
+개인정보 보호정책
+이용 약관

@@ -1,7 +1,7 @@
 {
-  "patch": "12.1",
+  "patch": "12.1.5",
   "researchedAt": "2026-10-10",
-  "status": "12.1 운용 가이드",
+  "status": "운용 가이드",
   "graphCenterSkillId": "22568",
   "summary": "야성은 기력으로 연계 점수를 모아 도려내기·갈퀴 발톱 두 출혈을 유지하고, 무료 흉포한 이빨과 호랑이의 분노가 여는 연계에 반응하는 근접 딜러입니다. 이 가이드는 준비 → 원리 → 연습 → 실전 → 심화 순서로 읽도록 짰습니다. 스킬 묶음을 먼저 보고, 자원·출혈·이빨·쿨기의 관계를 익힌 뒤, 허수아비 타임라인과 발톱의 드루이드·야생추적자 운용으로 넘어갑니다.",
   "sourceStatus": "2026-10-10 영웅 특성 2종의 공개 추천·한국 레이드 1건·쐐기 1건 재검수. 추천의 충돌과 같은 조건 성능 비교의 한계는 본문에 표시합니다.",
@@ -206,6 +206,27 @@
       "url": "https://www.warcraftlogs.com/reports/9FjmpDAtQT3vM4qg#fight=3&source=12",
       "updated": "2026-10-10 확인",
       "note": "2026-10-09T11:08:21.705Z · 야생추적자 · Nek'zali the Soulcoiler · 신화 · 실제 356.9초 · 증강 0명. 시전·버프·영웅 선택 확인. 동일 조건 영웅 우열 비교가 아닙니다."
+    },
+    {
+      "tier": "A",
+      "label": "Wowhead 야성 특성 빌드 12.1.5판",
+      "url": "https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps",
+      "updated": "2026-10-13 갱신 / 2026-10-19 확인",
+      "note": "본문은 단일에서 야생추적자가 근소하게 앞서고 쐐기·구렁에서는 반대라고 설명하지만 표의 추천 표시는 레이드 발톱의 드루이드·쐐기 야생추적자. 야생추적자 레이드 코드와 발톱의 드루이드 쐐기 코드를 견본으로 사용."
+    },
+    {
+      "tier": "A",
+      "label": "Icy Veins 야성 특성 12.1.5 검토",
+      "url": "https://www.icy-veins.com/wow/feral-druid-pve-dps-spec-builds-talents",
+      "updated": "2026-10-12 12.1.5 검토 / 2026-10-19 확인",
+      "note": "레이드·단일과 레이드 대상 둘은 야생추적자, 쐐기·광역과 구렁은 발톱의 드루이드 추천. 두 분기 피해가 매우 가깝다고 설명하므로 확정 순위로 쓰지 않음."
+    },
+    {
+      "tier": "A",
+      "label": "WCL 12.1.5 이후 야성 쐐기 상위 전투(발톱의 드루이드)",
+      "url": "https://www.warcraftlogs.com/reports/6LFAJ1Khm732jwNX#fight=8&source=4",
+      "updated": "2026-10-16 전투 / 2026-10-19 확인",
+      "note": "12.1.5 이후 쐐기 상위 랭킹 24행 중 발톱의 드루이드 100%의 최상위 전투(+23). 시전 상위는 휘둘러치기·흉포한 이빨·칼날 발톱·갈퀴 발톱·찢어발기기. 랭킹 상위 기록이며 전체 사용률이 아님."
     }
   ],
   "evidence": [
@@ -221,6 +242,7 @@
     "10월 8일 영웅 선택을 실제 선택 노드로 대조했습니다. 미국 개별 전투는 발톱의 드루이드: 레이드 0건·쐐기 2건, 야생추적자: 레이드 2건·쐐기 0건입니다. 10월 8일 선행 조회의 한국 쐐기 0건의 시전·버프를 추가 확인했습니다. 해당 선행 한국 랭킹 검사는 신화 네임드 1종·쐐기 던전 1종의 첫 100위 이내 범위이며, 미관측은 미사용을 뜻하지 않습니다. 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.",
     "10월 10일 영웅 특성 결론: 공개 저자는 레이드·적은 대상 수에 야생추적자, 쐐기에 발톱의 드루이드를 제시하며 두 분기를 근접한 선택으로 설명합니다. 이번 한국 쐐기 사례는 발톱의 드루이드이며 단일 순위의 증거로 쓰지 않습니다.",
     "한국 공식 주간 점검 예정 종료(10월 8일 06:00 한국 시간) 뒤의 레이드 1건·쐐기 1건을 확인했습니다. 예정 종료 시각과 실제 적용 순간은 구분합니다. 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.",
+    "10월 19일 12.1.5 이후 대조: 10월 13일 미국 적용 뒤 WCL 상위 랭킹(레이드는 신화 님리사 12.1.5 구간, 쐐기는 시즌 상위 100행 중 12.1.5 이후 행)에서 레이드 전 지역 100행 중 야생추적자 93%(한국 3행 중 3행), 쐐기 전 지역 24행 중 발톱의 드루이드 100%(한국 13행 중 100%)였습니다. 랭킹 상위 기록이라 전체 사용률이 아닙니다. 12.1.5판 Icy Veins(10월 12일 검토)는 레이드·단일에 야생추적자, 쐐기에 발톱의 드루이드를 권하고, Wowhead(10월 13일 갱신) 본문도 단일은 야생추적자가 근소하게 앞서고 쐐기·구렁은 반대라고 씁니다. 그래서 단일·레이드 견본을 야생추적자, 쐐기 견본을 발톱의 드루이드로 바로잡았습니다. 확정 순위는 아닙니다.",
     "개념서형 개편(2026-10-10): 기존 검수 본문과 KB 공식 툴팁을 처음 하는 사람이 읽는 순서(준비 → 원리 → 연습 → 실전 → 심화)로 다시 엮었습니다. 우선순위·오프닝·영웅 특성 결론은 바꾸지 않았고, 현장의 목소리는 아직 모으지 않았습니다."
   ],
   "caveats": [
@@ -231,7 +253,8 @@
     "아래 로그 점검 기준은 비교 방법입니다. 실제 전투 링크와 이벤트를 새로 분석하지 않은 상태에서 특정 사용자의 손실량이나 점수 원인을 수치로 단정하지 않습니다.",
     "9월 22일 이전 야생추적자 로그와 10월 1일 이전 단일 대상 로그는 현재 수치와 바로 비교하지 않습니다. 앞쪽은 덩굴 폭발·출혈 보정이 낮았고, 뒤쪽은 날뛰는 야성 오발동 피해가 섞였을 수 있습니다.",
     "10월 8일 공개 로그 집계의 실제 로그 기간은 최근 14일입니다. 주소의 단수·주차 표기와 화면의 집계 범위가 다를 수 있습니다. 10월 6일 조정 이전 자료가 섞일 수 있으므로 집계 사용률을 조정 이후의 확정 성능 순위로 해석하지 않습니다.",
-    "미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다."
+    "미국 레이드·쐐기의 장비 평균·실제 전투 길이·증강 인원을 맞춘 사례를 대조했습니다. 한국 적용 시각과 장비 세부 구성·외부 강화·파티 구성을 통제한 영웅 특성의 성능 우열은 확정하지 않았습니다.",
+    "Wowhead 12.1.5판 빌드 표의 추천 표시는 레이드 발톱의 드루이드, 쐐기 야생추적자로 같은 페이지 본문 설명과 반대입니다. 이 가이드는 본문 설명·Icy Veins·12.1.5 이후 상위 로그가 일치하는 쪽을 견본으로 씁니다. 12.1.5 이후 대조는 WCL 랭킹 첫 페이지 상위 기록이라 전체 사용률이나 영웅 특성 간 성능 우열이 아니며, 한국 레이드 행은 3행뿐입니다. 10월 8~10일 개별 전투·한국 사례는 12.1.5 적용 전 기록입니다."
   ],
   "blocks": [
     {
@@ -1350,7 +1373,7 @@
       ],
       "aside": {
         "title": "추천이 엇갈리는 이유",
-        "text": "공개 자료의 영웅 특성 추천은 서로 엇갈립니다. 이 가이드는 레이드·적은 대상 수에 야생추적자, 쐐기에 발톱의 드루이드를 제시한 공개 저자 결론을 따르되 둘을 근접한 선택으로 봅니다. 위쪽 특성 견본은 단일·레이드에 발톱의 드루이드, 쐐기에 야생추적자를 두고 있으니 견본을 고를 때 이 차이를 알고 고르세요. 최신 레이드 채택률은 확보하지 못했으니 어느 쪽이 확실히 강하다고 보지 않습니다."
+        "text": "공개 자료의 영웅 특성 추천은 서로 엇갈립니다. 이 가이드는 레이드·적은 대상 수에 야생추적자, 쐐기에 발톱의 드루이드를 제시한 공개 저자 결론을 따르되 둘을 근접한 선택으로 봅니다. 12.1.5 이후(10월 13일 미국 적용 뒤) WCL 상위 랭킹도 쐐기 전 지역 24행 중 100%가 발톱의 드루이드, 레이드 전 지역 100행 중 93%가 야생추적자였습니다. 랭킹 상위 기록이라 전체 사용률은 아닙니다. 12.1.5판 Icy Veins도 같은 쪽을 권해 위쪽 특성 견본을 단일·레이드는 야생추적자, 쐐기는 발톱의 드루이드로 바로잡았습니다. Wowhead 12.1.5판은 본문 설명은 같지만 빌드 표의 추천 표시가 반대로 붙어 있으니 코드를 가져올 때 영웅 이름을 확인하세요. 두 분기 피해가 가까워 어느 쪽이 확실히 강하다고 보지는 않습니다."
       },
       "mistakes": [
         "찢어발기기가 떴는데 무리가 등 뒤에 있는 채로 써서 주 대상만 맞힙니다.",
@@ -1426,7 +1449,7 @@
       "paragraphs": [
         "광폭화는 기본 3분, 광폭화: 사자의 심장을 골랐다면 2분입니다. 영혼 소집은 기본 2분이고 아샤메인의 인도로 쿨다운이 50% 줄어듭니다. 전투 시간을 대략 알면 각각 몇 번 쓸지 셀 수 있습니다. 다른 쿨기와 완벽하게 맞추려고 기다리다 한 번을 덜 쓰는 것이 가장 큰 손해입니다. 반대로 곧 거의 다 빗나갈 상황까지 횟수만 맞추려고 억지로 쓰지도 않습니다.",
         "네임드가 사라지거나 모두 이동해야 하는 구간은 미리 피합니다. 영혼 소집은 기본 4초 정신 집중이라 이동 직전에 시작하면 끊깁니다. 시즌 2 세트가 있다면 광폭화가 끝난 직후도 할라지의 격노 강화 구간이니, 종료 시점에 근접에 붙어 있을 수 있는지까지 보고 시작 시점을 정합니다. 쫄이 나오는 전투라면 광역 쿨기를 쫄 등장에 맞출지 네임드에 둘지 공격대 지시에 따릅니다.",
-        "대상 둘 이상이 오래 함께 있는 전투라면 원시 분노로 두 대상에 도려내기를 유지하고 흩뿌려진 선혈을 살립니다. 대상이 하나뿐인 구간은 단일 우선순위로 돌아갑니다. 영웅 특성은 공개 저자가 레이드에 야생추적자를 제시합니다. 10월 8일 확인한 미국 신화 님리사 처치 기록 2건도 둘 다 야생추적자였지만, 이것은 선택 사례일 뿐 두 영웅 특성의 우열을 증명하지는 않습니다."
+        "대상 둘 이상이 오래 함께 있는 전투라면 원시 분노로 두 대상에 도려내기를 유지하고 흩뿌려진 선혈을 살립니다. 대상이 하나뿐인 구간은 단일 우선순위로 돌아갑니다. 영웅 특성은 공개 저자가 레이드에 야생추적자를 제시합니다. 10월 8일 확인한 미국 신화 님리사 처치 기록 2건(12.1.5 적용 전 기록)도 둘 다 야생추적자였고, 12.1.5 이후 WCL 상위 랭킹에서도 레이드 전 지역 100행 중 93%가 야생추적자였습니다. 그래서 위쪽 레이드 특성 견본도 야생추적자입니다. 다만 랭킹 상위 기록은 전체 사용률이 아니고, 두 영웅 특성의 우열을 증명하지도 않습니다."
       ],
       "bullets": [
         "전투 시간 ÷ 실제 쿨다운으로 광폭화·영혼 소집 횟수를 먼저 셉니다.",
@@ -1447,7 +1470,7 @@
     {
       "part": "review",
       "title": "야생추적자: 출혈에서 자란 덩굴을 이빨로 터뜨립니다",
-      "concept": "야생추적자는 갈퀴 발톱과 도려내기의 출혈 피해에서 피바라미 덩굴이 생기는 흐름을 이용합니다. 덩굴은 자동으로 생기고, 흉포한 이빨을 덩굴 대상에게 쓰면 폭발하는 성장물로 주변 적까지 칩니다. 공개 저자가 레이드·적은 대상 수에 제시하는 선택지입니다.",
+      "concept": "야생추적자는 갈퀴 발톱과 도려내기의 출혈 피해에서 피바라미 덩굴이 생기는 흐름을 이용합니다. 덩굴은 자동으로 생기고, 흉포한 이빨을 덩굴 대상에게 쓰면 폭발하는 성장물로 주변 적까지 칩니다. 공개 저자가 레이드·적은 대상 수에 제시하는 선택지이고, 위쪽 단일·레이드 특성 견본도 야생추적자입니다.",
       "diagram": {
         "title": "피바라미 덩굴이 자라고 터지는 길",
         "layers": [
@@ -1657,13 +1680,13 @@
         "id": "field",
         "label": "3부",
         "title": "실전",
-        "summary": "발톱의 드루이드 운용, 차단·해제·생존기, 쐐기 한 판, 공격대 네임드 운용을 다룹니다. 출혈을 끊지 않는 것만큼 위험한 시전을 끊고 살아남는 것도 야성의 실력입니다."
+        "summary": "쐐기는 발톱의 드루이드, 레이드는 야생추적자로 나뉘는 영웅 특성 고르기와 발톱의 드루이드 운용, 차단·해제·생존기, 쐐기 한 판, 공격대 네임드 운용을 다룹니다. 출혈을 끊지 않는 것만큼 위험한 시전을 끊고 살아남는 것도 야성의 실력입니다."
       },
       {
         "id": "review",
         "label": "4부",
         "title": "심화·부록",
-        "summary": "기본이 손에 붙은 뒤 읽는 장입니다. 야생추적자라는 다른 선택지, 점수가 넘칠 때와 호랑이의 분노를 먼저 쓸 때의 판단, 내 로그를 복기하는 순서를 정리합니다."
+        "summary": "기본이 손에 붙은 뒤 읽는 장입니다. 레이드·단일 견본인 야생추적자, 점수가 넘칠 때와 호랑이의 분노를 먼저 쓸 때의 판단, 내 로그를 복기하는 순서를 정리합니다."
       }
     ],
     "labels": {
@@ -1687,7 +1710,7 @@
         "441809",
         "1263660"
       ],
-      "summary": "찢어발기기의 전방 공격과 광폭화 중 생성기 발동을 활용하는 선택입니다. 9월 조정 뒤 공개 작성자들이 단일과 쐐기 모두에서 다루는 빌드이며, 덩굴 대상 변경보다 근접 적중과 발동 소비에 집중하고 싶은 경우에 맞습니다. 다만 실제 최신 레이드 채택률을 확보한 것은 아닙니다. 단일 예시는 영혼 소집, 광역 예시는 화신과 갈퀴 발톱 유지 경로로 구분합니다. 이번 한국 검수: 레이드 0건·쐐기 1건. 선택·시전 사례이며 상대 분기보다 강하다는 증명이 아닙니다.",
+      "summary": "찢어발기기의 전방 공격과 광폭화 중 생성기 발동을 활용하는 선택입니다. 9월 조정 뒤 공개 작성자들이 단일과 쐐기 모두에서 다루는 빌드이며, 덩굴 대상 변경보다 근접 적중과 발동 소비에 집중하고 싶은 경우에 맞습니다. 다만 실제 최신 레이드 채택률을 확보한 것은 아닙니다. 단일 예시는 영혼 소집, 광역 예시는 화신과 갈퀴 발톱 유지 경로로 구분합니다. 이번 한국 검수: 레이드 0건·쐐기 1건. 선택·시전 사례이며 상대 분기보다 강하다는 증명이 아닙니다. 12.1.5 이후(10월 13일 미국 적용 뒤) WCL 상위 랭킹에서는 쐐기 전 지역 24행 중 100%(한국 13행 중 100%)가 발톱의 드루이드였고 쐐기 특성 견본도 이쪽입니다. 레이드는 전 지역 100행 중 7%였습니다. 랭킹 상위 기록이라 전체 사용률은 아닙니다.",
       "bullets": [
         "오프닝 흐름은 단일의 빠른 정점 시작과 광역 첫 교전이 다릅니다. 광역에서 첫 찢어발기기를 받으려면 전투 중 호랑이의 분노를 사용해야 합니다.",
         "찢어발기기를 얻은 뒤 실제 전방 적중까지 연결하는 것이 중요합니다. 광폭화 중에는 칼날 발톱·휘둘러치기에서 발톱 광란 기회를 계속 만듭니다.",
@@ -1952,7 +1975,7 @@
         "440118",
         "439882"
       ],
-      "summary": "출혈에서 생긴 피바라미 덩굴을 대상별로 활용하는 선택입니다. 오래 사는 적에게 갈퀴 발톱과 도려내기를 유지하고 덩굴 대상의 이빨로 후속 폭발을 얻습니다. 레이드 전용으로 제한되는 분기가 아니며 쐐기에서도 대상 선택과 출혈 투자를 조절합니다. 아래 단일·광역 예시는 영혼 소집 경로이고, 최신 로그 채택률로 어느 쪽이 압도적이라고 단정하지 않습니다. 이번 한국 검수: 레이드 1건·쐐기 0건. 선택·시전 사례이며 상대 분기보다 강하다는 증명이 아닙니다.",
+      "summary": "출혈에서 생긴 피바라미 덩굴을 대상별로 활용하는 선택입니다. 오래 사는 적에게 갈퀴 발톱과 도려내기를 유지하고 덩굴 대상의 이빨로 후속 폭발을 얻습니다. 레이드 전용으로 제한되는 분기가 아니며 쐐기에서도 대상 선택과 출혈 투자를 조절합니다. 아래 단일·광역 예시는 영혼 소집 경로이고, 최신 로그 채택률로 어느 쪽이 압도적이라고 단정하지 않습니다. 이번 한국 검수: 레이드 1건·쐐기 0건. 선택·시전 사례이며 상대 분기보다 강하다는 증명이 아닙니다. 12.1.5 이후 WCL 상위 랭킹에서는 레이드 전 지역 100행 중 93%가 야생추적자였고 단일·레이드 특성 견본도 이쪽입니다. 쐐기 상위 24행에는 없었습니다. 랭킹 상위 기록이라 전체 사용률은 아닙니다.",
       "bullets": [
         "오프닝에서 강화 출혈과 첫 도려내기를 준비하고 영혼 소집을 이어갑니다. 광역은 원시 분노로 여러 적의 도려내기를 만든 뒤 덩굴 발생과 이빨 대상을 확인합니다.",
         "오래 살아남는 적의 갈퀴 발톱을 유지하면 덩굴을 만들 기회가 생깁니다. 이빨을 쓸 때는 덩굴이 붙은 대상과 실제로 먼저 죽여야 할 적을 함께 고려합니다.",
@@ -2353,48 +2376,12 @@
     {
       "id": "single-target",
       "label": "단일",
-      "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA",
-      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA",
+      "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzCzMzYMzMAAAAAAAGAAAABAz2MLNLzssBmZAWMzwAAYmBAD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzCzMzYMzMAAAAAAAGAAAABAz2MLNLzssBmZAWMzwAAYmBAD",
       "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps",
-      "sourceLabel": "Raid (Best)",
-      "checkedAt": "2026-10-08",
-      "note": "단일 네임드 전투용 견본입니다.",
-      "validation": {
-        "specId": 103,
-        "heroTreeId": 21,
-        "points": {
-          "1": 34,
-          "2": 34,
-          "3": 13,
-          "4": 1
-        },
-        "checkedAt": "2026-10-08",
-        "traitDataCommit": "db768b52b425db274e4ebd3ce3d5efc26c8882b5",
-        "gameBuild": "12.1.0.69933",
-        "browser": {
-          "checkedAt": "2026-10-08",
-          "points": [
-            34,
-            34,
-            13
-          ],
-          "parentConnections": true,
-          "available": true,
-          "sha256": "1a0745edefb911d12f6afeab65da082e85ad58b2991d175320fcd222af97513b"
-        },
-        "scope": "현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
-      },
-      "heroLabel": "발톱의 드루이드"
-    },
-    {
-      "id": "mythic-plus",
-      "label": "쐐기",
-      "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYJY2gxMjaGzCzMzsMmZGAAAAAAADAAAgAgZbmlmlZW2AzMALMDDAgZGAMA",
-      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYJY2gxMjaGzCzMzsMmZGAAAAAAADAAAgAgZbmlmlZW2AzMALMDDAgZGAMA",
-      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps",
-      "sourceLabel": "Mythic+ (Best)",
-      "checkedAt": "2026-10-08",
-      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "sourceLabel": "Raid",
+      "checkedAt": "2026-10-19",
+      "note": "단일 네임드 전투용 야생추적자 견본입니다(12.1.5판 Wowhead 야생추적자 레이드 코드). 이전 견본은 발톱의 드루이드였고, 12.1.5판 Icy Veins와 Wowhead 본문, 12.1.5 이후 상위 로그가 같은 쪽이라 바꿨습니다.",
       "validation": {
         "specId": 103,
         "heroTreeId": 22,
@@ -2404,11 +2391,11 @@
           "3": 13,
           "4": 1
         },
-        "checkedAt": "2026-10-08",
-        "traitDataCommit": "db768b52b425db274e4ebd3ce3d5efc26c8882b5",
-        "gameBuild": "12.1.0.69933",
+        "checkedAt": "2026-10-19",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
         "browser": {
-          "checkedAt": "2026-10-08",
+          "checkedAt": "2026-10-19",
           "points": [
             34,
             34,
@@ -2416,21 +2403,21 @@
           ],
           "parentConnections": true,
           "available": true,
-          "sha256": "f5ef3996ae35bb59d294fdf845a715e66c5245bb4889f954e027520424094cae"
+          "sha256": "4a55d5c2600332e2327f6453741aaece7f4a84affed260ba0f4f4e9852ee1a5b"
         },
-        "scope": "현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
       },
       "heroLabel": "야생추적자"
     },
     {
-      "id": "raid",
-      "label": "레이드",
-      "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA",
-      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA",
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYLY2MwMzUzYWMzMzsMmxAAAAAAwADAAAgmZZWmZmBEYBmZGgFGMAAAmZDD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYLY2MwMzUzYWMzMzsMmxAAAAAAwADAAAgmZZWmZmBEYBmZGgFGMAAAmZDD",
       "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps",
-      "sourceLabel": "Raid (Best)",
-      "checkedAt": "2026-10-08",
-      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "sourceLabel": "Mythic+",
+      "checkedAt": "2026-10-19",
+      "note": "쐐기용 발톱의 드루이드 견본입니다(12.1.5판 Wowhead 발톱의 드루이드 쐐기 코드). 이전 견본은 야생추적자였고, 12.1.5판 Icy Veins와 Wowhead 본문, 12.1.5 이후 상위 로그가 같은 쪽이라 바꿨습니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
       "validation": {
         "specId": 103,
         "heroTreeId": 21,
@@ -2440,11 +2427,11 @@
           "3": 13,
           "4": 1
         },
-        "checkedAt": "2026-10-08",
-        "traitDataCommit": "db768b52b425db274e4ebd3ce3d5efc26c8882b5",
-        "gameBuild": "12.1.0.69933",
+        "checkedAt": "2026-10-19",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
         "browser": {
-          "checkedAt": "2026-10-08",
+          "checkedAt": "2026-10-19",
           "points": [
             34,
             34,
@@ -2452,11 +2439,47 @@
           ],
           "parentConnections": true,
           "available": true,
-          "sha256": "1a0745edefb911d12f6afeab65da082e85ad58b2991d175320fcd222af97513b"
+          "sha256": "c9fcdc8255a431e2aa98a5541a3ff9f9e1b7909192cda39b62146980bc9e1053"
         },
-        "scope": "현재 SimC 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
       },
       "heroLabel": "발톱의 드루이드"
+    },
+    {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzCzMzYMzMAAAAAAAGAAAABAz2MLNLzssBmZAWMzwAAYmBAD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzCzMzYMzMAAAAAAAGAAAABAz2MLNLzssBmZAWMzwAAYmBAD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps",
+      "sourceLabel": "Raid",
+      "checkedAt": "2026-10-19",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 야생추적자 견본을 사용합니다. 이전 견본은 발톱의 드루이드였고, 12.1.5판 Icy Veins와 Wowhead 본문, 12.1.5 이후 상위 로그가 같은 쪽이라 바꿨습니다.",
+      "validation": {
+        "specId": 103,
+        "heroTreeId": 22,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-19",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-19",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "4a55d5c2600332e2327f6453741aaece7f4a84affed260ba0f4f4e9852ee1a5b"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "야생추적자"
     }
   ],
   "logReview": {

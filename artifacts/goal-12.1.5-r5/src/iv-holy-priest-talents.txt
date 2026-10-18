@@ -1,0 +1,317 @@
+https://www.icy-veins.com/wow/holy-priest-pve-healing-spec-builds-talents
+HTTP 200 · 2026-10-18T15:41:52.201Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Priest
+/
+Holy Priest
+/
+Talents
+12.1.5
+Holy Priest Healing Spec, Builds, and Talents — 12.1.5
+Priest
+Holy
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Niphyr
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Holy Priest in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Holy Priest
+2. Omnium Folio
+3. Apex Talent: Benediction
+4. Hero Talents
+5. PvP Talents (War Mode) for Holy Priest
+Best Midnight Talents for Holy Priest
+
+Holy Priest has two Hero talents that have completely different points of focus.  Archon adds the spell  Halo to your arsenal which brings with it an increase in  Surge of Light procs to react to, along with  Spiritwell to give you another spell to consume them with.  Oracle is a simpler choice, centered around increasing the healing from the passive sources of healing like  Renew and  Prayer of Mending, while also adding some spot-healing capability through  Prompt Prognosis.
+
+Raid Healing -  Oracle is currently the stronger choice as it provides more constant healing capability.  Archon is competitive but has much more of its healing inside the  Apotheosis and  Halo windows which can lead to higher overheal.
+Dungeon Healing -  Archon and  Oracle are both viable options for dungeon healing. While Archon has improved burst healing, doing so in a 5-man environment can consume a lot more Mana. The sustained healing throughput from Oracle makes it a strong choice, especially as Oracle also excels at dealing more damage itself, which is quite useful to help beat the Mythic+ timer.
+
+Aside from Hero talents, the other major differentiator between builds is which Holy tree capstone talents are taken.  Ultimate Serenity is popular as it has great synergy with the rest of the tree and simplifies the healing rotation while providing similar output to the other options.  Lasting Words is a solid passive healing increase.  Divine Image is not a strong increase, but is readily accessible if you are taking one of the other two previously mentioned capstones.  Lightweaver is the other capstone worth mentioning as it changes your gameplay to bolster the cycle of  Prayer of Healing getting buffed by your single-target spells. Currently Lightweaver is tuned to do a similar amount of healing as other options, but requires more mana and is less forgiving of mistakes, so it is generally avoided.
+
+Quick Start Import Codes:
+
+ADVERTISEMENT
+Holy Priest Raid - Oracle Easy Mode
+Copy
+Holy Priest Raid - Archon
+Copy
+Holy Priest Delves & M+ - Oracle
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Oracle
+Raid
+RECOMMENDED
+Mythic+/Delve
+MYTHIC+
+Archon
+Raid
+Mythic+ Lasting Words
+ Oracle Raid Build
+
+The  Oracle Raid Build focuses on a lot of passive healing from  Prayer of Mending talents and direct healing from  Prompt Prognosis. You then fill in the gaps between all your  Holy Word: Serenity and  Prayer of Mending casts with  Flash Heal and it's buffed version,  Benediction whenever it triggers. Combined with the healing from  Renew,  Echo of Light and  Piety,  Oracle provides a significant amount of consistent raid-wide healing with low overheal. This build is more mana efficient than a  Lightweaver build.
+
+Priest
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Oracle
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Holy
+
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+Flexible Talents
+
+The Holy Priest tree has several talent points or groups of talent points that can be moved around without affecting the core playstyle:
+
+ Seraphic Crescendo should be your default choice over  Gales of Song going into every encounter. The only time Gales of Song is worth taking is if for some reason you have planned every single one of your casts more than 3 minutes apart.
+It is a healing loss to swap out  Dispersing Light for either  Divine Image or  Say Your Prayers.
+
+The Class Tree has some flexibility, and there are multiple different talents you can change around depending on the encounter and your personal preference. The following are all great candidates to be situationally removed without altering your playstyle:
+
+ Improved Purify can be dropped if there are no diseases to dispel.
+ Dispel Magic can also be dropped if there are no diseases to dispel and no magic debuffs to purge.
+ Mental Agility can be dropped if the encounter doesn't have anything for  Purify or  Mass Dispel.
+ Inspiration can be dropped if you really need another point, as it's the lowest value throughput talent.
+ Angelic Bulwark or a point in  Spell Warding are the lowest impact talents to drop if you need an extra point in the bottom third of the tree.
+
+In place of them, there are several talents that are situationally useful and can be taken:
+
+ Body and Soul can be taken for extra mobility and survivability on movement-heavy encounters.
+ Phantasm to remove snares.
+ Angel's Mercy for more survivability.
+ Psychic Scream for extra crowd control.
+
+In general it is not a good idea to talent into  Lightburst as it removes  Holy Nova as a spammable filler spell.
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have it's own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+The Omnium Folio is a new system introduced in Midnight's Patch 12.0.7, and offers some minor performance-enhancing customization options after a multi-week quest series. Some of these bonuses affect your output, while others are more defensive in nature.
+
+We recommend you pick the following bonuses, but as you can freely switch between them at any time, feel free to experiment with other options yourself if you feel you do not get enough mileage out of the recommended options:
+
+ADVERTISEMENT
+Tier 1:  Rune of Unleashed Fire
+Tier 2:  Rune of Self-Mending
+Tier 3:  Rune of Lingering
+Tier 4:  Rune of Critical Power
+Tier 5:  Rune of Overload
+
+ Rune of Unleashed Fire is a better choice than  Rune of Void-Touched Orbs. For the defensive node, you should choose either  Rune of Self-Mending or  Rune of Void-Tainted Shell. For the final node, while we suggest  Rune of Overload as it provides a bit more reliable healing, they all provide approximately the same amount of value so it is largely personal preference which one you run with.
+
+Apex Talent:  Benediction
+
+The Holy Priest apex talent is  Benediction, which provides the following benefits as you put points into it.
+
+ Benediction (1 point):  Prayer of Mending bounces periodically transform your next cast of  Flash Heal into  Benediction, increasing the healing done and triggering a  Cosmic Ripple.
+ Benediction (2 points): Increases all healing done, and further increases the healing of  Cosmic Ripple.
+ Benediction (1 point): Causes each pulse of  Divine Hymn to trigger  Cosmic Ripple. After casting  Holy Word: Serenity, your next  Flash Heal is upgraded to  Benediction.
+
+How it works: The periodic  Benediction procs are triggered by regularly casting  Prayer of Mending. When triggered,  Flash Heal is replaced with  Benediction for your next cast, doing increased healing and triggering a  Cosmic Ripple. Due to the added healing,  Benediction is a high value spell to use and should be prioritised as part of your rotation whenever it triggers.
+
+ADVERTISEMENT
+TC
+Does  Oracle Trigger  Benediction More than  Archon Due to More  Prayer of Mending?
+No,  Benediction triggers at a normalised rate, meaning the procs per minute should not differ between the two Hero talents. This is true as long as you cast  Prayer of Mending regularly. For both Hero talents it is important to cast  Prayer of Mending as often as possible to maximise the number of  Benediction procs.
+Hero Talents
+
+Starting at level 71, Hero Talents allow players the ability to shape and focus their gameplay by picking one of two mutually exclusive options.  Oracle and  Archon are the options given to Holy Priest.
+
+ Archon
+
+ Archon has a focus on buffing your  Halo casts. The additional stronger  Surge of Light procs are excellent at improving our triage healing capabilities including the ability to bolster our group healing through  Spiritwell enabling  Prayer of Healing to consume  Surge of Light. Finally, the additional healing during  Apotheosis further improves our ability to react to heavy group damage.
+
+ Oracle
+
+ Oracle focuses around regular usage of  Prayer of Mending to generate constant healing to your group through increased healing to Prayer of Mending,  Renew and  Piety. Oracle also provides single-target triage through  Prompt Prognosis.
+
+ADVERTISEMENT
+PvP Talents (War Mode) for Holy Priest
+
+In the open world, you can go into "War Mode." Enabling War Mode provides the following benefits:
+
+PvP talents enabled in the outdoor world.
+Increase in World Quest rewards at maximum level.
+More experience gained while levelling.
+Earn Conquest Points, which can be spent on PvP gear.
+
+With the benefits of enabling War Mode for levelling and PvE content, it is recommended enabling the feature to maximize your levelling and rewards at maximum level if you are comfortable with PvP. However, you will make yourself available for open-world PvP, and the possibility of being attacked by other players while levelling or doing World Quests exists.
+
+In this section, we will rank the PvP talents best for levelling and doing solo / small group PvE content. Below is a ranking of Holy Priest-specific PvE talents.
+
+ADVERTISEMENT
+ Phase Shift can be used to avoid dangerous attacks.
+ Purification is great for rapidly removing dangerous debuffs.
+The final choice is typically  Sanctified Ground for solo content, or  Spirit of the Redeemer if doing world content with a group.
+Niphyr
+Guide Author
+Follow Niphyr
+
+This guide has been written by Niphyr, a long-time healing Priest and theorycrafter. You can follow him on Twitter.
+
+Changelog
+12 Oct. 2026: Updated for Patch 12.1.5.
+25 Aug. 2026: Updated builds with the latest theorycrafting.
+Show more
+In The Same Category
+Discipline Priest Talents
+Discipline Priest Mythic+
+Discipline Priest DPS
+Holy Priest Stats
+Holy Priest Mythic+
+Holy Priest Guide
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

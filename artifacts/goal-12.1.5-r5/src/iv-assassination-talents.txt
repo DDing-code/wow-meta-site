@@ -1,0 +1,296 @@
+https://www.icy-veins.com/wow/assassination-rogue-pve-dps-spec-builds-talents
+HTTP 200 · 2026-10-18T15:54:08.146Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Rogue
+/
+Assassination Rogue
+/
+Talents
+12.1.5
+Assassination Rogue DPS Spec, Builds, and Talents — 12.1.5
+Rogue
+Assassination
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Seliathan
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Assassination Rogue in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Assassination Rogue
+2. Omnium Folio
+3. Apex Talent: Implacable
+4. Hero Talents
+5. PvP Talents (War Mode)
+Best Midnight Talents for Assassination Rogue
+
+Assassination Rogue in Patch 12.1 plays virtually the same as before, but our talent recommendations have changed. We are once again back to playing  Deathstalker in all content, as it sports a slightly higher sustained single-target and AoE potential than  Fatebound. Deathstalker also puts out some incredible priority-target damage thanks to  Singular Focus, one of the hero tree talents, and that is typically what sets this option apart from the alternative hero tree. While managing  Deathstalker's Mark can be cumbersome, once you talent into the build you will be able to add a new skill to your bar that lets you easily swap the mark, on a cooldown of course. Make sure to make use of this!
+
+Single Target -  Fatebound is the better choice here, especially in the current raid tier. On paper,  Deathstalker is ever-so-slightly stronger, but it is much more cumbersome to play, more prone to error, and even under perfect circumstances, it does at most 1-2% more DPS. It is simply not worth recommending playing it with those considerations in mind. Fatebound does almost the same damage, is easier to play, can use  Feint more freely, and generally has much less room for error.
+AoE - For AoE and Mythic+, it depends heavily on how high you want to push. For the vast majority of keylevels,  Fatebound is the better choice as well, for the same reasons as above. However, when doing title-level high-keys,  Deathstalker is the better choice. It has roughly equivalent AoE as Fatebound, but the ability to funnel additional damage into your main target is incredibly valuable, and highly sought after. This alone is enough to separate it from the competitor hero tree in this specific environment.
+
+With this information in hand,  Deathstalker is the recommended build for virtually all content.
+
+Quick Start Import Codes:
+
+ADVERTISEMENT
+Assassination Pure Single-Target - Fatebound
+Copy
+Assassination Raid Cleave - Fatebound
+Copy
+Assassination Mythic+/Delves - Fatebound
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Fatebound
+Pure Single-Target
+Raid Cleave
+RECOMMENDED
+AoE
+MYTHIC+
+DELVES
+Deathstalker
+Pure Single-Target
+Raid Cleave
+AoE
+HIGH-KEYS
+ Fatebound Pure Single-Target Build
+
+This  Fatebound build offers pure single-target damage, not taking any of the highly valuable cleave or AoE talents to fully optimize single-target DPS. Unfortunately there aren't that many pure ST bosses in this raid, so you won't get much use out of this build, and even in those cases  Deathstalker is just a higher-performing option.
+
+Rogue
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Fatebound
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Assassination
+
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have it's own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+The Omnium Folio is a new system introduced in Midnight's Patch 12.0.7, and offers some minor performance-enhancing customization options after a multi-week quest series. Some of these bonuses affect your damage output, while others are more defensive in nature.
+
+We recommend you pick the following bonuses, but as you can freely switch between them at any time, feel free to experiment with other options yourself if you feel you do not get enough mileage out of the recommended options:
+
+ADVERTISEMENT
+Node 1: Rune of Unleashed Fire
+Node 2: Rune of Self-Mending
+Node 3: Rune of Lingering
+Node 4: Rune of Burning Haste
+Node 5: Rune of Overload
+Apex Talent:  Implacable
+
+Midnight offers us a new type of talent, Apex Talents. This is a 4-point talent that lets you allocate multiple points in it, providing different effects based on how many talent points you put into it. Assassination gains the  Implacable talent, which does the following:
+
+First Point:  Implacable will grant you bonus Energy whenever you cast Envenom.
+Second and Third Point:: Implacable will grant you additional Bleed and Nature damage.
+Fourth Point: Implacable will cause additional damage when using  Kingsbane and you will also generate 5 Combo Points passively in the next second.
+
+Our Apex talent softens our weaknesses a little bit, letting us recharge Energy faster once we run out of Energy, similar to what  Thistle Tea already does, which smooths out our rotation so we do not spend long periods of time without any buttons to press. The  Kingsbane bonus is also quite nice, letting us quickly generate maximum Combo Points after using KB, without having to waste another GCD on a Combo Point builder.
+
+Overall this is a solid set of talents that aims to make our weaknesses less pronounced, instead of further boosting our strengths.
+
+ADVERTISEMENT
+Hero Talents
+
+Assassination gets to pick between two distinct Hero Talent choices:  Deathstalker and  Fatebound.
+
+ Deathstalker
+
+ Deathstalker is built around the usage and application of  Deathstalker's Mark, which will grant you a number of benefits against a singular target, while gaining further priority target damage from any kind of AoE you are doing, whether it be multi-dotting or even just  Caustic Spatter.
+
+This makes it a good choice if you want to optimize your prio-damage, but managing the Deathstalker's Mark can be cumbersome and if you end up losing it due to a target-switch, you essentially do not have a Hero Talent anymore. This is particularly egregious on bosses that submerge but do not clear their debuffs, or when switching from one boss to another for prolonged periods of time.
+
+ADVERTISEMENT
+ Fatebound
+
+ Fatebound is the much more forgiving option while still sporting similar or even better damage than Deathstalker. It can keep up in AoE thanks to a buffed  Caustic Spatter, and is built around the idea of flipping Fatebound Coins. These can either deal direct damage, or boost the damage of all your class abilities. You do not have much control over which coin will be stacking up for you. While not the most flashy Hero Talent option, it provides very consistent damage with little to no additional cognitive input required on your end, making it a very beginner-friendly choice.
+
+PvP Talents (War Mode)
+
+In Midnight, there will be the option to go into "War Mode." Enabling War Mode provides the following benefits:
+
+PvP talents enabled in the outdoor world.
+10% increase in World Quest rewards at maximum level.
+10% more experience gained while leveling.
+Earn Conquest Points, which can reward gear every week.
+
+With the benefits of enabling War Mode for leveling and PvE content, it is recommended enabling the feature to maximize your leveling and rewards at maximum level. However, you will make yourself available for open-world PvP, and the possibility of being "ganked" while leveling or doing World Quests exists.
+
+ADVERTISEMENT
+
+In this section, we will rank the PvP talents best for leveling and doing solo / small group PvE content. Below is a ranking of both General PvP Talents and Assassination Rogue-specific PvE talents.
+
+ System Shock deals nature damage and slows the enemy's movement speed by 90% for 2 seconds when you use a 5 Combo Point  Envenom on targets afflicted with your  Garrote,  Rupture, and Lethal Poison. It is fairly good as it is a passive damage gain and can be useful if you need to run away without having other crowd-control options available.
+ Control is King -  Kidney Shot will restore Energy when used, generating more Energy than it costs. This makes it quite valuable to use, and while it's still technically better DPS to simply spend your CP on a damaging finisher, the added safety can be quite valuable for Rouge, who is one of the most vulnerable classes while leveling.
+ Creeping Venom enables your  Envenom to apply Creeping Venom, dealing Nature damage over 4 sec. The duration is refreshed when the target moves. This is another passive damage increase, which can also be easily maintained by side stepping, causing the enemies to move with you.
+Seliathan
+Guide Author
+Follow Seliathan
+
+This guide has been written and reviewed by Seliathan, who has been playing Rogue for over two decades since the very first day of Vanilla WoW. After decades of raiding within the Top 100 and numerous Rank 1 Mythic+ runs in previous expansions, he has now set his sights on sharing his experience through guides and other content.
+
+Changelog
+12 Oct. 2026: Reviewed for Patch 12.1.5.
+10 Aug. 2026: Updated for Patch 12.1.
+Show more
+In The Same Category
+Outlaw Rogue Guide
+Assassination Rogue Guide
+Outlaw Rogue Leveling
+Outlaw Rogue Easy Mode
+Assassination Rogue Enchants
+Subtlety Rogue Rotation
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

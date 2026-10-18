@@ -1,0 +1,297 @@
+https://www.icy-veins.com/wow/balance-druid-pve-dps-spec-builds-talents
+HTTP 200 · 2026-10-18T15:55:46.689Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Druid
+/
+Balance Druid
+/
+Talents
+12.1.5
+Balance Druid DPS Spec, Builds, and Talents — 12.1.5
+Druid
+Balance
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Bora
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ Macros
+
+On this page, you will find out the best talents for your Balance Druid in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Talents for Balance Druid in Midnight
+2. Apex Talent: Ascendant Eclipses
+3. Hero Talents
+4. PvP Talents (War Mode)
+Best Talents for Balance Druid in Midnight
+
+For Season 2, after a somewhat turbulent first season in Midnight, Balance Druid has finally settled in the meta and for its rotation, with both Hero Talent builds having carved out their own distinct niches and strengths. While players needed some time to really figure out how to play with the new  Eclipse Our current recommendations are as follows:
+
+Single Target -  Elune's Chosen is the best single target Talent set for Balance Druid. It offers great sustained DPS and good hybrid damage without sacrificing as much as  Keeper of the Grove.
+AoE -  Elune's Chosen is better for all-around cleave and pure AoE damage profile.  Keeper of the Grove can be used in some situations where super quick burst AoE is necessary from Balance Druid or even in lower keys.
+
+ Elune's Chosen is currently the best overall Hero Talent set for both single target and AoE. The damage is consistent and less cooldown reliant than  Keeper of the Grove. It is flexible in overall Talent choices having the ability to play for pure single target, pure AoE, and even intermittent cleave fights.
+
+Quick Start Import Codes:
+
+ADVERTISEMENT
+Balance Druid Single-Target - Elune's
+Copy
+Balance Druid AoE - Elune's
+Copy
+Balance Druid Delves - Keeper
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Elune's Chosen
+Raid/Single-Target
+RECOMMENDED
+Mythic+
+RECOMMENDED
+Keeper of the Grove
+Raid/Single-Target
+Mythic+
+WEEKLY-KEYS
+Delves
+Single-Target Talents for  Elune's Chosen
+
+These are the pure single target Talents for for Balance Druid, generally your Raiding build unless you know there are adds in the encounter.
+
+You will NOT be able to enter Solar  Eclipse while playing  Elune's Chosen due to  Lunar Calling.
+
+Druid
+
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Elune's Chosen
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Balance
+
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+
+For a build that can cleave and cast  Starfall for burst AoE, use this code:
+
+Elunes Chosen Cleave Build
+Copy
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have it's own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+
+The Omnium Folio is a new system introduced in Midnight's Patch 12.0.7, and offers some minor performance-enhancing customization options after a multi-week quest series. Some of these bonuses affect your damage output, while others are more defensive in nature.
+
+We recommend you pick the following bonuses, but as you can freely switch between them at any time, feel free to experiment with other options yourself if you feel you do not get enough mileage out of the recommended options:
+
+ADVERTISEMENT
+Node 1: Rune of Unleashed Fire
+Node 2: Rune of Self-Mending
+Node 3: Rune of Lingering
+Node 4: Rune of Critical Power
+Node 5: Rune of Overload
+Apex Talent:  Ascendant Eclipses
+
+Midnight introduces three new Apex Talents for every class which will be earned as you level to max. The Balance Druid Apex Talent set is called Ascendant Eclipses.
+
+ Ascendant Eclipses – Activating an Eclipse makes your next  Wrath or  Starfire instant. The first three  Starsurges or  Starfalls you cast during each Eclipse deal 20% increased damage.
+ Ascendant Eclipses – Your Critical Strikes dealt during an Eclipse cause their victims to languish for an additional 20% of damage dealt for 8 sec.
+ Ascendant Eclipses – Activating an Eclipse also launches Solar or Lunar Bolts at enemies within 40 yds that always critically strike.  Solar Bolt hits one target and  Lunar Bolt hits three targets and deals splash damage.
+
+There are some small gameplay changes associated with the first Apex Talent,  Ascendant Eclipses. Firstly, when you are going into cooldowns, you use your free instant cast on  Starfire. Additionally, you want to maximize the usage of your buffed spenders in your opener which delays your first cooldown cast.
+
+The second and third Apex Talents are much more passive and do not affect gameplay.  Ascendant Eclipses does heavily incentivize Critical Strike and ends up doing a large portion of our damage.  Ascendant Eclipses is a minor damage boost at the start of Eclipse. The main gameplay adjustment is just in  Eclipse charge management where you do not want to be sitting on 2-charges before going into cooldowns.
+
+ADVERTISEMENT
+Hero Talents
+
+Upon reaching Level 71, Balance Druid gets to pick between two Hero Talent trees that fill vastly different roles,  Keeper of the Grove and  Elune's Chosen. The are both competitive and fill in different niches.
+
+ Keeper of the Grove
+
+The benefit of  Keeper of the Grove is it turns Balance Druid into a short cooldown, burst-focused spec. Burst damage is more often required in PvE content as the faster something dies, the less likely it is to kill you. Both the pure single target and high target count multi-target builds are slightly worse than the  Elune's Chosen builds. Keeper of the Grove is much more likely to find its place somewhere in the middle taking advantage of  Dream Burst and  Force of Nature to do great priority target damage on many encounters that it excels on.
+
+ Elune's Chosen
+
+ Elune's Chosen heavily focuses on Arcane spells and  Starfire. It currently has the highest simming single target and mass multi-target builds. When it is able to take advantage of these profiles, it is a top-tier caster DPS.  Lunar Calling makes you chain cast Starfire at all times within  Eclipse which can be a bit clunky given its long cast time compared to  Wrath.
+
+ADVERTISEMENT
+PvP Talents (War Mode)
+
+There will be the option to go into "War Mode." Enabling War Mode provides the following benefits:
+
+PvP Talents enabled in the outdoor world.
+10% increase in World Quest rewards at maximum level.
+10% more experience gained while leveling.
+
+With the benefits of enabling War Mode for leveling and PvE content, it is recommended enabling the feature to maximize your leveling and rewards at maximum level. However, you will make yourself available for open-world PvP, and the possibility of being killed while leveling or doing World Quests exists.
+
+In this section, we will list the PvP Talents best for leveling and doing solo / small group PvE content. Note that these may not be optimal in actual PvP situations.
+
+ADVERTISEMENT
+ Star Burst is a passive effect that calls down falling stars on enemies during  Starfall. Enemies who run into this take damage and get knocked up. Allies can pick these up and run into enemies to detonate them.
+ Moonkin Aura is amazing for group combat and strong for solo content. This can buff all members in your party and help finish quests and rares faster. We would recommend this for all group content.
+ Thorns can provide minimal peel or damage in open-world content.
+ Malorne's Swiftness will let you move at 100% Movement Speed even while in combat. Great for open-world content.
+Bora
+Guide Author
+Follow Bora
+
+This was written by Borabank, a Balance Druid theorycrafter and raider in Country Club. You can watch him on his Twitch channel or find him in the Dreamgrove Discord server.
+
+Changelog
+12 Oct. 2026: Reviewed for Patch 12.1.5.
+12 Aug. 2026: Updated best talent recommendations.
+Show more
+In The Same Category
+Balance Druid Guide
+Balance Druid Easy Mode
+Balance Druid Gear
+Balance Druid Enchants
+Balance Druid Rotation
+Balance Druid Mythic+
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

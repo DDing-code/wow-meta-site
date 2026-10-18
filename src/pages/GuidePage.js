@@ -10,6 +10,7 @@ import {
   guideSpecsByRole,
   getAllGuideSpecs,
   getGroupedGuideSpecs,
+  CURRENT_PATCH_LABEL,
 } from '../data/guideRegistry.js';
 
 const Page = styled.div`
@@ -328,7 +329,7 @@ function GuidePage() {
       {transitioningCount > 0 && (
         <TransitionNotice>
           <Construction size={15} aria-hidden="true" />
-          공사 중 표시가 있는 {transitioningCount}개 가이드는 12.1 전환·검수 중입니다. 이전 패치 내용이 남아 있을 수 있습니다.
+          공사 중 표시가 있는 {transitioningCount}개 가이드는 {CURRENT_PATCH_LABEL} 전환·검수 중입니다. 이전 패치 내용이 남아 있을 수 있습니다.
         </TransitionNotice>
       )}
 

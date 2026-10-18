@@ -1,0 +1,296 @@
+https://www.icy-veins.com/wow/discipline-priest-pve-healing-spec-builds-talents
+HTTP 200 · 2026-10-18T15:54:38.489Z
+
+News & Guides
+World of Warcraft
+Diablo
+Final Fantasy XIV
+Gacha
+More Games
+
+Sign In
+
+Go Premium
+
+Class Guides
+Season 2 Content
+Tier Lists
+Midnight Guides
+Professions
+General Info
+PvP
+Home
+/
+World of Warcraft
+/
+Priest
+/
+Discipline Priest
+/
+Talents
+12.1.5
+Discipline Priest Healing Spec, Builds, and Talents — 12.1.5
+Priest
+Discipline
+Talents
+Last Updated:
+Oct 12, 2026 - 4:30 PM
+(5d ago)
+Clandon
+
+Support Our Writers
+
+NEW! Icy Veins News Webhook for Discord
+Icy Veins news articles directly into a channel on your server!
+Get Discord Webhook
+NEW! The Icy Veins app is here
+Try out the WoW Class Codex Addon with the Icy Veins app
+Download App
+ Overview
+ Leveling
+ Easy Mode
+ Talents
+ Rotation
+ Gear
+ Stats
+ Enchants
+ Mythic+
+ DPS
+ Macros
+
+On this page, you will find out the best talents for your Discipline Priest in World of Warcraft Patch 12.1.5. We also have default talent builds for various types of content, such as raiding or Mythic+. If you play with Warmode on, we have your PvP talents covered as well.
+
+Table of Contents
+1. Best Midnight Talents for Discipline Priest
+2. Omnium Folio
+3. Apex Talent: Master the Darkness
+4. Hero Talents
+5. PvP Talents (War Mode)
+Best Midnight Talents for Discipline Priest
+
+With the changes going into 12.1,  Voidweaver has received a significant amount of help and does very solid numbers as a result. However, in Mythic+ dungeons there are still some significant single-target healing requirements present, which it struggles with. As a result, our recommendation for now is  Voidweaver in Raid and Delve content, and  Oracle in Mythic+ content. If the single-target healing requirements in dungeons turn out to not be the pressure points we struggle with and Voidweaver is doing well, we will update our recommendations.
+
+Raid -  Voidweaver simply does a large amount of raw Atonement healing permanently. With the new tier set reducing the cooldown of  Mind Blast, you have a very high uptime on  Entropic Rift. As a result, your access to a significantly buffed  Void Blast is greatly increased. This spec's largest weakness, however, is movement. So in situations where there is very high movement requirements, there could be situations where  Oracle is better. Voidweaver gains significant value from the new 2-piece set bonus and may feel weak until you have it.
+Mythic+ -  Oracle is our recommended build for Mythic+ content due to its superior single-target healing capabilities. By cycling through Void Shield procs, utilizing 2 charges of defensive  Penance more easily as a result of  Twinsight, and being less locked to spamming a filler dps spell for output, you get the ability to push single-target healing a bit easier when needed.
+
+Quick Start Import Codes:
+
+Voidweaver Raid
+Copy
+Oracle Mythic+
+Copy
+To Display The Talent Tree Please Select The Hero Talent & Content You Would Like To Play
+Voidweaver
+Raid
+RECOMMENDED
+Mythic+
+Delves
+RECOMMENDED
+Oracle
+Raid
+Mythic+
+WEEKLY-KEYS
+HIGH-KEYS
+ Voidweaver Raid Build
+
+This build pushes an incredibly high amount of raw healing throughput at all times. With an insanely high uptime on  Entropic Rift, thanks to the new tier set reducing the cooldown of  Mind Blast, your near constant access to it results in a very strong amount of permanent HPS. This build does, however, struggle with movement, because  Void Blast makes up a very large percentage of our CPM with this build. As a result, while it is our default recommendation for Raid content based on potential output, it is possible that  Oracle sees play in situations where this spec struggles to function properly.
+
+Priest
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Voidweaver
+
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+Discipline
+
+1/1
+1/1
+2/2
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+
+The builds listed above are popular recommendations, covering various different loadouts suited to each style of endgame content. Each Talent Build will have it's own rotation, and can also be manipulated further for specific types of content and to better benefit your group.
+
+ADVERTISEMENT
+Combat Information
+Rotations and Mythic+
+Want to dive deeper? These guides will teach you how to utilize our Talent Builds in endgame content!
+Rotation
+Mythic+
+Omnium Folio
+
+The Omnium Folio is a new system introduced in Midnight's Patch 12.0.7, and offers some minor performance-enhancing customization options after a multi-week quest series. Some of these bonuses affect your damage output, while others are more defensive in nature.
+
+We recommend you pick the following bonuses in the first couple of weeks, but as you can freely switch between them at any time, feel free to experiment with other options yourself if you feel you do not get enough mileage out of the recommended options:
+
+Week 1: Rune of Unleashed Fire
+Week 2: Rune of Self-Mending
+Week 3: Rune of Lingering
+Week 4: Rune of Masterful Cunning
+Week 5: Rune of Overload
+Apex Talent:  Master the Darkness
+
+Discipline Priest's Apex talent, Master the Darkness, has 4 total ranks with 3 different effects in total. The first  Master the Darkness, provides a chance for your next  Power Word: Shield after casting  Penance to be turned into  Void Shield. This shield splashes to two additional nearby allies. Your second and third ranks of Master the Darkness,  Master the Darkness, are simple passive nodes increasing both your overall  Atonement healing and all shadow damage per rank. Finally, your fourth rank of Master the Darkness,  Master the Darkness, causes a percentage of your  Void Shield amount to be reflected back as damage when absorbed. This damage does contribute to healing through  Atonement, making this talent incredibly powerful. This final point also causes  Mind Blast to force-proc Void Shield, giving you a way to access a proc when needed.
+
+ADVERTISEMENT
+
+From a rotation perspective, this talent is not particularly difficult to use. Whenever you get a proc, use it before you cast your next  Penance to ensure you do not waste a potential proc. Additionally, you can delay your cast to line it up with a major damage event to abuse the reflect damage contributing to Atonement healing.
+
+TC
+In-depth Void Shield Explanation
+Hero Talents
+
+Starting at level 71, Hero Talents allow players the ability to shape and focus their gameplay by picking one of two mutually exclusive options.  Oracle and  Voidweaver are the options given to Discipline Priest.
+
+ Oracle
+
+The beginning node of the tree,  Guiding Light, provides an additional charge of Penance, providing a large amount of flexibility and control in your output. Other nodes like  Preventive Measures,  Prophet's Insight,  Prompt Prognosis, and the immensely powerful  Twinsight all push the power of Penance.
+
+ADVERTISEMENT
+
+Oracle also provides some solid bonuses to  Power Word: Shield via  Preventive Measures and  Waste No Time. Combine this with nodes on the Discipline tree like  Weal and Woe and  Eternal Barrier and pressing Power Word: Shield often provides significant value.
+
+Oracle synergizes incredibly well with Discipline's new Apex Talent due to the fact that  Void Shield inherits  Power Word: Shield modifiers.
+
+ Voidweaver
+
+ Voidweaver focuses entirely on  Entropic Rift. Casting  Mind Blast creates a rift that deals damage to all enemies within. This rift grows in power as you cast  Penance, making it larger and stronger. During the duration of the rift, your smite is transformed into  Void Blast, which is a significantly more powerful version. When the rift expires, it collapses and deals a large burst of damage, which can be a significant amount of healing.
+
+ADVERTISEMENT
+
+Voidweaver also provides  Voidwraith, which is a pet that is summoned after the rift expires. This pet's attacks heal allies via  Atonement and synergizes well with talents in the Discipline tree like  Inescapable Torment and  Death's Torment.
+
+This Hero Tree also has a very large modifier for  Mind Blast via  Overwhelming Shadows. Between all of the above mentioned effects, this tree pushes a significant amount of power into Mind Blast as a button, but as a result can leave you feeling quite weak when it is on cooldown. This spec also suffers from a lack of strong single target healing options unlike  Oracle.
+
+PvP Talents (War Mode)
+
+In Midnight, there remains the option to go into "War Mode." Enabling War Mode provides the following benefits:
+
+ADVERTISEMENT
+PvP talents enabled in the outdoor world.
+10% increase in World Quest rewards at maximum level.
+10% more experience gained while leveling.
+Earn Conquest Points, which can reward gear every week.
+
+With the benefits of enabling War Mode for PvE content minimal in this expansion, it is not recommended to enable the feature. War Mode remains an attractive option for leveling purposes due to the increased experience gain.
+
+In this section, we will rank the PvP talents best for leveling and doing solo / small group PvE content. Below is a ranking of Discipline Priest-specific PvP talents. For more information on what is valuable in a competitive PvP setting instead of an open-world focus, please take a look at our PvP guide.
+
+ Inner Light and Shadow is a toggleable ability that grants you either 10% increased spell damage and  Atonement healing or 15% less Mana cost on healing spells. Leaving this on the damage increase portion while leveling will result in a solid DPS and survivability gain.
+ Dark Archangel increases your damage and the damage of all allies with your  Atonement by 15% for 8 seconds. This is great for small group world content where giving your group a DPS buff will be more impactful than taking a small boost to your own damage via any of the above three talents.
+Your third option is very flexible as the remaining options do not provide much raw DPS value. Pick whatever seems fun to you for defensive/healing value.
+Clandon
+Guide Author
+Follow Clandon
+
+This guide is written and maintained by Clandon, Healer in Vindicatum and Owner of Warcraft Priests Class Discord. You can often find him streaming on Twitch or by checking out his Youtube channel.
+
+Changelog
+12 Oct. 2026: Reviewed for Patch 12.1.5.
+18 Aug. 2026: Fixed typo.
+Show more
+In The Same Category
+Holy Priest Talents
+Discipline Priest Mythic+
+Discipline Priest Stats
+Holy Priest Enchants
+Discipline Priest Gear
+Discipline Priest Easy Mode
+BACK TO TOP
+News & Guides
+
+Icy Veins is not affiliated with or endorsed by Blizzard.
+
+© Vedatis S.A.S. 2026
+
+Twitch
+Discord
+Facebook
+Twitter
+YouTube
+Contact Us
+About
+Contact
+Advertise
+FAQ
+Privacy
+Terms of Use
+Jobs
+
+Our Brands
+
+all.gg
+U.GG
+The Sims Resource
+Addicting Games
+Pocket Gamer
+Fantasy Football Scout
+GameKnot

@@ -1,0 +1,456 @@
+[Skip to Main Content]
+와우
+본 서버
+[FOREVER]
+클래식
+불성
+판다
+···
+라이브
+PTR
+12.1.7
+PTR
+12.1.5
+로그인 하기:
+배틀넷
+이메일
+회원가입
+뉴스[HOUSING TOOLS]디스코드 웹훅데이터베이스도구가이드커뮤니티광고 없애기
+직업
+인기 주제
+한밤
+12.1.5 패치
+한밤 2 시즌
+순위 목록
+전문 기술들
+플레이어 하우징
+Report ad
+모든 광고 제거
+가이드
+경제 & 화폐
+가이드 콘텐츠
+12.1.5 패치
+4.3/5  (53 표)
+Midnight Season 2
+Midnight Season 2
+Season 2 Mythic+
+The Venomous Abyss
+Midnight
+Cheat Sheet
+Talent Builds
+Talent Import Codes
+Rider of the Apocalypse
+San'layn
+Raid Talent Builds
+Mythic+ Talent Builds
+Delves
+Leveling
+Rotation
+BiS Gear
+Consumables
+Spec Basics
+Overview
+Basics
+Abilities
+Stat Priority
+UI & Macros
+Leveling
+가이드 정보
+변경 기록
+Best Unholy Death Knight Talent Tree Builds - Midnight
+Taeznak (이)가 작성함
+업데이트됨: 2026/10/13
+Taeznak
+현재 트위치 오프라인
+팔로우
+Overview
+BiS Gear
+Rotation
+Talent Builds
+Consumables
+Stats
+Basics
+[Drop the Ads.]
+[Keep the Loot.]
+UNHOLY DEATH KNIGHT TALENT IMPORT CODES
+Below, you will find all the current best builds for Unholy Death Knights in Midnight Season 2. With the tier sets having been redesigned to flat damage buffs, there are no differences between recommendations if you have the tier set compared to not.
+
+
+Builds marked with the  icon are the Current Recommendations. Use the copy buttons to generate an import code.
+광고 신고
+Report ad
+모든 광고 제거
+RIDER OF THE APOCALYPSE
+Build	Import Code	Link
+ Single Target	복사 Rider ST	Build
+ M+/Delves/Cleave	복사 Rider M+/Delves	Build
+ Open World  (Best)	복사 Open World	Build
+SAN'LAYN
+Build	Import Code	Link
+ Single Target/Cleave  (Best)	복사 San ST	Build
+ M+/Delves  (Best)	복사 San AoE	Build
+
+
+Unholy talent builds in the Midnight are pretty simple.  San'layn is pretty much always better to pick.
+
+
+How to Import Talent Loadouts
+BEST UNHOLY DEATH KNIGHT RAID TALENT BUILDS
+Rider of the Apocalypse
+San'layn
+죽음의 기사
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+부정
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+4/4
+종말의 기수
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+BEST UNHOLY DEATH KNIGHT MYTHIC+ TALENT BUILDS
+When it comes to Mythic+, Unholy currently has 2 viable buids. One for  San'layn and one for  Rider of the Apocalypse. More detailed explanations of the builds will be in their respective tabs.
+Rider of the Apocalypse
+San'layn
+For  Rider of the Apocalypse in Mythic+, this build plays almost exactly like Unholy normally does in Single Target scenarios. The only major difference is swapping to pressing Epidemic instead of Death Coil when fighting 3+ targets. This build mostly focuses on buffing our Magus' as much as possible, and summoning as many as possible to deal most of our sustained AoE damage.
+죽음의 기사
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+부정
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+4/4
+종말의 기수
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+BEST UNHOLY DEATH KNIGHT DELVES BUILD
+For Delves, the builds are identical to the Mythic+ builds above. As mentioned there,  San'layn and  Rider of the Apocalypse both have viable builds, Though i would generally recommend  Rider of the Apocalypse due to its simplicity and sustained AoE potential. In delves, the gameplay loop generally follows the same logic as it does for Mythic+.
+Rider of the Apocalypse
+San'layn
+죽음의 기사
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+부정
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+2/2
+1/1
+1/1
+4/4
+종말의 기수
+특성 반출
+계산기에서 열기
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+UNHOLY DEATH KNIGHT LEVELING BUILDS
+If you're searching for advice on both the best talents to pick while leveling and the optimal order in which to take them, our leveling tips page has got you covered. There, you will find information about different leveling talent builds, the recommended order in which to pick them, and information about your spec's rotation and cooldowns.
+
+
+Unholy Death Knight Leveling Tips
+Our Unholy Death Knight guides are always updated with the latest information from in-game experience, simulations, and logs. Make sure to check our changelog for this page by clicking on View Changelog in the Quick Facts column or on the book icon at the top of the page. If you are interested in more in-depth Unholy Death Knight guides for Midnight Season 2, make sure to browse the Navigation Bar at the top of the page.
+
+
+
+
+Feedback
+Thanks for reading our class guides! If you have any feedback, feel free to leave a comment in the section below, and we will reply as quickly as possible. If you'd like to talk with any of our writers directly, you can do so by joining our Discord server and finding them there!
+
+
+Taeznak
+World of Warcraft Unholy Death Knight Expert
+작성자 프로필
+Taeznak is a long-time Unholy player, theorycrafter, analyst for Method, and moderator for the Death Knight Discord server, Acherus. While also helping maintain Simulationcraft, supporting both Death Knights as a whole, as well as special effect (cantrip) items.
+태그: PvE
+댓글
+영어 댓글들 (21)
+아직 댓글이 없습니다.
+댓글을 남기려면 로그인하거나, 계정이 없다면 회원가입을 해 주세요.
+기여
+댓글 달기
+댓글을 달 때에는 다음과 같은 사항들을 기억해 주십시오:
+주석은 한국어로만 작성해야하며 그렇지 않으면 삭제됩니다.
+어떻게 댓글을 써야할지 모르시겠나요? 저희의 댓글 가이드를 확인하세요!
+댓글을 제출하기 전에 쓴 댓글을 다시 한번 읽어보세요.
+더 빠른 답을 원하신다면 저희의 토론장에 대신 질문해 보세요.
+댓글 달기
+로그인이 되어있지 않습니다. 댓글을 남기려면 로그인하거나, 회원가입을 해 주세요.
+Report ad
+모든 광고 제거
+뉴스
+[Housing Tools]
+디스코드 웹훅
+데이터베이스
+도구
+가이드
+커뮤니티
+광고 없애기
+와우 가이드들
+직업 가이드들
+Delve 가이드들
+레벨링 가이드들
+신화 쐐기돌 가이드들
+전문 기술 가이드들
+공격대 가이드들
+특성 계산기
+목록들단계
+한밤
+MOP CLASSIC 가이드들
+직업 가이드들
+전문 기술 가이드들
+던전 가이드들
+공격대 가이드들
+퀘스트 가이드들
+평판 가이드들
+애완동물 대전 가이드들
+시나리오 가이드들
+도전 난이도 가이드들
+특성 계산기
+순위 목록
+와우 클래식 가이드들
+요구 조건 가이드
+칸에 들어갈 베스트 아이템 가이드들
+직업 가이드들
+던전 가이드들
+레벨링 가이드들
+전문 기술 가이드들
+PvP 가이드들
+퀘스트 가이드들
+공격대 가이드들
+평판 가이드들
+디아블로 IV 가이드들
+Lord of Hatred Expansion
+13 시즌
+엔드게임 목록단계
+목록단계s
+야만용사 빌드
+드루이드 빌드
+강령술사 빌드
+성기사 빌드
+도적 빌드
+원소술사 빌드
+혼령사 빌드
+상단
+도움이 필요하신가요?
+사용자 도구
+회사 소개
+광고
+Cookies Settings
+랜덤 페이지
+프리미엄
+개인정보 보호정책
+이용 약관
+광고 신고
+Report ad
+모든 광고 제거
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings
+Reject All
+Accept All Cookies

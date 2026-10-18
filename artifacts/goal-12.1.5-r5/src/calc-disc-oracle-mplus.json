@@ -1,0 +1,521 @@
+[
+  {
+    "code": "CAQAAAAAAAAAAAAAAAAAAAAAAADsMDWmZMmBmZbmtZmZmxMDAAAAAAAAAgxYZGMzMjNjZGsZamYAmZDDhxsMAjBLAAwYmZGDmBYmZEMD",
+    "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CAQAAAAAAAAAAAAAAAAAAAAAAADsMDWmZMmBmZbmtZmZmxMDAAAAAAAAAgxYZGMzMjNjZGsZamYAmZDDhxsMAjBLAAwYmZGDmBYmZEMD",
+    "finalUrl": "https://www.wowhead.com/ko/talent-calc/priest/discipline/oracle/EAQEFRFUVRBQFWEUikRBUPVUVVVRQJBUGEFTQCUAFFVVVUBQ",
+    "title": "수양 사제 한밤 특성 계산기 - 월드 오브 워크래프트",
+    "hero": "예언자",
+    "points": [
+      34,
+      34,
+      13
+    ],
+    "max": [
+      34,
+      34,
+      13
+    ],
+    "headers": [
+      {
+        "type": "class",
+        "id": "5",
+        "title": "사제",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "spec",
+        "id": "256",
+        "title": "수양",
+        "points": "사용: 34 / 34"
+      },
+      {
+        "type": "hero",
+        "id": "65556",
+        "title": "영웅",
+        "points": "사용: 13 / 13"
+      }
+    ],
+    "grids": [
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 32,
+        "selected": [
+          {
+            "name": "순간 치유 연마",
+            "spell": 393870,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "천사의 깃털",
+            "spell": 121536,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정신 분열",
+            "spell": 8092,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "마법 무효화",
+            "spell": 528,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영혼의 길잡이",
+            "spell": 1250818,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영혼의 절규",
+            "spell": 8122,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신의의 도약",
+            "spell": 73325,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "마력 주입",
+            "spell": 10060,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고통의 기원",
+            "spell": 1251030,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "끔찍한 절규",
+            "spell": 55676,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛의 쇄도",
+            "spell": 109186,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "대규모 무효화",
+            "spell": 32375,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "태양 여사제의 쌍둥이",
+            "spell": 373466,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "결의의 힘",
+            "spell": 1250820,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정신 지배",
+            "spell": 205364,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영원의 빛",
+            "spell": 1249233,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "이중 수양",
+            "spell": 1251077,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 깨달음",
+            "spell": 1250835,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "결속의 치유",
+            "spell": 368275,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 권능: 죽음",
+            "spell": 32379,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "핏빛 가르침",
+            "spell": 373218,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "구원의 기도",
+            "spell": 19236,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "뒤틀린 운명",
+            "spell": 390972,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "소실",
+            "spell": 586,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "보호의 빛",
+            "spell": 193063,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "정신관통",
+            "spell": 1251029,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "소실 연마",
+            "spell": 390670,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "흔들림없는 의지",
+            "spell": 373456,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "주문 수호",
+            "spell": 390667,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "환상",
+            "spell": 108942,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "집중된 마력",
+            "spell": 415416,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "반투명 형상",
+            "spell": 373446,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": null,
+        "fullySpent": "1",
+        "selectedCount": 29,
+        "selected": [
+          {
+            "name": "속죄",
+            "spell": 81749,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신의 권능: 광휘",
+            "spell": 194509,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고통 억제",
+            "spell": 33206,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어두운 면의 힘",
+            "spell": 198068,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빛의 약조",
+            "spell": 322115,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "약자의 보호자",
+            "spell": 373035,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 방종",
+            "spell": 372972,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "잠식하는 어둠",
+            "spell": 472568,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "인내의 광채",
+            "spell": 390685,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "수양 보호막",
+            "spell": 197045,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신의 권능: 방벽",
+            "spell": 421453,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "고통의 처벌",
+            "spell": 390686,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 환희",
+            "spell": 373003,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "신성 광선",
+            "spell": 372969,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "관용",
+            "spell": 238063,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "사악의 정화",
+            "spell": 1250218,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "책망",
+            "spell": 193134,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "엄격한 규율",
+            "spell": 373180,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "사도",
+            "spell": 472433,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "내면의 집중력",
+            "spell": 390693,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "환각의 마귀",
+            "spell": 197862,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠의 치유",
+            "spell": 1252217,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "천상의 아이기스",
+            "spell": 47515,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "빌린 시간",
+            "spell": 390691,
+            "points": 2,
+            "full": true
+          },
+          {
+            "name": "음울한 구원",
+            "spell": 1298779,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "영원의 방벽",
+            "spell": 238135,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "번영과 역경",
+            "spell": 390786,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "타오르는 빛",
+            "spell": 1280131,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "어둠 지배",
+            "spell": 1253827,
+            "points": 4,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      },
+      {
+        "title": "예언자",
+        "fullySpent": "1",
+        "selectedCount": 14,
+        "selected": [
+          {
+            "name": "인도의 빛",
+            "spell": 1248423,
+            "points": 0,
+            "full": true
+          },
+          {
+            "name": "예방의 기술",
+            "spell": 440662,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "선제적 조처",
+            "spell": 440671,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "천금 같은 시간",
+            "spell": 440681,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "현자의 말",
+            "spell": 1272352,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "보장된 안전",
+            "spell": 440766,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "위기 모면",
+            "spell": 440669,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "예견된 상황",
+            "spell": 440738,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "선지자의 통찰",
+            "spell": 1272359,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "궁여지책",
+            "spell": 433905,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "즉발적인 예측",
+            "spell": 1246799,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "경건",
+            "spell": 1246802,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "펼쳐지는 시야",
+            "spell": 1272363,
+            "points": 1,
+            "full": true
+          },
+          {
+            "name": "두 개의 시야",
+            "spell": 440742,
+            "points": 1,
+            "full": true
+          }
+        ],
+        "orphaned": [],
+        "unavailable": []
+      }
+    ],
+    "ok": true,
+    "sha256": "410355a5b95d6f0c935d47b62038da62d258ff17976324831698264db74dcfd2",
+    "checkedAt": "2026-10-18T15:55:39.268Z"
+  }
+]
