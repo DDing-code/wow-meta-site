@@ -15,7 +15,7 @@ const { chromium } = require('playwright');
       page.on('pageerror', error => errors.push(error.message));
       await page.goto(`${process.env.TEST_ORIGIN || 'http://127.0.0.1:3002'}/guide/paladin/protection`, { waitUntil: 'networkidle' });
       await page.getByRole('heading', { name: '보호 성기사 가이드', exact: true }).waitFor();
-      for (const [hero, key, expected] of [['기사단', 'templar', 11], ['빛대장장이', 'lightsmith', 12]]) {
+      for (const [hero, key, expected] of [['기사단', 'templar', 11], ['빛의 대장장이', 'lightsmith', 12]]) {
         await page.getByRole('group', { name: '영웅 특성 선택', exact: true }).getByRole('button', { name: hero, exact: true }).click();
         for (const [mode, label] of [['opener', '오프닝'], ['singleTarget', '단일'], ['aoe', '광역']]) {
           await page.getByRole('group', { name: '전투 상황 선택', exact: true }).getByRole('button', { name: label, exact: true }).click();
@@ -51,7 +51,8 @@ const { chromium } = require('playwright');
           await page.screenshot({ path: path.join(output, `${width}-${key}-${mode}.png`) });
         }
       }
-      assert((await page.locator('#guide-section-1').innerText()).includes('12.1'));
+      assert((await page.locator('#guide-section-1').innerText()).includes('내 스킬 한눈에 보기'));
+      assert((await page.locator('body').innerText()).includes('12.1.5'));
       assert.equal(await page.locator('#uptime, a[href$="spell=171648"], a[href$="spell=20271"], a[href$="spell=498"]').count(), 0);
       const defense = page.getByText('방패·회복·면역을 나눠 쓰기', { exact: true }).locator('..');
       assert((await defense.innerText()).includes('12초') && (await defense.innerText()).includes('마지막 저항'));

@@ -61,7 +61,8 @@ const { chromium } = require('playwright');
           await page.screenshot({ path: path.join(output, `${width}-${key}-${mode}.png`) });
         }
       }
-      assert((await page.locator('#guide-section-1').innerText()).includes('12.1'));
+      assert((await page.locator('#guide-section-1').innerText()).includes('내 스킬 한눈에 보기'));
+      assert((await page.locator('body').innerText()).includes('12.1.5'));
       for (const id of ['186185', '1266805']) {
         assert.equal(await page.locator(`a[href$="spell=${id}"]`).count(), 0);
       }

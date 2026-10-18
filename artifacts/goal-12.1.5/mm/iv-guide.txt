@@ -1,0 +1,1066 @@
+News & Guides
+Download App Discord Webhook Home
+World of Warcraft
+← Go Back World of Warcraft WoW Forever WoW Classic TBC Classic WotLK Classic Cata Classic MoP Classic
+Diablo
+← Go Back Diablo IV Diablo III Diablo II
+Final Fantasy XIV
+Gacha
+← Go Back Genshin Impact Honkai: Star Rail Zenless Zone Zero Arknights: Endfield Neverness to Everness Honkai: Nexus Anima
+More Games
+← Go Back Path of Exile 2 Path of Exile Chrono Odyssey Monster Hunter Wilds Heroes of the Storm All.gg
+Class Guides
+← Go Back View all General
+  - Simming Your Character
+  - Healing Guide
+  - Tanking Guide
+  - Set Up your UI
+  - PvE Gearing Guide
+Death Knight
+  - Death Knight Guide
+  - Blood
+  - Frost
+  - Unholy
+Demon Hunter
+  - Demon Hunter Guide
+  - Devourer
+  - Havoc
+  - Vengeance
+Druid
+  - Druid Guide
+  - Balance
+  - Feral
+  - Guardian
+  - Restoration
+Evoker
+  - Evoker Guide
+  - Augmentation
+  - Devastation
+  - Preservation
+Hunter
+  - Hunter Guide
+  - Beast Mastery
+  - Marksmanship
+  - Survival
+Mage
+  - Mage Guide
+  - Arcane
+  - Fire
+  - Frost
+Monk
+  - Monk Guide
+  - Brewmaster
+  - Mistweaver
+  - Windwalker
+Paladin
+  - Paladin Guide
+  - Holy
+  - Protection
+  - Retribution
+Priest
+  - Priest Guide
+  - Discipline
+  - Holy
+  - Shadow
+Rogue
+  - Rogue Guide
+  - Assassination
+  - Outlaw
+  - Subtlety
+Shaman
+  - Shaman Guide
+  - Elemental
+  - Enhancement
+  - Restoration
+Warlock
+  - Warlock Guide
+  - Affliction
+  - Demonology
+  - Destruction
+Warrior
+  - Warrior Guide
+  - Arms
+  - Fury
+  - Protection
+Season 2 Content
+← Go Back View all General Dungeon Guides
+  - Midnight Dungeons Overview
+  - Follower Dungeons
+Midnight Season 2
+  - Mythic+ Season 2
+  - Venomous Abyss Raid
+  - Unbinding of Kithix Raid
+  - Delves Season 2
+  - PvP Season 2
+  - Glory Raid Achievement
+  - Tier Sets Season 2
+Season 2 Features
+  - Season 2 Overview
+  - Voidforge (Bonus Rolls)
+  - Void Assaults
+  - Field Accolades
+  - Showdown Areas
+  - Omnium Folio
+  - The Coiled Isle
+  - Vaults of Atal'Utek
+Tier Lists
+← Go Back View all Mythic+ Tier Lists
+  - DPS Tier List
+  - Tank Tier List
+  - Healer Tier List
+Raiding Tier Lists
+  - DPS Tier List
+  - Tank Tier List
+  - Healer Tier List
+PvP Tier Lists
+  - DPS Tier List
+  - Healer Tier List
+Midnight Guides
+← Go Back View all Midnight Expansion Guides
+  - Midnight Overview
+  - Weekly To-Do List
+  - Catalyst Guide
+  - Great Vault
+  - Gear Upgrading
+  - Mounts In Midnight
+  - Prey System
+  - Renown Overview
+  - Trading Post
+  - World Bosses
+  - World Events
+  - Zone Overview
+'The Promise of Tomorrow' Update NEW!
+  - Patch 12.1.5 Hub
+  - Labyrinth of Kindo'jan
+  - Kindo'Jan Nemesis Boss
+  - Aqir Invasions
+Professions
+← Go Back View all Midnight Professions
+  - Profession Overview
+  - Crafting Orders/Recrafting
+  - Spark Crafting Guide
+  - Making Gold with Crafting
+  - Crafting Stats and Equipment
+Profession Leveling and Gold Making Guides
+  - Alchemy
+  - Blacksmithing
+  - Cooking
+  - Enchanting
+  - Engineering
+  - Fishing
+  - Herbalism
+  - Inscription
+  - Jewelcrafting
+  - Leatherworking
+  - Mining
+  - Skinning
+  - Tailoring
+General Info
+← Go Back View all Recurring Events
+  - Darkmoon Faire
+  - Legion Mage Tower Challenges
+  - Turbulent Timeways
+  - A Greedy Emissary
+Tools
+  - Talent Calculator
+  - Ping System Update NEW!
+Other Information
+  - Transmog Guide
+  - Books and Novels
+  - Player Housing
+PvP Discord Webhook Go Ad Free
+Home / World of Warcraft / Hunter / Marksmanship Hunter
+12.1.5
+## Marksmanship Hunter DPS Guide — 12.1.5
+Hunter
+  - Death Knight
+  - Demon Hunter
+  - Druid
+  - Evoker
+  - Hunter
+  - Mage
+  - Monk
+  - Paladin
+  - Priest
+  - Rogue
+  - Shaman
+  - Warlock
+  - Warrior
+Marksmanship
+  - Beast Mastery
+  - Marksmanship
+  - Survival
+Overview
+  - Overview
+  - Leveling
+  - Easy Mode
+  - Talents
+  - Rotation
+  - Gear
+  - Stats
+  - Enchants
+  - Mythic+
+  - Macros
+  - Pets
+Last Updated: Oct 14, 2026 - 2:11 PM (4d ago)
+Azortharion
+Support Our Writers
+NEW! Icy Veins News Webhook for Discord Icy Veins news articles directly into a channel on your server! Get Discord Webhook
+NEW! The Icy Veins app is here Try out the WoW Class Codex Addon with the Icy Veins app Download App
+  - Overview
+  - Leveling
+  - Easy Mode
+  - Talents
+  - Rotation
+  - Gear
+  - Stats
+  - Enchants
+  - Mythic+
+  - Macros
+  - Pets
+Welcome to our Marksmanship Hunter guide for World of Warcraft Patch 12.1.5. Here, you will learn how to play as a Marksmanship Hunter in both raids and Mythic+ dungeons: from the very beginning to maximizing your DPS.
+Table of Contents
+1. Marksmanship Hunter Overview 2. Marksmanship Hunter in Midnight 3. Basics of Marksmanship Hunter Gameplay 4. How to Gear Up as a Marksmanship Hunter
+Marksmanship Mythic+ Resources
+NEW! Top Marksmanship Talent Builds Top Marksmanship Mythic+ Players Marksmanship Mythic+ Heatmaps Popular Marksmanship Group Comps
+1.
+## Marksmanship Hunter Overview
+Marksmanship Hunter is a relatively mobile ranged DPS spec that is focused on slow-casting, but hard-hitting cooldown-limited abilities like Aimed Shot and Rapid Fire. Marksmanship Hunters are damage-focused snipers with excellent burst damage, mobility, and flexibility.
+Damage Raid Mythic+ Utility Survivability Mobility
+Strong Cleave, Steep Drop-Off
+Marksmanship is excellent at single-target raid cleave, delivering powerful burst on 1-4 targets. The more targets you add, the worse it gets, and its damage drops off a cliff once you go past 8 targets due to its hard target cap, which is bad for Mythic+.
+Excellent for this Raid
+Marksmanship has excellent single-target, 2-4-target cleave, burst, and execute. Almost all things that are very important in this raid, making it one of the best raiding specs.
+Capped AoE, Weak Priority Damage
+Marksmanship's damage gets worse the more targets you add, and it drops off a cliff once you go past 8 targets, which is common in Mythic+. Even at exactly 8 targets, where the cap should make it strongest, its AoE is not ahead of the other specs. Its single-target and low-target cleave are solid, but its priority damage is awful, and large pulls are where Mythic+ is played, making it one of the weaker specs for general Mythic+.
+Unremarkable
+We bring mediocre utility to the group. A 1-minute stun/AoE stop in Intimidation, and a regular cooldown ranged kick. The flexibility and cooldown of our AoE stops are mediocre. Hunter's Mark is mandatory in raids, but it is not particularly strong in Mythic+.
+Strong Active Defenses, Weak Passives
+Marksmanship has access to several strong active defensive abilities, allowing it to mitigate heavy damage effectively. However, its passive defenses are relatively weak, making it reliant on timing and proper use of cooldowns to survive in high-damage situations. It suffers in "rot" damage situations, with constantly ticking hard DoTs. As a result, Hunters often require more external healing than other classes, and the skill ceiling is relatively high, while the skill floor is relatively low.
+High potential, but high skill floor
+While Marksmanship spends around 40% of its time casting spells that render you immobile, it is reasonably flexible in when you cast these spells. Because Aimed Shot has two charges, it can be delayed while you are moving, and as long as you never cap on charges, you are not losing anything. Taking advantage of this can make Marksmanship a fairly mobile spec in practice.
+Starter Information
+Beginner Guides
+New to the game? Get started with our Leveling and Easy Mode guides!
+LevelingEasy Mode
+2.
+## Marksmanship Hunter in Midnight
+Season 2
+Changes Midnight
+Changes Overview
+2.1.
+## Midnight Patch 12.1.5 Content Guides
+Patch 12.1.5 adds two new pieces of endgame content to Season 2. The Unbinding of Kith'ix is a new raid encounter, and the Labyrinth of Kindo'jan is a new Mega-Delve. Our guides to both are linked below.
+Unbinding of Kith'ix Raid Labyrinth of Kindo'jan Delve
+2.2.
+## Patch 12.1.5 Changes
+Patch 12.1.5 is a mid-season content patch. It also brings Ascendant Venomstones, a new currency for upgrading your Weapon, Trinkets and Neck up to iLvl 340. Everything else that is new is in the Patch Hub below.
+New Patch Content
+Patch 12.1.5 Overview
+Check out our 12.1.5 Patch Hub for all the information you may need on new content, quality of life improvements, and more!
+Midnight Patch 12.1.5 Guide
+2.3.
+## Class Changes
+Patch 12.1.5 removes Unload and puts a new talent, Blood Fletching, in its place. Practically speaking, the primary difference is that Rapid Fire no longer spends Precise Shots for you, so as Sentinel you once again need to spend the proc before you cast Rapid Fire like in Season 1, unless Trueshot is up, while as Dark Ranger you simply cast Rapid Fire on cooldown. Blood Fletching changes nothing about your rotation and is a purely passive benefit.
+  - New Talent: Blood Fletching. Aimed Shot critical strikes now cause the Master Marksman bleed at 20% of the damage dealt instead of 10%. For 4 seconds after a critical Aimed Shot, the target also takes extra bleed damage every time one of your abilities damages it.
+  - Unload has been removed. Rapid Fire no longer fires an Arcane Shot at the start and end of its channel, so it no longer spends Precise Shots on its own. This has significant rotational implications which are detailed on our Rotation page.
+Our Rotation page has been updated for Patch 12.1.5. On our Gear page, the Catalyzed Aberrant Commander's Gauntlets from the Kith'ix raid are our new BiS Gloves, and there is a new list of what to spend your first Ascendant Venomstones on.
+Click for Previous Season 2 Changes
+2.4.
+## Patch 12.1 Changes
+Patch 12.1 brings a fair bit of content outside of the new Season. There is a new zone to explore, new rares and treasures to hunt down, and plenty of new housing and transmog rewards to collect. Blizzard has also updated a number of existing systems and added quality of life improvements.
+Show Patch 12.1 Class ChangesHide Patch 12.1 Class Changes
+2.5.
+## Class Changes
+Marksmanship got by far the largest rework of the three Hunter specializations in Season 2. Explosive Shot is back as a wholly different spell, Rapid Fire deals significant damage again while Aimed Shot has been nerfed.
+The Omnium Folio borrowed-power system carries into Season 2, and it affects both your talent choices and your gear. You can find the details on our dedicated Talents and Gear Guides.
+  - Explosive Shot now lasts for 3 seconds, and every 1 second the target explodes for Fire damage, dealing 50% of that damage to all enemies within 8 yards. Deals reduced damage beyond 5 targets.
+  - New Talent: Unstable Trigger. Explosive Shot can now be used a second time if cast within 3 seconds, and it incorporates any remaining damage from previous Explosive Shots on your target. It is a choice node with Tactical Reload.
+  - Shrapnel Shot is now Tactical Reload, and causes Explosive Shot to grant Lock and Load.
+  - Incendiary Ammunition is now Accuracy By Volume, and makes Bulletstorm affect 1 additional Aimed Shot.
+  - Precision Detonation now makes Explosive Shot last 1 second longer, which means it will explode for an extra tick of damage.
+  - Bulletstorm now makes Rapid Fire increase the damage of your next Aimed Shot by 20%.
+  - Windrunner Quiver now increases Rapid Fire damage by 10% and gives it a 30% chance to grant Lock and Load.
+  - Deathblow now gives Aimed Shot a 10% chance to cause your next Aimed Shot to grant Deathblow.
+  - Aspect of the Hydra no longer affects Arcane Shot.
+  - The following talents have been removed: Double Tap and Headshot.
+  - Eagle's Accuracy is now a 1-point talent that increases the damage of Aimed Shot by 5% (was 10%) and Rapid Fire by 10% (was 20%). Focused Aim now reduces the cooldown of Aimed Shot by 1 second (was 2 seconds). Small Game Hunter is now a 2-point talent.
+  - Some talents moved in the second gate of the tree to make Explosive Shot easier to obtain, and the Tenacious/ Cunning node is no longer required pathing to reach Trueshot.
+  - Apex Talents: Take Aim (Rank 2) now increases the critical damage of your abilities by 5%/10% and the damage of your ranged abilities by 3%/6%. Take Aim (Rank 3) now causes Spotter's Mark to also increase the damage of your next Rapid Fire against the target by 20%, on top of the Aimed Shot bonus.
+  - Dark Ranger: Through the Eyes has been redesigned to a flat 10% Kill Shot and Black Arrow damage increase, and it now correctly increases Withering Fire's damage
+  - Dark Ranger: Black Arrow no longer highlights itself when usable
+  - Dark Ranger: Black Arrow's direct damage was reduced by 40%, then increased by 25%
+  - Dark Ranger: Bleak Arrows damage increased by 300%, and Withering Fire's Black Arrow damage reduced by 40%
+  - Dark Ranger: Dark Minion summons can now be tracked on the Cooldown Manager.
+  - Sentinel: Moon's Blessing now only causes 1 second of cooldown reduction to Aimed Shot (was 2 seconds). Sentinel's Mark duration increased to 16 seconds (was 12 seconds).
+  - Tuning: Aimed Shot, Rapid Fire, Arcane Shot, Multi-Shot and Kill Shot damage were all increased by 20%, with further passes since: Rapid Fire +20%, Arcane Shot +15%, Kill Shot +25%, Steady Shot +50%, Volley +20%, Multi-Shot +80% then -20%, and all damage +5%. Auto Shot damage increased by 20%, and ranged auto-shot damage increased by 600%. Explosive Shot was retuned twice after its redesign, by 15% and then by 100%, and it now only explodes for 50% of its damage to other nearby enemies.
+  - Tier Set: 2-Set: Explosive Shot lasts 1 second longer and deals 5% increased damage. 4-Set: Aimed Shot and Rapid Fire damage increased by 5%. Each time Explosive Shot causes a burst of damage, the cooldown of Aimed Shot and Rapid Fire is reduced by 0.5 seconds.
+  - Bug Fixes: Small Game Hunter now correctly increases Explosive Shot's damage. Explosive Shot's area damage no longer benefits twice from Mastery, critical damage bonuses and Take Aim, no longer hits its own primary target, and still goes off if the primary target dies to it. Deathblow now procs at the expected rate from Aimed Shot, and Aspect of the Hydra no longer blocks or consumes those procs.
+2.6.
+## Marksmanship Hunter Changes in Midnight
+The Midnight Expansion brings huge changes for all Hunter specs, primarily focused on streamlining and simplifying aspects of the kit.
+2.6.1.
+## Dark Ranger
+  - No more Deathblow procs from Auto-Shots.
+  - Rapid Fire is now guaranteed to grant Deathblow.
+  - After you activate Trueshot, the Trueshot button itself turns into Wailing Arrow, a powerful cast that activates Deathblow and also kicks/silences all targets hit for 1 sec.
+2.6.2.
+## Sentinel
+  - Spotter's Mark is replaced by Sentinel's Mark and is much stronger.
+  - Don't Look Back is now a flat 10% absorb shield that you get whenever you get a Sentinel's Mark proc.
+  - Maximum Focus increased to 125.
+  - Like Dark Ranger, after activating Trueshot, the Trueshot button becomes Moonlight Chakram which sends a glowy chakram that deals heavy AoE damage as it bounces between enemies. A choice node can cause this Chakram to give us Lock and Load.
+2.7.
+## DPS & Gameplay Changes
+  - Streamline is gone and as a result, Aimed Shot's cast time is much longer at a baseline of 2.5 sec. During Trueshot, this is reduced to 1.5 sec. Its damage has been buffed to compensate, but overall, expect a slower-playing, more sniper-focused and deliberate Marksmanship "feel" in Midnight.
+  - All of the Explosive Shot-related Talents are gone. We do keep Tactical Reload, which now triggers off Volley.
+  - Other removed talents include Razor Fragments, Moving Target, and of course, Improved Streamline.
+2.8.
+## Apex Talents
+Midnight introduces new Apex Talents, unlocked between Level 80 and 90. Marksmanship receives:
+  - Take Aim
+  - Take Aim
+  - Take Aim
+They cause Rapid Fire to reduce Aimed Shot's cooldown by 5 sec over its channel.
+2.9.
+## Survivability Changes
+  - Hunters have +2% higher max HP than previously.
+  - Exhilaration's cooldown is now a 1-minute flat, instead of variable (and often lower).
+  - Aspect of the Turtle's cooldown is now 2:00 with talents, down from 2:30.
+  - Aspect of the Turtle can now be a 50% damage reduction with talents, up from 30%.
+  - Roar of Sacrifice is now an external defensive that can be used on yourself or any friendly target to reduce their damage taken by 15% for 10 sec, but 50% of their damage taken will be taken by your pet. For Marksmanship, the pet part just disappears if you have no pet.
+  - Fortitude of the Bear is now 3% passive damage reduction, instead of being an active defensive cooldown.
+2.10.
+## Utility Changes
+  - Hunter's Mark is now a universal 3% damage increase against a single-target. This essentially guarantees Hunter a raid spot in every raid. It is also a boost to the group in Mythic+, though it is much less potent there.
+  - Counter Shot now spell-locks the target for 5 seconds, up from 3.
+  - Freezing Trap can now slow the target by 70% for 4 sec after the trap breaks.
+  - Intimidation is now our sole stun/stop. A choice node either reduces its cooldown to 40 sec, or makes it a 1-second AoE stun. Implosive Trap, High Explosive Trap, and Bursting Shot are all gone.
+  - The slows from Wing Clip and Concussive Shot are 25% and 10% stronger, respectively.
+  - Horsehair Tether is now a Class Tree node and not attached to the Pack Leader Hero Talent. It is a choice node with Tar-Coated Bindings, which extends Binding Shot's stun by 1 sec.
+  - Ghillie Suit is gone.
+  - Scatter Shot is gone.
+  - Scrappy is gone.
+  - Binding Shackles is gone.
+2.11.
+## Miscellaneous Changes
+  - Aspect of the Cheetah's initial "super" speed burst is now twice as long with talents.
+  - Kill Shot is now exclusive to the Marksmanship tree.
+  - Successfully kicking with Counter Shot/ Muzzle now grants 30 Focus, up from 10, but soothing/purging with Tranquilizing Shot no longer grants Focus.
+Overall, we are gaining defensiveness and mobility, while in the utility department, we are losing some things (like the ability to move mobs) but gaining others (stronger Mark, streamlined AoE stun, stronger kick and more Focus return on kicking). We think the changes are broadly positive!
+3.
+## Basics of Marksmanship Hunter Gameplay
+Marksmanship Hunter is a spec about cooldown management, uptime, and flow.
+You want to cast your hard-hitter abilities like Aimed Shot, Rapid Fire, and Kill Shot as often as possible. In-between these abilities, which all have independent cooldowns, you are managing your Focus by using Arcane Shot as a spender and Steady Shot as a filler and builder. When you cast Aimed Shot, your next Arcane Shot/ Multi-Shot will do significantly increased damage, and so you have a fairly consistent flow where a Precise Shots-generator is immediately followed by a spender.
+During Trueshot, your exciting main cooldown, everything dramatically speeds up and you will be spamming both Aimed Shot and Rapid Fire with their reduced cooldown. The main benefit conferred by this cooldown is significantly increased Crit Chance (more Crits) and Crit Damage (stronger Crits). Crit is a huge stat for Marksmanship due to these and other mechanics.
+On AoE, you want to activate the Trick Shots buff for all of your Aimed and Rapid Fire casts. This is done by simply weaving at least one Multi-Shot in-between every single cast of Aimed Shot and Rapid Fire, even during Trueshot.
+The best Marksmanship Hunters are excellent at doing these things on the fly and during hectic movement (which prevents Aimed Shot casting) and mechanics. They always know what to cast next and they have a great awareness of their Focus levels and the status of their cooldowns at all times. To condense things further, Marksmanship can be described briefly with the following bullet points.
+  - Spend All of Your Precise Shots
+  Every single Aimed Shot and Rapid Fire is going to grant Precise Shots, and we want to spend all of these Precise Shots procs before we cast another Aimed Shot. Do not cast Aimed Shot if you have a Precise Shots unspent. As Sentinel, spend them before Rapid Fire too, unless Trueshot is up.
+  - Always be Casting
+  Casting as many abilities as possible matters more than pressing the perfect button every time, and dead time is the single biggest thing holding most players back from their DPS goals. Steady Shot is how you fill it, and it is castable while moving, so there is no excuse for a dead global.
+Combat Information
+Talents and Rotations
+Check out these guides for the most up-to-date Talents and Rotations on Icy Veins!
+TalentsRotation
+4.
+## How to Gear Up as a Marksmanship Hunter
+Our dedicated Marksmanship gearing page covers Season 2 gear from your first upgrades through to the full best-in-slot list. We still recommend simming yourself for the ideal answer. Once you've picked up some gear, you'll need the appropriate consumables, gems, and enchants to go with those new items.
+Itemization
+Gearing and Enchants
+Looking for more information on how to gear your character? We have you covered with these two guides!
+GearEnchants
+Azortharion
+Guide Author
+Follow Azortharion
+This guide has been written by Azortharion, a full-timer Hunter Guidewriter, Theorycrafter, Content Creator, and top player since 2014 who is widely considered one of the best PvE Hunters in the world. He is an accomplished player with hundreds of top parses across all Hunter specs. He is the Head Admin of Trueshot Lodge, the official Hunter Class Discord. You can find him on his stream on Twitch and his channel on YouTube. He also has his own, personal Discord server where you can freely ask him any Hunter questions you may have!
+5.
+## Changelog
+  - 14 Oct. 2026 (rotation page): With Aspect of the Hydra on two or more targets, Sentinel now casts Rapid Fire on cooldown even with Precise Shots up.
+  - 12 Oct. 2026 (Leveling): Updated for Patch 12.1.5.
+  - 12 Oct. 2026 (pets page): Reviewed for Patch 12.1.5.
+  - 12 Oct. 2026 (WeakAuras page): Reviewed for Patch 12.1.5.
+  - 12 Oct. 2026 (gear page): Updated for Patch 12.1.5.
+  - 12 Oct. 2026 (addons page): Reviewed for Patch 12.1.5.
+  - 12 Oct. 2026 (enchants page): Reviewed for Patch 12.1.5.
+  - 12 Oct. 2026 (stats page): Reviewed for Patch 12.1.5.
+  - 12 Oct. 2026 (mythic+ page): Updated for Patch 12.1.5.
+  - 12 Oct. 2026 (rotation page): Updated for Patch 12.1.5.
+  - 12 Oct. 2026 (talents page): Updated for Patch 12.1.5.
+  - 12 Oct. 2026 (spells page): Reviewed for Patch 12.1.5.
+  - 12 Oct. 2026 (easy mode page): Updated for Patch 12.1.5.
+  - 12 Oct. 2026 (this page): Updated for Patch 12.1.5.
+  - 30 Sep. 2026 (gear page): Fixed the Chest tooltips showing two Venomcursed effects.
+  - 07 Sep. 2026 (this page): Raised the Damage rating to 3.5 and the Raid rating to 4, and rewrote both sections.
+  - 02 Sep. 2026 (gear page): Updated the Overall and Raid BiS List Trinket to the Font of Venomous Rage.
+  - 31 Aug. 2026 (gear page): Updated the Overall BiS List Ring to the Charged Sandstone Band.
+  - 31 Aug. 2026 (gear page): Updated the Overall and Raid BiS List Boots to the Boots of the Reckless Wayfarer.
+  - 31 Aug. 2026 (addons page): Replaced the Auto-TargetSwap Multi-Shot macro with the Mouseover Multi-Shot macro.
+  - 31 Aug. 2026 (rotation page): Clarified mouseover Multi-Shotting and clipping.
+  - 31 Aug. 2026 (this page): Clarified the Precise Shots spending advice for Rapid Fire.
+  - 29 Aug. 2026 (gear page): Moved the Font of Venomous Rage up to S Tier, as it was undersimming.
+  - 24 Aug. 2026 (gear page): Updated the Weapon enchant to Rite of the Hash'ey.
+  - 24 Aug. 2026 (enchants page): Updated the Weapon enchant to Rite of the Hash'ey.
+  - 24 Aug. 2026 (enchants page): Added Liquid Luster as the second Potion of a long fight, for execute.
+  - 24 Aug. 2026 (rotation page): Added Liquid Luster as the second Potion of the fight, popped around 10 seconds before Trueshot in the execute phase.
+  - 24 Aug. 2026 (rotation page): Moonlight Chakram now goes out with around 5 seconds of Trueshot left on single target, so that all 7 bounces land inside the Trueshot.
+  - 24 Aug. 2026 (rotation page): Moved Rapid Fire above the Precise Shots spenders in the Sentinel single-target priority list. Same fundamental rotation, but easier to parse/read.
+  - 22 Aug. 2026 (gear page): Added a note on crafting Legs.
+  - 22 Aug. 2026 (addons page): Noted the one Rapid Fire clip that is still worth doing.
+  - 22 Aug. 2026 (rotation page): Updated the Rapid Fire advice for the recent hotfix. Only Sentinel still clips the channel, and only on AoE.
+  - 22 Aug. 2026 (rotation page): Arcane Shot no longer has a separate rule during Trueshot.
+  - 22 Aug. 2026 (talents page): Mythic+ and Delves Sentinel builds now take Open Fire over Stargazer.
+  - 22 Aug. 2026 (talents page): Mythic+ and Delves Sentinel builds now take On Target over Obsidian Arrowhead.
+  - 22 Aug. 2026 (easy mode page): Rapid Fire no longer needs Precise Shots spent first.
+  - 18 Aug. 2026 (gear page): Updated the Nebulous Voidcore bonus roll priorities following the Gebbo's Bottomless Bag nerf.
+  - 18 Aug. 2026 (gear page): Updated the Overall BiS List Boots to the Sabatons of Coruscating Energy.
+  - 18 Aug. 2026 (addons page): Added a Target Swap Multi-Shot macro.
+  - 18 Aug. 2026 (rotation page): Added holding Trueshot for up to 15 seconds to line it up with Explosive Shot.
+  - 18 Aug. 2026 (rotation page): Added swapping to a target without a Mark before pressing Trueshot.
+  - 18 Aug. 2026 (rotation page): Added target selection by Sentinel's Mark and Spotter's Mark to the Rapid Fire, Aimed Shot and Precise Shots spender priorities.
+  - 18 Aug. 2026 (rotation page): Linked the Target Swap Multi-Shot macro from the Multi-Shot priority entries.
+  - 18 Aug. 2026 (talents page): Updated the Utility Talents for Raid builds.
+  - 17 Aug. 2026 (gear page): Updated the Trinket tier list, and changed the alternative passive Trinket to Keeper's Seething Core.
+  - 17 Aug. 2026 (talents page): The Omnium Folio setup now takes Void-Tainted Shell over Self-Mending.
+  - 16 Aug. 2026 (gear page): Reworked the crafting advice, corrected the Voracious Heart of Ula'tek and Gebbo's Bottomless Bag entries in the raid-items list, and added start of season Voidcore and Crest advice.
+  - 16 Aug. 2026 (rotation page): Added clipping the end of Rapid Fire with Multi-Shot to the Sentinel AoE opener.
+  - 16 Aug. 2026 (rotation page): Removed spreading Explosive Shot across two targets from the AoE priorities and opener if a priority target is up. It was found to not speed up M+ keys due to its prio damage loss, though it is a small AoE/2T DPS gain.
+  - 16 Aug. 2026 (talents page): Mythic+ and Delves Sentinel builds now take Stargazer over Open Fire, a small gain now that Rapid Fire clipping consumes Precise Shots more often.
+  - 15 Aug. 2026 (gear page): Updated the Trinket tier list following the latest tuning.
+  - 15 Aug. 2026 (rotation page): Added clipping the end of Rapid Fire to the single-target priorities, and clarified that both shots benefit from Precise Shots.
+  - 14 Aug. 2026 (gear page): Updated the Nebulous Voidcore bonus roll priorities.
+  - 14 Aug. 2026 (gear page): Updated the Raid BiS Gloves to the Catalyzed Grips of Swirling Fury from Nymrissa Wavecaller.
+  - 13 Aug. 2026 (rotation page): Added clipping the end of Rapid Fire to the AoE priorities.
+  - 12 Aug. 2026 (gear page): Added Catalyst and Great Vault FAQs and a socket section, fixed Catalyst drop locations, and updated sources of the Raid BiS Helm and Gloves.
+  - 12 Aug. 2026 (rotation page): Clarified that Rapid Fire needs Trick Shots up in the AoE priority.
+  - 12 Aug. 2026 (talents page): Delve builds now take Emergency Salve over Wilderness Medicine.
+  - 12 Aug. 2026 (talents page): Updated Delve build Class Tree to pick up Unbreakable Bond (for a pet).
+  - 11 Aug. 2026 (rotation page): Clarified Explosive Shot targeting in the AoE priority.
+  - 10 Aug. 2026 (Leveling): Updated for Patch 12.1.
+  - 10 Aug. 2026 (pets page): Updated for Patch 12.1.
+  - 10 Aug. 2026 (WeakAuras page): Reviewed for Patch 12.1.
+  - 10 Aug. 2026 (gear page): Updated for Patch 12.1.
+  - 10 Aug. 2026 (addons page): Updated for Patch 12.1.
+  - 10 Aug. 2026 (enchants page): Updated for Patch 12.1.
+  - 10 Aug. 2026 (stats page): Updated for Patch 12.1.
+  - 10 Aug. 2026 (mythic+ page): Updated for Patch 12.1.
+  - 10 Aug. 2026 (rotation page): Updated for Patch 12.1.
+  - 10 Aug. 2026 (talents page): Updated for Patch 12.1.
+  - 10 Aug. 2026 (spells page): Updated for Patch 12.1.
+  - 10 Aug. 2026 (easy mode page): Updated for Patch 12.1.
+  - 10 Aug. 2026 (this page): Updated for Patch 12.1.
+  - 16 Jul. 2026 (Leveling): Updated Heirloom stat advice.
+  - 16 Jul. 2026 (pets page): Corrected Fortitude of the Bear and Updraft descriptions, removed the exotic pet table, and updated expansion references.
+  - 16 Jul. 2026 (gear page): Fixed Tier Set FAQ pieces and updated the Neck recommendation notes.
+  - 16 Jul. 2026 (enchants page): Updated Weapon enchant recommendations, and fixed enchant tooltip links.
+  - 16 Jul. 2026 (mythic+ page): Clarified burst profile and utility notes.
+  - 16 Jul. 2026 (rotation page): Corrected Volley's cooldown and clarified Double Tap usage.
+  - 16 Jul. 2026 (talents page): Clarified Hero Talent build guidance.
+  - 16 Jul. 2026 (spells page): Corrected Aimed Shot's cast time, added Explosive Shot, Wailing Arrow, and Moonlight Chakram to the glossary, and alphabetized the ability tables.
+  - 16 Jul. 2026 (easy mode page): Added Trueshot to the beginner priority list.
+  - 16 Jul. 2026 (this page): Reworked the performance overview.
+  - 17 Jun. 2026 (gear page): Updated BiS Neck
+  - 17 Jun. 2026 (talents page): Updated recommended week 1 Folio Rune based on real-world data trumping sims.
+  - 16 Jun. 2026 (enchants page): Clarified Weapon Enchant choice.
+  - 15 Jun. 2026 (Leveling): Reviewed for Patch 12.0.7.
+  - 15 Jun. 2026 (pets page): Reviewed for Patch 12.0.7.
+  - 15 Jun. 2026 (WeakAuras page): Reviewed for Patch 12.0.7.
+  - 15 Jun. 2026 (gear page): Updated for Patch 12.0.7.
+  - 15 Jun. 2026 (addons page): Reviewed for Patch 12.0.7.
+  - 15 Jun. 2026 (enchants page): Reviewed for Patch 12.0.7.
+  - 15 Jun. 2026 (stats page): Reviewed for Patch 12.0.7.
+  - 15 Jun. 2026 (mythic+ page): Reviewed for Patch 12.0.7.
+  - 15 Jun. 2026 (rotation page): Reviewed for Patch 12.0.7.
+  - 15 Jun. 2026 (talents page): Updated for Patch 12.0.7.
+  - 15 Jun. 2026 (spells page): Reviewed for Patch 12.0.7.
+  - 15 Jun. 2026 (easy mode page): Reviewed for Patch 12.0.7.
+  - 15 Jun. 2026 (this page): Updated for Patch 12.0.7.
+  - 29 May 2026 (rotation page): Added note of high-prio Aimed at 2 charges for DR ST.
+  - 21 May 2026 (talents page): Updated guidance on the Sentinel Raid AoE Build.
+  - 07 May 2026 (talents page): Updated Sentinel Raid AoE Build.
+  - 06 May 2026 (talents page): Updated Sentinel M+ Build. Still very bad in all M+ situations.
+  - 04 May 2026 (talents page): Updated for tuning.
+  - 27 Apr. 2026 (rotation page): Rotation updates and simplifications. Opener updates.
+  - 25 Apr. 2026 (this page): Updated Beast Mastery performance evaluation.
+  - 20 Apr. 2026 (Leveling): Updated for Patch 12.0.5.
+  - 20 Apr. 2026 (pets page): Reviewed for Patch 12.0.5.
+  - 20 Apr. 2026 (WeakAuras page): Reviewed for Patch 12.0.5.
+  - 20 Apr. 2026 (gear page): Updated for Patch 12.0.5.
+  - 20 Apr. 2026 (addons page): Reviewed for Patch 12.0.5.
+  - 20 Apr. 2026 (enchants page): Reviewed for Patch 12.0.5.
+  - 20 Apr. 2026 (stats page): Updated for Patch 12.0.5.
+  - 20 Apr. 2026 (mythic+ page): Updated for Patch 12.0.5.
+  - 20 Apr. 2026 (rotation page): Updated for Patch 12.0.5.
+  - 20 Apr. 2026 (talents page): Updated for Patch 12.0.5.
+  - 20 Apr. 2026 (spells page): Reviewed for Patch 12.0.5.
+  - 20 Apr. 2026 (easy mode page): Reviewed for Patch 12.0.5.
+  - 20 Apr. 2026 (this page): Updated for Patch 12.0.5.
+  - 09 Apr. 2026 (rotation page): Dark Ranger Opener fix.
+  - 07 Apr. 2026 (gear page): Updated Light Company Guidon Tier List position.
+  - 31 Mar. 2026 (talents page): Updated Talent build note for Vaelgor and Ezzorak.
+  - 25 Mar. 2026 (gear page): Updated Mythic+ Gear BiS List.
+  - 25 Mar. 2026 (talents page): Updated the baseline Raid AOE build.
+  - 22 Mar. 2026 (stats page): Added Haste breakpoint information.
+  - 22 Mar. 2026 (mythic+ page): Swapped Sentinel M+ Build to Stalk and Strike over Twilight Requiem in the Sentinel Tree, for identical sim performance but a microscopic mobility benefit.
+  - 22 Mar. 2026 (talents page): Swapped Sentinel M+ Build to Stalk and Strike over Twilight Requiem in the Sentinel Tree, for identical sim performance but a microscopic mobility benefit.
+  - 21 Mar. 2026 (gear page): Updated Mythic+ Gear BiS List.
+  - 19 Mar. 2026 (enchants page): Updated to recommend Leech Enchants over Avoidance. Updated Gems advice.
+  - 19 Mar. 2026 (talents page): Updated Delve build.
+  - 17 Mar. 2026 (gear page): Updated for Midnight Season 1.
+  - 17 Mar. 2026 (rotation page): Fixed error causing Volley not to appear in the opener under some conditions. Small updates to Sentinel AoE Rotation.
+  - 17 Mar. 2026 (talents page): Added simple explainer for the Hydra Build. Updated the Hydra Build for a bit more AoE. Fixed single-target build error.
+  - 16 Mar. 2026 (Leveling): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (pets page): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (WeakAuras page): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (gear page): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (addons page): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (enchants page): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (stats page): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (mythic+ page): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (rotation page): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (talents page): Updated Sentinel Mythic+ Build.
+  - 16 Mar. 2026 (spells page): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (easy mode page): Updated for Midnight Season 1.
+  - 16 Mar. 2026 (this page): Updated for Midnight Season 1.
+  - 04 Mar. 2026 (gear page): Updated Crafting recommendation for endgame.
+  - 03 Mar. 2026 (rotation page): Opener clarifications for Moonlight Chakram.
+  - 03 Mar. 2026 (talents page): Updated Talent Builds and added Dark Ranger builds.
+  - 26 Feb. 2026 (Leveling): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (pets page): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (WeakAuras page): Reviewed for Midnight 12.0.1.
+  - 26 Feb. 2026 (gear page): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (addons page): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (enchants page): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (stats page): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (mythic+ page): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (rotation page): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (talents page): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (spells page): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (easy mode page): Updated for Midnight 12.0.1.
+  - 26 Feb. 2026 (this page): Updated for Midnight 12.0.1.
+  - 10 Feb. 2026 (Leveling): Updated for Midnight Pre-Patch.
+  - 10 Feb. 2026 (pets page): Updated for Midnight Pre-Patch.
+  - 10 Feb. 2026 (WeakAuras page): Reviewed for Midnight Pre-Patch.
+  - 10 Feb. 2026 (gear page): Updated for Midnight Pre-Patch.
+  - 10 Feb. 2026 (addons page): Updated for Midnight Pre-Patch.
+  - 10 Feb. 2026 (enchants page): Updated for Midnight Pre-Patch.
+  - 10 Feb. 2026 (stats page): Reviewed for Midnight Pre-Patch.
+  - 10 Feb. 2026 (mythic+ page): Updated Talent Builds for the upcoming 12.0.1 changes.
+  - 10 Feb. 2026 (rotation page): Updated for Midnight Pre-Patch.
+  - 10 Feb. 2026 (talents page): Updated Talent Builds for the upcoming 12.0.1 changes.
+  - 10 Feb. 2026 (spells page): Updated for Midnight Pre-Patch.
+  - 10 Feb. 2026 (easy mode page): Updated for Midnight Pre-Patch.
+  - 10 Feb. 2026 (this page): Updated for Midnight Pre-Patch.
+  - 23 Jan. 2026 (talents page): Updated Stat Diminishing Returns values for Level 80.
+  - 19 Jan. 2026 (mythic+ page): Updated for Midnight Pre-Patch.
+  - 19 Jan. 2026 (talents page): Updated for Midnight Pre-Patch.
+  - 30 Nov. 2025 (Leveling): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (pets page): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (WeakAuras page): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (gear page): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (addons page): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (enchants page): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (stats page): Updated for Patch 11.2.7.
+  - 30 Nov. 2025 (mythic+ page): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (rotation page): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (talents page): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (spells page): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (easy mode page): Reviewed for Patch 11.2.7.
+  - 30 Nov. 2025 (this page): Updated for Patch 11.2.7.
+  - 05 Oct. 2025 (Leveling): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (pets page): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (WeakAuras page): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (gear page): Updated for Patch 11.2.5.
+  - 05 Oct. 2025 (addons page): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (enchants page): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (stats page): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (mythic+ page): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (rotation page): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (talents page): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (spells page): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (easy mode page): Reviewed for Patch 11.2.5.
+  - 05 Oct. 2025 (this page): Updated for Patch 11.2.5.
+  - 14 Sep. 2025 (stats page): Updated Stat Priorities, specifically formalizing a point of Crit where it tends to become inferior.
+  - 02 Sep. 2025 (gear page): Trinket Tier List and BiS updates.
+  - 02 Sep. 2025 (mythic+ page): Updated DR M+ Talent Build, specifically utility picks.
+  - 02 Sep. 2025 (talents page): Updated DR M+ Talent Build, specifically utility picks.
+  - 28 Aug. 2025 (rotation page): Single-Target rotation update surrounding ES usage.
+  - 27 Aug. 2025 (stats page): Updated stat priority for Dark Ranger AoE.
+  - 27 Aug. 2025 (mythic+ page): Expanded on reasoning for 1.5-min and 1-min builds.
+  - 27 Aug. 2025 (rotation page): Minor rotational clarifications and edits on AoE.
+  - 27 Aug. 2025 (talents page): Expanded on reasoning for 1.5-min and 1-min builds.
+  - 27 Aug. 2025 (easy mode page): Simplified the Rotation further.
+  - 26 Aug. 2025 (mythic+ page): Updated note on swapping between Unerring Vision and Calling the Shots for Dark Ranger M+.
+  - 26 Aug. 2025 (talents page): Updated note on swapping between Unerring Vision and Calling the Shots for Dark Ranger M+. Removed note on Focused Aim as Improved Streamline is equal, even on paper, and better in practice. Update Raid AoE build.
+  - 25 Aug. 2025 (rotation page): Added information about rotational bugs.
+  - 25 Aug. 2025 (rotation page): Updated Explosive Shot usage on single-target to be more accomodating of Improved Streamline setups.
+  - 25 Aug. 2025 (talents page): Updated single-target talent default to Improved Streamline rather than Focused Aim.
+  - 20 Aug. 2025 (rotation page): Added note on swapping Focused Aim to Improved Streamline for movement concerns.
+  - 19 Aug. 2025 (rotation page): Removed filler-Multi Shot from Dark Ranger AoE.
+  - 18 Aug. 2025 (rotation page): Minor Dark Ranger Single-Target Opener update (make it more explicit to spend PS stacks before entering Trueshot).
+  - 17 Aug. 2025 (rotation page): Minor Dark Ranger Single-Target Rotation clarifications/simplifications. Minor Sentinel AoE clarification.
+  - 15 Aug. 2025 (gear page): Updated Trinket Tier List for tuning. Simplified into one list.
+  - 15 Aug. 2025 (rotation page): Updated AoE Rotation(s).
+  - 13 Aug. 2025 (rotation page): Small Dark Ranger Single-Target opener change.
+  - 12 Aug. 2025 (gear page): Added preliminary, guesswork-based Cursed Stone Idol Trinket in the Tier List, as it cannot be simmed yet.
+  - 12 Aug. 2025 (rotation page): Updated Single-Target Rotations.
+  - 12 Aug. 2025 (talents page): Microscopic single-target talent update for Dark Ranger.
+  - 11 Aug. 2025 (gear page): Updated M+ Trinket Tier List.
+  - 11 Aug. 2025 (mythic+ page): Updated the Mythic+ Build Recommendation.
+  - 11 Aug. 2025 (rotation page): Substantial Rotational Updates for Dark Ranger on Single-Target, worth quite a bit of extra DPS.
+  - 11 Aug. 2025 (talents page): Updated Mythic+ Talent Build recommendation.
+  - 09 Aug. 2025 (gear page): Updated Trinket Tier Lists and BiS Lists.
+  - 09 Aug. 2025 (stats page): Updated Stat Priority.
+  - 08 Aug. 2025 (gear page): Updated Mythic+ Gear BiS List.
+  - 08 Aug. 2025 (rotation page): Update default Dark Ranger Single-Target talent picks.
+  - 08 Aug. 2025 (talents page): Updated single-target rotation default utility picks for the Raid.
+  - 07 Aug. 2025 (rotation page): Further opener update iteration.
+  - 07 Aug. 2025 (talents page): Updated the S3 Single-Target build to be the same as the S2 4PC one!
+  - 06 Aug. 2025 (mythic+ page): Sent M+ Class Tree talent update.
+  - 06 Aug. 2025 (rotation page): Substantial AoE Rotation updates, particularly Sentinel AoE Opener.
+  - 06 Aug. 2025 (talents page): Dark Ranger S2 4PC Talents and Sent M+ Class Tree talent update.
+  - 04 Aug. 2025 (Leveling): Updated for Patch 11.2.
+  - 04 Aug. 2025 (pets page): Reviewed for Patch 11.2.
+  - 04 Aug. 2025 (WeakAuras page): Reviewed for Patch 11.2.
+  - 04 Aug. 2025 (gear page): Updated for Patch 11.2.
+  - 04 Aug. 2025 (addons page): Reviewed for Patch 11.2.
+  - 04 Aug. 2025 (enchants page): Updated for Patch 11.2.
+  - 04 Aug. 2025 (stats page): Updated for Patch 11.2.
+  - 04 Aug. 2025 (mythic+ page): Updated for Patch 11.2.
+  - 04 Aug. 2025 (rotation page): Updated for Patch 11.2.
+  - 04 Aug. 2025 (talents page): Updated for Patch 11.2.
+  - 04 Aug. 2025 (spells page): Reviewed for Patch 11.2.
+  - 04 Aug. 2025 (easy mode page): Updated for Patch 11.2.
+  - 04 Aug. 2025 (this page): Updated for Patch 11.2.
+  - 23 Jun. 2025 (gear page): Updated the Titan Disc recommendation based on the latest hotfixes.
+  - 15 Jun. 2025 (Leveling): Reviewed for Patch 11.1.7.
+  - 15 Jun. 2025 (pets page): Reviewed for Patch 11.1.7.
+  - 15 Jun. 2025 (WeakAuras page): Reviewed for Patch 11.1.7.
+  - 15 Jun. 2025 (gear page): Updated for Patch 11.1.7.
+  - 15 Jun. 2025 (addons page): Reviewed for Patch 11.1.7.
+  - 15 Jun. 2025 (enchants page): Reviewed for Patch 11.1.7.
+  - 15 Jun. 2025 (stats page): Reviewed for Patch 11.1.7.
+  - 15 Jun. 2025 (Liberation of Undermine page): Reviewed for Patch 11.1.7.
+  - 15 Jun. 2025 (mythic+ page): Reviewed for Patch 11.1.7.
+  - 15 Jun. 2025 (rotation page): Updated for Patch 11.1.7.
+  - 15 Jun. 2025 (talents page): Reviewed for Patch 11.1.7.
+  - 15 Jun. 2025 (spells page): Reviewed for Patch 11.1.7.
+  - 15 Jun. 2025 (easy mode page): Updated for Patch 11.1.7.
+  - 15 Jun. 2025 (this page): Updated for Patch 11.1.7.
+  - 26 May 2025 (talents page): Added note on Salvo vs Ohn'ahran Winds.
+  - 17 May 2025 (talents page): Updated the Raid AoE Build to grab Volley, since most AoE in the Raid is very short-term.
+  - 15 May 2025 (mythic+ page): Updated the Sentinel Mythic+ build to grab Ohn'ahran Winds, as evidence suggests that it has been fixed and now works properly in Mythic+ keys.
+  - 15 May 2025 (rotation page): Updated the Dark Ranger AoE Opener.
+  - 15 May 2025 (talents page): Updated the Sentinel Mythic+ build to grab Ohn'ahran Winds, as evidence suggests that it has been fixed and now works properly in Mythic+ keys.
+  - 14 May 2025 (gear page): Updated the purchasing order of Jastor Diamond and added more context to its "BiS"-ness.
+  - 09 May 2025 (gear page): Updated Corruption Enchants & Puzzling Cartel Chip Dinar section.
+  - 09 May 2025 (enchants page): Updated Corruption Enchants section.
+  - 09 May 2025 (this page): Updated Best Spec section.
+  - 07 May 2025 (rotation page): Updated the wording of the 4PC Doubledip in the rotation to make it clearer what it does and how it works.
+  - 21 Apr. 2025 (Leveling): Updated for Patch 11.1.5.
+  - 21 Apr. 2025 (pets page): Reviewed for Patch 11.1.5.
+  - 21 Apr. 2025 (WeakAuras page): Reviewed for Patch 11.1.5.
+  - 21 Apr. 2025 (gear page): Add list of Dinar-purchasable items.
+  - 21 Apr. 2025 (addons page): Reviewed for Patch 11.1.5.
+  - 21 Apr. 2025 (enchants page): Added Corruption Enchants information.
+  - 21 Apr. 2025 (stats page): Reviewed for Patch 11.1.5.
+  - 21 Apr. 2025 (Liberation of Undermine page): Reviewed for Patch 11.1.5.
+  - 21 Apr. 2025 (mythic+ page): Reviewed for Patch 11.1.5.
+  - 21 Apr. 2025 (rotation page): Reviewed for Patch 11.1.5.
+  - 21 Apr. 2025 (talents page): Updated the default Dark Ranger M+ Build on the Talents Page, mostly to stem confusion.
+  - 21 Apr. 2025 (spells page): Reviewed for Patch 11.1.5.
+  - 21 Apr. 2025 (easy mode page): Reviewed for Patch 11.1.5.
+  - 21 Apr. 2025 (this page): Updated for Patch 11.1.5.
+  - 04 Apr. 2025 (rotation page): Very small rotation updates and clarifications.
+  - 04 Apr. 2025 (talents page): Updated the Sentinel Mythic+ Build to account for Ohn'ahran Winds being bugged.
+  - 02 Apr. 2025 (mythic+ page): Updated the Mythic+ Talent Builds.
+  - 02 Apr. 2025 (mythic+ page): Updated the Sentinel Mythic+ Talent Build, adding a note about Ohn'ahran Winds being bugged.
+  - 02 Apr. 2025 (talents page): Reverted yesterday's change on ST Build. Updated with new M+ Build.
+  - 01 Apr. 2025 (talents page): Updated the Single-Target Talent Builds in light of recent simulation updates.
+  - 30 Mar. 2025 (mythic+ page): Added note on Small Game Hunter viability.
+  - 30 Mar. 2025 (talents page): Added note on Small Game Hunter viability.
+  - 29 Mar. 2025 (gear page): Updated the position of Eye of Kezan in the Mythic+ Trinket Tier List.
+  - 25 Mar. 2025 (Leveling): Updated for March 25 Updates.
+  - 25 Mar. 2025 (pets page): Updated for March 25 Updates.
+  - 25 Mar. 2025 (WeakAuras page): Updated for March 25 Updates.
+  - 25 Mar. 2025 (gear page): Updated for March 25 Updates.
+  - 25 Mar. 2025 (addons page): Updated for March 25 Updates.
+  - 25 Mar. 2025 (enchants page): Updated for March 25 Updates.
+  - 25 Mar. 2025 (stats page): Updated for March 25 Updates.
+  - 25 Mar. 2025 (mythic+ page): Updated for March 25 Updates.
+  - 25 Mar. 2025 (rotation page): Added a fall-back line to Explosive Shot regardless of other statuses, as a low priority.
+  - 25 Mar. 2025 (talents page): Updated for the March 25th Hotfixes.
+  - 25 Mar. 2025 (spells page): Updated for March 25 Updates.
+  - 25 Mar. 2025 (easy mode page): Updated for March 25 Updates.
+  - 25 Mar. 2025 (this page): Updated for March 25 Updates.
+  - 18 Mar. 2025 (mythic+ page): Updated the recommended MDT Sim/Mythic+ Simulation Route Pastebin. Updated the Mythic+ Talent Build. Added a note about Volley to it.
+  - 18 Mar. 2025 (rotation page): Updated rotational details regarding 4PC and Precision Detonation. Updated wording to be clearer in places.
+  - 18 Mar. 2025 (talents page): Updated the Mythic+ Talent Build. Added a note about Volley to it.
+  - 14 Mar. 2025 (rotation page): Updated defaults to assume 4PC.
+  - 14 Mar. 2025 (talents page): Updated defaults to assume 4PC.
+  - 13 Mar. 2025 (gear page): Updated Trinket Tier List and BiS List with fresh simulations based on latest changes and APL improvements.
+  - 07 Mar. 2025 (Liberation of Undermine page): Updated builds based on real-world data.
+  - 04 Mar. 2025 (Liberation of Undermine page): Guide added.
+  - 04 Mar. 2025 (rotation page): Rotation improvements. Removed Kill Shot from AoE Priority, and Single-Target priority unless certain talents are chosen.
+  - 04 Mar. 2025 (talents page): Added note on M+ Talent changes with and without 4PC, and updated the default temporarily.
+  - 27 Feb. 2025 (mythic+ page): Updated the Sentinel Mythic+ Talent Build in light of recent simulation tool developments.
+  - 27 Feb. 2025 (rotation page): Significant rotational updates relating to Arcane Shot, Aimed Shot, and Explosive Shot usage.
+  - 27 Feb. 2025 (talents page): Updated the Sentinel Mythic+ Talent Build in light of recent simulation tool developments.
+  - 24 Feb. 2025 (Leveling): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (pets page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (WeakAuras page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (gear page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (addons page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (enchants page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (stats page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (mythic+ page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (rotation page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (talents page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (spells page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (easy mode page): Updated for Patch 11.1.0.
+  - 24 Feb. 2025 (this page): Updated for Patch 11.1.0.
+  - 13 Jan. 2025 (rotation page): Further separated Dark Ranger and Sentinel Single-Target Rotation differences.
+  - 08 Jan. 2025 (rotation page): Small opener addition.
+  - 27 Dec. 2024 (Nerub-ar Palace page): Updated to take Dark Ranger bugs and the resulting power spike into account.
+  - 27 Dec. 2024 (rotation page): Small Dark Ranger Opener and Rotation updates.
+  - 27 Dec. 2024 (talents page): Updated to take Dark Ranger bugs and the resulting power spike into account.
+  - 17 Dec. 2024 (gear page): Updated for the Cyrce's Circlet now going to Item Level 658.
+  - 15 Dec. 2024 (Leveling): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (pets page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (WeakAuras page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (gear page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (addons page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (enchants page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (stats page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (Nerub-ar Palace page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (mythic+ page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (rotation page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (talents page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (spells page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (easy mode page): Updated for Patch 11.0.7.
+  - 15 Dec. 2024 (this page): Updated for Patch 11.0.7.
+  - 31 Oct. 2024 (rotation page): Rotation overhaul, particularly for Dark Ranger.
+  - 30 Oct. 2024 (Leveling): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (pets page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (WeakAuras page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (gear page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (addons page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (enchants page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (stats page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (Nerub-ar Palace page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (mythic+ page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (rotation page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (talents page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (spells page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (easy mode page): Updated for October 29 Hotfixes.
+  - 30 Oct. 2024 (this page): Updated Best Spec Section for hotfixes.
+  - 26 Oct. 2024 (rotation page): Significant single-target rotation update.
+  - 26 Oct. 2024 (this page): Reinstated the Best Spec section.
+  - 23 Oct. 2024 (talents page): Updated to Dark Ranger default recommendation while everything is in a bugged state.
+  - 22 Oct. 2024 (Leveling): Updated for Patch 11.0.5.
+  - 22 Oct. 2024 (pets page): Reviewed for Patch 11.0.5.
+  - 22 Oct. 2024 (WeakAuras page): Reviewed for Patch 11.0.5.
+  - 22 Oct. 2024 (gear page): Reviewed for Patch 11.0.5.
+  - 22 Oct. 2024 (addons page): Reviewed for Patch 11.0.5.
+  - 22 Oct. 2024 (enchants page): Updated for Patch 11.0.5.
+  - 22 Oct. 2024 (stats page): Updated for Patch 11.0.5.
+  - 22 Oct. 2024 (Nerub-ar Palace page): Updated for Patch 11.0.5.
+  - 22 Oct. 2024 (mythic+ page): Updated for Patch 11.0.5.
+  - 22 Oct. 2024 (rotation page): Updated for Patch 11.0.5.
+  - 22 Oct. 2024 (talents page): Updated for Patch 11.0.5.
+  - 22 Oct. 2024 (spells page): Updated for Patch 11.0.5.
+  - 22 Oct. 2024 (easy mode page): Updated for Patch 11.0.5.
+  - 22 Oct. 2024 (this page): Updated for Patch 11.0.5.
+  - 10 Oct. 2024 (gear page): Updated the Trinket Tier List slightly.
+  - 10 Oct. 2024 (rotation page): Updated Mad Queen's Mandate usage.
+  - 08 Oct. 2024 (this page): Updated the "Best Hunter Spec" section for the updated October 8th Hotfixes.
+  - 07 Oct. 2024 (talents page): Updated the Marksmanship Dark Ranger Single-Target Build.
+  - 02 Oct. 2024 (rotation page): Added more specific Trinket usage information.
+  - 28 Sep. 2024 (mythic+ page): Updated the M+ Talent Build - one-point swap.
+  - 28 Sep. 2024 (talents page): Updated the M+ Talent Build - one-point swap.
+  - 27 Sep. 2024 (mythic+ page): Updated Ara-Kara Tips.
+  - 24 Sep. 2024 (rotation page): Added Lunar Storm Rapid Fire-holding to AoE Rotation.
+  - 17 Sep. 2024 (gear page): Updated the BiS List Trinket selections.
+  - 17 Sep. 2024 (rotation page): Added opener note about on-use Trinkets.
+  - 15 Sep. 2024 (gear page): Updated the MM Trinket Tier Lists based on new methodology, and in the case of the Raiding Tier List, a new preferred single-target build discussed on other pages of the guide.
+  - 15 Sep. 2024 (rotation page): Added note about on-use trinkets.
+  - 14 Sep. 2024 (Nerub-ar Palace page): Updated the Raid AoE build, and swapped the ST recommendation to Dark Ranger for a couple of bosses.
+  - 14 Sep. 2024 (rotation page): Simplified the single-target rotation, specifically Aimed Shot usage.
+  - 14 Sep. 2024 (talents page): Added the Raid AoE build to the page. Updated the single-target builds.
+  - 13 Sep. 2024 (gear page): Added note about double-Dawnthread Lining not working and how to fix it.
+  - 13 Sep. 2024 (Nerub-ar Palace page): Re-visited the best builds on every boss after Heroic experience and made some changes.
+  - 13 Sep. 2024 (mythic+ page): Updated and clarified some tips.
+  - 13 Sep. 2024 (rotation page): Added note about Wailing Arrow resetting the cooldown of Rapid Fire, updated opener.
+  - 10 Sep. 2024 (enchants page): Added note about Movement Speed Gem, and also updated the Gem setup recommendation in general.
+  - 10 Sep. 2024 (rotation page): Clarified that Multi-Shot takes over from Arcane Shot at just 2 targets. Simplified the Steady Focus Rotation.
+  - 10 Sep. 2024 (talents page): Updated the single-target talents slightly (one-point change for 0.2% DPS).
+  - 09 Sep. 2024 (Leveling): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (pets page): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (WeakAuras page): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (gear page): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (addons page): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (enchants page): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (stats page): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (Nerub-ar Palace page): Guide added.
+  - 09 Sep. 2024 (mythic+ page): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (rotation page): Updated the Opener with Wailing Arrow specced.
+  - 09 Sep. 2024 (talents page): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (spells page): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (easy mode page): Preliminary updates for The War Within Season 1.
+  - 09 Sep. 2024 (this page): Preliminary updates for The War Within Season 1.
+  - 03 Sep. 2024 (rotation page): Preliminary updates for The War Within Season 1.
+  - 27 Aug. 2024 (gear page): Added a note about Crafted gear to the Pre-Season BiS List.
+  - 23 Aug. 2024 (this page): Re-introduced a section talking about the Best Hunter Specs in the War Within.
+  - 22 Aug. 2024 (Leveling): Updated for The War Within.
+  - 22 Aug. 2024 (pets page): Updated for The War Within.
+  - 22 Aug. 2024 (WeakAuras page): Updated for The War Within.
+  - 22 Aug. 2024 (gear page): Updated for The War Within.
+  - 22 Aug. 2024 (addons page): Updated for The War Within.
+  - 22 Aug. 2024 (enchants page): Updated for The War Within.
+  - 22 Aug. 2024 (stats page): Updated for The War Within.
+  - 22 Aug. 2024 (rotation page): Updated for The War Within.
+  - 22 Aug. 2024 (talents page): Updated for The War Within.
+  - 22 Aug. 2024 (spells page): Updated for The War Within.
+  - 22 Aug. 2024 (easy mode page): Updated for The War Within.
+  - 22 Aug. 2024 (this page): Updated for The War Within.
+  - 31 Jul. 2024 (rotation page): Simplified Steady Focus optimization. This affects the single-target opener, rotation, and AoE rotation.
+  - 25 Jul. 2024 (talents page): Updated the Single-Target Talent Build.
+  - 23 Jul. 2024 (MoP Remix): Updated for The War Within Pre-Patch.
+  - 23 Jul. 2024 (Leveling): Updated for The War Within Pre-Patch.
+  - 23 Jul. 2024 (pets page): Reviewed for The War Within Pre-Patch.
+  - 23 Jul. 2024 (WeakAuras page): Reviewed for The War Within Pre-Patch.
+  - 23 Jul. 2024 (gear page): Updated for The War Within Pre-Patch.
+  - 23 Jul. 2024 (addons page): Reviewed for The War Within Pre-Patch.
+  - 23 Jul. 2024 (enchants page): Updated for The War Within Pre-Patch.
+  - 23 Jul. 2024 (stats page): Updated for The War Within Pre-Patch.
+  - 23 Jul. 2024 (rotation page): Updated for The War Within Pre-Patch.
+  - 23 Jul. 2024 (talents page): Updated for The War Within Pre-Patch.
+  - 23 Jul. 2024 (spells page): Updated for The War Within Pre-Patch.
+  - 23 Jul. 2024 (easy mode page): Updated for The War Within Pre-Patch.
+  - 23 Jul. 2024 (this page): Updated for The War Within Pre-Patch.
+  - 26 Jun. 2024 (The War Within): Updated for the June 25th changes.
+  - 18 Jun. 2024 (The War Within): Page added.
+  - 29 May 2024 (MoP Remix): Updated Tinker Gem recommendations.
+  - 20 May 2024 (MoP Remix): Updated Tinker Gem rankings based on live server power levels.
+  - 17 May 2024 (MoP Remix): Updated Tinker and Cogwheel Gem recommendations in light of recent changes and new information.
+  - 14 May 2024 (MoP Remix): Page added.
+  - 11 May 2024 (addons page): Added a Nochanneling Rapid Fire Macro.
+  - 07 May 2024 (Leveling): Reviewed for 10.2.7.
+  - 07 May 2024 (pets page): Reviewed for 10.2.7.
+  - 07 May 2024 (WeakAuras page): Reviewed for 10.2.7.
+  - 07 May 2024 (addons page): Reviewed for 10.2.7.
+  - 07 May 2024 (enchants page): Reviewed for 10.2.7.
+  - 07 May 2024 (stats page): Reviewed for 10.2.7.
+  - 07 May 2024 (talents page): Reviewed for 10.2.7.
+  - 07 May 2024 (spells page): Reviewed for 10.2.7.
+  - 07 May 2024 (easy mode page): Reviewed for 10.2.7.
+  - 07 May 2024 (this page): Reviewed for 10.2.7.
+  - 22 Apr. 2024 (Leveling): Reviewed for Season 4.
+  - 22 Apr. 2024 (pets page): Reviewed for Season 4.
+  - 22 Apr. 2024 (WeakAuras page): Reviewed for Season 4.
+  - 22 Apr. 2024 (addons page): Reviewed for Season 4.
+  - 22 Apr. 2024 (enchants page): Updated for Season 4.
+  - 22 Apr. 2024 (stats page): Updated for Season 4.
+  - 22 Apr. 2024 (talents page): Updated for Season 4.
+  - 22 Apr. 2024 (spells page): Reviewed for Season 4.
+  - 22 Apr. 2024 (easy mode page): Updated for Season 4.
+  - 22 Apr. 2024 (this page): Updated for Season 4.
+  - 19 Mar. 2024 (Leveling): Reviewed for Patch 10.2.6.
+  - 19 Mar. 2024 (pets page): Reviewed for Patch 10.2.6.
+  - 19 Mar. 2024 (WeakAuras page): Reviewed for Patch 10.2.6.
+  - 19 Mar. 2024 (addons page): Reviewed for Patch 10.2.6.
+  - 19 Mar. 2024 (enchants page): Reviewed for Patch 10.2.6.
+  - 19 Mar. 2024 (stats page): Reviewed for Patch 10.2.6.
+  - 19 Mar. 2024 (talents page): Reviewed for Patch 10.2.6.
+  - 19 Mar. 2024 (spells page): Reviewed for Patch 10.2.6.
+  - 19 Mar. 2024 (easy mode page): Reviewed for Patch 10.2.6.
+  - 19 Mar. 2024 (this page): Updated for Patch 10.2.6.
+  - 14 Feb. 2024 (talents page): Updated the recommended default Mythic+ Talent Build.
+  - 14 Feb. 2024 (easy mode page): Updated the recommended default Mythic+ Talent Build.
+  - 15 Jan. 2024 (Leveling): Reviewed for Patch 10.2.5.
+  - 15 Jan. 2024 (pets page): Updated for Patch 10.2.5
+  - 15 Jan. 2024 (WeakAuras page): Updated for Patch 10.2.5
+  - 15 Jan. 2024 (addons page): Updated for Patch 10.2.5
+  - 15 Jan. 2024 (enchants page): Updated for Patch 10.2.5
+  - 15 Jan. 2024 (stats page): Updated for Patch 10.2.5
+  - 15 Jan. 2024 (talents page): Updated for Patch 10.2.5
+  - 15 Jan. 2024 (spells page): Updated for Patch 10.2.5
+  - 15 Jan. 2024 (easy mode page): Updated for Patch 10.2.5
+  - 15 Jan. 2024 (this page): Updated for Patch 10.2.5
+  - 04 Dec. 2023 (talents page): Updated Talents for Mythic+.
+  - 27 Nov. 2023 (talents page): Updated Talents for Mythic+.
+  - 06 Nov. 2023 (Leveling): Reviewed for Patch 10.2
+  - 06 Nov. 2023 (pets page): Updated for Patch 10.2
+  - 06 Nov. 2023 (WeakAuras page): Updated for Patch 10.2
+  - 06 Nov. 2023 (addons page): Reviewed for Patch 10.2
+  - 06 Nov. 2023 (enchants page): Updated for Patch 10.2
+  - 06 Nov. 2023 (stats page): Updated for Patch 10.2
+  - 06 Nov. 2023 (talents page): Updated for Patch 10.2
+  - 06 Nov. 2023 (spells page): Updated for Patch 10.2
+  - 06 Nov. 2023 (easy mode page): Updated for Patch 10.2
+  - 06 Nov. 2023 (this page): Updated for Patch 10.2
+  - 04 Sep. 2023 (Leveling): Reviewed for Patch 10.1.7
+  - 04 Sep. 2023 (pets page): Reviewed for Patch 10.1.7
+  - 04 Sep. 2023 (WeakAuras page): Reviewed for Patch 10.1.7
+  - 04 Sep. 2023 (addons page): Reviewed for Patch 10.1.7
+  - 04 Sep. 2023 (enchants page): Reviewed for Patch 10.1.7
+  - 04 Sep. 2023 (stats page): Reviewed for Patch 10.1.7
+  - 04 Sep. 2023 (talents page): Restructured the page and updated for Patch 10.1.7
+  - 04 Sep. 2023 (spells page): Reviewed for Patch 10.1.7
+  - 04 Sep. 2023 (easy mode page): Reviewed for Patch 10.1.7
+  - 04 Sep. 2023 (this page): Reviewed for Patch 10.1.7
+  - 10 Jul. 2023 (Leveling): Updated for Patch 10.1.5.
+  - 10 Jul. 2023 (pets page): Reviewed for Patch 10.1.5.
+  - 10 Jul. 2023 (WeakAuras page): Reviewed for Patch 10.1.5.
+  - 10 Jul. 2023 (addons page): Reviewed for Patch 10.1.5.
+  - 10 Jul. 2023 (enchants page): Reviewed for Patch 10.1.5.
+  - 10 Jul. 2023 (stats page): Updated for Patch 10.1.5.
+  - 10 Jul. 2023 (talents page): Updated for Patch 10.1.5.
+  - 10 Jul. 2023 (spells page): Reviewed for Patch 10.1.5.
+  - 10 Jul. 2023 (easy mode page): Updated for Patch 10.1.5.
+  - 10 Jul. 2023 (this page): Updated for Patch 10.1.5.
+  - 27 Jun. 2023 (talents page): Additional Talent Change, and moved Steel Trap to be default for single-target.
+  - 27 Jun. 2023 (easy mode page): Updated the Talent Builds.
+  - 26 Jun. 2023 (talents page): Updated the single-target build to account for new tuning.
+  - 03 Jun. 2023 (this page): Updated the blurb about spec viability, and updated the Strengths and Weaknesses.
+  - 25 May 2023 (talents page): Updated the recommended builds to assume the set bonus as default.
+  - 22 May 2023 (enchants page): Updated the recommended Leg Enchant, as it was found that the Lambent Armor Kit does not provide Stamina as it was assumed.
+  - 19 May 2023 (talents page): Updated the layout of the page and added an alternative, cooldown-less build.
+  - 15 May 2023 (talents page): Added note on Steel Trap and when you might want to use it.
+  - 12 May 2023 (enchants page): Updated the recommended food and Leg enchant.
+  - 12 May 2023 (talents page): Clarified talent changes for AoE as well as single-target with the 4PC Bonus.
+  - 09 May 2023 (talents page): Added note of how the build changes with the 4PC Set Bonus.
+  - 08 May 2023 (talents page): Updated the recommended single-target talent build to pick Steady Focus.
+  - 04 May 2023 (talents page): Updated the recommended AoE/M+ Talent Build. This is likely a temporary change, until the new Tier Set becomes more widespread.
+  - 04 May 2023 (easy mode page): Updated the recommended AoE Talent Build. This is likely a temporary change, until the new Tier Set becomes more widespread.
+  - 01 May 2023 (Leveling): Reviewed for Patch 10.1.
+  - 01 May 2023 (pets page): Reviewed for Patch 10.1.
+  - 01 May 2023 (WeakAuras page): Reviewed for Patch 10.1.
+  - 01 May 2023 (enchants page): Reviewed for Patch 10.1.
+  - 01 May 2023 (stats page): Reviewed for Patch 10.1.
+  - 01 May 2023 (talents page): Reviewed for Patch 10.1.
+  - 01 May 2023 (spells page): Reviewed for Patch 10.1.
+  - 01 May 2023 (easy mode page): Reviewed for Patch 10.1.
+  - 01 May 2023 (this page): Reviewed for Patch 10.1.
+  - 11 Apr. 2023 (this page): Updated the spec rankings to account for new nerfs.
+  - 23 Mar. 2023 (enchants page): Updated the recommended Gemstones after sim updates, and the discovery of a new, powerful combination.
+  - 23 Mar. 2023 (enchants page): Yet another update to the recommended Gemstones based on a slew of hotfixes.
+  - 21 Mar. 2023 (enchants page): Updated the Onyx Annulet Information in light of the March 21st buff.
+  - 21 Mar. 2023 (talents page): Updated the talents for the 10.0.7 talent reshuffle.
+  - 21 Mar. 2023 (this page): Updated with spec rankings for different types of damage.
+  - 20 Mar. 2023 (Leveling): Reviewed for Patch 10.0.7.
+  - 20 Mar. 2023 (pets page): Reviewed for Patch 10.0.7.
+  - 20 Mar. 2023 (Legendaries): Reviewed for Patch 10.0.7.
+  - 20 Mar. 2023 (WeakAuras page): Reviewed for Patch 10.0.7.
+  - 20 Mar. 2023 (addons page): Reviewed for Patch 10.0.7.
+  - 20 Mar. 2023 (enchants page): Updated for Patch 10.0.7.
+  - 20 Mar. 2023 (stats page): Reviewed for Patch 10.0.7.
+  - 20 Mar. 2023 (spells page): Updated for Patch 10.0.7.
+  - 20 Mar. 2023 (easy mode page): Reviewed for Patch 10.0.7.
+  - 16 Feb. 2023 (Leveling): Fixed an issue with the talent order.
+  - 15 Feb. 2023 (talents page): Updated the utility talents in the M+ Build.
+  - 30 Jan. 2023 (talents page): Small updates to talent swaps.
+  - 25 Jan. 2023 (addons page): Added a Salvo Volley Macro.
+  - 25 Jan. 2023 (talents page): Updated the Talent Builds again after the discovery of a sim bug. Added alternative to Steady Focus. Changed the "swap" talent for Wailing Arrow to Bullseye.
+  - 24 Jan. 2023 (Leveling): Reviewed for Patch 10.0.5.
+  - 24 Jan. 2023 (pets page): Reviewed for Patch 10.0.5.
+  - 24 Jan. 2023 (WeakAuras page): Reviewed for Patch 10.0.5.
+  - 24 Jan. 2023 (addons page): Reviewed for Patch 10.0.5.
+  - 24 Jan. 2023 (enchants page): Reviewed for Patch 10.0.5.
+  - 24 Jan. 2023 (stats page): Reviewed for Patch 10.0.5.
+  - 24 Jan. 2023 (talents page): Updated the page for relevant changes in Patch 10.0.5.
+  - 24 Jan. 2023 (spells page): Updated the page for relevant changes in Patch 10.0.5.
+  - 24 Jan. 2023 (easy mode page): Updated the page for relevant changes in Patch 10.0.5.
+  - 24 Jan. 2023 (this page): Reviewed for Patch 10.0.5.
+  - 21 Jan. 2023 (talents page): Fixed a wrong note about which talent to swap for Ammo Talents.
+  - 17 Jan. 2023 (talents page): Updated the recommended Single-Target Talent Build.
+  - 17 Jan. 2023 (easy mode page): Updated the recommended Single-Target Talent Build.
+  - 06 Jan. 2023 (pets page): Added page.
+  - 04 Jan. 2023 (enchants page): Updated the recommended Phial.
+  - 23 Dec. 2022 (talents page): Updated the recommended builds to reflect that Unerring Vision is fixed and worth using again.
+  - 23 Dec. 2022 (easy mode page): Talent updates.
+  - 18 Dec. 2022 (talents page): Updated the recommended talent builds to reflect that Unerring Vision is bugged.
+  - 16 Dec. 2022 (talents page): Added note that you do not need to use Serpent Sting manually with Hydra's Bite.
+  - 11 Dec. 2022 (Leveling): Reviewed for Dragonflight Season 1.
+  - 11 Dec. 2022 (WeakAuras page): Reviewed for Dragonflight Season 1.
+  - 11 Dec. 2022 (addons page): Updated for Dragonflight Season 1.
+  - 11 Dec. 2022 (enchants page): Updated the recommendation and description of the optimal Flasks/Phials.
+  - 11 Dec. 2022 (stats page): Updated for Dragonflight Season 1.
+  - 11 Dec. 2022 (talents page): Updated the recommended single-target talent build in light of recent buffs.
+  - 11 Dec. 2022 (spells page): Updated for Dragonflight Season 1.
+  - 11 Dec. 2022 (easy mode page): Updated for Dragonflight Season 1.
+  - 11 Dec. 2022 (this page): Updated Spec Viability for the latest buffs.
+  - 28 Nov. 2022 (Leveling): Updated for Dragonflight launch.
+  - 28 Nov. 2022 (WeakAuras page): Updated for Dragonflight launch.
+  - 28 Nov. 2022 (addons page): Updated for Dragonflight launch.
+  - 28 Nov. 2022 (enchants page): Updated for Dragonflight launch.
+  - 28 Nov. 2022 (stats page): Updated for Dragonflight launch.
+  - 28 Nov. 2022 (talents page): Updated for Dragonflight launch.
+  - 28 Nov. 2022 (spells page): Updated for Dragonflight launch.
+  - 28 Nov. 2022 (easy mode page): Updated for Dragonflight launch.
+  - 28 Nov. 2022 (this page): Updated for Dragonflight launch.
+  - 24 Oct. 2022 (Leveling): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (Legendaries): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (Torghast): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (Covenants and Soulbinds): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (WeakAuras page): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (addons page): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (enchants page): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (stats page): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (Castle Nathria page): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (Sanctum of Domination page): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (Sepulcher of the First Ones page): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (talents page): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (spells page): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (easy mode page): Updated for Dragonflight pre-patch.
+  - 24 Oct. 2022 (this page): Updated for Dragonflight pre-patch.
+  - 15 Jan. 2022 (Patch 9.2 Analysis): Page added with initial thoughts and information.
+  - 01 Nov. 2021 (Patch 9.1 Analysis): Reviewed and approved for Patch 9.1.5.
+  - 12 Jul. 2021 (Patch 9.1 Analysis): Updated thoughts on all of the Covenant-specific Legendaries, and added the July 13th Hunter Buffs to the changes.
+  - 10 Jun. 2021 (Patch 9.1 Analysis): Added information about the Venthyr-specific Legendary.
+  - 12 May 2021 (Patch 9.1 Analysis): Added information about 4 new Covenant-specific Legendaries.
+  - 25 Apr. 2021 (Patch 9.1 Analysis): Page created with initial information.
+  - 12 Oct. 2020 (Ny'alotha page): Page updated for the Shadowlands pre-patch.
+  - 13 Jan. 2020 (Uldir page): This page has been reviewed for the release of Patch 8.3 and no changes are necessary.
+  - 13 Jan. 2020 (Battle of Dazar'alor page): This page has been reviewed for the release of Patch 8.3 and no changes are necessary.
+  - 13 Jan. 2020 (Crucible of Storms page): This page has been reviewed for the release of Patch 8.3 and no changes are necessary.
+  - 13 Jan. 2020 (The Eternal Palace page): This page has been reviewed for the release of Patch 8.3 and no changes are necessary.
+  - 23 Aug. 2019 (The Eternal Palace page): Added tips for more bosses.
+  - 08 Jul. 2019 (The Eternal Palace page): Page added.
+  - 24 Jun. 2019 (Uldir page): This page has been reviewed for the release of Patch 8.2 and no changes are necessary.
+  - 24 Jun. 2019 (Battle of Dazar'alor page): This page has been reviewed for the release of Patch 8.2 and no changes are necessary.
+  - 24 Jun. 2019 (Crucible of Storms page): This page has been reviewed for the release of Patch 8.2 and no changes are necessary.
+  - 13 May 2019 (Crucible of Storms page): Added Marksmanship tips for Uu'nat.
+  - 01 May 2019 (Crucible of Storms page): Added Marksmanship tips for The Restless Cabal.
+  - 14 Apr. 2019 (Uldir page): This page has been reviewed for Crucible of Storms and no changes are necessary.
+  - 14 Apr. 2019 (Battle of Dazar'alor page): This page has been reviewed for Crucible of Storms and no changes are necessary.
+  - 14 Apr. 2019 (Crucible of Storms page): Guide added.
+  - 22 Mar. 2019 (Battle of Dazar'alor page): Added tips for Jaina on Mythic Difficulty.
+  - 20 Feb. 2019 (Battle of Dazar'alor page): Added boss tips for multiple bosses on Mythic.
+    - Added tips for Stormwall Blockade (Mythic).
+    - Added tips for King Rastakhan (Mythic).
+    - Added tips for High Tinker Mekkatorque (Mythic).
+    - Added tips for Opulence (Mythic).
+    - Added tips for Conclave of the Chosen (Mythic).
+  - 05 Feb. 2019 (Battle of Dazar'alor page): Added boss tips for Jadefire Masters (Mythic) and altered the talent recommendations.
+  - 03 Feb. 2019 (Battle of Dazar'alor page): Added boss tips for Champion of the Light and Grong (Mythic).
+  - 21 Jan. 2019 (Battle of Dazar'alor page): Added boss tips for Marksmanship Hunter in Battle of Dazar'alor.
+  - 10 Dec. 2018 (Uldir page): Added more specifically useful tips for Marksmanship on each boss in Uldir Mythic.
+  - 03 Sep. 2018 (Uldir page): Added additional content for Uldir's release.
+Show more
+Show less
+## In The Same Category
+Marksmanship Hunter Rotation Beast Mastery Hunter Guide Beast Mastery Hunter Leveling Marksmanship Hunter Mythic+ Survival Hunter Spell List and Glossary Beast Mastery Hunter Mythic+
+BACK TO TOP
+News & Guides
+Icy Veins is not affiliated with or endorsed by Blizzard.
+© Vedatis S.A.S. 2026
+  - Twitch
+  - Discord
+  - Facebook
+  - Twitter
+  - YouTube
+  - Contact Us
+About Contact Advertise FAQ Privacy Terms of Use Jobs Privacy Manager
+Our Brands
+all.gg U.GG The Sims Resource Addicting Games Pocket Gamer Fantasy Football Scout GameKnot

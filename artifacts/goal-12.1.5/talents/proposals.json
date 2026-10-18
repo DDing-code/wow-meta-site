@@ -1,0 +1,289 @@
+[
+  {
+    "guideId": "demonhunter-devourer",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAALPwY2GMDAAAAAAAAzYwMzMzMmZmZMziZMW0yCzMzMbtNzMDgZMAE4BGDGGA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAALPwY2GMDAAAAAAAAzYwMzMzMmZmZMziZMW0yCzMzMbtNzMDgZMAE4BGDGGA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps",
+      "sourceLabel": "Annihilator Raid ST (Best)",
+      "checkedAt": "2026-10-18",
+      "note": "기존 견본은 12.1.5 트리에서 한국어 Wowhead 계산기가 전문화 33/34로 불러와(특성 위치 이동으로 한 칸이 빠짐) 그대로 쓸 수 없습니다. Wowhead 빌드 페이지(2026-10-13 갱신)가 12.1.5의 공허상흔·전문화 트리 변경 뒤 궤멸자를 거의 모든 상황의 추천으로 바꿔, 단일 레이드 견본을 궤멸자 Raid ST (Best)로 교체합니다. 사냥·박멸이 중간 관문으로 내려온 새 트리 기준입니다. 영웅 특성이 공허상흔에서 궤멸자로 바뀝니다.",
+      "validation": {
+        "specId": 1480,
+        "heroTreeId": 124,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "1ea19c5ed09471f8d10e4233912749c8e881c3a9c593c8dfc5955e56d4652d61"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "궤멸자"
+    },
+    "previousCode": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAAegxsNYGAAAAAAAAmxMMmZmZMzMzYmtZGjNttAgAGgZMzMbzMTz2MLzMjZMA",
+    "evidence": {
+      "page": "https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps",
+      "pageUpdated": "2026-10-13 (업데이트됨: 2026/10/13, 12.1.5 패치 언급)",
+      "fetchedAt": "2026-10-18",
+      "fetchedWith": "Playwright + 일반 Chrome 사용자 에이전트",
+      "calculatorUrl": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAALPwY2GMDAAAAAAAAzYwMzMzMmZmZMziZMW0yCzMzMbtNzMDgZMAE4BGDGGA",
+      "calculatorHero": "궤멸자"
+    },
+    "alternatives": [
+      {
+        "why": "영웅 특성을 공허상흔로 유지하려면 같은 페이지의 갱신된 Void-Scarred Raid ST 견본(페이지는 현재 비추천으로 표기)",
+        "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAAWMzMzMzMzMwMAAAAAAALPwY2GMDAAAAAAAAzYwYmZmxMzMMzyMjxm2WAQADgxMzsNzMNbzsNzwYGD",
+        "sourceLabel": "Void-Scarred Raid ST",
+        "heroLabel": "공허상흔",
+        "heroTreeId": 126,
+        "decoderOk": true,
+        "calculator": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "3f93a8408069ddcdc661b50910daeb1dba1e756b93cfcd4e84a24bd31dd7fcf9"
+        }
+      }
+    ]
+  },
+  {
+    "guideId": "demonhunter-devourer",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAALGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAALGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps",
+      "sourceLabel": "Annihilator Mythic+ (Best)",
+      "checkedAt": "2026-10-18",
+      "note": "기존 견본은 12.1.5 트리에서 한국어 Wowhead 계산기가 전문화 33/34로 불러와(공허정화 자리 이동으로 한 칸이 빠짐) 그대로 쓸 수 없습니다. Wowhead 빌드 페이지(2026-10-13 갱신)의 궤멸자 Mythic+ (Best)로 교체합니다.",
+      "validation": {
+        "specId": 1480,
+        "heroTreeId": 124,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "16432044305b165c9a5512faad6d01fee78a4db93e97a8e0d540e69fa61b13ed"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "궤멸자"
+    },
+    "previousCode": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAYxY2GMDAAAAAAAAzYwMzMzMzMzMjZWMjxiWWYmZmZrtZmZAMMAEwYwYGA",
+    "evidence": {
+      "page": "https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps",
+      "pageUpdated": "2026-10-13 (업데이트됨: 2026/10/13, 12.1.5 패치 언급)",
+      "fetchedAt": "2026-10-18",
+      "fetchedWith": "Playwright + 일반 Chrome 사용자 에이전트",
+      "calculatorUrl": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAALGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
+      "calculatorHero": "궤멸자"
+    }
+  },
+  {
+    "guideId": "demonhunter-devourer",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmBmBAAAAAAY5BGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmBmBAAAAAAY5BGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps",
+      "sourceLabel": "Annihilator Raid Cleave (Best)",
+      "checkedAt": "2026-10-18",
+      "note": "Wowhead 빌드 페이지(2026-10-13 갱신)가 12.1.5 변경 뒤 궤멸자를 추천으로 바꿔, 추가 대상이 있는 레이드 견본을 궤멸자 Raid Cleave (Best)로 교체합니다. 페이지는 대상이 거의 하나인 전투라면 악마의 본능 대신 두 번째 포식을 고르라고 안내합니다. 영웅 특성이 공허상흔에서 궤멸자로 바뀝니다.",
+      "validation": {
+        "specId": 1480,
+        "heroTreeId": 124,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "1432bd0125daf1944f8f63065235e4c2dff50cfd190348a2d35b558ef4fe4a5b"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "궤멸자"
+    },
+    "previousCode": "CgcBAAAAAAAAAAAAAAAAAAAAAAAWMmZmZmZmBmBAAAAAAY7BGz2gZAAAAAAAAYGzwYmZmZmZmZMz2Mjxm2WAQADwDMmZmtZmpZbmlZmxYGA",
+    "evidence": {
+      "page": "https://www.wowhead.com/ko/guide/classes/demon-hunter/devourer/talent-builds-pve-dps",
+      "pageUpdated": "2026-10-13 (업데이트됨: 2026/10/13, 12.1.5 패치 언급)",
+      "fetchedAt": "2026-10-18",
+      "fetchedWith": "Playwright + 일반 Chrome 사용자 에이전트",
+      "calculatorUrl": "https://www.wowhead.com/ko/talent-calc/blizzard/CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmBmBAAAAAAY5BGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
+      "calculatorHero": "궤멸자"
+    },
+    "alternatives": [
+      {
+        "why": "영웅 특성을 공허상흔로 유지하려면 같은 페이지의 갱신된 Void-Scarred Raid Cleave 견본(페이지는 현재 비추천으로 표기)",
+        "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAAWmxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMmZmZmZmZYmlZGjNtsAgAGAjZmZZmZa2mZzMjxMGA",
+        "sourceLabel": "Void-Scarred Raid Cleave",
+        "heroLabel": "공허상흔",
+        "heroTreeId": 126,
+        "decoderOk": true,
+        "calculator": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "3663e4353c27562efa19ed2d257cf25808b6c4d61f574fb090370b36232a0f46"
+        }
+      }
+    ]
+  },
+  {
+    "guideId": "hunter-marksmanship",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmhlx0MGMLbbzMzMzMzMzCzsMMDAAgHYMGAmxGYA2YmtZMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmhlx0MGMLbbzMzMzMzMzCzsMMDAAgHYMGAmxGYA2YmtZMA",
+      "sourceUrl": "https://www.icy-veins.com/wow/marksmanship-hunter-pve-dps-spec-builds-talents",
+      "sourceLabel": "Quick Start Import Codes: Marksmanship Mythic+ - Sentinel",
+      "checkedAt": "2026-10-18",
+      "note": "12.1.5에서 쏟아내기가 삭제되고 같은 자리에 피의 깃이 들어왔습니다. 기존 견본은 적용 전 로그 견본이라, 12.1.5 기준으로 갱신된 Icy Veins 빌드 페이지(2026-10-12 갱신, 12.1.5 표기)의 파수꾼 쐐기 견본으로 교체합니다. Wowhead 원문 견본은 이번에도 영웅 포인트가 14/13으로 표시되어 쓰지 않았습니다.",
+      "validation": {
+        "specId": 254,
+        "heroTreeId": 42,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "14703724d2a9f059ac9038679a86bc191299bf2dce900c5aef7fdda7d6814c01"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "파수꾼"
+    },
+    "previousCode": "C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGAzgNAAAAAAAAwMmZmx2MmZGzwyYaGDmltlZmZmZmZmZhZWGmBAAwDMGDAzYDMAbMz2MG",
+    "evidence": {
+      "page": "https://www.icy-veins.com/wow/marksmanship-hunter-pve-dps-spec-builds-talents",
+      "pageUpdated": "2026-10-12 (Last Updated: Oct 12, 2026, 제목 12.1.5)",
+      "fetchedAt": "2026-10-18",
+      "fetchedWith": "curl + 일반 Chrome 사용자 에이전트",
+      "calculatorUrl": "https://www.wowhead.com/ko/talent-calc/blizzard/C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmhlx0MGMLbbzMzMzMzMzCzsMMDAAgHYMGAmxGYA2YmtZMA",
+      "calculatorHero": "파수꾼"
+    }
+  },
+  {
+    "guideId": "hunter-marksmanship",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMjZWMjZmxMYMNjBz222MzMzMzMzswMLDzAAAMmZGAMjtNYA2YmtZMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMjZWMjZmxMYMNjBz222MzMzMzMzswMLDzAAAMmZGAMjtNYA2YmtZMA",
+      "sourceUrl": "https://www.icy-veins.com/wow/marksmanship-hunter-pve-dps-spec-builds-talents",
+      "sourceLabel": "Quick Start Import Codes: Marksmanship Raid AoE/Cleave - Sentinel",
+      "checkedAt": "2026-10-18",
+      "note": "12.1.5에서 쏟아내기가 삭제되고 같은 자리에 피의 깃이 들어왔습니다. 기존 견본은 적용 전 로그 견본이라, 12.1.5 기준으로 갱신된 Icy Veins 빌드 페이지(2026-10-12 갱신, 12.1.5 표기)의 파수꾼 레이드 광역·다중 대상 견본으로 교체합니다. 추가 대상이 있는 레이드 전투용이며, 단일 네임드 견본과 다를 수 있습니다.",
+      "validation": {
+        "specId": 254,
+        "heroTreeId": 42,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "e4fd8c702d47cc71766b549c3d79590169b9e14bf88438e11900d71024894b05"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "파수꾼"
+    },
+    "previousCode": "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmxMLbzYmZMDeATzYwstZmZmZmZmZwMLDzMAAgxMzYAMjNGGgNmZbGD",
+    "evidence": {
+      "page": "https://www.icy-veins.com/wow/marksmanship-hunter-pve-dps-spec-builds-talents",
+      "pageUpdated": "2026-10-12 (Last Updated: Oct 12, 2026, 제목 12.1.5)",
+      "fetchedAt": "2026-10-18",
+      "fetchedWith": "curl + 일반 Chrome 사용자 에이전트",
+      "calculatorUrl": "https://www.wowhead.com/ko/talent-calc/blizzard/C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMjZWMjZmxMYMNjBz222MzMzMzMzswMLDzAAAMmZGAMjtNYA2YmtZMA",
+      "calculatorHero": "파수꾼"
+    }
+  }
+]

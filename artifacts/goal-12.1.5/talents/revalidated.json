@@ -1,0 +1,4615 @@
+[
+  {
+    "guideId": "deathknight-blood",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZmhZZmZmmZxYMmxAAAAAmZmZmZmZYGjZAYMzMzAAAYgBmxiGLLgsMgNAzwAAAmZghB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZmhZZmZmmZxYMmxAAAAAmZmZmZmZYGjZAYMzMzAAAYgBmxiGLLgsMgNAzwAAAmZghB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/death-knight/blood/talent-builds-pve-tank",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 250,
+        "heroTreeId": 31,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "f994b5ea8f41629c48c889ecfbc8a2390a59298cae5638d5edec09a18176aef9"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "산레인"
+    }
+  },
+  {
+    "guideId": "deathknight-blood",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMLzMz0MLGjxMGAAAAwMmZmZmZYGDAYmZmZGAAgxsNwAWCWGmADLAmxMAAMzAYYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMLzMz0MLGjxMGAAAAwMmZmZmZYGDAYmZmZGAAgxsNwAWCWGmADLAmxMAAMzAYYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/death-knight/blood/talent-builds-pve-tank",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 250,
+        "heroTreeId": 33,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "6dd54d47ee0e0faf7cd39354799fefbed3ca76616a16b07cd2306ef3949e0390"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "죽음의 인도자"
+    }
+  },
+  {
+    "guideId": "deathknight-blood",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZmhZZmZmmZxYMmxAAAAAmZmZmZmZYGjZAYMzMzAAAYgBmxiGLLgsMgNAzwAAAmZghB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZmhZZmZmmZxYMmxAAAAAmZmZmZmZYGjZAYMzMzAAAYgBmxiGLLgsMgNAzwAAAmZghB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/death-knight/blood/talent-builds-pve-tank",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 250,
+        "heroTreeId": 31,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "f994b5ea8f41629c48c889ecfbc8a2390a59298cae5638d5edec09a18176aef9"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "산레인"
+    }
+  },
+  {
+    "guideId": "deathknight-frost",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/death-knight/frost/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 251,
+        "heroTreeId": 33,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "51ed7b13ee9f54351736ec7ca3166305480c7aeb5c406818afe01540ac5d1f5c"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "죽음의 인도자"
+    }
+  },
+  {
+    "guideId": "deathknight-frost",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/death-knight/frost/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+ (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 251,
+        "heroTreeId": 33,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "266ddede9410dc5eef3c8b089c01e089120c0b214a907221d18b7c21735c3205"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "죽음의 인도자"
+    }
+  },
+  {
+    "guideId": "deathknight-frost",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/death-knight/frost/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 251,
+        "heroTreeId": 33,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "51ed7b13ee9f54351736ec7ca3166305480c7aeb5c406818afe01540ac5d1f5c"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "죽음의 인도자"
+    }
+  },
+  {
+    "guideId": "deathknight-unholy",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAwyMmZ2mZGzMDYzsYYIDMbM0YBAzAAzMjZAmZmxYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAwyMmZ2mZGzMDYzsYYIDMbM0YBAzAAzMjZAmZmxYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/death-knight/unholy/talent-builds-pve-dps",
+      "sourceLabel": "Single Target",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 252,
+        "heroTreeId": 32,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "fdf73023bd7c446a2e7e508b7aa40b398a1668e7e55108702deca892d8701796"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "종말의 기수"
+    }
+  },
+  {
+    "guideId": "deathknight-unholy",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2MzMTjZmxMzYAAAAAAAAYegxwAglZwsZmxMzYgBmxmGLLA2mYDDYGAzMzMjZwMDGzYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2MzMTjZmxMzYAAAAAAAAYegxwAglZwsZmxMzYgBmxmGLLA2mYDDYGAzMzMjZwMDGzYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/death-knight/unholy/talent-builds-pve-dps",
+      "sourceLabel": "M+/Delves  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 252,
+        "heroTreeId": 31,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "8f4962cc07ce1900a54cf2a97b965b9ba4897c1fdab86c07a1edf0d7505c5b0a"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "산레인"
+    }
+  },
+  {
+    "guideId": "deathknight-unholy",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAwyMmZ2mZGzMDYzsYYIDMbM0YBAzAAzMjZAmZmxYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAwyMmZ2mZGzMDYzsYYIDMbM0YBAzAAzMjZAmZmxYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/death-knight/unholy/talent-builds-pve-dps",
+      "sourceLabel": "Single Target",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 252,
+        "heroTreeId": 32,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "fdf73023bd7c446a2e7e508b7aa40b398a1668e7e55108702deca892d8701796"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "종말의 기수"
+    }
+  },
+  {
+    "guideId": "demonhunter-havoc",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 577,
+        "heroTreeId": 35,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "b45a5a56d30852c7563c63b70a726884e976468351f3d63ae704978036e28f6a"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "알드라치 파괴자"
+    }
+  },
+  {
+    "guideId": "demonhunter-havoc",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxYmMmZAAAAAAAzixsNDzMwMWmZmZYmBzyALzmZMMLaaMzMmxGAAAwAAAAYmBDAAAAD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxYmMmZAAAAAAAzixsNDzMwMWmZmZYmBzyALzmZMMLaaMzMmxGAAAwAAAAYmBDAAAAD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 577,
+        "heroTreeId": 34,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "2ab3269c2014e7dcaf5b881a8c3c6873fa0bfd7401293d23bd43dc0167d5c36b"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "지옥상흔"
+    }
+  },
+  {
+    "guideId": "demonhunter-havoc",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/havoc/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 577,
+        "heroTreeId": 35,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "b45a5a56d30852c7563c63b70a726884e976468351f3d63ae704978036e28f6a"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "알드라치 파괴자"
+    }
+  },
+  {
+    "guideId": "demonhunter-vengeance",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZY2MzMjhZMzYGzYmZYGmx2MzYMAAAAAAAQAzMjNAAAAMYMzMzs02MzMAwAAAAYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZY2MzMjhZMzYGzYmZYGmx2MzYMAAAAAAAQAzMjNAAAAMYMzMzs02MzMAwAAAAYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
+      "sourceLabel": "Single Target  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 581,
+        "heroTreeId": 124,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "17ed1789353820a3148429bbe428cd7e8dba5f4e876e29da9b4375c1c4f9eddc"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "궤멸자"
+    }
+  },
+  {
+    "guideId": "demonhunter-vengeance",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzMzYYmZmx2YGjxMAAAAAAACYmZsBAAAgBmZmZml2mZmBAzAAAAYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzMzYYmZmx2YGjxMAAAAAAACYmZsBAAAgBmZmZml2mZmBAzAAAAYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
+      "sourceLabel": "Mythic+/AoE  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 581,
+        "heroTreeId": 124,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "16f39bd4f360bc941d5ea402bc77a676373b0a95318064cbc478b4b6f2a667f4"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "궤멸자"
+    }
+  },
+  {
+    "guideId": "demonhunter-vengeance",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYWMzMzMMjZGzYGzYYGmx2MzYMAAAAAAAQAzMjNAAAAMYMzMzs02MzMAwAAAAYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYWMzMzMMjZGzYGzYYGmx2MzYMAAAAAAAQAzMjNAAAAMYMzMzs02MzMAwAAAAYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/demon-hunter/vengeance/talent-builds-pve-tank",
+      "sourceLabel": "Raid Cleave  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "validation": {
+        "specId": 581,
+        "heroTreeId": 124,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a3938f4b9d076e8de4f40f9181b84e7232ee9946bc58403b50e23c602a4d7277"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "궤멸자"
+    }
+  },
+  {
+    "guideId": "druid-balance",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmhxMWYZmlZGjZ2wAgx2yMDGz2IwEAAAgFzMzMD2MMGzAAYmBLDA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmhxMWYZmlZGjZ2wAgx2yMDGz2IwEAAAgFzMzMD2MMGzAAYmBLDA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/balance/talent-builds-pve-dps",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 102,
+        "heroTreeId": 24,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "d99687a0a91ed8c717a085c1cae25147bf95a2d97716b57113d20b7f1efbf8a1"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-balance",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZgxsMzMzMLMgZZmlZWYmxGLzsMGzM2wAgx22MDGz2IwEAAAgFmZmZwmxMGDAAzMYZA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZgxsMzMzMLMgZZmlZWYmxGLzsMGzM2wAgx22MDGz2IwEAAAgFmZmZwmxMGDAAzMYZA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/balance/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+ (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 102,
+        "heroTreeId": 24,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "dbc3fee88169317d63efe6a7124ed9768e3e64dc57ef1f6e375a314c3e1c8c64"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-balance",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmhxMWYZmlZGjZ2wAgx2yMDGz2IwEAAAgFzMzMD2MMGzAAYmBLDA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmhxMWYZmlZGjZ2wAgx2yMDGz2IwEAAAgFzMzMD2MMGzAAYmBLDA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/balance/talent-builds-pve-dps",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 102,
+        "heroTreeId": 24,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "d99687a0a91ed8c717a085c1cae25147bf95a2d97716b57113d20b7f1efbf8a1"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-feral",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 103,
+        "heroTreeId": 21,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "1a0745edefb911d12f6afeab65da082e85ad58b2991d175320fcd222af97513b"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "발톱의 드루이드"
+    }
+  },
+  {
+    "guideId": "druid-feral",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYJY2gxMjaGzCzMzsMmZGAAAAAAADAAAgAgZbmlmlZW2AzMALMDDAgZGAMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYJY2gxMjaGzCzMzsMmZGAAAAAAADAAAgAgZbmlmlZW2AzMALMDDAgZGAMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+ (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 103,
+        "heroTreeId": 22,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "f5ef3996ae35bb59d294fdf845a715e66c5245bb4889f954e027520424094cae"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "야생추적자"
+    }
+  },
+  {
+    "guideId": "druid-feral",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/feral/talent-builds-pve-dps",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 103,
+        "heroTreeId": 21,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "1a0745edefb911d12f6afeab65da082e85ad58b2991d175320fcd222af97513b"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "발톱의 드루이드"
+    }
+  },
+  {
+    "guideId": "druid-guardian",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGLzAW2mZwY2GATBAAA2wMDwiZwA2ssNAzMAG",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGLzAW2mZwY2GATBAAA2wMDwiZwA2ssNAzMAG",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/guardian/talent-builds-pve-tank",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 104,
+        "heroTreeId": 24,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "3bab64721ef5f60f1ea1820bbfe0b4f437c7631d2b51c38bf039dd9e589f4ea9"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-guardian",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZml5BmZMziZxwMLLDMbGGNRzMzyMzMzsMmBAAAAAgZsYAbbzMYMLDgpAAAAbYmBYxMYAbWAYmBwA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZml5BmZMziZxwMLLDMbGGNRzMzyMzMzsMmBAAAAAgZsYAbbzMYMLDgpAAAAbYmBYxMYAbWAYmBwA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/guardian/talent-builds-pve-tank",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 104,
+        "heroTreeId": 24,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "193228d9419b7300897be4a3eab7c6ad476c6c4c27f65f96f297de8e18431a35"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-guardian",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGLzAW2mZwY2GATBAAA2wMDwiZwA2ssNAzMAG",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGLzAW2mZwY2GATBAAA2wMDwiZwA2ssNAzMAG",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/guardian/talent-builds-pve-tank",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 104,
+        "heroTreeId": 24,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "3bab64721ef5f60f1ea1820bbfe0b4f437c7631d2b51c38bf039dd9e589f4ea9"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-restoration",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAIAAgZbmlmtZ2sxYmZwMwoZAAmZAYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAIAAgZbmlmtZ2sxYmZwMwoZAAmZAYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/restoration/talent-builds-pve-healer",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.",
+      "validation": {
+        "specId": 105,
+        "heroTreeId": 22,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "d44c72082683e273783ff1c150ec34121546b1999a1d2e5356fec27c552d8376"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "야생추적자"
+    }
+  },
+  {
+    "guideId": "druid-restoration",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmlZsZbGAAAAAAAAAAsMoZzw0MjZwsYmZmZZGGDAAAAAAAGAACAAYWmZrZbmFbMmZgZWANDAwMDADA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmlZsZbGAAAAAAAAAAsMoZzw0MjZwsYmZmZZGGDAAAAAAAGAACAAYWmZrZbmFbMmZgZWANDAwMDADA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/restoration/talent-builds-pve-healer",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 105,
+        "heroTreeId": 22,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "6e71ab15f53e81023b59b1dbca095e44e8456a71b6693d8dc295b5c8c60f406c"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "야생추적자"
+    }
+  },
+  {
+    "guideId": "druid-restoration",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAIAAgZbmlmtZ2sxYmZwMwoZAAmZAYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAIAAgZbmlmtZ2sxYmZwMwoZAAmZAYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/druid/restoration/talent-builds-pve-healer",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 105,
+        "heroTreeId": 22,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "d44c72082683e273783ff1c150ec34121546b1999a1d2e5356fec27c552d8376"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "야생추적자"
+    }
+  },
+  {
+    "guideId": "evoker-augmentation",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsADMDDNiFMGzMAwA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsADMDDNiFMGzMAwA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/evoker/augmentation/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 1473,
+        "heroTreeId": 38,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a5a3554c6650573cb6f498485f277d6fe97dc7159fd5ef4e0f9bc96a23991e05"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "시간 감시자"
+    }
+  },
+  {
+    "guideId": "evoker-augmentation",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyAzsMjxMmBAAAAAAAAmhZGYM1YmZGAAAAMzMjxMz2YmBmZzYwCsMGGbDgZiYDjZwMDgB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyAzsMjxMmBAAAAAAAAmhZGYM1YmZGAAAAMzMjxMz2YmBmZzYwCsMGGbDgZiYDjZwMDgB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/evoker/augmentation/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 1473,
+        "heroTreeId": 36,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "08e951c1cc9a4db76e594bbfd19729d15441474626fcbd1ebc3bb89efff03b9e"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "비늘사령관"
+    }
+  },
+  {
+    "guideId": "evoker-augmentation",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsADMDDNiFMGzMAwA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsADMDDNiFMGzMAwA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/evoker/augmentation/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 1473,
+        "heroTreeId": 38,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a5a3554c6650573cb6f498485f277d6fe97dc7159fd5ef4e0f9bc96a23991e05"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "시간 감시자"
+    }
+  },
+  {
+    "guideId": "evoker-devastation",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/evoker/devastation/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 1467,
+        "heroTreeId": 36,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "af3b35814b7a8dbca9c380990986476fb5e01298bf2c48881b03060a6ebbc257"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "비늘사령관"
+    }
+  },
+  {
+    "guideId": "evoker-devastation",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGmBGYMTjZmpZmZ2mZmZmZmZmZGwMzMzYmZZmZgBGD2glxox2AyMIYDzgZGM8AA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGmBGYMTjZmpZmZ2mZmZmZmZmZGwMzMzYmZZmZgBGD2glxox2AyMIYDzgZGM8AA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/evoker/devastation/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 1467,
+        "heroTreeId": 36,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "34b76e0c6b13ef0d727a39302cae3814e6f00c129f38476e90aae4e6014fc6f4"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "비늘사령관"
+    }
+  },
+  {
+    "guideId": "evoker-devastation",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/evoker/devastation/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 1467,
+        "heroTreeId": 36,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "af3b35814b7a8dbca9c380990986476fb5e01298bf2c48881b03060a6ebbc257"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "비늘사령관"
+    }
+  },
+  {
+    "guideId": "evoker-preservation",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BYGzIzMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BYGzIzMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/evoker/preservation/talent-builds-pve-healer",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.",
+      "validation": {
+        "specId": 1468,
+        "heroTreeId": 37,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "fbeb48ec2ff06fcbfd37d59919ef48e61bed746a3cc12b08110cdb3ed8f9a728"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "불꽃형성자"
+    }
+  },
+  {
+    "guideId": "evoker-preservation",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WmZGDjxsZGw2wAAAzYmZmZMMTMmBAAAMzMTGzMzMGzAAjZgFwGYGmQ2YsZYGgZGGA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WmZGDjxsZGw2wAAAzYmZmZMMTMmBAAAMzMTGzMzMGzAAjZgFwGYGmQ2YsZYGgZGGA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/evoker/preservation/talent-builds-pve-healer",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 1468,
+        "heroTreeId": 37,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "e69e4931e6edde51e118c592f2230a8d8795f4c56237a6e603608c4cc29accf4"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "불꽃형성자"
+    }
+  },
+  {
+    "guideId": "evoker-preservation",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BYGzIzMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BYGzIzMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/evoker/preservation/talent-builds-pve-healer",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 1468,
+        "heroTreeId": 37,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "fbeb48ec2ff06fcbfd37d59919ef48e61bed746a3cc12b08110cdb3ed8f9a728"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "불꽃형성자"
+    }
+  },
+  {
+    "guideId": "hunter-beastmastery",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsRYYWAbDAD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsRYYWAbDAD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 253,
+        "heroTreeId": 43,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "b8ccd5504c86c50087d4733810a237c9091f07d645daa4ef684ff195112c238a"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "무리의 지도자"
+    }
+  },
+  {
+    "guideId": "hunter-beastmastery",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsBzwQDbAAYGPwMzsMzwMzMjZGMzYmhZGzMzYbmZYMDLDNDAAAAAAAAmHYMzAmZjAmFw2AwA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsBzwQDbAAYGPwMzsMzwMzMjZGMzYmhZGzMzYbmZYMDLDNDAAAAAAAAmHYMzAmZjAmFw2AwA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+ (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 253,
+        "heroTreeId": 43,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "2db19b7ae5df080aa65856c46acf8f15d7f892f20d324b26b690630e90270537"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "무리의 지도자"
+    }
+  },
+  {
+    "guideId": "hunter-beastmastery",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsRYYWAbDAD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsRYYWAbDAD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/hunter/beast-mastery/talent-builds-pve-dps",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 253,
+        "heroTreeId": 43,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "b8ccd5504c86c50087d4733810a237c9091f07d645daa4ef684ff195112c238a"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "무리의 지도자"
+    }
+  },
+  {
+    "guideId": "hunter-marksmanship",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmxMLbzYmZMDeATzYwstZmZmZmZmZwMLDzMAAgxMzYAMjNGGgNmZbGD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmxMLbzYmZMDeATzYwstZmZmZmZmZwMLDzMAAgxMzYAMjNGGgNmZbGD",
+      "sourceUrl": "https://www.archon.gg/wow/builds/marksmanship/hunter/raid/talents/mythic/all-bosses",
+      "sourceLabel": "현재 로그 견본",
+      "checkedAt": "2026-10-08",
+      "note": "12.1.5에서 쏟아내기가 삭제되고 같은 자리에 피의 깃이 들어와, 이 코드를 불러오면 피의 깃이 찍힙니다. 12.1.5 기준 공개 단일 견본은 계산기에서 영웅 포인트가 14/13으로 표시되어 교체하지 않았습니다. 근거 로그는 12.1.5 적용 전 기록입니다. 레이드 견본은 전체 네임드 집계이며 단일 전투에만 제한된 결과는 아닙니다.",
+      "validation": {
+        "specId": 254,
+        "heroTreeId": 42,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "8557a888cc186df6ba143eca0339c1faa122cdc7316bab9d03dfc13f7cdefc1e"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "파수꾼"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Unload(1277548) r1 / 12.1.5: Blood Fletching(1319011) r1"
+  },
+  {
+    "guideId": "hunter-survival",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZstMzMLmZmZGzMzAwMWAjxMWMAA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZstMzMLmZmZGzMzAwMWAjxMWMAA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/hunter/survival/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 255,
+        "heroTreeId": 42,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "36a527841753afbfe52cfba5ad61a5329ea0e7739a51c33f81105cfb0222ac10"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "파수꾼"
+    }
+  },
+  {
+    "guideId": "hunter-survival",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgtZmZmxMz28AAAAAAAmxMzMMjxMmBjpZAAAAGAgltZGLzYmZGjZGAmxGWMGmZxAA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgtZmZmxMz28AAAAAAAmxMzMMjxMmBjpZAAAAGAgltZGLzYmZGjZGAmxGWMGmZxAA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/hunter/survival/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 255,
+        "heroTreeId": 42,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "c0301d3218d9d937720e7f696df959fd2071e598138efe35005612e4bd207ff3"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "파수꾼"
+    }
+  },
+  {
+    "guideId": "hunter-survival",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZstMzMLmZmZGzMzAwMWAjxMWMAA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZstMzMLmZmZGzMzAwMWAjxMWMAA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/hunter/survival/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 255,
+        "heroTreeId": 42,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "36a527841753afbfe52cfba5ad61a5329ea0e7739a51c33f81105cfb0222ac10"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "파수꾼"
+    }
+  },
+  {
+    "guideId": "mage-arcane",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/mage/arcane/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 62,
+        "heroTreeId": 39,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "c5281a7f2ac84f4088f55faa80496f720bdaa990b120e5f9d82277fff3295068"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "성난태양"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+  },
+  {
+    "guideId": "mage-arcane",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/mage/arcane/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 62,
+        "heroTreeId": 39,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "49eb52a22fa4b026de22b4fd4dc0b732f0a19e728ef8f6b2c55b17dcf6ee3276"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "성난태양"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+  },
+  {
+    "guideId": "mage-arcane",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/mage/arcane/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 62,
+        "heroTreeId": 39,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "c5281a7f2ac84f4088f55faa80496f720bdaa990b120e5f9d82277fff3295068"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "성난태양"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+  },
+  {
+    "guideId": "mage-fire",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzQGjBMDjB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzQGjBMDjB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/mage/fire/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 63,
+        "heroTreeId": 39,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "d9c4692461036521f35ef12559a4487394627fbfeaa94bff531ab0e489d22baf"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "성난태양"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+  },
+  {
+    "guideId": "mage-fire",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "C8DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzIzMzMAAAGAwMz0sstNDAwmZmx2MzMzYDAAAAALmZmZAAgZMmZmZMzsMAMzQYMgZYMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C8DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzIzMzMAAAGAwMz0sstNDAwmZmx2MzMzYDAAAAALmZmZAAgZMmZmZMzsMAMzQYMgZYMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/mage/fire/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 63,
+        "heroTreeId": 39,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "ca2c3b50af6e216043525785bbcde26e50b8fee49cbe0f3e88b62597955d8753"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "성난태양"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+  },
+  {
+    "guideId": "mage-fire",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzQGjBMDjB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzQGjBMDjB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/mage/fire/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 63,
+        "heroTreeId": 39,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "d9c4692461036521f35ef12559a4487394627fbfeaa94bff531ab0e489d22baf"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "성난태양"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+  },
+  {
+    "guideId": "mage-frost",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGjZMziZmZmZMDAAAMzMzyyMTbAAAAAAwGAbLjZmZgtZMzMsAAAwMbAzEGwADD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGjZMziZmZmZMDAAAMzMzyyMTbAAAAAAwGAbLjZmZgtZMzMsAAAwMbAzEGwADD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/mage/frost/talent-builds-pve-dps",
+      "sourceLabel": "Raid ST  (Best ST)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 64,
+        "heroTreeId": 40,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "077760b8177714be1143a6ccfeb5344374ff59da80ca61e944ee5670dc2851e3"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "주문술사"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+  },
+  {
+    "guideId": "mage-frost",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzEzMmZmZmZWMzMzMzMzsMTzMbzCAAAaBAAWAAAAAYbZMzMDmtZMzM2WAAAAzMYmMGwAYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzEzMmZmZmZWMzMzMzMzsMTzMbzCAAAaBAAWAAAAAYbZMzMDmtZMzM2WAAAAzMYmMGwAYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/mage/frost/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 64,
+        "heroTreeId": 41,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "3fef46d7639f8abce123be5c2ffe31e21cf76f43d10f42f89b79765bbf81cc8d"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "서리불꽃"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+  },
+  {
+    "guideId": "mage-frost",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAAAAAA2AYbZMzMDmthxMsAAAwMbAzEGwMYYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAAAAAA2AYbZMzMDmthxMsAAAwMbAzEGwMYYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/mage/frost/talent-builds-pve-dps",
+      "sourceLabel": "Raid Cleave  (Best Spread Cleave)",
+      "checkedAt": "2026-10-08",
+      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "validation": {
+        "specId": 64,
+        "heroTreeId": 40,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "d3b6edaced96631a51f51c968642973445ba86dc7cb8b811458db79914f9a870"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "주문술사"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+  },
+  {
+    "guideId": "monk-brewmaster",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhxmZMmZmZMzywMmZZYZzy2sNMLAAwysMtMbzsMAAQAmhNwMDYaMAAgB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhxmZMmZmZMzywMmZZYZzy2sNMLAAwysMtMbzsMAAQAmhNwMDYaMAAgB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/monk/brewmaster/talent-builds-pve-tank",
+      "sourceLabel": "Raid (Standard) (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 268,
+        "heroTreeId": 66,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "f07f56ca0d07d7f2a336f7e5bde2e53cdca3a0341090674208aea484b97bc1f7"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "조화의 종사"
+    }
+  },
+  {
+    "guideId": "monk-brewmaster",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMLbGDzwyM2MmZMAAAAAAALLgYmBmhBzgZmZGzsNMjZWGW2stNbzYWAAgNEAAgZbWamZmNG2AYmhpxAGAwA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMLbGDzwyM2MmZMAAAAAAALLgYmBmhBzgZmZGzsNMjZWGW2stNbzYWAAgNEAAgZbWamZmNG2AYmhpxAGAwA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/monk/brewmaster/talent-builds-pve-tank",
+      "sourceLabel": "Mythic+ (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 268,
+        "heroTreeId": 65,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "77f6066094b79298ef61f0ab9be8db8c617fa0c977215582aa1712fb9d9af5bd"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "음영파"
+    }
+  },
+  {
+    "guideId": "monk-brewmaster",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhxmZMmZmZMzywMmZZYZzy2sNMLAAwysMtMbzsMAAQAmhNwMDYaMAAgB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhxmZMmZmZMzywMmZZYZzy2sNMLAAwysMtMbzsMAAQAmhNwMDYaMAAgB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/monk/brewmaster/talent-builds-pve-tank",
+      "sourceLabel": "Raid (Standard) (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 268,
+        "heroTreeId": 66,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "f07f56ca0d07d7f2a336f7e5bde2e53cdca3a0341090674208aea484b97bc1f7"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "조화의 종사"
+    }
+  },
+  {
+    "guideId": "monk-mistweaver",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmBAAGwAMDYMMWkxMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmBAAGwAMDYMMWkxMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/monk/mistweaver/talent-builds-pve-healer",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.",
+      "validation": {
+        "specId": 270,
+        "heroTreeId": 64,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "9c3849884d5e9074ead0a63e308489e7e1d7ac75342ae1fc7adb1794ab569d57"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "천신의 대변자"
+    }
+  },
+  {
+    "guideId": "monk-mistweaver",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghxyMLjZx2MmZsZsZZGzs9AzstsMzYhhmxMgBDYWmZmZY2wMMLzEAAAAABYx2Mbz2MDAAMAAzAGDsIjZA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghxyMLjZx2MmZsZsZZGzs9AzstsMzYhhmxMgBDYWmZmZY2wMMLzEAAAAABYx2Mbz2MDAAMAAzAGDsIjZA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/monk/mistweaver/talent-builds-pve-healer",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 270,
+        "heroTreeId": 64,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "bc45ce2af6c66b727f118e02b83d5b9ec48122aceb2709c151e4671681149229"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "천신의 대변자"
+    }
+  },
+  {
+    "guideId": "monk-mistweaver",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmBAAGwAMDYMMWkxMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmBAAGwAMDYMMWkxMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/monk/mistweaver/talent-builds-pve-healer",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 270,
+        "heroTreeId": 64,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "9c3849884d5e9074ead0a63e308489e7e1d7ac75342ae1fc7adb1794ab569d57"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "천신의 대변자"
+    }
+  },
+  {
+    "guideId": "monk-windwalker",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MmhlZGbzAAAAAAAAAAAAsMMaGzwwAmxwMzMDz2wMMLzEAwiZ2mZYmZmBAwGAMLzSzMzsAgBmZAglBiB8B",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MmhlZGbzAAAAAAAAAAAAsMMaGzwwAmxwMzMDz2wMMLzEAwiZ2mZYmZmBAwGAMLzSzMzsAgBmZAglBiB8B",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/monk/windwalker/talent-builds-pve-dps",
+      "sourceLabel": "Raid - Single Target  (Recommended)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 269,
+        "heroTreeId": 65,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "810da3985be1c404c3382f9418a0eb15a64203b9af15712b7e3e5a690604cb39"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "음영파"
+    }
+  },
+  {
+    "guideId": "monk-windwalker",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMGbzMz2MAAAAAAAAAAAALDzEmxywAmxwMzMDz2wMMLzEAwiZ2mZGzMzMAA2AgZZWamZmFAMwMDAswQMgB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMGbzMz2MAAAAAAAAAAAALDzEmxywAmxwMzMDz2wMMLzEAwiZ2mZGzMzMAA2AgZZWamZmFAMwMDAswQMgB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/monk/windwalker/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Weekly Keys)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 269,
+        "heroTreeId": 65,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "829a177b84d105d5800f6afea9ebd2be5fb4c039692510cbff72cd299d239280"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "음영파"
+    }
+  },
+  {
+    "guideId": "monk-windwalker",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2wMsNzYbGAAAAAAAAAAAglhRzYGGGwMGmZmZY2YmhZZmAAWMz2MzYMzMAA2AgZZWamZmFAMwMDAsMQMgB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2wMsNzYbGAAAAAAAAAAAglhRzYGGGwMGmZmZY2YmhZZmAAWMz2MzYMzMAA2AgZZWamZmFAMwMDAsMQMgB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/monk/windwalker/talent-builds-pve-dps",
+      "sourceLabel": "Raid - Cleave  (Recommended)",
+      "checkedAt": "2026-10-08",
+      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "validation": {
+        "specId": 269,
+        "heroTreeId": 65,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "d06252727b198fbdab25e4b152d27c6069041a1158a4f8f2dfdaab352d3b4363"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "음영파"
+    }
+  },
+  {
+    "guideId": "paladin-holy",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjRDA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjRDA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/paladin/holy/talent-builds-pve-healer",
+      "sourceLabel": "Raid - Virtue  (Recommended)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.",
+      "validation": {
+        "specId": 65,
+        "heroTreeId": 50,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "b8c364d029d06046b26720a6724788c276dea610ba6cd5b61e49f5cadf9a44d1"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "태양의 사자"
+    }
+  },
+  {
+    "guideId": "paladin-holy",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAD2GzMzMjZmZBmZYZsZmFjmYYMzMMmtMAMAsB2YZmZmlZbmZ2aAAAAWAmhNDMjZYGAAzMMjxoB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAD2GzMzMjZmZBmZYZsZmFjmYYMzMMmtMAMAsB2YZmZmlZbmZ2aAAAAWAmhNDMjZYGAAzMMjxoB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/paladin/holy/talent-builds-pve-healer",
+      "sourceLabel": "M+ - Virtue  (Recommended)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 65,
+        "heroTreeId": 50,
+        "points": {
+          "1": 35,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "81aa2eb510179906e66f50fee0658eb0dd6346ab4b9ebd6b7dfa7f8a0fe24b09"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "태양의 사자"
+    }
+  },
+  {
+    "guideId": "paladin-holy",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjRDA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjRDA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/paladin/holy/talent-builds-pve-healer",
+      "sourceLabel": "Raid - Virtue  (Recommended)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 65,
+        "heroTreeId": 50,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "b8c364d029d06046b26720a6724788c276dea610ba6cd5b61e49f5cadf9a44d1"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "태양의 사자"
+    }
+  },
+  {
+    "guideId": "paladin-protection",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLzithBAYAAAAAAQamZxMmZYMbtBgBMwMYbAAAEgZmttlWmZsYZjZMAGzwYAwMDAmZQGL",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLzithBAYAAAAAAQamZxMmZYMbtBgBMwMYbAAAEgZmttlWmZsYZjZMAGzwYAwMDAmZQGL",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/paladin/protection/talent-builds-pve-tank",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 66,
+        "heroTreeId": 49,
+        "points": {
+          "1": 35,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a1f5ace966981c303b200bf086b3ec92028d08222d0fb856e03ac77649053f3d"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "빛의 대장장이"
+    }
+  },
+  {
+    "guideId": "paladin-protection",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMjZmZZbMmlZZWmxAAMAAAAAAopZGmxMDjZrNAMwAmBbDAAgAMzstt0yMjFLLYAAzwYAwMDAzMDyYB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMjZmZZbMmlZZWmxAAMAAAAAAopZGmxMDjZrNAMwAmBbDAAgAMzstt0yMjFLLYAAzwYAwMDAzMDyYB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/paladin/protection/talent-builds-pve-tank",
+      "sourceLabel": "Mythic+ (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 66,
+        "heroTreeId": 49,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "2899c5a9178d9347939dba68f8aa634d35486a6bec108b4508b1273760e34673"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "빛의 대장장이"
+    }
+  },
+  {
+    "guideId": "paladin-protection",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLzithBAYAAAAAAQamZxMmZYMbtBgBMwMYbAAAEgZmttlWmZsYZjZMAGzwYAwMDAmZQGL",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLzithBAYAAAAAAQamZxMmZYMbtBgBMwMYbAAAEgZmttlWmZsYZjZMAGzwYAwMDAmZQGL",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/paladin/protection/talent-builds-pve-tank",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 66,
+        "heroTreeId": 49,
+        "points": {
+          "1": 35,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a1f5ace966981c303b200bf086b3ec92028d08222d0fb856e03ac77649053f3d"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "빛의 대장장이"
+    }
+  },
+  {
+    "guideId": "paladin-retribution",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAAAZmptZmtZAAbAGAMmhZwMmZ2w2MYYMjBD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAAAZmptZmtZAAbAGAMmhZwMmZ2w2MYYMjBD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/paladin/retribution/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 70,
+        "heroTreeId": 48,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "b90e849f22c7df27630587052925323e4c40edc80a00251f7d9b7aca79443b09"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "기사단"
+    }
+  },
+  {
+    "guideId": "paladin-retribution",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxGbAAAZmptZmtZAAbAGAMmhBmxMzGWmBDjZMYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxGbAAAZmptZmtZAAbAGAMmhBmxMzGWmBDjZMYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/paladin/retribution/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 70,
+        "heroTreeId": 48,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "fbde3b9c8fb636e9cdc12d1d8480fdbeb3d1fc06407a4c4b47c9631b74ba10d2"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "기사단"
+    }
+  },
+  {
+    "guideId": "paladin-retribution",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAAAZmptZmtZAAbAGAMmhZwMmZ2w2MYYMjBD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAAAZmptZmtZAAbAGAMmhZwMmZ2w2MYYMjBD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/paladin/retribution/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 70,
+        "heroTreeId": 48,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "b90e849f22c7df27630587052925323e4c40edc80a00251f7d9b7aca79443b09"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "기사단"
+    }
+  },
+  {
+    "guideId": "priest-discipline",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMgpZamBzMAIAmtZbBM2MAAMGzMGmZwMDGBD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMgpZamBzMAIAmtZbBM2MAAMGzMGmZwMDGBD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/priest/discipline/talent-builds-pve-healer",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.",
+      "validation": {
+        "specId": 256,
+        "heroTreeId": 18,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "5ade60454e5f6f515439b2237b9955278f4645c6268db9e3e5c79001648679d6"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "공허술사"
+    }
+  },
+  {
+    "guideId": "priest-discipline",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CAQAAAAAAAAAAAAAAAAAAAAAAADsMzMWYMGzgZzsNzMzMzMDAAAAAAAAAgxYZGMzMjNjZGsZamYwMDACgZb2WAjNDAAjZmZMYGMzgRwM",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CAQAAAAAAAAAAAAAAAAAAAAAAADsMzMWYMGzgZzsNzMzMzMDAAAAAAAAAgxYZGMzMjNjZGsZamYwMDACgZb2WAjNDAAjZmZMYGMzgRwM",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/priest/discipline/talent-builds-pve-healer",
+      "sourceLabel": "Mythic+ (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 256,
+        "heroTreeId": 18,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "95bb390e3abf5b4cf776882a83456cd79352ec620bdcc4dc59d83d1686d3fc94"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "공허술사"
+    }
+  },
+  {
+    "guideId": "priest-discipline",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMgpZamBzMAIAmtZbBM2MAAMGzMGmZwMDGBD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMgpZamBzMAIAmtZbBM2MAAMGzMGmZwMDGBD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/priest/discipline/talent-builds-pve-healer",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 256,
+        "heroTreeId": 18,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "5ade60454e5f6f515439b2237b9955278f4645c6268db9e3e5c79001648679d6"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "공허술사"
+    }
+  },
+  {
+    "guideId": "priest-holy",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMbYIMmlBYMwiZmZBQzYMGDzMAzMzAD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMbYIMmlBYMwiZmZBQzYMGDzMAzMzAD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/priest/holy/talent-builds-pve-healer",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.",
+      "validation": {
+        "specId": 257,
+        "heroTreeId": 20,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "88c697019faf0936752e704c9f17937ca8fb1f84c8384afe1a5004c6a8a68bfb"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "예언자"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Holy Celerity(1215275) r1 / 12.1.0: Ultimate Serenity(1246517) r1 / 12.1.5: Ultimate Serenity(1246517) r1 / 12.1.5: Holy Celerity(1215275) r1"
+  },
+  {
+    "guideId": "priest-holy",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMDmZmxmxMD2wMFAzshhwYWGgxALGzsAoZMzYMYGgZmBMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMDmZmxmxMD2wMFAzshhwYWGgxALGzsAoZMzYMYGgZmBMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/priest/holy/talent-builds-pve-healer",
+      "sourceLabel": "Mythic+ (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 257,
+        "heroTreeId": 20,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a0e9d1c2cf03f395f613df5d7056db4e1be98e5bff80e75484b63c7a99763e1a"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "예언자"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Holy Celerity(1215275) r1 / 12.1.0: Ultimate Serenity(1246517) r1 / 12.1.5: Ultimate Serenity(1246517) r1 / 12.1.5: Holy Celerity(1215275) r1"
+  },
+  {
+    "guideId": "priest-holy",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMbYIMmlBYMwiZmZBQzYMGDzMAzMzAD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMbYIMmlBYMwiZmZBQzYMGDzMAzMzAD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/priest/holy/talent-builds-pve-healer",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 257,
+        "heroTreeId": 20,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "88c697019faf0936752e704c9f17937ca8fb1f84c8384afe1a5004c6a8a68bfb"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "예언자"
+    },
+    "remark": "같은 코드의 뜻이 바뀜: 12.1.0: Holy Celerity(1215275) r1 / 12.1.0: Ultimate Serenity(1246517) r1 / 12.1.5: Ultimate Serenity(1246517) r1 / 12.1.5: Holy Celerity(1215275) r1"
+  },
+  {
+    "guideId": "priest-shadow",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CIQAAAAAAAAAAAAAAAAAAAAAAMMDzAAAAAAAAAAAAwMLmxMbzMGz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMIjZmZMbMz2yAMTMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CIQAAAAAAAAAAAAAAAAAAAAAAMMDzAAAAAAAAAAAAwMLmxMbzMGz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMIjZmZMbMz2yAMTMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/priest/shadow/talent-builds-pve-dps",
+      "sourceLabel": "Single Target",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 258,
+        "heroTreeId": 19,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "83285b30823bce2eb38957e49c5514289eff789df65eeaead17ede1399e1daa9"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "집정관"
+    }
+  },
+  {
+    "guideId": "priest-shadow",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGD2mZGzMzYDZGLbz0AMDwMbmhZzAQGjFAMzgMmZmxsxMbLDwMxA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGD2mZGzMzYDZGLbz0AMDwMbmhZzAQGjFAMzgMmZmxsxMbLDwMxA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/priest/shadow/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 258,
+        "heroTreeId": 19,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "9e0f469bebef0f6cc97cd91555238a7a2a4c906b283bc2a228542ea572b59092"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "집정관"
+    }
+  },
+  {
+    "guideId": "priest-shadow",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMIjZmZMbMz2yAMTMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMIjZmZMbMz2yAMTMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/priest/shadow/talent-builds-pve-dps",
+      "sourceLabel": "Raid Cleave",
+      "checkedAt": "2026-10-08",
+      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "validation": {
+        "specId": 258,
+        "heroTreeId": 19,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "ed9a68079788f3d264cf01b1fe0d4b5018800a6c72a22a77241266404200c0ec"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "집정관"
+    }
+  },
+  {
+    "guideId": "rogue-assassination",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmZMjZMGzMGGADsAzY0Y2AZbAbGAMzMYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmZMjZMGzMGGADsAzY0Y2AZbAbGAMzMYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/rogue/assassination/talent-builds-pve-dps",
+      "sourceLabel": "Raid Single Target  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 259,
+        "heroTreeId": 52,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "954c4e33d808745d7e67aa5f4fad0a7e21cf50a192f27577f6c8774dff56efbe"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "운명결속"
+    }
+  },
+  {
+    "guideId": "rogue-assassination",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AmxMjxMmZMGADsAzY0YWAZbAbGAMzMDfA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AmxMjxMmZMGADsAzY0YWAZbAbGAMzMDfA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/rogue/assassination/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 259,
+        "heroTreeId": 52,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "2b7779f275a438c9c7c10ff86640f156688004cd9283b1ccfb2031c7d68e75b2"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "운명결속"
+    }
+  },
+  {
+    "guideId": "rogue-assassination",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmZMjZMGzMGGADsAzY0Y2AZbAbGAMzMYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmZMjZMGzMGGADsAzY0Y2AZbAbGAMzMYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/rogue/assassination/talent-builds-pve-dps",
+      "sourceLabel": "Raid Single Target  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 259,
+        "heroTreeId": 52,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "954c4e33d808745d7e67aa5f4fad0a7e21cf50a192f27577f6c8774dff56efbe"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "운명결속"
+    }
+  },
+  {
+    "guideId": "rogue-outlaw",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/rogue/outlaw/talent-builds-pve-dps",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 260,
+        "heroTreeId": 51,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "5deb7f7c096ae36c62809c16b8aae37ef38a25741d00aa60bc8207d03f10250f"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "기만자"
+    }
+  },
+  {
+    "guideId": "rogue-outlaw",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/rogue/outlaw/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+ (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 260,
+        "heroTreeId": 51,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "33e39eb4a723d2bbf46f4092e6dd3a296c93946eefdc9768addbfed21bb95aae"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "기만자"
+    }
+  },
+  {
+    "guideId": "rogue-outlaw",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/rogue/outlaw/talent-builds-pve-dps",
+      "sourceLabel": "Raid (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 260,
+        "heroTreeId": 51,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "5deb7f7c096ae36c62809c16b8aae37ef38a25741d00aa60bc8207d03f10250f"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "기만자"
+    }
+  },
+  {
+    "guideId": "rogue-subtlety",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/rogue/subtlety/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 261,
+        "heroTreeId": 53,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a1b390ee0ff469b77681cf18f8d1a7d8f5957759ad1c558283025580d44ec332"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "죽음추적자"
+    }
+  },
+  {
+    "guideId": "rogue-subtlety",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDjZmZmZGGbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDjZmZmZGGbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/rogue/subtlety/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 261,
+        "heroTreeId": 53,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "618b76ef63a5dd9cea5fec3cc6d16f9f64288996d12a704dc19f1e26ae1a9a0e"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "죽음추적자"
+    }
+  },
+  {
+    "guideId": "rogue-subtlety",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/rogue/subtlety/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 261,
+        "heroTreeId": 53,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a1b390ee0ff469b77681cf18f8d1a7d8f5957759ad1c558283025580d44ec332"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "죽음추적자"
+    }
+  },
+  {
+    "guideId": "shaman-elemental",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/shaman/elemental/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 262,
+        "heroTreeId": 56,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "e936c85a43816dc63300a946b3e234fd500e627b45472216c97521cca4dfc380"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "선견자"
+    }
+  },
+  {
+    "guideId": "shaman-elemental",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZZZMmhBAAAAsYmNYADY2YCZWAgZZmZGjtFTbMzYsMzMzYYZWMWmZGzMLAAzAgZGDDD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZZZMmhBAAAAsYmNYADY2YCZWAgZZmZGjtFTbMzYsMzMzYYZWMWmZGzMLAAzAgZGDDD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/shaman/elemental/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 262,
+        "heroTreeId": 56,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "07a12614f2dd6d9edbbd9573174d3ef910bb8cd7bc58eeb25884d5c596fef0c3"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "선견자"
+    }
+  },
+  {
+    "guideId": "shaman-elemental",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/shaman/elemental/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 262,
+        "heroTreeId": 56,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "e936c85a43816dc63300a946b3e234fd500e627b45472216c97521cca4dfc380"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "선견자"
+    }
+  },
+  {
+    "guideId": "shaman-enhancement",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDLkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDLkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/shaman/enhancement/talent-builds-pve-dps",
+      "sourceLabel": "Single Target  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 263,
+        "heroTreeId": 55,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "87a06c4cbd0f1a8bb2052e6a97fff69f6d82c3b69035ffe8a4264031f0e2b0b2"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "폭풍인도자"
+    }
+  },
+  {
+    "guideId": "shaman-enhancement",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZxYjZmtxyMzMzgFmBAYGGzMMTgZGMYMA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZxYjZmtxyMzMzgFmBAYGGzMMTgZGMYMA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/shaman/enhancement/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+/AoE  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 263,
+        "heroTreeId": 55,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "c4c698a3fc8598b05da96b08e6b35489e6fd2af20fd8f23be967d6d4e3e8dfbd"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "폭풍인도자"
+    }
+  },
+  {
+    "guideId": "shaman-enhancement",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/shaman/enhancement/talent-builds-pve-dps",
+      "sourceLabel": "Raid Cleave  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "validation": {
+        "specId": 263,
+        "heroTreeId": 55,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "309970fc539759a05cf7511d0e68afaeaeca101c7e2af6580cc5ec16f6db209a"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "폭풍인도자"
+    }
+  },
+  {
+    "guideId": "shaman-restoration",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxmGbDIzAbmhZw2YMTz2yMzmZMLsYegZGzwsMAAAwMzgZGAYwM",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxmGbDIzAbmhZw2YMTz2yMzmZMLsYegZGzwsMAAAwMzgZGAYwM",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/shaman/restoration/talent-builds-pve-healer",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 레이드 견본입니다. 단일 대상 치유에만 한정된 특성이라는 뜻은 아닙니다.",
+      "validation": {
+        "specId": 264,
+        "heroTreeId": 54,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "524baac30515bcd218c8d6973075d9a65a7c07df50e23ccb033f18cb5161dfc4"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "토템술사"
+    }
+  },
+  {
+    "guideId": "shaman-restoration",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMzMzMjZGjZgFYDmxmGbDIzAbMzMY2mZMa2WmZ2MjZhFjZGDLzyAAAAzMDmZAgBzA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMzMzMjZGjZgFYDmxmGbDIzAbMzMY2mZMa2WmZ2MjZhFjZGDLzyAAAAzMDmZAgBzA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/shaman/restoration/talent-builds-pve-healer",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 264,
+        "heroTreeId": 54,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "f224389ec4851b2d3d2c132a9e044289956bbccab26cf56b1868105e06797e6f"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "토템술사"
+    }
+  },
+  {
+    "guideId": "shaman-restoration",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxmGbDIzAbmhZw2YMTz2yMzmZMLsYegZGzwsMAAAwMzgZGAYwM",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxmGbDIzAbmhZw2YMTz2yMzmZMLsYegZGzwsMAAAwMzgZGAYwM",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/shaman/restoration/talent-builds-pve-healer",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 264,
+        "heroTreeId": 54,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "524baac30515bcd218c8d6973075d9a65a7c07df50e23ccb033f18cb5161dfc4"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "토템술사"
+    }
+  },
+  {
+    "guideId": "warlock-affliction",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZZ2mZmlxAAjllBGwEMDbBG2GAAAmBAAwMDzMjBzwMzMzMGMzMzAAmBG",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZZ2mZmlxAAjllBGwEMDbBG2GAAAmBAAwMDzMjBzwMzMzMGMzMzAAmBG",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warlock/affliction/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 265,
+        "heroTreeId": 57,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "09d45d5d5d0a9e052691b96920b052fd7db788b721f127c2e69a4f4de6119494"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "영혼 수확자"
+    }
+  },
+  {
+    "guideId": "warlock-affliction",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CkQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzYWGAAwMmlZZmZWGDAM22GYATwMsFYYbAAAYAAAYmZMjZmNGmZmZmhZYmZGAgZgB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CkQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzYWGAAwMmlZZmZWGDAM22GYATwMsFYYbAAAYAAAYmZMjZmNGmZmZmhZYmZGAgZgB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warlock/affliction/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 265,
+        "heroTreeId": 57,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "968dfd8bbc8a0d9f4de456cfa1e063d24b0702b254fcb886c54133735b0c4a2c"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "영혼 수확자"
+    }
+  },
+  {
+    "guideId": "warlock-affliction",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAmZmlZxMzyYAgx2yADYCmhtADbDAAAzAAAYmZMjZmtxwYmZmZYYmZGAgZgB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAmZmlZxMzyYAgx2yADYCmhtADbDAAAzAAAYmZMjZmtxwYmZmZYYmZGAgZgB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warlock/affliction/talent-builds-pve-dps",
+      "sourceLabel": "Raid Cleave  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "validation": {
+        "specId": 265,
+        "heroTreeId": 57,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "387346aba455f5374b6ae5fe602faea675778687dac1a46526cae35a8b3e6b69"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "영혼 수확자"
+    }
+  },
+  {
+    "guideId": "warlock-demonology",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CoQAAAAAAAAAAAAAAAAAAAAAAYmZMzoZjhZmxsMAAAAAAAgxMGWgB2GtQDLGjxysMzMjZAgZGzMzMzAMzMmZAAAGzMzMDDLzYAD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CoQAAAAAAAAAAAAAAAAAAAAAAYmZMzoZjhZmxsMAAAAAAAgxMGWgB2GtQDLGjxysMzMjZAgZGzMzMzAMzMmZAAAGzMzMDDLzYAD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warlock/demonology/talent-builds-pve-dps",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 266,
+        "heroTreeId": 59,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a3ff9fac4e80dc85a0dcea449fd9386f7282b3f5554a3162c192b7c7f87cba9c"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "악마학자"
+    }
+  },
+  {
+    "guideId": "warlock-demonology",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CoQAAAAAAAAAAAAAAAAAAAAAAYmhZGNbmx2MzYWGAAAAAAAwYGDLwAbj2ohFjZGLz2MzMmBAmZMmZmZAmZGmZDAAMmZmxwwyMGwA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CoQAAAAAAAAAAAAAAAAAAAAAAYmhZGNbmx2MzYWGAAAAAAAwYGDLwAbj2ohFjZGLz2MzMmBAmZMmZmZAmZGmZDAAMmZmxwwyMGwA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warlock/demonology/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 266,
+        "heroTreeId": 59,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a0ddb39c2950aefe78db2bab86f24823964b956a8a8f4e5c3194dc785e361467"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "악마학자"
+    }
+  },
+  {
+    "guideId": "warlock-demonology",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CoQAAAAAAAAAAAAAAAAAAAAAAYmhZGNbmx2MzYWGAAAAAAAwYGDLwAbj2ohFjZGLz2MzMmBAmZMmZmZAmZGmZDAAMmZmxwwyMGwA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CoQAAAAAAAAAAAAAAAAAAAAAAYmhZGNbmx2MzYWGAAAAAAAwYGDLwAbj2ohFjZGLz2MzMmBAmZMmZmZAmZGmZDAAMmZmxwwyMGwA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warlock/demonology/talent-builds-pve-dps",
+      "sourceLabel": "Raid Cleave  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "validation": {
+        "specId": 266,
+        "heroTreeId": 59,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "a0ddb39c2950aefe78db2bab86f24823964b956a8a8f4e5c3194dc785e361467"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "악마학자"
+    }
+  },
+  {
+    "guideId": "warlock-destruction",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMzmZmZWmFzMzsYMWMDAAmZGzMziNYgZxoxMAmtYjBAAGDM2AAmZwYGzYDAAwMzMAAMGG",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMzmZmZWmFzMzsYMWMDAAmZGzMziNYgZxoxMAmtYjBAAGDM2AAmZwYGzYDAAwMzMAAMGG",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warlock/destruction/talent-builds-pve-dps",
+      "sourceLabel": "Single Target  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 267,
+        "heroTreeId": 58,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "e308f33716d6c68a4447f421c68898f4d09295c154e1ebe3f6af7456f1f49d96"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "지옥소환사"
+    }
+  },
+  {
+    "guideId": "warlock-destruction",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmZ2mZGzysZmZmFzMLLzDMAAYGjZmZBMmxwCZgthFaswAAAjZYAAmZAGzYMbAAAmZmBAAGG",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmZ2mZGzysZmZmFzMLLzDMAAYGjZmZBMmxwCZgthFaswAAAjZYAAmZAGzYMbAAAmZmBAAGG",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warlock/destruction/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+/AoE (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 267,
+        "heroTreeId": 59,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "7cc6f96071334c38eeb0fbe6eae03f2eb2bdef169168d52f326e170fd39f6969"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "악마학자"
+    }
+  },
+  {
+    "guideId": "warlock-destruction",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMzmZmZWmlZmZmFjZbxDMAAYGjZmZxGMwsY0YGAzWsxAAAjBGbAAzMYMjZsBAAYmZGAAGDD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMzmZmZWmlZmZmFjZbxDMAAYGjZmZxGMwsY0YGAzWsxAAAjBGbAAzMYMjZsBAAYmZGAAGDD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warlock/destruction/talent-builds-pve-dps",
+      "sourceLabel": "Raid Cleave  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "validation": {
+        "specId": 267,
+        "heroTreeId": 58,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "290acff8b0838df298508c7a6dd46d3c40a54748f5c83f46f041532151e14a62"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "지옥소환사"
+    }
+  },
+  {
+    "guideId": "warrior-arms",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZAhxyyALgBMDTIzgNwMjtx2ALzsMAzMAYGGA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZAhxyyALgBMDTIzgNwMjtx2ALzsMAzMAYGGA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warrior/arms/talent-builds-pve-dps",
+      "sourceLabel": "Single Target  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 71,
+        "heroTreeId": 60,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "c6e15b6909c98f0b874a7da14c900faea4d23361660676c5ec46a070ec84239b"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-arms",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2AbgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2AbgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warrior/arms/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+ Dungeons  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 71,
+        "heroTreeId": 60,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "eeb63a2af22fdc28451f20906a443ab1931638468e81ce5b48ffa1c0fdba7a8e"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-arms",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZgJMW2GYBMgZYCZGsBmZsN2GYZmtBYmBAzwA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZgJMW2GYBMgZYCZGsBmZsN2GYZmtBYmBAzwA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warrior/arms/talent-builds-pve-dps",
+      "sourceLabel": "Raid Multitarget  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "validation": {
+        "specId": 71,
+        "heroTreeId": 60,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "28b74ad771ddb0e410479c254b1ef57ee98bec2a538e7ae193994e940ab230ce"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-fury",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2MzMzMDjZmZGzMzsMzMmZmZzYmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2MzMzMDjZmZGzMzsMzMmZmZzYmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warrior/fury/talent-builds-pve-dps",
+      "sourceLabel": "Single Target  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 72,
+        "heroTreeId": 60,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "060615942ca179a17cae9382627d9dfc81f874694f0d726f020830a69e6bacab"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-fury",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmBAAYmhxsMwgxA",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmBAAYmhxsMwgxA",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warrior/fury/talent-builds-pve-dps",
+      "sourceLabel": "Mythic+ Dungeons  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 72,
+        "heroTreeId": 60,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "04e64c39d337a50513635d82fc2eed96459548b3848983457fd40de097535501"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-fury",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZYMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmxGAAMzwYWGGDGD",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZYMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmxGAAMzwYWGGDGD",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warrior/fury/talent-builds-pve-dps",
+      "sourceLabel": "Raid Multitarget  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "추가 대상이 있는 레이드 전투용 견본입니다. 네임드의 대상 수와 지속 시간을 확인하세요.",
+      "validation": {
+        "specId": 72,
+        "heroTreeId": 60,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "948837aabb0900de2367402349fef2184344c46231921f36c6ae12129b81b9d4"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-protection",
+    "buildId": "single-target",
+    "replace": {
+      "id": "single-target",
+      "label": "단일",
+      "code": "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAAbDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAAbDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warrior/protection/talent-builds-pve-tank",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "단일 네임드 전투용 견본입니다.",
+      "validation": {
+        "specId": 73,
+        "heroTreeId": 61,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "92ce4e536248e983ce4ae42208ed7c2d664bc07f5858ee9c718965de469b0b0b"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "산왕"
+    }
+  },
+  {
+    "guideId": "warrior-protection",
+    "buildId": "mythic-plus",
+    "replace": {
+      "id": "mythic-plus",
+      "label": "쐐기",
+      "code": "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZGjxImxwyMzMzYGmZAAAAwyMDwMGgB2glFjGzAYWiZ2AmZGGbAwMDAAzAjB",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZGjxImxwyMzMzYGmZAAAAwyMDwMGgB2glFjGzAYWiZ2AmZGGbAwMDAAzAjB",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warrior/protection/talent-builds-pve-tank",
+      "sourceLabel": "Mythic+ (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.",
+      "validation": {
+        "specId": 73,
+        "heroTreeId": 61,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "2a4412e52600682656d1169605e0531b1f3cb5d8c0eb136da5d68890233736aa"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "산왕"
+    }
+  },
+  {
+    "guideId": "warrior-protection",
+    "buildId": "raid",
+    "replace": {
+      "id": "raid",
+      "label": "레이드",
+      "code": "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAAbDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG",
+      "url": "https://www.wowhead.com/ko/talent-calc/blizzard/CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAAbDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG",
+      "sourceUrl": "https://www.wowhead.com/ko/guide/classes/warrior/protection/talent-builds-pve-tank",
+      "sourceLabel": "Raid  (Best)",
+      "checkedAt": "2026-10-08",
+      "note": "현재 원문에서 단일 네임드용과 일반 레이드용으로 같은 견본을 사용합니다.",
+      "validation": {
+        "specId": 73,
+        "heroTreeId": 61,
+        "points": {
+          "1": 34,
+          "2": 34,
+          "3": 13,
+          "4": 1
+        },
+        "checkedAt": "2026-10-18",
+        "traitDataCommit": "5537d8813dfc59707927722b1e23ffa6fd67ee59",
+        "gameBuild": "12.1.5.70448",
+        "browser": {
+          "checkedAt": "2026-10-18",
+          "points": [
+            34,
+            34,
+            13
+          ],
+          "parentConnections": true,
+          "available": true,
+          "sha256": "92ce4e536248e983ce4ae42208ed7c2d664bc07f5858ee9c718965de469b0b0b"
+        },
+        "scope": "12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인."
+      },
+      "heroLabel": "산왕"
+    }
+  }
+]

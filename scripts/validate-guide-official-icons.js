@@ -6,7 +6,7 @@ const path = require('path');
 
 const SITE_ROOT = path.resolve(__dirname, '..');
 const REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
-const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
+const { loadGuideManuscripts } = require('./lib/guideManuscripts.cjs');
 const SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
 const REPORT_PATH = path.join(SITE_ROOT, 'guide-official-icon-validation-report.json');
 
@@ -107,7 +107,7 @@ function fetchWowheadTooltip(spellId) {
 
 async function main() {
   const registry = loadSourceModule(REGISTRY_PATH, '{ getReadyGuideSpecs }');
-  const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
+  const manuscripts = loadGuideManuscripts();
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const specs = registry.getReadyGuideSpecs()
     .filter(spec => !specFilter || spec.id === specFilter || spec.path.includes(specFilter));

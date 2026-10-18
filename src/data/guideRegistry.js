@@ -1,4 +1,6 @@
-export const CURRENT_PATCH_LABEL = '12.1';
+export const CURRENT_PATCH_LABEL = '12.1.5';
+// KB 노트의 patch 값: 12.1.5에서 바뀐 노트만 12.1.5로 다시 확인했고, 바뀌지 않은 노트는 12.1 확인값을 그대로 쓴다.
+export const CURRENT_DATA_PATCHES = ['12.1', '12.1.5'];
 
 export const classColors = {
   warrior: '#C69B6D',

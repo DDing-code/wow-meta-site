@@ -1,0 +1,3482 @@
+[
+  {
+    "guideId": "deathknight-frost",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "01-죽음의기사\\냉기\\Meta\\guide-12.1.json",
+    "code": "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
+    "heroTreeId": 33,
+    "oldHeroTreeId": 33,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "deathknight-frost",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "01-죽음의기사\\냉기\\Meta\\guide-12.1.json",
+    "code": "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
+    "heroTreeId": 33,
+    "oldHeroTreeId": 33,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "deathknight-frost",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "01-죽음의기사\\냉기\\Meta\\guide-12.1.json",
+    "code": "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
+    "heroTreeId": 33,
+    "oldHeroTreeId": 33,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "deathknight-unholy",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "01-죽음의기사\\부정\\Meta\\guide-12.1.json",
+    "code": "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAwyMmZ2mZGzMDYzsYYIDMbM0YBAzAAzMjZAmZmxYA",
+    "heroTreeId": 32,
+    "oldHeroTreeId": 32,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "deathknight-unholy",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "01-죽음의기사\\부정\\Meta\\guide-12.1.json",
+    "code": "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2MzMTjZmxMzYAAAAAAAAYegxwAglZwsZmxMzYgBmxmGLLA2mYDDYGAzMzMjZwMDGzYA",
+    "heroTreeId": 31,
+    "oldHeroTreeId": 31,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "deathknight-unholy",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "01-죽음의기사\\부정\\Meta\\guide-12.1.json",
+    "code": "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzmZmZMjBAAAAAAAgZGmZAwyMmZ2mZGzMDYzsYYIDMbM0YBAzAAzMjZAmZmxYA",
+    "heroTreeId": 32,
+    "oldHeroTreeId": 32,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "deathknight-blood",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "01-죽음의기사\\혈기\\Meta\\guide-12.1.json",
+    "code": "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZmhZZmZmmZxYMmxAAAAAmZmZmZmZYGjZAYMzMzAAAYgBmxiGLLgsMgNAzwAAAmZghB",
+    "heroTreeId": 31,
+    "oldHeroTreeId": 31,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "deathknight-blood",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "01-죽음의기사\\혈기\\Meta\\guide-12.1.json",
+    "code": "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMLzMz0MLGjxMGAAAAwMmZmZmZYGDAYmZmZGAAgxsNwAWCWGmADLAmxMAAMzAYYA",
+    "heroTreeId": 33,
+    "oldHeroTreeId": 33,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "deathknight-blood",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "01-죽음의기사\\혈기\\Meta\\guide-12.1.json",
+    "code": "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZmhZZmZmmZxYMmxAAAAAmZmZmZmZYGjZAYMzMzAAAYgBmxiGLLgsMgNAzwAAAmZghB",
+    "heroTreeId": 31,
+    "oldHeroTreeId": 31,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "demonhunter-vengeance",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "02-악마사냥꾼\\복수\\Meta\\guide-12.1.json",
+    "code": "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZY2MzMjhZMzYGzYmZYGmx2MzYMAAAAAAAQAzMjNAAAAMYMzMzs02MzMAwAAAAYA",
+    "heroTreeId": 124,
+    "oldHeroTreeId": 124,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "demonhunter-vengeance",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "02-악마사냥꾼\\복수\\Meta\\guide-12.1.json",
+    "code": "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjhZkZmBWMjZwMjZGz8AzMzYYmZmx2YGjxMAAAAAAACYmZsBAAAgBmZmZml2mZmBAzAAAAYA",
+    "heroTreeId": 124,
+    "oldHeroTreeId": 124,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "demonhunter-vengeance",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "02-악마사냥꾼\\복수\\Meta\\guide-12.1.json",
+    "code": "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYWMzMzMMjZGzYGzYYGmx2MzYMAAAAAAAQAzMjNAAAAMYMzMzs02MzMAwAAAAYA",
+    "heroTreeId": 124,
+    "oldHeroTreeId": 124,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "demonhunter-havoc",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "02-악마사냥꾼\\파멸\\Meta\\guide-12.1.json",
+    "code": "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
+    "heroTreeId": 35,
+    "oldHeroTreeId": 35,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "demonhunter-havoc",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "02-악마사냥꾼\\파멸\\Meta\\guide-12.1.json",
+    "code": "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxYmMmZAAAAAAAzixsNDzMwMWmZmZYmBzyALzmZMMLaaMzMmxGAAAwAAAAYmBDAAAAD",
+    "heroTreeId": 34,
+    "oldHeroTreeId": 34,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "demonhunter-havoc",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "02-악마사냥꾼\\파멸\\Meta\\guide-12.1.json",
+    "code": "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
+    "heroTreeId": 35,
+    "oldHeroTreeId": 35,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "demonhunter-devourer",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Waste Not(1223918) [node 107999: row 5→6, col 5→7]",
+      "The Hunt(1246167) [node 109503: req 20→8, row 10→5]",
+      "Devourer's Bite(1240201) [node 110167: row 9→10, col 3→2]",
+      "Singular Strikes(1272770) [node 110170: col 2→1]",
+      "Soulforged Blades(1272432) [node 110171: row 8→9, col 1→3]"
+    ],
+    "file": "02-악마사냥꾼\\포식\\Meta\\guide-12.1.json",
+    "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAAegxsNYGAAAAAAAAmxMMmZmZMzMzYmtZGjNttAgAGgZMzMbzMTz2MLzMjZMA",
+    "heroTreeId": 126,
+    "oldHeroTreeId": 126,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": [
+      {
+        "node": 107999,
+        "entry": 133370,
+        "before": "Waste Not(1223918)",
+        "after": "Waste Not(1223918)",
+        "change": "row 5→6, col 5→7"
+      },
+      {
+        "node": 109503,
+        "entry": 135736,
+        "before": "The Hunt(1246167)",
+        "after": "The Hunt(1246167)",
+        "change": "req 20→8, row 10→5"
+      },
+      {
+        "node": 110167,
+        "entry": 136692,
+        "before": "Devourer's Bite(1240201)",
+        "after": "Devourer's Bite(1240201)",
+        "change": "row 9→10, col 3→2"
+      },
+      {
+        "node": 110170,
+        "entry": 136695,
+        "before": "Singular Strikes(1272770)",
+        "after": "Singular Strikes(1272770)",
+        "change": "col 2→1"
+      },
+      {
+        "node": 110171,
+        "entry": 136696,
+        "before": "Soulforged Blades(1272432)",
+        "after": "Soulforged Blades(1272432)",
+        "change": "row 8→9, col 1→3"
+      }
+    ]
+  },
+  {
+    "guideId": "demonhunter-devourer",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Eradicate(1226033) [node 107345: req 20→8, row 10→5]",
+      "Waste Not(1223918) [node 107999: row 5→6, col 5→7]",
+      "Star Fragments(1240204) [node 110172: req 20→8, row 9→5, col 6→5]",
+      "Voidpurge(1244220) [node 110174: req 8→20, row 6→10, col 7→6]"
+    ],
+    "file": "02-악마사냥꾼\\포식\\Meta\\guide-12.1.json",
+    "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAYxY2GMDAAAAAAAAzYwMzMzMzMzMjZWMjxiWWYmZmZrtZmZAMMAEwYwYGA",
+    "heroTreeId": 124,
+    "oldHeroTreeId": 124,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 5,
+    "touches": [
+      {
+        "node": 107345,
+        "entry": 132287,
+        "before": "Eradicate(1226033)",
+        "after": "Eradicate(1226033)",
+        "change": "req 20→8, row 10→5"
+      },
+      {
+        "node": 107999,
+        "entry": 133370,
+        "before": "Waste Not(1223918)",
+        "after": "Waste Not(1223918)",
+        "change": "row 5→6, col 5→7"
+      },
+      {
+        "node": 110172,
+        "entry": 136697,
+        "before": "Star Fragments(1240204)",
+        "after": "Star Fragments(1240204)",
+        "change": "req 20→8, row 9→5, col 6→5"
+      },
+      {
+        "node": 110174,
+        "entry": 136699,
+        "before": "Voidpurge(1244220)",
+        "after": "Voidpurge(1244220)",
+        "change": "req 8→20, row 6→10, col 7→6"
+      }
+    ]
+  },
+  {
+    "guideId": "demonhunter-devourer",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Eradicate(1226033) [node 107345: req 20→8, row 10→5]",
+      "Waste Not(1223918) [node 107999: row 5→6, col 5→7]",
+      "The Hunt(1246167) [node 109503: req 20→8, row 10→5]",
+      "Devourer's Bite(1240201) [node 110167: row 9→10, col 3→2]",
+      "Singular Strikes(1272770) [node 110170: col 2→1]",
+      "Star Fragments(1240204) [node 110172: req 20→8, row 9→5, col 6→5]"
+    ],
+    "file": "02-악마사냥꾼\\포식\\Meta\\guide-12.1.json",
+    "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAAWMmZmZmZmBmBAAAAAAY7BGz2gZAAAAAAAAYGzwYmZmZmZmZMz2Mjxm2WAQADwDMmZmtZmpZbmlZmxYGA",
+    "heroTreeId": 126,
+    "oldHeroTreeId": 126,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": [
+      {
+        "node": 107345,
+        "entry": 132287,
+        "before": "Eradicate(1226033)",
+        "after": "Eradicate(1226033)",
+        "change": "req 20→8, row 10→5"
+      },
+      {
+        "node": 107999,
+        "entry": 133370,
+        "before": "Waste Not(1223918)",
+        "after": "Waste Not(1223918)",
+        "change": "row 5→6, col 5→7"
+      },
+      {
+        "node": 109503,
+        "entry": 135736,
+        "before": "The Hunt(1246167)",
+        "after": "The Hunt(1246167)",
+        "change": "req 20→8, row 10→5"
+      },
+      {
+        "node": 110167,
+        "entry": 136692,
+        "before": "Devourer's Bite(1240201)",
+        "after": "Devourer's Bite(1240201)",
+        "change": "row 9→10, col 3→2"
+      },
+      {
+        "node": 110170,
+        "entry": 136695,
+        "before": "Singular Strikes(1272770)",
+        "after": "Singular Strikes(1272770)",
+        "change": "col 2→1"
+      },
+      {
+        "node": 110172,
+        "entry": 136697,
+        "before": "Star Fragments(1240204)",
+        "after": "Star Fragments(1240204)",
+        "change": "req 20→8, row 9→5, col 6→5"
+      }
+    ]
+  },
+  {
+    "guideId": "druid-guardian",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\수호\\Meta\\guide-12.1.json",
+    "code": "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGLzAW2mZwY2GATBAAA2wMDwiZwA2ssNAzMAG",
+    "heroTreeId": 24,
+    "oldHeroTreeId": 24,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "druid-guardian",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\수호\\Meta\\guide-12.1.json",
+    "code": "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZml5BmZMziZxwMLLDMbGGNRzMzyMzMzsMmBAAAAAgZsYAbbzMYMLDgpAAAAbYmBYxMYAbWAYmBwA",
+    "heroTreeId": 24,
+    "oldHeroTreeId": 24,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "druid-guardian",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\수호\\Meta\\guide-12.1.json",
+    "code": "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2MLGMLLDMbwoJamZWmZmZGjZMDAAAAAYGLzAW2mZwY2GATBAAA2wMDwiZwA2ssNAzMAG",
+    "heroTreeId": 24,
+    "oldHeroTreeId": 24,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "druid-feral",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\야성\\Meta\\guide-12.1.json",
+    "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA",
+    "heroTreeId": 21,
+    "oldHeroTreeId": 21,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "druid-feral",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\야성\\Meta\\guide-12.1.json",
+    "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2MPw2YbGzMmZAAAAYJY2gxMjaGzCzMzsMmZGAAAAAAADAAAgAgZbmlmlZW2AzMALMDDAgZGAMA",
+    "heroTreeId": 22,
+    "oldHeroTreeId": 22,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "druid-feral",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\야성\\Meta\\guide-12.1.json",
+    "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwghxYmZmxsxDsMz2MzMmZGAAAAWCmNYMzomxswMzMGzMDAAAAAAgBAAAQzsMLzMzACsAmZAWMzwAAAYmNMA",
+    "heroTreeId": 21,
+    "oldHeroTreeId": 21,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "druid-balance",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\조화\\Meta\\guide-12.1.json",
+    "code": "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmhxMWYZmlZGjZ2wAgx2yMDGz2IwEAAAgFzMzMD2MMGzAAYmBLDA",
+    "heroTreeId": 24,
+    "oldHeroTreeId": 24,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "druid-balance",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\조화\\Meta\\guide-12.1.json",
+    "code": "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZgxsMzMzMLMgZZmlZWYmxGLzsMGzM2wAgx22MDGz2IwEAAAgFmZmZwmxMGDAAzMYZA",
+    "heroTreeId": 24,
+    "oldHeroTreeId": 24,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "druid-balance",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\조화\\Meta\\guide-12.1.json",
+    "code": "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmhxMWYZmlZGjZ2wAgx2yMDGz2IwEAAAgFzMzMD2MMGzAAYmBLDA",
+    "heroTreeId": 24,
+    "oldHeroTreeId": 24,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "druid-restoration",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\회복\\Meta\\guide-12.1.json",
+    "code": "CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAIAAgZbmlmtZ2sxYmZwMwoZAAmZAYA",
+    "heroTreeId": 22,
+    "oldHeroTreeId": 22,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "druid-restoration",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\회복\\Meta\\guide-12.1.json",
+    "code": "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmlZsZbGAAAAAAAAAAsMoZzw0MjZwsYmZmZZGGDAAAAAAAGAACAAYWmZrZbmFbMmZgZWANDAwMDADA",
+    "heroTreeId": 22,
+    "oldHeroTreeId": 22,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 5,
+    "touches": []
+  },
+  {
+    "guideId": "druid-restoration",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "03-드루이드\\회복\\Meta\\guide-12.1.json",
+    "code": "CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbDa2YMNzY4BMLzMzMDDzAAAAAAAAAAIAAgZbmlmtZ2sxYmZwMwoZAAmZAYA",
+    "heroTreeId": 22,
+    "oldHeroTreeId": 22,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "evoker-preservation",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "04-기원사\\보존\\Meta\\guide-12.1.json",
+    "code": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BYGzIzMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA",
+    "heroTreeId": 37,
+    "oldHeroTreeId": 37,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "evoker-preservation",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "04-기원사\\보존\\Meta\\guide-12.1.json",
+    "code": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WmZGDjxsZGw2wAAAzYmZmZMMTMmBAAAMzMTGzMzMGzAAjZgFwGYGmQ2YsZYGgZGGA",
+    "heroTreeId": 37,
+    "oldHeroTreeId": 37,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 5,
+    "touches": []
+  },
+  {
+    "guideId": "evoker-preservation",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "04-기원사\\보존\\Meta\\guide-12.1.json",
+    "code": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BYGzIzMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA",
+    "heroTreeId": 37,
+    "oldHeroTreeId": 37,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "evoker-augmentation",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "04-기원사\\증강\\Meta\\guide-12.1.json",
+    "code": "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsADMDDNiFMGzMAwA",
+    "heroTreeId": 38,
+    "oldHeroTreeId": 38,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "evoker-augmentation",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "04-기원사\\증강\\Meta\\guide-12.1.json",
+    "code": "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyAzsMjxMmBAAAAAAAAmhZGYM1YmZGAAAAMzMjxMz2YmBmZzYwCsMGGbDgZiYDjZwMDgB",
+    "heroTreeId": 36,
+    "oldHeroTreeId": 36,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "evoker-augmentation",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "04-기원사\\증강\\Meta\\guide-12.1.json",
+    "code": "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsADMDDNiFMGzMAwA",
+    "heroTreeId": 38,
+    "oldHeroTreeId": 38,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "evoker-devastation",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "04-기원사\\황폐\\Meta\\guide-12.1.json",
+    "code": "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA",
+    "heroTreeId": 36,
+    "oldHeroTreeId": 36,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "evoker-devastation",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "04-기원사\\황폐\\Meta\\guide-12.1.json",
+    "code": "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGmBGYMTjZmpZmZ2mZmZmZmZmZGwMzMzYmZZmZgBGD2glxox2AyMIYDzgZGM8AA",
+    "heroTreeId": 36,
+    "oldHeroTreeId": 36,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 5,
+    "touches": []
+  },
+  {
+    "guideId": "evoker-devastation",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "04-기원사\\황폐\\Meta\\guide-12.1.json",
+    "code": "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA",
+    "heroTreeId": 36,
+    "oldHeroTreeId": 36,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "hunter-marksmanship",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Unload(1277548) r1 / 12.1.5: Blood Fletching(1319011) r1"
+    ],
+    "touchesChangedNodes": [
+      "Unload(1277548) → Blood Fletching(1319011) [node 104095: spell 1277548→1319011, name Unload→Blood Fletching]"
+    ],
+    "file": "05-사냥꾼\\사격\\Meta\\guide-12.1.json",
+    "code": "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmxMLbzYmZMDeATzYwstZmZmZmZmZwMLDzMAAgxMzYAMjNGGgNmZbGD",
+    "heroTreeId": 42,
+    "oldHeroTreeId": 42,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": [
+      {
+        "node": 104095,
+        "entry": 128609,
+        "before": "Unload(1277548)",
+        "after": "Blood Fletching(1319011)",
+        "change": "spell 1277548→1319011, name Unload→Blood Fletching"
+      }
+    ]
+  },
+  {
+    "guideId": "hunter-marksmanship",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Unload(1277548) r1 / 12.1.5: Blood Fletching(1319011) r1"
+    ],
+    "touchesChangedNodes": [
+      "Unload(1277548) → Blood Fletching(1319011) [node 104095: spell 1277548→1319011, name Unload→Blood Fletching]"
+    ],
+    "file": "05-사냥꾼\\사격\\Meta\\guide-12.1.json",
+    "code": "C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGAzgNAAAAAAAAwMmZmx2MmZGzwyYaGDmltlZmZmZmZmZhZWGmBAAwDMGDAzYDMAbMz2MG",
+    "heroTreeId": 42,
+    "oldHeroTreeId": 42,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": [
+      {
+        "node": 104095,
+        "entry": 128609,
+        "before": "Unload(1277548)",
+        "after": "Blood Fletching(1319011)",
+        "change": "spell 1277548→1319011, name Unload→Blood Fletching"
+      }
+    ]
+  },
+  {
+    "guideId": "hunter-marksmanship",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Unload(1277548) r1 / 12.1.5: Blood Fletching(1319011) r1"
+    ],
+    "touchesChangedNodes": [
+      "Unload(1277548) → Blood Fletching(1319011) [node 104095: spell 1277548→1319011, name Unload→Blood Fletching]"
+    ],
+    "file": "05-사냥꾼\\사격\\Meta\\guide-12.1.json",
+    "code": "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmxMLbzYmZMDeATzYwstZmZmZmZmZwMLDzMAAgxMzYAMjNGGgNmZbGD",
+    "heroTreeId": 42,
+    "oldHeroTreeId": 42,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": [
+      {
+        "node": 104095,
+        "entry": 128609,
+        "before": "Unload(1277548)",
+        "after": "Blood Fletching(1319011)",
+        "change": "spell 1277548→1319011, name Unload→Blood Fletching"
+      }
+    ]
+  },
+  {
+    "guideId": "hunter-survival",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "05-사냥꾼\\생존\\Meta\\guide-12.1.json",
+    "code": "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZstMzMLmZmZGzMzAwMWAjxMWMAA",
+    "heroTreeId": 42,
+    "oldHeroTreeId": 42,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "hunter-survival",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "05-사냥꾼\\생존\\Meta\\guide-12.1.json",
+    "code": "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgtZmZmxMz28AAAAAAAmxMzMMjxMmBjpZAAAAGAgltZGLzYmZGjZGAmxGWMGmZxAA",
+    "heroTreeId": 42,
+    "oldHeroTreeId": 42,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "hunter-survival",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "05-사냥꾼\\생존\\Meta\\guide-12.1.json",
+    "code": "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZstMzMLmZmZGzMzAwMWAjxMWMAA",
+    "heroTreeId": 42,
+    "oldHeroTreeId": 42,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "hunter-beastmastery",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "05-사냥꾼\\야수\\Meta\\guide-12.1.json",
+    "code": "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsRYYWAbDAD",
+    "heroTreeId": 43,
+    "oldHeroTreeId": 43,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "hunter-beastmastery",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "05-사냥꾼\\야수\\Meta\\guide-12.1.json",
+    "code": "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsBzwQDbAAYGPwMzsMzwMzMjZGMzYmhZGzMzYbmZYMDLDNDAAAAAAAAmHYMzAmZjAmFw2AwA",
+    "heroTreeId": 43,
+    "oldHeroTreeId": 43,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "hunter-beastmastery",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "05-사냥꾼\\야수\\Meta\\guide-12.1.json",
+    "code": "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZYYmxYmxMzYGzwMzYGzghmBAAAAMDAAAzMzMAzsRYYWAbDAD",
+    "heroTreeId": 43,
+    "oldHeroTreeId": 43,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "mage-frost",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "file": "06-마법사\\냉기\\Meta\\guide-12.1.json",
+    "code": "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGjZMziZmZmZMDAAAMzMzyyMTbAAAAAAwGAbLjZmZgtZMzMsAAAwMbAzEGwADD",
+    "heroTreeId": 40,
+    "oldHeroTreeId": 40,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": [
+      {
+        "node": 62085,
+        "entry": 80141,
+        "before": "Ice Cold(414659)",
+        "after": "Ice Cold(414658)",
+        "change": "spell 414659→414658, rep 0→45438"
+      }
+    ]
+  },
+  {
+    "guideId": "mage-frost",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "file": "06-마법사\\냉기\\Meta\\guide-12.1.json",
+    "code": "CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzEzMmZmZmZWMzMzMzMzsMTzMbzCAAAaBAAWAAAAAYbZMzMDmtZMzM2WAAAAzMYmMGwAYA",
+    "heroTreeId": 41,
+    "oldHeroTreeId": 41,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": [
+      {
+        "node": 62085,
+        "entry": 80141,
+        "before": "Ice Cold(414659)",
+        "after": "Ice Cold(414658)",
+        "change": "spell 414659→414658, rep 0→45438"
+      }
+    ]
+  },
+  {
+    "guideId": "mage-frost",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "file": "06-마법사\\냉기\\Meta\\guide-12.1.json",
+    "code": "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZAAAgZmZWWmZaDAAAAAA2AYbZMzMDmthxMsAAAwMbAzEGwMYYA",
+    "heroTreeId": 40,
+    "oldHeroTreeId": 40,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": [
+      {
+        "node": 62085,
+        "entry": 80141,
+        "before": "Ice Cold(414659)",
+        "after": "Ice Cold(414658)",
+        "change": "spell 414659→414658, rep 0→45438"
+      }
+    ]
+  },
+  {
+    "guideId": "mage-arcane",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "file": "06-마법사\\비전\\Meta\\guide-12.1.json",
+    "code": "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
+    "heroTreeId": 39,
+    "oldHeroTreeId": 39,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": [
+      {
+        "node": 62085,
+        "entry": 80141,
+        "before": "Ice Cold(414659)",
+        "after": "Ice Cold(414658)",
+        "change": "spell 414659→414658, rep 0→45438"
+      }
+    ]
+  },
+  {
+    "guideId": "mage-arcane",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "file": "06-마법사\\비전\\Meta\\guide-12.1.json",
+    "code": "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
+    "heroTreeId": 39,
+    "oldHeroTreeId": 39,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 5,
+    "touches": [
+      {
+        "node": 62085,
+        "entry": 80141,
+        "before": "Ice Cold(414659)",
+        "after": "Ice Cold(414658)",
+        "change": "spell 414659→414658, rep 0→45438"
+      }
+    ]
+  },
+  {
+    "guideId": "mage-arcane",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "file": "06-마법사\\비전\\Meta\\guide-12.1.json",
+    "code": "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
+    "heroTreeId": 39,
+    "oldHeroTreeId": 39,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": [
+      {
+        "node": 62085,
+        "entry": 80141,
+        "before": "Ice Cold(414659)",
+        "after": "Ice Cold(414658)",
+        "change": "spell 414659→414658, rep 0→45438"
+      }
+    ]
+  },
+  {
+    "guideId": "mage-fire",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "file": "06-마법사\\화염\\Meta\\guide-12.1.json",
+    "code": "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzQGjBMDjB",
+    "heroTreeId": 39,
+    "oldHeroTreeId": 39,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": [
+      {
+        "node": 62085,
+        "entry": 80141,
+        "before": "Ice Cold(414659)",
+        "after": "Ice Cold(414658)",
+        "change": "spell 414659→414658, rep 0→45438"
+      }
+    ]
+  },
+  {
+    "guideId": "mage-fire",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "file": "06-마법사\\화염\\Meta\\guide-12.1.json",
+    "code": "C8DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzIzMzMAAAGAwMz0sstNDAwmZmx2MzMzYDAAAAALmZmZAAgZMmZmZMzsMAMzQYMgZYMA",
+    "heroTreeId": 39,
+    "oldHeroTreeId": 39,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": [
+      {
+        "node": 62085,
+        "entry": 80141,
+        "before": "Ice Cold(414659)",
+        "after": "Ice Cold(414658)",
+        "change": "spell 414659→414658, rep 0→45438"
+      }
+    ]
+  },
+  {
+    "guideId": "mage-fire",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "file": "06-마법사\\화염\\Meta\\guide-12.1.json",
+    "code": "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMjZAAgZMmZmZMzsMAMzQGjBMDjB",
+    "heroTreeId": 39,
+    "oldHeroTreeId": 39,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": [
+      {
+        "node": 62085,
+        "entry": 80141,
+        "before": "Ice Cold(414659)",
+        "after": "Ice Cold(414658)",
+        "change": "spell 414659→414658, rep 0→45438"
+      }
+    ]
+  },
+  {
+    "guideId": "monk-brewmaster",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "07-수도사\\양조\\Meta\\guide-12.1.json",
+    "code": "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhxmZMmZmZMzywMmZZYZzy2sNMLAAwysMtMbzsMAAQAmhNwMDYaMAAgB",
+    "heroTreeId": 66,
+    "oldHeroTreeId": 66,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "monk-brewmaster",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "07-수도사\\양조\\Meta\\guide-12.1.json",
+    "code": "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAwMLbGDzwyM2MmZMAAAAAAALLgYmBmhBzgZmZGzsNMjZWGW2stNbzYWAAgNEAAgZbWamZmNG2AYmhpxAGAwA",
+    "heroTreeId": 65,
+    "oldHeroTreeId": 65,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "monk-brewmaster",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "07-수도사\\양조\\Meta\\guide-12.1.json",
+    "code": "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGPwYWM2mxMDAAAAAAALLYEmBmhxmZMmZmZMzywMmZZYZzy2sNMLAAwysMtMbzsMAAQAmhNwMDYaMAAgB",
+    "heroTreeId": 66,
+    "oldHeroTreeId": 66,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "monk-mistweaver",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "07-수도사\\운무\\Meta\\guide-12.1.json",
+    "code": "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmBAAGwAMDYMMWkxMA",
+    "heroTreeId": 64,
+    "oldHeroTreeId": 64,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "monk-mistweaver",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "07-수도사\\운무\\Meta\\guide-12.1.json",
+    "code": "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghxyMLjZx2MmZsZsZZGzs9AzstsMzYhhmxMgBDYWmZmZY2wMMLzEAAAAABYx2Mbz2MDAAMAAzAGDsIjZA",
+    "heroTreeId": 64,
+    "oldHeroTreeId": 64,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "monk-mistweaver",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "07-수도사\\운무\\Meta\\guide-12.1.json",
+    "code": "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmBAAGwAMDYMMWkxMA",
+    "heroTreeId": 64,
+    "oldHeroTreeId": 64,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "monk-windwalker",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "07-수도사\\풍운\\Meta\\guide-12.1.json",
+    "code": "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MmhlZGbzAAAAAAAAAAAAsMMaGzwwAmxwMzMDz2wMMLzEAwiZ2mZYmZmBAwGAMLzSzMzsAgBmZAglBiB8B",
+    "heroTreeId": 65,
+    "oldHeroTreeId": 65,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "monk-windwalker",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "07-수도사\\풍운\\Meta\\guide-12.1.json",
+    "code": "C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMGbzMz2MAAAAAAAAAAAALDzEmxywAmxwMzMDz2wMMLzEAwiZ2mZGzMzMAA2AgZZWamZmFAMwMDAswQMgB",
+    "heroTreeId": 65,
+    "oldHeroTreeId": 65,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "monk-windwalker",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "07-수도사\\풍운\\Meta\\guide-12.1.json",
+    "code": "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2wMsNzYbGAAAAAAAAAAAglhRzYGGGwMGmZmZY2YmhZZmAAWMz2MzYMzMAA2AgZZWamZmFAMwMDAsMQMgB",
+    "heroTreeId": 65,
+    "oldHeroTreeId": 65,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "paladin-protection",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "08-성기사\\보호\\Meta\\guide-12.1.json",
+    "code": "CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLzithBAYAAAAAAQamZxMmZYMbtBgBMwMYbAAAEgZmttlWmZsYZjZMAGzwYAwMDAmZQGL",
+    "heroTreeId": 49,
+    "oldHeroTreeId": 49,
+    "points": {
+      "1": 35,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 35,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "paladin-protection",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "08-성기사\\보호\\Meta\\guide-12.1.json",
+    "code": "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMjZmZZbMmlZZWmxAAMAAAAAAopZGmxMDjZrNAMwAmBbDAAgAMzstt0yMjFLLYAAzwYAwMDAzMDyYB",
+    "heroTreeId": 49,
+    "oldHeroTreeId": 49,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "paladin-protection",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "08-성기사\\보호\\Meta\\guide-12.1.json",
+    "code": "CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLzithBAYAAAAAAQamZxMmZYMbtBgBMwMYbAAAEgZmttlWmZsYZjZMAGzwYAwMDAmZQGL",
+    "heroTreeId": 49,
+    "oldHeroTreeId": 49,
+    "points": {
+      "1": 35,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 35,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "paladin-holy",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "08-성기사\\신성\\Meta\\guide-12.1.json",
+    "code": "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjRDA",
+    "heroTreeId": 50,
+    "oldHeroTreeId": 50,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 5,
+    "touches": []
+  },
+  {
+    "guideId": "paladin-holy",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "08-성기사\\신성\\Meta\\guide-12.1.json",
+    "code": "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAD2GzMzMjZmZBmZYZsZmFjmYYMzMMmtMAMAsB2YZmZmlZbmZ2aAAAAWAmhNDMjZYGAAzMMjxoB",
+    "heroTreeId": 50,
+    "oldHeroTreeId": 50,
+    "points": {
+      "1": 35,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 35,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "paladin-holy",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "08-성기사\\신성\\Meta\\guide-12.1.json",
+    "code": "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAAgFAYzwYGzwMAAmZYGjRDA",
+    "heroTreeId": 50,
+    "oldHeroTreeId": 50,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 5,
+    "touches": []
+  },
+  {
+    "guideId": "paladin-retribution",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "08-성기사\\징벌\\Meta\\guide-12.1.json",
+    "code": "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAAAZmptZmtZAAbAGAMmhZwMmZ2w2MYYMjBD",
+    "heroTreeId": 48,
+    "oldHeroTreeId": 48,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "paladin-retribution",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "08-성기사\\징벌\\Meta\\guide-12.1.json",
+    "code": "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxGbAAAZmptZmtZAAbAGAMmhBmxMzGWmBDjZMYA",
+    "heroTreeId": 48,
+    "oldHeroTreeId": 48,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "paladin-retribution",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "08-성기사\\징벌\\Meta\\guide-12.1.json",
+    "code": "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAAAZmptZmtZAAbAGAMmhZwMmZ2w2MYYMjBD",
+    "heroTreeId": 48,
+    "oldHeroTreeId": 48,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "priest-discipline",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Divine Procession(472361) [node 82599: req 8→20]"
+    ],
+    "file": "09-사제\\수양\\Meta\\guide-12.1.json",
+    "code": "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMgpZamBzMAIAmtZbBM2MAAMGzMGmZwMDGBD",
+    "heroTreeId": 18,
+    "oldHeroTreeId": 18,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": [
+      {
+        "node": 82599,
+        "entry": 103728,
+        "before": "Divine Procession(472361)",
+        "after": "Divine Procession(472361)",
+        "change": "req 8→20"
+      }
+    ]
+  },
+  {
+    "guideId": "priest-discipline",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Divine Procession(472361) [node 82599: req 8→20]"
+    ],
+    "file": "09-사제\\수양\\Meta\\guide-12.1.json",
+    "code": "CAQAAAAAAAAAAAAAAAAAAAAAAADsMzMWYMGzgZzsNzMzMzMDAAAAAAAAAgxYZGMzMjNjZGsZamYwMDACgZb2WAjNDAAjZmZMYGMzgRwM",
+    "heroTreeId": 18,
+    "oldHeroTreeId": 18,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": [
+      {
+        "node": 82599,
+        "entry": 103728,
+        "before": "Divine Procession(472361)",
+        "after": "Divine Procession(472361)",
+        "change": "req 8→20"
+      }
+    ]
+  },
+  {
+    "guideId": "priest-discipline",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Divine Procession(472361) [node 82599: req 8→20]"
+    ],
+    "file": "09-사제\\수양\\Meta\\guide-12.1.json",
+    "code": "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMgpZamBzMAIAmtZbBM2MAAMGzMGmZwMDGBD",
+    "heroTreeId": 18,
+    "oldHeroTreeId": 18,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": [
+      {
+        "node": 82599,
+        "entry": 103728,
+        "before": "Divine Procession(472361)",
+        "after": "Divine Procession(472361)",
+        "change": "req 8→20"
+      }
+    ]
+  },
+  {
+    "guideId": "priest-holy",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Holy Celerity(1215275) r1 / 12.1.0: Ultimate Serenity(1246517) r1 / 12.1.5: Ultimate Serenity(1246517) r1 / 12.1.5: Holy Celerity(1215275) r1"
+    ],
+    "touchesChangedNodes": [
+      "Holy Celerity(1215275) → Ultimate Serenity(1246517) [node 82612: spell 1215275→1246517, rep 0→34861, name Holy Celerity→Ultimate Serenity]",
+      "Ultimate Serenity(1246517) → Holy Celerity(1215275) [node 103900: spell 1246517→1215275, rep 34861→0, name Ultimate Serenity→Holy Celerity]"
+    ],
+    "file": "09-사제\\신성\\Meta\\guide-12.1.json",
+    "code": "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMbYIMmlBYMwiZmZBQzYMGDzMAzMzAD",
+    "heroTreeId": 20,
+    "oldHeroTreeId": 20,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": [
+      {
+        "node": 82612,
+        "entry": 103745,
+        "before": "Holy Celerity(1215275)",
+        "after": "Ultimate Serenity(1246517)",
+        "change": "spell 1215275→1246517, rep 0→34861, name Holy Celerity→Ultimate Serenity"
+      },
+      {
+        "node": 103900,
+        "entry": 103733,
+        "before": "Ultimate Serenity(1246517)",
+        "after": "Holy Celerity(1215275)",
+        "change": "spell 1246517→1215275, rep 34861→0, name Ultimate Serenity→Holy Celerity"
+      }
+    ]
+  },
+  {
+    "guideId": "priest-holy",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Holy Celerity(1215275) r1 / 12.1.0: Ultimate Serenity(1246517) r1 / 12.1.5: Ultimate Serenity(1246517) r1 / 12.1.5: Holy Celerity(1215275) r1"
+    ],
+    "touchesChangedNodes": [
+      "Holy Celerity(1215275) → Ultimate Serenity(1246517) [node 82612: spell 1215275→1246517, rep 0→34861, name Holy Celerity→Ultimate Serenity]",
+      "Ultimate Serenity(1246517) → Holy Celerity(1215275) [node 103900: spell 1246517→1215275, rep 34861→0, name Ultimate Serenity→Holy Celerity]"
+    ],
+    "file": "09-사제\\신성\\Meta\\guide-12.1.json",
+    "code": "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMDmZmxmxMD2wMFAzshhwYWGgxALGzsAoZMzYMYGgZmBMA",
+    "heroTreeId": 20,
+    "oldHeroTreeId": 20,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": [
+      {
+        "node": 82612,
+        "entry": 103745,
+        "before": "Holy Celerity(1215275)",
+        "after": "Ultimate Serenity(1246517)",
+        "change": "spell 1215275→1246517, rep 0→34861, name Holy Celerity→Ultimate Serenity"
+      },
+      {
+        "node": 103900,
+        "entry": 103733,
+        "before": "Ultimate Serenity(1246517)",
+        "after": "Holy Celerity(1215275)",
+        "change": "spell 1246517→1215275, rep 34861→0, name Ultimate Serenity→Holy Celerity"
+      }
+    ]
+  },
+  {
+    "guideId": "priest-holy",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [
+      "같은 코드의 뜻이 바뀜: 12.1.0: Holy Celerity(1215275) r1 / 12.1.0: Ultimate Serenity(1246517) r1 / 12.1.5: Ultimate Serenity(1246517) r1 / 12.1.5: Holy Celerity(1215275) r1"
+    ],
+    "touchesChangedNodes": [
+      "Holy Celerity(1215275) → Ultimate Serenity(1246517) [node 82612: spell 1215275→1246517, rep 0→34861, name Holy Celerity→Ultimate Serenity]",
+      "Ultimate Serenity(1246517) → Holy Celerity(1215275) [node 103900: spell 1246517→1215275, rep 34861→0, name Ultimate Serenity→Holy Celerity]"
+    ],
+    "file": "09-사제\\신성\\Meta\\guide-12.1.json",
+    "code": "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMbYIMmlBYMwiZmZBQzYMGDzMAzMzAD",
+    "heroTreeId": 20,
+    "oldHeroTreeId": 20,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": [
+      {
+        "node": 82612,
+        "entry": 103745,
+        "before": "Holy Celerity(1215275)",
+        "after": "Ultimate Serenity(1246517)",
+        "change": "spell 1215275→1246517, rep 0→34861, name Holy Celerity→Ultimate Serenity"
+      },
+      {
+        "node": 103900,
+        "entry": 103733,
+        "before": "Ultimate Serenity(1246517)",
+        "after": "Holy Celerity(1215275)",
+        "change": "spell 1246517→1215275, rep 34861→0, name Ultimate Serenity→Holy Celerity"
+      }
+    ]
+  },
+  {
+    "guideId": "priest-shadow",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "09-사제\\암흑\\Meta\\guide-12.1.json",
+    "code": "CIQAAAAAAAAAAAAAAAAAAAAAAMMDzAAAAAAAAAAAAwMLmxMbzMGz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMIjZmZMbMz2yAMTMA",
+    "heroTreeId": 19,
+    "oldHeroTreeId": 19,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "priest-shadow",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "09-사제\\암흑\\Meta\\guide-12.1.json",
+    "code": "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGD2mZGzMzYDZGLbz0AMDwMbmhZzAQGjFAMzgMmZmxsxMbLDwMxA",
+    "heroTreeId": 19,
+    "oldHeroTreeId": 19,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "priest-shadow",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "09-사제\\암흑\\Meta\\guide-12.1.json",
+    "code": "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIzYxMNAzAMzmZY2MAkxYBAzMIjZmZMbMz2yAMTMA",
+    "heroTreeId": 19,
+    "oldHeroTreeId": 19,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "rogue-outlaw",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "10-도적\\무법\\Meta\\guide-12.1.json",
+    "code": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA",
+    "heroTreeId": 51,
+    "oldHeroTreeId": 51,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 5,
+    "touches": []
+  },
+  {
+    "guideId": "rogue-outlaw",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "10-도적\\무법\\Meta\\guide-12.1.json",
+    "code": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA",
+    "heroTreeId": 51,
+    "oldHeroTreeId": 51,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 5,
+    "touches": []
+  },
+  {
+    "guideId": "rogue-outlaw",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "10-도적\\무법\\Meta\\guide-12.1.json",
+    "code": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBDMA",
+    "heroTreeId": 51,
+    "oldHeroTreeId": 51,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 5,
+    "touches": []
+  },
+  {
+    "guideId": "rogue-assassination",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "10-도적\\암살\\Meta\\guide-12.1.json",
+    "code": "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmZMjZMGzMGGADsAzY0Y2AZbAbGAMzMYA",
+    "heroTreeId": 52,
+    "oldHeroTreeId": 52,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "rogue-assassination",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "10-도적\\암살\\Meta\\guide-12.1.json",
+    "code": "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AmxMjxMmZMGADsAzY0YWAZbAbGAMzMDfA",
+    "heroTreeId": 52,
+    "oldHeroTreeId": 52,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "rogue-assassination",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "10-도적\\암살\\Meta\\guide-12.1.json",
+    "code": "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmZMjZMGzMGGADsAzY0Y2AZbAbGAMzMYA",
+    "heroTreeId": 52,
+    "oldHeroTreeId": 52,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "rogue-subtlety",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "10-도적\\잠행\\Meta\\guide-12.1.json",
+    "code": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
+    "heroTreeId": 53,
+    "oldHeroTreeId": 53,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "rogue-subtlety",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "10-도적\\잠행\\Meta\\guide-12.1.json",
+    "code": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDjZmZmZGGbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
+    "heroTreeId": 53,
+    "oldHeroTreeId": 53,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "rogue-subtlety",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "10-도적\\잠행\\Meta\\guide-12.1.json",
+    "code": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
+    "heroTreeId": 53,
+    "oldHeroTreeId": 53,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "shaman-enhancement",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "11-주술사\\고양\\Meta\\guide-12.1.json",
+    "code": "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDLkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA",
+    "heroTreeId": 55,
+    "oldHeroTreeId": 55,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "shaman-enhancement",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "11-주술사\\고양\\Meta\\guide-12.1.json",
+    "code": "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZxYjZmtxyMzMzgFmBAYGGzMMTgZGMYMA",
+    "heroTreeId": 55,
+    "oldHeroTreeId": 55,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "shaman-enhancement",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "11-주술사\\고양\\Meta\\guide-12.1.json",
+    "code": "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA",
+    "heroTreeId": 55,
+    "oldHeroTreeId": 55,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "shaman-restoration",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "11-주술사\\복원\\Meta\\guide-12.1.json",
+    "code": "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxmGbDIzAbmhZw2YMTz2yMzmZMLsYegZGzwsMAAAwMzgZGAYwM",
+    "heroTreeId": 54,
+    "oldHeroTreeId": 54,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "shaman-restoration",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "11-주술사\\복원\\Meta\\guide-12.1.json",
+    "code": "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMzMzMjZGjZgFYDmxmGbDIzAbMzMY2mZMa2WmZ2MjZhFjZGDLzyAAAAzMDmZAgBzA",
+    "heroTreeId": 54,
+    "oldHeroTreeId": 54,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "shaman-restoration",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "11-주술사\\복원\\Meta\\guide-12.1.json",
+    "code": "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxmGbDIzAbmhZw2YMTz2yMzmZMLsYegZGzwsMAAAwMzgZGAYwM",
+    "heroTreeId": 54,
+    "oldHeroTreeId": 54,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "shaman-elemental",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "11-주술사\\정기\\Meta\\guide-12.1.json",
+    "code": "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA",
+    "heroTreeId": 56,
+    "oldHeroTreeId": 56,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "shaman-elemental",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "11-주술사\\정기\\Meta\\guide-12.1.json",
+    "code": "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZZZMmhBAAAAsYmNYADY2YCZWAgZZmZGjtFTbMzYsMzMzYYZWMWmZGzMLAAzAgZGDDD",
+    "heroTreeId": 56,
+    "oldHeroTreeId": 56,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "shaman-elemental",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "11-주술사\\정기\\Meta\\guide-12.1.json",
+    "code": "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA",
+    "heroTreeId": 56,
+    "oldHeroTreeId": 56,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "warlock-affliction",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "12-흑마법사\\고통\\Meta\\guide-12.1.json",
+    "code": "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZhhZmZmlBAAYmZZ2mZmlxAAjllBGwEMDbBG2GAAAmBAAwMDzMjBzwMzMzMGMzMzAAmBG",
+    "heroTreeId": 57,
+    "oldHeroTreeId": 57,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "warlock-affliction",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "12-흑마법사\\고통\\Meta\\guide-12.1.json",
+    "code": "CkQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzYWGAAwMmlZZmZWGDAM22GYATwMsFYYbAAAYAAAYmZMjZmNGmZmZmhZYmZGAgZgB",
+    "heroTreeId": 57,
+    "oldHeroTreeId": 57,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "warlock-affliction",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "12-흑마법사\\고통\\Meta\\guide-12.1.json",
+    "code": "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZGzyAAAmZmlZxMzyYAgx2yADYCmhtADbDAAAzAAAYmZMjZmtxwYmZmZYYmZGAgZgB",
+    "heroTreeId": 57,
+    "oldHeroTreeId": 57,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "warlock-demonology",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "12-흑마법사\\악마\\Meta\\guide-12.1.json",
+    "code": "CoQAAAAAAAAAAAAAAAAAAAAAAYmZMzoZjhZmxsMAAAAAAAgxMGWgB2GtQDLGjxysMzMjZAgZGzMzMzAMzMmZAAAGzMzMDDLzYAD",
+    "heroTreeId": 59,
+    "oldHeroTreeId": 59,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "warlock-demonology",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "12-흑마법사\\악마\\Meta\\guide-12.1.json",
+    "code": "CoQAAAAAAAAAAAAAAAAAAAAAAYmhZGNbmx2MzYWGAAAAAAAwYGDLwAbj2ohFjZGLz2MzMmBAmZMmZmZAmZGmZDAAMmZmxwwyMGwA",
+    "heroTreeId": 59,
+    "oldHeroTreeId": 59,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "warlock-demonology",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "12-흑마법사\\악마\\Meta\\guide-12.1.json",
+    "code": "CoQAAAAAAAAAAAAAAAAAAAAAAYmhZGNbmx2MzYWGAAAAAAAwYGDLwAbj2ohFjZGLz2MzMmBAmZMmZmZAmZGmZDAAMmZmxwwyMGwA",
+    "heroTreeId": 59,
+    "oldHeroTreeId": 59,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "warlock-destruction",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "12-흑마법사\\파괴\\Meta\\guide-12.1.json",
+    "code": "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMzmZmZWmFzMzsYMWMDAAmZGzMziNYgZxoxMAmtYjBAAGDM2AAmZwYGzYDAAwMzMAAMGG",
+    "heroTreeId": 58,
+    "oldHeroTreeId": 58,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "warlock-destruction",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "12-흑마법사\\파괴\\Meta\\guide-12.1.json",
+    "code": "CsQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmZ2mZGzysZmZmFzMLLzDMAAYGjZmZBMmxwCZgthFaswAAAjZYAAmZAGzYMbAAAmZmBAAGG",
+    "heroTreeId": 59,
+    "oldHeroTreeId": 59,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 1,
+    "touches": []
+  },
+  {
+    "guideId": "warlock-destruction",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "12-흑마법사\\파괴\\Meta\\guide-12.1.json",
+    "code": "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMzmZmZWmlZmZmFjZbxDMAAYGjZmZxGMwsY0YGAzWsxAAAjBGbAAzMYMjZsBAAYmZGAAGDD",
+    "heroTreeId": 58,
+    "oldHeroTreeId": 58,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "warrior-arms",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "13-전사\\무기\\Meta\\guide-12.1.json",
+    "code": "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZAhxyyALgBMDTIzgNwMjtx2ALzsMAzMAYGGA",
+    "heroTreeId": 60,
+    "oldHeroTreeId": 60,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 3,
+    "touches": []
+  },
+  {
+    "guideId": "warrior-arms",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "13-전사\\무기\\Meta\\guide-12.1.json",
+    "code": "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2AbgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
+    "heroTreeId": 60,
+    "oldHeroTreeId": 60,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "warrior-arms",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "13-전사\\무기\\Meta\\guide-12.1.json",
+    "code": "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZgJMW2GYBMgZYCZGsBmZsN2GYZmtBYmBAzwA",
+    "heroTreeId": 60,
+    "oldHeroTreeId": 60,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "warrior-protection",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "13-전사\\방어\\Meta\\guide-12.1.json",
+    "code": "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAAbDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG",
+    "heroTreeId": 61,
+    "oldHeroTreeId": 61,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "warrior-protection",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "13-전사\\방어\\Meta\\guide-12.1.json",
+    "code": "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZGjxImxwyMzMzYGmZAAAAwyMDwMGgB2glFjGzAYWiZ2AmZGGbAwMDAAzAjB",
+    "heroTreeId": 61,
+    "oldHeroTreeId": 61,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  },
+  {
+    "guideId": "warrior-protection",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "13-전사\\방어\\Meta\\guide-12.1.json",
+    "code": "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAAbDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG",
+    "heroTreeId": 61,
+    "oldHeroTreeId": 61,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "warrior-fury",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "13-전사\\분노\\Meta\\guide-12.1.json",
+    "code": "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2MzMzMDjZmZGzMzsMzMmZmZzYmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM",
+    "heroTreeId": 60,
+    "oldHeroTreeId": 60,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 0,
+    "touches": []
+  },
+  {
+    "guideId": "warrior-fury",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "13-전사\\분노\\Meta\\guide-12.1.json",
+    "code": "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmBAAYmhxsMwgxA",
+    "heroTreeId": 60,
+    "oldHeroTreeId": 60,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 4,
+    "touches": []
+  },
+  {
+    "guideId": "warrior-fury",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "file": "13-전사\\분노\\Meta\\guide-12.1.json",
+    "code": "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZYMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmxGAAMzwYWGGDGD",
+    "heroTreeId": 60,
+    "oldHeroTreeId": 60,
+    "points": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "oldPoints": {
+      "1": 34,
+      "2": 34,
+      "3": 13,
+      "4": 1
+    },
+    "remainingBits": 2,
+    "touches": []
+  }
+]

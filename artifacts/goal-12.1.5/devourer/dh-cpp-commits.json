@@ -1,0 +1,986 @@
+[
+  {
+    "sha": "dd765919b5ede1126d93d0785c6495545df2e9bd",
+    "node_id": "C_kwDOAeyHQtoAKGRkNzY1OTE5YjVlZGUxMTI2ZDkzZDA3ODVjNjQ5NTU0NWRmMmU5YmQ",
+    "commit": {
+      "author": {
+        "name": "Richard Harrah",
+        "email": "topplethenunnery@gmail.com",
+        "date": "2026-10-16T23:26:28Z"
+      },
+      "committer": {
+        "name": "Richard Harrah",
+        "email": "topplethenunnery@gmail.com",
+        "date": "2026-10-16T23:26:28Z"
+      },
+      "message": "[DH] fix delays on Fury of the Aldrachi",
+      "tree": {
+        "sha": "8a2eb6a1db0d1eef50f8bd37b9927e3c68981119",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/8a2eb6a1db0d1eef50f8bd37b9927e3c68981119"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/dd765919b5ede1126d93d0785c6495545df2e9bd",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/dd765919b5ede1126d93d0785c6495545df2e9bd",
+    "html_url": "https://github.com/simulationcraft/simc/commit/dd765919b5ede1126d93d0785c6495545df2e9bd",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/dd765919b5ede1126d93d0785c6495545df2e9bd/comments",
+    "author": {
+      "login": "ToppleTheNun",
+      "id": 1672786,
+      "node_id": "MDQ6VXNlcjE2NzI3ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1672786?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ToppleTheNun",
+      "html_url": "https://github.com/ToppleTheNun",
+      "followers_url": "https://api.github.com/users/ToppleTheNun/followers",
+      "following_url": "https://api.github.com/users/ToppleTheNun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ToppleTheNun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ToppleTheNun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ToppleTheNun/subscriptions",
+      "organizations_url": "https://api.github.com/users/ToppleTheNun/orgs",
+      "repos_url": "https://api.github.com/users/ToppleTheNun/repos",
+      "events_url": "https://api.github.com/users/ToppleTheNun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ToppleTheNun/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ToppleTheNun",
+      "id": 1672786,
+      "node_id": "MDQ6VXNlcjE2NzI3ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1672786?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ToppleTheNun",
+      "html_url": "https://github.com/ToppleTheNun",
+      "followers_url": "https://api.github.com/users/ToppleTheNun/followers",
+      "following_url": "https://api.github.com/users/ToppleTheNun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ToppleTheNun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ToppleTheNun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ToppleTheNun/subscriptions",
+      "organizations_url": "https://api.github.com/users/ToppleTheNun/orgs",
+      "repos_url": "https://api.github.com/users/ToppleTheNun/repos",
+      "events_url": "https://api.github.com/users/ToppleTheNun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ToppleTheNun/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a4b057e63576ab696c2ffffffb76494d44a76370",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/a4b057e63576ab696c2ffffffb76494d44a76370",
+        "html_url": "https://github.com/simulationcraft/simc/commit/a4b057e63576ab696c2ffffffb76494d44a76370"
+      }
+    ]
+  },
+  {
+    "sha": "88b8979000a537268e9d9a09769d97620c4f938e",
+    "node_id": "C_kwDOAeyHQtoAKDg4Yjg5NzkwMDBhNTM3MjY4ZTlkOWEwOTc2OWQ5NzYyMGM0ZjkzOGU",
+    "commit": {
+      "author": {
+        "name": "Aezeor",
+        "email": "155996785+Aezeor@users.noreply.github.com",
+        "date": "2026-10-14T13:53:02Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-10-14T13:53:02Z"
+      },
+      "message": "[Havoc] eye beam castable in meta without demonic intensity (#11954)",
+      "tree": {
+        "sha": "0c79cbcb749963e6716643d12ef3e5b19be7d2a8",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/0c79cbcb749963e6716643d12ef3e5b19be7d2a8"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/88b8979000a537268e9d9a09769d97620c4f938e",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqz4k+CRC1aQ7uu5UhlAAA9pUQACaU8SLTF24NAnFIj960SlS3\nFjkFBtQRRMMWnthEekX5HJ3P2BnO/mIeyaPYoz5JM6UfRmPIDdBpkwxTEoXiWiLd\nQT7yeGAv5hVLg+VaT9iw+kCX9TosBqHeZzxzdsjrlzgLa0SoMvfdFqyCON06VrHc\nZ2tFl+gS1FlMMt1pqvoOuf16vPYETwH/LGxJdxNDk7XKJAz4e/aQxKhzhogTneeA\nCFhTJXaVu0pdIjIZ7LxayO+0/xe3+PTwnJx3Rm2VTOF4bPMYJOrguc6TXokmzMaj\nZ3dN0rSIWPUbQfaQwGOyEQo9xAMOsDa3C/2eTskj5xIMovF7FwzONSAFPWzqlTPG\n6TDP1FC8bsf6/2GpOrCPSssL/6ZrYuNfqmgge1cXmx3ZDyYqUYiDiX4H+6xW4bEG\nPma+oZ+yKiym1nJRqTYW7JhhI0FV+a2I90hRAl7SeyYHAi/rFnxPBVOUHYwPwCo4\n4VG+2tFE/bOufhXfy6K5Z/NzCh+tFttxg1zDgYU1xhFZXXn7lXs4QhEenoBXyJUs\n8IF3nheLLQ2nKyUdd2APp+pDXUAZhekhFTzyfoMkeRBTywwlyNv6pkPNJdytUm1j\nljBuEjxSnt7v8YSuNZhPl8mJLsqD767ar8jfNQZWggizihTFLfD1cjuTUEGWy0DJ\nEXNOWeLZkfVar9WdC+2g\n=HneL\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0c79cbcb749963e6716643d12ef3e5b19be7d2a8\nparent d7288d100cc6addb766bcb2d399d640d76939769\nauthor Aezeor <155996785+Aezeor@users.noreply.github.com> 1791985982 -0400\ncommitter GitHub <noreply@github.com> 1791985982 -0400\n\n[Havoc] eye beam castable in meta without demonic intensity (#11954)",
+        "verified_at": "2026-10-14T13:53:03Z"
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/88b8979000a537268e9d9a09769d97620c4f938e",
+    "html_url": "https://github.com/simulationcraft/simc/commit/88b8979000a537268e9d9a09769d97620c4f938e",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/88b8979000a537268e9d9a09769d97620c4f938e/comments",
+    "author": {
+      "login": "Aezeor",
+      "id": 155996785,
+      "node_id": "U_kgDOCUxScQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/155996785?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aezeor",
+      "html_url": "https://github.com/Aezeor",
+      "followers_url": "https://api.github.com/users/Aezeor/followers",
+      "following_url": "https://api.github.com/users/Aezeor/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aezeor/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aezeor/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aezeor/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aezeor/orgs",
+      "repos_url": "https://api.github.com/users/Aezeor/repos",
+      "events_url": "https://api.github.com/users/Aezeor/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aezeor/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d7288d100cc6addb766bcb2d399d640d76939769",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/d7288d100cc6addb766bcb2d399d640d76939769",
+        "html_url": "https://github.com/simulationcraft/simc/commit/d7288d100cc6addb766bcb2d399d640d76939769"
+      }
+    ]
+  },
+  {
+    "sha": "2cf9c9c70503014ad05da4bf03cc2b2a4d060b1f",
+    "node_id": "C_kwDOAeyHQtoAKDJjZjljOWM3MDUwMzAxNGFkMDVkYTRiZjAzY2MyYjJhNGQwNjBiMWY",
+    "commit": {
+      "author": {
+        "name": "Richard Harrah",
+        "email": "topplethenunnery@gmail.com",
+        "date": "2026-10-13T22:39:59Z"
+      },
+      "committer": {
+        "name": "Richard Harrah",
+        "email": "topplethenunnery@gmail.com",
+        "date": "2026-10-13T22:44:47Z"
+      },
+      "message": "[Havoc] make Abyssal Gaze its own action",
+      "tree": {
+        "sha": "f498bd7d06aac7b3cc70745f47f181ba8188cc2d",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/f498bd7d06aac7b3cc70745f47f181ba8188cc2d"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/2cf9c9c70503014ad05da4bf03cc2b2a4d060b1f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/2cf9c9c70503014ad05da4bf03cc2b2a4d060b1f",
+    "html_url": "https://github.com/simulationcraft/simc/commit/2cf9c9c70503014ad05da4bf03cc2b2a4d060b1f",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/2cf9c9c70503014ad05da4bf03cc2b2a4d060b1f/comments",
+    "author": {
+      "login": "ToppleTheNun",
+      "id": 1672786,
+      "node_id": "MDQ6VXNlcjE2NzI3ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1672786?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ToppleTheNun",
+      "html_url": "https://github.com/ToppleTheNun",
+      "followers_url": "https://api.github.com/users/ToppleTheNun/followers",
+      "following_url": "https://api.github.com/users/ToppleTheNun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ToppleTheNun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ToppleTheNun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ToppleTheNun/subscriptions",
+      "organizations_url": "https://api.github.com/users/ToppleTheNun/orgs",
+      "repos_url": "https://api.github.com/users/ToppleTheNun/repos",
+      "events_url": "https://api.github.com/users/ToppleTheNun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ToppleTheNun/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ToppleTheNun",
+      "id": 1672786,
+      "node_id": "MDQ6VXNlcjE2NzI3ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1672786?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ToppleTheNun",
+      "html_url": "https://github.com/ToppleTheNun",
+      "followers_url": "https://api.github.com/users/ToppleTheNun/followers",
+      "following_url": "https://api.github.com/users/ToppleTheNun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ToppleTheNun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ToppleTheNun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ToppleTheNun/subscriptions",
+      "organizations_url": "https://api.github.com/users/ToppleTheNun/orgs",
+      "repos_url": "https://api.github.com/users/ToppleTheNun/repos",
+      "events_url": "https://api.github.com/users/ToppleTheNun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ToppleTheNun/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "34ec9c306a7af5cb1fa990a2c00804b82ab55c08",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/34ec9c306a7af5cb1fa990a2c00804b82ab55c08",
+        "html_url": "https://github.com/simulationcraft/simc/commit/34ec9c306a7af5cb1fa990a2c00804b82ab55c08"
+      }
+    ]
+  },
+  {
+    "sha": "d4fdcc1527c6523ba7acbb8a9fc12695e6a99735",
+    "node_id": "C_kwDOAeyHQtoAKGQ0ZmRjYzE1MjdjNjUyM2JhN2FjYmI4YTlmYzEyNjk1ZTZhOTk3MzU",
+    "commit": {
+      "author": {
+        "name": "Aezeor",
+        "email": "155996785+Aezeor@users.noreply.github.com",
+        "date": "2026-10-13T20:25:40Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-10-13T20:25:40Z"
+      },
+      "message": "[Havoc] Eternal hunt double dips on blade dance last hit (#11948)",
+      "tree": {
+        "sha": "7c671f889affddfb326163900ca99285a895e097",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/7c671f889affddfb326163900ca99285a895e097"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/d4fdcc1527c6523ba7acbb8a9fc12695e6a99735",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqzpPECRC1aQ7uu5UhlAAA1BAQACaVZb0TGiTKE80QdtcdMhvZ\nu1C15N0ifB6BFWMSetEcdQTJbteMWiawmY7f0yD7Kh0cX9fuko4xc4ld43ncLKRo\nB18LaRvKLP14ZtPCPMTqqSQI/ryS8gi80IMkHClf0+Vd7N8pfH0qEzBI/BVC73H0\nRg3WuAQJiP+7IfIZtZxI+TRctY6xEwIx/izLOVPBUr1/TWTULQkB1ljIHimo7bxf\n3pjj8IqARz64oX/nPTDl9tHAGZbyhlbGazHAf3GZr3yFapr5OEhhRPlNQT7L4yf9\nEJcvhHJL/mL1vg94NrIo0MfGvqqYGR1YnBoYX3JGppqpIU9aaX9f/zLIFsFgHbt4\naLybvZEwvGeynX3UwAxTYAH2lSexoDhIXFsQGjTyjeo8pDONgOuCQT8EfFbQxflr\nSHMB6wN1oBKKId6BRVlAcm7XZWyr0HJ/espGt4nAZ1mhZB0Xroh9Tvf9dqw3Bsfo\nmQ15Vg2hYBnlbn8ZeGwQlnbvYcrcG424IirMRn798tlTT9wAdVsLlTRkzH3jLgoE\nhWpUsKyTanU77YZYKhk4ur6Uf92jiubzPG4Rjn+y7FlTHnoLqIBB0Zk3q/aH7+Sq\n/ffFhBMryKL9RgQiW0twBPSkhqo70nEbjwGHXgjpEsKWR5YTvkl72cab08tR/7M4\nzxm916mTUYHzabbPmzOw\n=55Sa\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 7c671f889affddfb326163900ca99285a895e097\nparent b749158c7a80ec8cb8a626649bbb7065b0f3b5ae\nauthor Aezeor <155996785+Aezeor@users.noreply.github.com> 1791923140 -0400\ncommitter GitHub <noreply@github.com> 1791923140 -0400\n\n[Havoc] Eternal hunt double dips on blade dance last hit (#11948)",
+        "verified_at": "2026-10-13T20:25:41Z"
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/d4fdcc1527c6523ba7acbb8a9fc12695e6a99735",
+    "html_url": "https://github.com/simulationcraft/simc/commit/d4fdcc1527c6523ba7acbb8a9fc12695e6a99735",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/d4fdcc1527c6523ba7acbb8a9fc12695e6a99735/comments",
+    "author": {
+      "login": "Aezeor",
+      "id": 155996785,
+      "node_id": "U_kgDOCUxScQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/155996785?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aezeor",
+      "html_url": "https://github.com/Aezeor",
+      "followers_url": "https://api.github.com/users/Aezeor/followers",
+      "following_url": "https://api.github.com/users/Aezeor/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aezeor/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aezeor/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aezeor/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aezeor/orgs",
+      "repos_url": "https://api.github.com/users/Aezeor/repos",
+      "events_url": "https://api.github.com/users/Aezeor/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aezeor/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b749158c7a80ec8cb8a626649bbb7065b0f3b5ae",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/b749158c7a80ec8cb8a626649bbb7065b0f3b5ae",
+        "html_url": "https://github.com/simulationcraft/simc/commit/b749158c7a80ec8cb8a626649bbb7065b0f3b5ae"
+      }
+    ]
+  },
+  {
+    "sha": "af05b9e2e1e50ad5b50f255d7189161dcc058554",
+    "node_id": "C_kwDOAeyHQtoAKGFmMDViOWUyZTFlNTBhZDViNTBmMjU1ZDcxODkxNjFkY2MwNTg1NTQ",
+    "commit": {
+      "author": {
+        "name": "Richard Harrah",
+        "email": "topplethenunnery@gmail.com",
+        "date": "2026-10-10T14:35:30Z"
+      },
+      "committer": {
+        "name": "Richard Harrah",
+        "email": "topplethenunnery@gmail.com",
+        "date": "2026-10-10T14:35:30Z"
+      },
+      "message": "[DH] remove parse of Thrill of the Fight (haste)",
+      "tree": {
+        "sha": "68372f9f2310ae71031f6afb47d6cc44aae74b09",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/68372f9f2310ae71031f6afb47d6cc44aae74b09"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/af05b9e2e1e50ad5b50f255d7189161dcc058554",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/af05b9e2e1e50ad5b50f255d7189161dcc058554",
+    "html_url": "https://github.com/simulationcraft/simc/commit/af05b9e2e1e50ad5b50f255d7189161dcc058554",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/af05b9e2e1e50ad5b50f255d7189161dcc058554/comments",
+    "author": {
+      "login": "ToppleTheNun",
+      "id": 1672786,
+      "node_id": "MDQ6VXNlcjE2NzI3ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1672786?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ToppleTheNun",
+      "html_url": "https://github.com/ToppleTheNun",
+      "followers_url": "https://api.github.com/users/ToppleTheNun/followers",
+      "following_url": "https://api.github.com/users/ToppleTheNun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ToppleTheNun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ToppleTheNun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ToppleTheNun/subscriptions",
+      "organizations_url": "https://api.github.com/users/ToppleTheNun/orgs",
+      "repos_url": "https://api.github.com/users/ToppleTheNun/repos",
+      "events_url": "https://api.github.com/users/ToppleTheNun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ToppleTheNun/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ToppleTheNun",
+      "id": 1672786,
+      "node_id": "MDQ6VXNlcjE2NzI3ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1672786?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ToppleTheNun",
+      "html_url": "https://github.com/ToppleTheNun",
+      "followers_url": "https://api.github.com/users/ToppleTheNun/followers",
+      "following_url": "https://api.github.com/users/ToppleTheNun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ToppleTheNun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ToppleTheNun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ToppleTheNun/subscriptions",
+      "organizations_url": "https://api.github.com/users/ToppleTheNun/orgs",
+      "repos_url": "https://api.github.com/users/ToppleTheNun/repos",
+      "events_url": "https://api.github.com/users/ToppleTheNun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ToppleTheNun/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f4b19dd8aed4f0c5d76cbbccd6e5da228b70deb6",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/f4b19dd8aed4f0c5d76cbbccd6e5da228b70deb6",
+        "html_url": "https://github.com/simulationcraft/simc/commit/f4b19dd8aed4f0c5d76cbbccd6e5da228b70deb6"
+      }
+    ]
+  },
+  {
+    "sha": "71a76b73cc4a69189e1f92d72ca5622206f3975d",
+    "node_id": "C_kwDOAeyHQtoAKDcxYTc2YjczY2M0YTY5MTg5ZTFmOTJkNzJjYTU2MjIyMDZmMzk3NWQ",
+    "commit": {
+      "author": {
+        "name": "Aezeor",
+        "email": "155996785+Aezeor@users.noreply.github.com",
+        "date": "2026-10-09T20:37:03Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-10-09T20:37:03Z"
+      },
+      "message": "revert previous change for bugfix that is not needed (#11932)",
+      "tree": {
+        "sha": "514b0602cb6587800ae2567486142382281a4918",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/514b0602cb6587800ae2567486142382281a4918"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/71a76b73cc4a69189e1f92d72ca5622206f3975d",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqyVBvCRC1aQ7uu5UhlAAAjE4QAImicC0w2yLSZ6i5q1TREfGy\ngfDuWG/KywubWJ7150M61NEpInv/fgdZHWOEpy2axiX/LRZXdYq+Qe9tezXGgtLe\nDUGSPcP7nbAuD3RRekMShy9uDR7AgeVLMfJPHpAjp+FnUoZKXKMfii3vwsVJwrJJ\nwjUs5rhkyyTwEcal6rgKNrQG9VPesNHH1x4xA5ZYTqFFXwr/sFlJT/VqIPsZ2e5d\n2feuY//nU457/m4R0VDps+GkzJLl8wCVCheAZl6eypRf0hkG16R+DwhOdxb4ULmI\nUv1exAEKVZrI1/vc6lSiGOZwsT9WsdWr6a4FyumrSM9SBZmlvI7gcp3Xk2DtcZqf\noEjZXOpC9lWUS5okn6Uvoh71VKIW7c8rKNRj6oDdW51DOh8luB3pqAvuPvj5iISR\nsgZMbKx9tCRwzalMui4cIsd+S3mB3a6h5n+w90H5rVg3bNt1pKqcGu7e73naO9lT\n+l/PsI1Sdjwkdq8KcRAxcbct5bgGpWh2nFW4M0dVAPJ3sE+x9GdvwvB8rkRcdReF\nHS52daslsk0EfcVeIta22fVWPYbyV5CWzTeahd8q7W88JgA38PewbKMGwAEQTQUd\nl6o7YxFBZjSFIaREdjr2RvIEQhAdLZICSBHBDNGrRpA6Ji+xUxXotAmuWS8xtkJb\nCu5E0dRtZgoMLzCVhi8F\n=FJ2m\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 514b0602cb6587800ae2567486142382281a4918\nparent eed909156d8eccbfca0f284cc271c080949d6a20\nauthor Aezeor <155996785+Aezeor@users.noreply.github.com> 1791578223 -0400\ncommitter GitHub <noreply@github.com> 1791578223 -0400\n\nrevert previous change for bugfix that is not needed (#11932)",
+        "verified_at": "2026-10-09T20:37:04Z"
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/71a76b73cc4a69189e1f92d72ca5622206f3975d",
+    "html_url": "https://github.com/simulationcraft/simc/commit/71a76b73cc4a69189e1f92d72ca5622206f3975d",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/71a76b73cc4a69189e1f92d72ca5622206f3975d/comments",
+    "author": {
+      "login": "Aezeor",
+      "id": 155996785,
+      "node_id": "U_kgDOCUxScQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/155996785?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aezeor",
+      "html_url": "https://github.com/Aezeor",
+      "followers_url": "https://api.github.com/users/Aezeor/followers",
+      "following_url": "https://api.github.com/users/Aezeor/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aezeor/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aezeor/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aezeor/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aezeor/orgs",
+      "repos_url": "https://api.github.com/users/Aezeor/repos",
+      "events_url": "https://api.github.com/users/Aezeor/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aezeor/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "eed909156d8eccbfca0f284cc271c080949d6a20",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/eed909156d8eccbfca0f284cc271c080949d6a20",
+        "html_url": "https://github.com/simulationcraft/simc/commit/eed909156d8eccbfca0f284cc271c080949d6a20"
+      }
+    ]
+  },
+  {
+    "sha": "ff52d9cc264d303eb747a130d924a2f3774106b8",
+    "node_id": "C_kwDOAeyHQtoAKGZmNTJkOWNjMjY0ZDMwM2ViNzQ3YTEzMGQ5MjRhMmYzNzc0MTA2Yjg",
+    "commit": {
+      "author": {
+        "name": "Aezeor",
+        "email": "155996785+Aezeor@users.noreply.github.com",
+        "date": "2026-10-07T11:35:33Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-10-07T11:35:33Z"
+      },
+      "message": "[DH] adjust how many charges are refunded for mass accel and the hunt (#11929)",
+      "tree": {
+        "sha": "83172dea4f4d0393e478e462020cf9b498ec46d2",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/83172dea4f4d0393e478e462020cf9b498ec46d2"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/ff52d9cc264d303eb747a130d924a2f3774106b8",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqxi6FCRC1aQ7uu5UhlAAAGkMQABEcmucK8LraK4eJv8PhYohQ\nruSKuaGw0yWk4laaMpiOGRdvea4OdJbWu7qoiGfYe9hUm71/Z1Kkd/v9U/RpBfd9\nOxNSPL9PgSTK2qLGbrNh4i8c/RDdAvCQz3U/Xig8QrO5quG6bJ6uwElaOZ3dVcE+\nQPkWy8kesHlLR90xKkHMH3oXAf5au0VY5GRCEg3lDj9nx6lEVZHXa1j24jd1GRJw\nmSLIYjxzZH1mGfuz8PMKW44abG6JIO+5cd0vXWbH20QQwh/KxIJ5tUuMRyr/hjRd\na8Jbgpg3OuZYw4ng0oiXO5gGImz3EqsMM/l83cWMdn8/rWHIPdCWk4sFig45Wscj\ng1VKw0kAz2NPppDHDnUFU9/rBwJjG5lLrKvZWCTbgaT88XL1RkFsj55XpGAXKyNo\n+B+yLzLQNkc1HUbm/UQzfGlepjTJsA4uCMToKMibLjUoh0myq9i0QDazAS7sNLSZ\nPV8OL2c/MxS2D+JzGyiX9PDSPJRKQ4vx5CUaxhg4TLCbgcVPW3PQ8gKj/OoksyDu\nX1dSXVLiKNJd/e/JeHaCrAIVIoiA6pQNW88HC52Lu9rsMwiH7sxtrxLqsl6aqyzR\n+OumTk85Z2vi3HnFO0Nvv9u3DPDy9N11WDhyNDuDx7cWOCMyoZBdX5WULdqi1V6z\nYbF9xg5jRUwyz41e+qoI\n=2Clz\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 83172dea4f4d0393e478e462020cf9b498ec46d2\nparent dc8c06dca8dfe75a4049888ddb60745ce6942d6f\nauthor Aezeor <155996785+Aezeor@users.noreply.github.com> 1791372933 -0400\ncommitter GitHub <noreply@github.com> 1791372933 -0400\n\n[DH] adjust how many charges are refunded for mass accel and the hunt (#11929)",
+        "verified_at": "2026-10-07T11:35:33Z"
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/ff52d9cc264d303eb747a130d924a2f3774106b8",
+    "html_url": "https://github.com/simulationcraft/simc/commit/ff52d9cc264d303eb747a130d924a2f3774106b8",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/ff52d9cc264d303eb747a130d924a2f3774106b8/comments",
+    "author": {
+      "login": "Aezeor",
+      "id": 155996785,
+      "node_id": "U_kgDOCUxScQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/155996785?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aezeor",
+      "html_url": "https://github.com/Aezeor",
+      "followers_url": "https://api.github.com/users/Aezeor/followers",
+      "following_url": "https://api.github.com/users/Aezeor/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aezeor/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aezeor/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aezeor/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aezeor/orgs",
+      "repos_url": "https://api.github.com/users/Aezeor/repos",
+      "events_url": "https://api.github.com/users/Aezeor/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aezeor/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dc8c06dca8dfe75a4049888ddb60745ce6942d6f",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/dc8c06dca8dfe75a4049888ddb60745ce6942d6f",
+        "html_url": "https://github.com/simulationcraft/simc/commit/dc8c06dca8dfe75a4049888ddb60745ce6942d6f"
+      }
+    ]
+  },
+  {
+    "sha": "dfc8514580f5ddd4f0164ebf7666cbbf956347cb",
+    "node_id": "C_kwDOAeyHQtoAKGRmYzg1MTQ1ODBmNWRkZDRmMDE2NGViZjc2NjZjYmJmOTU2MzQ3Y2I",
+    "commit": {
+      "author": {
+        "name": "taherbert",
+        "email": "18316812+taherbert@users.noreply.github.com",
+        "date": "2026-10-05T02:43:43Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-10-05T02:43:43Z"
+      },
+      "message": "[Vengeance] Fracture: read Metamorphosis' +Fury from effect #4 (#11922)",
+      "tree": {
+        "sha": "4bbc58afb5cbb92666230e2ea0c76f02ebf2509c",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/4bbc58afb5cbb92666230e2ea0c76f02ebf2509c"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/dfc8514580f5ddd4f0164ebf7666cbbf956347cb",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqww7fCRC1aQ7uu5UhlAAANN4QADd9l+2qtbLtQiHE8qnn+5o5\nZYCGTie4Q856zRS2CpD3MSvLoRIcQWKb5vW5YNItKQWCdRX64AMUUIoPV59tde6Q\ngRR7+Yoo8uhtQvLzrWok5skM0CsuhuwWgadoHovvUqBen6AMquuLdqlKEVVrH1oL\ntj+J3vty8D06mMC9N5qgBVRqoRFN6f3ivDCy0iBUF9NQjF/J/QWYTA3lgCPV6zGG\nxcspmhJA5KULgT2tibgdv22DUK0ogLKRxKKzeQxp4kG+8YUA+pfPZENvIfzDsis1\ndiruhh8EU9drPgXuLtr03y8nQRufBNRHxS9P/XaU2t1nNkEhsbhSokrmYG2YTA9y\nOIA9uA3Y719zuqGY/KBO6UKjQjfDlN7scEBtKS1uMjLZQnfrY4YQBpqUaLNdAPcL\nZmAqvNNBK8IESsrMoMFZ6NW9/QiyB70IRhhcQbTdwvC/orWw/lIP6k9u9tYbYY9F\nL+FG686YZJSs6GED3/QIPIKl3sKVxf2ssiQAO3TIVew3lrXtpYxdqvUmO/nV6dfb\nQSShnlxC4UPg1thEe+p3ofP6kUMkjKP+0hlG01BbUoSex4uH6xKiSftDSqFBekPm\nMAL2I/rotHQ7EprT9u9eo3eJYtszdeUvHT2PgV1Jn9lP9JoYhtRfIVBy1JmXAOu0\n2XdqfO65d6h8zQ1g9qH3\n=mKPR\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4bbc58afb5cbb92666230e2ea0c76f02ebf2509c\nparent a08a306d0f0bc223c1d85e7b7dbea53058034dbc\nauthor taherbert <18316812+taherbert@users.noreply.github.com> 1791168223 -0700\ncommitter GitHub <noreply@github.com> 1791168223 -0400\n\n[Vengeance] Fracture: read Metamorphosis' +Fury from effect #4 (#11922)",
+        "verified_at": "2026-10-05T02:43:44Z"
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/dfc8514580f5ddd4f0164ebf7666cbbf956347cb",
+    "html_url": "https://github.com/simulationcraft/simc/commit/dfc8514580f5ddd4f0164ebf7666cbbf956347cb",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/dfc8514580f5ddd4f0164ebf7666cbbf956347cb/comments",
+    "author": {
+      "login": "taherbert",
+      "id": 18316812,
+      "node_id": "MDQ6VXNlcjE4MzE2ODEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18316812?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/taherbert",
+      "html_url": "https://github.com/taherbert",
+      "followers_url": "https://api.github.com/users/taherbert/followers",
+      "following_url": "https://api.github.com/users/taherbert/following{/other_user}",
+      "gists_url": "https://api.github.com/users/taherbert/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/taherbert/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/taherbert/subscriptions",
+      "organizations_url": "https://api.github.com/users/taherbert/orgs",
+      "repos_url": "https://api.github.com/users/taherbert/repos",
+      "events_url": "https://api.github.com/users/taherbert/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/taherbert/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a08a306d0f0bc223c1d85e7b7dbea53058034dbc",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/a08a306d0f0bc223c1d85e7b7dbea53058034dbc",
+        "html_url": "https://github.com/simulationcraft/simc/commit/a08a306d0f0bc223c1d85e7b7dbea53058034dbc"
+      }
+    ]
+  },
+  {
+    "sha": "1d5b7f02b4dc9afbc2765b4534e53be076b1e896",
+    "node_id": "C_kwDOAeyHQtoAKDFkNWI3ZjAyYjRkYzlhZmJjMjc2NWI0NTM0ZTUzYmUwNzZiMWU4OTY",
+    "commit": {
+      "author": {
+        "name": "taherbert",
+        "email": "18316812+taherbert@users.noreply.github.com",
+        "date": "2026-09-22T18:19:49Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-22T18:19:49Z"
+      },
+      "message": "[DH] Collapsing Star deals reduced damage to secondary targets (#11892)",
+      "tree": {
+        "sha": "b6cb51ceb449311d208ca185e603dcde8f7c2ce6",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/b6cb51ceb449311d208ca185e603dcde8f7c2ce6"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/1d5b7f02b4dc9afbc2765b4534e53be076b1e896",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqssbFCRC1aQ7uu5UhlAAAGzgQAEIlbeufzxHOuc/aUGOSjv0f\nMn9b/n7loC9UNpQvfTLniT+4b9Ne3HeEBviaMDbv808P/yDtSzD3RCZblIzMS5Cm\nuuyCk0C7Buifro0hsJ4lixNNqeiFqLkJOfBIykigLi0HY+vXUHNCpTk2hxkwERV0\n8jrd4oDpBZyx4xON1u2TRPzJoNGH5+GFWK5xiV2vODUe6o5dl+mpzOuV6DIV3JAl\nmTpJi9L/k/ny18W+S6otmn8IvCk1C5R/bw2b9jYD46yD0cem8WS9/Ef9FzWLxjdg\nvWCUzvnDU3+mVfVkTVjNV++Y4WmnFYDtuasiHqjUEBsK2TMQfOYeqzeb4Mq5FNBp\noPcVzvAMd89YkYto9TkcbfxxF/mssRInIBdz0GpLC12h8XVNcBAvazq33Zt3wQV8\nxohTGROcB8mCWGMV6hqEE8d3gb1rQnBX3thJzVdP8AfqNHPrtmIBtZdpM5kZP9Ga\nOyDnWcLbYgjktJC7Ua1Z/zy38PtpvTdr1bcv+Lq4KH6g6r3PXcVMTJ+t5N85i1sA\nzADIhARIPXTCQCH3SR6iEAjNhZcTXqEq5CKcdoy3Ft1qLH164VjSiz6dRuwksyUS\niyZYK9hJwfN/U95gFpWcEPrSBUjEgTMgYqVJE77BEoxO/dblgVw4z8Gm1ZjDuf7P\nJnM/Z97QUNGWu+zv+I3n\n=1fs6\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree b6cb51ceb449311d208ca185e603dcde8f7c2ce6\nparent 3602eac166d91590450ba6e71a9878554ea54591\nauthor taherbert <18316812+taherbert@users.noreply.github.com> 1790101189 -0700\ncommitter GitHub <noreply@github.com> 1790101189 -0400\n\n[DH] Collapsing Star deals reduced damage to secondary targets (#11892)",
+        "verified_at": "2026-09-22T18:19:50Z"
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/1d5b7f02b4dc9afbc2765b4534e53be076b1e896",
+    "html_url": "https://github.com/simulationcraft/simc/commit/1d5b7f02b4dc9afbc2765b4534e53be076b1e896",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/1d5b7f02b4dc9afbc2765b4534e53be076b1e896/comments",
+    "author": {
+      "login": "taherbert",
+      "id": 18316812,
+      "node_id": "MDQ6VXNlcjE4MzE2ODEy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18316812?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/taherbert",
+      "html_url": "https://github.com/taherbert",
+      "followers_url": "https://api.github.com/users/taherbert/followers",
+      "following_url": "https://api.github.com/users/taherbert/following{/other_user}",
+      "gists_url": "https://api.github.com/users/taherbert/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/taherbert/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/taherbert/subscriptions",
+      "organizations_url": "https://api.github.com/users/taherbert/orgs",
+      "repos_url": "https://api.github.com/users/taherbert/repos",
+      "events_url": "https://api.github.com/users/taherbert/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/taherbert/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3602eac166d91590450ba6e71a9878554ea54591",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/3602eac166d91590450ba6e71a9878554ea54591",
+        "html_url": "https://github.com/simulationcraft/simc/commit/3602eac166d91590450ba6e71a9878554ea54591"
+      }
+    ]
+  },
+  {
+    "sha": "1b0e8c406e76fa71e908b28a03c3883d1fa5bbea",
+    "node_id": "C_kwDOAeyHQtoAKDFiMGU4YzQwNmU3NmZhNzFlOTA4YjI4YTAzYzM4ODNkMWZhNWJiZWE",
+    "commit": {
+      "author": {
+        "name": "Aezeor",
+        "email": "155996785+Aezeor@users.noreply.github.com",
+        "date": "2026-09-20T15:02:09Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-20T15:02:09Z"
+      },
+      "message": "[DH] The Hunt does not benefit from chaotic disposition (#11887)",
+      "tree": {
+        "sha": "0ff1c4a112b473e264eb0e063f88496620a99f9d",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/0ff1c4a112b473e264eb0e063f88496620a99f9d"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/1b0e8c406e76fa71e908b28a03c3883d1fa5bbea",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqr/VxCRC1aQ7uu5UhlAAAEbMQADucxrZjqfvOztmXIWtyUXff\nmRGZ0IbRvPewYEyqDANqFxWh5LtTuwI5WK8P+2X2X/qe744nLpOmcehjBQZIoOVg\nCHegHPM+Tbb5Vy/HN3fym9o//aIRW+UPVT78jj3swd+KVkMqb1n9pWQ1fqxVxfE2\n+IpM5BJZ6mC6HTgyEX1YOctGQThp1Swk9mpp2M614wBUJ3IDPw35LSzbv5ZVZo8I\noAswhTNgPNGvjECliKf5W29Ldh9ZQ7V18kjMCmEhaKrfB6UFz6pG6U60P1XDDhRA\n+F4yGJwDLvqfEVI86ntPEvzmF2hyaYRt+YrFYmCFIyympjQ8QMSSELnRV37qE78Z\nYn0+BtjOWAt0HIHQbxY4cSCdbIpKXm5OW4pFAeqcXXX91fv0E1Ui3lksqE3u7pz6\nOps2TvYUQdQO+kDnu9QZAzVE4s5B2gVMxvXXTYB9kS9UBSYAWG6xZq2nZ9ovUrgg\nxpPzfn0gGp5/fS9JbRi321FWu2GaVMNuzMfX2zirzc5J1tdzAUoUpIlq77chIiB2\nKVNbpLpNXT/t8N2gQtoMNJCv2FeWMbln+dFmo/q8dT3ygwO/rqX/yH8af8I4mwJ7\nEaWqc+k5OyLgv2P/4lslfYFUIvqlazsC4GCW0RqhwChxNOlB8d6sbWAK2f/paZM+\nb38KN9l/CzEy//Dd7jZt\n=XYn+\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 0ff1c4a112b473e264eb0e063f88496620a99f9d\nparent c0984091d82291982d9251ad882234aecf37197e\nauthor Aezeor <155996785+Aezeor@users.noreply.github.com> 1789916529 -0400\ncommitter GitHub <noreply@github.com> 1789916529 -0400\n\n[DH] The Hunt does not benefit from chaotic disposition (#11887)",
+        "verified_at": "2026-09-20T15:02:10Z"
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/1b0e8c406e76fa71e908b28a03c3883d1fa5bbea",
+    "html_url": "https://github.com/simulationcraft/simc/commit/1b0e8c406e76fa71e908b28a03c3883d1fa5bbea",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/1b0e8c406e76fa71e908b28a03c3883d1fa5bbea/comments",
+    "author": {
+      "login": "Aezeor",
+      "id": 155996785,
+      "node_id": "U_kgDOCUxScQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/155996785?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aezeor",
+      "html_url": "https://github.com/Aezeor",
+      "followers_url": "https://api.github.com/users/Aezeor/followers",
+      "following_url": "https://api.github.com/users/Aezeor/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aezeor/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aezeor/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aezeor/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aezeor/orgs",
+      "repos_url": "https://api.github.com/users/Aezeor/repos",
+      "events_url": "https://api.github.com/users/Aezeor/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aezeor/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c0984091d82291982d9251ad882234aecf37197e",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/c0984091d82291982d9251ad882234aecf37197e",
+        "html_url": "https://github.com/simulationcraft/simc/commit/c0984091d82291982d9251ad882234aecf37197e"
+      }
+    ]
+  },
+  {
+    "sha": "6dadac4b478926fb2afeac4344e93c7e26c14a0b",
+    "node_id": "C_kwDOAeyHQtoAKDZkYWRhYzRiNDc4OTI2ZmIyYWZlYWM0MzQ0ZTkzYzdlMjZjMTRhMGI",
+    "commit": {
+      "author": {
+        "name": "Richard Harrah",
+        "email": "topplethenunnery@gmail.com",
+        "date": "2026-09-09T18:34:20Z"
+      },
+      "committer": {
+        "name": "Richard Harrah",
+        "email": "topplethenunnery@gmail.com",
+        "date": "2026-09-09T18:34:20Z"
+      },
+      "message": "[DH] The Hunt DoT does not refresh",
+      "tree": {
+        "sha": "587d8540122c12683eec6979c0daec81e0b2e15d",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/587d8540122c12683eec6979c0daec81e0b2e15d"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/6dadac4b478926fb2afeac4344e93c7e26c14a0b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/6dadac4b478926fb2afeac4344e93c7e26c14a0b",
+    "html_url": "https://github.com/simulationcraft/simc/commit/6dadac4b478926fb2afeac4344e93c7e26c14a0b",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/6dadac4b478926fb2afeac4344e93c7e26c14a0b/comments",
+    "author": {
+      "login": "ToppleTheNun",
+      "id": 1672786,
+      "node_id": "MDQ6VXNlcjE2NzI3ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1672786?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ToppleTheNun",
+      "html_url": "https://github.com/ToppleTheNun",
+      "followers_url": "https://api.github.com/users/ToppleTheNun/followers",
+      "following_url": "https://api.github.com/users/ToppleTheNun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ToppleTheNun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ToppleTheNun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ToppleTheNun/subscriptions",
+      "organizations_url": "https://api.github.com/users/ToppleTheNun/orgs",
+      "repos_url": "https://api.github.com/users/ToppleTheNun/repos",
+      "events_url": "https://api.github.com/users/ToppleTheNun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ToppleTheNun/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ToppleTheNun",
+      "id": 1672786,
+      "node_id": "MDQ6VXNlcjE2NzI3ODY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1672786?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ToppleTheNun",
+      "html_url": "https://github.com/ToppleTheNun",
+      "followers_url": "https://api.github.com/users/ToppleTheNun/followers",
+      "following_url": "https://api.github.com/users/ToppleTheNun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ToppleTheNun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ToppleTheNun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ToppleTheNun/subscriptions",
+      "organizations_url": "https://api.github.com/users/ToppleTheNun/orgs",
+      "repos_url": "https://api.github.com/users/ToppleTheNun/repos",
+      "events_url": "https://api.github.com/users/ToppleTheNun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ToppleTheNun/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ba72a9dcfe88e6e80384f52f7786619c5dfcd6f1",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/ba72a9dcfe88e6e80384f52f7786619c5dfcd6f1",
+        "html_url": "https://github.com/simulationcraft/simc/commit/ba72a9dcfe88e6e80384f52f7786619c5dfcd6f1"
+      }
+    ]
+  },
+  {
+    "sha": "ea8c4446397ebb810bdadcd8c181121fcc683418",
+    "node_id": "C_kwDOAeyHQtoAKGVhOGM0NDQ2Mzk3ZWJiODEwYmRhZGNkOGMxODExMjFmY2M2ODM0MTg",
+    "commit": {
+      "author": {
+        "name": "Aezeor",
+        "email": "155996785+Aezeor@users.noreply.github.com",
+        "date": "2026-09-08T23:35:46Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-09-08T23:35:46Z"
+      },
+      "message": "[Havoc] Warblades hunger occurs on chaos strike spell execute (#11857)\n\n* [Havoc] Warblades hunger occurs on chaos strike spell execute rather than damage event\n\n* actually move to correct chaos strike execute\n\n* add talent ->ok()\n\nCo-authored-by: Richard Harrah <1672786+ToppleTheNun@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Richard Harrah <1672786+ToppleTheNun@users.noreply.github.com>",
+      "tree": {
+        "sha": "94d9851625b3c149da4b2fa43c5e31937cc7e8e1",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/94d9851625b3c149da4b2fa43c5e31937cc7e8e1"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/ea8c4446397ebb810bdadcd8c181121fcc683418",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqoJvSCRC1aQ7uu5UhlAAAvhEQAAHlL8YMmB5fsBZZSyHh5l/x\nVHR84Y5Vqp30pOSaG4WEt3B41iLkjUn907cFIpuBr/YxNXXekqh5sfwg0QNskwAg\nkkO2n0YgC6gQq9RSRdGzXNG4WQ8tyiJnJUvHxHsk8Eyguf3EGMAK5x3HeFOMHi8c\n4OsVw+2j1Tfqrm9YaqHy8vgq0KXl97zb3LYcuCXHQYGqVB78OaQCu2WBUD/e9e3D\nm65SEp6tcqc+PhN3/Om7kyjay8sFkq8AVyzbpYJO/zbUarV/8wGvEtzwhzrz2WY1\nHA5FpttNf3PEoZYelG2PKvVfJrzR9GXgXpH6NZCPnMCDSCtDTsYK5nwtMHWisoig\n+CoiZppckXEmEFC6SzL02xyLs6B6CfgZ8scQGq7Pip6I6JdWbheZ/rBLEEsXv8af\nuT3Z6ZlF/95KJNqfuISak9grUN/aAX/MoZwFJxD8wYwcFVvmtZomXNSTGfEANHUs\nJuqzWH5sskO+ig9vZlRsr7jZkvBxmrUYoQjLjOwYQRCD/1RudnUCsHXsw7RPJy98\nm4flmsyFy/cS6FKc/Plqb6ZI8hIkX8HQzCSt4ClDn2++tchZlwwbtpqtNdues4Km\nH8i1CwXnCTMxYZbNCBEDmUEBKykohZeXK0P+Jf6lRah6hKHmtzLcPhVn375puLSq\nbiiM8ORNzLq4MESd8LhD\n=qEXi\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 94d9851625b3c149da4b2fa43c5e31937cc7e8e1\nparent 5fe67c2b16e07f95a2206de07c628ccc1fa03a79\nauthor Aezeor <155996785+Aezeor@users.noreply.github.com> 1788910546 -0400\ncommitter GitHub <noreply@github.com> 1788910546 -0400\n\n[Havoc] Warblades hunger occurs on chaos strike spell execute (#11857)\n\n* [Havoc] Warblades hunger occurs on chaos strike spell execute rather than damage event\n\n* actually move to correct chaos strike execute\n\n* add talent ->ok()\n\nCo-authored-by: Richard Harrah <1672786+ToppleTheNun@users.noreply.github.com>\n\n---------\n\nCo-authored-by: Richard Harrah <1672786+ToppleTheNun@users.noreply.github.com>",
+        "verified_at": "2026-09-08T23:35:46Z"
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/ea8c4446397ebb810bdadcd8c181121fcc683418",
+    "html_url": "https://github.com/simulationcraft/simc/commit/ea8c4446397ebb810bdadcd8c181121fcc683418",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/ea8c4446397ebb810bdadcd8c181121fcc683418/comments",
+    "author": {
+      "login": "Aezeor",
+      "id": 155996785,
+      "node_id": "U_kgDOCUxScQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/155996785?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aezeor",
+      "html_url": "https://github.com/Aezeor",
+      "followers_url": "https://api.github.com/users/Aezeor/followers",
+      "following_url": "https://api.github.com/users/Aezeor/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aezeor/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aezeor/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aezeor/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aezeor/orgs",
+      "repos_url": "https://api.github.com/users/Aezeor/repos",
+      "events_url": "https://api.github.com/users/Aezeor/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aezeor/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5fe67c2b16e07f95a2206de07c628ccc1fa03a79",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/5fe67c2b16e07f95a2206de07c628ccc1fa03a79",
+        "html_url": "https://github.com/simulationcraft/simc/commit/5fe67c2b16e07f95a2206de07c628ccc1fa03a79"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2184 @@
+[
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Collapsing Star now has increased range after it starts casting, reducing the circumstances where it will fail from the target moving out of range.",
+    "ko": "시전 시작 후 붕괴하는 별의 사거리가 증가하여, 대상이 사거리 밖으로 나가서 시전이 실패하는 상황이 줄어듭니다.",
+    "spellIds": [
+      "1221167"
+    ],
+    "skillNamesKo": [
+      "붕괴하는 별"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1221167",
+        "name:붕괴하는 별"
+      ],
+      "demonhunter-havoc": [
+        "name:붕괴하는 별"
+      ],
+      "demonhunter-vengeance": [
+        "name:붕괴하는 별"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Collapsing Star no longer goes on cooldown for 5 seconds when its cast is cancelled.",
+    "ko": "이제 붕괴하는 별의 시전이 취소되어도 5초의 재사용 대기시간이 적용되지 않습니다.",
+    "spellIds": [
+      "1221167"
+    ],
+    "skillNamesKo": [
+      "붕괴하는 별"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1221167",
+        "name:붕괴하는 별"
+      ],
+      "demonhunter-havoc": [
+        "name:붕괴하는 별"
+      ],
+      "demonhunter-vengeance": [
+        "name:붕괴하는 별"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Collapsing Star will now only slow Fury drain during its cast for a limited time. / If Collapsing Star's cast is cancelled then cast again, it will only be able to slow Fury drain for a total time of approximately 1.5 full casts. / After that time limit has been reached, Fury drain will resume in full regardless of whether or not a cast is interrupted or starts again.",
+    "ko": "붕괴하는 별이 이제 시전 도중 일정 시간 동안만 격노 소모 속도를 감소시킵니다. / 붕괴하는 별의 시전을 취소한 후 다시 시전할 경우, 격노 소모 속도가 시전을 1.5회 완료하는 데 소요되는 시간만큼만 감소합니다. / 이 시간 제한이 끝나면 시전 중단이나 재시작 여부와 무관하게 격노 소모 속도가 다시 정상적인 수준으로 돌아옵니다.",
+    "spellIds": [
+      "1221167"
+    ],
+    "skillNamesKo": [
+      "붕괴하는 별"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1221167",
+        "name:붕괴하는 별"
+      ],
+      "demonhunter-havoc": [
+        "name:붕괴하는 별"
+      ],
+      "demonhunter-vengeance": [
+        "name:붕괴하는 별"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Soulforged Blades now increases the critical strike chance of Hungering Slash and Voidblade by 18% (was 15%).",
+    "ko": "영혼벼림 칼날이 이제 굶주린 베기와 공허칼날의 치명타 및 극대화율을 18%만큼 증가시킵니다. (기존 15%)",
+    "spellIds": [
+      "1239123",
+      "1239519",
+      "1245412"
+    ],
+    "skillNamesKo": [
+      "굶주린 베기",
+      "공허칼날"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1239123",
+        "id:1245412",
+        "name:굶주린 베기",
+        "name:공허칼날"
+      ],
+      "demonhunter-havoc": [
+        "name:굶주린 베기"
+      ],
+      "demonhunter-vengeance": [
+        "name:굶주린 베기"
+      ]
+    },
+    "unmatchedInKb": [
+      "영혼벼림 칼날 (Soulforged Blades)"
+    ],
+    "kind": "수치"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Voidpurge now reduces the cooldown of Void Ray during Void Metamorphosis by 2.5 seconds (was 2 seconds).",
+    "ko": "공허정화가 이제 공허 탈태 중 공허 광선의 재사용 대기시간을 2.5초만큼 감소시킵니다. (기존 2초)",
+    "spellIds": [
+      "1244220",
+      "473728",
+      "471306"
+    ],
+    "skillNamesKo": [
+      "공허정화",
+      "공허 광선",
+      "공허 탈태"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:473728",
+        "id:471306",
+        "name:공허 광선",
+        "name:공허 탈태"
+      ]
+    },
+    "kind": "수치"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Many talents have changed positions.",
+    "ko": "많은 특성의 위치가 변경되었습니다.",
+    "spellIds": [
+      "1246167",
+      "1226033"
+    ],
+    "skillNamesKo": [
+      "사냥",
+      "박멸"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1246167",
+        "id:1226033",
+        "name:사냥",
+        "name:박멸"
+      ],
+      "demonhunter-havoc": [
+        "name:사냥"
+      ],
+      "demonhunter-vengeance": [
+        "name:사냥"
+      ]
+    },
+    "kind": "메커니즘",
+    "devNoteEn": "Developers' notes: We are shuffling some talents around to make it a little easier for builds to access core functional effects. The final gate was very dense and two of its talents are moving to the middle gate. The final gate’s capstone talents also notably included effects that are core building blocks: The Hunt is featured for Void-Scarred builds, and Eradicate is a key component of any build’s AoE damage. Those two talents are moving to more accessible locations in the middle gate of the tree, with other talents moving into their capstone positions.",
+    "devNoteKo": "개발자의 한마디: 각종 빌드로 핵심적인 효과들을 이용하기가 쉽도록 특성의 위치를 바꾸었습니다. 최종 관문의 밀집도가 아주 높았기에, 여기에 해당하던 특성들이 일부 중간 관문으로 이동합니다. 최종 관문의 정점 특성에도 빌드 구성에 핵심적이었던 효과들이 포함되어 있었습니다. 사냥은 공허상흔 빌드에 필요하고, 박멸은 광역 피해가 필요한 빌드의 핵심 구성 요소입니다. 이 두 특성이 트리의 중간 관문으로 이동하여 더 이용하기 쉬워지고, 다른 특성들이 두 특성이 원래 있던 정점을 채웁니다."
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "heroTree": {
+      "en": "Void-Scarred",
+      "ko": "공허상흔"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Demonic Intensity now causes Collapsing Star to reset the cooldown of The Hunt.",
+    "ko": "이제 악마의 격화 특성을 찍으면 붕괴하는 별이 사냥의 재사용 대기시간을 초기화합니다.",
+    "spellIds": [
+      "452415",
+      "1221167",
+      "1246167"
+    ],
+    "skillNamesKo": [
+      "악마의 격화",
+      "붕괴하는 별",
+      "사냥"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "otherGuideHits": [
+      "demonhunter-havoc"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1221167",
+        "id:1246167",
+        "name:붕괴하는 별",
+        "name:사냥"
+      ],
+      "demonhunter-havoc": [
+        "id:452415",
+        "name:악마의 격화",
+        "name:붕괴하는 별",
+        "name:사냥"
+      ],
+      "demonhunter-vengeance": [
+        "name:붕괴하는 별",
+        "name:사냥"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "heroTree": {
+      "en": "Void-Scarred",
+      "ko": "공허상흔"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Demonic Intensity's empower effect for The Hunt now increases its damage by 30%.",
+    "ko": "악마의 격화가 사냥에 적용하는 강화 효과가 이제 공격력을 30%만큼 증가시킵니다.",
+    "spellIds": [
+      "452415",
+      "1246167"
+    ],
+    "skillNamesKo": [
+      "악마의 격화",
+      "사냥"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "otherGuideHits": [
+      "demonhunter-havoc"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1246167",
+        "name:사냥"
+      ],
+      "demonhunter-havoc": [
+        "id:452415",
+        "name:악마의 격화",
+        "name:사냥"
+      ],
+      "demonhunter-vengeance": [
+        "name:사냥"
+      ]
+    },
+    "kind": "수치"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "heroTree": {
+      "en": "Void-Scarred",
+      "ko": "공허상흔"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Violent Transformation now resets the cooldown of Soul Immolation.",
+    "ko": "격렬한 변신이 이제 영혼 제물의 재사용 대기시간을 초기화합니다.",
+    "spellIds": [
+      "452409",
+      "1241937"
+    ],
+    "skillNamesKo": [
+      "격렬한 변신",
+      "영혼 제물"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "otherGuideHits": [
+      "demonhunter-havoc"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1241937",
+        "name:영혼 제물"
+      ],
+      "demonhunter-havoc": [
+        "id:452409",
+        "name:격렬한 변신"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "heroTree": {
+      "en": "Void-Scarred",
+      "ko": "공허상흔"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Violent Transformation no longer resets the cooldown of The Hunt.",
+    "ko": "격렬한 변신이 이제 사냥의 재사용 대기시간을 초기화하지 않습니다.",
+    "spellIds": [
+      "452409",
+      "1246167"
+    ],
+    "skillNamesKo": [
+      "격렬한 변신",
+      "사냥"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "otherGuideHits": [
+      "demonhunter-havoc"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1246167",
+        "name:사냥"
+      ],
+      "demonhunter-havoc": [
+        "id:452409",
+        "name:격렬한 변신",
+        "name:사냥"
+      ],
+      "demonhunter-vengeance": [
+        "name:사냥"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "heroTree": {
+      "en": "Void-Scarred",
+      "ko": "공허상흔"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Violent Transformation no longer increases the damage of The Hunt (was 25%) or causes it to reset the cooldown of Soul Immolation.",
+    "ko": "격렬한 변신이 이제 사냥의 공격력을 증가시키거나(기존 25% 증가) 사냥이 영혼 제물의 재사용 대기시간을 초기화하게 하지 않습니다.",
+    "spellIds": [
+      "452409",
+      "1246167",
+      "1241937"
+    ],
+    "skillNamesKo": [
+      "격렬한 변신",
+      "사냥",
+      "영혼 제물"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "otherGuideHits": [
+      "demonhunter-havoc"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1246167",
+        "id:1241937",
+        "name:사냥",
+        "name:영혼 제물"
+      ],
+      "demonhunter-havoc": [
+        "id:452409",
+        "name:격렬한 변신",
+        "name:사냥"
+      ],
+      "demonhunter-vengeance": [
+        "name:사냥"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "heroTree": {
+      "en": "Void-Scarred",
+      "ko": "공허상흔"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Monster Rising now increases Intellect by 10% while not in demon form (was 15%).",
+    "ko": "괴물의 각성이 이제 악마 형상이 아닐 때 지능을 10%만큼 증가시킵니다. (기존 15%)",
+    "spellIds": [
+      "452414"
+    ],
+    "skillNamesKo": [
+      "괴물의 각성"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "guideMatchBasis": {},
+    "kind": "수치",
+    "guideNote": "demonhunter-devourer 원고에 해당 ID·이름 언급 없음(전문화 가이드로만 연결)"
+  },
+  {
+    "class": "DemonHunter",
+    "spec": {
+      "en": "Devourer",
+      "ko": "포식"
+    },
+    "heroTree": {
+      "en": "Void-Scarred",
+      "ko": "공허상흔"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Monster Rising now increases Collapsing Star damage by 20% (was 15%).",
+    "ko": "괴물의 각성이 이제 붕괴하는 별의 공격력을 20%만큼 증가시킵니다. (기존 15%)",
+    "spellIds": [
+      "452414",
+      "1221167"
+    ],
+    "skillNamesKo": [
+      "괴물의 각성",
+      "붕괴하는 별"
+    ],
+    "guideIds": [
+      "demonhunter-devourer"
+    ],
+    "guideMatchBasis": {
+      "demonhunter-devourer": [
+        "id:1221167",
+        "name:붕괴하는 별"
+      ],
+      "demonhunter-havoc": [
+        "name:붕괴하는 별"
+      ],
+      "demonhunter-vengeance": [
+        "name:붕괴하는 별"
+      ]
+    },
+    "kind": "수치"
+  },
+  {
+    "class": "Druid",
+    "spec": {
+      "en": "Restoration",
+      "ko": "회복"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Nature's Bounty has been redesigned – Regrowth heals up to 3 allies with Rejuvenation active for 15% of its healing, prioritizing allies with the lowest health.",
+    "ko": "자연의 선물 개편 - 재생이 회복이 활성화된 아군 최대 3명을 치유량의 15%만큼 치유합니다. 생명력이 가장 낮은 아군을 우선 치유합니다.",
+    "spellIds": [
+      "8936",
+      "774"
+    ],
+    "skillNamesKo": [
+      "재생",
+      "회복"
+    ],
+    "guideIds": [
+      "druid-restoration"
+    ],
+    "otherGuideHits": [
+      "druid-balance",
+      "druid-feral",
+      "druid-guardian"
+    ],
+    "guideMatchBasis": {
+      "druid-balance": [
+        "id:8936"
+      ],
+      "druid-feral": [
+        "id:8936",
+        "name:회복"
+      ],
+      "druid-guardian": [
+        "id:8936",
+        "name:재생",
+        "name:회복"
+      ],
+      "druid-restoration": [
+        "id:8936",
+        "id:774",
+        "name:자연의 선물",
+        "name:재생",
+        "name:회복"
+      ]
+    },
+    "unmatchedInKb": [
+      "자연의 선물 (Nature's Bounty)"
+    ],
+    "kind": "메커니즘"
+  },
+  {
+    "class": "Evoker",
+    "spec": {
+      "en": "Augmentation",
+      "ko": "증강"
+    },
+    "heroTree": {
+      "en": "Chronowarden",
+      "ko": "시간 감시자"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Temporality duration is now increased by Mastery: Timewalker.",
+    "ko": "이제 시간성의 지속시간이 특화: 시간여행단으로 증가합니다.",
+    "spellIds": [
+      "406380"
+    ],
+    "skillNamesKo": [
+      "특화: 시간여행단"
+    ],
+    "guideIds": [
+      "evoker-augmentation"
+    ],
+    "guideMatchBasis": {},
+    "unmatchedInKb": [
+      "시간성 (Temporality)"
+    ],
+    "kind": "메커니즘",
+    "guideNote": "evoker-augmentation 원고에 해당 ID·이름 언급 없음(전문화 가이드로만 연결)"
+  },
+  {
+    "class": "Evoker",
+    "spec": {
+      "en": "Augmentation",
+      "ko": "증강"
+    },
+    "heroTree": {
+      "en": "Chronowarden",
+      "ko": "시간 감시자"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Temporal Burst duration is now increased by Mastery: Timewalker.",
+    "ko": "이제 시간의 폭발의 지속시간이 특화: 시간여행단으로 증가합니다.",
+    "spellIds": [
+      "431695",
+      "406380"
+    ],
+    "skillNamesKo": [
+      "시간의 폭발",
+      "특화: 시간여행단"
+    ],
+    "guideIds": [
+      "evoker-augmentation"
+    ],
+    "otherGuideHits": [
+      "evoker-preservation"
+    ],
+    "guideMatchBasis": {
+      "evoker-augmentation": [
+        "id:431695",
+        "name:시간의 폭발"
+      ],
+      "evoker-preservation": [
+        "id:431695",
+        "name:시간의 폭발"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "Evoker",
+    "spec": {
+      "en": "Augmentation",
+      "ko": "증강"
+    },
+    "heroTree": {
+      "en": "Scalecommander",
+      "ko": "비늘사령관"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Melt Armor damage increased by 100%.",
+    "ko": "방어구 녹이기의 공격력이 100%만큼 증가했습니다.",
+    "spellIds": [
+      "441176"
+    ],
+    "skillNamesKo": [
+      "방어구 녹이기"
+    ],
+    "guideIds": [
+      "evoker-augmentation"
+    ],
+    "otherGuideHits": [
+      "evoker-devastation"
+    ],
+    "guideMatchBasis": {
+      "evoker-devastation": [
+        "id:441176",
+        "name:방어구 녹이기"
+      ]
+    },
+    "kind": "수치",
+    "guideNote": "evoker-augmentation 원고에 해당 ID·이름 언급 없음(전문화 가이드로만 연결)"
+  },
+  {
+    "class": "Evoker",
+    "spec": {
+      "en": "Preservation",
+      "ko": "보존"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Merithra's Blessing duration reduced to 30 seconds (was 1 minute).",
+    "ko": "메리스라의 축복 지속시간이 30초로 감소했습니다. (기존 1분)",
+    "spellIds": [
+      "1256577",
+      "1256581"
+    ],
+    "skillNamesKo": [
+      "메리스라의 축복"
+    ],
+    "guideIds": [
+      "evoker-preservation"
+    ],
+    "guideMatchBasis": {
+      "evoker-preservation": [
+        "id:1256581",
+        "name:메리스라의 축복"
+      ]
+    },
+    "kind": "수치"
+  },
+  {
+    "class": "Evoker",
+    "spec": {
+      "en": "Preservation",
+      "ko": "보존"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Consume Flame no longer double dips from healing increases on the target.",
+    "ko": "화염 흡수가 이제 대상에게 걸린 치유량 증가의 효과를 2배로 받지 않습니다.",
+    "spellIds": [
+      "444088"
+    ],
+    "skillNamesKo": [
+      "화염 흡수"
+    ],
+    "guideIds": [
+      "evoker-preservation"
+    ],
+    "otherGuideHits": [
+      "evoker-devastation"
+    ],
+    "guideMatchBasis": {
+      "evoker-devastation": [
+        "id:444088",
+        "name:화염 흡수"
+      ],
+      "evoker-preservation": [
+        "id:444088",
+        "name:화염 흡수"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "Evoker",
+    "spec": {
+      "en": "Preservation",
+      "ko": "보존"
+    },
+    "heroTree": {
+      "en": "Chronowarden",
+      "ko": "시간 감시자"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where extending Fire Breath with Double-time could cause Life-Giver's Flame to stop healing.",
+    "ko": "시시각각으로 불의 숨결을 연장하면 생명을 베푸는 자의 불꽃의 치유가 중단되던 문제를 수정하였습니다.",
+    "spellIds": [
+      "357208",
+      "431874",
+      "371426"
+    ],
+    "skillNamesKo": [
+      "불의 숨결",
+      "시시각각",
+      "생명을 베푸는 자의 불꽃"
+    ],
+    "guideIds": [
+      "evoker-preservation"
+    ],
+    "otherGuideHits": [
+      "evoker-augmentation",
+      "evoker-devastation"
+    ],
+    "guideMatchBasis": {
+      "evoker-augmentation": [
+        "id:357208",
+        "id:431874",
+        "name:불의 숨결",
+        "name:시시각각"
+      ],
+      "evoker-devastation": [
+        "id:357208",
+        "name:불의 숨결"
+      ],
+      "evoker-preservation": [
+        "id:357208",
+        "name:불의 숨결",
+        "name:생명을 베푸는 자의 불꽃"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Evoker",
+    "spec": {
+      "en": "Preservation",
+      "ko": "보존"
+    },
+    "heroTree": {
+      "en": "Chronowarden",
+      "ko": "시간 감시자"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where Afterimage was causing Deep Breath to sometimes cast Living Flame on the Evoker.",
+    "ko": "잔상이 간혹 깊은 숨결이 기원사에게 살아있는 불꽃을 시전하게 하던 문제를 수정하였습니다.",
+    "spellIds": [
+      "431875",
+      "357210",
+      "361469"
+    ],
+    "skillNamesKo": [
+      "잔상",
+      "깊은 숨결",
+      "살아있는 불꽃"
+    ],
+    "guideIds": [
+      "evoker-preservation"
+    ],
+    "otherGuideHits": [
+      "evoker-augmentation",
+      "evoker-devastation"
+    ],
+    "guideMatchBasis": {
+      "evoker-augmentation": [
+        "id:431875",
+        "id:361469",
+        "name:잔상",
+        "name:깊은 숨결",
+        "name:살아있는 불꽃"
+      ],
+      "evoker-devastation": [
+        "id:357210",
+        "id:361469",
+        "name:깊은 숨결",
+        "name:살아있는 불꽃"
+      ],
+      "evoker-preservation": [
+        "id:431875",
+        "id:357210",
+        "id:361469",
+        "name:잔상",
+        "name:살아있는 불꽃"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Evoker",
+    "spec": {
+      "en": "Preservation",
+      "ko": "보존"
+    },
+    "heroTree": {
+      "en": "Flameshaper",
+      "ko": "불꽃형성자"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Consume Flame healing increased by 20%.",
+    "ko": "화염 흡수의 치유량이 20%만큼 증가했습니다.",
+    "spellIds": [
+      "444088"
+    ],
+    "skillNamesKo": [
+      "화염 흡수"
+    ],
+    "guideIds": [
+      "evoker-preservation"
+    ],
+    "otherGuideHits": [
+      "evoker-devastation"
+    ],
+    "guideMatchBasis": {
+      "evoker-devastation": [
+        "id:444088",
+        "name:화염 흡수"
+      ],
+      "evoker-preservation": [
+        "id:444088",
+        "name:화염 흡수"
+      ]
+    },
+    "kind": "수치"
+  },
+  {
+    "class": "Hunter",
+    "spec": {
+      "en": "Marksmanship",
+      "ko": "사격"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "New Talent: Blood Fletching – Aimed Shot critical strikes now cause the Master Marksman bleed effect at 20% of the damage dealt. For 4 seconds after a critical Aimed Shot, the target will take additional bleed damage any time your abilities damage that target.",
+    "ko": "새로운 특성: 피의 깃 - 조준 사격이 치명타로 적중하면 사격의 명수가 입힌 피해의 20%에 해당하는 출혈 효과를 부여합니다. 조준 사격이 치명타로 적중한 후 4초 동안 대상에게 능력으로 피해를 입힐 때마다 대상은 추가로 출혈 피해를 입습니다.",
+    "spellIds": [
+      "19434",
+      "260309"
+    ],
+    "skillNamesKo": [
+      "조준 사격",
+      "사격의 명수"
+    ],
+    "guideIds": [
+      "hunter-marksmanship"
+    ],
+    "guideMatchBasis": {
+      "hunter-marksmanship": [
+        "id:19434",
+        "name:조준 사격"
+      ]
+    },
+    "unmatchedInKb": [
+      "피의 깃 (Blood Fletching)"
+    ],
+    "kind": "신규"
+  },
+  {
+    "class": "Hunter",
+    "spec": {
+      "en": "Marksmanship",
+      "ko": "사격"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where Explosive Shot would automatically select and fire at a nearby target if pressed without a target currently selected.",
+    "ko": "대상을 선택하지 않은 상태로 폭발 사격을 누르면 자동으로 주위의 대상이 선택되고 폭발 사격이 발사되던 문제를 수정하였습니다.",
+    "spellIds": [
+      "212431"
+    ],
+    "skillNamesKo": [
+      "폭발 사격"
+    ],
+    "guideIds": [
+      "hunter-marksmanship"
+    ],
+    "guideMatchBasis": {
+      "hunter-marksmanship": [
+        "id:212431",
+        "name:폭발 사격"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Hunter",
+    "spec": {
+      "en": "Marksmanship",
+      "ko": "사격"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Unload has been removed.",
+    "ko": "쏟아내기가 삭제되었습니다.",
+    "spellIds": [
+      "1277548"
+    ],
+    "skillNamesKo": [
+      "쏟아내기"
+    ],
+    "guideIds": [
+      "hunter-marksmanship"
+    ],
+    "guideMatchBasis": {
+      "hunter-marksmanship": [
+        "name:쏟아내기"
+      ]
+    },
+    "kind": "삭제"
+  },
+  {
+    "class": "Hunter",
+    "spec": {
+      "en": "Marksmanship",
+      "ko": "사격"
+    },
+    "heroTree": {
+      "en": "Dark Ranger",
+      "ko": "어둠 순찰자"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where Umbral Reach was not generating Trick Shots when Bleak Powder hit exactly 2 targets.",
+    "ko": "황폐의 화약이 딱 2마리의 대상에게 명중했을 때 암영의 영역이 교묘한 사격을 생성하지 않던 문제를 수정하였습니다.",
+    "spellIds": [
+      "1235397",
+      "257621",
+      "257622",
+      "467911"
+    ],
+    "skillNamesKo": [
+      "암영의 영역",
+      "교묘한 사격",
+      "황폐의 화약"
+    ],
+    "guideIds": [
+      "hunter-marksmanship"
+    ],
+    "otherGuideHits": [
+      "hunter-beastmastery"
+    ],
+    "guideMatchBasis": {
+      "hunter-beastmastery": [
+        "id:1235397",
+        "id:467911",
+        "name:암영의 영역",
+        "name:황폐의 화약"
+      ],
+      "hunter-marksmanship": [
+        "id:257622",
+        "name:교묘한 사격"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Hunter",
+    "spec": {
+      "en": "Survival",
+      "ko": "생존"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where Strike as One bonus damage from Raptor Swipe (Rank 3) did not properly work while Aspect of the Eagle was active.",
+    "ko": "랩터의 휩쓸기(3 등급)가 부여하는 한마음 한뜻으로 보너스 공격력이, 독수리의 상이 활성화되어 있을 때 정상적으로 적용되지 않던 문제를 수정하였습니다.",
+    "spellIds": [
+      "1251717",
+      "1251779",
+      "1259003",
+      "1259017",
+      "1259019",
+      "1262293",
+      "186289"
+    ],
+    "skillNamesKo": [
+      "한마음 한뜻으로",
+      "랩터의 휩쓸기",
+      "독수리의 상"
+    ],
+    "guideIds": [
+      "hunter-survival"
+    ],
+    "guideMatchBasis": {
+      "hunter-survival": [
+        "id:1251717",
+        "id:1259003",
+        "id:1259019",
+        "id:1262293",
+        "id:186289",
+        "name:한마음 한뜻으로",
+        "name:랩터의 휩쓸기",
+        "name:독수리의 상"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Hunter",
+    "spec": {
+      "en": "Survival",
+      "ko": "생존"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where Raptor Swipe had a longer range than intended while Aspect of the Eagle was active.",
+    "ko": "독수리의 상이 활성화되어 있는 동안 랩터의 휩쓸기의 사거리가 의도보다 길던 문제를 수정하였습니다.",
+    "spellIds": [
+      "1259003",
+      "1259017",
+      "1259019",
+      "1262293",
+      "186289"
+    ],
+    "skillNamesKo": [
+      "랩터의 휩쓸기",
+      "독수리의 상"
+    ],
+    "guideIds": [
+      "hunter-survival"
+    ],
+    "guideMatchBasis": {
+      "hunter-survival": [
+        "id:1259003",
+        "id:1259019",
+        "id:1262293",
+        "id:186289",
+        "name:랩터의 휩쓸기",
+        "name:독수리의 상"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Mage",
+    "spec": {
+      "en": "Arcane",
+      "ko": "비전"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Several Arcane spells have been added to the Spell Density system for additional visibility options for non-Mage players.",
+    "ko": "몇몇 비전 주문이 주문 밀도 시스템에 추가되어, 마법사가 아닌 플레이어들이 가시성을 조정할 수 있게 됩니다.",
+    "spellIds": [],
+    "skillNamesKo": [],
+    "guideIds": [
+      "mage-arcane"
+    ],
+    "guideMatchBasis": {},
+    "kind": "시각 효과",
+    "guideNote": "mage-arcane 원고에 해당 ID·이름 언급 없음(전문화 가이드로만 연결)"
+  },
+  {
+    "class": "Mage",
+    "spec": {
+      "en": "Frost",
+      "ko": "냉기"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where Splitting Ice's damage modifier would not apply to Frostbolt, causing both Frostbolts to hit for full damage.",
+    "ko": "갈라지는 얼음의 피해 보정이 얼음 화살에 적용되지 않아, 얼음 화살 2개가 모두 온전한 피해를 주던 문제를 수정하였습니다.",
+    "spellIds": [
+      "56377",
+      "116"
+    ],
+    "skillNamesKo": [
+      "갈라지는 얼음",
+      "얼음 화살"
+    ],
+    "guideIds": [
+      "mage-frost"
+    ],
+    "guideMatchBasis": {
+      "mage-frost": [
+        "id:116",
+        "name:갈라지는 얼음",
+        "name:얼음 화살"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Mage",
+    "spec": {
+      "en": "Frost",
+      "ko": "냉기"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where casting a Frostfire Bolt and then switching to Spellslinger Hero Specialization would cause Frostbolt to have the Splitting Ice damage multiplier apply to the main target in addition to the secondary target.",
+    "ko": "얼음불꽃 화살을 시전한 후 주문술사로 영웅 전문화를 변경하면, 얼음 화살이 부가 대상뿐만 아니라 주 대상에게도 갈라지는 얼음의 피해 보정을 적용하던 문제를 수정하였습니다.",
+    "spellIds": [
+      "431044",
+      "56377",
+      "116"
+    ],
+    "skillNamesKo": [
+      "얼음불꽃 화살",
+      "갈라지는 얼음",
+      "얼음 화살"
+    ],
+    "guideIds": [
+      "mage-frost"
+    ],
+    "otherGuideHits": [
+      "mage-fire"
+    ],
+    "guideMatchBasis": {
+      "mage-fire": [
+        "id:431044",
+        "name:얼음불꽃 화살"
+      ],
+      "mage-frost": [
+        "id:431044",
+        "id:116",
+        "name:얼음불꽃 화살",
+        "name:갈라지는 얼음",
+        "name:얼음 화살"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Mage",
+    "spec": {
+      "en": "Frost",
+      "ko": "냉기"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where a Splitting Ice Frostbolt had a smaller search radius for its second target than other spells.",
+    "ko": "갈라지는 얼음의 얼음 화살이 두 번째 대상을 탐색하는 반경이 다른 주문들보다 작던 문제를 수정하였습니다.",
+    "spellIds": [
+      "56377",
+      "116"
+    ],
+    "skillNamesKo": [
+      "갈라지는 얼음",
+      "얼음 화살"
+    ],
+    "guideIds": [
+      "mage-frost"
+    ],
+    "guideMatchBasis": {
+      "mage-frost": [
+        "id:116",
+        "name:갈라지는 얼음",
+        "name:얼음 화살"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Mage",
+    "spec": {
+      "en": "Frost",
+      "ko": "냉기"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue with Shatter where if two Ice Lances were in the air at the same time, with the first benefitting from Fingers of Frost and the second not, neither would benefit from Fingers of Frost. This could also occur with Thermal Void, which is also fixed.",
+    "ko": "산산조각과 관련하여 얼음창 2개가 동시에 공중에 있고 첫 번째 얼음창은 서리의 손가락의 효과를 받고 두 번째는 받지 못해야 정상인 경우, 둘 다 서리의 손가락의 효과를 받지 못하던 문제를 수정하였습니다. 이 문제는 열기 동공과 관련해서도 발생했으며, 이 경우도 수정되었습니다.",
+    "spellIds": [
+      "1246769",
+      "30455",
+      "44544",
+      "112965",
+      "1247729",
+      "1247730"
+    ],
+    "skillNamesKo": [
+      "산산조각",
+      "얼음창",
+      "서리의 손가락",
+      "열기 동공"
+    ],
+    "guideIds": [
+      "mage-frost"
+    ],
+    "guideMatchBasis": {
+      "mage-frost": [
+        "id:1246769",
+        "id:30455",
+        "name:산산조각",
+        "name:얼음창",
+        "name:서리의 손가락",
+        "name:열기 동공"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Mage",
+    "spec": {
+      "en": "Frost",
+      "ko": "냉기"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue with Crystalline Refraction where interrupting Ray of Frost by casting Ray of Frost could cause it to not generate Fingers of Frost.",
+    "ko": "서리 광선을 시전하여 서리 광선 시전을 끊으면 결정화된 굴절이 서리의 손가락 중첩을 생성하지 않던 문제를 수정하였습니다.",
+    "spellIds": [
+      "1247544",
+      "205021",
+      "44544",
+      "112965"
+    ],
+    "skillNamesKo": [
+      "결정화된 굴절",
+      "서리 광선",
+      "서리의 손가락"
+    ],
+    "guideIds": [
+      "mage-frost"
+    ],
+    "guideMatchBasis": {
+      "mage-frost": [
+        "id:205021",
+        "name:결정화된 굴절",
+        "name:서리 광선",
+        "name:서리의 손가락"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Mage",
+    "spec": {
+      "en": "Frost",
+      "ko": "냉기"
+    },
+    "heroTree": {
+      "en": "Frostfire",
+      "ko": "서리불꽃"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue preventing Frostfire Empowerment's effects from applying to the second target when Frostfire Bolt hit a second target due to Splitting Ice.",
+    "ko": "얼음불꽃 화살이 갈라지는 얼음으로 인해 두 번째 대상에게 명중했을 때 서리불꽃 강화의 효과가 두 번째 대상에게 적용되지 않던 문제를 수정하였습니다.",
+    "spellIds": [
+      "431176",
+      "431044",
+      "56377"
+    ],
+    "skillNamesKo": [
+      "서리불꽃 강화",
+      "얼음불꽃 화살",
+      "갈라지는 얼음"
+    ],
+    "guideIds": [
+      "mage-frost"
+    ],
+    "otherGuideHits": [
+      "mage-fire"
+    ],
+    "guideMatchBasis": {
+      "mage-fire": [
+        "id:431176",
+        "id:431044",
+        "name:서리불꽃 강화",
+        "name:얼음불꽃 화살"
+      ],
+      "mage-frost": [
+        "id:431176",
+        "id:431044",
+        "name:서리불꽃 강화",
+        "name:얼음불꽃 화살",
+        "name:갈라지는 얼음"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Mage",
+    "spec": {
+      "en": "Frost",
+      "ko": "냉기"
+    },
+    "heroTree": {
+      "en": "Frostfire",
+      "ko": "서리불꽃"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Frostfire Infusion's tooltip has been updated, functionality unchanged.",
+    "ko": "서리불꽃 주입의 툴팁이 업데이트되었습니다. 기능에는 변동이 없습니다.",
+    "spellIds": [
+      "431166"
+    ],
+    "skillNamesKo": [
+      "서리불꽃 주입"
+    ],
+    "guideIds": [
+      "mage-frost"
+    ],
+    "guideMatchBasis": {
+      "mage-fire": [
+        "name:서리불꽃 주입"
+      ]
+    },
+    "kind": "시각 효과",
+    "guideNote": "mage-frost 원고에 해당 ID·이름 언급 없음(전문화 가이드로만 연결)"
+  },
+  {
+    "class": "Mage",
+    "spec": {
+      "en": "Frost",
+      "ko": "냉기"
+    },
+    "heroTree": {
+      "en": "Spellslinger",
+      "ko": "주문술사"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Splinterstorm is now trackable in the Cooldown Manager as a Buff.",
+    "ko": "쇄편폭풍을 이제 재사용 대기시간 관리자에서 강화 효과로 추적할 수 있습니다.",
+    "spellIds": [
+      "443783"
+    ],
+    "skillNamesKo": [
+      "쇄편폭풍"
+    ],
+    "guideIds": [
+      "mage-frost"
+    ],
+    "otherGuideHits": [
+      "mage-arcane"
+    ],
+    "guideMatchBasis": {
+      "mage-arcane": [
+        "id:443783",
+        "name:쇄편폭풍"
+      ],
+      "mage-frost": [
+        "id:443783",
+        "name:쇄편폭풍"
+      ]
+    },
+    "kind": "시각 효과"
+  },
+  {
+    "class": "Mage",
+    "spec": {
+      "en": "Frost",
+      "ko": "냉기"
+    },
+    "heroTree": {
+      "en": "Spellslinger",
+      "ko": "주문술사"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Splinterstorm is no longer removed on start of a raid encounter or Mythic+.",
+    "ko": "이제 공격대 인카운터나 신화+ 인카운터를 시작할 때 쇄편폭풍이 사라지지 않습니다.",
+    "spellIds": [
+      "443783"
+    ],
+    "skillNamesKo": [
+      "쇄편폭풍"
+    ],
+    "guideIds": [
+      "mage-frost"
+    ],
+    "otherGuideHits": [
+      "mage-arcane"
+    ],
+    "guideMatchBasis": {
+      "mage-arcane": [
+        "id:443783",
+        "name:쇄편폭풍"
+      ],
+      "mage-frost": [
+        "id:443783",
+        "name:쇄편폭풍"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "Monk",
+    "spec": "all",
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where Transcendence: Transfer could be used while silenced if talented into Transcendence: Linked Spirits.",
+    "ko": "해탈: 영혼 연결 특성을 찍은 경우 침묵 상태에서 해탈: 전환을 사용할 수 있었던 문제를 수정하였습니다.",
+    "spellIds": [
+      "119996"
+    ],
+    "skillNamesKo": [
+      "해탈: 전환"
+    ],
+    "guideIds": [
+      "monk-brewmaster",
+      "monk-mistweaver",
+      "monk-windwalker"
+    ],
+    "guideMatchBasis": {
+      "monk-brewmaster": [
+        "id:119996",
+        "name:해탈: 전환"
+      ],
+      "monk-mistweaver": [
+        "id:119996"
+      ],
+      "monk-windwalker": [
+        "id:119996"
+      ]
+    },
+    "unmatchedInKb": [
+      "해탈: 영혼 연결 (Transcendence: Linked Spirits)"
+    ],
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Priest",
+    "spec": {
+      "en": "Discipline",
+      "ko": "수양"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Master the Darkness duration reduced to 30 seconds (was 1 minute).",
+    "ko": "어둠 지배의 지속시간이 30초로 감소했습니다. (기존 1분)",
+    "spellIds": [
+      "1253590",
+      "1253591",
+      "1253827",
+      "1253845"
+    ],
+    "skillNamesKo": [
+      "어둠 지배"
+    ],
+    "guideIds": [
+      "priest-discipline"
+    ],
+    "guideMatchBasis": {
+      "priest-discipline": [
+        "id:1253591",
+        "id:1253827",
+        "name:어둠 지배"
+      ]
+    },
+    "kind": "수치"
+  },
+  {
+    "class": "Priest",
+    "spec": {
+      "en": "Holy",
+      "ko": "신성"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Holy Celerity and Ultimate Serenity have swapped positions on the specialization tree.",
+    "ko": "전문화 트리에서 신성한 기민함과 궁극의 평온의 위치가 맞바뀌었습니다.",
+    "spellIds": [
+      "1215275",
+      "1246517"
+    ],
+    "skillNamesKo": [
+      "신성한 기민함",
+      "궁극의 평온"
+    ],
+    "guideIds": [
+      "priest-holy"
+    ],
+    "guideMatchBasis": {
+      "priest-holy": [
+        "name:궁극의 평온"
+      ]
+    },
+    "kind": "메커니즘",
+    "devNoteEn": "Developers' notes: Ultimate Serenity is a powerful tool for Holy priests, specifically in M+. We are moving it up in the talent tree to reduce the amount of investment required for Holy priests to take it so that it enables more choice amongst talents beyond the second gate.",
+    "devNoteKo": "개발자의 한마디: 궁극의 평온은 특히 신화+에서 신성 사제에게 강력한 도구가 되어 줍니다. 이 특성을 특성 트리의 위쪽으로 옮겨, 신성 사제가 이 특성을 찍기 위해 투자해야 하는 점수를 줄이고 두 번째 관문 뒤에서 특성 선택의 여지를 넓혔습니다."
+  },
+  {
+    "class": "Rogue",
+    "spec": "all",
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Shiv no longer incorrectly plays an impact visual on the Rogue.",
+    "ko": "독칼이 이제 도적에게 올바르지 않은 충격 시각 효과를 재생하지 않습니다.",
+    "spellIds": [
+      "5938"
+    ],
+    "skillNamesKo": [
+      "독칼"
+    ],
+    "guideIds": [
+      "rogue-assassination",
+      "rogue-outlaw",
+      "rogue-subtlety"
+    ],
+    "guideMatchBasis": {
+      "rogue-assassination": [
+        "id:5938",
+        "name:독칼"
+      ],
+      "rogue-outlaw": [
+        "id:5938",
+        "name:독칼"
+      ],
+      "rogue-subtlety": [
+        "id:5938",
+        "name:독칼"
+      ]
+    },
+    "kind": "시각 효과"
+  },
+  {
+    "class": "Rogue",
+    "spec": {
+      "en": "Assassination",
+      "ko": "암살"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Mutilate has an updated weapon trail.",
+    "ko": "절단의 무기 궤적이 업데이트되었습니다.",
+    "spellIds": [
+      "1329"
+    ],
+    "skillNamesKo": [
+      "절단"
+    ],
+    "guideIds": [
+      "rogue-assassination"
+    ],
+    "guideMatchBasis": {
+      "rogue-assassination": [
+        "id:1329",
+        "name:절단"
+      ]
+    },
+    "kind": "시각 효과"
+  },
+  {
+    "class": "Rogue",
+    "spec": {
+      "en": "Assassination",
+      "ko": "암살"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Crimson Tempest animation has been updated and now has a weapon trail.",
+    "ko": "혈폭풍의 애니메이션이 업데이트되어 이제 무기 궤적이 표시됩니다.",
+    "spellIds": [
+      "1247227"
+    ],
+    "skillNamesKo": [
+      "혈폭풍"
+    ],
+    "guideIds": [
+      "rogue-assassination"
+    ],
+    "guideMatchBasis": {
+      "rogue-assassination": [
+        "id:1247227",
+        "name:혈폭풍"
+      ]
+    },
+    "kind": "시각 효과"
+  },
+  {
+    "class": "Rogue",
+    "spec": {
+      "en": "Outlaw",
+      "ko": "무법"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Deft Maneuvers has been updated – No longer increases Blade Flurry’s Energy cost by 30. Instead, it increases Blade Flurry’s Energy cost by 5 per target hit, up to 30.",
+    "ko": "날렵한 몸놀림이 업데이트되어, 이제 폭풍의 칼날의 기력 소모량을 30만큼 증가시키지 않습니다. 그 대신 폭풍의 칼날의 기력 소모량을 적중당한 대상 하나당 5씩, 최대 30만큼 증가시킵니다.",
+    "spellIds": [
+      "381878",
+      "13877"
+    ],
+    "skillNamesKo": [
+      "날렵한 몸놀림",
+      "폭풍의 칼날"
+    ],
+    "guideIds": [
+      "rogue-outlaw"
+    ],
+    "guideMatchBasis": {
+      "rogue-outlaw": [
+        "id:13877",
+        "name:날렵한 몸놀림",
+        "name:폭풍의 칼날"
+      ]
+    },
+    "kind": "수치",
+    "devNoteEn": "Developers’ notes: This change is intended to make it a little less expensive to maintain Blade Flurry when fighting small numbers of additional targets.",
+    "devNoteKo": "개발자의 한마디: 이 변경의 의도는, 소수의 추가 대상과 싸울 때 폭풍의 칼날을 유지하는 비용을 소폭 줄이는 것입니다."
+  },
+  {
+    "class": "Rogue",
+    "spec": {
+      "en": "Subtlety",
+      "ko": "잠행"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "All modifiers to Shadow damage and many Shadow damage abilities have been updated to resolve circumstances where damage bonuses could be applied incorrectly.",
+    "ko": "피해 보너스가 올바르지 않게 적용되던 상황을 해결하기 위해, 암흑 피해에 적용되는 모든 속성과 암흑 피해를 주는 많은 능력이 업데이트되었습니다.",
+    "spellIds": [
+      "280719",
+      "382511",
+      "121471",
+      "426591",
+      "382524"
+    ],
+    "skillNamesKo": [
+      "은밀한 기술",
+      "어둠에 물든 마무리 일격",
+      "어둠의 칼날",
+      "피아귀의 이빨",
+      "머무는 그림자"
+    ],
+    "guideIds": [
+      "rogue-subtlety"
+    ],
+    "guideMatchBasis": {
+      "rogue-subtlety": [
+        "id:280719",
+        "id:382511",
+        "id:121471",
+        "id:426591",
+        "id:382524",
+        "name:은밀한 기술",
+        "name:어둠에 물든 마무리 일격",
+        "name:어둠의 칼날",
+        "name:피아귀의 이빨",
+        "name:머무는 그림자"
+      ]
+    },
+    "unmatchedInKb": [
+      "그림자 복제 (Shadow Clone)"
+    ],
+    "kind": "메커니즘",
+    "devNoteEn": "Developers' notes: Shadow damage bonuses should now consistently apply to any individual Shadow damage abilities (e.g. Secret Technique’s secondary hits, Shadowed Finishers attacks, and Shadow Cloned attacks). Effects that deal Shadow damage based on how much damage attacks dealt (e.g. Shadow Blades’ effect, Goremaw’s Bite mirror damage effect, and Lingering Shadow) should now benefit correctly when the input attacks are physical and no longer double dip when the input attacks are Shadow. The impact these changes will have on overall damage output remains under review.",
+    "devNoteKo": "개발자의 한마디: 이제 암흑 피해 보너스가 개별적인 암흑 피해 능력(예: 은밀한 기술의 2차 적중, 어둠에 물든 마무리 일격 공격, 그림자 복제가 적용된 공격)에 일관적으로 적용됩니다. 이제 바탕이 되는 공격이 물리 공격일 때 공격이 준 피해에 따라 암흑 피해를 주는 능력들(예: 어둠의 칼날 효과, 피아귀의 이빨의 피해 반사 효과, 머무는 그림자)에 효과가 정상적으로 적용되고, 바탕이 되는 공격이 암흑 공격일 때 효과가 2배로 적용되지 않습니다. 저희는 이 변화가 전체 피해량에 미칠 영향을 검토하는 중입니다."
+  },
+  {
+    "class": "Rogue",
+    "spec": {
+      "en": "Subtlety",
+      "ko": "잠행"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Shadow Blades has an updated cast visual and weapon visual.",
+    "ko": "어둠의 칼날의 시전 시각 효과와 무기 시각 효과가 업데이트되었습니다.",
+    "spellIds": [
+      "121471"
+    ],
+    "skillNamesKo": [
+      "어둠의 칼날"
+    ],
+    "guideIds": [
+      "rogue-subtlety"
+    ],
+    "guideMatchBasis": {
+      "rogue-subtlety": [
+        "id:121471",
+        "name:어둠의 칼날"
+      ]
+    },
+    "kind": "시각 효과"
+  },
+  {
+    "class": "Rogue",
+    "spec": {
+      "en": "Subtlety",
+      "ko": "잠행"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "All ability damage increased by 14%.",
+    "ko": "모든 능력의 공격력이 14%만큼 증가했습니다.",
+    "spellIds": [],
+    "skillNamesKo": [],
+    "guideIds": [
+      "rogue-subtlety"
+    ],
+    "guideMatchBasis": {},
+    "kind": "수치",
+    "devNoteEn": "​Developers’ notes: We’re increasing Subtlety’s ability damage to compensate for the changes to Subtlety's Shadow damage modifiers and any occurrences where those modifiers were previously applying their effects more than once.",
+    "devNoteKo": "개발자의 한마디: 잠행 도적의 암흑 피해 속성들에 적용된 변경 내용과 그 속성들이 효과를 한 번 넘게 적용하고 있었던 상황들을 고려하여, 잠행의 능력 공격력을 상향 조정했습니다.",
+    "guideNote": "rogue-subtlety 원고에 해당 ID·이름 언급 없음(전문화 가이드로만 연결)"
+  },
+  {
+    "class": "Shaman",
+    "spec": {
+      "en": "Enhancement",
+      "ko": "고양"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where Static Accumulation could cause Maelstrom Weapon stacks to stop automatically generating if activated during certain points of Ascendance or Doom Winds being active.",
+    "ko": "승천이나 파멸의 바람의 특정 지점이 활성화된 상태에서 전하 축적이 소용돌이치는 무기 중첩이 자동으로 생성되는 것을 중단시키던 문제를 수정하였습니다.",
+    "spellIds": [
+      "384411",
+      "187880",
+      "114051",
+      "384352"
+    ],
+    "skillNamesKo": [
+      "전하 축적",
+      "소용돌이치는 무기",
+      "승천",
+      "파멸의 바람"
+    ],
+    "guideIds": [
+      "shaman-enhancement"
+    ],
+    "guideMatchBasis": {
+      "shaman-elemental": [
+        "name:승천"
+      ],
+      "shaman-enhancement": [
+        "id:187880",
+        "id:114051",
+        "id:384352",
+        "name:전하 축적",
+        "name:소용돌이치는 무기",
+        "name:승천",
+        "name:파멸의 바람"
+      ],
+      "shaman-restoration": [
+        "name:승천"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Shaman",
+    "spec": {
+      "en": "Restoration",
+      "ko": "복원"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Extending Riptide through Swelling Tides now causes Riptide's timer to extend rather than reset.",
+    "ko": "이제 너울대는 물결을 통해 성난 해일을 연장하면, 성난 해일의 타이머가 초기화되지 않고 연장됩니다.",
+    "spellIds": [
+      "61295",
+      "1312843"
+    ],
+    "skillNamesKo": [
+      "성난 해일",
+      "너울대는 물결"
+    ],
+    "guideIds": [
+      "shaman-restoration"
+    ],
+    "guideMatchBasis": {
+      "shaman-restoration": [
+        "id:61295",
+        "name:성난 해일",
+        "name:너울대는 물결"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "Shaman",
+    "spec": {
+      "en": "Restoration",
+      "ko": "복원"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Fixed an issue where Nature’s Swiftness and Ancestral Swiftness did not properly make Healing Rain instant cast.",
+    "ko": "자연의 신속함과 선조의 신속함이 치유의 비를 정상적으로 즉시 시전으로 만들지 않던 문제를 수정하였습니다.",
+    "spellIds": [
+      "378081",
+      "443454",
+      "73920"
+    ],
+    "skillNamesKo": [
+      "자연의 신속함",
+      "선조의 신속함",
+      "치유의 비"
+    ],
+    "guideIds": [
+      "shaman-restoration"
+    ],
+    "otherGuideHits": [
+      "shaman-elemental"
+    ],
+    "guideMatchBasis": {
+      "shaman-elemental": [
+        "id:443454",
+        "name:선조의 신속함"
+      ],
+      "shaman-restoration": [
+        "id:378081",
+        "id:443454",
+        "id:73920",
+        "name:자연의 신속함",
+        "name:선조의 신속함",
+        "name:치유의 비"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Warrior",
+    "spec": {
+      "en": "Protection",
+      "ko": "방어"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Execute damage increased by 30%.",
+    "ko": "마무리 일격의 공격력이 30%만큼 증가했습니다.",
+    "spellIds": [
+      "163201"
+    ],
+    "skillNamesKo": [
+      "마무리 일격"
+    ],
+    "guideIds": [
+      "warrior-protection"
+    ],
+    "otherGuideHits": [
+      "warrior-arms"
+    ],
+    "guideMatchBasis": {
+      "warrior-arms": [
+        "id:163201",
+        "name:마무리 일격"
+      ],
+      "warrior-fury": [
+        "name:마무리 일격"
+      ],
+      "warrior-protection": [
+        "id:163201",
+        "name:마무리 일격"
+      ]
+    },
+    "kind": "수치"
+  },
+  {
+    "class": "Warrior",
+    "spec": {
+      "en": "Protection",
+      "ko": "방어"
+    },
+    "heroTree": {
+      "en": "Colossus",
+      "ko": "거신"
+    },
+    "pvpOnly": false,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Practiced Strikes now has an additional effect – Execute and Revenge Rage cost reduced by 10.",
+    "ko": "숙련된 공격에 마무리 일격과 복수의 분노 소모량을 10만큼 감소시키는 효과가 추가됩니다.",
+    "spellIds": [
+      "429647",
+      "163201",
+      "6572"
+    ],
+    "skillNamesKo": [
+      "숙련된 공격",
+      "마무리 일격",
+      "복수"
+    ],
+    "guideIds": [
+      "warrior-protection"
+    ],
+    "otherGuideHits": [
+      "warrior-arms"
+    ],
+    "guideMatchBasis": {
+      "warrior-arms": [
+        "id:163201",
+        "name:숙련된 공격",
+        "name:마무리 일격"
+      ],
+      "warrior-fury": [
+        "name:마무리 일격",
+        "name:복수"
+      ],
+      "warrior-protection": [
+        "id:429647",
+        "id:163201",
+        "id:6572",
+        "name:숙련된 공격",
+        "name:마무리 일격",
+        "name:복수"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "Evoker",
+    "spec": {
+      "en": "Preservation",
+      "ko": "보존"
+    },
+    "pvpOnly": true,
+    "source": "notes",
+    "date": "2026-10-13",
+    "en": "Merithra's Blessing is now considered an Arcane spell, and can be cast when locked out of Nature.",
+    "ko": "메리스라의 축복이 이제 비전 주문으로 간주되어, 자연 주문을 사용할 수 없는 상황에서도 시전할 수 있습니다.",
+    "spellIds": [
+      "1256577",
+      "1256581"
+    ],
+    "skillNamesKo": [
+      "메리스라의 축복"
+    ],
+    "guideIds": [
+      "evoker-preservation"
+    ],
+    "guideMatchBasis": {
+      "evoker-preservation": [
+        "id:1256581",
+        "name:메리스라의 축복"
+      ]
+    },
+    "kind": "메커니즘"
+  },
+  {
+    "class": "Druid",
+    "spec": {
+      "en": "Guardian",
+      "ko": "수호"
+    },
+    "pvpOnly": false,
+    "source": "hotfix",
+    "date": "2026-10-14",
+    "en": "Fixed an issue causing Rebirth in Bear Form to have an incorrect mana cost.",
+    "ko": "곰 변신 상태에서 환생의 마나 소모량이 비정상적으로 적용되던 문제를 수정하였습니다.",
+    "spellIds": [
+      "20484",
+      "5487"
+    ],
+    "skillNamesKo": [
+      "환생",
+      "곰 변신"
+    ],
+    "guideIds": [
+      "druid-guardian"
+    ],
+    "otherGuideHits": [
+      "druid-balance",
+      "druid-feral",
+      "druid-restoration"
+    ],
+    "guideMatchBasis": {
+      "druid-balance": [
+        "id:20484",
+        "id:5487",
+        "name:환생"
+      ],
+      "druid-feral": [
+        "id:20484",
+        "id:5487",
+        "name:환생",
+        "name:곰 변신"
+      ],
+      "druid-guardian": [
+        "id:20484",
+        "id:5487",
+        "name:환생",
+        "name:곰 변신"
+      ],
+      "druid-restoration": [
+        "id:20484",
+        "id:5487",
+        "name:환생",
+        "name:곰 변신"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Druid",
+    "spec": {
+      "en": "Guardian",
+      "ko": "수호"
+    },
+    "pvpOnly": false,
+    "source": "hotfix",
+    "date": "2026-10-14",
+    "en": "Fixed an issue preventing the Bear Form version of Heart of the Wild from being cast.",
+    "ko": "곰 변신 버전의 야생의 정수를 시전할 수 없던 문제를 수정하였습니다.",
+    "spellIds": [
+      "5487"
+    ],
+    "skillNamesKo": [
+      "곰 변신"
+    ],
+    "guideIds": [
+      "druid-guardian"
+    ],
+    "otherGuideHits": [
+      "druid-balance",
+      "druid-feral",
+      "druid-restoration"
+    ],
+    "guideMatchBasis": {
+      "druid-balance": [
+        "id:5487"
+      ],
+      "druid-feral": [
+        "id:5487",
+        "name:곰 변신"
+      ],
+      "druid-guardian": [
+        "id:5487",
+        "name:곰 변신"
+      ],
+      "druid-restoration": [
+        "id:5487",
+        "name:곰 변신"
+      ]
+    },
+    "unmatchedInKb": [
+      "야생의 정수 (Heart of the Wild)"
+    ],
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Druid",
+    "spec": {
+      "en": "Guardian",
+      "ko": "수호"
+    },
+    "pvpOnly": false,
+    "source": "hotfix",
+    "date": "2026-10-14",
+    "en": "Fixed an issue causing Persistence to grant an incorrect amount of armor.",
+    "ko": "끈기가 비정상적인 방어도를 부여하던 문제를 수정하였습니다.",
+    "spellIds": [
+      "1251406"
+    ],
+    "skillNamesKo": [
+      "끈기"
+    ],
+    "guideIds": [
+      "druid-guardian"
+    ],
+    "guideMatchBasis": {
+      "druid-feral": [
+        "name:끈기"
+      ],
+      "druid-guardian": [
+        "id:1251406",
+        "name:끈기"
+      ]
+    },
+    "kind": "버그 수정"
+  },
+  {
+    "class": "Druid",
+    "spec": {
+      "en": "Restoration",
+      "ko": "회복"
+    },
+    "pvpOnly": false,
+    "source": "hotfix",
+    "date": "2026-10-14",
+    "en": "Fixed an issue where Nature's Bounty could cause Abundance to fall off the Druid early.",
+    "ko": "자연의 선물이 드루이드의 풍요를 일찍 감쇠시킬 수 있던 문제를 수정하였습니다.",
+    "spellIds": [
+      "207383"
+    ],
+    "skillNamesKo": [
+      "풍요"
+    ],
+    "guideIds": [
+      "druid-restoration"
+    ],
+    "guideMatchBasis": {
+      "druid-restoration": [
+        "id:207383",
+        "name:자연의 선물",
+        "name:풍요"
+      ]
+    },
+    "unmatchedInKb": [
+      "자연의 선물 (Nature's Bounty)"
+    ],
+    "kind": "버그 수정"
+  }
+]

@@ -9,7 +9,7 @@ assert.equal(report.fights.length,11);
 assert.equal(byKey.size,11);
 assert.equal(subjects.length,5);
 assert.equal(new Set(subjects.map(f => f.encounter)).size,5);
-assert.equal(report.patch,'12.1');
+assert.ok(['12.1', '12.1.5'].includes(report.patch));
 for (const f of report.fights) {
   assert(/^[A-Za-z0-9]{16}$/.test(f.code));
   assert(f.actor>0 && f.fight>0 && f.duration>0 && f.hps>0);

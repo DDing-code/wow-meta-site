@@ -1,0 +1,519 @@
+News & Guides
+Download App Discord Webhook Home
+World of Warcraft
+← Go Back World of Warcraft WoW Forever WoW Classic TBC Classic WotLK Classic Cata Classic MoP Classic
+Diablo
+← Go Back Diablo IV Diablo III Diablo II
+Final Fantasy XIV
+Gacha
+← Go Back Genshin Impact Honkai: Star Rail Zenless Zone Zero Arknights: Endfield Neverness to Everness Honkai: Nexus Anima
+More Games
+← Go Back Path of Exile 2 Path of Exile Chrono Odyssey Monster Hunter Wilds Heroes of the Storm All.gg
+Class Guides
+← Go Back View all General
+  - Simming Your Character
+  - Healing Guide
+  - Tanking Guide
+  - Set Up your UI
+  - PvE Gearing Guide
+Death Knight
+  - Death Knight Guide
+  - Blood
+  - Frost
+  - Unholy
+Demon Hunter
+  - Demon Hunter Guide
+  - Devourer
+  - Havoc
+  - Vengeance
+Druid
+  - Druid Guide
+  - Balance
+  - Feral
+  - Guardian
+  - Restoration
+Evoker
+  - Evoker Guide
+  - Augmentation
+  - Devastation
+  - Preservation
+Hunter
+  - Hunter Guide
+  - Beast Mastery
+  - Marksmanship
+  - Survival
+Mage
+  - Mage Guide
+  - Arcane
+  - Fire
+  - Frost
+Monk
+  - Monk Guide
+  - Brewmaster
+  - Mistweaver
+  - Windwalker
+Paladin
+  - Paladin Guide
+  - Holy
+  - Protection
+  - Retribution
+Priest
+  - Priest Guide
+  - Discipline
+  - Holy
+  - Shadow
+Rogue
+  - Rogue Guide
+  - Assassination
+  - Outlaw
+  - Subtlety
+Shaman
+  - Shaman Guide
+  - Elemental
+  - Enhancement
+  - Restoration
+Warlock
+  - Warlock Guide
+  - Affliction
+  - Demonology
+  - Destruction
+Warrior
+  - Warrior Guide
+  - Arms
+  - Fury
+  - Protection
+Season 2 Content
+← Go Back View all General Dungeon Guides
+  - Midnight Dungeons Overview
+  - Follower Dungeons
+Midnight Season 2
+  - Mythic+ Season 2
+  - Venomous Abyss Raid
+  - Unbinding of Kithix Raid
+  - Delves Season 2
+  - PvP Season 2
+  - Glory Raid Achievement
+  - Tier Sets Season 2
+Season 2 Features
+  - Season 2 Overview
+  - Voidforge (Bonus Rolls)
+  - Void Assaults
+  - Field Accolades
+  - Showdown Areas
+  - Omnium Folio
+  - The Coiled Isle
+  - Vaults of Atal'Utek
+Tier Lists
+← Go Back View all Mythic+ Tier Lists
+  - DPS Tier List
+  - Tank Tier List
+  - Healer Tier List
+Raiding Tier Lists
+  - DPS Tier List
+  - Tank Tier List
+  - Healer Tier List
+PvP Tier Lists
+  - DPS Tier List
+  - Healer Tier List
+Midnight Guides
+← Go Back View all Midnight Expansion Guides
+  - Midnight Overview
+  - Weekly To-Do List
+  - Catalyst Guide
+  - Great Vault
+  - Gear Upgrading
+  - Mounts In Midnight
+  - Prey System
+  - Renown Overview
+  - Trading Post
+  - World Bosses
+  - World Events
+  - Zone Overview
+'The Promise of Tomorrow' Update NEW!
+  - Patch 12.1.5 Hub
+  - Labyrinth of Kindo'jan
+  - Kindo'Jan Nemesis Boss
+  - Aqir Invasions
+Professions
+← Go Back View all Midnight Professions
+  - Profession Overview
+  - Crafting Orders/Recrafting
+  - Spark Crafting Guide
+  - Making Gold with Crafting
+  - Crafting Stats and Equipment
+Profession Leveling and Gold Making Guides
+  - Alchemy
+  - Blacksmithing
+  - Cooking
+  - Enchanting
+  - Engineering
+  - Fishing
+  - Herbalism
+  - Inscription
+  - Jewelcrafting
+  - Leatherworking
+  - Mining
+  - Skinning
+  - Tailoring
+General Info
+← Go Back View all Recurring Events
+  - Darkmoon Faire
+  - Legion Mage Tower Challenges
+  - Turbulent Timeways
+  - A Greedy Emissary
+Tools
+  - Talent Calculator
+  - Ping System Update NEW!
+Other Information
+  - Transmog Guide
+  - Books and Novels
+  - Player Housing
+PvP Discord Webhook Go Ad Free
+Home / World of Warcraft / Hunter / Marksmanship Hunter / Rotation
+12.1.5
+## Marksmanship Hunter DPS Rotation, Cooldowns, and Abilities — 12.1.5
+Hunter
+  - Death Knight
+  - Demon Hunter
+  - Druid
+  - Evoker
+  - Hunter
+  - Mage
+  - Monk
+  - Paladin
+  - Priest
+  - Rogue
+  - Shaman
+  - Warlock
+  - Warrior
+Marksmanship
+  - Beast Mastery
+  - Marksmanship
+  - Survival
+Rotation
+  - Overview
+  - Leveling
+  - Easy Mode
+  - Talents
+  - Rotation
+  - Gear
+  - Stats
+  - Enchants
+  - Mythic+
+  - Macros
+  - Pets
+Last Updated: Oct 14, 2026 - 2:11 PM (4d ago)
+Azortharion
+Support Our Writers
+NEW! Icy Veins News Webhook for Discord Icy Veins news articles directly into a channel on your server! Get Discord Webhook
+NEW! The Icy Veins app is here Try out the WoW Class Codex Addon with the Icy Veins app Download App
+  - Overview
+  - Leveling
+  - Easy Mode
+  - Talents
+  - Rotation
+  - Gear
+  - Stats
+  - Enchants
+  - Mythic+
+  - Macros
+  - Pets
+On this page, you will learn how to optimize the rotation of your Marksmanship Hunter in both single-target and multi-target situations. We also have advanced sections about cooldowns, procs, etc. in order to minmax your DPS. All our content is updated for World of Warcraft Patch 12.1.5.
+Table of Contents
+1. Marksmanship Hunter Gameplay and Rotation Guide 2. Midnight Season 2 Tier Set 3. Class and Spec Mechanics Explained 4. Important Cooldowns for Marksmanship Hunter
+1.
+## Marksmanship Hunter Gameplay and Rotation Guide
+Welcome to our Rotation page for Marksmanship Hunters. On this page, you will find everything you need to know about actually playing the spec in Raiding and Mythic+ scenarios.
+The rotation here, aside from the more concrete openers, is laid out in a conditional priority list. Essentially, for every single spell that you cast, you should cast the highest-priority spell you can, for which the conditions are met. After the spell is cast, you should start over from the top of the priority list, and repeat the process.
+The buttons below can be used to select between curated Single-Target and AoE/Mythic+ loadouts, with an extra Hydra Cleave loadout under Sentinel. You can also use the switches below to add or remove individual talents you may also be using.
+Dark Ranger
+Single Target
+AoE
+Sentinel
+Single Target
+best choice
+AoE
+best choice
+Hydra Cleave
+best choice
+Active Talents
+Passive Talents
+Explosive Shot
+Kill Shot
+Volley
+Unstable Trigger
+Tactical Reload
+Trick Shots
+Aspect of the Hydra
+Hunter Marksmanship 12.1 Class Set 4pc
+Deathblow
+Single-Target RotationAoE Rotation
+1.1.
+## Single-Target Opener for Marksmanship Hunter
+Ensure Hunter's Mark is active on your primary target.
+2.5s
+Pull
+2.5s
+Pull
+  - Aimed Shot around 2.5 seconds before combat begins.
+  - Black Arrow
+  - Explosive Shot
+  - Explosive Shot
+  - Volley
+  - Trueshot, alongside your Potion, on-use Trinket, Racials, etc.
+  - Aimed Shot
+  - Black Arrow
+  - Continue with the priority list as described below.
+  - Aimed Shot around 2.5 seconds before combat begins.
+  - Explosive Shot
+  - Explosive Shot
+  - Volley
+  - Trueshot, alongside your Potion, on-use Trinket, Racials, etc.
+  - Rapid Fire
+  - Arcane Shot
+  - Aimed Shot
+  - Arcane Shot
+  - Continue with the priority list as described below.
+1.2.
+## Single-Target Priority List for Marksmanship Hunter
+Below is the priority system that describes the optimal single-target rotation for Marksmanship Hunter.
+  - Cast Explosive Shot on cooldown. Thanks to Unstable Trigger, you can cast it twice in a row and should do so.
+  - Cast Explosive Shot on cooldown, unless Lock and Load is already up.
+  - Cast Volley on cooldown.
+  - Cast Trueshot on cooldown, holding the last one of the fight for 30 stacks of Bullseye. Delay it by up to 15 seconds if Explosive Shot is about to come off cooldown, so that you can send the Explos right before entering Trueshot.
+  -
+  Before you press Trueshot, swap to a target that does not already have Sentinel's Mark - Click for Details
+  Feathered Frenzy makes Trueshot apply Sentinel's Mark to whatever you have targeted when you press it, so pressing Trueshot on a target that is already marked wastes it.
+  - Cast Moonlight Chakram with around 5 seconds left on Trueshot.
+  - Cast Aimed Shot during Trueshot when you have no Precise Shots.
+  - Cast Aimed Shot during Trueshot when you have no Precise Shots and only one target is up.
+  - Cast Rapid Fire on cooldown if you have no Precise Shots to spend, or if Trueshot is up.
+  - Cast Rapid Fire on cooldown if you have no Precise Shots to spend, if Trueshot is up, or if more than one target is up.
+  - Cast Kill Shot to spend Precise Shots.
+  - Cast Kill Shot to spend Precise Shots whenever Deathblow procs.
+  - Cast Multi-Shot instead of Arcane Shot to spend Precise Shots on more than one target, unless you are focusing a priority target.
+  - Cast Arcane Shot to spend Precise Shots.
+  - Cast Aimed Shot on cooldown, preferring targets with Sentinel's Mark unless you are focusing a priority target.
+  - Cast Moonlight Chakram.
+  - Cast Steady Shot.
+  - Cast Black Arrow if you have Precise Shots.
+  - Cast Explosive Shot on cooldown. Thanks to Unstable Trigger, you can cast it twice in a row and should do so.
+  - Cast Explosive Shot on cooldown, unless Lock and Load is already up.
+  - Cast Volley on cooldown.
+  - Cast Aimed Shot during Trueshot with no Precise Shots if Black Arrow is ready, or if Aimed Shot is about to reach 2 charges.
+  - Cast Trueshot on cooldown, holding the last one of the fight for 30 stacks of Bullseye. Delay it by up to 15 seconds if Explosive Shot is about to come off cooldown, so that you can send the Explos right before entering Trueshot.
+  -
+  Before you press Trueshot, swap to a target that does not already have Spotter's Mark - Click for Details
+  Feathered Frenzy makes Trueshot apply Spotter's Mark to whatever you have targeted when you press it, so pressing Trueshot on a target that is already marked wastes it.
+  - Cast Rapid Fire on cooldown.
+  - Cast Wailing Arrow on cooldown.
+  - Cast Multi-Shot instead of Arcane Shot to spend Precise Shots on more than one target, unless you are focusing a priority target.
+  - Cast Arcane Shot to spend Precise Shots.
+  - Cast Aimed Shot on cooldown.
+  - Cast Black Arrow.
+  - Cast Steady Shot.
+1.3.
+## AoE Opener for Marksmanship Hunter
+Ensure Hunter's Mark is active on your primary target.
+2.5s
+Pull
+2.5s
+Pull
+  - Aimed Shot around 2.5 seconds before combat begins.
+  - Explosive Shot
+  - Volley
+  - Aimed Shot
+  - Black Arrow
+  - Trueshot, alongside your Potion, on-use Trinket, Racials, etc.
+  - Rapid Fire
+  - Aimed Shot
+  - Black Arrow
+  - Continue with the priority list as described below.
+  - Aimed Shot around 2.5 seconds before combat begins.
+  - Explosive Shot
+  - Explosive Shot on a second target
+  - Volley
+  - Trueshot, alongside your Potion, on-use Trinket, Racials, etc.
+  - Multi-Shot
+  - Rapid Fire
+  - Multi-Shot
+  - Aimed Shot
+  - Continue with the priority list as described below.
+Without Trick Shots, the single-target and AoE opener are the same, so please refer to the single-target section for more information!
+1.4.
+## AoE Priority List for Marksmanship Hunter
+Below is the priority system that describes the optimal AoE rotation for Marksmanship Hunter.
+Without Trick Shots, the single-target and AoE rotation are the same, so please refer to the single-target section for more information!
+Hydra Cleave is the raid cleave build: it grabs efficient AoE talents and performs a single-target rotation, spending Precise Shots on Multi-Shot from 2 targets up.
+  - Cast Explosive Shot. With Unstable Trigger, you can cast two in a row. Spread them across two targets unless there is a priority target up.
+  - Cast Explosive Shot, unless Lock and Load is already up.
+  - Cast Volley on cooldown.
+  - Cast Trueshot on cooldown, holding the last one of the fight for 30 stacks of Bullseye. Delay it by up to 15 seconds if Explosive Shot is about to come off cooldown, so that you can send the Explos right before entering Trueshot.
+  -
+  Before you press Trueshot, swap to a target that does not already have Sentinel's Mark - Click for Details
+  Feathered Frenzy makes Trueshot apply Sentinel's Mark to whatever you have targeted when you press it, so pressing Trueshot on a target that is already marked wastes it.
+  - Cast Moonlight Chakram if Trueshot is about to expire.
+  - Cast Multi-Shot to spend Precise Shots, or to activate Trick Shots if it is down. Use the Mouseover Multi-Shot macro on the Macros page for it. Always prefer to use it on targets that do not already have Sentinel's Mark.
+  - Cast Rapid Fire on cooldown with Trick Shots up.
+  - Cast Aimed Shot on cooldown with Trick Shots up, preferring targets with Sentinel's Mark unless you are focusing a priority target. The Trick Shots bounces only consume Sentinel's Mark if your primary target is marked as well.
+  - Cast Moonlight Chakram.
+  - Cast Steady Shot.
+  - Cast Explosive Shot. With Unstable Trigger, you can cast two in a row. Spread them across two targets unless there is a priority target up.
+  - Cast Explosive Shot, unless Lock and Load is already up.
+  - Cast Volley on cooldown.
+  - Cast Aimed Shot with Trick Shots up if it is about to reach 2 charges.
+  - Cast Black Arrow if you have Precise Shots.
+  - Cast Multi-Shot to activate Trick Shots if it is down.
+  - Cast Trueshot on cooldown, holding the last one of the fight for 30 stacks of Bullseye. Delay it by up to 15 seconds if Explosive Shot is about to come off cooldown, so that you can send the Explos right before entering Trueshot.
+  -
+  Before you press Trueshot, swap to a target that does not already have Spotter's Mark - Click for Details
+  Feathered Frenzy makes Trueshot apply Spotter's Mark to whatever you have targeted when you press it, so pressing Trueshot on a target that is already marked wastes it.
+  - Cast Rapid Fire with Trick Shots up.
+  - Cast Wailing Arrow if Black Arrow is not ready.
+  - Cast Multi-Shot to spend Precise Shots.
+  - Cast Aimed Shot on cooldown with Trick Shots up.
+  - Cast Black Arrow.
+  - Cast Steady Shot.
+2.
+## Midnight Season 2 Tier Set
+The Midnight Season 2 Tier Set has a subtle impact on our rotation. It will extend the duration (and therefore the damage) of your Explosive Shot, and cause those ticks to reduce the cooldown of Aimed Shot and Rapid Fire by 0.5s per tick. On two or more targets, since Unstable Trigger gives you two Explosive Shots back-to-back, we prefer to cast them on two different targets (unless there is a priority target up), because we want to maximize this cooldown reduction effect. The damage is the same as if we cast both on 1 target, but because the cooldown reduction scales with the number of ticks, it is better to spread them out.
+3.
+## Class and Spec Mechanics Explained
+In order to better explain the specific usage and benefits of the Marksmanship Hunter kit, we have compiled a more detailed explanation on individual parts of our rotation, from important rotational mechanics that you need to pay attention to, to cooldowns and how to use them, so you can reach your full potential when playing Marksmanship Hunter.
+Precise Shots "Take Aim" Apex Talents
+3.1.
+## Precise Shots
+Precise Shots is a buff that you get after casting Aimed Shot, and, via the No Scope talent, Rapid Fire as well.
+It makes Arcane Shot and Multi-Shot deal 50% more damage and cost 60% less Focus.
+Aside from wanting the damage and resource boosts, spending Precise Shots fuels our Spotter's Mark, which massively buffs Aimed Shot and Rapid Fire depending on talents, and even more so with Sentinel which has an empowered Sentinel's Mark.
+Because Precise Shots does not stack (or, more precisely, you cannot generate it twice without wasting some of it), we always want to spend our Precise Shots Spenders (henceforth called PS Spenders) before our next Aimed Shot. The easiest way to do this is simply to follow up every Aimed Shot with a PS Spender.
+Rapid Fire grants Precise Shots, so follow every Rapid Fire with a PS Spender as well. As Sentinel, also spend your Precise Shots before you cast Rapid Fire, unless Trueshot is up. As Dark Ranger, simply cast Rapid Fire on cooldown regardless.
+On AoE, this has the added convenience of activating Trick Shots right after spending it with those Aimeds and Rapids. By simply following up every single Aimed Shot and Rapid Fire with a Multi-Shot on AoE, we knock off two birds with one stone: Precise Shots is spent, and Trick Shots is activated.
+3.2.
+## "Take Aim" Apex Talents
+Take Aim makes Rapid Fire shave 5 seconds off Aimed Shot's cooldown over its channel time. With Aspect of the Hydra and a second target in range, that doubles to 10 seconds. Take Aim adds a second effect on top. Your Spotter's Mark now also increases the damage of your next Rapid Fire against the target by 20%, not just your next Aimed Shot. Neither one asks anything new of you. Both are "baked in" to the listed rotation above.
+Combat Information
+Talents and Gear
+Knowing how to play your rotation is only half the battle. Make sure to grab the best talent build for every situation, and check out which trinkets and other items are worth getting ASAP!
+TalentsGear
+4.
+## Important Cooldowns for Marksmanship Hunter
+Trueshot Volley
+4.1.
+## Trueshot
+Trueshot is our main cooldown. It has either a 90-second or 2-minute cooldown, depending on whether you choose Calling the Shots or Unerring Vision. It lasts 17 seconds. While active, it increases your critical strike chance by 10% and your critical strike damage by 20%, doubled if you took Unerring Vision, and it speeds up how fast your primary Aimed Shot and Rapid Fire cooldowns recover, while also quickening the cast time of the former.
+It also massively increases the chance of generating Spotter's Mark procs when we consume Precise Shots, and even activates Spotter's Mark for free when you press it.
+Trueshot simply makes us better at everything, and because the thing we do best is "lots of damage with Aimed Shot/ Rapid Fire", a very good rule of thumb is to always try to cast Trueshot right before a Rapid Fire. This ensures that we are spending as much time as possible in Trueshot casting our most powerful ability.
+On 5+ minute fights, you get to use two Potions, and they should not necessarily be the same one. Potion of Recklessness is your go-to/standard Potion. However, once Bullseye is stacking up in the execute phase of a fight, you already have a large amount of Critical Strike, so a second Potion of Recklessness is worth much less, and Liquid Luster is used instead. It ramps its Versatility effect over its duration, so to reach peak Versatility at the right time, pop it around 10 seconds before your execute- Trueshot.
+4.1.1.
+## Hero Talent Impacts of Trueshot
+For both Sentinel and Dark Ranger, Trueshot's button will turn into a different button once pressed; Moonlight Chakram or Wailing Arrow for Sentinel and Dark Ranger respectively. In addition, for Dark Ranger, activating Trueshot also gives you a free Black Arrow proc.
+Moonlight Chakram is a filler that gives us a Lock and Load proc and does a ton of damage. Notably, its bouncing effect is much slower to do damage on single-target than on AoE. So, on single-target we prefer to cast it with around 5 seconds left on Trueshot. On AoE, we just send it right before Trueshot expires.
+Wailing Arrow is a little more complicated. Because both Trueshot and Wailing Arrow give you a Black Arrow proc, and because we do not want to overwrite these procs, we want to cast both when we do not already have a proc coming up. In practice, this means we will usually use Wailing Arrow as soon as we run out of other ways of generating it in a guaranteed way (such as Rapid Fire).
+4.2.
+## Volley
+Volley is a talented 45-second cooldown mostly associated with AoE. It is actually a fairly simple button, but there are common misconceptions about its use and value.
+Essentially, because of the nature of the Precise Shots mechanic we explained in the previous section, even though Volley gives us Trick Shots, it is actually relatively uncommon for us to make any use of this "free" Trick Shots whatsoever. Because we tend to run talents where Aimed Shot and Rapid Fire both give Precise Shots, we have to use a PS Spender in-between all such casts. Because of this, even if Trick Shots was permanently active, we would actually play more or less the same; the need to spend Precise Shots is so pressing, and all of the Trick Shots that Multi-Shot also gives are sort of a happy accident.
+Azortharion
+Guide Author
+Follow Azortharion
+This guide has been written by Azortharion, a full-timer Hunter Guidewriter, Theorycrafter, Content Creator, and top player since 2014 who is widely considered one of the best PvE Hunters in the world. He is an accomplished player with hundreds of top parses across all Hunter specs. He is the Head Admin of Trueshot Lodge, the official Hunter Class Discord. You can find him on his stream on Twitch and his channel on YouTube. He also has his own, personal Discord server where you can freely ask him any Hunter questions you may have!
+5.
+## Changelog
+  - 14 Oct. 2026: With Aspect of the Hydra on two or more targets, Sentinel now casts Rapid Fire on cooldown even with Precise Shots up.
+  - 12 Oct. 2026: Updated for Patch 12.1.5.
+  - 31 Aug. 2026: Clarified mouseover Multi-Shotting and clipping.
+  - 24 Aug. 2026: Moved Rapid Fire above the Precise Shots spenders in the Sentinel single-target priority list. Same fundamental rotation, but easier to parse/read.
+  - 24 Aug. 2026: Moonlight Chakram now goes out with around 5 seconds of Trueshot left on single target, so that all 7 bounces land inside the Trueshot.
+  - 24 Aug. 2026: Added Liquid Luster as the second Potion of the fight, popped around 10 seconds before Trueshot in the execute phase.
+  - 22 Aug. 2026: Arcane Shot no longer has a separate rule during Trueshot.
+  - 22 Aug. 2026: Updated the Rapid Fire advice for the recent hotfix. Only Sentinel still clips the channel, and only on AoE.
+  - 18 Aug. 2026: Linked the Target Swap Multi-Shot macro from the Multi-Shot priority entries.
+  - 18 Aug. 2026: Added target selection by Sentinel's Mark and Spotter's Mark to the Rapid Fire, Aimed Shot and Precise Shots spender priorities.
+  - 18 Aug. 2026: Added swapping to a target without a Mark before pressing Trueshot.
+  - 18 Aug. 2026: Added holding Trueshot for up to 15 seconds to line it up with Explosive Shot.
+  - 16 Aug. 2026: Removed spreading Explosive Shot across two targets from the AoE priorities and opener if a priority target is up. It was found to not speed up M+ keys due to its prio damage loss, though it is a small AoE/2T DPS gain.
+  - 16 Aug. 2026: Added clipping the end of Rapid Fire with Multi-Shot to the Sentinel AoE opener.
+  - 15 Aug. 2026: Added clipping the end of Rapid Fire to the single-target priorities, and clarified that both shots benefit from Precise Shots.
+  - 13 Aug. 2026: Added clipping the end of Rapid Fire to the AoE priorities.
+  - 12 Aug. 2026: Clarified that Rapid Fire needs Trick Shots up in the AoE priority.
+  - 11 Aug. 2026: Clarified Explosive Shot targeting in the AoE priority.
+  - 10 Aug. 2026: Updated for Patch 12.1.
+  - 16 Jul. 2026: Corrected Volley's cooldown and clarified Double Tap usage.
+  - 15 Jun. 2026: Reviewed for Patch 12.0.7.
+  - 29 May 2026: Added note of high-prio Aimed at 2 charges for DR ST.
+  - 27 Apr. 2026: Rotation updates and simplifications. Opener updates.
+  - 20 Apr. 2026: Updated for Patch 12.0.5.
+  - 09 Apr. 2026: Dark Ranger Opener fix.
+  - 17 Mar. 2026: Fixed error causing Volley not to appear in the opener under some conditions. Small updates to Sentinel AoE Rotation.
+  - 16 Mar. 2026: Updated for Midnight Season 1.
+  - 03 Mar. 2026: Opener clarifications for Moonlight Chakram.
+  - 26 Feb. 2026: Updated for Midnight 12.0.1.
+  - 10 Feb. 2026: Updated for Midnight Pre-Patch.
+  - 30 Nov. 2025: Reviewed for Patch 11.2.7.
+  - 05 Oct. 2025: Reviewed for Patch 11.2.5.
+  - 28 Aug. 2025: Single-Target rotation update surrounding ES usage.
+  - 27 Aug. 2025: Minor rotational clarifications and edits on AoE.
+  - 25 Aug. 2025: Updated Explosive Shot usage on single-target to be more accomodating of Improved Streamline setups.
+  - 25 Aug. 2025: Added information about rotational bugs.
+  - 20 Aug. 2025: Added note on swapping Focused Aim to Improved Streamline for movement concerns.
+  - 19 Aug. 2025: Removed filler-Multi Shot from Dark Ranger AoE.
+  - 18 Aug. 2025: Minor Dark Ranger Single-Target Opener update (make it more explicit to spend PS stacks before entering Trueshot).
+  - 17 Aug. 2025: Minor Dark Ranger Single-Target Rotation clarifications/simplifications. Minor Sentinel AoE clarification.
+  - 15 Aug. 2025: Updated AoE Rotation(s).
+  - 13 Aug. 2025: Small Dark Ranger Single-Target opener change.
+  - 12 Aug. 2025: Updated Single-Target Rotations.
+  - 11 Aug. 2025: Substantial Rotational Updates for Dark Ranger on Single-Target, worth quite a bit of extra DPS.
+  - 08 Aug. 2025: Update default Dark Ranger Single-Target talent picks.
+  - 07 Aug. 2025: Further opener update iteration.
+  - 06 Aug. 2025: Substantial AoE Rotation updates, particularly Sentinel AoE Opener.
+  - 04 Aug. 2025: Updated for Patch 11.2.
+  - 15 Jun. 2025: Updated for Patch 11.1.7.
+  - 15 May 2025: Updated the Dark Ranger AoE Opener.
+  - 07 May 2025: Updated the wording of the 4PC Doubledip in the rotation to make it clearer what it does and how it works.
+  - 21 Apr. 2025: Reviewed for Patch 11.1.5.
+  - 04 Apr. 2025: Very small rotation updates and clarifications.
+  - 25 Mar. 2025: Added a fall-back line to Explosive Shot regardless of other statuses, as a low priority.
+  - 18 Mar. 2025: Updated rotational details regarding 4PC and Precision Detonation. Updated wording to be clearer in places.
+  - 14 Mar. 2025: Updated defaults to assume 4PC.
+  - 04 Mar. 2025: Rotation improvements. Removed Kill Shot from AoE Priority, and Single-Target priority unless certain talents are chosen.
+  - 27 Feb. 2025: Significant rotational updates relating to Arcane Shot, Aimed Shot, and Explosive Shot usage.
+  - 24 Feb. 2025: Updated for Patch 11.1.0.
+  - 13 Jan. 2025: Further separated Dark Ranger and Sentinel Single-Target Rotation differences.
+  - 08 Jan. 2025: Small opener addition.
+  - 27 Dec. 2024: Small Dark Ranger Opener and Rotation updates.
+  - 15 Dec. 2024: Updated for Patch 11.0.7.
+  - 31 Oct. 2024: Rotation overhaul, particularly for Dark Ranger.
+  - 30 Oct. 2024: Updated for October 29 Hotfixes.
+  - 26 Oct. 2024: Significant single-target rotation update.
+  - 22 Oct. 2024: Updated for Patch 11.0.5.
+  - 10 Oct. 2024: Updated Mad Queen's Mandate usage.
+  - 02 Oct. 2024: Added more specific Trinket usage information.
+  - 24 Sep. 2024: Added Lunar Storm Rapid Fire-holding to AoE Rotation.
+  - 17 Sep. 2024: Added opener note about on-use Trinkets.
+  - 15 Sep. 2024: Added note about on-use trinkets.
+  - 14 Sep. 2024: Simplified the single-target rotation, specifically Aimed Shot usage.
+  - 13 Sep. 2024: Added note about Wailing Arrow resetting the cooldown of Rapid Fire, updated opener.
+  - 10 Sep. 2024: Clarified that Multi-Shot takes over from Arcane Shot at just 2 targets. Simplified the Steady Focus Rotation.
+  - 09 Sep. 2024: Updated the Opener with Wailing Arrow specced.
+  - 03 Sep. 2024: Preliminary updates for The War Within Season 1.
+  - 22 Aug. 2024: Updated for The War Within.
+  - 31 Jul. 2024: Simplified Steady Focus optimization. This affects the single-target opener, rotation, and AoE rotation.
+  - 23 Jul. 2024: Updated for The War Within Pre-Patch.
+Show more
+Show less
+## In The Same Category
+Marksmanship Hunter Guide Survival Hunter Enchants Beast Mastery Hunter Rotation Marksmanship Hunter Enchants Marksmanship Hunter Easy Mode Beast Mastery Hunter Easy Mode
+BACK TO TOP
+News & Guides
+Icy Veins is not affiliated with or endorsed by Blizzard.
+© Vedatis S.A.S. 2026
+  - Twitch
+  - Discord
+  - Facebook
+  - Twitter
+  - YouTube
+  - Contact Us
+About Contact Advertise FAQ Privacy Terms of Use Jobs Privacy Manager
+Our Brands
+all.gg U.GG The Sims Resource Addicting Games Pocket Gamer Fantasy Football Scout GameKnot

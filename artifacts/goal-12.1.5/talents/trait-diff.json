@@ -1,0 +1,286 @@
+[
+  {
+    "kind": "changed",
+    "entry": 80141,
+    "node": 62085,
+    "cls": 8,
+    "tree": 1,
+    "name": "Ice Cold",
+    "spell": 414659,
+    "specs": "0,0,0,0",
+    "diff": {
+      "spell": [
+        414659,
+        414658
+      ],
+      "rep": [
+        0,
+        45438
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 128609,
+    "node": 104095,
+    "cls": 3,
+    "tree": 2,
+    "name": "Unload",
+    "spell": 1277548,
+    "specs": "254,0,0,0",
+    "diff": {
+      "spell": [
+        1277548,
+        1319011
+      ],
+      "name": [
+        "Unload",
+        "Blood Fletching"
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 103728,
+    "node": 82599,
+    "cls": 5,
+    "tree": 2,
+    "name": "Divine Procession",
+    "spell": 472361,
+    "specs": "256,0,0,0",
+    "diff": {
+      "req": [
+        8,
+        20
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 103745,
+    "node": 82612,
+    "cls": 5,
+    "tree": 2,
+    "name": "Holy Celerity",
+    "spell": 1215275,
+    "specs": "257,0,0,0",
+    "diff": {
+      "spell": [
+        1215275,
+        1246517
+      ],
+      "rep": [
+        0,
+        34861
+      ],
+      "name": [
+        "Holy Celerity",
+        "Ultimate Serenity"
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 103733,
+    "node": 103900,
+    "cls": 5,
+    "tree": 2,
+    "name": "Ultimate Serenity",
+    "spell": 1246517,
+    "specs": "257,0,0,0",
+    "diff": {
+      "spell": [
+        1246517,
+        1215275
+      ],
+      "rep": [
+        34861,
+        0
+      ],
+      "name": [
+        "Ultimate Serenity",
+        "Holy Celerity"
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 132287,
+    "node": 107345,
+    "cls": 12,
+    "tree": 2,
+    "name": "Eradicate",
+    "spell": 1226033,
+    "specs": "1480,0,0,0",
+    "diff": {
+      "req": [
+        20,
+        8
+      ],
+      "row": [
+        10,
+        5
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 133370,
+    "node": 107999,
+    "cls": 12,
+    "tree": 2,
+    "name": "Waste Not",
+    "spell": 1223918,
+    "specs": "1480,0,0,0",
+    "diff": {
+      "row": [
+        5,
+        6
+      ],
+      "col": [
+        5,
+        7
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 135736,
+    "node": 109503,
+    "cls": 12,
+    "tree": 2,
+    "name": "The Hunt",
+    "spell": 1246167,
+    "specs": "1480,0,0,0",
+    "diff": {
+      "req": [
+        20,
+        8
+      ],
+      "row": [
+        10,
+        5
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 136692,
+    "node": 110167,
+    "cls": 12,
+    "tree": 2,
+    "name": "Devourer's Bite",
+    "spell": 1240201,
+    "specs": "1480,0,0,0",
+    "diff": {
+      "row": [
+        9,
+        10
+      ],
+      "col": [
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 136694,
+    "node": 110169,
+    "cls": 12,
+    "tree": 2,
+    "name": "Voidglare Boon",
+    "spell": 1240202,
+    "specs": "1480,0,0,0",
+    "diff": {
+      "row": [
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 136695,
+    "node": 110170,
+    "cls": 12,
+    "tree": 2,
+    "name": "Singular Strikes",
+    "spell": 1272770,
+    "specs": "1480,0,0,0",
+    "diff": {
+      "col": [
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 136696,
+    "node": 110171,
+    "cls": 12,
+    "tree": 2,
+    "name": "Soulforged Blades",
+    "spell": 1272432,
+    "specs": "1480,0,0,0",
+    "diff": {
+      "row": [
+        8,
+        9
+      ],
+      "col": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 136697,
+    "node": 110172,
+    "cls": 12,
+    "tree": 2,
+    "name": "Star Fragments",
+    "spell": 1240204,
+    "specs": "1480,0,0,0",
+    "diff": {
+      "req": [
+        20,
+        8
+      ],
+      "row": [
+        9,
+        5
+      ],
+      "col": [
+        6,
+        5
+      ]
+    }
+  },
+  {
+    "kind": "changed",
+    "entry": 136699,
+    "node": 110174,
+    "cls": 12,
+    "tree": 2,
+    "name": "Voidpurge",
+    "spell": 1244220,
+    "specs": "1480,0,0,0",
+    "diff": {
+      "req": [
+        8,
+        20
+      ],
+      "row": [
+        6,
+        10
+      ],
+      "col": [
+        7,
+        6
+      ]
+    }
+  }
+]

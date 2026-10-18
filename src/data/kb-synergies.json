@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-09T22:35:28.067Z",
+    "generatedAt": "2026-10-18T15:07:22.368Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
@@ -5482,6 +5482,43 @@
         "lastUpdate": ""
       }
     },
+    "hunter_mm_rapid_precise": {
+      "id": "hunter_mm_rapid_precise",
+      "name": "속사가 준 정밀 사격과 소비 순서",
+      "description": "조준경은 거들 뿐을 고르면 속사가 정밀 사격을 준다. 정밀 사격은 한 번만 쌓이므로 속사 뒤에도 신비한 사격이나 일제 사격으로 소비를 붙인다. 12.1.5에서 쏟아내기가 삭제돼 속사가 정밀 사격을 대신 소비해 주지 않는다. 파수꾼은 정조준 중이 아니면 남은 정밀 사격을 먼저 소비하고 속사를 쓰며, 어둠 순찰자는 속사를 준비되는 대로 쓴다.",
+      "type": "synergy",
+      "synergyType": "mechanic",
+      "participants": [
+        "257044",
+        "473385",
+        "260242",
+        "185358",
+        "257620"
+      ],
+      "class": "Hunter",
+      "spec": "Marksmanship",
+      "specs": [
+        "Marksmanship"
+      ],
+      "heroTalent": null,
+      "importance": 4,
+      "patch": "12.1.5",
+      "linkedSkills": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/신비한사격",
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격"
+      ],
+      "linkedBuffs": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/정밀사격"
+      ],
+      "linkedTalents": [
+        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준경은거들뿐"
+      ],
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\속사-정밀사격.md",
+        "lastUpdate": ""
+      }
+    },
     "hunter_mm_surging_focusfire": {
       "id": "hunter_mm_surging_focusfire",
       "name": "조준 사격 초기화 발동 → 다음 속사",
@@ -5513,43 +5550,6 @@
       ],
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\쇄도사격-화력집중.md",
-        "lastUpdate": ""
-      }
-    },
-    "hunter_mm_unload_precise": {
-      "id": "hunter_mm_unload_precise",
-      "name": "속사 시작·종료 자동 사격과 정밀 사격",
-      "description": "쏟아내기는 속사 시작과 끝에 신비한 사격을 자동으로 쏜다. 조준경은 거들뿐이 준비하는 정밀 사격까지 함께 추적해야 실제 소비처를 알 수 있다. 교묘한 사격 광역의 숙련 운용은 종료 직전 정밀 사격을 일제 사격으로 가져오는 것이다. 같은 정밀 사격을 자동 사격과 일제 사격이 둘 다 받는다는 설명은 8월 20일 수정된 오류를 재현한 것이므로 쓰지 않는다.",
-      "type": "synergy",
-      "synergyType": "mechanic",
-      "participants": [
-        "257044",
-        "1277548",
-        "473385",
-        "260242",
-        "257620"
-      ],
-      "class": "Hunter",
-      "spec": "Marksmanship",
-      "specs": [
-        "Marksmanship"
-      ],
-      "heroTalent": null,
-      "importance": 4,
-      "patch": "12.1",
-      "linkedSkills": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/속사",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Skills/일제사격"
-      ],
-      "linkedBuffs": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Buffs/정밀사격"
-      ],
-      "linkedTalents": [
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/쏟아내기",
-        "08-직업별-Knowledge-Base/05-사냥꾼/사격/Talents/조준경은거들뿐"
-      ],
-      "source": {
-        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\사격\\Synergies\\쏟아내기-정밀사격.md",
         "lastUpdate": ""
       }
     },
@@ -14430,7 +14430,7 @@
       ],
       "heroTalent": null,
       "importance": 90,
-      "patch": "12.1",
+      "patch": "12.1.5",
       "linkedSkills": [
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/폭풍의칼날",
         "08-직업별-Knowledge-Base/10-도적/무법/Skills/속결",

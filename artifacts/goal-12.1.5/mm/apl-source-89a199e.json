@@ -1,0 +1,90 @@
+{
+  "sha": "89a199eda9fe972358779bf78bd4079f9e37d787",
+  "node_id": "C_kwDOAeyHQtoAKDg5YTE5OWVkYTlmZTk3MjM1ODc3OWJmNzhiZDQwNzlmOWUzN2Q3ODc",
+  "commit": {
+    "author": {
+      "name": "Dave Hendler",
+      "email": "sollaires@gmail.com",
+      "date": "2026-10-13T16:20:49Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-10-13T16:20:49Z"
+    },
+    "message": "[live] Game data update (Build 70340) (#11945)\n\n* [live] Regenerate spell data (Build 70340)\n\n* [live] Update spell data dump (Build 70340)",
+    "tree": {
+      "sha": "0ffbf031bd975aec9b1a46de7a2b52f77b88649d",
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/0ffbf031bd975aec9b1a46de7a2b52f77b88649d"
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/89a199eda9fe972358779bf78bd4079f9e37d787",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqzlphCRC1aQ7uu5UhlAAAeZYQAHwa6GvuSXv5tvlrrFjbB2PK\njAj/frKO/HsCXEG5QfqsK/Vyk+6u4xzDZNKQn/LeDVkOdXUjLduuKPXEqgSCI/z6\nFJ8+Rq+rcMLEOFFsKe8GZkO2lIJwdfQ/2zXFTuHuYUZI2n5h3wlmqB8U8M14mYg6\na8Zogme/NfSLNhYFQs3fT2TN/wmi70YYACiSS8w2hekyzpBhHPGa8ykvhWIHzbVB\nCI2VeKgOHDqjDqOHuVzgnda2ttz0fGlWubdQYB7MFtMVc6n9bGm1JQpHBSVdvn6i\nX7vRGtAWTDqhLTds9NXSS6KXloXh8Ot9PyVBPGOirDmCVzlofgxprq61LnLpMroe\n7VJGXeZdg8Kg0JLNZcYN5lCtHGnkv0A15p1PuU6Px/vqTUGhLtNDFZQ6We5RgQLn\nsIzyyg7nccM/IIkWXTZWjXhx5dfKZQdfgMW5PvnlqdxuUwI+tv9H57JtOo1xNb/t\n5OfdWtU8LRIix0m12Df5lwj9cTb/ESp1f89wlmpOzRVYRe3uALGe/B7IldcStXBA\ni9zMtWZ+5GaCAjRVQevFjE0OCVvTLn5ysZa2xn1W8lLhZ0dzFHplsV7OTslhvNvY\nmIDcmimXsEwzkAl8AFZ05BR+u2HAdKbPqf7AHbdcc3V2yAIXOdrO3/OUKZSfr04O\nV3sbpCP9aiKNULMErYZK\n=Cnk9\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 0ffbf031bd975aec9b1a46de7a2b52f77b88649d\nparent f762a630a8b112cbb8d4dae5f38ec90ffd905065\nauthor Dave Hendler <sollaires@gmail.com> 1791908449 -0500\ncommitter GitHub <noreply@github.com> 1791908449 -0700\n\n[live] Game data update (Build 70340) (#11945)\n\n* [live] Regenerate spell data (Build 70340)\n\n* [live] Update spell data dump (Build 70340)",
+      "verified_at": "2026-10-13T16:20:49Z"
+    }
+  },
+  "url": "https://api.github.com/repos/simulationcraft/simc/commits/89a199eda9fe972358779bf78bd4079f9e37d787",
+  "html_url": "https://github.com/simulationcraft/simc/commit/89a199eda9fe972358779bf78bd4079f9e37d787",
+  "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/89a199eda9fe972358779bf78bd4079f9e37d787/comments",
+  "author": {
+    "login": "seriallos",
+    "id": 1010294,
+    "node_id": "MDQ6VXNlcjEwMTAyOTQ=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1010294?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/seriallos",
+    "html_url": "https://github.com/seriallos",
+    "followers_url": "https://api.github.com/users/seriallos/followers",
+    "following_url": "https://api.github.com/users/seriallos/following{/other_user}",
+    "gists_url": "https://api.github.com/users/seriallos/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/seriallos/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/seriallos/subscriptions",
+    "organizations_url": "https://api.github.com/users/seriallos/orgs",
+    "repos_url": "https://api.github.com/users/seriallos/repos",
+    "events_url": "https://api.github.com/users/seriallos/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/seriallos/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f762a630a8b112cbb8d4dae5f38ec90ffd905065",
+      "url": "https://api.github.com/repos/simulationcraft/simc/commits/f762a630a8b112cbb8d4dae5f38ec90ffd905065",
+      "html_url": "https://github.com/simulationcraft/simc/commit/f762a630a8b112cbb8d4dae5f38ec90ffd905065"
+    }
+  ],
+  "stats": {
+    "total": 0,
+    "additions": 0,
+    "deletions": 0
+  },
+  "files": [
+
+  ]
+}

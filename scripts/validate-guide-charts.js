@@ -6,7 +6,7 @@ const path = require('path');
 const SITE_ROOT = path.resolve(__dirname, '..');
 const GUIDE_DETAIL_PATH = path.join(SITE_ROOT, 'src', 'pages', 'GuideDetailPage.js');
 const GUIDE_REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
-const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
+const { loadGuideManuscripts } = require('./lib/guideManuscripts.cjs');
 const KB_SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
 
 const ALLOWED_SPECIALIST_CHARTS = new Set(['uptime', 'cooldown', 'defensive', 'resource']);
@@ -426,10 +426,12 @@ function main() {
   const skills = Object.values(readJson(KB_SKILLS_PATH).skills || {});
   const guideSkillExpression = guideDetailSource.match(/const allSkills = ([^\n]+);/)[1];
   const currentPatch = loadSourceModule(GUIDE_REGISTRY_PATH, 'CURRENT_PATCH_LABEL');
-  const getGuideSkills = new Function('kbSkills', 'CURRENT_PATCH_LABEL', 'return ' + guideSkillExpression);
-  const numericSkills = getGuideSkills({ skills: { cast: { id: '198013', patch: currentPatch }, tree: { id: 'hero-fel-scarred', patch: currentPatch }, legacy: { id: '321377', patch: '12.0.5' } } }, currentPatch);
+  const currentDataPatches = loadSourceModule(GUIDE_REGISTRY_PATH, 'CURRENT_DATA_PATCHES');
+  assert(currentDataPatches.includes(currentPatch), 'Current patch label must be one of the accepted KB note patches');
+  const getGuideSkills = new Function('kbSkills', 'CURRENT_DATA_PATCHES', 'return ' + guideSkillExpression);
+  const numericSkills = getGuideSkills({ skills: { cast: { id: '198013', patch: currentPatch }, tree: { id: 'hero-fel-scarred', patch: currentPatch }, legacy: { id: '321377', patch: '12.0.5' } } }, currentDataPatches);
   assert(numericSkills.length === 1 && numericSkills[0].id === '198013', 'Current guides must exclude old-patch spells and hero-tree record IDs');
-  assert(!getGuideSkills({ skills: { removed: skills.find(skill => skill.id === '204883') } }, currentPatch).length, 'Removed Circle of Healing must not reappear in current guide skills');
+  assert(!getGuideSkills({ skills: { removed: skills.find(skill => skill.id === '204883') } }, currentDataPatches).length, 'Removed Circle of Healing must not reappear in current guide skills');
   const getAuthoredFlow = new Function('manuscript', 'profile', 'guide', `
     const skillFromManualStep = step => ({ id: step.skillId });
     const getFlowPhaseLabel = () => 'phase';
@@ -460,7 +462,7 @@ function main() {
   assert(modePreview.includes('aria-pressed={mode === id}') && modePreview.includes('manualPriority={current.priority}'), 'Mode selection must expose its state and render conditional priorities, not duplicate the opener');
   assert(modePreview.includes('branch[id]?.tabLabel || label'), 'Authored healer situation labels must retain the existing mode-label fallback');
   assert(guideDetailSource.includes('hasOpenerGuide && !hasRotationModes') && guideDetailSource.includes('priorityChart && !hasRotationModes'), 'Authored combat modes must not also show duplicate generic opener and priority charts');
-  const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
+  const manuscripts = loadGuideManuscripts();
   const skillIds = availableSkillIds(skills, manuscripts);
   const guideRecords = parseGuideRecords(guideRegistrySource);
   const guideIds = parseGuideIds(guideRegistrySource);

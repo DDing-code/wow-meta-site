@@ -1,0 +1,247 @@
+URL: https://www.wowhead.com/guide/classes/hunter/marksmanship/rotation-cooldowns-pve-dps
+STATUS: 202
+FETCHED: 2026-10-18T14:32:49.884Z
+
+Skip to Main Content
+WOW
+RETAIL
+FOREVER
+CLASSIC
+TBC
+MISTS
+···
+LIVE
+PTR
+12.1.7
+PTR
+12.1.5
+LOG IN WITH:
+Battle.net
+Email
+Register
+NEWSHOUSING TOOLSDISCORD WEBHOOKDATABASETOOLSGUIDESCOMMUNITYGO AD-FREE
+CLASSES
+TRENDING TOPICS
+MIDNIGHT
+PATCH 12.1.5
+MIDNIGHT SEASON 2
+TIER LISTS
+PROFESSIONS
+PLAYER HOUSING
+Report ad
+Remove All Ads
+Guides
+Classes
+Hunter
+Marksmanship
+Guide Contents
+Patch 12.1.5
+4.3/5  (39 Votes)
+Midnight Season 2
+Midnight Season 2
+Season 2 Mythic+
+The Venomous Abyss
+Midnight
+Cheat Sheet
+Talent Builds
+Rotation
+How to Play Marksmanship
+Rotation Priority
+Major Cooldowns
+Advanced Tips
+BiS Gear
+Consumables
+Spec Basics
+Overview
+Basics
+Abilities
+Stat Priority
+UI & Macros
+Leveling
+Guide Info
+Changelog
+Marksmanship Hunter Rotation Guide - Midnight
+By TheAzortharion
+Updated: 2026/10/14
+
+Welcome to the Marksmanship Hunter rotation guide for Midnight Season 2! This guide will teach you all about the optimal rotation for Marksmanship Hunter across its various talent builds. It will cover both core ability cadence and cooldown usage in dungeons and raids for Midnight Season 2.
+Overview
+BiS Gear
+Rotation
+Talent Builds
+Consumables
+Stats
+Basics
+Drop the Ads.
+Keep the Loot.
+Report Ad
+Report ad
+Remove All Ads
+MARKSMANSHIP HUNTER ROTATION IN MIDNIGHT SEASON 2
+The rotation for Marksmanship Hunter focuses on maximizing your use of certain buffs, and maximizing your number of uses of cooldown-limited abilities. Marksmanship has a fairly consistent flow, where one ability logically flows into the next, with a few priority shifts based on procs and buff uptimes.
+	 Precise Shots: These procs are guaranteed to happen from all  Aimed Shots, and, depending on Talents,  Rapid Fire as well. They are spent on  Arcane Shot on single-target and  Multi-Shot on 2+ targets, at least when we play  Trick Shots. Every single proc must be spent, which in practice means following up every  Aimed Shot and every  Rapid Fire with an  Arcane Shot or  Multi-Shot.
+	Always Be Casting: Casting as many abilities as possible matters more than pressing the perfect button every time, and dead time is the single biggest thing holding most players back from their DPS goals.  Steady Shot is how you fill it, and it is castable while moving, so there is no excuse for a dead global. The best Marksmanship Hunters will have way more  Steady Shot casts than someone more average, in large part because they do not ever stop casting when moving or dealing with mechanics.
+	Movement: While not strictly a rotational concept, while the flow of Marksmanship is straightforward, managing your movement is a big part of mastering it. The core thing to remember is that you should try and reserve movement for when you are not casting  Aimed Shot. Whenever you are not casting  Aimed Shot, you can move freely without interrupting your rotation, and you should take advantage of this fact to always think "can I be positioned ever so slightly better" and to move accordingly. Standing still while not casting  Aimed Shot is rarely the best move.
+Marksmanship Hunter Starter Guide
+BEST MARKSMANSHIP HUNTER ROTATION
+Our rotation has a fairly simple priority structure, with a few nuances based on procs and buffs. There is a fairly consistent flow to the rotation, where one button leads into the next, and there are not many decisions to make outside of "do I have this proc or buff".
+
+Below, we break down the main priority lists for Marksmanship Hunter: Single-Target Rotation, AoE Rotation, and your opener sequence.
+Hero Talent Master Switches
+You can use the master switches below to flip the entire page's options to your selected choice.
+
+
+
+Sentinel
+Dark Ranger
+
+
+Single-Target Priority
+AoE Priority
+Opener
+Pre-Combat Checks
+BEST MARKSMANSHIP HUNTER SINGLE TARGET ROTATION
+Below is the priority system that describes the optimal single-target rotation for Marksmanship Hunter.
+
+The core loop of Marksmanship is to cast  Aimed Shot and  Rapid Fire on cooldown. These will both activate  Precise Shots, which buffs  Arcane Shot/ Kill Shot/ Black Arrow ( Dark Ranger) significantly. Every  Aimed Shot and every  Rapid Fire should thus be followed up by a "PS Spender" like this. So,  Aimed Shot on cooldown,  Rapid Fire on cooldown, and a PS Spender after each of them. On top of this, we add  Explosive Shot and  Volley on cooldown.  Steady Shot is your filler when you can do absolutely nothing else.
+With  Sentinel selected, the priority is as follows:
+The builds used below are covered in the Talents page. Anywhere you see the  icon, you can hover over it for additional notes.
+PRIORITY
+Trinket Usage. Use on-use trinkets inside  Trueshot. Stat trinkets gain the most from the window, so they take priority when you have to pick one.
+Cast  Explosive Shot on cooldown. Thanks to  Unstable Trigger, you can cast it twice in a row and should do so.
+Cast  Volley on cooldown.
+Cast  Trueshot on cooldown, saving your final use of the fight until  Bullseye reaches 30 stacks.
+Cast  Moonlight Chakram once  Trueshot has roughly 5 seconds left.
+During  Trueshot, cast  Aimed Shot when you have no  Precise Shots.
+Cast  Rapid Fire on cooldown if you have no  Precise Shots to spend, or while  Trueshot is up.
+Cast  Kill Shot to spend  Precise Shots.
+Cast  Arcane Shot to spend  Precise Shots.
+Cast  Aimed Shot on cooldown.
+Cast  Moonlight Chakram.
+Cast  Steady Shot.
+MARKSMANSHIP HUNTER MAJOR COOLDOWNS
+Marksmanship only has one cooldown of note in  Trueshot. Most of its value is in its crit chance and crit damage buff, and it also speeds up our  Aimed Shot and  Rapid Fire cooldowns. It changes little about how we play, but it speeds things up considerably.
+Trueshot
+TRUESHOT
+ Trueshot massively increases our critical strike chance, damage, and the cooldown rates of  Aimed Shot and  Rapid Fire, as well as  Aimed Shot's cast time. It makes us do everything stronger and faster.
+
+Our rotational priorities barely change inside  Trueshot. The handful that do are in the priority lists above.
+
+For  Dark Ranger, activating Trueshot also gives us a  Black Arrow proc, which we need to activate  Precise Shots before we can fire.
+
+For both Hero Talents, activating  Trueshot turns the Trueshot button into another ability:  Moonlight Chakram for  Sentinel, and  Wailing Arrow for  Dark Ranger. Each one is a single cast, so use it where it will not push back your other priorities. For  Sentinel on single target that means firing  Moonlight Chakram with roughly 5 seconds of  Trueshot left.
+MARKSMANSHIP HUNTER ADVANCED TIPS
+You could argue that it is a basic tip, but it is still the #1 issue that even "good" Marksmanship Hunters face, and it is to ensure that you are always casting something. Marksmanship always has something to cast, because even if you run out of absolutely every resource and cooldown, you can always  Steady Shot, and within 2 seconds, you are back to casting  Aimed Shot.
+Always Be Casting
+ALWAYS BE CASTING
+The problem is not so much that people forget that  Steady Shot exists, however. It is understanding the value of time in the DPS equation. Most people press their buttons rather slowly, they press buttons that are not available to them, their DPS rotation stops when they are focused on a mechanic, or they just have bad reaction times. All of these things lead to lost time where you are not casting anything, often for very small windows of time, but these small windows of time add up very quickly, and they are the difference between a good and a great player. Always be casting something, even if it is just  Steady Shot, and you will see a noticeable increase in your DPS.
+Our Marksmanship Hunter guides are always updated with the latest information from in-game experience, simulations, and logs. Make sure to check our changelog for this page by clicking on View Changelog in the Quick Facts column or on the book icon at the top of the page. If you are interested in more in-depth Marksmanship Hunter guides for Midnight Season 2, make sure to browse the Navigation Bar at the top of the page, along with our list of Related Guides just beneath the Table of Contents.
+TheAzortharion
+World of Warcraft Retail Marksmanship Hunter Guidewriter
+Azortharion is a veteran World of Warcraft Hunter Specialist whose deep theorycrafting, guidewriting, fact-based, truth-seeking, and objectively-slanted content creation and community leadership have been a significant force and presence in the WoW and Hunter Community for over a decade.
+Azortharion has raided in the World’s Top 20 raiding guilds and holds numerous World First/Top Mythic+ keys as a Hunter.
+Widely considered the highest-DPS'ing Hunter in the world with the logs to prove it over a decade, and has regularly coached Race To World First Hunters on matters of rotation and character optimization.
+Pioneer of simulation-driven theorycrafting using SimulationCraft and Raidbots, and is continually refining tool-driven methodologies to get closer to the truth of maximizing DPS.
+Leader of The Trueshot Lodge, a 100,000+ member Hunter Discord fostering peer learning, discussion, and theorycrafting.
+Hunter content creator with over 3 million total views on in-depth tutorials, Rank 1 parses/Mythic+ runs, commentaries, and more.
+Year-long contributor and writer for leading WoW outlets, Wowhead chief among them, on all things Hunter-related.
+Recognized community voice, relaying feedback to Blizzard to ensure Hunter bugs are fixed and popular feedback is implemented.
+Author Page
+Tags: PvE
+News (1)
+Comments (1)
+1 - 1 of 1
+ 
+Subject
+	
+Posted
+	
+Author
+	
+Replies
+
+
+How to Play Your Class in the Battle for Azeroth 8.0 Pre-Patch - Class Guides for All Specializations
+	On 2018/07/21	Anshlun	75
+1 - 1 of 1
+ 
+Contribute
+Add your comment
+Please keep the following in mind when posting a comment:
+Your comment must be in English or it will be removed.
+Unsure how to post? Check out our handy guide!
+You might want to proof-read your comments before posting them.
+Please post questions on our forums for quicker reply.
+Post a Comment
+You are not logged in. Please log in or register an account to add your comment.
+Report ad
+Remove All Ads
+News
+Housing Tools
+Discord Webhook
+Database
+Tools
+Guides
+Community
+Go Ad-Free
+WOW GUIDES
+Class Guides
+Delve Guides
+Leveling Guides
+Mythic+ Guides
+Profession Guides
+Raid Guides
+Talent Calculator
+Tier Lists
+Midnight
+MOP CLASSIC GUIDES
+Class Guides
+Profession Guides
+Dungeon Guides
+Raid Guides
+Quest Guides
+Reputation Guides
+Pet Battle Guides
+Scenario Guides
+Challenge Mode Guides
+Talent Calculator
+Tier Lists
+WOW CLASSIC GUIDES
+Attunement Guide
+Best in Slot Guides
+Class Guides
+Dungeon Guides
+Leveling Guides
+Profession Guides
+PvP Guides
+Quest Guides
+Raid Guides
+Reputation Guides
+DIABLO IV GUIDES
+Lord of Hatred Expansion
+Season 13
+Endgame Tier List
+Tier Lists
+Barbarian Builds
+Druid Builds
+Necromancer Builds
+Paladin Builds
+Rogue Builds
+Sorcerer Builds
+Spiritborn Builds
+Need Help?
+User Tools
+About Us
+Advertise
+Cookies Settings
+Random Page
+Premium
+Privacy Policy
+Terms of Use
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings
+Reject All
+Accept All Cookies
+Report Ad
+Report ad
+Remove All Ads

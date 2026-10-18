@@ -1,0 +1,306 @@
+URL: https://www.wowhead.com/guide/classes/demon-hunter/devourer/talent-builds-pve-dps
+STATUS: 202
+dateModified: 2026-10-13T16:52:52-05:00
+hero switch clicked: 0
+
+This guide provides all of the best Devourer Demon Hunter talent tree builds in the Midnight Season 2 for raids and Mythic+, including export links to import these builds directly into the game.
+
+Overview
+BiS Gear
+Rotation
+Talent Builds
+Consumables
+Stats
+Basics
+Drop the Ads.
+Keep the Loot.
+Report Ad
+Report ad
+Remove All Ads
+DEVOURER DEMON HUNTER TALENT IMPORT CODES
+Below, we've provided a list of import codes for the strongest Devourer Demon Hunter builds for Midnight Season 2. Builds marked with the  icon are the Current Recommendations. Use the copy buttons to generate an import code.
+
+
+VOID-SCARRED
+Build	Import Code	Link
+ Raid ST	Copy Raid ST	Build
+ Raid Cleave	Copy Raid Cleave	Build
+ Mythic+	Copy Mythic+	Build
+ Delves (Best)	Copy Delves	Build
+	
+ANNIHILATOR
+Build	Import Code	Link
+ Raid ST (Best)	Copy Raid ST	Build
+ Raid Cleave (Best)	Copy Raid Cleave	Build
+ Mythic+ (Best)	Copy Mythic+	Build
+ Delves	Copy Delves	Build
+
+
+Due to the steady buffs to  Collapsing Star over the course of the 12.1 patch, as well as the changes to  Void-Scarred and the specialization talent tree which came in 12.1.5, Devourer now seeks to use  Annihilator in almost every single situation, aside from delves. While  Void-Scarred has the potential to perform the highest, it's damage is also incredibly vulnerable to being disrupted, and features long cast times and long periods where you have no control over your character. As such, it is not recommended at this time.
+BEST DEVOURER DEMON HUNTER RAID TALENT BUILDS
+In raid, Devourer takes advantage of it's very strong cleave profile of  Void Ray,  Eradicate,  Voidsurge, and  Hungering Slash. It maintains this high level of burst cleave, while also providing very strong single target damage through  Devourer's Bite and the various  Reap
+Annihilator Raid Cleave
+Annihilator Pure ST
+Void-Scarred Cleave
+Void-Scarred ST
+Annihilator is now the recommended build, following the 12.1.5 changes and the buffs to  Collapsing Star. The below build is recommended for most fights this tier due to the cleave provided by  Voidrage. If the fight is mostly Single-Target with only some cleave, you can drop  Demonic Instinct for  Second Helping.
+
+
+
+
+Export Talents
+Open in Calculator
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/2
+1/1
+1/1
+2/2
+1/1
+1/1
+Export Talents
+Open in Calculator
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+2/2
+1/1
+1/2
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+BEST DEVOURER DEMON HUNTER MYTHIC+ TALENT BUILDS
+Devourer in AoE is built entirely around the incredibly strength of  Eradicate and  Collapsing Star. Each hero talent augments this damage in additional ways.  Annihilator brings large damage from  Collapsing Star and it's signature passive,  Voidfall, whereas  Void-Scarred focuses on leveraging resets on it's abilities from  Collapsing Star, casting more  The Hunt.
+Annihilator M+
+Void-Scarred M+
+Annihilator is all about casting large  Collapsing Stars in Mythic+, and plays very similar to its raid counterpart build. Focus on your  Eradicate with this build, and don't waste  Voidfall procs. This build is recommended for the current season.
+
+
+
+Export Talents
+Open in Calculator
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+Export Talents
+Open in Calculator
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+2/2
+1/1
+1/2
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+BEST DEVOURER DEMON HUNTER DELVE TALENT BUILD
+The Devourer Demon Hunter Delve build is similar to the older variations of  Void-Scarred and is suited to the quick, frequent pulls that Delves offer you.
+Void-Scarred Delve
+This build plays around the melee talents of  Void-Scarred, while also taking  Eradicate for more cleave, and  Devourer's Bite for single and priority target damage! It now seeks to cast  Collapsing Star, aiming to get 2 every Void Metamorphosis window!
+
+
+
+Export Talents
+Open in Calculator
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+2/2
+1/1
+1/1
+Export Talents
+Open in Calculator
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+2/2
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+4/4
+Export Talents
+Open in Calculator
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+1/1
+
+
+DEVOURER DEMON HUNTER LEVELING BUILDS
+If you're searching for advice on both the best talents to pick while leveling and the optimal order in which to take them, our leveling tips page has got you covered. There, you will find information about different leveling talent builds, the recommended order in which to pick them, and information about your spec's rotation and cooldowns.
+
+
+Devourer Demon Hunter Leveling Tips
+Our Devourer Demon Hunter guides are always updated with the latest information from in-game experience, simulations, and logs. Make sure to check our changelog for this page by clicking on View Changelog in the Quick Facts column or on the book icon at the top of the page. If you are interested in more in-depth Devourer Demon Hunter guides for Midnight Season 2, make sure to browse the Navigation Bar at the top of the page, along with our list of Related Guides just beneath the Table of Contents.

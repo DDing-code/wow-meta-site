@@ -9,7 +9,7 @@ for (const [id, name, spec, pattern] of [
   const skill = skills[id];
   assert.equal(skill.name, name);
   assert.equal(skill.spec, spec);
-  assert.equal(skill.patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skill.patch));
   assert.match(skill.description, pattern);
 }
 

@@ -34,6 +34,8 @@
     "audit:current-scope": "node scripts/audit-kb-current-scope.js",
     "audit:current-scope:offline": "node scripts/audit-kb-current-scope.js --offline",
     "validate:all": "npm run validate",
+    "validate:quiet": "node scripts/validate-quiet.cjs",
+    "kb:brief": "node scripts/kb-brief.cjs",
     "sync-kb": "node scripts/sync-kb.js",
     "presync-kb": "echo Syncing KB from Obsidian vault...",
     "dev": "npm run sync-kb && react-scripts start"

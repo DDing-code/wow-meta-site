@@ -1,0 +1,822 @@
+[
+  {
+    "sha": "b41645d275da784878bdc90d583cd783a8a335f7",
+    "node_id": "C_kwDOAeyHQtoAKGI0MTY0NWQyNzVkYTc4NDg3OGJkYzkwZDU4M2NkNzgzYThhMzM1Zjc",
+    "commit": {
+      "author": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-10-13T16:38:18Z"
+      },
+      "committer": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-10-13T16:38:18Z"
+      },
+      "message": "Update Generated Files 89a199e",
+      "tree": {
+        "sha": "d51cf0916e74264e09d590e30bfac5c1f9d272ce",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/d51cf0916e74264e09d590e30bfac5c1f9d272ce"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/b41645d275da784878bdc90d583cd783a8a335f7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/b41645d275da784878bdc90d583cd783a8a335f7",
+    "html_url": "https://github.com/simulationcraft/simc/commit/b41645d275da784878bdc90d583cd783a8a335f7",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/b41645d275da784878bdc90d583cd783a8a335f7/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "89a199eda9fe972358779bf78bd4079f9e37d787",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/89a199eda9fe972358779bf78bd4079f9e37d787",
+        "html_url": "https://github.com/simulationcraft/simc/commit/89a199eda9fe972358779bf78bd4079f9e37d787"
+      }
+    ]
+  },
+  {
+    "sha": "efcc81c60bd87b63b0dcc1961510f7f75da28ad9",
+    "node_id": "C_kwDOAeyHQtoAKGVmY2M4MWM2MGJkODdiNjNiMGRjYzE5NjE1MTBmN2Y3NWRhMjhhZDk",
+    "commit": {
+      "author": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-30T10:33:08Z"
+      },
+      "committer": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-30T10:33:08Z"
+      },
+      "message": "Update Generated Files 978350d",
+      "tree": {
+        "sha": "2e8de8d7d52ce647abe32a7bffb7f2667e72328d",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/2e8de8d7d52ce647abe32a7bffb7f2667e72328d"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/efcc81c60bd87b63b0dcc1961510f7f75da28ad9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/efcc81c60bd87b63b0dcc1961510f7f75da28ad9",
+    "html_url": "https://github.com/simulationcraft/simc/commit/efcc81c60bd87b63b0dcc1961510f7f75da28ad9",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/efcc81c60bd87b63b0dcc1961510f7f75da28ad9/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "978350dff33130313cc402425a83c417f5ae3fa7",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/978350dff33130313cc402425a83c417f5ae3fa7",
+        "html_url": "https://github.com/simulationcraft/simc/commit/978350dff33130313cc402425a83c417f5ae3fa7"
+      }
+    ]
+  },
+  {
+    "sha": "3a9d7762e56691359d9d1f5ffb30a15206bc74b5",
+    "node_id": "C_kwDOAeyHQtoAKDNhOWQ3NzYyZTU2NjkxMzU5ZDlkMWY1ZmZiMzBhMTUyMDZiYzc0YjU",
+    "commit": {
+      "author": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-30T09:20:59Z"
+      },
+      "committer": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-30T09:20:59Z"
+      },
+      "message": "Update Generated Files d891589",
+      "tree": {
+        "sha": "403cb8b8574d51def9d17a5311e7b1b594ebe2d1",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/403cb8b8574d51def9d17a5311e7b1b594ebe2d1"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/3a9d7762e56691359d9d1f5ffb30a15206bc74b5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/3a9d7762e56691359d9d1f5ffb30a15206bc74b5",
+    "html_url": "https://github.com/simulationcraft/simc/commit/3a9d7762e56691359d9d1f5ffb30a15206bc74b5",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/3a9d7762e56691359d9d1f5ffb30a15206bc74b5/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d8915894f5388d21695699e7b83822f64f8e19c2",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/d8915894f5388d21695699e7b83822f64f8e19c2",
+        "html_url": "https://github.com/simulationcraft/simc/commit/d8915894f5388d21695699e7b83822f64f8e19c2"
+      }
+    ]
+  },
+  {
+    "sha": "9ac67ccebe3f778e33e33dc5b8cbb0df78734332",
+    "node_id": "C_kwDOAeyHQtoAKDlhYzY3Y2NlYmUzZjc3OGUzM2UzM2RjNWI4Y2JiMGRmNzg3MzQzMzI",
+    "commit": {
+      "author": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-29T15:44:44Z"
+      },
+      "committer": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-29T15:44:44Z"
+      },
+      "message": "Update Generated Files 3377576",
+      "tree": {
+        "sha": "32f5ddf5ce4584e4474d9e315c3d9bc1fb9ff48b",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/32f5ddf5ce4584e4474d9e315c3d9bc1fb9ff48b"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/9ac67ccebe3f778e33e33dc5b8cbb0df78734332",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/9ac67ccebe3f778e33e33dc5b8cbb0df78734332",
+    "html_url": "https://github.com/simulationcraft/simc/commit/9ac67ccebe3f778e33e33dc5b8cbb0df78734332",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/9ac67ccebe3f778e33e33dc5b8cbb0df78734332/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3377576e3b617193da37d6b1da96fda5fcafea47",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/3377576e3b617193da37d6b1da96fda5fcafea47",
+        "html_url": "https://github.com/simulationcraft/simc/commit/3377576e3b617193da37d6b1da96fda5fcafea47"
+      }
+    ]
+  },
+  {
+    "sha": "6c83373d3d738fd1965ce320f1e603903d82a593",
+    "node_id": "C_kwDOAeyHQtoAKDZjODMzNzNkM2Q3MzhmZDE5NjVjZTMyMGYxZTYwMzkwM2Q4MmE1OTM",
+    "commit": {
+      "author": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-28T16:50:09Z"
+      },
+      "committer": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-28T16:50:09Z"
+      },
+      "message": "Update Generated Files 8700a82",
+      "tree": {
+        "sha": "8bfafe01f78a5bc5fb846e65ae6a0f1386a504d2",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/8bfafe01f78a5bc5fb846e65ae6a0f1386a504d2"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/6c83373d3d738fd1965ce320f1e603903d82a593",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/6c83373d3d738fd1965ce320f1e603903d82a593",
+    "html_url": "https://github.com/simulationcraft/simc/commit/6c83373d3d738fd1965ce320f1e603903d82a593",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/6c83373d3d738fd1965ce320f1e603903d82a593/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8700a8256247f31d4d11ea8b01f4ec24467ad992",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/8700a8256247f31d4d11ea8b01f4ec24467ad992",
+        "html_url": "https://github.com/simulationcraft/simc/commit/8700a8256247f31d4d11ea8b01f4ec24467ad992"
+      }
+    ]
+  },
+  {
+    "sha": "4dd8995332cbb5ef3f983b772729421723dc9609",
+    "node_id": "C_kwDOAeyHQtoAKDRkZDg5OTUzMzJjYmI1ZWYzZjk4M2I3NzI3Mjk0MjE3MjNkYzk2MDk",
+    "commit": {
+      "author": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-25T09:26:50Z"
+      },
+      "committer": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-25T09:26:50Z"
+      },
+      "message": "Update Generated Files cd25e2c",
+      "tree": {
+        "sha": "533a3ff6ae63bf13e59eee4ed35741f4ae2d8181",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/533a3ff6ae63bf13e59eee4ed35741f4ae2d8181"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/4dd8995332cbb5ef3f983b772729421723dc9609",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/4dd8995332cbb5ef3f983b772729421723dc9609",
+    "html_url": "https://github.com/simulationcraft/simc/commit/4dd8995332cbb5ef3f983b772729421723dc9609",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/4dd8995332cbb5ef3f983b772729421723dc9609/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cd25e2c6fdb7cb7df94ce70ad840e96d902b5a6c",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/cd25e2c6fdb7cb7df94ce70ad840e96d902b5a6c",
+        "html_url": "https://github.com/simulationcraft/simc/commit/cd25e2c6fdb7cb7df94ce70ad840e96d902b5a6c"
+      }
+    ]
+  },
+  {
+    "sha": "3487fce97e49786490f79e00d011bb95b501e620",
+    "node_id": "C_kwDOAeyHQtoAKDM0ODdmY2U5N2U0OTc4NjQ5MGY3OWUwMGQwMTFiYjk1YjUwMWU2MjA",
+    "commit": {
+      "author": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-24T22:56:17Z"
+      },
+      "committer": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-24T22:56:17Z"
+      },
+      "message": "Update Generated Files f8fafc1",
+      "tree": {
+        "sha": "947ce0824bdce65e4937de2a229085547362c078",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/947ce0824bdce65e4937de2a229085547362c078"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/3487fce97e49786490f79e00d011bb95b501e620",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/3487fce97e49786490f79e00d011bb95b501e620",
+    "html_url": "https://github.com/simulationcraft/simc/commit/3487fce97e49786490f79e00d011bb95b501e620",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/3487fce97e49786490f79e00d011bb95b501e620/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f8fafc1cbd4075d8029f6aa4dac0f299854fa9c5",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/f8fafc1cbd4075d8029f6aa4dac0f299854fa9c5",
+        "html_url": "https://github.com/simulationcraft/simc/commit/f8fafc1cbd4075d8029f6aa4dac0f299854fa9c5"
+      }
+    ]
+  },
+  {
+    "sha": "d606a21b4c511b0779cc2423e0b53a8b85265638",
+    "node_id": "C_kwDOAeyHQtoAKGQ2MDZhMjFiNGM1MTFiMDc3OWNjMjQyM2UwYjUzYThiODUyNjU2Mzg",
+    "commit": {
+      "author": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-24T22:10:34Z"
+      },
+      "committer": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-24T22:10:34Z"
+      },
+      "message": "Update Generated Files 599455c",
+      "tree": {
+        "sha": "60e046f4ff7dbf09498b426532d7e9029db9ffa1",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/60e046f4ff7dbf09498b426532d7e9029db9ffa1"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/d606a21b4c511b0779cc2423e0b53a8b85265638",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/d606a21b4c511b0779cc2423e0b53a8b85265638",
+    "html_url": "https://github.com/simulationcraft/simc/commit/d606a21b4c511b0779cc2423e0b53a8b85265638",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/d606a21b4c511b0779cc2423e0b53a8b85265638/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "599455c70a40b49431784137205d620d45a41b36",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/599455c70a40b49431784137205d620d45a41b36",
+        "html_url": "https://github.com/simulationcraft/simc/commit/599455c70a40b49431784137205d620d45a41b36"
+      }
+    ]
+  },
+  {
+    "sha": "c5ed8b95915305f20c7df3bba253d992cf29328e",
+    "node_id": "C_kwDOAeyHQtoAKGM1ZWQ4Yjk1OTE1MzA1ZjIwYzdkZjNiYmEyNTNkOTkyY2YyOTMyOGU",
+    "commit": {
+      "author": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-24T21:58:02Z"
+      },
+      "committer": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-24T21:58:02Z"
+      },
+      "message": "Update Generated Files 91a1ce9",
+      "tree": {
+        "sha": "b3b7be9aacfe38ec96ba316b0cd36833bd905196",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/b3b7be9aacfe38ec96ba316b0cd36833bd905196"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/c5ed8b95915305f20c7df3bba253d992cf29328e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/c5ed8b95915305f20c7df3bba253d992cf29328e",
+    "html_url": "https://github.com/simulationcraft/simc/commit/c5ed8b95915305f20c7df3bba253d992cf29328e",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/c5ed8b95915305f20c7df3bba253d992cf29328e/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "91a1ce9b6b483cf506f204e4e6d798837ead2d53",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/91a1ce9b6b483cf506f204e4e6d798837ead2d53",
+        "html_url": "https://github.com/simulationcraft/simc/commit/91a1ce9b6b483cf506f204e4e6d798837ead2d53"
+      }
+    ]
+  },
+  {
+    "sha": "75b5d898b576f03aeb6b75c1dc3e799e12ff1e2c",
+    "node_id": "C_kwDOAeyHQtoAKDc1YjVkODk4YjU3NmYwM2FlYjZiNzVjMWRjM2U3OTllMTJmZjFlMmM",
+    "commit": {
+      "author": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-24T15:54:44Z"
+      },
+      "committer": {
+        "name": "github-actions",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-08-24T15:54:44Z"
+      },
+      "message": "Update Generated Files 03ad78f",
+      "tree": {
+        "sha": "dab4d23a5b56a7cf1006af4acbee9ad98913cba9",
+        "url": "https://api.github.com/repos/simulationcraft/simc/git/trees/dab4d23a5b56a7cf1006af4acbee9ad98913cba9"
+      },
+      "url": "https://api.github.com/repos/simulationcraft/simc/git/commits/75b5d898b576f03aeb6b75c1dc3e799e12ff1e2c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/simulationcraft/simc/commits/75b5d898b576f03aeb6b75c1dc3e799e12ff1e2c",
+    "html_url": "https://github.com/simulationcraft/simc/commit/75b5d898b576f03aeb6b75c1dc3e799e12ff1e2c",
+    "comments_url": "https://api.github.com/repos/simulationcraft/simc/commits/75b5d898b576f03aeb6b75c1dc3e799e12ff1e2c/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "03ad78fd282336a298ab008ea6ab367401ed9708",
+        "url": "https://api.github.com/repos/simulationcraft/simc/commits/03ad78fd282336a298ab008ea6ab367401ed9708",
+        "html_url": "https://github.com/simulationcraft/simc/commit/03ad78fd282336a298ab008ea6ab367401ed9708"
+      }
+    ]
+  }
+]

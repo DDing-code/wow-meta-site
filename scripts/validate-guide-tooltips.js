@@ -6,7 +6,7 @@ const path = require('path');
 const SITE_ROOT = path.resolve(__dirname, '..');
 const GUIDE_DETAIL_PATH = path.join(SITE_ROOT, 'src', 'pages', 'GuideDetailPage.js');
 const REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
-const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
+const { loadGuideManuscripts } = require('./lib/guideManuscripts.cjs');
 const SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
 const EXPECTED_GUIDE_COUNT = Number(process.env.WOWMETA_EXPECTED_GUIDE_COUNT || 40);
 const COMMON_SPECS = new Set(['공용', 'Common']);
@@ -183,7 +183,7 @@ function validateInlineTermCoverage(spec, manuscript, kbSkills) {
 function main() {
   const guideSource = read(GUIDE_DETAIL_PATH);
   const registry = loadSourceModule(REGISTRY_PATH, '{ getReadyGuideSpecs }');
-  const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
+  const manuscripts = loadGuideManuscripts();
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
 

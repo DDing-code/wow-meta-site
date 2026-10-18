@@ -47,7 +47,7 @@ for (const [id, effect] of Object.entries(supportEffects)) {
 assert.equal(skills['200758'].resourceCost, '기력 40');
 assert.equal(skills['200758'].range, '근접');
 for (const id of reviewed) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.deepEqual(skills[id].specs, ['Subtlety'], id);
   assert.ok(skills[id].description.length > 70, id);
   assert.ok(!skills[id].description.startsWith('#'), id);
@@ -113,10 +113,11 @@ assert.match(skills['394320'].description, /1점.*5%.*5점을 초과/);
 assert.equal(skills['5171'], undefined, 'Obsolete Slice and Dice must not return to the active DB');
 assert.ok(skills['315496'].specs.includes('Subtlety'));
 assert.ok(skills['51667'].specs.includes('Subtlety'));
-const manuscript = fs.readFileSync(path.join(__dirname, '../src/data/guideManuscripts.js'), 'utf8');
+const guideManuscripts = require('./lib/guideManuscripts.cjs');
+const manuscript = guideManuscripts.readAllGuideManuscriptText();
 assert.doesNotMatch(manuscript, /skillId:\s*['"]5171['"]/);
 assert.doesNotMatch(manuscript, /skillId:\s*['"]1279401['"]/);
-const guide = new Function(manuscript.replace(/export default guideManuscripts;?/, '').replace(/export const/g, 'const') + ';return guideManuscripts["rogue-subtlety"];')();
+const guide = guideManuscripts.loadGuideManuscript('rogue-subtlety');
 const subtletyManuscript = JSON.stringify(guide);
 assert.deepEqual(guide.heroBranches.map(branch => branch.label), ['죽음추적자', '기만자']);
 for (const branch of guide.heroBranches) {
@@ -139,7 +140,7 @@ for (const id of ['rogue_subtlety_secret_technique_ancient_arts',
   'rogue_subtlety_shadow_clones', 'rogue_subtlety_defensive_choices',
   'rogue_subtlety_season2_lingering_shadow', 'rogue_subtlety_hero_dance_entry']) {
   const relation = synergies[id];
-  assert.equal(relation?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(relation?.patch), id);
   assert.equal(relation.spec, 'Subtlety', id);
   assert.ok(relation.description.length > 70, id);
   for (const spell of relation.participants) assert.ok(skills[spell]?.specs.includes('Subtlety'), spell);
@@ -169,7 +170,7 @@ for (const [id, effect] of Object.entries(deathstalkerEffects)) {
 }
 for (const id of [...Object.keys(deathstalkerEffects), '457052', '457058',
   '457055', '1248793', '457067', '1248774']) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.equal(skills[id].castTime, '지속 효과', id);
   assert.deepEqual(skills[id].specs, ['Assassination', 'Subtlety'], id);
   assert.ok(skills[id].description.length > 60, id);
@@ -177,7 +178,7 @@ for (const id of [...Object.keys(deathstalkerEffects), '457052', '457058',
 for (const id of ['rogue_subtlety_deathstalker_mark_darkest_night',
   'SY-ROGUE-HERO-DEATHSTALKER-MARK']) {
   const relation = synergies[id];
-  assert.equal(relation?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(relation?.patch), id);
   assert.ok(relation.description.length > 70, id);
   for (const spell of relation.participants) assert.ok(skills[spell]?.specs.includes('Subtlety'), spell);
 }
@@ -228,14 +229,14 @@ for (const [id, effect] of Object.entries({
   '1267216': /마무리 일격.*6%.*모든 출혈.*아니다/,
 })) {
   assert.match(skills[id]?.description || '', effect, id);
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.equal(skills[id].castTime, '지속 효과', id);
 }
 const commonDefense = synergies['SY-ROGUE-COMMON-FEINT-EVASION-CLOAK-DEFENSE'];
 assert.deepEqual(skills['185565'].specs, ['Assassination']);
 assert.match(skills['185565'].description, /기력 40.*30야드.*치명독과 비치명독.*1점.*5938/);
 for (const id of ['3408', '5761', '8679', '315584']) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.equal(skills[id].castTime, '1.5초', id);
   assert.match(skills[id].description, /1시간.*30%/, id);
 }
@@ -246,7 +247,7 @@ assert.match(skills['315584'].description, /즉시 자연 피해.*시전 시간�
 assert.match(skills['470669'].description, /과충전.*소모.*기습.*사악한 일격.*절단.*118%.*액티브/);
 assert.equal(skills['470669'].castTime, '지속 효과');
 const poisonChoice = synergies['SY-ROGUE-COMMON-POISONS-SHIV-DEBUFFS'];
-assert.equal(poisonChoice.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(poisonChoice.patch));
 assert.match(poisonChoice.description, /치유 감소.*이동 속도 감소.*공격 및 시전 속도 감소.*선택 관계/);
 assert.deepEqual([...poisonChoice.participants].sort(), ['315584', '3408', '5761', '8679', '381637', '280716', '319066', '378436', '381543', '423701'].sort());
 for (const [id, pattern] of Object.entries({
@@ -261,7 +262,7 @@ for (const [id, pattern] of Object.entries({
   '1804': /5야드.*1.5초.*요구 숙련도/,
 })) {
   assert.match(skills[id].description, pattern, id);
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
 }
 assert.equal(skills['381637'].castTime, '1.5초');
 assert.deepEqual(skills['441224'].specs, ['Outlaw', 'Subtlety']);
@@ -284,14 +285,14 @@ const commonMovement = synergies['SY-ROGUE-COMMON-SPRINT-SHADOWSTEP-MOVEMENT'];
 const commonControl = synergies['SY-ROGUE-COMMON-STEALTH-CHEAPSHOT-CONTROL'];
 const commonUtility = synergies['SY-ROGUE-COMMON-TRICKS-SHROUD-DUNGEON-UTILITY'];
 for (const relation of [commonControl, commonUtility]) {
-  assert.equal(relation.patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(relation.patch));
   for (const id of ['423647', '470668', '114014', '921']) assert.ok(!relation.participants.includes(id), relation.id + id);
 }
 assert.deepEqual([...commonControl.participants].sort(), ['1784', '1856', '1833', '6770', '108208', '2094', '1776', '408', '379005'].sort());
 assert.match(commonControl.description, /기만.*은신 종료.*가죽곤봉.*끝난 뒤.*6초.*30%/);
 assert.deepEqual([...commonUtility.participants].sort(), ['57934', '114018', '423662', '1766', '1725'].sort());
 assert.match(commonUtility.description, /6초.*고요한 장막.*6분.*3분.*발차기.*15초.*6초.*혼란.*차단이 아니다/);
-assert.equal(commonMovement.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(commonMovement.patch));
 for (const id of ['455143', '200733', '378427', '1267210', '381988', '114014']) {
   assert.ok(!commonMovement.participants.includes(id), id);
 }
@@ -299,20 +300,20 @@ assert.equal(skills['2983'].cooldown, '기본 2분');
 assert.match(skills['2983'].description, /8초.*70%.*은신.*60초.*4초/);
 assert.match(skills['108208'].description, /최대 2등급.*최종 지속 시간.*단정하지/);
 assert.ok(skills['108208'].specs.includes('Outlaw'));
-assert.equal(commonDefense.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(commonDefense.patch));
 for (const id of ['79008', '193546', '393970', '1856']) assert.ok(commonDefense.participants.includes(id), id);
 for (const id of ['14983', '193539']) assert.ok(!commonDefense.participants.includes(id), id);
 for (const [id, effect] of Object.entries(utilityEffects)) {
   assert.match(skills[id]?.description || '', effect, id);
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.equal(skills[id].castTime, id === '31230' ? '지속 효과' : '즉시', id);
   for (const spec of ['Assassination', 'Outlaw', 'Subtlety']) {
     assert.ok(skills[id].specs.includes(spec), id + spec);
   }
 }
 assert.doesNotMatch(JSON.stringify(guide.blocks), /차트 배치|차트는 마지막|본문 다음에.*차트/);
-assert.equal(guide.patch, '12.1');
-assert.equal(guide.researchedAt, '2026-10-08');
+assert.ok(['12.1', '12.1.5'].includes(guide.patch));
+assert.equal(guide.researchedAt, '2026-10-10');
 assert.match(guide.status, /로그 검수 중/);
 assert.match(JSON.stringify(guide.caveats), /위기 감각.*공수 자극제.*충돌/);
 assert.match(JSON.stringify(guide.blocks), /위축의 독.*4%.*마취 독.*15%.*동시에 고를 수 없습니다/);

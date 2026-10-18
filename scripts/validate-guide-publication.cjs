@@ -9,9 +9,11 @@ function load(file, names) {
     .replace(/\bexport (const|function)\b/g, '$1');
   return new Function(`${source}\nreturn {${names}};`)();
 }
-const { guideUpdates, getGuidePublication } = load('guideUpdates.js', 'guideUpdates, getGuidePublication');
-const { guideManuscripts } = load('guideManuscripts.js', 'guideManuscripts');
-const { getAllGuideSpecs } = load('guideRegistry.js', 'getAllGuideSpecs');
+const { guideUpdates, getGuidePublication, GUIDE_PUBLICATION_PATCH } = load('guideUpdates.js', 'guideUpdates, getGuidePublication, GUIDE_PUBLICATION_PATCH');
+const guideManuscripts = require('./lib/guideManuscripts.cjs').loadGuideManuscripts();
+const { getAllGuideSpecs, CURRENT_PATCH_LABEL } = load('guideRegistry.js', 'getAllGuideSpecs, CURRENT_PATCH_LABEL');
+assert.equal(GUIDE_PUBLICATION_PATCH, CURRENT_PATCH_LABEL, 'Publication patch must match the registry patch label');
+const P = CURRENT_PATCH_LABEL;
 const ids = new Set(getAllGuideSpecs().map(guide => guide.id));
 let previous = '9999-12-31';
 for (const entry of guideUpdates) {
@@ -27,15 +29,15 @@ for (const id of ids) {
   const publication = getGuidePublication(id, manuscript);
   assert.ok(publication.date && publication.commit, `Missing Git publication for ${id}`);
   const latest = guideUpdates.find(entry => entry.guideIds.includes(id));
-  if (manuscript.patch !== '12.1' || latest.partial) {
+  if (manuscript.patch !== P || latest.partial) {
     assert.equal(publication.partial, true);
-    assert.equal(publication.label, '12.1 전환 중');
-    assert.ok(publication.detail.includes(manuscript.patch === '12.1' ? '전체 검수' : manuscript.patch));
+    assert.equal(publication.label, `${P} 전환 중`);
+    assert.ok(publication.detail.includes(manuscript.patch === P ? '전체 검수' : manuscript.patch));
   } else {
-    assert.equal(publication.label, '12.1');
+    assert.equal(publication.label, P);
     assert.equal(publication.partial, false);
   }
-  assert.doesNotMatch(publication.detail, /12\.1.*12\.1/, 'Duplicate patch in badge');
+  assert.ok(publication.detail.split(P).length <= 2, 'Duplicate patch in badge');
 }
 assert.equal(getGuidePublication('unknown', null).label, '확인 중');
 assert.equal(getGuidePublication('unknown', null).date, null);

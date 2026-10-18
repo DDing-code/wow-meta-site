@@ -6,6 +6,8 @@ const path = require('path');
 const SITE_ROOT = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(SITE_ROOT, 'src', 'data');
 const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.1';
+// 12.1.5에서 바뀐 노트는 12.1.5로 다시 확인했다(src/data/guideRegistry.js 의 CURRENT_DATA_PATCHES 와 같다).
+const CURRENT_DATA_PATCHES = [EXPECTED_PATCH, '12.1.5'];
 const REQUIRED_KB_ROOT_SEGMENT = '08-\uC9C1\uC5C5\uBCC4-Knowledge-Base';
 const FORBIDDEN_KB_SEGMENTS = ['01-ATOMIC', '02-SYNERGY'];
 
@@ -92,7 +94,7 @@ function validateSkills(data) {
     assert(skill.spec, `skills:${key}: spec is missing`);
     validateSource('skills', key, skill);
 
-    if (skill.patch && skill.patch !== EXPECTED_PATCH) {
+    if (skill.patch && !CURRENT_DATA_PATCHES.includes(skill.patch)) {
       warnings.push(`skills:${key}: item patch is ${skill.patch}, metadata patch is ${EXPECTED_PATCH}`);
     }
   });
@@ -100,7 +102,7 @@ function validateSkills(data) {
 
 function validateUnholyMechanics(skills = {}) {
   for (const [castId, effectId] of [['1233448', '63560'], ['458128', '455397'], ['1271967', '1271974']]) {
-    assert(skills[castId]?.patch === '12.1' && skills[castId]?.castTime === '즉시', `Unholy:${castId}: current cast ID must survive KB sync`);
+    assert(['12.1', '12.1.5'].includes(skills[castId]?.patch) && skills[castId]?.castTime === '즉시', `Unholy:${castId}: current cast ID must survive KB sync`);
     assert(skills[effectId]?.castTime === '지속 효과', `Unholy:${effectId}: effect/talent must not become an independently cast button`);
     assert(skills[castId]?.name === skills[effectId]?.name, `Unholy:${castId}: cast and effect must retain the same official name`);
   }
@@ -137,7 +139,7 @@ function validateSynergies(data) {
     assert(synergy.spec, `synergies:${key}: spec is missing`);
     validateSource('synergies', key, synergy);
 
-    if (synergy.patch && synergy.patch !== EXPECTED_PATCH) {
+    if (synergy.patch && !CURRENT_DATA_PATCHES.includes(synergy.patch)) {
       warnings.push(`synergies:${key}: item patch is ${synergy.patch}, metadata patch is ${EXPECTED_PATCH}`);
     }
   });

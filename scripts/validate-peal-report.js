@@ -5,7 +5,7 @@ const report = require('../src/data/pealMythicReport.json');
 const kb = require('../src/data/kb-skills.json');
 const byKey = new Map(report.fights.map(f => [f.key,f]));
 assert.equal(byKey.size,12);
-assert.equal(report.patch,'12.1');
+assert.ok(['12.1', '12.1.5'].includes(report.patch));
 assert.equal(report.fights.filter(f=>f.key.startsWith('p')).length,5);
 for(const f of report.fights) {
   assert(/^[A-Za-z0-9]{16}$/.test(f.code));

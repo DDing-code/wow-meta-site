@@ -3,7 +3,8 @@
 const RULES = [
   [/졸개가/g, '쫄이'], [/졸개를/g, '쫄을'], [/졸개는/g, '쫄은'], [/졸개와/g, '쫄과'],
   [/졸개야/g, '쫄이야'], [/졸개/g, '쫄'],
-  [/우두머리/g, '네임드'],
+  // 공식 스킬 이름(우두머리 포식자)은 Wowhead 한국어 이름 그대로 둔다.
+  [/우두머리(?! 포식자)/g, '네임드'],
 ];
 const fixText = text => RULES.reduce((value, [pattern, to]) => value.replace(pattern, to), text);
 function fixDeep(value) {

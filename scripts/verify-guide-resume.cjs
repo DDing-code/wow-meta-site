@@ -8,7 +8,7 @@ function load(file, name) {
   const source = fs.readFileSync(path.join(root, 'src/data', file), 'utf8');
   return new Function(source.replace(/export default \w+;?/, '').replace(/export (const|function)/g, '$1') + `;return ${name}`)();
 }
-const guides = load('guideManuscripts.js', 'guideManuscripts');
+const guides = require('./lib/guideManuscripts.cjs').loadGuideManuscripts();
 const registry = load('guideRegistry.js', 'getAllGuideSpecs()');
 const source = fs.readFileSync(path.join(root, 'src/data/guideManuscripts.js'), 'utf8');
 const ast = parser.parse(source, {sourceType:'module'});
@@ -106,13 +106,13 @@ assert.deepEqual(missingModes, []);
 const {skills} = require('../src/data/kb-skills.json');
 assert.equal(skills['343737'].category, 'passive');
 assert.equal(skills['406139'].category, 'buff');
-assert.equal(skills['1271748'].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills['1271748'].patch));
 assert.equal(skills['204883'].patch, '11.0.2', '제거된 치유의 마법진을 현행 핵심 스킬로 분류하지 않음');
 for (const id of ['321377','372309','388193','391154','391387']) assert.equal(skills[id].patch, '12.0.5', '미확인 과거 주문을 현재 패치로 일괄 변경하지 않음');
 const {synergies} = require('../src/data/kb-synergies.json');
 for (const id of ['monk_mistweaver_celestial_conduit_revival','monk_mistweaver_enveloping_single_target_recovery','priest_holy_apotheosis_hymn','priest_holy_celestial_cooldown_windows','priest_holy_prayer_sanctify_circle','priest_holy_prayer_of_mending_aoe','priest_holy_prayer_of_mending_talent_web','SY-WARLOCK-COMMON-CURSES-FEAR-CC']) {
   const synergy = synergies[id];
-  assert.equal(synergy.patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(synergy.patch));
   assert(synergy.participants.every(p => !['321377','372309','391154','391387','204883'].includes(p)), id);
   assert(synergy.linkedTalents.every(p => !/(기도의마법진|공명의권능|신성한회복|이루어진기원)$/.test(p)), id);
 }

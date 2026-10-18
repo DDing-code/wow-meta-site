@@ -1,0 +1,121 @@
+URL: https://www.wowhead.com/guide/classes/demon-hunter/devourer/rotation-cooldowns-pve-dps
+STATUS: 202
+dateModified: 2026-10-14T13:51:40-05:00
+hero switch clicked: 0
+
+Welcome to the Devourer Demon Hunter rotation guide for Midnight Season 2! This guide will teach you all about the optimal rotation for Devourer Demon Hunter across its various talent builds. It will cover both core ability cadence and cooldown usage in dungeons and raids for Midnight Season 2.
+Overview
+BiS Gear
+Rotation
+Talent Builds
+Consumables
+Stats
+Basics
+Drop the Ads.
+Keep the Loot.
+Report Ad
+Report ad
+Remove All Ads
+DEVOURER DEMON HUNTER ROTATION IN MIDNIGHT SEASON 2
+Devourer Demon Hunter uses two separate resources and features a different cadence to their rotation depending on whether you are inside  Void Metamorphosis or not. This can seem overwhelming at first, but the spec has some core concepts to help follow and keep things on track. The core concepts to keep in mind in single target are these, in order of importance:
+	Avoid Resource Waste: Use  Void Metamorphosis and  Void Ray as soon as they are available. To take full advantage of our tier set, look to use  Reap whenever it will collect 4 or more souls.
+	Plan Cooldown Usage: The goals of your  Void Metamorphosis windows will be to cast as many  Collapsing Stars as possible.  Annihilator seeks to cast 4-5 in Single Target, and 5+ in AoE, while  Void-Scarred seeks to cast 3-4 of them In Single-Target, and 4+ in AoE. Either way, a lot of your damage comes from these windows, so ensure minimal disruption from them.
+	Accelerate Your Rotation:  Reap is used to accelerate into  Void Ray and  Void Metamorphosis, collecting souls, generating Fury and dealing a large amount of your damage. In season 2, both hero talent trees are looking to cast it as much as possible in Single Target, using it whenever it will collect 4+ souls (10 for  Eradicate), to take advantage of our tier set.
+Devourer Demon Hunter Starter Guide
+BEST DEVOURER DEMON HUNTER ROTATION
+For all forms of content, Devourer follows a priority list of what spells to cast. It looks to manage its dual resource system to get into  Void Metamorphosis as soon as possible.
+
+Below, we break down the main priority lists for Devourer Demon Hunter: Single-Target Rotation, AoE Rotation, and your opener sequence.
+Hero Talent Master Switches
+You can use the master switches below to flip the entire page's options to your selected choice.
+
+
+
+Annihilator
+Void-Scarred
+
+
+Single-Target Priority
+AoE Priority
+Opener
+Pre-Combat Checks
+BEST DEVOURER DEMON HUNTER SINGLE TARGET ROTATION
+Devourer in Single Target plays around a priority list, juggling both ability cooldowns and resources based on an order of power. This means with each GCD, we go top to bottom on a list, and press the button with the current highest value..
+With  Annihilator selected, the priority is as follows:
+The builds used below are covered in the Talents page. Anywhere you see the  icon, you can hover over it for additional notes.
+OPTIONS
+Devourer's Bite
+OUTSIDE VOID METAMORPHOSIS PRIORITY
+Cast  Consume if it will trigger  Soulburst.
+Cast  Reap at 4+ souls. - 
+Cast  Void Metamorphosis
+Cast  Void Ray - 
+Cast  Soul Immolation.
+Cast  Consume
+INSIDE VOID METAMORPHOSIS PRIORITY
+Cast  Devour if it will trigger  Soulburst.
+Cast  Void Ray unless it will overcap you on Souls - 
+Cast  Collapsing Star
+Cast  Cull at 4+ Souls
+Cast  Devour
+Cast  Soul Immolation as you drop out of  Void Metamorphosis.
+DEVOURER DEMON HUNTER MAJOR COOLDOWNS
+Devourer is fairly straight forward in the number of Cooldowns it has access to on its spec tree. All of them come with some extra wrinkles in how they work rather than simply being flat increases, so the below section covers how they work, and most importantly, how to get the most out of each use.
+Void Metamorphosis
+Collapsing Star
+The Melee Talents
+VOID METAMORPHOSIS‎
+ Void Metamorphosis is your main damaging cooldown as a Devourer Demon Hunter, transforming you into a Void Empowered Demon form, and empowering your character in a variety of ways.
+
+Unlike most specializations,  Void Metamorphosis does not have a cooldown or a duration. Instead of a cooldown, it is available when you collect 50 Soul Fragments (or 35 Soul Fragments if you have the talent  Soul Glutton). Due to the talent  Entropy, we start combat with 25 Soul Fragments already collected, so a small period of ramp is needed before we have access to our cooldown. While inside of  Void Metamorphosis, its duration is dependent on your Fury bar. Your Fury bar is instantly refilled when you enter and drains over time, ramping in drain intensity over time. Some of your abilities will briefly pause this drain, which we outline below.
+
+While in Void Metamorphosis, the following benefits apply:
+Your Fury bar is refilled, and drains over time, increasing in drain speed the longer you are in Void Metamorphosis. Once your Fury bar reaches 0, you drop out of Void Metamorphosis.
+Your Mastery increases in power
+ Consume is upgraded into  Devour, dealing more damage, having a shorter cast time, and reducing the cooldown of  Reap by 1 sec per cast
+ Reap is upgraded into  Cull, dealing more damage
+ Void Ray is upgraded, dealing more damage, costing no fury, and pausing your Fury drain while channeling it. It also gains a 14s hasted cooldown while inside of Void Metamorphosis. This cooldown does not persist outside of Void Metamorphosis
+You gain access to the powerful spell  Collapsing Star
+While inside of Void Metamorphosis, the following spells will briefly pause your fury drain:
+ Void Ray
+ Collapsing Star
+ Voidblade with the talent  Voidrush
+ The Hunt with the talent  Voidrush
+ Annihilator resets the cooldown of  Reap, and automatically proc  Voidfall.
+ Void-Scarred resets the cooldown  Soul Immolation and  Voidblade. Additionally, your abilities are further upgraded:
+ Voidblade is upgraded into  Pierce the Veil
+ Hungering Slash is upgraded into  Reaper's Toll
+ The Hunt is upgraded into  Predator's Wake
+Furthermore, the first cast of each melee ability triggers a  Voidsurge
+Each cast of  Collapsing Star resets the cooldown of  The Hunt.
+Both Hero Trees seek to extend this form as long as possible, casting as many  Collapsing Stars as possible to leverage the powerful damage and bonuses it provides.
+DEVOURER DEMON HUNTER ADVANCED TIPS
+As a Devourer Demon Hunter, most of your high-level optimizations occur around getting to, and subsequently optimizing, your  Void Metamorphosis windows. These are where the majority of your damage comes from, and ensuring proper optimization of these is best for increasing your overall. Some advanced tips follow in the tabs below.
+Smuggling and Huggling
+Wiggling
+Shipping
+Reap Usage
+SMUGGLING
+If you've been around the Devourer Demon Hunter community for any length of time, you may have heard of an action called smuggling. While this is NOT related to real life smuggling (this guide doesn't teach that, sorry), what it does describe is the action of taking a proc or resource into or out of  Void Metamorphosis where you otherwise wouldn't be able to. Generally speaking, Smuggling is often done with the following things:
+ Shattered Souls
+ Hungering Slash
+ Eradicate and  Moment of Craving
+ The Hunt
+Let's breakdown what Smuggling refers to in each of these cases, and why you'd want to do it!
+SHATTERED SOULS
+Soul Fragments serve as the most important resource for Devourer, powering you to access your key cooldown in  Void Metamorphosis while in normal form, or allowing you to cast the powerful  Collapsing Star when already inside of it. Soul Fragments for Devourer exist in two separate states, those collected outside of Void Metamorphosis, and those collected while already inside of it. Importantly, these stacks do not carry over when you change forms, and are wiped each time you enter or leave Void Metamorphosis.
+
+Thankfully, Soul Fragments do not automatically pick up, and we can have 10 lingering on the ground at any given time without collecting them. Because of these, we are able to leave Soul Fragments on the ground when we enter or leave Void Metamorphosis, and then collect them after. This allows us to enter Void Meta with more progress made towards Collapsing Star, or to leave Void Meta and have some progress made to get into our next one faster!
+HUNGERING SLASH
+By carrying any  Hungering Slash proc we have outside of  Void Metamorphosis into it, it upgrades into  Reaper's Toll, gaining 20% additional damage. On top of that, our damage further increases in Void Metamorphosis due to the second half of our mastery  Mastery: Monster Within, further increasing our damage. This allows us to get 3 supercharged  Reaper's Toll per Void Metamorphosis, up from 2.
+
+While this is often done by utilizing  Voidblade prior to entering Void Metamorphosis, it can also be done with  The Hunt. This is often referred to as "Huggling" and has its own dedicated section down below.
+ERADICATE AND MOMENT OF CRAVING
+Similar to smuggling  Hungering Slash, by smuggling  Eradicate and  Moment of Craving into  Void Metamorphosis, we're able to take advantage of the 30% more damage that  Cull gains, as well as the additional damage we gain from our mastery  Mastery: Monster Within. By smuggling  Moment of Craving into Void Meta, we're able to spend that on a Cull rather than a  Reap. Likewise, since  Void Ray is reset upon entering Void Meta, we're able to use 2 Moment of Craving buffed Culls at the start of our burst, rather than 1.  Eradicate works similarly, upgrading into the "Cull" version when entering Meta, and doing 30% more damage (+damage from our mastery) as a result. While this behaviour is not currently used in Single Target, in AOE, we're aiming to smuggle an Eradicate into Void Meta every time that we are able to.
+HUGGLING
+Newly discovered in S2 of Midnight, Huggling (Hunt Smuggling) is a turbo charged version of smuggling in a  Hungering Slash. By pressing  Void Metamorphosis during the travel time of The Hunt, we are able to activate our Meta Form before The Hunt deals damage, upgrading it into  Predator's Wake prior to damage being dealt. This means we gain the upgraded damage on The Hunt, and are still able to smuggle in Hungering Slash.
+
+Performing this trick is fairly easy, requiring roughly 14% haste and enough distance so your gcd comes up during The Hunt travel. The easiest way to do this, and the way we recommend, is to  Voidblade followed by  Vengeful Retreat. While midair from the Vengeful Retreat, cast The Hunt, and then press Void Metamorphosis as you travel towards your target. The animation will get locked out until you finish the charge, so it will look like nothing happened, but it *will* successfully Huggle.
+
+This trick is not very useful in AoE, following the changes in 12.1.5. However, we aim to do it every time we can in Single-Target.
+Our Devourer Demon Hunter guides are always updated with the latest information from in-game experience, simulations, and logs. Make sure to check our changelog for this page by clicking on View Changelog in the Quick Facts column or on the book icon at the top of the page. If you are interested in more in-depth Devourer Demon Hunter guides for Midnight Season 2, make sure to browse the Navigation Bar at the top of the page, along with our list of Related Guides just beneath the Table of Contents.

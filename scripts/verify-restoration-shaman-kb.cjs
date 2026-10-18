@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict');
 const {skills} = require('../src/data/kb-skills.json');
 for (const id of [73920,73685,61295,77472]) {
-  assert.equal(skills[id].patch,'12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs,['Restoration']);
   assert(!skills[id].description.startsWith('#'));
   assert(skills[id].description.length>80);
@@ -17,28 +17,28 @@ assert.match(skills[61295].description,/18초.*1회/);
 assert.equal(skills[77472].castTime,'2초');
 assert.match(skills[77472].description,/2.38%/);
 assert.equal(skills[1252841], undefined, 'Removed Calm Waters must not return');
-for (const id of [1253093,1312843]) assert.equal(skills[id].patch,'12.1');
+for (const id of [1253093,1312843]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.match(skills[1253093].description,/15%/);
 assert.match(skills[1312843].description,/3초.*1267016/);
 assert.match(skills[445030].description,/쇄도하는 토템과 범람의 파도의 치유량.*증가/);
 assert.equal(skills[1312843].icon,'ability_shaman_manatidetotem');
 const synergies = require('../src/data/kb-synergies.json');
 assert(!JSON.stringify(synergies).includes('1252841'), 'Removed talent must have no graph edges');
-assert.equal(skills[1271104].patch,'12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[1271104].patch));
 assert.equal(skills[1271104].castTime,'지속 효과');
 assert.match(skills[1271104].description,/30%.*20%p.*45%/);
 const accord = synergies.synergies.shaman_restoration_unleash_earthen_accord;
-assert.equal(accord.patch,'12.1');
+assert.ok(['12.1', '12.1.5'].includes(accord.patch));
 assert.deepEqual(accord.participants,['73685','1271104','61295','1064','77472']);
 for (const id of ['shaman_restoration_sustain_shields','shaman_restoration_spiritlink_raid']) {
   assert(!synergies.synergies[id].participants.includes('1271104'), 'Unrelated defensive hub must not claim Earthen Accord');
 }
 console.log('Restoration core spells and talent migration verified; full guide audit remains open.');
-assert.equal(skills[443450].patch,'12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[443450].patch));
 assert.deepEqual(skills[443450].specs,['Elemental','Restoration']);
 assert.match(skills[443450].description,/복원.*생명 폭발.*12초.*정기.*폭풍수호자.*8초/);
 for (const id of [1267016,1267093,1267120]) {
-  assert.equal(skills[id].patch,'12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].castTime,'지속 효과');
   assert(!skills[id].description.startsWith('#'));
 }
@@ -47,7 +47,7 @@ assert.match(skills[1267120].description,/신속함.*사용 횟수.*충전을 �
 assert.match(skills[1267093].description,/1포인트.*20%.*2포인트.*40%/);
 assert.match(skills[1267093].description,/60%도 아니다/);
 for (const id of [114052,108280,98008]) {
-  assert.equal(skills[id].patch,'12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].cooldown,'3분');
   assert.equal(skills[id].castTime,'즉시');
 }
@@ -56,7 +56,7 @@ assert.match(skills[114052].description,/15초.*3명.*10%.*50%.*25%/);
 assert.match(skills[108280].description,/10초.*2초.*40야드.*5명/);
 assert.match(skills[98008].description,/40야드.*6초.*10야드.*10%/);
 for (const id of [1296629,1296630]) {
-  assert.equal(skills[id].patch,'12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].type,'set-bonus');
   assert.deepEqual(skills[id].specs,['Restoration']);
 }
@@ -72,13 +72,13 @@ for (const [id, pattern] of [
   [378443, /5명.*2초/], [381946, /6초.*15%/], [382020, /3%.*150%/],
   [382021, /1시간.*20%.*6초/], [382030, /5초/],
 ]) {
-  assert.equal(skills[id].patch, '12.1', `Spell ${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), `Spell ${id} must be current`);
   assert.match(skills[id].description, pattern);
 }
-assert.equal(skills[212048].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[212048].patch));
 assert.equal(skills[212048].castTime, '10초');
 assert.match(skills[212048].description, /전투 중에는 사용할 수 없/);
-assert.equal(skills[2008].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[2008].patch));
 assert.match(skills[2008].description, /전투 중에는 사용할 수 없/);
 for (const id of ['shaman_restoration_farseer_ancestor', 'shaman_restoration_sustain_shields']) {
   assert(!synergies.synergies[id].participants.includes('212048'), `${id} must not include a resurrection spell`);
@@ -90,7 +90,7 @@ for (const [id, pattern] of [
   [462587, /200%.*215%/], [1252882, /두 번/], [1253014, /20%/],
   [1253090, /12%/], [1254210, /40%/], [1254251, /1초/],
 ]) {
-  assert.equal(skills[id].patch, '12.1', `Spell ${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), `Spell ${id} must be current`);
   assert.match(skills[id].description, pattern);
 }
 assert.match(skills[462486].description, /특성.*207778/);
@@ -106,7 +106,7 @@ for (const [id, pattern] of [
   [51490, /10미터.*5초.*40%.*30초/], [5394, /15초.*2초.*40미터/],
   [2825, /40초.*30%.*10분/],
 ]) {
-  assert.equal(skills[id].patch, '12.1', `Shared spell ${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), `Shared spell ${id} must be current`);
   assert.match(skills[id].description, pattern);
 }
 assert.deepEqual(skills[51490].specs, ['Elemental']);
@@ -121,10 +121,10 @@ for (const [id, pattern] of [
   [381867, /5초.*쇄도하는 토템.*적용되지 않/],
   [382201, /15%.*10초.*3초/],
 ]) {
-  assert.equal(skills[id].patch, '12.1', `Shared talent ${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), `Shared talent ${id} must be current`);
   assert.match(skills[id].description, pattern);
 }
-assert.equal(synergies.synergies.shaman_common_totem_control_mythic_utility.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies.synergies.shaman_common_totem_control_mythic_utility.patch));
 for (const [id, pattern] of [
   [462791, /30초.*2초.*제트 기류/], [382215, /3%\/6%.*5%\/10%/],
   [382197, /영혼 정화.*날카로운 바람.*정화.*토템/],
@@ -137,7 +137,7 @@ for (const [id, pattern] of [
   [1270375, /특화.*3%/], [381650, /마법 피해.*8%/],
   [381655, /2%\/4%/], [462854, /1시간.*2%.*20%/],
 ]) {
-  assert.equal(skills[id].patch, '12.1', `Shared talent ${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), `Shared talent ${id} must be current`);
   assert.match(skills[id].description, pattern);
 }
 assert.equal(skills[462854].castTime, '즉시');
@@ -149,7 +149,7 @@ for (const id of ['1279819', '355630']) {
 console.log('Restoration 12.1 tooltip effects and resurrection graph verified.');
 for (const id of [443418,443423,443425,443441,443442,443444,443445,443446,
   443447,443448,443449,443451,443454,1270446,1270447,1270450]) {
-  assert.equal(skills[id].patch, '12.1', `Farseer talent ${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), `Farseer talent ${id} must be current`);
   assert.doesNotMatch(skills[id].description, /선견자 영웅 특성은 선조를 소환해/);
 }
 assert.equal(skills[443454].castTime, '즉시');
@@ -162,12 +162,12 @@ assert.match(skills[443441].description, /대지의 보호막.*3회.*25%/);
 assert.match(skills[443449].description, /선조.*25%/);
 assert.match(skills[443446].description, /떠날 때.*수력방울.*15초.*정기 작렬/);
 const farseer = synergies.synergies.shaman_hero_farseer_ancestor_common_hub;
-assert.equal(farseer.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(farseer.patch));
 assert(farseer.participants.includes('443454'));
 assert(farseer.participants.includes('443441'));
 assert(!farseer.participants.includes('2008'), 'Resurrection must not be a Farseer synergy node');
 console.log('Shared Farseer 12.1 effects and active ability verified.');
-assert.equal(skills[2825].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[2825].patch));
 assert.equal(skills[2825].castTime, '즉시');
 assert.equal(skills[2825].cooldown, '5분');
 assert.equal(skills[2825].resourceCost, '기본 마나 0.4%');
@@ -177,7 +177,7 @@ for (const id of ['shaman_common_ghost_wolf_spiritwalker_mobility',
   'shaman_common_earth_shield_healing_stream_support',
   'shaman_common_purge_interrupt_cleanse',
   'shaman_common_bloodlust_heroism_party_cooldown']) {
-  assert.equal(synergies.synergies[id].patch, '12.1', `${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(synergies.synergies[id].patch), `${id} must be current`);
 }
 const mobility = synergies.synergies.shaman_common_ghost_wolf_spiritwalker_mobility.participants;
 assert(mobility.includes('378077'), 'Spiritwalker Aegis must be in the mobility hub');
@@ -196,24 +196,24 @@ for (const [id, participants] of [
   ['shaman_restoration_totemic_surging',
     ['444995','445034','445025','445029','445035','445036','5394','382030','1064','108280','98008','73920']],
 ]) {
-  assert.equal(synergies.synergies[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(synergies.synergies[id].patch));
   assert.deepEqual(synergies.synergies[id].participants, participants);
 }
 for (const id of ['shaman_restoration_totemic_surging', 'shaman_restoration_farseer_ancestor']) {
   assert(!synergies.synergies[id].participants.includes('2008'), `${id} must not include resurrection`);
 }
-const manuscript = require('node:fs').readFileSync(require.resolve('../src/data/guideManuscripts.js'), 'utf8');
-const guides = new Function(manuscript.replace(/export default \w+;?/, '').replace(/export (const|function)/g, '$1') + ';return guideManuscripts')();
+const manuscript = require('./lib/guideManuscripts.cjs').readAllGuideManuscriptText();
+const guides = require('./lib/guideManuscripts.cjs').loadGuideManuscripts();
 const branches = guides['shaman-restoration'].heroBranches;
 assert(branches[0].opener.steps.some(s => s.skillId === '444995'));
 assert(!branches[0].opener.steps.some(s => s.skillId === '73920'));
 assert(branches[1].opener.steps.some(s => s.skillId === '73920'));
 assert(!branches[1].opener.steps.some(s => s.skillId === '444995'));
 console.log('Restoration Farseer, Totemic and Riptide 12.1 graph branches verified.');
-assert.equal(synergies.synergies.shaman_restoration_healingrain_acidrain.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies.synergies.shaman_restoration_healingrain_acidrain.patch));
 assert.deepEqual(synergies.synergies.shaman_restoration_healingrain_acidrain.participants,
   ['73920','378443','1252874','383222','462424','444995']);
-assert.equal(synergies.synergies.shaman_restoration_downpour_tide.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies.synergies.shaman_restoration_downpour_tide.patch));
 assert.deepEqual(synergies.synergies.shaman_restoration_downpour_tide.participants,
   ['73920','444995','462486','207778','1252882','1253014','108280']);
 assert.match(skills[462486].description, /쇄도하는 토템.*16초.*207778/);
@@ -234,11 +234,11 @@ for (const [id, participants] of [
   ['shaman_restoration_direct_heal_mana',
     ['77472','1064','61295','51564','378081','73685','1253093','16196','114052']],
 ]) {
-  assert.equal(synergies.synergies[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(synergies.synergies[id].patch));
   assert.deepEqual(synergies.synergies[id].participants, participants);
 }
 for (const [id, synergy] of Object.entries(synergies.synergies)) {
-  if (id.startsWith('shaman_restoration_')) assert.equal(synergy.patch, '12.1', `${id} is still stale`);
+  if (id.startsWith('shaman_restoration_')) assert.ok(['12.1', '12.1.5'].includes(synergy.patch), `${id} is still stale`);
 }
 assert.match(skills[108280].description, /승천과 양자택일/);
 assert.match(skills[108280].description, /갈라지는 지류.*25%/);

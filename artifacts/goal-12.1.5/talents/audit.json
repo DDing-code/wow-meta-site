@@ -1,0 +1,2255 @@
+[
+  {
+    "guideId": "deathknight-blood",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "산레인"
+    }
+  },
+  {
+    "guideId": "deathknight-blood",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "죽음의 인도자"
+    }
+  },
+  {
+    "guideId": "deathknight-blood",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "산레인"
+    }
+  },
+  {
+    "guideId": "deathknight-frost",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "죽음의 인도자"
+    }
+  },
+  {
+    "guideId": "deathknight-frost",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "죽음의 인도자"
+    }
+  },
+  {
+    "guideId": "deathknight-frost",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "죽음의 인도자"
+    }
+  },
+  {
+    "guideId": "deathknight-unholy",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "종말의 기수"
+    }
+  },
+  {
+    "guideId": "deathknight-unholy",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "산레인"
+    }
+  },
+  {
+    "guideId": "deathknight-unholy",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "종말의 기수"
+    }
+  },
+  {
+    "guideId": "demonhunter-devourer",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": false,
+    "problems": [
+      "계산기 전문화 33/34",
+      "계산기가 빼고 불러온 특성: Improved Consume(1272817)"
+    ],
+    "touchesChangedNodes": [
+      "Waste Not(1223918) [node 107999: row 5→6, col 5→7]",
+      "The Hunt(1246167) [node 109503: req 20→8, row 10→5]",
+      "Devourer's Bite(1240201) [node 110167: row 9→10, col 3→2]",
+      "Singular Strikes(1272770) [node 110170: col 2→1]",
+      "Soulforged Blades(1272432) [node 110171: row 8→9, col 1→3]"
+    ],
+    "meaningChanged": [],
+    "action": "대체 제안",
+    "calculator": {
+      "points": [
+        34,
+        33,
+        13
+      ],
+      "hero": "공허상흔"
+    }
+  },
+  {
+    "guideId": "demonhunter-devourer",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": false,
+    "problems": [
+      "계산기 전문화 33/34",
+      "계산기가 빼고 불러온 특성: Voidpurge(1244220)"
+    ],
+    "touchesChangedNodes": [
+      "Eradicate(1226033) [node 107345: req 20→8, row 10→5]",
+      "Waste Not(1223918) [node 107999: row 5→6, col 5→7]",
+      "Star Fragments(1240204) [node 110172: req 20→8, row 9→5, col 6→5]",
+      "Voidpurge(1244220) [node 110174: req 8→20, row 6→10, col 7→6]"
+    ],
+    "meaningChanged": [],
+    "action": "대체 제안",
+    "calculator": {
+      "points": [
+        34,
+        33,
+        13
+      ],
+      "hero": "궤멸자"
+    }
+  },
+  {
+    "guideId": "demonhunter-devourer",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Eradicate(1226033) [node 107345: req 20→8, row 10→5]",
+      "Waste Not(1223918) [node 107999: row 5→6, col 5→7]",
+      "The Hunt(1246167) [node 109503: req 20→8, row 10→5]",
+      "Devourer's Bite(1240201) [node 110167: row 9→10, col 3→2]",
+      "Singular Strikes(1272770) [node 110170: col 2→1]",
+      "Star Fragments(1240204) [node 110172: req 20→8, row 9→5, col 6→5]"
+    ],
+    "meaningChanged": [],
+    "action": "대체 제안",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "공허상흔"
+    }
+  },
+  {
+    "guideId": "demonhunter-havoc",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "알드라치 파괴자"
+    }
+  },
+  {
+    "guideId": "demonhunter-havoc",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "지옥상흔"
+    }
+  },
+  {
+    "guideId": "demonhunter-havoc",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "알드라치 파괴자"
+    }
+  },
+  {
+    "guideId": "demonhunter-vengeance",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "궤멸자"
+    }
+  },
+  {
+    "guideId": "demonhunter-vengeance",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "궤멸자"
+    }
+  },
+  {
+    "guideId": "demonhunter-vengeance",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "궤멸자"
+    }
+  },
+  {
+    "guideId": "druid-balance",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-balance",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-balance",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-feral",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "발톱의 드루이드"
+    }
+  },
+  {
+    "guideId": "druid-feral",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "야생추적자"
+    }
+  },
+  {
+    "guideId": "druid-feral",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "발톱의 드루이드"
+    }
+  },
+  {
+    "guideId": "druid-guardian",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-guardian",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-guardian",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "엘룬의 대행자"
+    }
+  },
+  {
+    "guideId": "druid-restoration",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "야생추적자"
+    }
+  },
+  {
+    "guideId": "druid-restoration",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "야생추적자"
+    }
+  },
+  {
+    "guideId": "druid-restoration",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "야생추적자"
+    }
+  },
+  {
+    "guideId": "evoker-augmentation",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "시간 감시자"
+    }
+  },
+  {
+    "guideId": "evoker-augmentation",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "비늘사령관"
+    }
+  },
+  {
+    "guideId": "evoker-augmentation",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "시간 감시자"
+    }
+  },
+  {
+    "guideId": "evoker-devastation",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "비늘사령관"
+    }
+  },
+  {
+    "guideId": "evoker-devastation",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "비늘사령관"
+    }
+  },
+  {
+    "guideId": "evoker-devastation",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "비늘사령관"
+    }
+  },
+  {
+    "guideId": "evoker-preservation",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "불꽃형성자"
+    }
+  },
+  {
+    "guideId": "evoker-preservation",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "불꽃형성자"
+    }
+  },
+  {
+    "guideId": "evoker-preservation",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "불꽃형성자"
+    }
+  },
+  {
+    "guideId": "hunter-beastmastery",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "무리의 지도자"
+    }
+  },
+  {
+    "guideId": "hunter-beastmastery",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "무리의 지도자"
+    }
+  },
+  {
+    "guideId": "hunter-beastmastery",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "무리의 지도자"
+    }
+  },
+  {
+    "guideId": "hunter-marksmanship",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Unload(1277548) → Blood Fletching(1319011) [node 104095: spell 1277548→1319011, name Unload→Blood Fletching]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Unload(1277548) r1 / 12.1.5: Blood Fletching(1319011) r1"
+    ],
+    "action": "근거 없음(기존 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "파수꾼"
+    }
+  },
+  {
+    "guideId": "hunter-marksmanship",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Unload(1277548) → Blood Fletching(1319011) [node 104095: spell 1277548→1319011, name Unload→Blood Fletching]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Unload(1277548) r1 / 12.1.5: Blood Fletching(1319011) r1"
+    ],
+    "action": "대체 제안",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "파수꾼"
+    }
+  },
+  {
+    "guideId": "hunter-marksmanship",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Unload(1277548) → Blood Fletching(1319011) [node 104095: spell 1277548→1319011, name Unload→Blood Fletching]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Unload(1277548) r1 / 12.1.5: Blood Fletching(1319011) r1"
+    ],
+    "action": "대체 제안",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "파수꾼"
+    }
+  },
+  {
+    "guideId": "hunter-survival",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "파수꾼"
+    }
+  },
+  {
+    "guideId": "hunter-survival",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "파수꾼"
+    }
+  },
+  {
+    "guideId": "hunter-survival",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "파수꾼"
+    }
+  },
+  {
+    "guideId": "mage-arcane",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "성난태양"
+    }
+  },
+  {
+    "guideId": "mage-arcane",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "성난태양"
+    }
+  },
+  {
+    "guideId": "mage-arcane",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "성난태양"
+    }
+  },
+  {
+    "guideId": "mage-fire",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "성난태양"
+    }
+  },
+  {
+    "guideId": "mage-fire",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "성난태양"
+    }
+  },
+  {
+    "guideId": "mage-fire",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "성난태양"
+    }
+  },
+  {
+    "guideId": "mage-frost",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "주문술사"
+    }
+  },
+  {
+    "guideId": "mage-frost",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "서리불꽃"
+    }
+  },
+  {
+    "guideId": "mage-frost",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Ice Cold(414659) → Ice Cold(414658) [node 62085: spell 414659→414658, rep 0→45438]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Ice Cold(414659) r1 / 12.1.5: Ice Cold(414658) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "주문술사"
+    }
+  },
+  {
+    "guideId": "monk-brewmaster",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "조화의 종사"
+    }
+  },
+  {
+    "guideId": "monk-brewmaster",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "음영파"
+    }
+  },
+  {
+    "guideId": "monk-brewmaster",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "조화의 종사"
+    }
+  },
+  {
+    "guideId": "monk-mistweaver",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "천신의 대변자"
+    }
+  },
+  {
+    "guideId": "monk-mistweaver",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "천신의 대변자"
+    }
+  },
+  {
+    "guideId": "monk-mistweaver",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "천신의 대변자"
+    }
+  },
+  {
+    "guideId": "monk-windwalker",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "음영파"
+    }
+  },
+  {
+    "guideId": "monk-windwalker",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "음영파"
+    }
+  },
+  {
+    "guideId": "monk-windwalker",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "음영파"
+    }
+  },
+  {
+    "guideId": "paladin-holy",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "태양의 사자"
+    }
+  },
+  {
+    "guideId": "paladin-holy",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "태양의 사자"
+    }
+  },
+  {
+    "guideId": "paladin-holy",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "태양의 사자"
+    }
+  },
+  {
+    "guideId": "paladin-protection",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "빛의 대장장이"
+    }
+  },
+  {
+    "guideId": "paladin-protection",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "빛의 대장장이"
+    }
+  },
+  {
+    "guideId": "paladin-protection",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "빛의 대장장이"
+    }
+  },
+  {
+    "guideId": "paladin-retribution",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "기사단"
+    }
+  },
+  {
+    "guideId": "paladin-retribution",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "기사단"
+    }
+  },
+  {
+    "guideId": "paladin-retribution",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "기사단"
+    }
+  },
+  {
+    "guideId": "priest-discipline",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Divine Procession(472361) [node 82599: req 8→20]"
+    ],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "공허술사"
+    }
+  },
+  {
+    "guideId": "priest-discipline",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Divine Procession(472361) [node 82599: req 8→20]"
+    ],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "공허술사"
+    }
+  },
+  {
+    "guideId": "priest-discipline",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Divine Procession(472361) [node 82599: req 8→20]"
+    ],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "공허술사"
+    }
+  },
+  {
+    "guideId": "priest-holy",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Holy Celerity(1215275) → Ultimate Serenity(1246517) [node 82612: spell 1215275→1246517, rep 0→34861, name Holy Celerity→Ultimate Serenity]",
+      "Ultimate Serenity(1246517) → Holy Celerity(1215275) [node 103900: spell 1246517→1215275, rep 34861→0, name Ultimate Serenity→Holy Celerity]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Holy Celerity(1215275) r1 / 12.1.0: Ultimate Serenity(1246517) r1 / 12.1.5: Ultimate Serenity(1246517) r1 / 12.1.5: Holy Celerity(1215275) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "예언자"
+    }
+  },
+  {
+    "guideId": "priest-holy",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Holy Celerity(1215275) → Ultimate Serenity(1246517) [node 82612: spell 1215275→1246517, rep 0→34861, name Holy Celerity→Ultimate Serenity]",
+      "Ultimate Serenity(1246517) → Holy Celerity(1215275) [node 103900: spell 1246517→1215275, rep 34861→0, name Ultimate Serenity→Holy Celerity]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Holy Celerity(1215275) r1 / 12.1.0: Ultimate Serenity(1246517) r1 / 12.1.5: Ultimate Serenity(1246517) r1 / 12.1.5: Holy Celerity(1215275) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "예언자"
+    }
+  },
+  {
+    "guideId": "priest-holy",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [
+      "Holy Celerity(1215275) → Ultimate Serenity(1246517) [node 82612: spell 1215275→1246517, rep 0→34861, name Holy Celerity→Ultimate Serenity]",
+      "Ultimate Serenity(1246517) → Holy Celerity(1215275) [node 103900: spell 1246517→1215275, rep 34861→0, name Ultimate Serenity→Holy Celerity]"
+    ],
+    "meaningChanged": [
+      "12.1.0: Holy Celerity(1215275) r1 / 12.1.0: Ultimate Serenity(1246517) r1 / 12.1.5: Ultimate Serenity(1246517) r1 / 12.1.5: Holy Celerity(1215275) r1"
+    ],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "예언자"
+    }
+  },
+  {
+    "guideId": "priest-shadow",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "집정관"
+    }
+  },
+  {
+    "guideId": "priest-shadow",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "집정관"
+    }
+  },
+  {
+    "guideId": "priest-shadow",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "집정관"
+    }
+  },
+  {
+    "guideId": "rogue-assassination",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "운명결속"
+    }
+  },
+  {
+    "guideId": "rogue-assassination",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "운명결속"
+    }
+  },
+  {
+    "guideId": "rogue-assassination",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "운명결속"
+    }
+  },
+  {
+    "guideId": "rogue-outlaw",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "기만자"
+    }
+  },
+  {
+    "guideId": "rogue-outlaw",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "기만자"
+    }
+  },
+  {
+    "guideId": "rogue-outlaw",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "기만자"
+    }
+  },
+  {
+    "guideId": "rogue-subtlety",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "죽음추적자"
+    }
+  },
+  {
+    "guideId": "rogue-subtlety",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "죽음추적자"
+    }
+  },
+  {
+    "guideId": "rogue-subtlety",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "죽음추적자"
+    }
+  },
+  {
+    "guideId": "shaman-elemental",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "선견자"
+    }
+  },
+  {
+    "guideId": "shaman-elemental",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "선견자"
+    }
+  },
+  {
+    "guideId": "shaman-elemental",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "선견자"
+    }
+  },
+  {
+    "guideId": "shaman-enhancement",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "폭풍인도자"
+    }
+  },
+  {
+    "guideId": "shaman-enhancement",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "폭풍인도자"
+    }
+  },
+  {
+    "guideId": "shaman-enhancement",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "폭풍인도자"
+    }
+  },
+  {
+    "guideId": "shaman-restoration",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "토템술사"
+    }
+  },
+  {
+    "guideId": "shaman-restoration",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "토템술사"
+    }
+  },
+  {
+    "guideId": "shaman-restoration",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "토템술사"
+    }
+  },
+  {
+    "guideId": "warlock-affliction",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "영혼 수확자"
+    }
+  },
+  {
+    "guideId": "warlock-affliction",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "영혼 수확자"
+    }
+  },
+  {
+    "guideId": "warlock-affliction",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "영혼 수확자"
+    }
+  },
+  {
+    "guideId": "warlock-demonology",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "악마학자"
+    }
+  },
+  {
+    "guideId": "warlock-demonology",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "악마학자"
+    }
+  },
+  {
+    "guideId": "warlock-demonology",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "악마학자"
+    }
+  },
+  {
+    "guideId": "warlock-destruction",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "지옥소환사"
+    }
+  },
+  {
+    "guideId": "warlock-destruction",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "악마학자"
+    }
+  },
+  {
+    "guideId": "warlock-destruction",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "지옥소환사"
+    }
+  },
+  {
+    "guideId": "warrior-arms",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-arms",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-arms",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-fury",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-fury",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-fury",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "학살자"
+    }
+  },
+  {
+    "guideId": "warrior-protection",
+    "buildId": "single-target",
+    "label": "단일",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "산왕"
+    }
+  },
+  {
+    "guideId": "warrior-protection",
+    "buildId": "mythic-plus",
+    "label": "쐐기",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "산왕"
+    }
+  },
+  {
+    "guideId": "warrior-protection",
+    "buildId": "raid",
+    "label": "레이드",
+    "valid": true,
+    "problems": [],
+    "touchesChangedNodes": [],
+    "meaningChanged": [],
+    "action": "재검증(코드 유지)",
+    "calculator": {
+      "points": [
+        34,
+        34,
+        13
+      ],
+      "hero": "산왕"
+    }
+  }
+]

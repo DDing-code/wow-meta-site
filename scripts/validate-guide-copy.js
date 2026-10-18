@@ -5,7 +5,14 @@ const path = require('path');
 const assert = require('node:assert/strict');
 
 const SITE_ROOT = path.resolve(__dirname, '..');
-const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
+const { listGuideManuscriptFiles } = require('./lib/guideManuscripts.cjs');
+
+// 원고는 전문화별 파일(src/data/manuscripts/<가이드 ID>.js)이다.
+// GUIDE_COPY_MANUSCRIPT_DIR 을 주면 같은 이름의 파일을 그 폴더에서 읽는다(artifacts/book-rebuild/preview.cjs 의 미리보기 검사).
+if (process.env.GUIDE_COPY_MANUSCRIPT_PATH) {
+  throw new Error('GUIDE_COPY_MANUSCRIPT_PATH 는 더 이상 쓰지 않는다. 전문화별 원고 파일이 든 폴더를 GUIDE_COPY_MANUSCRIPT_DIR 로 준다.');
+}
+const MANUSCRIPT_FILES = listGuideManuscriptFiles(process.env.GUIDE_COPY_MANUSCRIPT_DIR || undefined);
 const GUIDE_REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
 const GUIDE_DETAIL_PATH = path.join(SITE_ROOT, 'src', 'pages', 'GuideDetailPage.js');
 const MOCKUPS_PATH = path.join(SITE_ROOT, 'src', 'pages', 'MockupsPage.js');
@@ -381,15 +388,12 @@ function collectDisciplineRaptureSkillErrors() {
 }
 
 function collectDisciplineStandaloneRaptureCopyErrors() {
-  const text = fs.readFileSync(MANUSCRIPT_PATH, 'utf8');
-  const startMarker = "'priest-discipline':";
-  const endMarker = "\n  'priest-holy':";
-  const start = text.indexOf(startMarker);
+  const start = MANUSCRIPT_FILES.findIndex(item => item.id === 'priest-discipline');
   if (start === -1) return [];
 
-  const end = text.indexOf(endMarker, start);
-  const scopedText = text.slice(start, end === -1 ? undefined : end);
-  const baseLine = text.slice(0, start).split(/\r?\n/).length;
+  // 원고가 한 파일이던 때 이 검사는 끝 표식을 찾지 못해 수양 뒤에 오는 전문화(파일 끝까지)도 함께 훑었다.
+  // 전문화별 파일로 나눈 뒤에도 검사 범위를 그대로 둔다(수양 + 목록에서 그 뒤에 오는 전문화).
+  const scopedFiles = MANUSCRIPT_FILES.slice(start);
   const errors = [];
   const standaloneRaptureTerm = /(^|[^\uAC00-\uD7A3])\uD658\uD76C(?![\uAC00-\uD7A3])/;
   const allowedCurrentTerms = [
@@ -398,17 +402,17 @@ function collectDisciplineStandaloneRaptureCopyErrors() {
     '\uD658\uD76C\uC5D0 \uCC2C',
   ];
 
-  scopedText.split(/\r?\n/).forEach((line, index) => {
+  scopedFiles.forEach(({ filePath }) => fs.readFileSync(filePath, 'utf8').split(/\r?\n/).forEach((line, index) => {
     const normalized = allowedCurrentTerms.reduce((value, term) => value.replaceAll(term, ''), line);
     if (!standaloneRaptureTerm.test(normalized)) return;
 
     errors.push({
-      filePath: MANUSCRIPT_PATH,
-      line: baseLine + index,
+      filePath,
+      line: index + 1,
       term: '\uD658\uD76C',
       replacement: '\uC218\uC591 \uD604\uC7AC \uAC00\uC774\uB4DC\uC5D0\uC11C \uB2E8\uB3C5 \uBC84\uD2BC\uC73C\uB85C \uB178\uCD9C \uAE08\uC9C0',
     });
-  });
+  }));
 
   return errors;
 }
@@ -419,12 +423,12 @@ function main() {
   assert.equal(withoutOfficialWindowTerms('창공의 힘, 창공의 힘'), ', ');
 
   const errors = [
-    ...collectForbiddenTermErrors(MANUSCRIPT_PATH, forbiddenTerms),
+    ...MANUSCRIPT_FILES.flatMap(item => collectForbiddenTermErrors(item.filePath, forbiddenTerms)),
     ...collectForbiddenTermErrors(GUIDE_REGISTRY_PATH, forbiddenTerms),
     ...collectForbiddenTermErrors(GUIDE_DETAIL_PATH, pageForbiddenTerms),
     ...collectForbiddenTermErrors(MOCKUPS_PATH, pageForbiddenTerms),
     ...collectForbiddenTermErrors(MOCKUPS_PATH, forbiddenTerms.slice(0, 3)),
-    ...collectStandaloneWindowTermErrors(MANUSCRIPT_PATH),
+    ...MANUSCRIPT_FILES.flatMap(item => collectStandaloneWindowTermErrors(item.filePath)),
     ...collectAwkwardContextErrors(GUIDE_DETAIL_PATH, awkwardContextPatterns),
     ...collectDisciplineRaptureSkillErrors(),
     ...collectDisciplineStandaloneRaptureCopyErrors(),

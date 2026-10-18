@@ -5,51 +5,51 @@ const path = require('path');
 
 const SITE_ROOT = path.resolve(__dirname, '..');
 const REGISTRY_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideRegistry.js');
-const MANUSCRIPT_PATH = path.join(SITE_ROOT, 'src', 'data', 'guideManuscripts.js');
+const { MANUSCRIPT_INDEX_PATH, MANUSCRIPT_DIR, listGuideManuscriptFiles, readAllGuideManuscriptText, loadGuideManuscripts } = require('./lib/guideManuscripts.cjs');
 const SKILLS_PATH = path.join(SITE_ROOT, 'src', 'data', 'kb-skills.json');
-const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.1';
+const EXPECTED_PATCH = process.env.WOWMETA_EXPECTED_PATCH || '12.1.5';
 const EXPECTED_GUIDE_COUNT = Number(process.env.WOWMETA_EXPECTED_GUIDE_COUNT || 40);
 const GUIDE_PATCH_OVERRIDES = new Map([
-  ['deathknight-blood', '12.1'],
-  ['deathknight-frost', '12.1'],
-  ['deathknight-unholy', '12.1'],
-  ['demonhunter-havoc', '12.1'],
-  ['demonhunter-vengeance', '12.1'],
-  ['druid-guardian', '12.1'],
-  ['druid-feral', '12.1'],
-  ['evoker-augmentation', '12.1'],
-  ['hunter-beastmastery', '12.1'],
-  ['hunter-marksmanship', '12.1'],
-  ['hunter-survival', '12.1'],
-  ['mage-arcane', '12.1'],
-  ['mage-fire', '12.1'],
-  ['mage-frost', '12.1'],
-  ['monk-brewmaster', '12.1'],
-  ['paladin-protection', '12.1'],
-  ['paladin-retribution', '12.1'],
-  ['priest-discipline', '12.1'],
-  ['priest-shadow', '12.1'],
-  ['rogue-assassination', '12.1'],
-  ['rogue-outlaw', '12.1'],
-  ['rogue-subtlety', '12.1'],
-  ['warlock-affliction', '12.1'],
-  ['warlock-demonology', '12.1'],
-  ['warlock-destruction', '12.1'],
-  ['demonhunter-devourer', '12.1'],
-  ['priest-holy', '12.1'],
-  ['druid-restoration', '12.1'],
-  ['paladin-holy', '12.1'],
-  ['evoker-preservation', '12.1'],
-  ['monk-mistweaver', '12.1'],
-  ['monk-windwalker', '12.1'],
-  ['shaman-elemental', '12.1'],
-  ['shaman-enhancement', '12.1'],
-  ['evoker-devastation', '12.1'],
-  ['druid-balance', '12.1'],
-  ['shaman-restoration', '12.1'],
-  ['warrior-fury', '12.1'],
-  ['warrior-arms', '12.1'],
-  ['warrior-protection', '12.1'],
+  ['deathknight-blood', '12.1.5'],
+  ['deathknight-frost', '12.1.5'],
+  ['deathknight-unholy', '12.1.5'],
+  ['demonhunter-havoc', '12.1.5'],
+  ['demonhunter-vengeance', '12.1.5'],
+  ['druid-guardian', '12.1.5'],
+  ['druid-feral', '12.1.5'],
+  ['evoker-augmentation', '12.1.5'],
+  ['hunter-beastmastery', '12.1.5'],
+  ['hunter-marksmanship', '12.1.5'],
+  ['hunter-survival', '12.1.5'],
+  ['mage-arcane', '12.1.5'],
+  ['mage-fire', '12.1.5'],
+  ['mage-frost', '12.1.5'],
+  ['monk-brewmaster', '12.1.5'],
+  ['paladin-protection', '12.1.5'],
+  ['paladin-retribution', '12.1.5'],
+  ['priest-discipline', '12.1.5'],
+  ['priest-shadow', '12.1.5'],
+  ['rogue-assassination', '12.1.5'],
+  ['rogue-outlaw', '12.1.5'],
+  ['rogue-subtlety', '12.1.5'],
+  ['warlock-affliction', '12.1.5'],
+  ['warlock-demonology', '12.1.5'],
+  ['warlock-destruction', '12.1.5'],
+  ['demonhunter-devourer', '12.1.5'],
+  ['priest-holy', '12.1.5'],
+  ['druid-restoration', '12.1.5'],
+  ['paladin-holy', '12.1.5'],
+  ['evoker-preservation', '12.1.5'],
+  ['monk-mistweaver', '12.1.5'],
+  ['monk-windwalker', '12.1.5'],
+  ['shaman-elemental', '12.1.5'],
+  ['shaman-enhancement', '12.1.5'],
+  ['evoker-devastation', '12.1.5'],
+  ['druid-balance', '12.1.5'],
+  ['shaman-restoration', '12.1.5'],
+  ['warrior-fury', '12.1.5'],
+  ['warrior-arms', '12.1.5'],
+  ['warrior-protection', '12.1.5'],
 ]);
 
 const MINIMUMS = {
@@ -312,7 +312,16 @@ function assert(condition, message) {
   if (!condition) errors.push(message);
 }
 
+// 개념서 리빌딩 미리보기: GUIDE_BOOK_PREVIEW 에 [{ id, kbFile, json }] 파일을 주면
+// 실제 파일을 바꾸지 않고 그 가이드만 새 원고로 바꿔 검사한다(artifacts/book-rebuild/preview.cjs).
+const BOOK_PREVIEWS = process.env.GUIDE_BOOK_PREVIEW
+  ? JSON.parse(fs.readFileSync(process.env.GUIDE_BOOK_PREVIEW, 'utf8'))
+  : [];
+const BOOK_PREVIEW_FILES = new Map(BOOK_PREVIEWS.map(item => [path.resolve(item.kbFile), item.json]));
+
 function read(filePath) {
+  const preview = BOOK_PREVIEW_FILES.get(path.resolve(filePath));
+  if (preview) return JSON.stringify(preview, null, 2);
   return fs.readFileSync(filePath, 'utf8');
 }
 
@@ -944,7 +953,7 @@ function validateHeroBranches(spec, manuscript, kbSkills) {
 }
 
 // 개념서형 가이드(book): 모든 장이 정의된 부에 속하고, 현장 팁은 실제 출처 카드와 연결되어야 한다.
-function validateBookLayout(spec, manuscript) {
+function validateBookLayout(spec, manuscript, kbSkills = {}) {
   const book = manuscript.book;
   if (!book) return;
   const prefix = `${spec.id}.book`;
@@ -997,7 +1006,8 @@ function validateBookLayout(spec, manuscript) {
       });
     });
   });
-  assert(!/우두머리|졸개/.test(JSON.stringify(manuscript)), `${prefix}: fixed guide terms are 네임드 and 쫄 (not 우두머리/졸개)`);
+  assert(!/우두머리(?! 포식자)|졸개/.test(JSON.stringify(manuscript)), `${prefix}: fixed guide terms are 네임드 and 쫄 (not 우두머리/졸개; official skill name 우두머리 포식자 excepted)`);
+  validateBookTemplate(spec, manuscript, kbSkills);
   const partOrder = blocks.map(block => parts.findIndex(part => part.id === block.part));
   assert(partOrder.every((value, index) => index === 0 || value >= partOrder[index - 1]), `${prefix}: chapters must follow part order`);
   voices.forEach(voice => {
@@ -1005,6 +1015,40 @@ function validateBookLayout(spec, manuscript) {
     assert(/^https?:\/\//.test(voice.url || '') && voice.date && voice.access, `${prefix}.voices.${voice.id}: url/date/access required`);
     assert(!/maxroll/i.test(voice.url || ''), `${prefix}.voices.${voice.id}: Maxroll must not be used as a guide source`);
   });
+}
+
+// 노 베이스 목차(2026-10-10 사용자 확정): 0부 시작 전 준비(내 스킬 한눈에 보기만, 특성·쓰는 말 제외)
+// → 1부 원리 이해 → 2부 연습(단일·오프닝·광역·이동) → 3부 실전(기본 영웅 특성·차단과 생존·쐐기·공격대) → 4부 심화·부록.
+const BOOK_PART_ORDER = ['start', 'concept', 'drill', 'field', 'review'];
+function validateBookTemplate(spec, manuscript, kbSkills) {
+  const book = manuscript.book;
+  const prefix = `${spec.id}.book`;
+  const blocks = manuscript.blocks || [];
+  const known = id => !Object.keys(kbSkills).length || !!kbSkills[String(id)];
+  assert(JSON.stringify((book.parts || []).map(part => part.id)) === JSON.stringify(BOOK_PART_ORDER), `${prefix}: parts must be ${BOOK_PART_ORDER.join(' → ')}`);
+  const startBlocks = blocks.filter(block => block.part === 'start');
+  assert(startBlocks.length === 1 && startBlocks[0].skillGroups?.length >= 3, `${prefix}: part 0 must be one skill-overview chapter with at least three skill groups`);
+  assert(!startBlocks.some(block => /특성|쓰는 말|용어/.test(block.title)), `${prefix}: part 0 must not contain talents or glossary chapters`);
+  startBlocks.forEach(block => (block.skillGroups || []).forEach((group, index) => {
+    assert(group.label?.length >= 2 && group.skillIds?.length >= 1, `${prefix}.skillGroups[${index}]: label and skillIds required`);
+    group.skillIds.forEach(id => assert(/^\d+$/.test(String(id)) && known(id), `${prefix}.skillGroups[${index}]: unknown skill ${id}`));
+  }));
+  blocks.forEach((block, index) => {
+    const blockPrefix = `${spec.id}.blocks[${index}]`;
+    assert(block.concept?.length >= 20, `${blockPrefix}: chapter needs a one-line principle (concept)`);
+    assert(block.paragraphs?.length >= 1, `${blockPrefix}: chapter needs body paragraphs`);
+    assert(!block.aside || (block.aside.title?.length >= 2 && block.aside.text?.length >= 20), `${blockPrefix}: aside needs title and text`);
+    const nodes = [
+      ...[].concat(block.timeline || []).flatMap(timeline => (timeline.rails || []).flatMap(rail => rail.nodes || [])).flatMap(node => [node, node.above].filter(Boolean)),
+      ...[].concat(block.diagram || []).flatMap(diagram => (diagram.layers || []).flatMap(layer => layer.nodes || [])).filter(node => node.kind !== 'effect'),
+    ];
+    nodes.forEach(node => assert(known(node.skillId), `${blockPrefix}: unknown skill ${node.skillId} in diagram/timeline`));
+  });
+  const drillTimelines = blocks.filter(block => block.part === 'drill' && block.timeline);
+  assert(drillTimelines.length >= 3, `${prefix}: practice part needs opener, single-target and AoE timelines`);
+  const fieldTitles = blocks.filter(block => block.part === 'field').map(block => block.title).join(' ');
+  assert(/쐐기/.test(fieldTitles) && /공격대/.test(fieldTitles), `${prefix}: field part needs Mythic+ and raid chapters`);
+  assert(!book.start || (book.start.beginner?.label && book.start.expert?.label), `${prefix}: start fork needs beginner and expert labels`);
 }
 
 function validateManuscript(spec, manuscript, kbSkills) {
@@ -1076,12 +1120,20 @@ function validateManuscript(spec, manuscript, kbSkills) {
   validateRoleSpecificChartLanguage(spec, manuscript);
   validatePracticalTips(spec, manuscript);
   validateHeroBranches(spec, manuscript, kbSkills);
-  validateBookLayout(spec, manuscript);
+  validateBookLayout(spec, manuscript, kbSkills);
 }
 
 function validateManuscriptSourceShape() {
   assert(PRACTICAL_TIP_CONTEXT_PATTERN.test('쐐기'), 'Practical context matching must accept correctly spelled Korean Mythic+');
-  const manuscriptSource = read(MANUSCRIPT_PATH);
+  // 원고는 전문화별 파일(src/data/manuscripts/<가이드 ID>.js)에 있고 guideManuscripts.js 는 모으기만 한다. 두 쪽 글자를 모두 본다.
+  const manuscriptSource = `${read(MANUSCRIPT_INDEX_PATH)}\n${readAllGuideManuscriptText()}`;
+  const listedManuscriptFiles = new Set(listGuideManuscriptFiles().map(item => path.basename(item.filePath)));
+  const unlistedManuscriptFiles = fs.readdirSync(MANUSCRIPT_DIR).filter(name => !listedManuscriptFiles.has(name));
+
+  assert(
+    !unlistedManuscriptFiles.length,
+    `src/data/manuscripts has files that guideManuscripts.js does not import: ${unlistedManuscriptFiles.join(', ')}`
+  );
 
   assert(
     !/const\s+guideTipAdditions\b/.test(manuscriptSource),
@@ -1109,7 +1161,8 @@ function main() {
   validateManuscriptSourceShape();
 
   const registry = loadSourceModule(REGISTRY_PATH, '{ getReadyGuideSpecs }');
-  const manuscripts = loadSourceModule(MANUSCRIPT_PATH, 'guideManuscripts');
+  const manuscripts = loadGuideManuscripts();
+  BOOK_PREVIEWS.forEach(item => { manuscripts[item.id] = item.json; });
   const kbSkills = JSON.parse(read(SKILLS_PATH)).skills || {};
   const readySpecs = registry.getReadyGuideSpecs();
 
@@ -1119,7 +1172,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(windwalkerSource))) === JSON.stringify(windwalker), 'Windwalker must match its canonical 12.1 manuscript');
   }
   const windwalkerNotes = Object.values(kbSkills).filter(skill => /[\\/]07-수도사[\\/]풍운[\\/]/.test(skill.source?.kbPath || ''));
-  assert(windwalkerNotes.length >= 60 && windwalkerNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'Windwalker notes must retain reviewed 12.1 descriptions');
+  assert(windwalkerNotes.length >= 60 && windwalkerNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'Windwalker notes must retain reviewed 12.1 descriptions');
   assert(!windwalker.extraSkills?.length && !kbSkills['137639'], 'Windwalker must not revive Storm, Earth, and Fire or bypass canonical skills');
   assert(['1296621', '1296624'].every(id => kbSkills[id]?.type === 'passive') && kbSkills['1297033']?.type === 'buff' && kbSkills['1297033'].description.includes('20초'), 'Windwalker S2 effects must remain distinct from the 20-second consumer buff');
   assert(['1261703', '1261844', '1261849', '1272694', '1250566'].every(id => kbSkills[id]?.type === 'talent'), 'Windwalker apex nodes and enabling talents must not become casts');
@@ -1146,7 +1199,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(afflictionSource))) === JSON.stringify(affliction), 'Affliction must match its canonical 12.1 manuscript');
   }
   const afflictionNotes = Object.values(kbSkills).filter(skill => /[\\/]12-흑마법사[\\/]고통[\\/]/.test(skill.source?.kbPath || ''));
-  assert(afflictionNotes.length === 52 && afflictionNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 52 Affliction notes must retain reviewed descriptions');
+  assert(afflictionNotes.length === 52 && afflictionNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 52 Affliction notes must retain reviewed descriptions');
   assert(!affliction.extraSkills?.length && ['316099', '70388', '387016', '63106', '1260271', '1260285'].every(id => !kbSkills[id]), 'Affliction must not restore obsolete casts or removed talents');
   assert(['1259790', '27243', '1257052', '1261153'].every(id => kbSkills[id]?.type === 'atomic-skill'), 'Affliction requires current player-cast IDs');
   assert(['452999', '1261149', '1261984', '1311969', '1312998'].every(id => kbSkills[id]?.type === 'spec-talent'), 'Affliction enabling talents must remain distinct from casts');
@@ -1174,7 +1227,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(demonologySource))) === JSON.stringify(demonology), 'Demonology must match its canonical 12.1 manuscript');
   }
   const demonologyNotes = Object.values(kbSkills).filter(skill => /[\\/]12-흑마법사[\\/]악마[\\/]/.test(skill.source?.kbPath || ''));
-  assert(demonologyNotes.length === 65 && demonologyNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 65 Demonology notes must retain reviewed descriptions');
+  assert(demonologyNotes.length === 65 && demonologyNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 65 Demonology notes must retain reviewed descriptions');
   assert(!demonology.extraSkills?.length && !kbSkills['186185'], 'Demonology must not restore NPC Demonic Sacrifice or bypass canonical skills');
   assert(['105174', '264178', '265187', '434506', '434635', '1276672'].every(id => kbSkills[id]?.type === 'atomic-skill'), 'Demonology flows require actual player-cast IDs');
   assert(['1251778', '460551', '1276163', '1276190', '1276222'].every(id => kbSkills[id]?.type === 'spec-talent'), 'Demonology Vilefiend, Doom and apex nodes must not become cast buttons');
@@ -1209,7 +1262,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(destructionSource))) === JSON.stringify(destruction), 'Destruction must match its canonical 12.1 manuscript');
   }
   const destructionNotes = Object.values(kbSkills).filter(skill => /[\\/]12-흑마법사[\\/]파괴[\\/]/.test(skill.source?.kbPath || ''));
-  assert(destructionNotes.length === 66 && destructionNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 66 Destruction notes must retain reviewed descriptions');
+  assert(destructionNotes.length === 66 && destructionNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 66 Destruction notes must retain reviewed descriptions');
   assert(!destruction.extraSkills?.length, 'Destruction must not bypass canonical skills');
   assert(['348', '1122', '5740', '6353', '17877', '17962', '29722', '80240', '116858', '152108'].every(id => kbSkills[id]?.type === 'atomic-skill'), 'Destruction flows require current player casts');
   assert(['1280868', '387108', '454735', '1265770', '1265772', '1265774'].every(id => kbSkills[id]?.type === 'spec-talent'), 'Destruction passive talents and apex nodes must not become cast buttons');
@@ -1251,7 +1304,7 @@ function main() {
   assert(JSON.stringify(assassination.opener) === JSON.stringify(assassination.heroBranches[0].opener), 'Default Assassination opener must match Fatebound');
   assert(assassination.sourceNote.includes('403') && !JSON.stringify(assassination).includes('99.2%'), 'Assassination must disclose missing current log evidence instead of recycling June usage');
   const subtletyUtility = JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies.rogue_subtlety_feint_cloak_mplus_utility;
-  assert(subtletyUtility?.patch === '12.1' && subtletyUtility.description?.includes('비전투 대상'), 'Subtlety utility must retain the Sap out-of-combat restriction');
+  assert(['12.1', '12.1.5'].includes(subtletyUtility?.patch) && subtletyUtility.description?.includes('비전투 대상'), 'Subtlety utility must retain the Sap out-of-combat restriction');
   assert(subtletyUtility.participants.includes('2094') && !subtletyUtility.participants.includes('185565'), 'Subtlety utility must use Blind for combat control, not Poisoned Knife as enrage removal');
 
   const shadow = manuscripts['priest-shadow'];
@@ -1275,7 +1328,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(disciplineSource))) === JSON.stringify(discipline), 'Discipline must match its canonical 12.1 manuscript');
   }
   const disciplineNotes = Object.values(kbSkills).filter(skill => /[\\/]09-사제[\\/]수양[\\/]/.test(skill.source?.kbPath || ''));
-  assert(disciplineNotes.length === 62 && disciplineNotes.every(skill => skill.patch === '12.1' && skill.description?.length > 20), 'All 62 Discipline notes must retain reviewed descriptions');
+  assert(disciplineNotes.length === 62 && disciplineNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length > 20), 'All 62 Discipline notes must retain reviewed descriptions');
   assert(!discipline.extraSkills?.length && !kbSkills['1252215'] && !kbSkills['214621'], 'Discipline must not bypass canonical data or revive obsolete spell IDs');
   assert(kbSkills['81749']?.type === 'passive' && kbSkills['81749'].description.includes('46%') && kbSkills['194384']?.type === 'buff', 'Atonement passive, current rate and applied buff must remain distinct');
   assert(kbSkills['1253591']?.type === 'buff' && kbSkills['1253828']?.type === 'proc' && kbSkills['1307795']?.type === 'buff', 'Void Shield uses, reflection and set bonus are not cast buttons');
@@ -1303,7 +1356,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(retributionSource))) === JSON.stringify(retribution), 'Retribution must match its canonical 12.1 manuscript');
   }
   const retributionNotes = Object.values(kbSkills).filter(skill => /[\\/]08-성기사[\\/]징벌[\\/]/.test(skill.source?.kbPath || ''));
-  assert(retributionNotes.length === 69 && retributionNotes.every(skill => skill.patch === '12.1' && skill.description?.trim()), 'All 69 Retribution notes must retain reviewed descriptions');
+  assert(retributionNotes.length === 69 && retributionNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.trim()), 'All 69 Retribution notes must retain reviewed descriptions');
   assert(!retribution.extraSkills?.length && !kbSkills['267344'] && kbSkills['406064']?.type === 'talent', 'Retribution must use current Art of War without extraSkills');
   assert(kbSkills['403876']?.type === 'atomic-skill' && kbSkills['184662']?.type === 'buff' && kbSkills['1261562']?.type === 'talent', 'Shield of Vengeance must remain an effect of the actual Divine Protection cast');
   assert(kbSkills['375576']?.specs.includes('Retribution') && /심판.*50%/.test(kbSkills['375576']?.description), 'Divine Toll must have canonical Retribution scope and mechanics');
@@ -1330,7 +1383,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(protectionSource))) === JSON.stringify(protection), 'Protection must match its canonical 12.1 manuscript');
   }
   const protectionNotes = Object.values(kbSkills).filter(skill => /[\\/]08-성기사[\\/]보호[\\/]/.test(skill.source?.kbPath || ''));
-  assert(protectionNotes.length === 65 && protectionNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 65 Protection notes must retain reviewed descriptions');
+  assert(protectionNotes.length === 65 && protectionNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 65 Protection notes must retain reviewed descriptions');
   assert(!protection.extraSkills?.length && !kbSkills['171648'], 'Protection must not revive Sanctified Wrath or bypass canonical spells');
   assert(kbSkills['389539']?.type === 'atomic-skill' && kbSkills['385438']?.type === 'buff', 'Sentinel cast and buff must stay distinct');
   assert(['275779', '1241413'].every(id => kbSkills[id]?.specs.length === 1 && kbSkills[id].specs[0] === 'Protection'), 'Protection must use its own Judgment and Hammer of Wrath');
@@ -1357,7 +1410,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(brewmasterSource))) === JSON.stringify(brewmaster), 'Brewmaster must match its canonical 12.1 manuscript');
   }
   const brewmasterNotes = Object.values(kbSkills).filter(skill => /[\\/]07-수도사[\\/]양조[\\/]/.test(skill.source?.kbPath || ''));
-  assert(brewmasterNotes.length === 74 && brewmasterNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 74 Brewmaster notes must retain reviewed descriptions');
+  assert(brewmasterNotes.length === 74 && brewmasterNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 74 Brewmaster notes must retain reviewed descriptions');
   assert(!brewmaster.extraSkills?.length && !kbSkills['292601'], 'Brewmaster must not include Druid Ironfur or bypass canonical skills');
   assert(kbSkills['101546']?.specs.includes('Brewmaster') && kbSkills['101546']?.specs.includes('Windwalker') && kbSkills['101546']?.castTime === '1.5초 채널', 'Spinning Crane Kick must be one shared cast with spec-specific costs');
   assert(kbSkills['115450']?.specs.join(',') === 'Mistweaver' && kbSkills['218164']?.specs.includes('Brewmaster'), 'Brewmaster energy Detox must not borrow Mistweaver magic Detox');
@@ -1383,7 +1436,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(mageFrostSource))) === JSON.stringify(mageFrost), 'Frost must match its canonical 12.1 manuscript');
   }
   const mageFrostNotes = Object.values(kbSkills).filter(skill => /[\\/]06-마법사[\\/]냉기[\\/]/.test(skill.source?.kbPath || ''));
-  assert(mageFrostNotes.length === 63 && mageFrostNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 63 Frost notes must retain reviewed descriptions');
+  assert(mageFrostNotes.length === 63 && mageFrostNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 63 Frost notes must retain reviewed descriptions');
   assert(!mageFrost.extraSkills?.length && !kbSkills['12472'], 'Frost must not revive Icy Veins or bypass canonical spells');
   assert(kbSkills['1246769']?.type === 'passive' && kbSkills['1221389']?.type === 'debuff', 'Shatter passive and target Freezing stacks must remain distinct');
   assert(['44544', '190446', '205473', '1222865', '1247730', '1247778', '1310248'].every(id => kbSkills[id]?.type === 'buff'), 'Frost proc and prepared effects must not appear as casts');
@@ -1412,7 +1465,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(fireSource))) === JSON.stringify(fire), 'Fire must match its canonical 12.1 manuscript');
   }
   const fireNotes = Object.values(kbSkills).filter(skill => /[\\/]06-마법사[\\/]화염[\\/]/.test(skill.source?.kbPath || ''));
-  assert(fireNotes.length === 53 && fireNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 53 Fire notes must retain reviewed descriptions');
+  assert(fireNotes.length === 53 && fireNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 53 Fire notes must retain reviewed descriptions');
   assert(!fire.extraSkills?.length && !kbSkills['383860'], 'Fire must not revive obsolete Hyperthermia or bypass canonical spells');
   assert(['383874', '269651', '1257350', '458964', '48107', '48108'].every(id => kbSkills[id]?.type === 'buff'), 'Fire proc buffs must not appear as direct casts');
   assert(['1257343', '1257349', '1257348'].every(id => kbSkills[id]?.type === 'spec-talent'), 'All three Fired Up nodes must remain distinct');
@@ -1434,7 +1487,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(survivalSource))) === JSON.stringify(survival), 'Survival must match its canonical 12.1 manuscript');
   }
   const survivalNotes = Object.values(kbSkills).filter(skill => /[\\/]05-사냥꾼[\\/]생존[\\/]/.test(skill.source?.kbPath || ''));
-  assert(survivalNotes.length === 58 && survivalNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 58 Survival notes must retain reviewed descriptions');
+  assert(survivalNotes.length === 58 && survivalNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 58 Survival notes must retain reviewed descriptions');
   assert(!survival.extraSkills?.length && !kbSkills['1251592'], 'Survival must not revive removed Flamefang Pitch or bypass canonical spells');
   assert(kbSkills['1262293']?.type === 'atomic-skill' && ['1259003', '1259017', '1259019'].every(id => kbSkills[id]?.type === 'spec-talent') && kbSkills['1273155']?.type === 'buff', 'Raptor Swipe cast, all apex nodes and prepared buff must remain distinct');
   assert(kbSkills['260285']?.type === 'spec-talent' && kbSkills['260286']?.type === 'buff', 'Tip of the Spear talent and consumable buff need separate IDs');
@@ -1462,7 +1515,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(marksmanshipSource))) === JSON.stringify(marksmanship), 'Marksmanship must match its canonical 12.1 manuscript');
   }
   const marksmanshipNotes = Object.values(kbSkills).filter(skill => /[\\/]05-사냥꾼[\\/]사격[\\/]/.test(skill.source?.kbPath || ''));
-  assert(marksmanshipNotes.length === 58 && marksmanshipNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25), 'All 58 Marksmanship records, including passive set effects, must survive sync');
+  assert(marksmanshipNotes.length === 58 && marksmanshipNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 58 Marksmanship records, including passive set effects, must survive sync');
   assert(!marksmanship.extraSkills?.length && ['473370', '264198', '473379'].every(id => !kbSkills[id]), 'Marksmanship must not revive obsolete Double Tap or unavailable old traits');
   assert(['260240', '257621', '389019'].every(id => kbSkills[id]?.type === 'spec-talent') && ['260242', '257622', '389020'].every(id => kbSkills[id]?.type === 'buff'), 'Marksmanship talents and consumable buffs need separate IDs');
   assert(kbSkills['471428']?.name === '물량 공세' && kbSkills['471428']?.description.includes('추가로 적용') && kbSkills['473520']?.name === '유동성 제동장치', 'Renamed Marksmanship talents must retain their current identities and additional-cast effect');
@@ -1482,7 +1535,7 @@ function main() {
     assert(branch.opener.steps.filter(row => row.skillId === '212431').length === 2 && branch.opener.summary.includes('유동성 제동장치'), 'Double Explosive Shot openers must retain their build condition');
   }
   assert(!JSON.stringify(marksmanship.heroBranches[0]).includes('"skillId":"466930"') && !JSON.stringify(marksmanship.heroBranches[1]).includes('"skillId":"1264949"'), 'Marksmanship hero casts must not leak across branches');
-  assert(marksmanship.book?.parts?.length === 4 && marksmanship.book.voices.length >= 12 && marksmanship.blocks.every(block => block.concept && block.part), 'Marksmanship concept-book sample must keep four parts, chapter concepts and collected voices');
+  assert(marksmanship.book?.parts?.length === 5 && marksmanship.book.voices.length >= 12 && marksmanship.blocks.every(block => block.concept && block.part), 'Marksmanship concept-book sample must keep the five-part no-base contents, chapter concepts and collected voices');
   assert(marksmanship.blocks.filter(block => block.diagram).length >= 7, 'Marksmanship concept-book sample must keep skill structure diagrams on the concept and hero chapters');
   assert(marksmanship.blocks.filter(block => block.timeline).length >= 2, 'Marksmanship concept-book sample must keep single-target and AoE rotation timelines');
   assert(marksmanship.blocks.reduce((count, block) => count + (block.fieldTips || []).length, 0) >= 20 && marksmanship.blocks.some(block => block.quiz?.length), 'Marksmanship sample must keep sourced field tips and review questions');
@@ -1494,7 +1547,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(beastMasterySource))) === JSON.stringify(beastMastery), 'Beast Mastery must match its canonical 12.1 manuscript');
   }
   const beastMasteryNotes = Object.values(kbSkills).filter(skill => /[\\/]05-사냥꾼[\\/]야수[\\/]/.test(skill.source?.kbPath || ''));
-  assert(beastMasteryNotes.length === 42 && beastMasteryNotes.every(skill => skill.patch === '12.1' && skill.description?.length >= 25 && !skill.description.startsWith('#')), 'All 42 Beast Mastery records need reviewed effect descriptions');
+  assert(beastMasteryNotes.length === 42 && beastMasteryNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25 && !skill.description.startsWith('#')), 'All 42 Beast Mastery records need reviewed effect descriptions');
   assert(!beastMastery.extraSkills?.length && !kbSkills['321530'], 'Beast Mastery must use current canonical spells, not old Bloodshed or extraSkills');
   assert(kbSkills['1272099']?.type === 'spec-talent' && kbSkills['120679']?.type === 'spec-talent', 'Bloodshed and Dire Beast must remain passive');
   assert(kbSkills['19574']?.cooldown.includes('90초') && kbSkills['231548']?.description.includes('60초'), 'Bestial Wrath base cooldown and talent reduction must remain distinct');
@@ -1520,7 +1573,7 @@ function main() {
   const armsSynergyIds = ['warrior-arms-colossus-smash-mortal-strike', 'warrior-arms-warbreaker-sweeping-strikes', 'warrior-arms-execute-precision', 'warrior-arms-rend-bleed-package', 'warrior-arms-overpower-tactician-warlord', 'warrior-arms-bladestorm-warbreaker-aoe'];
   for (const id of armsSynergyIds) {
     const note = scopedSynergies.find(row => row.id === id);
-    assert(note?.patch === '12.1' && note.description?.length > 60, `Arms relationship ${id} must retain reviewed 12.1 explanation`);
+    assert(['12.1', '12.1.5'].includes(note?.patch) && note.description?.length > 60, `Arms relationship ${id} must retain reviewed 12.1 explanation`);
   }
   assert(scopedSynergies.find(row => row.id === 'warrior-arms-overpower-tactician-warlord')?.name === '제압-전술가-전쟁의 지배자', 'Synergy display names must use authored Korean names rather than filenames');
   assert(scopedSynergies.find(row => row.id === 'SY-DH-Devourer-Midnight-VoidMetamorphosis')?.name === '한밤-공허 탈태', 'Name fallback must preserve authored Korean spacing across classes');
@@ -1543,7 +1596,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(augmentationSource))) === JSON.stringify(augmentation), 'Augmentation must match its canonical 12.1 KB manuscript');
   }
   const augmentationNotes = Object.values(kbSkills).filter(skill => /[\\/]04-기원사[\\/]증강[\\/]/.test(skill.source?.kbPath || ''));
-  assert(augmentationNotes.length === 42 && augmentationNotes.every(skill => skill.patch === '12.1' && skill.description?.length > 40 && !skill.description.startsWith('#')), 'All 42 Augmentation records must retain reviewed descriptions through sync');
+  assert(augmentationNotes.length === 42 && augmentationNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length > 40 && !skill.description.startsWith('#')), 'All 42 Augmentation records must retain reviewed descriptions through sync');
   assert(!augmentation.extraSkills?.length, 'Augmentation spells must resolve from the canonical KB');
   for (const branch of augmentation.heroBranches) {
     assert(branch.opener.steps.length >= 6 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 8, 'Each Augmentation hero needs authored opener, ST and AoE modes');
@@ -1573,7 +1626,7 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(feralSource))) === JSON.stringify(feral), 'Feral must match its canonical 12.1 KB manuscript');
   }
   const feralNotes = Object.values(kbSkills).filter(skill => /[\\/]03-드루이드[\\/]야성[\\/]/.test(skill.source?.kbPath || ''));
-  assert(feralNotes.length === 51 && feralNotes.every(skill => skill.patch === '12.1' && skill.description?.length > 40 && !skill.description.startsWith('#')), 'All 51 Feral records must retain reviewed descriptions through sync');
+  assert(feralNotes.length === 51 && feralNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length > 40 && !skill.description.startsWith('#')), 'All 51 Feral records must retain reviewed descriptions through sync');
   assert(!kbSkills['106830'] && kbSkills['77758']?.specs.includes('Guardian'), 'Removed cat Thrash must not remove the current Guardian cast');
   assert(kbSkills['1301600']?.name === '할라지의 격노' && kbSkills['1301600']?.type === 'buff', 'Feral tier graph must use the actual passive buff and official icon');
   assert(kbSkills['1296605']?.description.includes('유효 연계 점수') && kbSkills['1296605']?.description.includes('0.75초'), 'Feral tier must retain effective CP and conditional duration');
@@ -1611,20 +1664,20 @@ function main() {
   }
   assert(!blood.extraSkills?.length, 'Blood guide must resolve spells from the KB, not extraSkills');
   for (const [id, name] of [['1310372', '피로 치를 빚'], ['391398', '혈안'], ['374747', '칠흑의 기사단의 인내'], ['434033', '피에 젖은 땅']]) {
-    assert(kbSkills[id]?.name === name && kbSkills[id]?.patch === '12.1', `Blood 12.1 KB entry missing: ${name}`);
+    assert(kbSkills[id]?.name === name && ['12.1', '12.1.5'].includes(kbSkills[id]?.patch), `Blood 12.1 KB entry missing: ${name}`);
   }
   assert(kbSkills['1263824']?.castTime === '강화 주문' && kbSkills['1263824']?.cooldown === '45초', 'Consumption must be an empower spell with a 45-second cooldown');
   assert(kbSkills['441378']?.specs.includes('Blood') && kbSkills['441378']?.specs.includes('Frost'), 'Exterminate must support both Blood and Frost');
   assert(kbSkills['77513']?.aliases?.includes('피의 보호막'), 'Blood Shield shorthand must resolve to the official mastery entry');
   assert(kbSkills['195181']?.castTime === '지속 효과', 'Bone Shield is a buff, not an independently cast defensive');
-  assert(kbSkills['195292']?.cooldown === '6초' && kbSkills['195292']?.patch === '12.1', 'Death\'s Caress must retain its current cooldown');
+  assert(kbSkills['195292']?.cooldown === '6초' && ['12.1', '12.1.5'].includes(kbSkills['195292']?.patch), 'Death\'s Caress must retain its current cooldown');
   assert(kbSkills['1263774']?.name === '핏빛 안개' && kbSkills['1264235']?.description.includes('60%') && !kbSkills['1264235']?.description.startsWith('이 추가'), 'Blood Mist and Deadly Reach must retain current talent IDs and cleave text');
   for (const [id, name, fact] of [['443532', '어둠의 구속', '50%'], ['1265932', '죽음을 부르는 일격', '20%'], ['443560', '신속하고 고통스럽게', '15%'], ['455857', '영혼의 파도', '20%']]) {
     assert(kbSkills[id]?.name === name && kbSkills[id]?.type === 'hero-talent' && kbSkills[id]?.specs.includes('Blood') && kbSkills[id]?.description.includes(fact), `Blood Deathbringer hotfix entry missing: ${name}`);
   }
   assert(kbSkills['455857']?.castTime === '발동 효과' && kbSkills['443532']?.castTime === '지속 효과', 'Blood Deathbringer triggered/passive effects must not become cast buttons');
   for (const id of ['1264506', '1264405', '1264351']) {
-    assert(kbSkills[id]?.name === '한밤의 춤' && kbSkills[id]?.patch === '12.1', `Blood apex rank ${id} must keep the official Korean name and current patch`);
+    assert(kbSkills[id]?.name === '한밤의 춤' && ['12.1', '12.1.5'].includes(kbSkills[id]?.patch), `Blood apex rank ${id} must keep the official Korean name and current patch`);
   }
   assert(kbSkills['1264405']?.description.includes('6%') && kbSkills['1264351']?.description.includes('8초'), 'Blood apex defense and proc duration must be documented separately');
   for (const [id, name, fact] of [['317614', '피의 희열', '37.5%'], ['273953', '탐식', '15%'], ['194662', '신속한 부패', '85%'], ['391517', '흡혈의 구', '6배']]) {
@@ -1650,7 +1703,7 @@ function main() {
   assert(blood.sources.some(source => source.url.endsWith('/2026-9-23') && source.label.includes('긴급 수정')) && blood.summary.includes('9월 23일'), 'Blood guide must cite the official September hotfix');
 
   const devourer = manuscripts['demonhunter-devourer'];
-  assert(kbSkills['1217610']?.patch === '12.1' && kbSkills['1217610']?.type === 'atomic-skill' && kbSkills['1217610']?.castTime === '1.5초' && kbSkills['1217610']?.resourceCost === '없음' && kbSkills['1217610']?.description.includes('격노 16') && kbSkills['1217610']?.description.includes('1초'), 'Devour must remain a casted Fury generator and Reap cooldown reducer');
+  assert(['12.1', '12.1.5'].includes(kbSkills['1217610']?.patch) && kbSkills['1217610']?.type === 'atomic-skill' && kbSkills['1217610']?.castTime === '1.5초' && kbSkills['1217610']?.resourceCost === '없음' && kbSkills['1217610']?.description.includes('격노 16') && kbSkills['1217610']?.description.includes('1초'), 'Devour must remain a casted Fury generator and Reap cooldown reducer');
   assert(kbSkills['1217610']?.source.kbPath.includes('Skills\\집어삼키기.md') && kbSkills['1247534']?.description.includes('25%') && kbSkills['1247534']?.resourceCost === '없음', 'Devour and Soul Glutton must retain their current KB classification and cost');
   assert(kbSkills['1239519']?.type === 'talent' && kbSkills['1239519']?.castTime === '지속 효과' && kbSkills['1239519']?.source.kbPath.includes('Talents\\굶주린베기.md'), 'Hungering Slash talent must not be classified as the cast button');
   assert(kbSkills['1239123']?.type === 'atomic-skill' && kbSkills['1239123']?.description.includes('격노 10') && kbSkills['1239123']?.description.includes('영혼 파편 최대 2개'), 'Hungering Slash cast must retain its current resource effects');
@@ -1660,14 +1713,14 @@ function main() {
   assert(devourer.blocks.some(section => section.paragraphs.some(paragraph => paragraph.includes('6초만 지속') && paragraph.includes('사신의 대가'))), 'Devourer must explain carrying the Hungering Slash proc into Meta');
   assert(devourer.blocks.some(section => section.paragraphs.some(paragraph => paragraph.includes('집어삼키기는 격노 16을 생성') && paragraph.includes('종료가 늦어질'))) && devourer.blocks.some(section => section.paragraphs.some(paragraph => paragraph.includes('격노가 25% 더 빨리 소모'))), 'Devourer must explain the single-target generator and AoE exit tradeoff');
   for (const id of ['1238488', '1242492', '1256301', '1244220', '1223918', '1239537', '1272842', '1238739', '1237270', '1242486', '1250088', '1250094', '1240201']) {
-    assert(kbSkills[id]?.patch === '12.1' && kbSkills[id]?.description?.length > 40 && !kbSkills[id].description.startsWith('#'), `Devourer talent ${id} must retain reviewed 12.1 text`);
+    assert(['12.1', '12.1.5'].includes(kbSkills[id]?.patch) && kbSkills[id]?.description?.length > 40 && !kbSkills[id].description.startsWith('#'), `Devourer talent ${id} must retain reviewed 12.1 text`);
   }
   assert(kbSkills['1242492'].description.includes('소모한 영혼') && kbSkills['1242492'].description.includes('0.25%'), 'Emptiness must scale with souls spent, not souls collected');
   assert(kbSkills['1256301'].description.includes('집어삼키기') && kbSkills['1256301'].description.includes('35%') && !kbSkills['1256301'].description.includes('흡수'), 'Voidfall tooltip must identify Devour as its generation condition');
   assert(kbSkills['1242486'].description.includes('항상 치명타') && kbSkills['1250088'].description.includes('3%') && kbSkills['1250094'].description.includes('영혼 파편 5개'), 'Midnight apex ranks must stay separate');
   assert(kbSkills['1240201'].description.includes('12%') && devourer.heroBranches[1].bullets.some(line => line.includes('포식자의 이빨')), 'Devourer\'s Bite must not be treated as Void-Scarred exclusive');
   const devourerSynergies = JSON.parse(read(path.join(SITE_ROOT, 'src', 'data', 'kb-synergies.json'))).synergies;
-  assert(devourerSynergies['집어삼키기_공허내림_수확']?.patch === '12.1' && !devourerSynergies['흡수_공허내림_수확'], 'Voidfall synergy must link Devour rather than the obsolete Consume chain');
+  assert(['12.1', '12.1.5'].includes(devourerSynergies['집어삼키기_공허내림_수확']?.patch) && !devourerSynergies['흡수_공허내림_수확'], 'Voidfall synergy must link Devour rather than the obsolete Consume chain');
   const arcaneSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '비전', 'Meta', 'guide-12.1.json');
   const havoc = manuscripts['demonhunter-havoc'];
   const havocSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '02-악마사냥꾼', '파멸', 'Meta', 'guide-12.1.json');
@@ -1688,7 +1741,7 @@ function main() {
   const havocNotes = Object.values(kbSkills).filter(skill => /[\\/]02-악마사냥꾼[\\/]파멸[\\/]/.test(skill.source?.kbPath || '') && /^\d+$/.test(skill.id));
   assert(havocNotes.length === 54, 'Havoc must retain all 54 reviewed atomic notes');
   for (const skill of havocNotes) {
-    assert(skill.patch === '12.1' && skill.description?.length > 40 && !skill.description.startsWith('#'), 'Havoc DB must retain real KB descriptions, not title-only parser fallbacks: ' + skill.id);
+    assert(['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length > 40 && !skill.description.startsWith('#'), 'Havoc DB must retain real KB descriptions, not title-only parser fallbacks: ' + skill.id);
   }
   for (const id of ['258920', '442290', '442686', '452408', '452409', '452414', '452415']) {
     assert(kbSkills[id]?.description?.length > 40 && !kbSkills[id].description.startsWith('#'), 'Shared Havoc records must retain real descriptions through sync: ' + id);
@@ -1712,7 +1765,7 @@ function main() {
   assert(!kbSkills['212800']?.specs.includes('Vengeance') && kbSkills['212800']?.specs.includes('Havoc') && kbSkills['212800']?.specs.includes('Devourer'), 'Blur must not leak from shared storage into Vengeance');
   assert(kbSkills['179057']?.resourceCost === '격노 25' && kbSkills['179057']?.cooldown === '45초' && kbSkills['1490']?.type === 'buff', 'DH common records must retain current costs and passive classification');
   for (const id of ['1490', '131347', '179057', '183752', '196718', '212800', '278326']) {
-    assert(kbSkills[id]?.patch === '12.1' && !kbSkills[id]?.description.startsWith('#'), 'Reviewed common DH notes must have real descriptions: ' + id);
+    assert(['12.1', '12.1.5'].includes(kbSkills[id]?.patch) && !kbSkills[id]?.description.startsWith('#'), 'Reviewed common DH notes must have real descriptions: ' + id);
   }
   assert(kbSkills['247454']?.cooldown === '25초' && kbSkills['247454']?.resourceCost === '격노 40', 'Spirit Bomb must retain its cooldown and Fury cost');
   assert(kbSkills['228477']?.resourceCost === '격노 35' && kbSkills['212084']?.cooldown === '40초', 'Vengeance spender costs and Fel Devastation cooldown must stay current');
@@ -1728,7 +1781,7 @@ function main() {
   }
   const vengeanceNotes = Object.values(kbSkills).filter(skill => /[\\/]02-악마사냥꾼[\\/]복수[\\/]/.test(skill.source?.kbPath || '') && /^\d+$/.test(skill.id));
   assert(vengeanceNotes.length === 44, 'Vengeance must retain all 44 reviewed local atomic notes');
-  assert(vengeanceNotes.every(skill => skill.patch === '12.1' && skill.description?.length > 40 && !skill.description.startsWith('#')), 'Vengeance descriptions must survive canonical sync');
+  assert(vengeanceNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length > 40 && !skill.description.startsWith('#')), 'Vengeance descriptions must survive canonical sync');
   for (const flow of [vengeance.opener, ...vengeance.heroBranches.map(branch => branch.opener)]) {
     assert(flow.steps.every(step => ['skill', 'atomic-skill'].includes(kbSkills[step.skillId]?.type) && step.trigger && step.note), 'Vengeance flows must contain real casts and resource conditions');
   }
@@ -1766,7 +1819,7 @@ function main() {
     }
   }
   const guardianNotes = Object.values(kbSkills).filter(skill => /[\\/]03-드루이드[\\/]수호[\\/]/.test(skill.source?.kbPath || '') && /^\d+$/.test(skill.id));
-  assert(guardianNotes.length >= 41 && guardianNotes.every(skill => skill.patch === '12.1' && skill.description?.length > 30 && !skill.description.startsWith('#')), 'Guardian descriptions must survive canonical sync');
+  assert(guardianNotes.length >= 41 && guardianNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length > 30 && !skill.description.startsWith('#')), 'Guardian descriptions must survive canonical sync');
   assert(bloodSynergies['guardian-야생수호자-생성기']?.participants.includes('33917') && !bloodSynergies['guardian-야생수호자-생성기']?.participants.includes('22842'), 'Guardian apex must connect generators, not Frenzied Regeneration');
 
   const unholy = manuscripts['deathknight-unholy'];
@@ -1789,7 +1842,7 @@ function main() {
       assert(step.phase && step.trigger && step.note, 'Unholy flows must retain their conditions');
     }
   }
-  assert(kbSkills['1241567']?.patch === '12.1' && kbSkills['1241567']?.description.includes('10%'), 'Unholy cleave must use the current passive and live chain reduction');
+  assert(['12.1', '12.1.5'].includes(kbSkills['1241567']?.patch) && kbSkills['1241567']?.description.includes('10%'), 'Unholy cleave must use the current passive and live chain reduction');
   for (const [id, name, fact] of [['1271967', '역병내림', '남은 피해를 100%만큼'], ['1242604', '고초', '65%'], ['434143', '슬픔의 고통', '75%'], ['1265547', '핏빛 전율', '20%'], ['434075', '광적인 피의 갈증', '5%']]) {
     assert(kbSkills[id]?.name === name && kbSkills[id]?.specs.includes('Unholy') && kbSkills[id]?.description.includes(fact), `Unholy 12.1 hotfix must survive canonical sync: ${name}`);
   }
@@ -1803,7 +1856,7 @@ function main() {
   }
   assert(!frost.extraSkills?.length, 'Frost spells must come from the canonical KB');
   assert(!kbSkills['152279'], 'Legacy draining Breath must not remain in the current spell DB');
-  assert(kbSkills['1249658']?.patch === '12.1' && kbSkills['1249658']?.description.includes('0.8초'), 'Current Breath must use the proc-extension spell ID');
+  assert(['12.1', '12.1.5'].includes(kbSkills['1249658']?.patch) && kbSkills['1249658']?.description.includes('0.8초'), 'Current Breath must use the proc-extension spell ID');
   assert(kbSkills['1249658']?.cooldown === '90초', 'Current Breath has a 90-second base cooldown');
   assert(kbSkills['279302']?.cooldown === '90초', 'Frostwyrm first cast has a 90-second base cooldown, distinct from recall');
   assert(kbSkills['1297365']?.name === '얼어붙는 폭풍우' && kbSkills['1297365']?.description.includes('속도 1%'), 'Frost tier set must use the current live tooltip, not old PTR tuning');
@@ -1825,14 +1878,14 @@ function main() {
   if (fs.existsSync(arcaneSource)) {
     assert(JSON.stringify(JSON.parse(read(arcaneSource))) === JSON.stringify(manuscripts['mage-arcane']), 'Arcane guide must match its canonical KB manuscript');
   }
-  assert(kbSkills['1295924']?.name === '오색 화살' && kbSkills['1295924']?.patch === '12.1', 'Arcane Prismatic Bolt must be synced from the 12.1 KB');
+  assert(kbSkills['1295924']?.name === '오색 화살' && ['12.1', '12.1.5'].includes(kbSkills['1295924']?.patch), 'Arcane Prismatic Bolt must be synced from the 12.1 KB');
   for (const id of ['342245', '30449', '1459', '80353', '2139', '212653', '45438', '475', '1953', '66', '55342']) {
-    assert(kbSkills[id]?.patch === '12.1' && kbSkills[id]?.description?.length > 70 && !kbSkills[id].description.startsWith('#'), `Mage common spell must retain its reviewed 12.1 effect: ${id}`);
+    assert(['12.1', '12.1.5'].includes(kbSkills[id]?.patch) && kbSkills[id]?.description?.length > 70 && !kbSkills[id].description.startsWith('#'), `Mage common spell must retain its reviewed 12.1 effect: ${id}`);
   }
   assert(kbSkills['2139'].cooldown === '25초' && kbSkills['2139'].description.includes('7초'), 'Counterspell must retain its current cooldown and school lockout');
   assert(kbSkills['1953'].cooldown === '20초' && kbSkills['212653'].cooldown === '30초' && kbSkills['212653'].description.includes('1회'), 'Blink and Shimmer must not inherit old cooldowns or charges');
   assert(kbSkills['55342'].description.includes('기본 주문에는 받는 피해 감소가 없'), 'Mirror Image must not become a baseline damage reduction cooldown');
-  assert(bloodSynergies.mage_common_defensive_mobility_matrix?.description.includes('기본 피해 감소가 아니라 위협 감소') && bloodSynergies.mage_common_raid_mplus_utility?.patch === '12.1', 'Mage shared utility graph must preserve the 12.1 threat and party roles');
+  assert(bloodSynergies.mage_common_defensive_mobility_matrix?.description.includes('기본 피해 감소가 아니라 위협 감소') && ['12.1', '12.1.5'].includes(bloodSynergies.mage_common_raid_mplus_utility?.patch), 'Mage shared utility graph must preserve the 12.1 threat and party roles');
   assert(!JSON.stringify(manuscripts['mage-arcane']).includes('주문 훔치기'), 'Arcane guide must use the official Korean Spellsteal name');
   assert(kbSkills['1296930']?.description.includes('24%'), 'Arcane tier set must use the post-tuning 24% cap');
   assert(isInactiveGuideSkill(kbSkills['1257942']), 'Touch of the Archmage must not return as an active talent');

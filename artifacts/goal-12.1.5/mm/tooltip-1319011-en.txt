@@ -1,0 +1,5 @@
+URL: https://nether.wowhead.com/tooltip/spell/1319011?locale=0
+STATUS: 200
+FETCHED: 2026-10-18T14:32:28.753Z
+
+{"name":"Blood Fletching","icon":"ability_revendreth_hunter","tooltip":"<table><tr><td><a class=\"whtt-name\" href=\"/spell=1319011/blood-fletching\"><b class=\"whtt-name\">Blood Fletching</b></a><div class=\"q0\">Talent</div><div class=\"wowhead-tooltip-requirements\">Requires Hunter</div></td></tr></table><table><tr><td><div class=\"q\">Aimed Shot critical strikes now cause the Master Marksman bleed effect at 20% of damage dealt. For 4 sec after a critical Aimed Shot, the target will take an additional (45% of Attack Power) bleed damage any time your abilities damage that target.</div></td></tr></table>","tooltip2":"","buff":"","quality":-1,"spells":{},"buffspells":{},"completion_category":-2}

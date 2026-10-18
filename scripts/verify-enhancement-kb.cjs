@@ -10,14 +10,14 @@ assert.match(skills[77130].description, /마법.*383016.*저주.*1.3%/);
 assert.match(skills[51886].description, /저주.*40야드.*8초.*10%/);
 assert.match(skills[108271].description, /2분.*12초.*40%/);
 assert.match(skills[57994].description, /30야드.*4초.*12초/);
-for (const id of [51886, 77130, 383016, 108271, 57994]) assert.equal(skills[id].patch, '12.1');
+for (const id of [51886, 77130, 383016, 108271, 57994]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 for (const relation of Object.values(synergies)) {
   if (relation.specs?.length === 1 && ['Elemental', 'Enhancement'].includes(relation.specs[0])) {
     assert.ok(!relation.participants.includes('77130'), relation.id + ': Restoration-only dispel');
   }
 }
 for (const id of [1296627, 1296628]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Enhancement']);
   assert.equal(skills[id].castTime, '지속 효과');
 }
@@ -52,7 +52,7 @@ for (const [id, pattern] of Object.entries({
   1252373: /2초.*50%.*2회.*자동 공격 속도.*15%.*전체 가속.*아니다/,
   115356: /승천.*30미터.*물리 피해.*7.5초.*1회.*60%.*3초/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Enhancement'], id);
   assert.match(skills[id].description, pattern, id);
 }
@@ -69,7 +69,7 @@ for (const [id, pattern] of Object.entries({
   455110: /정기.*과부하 피해가 10%.*고양.*35%.*2중첩.*모든.*소비 기술.*아니다/,
   455129: /고양.*폭풍의 일격.*정기.*추가 0.30%.*약 1.1회.*보장되는 발동.*해석하지/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Elemental', 'Enhancement'], id);
   assert.equal(skills[id].castTime, '지속 효과', id);
   assert.match(skills[id].description, pattern, id);
@@ -78,14 +78,14 @@ assert.notEqual(skills[382888].icon, skills[454009].icon);
 assert.equal(skills[455097], undefined, 'Arc Discharge internal effect is not a second selectable talent');
 assert.equal(skills[454029], undefined, 'Nature protection internal effect is not a second selectable talent');
 assert.equal(skills[456369], undefined, 'Amplification Core buff is not a second selectable talent');
-assert.equal(skills[445035].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[445035].patch));
 for (const [id, pattern] of Object.entries({
   147051: /승천.*자동 공격.*30미터.*100%.*방어도를 무시/,
   33757: /주무기.*1시간.*15%.*2회.*3회/,
   201845: /폭풍의 일격.*5%.*초기화.*지속 효과/,
   1260666: /전격의 불길.*2중첩.*30%.*8미터.*6명/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Enhancement'], id);
   assert.match(skills[id].description, pattern, id);
 }
@@ -93,7 +93,7 @@ assert.equal(skills[147051].castTime, '자동 공격');
 assert.equal(skills[33757].castTime, '즉시');
 assert.equal(skills[201845].castTime, '지속 효과');
 assert.equal(skills[1260666].castTime, '지속 효과');
-assert.equal(skills[318038].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[318038].patch));
 assert.equal(skills[318038].castTime, '즉시');
 assert.deepEqual(skills[318038].specs, ['Elemental', 'Enhancement']);
 assert.match(skills[318038].description, /1시간.*고양.*추가 화염 피해.*정기.*5%/);
@@ -103,7 +103,7 @@ for (const [id, pattern] of Object.entries({
   319930: /추가 충전 1회.*폭풍쇄도.*25%.*2중첩/,
   1251026: /치명타 피해.*치명타 확률의 40%.*고정 40%.*아니다/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Enhancement'], id);
   assert.match(skills[id].description, pattern, id);
 }
@@ -113,7 +113,7 @@ for (const [id, pattern] of Object.entries({
   384363: /낙뢰.*다음 폭풍의 일격.*25%.*6중첩/,
   392352: /특화.*발동 확률 증가 효과.*150%.*최종 발동 확률.*아니다/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Enhancement'], id);
   assert.match(skills[id].description, pattern, id);
 }
@@ -125,7 +125,7 @@ for (const [id, pattern] of Object.entries({
   384450: /10중첩.*다음 폭풍의 일격 또는 용암 채찍.*25%.*1중첩/,
   384411: /파멸의 바람 또는 승천.*1초마다.*1중첩.*1등급.*최대 등급은 2/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Enhancement'], id);
   assert.match(skills[id].description, pattern, id);
 }
@@ -135,13 +135,13 @@ for (const [id, pattern] of Object.entries({
   344357: /폭풍의 일격.*20%.*40%.*연쇄적으로/,
   334308: /연쇄 번개.*2명.*10%/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Enhancement'], id);
   assert.match(skills[id].description, pattern, id);
 }
 assert.deepEqual(skills[445035].specs, ['Enhancement', 'Restoration']);
 assert.match(skills[445035].description, /뜨거운 손.*80%.*세계의 분리.*복원.*30%.*25%/);
-assert.equal(skills[457481].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[457481].patch));
 assert.deepEqual(skills[457481].specs, ['Restoration']);
 assert.equal(skills[457481].castTime, '즉시');
 assert.match(skills[457481].description, /445033.*방패.*1시간.*2%.*3초.*고양.*아니다/);
@@ -150,10 +150,10 @@ for (const id of ['453405', '453406', '453407', '453409']) {
   for (const relation of Object.values(synergies)) assert.ok(!relation.participants.includes(id), relation.id);
 }
 const hotHand = synergies.shaman_enhancement_hot_hand_lava_lash;
-assert.equal(hotHand.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(hotHand.patch));
 assert.match(hotHand.description, /용암 채찍.*8초.*활성화된.*0.20초.*0.3초/);
 assert.ok(hotHand.participants.includes('445024'));
-assert.equal(synergies.shaman_hero_totemic_surging_totem_common_hub.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies.shaman_hero_totemic_surging_totem_common_hub.patch));
 assert.match(synergies.shaman_hero_totemic_surging_totem_common_hub.description, /티끌 효과 ID.*별도 선택 특성이 아니/);
 for (const [id, pattern] of Object.entries({
   445028: /고양.*5%.*8%.*일정 확률.*300%.*복원.*3초/,
@@ -161,7 +161,7 @@ for (const [id, pattern] of Object.entries({
   445030: /승천.*치유의 해일 토템.*피해.*50%.*쇄도하는 토템과 범람의 파도의 치유량.*수치는.*50%라고 단정하지.*445029.*94874/,
   445031: /30초마다.*6%.*30초 지속.*피해 6% 감소.*다른/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Enhancement', 'Restoration'], id);
   assert.match(skills[id].description, pattern, id);
 }
@@ -172,7 +172,7 @@ for (const [id, pattern] of Object.entries({
   445027: /실제로 제거.*실제로 제어.*5초.*토템별로 20초.*445026.*94859/,
   445032: /고양.*18%.*복원.*10%.*445033.*94866/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Enhancement', 'Restoration'], id);
   assert.match(skills[id].description, pattern, id);
 }
@@ -182,7 +182,7 @@ for (const [id, pattern] of Object.entries({
   1260874: /고양.*다음 용암 채찍.*150%.*한 번 더.*복원.*8%.*대지생명/,
   445029: /고양·복원.*쇄도하는 토템.*3%.*445029.*456369.*버프/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Enhancement', 'Restoration'], id);
   assert.match(skills[id].description, pattern, id);
 }
@@ -196,7 +196,7 @@ for (const [id, pattern] of Object.entries({
   454372: /1064.*8004.*16%.*80%.*454027.*94880/,
   467778: /5초.*50%.*야외.*100%.*윤회.*천둥폭풍.*454022.*94863/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Elemental', 'Enhancement'], id);
   assert.match(skills[id].description, pattern, id);
 }
@@ -206,12 +206,12 @@ for (const [id, pattern] of Object.entries({
   454919: /고양.*낙뢰.*연쇄 번개.*20%.*정기.*지진.*5%/,
   454391: /15초.*가속.*1%.*한 번.*10중첩.*10%로 계산하지/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Elemental', 'Enhancement'], id);
   assert.match(skills[id].description, pattern, id);
 }
 const sharedStorm = synergies.shaman_hero_stormbringer_tempest_conductive_hub;
-assert.equal(sharedStorm.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(sharedStorm.patch));
 assert.ok(!sharedStorm.participants.includes('455097'));
 assert.ok(sharedStorm.participants.includes('452201'));
 assert.match(sharedStorm.description, /하강하는 하늘.*승천.*전격 방전.*고양.*정기/);
@@ -222,13 +222,13 @@ for (const [id, pattern] of Object.entries({
   1264688: /승천.*다음 번개 화살.*폭풍.*별개/,
   1264691: /정기.*2%.*고양.*6%/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Elemental', 'Enhancement'], id);
   assert.equal(skills[id].castTime, '지속 효과', id);
   assert.match(skills[id].description, pattern, id);
   assert.doesNotMatch(skills[id].description, /소용돌이 또는 소용돌이치는 무기 소비로 폭풍을 만들고 자연 피해를 강화한다/, id);
 }
-assert.equal(skills[452201].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[452201].patch));
 assert.deepEqual(skills[452201].specs, ['Elemental', 'Enhancement']);
 assert.equal(skills[452201].icon, skills[454009].icon);
 assert.match(skills[452201].castTime, /2초.*소용돌이치는 무기/);
@@ -239,20 +239,20 @@ for (const [id, pattern] of Object.entries({
   445025: /일정 확률.*10%.*중첩.*복원.*20미터.*30미터.*2명.*확정 발동 주기가 아니다/,
   445024: /고양.*3발.*100%.*뜨거운 손.*8초.*복원.*50%.*40%.*150%/,
 })) {
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.deepEqual(skills[id].specs, ['Enhancement', 'Restoration'], id);
   assert.match(skills[id].description, pattern, id);
   assert.equal(skills[id].castTime, id === '444995' ? '즉시' : '지속 효과', id);
 }
 assert.match(skills[444995].cooldown, /고양 1분.*25초/);
-assert.equal(skills[470057].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[470057].patch));
 assert.deepEqual(skills[470057].specs, ['Elemental', 'Enhancement']);
 assert.equal(skills[470057].castTime, '즉시');
 assert.match(skills[470057].description, /추가 적 5명.*항상 치명타.*고양.*1중첩.*정기.*6.*10초/);
 assert.equal(skills[115356].castTime, '즉시');
 for (const id of ['shaman_enhancement_stormbringer_tempest', 'shaman_enhancement_totemic_surging_window', 'shaman_enhancement_crash_lightning_aoe', 'shaman_enhancement_doom_winds_ascendance_window']) {
   const relation = synergies[id];
-  assert.equal(relation.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(relation.patch), id);
   assert.deepEqual(relation.specs, ['Enhancement'], id);
   for (const spell of relation.participants) assert.ok(skills[spell]?.specs.includes('Enhancement'), id + ': ' + spell);
   assert.doesNotMatch(relation.description, /차트|Archon|76.1%|53.6%|정기의 박자/, id);
@@ -266,11 +266,12 @@ assert.match(synergies.shaman_enhancement_crash_lightning_aoe.description, /타�
 assert.match(synergies.shaman_enhancement_doom_winds_ascendance_window.description, /승천 또는 깊이 뿌리내린 정기를 선택하면 파멸의 바람 버튼이 대체된다/);
 assert.deepEqual(skills[378270].specs, ['Enhancement', 'Restoration']);
 assert.match(skills[378270].description, /0.6%.*6초.*2초.*복원.*7%/);
-assert.equal(skills[378270].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[378270].patch));
 assert.equal(skills[51533], undefined);
 for (const relation of Object.values(synergies)) assert.ok(!relation.participants.includes('51533'), relation.id);
-const manuscript = fs.readFileSync(path.join(__dirname, '../src/data/guideManuscripts.js'), 'utf8');
-const enhancement = manuscript.slice(manuscript.indexOf("  'shaman-enhancement': {"), manuscript.indexOf("  'shaman-elemental': {"));
+const guideManuscripts = require('./lib/guideManuscripts.cjs');
+const manuscript = guideManuscripts.readAllGuideManuscriptText();
+const enhancement = guideManuscripts.readGuideManuscriptText('shaman-enhancement');
 assert.match(enhancement, /야수 정령은 직접 쓰는 스킬이 아닙니다/);
 assert.doesNotMatch(enhancement, /야수 정령은 즉시 딜 스킬보다|야수 정령.*앞서 배치|최대 5명에게 복제|전체 복제 딜 구조/);
 assert.match(enhancement, /승천은 파멸의 바람 버튼을 대체/);
@@ -284,15 +285,15 @@ assert.match(enhancement, /비공개 핀 글을 열람했다는 뜻은 아닙니
 assert.doesNotMatch(manuscript, /skillId: ['"](?:51533|469314)['"]/);
 assert.doesNotMatch(manuscript, /skillId: ['"]1218047['"]/);
 assert.doesNotMatch(manuscript, /skillId: ['"]454009['"]/);
-const enhancementData = require('node:vm').runInNewContext('(' + enhancement.slice(enhancement.indexOf('{')).trim().replace(/,$/, '') + ')');
+const enhancementData = guideManuscripts.loadGuideManuscript('shaman-enhancement');
 assert.deepEqual(enhancementData.opener, enhancementData.heroBranches[0].opener, 'Default opener must reuse the reviewed Stormbringer flow');
 assert.deepEqual(enhancementData.priority, enhancementData.heroBranches[0].singleTarget.priority, 'Default priority must not retain the obsolete mixed-hero list');
 assert.ok(!enhancementData.opener.steps.some(row => row.skillId === '187880'), 'Passive resource is not an opener button');
 assert.doesNotMatch(JSON.stringify(enhancementData.blocks), /인포그래픽|별도 표시해야|디스펠 매트릭스/);
-assert.equal(synergies.shaman_enhancement_sundering_primordial_opener.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies.shaman_enhancement_sundering_primordial_opener.patch));
 assert.deepEqual(synergies.shaman_enhancement_sundering_primordial_opener.participants, ['197214', '1218047', '1218090', '187880']);
 assert.match(synergies.shaman_enhancement_sundering_primordial_opener.description, /15초.*1218090.*1218047.*필수 조건이 아니다/);
-assert.equal(synergies.shaman_enhancement_maelstrom_spender_loop.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies.shaman_enhancement_maelstrom_spender_loop.patch));
 assert.match(synergies.shaman_enhancement_maelstrom_spender_loop.description, /토림의 기원.*자동 소비/);
 for (const mode of ['singleTarget', 'aoe']) {
   assert.ok(enhancementData.heroBranches[0][mode].priority.some(row => row.skillId === '452201'), 'Tempest cast must be available in both Stormbringer modes');
@@ -325,7 +326,7 @@ assert.ok(enhancementData.heroBranches.every(branch => branch.singleTarget.prior
 assert.match(synergies.shaman_enhancement_maelstrom_spender_loop.description, /기본 저장 상한.*5.*넘치는 소용돌이.*분노의 소용돌이.*치유용.*20.*10/);
 assert.match(synergies.shaman_enhancement_doom_winds_ascendance_window.description, /직접 시전하지 않는 패시브.*승천.*대체/);
 for (const id of ['370', '378773', '8143', '383013', '192058']) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].castTime, '즉시');
 }
 assert.match(skills['378773'].description, /2개.*사용 특성.*패시브가 아니며/);
@@ -334,7 +335,7 @@ assert.match(skills['8143'].description, /10초.*30미터.*공포·현혹·수�
 assert.match(skills['383013'].description, /6초.*1.5초.*30미터.*독 효과.*진동의 토템.*같은 선택/);
 assert.match(skills['192058'].description, /2초.*8미터.*3초/);
 for (const id of ['58875', '79206', '192063', '192077', '108287', '192088', '378077', '381647', '462817']) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.ok(skills[id].description.length > 60);
 }
 for (const id of ['58875', '79206', '192063', '192077', '108287']) assert.equal(skills[id].castTime, '즉시');

@@ -2,7 +2,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const { skills } = require('../src/data/kb-skills.json');
 for (const id of [772, 845, 12950]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert(!skills[id].description.startsWith('#'));
 }
 assert.deepEqual(skills[772].specs, ['Arms']);
@@ -15,20 +15,21 @@ assert.match(skills[772].description, /분노 10/);
 assert.match(skills[845].description, /분쇄를 배웠을 경우/);
 assert.match(skills[12950].description, /4번.*4명.*65%/);
 assert.match(skills[12950].description, /분쇄 적용은 이 특성의 효과가 아니다/);
-const guide = fs.readFileSync(require.resolve('../src/data/guideManuscripts.js'), 'utf8');
+const guideManuscripts = require('./lib/guideManuscripts.cjs');
+const guide = guideManuscripts.readAllGuideManuscriptText();
 assert.equal(skills[12975], undefined, 'Pre-Midnight active Last Stand must not return');
 assert.equal(skills[1243659].type, 'talent');
-assert.equal(skills[1243659].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[1243659].patch));
 assert.equal(skills[1243659].castTime, '지속 효과');
 assert.match(skills[1243659].description, /방패의 벽.*8초.*30%/);
-for (const id of [71, 76857, 161798]) assert.equal(skills[id].patch, '12.1');
+for (const id of [71, 76857, 161798]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.match(skills[71].description, /체력이 40%.*힘의 70%/);
 assert.match(skills[76857].description, /방패 막기 확률 4\.0%.*결정적 방어 확률 12\.0%.*전투력 8\.0%/);
 assert.match(skills[161798].description, /장비에서 얻는 치명타.*100%.*무기 막기/);
 assert(!guide.includes('방패의 벽이나 최후의 저항'));
 assert(!guide.includes('방패의 벽과 항상 겹칠 필요가 없습니다'));
 for (const id of [1160, 20243, 202603, 202743, 203177, 236279, 384041]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 }
 assert.equal(skills[202603].type, 'spec-talent');
 assert.match(skills[202603].description, /10미터.*2%.*8%/);
@@ -48,7 +49,7 @@ for (const [id, name, specs] of [
   [384277, '피와 번개', ['Protection']],
   [436707, '몰아치는 천둥', ['Fury', 'Protection']],
 ]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].koreanName, name);
   assert.deepEqual(skills[id].specs, specs);
   assert.equal(skills[id].castTime, '지속 효과');
@@ -60,14 +61,14 @@ assert.match(skills[436707].description, /분노에만.*8.*피의 폭풍/);
 const { synergies } = require('../src/data/kb-synergies.json');
 assert.deepEqual(synergies['SY-WARRIOR-PROTECTION-DEVASTATE-DEVASTATOR-STRATEGIST'].participants, ['20243', '236279', '384041', '23922']);
 assert.equal(synergies['SY-WARRIOR-PROTECTION-DEVASTATE-RIPOSTE-TACTICIAN'], undefined);
-assert.equal(synergies['SY-WARRIOR-PROTECTION-VANGUARD-ARMOR-MASTERY'].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies['SY-WARRIOR-PROTECTION-VANGUARD-ARMOR-MASTERY'].patch));
 assert(!JSON.stringify(synergies).includes('394062'));
 assert.deepEqual(synergies.warrior_fury_storm_of_blood.participants, ['190411', '1299025', '436707', '6343']);
 assert.deepEqual(synergies.warrior_protection_blood_and_thunder.participants, ['6343', '384277']);
 assert.deepEqual(synergies.warrior_fury_storm_of_blood.specs, ['Fury']);
 assert.deepEqual(synergies.warrior_protection_blood_and_thunder.specs, ['Protection']);
 for (const id of [383877, 280392, 1265357, 1300463]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Fury']);
   assert.equal(skills[id].castTime, '지속 효과');
 }
@@ -81,19 +82,19 @@ assert.match(skills[280392].description, /3명.*50%/);
 assert.deepEqual(synergies.warrior_fury_rampaging_ruin.participants, ['12950', '184367', '1265357']);
 assert.deepEqual(synergies.warrior_fury_hack_and_slash.participants, ['184367', '383877', '85288']);
 for (const id of [1296645, 1296646]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].type, 'set-bonus');
   assert.deepEqual(skills[id].specs, ['Fury']);
   assert.equal(skills[id].icon, 'trade_engineering');
 }
 assert.match(skills[1296645].description, /15%.*2초.*6초/);
 assert.match(skills[1296646].description, /10%.*3%.*6%/);
-assert.equal(skills[1719].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[1719].patch));
 assert.equal(skills[1719].cooldown, '1.5분');
 assert.equal(skills[1719].castTime, '즉시');
 assert.match(skills[1719].description, /12초.*50%.*20%/);
 assert.deepEqual(synergies.warrior_fury_season2_recklessness.participants, ['1719', '85288', '1296645', '23881', '1296646']);
-assert.equal(skills[228920].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[228920].patch));
 assert.deepEqual(skills[228920].specs, ['Arms', 'Protection']);
 assert.equal(skills[228920].cooldown, '1.5분');
 assert.match(skills[228920].description, /자신의 출혈.*50%.*방어.*분노 10/);
@@ -109,8 +110,8 @@ for (const id of [390713, 382953]) {
 }
 assert.deepEqual(synergies['warrior-arms-sudden-death-massacre-dance'].participants, ['29725', '281001', '163201']);
 assert.equal(synergies['warrior-arms-sudden-death-massacre-dance'].name, '급살-대학살-마무리 조건');
-for (const id of [29725, 281001]) assert.equal(skills[id].patch, '12.1');
-assert.equal(skills[163201].patch, '12.1');
+for (const id of [29725, 281001]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
+assert.ok(['12.1', '12.1.5'].includes(skills[163201].patch));
 assert.equal(skills[163201].englishName, 'Execute');
 assert.match(skills[163201].description, /20%.*35%.*급살.*무료.*분노 40/);
 assert(skills[163201].synergies.relatedTalents.some(id => id.endsWith('/대학살')));
@@ -119,7 +120,7 @@ assert.match(guide, /기본은 대상 생명력 20% 미만이고, 대학살을 �
 assert.match(skills[29725].description, /무료.*40/);
 assert.match(skills[281001].description, /35% 미만/);
 for (const id of [436358, 429634, 429636]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Arms', 'Protection']);
 }
 assert.equal(skills[436358].cooldown, '30초');
@@ -132,7 +133,7 @@ assert.deepEqual(synergies['SY-WARRIOR-PROTECTION-COLOSSUS-DEMOLISH-REVENGE'].pa
 assert(!guide.includes('거신의 지배가 최대 중첩에서 쇄파 쿨다운을 더 크게 줄인다'));
 assert(!guide.includes('회전베기와 필사의 일격이 쇄파 흐름을 제대로 줄였는지'));
 for (const id of [444767, 444774, 429641, 429644]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].castTime, '지속 효과');
 }
 assert.match(skills[444767].description, /무기 25%, 분노 15%/);
@@ -146,7 +147,7 @@ assert.deepEqual(synergies.warrior_protection_tide_of_battle.specs, ['Protection
 assert(guide.includes('무기의 학살자의 지배는 주 대상 공격 시 25%'));
 assert(guide.includes('분노의 학살자의 지배는 주 대상 공격 시 15%'));
 for (const id of [1261051, 1261049, 262150, 383154]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Arms']);
   assert.equal(skills[id].castTime, '지속 효과');
 }
@@ -164,13 +165,13 @@ assert.equal(skills[1258398].koreanName, '특화: 무기 전문가');
 assert.equal(skills[1258398].icon, 'warrior_talent_icon_igniteweapon');
 assert.deepEqual(skills[1261060].specs, ['Arms', 'Fury', 'Protection']);
 assert.deepEqual(skills[1261062].specs, ['Arms']);
-for (const id of [1258398, 1261060, 1261062]) assert.equal(skills[id].patch, '12.1');
+for (const id of [1258398, 1261060, 1261062]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.match(skills[1261060].description, /마무리 일격.*6초.*남은 피해량/);
 assert.match(skills[1261062].description, /필사의 일격과 격돌이 치명타/);
 assert.deepEqual(synergies.warrior_arms_deep_wounds_sources.participants, ['1261060', '163201', '1261062', '12294', '1464']);
 assert(!guide.includes('특화: 치명상'));
 for (const id of [260708, 1261050, 334779]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Arms']);
 }
 assert.equal(skills[260708].cooldown, '30초');
@@ -191,13 +192,13 @@ assert.match(skills[190456].description, /최대 생명력의 30%/);
 assert.equal(skills[2565].resourceCost, '분노 30');
 assert.equal(skills[231847].type, 'passive');
 assert.match(skills[231847].description, /최대 충전 수를 2회/);
-for (const id of [1277297, 190456, 2565, 231847]) assert.equal(skills[id].patch, '12.1');
+for (const id of [1277297, 190456, 2565, 231847]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.deepEqual(synergies.warrior_arms_ignore_pain_colossus.participants, ['1277297', '429644']);
 assert.deepEqual(synergies.warrior_protection_ignore_pain_colossus.participants, ['190456', '429644', '2565']);
 assert.equal(skills[383292], undefined, 'Retired Juggernaut must not return to the live DB');
 assert.ok(!JSON.stringify(synergies).includes('383292'), 'Retired Juggernaut must not remain in synergy edges');
 assert.equal(skills[262161], undefined, 'Retired Warbreaker must not return');
-assert.equal(skills[167105].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[167105].patch));
 assert.equal(skills[167105].cooldown, '45초');
 assert.match(skills[167105].description, /10미터.*10초.*30%/);
 assert.ok(!JSON.stringify(synergies).includes('262161'));
@@ -216,7 +217,7 @@ for (const id of [383317, 383219, 248621, 383442, 400314]) {
 }
 assert.equal(synergies['warrior-arms-passive-mastery-rage'], undefined);
 for (const id of [184783, 1261057, 386630, 386634]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Arms']);
   assert.equal(skills[id].castTime, '지속 효과');
 }
@@ -226,13 +227,13 @@ assert.match(skills[386630].description, /35%.*필사의 일격.*33%/);
 assert.match(skills[386634].description, /다음 필사의 일격.*35%.*2중첩/);
 assert.deepEqual(synergies.warrior_arms_charge_reset_chain.participants, ['184783', '1261057', '7384', '386630', '12294']);
 for (const id of [1261056, 1261048]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Arms']);
 }
 assert.match(skills[1261056].description, /20초.*회전베기 2회.*재사용 대기시간/);
 assert.match(skills[1261048].description, /거인의 강타.*분노 15/);
 assert.deepEqual(synergies.warrior_arms_smash_cleave_resources.participants, ['167105', '1261048', '1261056', '845']);
-assert.equal(skills[202316].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[202316].patch));
 assert.match(skills[202316].description, /3명 이상.*주 대상.*격돌.*50%/);
 assert.match(skills[202316].description, /수동 시전 횟수로 세지 않는다/);
 assert.deepEqual(synergies.warrior_arms_fervor_triggered_slam.participants, ['202316', '845', '1680', '1464']);
@@ -240,7 +241,7 @@ assert.ok(!guide.includes('21,740') && !guide.includes('90,965') && !guide.inclu
 assert.ok(guide.includes('12.1에서 단일과 다중 대상 모두 먼저 비교할 기본 선택'));
 assert.ok(guide.includes('최신 로그를 직접 재수집한 통계로 제시하지 않습니다'));
 for (const id of [1269314, 1269383, 1269306, 1269307]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Arms']);
 }
 assert.equal(skills[1269383].icon, 'ability_rogue_ambush');
@@ -252,7 +253,7 @@ assert.match(skills[1269307].description, /다음 거인의 강타.*3%.*5중첩/
 assert.deepEqual(synergies.warrior_arms_heroic_strike_stack_layers.participants, ['1269314', '1269383', '1269306', '1269307', '167105']);
 assert.ok(guide.includes('방어도 관통 중첩과 다음 거인의 강타 준비 중첩을 구분'));
 for (const id of [1296643, 1296644]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Arms']);
   assert.equal(skills[id].icon, 'trade_engineering');
   assert.equal(skills[id].castTime, '지속 효과');
@@ -266,7 +267,7 @@ assert.ok(guide.includes('치명상은 별도로 눌러 갱신하는 기술이 �
 assert.ok(!guide.includes('출혈 기준선이며 12.0.5부터 광역 적용 가치'));
 assert.ok(!guide.includes('레이드는 학살자가 로그 사용률에서 앞서므로'));
 assert.ok(!guide.includes('그래서 그래프 중심을 거인의 강타로 두면'));
-for (const id of [7384, 12294, 1273062, 385571, 444775, 444769]) assert.equal(skills[id].patch, '12.1');
+for (const id of [7384, 12294, 1273062, 385571, 444775, 444769]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.equal(skills[12294].resourceCost, '분노 30');
 assert.equal(skills[12294].cooldown, '6초');
 assert.equal(skills[7384].resourceCost, '없음');
@@ -281,7 +282,7 @@ assert.match(skills[444769].description, /학살자의 일격.*3회.*급살/);
 assert.deepEqual(synergies.warrior_slayer_reap_trigger_paths.participants, ['444775', '444769', '845', '184367', '12950', '163201', '5308']);
 assert.ok(!guide.includes('제압이 폭풍을 거두는 자와 학살자 흐름을 여는'));
 for (const id of [316405, 389306, 383703, 400205]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Arms']);
 }
 assert.equal(skills[389306].koreanName, '치명적 감각');
@@ -296,36 +297,36 @@ for (const id of [383338, 389308]) {
   assert.ok(!JSON.stringify(synergies).includes(String(id)));
 }
 assert.deepEqual(skills[383295].specs, ['Fury']);
-assert.equal(skills[383295].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[383295].patch));
 assert.match(skills[383295].description, /1포인트.*5%.*0.5초.*두 배.*2포인트/);
-assert.equal(skills[118038].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[118038].patch));
 assert.equal(skills[118038].cooldown, '2분');
 assert.match(skills[118038].description, /8초.*100%.*30%/);
 assert.ok(guide.includes('모든 피해에 면역이 되는 것이 아니므로'));
-for (const id of [383103, 384361, 383287, 383341, 383430, 400803]) assert.equal(skills[id].patch, '12.1');
+for (const id of [383103, 384361, 383287, 383341, 383430, 400803]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 for (const id of [383103, 384361]) assert.deepEqual(skills[id].specs, ['Arms', 'Protection']);
 assert.match(skills[383103].description, /85%.*125%/);
 assert.match(skills[384361].description, /일정 확률.*5/);
 for (const id of [383287, 383341, 400803]) assert.match(skills[id].description, /1포인트.*5%.*2포인트/);
 assert.match(skills[383430].description, /치명타 피해가 10%/);
 assert.ok(guide.includes('다음 공격에 필요한 분노가 아직 없다면'));
-assert.equal(skills[279423].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[279423].patch));
 assert.match(skills[279423].description, /자동 공격.*치명타.*10%/);
 assert.match(skills[279423].description, /광역 공격.*5%/);
-assert.equal(skills[392792].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[392792].patch));
 assert.deepEqual(skills[392792].specs, ['Arms', 'Fury', 'Protection']);
 assert.match(skills[392792].description, /20%.*실제 소모.*무기.*10%.*분노.*10%.*방어.*50%/);
 assert.match(skills[392792].description, /무료 사용.*지불한 분노가 없/);
 assert.ok(guide.includes('예상 환급이 아니라 현재 분노를 확인'));
 for (const id of [262231, 382767]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Arms', 'Fury', 'Protection']);
 }
 assert.match(skills[262231].description, /무기 10%.*분노 20%.*방어 50%/);
 assert.match(skills[262231].description, /불일치.*실측/);
 assert.match(skills[382767].description, /최대 분노가 30.*100.*130/);
 assert.ok(guide.includes('주요 공격을 미루며 130까지 기다리지'));
-for (const id of [386208, 386164, 1280961, 382939, 382549, 1271926]) assert.equal(skills[id].patch, '12.1');
+for (const id of [386208, 386164, 1280961, 382939, 382549, 1271926]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.deepEqual(skills[386164].specs, ['Arms', 'Protection']);
 assert.match(skills[386208].description, /무기와 분노.*10% 감소.*방어 전문화.*감소가 없다/);
 assert.equal(skills[386208].cooldown, '3초');
@@ -338,17 +339,17 @@ for (const id of [390123, 390135, 390138, 390140]) {
   assert.equal(skills[id], undefined, 'Unlearnable Torment talents must not remain selectable');
   assert.ok(!JSON.stringify(synergies).includes(String(id)));
 }
-assert.equal(skills[107574].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[107574].patch));
 assert.equal(skills[107574].cooldown, '1.5분');
 assert.match(skills[107574].description, /20초.*20%.*무기.*5%.*방어.*3%.*분노.*5%/);
-assert.equal(skills[382764].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[382764].patch));
 assert.match(skills[382764].description, /필사의 일격.*피의 갈증.*방패 밀쳐내기.*5%/);
 assert.match(skills[382764].description, /분쇄 출혈을 강화하는 특성이 아니다/);
 for (const id of [382948, 384404, 383762, 391572, 386284, 384969, 275338, 382954, 382956, 383115]) {
   assert.equal(skills[id], undefined, 'Inactive shared talents must not be offered by the spell DB');
   assert.ok(!JSON.stringify(synergies).includes(String(id)), 'Inactive shared talents must not survive in graph references');
 }
-for (const id of [100, 6544, 3411, 6552, 107570, 46968, 202163, 103827, 391271]) assert.equal(skills[id].patch, '12.1');
+for (const id of [100, 6544, 3411, 6552, 107570, 46968, 202163, 103827, 391271]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.equal(skills[100].cooldown, '20초');
 assert.match(skills[100].description, /8~25.*분노 20/);
 assert.match(skills[6544].description, /방어 전문화.*도발.*초기화/);
@@ -359,7 +360,7 @@ assert.match(skills[103827].description, /2충전.*17초/);
 assert.match(skills[202163].description, /3초.*70%.*30초/);
 assert.match(skills[391271].description, /차단에 성공.*10초.*5%/);
 assert.ok(guide.includes('25야드 이동과 10야드 보호 유지 조건'));
-for (const id of [6673, 97462, 34428, 202168, 18499, 23920, 1243660, 424742]) assert.equal(skills[id].patch, '12.1');
+for (const id of [6673, 97462, 34428, 202168, 18499, 23920, 1243660, 424742]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.match(skills[97462].description, /40미터.*10초.*10%.*15%/);
 assert.equal(skills[97462].cooldown, '3분');
 assert.match(skills[34428].description, /처치.*20초.*10%/);
@@ -370,7 +371,7 @@ assert.match(skills[23920].description, /첫 번째.*5초.*20%/);
 assert.match(skills[18499].description, /6초.*모든 기절.*아니다/s);
 assert.match(skills[1243660].description, /지속시간이 20%/);
 assert.match(skills[424742].description, /3%.*2%.*3초.*100%.*15초/);
-for (const id of [382900, 383082, 382946, 382896, 384124, 392777, 382895, 382258]) assert.equal(skills[id].patch, '12.1');
+for (const id of [382900, 383082, 382946, 382896, 384124, 392777, 382895, 382258]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 for (const [id, spec] of [[382900, 'Fury'], [382896, 'Arms'], [382895, 'Protection']]) {
   assert.deepEqual(skills[id].specs, [spec]);
   assert.match(skills[id].description, /1포인트.*2포인트/);
@@ -380,14 +381,14 @@ assert.match(skills[382946].description, /자동 공격.*치명타.*10초.*10%.*
 assert.match(skills[383082].description, /몰아치는 천둥.*천둥벼락/);
 assert.match(skills[392777].description, /1포인트.*1%.*마무리 일격.*5%.*2포인트/);
 assert.equal(skills[382258].castTime, '지속 효과');
-for (const id of [275339, 382260, 1271925, 29838, 203201, 1271948]) assert.equal(skills[id].patch, '12.1');
+for (const id of [275339, 382260, 1271925, 29838, 203201, 1271948]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.match(skills[275339].description, /3명.*15초.*16미터/s);
 assert.match(skills[1271925].description, /50%.*30초/s);
 assert.match(skills[29838].description, /5초.*6%.*35%.*2%/);
 assert.match(skills[203201].description, /반경이 50%.*20%/);
 assert.equal(skills[1271948].icon, '8026700');
 assert.match(skills[1271948].description, /플레이어가 아닌 대상.*3초/);
-assert.equal(skills[6343].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[6343].patch));
 assert.equal(skills[6343].icon, 'spell_nature_thunderclap');
 assert.equal(skills[6343].cooldown, '6초');
 assert.deepEqual(skills[6343].specs, ['Arms', 'Fury', 'Protection']);
@@ -396,22 +397,22 @@ assert.match(skills[6343].description, /방어의 피와 번개.*분노의 피�
 assert.match(skills[6343].description, /무기의 분쇄를 자동으로 퍼뜨리지 않습니다/);
 assert.doesNotMatch(skills[6343].description, /85.*대상|0의 분노/);
 assert.ok(guide.includes('천둥벼락은 분노를 소모하지 않고 8을 생성'));
-assert.equal(skills[152278].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[152278].patch));
 assert.equal(skills[152278].castTime, '지속 효과');
 assert.match(skills[152278].description, /무기는.*투신과 거인의 강타.*분노는.*투신과 무모한 희생.*방어는.*투신과 방패의 벽/);
 assert.deepEqual(synergies['warrior-fury-anger-management'].participants, ['184367', '152278', '1719', '107574']);
-assert.equal(synergies['warrior-fury-anger-management'].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies['warrior-fury-anger-management'].patch));
 assert.ok(guide.includes('공격에 실제로 쓴 분노 20마다'));
-assert.equal(skills[227847].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[227847].patch));
 assert.equal(skills[227847].cooldown, '1.5분');
 assert.deepEqual(skills[227847].specs, ['Arms', 'Fury']);
 assert.match(skills[227847].description, /가속 적용 전.*무기 6초·분노 4초/);
 assert.match(skills[227847].description, /분노 전문화.*분노 5.*무기는.*없습니다/);
 assert.ok(guide.includes('분노의 칼날폭풍은 가속 적용 전 4초'));
-assert.equal(skills[1680].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[1680].patch));
 assert.equal(skills[1680].resourceCost, '분노 20');
 assert.deepEqual(skills[1680].specs, ['Arms']);
-assert.equal(skills[190411].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[190411].patch));
 assert.deepEqual(skills[190411].specs, ['Fury']);
 assert.match(skills[190411].description, /분노 3.*소용돌이 연마.*4회.*4명.*65%/);
 assert.ok(guide.includes('무기의 소용돌이는 분노 20을 쓰는'));
@@ -431,21 +432,21 @@ for (const id of [383459, 383922, 388004, 388049, 389603, 391683, 392536, 394329
   assert.equal(skills[id], undefined, 'Inactive Fury talents must not be selectable');
   assert.ok(!JSON.stringify(synergies).includes(String(id)), 'Inactive Fury talents must not survive graph links');
 }
-assert.equal(skills[184362].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[184362].patch));
 assert.equal(skills[184362].castTime, '지속 효과');
 assert.match(skills[184362].description, /4초.*특화.*광란.*30%/);
-assert.equal(skills[23881].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[23881].patch));
 assert.equal(skills[23881].cooldown, '4.5초');
 assert.match(skills[23881].description, /3%.*분노 8.*30%/);
 assert.ok(guide.includes('치명타 한 번이 격노를 무조건 보장'));
-for (const id of [85288, 184367, 383854]) assert.equal(skills[id].patch, '12.1');
+for (const id of [85288, 184367, 383854]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.equal(skills[85288].cooldown, '8초');
 assert.match(skills[85288].description, /분노 12.*1충전.*연마.*2충전.*25%/);
 assert.equal(skills[184367].resourceCost, '분노 80');
 assert.match(skills[184367].description, /4회.*빗발치는 광란/);
 assert.equal(skills[383854].castTime, '지속 효과');
 assert.ok(guide.includes('후속 피해 횟수를 광란 시전 횟수로'));
-for (const id of [184364, 208154, 383468, 383848, 440277]) assert.equal(skills[id].patch, '12.1');
+for (const id of [184364, 208154, 383468, 383848, 440277]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.equal(skills[184364].cooldown, '2분');
 assert.match(skills[184364].description, /8초.*30%.*20%.*11초.*10%/);
 for (const id of [208154, 383468, 383848, 440277]) assert.equal(skills[id].castTime, '지속 효과');
@@ -453,7 +454,7 @@ assert.match(skills[208154].description, /격노 상태.*10%.*격노가 끝나�
 assert.match(skills[383468].description, /3초.*11초.*10%.*즉시/);
 for (const id of [383848, 440277]) assert.match(skills[id].description, /같은 선택 노드.*하나만/);
 assert.ok(guide.includes('광포한 격노와 강대한 격노는 둘 중 하나만 선택'));
-for (const id of [385059, 215568, 393950, 383959, 383885]) assert.equal(skills[id].patch, '12.1');
+for (const id of [385059, 215568, 393950, 383959, 383885]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.equal(skills[385059].cooldown, '45초');
 assert.match(skills[385059].description, /12미터.*4초.*격노.*분노 20.*8명/);
 for (const id of [215568, 393950, 383959, 383885]) assert.equal(skills[id].castTime, '지속 효과');
@@ -463,7 +464,7 @@ assert.match(skills[383959].description, /치명타.*분노 4.*6초.*0.5초/);
 assert.match(skills[383885].description, /35% 미만.*25%.*대상의 현재 생명력/);
 assert.ok(guide.includes('광역 치명타 적중 수에 무조건 4를 곱하면 안 됩니다'));
 for (const id of [1269308, 1269309, 1269310]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].castTime, '지속 효과');
 }
 assert.match(skills[1269308].description, /10%.*8초.*3%.*개별적으로 만료/);
@@ -473,7 +474,7 @@ assert.ok(guide.includes('중첩마다 따로 시간이 지나므로'));
 assert.doesNotMatch(guide, /28,065|84,766|4,371|현재 고단 로그는 학살자가/);
 assert.ok(guide.includes('Icy Veins 분노 전사 12.1 특성 선택'));
 for (const id of [385703, 383486, 383852]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].castTime, '지속 효과');
 }
 assert.match(skills[385703].description, /8초.*출혈 피해.*20%.*새 출혈/);
@@ -481,12 +482,12 @@ assert.match(skills[383486].description, /격노 상태.*자동 공격.*모든 �
 assert.match(skills[383852].description, /1포인트.*2.5%.*2포인트.*5%.*치명타 확률/);
 assert.ok(guide.includes('로그의 빗나감과 근접 이탈을 구분'));
 const bloodthirstSurvival = synergies['warrior-fury-bloodthirst-bleed-survival'];
-assert.equal(bloodthirstSurvival.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(bloodthirstSurvival.patch));
 assert.deepEqual(bloodthirstSurvival.participants, ['23881', '383959', '385703', '184364', '383468']);
 assert.match(bloodthirstSurvival.description, /치명타.*6초.*8초.*20%.*11초.*서로 다른 효과/);
 assert.ok(guide.includes('공격할 수 없는 위험 구간: 피의 갈증을 기다리지 말고'));
 for (const id of [335077, 383297, 392931]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].castTime, '지속 효과');
   assert.equal(skills[id].type, 'spec-talent');
 }
@@ -494,7 +495,7 @@ assert.match(skills[335077].description, /12초.*2%.*따로 만료/);
 assert.match(skills[383297].description, /2포인트.*10%포인트.*분쇄의 타격/);
 assert.match(skills[392931].description, /격노 상태.*2포인트.*10%.*꺼진 동안/);
 assert.ok(guide.includes('각 중첩은 따로 만료되므로'));
-for (const id of [392936, 396749, 335096, 335097]) assert.equal(skills[id].patch, '12.1');
+for (const id of [392936, 396749, 335096, 335097]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.match(skills[392936].description, /15%.*10%포인트.*25%.*35%/);
 assert.match(skills[396749].description, /분노 50.*6초 연장/);
 assert.equal(skills[335096].cooldown, '4.5초');
@@ -503,7 +504,7 @@ assert.equal(skills[335097].cooldown, '8초');
 assert.match(skills[335097].description, /분노 12.*20%.*1회.*2회/);
 assert.ok(guide.includes('시작 전에 분노 여유를 확인하세요'));
 for (const id of [46917, 81099, 76856]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].type, 'passive');
   assert.equal(skills[id].castTime, '지속 효과');
 }
@@ -511,7 +512,7 @@ assert.match(skills[81099].description, /형상변환.*선택 특성이 아닙�
 assert.match(skills[76856].description, /특화에 따라.*중복 계산/);
 assert.ok(guide.includes('실제 장착 무기를 확인하세요'));
 for (const id of [206315, 316402]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].castTime, '지속 효과');
 }
 assert.match(skills[206315].description, /대상 생명력 35% 미만.*1.5초.*전역/);
@@ -522,7 +523,7 @@ assert.deepEqual(skills[29725].specs, ['Arms', 'Fury', 'Protection']);
 assert.match(skills[29725].description, /무기 전문화.*무료.*40.*분노·방어.*별도 효과/);
 assert.ok(guide.includes('급살은 생명력 제한 밖에서도'));
 for (const id of [1265355, 1265356, 1265359, 1265361, 1265570]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.equal(skills[id].type, 'spec-talent');
   assert.equal(skills[id].castTime, '지속 효과');
   assert.deepEqual(skills[id].specs, ['Fury']);
@@ -536,7 +537,7 @@ assert.deepEqual(synergies['warrior-fury-scent-ragedrinker'].participants, ['184
 assert.match(synergies['warrior-fury-scent-ragedrinker'].description, /치명타를 보장하지/);
 assert.doesNotMatch(guide, /강한 면역기나 죽음 방지 장치를 가진 전문화가 아닙니다/);
 for (const id of [6572, 23922, 1296647, 1296648]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 }
 assert.equal(skills[6572].resourceCost, '분노 20');
 assert.equal(skills[23922].cooldown, '9초');
@@ -545,8 +546,8 @@ assert.match(skills[6572].description, /자동 공격.*무료.*방패 올리기/
 assert.match(skills[1296647].description, /자원을 소모하지 않는 복수.*15%.*다음 방패 밀쳐내기.*20%/);
 assert.match(skills[1296648].description, /쇠날발톱.*자원을 소모하지 않는 복수.*12초.*30초/);
 assert.deepEqual(synergies.warrior_protection_season2_free_revenge.participants, ['6572', '1296647', '23922', '1296648', '228920']);
-const protectionGuide = guide.slice(guide.indexOf("'warrior-protection': {"), guide.indexOf("'warrior-arms': {"));
-const armsGuide = guide.slice(guide.indexOf("'warrior-arms': {"), guide.indexOf("'warrior-fury': {"));
+const protectionGuide = guideManuscripts.readGuideManuscriptText('warrior-protection');
+const armsGuide = guideManuscripts.readGuideManuscriptText('warrior-arms');
 for (const [label, required, excluded] of [
   ['학살자', '227847', '436358'],
   ['거신', '436358', '227847'],
@@ -563,12 +564,12 @@ assert.match(protectionGuide, /12\.0\.5 과거 로그/);
 const protectionBlocks = protectionGuide.slice(protectionGuide.indexOf('    blocks: ['), protectionGuide.indexOf('    opener: {'));
 assert.doesNotMatch(protectionBlocks, /산왕은 현재 기본값|현재 선택률만 보면 거신|98\.8%|97\.1%/);
 for (const id of [434969, 436148]) {
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.deepEqual(skills[id].specs, ['Fury', 'Protection']);
   assert.match(skills[id].description, /2026-09-22.*50%.*PvP/);
 }
-assert.equal(synergies.warrior_common_mountain_thane_lightning_thunder_blast.patch, '12.1');
-for (const id of [434970, 436152, 436162, 436201, 437068, 437079, 437118, 438590, 438597, 456270, 1270723, 1270724]) assert.equal(skills[id].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies.warrior_common_mountain_thane_lightning_thunder_blast.patch));
+for (const id of [434970, 436152, 436162, 436201, 437068, 437079, 437118, 438590, 438597, 456270, 1270723, 1270724]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.match(skills[434970].description, /5%.*5초.*10%/);
 assert.match(skills[436152].description, /분노 3.*분노의 강타.*25%.*복수/);
 assert.match(skills[436162].description, /주변 대상 2명.*2초.*10초/);
@@ -582,16 +583,15 @@ assert.match(skills[456270].description, /무모한 희생.*사기의 외침.*1�
 assert.match(skills[1270723].description, /벼락.*10%.*10%/);
 assert.match(skills[1270724].description, /투신.*우레 작렬.*2초/);
 assert.match(protectionGuide, /사기의 외침을 켤 때 우레 작렬 1중첩/);
-for (const id of [435607, 437134, 445579, 444779]) assert.equal(skills[id].patch, '12.1');
+for (const id of [435607, 437134, 445579, 444779]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.match(skills[435607].description, /35%.*2중첩.*분노 2/);
 assert.doesNotMatch(skills[435607].description, /152\.139%/);
 assert.match(skills[437134].description, /2중첩.*10%.*4초/);
 assert.match(skills[445579].description, /무기 25%.*분노 15%.*12초.*3%/);
 assert.match(skills[444779].description, /분노의 강타.*15%.*제압.*15%/);
 assert.match(protectionGuide, /9월 22일.*벼락과 지면 전류 피해가 각각 50% 증가/);
-const furyStart = guide.indexOf("'warrior-fury': {");
-const furyGuide = guide.slice(furyStart, guide.indexOf("\n  '", furyStart + 1));
-for (const id of [444770, 444771, 444772, 444776, 444778, 444780, 1270717, 1270718]) assert.equal(skills[id].patch, '12.1');
+const furyGuide = guideManuscripts.readGuideManuscriptText('warrior-fury');
+for (const id of [444770, 444771, 444772, 444776, 444778, 444780, 1270717, 1270718]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.match(skills[444770].description, /급살.*15%/);
 assert.match(skills[444771].description, /집행자.*치명타.*3%/);
 assert.match(skills[444772].description, /압도당함.*20초.*1%.*5중첩/);
@@ -602,14 +602,14 @@ assert.match(skills[1270717].description, /끝난 뒤 8초.*15%/);
 assert.match(skills[1270718].description, /6초.*12초.*18초/);
 assert.match(furyGuide, /급살 사용으로 칼날폭풍 쿨다운이 5초 줄어듭니다/);
 assert.match(furyGuide, /투신 중 실제로 사용한 우레 작렬마다 투신이 2초 늘어납니다/);
-for (const id of [386628, 444773, 444777, 446085]) assert.equal(skills[id].patch, '12.1');
+for (const id of [386628, 444773, 444777, 446085]) assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
 assert.match(skills[386628].description, /적중 2회.*피의 갈증.*필사의 일격.*100%/);
 assert.match(skills[444773].description, /피의 갈증.*치명타.*20%.*필사의 일격.*20%/);
 assert.match(skills[444777].description, /영웅의 도약.*돌진.*5초.*돌진.*영웅의 도약.*2초/);
 assert.match(skills[446085].description, /칼날폭풍.*다음 광란.*필사의 일격.*50%/);
 assert.match(furyGuide, /칼날폭풍 뒤 첫 광란의 50% 강화도 확인/);
 for (const id of [355, 1464, 1715, 5246, 12323, 57755, 64382, 275336, 376079, 384100, 384110]) {
-  assert.equal(skills[id].patch, '12.1', `Warrior shared skill ${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), `Warrior shared skill ${id} must be current`);
   assert(!skills[id].description.includes('전사 공용 도구상자'), `Warrior shared skill ${id} still has placeholder copy`);
 }
 assert.deepEqual(skills[275336].specs, ['Protection']);
@@ -617,14 +617,14 @@ assert.match(skills[275336].description, /방어 전사.*투신.*천둥벼락.*5
 assert.match(skills[1464].description, /분노 20.*303\.485%/);
 assert.match(skills[384110].description, /면역 효과 제거가 없다/);
 for (const [id, synergy] of Object.entries(synergies).filter(([id]) => id.startsWith('warrior_common_'))) {
-  assert.equal(synergy.patch, '12.1', `Warrior shared synergy ${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(synergy.patch), `Warrior shared synergy ${id} must be current`);
 }
 assert.deepEqual(synergies.warrior_common_charge_leap_intervene_mobility.participants, ['100', '6544', '3411', '12323', '1715', '202163', '103827', '382260']);
 assert.deepEqual(synergies.warrior_common_pummel_storm_bolt_shockwave_control.participants, ['6552', '107570', '46968', '5246', '275339']);
 assert(synergies.warrior_common_spec_aoe.participants.includes('384277'));
 assert(!synergies.warrior_common_battle_shout_rallying_raid_utility.participants.includes('107574'));
 for (const id of [429637, 429638, 429639, 429642, 429647, 431548, 440992, 440993, 440995, 1270704, 1270709, 1270710]) {
-  assert.equal(skills[id].patch, '12.1', `Colossus talent ${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), `Colossus talent ${id} must be current`);
   assert(!skills[id].description.includes('Colossus 영웅 특성 노트다'), `Colossus talent ${id} still has placeholder copy`);
 }
 assert.match(skills[429647].description, /방패 밀쳐내기 피해가 25%.*복수.*15%.*분노 4/);
@@ -632,11 +632,11 @@ assert.match(skills[1270704].description, /거신.*쇄파.*치명상/);
 assert.match(skills[1270710].description, /10초.*10%.*치명타율을 100%/);
 assert(synergies.warrior_common_colossus_demolish_dominance.participants.includes('1270704'));
 for (const id of ['warrior-arms-slayer-execute-bladestorm', 'warrior-arms-bladestorm-slayer']) {
-  assert.equal(synergies[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(synergies[id].patch));
   assert(!synergies[id].participants.includes('1270704'), `${id} connects Colossus Decimator to Slayer`);
   assert(!synergies[id].linkedSkills.some(path => path.endsWith('/Hero-Talents/학살')), `${id} links Colossus Decimator to Slayer`);
 }
-assert.equal(skills[5308].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[5308].patch));
 assert.deepEqual(skills[5308].specs, ['Fury']);
 assert.equal(skills[5308].koreanName, '마무리 일격');
 assert.equal(skills[5308].icon, 'inv_sword_48');
@@ -663,7 +663,7 @@ assert(!/skillId: '(227847|435607)'/.test(furyCommonOpener), 'Fury common opener
 assert.match(furyGuide, /분노의 투신·칼날폭풍은 같은 선택 노드/);
 assert.match(skills[107574].description, /분노 전문화에서는 칼날폭풍과 택일/);
 assert.match(skills[227847].description, /분노 전문화에서는 투신과 택일/);
-assert.equal(synergies['warrior-fury-recklessness-window'].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies['warrior-fury-recklessness-window'].patch));
 assert.deepEqual(synergies['warrior-fury-recklessness-window'].participants, ['1719', '184367', '385059', '85288']);
 for (const id of [
   'warrior-fury-rampage-enrage',
@@ -671,13 +671,13 @@ for (const id of [
   'warrior-fury-whirlwind-multi-target',
   'warrior-fury-mountain-thane-thunder',
   'warrior-fury-slayer-execute',
-]) assert.equal(synergies[id].patch, '12.1', `${id} must be reviewed for 12.1`);
+]) assert.ok(['12.1', '12.1.5'].includes(synergies[id].patch), `${id} must be reviewed for 12.1`);
 assert.deepEqual(synergies['warrior-fury-whirlwind-multi-target'].participants, ['190411', '280392', '12950', '85288', '184367']);
 assert.match(furyGuide, /고기칼은 소용돌이 또는 천둥벼락이 3명 이상에게 맞았을 때 해당 기술의 직접 피해를 높이는 별도 특성/);
 assert.doesNotMatch(furyGuide, /고기칼.*확산 조건/);
 assert.match(skills[444767].description, /집행자는 대상에게 붙는 약화 효과가 아니라 자신에게 생기는 강화 효과/);
-assert.equal(skills[871].patch, '12.1');
-assert.equal(skills[397103].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills[871].patch));
+assert.ok(['12.1', '12.1.5'].includes(skills[397103].patch));
 assert.match(skills[871].description, /방패의 벽.*40%|8초.*40%/);
 assert.match(skills[871].description, /수호자의 아이기스를 선택하면 1회 추가 충전/);
 assert.match(skills[397103].description, /60초 줄이는 선택 특성/);
@@ -687,7 +687,7 @@ for (const id of [
   386071, 386394, 386477, 394311, 452494, 1234769, 1235022, 1235023,
   1235047, 1235088, 1235113, 1264330, 1269313,
 ]) {
-  assert.equal(skills[id].patch, '12.1', `Protection Warrior node ${id} must be current`);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), `Protection Warrior node ${id} must be current`);
   assert(!skills[id].description.includes('방어 전문화 특성 노트다'), `Protection Warrior node ${id} has placeholder copy`);
 }
 assert.match(skills[385704].description, /출혈 효과의 피해를 25%/);
@@ -702,16 +702,16 @@ assert(!synergies['SY-WARRIOR-PROTECTION-BLEED-WOUND'].participants.includes('65
 assert(!guide.includes('Blizzard 2026-06-02 핫픽스는 방어 전사의 마법 피해'));
 assert.match(guide, /2026-08-25 긴급 수정에서 마법 피해 감소가 8%/);
 const shieldMitigation = synergies['SY-WARRIOR-PROTECTION-SHIELD-BLOCK-IGNORE-PAIN'];
-assert.equal(shieldMitigation.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(shieldMitigation.patch));
 assert.deepEqual(shieldMitigation.participants, ['2565', '190456', '23922']);
 assert(!shieldMitigation.linkedTalents.some(path => /철통-철벽-방패|수호자의-아이기스/.test(path)));
 const mountainThane = synergies['SY-WARRIOR-PROTECTION-MOUNTAIN-THANE-SHIELD-SLAM'];
-assert.equal(mountainThane.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(mountainThane.patch));
 assert.deepEqual(mountainThane.participants, ['23922', '435607', '6343', '434969', '6572', '163201']);
 assert(!JSON.stringify(mountainThane).includes('폭풍-방패'));
 assert(!mountainThane.linkedSkills.some(path => path.endsWith('/방패-돌격')));
 const majorDefensive = synergies['SY-WARRIOR-PROTECTION-DEMO-SHOUT-WALL'];
-assert.equal(majorDefensive.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(majorDefensive.patch));
 assert.deepEqual(majorDefensive.participants, ['1160', '871']);
 assert(!majorDefensive.linkedTalents.some(path => path.endsWith('/훼방의-외침')));
 console.log('Scoped warrior 12.1 corrections verified; full warrior migration remains open.');

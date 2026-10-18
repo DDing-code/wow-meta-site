@@ -16,7 +16,7 @@ const { chromium } = require('playwright');
       await page.goto(`${process.env.TEST_ORIGIN || 'http://127.0.0.1:3002'}/guide/monk/brewmaster`, { waitUntil: 'networkidle' });
       await page.getByRole('heading', { name: '양조 수도사 가이드', exact: true }).waitFor();
       const heroes = page.getByRole('group', { name: '영웅 특성 선택', exact: true });
-      for (const [hero, key, expected] of [['음영파', 'shado', 10], ['조화의 형', 'harmony', 12]]) {
+      for (const [hero, key, expected] of [['음영파', 'shado', 10], ['조화의 종사', 'harmony', 12]]) {
         await heroes.getByRole('button', { name: hero, exact: true }).click();
         for (const [mode, label] of [['opener', '오프닝'], ['singleTarget', '단일'], ['aoe', '광역']]) {
           await page.getByRole('group', { name: '전투 상황 선택', exact: true }).getByRole('button', { name: label, exact: true }).click();
@@ -54,7 +54,8 @@ const { chromium } = require('playwright');
           await page.screenshot({ path: path.join(output, `${width}-${key}-${mode}.png`) });
         }
       }
-      assert((await page.locator('#guide-section-1').innerText()).includes('12.1'));
+      assert((await page.locator('#guide-section-1').innerText()).includes('내 스킬 한눈에 보기'));
+      assert((await page.locator('body').innerText()).includes('12.1.5'));
       assert.equal(await page.locator('a[href$="spell=292601"], a[href$="spell=115450"]').count(), 0);
       await page.locator('#synergies').scrollIntoViewIfNeeded();
       await page.screenshot({ path: path.join(output, `${width}-graph.png`) });

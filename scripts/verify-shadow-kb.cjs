@@ -14,7 +14,7 @@ for (const [id, type] of Object.entries({
   1296579: 'passive', 1296580: 'passive',
 })) {
   assert.equal(skills[id]?.type, type, `Incorrect spell identity ${id}`);
-  assert.equal(skills[id].patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch));
   assert.ok(skills[id].specs.includes('Shadow'));
 }
 assert.equal(skills['263165'].cooldown, '30초');
@@ -27,7 +27,7 @@ const shadow = Object.values(synergies).filter(row =>
 assert.equal(shadow.length, 10);
 for (const row of shadow) {
   assert.equal(row.spec, 'Shadow');
-  assert.equal(row.patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(row.patch));
   assert.notEqual(row.synergyType, 'unknown');
   assert.ok(row.description?.length > 30);
   for (const id of row.participants) assert.ok(skills[id], `Missing participant ${id}`);
@@ -45,7 +45,7 @@ assert.match(skills[199484].description, /20%\(기존 25%\)/);
 assert.match(skills[73510].description, /피해가 5% 감소/);
 assert.match(synergies.priest_shadow_psychic_link_multi.description, /2026-09-22.*20%/);
 assert.doesNotMatch(synergies.priest_shadow_psychic_link_multi.description, /직접 피해의 25%/);
-const guide = fs.readFileSync(require.resolve('../src/data/guideManuscripts.js'), 'utf8');
+const guide = require('./lib/guideManuscripts.cjs').readAllGuideManuscriptText();
 assert.match(guide, /공격대·전장 밖에서 속죄 치유가 40% 증가/);
 assert.match(guide, /영혼의 연결은 9월 22일 이후 PvE에서 직접 피해의 20%/);
 console.log('Priest 12.1 KB identity, relationships and September hotfix checks passed');

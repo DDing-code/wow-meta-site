@@ -163,10 +163,11 @@ function readSynergiesJson() {
 }
 
 function collectGuideLocalSkillIds() {
-  const filePath = path.join(DATA_DIR, 'guideManuscripts.js');
-  if (!fs.existsSync(filePath)) return new Set();
+  // 원고는 전문화별 파일(src/data/manuscripts/<가이드 ID>.js)에 있다.
+  const { MANUSCRIPT_DIR, readAllGuideManuscriptText } = require('./lib/guideManuscripts.cjs');
+  if (!fs.existsSync(MANUSCRIPT_DIR)) return new Set();
 
-  const source = fs.readFileSync(filePath, 'utf8');
+  const source = readAllGuideManuscriptText();
   const ids = new Set();
   for (const match of source.matchAll(/\bid:\s*['"](\d+)['"]/g)) {
     ids.add(match[1]);

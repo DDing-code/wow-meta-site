@@ -1,0 +1,17 @@
+[
+  {
+    "guideId": "hunter-marksmanship",
+    "buildId": "single-target",
+    "reason": "12.1.5 공개 단일 견본이 모두 무효: Wowhead Single Target (Best)는 계산기 영웅 14/13, Icy Veins Marksmanship Single-Target - Sentinel은 비활성 영웅 특성(SimC 이름 Black Arrow) 구매로 계산기 영웅 14/13. 기존 코드는 구조상 유효하며 쏟아내기 자리가 피의 깃으로 읽힙니다.",
+    "checked": [
+      {
+        "url": "https://www.wowhead.com/ko/guide/classes/hunter/marksmanship/talent-builds-pve-dps",
+        "updated": "2026-10-13"
+      },
+      {
+        "url": "https://www.icy-veins.com/wow/marksmanship-hunter-pve-dps-spec-builds-talents",
+        "updated": "2026-10-12"
+      }
+    ]
+  }
+]

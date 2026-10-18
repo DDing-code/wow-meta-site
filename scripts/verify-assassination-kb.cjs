@@ -6,7 +6,7 @@ const { synergies } = require('../src/data/kb-synergies.json');
 
 // Scope grows only when the underlying notes have been manually reviewed.
 for (const id of ['1265385', '1265386', '1265387', '1247227', '32645', '703', '385627', '1329', '360194', '51723', '1943', '381627', '381797', '79134', '196861']) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.ok(skills[id].specs.includes('Assassination'), id);
 }
 for (const id of ['1265385', '1265386', '1265387']) {
@@ -34,7 +34,7 @@ assert.match(skills['79134'].description, /추가 출혈에서는 회복량이 �
 assert.match(skills['381627'].description, /급소 가격과 파열 사용/);
 assert.match(skills['196861'].description, /목조르기 연마 지속 중/);
 for (const id of ['255544', '423054', '381673']) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.equal(skills[id].type, 'talent', id);
   assert.equal(skills[id].cooldown, '없음', id);
 }
@@ -52,14 +52,14 @@ const heroEffects = {
   '457055': /징표 대상이 아닌 적.*5%.*역병/,
 };
 for (const [id, effect] of Object.entries(heroEffects)) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.equal(skills[id].type, 'hero-talent', id);
   assert.match(skills[id].description, effect, id);
 }
 assert.deepEqual(skills['457058'].specs, ['Assassination', 'Subtlety']);
 assert.deepEqual(skills['454419'].specs, ['Assassination', 'Outlaw']);
 assert.equal(skills['1293340'].type, 'atomic-skill');
-assert.equal(skills['1293340'].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(skills['1293340'].patch));
 assert.equal(skills['1293340'].resourceCost, '기력 25');
 assert.equal(skills['1293340'].cooldown, '20초');
 assert.equal(skills['1293340'].range, '10미터');
@@ -68,7 +68,7 @@ const fatebound = synergies.rogue_assassination_fatebound_envenom;
 assert.deepEqual(deathstalker.participants, ['457052', '457058', '457055', '1293340', '703', '32645']);
 assert.deepEqual(fatebound.participants, ['452536', '1248970', '454419', '14190', '1329', '8676', '51723', '32645']);
 for (const relation of [deathstalker, fatebound]) {
-  assert.equal(relation.patch, '12.1');
+  assert.ok(['12.1', '12.1.5'].includes(relation.patch));
   assert.equal(relation.spec, 'Assassination');
   assert.ok(relation.description.length > 30);
   for (const id of relation.participants) assert.ok(skills[id]?.specs.includes('Assassination'), id);
@@ -88,19 +88,19 @@ const addedTalents = {
 };
 for (const [id, [name, effect]] of Object.entries(addedTalents)) {
   assert.equal(skills[id]?.name, name, id);
-  assert.equal(skills[id].patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id].patch), id);
   assert.equal(skills[id].type, 'talent', id);
   assert.ok(skills[id].specs.includes('Assassination'), id);
   assert.match(skills[id].description, effect, id);
 }
 const poison = synergies.rogue_assassination_envenom_poison_finisher;
-assert.equal(poison.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(poison.patch));
 assert.equal(poison.spec, 'Assassination');
 assert.deepEqual(poison.participants, ['32645', '2823', '381664', '455072', '1250036', '1250318', '1298812', '1265385']);
 assert.match(poison.description, /선택한 갱신 특성/);
 assert.match(poison.description, /만료를 기다리는 보상이 아니다/);
 for (const id of ['2823', '381664']) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.equal(skills[id].type, 'atomic-skill', id);
   assert.equal(skills[id].castTime, '1.5초', id);
   assert.match(skills[id].description, /1시간/, id);
@@ -117,7 +117,7 @@ const poisonEffects = {
   '381632': /은신 중.*6초.*50%/,
 };
 for (const [id, effect] of Object.entries(poisonEffects)) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.match(skills[id].description, effect, id);
 }
 const retiredIds = ['394983', '400783', '381802', '255989', '381800', '385424', '381634'];
@@ -142,7 +142,7 @@ const talentEffects = {
   '457512': /최대 연계 점수가 1점.*마무리 일격의 피해가 5%/,
 };
 for (const [id, effect] of Object.entries(talentEffects)) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.equal(skills[id].type, 'talent', id);
   assert.ok(skills[id].specs.includes('Assassination'), id);
   assert.match(skills[id].description, effect, id);
@@ -151,13 +151,13 @@ assert.deepEqual(skills['8676'].specs, ['Assassination', 'Outlaw']);
 assert.equal(skills['8676'].resourceCost, '기력 50');
 assert.match(skills['8676'].description, /연계 점수 2점/);
 const builder = synergies.rogue_assassination_builder_combo_points;
-assert.equal(builder.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(builder.patch));
 assert.equal(builder.name, '절단·매복: 발동에 맞춘 연계 점수 수급');
 assert.equal(builder.spec, 'Assassination');
 assert.deepEqual(builder.participants, ['1329', '8676', '328085', '14190', '381652', '703', '32645']);
 assert.match(builder.description, /운명의 낙인으로 추가 연계 점수/);
 const caustic = synergies.rogue_assassination_caustic_kingsbane;
-assert.equal(caustic.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(caustic.patch));
 assert.equal(caustic.name, '부식성 분사: 한 대상의 자연 피해를 주변으로');
 assert.equal(caustic.spec, 'Assassination');
 assert.deepEqual(caustic.participants, ['421975', '385627', '32645', '360194']);
@@ -167,7 +167,7 @@ for (const relation of [builder, caustic]) {
     assert.ok(skills[id]?.specs.includes('Assassination'), id);
   }
 }
-assert.equal(cooldown.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(cooldown.patch));
 assert.equal(cooldown.spec, 'Assassination');
 assert.match(cooldown.description, /치명독을 두 번 적용/);
 assert.deepEqual(cooldown.participants, ['360194', '385627', '32645', '703', '1943', '1265385', '1265386', '1265387']);
@@ -181,7 +181,7 @@ if (fs.existsSync(vault)) {
   assert.match(note('1247227'), /최대 두 명의 다른 적에게 복제/);
 }
 for (const id of ['5938', '1267182', '381623', '469779', '1298826']) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.ok(skills[id].specs.includes('Assassination'), id);
 }
 assert.equal(skills['5938'].resourceCost, '기력 30');
@@ -194,11 +194,11 @@ assert.equal(skills['1298826'].type, 'talent');
 assert.match(skills['469779'].description, /자동.*381623.*1298826/);
 assert.match(skills['1298826'].description, /직접 사용.*기력 100.*최대 3회/);
 const shiv = synergies.rogue_assassination_shiv_darkest_night_combo;
-assert.equal(shiv.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(shiv.patch));
 assert.deepEqual(shiv.participants, ['5938', '1267182', '457058', '32645']);
 assert.match(shiv.description, /최소 발동 조건은 5점 이상/);
 for (const id of ['457067', '1248793', '1248774']) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.equal(skills[id].type, 'hero-talent', id);
 }
 assert.match(skills['457067'].description, /암살.*8초.*10%.*20%.*잠행.*30%/);
@@ -207,12 +207,12 @@ assert.match(skills['1248774'].description, /징표 중첩.*매복.*절단.*50%/
 assert.ok(skills['1298826'].aliases.includes('수동 엉겅퀴 차'));
 assert.ok(skills['469779'].aliases.includes('자동 엉겅퀴 차'));
 for (const relation of Object.values(synergies).filter(row => row.id.startsWith('rogue_assassination_'))) {
-  assert.equal(relation.patch, '12.1', relation.id);
+  assert.ok(['12.1', '12.1.5'].includes(relation.patch), relation.id);
   assert.ok(relation.description?.length > 30, relation.id);
   for (const id of relation.participants) assert.ok(skills[id]?.specs.includes('Assassination'), id);
 }
 for (const id of ['1966', '1856']) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.equal(skills[id].type, 'atomic-skill', id);
   assert.ok(skills[id].specs.includes('Assassination'), id);
 }
@@ -220,7 +220,7 @@ assert.equal(skills['1966'].resourceCost, '기력 35');
 assert.match(skills['1966'].description, /6초.*광역.*40%/);
 assert.match(skills['1856'].description, /3초.*피해 면역 시간이 아니/);
 for (const id of ['1296590', '1296591']) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.equal(skills[id].type, 'passive', id);
   assert.deepEqual(skills[id].specs, ['Assassination'], id);
 }

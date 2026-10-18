@@ -1,0 +1,23 @@
+{
+  "1241937": {
+    "status": 200,
+    "name": "영혼 제물",
+    "icon": "inv_12_dh_void_ability_voidpurge",
+    "tooltip": "영혼 제물 특성 즉시 1 분 재사용 대기시간 1회 사용 가능 악마사냥꾼 필요 영혼에 불을 붙여 최대 생명력의 ( 4 * 6)%만큼 회복하고 5초에 걸쳐 30의 격노와 영혼 파편 3개를 생성합니다. (500밀리초 재사용 대기시간)",
+    "buff": "영혼 제물 생명력 회복 중\n격노 생성 중\n영혼 파편 생성 중\n5 초 남음"
+  },
+  "1245496": {
+    "status": 200,
+    "name": "악마쇄도",
+    "icon": "inv_ability_felscarreddemonhunter_demonsurge",
+    "tooltip": "악마쇄도 \n즉시 악마사냥꾼 필요 \nModifies Damage/Healing Done +20%: \n공허칼날 , 복수의 퇴각 , 사냥 , 사냥 , 사냥 , 사냥 , 사냥 , 사냥 , 지옥칼 \nModifies Periodic Damage/Healing Done +20%: \n사냥 , 사냥 , 사냥 , 사냥 , 사냥 , 사냥",
+    "buff": ""
+  },
+  "1259431": {
+    "status": 200,
+    "name": "포식자의 각성",
+    "icon": "ability_ardenweald_demonhunter",
+    "tooltip": "포식자의 각성 \n50 야드 사정거리 1 초 주문 시전 시간 1.5 분 재사용 대기시간 악마사냥꾼 필요 요구 레벨 48 \n대상에게 돌진하여 (주문력의 660%)의 우주 피해를 입히고 1.5초 동안 이동 불가 상태로 만들며, 돌진 경로에 있는 최대 5명의 적에게 6초에 걸쳐 (주문력의 382.5%)의 우주 피해를 입힙니다.",
+    "buff": ""
+  }
+}

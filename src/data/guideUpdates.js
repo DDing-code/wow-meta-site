@@ -212,16 +212,19 @@ export const guideUpdates = [
     body: '신성 사제·성기사, 회복 드루이드, 운무, 보존, 정기와 황폐의 12.1 원고를 Git에 반영했습니다. 여기의 날짜는 자료 조사일이 아닌 커밋 날짜입니다.' },
 ];
 
+// 가이드 기준 패치(guideRegistry.js 의 CURRENT_PATCH_LABEL 과 같아야 한다. 검사: validate-guide-publication.cjs).
+export const GUIDE_PUBLICATION_PATCH = '12.1.5';
+
 export function getGuidePublication(id, manuscript) {
   const update = guideUpdates.find(entry => entry.guideIds.includes(id));
   const patch = manuscript?.patch || '확인 중';
-  const status = (manuscript?.status || '').replace(/^12\.1\s*/, '');
-  const partial = Boolean(manuscript) && (patch !== '12.1' || Boolean(update?.partial));
+  const status = (manuscript?.status || '').replace(/^12.1(.5)?s*/, '');
+  const partial = Boolean(manuscript) && (patch !== GUIDE_PUBLICATION_PATCH || Boolean(update?.partial));
   return {
     partial,
-    label: partial ? '12.1 전환 중' : patch,
+    label: partial ? `${GUIDE_PUBLICATION_PATCH} 전환 중` : patch,
     detail: partial
-      ? patch === '12.1' ? '12.1 전환 중 · 전체 검수 진행 중' : `12.1 전환 중 · ${patch} 내용 포함`
+      ? patch === GUIDE_PUBLICATION_PATCH ? `${GUIDE_PUBLICATION_PATCH} 전환 중 · 전체 검수 진행 중` : `${GUIDE_PUBLICATION_PATCH} 전환 중 · ${patch} 내용 포함`
       : `${patch}${status ? ` · ${status}` : ''}`,
     date: update?.date || null,
     commit: update?.commits[0] || null,

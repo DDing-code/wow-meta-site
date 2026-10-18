@@ -10,7 +10,7 @@ const reviewed = ['315508', '315341', '51690', '13750', '2098', '79096',
   '1259492', '1259498', '1259499', '1259612', '35551', '61329', '76806', '195457',
   '196922', '256165', '256188', '381619', '381877', '1259465', '1296588', '1296589'];
 for (const id of reviewed) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.deepEqual(skills[id].specs, ['Outlaw'], id);
   assert.ok(skills[id].description.length > 70, id);
   assert.ok(!/^#|기술별 상이/.test(skills[id].description), id);
@@ -38,7 +38,7 @@ assert.equal(skills['271877'].cooldown, '기본 1분');
 assert.match(skills['271877'].description, /5초에 걸쳐 기력 25.*주 대상이 아닌.*100%/);
 assert.match(skills['13877'].description, /최대 5명.*10초.*4명.*28%/);
 assert.match(skills['381846'].description, /1등급.*최대 2등급/);
-assert.match(skills['381878'].description, /최초.*기본 비용 15가 45/);
+assert.match(skills['381878'].description, /대상 하나당 기력 소모량이 5씩, 최대 30/);
 assert.match(skills['272026'].description, /10초.*13초/);
 assert.match(skills['1259469'].description, /28%.*36%/);
 assert.equal(skills['381989'].castTime, '즉시');
@@ -60,7 +60,7 @@ for (const id of ['381989', '1277933']) assert.ok(!manuscriptValidator.includes(
 assert.match(synergies.rogue_outlaw_generator_proc_loop.description, /권총 사격 자체가 아니라.*마무리 일격/);
 for (const id of ['rogue_outlaw_adrenaline_finishers', 'rogue_outlaw_roll_preparation_reset',
   'rogue_outlaw_generator_proc_loop', 'rogue_outlaw_blade_flurry_cleave']) {
-  assert.equal(synergies[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(synergies[id]?.patch), id);
   assert.equal(synergies[id].spec, 'Outlaw', id);
   assert.ok(synergies[id].description.length > 60, id);
   for (const spell of synergies[id].participants) assert.ok(skills[spell]?.specs.includes('Outlaw'), spell);
@@ -69,7 +69,7 @@ const trickster = ['441146', '441247', '441250', '441263', '441273', '441274',
   '441321', '441346', '441359', '441367', '441398', '441403', '441415', '441423',
   '441429', '1276626', '1276630', '1276679'];
 for (const id of trickster) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.deepEqual(skills[id].specs, ['Outlaw', 'Subtlety'], id);
   assert.ok(skills[id].description.length > 70, id);
   assert.equal(skills[id].castTime, '지속 효과', id);
@@ -87,7 +87,7 @@ const heroRelationships = ['rogue_outlaw_trickster_unseen_coup',
   'rogue_outlaw_season2_dispatch'];
 for (const id of heroRelationships) {
   const relation = synergies[id];
-  assert.equal(relation?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(relation?.patch), id);
   assert.ok(relation.description.length > 70, id);
   for (const spell of relation.participants) {
     assert.ok(skills[spell], spell);
@@ -98,7 +98,7 @@ for (const id of heroRelationships) {
 const fatebound = ['452536', '453428', '453457', '454286', '454419', '454432', '454433',
   '454435', '1248970', '1249190', '1249194', '1249201', '1249204', '1249215', '1276809', '1276816', '1277030'];
 for (const id of fatebound) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.deepEqual([...skills[id].specs].sort(), ['Assassination', 'Outlaw'], id);
   assert.ok(skills[id].description.length > 70, id);
 }
@@ -109,7 +109,7 @@ assert.match(skills['1276816'].description, /4회.*끝나면.*방금 나온 면/
 assert.match(skills['1248970'].description, /7번.*12초.*포함되지 않는다/);
 for (const id of ['rogue_outlaw_fatebound_dispatch', 'SY-ROGUE-HERO-FATEBOUND-HAND-COIN']) {
   const relation = synergies[id];
-  assert.equal(relation?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(relation?.patch), id);
   assert.ok(relation.participants.includes('1276816'), id);
   for (const spell of relation.participants) for (const spec of relation.specs) {
     assert.ok(skills[spell]?.specs.includes(spec), `${id}:${spell}:${spec}`);
@@ -117,7 +117,7 @@ for (const id of ['rogue_outlaw_fatebound_dispatch', 'SY-ROGUE-HERO-FATEBOUND-HA
 }
 const common = ['315496', '51667', '193531', '14983', '193539', '470347'];
 for (const id of common) {
-  assert.equal(skills[id]?.patch, '12.1', id);
+  assert.ok(['12.1', '12.1.5'].includes(skills[id]?.patch), id);
   assert.deepEqual([...skills[id].specs].sort(), ['Assassination', 'Outlaw', 'Subtlety'], id);
   assert.ok(skills[id].description.length > 70, id);
 }
@@ -127,16 +127,13 @@ assert.equal(skills['51667'].type, 'passive');
 assert.match(skills['51667'].description, /암살의 독살.*무법의 속결.*잠행의 절개.*3초/);
 for (const id of ['14983', '193539', '470347']) assert.match(skills[id].description, /1등급.*2등급/);
 assert.match(skills['1296589'].description, /시뮬레이터.*차감 0.*효과상.*로그 검증을 대신하지 않는다/);
-assert.equal(synergies['SY-ROGUE-COMMON-SLICE-DICE-CUT-CHASE-FINISHERS'].patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(synergies['SY-ROGUE-COMMON-SLICE-DICE-CUT-CHASE-FINISHERS'].patch));
 const fs = require('node:fs');
 const path = require('node:path');
-const source = fs.readFileSync(path.join(__dirname, '../src/data/guideManuscripts.js'), 'utf8')
-  .replace(/\bexport const\b/g, 'const').replace(/\bexport function\b/g, 'function')
-  .replace(/export default [^;]+;/g, '');
-const manuscript = new Function(source + '\nreturn guideManuscripts;')()['rogue-outlaw'];
+const manuscript = require('./lib/guideManuscripts.cjs').loadGuideManuscript('rogue-outlaw');
 const canonical = path.resolve(__dirname, '../../WoW-Meta-Knowledge/08-직업별-Knowledge-Base/10-도적/무법/Meta/guide-12.1.json');
 if (fs.existsSync(canonical)) assert.deepEqual(manuscript, JSON.parse(fs.readFileSync(canonical, 'utf8')));
-assert.equal(manuscript.patch, '12.1');
+assert.ok(['12.1', '12.1.5'].includes(manuscript.patch));
 assert.equal(manuscript.heroBranches.length, 2);
 assert.equal(manuscript.blocks.length, 14);
 for (const hero of manuscript.heroBranches) {

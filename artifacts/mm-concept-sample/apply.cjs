@@ -1,14 +1,15 @@
 // 사격 사냥꾼 개념서형 샘플 반영 도구.
 // 1) KB 정본(guide-12.1.json)을 읽어 book-content.cjs의 새 구성으로 바꾼다.
-// 2) KB 정본을 저장하고, 같은 객체를 src/data/guideManuscripts.js의 'hunter-marksmanship' 정의에 그대로 이식한다.
+// 2) KB 정본을 저장하고, 같은 객체를 사격 원고 파일(src/data/manuscripts/hunter-marksmanship.js)에 그대로 이식한다.
 // 사용: node artifacts/mm-concept-sample/apply.cjs [--dry]
 const fs = require('fs');
 const path = require('path');
 
 const SITE = path.resolve(__dirname, '..', '..');
 const KB_JSON = path.join(SITE, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '05-사냥꾼', '사격', 'Meta', 'guide-12.1.json');
-const MANUSCRIPTS = path.join(SITE, 'src', 'data', 'guideManuscripts.js');
 const ID = 'hunter-marksmanship';
+// 원고는 전문화마다 파일 하나다(src/data/guideManuscripts.js 는 모으기만 한다).
+const MANUSCRIPTS = path.join(SITE, 'src', 'data', 'manuscripts', `${ID}.js`);
 const dry = process.argv.includes('--dry');
 
 const content = require('./book-content.cjs');
@@ -49,12 +50,12 @@ function blockEnd(text, openIdx) {
 }
 
 let src = fs.readFileSync(MANUSCRIPTS, 'utf8');
-const inline = src.match(new RegExp(`\\n  (['"])${ID}\\1: \\{`));
-if (!inline) throw new Error(`${ID}: 객체 안 정의를 찾지 못함`);
-if (src.includes(`\nguideManuscripts['${ID}'] = {`)) throw new Error(`${ID}: 뒤쪽 재할당이 있어 중단`);
-const open = inline.index + inline[0].length - 1;
+const definition = src.match(/^const manuscript = \{/m);
+if (!definition) throw new Error(`${ID}: 원고 정의("const manuscript = {")를 찾지 못함`);
+const open = definition.index + definition[0].length - 1;
 const end = blockEnd(src, open);
-src = src.slice(0, open) + lit(next, 2) + src.slice(end + 1);
+// 본문 들여쓰기(4칸)는 한 파일이던 때와 같게 두고, 파일 맨 바깥 객체의 닫는 중괄호만 맨 앞 칸에 둔다.
+src = src.slice(0, open) + lit(next, 2).replace(/\n {2}\}$/, '\n}') + src.slice(end + 1);
 
 const stats = {
   blocks: next.blocks.length,
