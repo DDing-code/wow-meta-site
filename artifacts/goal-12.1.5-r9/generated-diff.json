@@ -1,0 +1,20 @@
+[
+  {
+    "file": "src/data/kb-skills.json",
+    "onlyChange": "metadata.generatedAt",
+    "times": {
+      "original": "2026-10-19T05:16:04.260Z",
+      "regenerated": "2026-10-19T06:01:32.056Z"
+    },
+    "restored": true
+  },
+  {
+    "file": "src/data/kb-synergies.json",
+    "onlyChange": "metadata.generatedAt",
+    "times": {
+      "original": "2026-10-19T05:16:04.261Z",
+      "regenerated": "2026-10-19T06:01:32.057Z"
+    },
+    "restored": true
+  }
+]

@@ -641,9 +641,15 @@ function findInlineTerm(text, terms, startIndex) {
   return best;
 }
 
+function renderGuidePunctuation(text) {
+  return text.split(/(\S[ ]*·)/g).map((part, index) => (
+    part.endsWith('·') ? <InlineTermEnding key={index}>{part}</InlineTermEnding> : part
+  ));
+}
+
 function renderGuideText(value, terms) {
   const text = displayGuideText(value);
-  if (!text || !terms?.length) return text;
+  if (!text || !terms?.length) return renderGuidePunctuation(text);
 
   const nodes = [];
   let cursor = 0;
@@ -651,7 +657,7 @@ function renderGuideText(value, terms) {
   while (cursor < text.length) {
     const match = findInlineTerm(text, terms, cursor);
     if (!match) {
-      nodes.push(text.slice(cursor));
+      nodes.push(renderGuidePunctuation(text.slice(cursor)));
       break;
     }
 
@@ -660,18 +666,18 @@ function renderGuideText(value, terms) {
     let before = text.slice(cursor, match.index);
     const lead = /[(“"'「[]$/.test(before) ? before.slice(-1) : '';
     if (lead) before = before.slice(0, -1);
-    if (before) nodes.push(before);
+    if (before) nodes.push(renderGuidePunctuation(before));
 
     const end = match.index + match.term.label.length;
     const label = text.slice(match.index, end);
     const next = findInlineTerm(text, terms, end);
-    const tail = (text.slice(end, next ? next.index : text.length).match(/^[^\s]{1,6}/) || [''])[0];
+    const tail = (text.slice(end, next ? next.index : text.length).match(/^(?: +·|[^\s]{1,6})/) || [''])[0];
     const term = (
-      <InlineSkillTerm key={`${match.term.skill.id}-${match.index}-${nodes.length}`} skill={match.term.skill}>
+      <InlineSkillTerm key={`${match.term.skill.id}-${match.index}-${nodes.length}`} skill={match.term.skill} suffix={tail}>
         {label}
       </InlineSkillTerm>
     );
-    nodes.push(lead || tail ? <InlineTermGlue key={`glue-${match.index}-${nodes.length}`}>{lead}{term}{tail}</InlineTermGlue> : term);
+    nodes.push(lead || tail ? <InlineTermGlue key={`glue-${match.index}-${nodes.length}`}>{lead}{term}</InlineTermGlue> : term);
     cursor = end + tail.length;
   }
 
@@ -686,6 +692,12 @@ const InlineTermGlue = styled.span`
   > span {
     white-space: normal;
   }
+`;
+
+// 좁은 타임라인에서도 마지막 글자와 조사·가운뎃점은 한 조각으로 둔다.
+const InlineTermEnding = styled.span`
+  display: inline-block;
+  && { white-space: nowrap; }
 `;
 
 function formatSkillMeta(skill) {
@@ -1295,8 +1307,8 @@ function SkillIconLink({ skill, size = 36, stacked = false }) {
   );
 }
 
-function InlineSkillTerm({ skill, children }) {
-  if (isInactiveSkillReference(skill)) return <span>{children}</span>;
+function InlineSkillTerm({ skill, children, suffix = '' }) {
+  if (isInactiveSkillReference(skill)) return <span>{children}{suffix}</span>;
   return (
     <InlineSkillAnchor
       href={wowheadUrl(skill)}
@@ -1306,7 +1318,9 @@ function InlineSkillTerm({ skill, children }) {
       aria-label={`${skillName(skill)} Wowhead tooltip`}
     >
       <SkillIconImage skill={skill} inline />
-      <InlineSkillText>{children}</InlineSkillText>
+      <InlineSkillText>{suffix && typeof children === 'string'
+        ? <>{children.slice(0, -1)}<InlineTermEnding>{children.slice(-1)}{suffix}</InlineTermEnding></>
+        : children}</InlineSkillText>
     </InlineSkillAnchor>
   );
 }
@@ -6471,6 +6485,7 @@ const BookDiagramFigure = styled.figure`
     font-weight: 780;
     line-height: 1.45;
     word-break: keep-all;
+    text-wrap: balance;
   }
 
   > p {
@@ -6906,6 +6921,12 @@ const BookTimelineItem = styled.div`
     display: inline-block;
     margin-right: 3px;
     vertical-align: -0.16em;
+  }
+
+  @container (min-width: 641px) {
+    > p {
+      max-width: calc(100% - 16px);
+    }
   }
 `;
 

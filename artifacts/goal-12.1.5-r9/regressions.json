@@ -1,0 +1,78 @@
+[
+  {
+    "file": "verify-assassination-kb.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-affliction-guide.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-brewmaster-guide.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-demonology-guide.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-devastation-12-1.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-enhancement-kb.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-enhancement-log-evidence.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-destruction-guide.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-guide-resume.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-healer-september-hotfix.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-outlaw-kb.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-protection-paladin-guide.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-restoration-shaman-kb.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-retribution-guide.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-route-scroll.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-shadow-kb.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-subtlety-kb.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-warrior-rend-kb.cjs",
+    "code": 0
+  },
+  {
+    "file": "verify-guide-index.cjs",
+    "code": 0
+  }
+]
