@@ -1,0 +1,420 @@
+{
+  "verifiedAt": "2026-10-19",
+  "method": "Wowhead 한국어 툴팁(nether.wowhead.com/tooltip/item/<id>?locale=1) 대조 · 목록은 사용자 크롬에서 Wowhead 한국어 아이템 검색(한밤 확장팩)으로 확인",
+  "items": [
+    {
+      "id": 243973,
+      "group": "enchants-weapon",
+      "name": "무기 마법부여 - 광전사의 분노",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+      "effect": "발동 시 15초 동안 가속 +124",
+      "tooltipUse": "무기에 영구적으로 광전사의 분노 마법을 부여해 주문 및 능력 사용 시 일정 확률로 광포한 집중이 부여되어 15초 동안 가속을 124만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243973"
+    },
+    {
+      "id": 243971,
+      "group": "enchants-weapon",
+      "name": "무기 마법부여 - 잔알라이의 정밀함",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+      "effect": "발동 시 15초 동안 치명타 및 극대화 +124",
+      "tooltipUse": "무기에 영구적으로 잔알라이의 정밀함 마법을 부여해 주문 및 능력 사용 시 일정 확률로 용매의 정밀함이 부여되어 15초 동안 치명타 및 극대화를 124만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243971"
+    },
+    {
+      "id": 244031,
+      "group": "enchants-weapon",
+      "name": "무기 마법부여 - 비전 숙련",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+      "effect": "발동 시 15초 동안 특화 +124",
+      "tooltipUse": "무기에 영구적으로 비전 숙련 마법을 부여해 주문 및 능력 사용 시 천재의 통찰이 부여되어 15초 동안 특화가 124만큼 증가합니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244031"
+    },
+    {
+      "id": 244001,
+      "group": "enchants-weapon",
+      "name": "무기 마법부여 - 세계혼의 끈기",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+      "effect": "발동 시 15초 동안 유연성 +124",
+      "tooltipUse": "무기에 영구적으로 세계혼의 끈기 마법을 부여해 주문 및 능력 사용 시 자연의 끈기가 부여되어 15초 동안 유연성을 124만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244001"
+    },
+    {
+      "id": 244029,
+      "group": "enchants-weapon",
+      "name": "무기 마법부여 - 렌도레이의 명민함",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+      "effect": "발동 시 15초 동안 주 능력치 +67",
+      "tooltipUse": "무기에 영구적으로 렌도레이의 명민함 마법을 부여해 주문 및 능력 사용 시 공허의 기세가 부여되어 15초 동안 주 능력치|1이;가; 67만큼 증가합니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244029"
+    },
+    {
+      "id": 273072,
+      "group": "enchants-weapon",
+      "name": "무기 마법부여 - 하셰이의 의례",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+      "effect": "발동 시 15초 동안 무작위 보조 능력치 +139 · 생명력 80% 이상이면 가장 높은 보조 능력치 우선",
+      "tooltipUse": "무기에 영구적으로 하셰이의 의례 마법을 부여해, 주문 및 능력 사용 시 하셰이의 힘이 부여됩니다. 하셰이의 힘은 15초 동안 무작위 보조 능력치를 139만큼 증가시키며, 생명력이 80% 이상일 때는 가장 높은 보조 능력치를 우선적으로 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=273072"
+    },
+    {
+      "id": 244027,
+      "group": "enchants-weapon",
+      "name": "무기 마법부여 - 신도레이의 불꽃",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+      "effect": "일정 확률로 10초 화염 지속 피해 후 주위 폭발",
+      "tooltipUse": "무기에 영구적으로 신도레이의 불꽃 마법을 부여해 주문 및 능력 사용 시 일정 확률로 대상을 불태웁니다. 이 효과는 10초에 걸쳐 (1 * (2456))의 화염 피해를 입히며, 이후 폭발해 주위의 적에게 (1 * 5220)의 화염 피해를 나누어 입힙니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244027"
+    },
+    {
+      "id": 243969,
+      "group": "enchants-weapon",
+      "name": "무기 마법부여 - 할라지의 힘",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+      "effect": "피해를 입힐 때 일정 확률로 18초 출혈 피해",
+      "tooltipUse": "무기에 영구적으로 할라지의 힘 마법을 부여해 피해를 입힐 때 일정 확률로 로아를 불러내 대상을 베어 출혈을 일으키고, 18초에 걸쳐 (1 * 1893)의 피해를 입히도록 합니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243969"
+    },
+    {
+      "id": 243997,
+      "group": "enchants-weapon",
+      "name": "무기 마법부여 - 세계혼의 요람",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+      "effect": "치유할 때 일정 확률로 대상에게 피해 흡수 방벽",
+      "tooltipUse": "무기에 영구적으로 세계혼의 요람 마법을 부여해 치유 주문 및 능력 사용 시 일정 확률로 대상에게 다음 (1 * 12525)의 피해를 흡수하는 방벽을 부여하도록 합니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243997"
+    },
+    {
+      "id": 243999,
+      "group": "enchants-weapon",
+      "name": "무기 마법부여 - 세계혼 아이기스",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+      "effect": "피해를 받을 때 일정 확률로 방벽 · 소진되면 주위 자연 피해",
+      "tooltipUse": "무기에 영구적으로 세계혼 아이기스 마법을 부여합니다. 피해를 받으면 아이기스가 일정 확률로 방벽을 부여하여 다음 14039의 피해를 흡수합니다. 방벽이 소진되면 분출을 일으켜 주위의 적에게 2776의 자연 피해를 나누어 입힙니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243999"
+    },
+    {
+      "id": 243977,
+      "group": "enchants-chest",
+      "name": "가슴보호구 마법부여 - 세계혼의 징표",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "주 능력치 +50",
+      "tooltipUse": "가슴보호구에 영구적으로 세계혼의 징표 마법을 부여해 착용자의 주 능력치를 50만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243977"
+    },
+    {
+      "id": 243947,
+      "group": "enchants-chest",
+      "name": "가슴보호구 마법부여 - 날로라크의 징표",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "힘 +40·체력 +116",
+      "tooltipUse": "가슴보호구에 영구적으로 날로라크의 징표 마법을 부여해 착용자의 힘을 40만큼, 체력을 116만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243947"
+    },
+    {
+      "id": 243975,
+      "group": "enchants-chest",
+      "name": "가슴보호구 마법부여 - 뿌리감시관의 징표",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "민첩성 +40·이동 속도 +15",
+      "tooltipUse": "가슴보호구에 영구적으로 뿌리감시관의 징표 마법을 부여해 착용자의 민첩성을 40만큼, 이동 속도를 15만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243975"
+    },
+    {
+      "id": 244003,
+      "group": "enchants-chest",
+      "name": "가슴보호구 마법부여 - 마법학자의 징표",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "지능 +40·최대 마나 5%",
+      "tooltipUse": "가슴보호구에 영구적으로 마법학자의 징표 마법을 부여해 지능을 40만큼, 최대 마나를 5%만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244003"
+    },
+    {
+      "id": 243987,
+      "group": "enchants-ring",
+      "name": "반지 마법부여 - 자연의 격노",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "치명타 및 극대화 +29",
+      "tooltipUse": "반지에 영구적으로 자연의 격노 마법을 부여해 착용자의 치명타 및 극대화를 29만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243987"
+    },
+    {
+      "id": 243985,
+      "group": "enchants-ring",
+      "name": "반지 마법부여 - 자연의 천벌",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+      "effect": "치명타 및 극대화 +24",
+      "tooltipUse": "반지에 영구적으로 자연의 천벌 마법을 부여해 착용자의 치명타 및 극대화를 24만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243985"
+    },
+    {
+      "id": 244015,
+      "group": "enchants-ring",
+      "name": "반지 마법부여 - 실버문의 기민함",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "가속 +29",
+      "tooltipUse": "반지에 영구적으로 실버문의 기민함 마법을 부여해 가속을 29만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244015"
+    },
+    {
+      "id": 244011,
+      "group": "enchants-ring",
+      "name": "반지 마법부여 - 탈라시안 가속",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+      "effect": "가속 +24",
+      "tooltipUse": "반지에 영구적으로 탈라시안 가속 마법을 부여해 가속을 24만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244011"
+    },
+    {
+      "id": 243959,
+      "group": "enchants-ring",
+      "name": "반지 마법부여 - 줄진의 특화",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "특화 +29",
+      "tooltipUse": "반지에 영구적으로 줄진의 특화 마법을 부여해 착용자의 특화를 29만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243959"
+    },
+    {
+      "id": 243955,
+      "group": "enchants-ring",
+      "name": "반지 마법부여 - 아마니의 특화",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+      "effect": "특화 +24",
+      "tooltipUse": "반지에 영구적으로 아마니의 특화 마법을 부여해 착용자의 특화를 24만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243955"
+    },
+    {
+      "id": 244017,
+      "group": "enchants-ring",
+      "name": "반지 마법부여 - 실버문의 끈기",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "유연성 +29",
+      "tooltipUse": "반지에 영구적으로 실버문의 끈기 마법을 부여해 유연성을 29만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244017"
+    },
+    {
+      "id": 244013,
+      "group": "enchants-ring",
+      "name": "반지 마법부여 - 탈라시안 유연성",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+      "effect": "유연성 +24",
+      "tooltipUse": "반지에 영구적으로 탈라시안 유연성 마법을 부여해 유연성을 24만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244013"
+    },
+    {
+      "id": 243957,
+      "group": "enchants-ring",
+      "name": "반지 마법부여 - 독수리의 눈",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "치명타 및 극대화 2%",
+      "tooltipUse": "반지에 영구적으로 독수리의 눈 마법을 부여해 착용자의 치명타 및 극대화를 2%만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243957"
+    },
+    {
+      "id": 244007,
+      "group": "enchants-helm",
+      "name": "투구 마법부여 - 강화된 광역회피의 룬",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "광역회피 +37 · 야외 처치 시 이동 속도 증가",
+      "tooltipUse": "머리보호구에 영구적으로 강화된 광역회피의 룬 마법을 부여해 광역회피를 37만큼 증가시킵니다. 추가로 한밤 지역 야외에서 적을 처치할 때마다 이동 속도가 폭발적으로 증가하며, 이 효과는 60초에 한 번씩만 발동합니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244007"
+    },
+    {
+      "id": 244005,
+      "group": "enchants-helm",
+      "name": "투구 마법부여 - 광역회피의 룬",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+      "effect": "광역회피 +22",
+      "tooltipUse": "머리보호구에 영구적으로 광역회피의 룬 마법을 부여해 광역회피를 22만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244005"
+    },
+    {
+      "id": 243951,
+      "group": "enchants-helm",
+      "name": "투구 마법부여 - 강화된 생기흡수의 사술",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "생기흡수 +55 · 야외 처치 시 생명력 3% 회복",
+      "tooltipUse": "머리보호구에 영구적으로 강화된 생기흡수의 사술 마법을 부여해 생기흡수를 55만큼 증가시킵니다. 추가로 한밤 지역 야외에서 적을 처치할 때마다 3%의 생명력을 회복하며, 이 효과는 5초에 한 번씩만 발동합니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243951"
+    },
+    {
+      "id": 243949,
+      "group": "enchants-helm",
+      "name": "투구 마법부여 - 생기흡수의 사술",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+      "effect": "생기흡수 +33",
+      "tooltipUse": "머리보호구에 영구적으로 생기흡수의 사술 마법을 부여해 생기흡수를 33만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243949"
+    },
+    {
+      "id": 243981,
+      "group": "enchants-helm",
+      "name": "투구 마법부여 - 강화된 속도의 축복",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "이동 속도 +22 · 야외 처치 시 하늘비행 사용 횟수 1회",
+      "tooltipUse": "머리보호구에 영구적으로 강화된 속도의 축복 마법을 부여해 이동 속도를 22만큼 증가시킵니다. 추가로 한밤 지역 야외에서 적을 처치할 때마다 하늘비행 능력 사용 횟수 1회가 부여되며, 이 효과는 30초에 한 번씩만 발동합니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243981"
+    },
+    {
+      "id": 243979,
+      "group": "enchants-helm",
+      "name": "투구 마법부여 - 속도의 축복",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+      "effect": "이동 속도 +13",
+      "tooltipUse": "머리보호구에 영구적으로 속도의 축복 마법을 부여해 이동 속도를 13만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243979"
+    },
+    {
+      "id": 243953,
+      "group": "enchants-boots",
+      "name": "장화 마법부여 - 스라소니의 기민함",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "광역회피 +19·체력 +232",
+      "tooltipUse": "장화에 영구적으로 스라소니의 기민함 마법을 부여해 광역회피를 19만큼, 체력을 232만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243953"
+    },
+    {
+      "id": 243983,
+      "group": "enchants-boots",
+      "name": "장화 마법부여 - 샬라드라실의 뿌리",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "생기흡수 +28·체력 +232",
+      "tooltipUse": "장화에 영구적으로 샬라드라실의 뿌리 마법을 부여해 생기흡수를 28만큼, 체력을 232만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243983"
+    },
+    {
+      "id": 244009,
+      "group": "enchants-boots",
+      "name": "장화 마법부여 - 원정순찰대의 추적",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "이동 속도 +11·체력 +232",
+      "tooltipUse": "장화에 영구적으로 원정순찰대의 추적 마법을 부여해 이동 속도를 11만큼, 체력을 232만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244009"
+    },
+    {
+      "id": 243991,
+      "group": "enchants-shoulder",
+      "name": "어깨보호구 마법부여 - 아미드랏실의 은혜",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "광역회피 +111",
+      "tooltipUse": "어깨보호구에 영구적으로 아미드랏실의 은혜 마법을 부여해 광역회피를 111만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243991"
+    },
+    {
+      "id": 243989,
+      "group": "enchants-shoulder",
+      "name": "어깨보호구 마법부여 - 자연의 은혜",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+      "effect": "광역회피 +67",
+      "tooltipUse": "어깨보호구에 영구적으로 자연의 은혜 마법을 부여해 착용자의 광역회피를 67만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243989"
+    },
+    {
+      "id": 244021,
+      "group": "enchants-shoulder",
+      "name": "어깨보호구 마법부여 - 실버문의 치유",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "생기흡수 +166",
+      "tooltipUse": "어깨보호구에 영구적으로 실버문의 치유 마법을 부여해 생기흡수를 166만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244021"
+    },
+    {
+      "id": 244019,
+      "group": "enchants-shoulder",
+      "name": "어깨보호구 마법부여 - 탈라시안 회복",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+      "effect": "생기흡수 +99",
+      "tooltipUse": "어깨보호구에 영구적으로 탈라시안 회복 마법을 부여해 생기흡수를 99만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=244019"
+    },
+    {
+      "id": 243963,
+      "group": "enchants-shoulder",
+      "name": "어깨보호구 마법부여 - 아킬존의 신속함",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+      "effect": "이동 속도 +65",
+      "tooltipUse": "어깨보호구에 영구적으로 아킬존의 신속함 마법을 부여해 이동 속도를 65만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243963"
+    },
+    {
+      "id": 243961,
+      "group": "enchants-shoulder",
+      "name": "어깨보호구 마법부여 - 독수리의 비행",
+      "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+      "effect": "이동 속도 +39",
+      "tooltipUse": "어깨보호구에 영구적으로 독수리의 비행 마법을 부여해 이동 속도를 39만큼 증가시킵니다. 120 레벨 미만의 아이템에는 사용할 수 없습니다.",
+      "url": "https://www.wowhead.com/ko/item=243961"
+    },
+    {
+      "id": 240133,
+      "group": "enchants-legs",
+      "name": "태양불꽃 비단 마법실타래",
+      "icon": "inv_tailoring_spellthread_orange_spellthread",
+      "effect": "지능 +41·체력 +115",
+      "tooltipUse": "다리보호구에 태양불꽃 비단 마법실타래를 둘러 영구적으로 지능을 41만큼, 체력을 115만큼 증가시킵니다.",
+      "url": "https://www.wowhead.com/ko/item=240133"
+    },
+    {
+      "id": 240155,
+      "group": "enchants-legs",
+      "name": "비전매듭 마법실타래",
+      "icon": "inv_12_tailoring_spellthread_violet_spellthread",
+      "effect": "지능 +41·최대 마나 4%",
+      "tooltipUse": "다리보호구에 비전매듭 마법실타래를 둘러 영구적으로 지능을 41만큼, 착용자의 최대 마나를 4%만큼 증가시킵니다.",
+      "url": "https://www.wowhead.com/ko/item=240155"
+    },
+    {
+      "id": 240157,
+      "group": "enchants-legs",
+      "name": "빛나는 리넨 마법실타래",
+      "icon": "inv_12_tailoring_spellthread_blue_spellthread",
+      "effect": "지능 +24",
+      "tooltipUse": "다리보호구에 빛나는 리넨 마법실타래를 둘러 영구적으로 지능을 24만큼 증가시킵니다.",
+      "url": "https://www.wowhead.com/ko/item=240157"
+    },
+    {
+      "id": 244641,
+      "group": "enchants-legs",
+      "name": "숲 사냥꾼의 방어구 강화도구",
+      "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+      "effect": "민첩성 또는 힘 +41·체력 +115",
+      "tooltipUse": "숲 사냥꾼의 방어구 강화도구를 다리 방어구에 적용하여 영구적으로 민첩성 또는 힘을 41만큼 증가시킵니다. 또한 아이템의 체력이 115만큼 증가합니다.",
+      "url": "https://www.wowhead.com/ko/item=244641"
+    },
+    {
+      "id": 244643,
+      "group": "enchants-legs",
+      "name": "혈기사의 방어구 강화도구",
+      "icon": "inv_12_profession_leatherworking_thalassian_amor_kit",
+      "effect": "민첩성 또는 힘 +41·방어도 +27",
+      "tooltipUse": "혈기사의 방어구 강화도구를 다리 방어구에 적용하여 영구적으로 민첩성 또는 힘을 41만큼 증가시킵니다. 또한 아이템의 방어도가 27만큼 증가합니다.",
+      "url": "https://www.wowhead.com/ko/item=244643"
+    },
+    {
+      "id": 244645,
+      "group": "enchants-legs",
+      "name": "탈라시안 정찰병 방어구 강화도구",
+      "icon": "inv_12_profession_leatherworking_standart_armor_kit",
+      "effect": "민첩성 또는 힘 +24",
+      "tooltipUse": "탈라시안 정찰병 방어구 강화도구를 다리 방어구에 적용하여 영구적으로 민첩성 또는 힘을 24만큼 증가시킵니다.",
+      "url": "https://www.wowhead.com/ko/item=244645"
+    },
+    {
+      "id": 257746,
+      "group": "enchants-scope",
+      "name": "원정순찰대원의 매의 눈",
+      "icon": "inv_10_engineering_scope_color4",
+      "effect": "일정 확률로 치명타 및 극대화 +19",
+      "tooltipUse": "원거리 무기에 영구적으로 마법을 부여해 일정 확률로 치명타 및 극대화를 19만큼 증가시키도록 합니다.",
+      "url": "https://www.wowhead.com/ko/item=257746"
+    },
+    {
+      "id": 257748,
+      "group": "enchants-scope",
+      "name": "밀수업자의 눈썰미",
+      "icon": "inv_10_engineering_scope_color2",
+      "effect": "일정 확률로 특화 +19",
+      "tooltipUse": "원거리 무기에 영구적으로 마법을 부여해 일정 확률로 특화를 19만큼 증가시키도록 합니다.",
+      "url": "https://www.wowhead.com/ko/item=257748"
+    }
+  ]
+}

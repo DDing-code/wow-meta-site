@@ -1,7 +1,7 @@
 {
   "metadata": {
     "patch": "12.1.5",
-    "verifiedAt": "2026-10-19",
+    "verifiedAt": "2026-10-20",
     "source": "Wowhead 한국어 본 서버 아이템 페이지 직접 확인",
     "kbPath": "08-직업별-Knowledge-Base/00-공통/공용/Meta/beginner-consumables.json"
   },
@@ -774,6 +774,438 @@
           "source": "https://www.wowhead.com/ko/item=240983"
         }
       ]
+    },
+    {
+      "id": "enchants-weapon",
+      "title": "마법부여 · 무기",
+      "intro": "주문·능력을 쓸 때 일정 확률로 효과가 발동합니다. 능력치를 올리는 것과 피해·보호막을 더하는 것을 구별하세요.",
+      "items": [
+        {
+          "id": 243973,
+          "name": "무기 마법부여 - 광전사의 분노",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+          "effect": "발동 시 15초 동안 가속 +124",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243973"
+        },
+        {
+          "id": 243971,
+          "name": "무기 마법부여 - 잔알라이의 정밀함",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+          "effect": "발동 시 15초 동안 치명타 및 극대화 +124",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243971"
+        },
+        {
+          "id": 244031,
+          "name": "무기 마법부여 - 비전 숙련",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+          "effect": "발동 시 15초 동안 특화 +124",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244031"
+        },
+        {
+          "id": 244001,
+          "name": "무기 마법부여 - 세계혼의 끈기",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+          "effect": "발동 시 15초 동안 유연성 +124",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244001"
+        },
+        {
+          "id": 244029,
+          "name": "무기 마법부여 - 렌도레이의 명민함",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+          "effect": "발동 시 15초 동안 주 능력치 +67",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244029"
+        },
+        {
+          "id": 273072,
+          "name": "무기 마법부여 - 하셰이의 의례",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+          "effect": "발동 시 15초 동안 무작위 보조 능력치 +139 · 생명력 80% 이상이면 가장 높은 보조 능력치 우선",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=273072"
+        },
+        {
+          "id": 244027,
+          "name": "무기 마법부여 - 신도레이의 불꽃",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+          "effect": "일정 확률로 10초 화염 지속 피해 후 주위 폭발",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244027"
+        },
+        {
+          "id": 243969,
+          "name": "무기 마법부여 - 할라지의 힘",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+          "effect": "피해를 입힐 때 일정 확률로 18초 출혈 피해",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243969"
+        },
+        {
+          "id": 243997,
+          "name": "무기 마법부여 - 세계혼의 요람",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+          "effect": "치유할 때 일정 확률로 대상에게 피해 흡수 방벽",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243997"
+        },
+        {
+          "id": 243999,
+          "name": "무기 마법부여 - 세계혼 아이기스",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_purple",
+          "effect": "피해를 받을 때 일정 확률로 방벽 · 소진되면 주위 자연 피해",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243999"
+        }
+      ],
+      "keywords": "마부 마법부여 인챈트 enchant"
+    },
+    {
+      "id": "enchants-chest",
+      "title": "마법부여 · 가슴보호구",
+      "intro": "주 능력치를 올립니다. 힘·민첩성·지능 전용인지, 모든 주 능력치에 맞는지 확인하세요.",
+      "items": [
+        {
+          "id": 243977,
+          "name": "가슴보호구 마법부여 - 세계혼의 징표",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "주 능력치 +50",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243977"
+        },
+        {
+          "id": 243947,
+          "name": "가슴보호구 마법부여 - 날로라크의 징표",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "힘 +40·체력 +116",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243947"
+        },
+        {
+          "id": 243975,
+          "name": "가슴보호구 마법부여 - 뿌리감시관의 징표",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "민첩성 +40·이동 속도 +15",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243975"
+        },
+        {
+          "id": 244003,
+          "name": "가슴보호구 마법부여 - 마법학자의 징표",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "지능 +40·최대 마나 5%",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244003"
+        }
+      ],
+      "keywords": "마부 마법부여 인챈트 enchant"
+    },
+    {
+      "id": "enchants-ring",
+      "title": "마법부여 · 반지",
+      "intro": "보조 능력치 하나를 올립니다. 반지는 두 개이므로 두 번 바를 수 있습니다. 같은 능력치에 수치가 낮은 값싼 마법부여도 있고, 독수리의 눈은 수치 대신 비율(%)로 올립니다.",
+      "items": [
+        {
+          "id": 243987,
+          "name": "반지 마법부여 - 자연의 격노",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "치명타 및 극대화 +29",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243987"
+        },
+        {
+          "id": 243985,
+          "name": "반지 마법부여 - 자연의 천벌",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+          "effect": "치명타 및 극대화 +24",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243985"
+        },
+        {
+          "id": 244015,
+          "name": "반지 마법부여 - 실버문의 기민함",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "가속 +29",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244015"
+        },
+        {
+          "id": 244011,
+          "name": "반지 마법부여 - 탈라시안 가속",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+          "effect": "가속 +24",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244011"
+        },
+        {
+          "id": 243959,
+          "name": "반지 마법부여 - 줄진의 특화",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "특화 +29",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243959"
+        },
+        {
+          "id": 243955,
+          "name": "반지 마법부여 - 아마니의 특화",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+          "effect": "특화 +24",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243955"
+        },
+        {
+          "id": 244017,
+          "name": "반지 마법부여 - 실버문의 끈기",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "유연성 +29",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244017"
+        },
+        {
+          "id": 244013,
+          "name": "반지 마법부여 - 탈라시안 유연성",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+          "effect": "유연성 +24",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244013"
+        },
+        {
+          "id": 243957,
+          "name": "반지 마법부여 - 독수리의 눈",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "치명타 및 극대화 2%",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243957"
+        }
+      ],
+      "keywords": "마부 마법부여 인챈트 enchant"
+    },
+    {
+      "id": "enchants-helm",
+      "title": "마법부여 · 투구",
+      "intro": "광역회피·생기흡수·이동 속도 중 하나를 올립니다. ‘강화된’ 마법부여는 한밤 지역 야외에서 적을 처치할 때 추가 효과가 있습니다.",
+      "items": [
+        {
+          "id": 244007,
+          "name": "투구 마법부여 - 강화된 광역회피의 룬",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "광역회피 +37 · 야외 처치 시 이동 속도 증가",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244007"
+        },
+        {
+          "id": 244005,
+          "name": "투구 마법부여 - 광역회피의 룬",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+          "effect": "광역회피 +22",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244005"
+        },
+        {
+          "id": 243951,
+          "name": "투구 마법부여 - 강화된 생기흡수의 사술",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "생기흡수 +55 · 야외 처치 시 생명력 3% 회복",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243951"
+        },
+        {
+          "id": 243949,
+          "name": "투구 마법부여 - 생기흡수의 사술",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+          "effect": "생기흡수 +33",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243949"
+        },
+        {
+          "id": 243981,
+          "name": "투구 마법부여 - 강화된 속도의 축복",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "이동 속도 +22 · 야외 처치 시 하늘비행 사용 횟수 1회",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243981"
+        },
+        {
+          "id": 243979,
+          "name": "투구 마법부여 - 속도의 축복",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+          "effect": "이동 속도 +13",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243979"
+        }
+      ],
+      "keywords": "마부 마법부여 인챈트 enchant"
+    },
+    {
+      "id": "enchants-boots",
+      "title": "마법부여 · 장화",
+      "intro": "셋 모두 체력을 함께 올립니다. 같이 오르는 능력치만 다릅니다.",
+      "items": [
+        {
+          "id": 243953,
+          "name": "장화 마법부여 - 스라소니의 기민함",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "광역회피 +19·체력 +232",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243953"
+        },
+        {
+          "id": 243983,
+          "name": "장화 마법부여 - 샬라드라실의 뿌리",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "생기흡수 +28·체력 +232",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243983"
+        },
+        {
+          "id": 244009,
+          "name": "장화 마법부여 - 원정순찰대의 추적",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "이동 속도 +11·체력 +232",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244009"
+        }
+      ],
+      "keywords": "마부 마법부여 인챈트 enchant"
+    },
+    {
+      "id": "enchants-shoulder",
+      "title": "마법부여 · 어깨보호구",
+      "intro": "광역회피·생기흡수·이동 속도 중 하나를 올립니다. 같은 능력치에 수치가 낮은 값싼 마법부여도 있습니다.",
+      "items": [
+        {
+          "id": 243991,
+          "name": "어깨보호구 마법부여 - 아미드랏실의 은혜",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "광역회피 +111",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243991"
+        },
+        {
+          "id": 243989,
+          "name": "어깨보호구 마법부여 - 자연의 은혜",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+          "effect": "광역회피 +67",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243989"
+        },
+        {
+          "id": 244021,
+          "name": "어깨보호구 마법부여 - 실버문의 치유",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "생기흡수 +166",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244021"
+        },
+        {
+          "id": 244019,
+          "name": "어깨보호구 마법부여 - 탈라시안 회복",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+          "effect": "생기흡수 +99",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244019"
+        },
+        {
+          "id": 243963,
+          "name": "어깨보호구 마법부여 - 아킬존의 신속함",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_blue",
+          "effect": "이동 속도 +65",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243963"
+        },
+        {
+          "id": 243961,
+          "name": "어깨보호구 마법부여 - 독수리의 비행",
+          "icon": "inv_12_profession_enchanting_enchantedvellum_green",
+          "effect": "이동 속도 +39",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243961"
+        }
+      ],
+      "keywords": "마부 마법부여 인챈트 enchant"
+    },
+    {
+      "id": "enchants-legs",
+      "title": "다리 강화 · 마법실타래 · 방어구 강화도구",
+      "intro": "다리는 마법부여 대신 재봉술의 마법실타래(지능)나 가죽세공의 방어구 강화도구(민첩성·힘)를 씁니다.",
+      "items": [
+        {
+          "id": 240133,
+          "name": "태양불꽃 비단 마법실타래",
+          "icon": "inv_tailoring_spellthread_orange_spellthread",
+          "effect": "지능 +41·체력 +115",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240133"
+        },
+        {
+          "id": 240155,
+          "name": "비전매듭 마법실타래",
+          "icon": "inv_12_tailoring_spellthread_violet_spellthread",
+          "effect": "지능 +41·최대 마나 4%",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240155"
+        },
+        {
+          "id": 240157,
+          "name": "빛나는 리넨 마법실타래",
+          "icon": "inv_12_tailoring_spellthread_blue_spellthread",
+          "effect": "지능 +24",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240157"
+        },
+        {
+          "id": 244641,
+          "name": "숲 사냥꾼의 방어구 강화도구",
+          "icon": "inv_12_profession_leatherworking_amani_armor_kit",
+          "effect": "민첩성 또는 힘 +41·체력 +115",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244641"
+        },
+        {
+          "id": 244643,
+          "name": "혈기사의 방어구 강화도구",
+          "icon": "inv_12_profession_leatherworking_thalassian_amor_kit",
+          "effect": "민첩성 또는 힘 +41·방어도 +27",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244643"
+        },
+        {
+          "id": 244645,
+          "name": "탈라시안 정찰병 방어구 강화도구",
+          "icon": "inv_12_profession_leatherworking_standart_armor_kit",
+          "effect": "민첩성 또는 힘 +24",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=244645"
+        }
+      ],
+      "keywords": "마부 마법부여 인챈트 enchant"
+    },
+    {
+      "id": "enchants-scope",
+      "title": "원거리 무기 · 조준경",
+      "intro": "활·총·석궁 같은 원거리 무기에만 바르는 기계공학 물품입니다.",
+      "items": [
+        {
+          "id": 257746,
+          "name": "원정순찰대원의 매의 눈",
+          "icon": "inv_10_engineering_scope_color4",
+          "effect": "일정 확률로 치명타 및 극대화 +19",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=257746"
+        },
+        {
+          "id": 257748,
+          "name": "밀수업자의 눈썰미",
+          "icon": "inv_10_engineering_scope_color2",
+          "effect": "일정 확률로 특화 +19",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=257748"
+        }
+      ],
+      "keywords": "마부 마법부여 인챈트 enchant"
     }
   ]
 }

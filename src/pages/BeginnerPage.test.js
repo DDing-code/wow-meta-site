@@ -53,7 +53,7 @@ test('검색 결과가 없으면 안내하고 전체 설명으로 돌아갈 수 
 });
 
 test('상황별 바로가기는 검색을 지워 이동할 섹션을 복원한다', () => {
-  search('마부');
+  search('어그로');
   expect(container.querySelector('#consumables')).toBeNull();
   act(() => container.querySelector('a[href="#consumables"]').click());
   expect(container.querySelector('input').value).toBe('');
@@ -90,7 +90,7 @@ test('설명에 없는 아이템 이름도 검색하고 결과를 지우면 전�
 test('보석 전체와 이름 검색 결과를 표시하고 아이콘도 설명 링크에 포함한다', () => {
   const gems = consumables.groups.filter(group => group.id.startsWith('gems-'));
   expect(gems.map(group => group.items.length)).toEqual([8, 8, 8, 8, 4]);
-  expect(container.querySelector('[aria-label="현재 버전 소모품·보석 목록"]')).not.toBeNull();
+  expect(container.querySelector('[aria-label="현재 버전 소모품·보석·마법부여 목록"]')).not.toBeNull();
   search('보석');
   expect(container.querySelectorAll('[data-item-id]')).toHaveLength(36);
   search('무결한 쾌속의 감람석');
@@ -102,6 +102,23 @@ test('보석 전체와 이름 검색 결과를 표시하고 아이콘도 설명 
   search('영원노래 다이아몬드');
   expect(container.querySelectorAll('[data-item-id]')).toHaveLength(4);
   expect(container.textContent).toContain('종류를 합쳐 하나만 장착');
+});
+
+test('마법부여를 부위별로 나누고 줄임말 검색과 높은 품질 단계 링크를 쓴다', () => {
+  const enchants = consumables.groups.filter(group => group.id.startsWith('enchants-'));
+  expect(enchants.map(group => group.id)).toEqual(['enchants-weapon', 'enchants-chest', 'enchants-ring', 'enchants-helm', 'enchants-boots', 'enchants-shoulder', 'enchants-legs', 'enchants-scope']);
+  expect(enchants.map(group => group.items.length)).toEqual([10, 4, 9, 6, 3, 6, 6, 2]);
+  for (const group of enchants) expect(container.querySelector(`[data-item-group="${group.id}"] h4`).textContent).toBe(group.title);
+  search('마부');
+  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(46);
+  expect(container.querySelector('nav a[href="#consumables"]')).not.toBeNull();
+  search('광전사의 분노');
+  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(1);
+  const link = container.querySelector('[data-item-id="243973"]');
+  expect(link.href).toBe('https://www.wowhead.com/ko/item=243973');
+  expect(link.textContent).toContain('가속 +124');
+  search('다시 바르기');
+  expect(container.querySelector('#consumables dt').textContent).toContain('마법부여 고르기 · 다시 바르기');
 });
 
 test('주문제작 안내를 목차와 검색으로 찾고 장식 제한과 재제작을 확인한다', () => {
@@ -140,7 +157,7 @@ test('장식 재료와 효과가 붙은 장비를 구분하고 이름만 검색�
   expect(container.querySelectorAll('[data-embellishment-id]')).toHaveLength(items.length);
   act(() => container.querySelector('[aria-label="검색 지우기"]').click());
   expect(container.querySelectorAll('[data-embellishment-id]')).toHaveLength(items.length);
-  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(83);
+  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(129);
 });
 
 test('주문 창을 본뜬 화면 5장을 번호 상자와 설명으로 보여 주고 검색에도 남긴다', () => {

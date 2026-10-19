@@ -1,0 +1,56 @@
+[
+  {
+    "width": 320,
+    "errors": [],
+    "shots": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\320-enchants-weapon.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\320-enchants-ring.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\320-enchants-helm.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\320-enchants-legs.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\320-enchants-scope.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\320-search-mabu-top.png"
+    ],
+    "searchStatus": "검색 결과 1개 설명 · 아이템 46종",
+    "enchantItems": 46,
+    "brokenIcons": [],
+    "wide": [],
+    "textOverflow": [],
+    "scrollWidth": 320
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "shots": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\390-enchants-weapon.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\390-enchants-ring.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\390-enchants-helm.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\390-enchants-legs.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\390-enchants-scope.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\390-search-mabu-top.png"
+    ],
+    "searchStatus": "검색 결과 1개 설명 · 아이템 46종",
+    "enchantItems": 46,
+    "brokenIcons": [],
+    "wide": [],
+    "textOverflow": [],
+    "scrollWidth": 390
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "shots": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\1440-enchants-weapon.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\1440-enchants-ring.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\1440-enchants-helm.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\1440-enchants-legs.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\1440-enchants-scope.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\beginner-enchants-20261020\\shots\\1440-search-mabu-top.png"
+    ],
+    "searchStatus": "검색 결과 1개 설명 · 아이템 46종",
+    "enchantItems": 46,
+    "brokenIcons": [],
+    "wide": [],
+    "textOverflow": [],
+    "scrollWidth": 1440
+  }
+]
