@@ -1,0 +1,456 @@
+{
+  "metadata": {
+    "patch": "12.1.5",
+    "verifiedAt": "2026-10-19",
+    "source": "Wowhead 한국어 본 서버 아이템 페이지 직접 확인",
+    "kbPath": "08-직업별-Knowledge-Base/00-공통/공용/Meta/beginner-consumables.json"
+  },
+  "groups": [
+    {
+      "id": "flasks",
+      "title": "영약",
+      "intro": "오래 유지할 보조 능력치를 선택합니다.",
+      "items": [
+        {
+          "id": 241322,
+          "name": "마법학자의 영약",
+          "icon": "inv_12_profession_alchemy_flask_sindoreipotion_black",
+          "effect": "특화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=241322"
+        },
+        {
+          "id": 241324,
+          "name": "혈기사의 영약",
+          "icon": "inv_12_profession_alchemy_flask_sindoreipotion_white-",
+          "effect": "가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=241324"
+        },
+        {
+          "id": 241326,
+          "name": "무너진 태양의 영약",
+          "icon": "inv_12_profession_alchemy_flask_sindoreipotion_red--",
+          "effect": "치명타 및 극대화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=241326"
+        },
+        {
+          "id": 241320,
+          "name": "탈라시안 저항력의 영약",
+          "icon": "inv_12_profession_alchemy_flask_sindoreipotion_yellow",
+          "effect": "유연성",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=241320"
+        }
+      ]
+    },
+    {
+      "id": "combat-potions",
+      "title": "전투 물약",
+      "intro": "순간적으로 전투 능력을 높이는 물약입니다. 효과와 사용 조건을 함께 확인하세요.",
+      "items": [
+        {
+          "id": 241308,
+          "name": "빛의 잠재력",
+          "icon": "inv_12_profession_alchemy_lightpotion_yellow",
+          "effect": "주 능력치",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=241308"
+        },
+        {
+          "id": 241288,
+          "name": "무모함의 물약",
+          "icon": "inv_12_profession_alchemy_voidpotion_red",
+          "effect": "가장 높은 보조 능력치 · 낮은 능력치 감소",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=241288"
+        },
+        {
+          "id": 271887,
+          "name": "액화 광택제",
+          "icon": "inv_121_professions_alchemy_potion_amani_blue",
+          "effect": "유연성 · 점차 중첩",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=271887"
+        },
+        {
+          "id": 241292,
+          "name": "날뛰는 방종의 비약",
+          "icon": "inv_12_profession_alchemy_voidpotion_purple",
+          "effect": "주 능력치 · 발밑 공허 지대 발생",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=241292"
+        }
+      ]
+    },
+    {
+      "id": "recovery-potions",
+      "title": "회복 물약",
+      "intro": "생명력과 마나 중 무엇을 회복하는지 구별하세요.",
+      "items": [
+        {
+          "id": 271884,
+          "name": "농축된 실버문 생명력 물약",
+          "icon": "inv_12_profession_alchemy_lightpotion_purple",
+          "effect": "생명력 회복",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=271884"
+        },
+        {
+          "id": 241304,
+          "name": "실버문 생명력 물약",
+          "icon": "inv_12_profession_alchemy_lightpotion_orange",
+          "effect": "생명력 회복",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=241304"
+        },
+        {
+          "id": 241300,
+          "name": "빛주입 마나 물약",
+          "icon": "inv_12_profession_alchemy_lightpotion_blue",
+          "effect": "마나 회복",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=241300"
+        },
+        {
+          "id": 241306,
+          "name": "원기 회복 혈청",
+          "icon": "inv_alchemy_80_potion01purple",
+          "effect": "생명력·마나 회복",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=241306"
+        }
+      ]
+    },
+    {
+      "id": "primary-food",
+      "title": "1차 스탯 음식 · 개인",
+      "intro": "주 능력치인 힘·민첩·지능을 위한 개인 음식입니다.",
+      "items": [
+        {
+          "id": 242275,
+          "name": "왕실 구이",
+          "icon": "inv_cooking_100_roastduck",
+          "effect": "주 능력치",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=242275"
+        },
+        {
+          "id": 242747,
+          "name": "든든한 왕실 구이",
+          "icon": "inv_cooking_100_roastduck",
+          "effect": "주 능력치",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=242747"
+        },
+        {
+          "id": 255847,
+          "name": "초월적인 왕실 구이",
+          "icon": "inv_cooking_100_roastduck",
+          "effect": "주 능력치",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=255847"
+        },
+        {
+          "id": 268679,
+          "name": "든든한 초월적인 왕실 구이",
+          "icon": "inv_cooking_100_roastduck",
+          "effect": "주 능력치",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=268679"
+        }
+      ]
+    },
+    {
+      "id": "primary-feasts",
+      "title": "1차 스탯 음식 · 잔칫상",
+      "intro": "여러 사람이 함께 먹고 주 능력치와 체력을 얻습니다.",
+      "items": [
+        {
+          "id": 255845,
+          "name": "실버문 대연회상",
+          "icon": "inv_tradeskill_cooking_feastofblood",
+          "effect": "주 능력치·체력",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=255845"
+        },
+        {
+          "id": 266985,
+          "name": "든든한 실버문 대연회상",
+          "icon": "inv_tradeskill_cooking_feastofblood",
+          "effect": "주 능력치·체력",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=266985"
+        },
+        {
+          "id": 255846,
+          "name": "하란다르 기념상",
+          "icon": "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+          "effect": "주 능력치·체력",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=255846"
+        },
+        {
+          "id": 266996,
+          "name": "든든한 하란다르 기념상",
+          "icon": "inv_misc_1h_soup_b_01_misc_1h_soup_b_01",
+          "effect": "주 능력치·체력",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=266996"
+        }
+      ]
+    },
+    {
+      "id": "secondary-food",
+      "title": "2차 스탯 음식 · 개인",
+      "intro": "가장 높은 보조 능력치를 올립니다. 원하는 능력치를 직접 선택하는 음식과 구별하세요.",
+      "items": [
+        {
+          "id": 275258,
+          "name": "맹독 양념 튀김",
+          "icon": "inv_misc_food_166_bambooshoot02",
+          "effect": "가장 높은 보조 능력치",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=275258"
+        },
+        {
+          "id": 275259,
+          "name": "든든한 맹독 양념 튀김",
+          "icon": "inv_misc_food_166_bambooshoot02",
+          "effect": "가장 높은 보조 능력치",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=275259"
+        },
+        {
+          "id": 275260,
+          "name": "복어 요리",
+          "icon": "inv_misc_food_draenor_saltedskulker_color04",
+          "effect": "가장 높은 보조 능력치",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=275260"
+        },
+        {
+          "id": 275261,
+          "name": "새콤달콤 꼬치",
+          "icon": "inv_misc_food_draenor_grilledgulper",
+          "effect": "가장 높은 보조 능력치",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=275261"
+        },
+        {
+          "id": 275263,
+          "name": "든든한 새콤달콤 꼬치",
+          "icon": "inv_misc_food_draenor_grilledgulper",
+          "effect": "가장 높은 보조 능력치",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=275263"
+        },
+        {
+          "id": 242274,
+          "name": "용사의 도시락",
+          "icon": "inv_misc_food_vendor_poundedricecake_1",
+          "effect": "가장 높은 보조 능력치",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=242274"
+        },
+        {
+          "id": 242746,
+          "name": "든든한 용사의 도시락",
+          "icon": "inv_misc_food_vendor_poundedricecake_1",
+          "effect": "가장 높은 보조 능력치",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=242746"
+        },
+        {
+          "id": 255848,
+          "name": "식물 대난리",
+          "icon": "inv_cooking_100_sidesalad_color04",
+          "effect": "가장 높은 보조 능력치",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=255848"
+        },
+        {
+          "id": 268680,
+          "name": "든든한 식물 대난리",
+          "icon": "inv_cooking_100_sidesalad_color04",
+          "effect": "가장 높은 보조 능력치",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=268680"
+        }
+      ]
+    },
+    {
+      "id": "secondary-feasts",
+      "title": "2차 스탯 음식 · 잔칫상",
+      "intro": "여러 사람이 함께 먹고 가장 높은 보조 능력치와 체력을 얻습니다.",
+      "items": [
+        {
+          "id": 275264,
+          "name": "아마니 풍요의 뿔",
+          "icon": "inv_misc_food_legion_heartyfeast",
+          "effect": "보조 능력치·체력",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=275264"
+        },
+        {
+          "id": 275267,
+          "name": "든든한 아마니 풍요의 뿔",
+          "icon": "inv_misc_food_legion_heartyfeast",
+          "effect": "보조 능력치·체력",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=275267"
+        },
+        {
+          "id": 275265,
+          "name": "로아의 모둠상",
+          "icon": "inv_cooking_10_grandbanquet",
+          "effect": "보조 능력치·체력",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=275265"
+        },
+        {
+          "id": 275268,
+          "name": "든든한 로아의 모둠상",
+          "icon": "inv_cooking_10_grandbanquet",
+          "effect": "보조 능력치·체력",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=275268"
+        },
+        {
+          "id": 275266,
+          "name": "지식의 잔칫상",
+          "icon": "inv_cooking_80_minorfeast",
+          "effect": "보조 능력치·체력",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=275266"
+        },
+        {
+          "id": 275269,
+          "name": "든든한 지식의 잔칫상",
+          "icon": "inv_cooking_80_minorfeast",
+          "effect": "보조 능력치·체력",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=275269"
+        },
+        {
+          "id": 242273,
+          "name": "만개하는 잔칫상",
+          "icon": "inv_misc_food_cooked_greatpabanquet_wok",
+          "effect": "보조 능력치·체력",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=242273"
+        },
+        {
+          "id": 242745,
+          "name": "든든한 만개하는 잔칫상",
+          "icon": "inv_misc_food_cooked_greatpabanquet_wok",
+          "effect": "보조 능력치·체력",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=242745"
+        },
+        {
+          "id": 242272,
+          "name": "쿠엘도레이 잡탕",
+          "icon": "inv_cooking_10_draconicdelicacies",
+          "effect": "보조 능력치·체력",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=242272"
+        },
+        {
+          "id": 266986,
+          "name": "든든한 쿠엘도레이 잡탕",
+          "icon": "inv_cooking_10_draconicdelicacies",
+          "effect": "보조 능력치·체력",
+          "hearty": true,
+          "source": "https://www.wowhead.com/ko/item=266986"
+        }
+      ]
+    },
+    {
+      "id": "specific-food",
+      "title": "2차 스탯 음식 · 능력치 지정",
+      "intro": "음식마다 정해진 능력치를 올립니다.",
+      "items": [
+        {
+          "id": 242283,
+          "name": "태양불길 빛지느러미",
+          "icon": "inv_misc_food_cooked_wildfowlroast",
+          "effect": "치명타 및 극대화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=242283"
+        },
+        {
+          "id": 242286,
+          "name": "지옥의 입맞춤 순살",
+          "icon": "inv_cooking_100_revengeservedcold_color02",
+          "effect": "가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=242286"
+        },
+        {
+          "id": 242282,
+          "name": "무위와 공허 접시",
+          "icon": "inv_misc_food_draenor_saltedskulker_color01",
+          "effect": "가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=242282"
+        },
+        {
+          "id": 242285,
+          "name": "뒤틀린 지혜 날개",
+          "icon": "inv_cooking_10_grandbanquet",
+          "effect": "특화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=242285"
+        },
+        {
+          "id": 242280,
+          "name": "버터 바른 뿌리 게",
+          "icon": "inv_misc_food_draenor_steamedscorpion",
+          "effect": "유연성",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=242280"
+        }
+      ]
+    },
+    {
+      "id": "runes-oils",
+      "title": "증강의 룬 · 무기 기름",
+      "intro": "룬은 주 능력치를, 기름은 무기에 바르는 임시 효과를 제공합니다.",
+      "items": [
+        {
+          "id": 259085,
+          "name": "공허에 물든 증강의 룬",
+          "icon": "inv_10_enchanting_crystal_color2",
+          "effect": "주 능력치",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=259085"
+        },
+        {
+          "id": 243734,
+          "name": "탈라시안 불사조 기름",
+          "icon": "inv_12_profession_enchanting_manaoil_red",
+          "effect": "치명타 및 극대화·가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=243734"
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "title": "마나 회복 음료",
+      "intro": "전투 사이에 앉아서 마나를 회복할 때 쓰는 음료입니다.",
+      "items": [
+        {
+          "id": 242297,
+          "name": "마나 백합 차",
+          "icon": "inv_12_profession_cooking_tea_pink",
+          "effect": "마나 회복",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=242297"
+        }
+      ]
+    }
+  ]
+}

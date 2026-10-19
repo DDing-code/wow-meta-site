@@ -4,6 +4,7 @@ import { Simulate } from 'react-dom/test-utils';
 import { MemoryRouter } from 'react-router-dom';
 import BeginnerPage from './BeginnerPage.js';
 import { beginnerSections } from '../data/beginnerGuide.js';
+import consumables from '../data/beginnerConsumables.json';
 
 let container;
 let root;
@@ -57,4 +58,31 @@ test('상황별 바로가기는 검색을 지워 이동할 섹션을 복원한�
   act(() => container.querySelector('a[href="#consumables"]').click());
   expect(container.querySelector('input').value).toBe('');
   expect(container.querySelector('#consumables')).not.toBeNull();
+});
+
+test('소모품을 능력치와 용도별로 나누고 이름과 아이콘을 같은 링크로 묶는다', () => {
+  const items = consumables.groups.flatMap(group => group.items);
+  expect(new Set(items.map(item => item.id)).size).toBe(items.length);
+  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(items.length);
+  for (const item of items) {
+    const link = container.querySelector(`[data-item-id="${item.id}"]`);
+    expect(link.href).toBe(`https://www.wowhead.com/ko/item=${item.id}`);
+    expect(link.querySelector('img').src).toContain(`/${item.icon}.jpg`);
+    expect(link.textContent).toContain(item.name);
+  }
+  expect(container.querySelector('[data-item-group="primary-food"] h4').textContent).toContain('1차 스탯');
+  expect(container.querySelector('[data-item-group="secondary-food"] h4').textContent).toContain('2차 스탯');
+  expect(container.querySelector('[data-item-id="242747"]').textContent).toContain('사망 후 유지');
+});
+
+test('설명에 없는 아이템 이름도 검색하고 결과를 지우면 전체 목록이 복원된다', () => {
+  search('농축된 실버문');
+  expect(container.querySelectorAll('dt')).toHaveLength(0);
+  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(1);
+  expect(container.querySelector('[data-item-id="271884"]')).not.toBeNull();
+  expect(container.querySelector('#consumables')).not.toBeNull();
+  expect(container.querySelector('[role="status"]').textContent).toContain('아이템 1종');
+  expect(container.textContent).not.toContain('일치하는 설명이 없습니다');
+  act(() => container.querySelector('[aria-label="검색 지우기"]').click());
+  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(consumables.groups.reduce((n, g) => n + g.items.length, 0));
 });

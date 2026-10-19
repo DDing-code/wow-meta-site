@@ -17,6 +17,7 @@ const watchMode = args.includes('--watch');
 const passThroughArgs = args.filter(arg => arg !== '--watch');
 
 for (const [source, output] of [
+  ['00-공통/공용/Meta/beginner-consumables.json', 'beginnerConsumables.json'],
   ['01-죽음의기사/부정/Meta/log-peal-mythic.json', 'pealMythicReport.json'],
   ['08-성기사/징벌/Meta/log-coiled-altar.json', 'retributionCoiledAltarReport.json'],
   ['12-흑마법사/악마/Meta/log-ragereaver-heroic.json', 'ragereaverHeroicReport.json'],

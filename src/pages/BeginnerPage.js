@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowRight, BookOpen, Castle, Compass, FlaskConical, ListChecks, Search, Shield, Swords, X } from 'lucide-react';
 import { beginnerSections, beginnerSources } from '../data/beginnerGuide.js';
+import consumables from '../data/beginnerConsumables.json';
 
 // 기존 가이드 페이지의 평면 언어(어두운 배경, 금색 강조, 1px 구분선, 각진 모서리)를 그대로 쓴다.
 const GOLD = '#d2b373';
@@ -298,6 +299,37 @@ const Tip = styled.p`
   line-height: 1.7;
   b { margin-right: 8px; color: ${GOLD}; font-size: 0.74rem; font-weight: 750; }
 `;
+const ItemCatalog = styled.div`
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid ${LINE_STRONG};
+  > h3 { color: #eef1f3; font-size: 1.3rem; }
+  > p { margin-top: 10px; color: #aeb8be; font-size: 0.9rem; line-height: 1.75; }
+`;
+const ItemGroup = styled.div`
+  margin-top: 28px;
+  h4 { color: ${GOLD}; font-size: 1rem; line-height: 1.5; }
+  > p { margin: 7px 0 12px; color: #aeb8be; font-size: 0.85rem; line-height: 1.7; }
+  ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  @media (max-width: 760px) { ul { grid-template-columns: minmax(0, 1fr); } }
+`;
+const ItemLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+  padding: 12px;
+  border: 1px solid ${LINE_STRONG};
+  background: ${PANEL};
+  img { width: 36px; height: 36px; flex: 0 0 36px; border: 1px solid #59636b; }
+  > span { min-width: 0; }
+  strong { display: block; color: #eef1f3; font-size: 0.9rem; line-height: 1.5; }
+  small { display: block; margin-top: 3px; color: #aeb8be; font-size: 0.76rem; line-height: 1.6; }
+  em { color: ${GOLD}; font-style: normal; }
+  mark { background: transparent; color: ${GOLD}; }
+  &:hover, &:focus-visible { border-color: ${GOLD}; }
+  &:focus-visible { outline: 2px solid ${GOLD}; outline-offset: 2px; }
+`;
 const Empty = styled.div`
   padding: 36px 24px 40px;
   border: 1px dashed rgba(168, 178, 188, 0.28);
@@ -416,11 +448,17 @@ function useActiveSection(key) {
 function BeginnerPage() {
   const [search, setSearch] = useState('');
   const query = search.trim().toLocaleLowerCase();
+  const itemGroups = consumables.groups.map(group => ({
+    ...group,
+    items: group.items.filter(item => !query ||
+      [group.title, item.name, item.effect, item.hearty ? '든든한 사망 후 유지' : ''].join(' ').toLocaleLowerCase().includes(query)),
+  })).filter(group => group.items.length);
+  const itemCount = itemGroups.reduce((total, group) => total + group.items.length, 0);
   const sections = beginnerSections.map(section => ({
     ...section,
     entries: section.entries.filter(entry => !query ||
       [section.title, entry.term, entry.aliases, entry.when, entry.description, entry.tip].filter(Boolean).join(' ').toLocaleLowerCase().includes(query)),
-  })).filter(section => section.entries.length);
+  })).filter(section => section.entries.length || (section.id === 'consumables' && itemCount));
   const count = sections.reduce((total, section) => total + section.entries.length, 0);
   const active = useActiveSection(sections.map(section => section.id).join(' '));
   const clear = () => setSearch('');
@@ -440,7 +478,7 @@ function BeginnerPage() {
             <input id="beginner-search" type="search" value={search} onChange={event => setSearch(event.target.value)} placeholder="예: 영약, 쐐기, 어그로, 마부" aria-controls="beginner-results" autoComplete="off" />
             {search ? <ClearButton type="button" onClick={clear} aria-label="검색 지우기"><X size={18} aria-hidden="true" /></ClearButton> : null}
           </SearchField>
-          <Status role="status">{query ? <>검색 결과 <strong>{count}개</strong> · 뜻과 설명에서 함께 찾습니다.</> : <><strong>{count}개 설명</strong> · 처음부터 읽거나 필요한 말만 찾아보세요.</>}</Status>
+          <Status role="status">{query ? <>검색 결과 <strong>{count}개 설명</strong>{itemCount ? <> · 아이템 <strong>{itemCount}종</strong></> : null}</> : <><strong>{count}개 설명</strong> · 소모품 <strong>{itemCount}종</strong></>}</Status>
         </SearchPanel>
       </Hero>
       <Start aria-label="상황별 바로가기">
@@ -461,7 +499,7 @@ function BeginnerPage() {
           <ContentsList>
             {sections.map(section => (
               <ContentsLink key={section.id} href={`#${section.id}`} $active={section.id === active} aria-current={section.id === active ? 'location' : undefined}>
-                {section.title}<b>{section.entries.length}</b>
+                {section.title}<b>{section.entries.length || (section.id === 'consumables' ? itemCount : 0)}</b>
               </ContentsLink>
             ))}
           </ContentsList>
@@ -469,7 +507,7 @@ function BeginnerPage() {
         <Results id="beginner-results">
           {query && sections.length ? (
             <ResultBar>
-              <span>“<strong>{search.trim()}</strong>” 검색 결과 {count}개</span>
+              <span>“<strong>{search.trim()}</strong>” 검색 결과 · 설명 {count}개{itemCount ? ` · 아이템 ${itemCount}종` : ''}</span>
               <TextButton type="button" onClick={clear}><X size={14} aria-hidden="true" />검색 지우기</TextButton>
             </ResultBar>
           ) : null}
@@ -480,7 +518,7 @@ function BeginnerPage() {
                 <SectionHead>
                   <SectionIcon><Icon size={19} strokeWidth={1.75} aria-hidden="true" /></SectionIcon>
                   <h2 id={`${section.id}-title`}>{section.title}</h2>
-                  <SectionCount>{section.entries.length}개 설명</SectionCount>
+                  <SectionCount>{section.entries.length}개 설명{section.id === 'consumables' && itemCount ? ` · 아이템 ${itemCount}종` : ''}</SectionCount>
                 </SectionHead>
                 <Intro>{section.intro}</Intro>
                 {section.note ? <Note>{section.note}</Note> : null}
@@ -493,6 +531,30 @@ function BeginnerPage() {
                     </dd>
                   </Entry>
                 ))}</Entries>
+                {section.id === 'consumables' && itemCount ? (
+                  <ItemCatalog aria-label="현재 버전 소모품 목록">
+                    <h3>한밤 {consumables.metadata.patch} 소모품 목록</h3>
+                    <p>이름과 아이콘을 누르면 한국어 아이템 설명이 열립니다. 같은 이름의 품질별 효과와 사용 조건도 확인하세요. 아래는 전투 준비에 쓰는 주요 소모품이며, 모두 구매할 필요는 없습니다.</p>
+                    <p>1차 스탯은 힘·민첩·지능, 2차 스탯은 치명타·가속·특화·유연성을 말합니다. ‘든든한’ 음식은 사망 후에도 효과가 남습니다. 귀속 조건을 확인해 준비하세요.</p>
+                    {itemGroups.map(group => (
+                      <ItemGroup key={group.id} data-item-group={group.id}>
+                        <h4>{group.title}</h4>
+                        <p>{group.intro}</p>
+                        <ul>{group.items.map(item => (
+                          <li key={item.id}>
+                            <ItemLink href={item.source} target="_blank" rel="noreferrer" data-item-id={item.id} aria-label={`${item.name} — 한국어 아이템 설명, 새 창`}>
+                              <img src={`https://wow.zamimg.com/images/wow/icons/medium/${item.icon}.jpg`} alt="" width="36" height="36" loading="lazy" />
+                              <span>
+                                <strong><Highlight text={item.name} query={query} /></strong>
+                                <small>{item.effect}{item.hearty ? <em> · 사망 후 유지</em> : null}</small>
+                              </span>
+                            </ItemLink>
+                          </li>
+                        ))}</ul>
+                      </ItemGroup>
+                    ))}
+                  </ItemCatalog>
+                ) : null}
               </Section>
             );
           }) : (
