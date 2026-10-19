@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-19",
+  "method": "ODDIN 브라우저 · 같은 출처 iframe에서 실제 320/390/1440px 문서 렌더 후 스크린샷을 직접 눈으로 검수. 1440px 문서는 0.82배 축소 표시.",
+  "bundle": "main.9243062e.js",
+  "items": 44,
+  "iconsLoaded": 44,
+  "viewports": [
+    {
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "search": {
+    "query": "치장된 송곳니",
+    "items": 1,
+    "descriptions": 0,
+    "craftingNavigation": true,
+    "overflow": false
+  },
+  "tests": {
+    "beginnerPage": 9,
+    "validateQuiet": 9,
+    "build": true,
+    "kbGeneratedDataEqual": true
+  },
+  "deployment": "t2 담당, t1은 커밋까지만"
+}

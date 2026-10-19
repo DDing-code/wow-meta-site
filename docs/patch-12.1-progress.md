@@ -857,3 +857,9 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - KB 공용 Meta/beginner-consumables.json과 beginner-crafting.json이 원본이다. sync-kb로 beginnerConsumables.json·beginnerCrafting.json을 생성하며, Fable의 기존 화면·목차·검색을 재사용한다. 설명은 총 57개다.
 - 전체 검증 9단계, 페이지 테스트 8개, 환경 파일을 읽지 않는 운영 빌드 통과(main.f88d5858.js). 기존 파일의 빌드 경고는 유지한다. 테스트는 npm의 옵션 전달이 누락돼 감시 모드로 남았으므로 해당 테스트 PID만 종료한 뒤 react-scripts 직접 실행으로 정상 종료·통과를 확인했다.
 - ODDIN 브라우저 안의 같은 출처 iframe에서 320·390·1440px로 렌더링해 직접 검수했다. 각 문서 가로 넘침 0, 보석 아이콘 36개 로드 성공, 이름 검색 1종 일치. PC 캡처는 1440px 문서를 화면 안에 축소 표시했다. 캡처·출처: artifacts/beginner-gems-20261019/.
+
+### 2026-10-19 초보자 안내 — 장식 목록
+- KB 공용 Meta/beginner-crafting.json에 장식 재료 14종과 기본 장식 효과가 붙은 장비 30종을 추가했다. 이번 시즌 신규 재료 5종을 구분하고, 적용 제작법·장비 부위·2개 세트 조건을 함께 표시한다. 기존 디자인과 검색을 재사용하며 기존 소모품·보석과 합쳐 아이템 127종이다.
+- 이름·아이콘·효과는 ODDIN 브라우저에서 Wowhead 본 서버 한국어 개별 아이템 페이지로 대조했다. 장비 미리보기의 효과 수치가 0으로 표시되는 경우 연결된 한국어 효과 주문 페이지를 확인해 effectSource를 남겼다. 원문은 artifacts/beginner-embellishments-20261019/item-evidence.json에 보존했고, 한글 조사 제어 표기만 풀어 표시한다.
+- 페이지 테스트 9개, 전체 검증 9단계, 소스맵 없는 빌드 통과. ODDIN 브라우저에서 320·390·1440px 문서를 직접 검수했다. 가로 넘침 0, 장식 아이콘 44개 로드 성공, 장식 이름 검색 1종과 목차 유지 확인. 캡처는 같은 출처 iframe을 사용하며 artifacts/beginner-embellishments-20261019/에 있다.
+- 이 작업은 커밋까지만 담당한다. 실제 인게임 UI의 강조 상자 설명과 운영 배포는 후속 t2가 이어 맡는다.

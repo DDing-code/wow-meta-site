@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Simulate } from 'react-dom/test-utils';
 import { MemoryRouter } from 'react-router-dom';
 import BeginnerPage from './BeginnerPage.js';
-import { beginnerSections } from '../data/beginnerGuide.js';
+import { beginnerEmbellishments, beginnerSections } from '../data/beginnerGuide.js';
 import consumables from '../data/beginnerConsumables.json';
 
 let container;
@@ -115,4 +115,30 @@ test('주문제작 안내를 목차와 검색으로 찾고 장식 제한과 재�
   search('리크래프트');
   expect(container.querySelectorAll('dt')).toHaveLength(1);
   expect(container.querySelector('dt').textContent).toContain('재제작');
+});
+
+test('장식 재료와 효과가 붙은 장비를 구분하고 이름만 검색해도 목록과 목차를 남긴다', () => {
+  const items = beginnerEmbellishments.groups.flatMap(group => group.items);
+  expect(items).toHaveLength(44);
+  expect(new Set(items.map(item => item.id)).size).toBe(items.length);
+  expect(container.querySelectorAll('[data-embellishment-id]')).toHaveLength(items.length);
+  for (const item of items) {
+    const link = container.querySelector(`[data-embellishment-id="${item.id}"]`);
+    expect(link.href).toBe(`https://www.wowhead.com/ko/item=${item.id}`);
+    expect(link.querySelector('img').src).toContain(`/${item.icon}.jpg`);
+    expect(link.textContent).toContain(item.effect);
+    expect(item.effect).not.toMatch(/primaryStat|\|1|(?<!\d)0만큼/);
+  }
+  expect(container.querySelector('[data-embellishment-group="season-2-reagents"] h4').textContent).toContain('이번 시즌');
+  expect(container.querySelector('[data-embellishment-id="244610"]').textContent).toContain('2개 세트 효과');
+  search('치장된 송곳니');
+  expect(container.querySelectorAll('dt')).toHaveLength(0);
+  expect(container.querySelectorAll('[data-embellishment-id]')).toHaveLength(1);
+  expect(container.querySelector('nav a[href="#crafting"]')).not.toBeNull();
+  expect(container.querySelector('[role="status"]').textContent).toContain('아이템 1종');
+  search('장식');
+  expect(container.querySelectorAll('[data-embellishment-id]')).toHaveLength(items.length);
+  act(() => container.querySelector('[aria-label="검색 지우기"]').click());
+  expect(container.querySelectorAll('[data-embellishment-id]')).toHaveLength(items.length);
+  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(83);
 });

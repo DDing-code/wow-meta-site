@@ -1,6 +1,8 @@
 // 특정 시즌의 아이템 추천이나 주문 툴팁 대신, 본 서버에서 쓰는 공통 개념을 설명한다.
 import crafting from './beginnerCrafting.json';
 
+export const beginnerEmbellishments = crafting.catalog;
+
 export const beginnerSections = [
   {
     id: 'basics', title: '처음 알아둘 것', intro: '직업을 골랐다면, 내가 어떤 역할로 싸우는지부터 확인하세요.',

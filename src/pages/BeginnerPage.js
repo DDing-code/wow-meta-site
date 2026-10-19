@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowRight, BookOpen, Castle, Compass, FlaskConical, Hammer, ListChecks, Search, Shield, Swords, X } from 'lucide-react';
-import { beginnerSections, beginnerSources } from '../data/beginnerGuide.js';
+import { beginnerEmbellishments, beginnerSections, beginnerSources } from '../data/beginnerGuide.js';
 import consumables from '../data/beginnerConsumables.json';
 
 // 기존 가이드 페이지의 평면 언어(어두운 배경, 금색 강조, 1px 구분선, 각진 모서리)를 그대로 쓴다.
@@ -311,6 +311,8 @@ const ItemGroup = styled.div`
   h4 { color: ${GOLD}; font-size: 1rem; line-height: 1.5; }
   > p { margin: 7px 0 12px; color: #aeb8be; font-size: 0.85rem; line-height: 1.7; }
   ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  li { min-width: 0; display: flex; flex-direction: column; }
+  li > a:first-child { flex: 1; height: auto; }
   @media (max-width: 760px) { ul { grid-template-columns: minmax(0, 1fr); } }
 `;
 const ItemLink = styled.a`
@@ -329,6 +331,15 @@ const ItemLink = styled.a`
   mark { background: transparent; color: ${GOLD}; }
   &:hover, &:focus-visible { border-color: ${GOLD}; }
   &:focus-visible { outline: 2px solid ${GOLD}; outline-offset: 2px; }
+`;
+const EffectSource = styled.a`
+  display: inline-block;
+  padding: 6px 0;
+  color: #aeb8be;
+  font-size: 0.76rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  &:hover, &:focus-visible { color: ${GOLD}; }
 `;
 const Empty = styled.div`
   padding: 36px 24px 40px;
@@ -454,11 +465,18 @@ function BeginnerPage() {
       [group.title, item.name, item.effect, item.hearty ? '든든한 사망 후 유지' : ''].join(' ').toLocaleLowerCase().includes(query)),
   })).filter(group => group.items.length);
   const itemCount = itemGroups.reduce((total, group) => total + group.items.length, 0);
+  const embellishmentGroups = beginnerEmbellishments.groups.map(group => ({
+    ...group,
+    items: group.items.filter(item => !query ||
+      ['장식', group.title, item.name, item.effect, item.requirement].join(' ').toLocaleLowerCase().includes(query)),
+  })).filter(group => group.items.length);
+  const embellishmentCount = embellishmentGroups.reduce((total, group) => total + group.items.length, 0);
+  const totalItemCount = itemCount + embellishmentCount;
   const sections = beginnerSections.map(section => ({
     ...section,
     entries: section.entries.filter(entry => !query ||
       [section.title, entry.term, entry.aliases, entry.when, entry.description, entry.tip].filter(Boolean).join(' ').toLocaleLowerCase().includes(query)),
-  })).filter(section => section.entries.length || (section.id === 'consumables' && itemCount));
+  })).filter(section => section.entries.length || (section.id === 'consumables' && itemCount) || (section.id === 'crafting' && embellishmentCount));
   const count = sections.reduce((total, section) => total + section.entries.length, 0);
   const active = useActiveSection(sections.map(section => section.id).join(' '));
   const clear = () => setSearch('');
@@ -478,7 +496,7 @@ function BeginnerPage() {
             <input id="beginner-search" type="search" value={search} onChange={event => setSearch(event.target.value)} placeholder="예: 영약, 보석, 주문제작, 장식" aria-controls="beginner-results" autoComplete="off" />
             {search ? <ClearButton type="button" onClick={clear} aria-label="검색 지우기"><X size={18} aria-hidden="true" /></ClearButton> : null}
           </SearchField>
-          <Status role="status">{query ? <>검색 결과 <strong>{count}개 설명</strong>{itemCount ? <> · 아이템 <strong>{itemCount}종</strong></> : null}</> : <><strong>{count}개 설명</strong> · 아이템 <strong>{itemCount}종</strong></>}</Status>
+          <Status role="status">{query ? <>검색 결과 <strong>{count}개 설명</strong>{totalItemCount ? <> · 아이템 <strong>{totalItemCount}종</strong></> : null}</> : <><strong>{count}개 설명</strong> · 아이템 <strong>{totalItemCount}종</strong></>}</Status>
         </SearchPanel>
       </Hero>
       <Start aria-label="상황별 바로가기">
@@ -499,7 +517,7 @@ function BeginnerPage() {
           <ContentsList>
             {sections.map(section => (
               <ContentsLink key={section.id} href={`#${section.id}`} $active={section.id === active} aria-current={section.id === active ? 'location' : undefined}>
-                {section.title}<b>{section.entries.length || (section.id === 'consumables' ? itemCount : 0)}</b>
+                {section.title}<b>{section.entries.length || (section.id === 'consumables' ? itemCount : section.id === 'crafting' ? embellishmentCount : 0)}</b>
               </ContentsLink>
             ))}
           </ContentsList>
@@ -507,7 +525,7 @@ function BeginnerPage() {
         <Results id="beginner-results">
           {query && sections.length ? (
             <ResultBar>
-              <span>“<strong>{search.trim()}</strong>” 검색 결과 · 설명 {count}개{itemCount ? ` · 아이템 ${itemCount}종` : ''}</span>
+              <span>“<strong>{search.trim()}</strong>” 검색 결과 · 설명 {count}개{totalItemCount ? ` · 아이템 ${totalItemCount}종` : ''}</span>
               <TextButton type="button" onClick={clear}><X size={14} aria-hidden="true" />검색 지우기</TextButton>
             </ResultBar>
           ) : null}
@@ -518,7 +536,7 @@ function BeginnerPage() {
                 <SectionHead>
                   <SectionIcon><Icon size={19} strokeWidth={1.75} aria-hidden="true" /></SectionIcon>
                   <h2 id={`${section.id}-title`}>{section.title}</h2>
-                  <SectionCount>{section.entries.length}개 설명{section.id === 'consumables' && itemCount ? ` · 아이템 ${itemCount}종` : ''}</SectionCount>
+                  <SectionCount>{section.entries.length}개 설명{section.id === 'consumables' && itemCount ? ` · 아이템 ${itemCount}종` : section.id === 'crafting' && embellishmentCount ? ` · 아이템 ${embellishmentCount}종` : ''}</SectionCount>
                 </SectionHead>
                 <Intro>{section.intro}</Intro>
                 {section.note ? <Note>{section.note}</Note> : null}
@@ -549,6 +567,32 @@ function BeginnerPage() {
                                 <small>{item.effect}{item.hearty ? <em> · 사망 후 유지</em> : null}</small>
                               </span>
                             </ItemLink>
+                          </li>
+                        ))}</ul>
+                      </ItemGroup>
+                    ))}
+                  </ItemCatalog>
+                ) : null}
+                {section.id === 'crafting' && embellishmentCount ? (
+                  <ItemCatalog aria-label="현재 버전 장식 목록">
+                    <h3>{beginnerEmbellishments.title}</h3>
+                    <p>{beginnerEmbellishments.intro}</p>
+                    <Note>{beginnerEmbellishments.note}</Note>
+                    {embellishmentGroups.map(group => (
+                      <ItemGroup key={group.id} data-embellishment-group={group.id}>
+                        <h4>{group.title}</h4>
+                        <p>{group.intro}</p>
+                        <ul>{group.items.map(item => (
+                          <li key={item.id}>
+                            <ItemLink href={item.source} target="_blank" rel="noreferrer" data-embellishment-id={item.id} aria-label={`${item.name} — 한국어 아이템 설명, 새 창`}>
+                              <img src={`https://wow.zamimg.com/images/wow/icons/medium/${item.icon}.jpg`} alt="" width="36" height="36" loading="lazy" />
+                              <span>
+                                <strong><Highlight text={item.name} query={query} /></strong>
+                                <small><em><Highlight text={item.requirement} query={query} /></em></small>
+                                <small><Highlight text={item.effect} query={query} /></small>
+                              </span>
+                            </ItemLink>
+                            {item.effectSource ? <EffectSource href={item.effectSource} target="_blank" rel="noreferrer">{item.name} 효과 원문 · 새 창</EffectSource> : null}
                           </li>
                         ))}</ul>
                       </ItemGroup>

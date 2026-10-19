@@ -82,6 +82,479 @@
       }
     ]
   },
+  "catalog": {
+  "title": "한밤 12.1.5 장식 목록",
+  "intro": "장식 재료 14종과 효과가 붙은 제작 장비 30종을 나눠 모았습니다. 이름·아이콘을 누르면 한국어 아이템 설명이 열립니다. 이 목록은 전문화별 추천 순위가 아닙니다.",
+  "note": "동시에 착용할 수 있는 장식됨 장비는 최대 두 개입니다. 아래 수치는 Wowhead 조회 당시의 예시이며 재료 품질·완성품 아이템 레벨에 따라 달라집니다. 세트 장비는 두 부위를 함께 착용해야 효과를 얻습니다.",
+  "groups": [
+    {
+      "id": "season-2-reagents",
+      "title": "이번 시즌에 추가된 장식 재료",
+      "intro": "무기·방어구·장신구 등 적용 가능한 제작법이 서로 다릅니다. 주문 창의 선택 재료 슬롯을 먼저 확인하세요.",
+      "items": [
+        {
+          "id": 273059,
+          "name": "추적자의 의식용 돌",
+          "icon": "inv_12_profession_blacksmithing_weightstone_green",
+          "effect": "공격 주문 및 능력 사용 시 일정 확률로 15초 동안 무작위 보조 능력치가 101만큼 증가합니다.\n\n사냥감 추적 중에는 이 효과가 50%만큼 증가합니다. 이 추가 효과는 야외에서 사냥감을 추적하는 동안에만 사용할 수 있습니다.",
+          "requirement": "한밤 대장기술 무기",
+          "source": "https://www.wowhead.com/ko/item=273059"
+        },
+        {
+          "id": 273068,
+          "name": "치장된 송곳니",
+          "icon": "inv_knife_1h_ulatek_d_01",
+          "effect": "주문 및 능력 사용 시 일정 확률로 가속 증가 대상의 생명력이 낮을수록 발동 확률 증가",
+          "requirement": "장식되지 않은 대부분의 장비를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=273068"
+        },
+        {
+          "id": 270898,
+          "name": "뱀가죽 안감",
+          "icon": "inv_121_professions_fishing_curseworm_red",
+          "effect": "공격 능력 사용 시 일정 확률로 대상에게 부식성 산을 부여해 지속 피해 다시 해당 대상에게 피해를 입히면 일정 확률로 맹독이 폭발해 주위 적에게 확산 피해",
+          "requirement": "장식되지 않은 대부분의 방어구를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=270898"
+        },
+        {
+          "id": 273065,
+          "name": "정련된 암몰라이트",
+          "icon": "jewelcrafting_cut-epic-gem_color1",
+          "effect": "치명타 및 극대화 효과 발동 시 중첩되는 치명타 및 극대화 증가 효과 부여 최대 중첩 시 치명타 및 극대화 효과가 폭발적인 피해를 입힘",
+          "requirement": "장식되지 않은 대부분의 장식을 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=273065"
+        },
+        {
+          "id": 273062,
+          "name": "똬리를 튼 뱀의 눈",
+          "icon": "inv_10_engineering_scope_color3",
+          "effect": "공격 주문 및 능력 사용 시 일정 확률로 15초 동안 무작위 보조 능력치가 67만큼 증가합니다.\n\n이 효과가 치명타 및 극대화 효과로 발동할 경우, 무작위 보조 능력치 대신 가장 높은 보조 능력치가 증가합니다.",
+          "requirement": "한밤 기계공학 총기",
+          "source": "https://www.wowhead.com/ko/item=273062"
+        }
+      ]
+    },
+    {
+      "id": "lining-reagents",
+      "title": "안감 · 결속끈 · 부적",
+      "intro": "기본 장식 효과가 없는 제작 장비에 넣는 선택 재료입니다.",
+      "items": [
+        {
+          "id": 240166,
+          "name": "비전매듭 안감",
+          "icon": "inv_12_tailoring_rare_cloth_violet_rare-cloth",
+          "effect": "주문 및 능력 사용 시 일정 확률로 마나 지룡을 끌어내 자신과 아군을 비전매듭 통찰로 강화 비전매듭 통찰은 자신과 아군의 주 능력치를 증가시킴",
+          "requirement": "장식되지 않은 대부분의 방어구를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=240166"
+        },
+        {
+          "id": 240164,
+          "name": "태양불꽃 비단 안감",
+          "icon": "inv_12_tailoring_rare_cloth_orange-_rare-cloth",
+          "effect": "주기적인 효과로 생명력을 회복하거나 피해를 입히면 15초 동안 주 능력치가 5만큼 증가합니다. 최대 5번까지 중첩됩니다.",
+          "requirement": "장식되지 않은 대부분의 방어구를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=240164",
+          "effectSource": "https://www.wowhead.com/ko/spell=1230364/%ED%83%9C%EC%96%91%EB%B6%88%EA%BD%83-%EB%B9%84%EB%8B%A8-%EC%95%88%EA%B0%90"
+        },
+        {
+          "id": 244603,
+          "name": "축복받은 천산갑 부적",
+          "icon": "inv_jewelry_necklace_139",
+          "effect": "이로운 주문 및 능력 사용 시 일정 확률로 로아 쿨지를 불러내 대상의 유연성 증가",
+          "requirement": "장식되지 않은 대부분의 장비를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=244603"
+        },
+        {
+          "id": 244607,
+          "name": "원시 포자 결속끈",
+          "icon": "inv_12_profession_leatherworking_armor_banding_green",
+          "effect": "주문 및 능력 사용 시 일정 확률로 대상에게 폭발 포자를 발사하여 아군이면 생명력을 회복시키고 적이면 피해를 입힘",
+          "requirement": "장식되지 않은 대부분의 무기와 방어구를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=244607"
+        },
+        {
+          "id": 244674,
+          "name": "포식의 결속끈",
+          "icon": "inv_12_profession_leatherworking_armor_banding_brown",
+          "effect": "공격 주문 및 능력 사용 시 일정 확률로 포식의 화살을 발사해 대상에게 피해를 입히고 가장 높은 보조 능력치 증가",
+          "requirement": "장식되지 않은 대부분의 무기와 방어구를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=244674"
+        }
+      ]
+    },
+    {
+      "id": "darkmoon-sigils",
+      "title": "다크문 인장 · 무기와 보조 장비",
+      "intro": "인장은 제작할 때 넣는 재료입니다. 아래의 ‘다크문 지배’ 장신구와는 다른 아이템입니다.",
+      "items": [
+        {
+          "id": 245875,
+          "name": "다크문 인장: 사냥",
+          "icon": "inv_12_profession_inscriptions_darkmoonsigil_bloom",
+          "effect": "주문 및 능력 사용 시 일정 확률로 대상 생명체의 유형에 따라 15초 동안 보조 능력치가 56만큼 증가합니다.",
+          "requirement": "장식되지 않은 대부분의 무기와 보조 장비를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=245875"
+        },
+        {
+          "id": 245871,
+          "name": "다크문 인장: 혈기",
+          "icon": "inv_12_profession_inscriptions_darkmoonsigil_hunt",
+          "effect": "공격 주문 및 능력 사용 시 일정 확률로 원정순찰대원의 기만 효과가 부여되어 15초 동안 가장 낮은 보조 능력치가 76만큼 증가합니다.\n\n아군 플레이어가 사망하면 15초 동안 가장 높은 보조 능력치가 63만큼 증가합니다. 이 효과는 5분에 한 번씩만 발동합니다.",
+          "requirement": "장식되지 않은 대부분의 무기와 보조 장비를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=245871"
+        },
+        {
+          "id": 245877,
+          "name": "다크문 인장: 부식",
+          "icon": "inv_12_profession_inscriptions_darkmoonsigil_rot",
+          "effect": "대상에게 부패하는 뿌리를 걸어 6초 동안 2초마다 113의 자연 피해를 입힙니다. 이 효과는 최대 10번까지 중첩됩니다. 새로운 중첩이 쌓여도 부여된 중첩이 갱신되지는 않습니다.",
+          "requirement": "장식되지 않은 대부분의 무기와 보조 장비를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=245877"
+        },
+        {
+          "id": 245873,
+          "name": "다크문 인장: 공허",
+          "icon": "inv_12_profession_inscriptions_darkmoonsigil_void",
+          "effect": "공격 주문 및 능력 사용 시 일정 확률로 자신을 공허 유리로 강화해 15초에 걸쳐 유연성이 40만큼 증가합니다. 여러 번 사용 시 효과가 중첩됩니다.",
+          "requirement": "장식되지 않은 대부분의 무기와 보조 장비를 만들 수 있는 한밤 제작법",
+          "source": "https://www.wowhead.com/ko/item=245873"
+        }
+      ]
+    },
+    {
+      "id": "built-in-plate",
+      "title": "효과가 붙은 장비 · 판금",
+      "intro": "효과가 처음부터 정해진 장비입니다. 다른 장식을 추가하는 재료가 아닙니다.",
+      "items": [
+        {
+          "id": 244463,
+          "name": "죽음의 골목 빠른발",
+          "icon": "inv_plate_questbloodelf_b_01_boot",
+          "effect": "착용 효과: 해로운 주문 및 능력 사용 시 일정 확률로 10초 동안 광역회피가 80만큼 증가합니다.",
+          "requirement": "발 · 판금",
+          "source": "https://www.wowhead.com/ko/item=244463",
+          "previewItemLevel": 246
+        }
+      ]
+    },
+    {
+      "id": "built-in-mail",
+      "title": "효과가 붙은 장비 · 사슬",
+      "intro": "‘2개 세트 효과’는 해당 세트 장비 두 개를 함께 착용해야 발동합니다. 두 부위 모두 장식 착용 제한에 포함됩니다.",
+      "items": [
+        {
+          "id": 244609,
+          "name": "세계지기의 그루터기판금",
+          "icon": "inv_chest_mail_questbloodelf_b_01",
+          "effect": "주문 및 능력 사용 시 일정 확률로 세계수에게 힘의 파편을 간청해 15초 동안 무작위 보조 능력치가 159만큼 증가합니다.",
+          "requirement": "가슴 · 사슬 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=244609",
+          "effectSource": "https://www.wowhead.com/ko/spell=1244021/%EB%BF%8C%EB%A6%AC%EA%B0%90%EC%8B%9C%EA%B4%80%EC%9D%98-%EC%98%88%EB%B3%B5",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 244610,
+          "name": "세계지기의 뿌리끌신",
+          "icon": "inv_boot_mail_questbloodelf_b_01",
+          "effect": "주문 및 능력 사용 시 일정 확률로 세계수에게 힘의 파편을 간청해 15초 동안 무작위 보조 능력치가 159만큼 증가합니다.",
+          "requirement": "발 · 사슬 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=244610",
+          "effectSource": "https://www.wowhead.com/ko/spell=1244021/%EB%BF%8C%EB%A6%AC%EA%B0%90%EC%8B%9C%EA%B4%80%EC%9D%98-%EC%98%88%EB%B3%B5",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 244611,
+          "name": "세계지기의 껍질죔쇠띠",
+          "icon": "inv_belt_mail_questbloodelf_b_01",
+          "effect": "주문 및 능력 사용 시 일정 확률로 세계수에게 힘의 파편을 간청해 15초 동안 무작위 보조 능력치가 159만큼 증가합니다.",
+          "requirement": "허리 · 사슬 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=244611",
+          "effectSource": "https://www.wowhead.com/ko/spell=1244021/%EB%BF%8C%EB%A6%AC%EA%B0%90%EC%8B%9C%EA%B4%80%EC%9D%98-%EC%98%88%EB%B3%B5",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 244602,
+          "name": "순찰대 사령관의 손장갑",
+          "icon": "inv_glove_mail_questbloodelf_b_01",
+          "effect": "착용 효과: 대상에게 피해를 입히면 일정 확률로 징표를 남기며, 엘프 순찰자가 멀리서 암습을 가할 수 있도록 합니다! 이 암습은 대상에게 6531의 물리 피해를 입힙니다.",
+          "requirement": "손 · 사슬",
+          "source": "https://www.wowhead.com/ko/item=244602",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 244605,
+          "name": "도끼 투척용 손목매듭",
+          "icon": "inv_bracer_mail_questbloodelf_b_01",
+          "effect": "주문 및 능력 사용 시 일정 확률로 전투의 열정으로 차오릅니다. 전투의 열정은 15초 동안 가속을 11만큼 증가시키며 최대 5번까지 중첩됩니다.",
+          "requirement": "손목 · 사슬",
+          "source": "https://www.wowhead.com/ko/item=244605",
+          "effectSource": "https://www.wowhead.com/ko/spell=1243871/%EC%A0%84%ED%88%AC%EC%9D%98-%EC%97%B4%EC%A0%95",
+          "previewItemLevel": 246
+        }
+      ]
+    },
+    {
+      "id": "built-in-leather",
+      "title": "효과가 붙은 장비 · 가죽",
+      "intro": "같은 세트 이름이 적힌 장비를 조합하세요. 세트가 다른 장비를 하나씩 착용하면 2개 세트 효과를 받지 못합니다.",
+      "items": [
+        {
+          "id": 244601,
+          "name": "세계수 뿌리발등싸개",
+          "icon": "inv_boot_leather_questbloodelf_b_01",
+          "effect": "주문 및 능력 사용 시 일정 확률로 세계혼과 공명하여 주위에 아제로스의 힘 보주를 생성합니다. 이 보주를 흡수하면 강화되어 15초 동안 가장 높은 보조 능력치가 75만큼 증가합니다.",
+          "requirement": "발 · 가죽",
+          "source": "https://www.wowhead.com/ko/item=244601",
+          "effectSource": "https://www.wowhead.com/ko/spell=1243903/%EC%95%84%EC%A0%9C%EB%A1%9C%EC%8A%A4%EC%9D%98-%ED%9E%98",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 244614,
+          "name": "골목 방랑자의 신속손아귀",
+          "icon": "inv_glove_leather_questbloodelf_b_01",
+          "effect": "전투 중 30초마다 다음 치명타 및 극대화 효과를 발휘할 때 우위를 얻습니다. 모든 상황이 다르며 우위도 마찬가지로 다릅니다. 치유의 명약이나 독 묻은 단검, 그 외 온갖 마법 밀수품을 두루두루 활용합니다. (30초 재사용 대기시간)",
+          "requirement": "손 · 가죽 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=244614",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 244613,
+          "name": "골목 방랑자의 보험",
+          "icon": "inv_chest_leather_questbloodelf_b_01",
+          "effect": "전투 중 30초마다 다음 치명타 및 극대화 효과를 발휘할 때 우위를 얻습니다. 모든 상황이 다르며 우위도 마찬가지로 다릅니다. 치유의 명약이나 독 묻은 단검, 그 외 온갖 마법 밀수품을 두루두루 활용합니다. (30초 재사용 대기시간)",
+          "requirement": "가슴 · 가죽 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=244613",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 244612,
+          "name": "골목 방랑자의 굴절띠",
+          "icon": "inv_bracer_leather_questbloodelf_b_01",
+          "effect": "전투 중 30초마다 다음 치명타 및 극대화 효과를 발휘할 때 우위를 얻습니다. 모든 상황이 다르며 우위도 마찬가지로 다릅니다. 치유의 명약이나 독 묻은 단검, 그 외 온갖 마법 밀수품을 두루두루 활용합니다. (30초 재사용 대기시간)",
+          "requirement": "손목 · 가죽 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=244612",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 244606,
+          "name": "사술매듭 가닥",
+          "icon": "inv_belt_leather_questbloodelf_b_01",
+          "effect": "착용 효과: 공격 주문 및 능력 사용 시 일정 확률로 대상에게 괴저 사술을 걸어 10초에 걸쳐 1610의 자연 피해를 입힙니다.\n\n이 사술은 피해를 입힐 때마다 최초 대상 주위의 적에게로 전이되며, 최대 5번까지 전이됩니다.",
+          "requirement": "허리 · 가죽",
+          "source": "https://www.wowhead.com/ko/item=244606",
+          "previewItemLevel": 246
+        }
+      ]
+    },
+    {
+      "id": "built-in-cloth",
+      "title": "효과가 붙은 장비 · 천과 재봉술 망토",
+      "intro": "태양불꽃·비전매듭 세트는 각각 두 부위가 필요합니다. 허리 장비는 세트 효과와 별개인 자체 효과를 가집니다.",
+      "items": [
+        {
+          "id": 239659,
+          "name": "태양불꽃 발보호대",
+          "icon": "inv_boot_cloth_questbloodelf_b_01",
+          "effect": "생명력이 80% 이상일 때 가속이 103만큼 증가합니다.",
+          "requirement": "발 · 천 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=239659",
+          "effectSource": "https://www.wowhead.com/ko/spell=1270977/%ED%83%9C%EC%96%91%EB%B6%88%EA%BD%83-%EC%9D%98%EB%B3%B5",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 239657,
+          "name": "태양불꽃 팔보호구",
+          "icon": "inv_bracer_cloth_questbloodelf_b_01",
+          "effect": "생명력이 80% 이상일 때 가속이 103만큼 증가합니다.",
+          "requirement": "손목 · 천 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=239657",
+          "effectSource": "https://www.wowhead.com/ko/spell=1270977/%ED%83%9C%EC%96%91%EB%B6%88%EA%BD%83-%EC%9D%98%EB%B3%B5",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 239658,
+          "name": "태양불꽃 망토",
+          "icon": "inv_cape_firelands_fireset_d_01",
+          "effect": "생명력이 80% 이상일 때 가속이 103만큼 증가합니다.",
+          "requirement": "등 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=239658",
+          "effectSource": "https://www.wowhead.com/ko/spell=1270977/%ED%83%9C%EC%96%91%EB%B6%88%EA%BD%83-%EC%9D%98%EB%B3%B5",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 239663,
+          "name": "태양불꽃 장식띠",
+          "icon": "inv_belt_cloth_questbloodelf_b_01",
+          "effect": "착용 효과: 주문 및 능력 사용 시 일정 확률로 현재 대상에게 3707의 광휘 피해를 입힙니다.",
+          "requirement": "허리 · 천",
+          "source": "https://www.wowhead.com/ko/item=239663",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 239662,
+          "name": "비전매듭 발보호대",
+          "icon": "inv_boot_cloth_questbloodelf_b_01",
+          "effect": "생명력이 80% 이상일 때 치명타 및 극대화가 103만큼 증가합니다.",
+          "requirement": "발 · 천 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=239662",
+          "effectSource": "https://www.wowhead.com/ko/spell=1241262/%EB%B9%84%EC%A0%84%EB%A7%A4%EB%93%AD-%EC%9D%98%EB%B3%B5",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 239660,
+          "name": "비전매듭 팔보호구",
+          "icon": "inv_bracer_cloth_questbloodelf_b_01",
+          "effect": "생명력이 80% 이상일 때 치명타 및 극대화가 103만큼 증가합니다.",
+          "requirement": "손목 · 천 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=239660",
+          "effectSource": "https://www.wowhead.com/ko/spell=1241262/%EB%B9%84%EC%A0%84%EB%A7%A4%EB%93%AD-%EC%9D%98%EB%B3%B5",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 239661,
+          "name": "비전매듭 망토",
+          "icon": "inv_cape_cloth_questbloodelf_b_01",
+          "effect": "생명력이 80% 이상일 때 치명타 및 극대화가 103만큼 증가합니다.",
+          "requirement": "등 · 2개 세트 효과",
+          "source": "https://www.wowhead.com/ko/item=239661",
+          "effectSource": "https://www.wowhead.com/ko/spell=1241262/%EB%B9%84%EC%A0%84%EB%A7%A4%EB%93%AD-%EC%9D%98%EB%B3%B5",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 239664,
+          "name": "비전매듭 장식끈",
+          "icon": "inv_belt_cloth_questbloodelf_b_01",
+          "effect": "치유 및 공격 주문 시전 시 일정 확률로 12초 동안 특화가 136만큼 증가합니다.",
+          "requirement": "허리 · 천",
+          "source": "https://www.wowhead.com/ko/item=239664",
+          "effectSource": "https://www.wowhead.com/ko/spell=1241529/%EB%B9%84%EC%A0%84%EB%A7%A4%EB%93%AD-%EC%9E%A5%EC%8B%9D%EB%81%88",
+          "previewItemLevel": 246
+        }
+      ]
+    },
+    {
+      "id": "built-in-jewelry",
+      "title": "효과가 붙은 장비 · 목걸이와 반지",
+      "intro": "보석 색상 종류와 연계되는 효과도 있으므로 아이템 설명을 함께 확인하세요.",
+      "items": [
+        {
+          "id": 251073,
+          "name": "공허석 보호막 배열기",
+          "icon": "inv_12_profession_jewelcrafting_necklace3_silver",
+        "effect": "사용 효과: 배열기를 활성화해 다음 10초 동안 71597의 피해를 흡수하는 공허석 방벽을 생성합니다.\n\n홈에 장착된 보석 색상 종류 하나당 방벽이 1%만큼 추가로 강화됩니다. (3 분 재사용 대기시간)",
+          "requirement": "목",
+          "source": "https://www.wowhead.com/ko/item=251073",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 241139,
+          "name": "탈라시안 불사조 변환 장치",
+          "icon": "inv_12_profession_jewelcrafting_necklace1_gold",
+          "effect": "착용 효과: 주문 및 능력 사용 시 일정 확률로 대상을 불사조의 불길로 휘감습니다.\n\n대상이 아군이면 10초에 걸쳐 11740만큼 치유합니다. 대상이 적이면 10초에 걸쳐 7820의 화염 피해를 입힙니다.\n\n홈에 장착된 보석의 색상 종류 하나당 불길의 효과가 1%만큼 증가합니다.",
+          "requirement": "목",
+          "source": "https://www.wowhead.com/ko/item=241139",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 241140,
+          "name": "아제로스의 축복 인장",
+          "icon": "inv_12_profession_jewelcrafting_ring1_gold",
+          "effect": "주문 및 능력 사용 시 일정 확률로 인장이 세계혼과 공명하여 15초 동안 모든 보조 능력치가 21만큼 증가합니다.\n\n홈에 장착된 보석의 각 색상 종류는 이 은혜로 얻는 관련 보조 능력치 증가 효과를 1%만큼 증가시킵니다.",
+          "requirement": "손가락",
+          "source": "https://www.wowhead.com/ko/item=241140",
+          "effectSource": "https://www.wowhead.com/ko/spell=1251902/%EC%95%84%EC%A0%9C%EB%A1%9C%EC%8A%A4%EC%9D%98-%EC%B6%95%EB%B3%B5-%EC%9D%B8%EC%9E%A5",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 251513,
+          "name": "로아 신봉자의 고리",
+          "icon": "inv_12_profession_jewelcrafting_ring3_silver",
+          "effect": "착용 효과: 공격 주문 및 능력 사용 시 일정 확률로 고리가 충전되어 로아의 화신을 불러 전투를 돕게 합니다.\n\n장비 홈에 장착된 보석 색상 종류에 따라 서로 다른 로아를 소환합니다. 적에게 피해를 입히거나 일시적으로 힘을 얻는 등 다양한 효과를 발휘합니다.",
+          "requirement": "손가락",
+          "source": "https://www.wowhead.com/ko/item=251513",
+          "previewItemLevel": 246
+        }
+      ]
+    },
+    {
+      "id": "built-in-trinkets",
+      "title": "효과가 붙은 장비 · 장신구",
+      "intro": "장신구도 ‘장식됨’ 제한에 포함됩니다. 다크문 인장 재료와 다크문 지배 장신구를 혼동하지 마세요.",
+      "items": [
+        {
+          "id": 241340,
+          "name": "마법학자의 연금술사 돌",
+          "icon": "inv_12_profession_alchemy_alchemists_stone",
+          "effect": "착용 효과: 생명력을 회복시키거나 피해를 입힐 때 일정 확률로 15초 동안 힘, 민첩성, 지능 중 가장 높은 능력치가 163만큼 증가합니다.\n\n착용 효과: 착용자의 치유 및 마나 물약 복용 효과가 40%만큼 증가합니다. 이 효과는 중복 적용되지 않습니다.",
+          "requirement": "장신구",
+          "source": "https://www.wowhead.com/ko/item=241340",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 246307,
+          "name": "다크문 지배: 공허",
+          "icon": "inv_12_profession_inscriptions_darkmoondominions_void",
+          "effect": "착용 효과: 공격 주문 및 능력 사용 시 일정 확률로 자신을 공허 유리로 강화해 15초에 걸쳐 유연성이 105만큼 증가합니다. 여러 번 사용 시 효과가 중첩됩니다.\n\n이 효과는 다크문 인장: 공허로 강화됩니다.",
+          "requirement": "장신구",
+          "source": "https://www.wowhead.com/ko/item=246307",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 246306,
+          "name": "다크문 지배: 부식",
+          "icon": "inv_12_profession_inscriptions_darkmoondominions_rot",
+          "effect": "착용 효과: 대상에게 부패하는 뿌리를 걸어 6초 동안 2초마다 214의 자연 피해를 입힙니다. 이 효과는 최대 10번까지 중첩됩니다. 새로운 중첩이 쌓여도 부여된 중첩이 갱신되지는 않습니다.\n\n이 효과는 다크문 인장: 부식으로 강화됩니다.",
+          "requirement": "장신구",
+          "source": "https://www.wowhead.com/ko/item=246306",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 246304,
+          "name": "다크문 지배: 사냥",
+          "icon": "inv_12_profession_inscriptions_darkmoondominions_bloom",
+          "effect": "착용 효과: 주문 및 능력 사용 시 일정 확률로 대상 생명체의 유형에 따라 15초 동안 보조 능력치가 144만큼 증가합니다.\n\n이 효과는 다크문 인장: 사냥으로 강화됩니다.",
+          "requirement": "장신구",
+          "source": "https://www.wowhead.com/ko/item=246304",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 246305,
+          "name": "다크문 지배: 혈기",
+          "icon": "inv_12_profession_inscriptions_darkmoondominions_hunt",
+          "effect": "착용 효과: 공격 주문 및 능력 사용 시 일정 확률로 원정순찰대원의 기만 효과가 부여되어 15초 동안 가장 낮은 보조 능력치가 379만큼 증가합니다.\n\n아군 플레이어가 사망하면 15초 동안 가장 높은 보조 능력치가 232만큼 증가합니다. 이 효과는 5분에 한 번씩만 발동합니다.\n\n이 효과는 다크문 인장: 혈기로 강화됩니다.",
+          "requirement": "장신구",
+          "source": "https://www.wowhead.com/ko/item=246305",
+          "previewItemLevel": 246
+        }
+      ]
+    },
+    {
+      "id": "built-in-weapons",
+      "title": "효과가 붙은 장비 · 무기와 방패",
+      "intro": "해당 무기·방패를 사용할 수 있는 직업인지 확인하세요.",
+      "items": [
+        {
+          "id": 244679,
+          "name": "죽음의 골목 낚시 바늘",
+          "icon": "inv_knife_1h_questbloodelf_b_02",
+          "effect": "착용 효과: 해로운 주문 및 능력 사용 시 일정 확률로 대상에게 출혈을 일으켜 10초에 걸쳐 2초마다 846의 물리 피해를 입힙니다.",
+          "requirement": "한손 장비 · 단검",
+          "source": "https://www.wowhead.com/ko/item=244679",
+          "previewItemLevel": 246
+        },
+        {
+          "id": 244472,
+          "name": "기사단장의 방책",
+          "icon": "inv_shield_1h_questbloodelf_b_01",
+          "effect": "착용 효과: 빛의 보호를 받습니다. 공격을 받으면 일정 확률로 방책의 보호가 부여되어 1192의 피해를 흡수하는 보호막을 얻습니다. 6초 동안 지속됩니다.\n\n보호막이 만료되기 전에 파괴되면 마법이 방책의 회개 분출을 일으켜 주위의 적에게 1192의 신성 피해를 입힙니다.",
+          "requirement": "보조장비 · 방패",
+          "source": "https://www.wowhead.com/ko/item=244472",
+          "previewItemLevel": 246
+        }
+      ]
+    }
+  ]
+},
   "sources": [
     {
       "title": "주문제작 신청과 공개·개인·길드 주문",
