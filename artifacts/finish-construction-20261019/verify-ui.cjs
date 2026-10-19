@@ -4,7 +4,9 @@ const assert = require('node:assert/strict');
 const {chromium} = require('playwright');
 const {loadRegistry} = require('../book-rebuild/lib.cjs');
 const decisions = require('./decisions.json');
-const [base = 'http://127.0.0.1:4410', folder = 'choices'] = process.argv.slice(2);
+const [base = 'http://127.0.0.1:4410', folder = 'choices', ...only] = process.argv.slice(2);
+const selected = Object.entries(decisions).filter(([id]) => !only.length || only.includes(id));
+assert(selected.length > 0);
 const out = path.join(__dirname, folder);
 fs.mkdirSync(out, {recursive: true});
 (async () => {
@@ -20,7 +22,7 @@ fs.mkdirSync(out, {recursive: true});
       assert.equal(await page.getByText('공사 중', {exact:true}).count(), 0);
       assert(!(await page.locator('body').innerText()).includes('전환·검수 중'));
       await page.screenshot({path: path.join(out, `list-${width}.png`)});
-      for (const [id, d] of Object.entries(decisions)) {
+      for (const [id, d] of selected) {
         const spec = loadRegistry().find(x => x.id === id);
         await page.goto(base + spec.path, {waitUntil: 'networkidle'});
         const p = page.getByText(d.choice.replaceAll('두 분기', '두 선택지'), {exact:true});

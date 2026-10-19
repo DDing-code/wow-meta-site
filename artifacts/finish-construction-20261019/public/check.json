@@ -1,0 +1,74 @@
+[
+  {
+    "id": "monk-brewmaster",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "druid-balance",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "monk-brewmaster",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "druid-balance",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "monk-brewmaster",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "druid-balance",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-19T06:34:04.194Z",
+  "production": "https://wowmeta.vercel.app",
+  "deployment": "https://wowmeta-n54cg395p-d2jks-projects.vercel.app",
+  "contentCommit": "053a203c",
+  "publicationCommit": "20b380cc",
+  "kbCommit": "1963135",
+  "files": [
+    {
+      "file": "asset-manifest.json",
+      "status": 200,
+      "sha256": "6b531428493bf2d9fcc2a612b68a92d176cbe46b65c157e87bcd14ac7359d4da"
+    },
+    {
+      "file": "assets/spec-icons-white-v1.png",
+      "status": 200,
+      "sha256": "6966906fbc7651f7e83c3a754fa21d3be1fb3bec33adc3489e60f1597109cbe2"
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "sha256": "2a5b0eaab1f0005b134bb7675f6997c9def5d8f29bb3d4b9a7de7c2479eae44c"
+    },
+    {
+      "file": "static/css/main.1aebb9d9.css",
+      "status": 200,
+      "sha256": "15c2a0dee5f917cd06258438e0d278855e3e2ea04f57b3cf006dfa02a56d7f3d"
+    },
+    {
+      "file": "static/js/main.11a66fdd.js",
+      "status": 200,
+      "sha256": "08b0c4780a0bc358ebf961c8ac16b487fa3bd6fc5674565bb529b3a78690f915"
+    },
+    {
+      "file": "static/js/main.11a66fdd.js.LICENSE.txt",
+      "status": 200,
+      "sha256": "e6ef74437c65056d075e949c510f52612350b83d7b09c4e6a4bcdad1a0e58ec7"
+    }
+  ],
+  "deploymentId": "dpl_Bwv6A11CBDBkrxcGoYLSEZ1Z9jbF",
+  "status": "Ready",
+  "publicScreens": 9,
+  "list": {
+    "cards": 40,
+    "construction": 0,
+    "widths": [
+      320,
+      390,
+      1440
+    ]
+  }
+}
