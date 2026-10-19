@@ -8,6 +8,8 @@
 - 최종 전체 검증 9단계 통과(`validate.log`), 소스맵 없는 빌드 `main.3c569621.js` 성공(`build.log`), 기존 회귀 검사 19개 모두 통과(`regressions.json`). `scripts/verify-guide-wrapping.cjs`를 추가해 실제 글자 위치로 조사·가운뎃점·한 글자 제목·이름표 간격을 검사합니다. 관련 11개 가이드 × 320·390·1440px 33개 화면에서 모두 통과했습니다(`local/wrapping-check.json`). 기존 검사기 두 개는 변경된 JSX에서도 이름·아이콘·비활성 스킬 처리를 계속 검사하도록 맞췄습니다.
 - 증강·신성 사제·보존을 ODDIN 브라우저에서 실제로 열고 수정 부위를 직접 봤습니다. 해당 흐름도·타임라인 캡처는 `artifacts/goal-12.1.5-r9/local/`입니다. 가운뎃점 관련 혈기·냉기 죽음의 기사·수호·복수·분노·암살·고양·생존도 같은 세 폭으로 검사하고 대표 화면을 직접 열어 봤습니다. 기존 전수 캡처 도구로 관련 33개 화면 모두 넘침·깨진 그림·겹침·빈칸·꺾인 제목·아이콘 갈라짐·화면 오류 0을 확인했습니다(`screens/ui-check.json`, 캡처 `screens/*.png`).
 - 공사 중 13개는 이전 근거 부족·자료 충돌 판정을 그대로 유지합니다. 목록은 7·8라운드 기록 및 `validate-guide-publication.cjs`의 고정 목록과 같습니다. 전체 공사 중 해제는 아직 충족되지 않았으며, 추가 근거가 확보될 때 재판단합니다.
+- 배포: 수정 커밋 `7d3ddd35`를 main에 푸시하고, 공개 파일 6개만 Vercel 운영 배포 `dpl_5vPqwv8Foo6xD2nvjoUgvwASjPYa`로 올렸습니다(Ready, 별칭 https://wowmeta.vercel.app). 공개 사이트가 `main.3c569621.js`를 제공하며 6개 파일 해시가 빌드본과 모두 같습니다. 소스맵은 403이고 환경 파일은 배포 목록에 없습니다(`public-list/check.json`, `release-proof.json`).
+- 공개 재검수: 11개 × 세 폭 33개 화면의 글자 위치 검사가 모두 통과했습니다(`public/wrapping-check.json`). 증강 320·390의 조사, 신성 사제 320의 제목, 보존 1440의 간격을 공개 캡처로 다시 직접 확인했습니다(`public/evoker-augmentation-320.png`, `public/evoker-augmentation-390.png`, `public/priest-holy-320.png`, `public/evoker-preservation-1440.png`). 목록도 320·390·1440에서 카드 40개·공사 중 13개·12.1.5 안내·넘침/오류 0이며, 이전 운영판의 공사 중 13개 경로와 정확히 같습니다. ODDIN 브라우저에서도 공개 목록과 증강 수정 부위를 확인했습니다. 이번 라운드의 화면 손질·검증·푸시·배포·공개 확인은 완료했고, 13개의 전체 검수 완료/공사 중 해제는 보류입니다.
 
 ## 2026-10-19 개념서 리빌딩 7·8라운드 — 공사 중 해제 반영·최종 120화면 검수·배포
 

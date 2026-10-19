@@ -1,0 +1,184 @@
+{
+  "base": "https://wowmeta.vercel.app",
+  "checkedAt": "2026-10-19T06:08:30.909Z",
+  "files": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "local": "ae471b49f1119d8f",
+      "remote": "ae471b49f1119d8f",
+      "same": true
+    },
+    {
+      "file": "asset-manifest.json",
+      "status": 200,
+      "local": "ab41943745ed8ce3",
+      "remote": "ab41943745ed8ce3",
+      "same": true
+    },
+    {
+      "file": "assets/spec-icons-white-v1.png",
+      "status": 200,
+      "local": "6966906fbc7651f7",
+      "remote": "6966906fbc7651f7",
+      "same": true
+    },
+    {
+      "file": "static/js/main.3c569621.js.LICENSE.txt",
+      "status": 200,
+      "local": "e6ef74437c65056d",
+      "remote": "e6ef74437c65056d",
+      "same": true
+    },
+    {
+      "file": "static/css/main.1aebb9d9.css",
+      "status": 200,
+      "local": "15c2a0dee5f917cd",
+      "remote": "15c2a0dee5f917cd",
+      "same": true
+    },
+    {
+      "file": "static/js/main.3c569621.js",
+      "status": 200,
+      "local": "2346dd550f809027",
+      "remote": "2346dd550f809027",
+      "same": true
+    }
+  ],
+  "list": [
+    {
+      "width": 320,
+      "notice": "공사 중 표시가 있는 13개 가이드는 12.1.5 전환·검수 중입니다. 이전 패치 내용이 남아 있을 수 있습니다.",
+      "cards": 40,
+      "construction": 13,
+      "partialPaths": [
+        "/guide/warrior/fury",
+        "/guide/paladin/holy",
+        "/guide/hunter/survival",
+        "/guide/rogue/assassination",
+        "/guide/rogue/subtlety",
+        "/guide/shaman/enhancement",
+        "/guide/mage/fire",
+        "/guide/mage/frost",
+        "/guide/monk/brewmaster",
+        "/guide/monk/windwalker",
+        "/guide/druid/feral",
+        "/guide/druid/balance",
+        "/guide/demonhunter/havoc"
+      ],
+      "overflow": false,
+      "bundle": "https://wowmeta.vercel.app/static/js/main.3c569621.js",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "notice": "공사 중 표시가 있는 13개 가이드는 12.1.5 전환·검수 중입니다. 이전 패치 내용이 남아 있을 수 있습니다.",
+      "cards": 40,
+      "construction": 13,
+      "partialPaths": [
+        "/guide/warrior/fury",
+        "/guide/paladin/holy",
+        "/guide/hunter/survival",
+        "/guide/rogue/assassination",
+        "/guide/rogue/subtlety",
+        "/guide/shaman/enhancement",
+        "/guide/mage/fire",
+        "/guide/mage/frost",
+        "/guide/monk/brewmaster",
+        "/guide/monk/windwalker",
+        "/guide/druid/feral",
+        "/guide/druid/balance",
+        "/guide/demonhunter/havoc"
+      ],
+      "overflow": false,
+      "bundle": "https://wowmeta.vercel.app/static/js/main.3c569621.js",
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "notice": "공사 중 표시가 있는 13개 가이드는 12.1.5 전환·검수 중입니다. 이전 패치 내용이 남아 있을 수 있습니다.",
+      "cards": 40,
+      "construction": 13,
+      "partialPaths": [
+        "/guide/warrior/fury",
+        "/guide/paladin/holy",
+        "/guide/hunter/survival",
+        "/guide/rogue/assassination",
+        "/guide/rogue/subtlety",
+        "/guide/shaman/enhancement",
+        "/guide/mage/fire",
+        "/guide/mage/frost",
+        "/guide/monk/brewmaster",
+        "/guide/monk/windwalker",
+        "/guide/druid/feral",
+        "/guide/druid/balance",
+        "/guide/demonhunter/havoc"
+      ],
+      "overflow": false,
+      "bundle": "https://wowmeta.vercel.app/static/js/main.3c569621.js",
+      "errors": []
+    }
+  ],
+  "phrases": [
+    {
+      "id": "evoker-devastation",
+      "width": 390,
+      "text": "단일 네임드는 비늘사령관",
+      "found": true,
+      "boss": 0,
+      "named": 29,
+      "badge": "12.1.5 · 실전 심화 공략"
+    },
+    {
+      "id": "evoker-devastation",
+      "width": 1440,
+      "text": "단일 네임드는 비늘사령관",
+      "found": true,
+      "boss": 0,
+      "named": 29,
+      "badge": "12.1.5 · 실전 심화 공략"
+    },
+    {
+      "id": "hunter-marksmanship",
+      "width": 390,
+      "text": "네임드가 머무를 위치에 사용",
+      "found": true,
+      "boss": 0,
+      "named": 38,
+      "badge": "12.1.5 · 운용 가이드"
+    },
+    {
+      "id": "hunter-marksmanship",
+      "width": 1440,
+      "text": "네임드가 머무를 위치에 사용",
+      "found": true,
+      "boss": 0,
+      "named": 38,
+      "badge": "12.1.5 · 운용 가이드"
+    },
+    {
+      "id": "paladin-protection",
+      "width": 390,
+      "text": "레이드는 네임드에게 실제로 붙어",
+      "found": true,
+      "boss": 0,
+      "named": 17,
+      "badge": "12.1.5 · 실전 심화 공략"
+    },
+    {
+      "id": "paladin-protection",
+      "width": 1440,
+      "text": "레이드는 네임드에게 실제로 붙어",
+      "found": true,
+      "boss": 0,
+      "named": 17,
+      "badge": "12.1.5 · 실전 심화 공략"
+    }
+  ],
+  "sourceMap": {
+    "status": 403,
+    "isSourceMap": false
+  },
+  "sourceMapStatus": "403 소스맵 아님",
+  "bundle": "/static/js/main.3c569621.js"
+}

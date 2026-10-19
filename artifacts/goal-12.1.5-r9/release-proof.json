@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-10-19T06:10:17.506Z",
+  "codeCommit": "7d3ddd35ecd4bb6df5adfdb019374b409f04fd3e",
+  "deployment": {
+    "id": "dpl_5vPqwv8Foo6xD2nvjoUgvwASjPYa",
+    "status": "Ready",
+    "target": "production",
+    "url": "https://wowmeta-chkhhzbyc-d2jks-projects.vercel.app",
+    "alias": "https://wowmeta.vercel.app"
+  },
+  "bundle": "/static/js/main.3c569621.js",
+  "publicFiles": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "local": "ae471b49f1119d8f",
+      "remote": "ae471b49f1119d8f",
+      "same": true
+    },
+    {
+      "file": "asset-manifest.json",
+      "status": 200,
+      "local": "ab41943745ed8ce3",
+      "remote": "ab41943745ed8ce3",
+      "same": true
+    },
+    {
+      "file": "assets/spec-icons-white-v1.png",
+      "status": 200,
+      "local": "6966906fbc7651f7",
+      "remote": "6966906fbc7651f7",
+      "same": true
+    },
+    {
+      "file": "static/js/main.3c569621.js.LICENSE.txt",
+      "status": 200,
+      "local": "e6ef74437c65056d",
+      "remote": "e6ef74437c65056d",
+      "same": true
+    },
+    {
+      "file": "static/css/main.1aebb9d9.css",
+      "status": 200,
+      "local": "15c2a0dee5f917cd",
+      "remote": "15c2a0dee5f917cd",
+      "same": true
+    },
+    {
+      "file": "static/js/main.3c569621.js",
+      "status": 200,
+      "local": "2346dd550f809027",
+      "remote": "2346dd550f809027",
+      "same": true
+    }
+  ],
+  "sourceMap": {
+    "status": 403,
+    "isSourceMap": false
+  },
+  "publicWrappingScreens": 33,
+  "construction": [
+    {
+      "width": 320,
+      "count": 13,
+      "paths": [
+        "/guide/warrior/fury",
+        "/guide/paladin/holy",
+        "/guide/hunter/survival",
+        "/guide/rogue/assassination",
+        "/guide/rogue/subtlety",
+        "/guide/shaman/enhancement",
+        "/guide/mage/fire",
+        "/guide/mage/frost",
+        "/guide/monk/brewmaster",
+        "/guide/monk/windwalker",
+        "/guide/druid/feral",
+        "/guide/druid/balance",
+        "/guide/demonhunter/havoc"
+      ]
+    },
+    {
+      "width": 390,
+      "count": 13,
+      "paths": [
+        "/guide/warrior/fury",
+        "/guide/paladin/holy",
+        "/guide/hunter/survival",
+        "/guide/rogue/assassination",
+        "/guide/rogue/subtlety",
+        "/guide/shaman/enhancement",
+        "/guide/mage/fire",
+        "/guide/mage/frost",
+        "/guide/monk/brewmaster",
+        "/guide/monk/windwalker",
+        "/guide/druid/feral",
+        "/guide/druid/balance",
+        "/guide/demonhunter/havoc"
+      ]
+    },
+    {
+      "width": 1440,
+      "count": 13,
+      "paths": [
+        "/guide/warrior/fury",
+        "/guide/paladin/holy",
+        "/guide/hunter/survival",
+        "/guide/rogue/assassination",
+        "/guide/rogue/subtlety",
+        "/guide/shaman/enhancement",
+        "/guide/mage/fire",
+        "/guide/mage/frost",
+        "/guide/monk/brewmaster",
+        "/guide/monk/windwalker",
+        "/guide/druid/feral",
+        "/guide/druid/balance",
+        "/guide/demonhunter/havoc"
+      ]
+    }
+  ],
+  "previousConstructionPathsUnchanged": true
+}
