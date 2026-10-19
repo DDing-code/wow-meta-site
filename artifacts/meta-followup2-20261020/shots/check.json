@@ -1,0 +1,179 @@
+[
+ {
+  "id": "warrior-protection",
+  "width": 320,
+  "errors": [],
+  "shots": [
+   {
+    "text": "천둥군주를 골랐다면 범위가 15미터로",
+    "found": true,
+    "file": "warrior-protection-320-field.png",
+    "overflow": false,
+    "broken": 0
+   },
+   {
+    "text": "30초 뒤에 돌아온다고 장담할 수 없으니",
+    "found": true,
+    "file": "warrior-protection-320-example.png",
+    "overflow": false,
+    "broken": 0
+   },
+   {
+    "text": "천둥군주를 골랐다면 천둥벼락이 쿨다운을 줄여",
+    "found": true,
+    "file": "warrior-protection-320-quiz.png",
+    "overflow": false,
+    "broken": 0
+   },
+   {
+    "text": "천둥군주면 천둥벼락마다 줄어듦",
+    "found": true,
+    "file": "warrior-protection-320-diagram.png",
+    "overflow": false,
+    "broken": 0
+   }
+  ],
+  "thunderlordLinks": 7,
+  "docOverflow": false
+ },
+ {
+  "id": "demonhunter-vengeance",
+  "width": 320,
+  "errors": [],
+  "shots": [
+   {
+    "text": "멀리서 진입할 때",
+    "found": true,
+    "file": "demonhunter-vengeance-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "isIcon": true
+   },
+   {
+    "text": "궤멸자 오프닝 탭",
+    "found": true,
+    "file": "demonhunter-vengeance-320-hero-opener.png",
+    "overflow": false
+   }
+  ],
+  "docOverflow": false
+ },
+ {
+  "id": "warrior-protection",
+  "width": 390,
+  "errors": [],
+  "shots": [
+   {
+    "text": "천둥군주를 골랐다면 범위가 15미터로",
+    "found": true,
+    "file": "warrior-protection-390-field.png",
+    "overflow": false,
+    "broken": 0
+   },
+   {
+    "text": "30초 뒤에 돌아온다고 장담할 수 없으니",
+    "found": true,
+    "file": "warrior-protection-390-example.png",
+    "overflow": false,
+    "broken": 0
+   },
+   {
+    "text": "천둥군주를 골랐다면 천둥벼락이 쿨다운을 줄여",
+    "found": true,
+    "file": "warrior-protection-390-quiz.png",
+    "overflow": false,
+    "broken": 0
+   },
+   {
+    "text": "천둥군주면 천둥벼락마다 줄어듦",
+    "found": true,
+    "file": "warrior-protection-390-diagram.png",
+    "overflow": false,
+    "broken": 0
+   }
+  ],
+  "thunderlordLinks": 7,
+  "docOverflow": false
+ },
+ {
+  "id": "demonhunter-vengeance",
+  "width": 390,
+  "errors": [],
+  "shots": [
+   {
+    "text": "멀리서 진입할 때",
+    "found": true,
+    "file": "demonhunter-vengeance-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "isIcon": true
+   },
+   {
+    "text": "궤멸자 오프닝 탭",
+    "found": true,
+    "file": "demonhunter-vengeance-390-hero-opener.png",
+    "overflow": false
+   }
+  ],
+  "docOverflow": false
+ },
+ {
+  "id": "warrior-protection",
+  "width": 1440,
+  "errors": [],
+  "shots": [
+   {
+    "text": "천둥군주를 골랐다면 범위가 15미터로",
+    "found": true,
+    "file": "warrior-protection-1440-field.png",
+    "overflow": false,
+    "broken": 0
+   },
+   {
+    "text": "30초 뒤에 돌아온다고 장담할 수 없으니",
+    "found": true,
+    "file": "warrior-protection-1440-example.png",
+    "overflow": false,
+    "broken": 0
+   },
+   {
+    "text": "천둥군주를 골랐다면 천둥벼락이 쿨다운을 줄여",
+    "found": true,
+    "file": "warrior-protection-1440-quiz.png",
+    "overflow": false,
+    "broken": 0
+   },
+   {
+    "text": "천둥군주면 천둥벼락마다 줄어듦",
+    "found": true,
+    "file": "warrior-protection-1440-diagram.png",
+    "overflow": false,
+    "broken": 0
+   }
+  ],
+  "thunderlordLinks": 7,
+  "docOverflow": false
+ },
+ {
+  "id": "demonhunter-vengeance",
+  "width": 1440,
+  "errors": [],
+  "shots": [
+   {
+    "text": "멀리서 진입할 때",
+    "found": true,
+    "file": "demonhunter-vengeance-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "isIcon": true
+   },
+   {
+    "text": "궤멸자 오프닝 탭",
+    "found": true,
+    "file": "demonhunter-vengeance-1440-hero-opener.png",
+    "overflow": false
+   }
+  ],
+  "docOverflow": false
+ }
+]
