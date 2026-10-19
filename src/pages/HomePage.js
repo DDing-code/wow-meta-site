@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { BookOpen, Database, Newspaper } from 'lucide-react';
+import { ArrowRight, BookOpen, Compass, Database, Newspaper } from 'lucide-react';
 
 const Page = styled.div`
   width: min(1080px, calc(100% - 40px));
@@ -84,14 +84,29 @@ const Section = styled.section`
 `;
 
 const BeginnerLink = styled(Link)`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 18px;
-  padding: 18px 0;
-  border-bottom: 1px solid rgba(168, 178, 188, 0.14);
-  strong { color: #d2b373; }
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 16px 18px;
+  border: 1px solid rgba(168, 178, 188, 0.18);
+  border-left: 3px solid #d2b373;
+  background: rgba(13, 18, 22, 0.62);
+  > svg:first-child { justify-self: center; color: #d2b373; }
+  > svg:last-child { color: #d2b373; transition: transform 160ms ease; }
+  > div { display: grid; gap: 2px; min-width: 0; }
+  strong { color: #eef1f3; font-size: 0.98rem; }
   span { color: #aeb8be; font-size: 0.88rem; word-break: keep-all; }
+  &:hover { background: rgba(168, 178, 188, 0.045); }
   &:hover span { color: #eef1f3; }
+  &:hover > svg:last-child { transform: translateX(3px); }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 32px minmax(0, 1fr);
+    padding: 14px 14px;
+    > svg:last-child { display: none; }
+  }
 `;
 
 const ActionGrid = styled.div`
@@ -204,8 +219,12 @@ function HomePage() {
       </Hero>
 
       <BeginnerLink to="/beginner">
-        <strong>와우가 처음이신가요? →</strong>
-        <span>전투 용어부터 영약·물약·파티 준비까지, 초보자 안내에서 시작하세요.</span>
+        <Compass size={22} strokeWidth={1.75} aria-hidden="true" />
+        <div>
+          <strong>와우가 처음이신가요?</strong>
+          <span>전투 용어부터 영약·물약·파티 준비까지, 초보자 안내에서 시작하세요.</span>
+        </div>
+        <ArrowRight size={18} aria-hidden="true" />
       </BeginnerLink>
 
       <Section>
