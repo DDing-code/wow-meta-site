@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-19T05:16:04.261Z",
+    "generatedAt": "2026-10-19T07:27:06.011Z",
     "source": "Obsidian Knowledge Base - Synergies",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
@@ -5388,6 +5388,44 @@
         "257044",
         "260243"
       ],
+      "relations": [
+        {
+          "from": "257620",
+          "to": "257622",
+          "kind": "triggers",
+          "requires": [
+            "257621"
+          ],
+          "condition": "교묘한 사격 선택 후 일제 사격이 3명 이상에게 적중"
+        },
+        {
+          "from": "260243",
+          "to": "257622",
+          "kind": "maintains",
+          "requires": [
+            "257621"
+          ],
+          "condition": "연발 공격이 지속되는 동안"
+        },
+        {
+          "from": "257622",
+          "to": "19434",
+          "kind": "enhances",
+          "requires": [
+            "257621"
+          ],
+          "condition": "다음 조준 사격의 튕김 공격"
+        },
+        {
+          "from": "257622",
+          "to": "257044",
+          "kind": "enhances",
+          "requires": [
+            "257621"
+          ],
+          "condition": "다음 속사의 튕김 공격"
+        }
+      ],
       "class": "Hunter",
       "spec": "Marksmanship",
       "specs": [
@@ -5495,6 +5533,17 @@
         "185358",
         "257620"
       ],
+      "relations": [
+        {
+          "from": "257044",
+          "to": "260242",
+          "kind": "triggers",
+          "requires": [
+            "473385"
+          ],
+          "condition": "조준경은 거들 뿐 선택 시 속사 사용. 정밀 사격은 최대 1중첩"
+        }
+      ],
       "class": "Hunter",
       "spec": "Marksmanship",
       "specs": [
@@ -5531,6 +5580,26 @@
         "1277546",
         "257044"
       ],
+      "relations": [
+        {
+          "from": "19434",
+          "to": "257044",
+          "kind": "resets",
+          "requires": [
+            "391559"
+          ],
+          "condition": "쇄도 사격 선택 시 조준 사격에서 15% 확률로 재사용 대기시간 초기화"
+        },
+        {
+          "from": "1277546",
+          "to": "257044",
+          "kind": "enhances",
+          "requires": [
+            "391559"
+          ],
+          "condition": "쇄도 사격으로 속사의 재사용 대기시간이 초기화된 다음 속사"
+        }
+      ],
       "class": "Hunter",
       "spec": "Marksmanship",
       "specs": [
@@ -5565,6 +5634,35 @@
         "260242",
         "185358",
         "257620"
+      ],
+      "relations": [
+        {
+          "from": "19434",
+          "to": "260242",
+          "kind": "triggers",
+          "requires": [
+            "260240"
+          ],
+          "condition": "조준 사격 사용"
+        },
+        {
+          "from": "260242",
+          "to": "185358",
+          "kind": "enhances",
+          "requires": [
+            "260240"
+          ],
+          "condition": "정밀 사격을 소비하는 다음 신비한 사격"
+        },
+        {
+          "from": "260242",
+          "to": "257620",
+          "kind": "enhances",
+          "requires": [
+            "260240"
+          ],
+          "condition": "정밀 사격을 소비하는 다음 일제 사격"
+        }
       ],
       "class": "Hunter",
       "spec": "Marksmanship",
@@ -5601,6 +5699,17 @@
         "378767",
         "19434"
       ],
+      "relations": [
+        {
+          "from": "260242",
+          "to": "19434",
+          "kind": "recovers",
+          "requires": [
+            "378767"
+          ],
+          "condition": "집중력 선택 후 정밀 사격 소비 시 재사용 대기시간 1초 감소"
+        }
+      ],
       "class": "Hunter",
       "spec": "Marksmanship",
       "specs": [
@@ -5635,6 +5744,31 @@
         "19434",
         "257044",
         "470943"
+      ],
+      "relations": [
+        {
+          "from": "288613",
+          "to": "19434",
+          "kind": "recovers",
+          "requires": [],
+          "condition": "정조준 지속시간 동안 재사용 대기시간 회복 가속"
+        },
+        {
+          "from": "288613",
+          "to": "257044",
+          "kind": "recovers",
+          "requires": [],
+          "condition": "정조준 지속시간 동안 재사용 대기시간 회복 가속"
+        },
+        {
+          "from": "471366",
+          "to": "19434",
+          "kind": "enhances",
+          "requires": [
+            "288613"
+          ],
+          "condition": "고장력 시위 선택 후 정조준 중 시전 시간·집중 소모량 감소"
+        }
       ],
       "class": "Hunter",
       "spec": "Marksmanship",
@@ -5783,6 +5917,45 @@
         "19434",
         "1253732",
         "1253846"
+      ],
+      "relations": [
+        {
+          "from": "260242",
+          "to": "1253601",
+          "kind": "triggers",
+          "requires": [
+            "1253599"
+          ],
+          "condition": "파수꾼 선택 후 정밀 사격 소비 시 확률적으로 표식 적용"
+        },
+        {
+          "from": "1253601",
+          "to": "19434",
+          "kind": "enhances",
+          "requires": [
+            "1253599"
+          ],
+          "condition": "대상의 표식을 다음 조준 사격으로 소비"
+        },
+        {
+          "from": "1253601",
+          "to": "1253732",
+          "kind": "triggers",
+          "requires": [
+            "1253599"
+          ],
+          "condition": "달의 폭풍 선택 후 조준 사격이 표식을 소비할 때"
+        },
+        {
+          "from": "1253846",
+          "to": "19434",
+          "kind": "enhances",
+          "requires": [
+            "1253599",
+            "1253601"
+          ],
+          "condition": "비전의 갈퀴발톱 선택 후 표식이 강화하는 조준 사격"
+        }
       ],
       "class": "Hunter",
       "spec": "Marksmanship",

@@ -800,3 +800,9 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 원고를 글자로 읽던 검사 스크립트(`validate-guide-*.js`, `verify-*.cjs`, `audit-kb-current-scope.js`)는 공용 도구 `scripts/lib/guideManuscripts.cjs`로 읽게 고쳤다. 문구 검사(`validate-guide-copy.js`)는 이제 오류 위치를 전문화 파일과 그 파일의 줄 번호로 알려 주고, 미리보기용 환경 변수는 `GUIDE_COPY_MANUSCRIPT_PATH`(파일)에서 `GUIDE_COPY_MANUSCRIPT_DIR`(폴더)로 바뀌었다.
 - 개념서 리빌딩 도구(`artifacts/book-rebuild/lib.cjs`·`apply.cjs`·`preview.cjs`·`regress.cjs`, `artifacts/mm-concept-sample/apply.cjs`)도 전문화 파일을 읽고 쓰게 고쳤다. 이전 라운드의 일회용 스크립트(`artifacts/goal-12.1-round-*` 등)는 그대로 두었으므로 다시 돌리려면 경로를 고쳐야 한다.
 - `npm run validate` 결과는 나누기 전과 같다(통과). 커밋·배포는 하지 않았다.
+
+## 2026-10-19 사격 스펠 DB 관계 탐색 배포
+
+- `/spells`에 사격 핵심 관계 지도·탄성 드래그·이동과 확대·연결 탐색·스킬 상세·검색·유형 필터·목록 보기를 반영한다. 다른 전문화는 기존 DB 목록으로 확인하며 관계 지도는 사격부터 제공한다.
+- KB 관계 노트 7개에서 방향·조건 18개를 생성 DB로 전달한다. KB 원본·문법 문서·정본 빌더는 상위 로컬 저장소 커밋 `6acbdc3`으로 보존했다. 사이트 컴포넌트·관계 데이터 변환과 테스트·생성 JSON을 같은 사이트 커밋에 포함한다.
+- 전체 검증 9단계와 `spellRelations.test.js` 4개 테스트 통과. 환경 파일 없는 별도 입력에서 소스맵 없이 운영 빌드하고, 검사한 정적 출력만 기존 Vercel `wowmeta` 프로젝트에 배포한다. 최종 운영 확인은 `artifacts/spell-map-release-20261019/release-proof.json`에 기록한다.
