@@ -1,0 +1,137 @@
+{
+  "url": "https://www.warcraftlogs.com/zone/rankings/53?class=Mage&spec=Fire&region=3&difficulty=4&boss=3379",
+  "title": "Fire Mage Damage Rankings - Heroic Nymrissa Wavecaller | Warcraft Logs",
+  "patch": true,
+  "rows": [
+    {
+      "id": "row-3379-1",
+      "name": "소니도르",
+      "url": "https://www.warcraftlogs.com/reports/Y37xN2C9cKq1FGVJ?fight=1&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "date": "1792237981355$",
+      "hero": [
+        {
+          "name": "Sunfury",
+          "src": "https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png"
+        },
+        {
+          "name": "Time Twist",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/spell_holy_borrowedtime.jpg"
+        },
+        {
+          "name": "Lessons in Debilitation",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/ability_paladin_handoflight.jpg"
+        },
+        {
+          "name": "Sunfury Execution",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/spell_shadow_shadowandflame.jpg"
+        }
+      ],
+      "heroHtml": "<div class=\"talent-tree-inline   \"><div class=\"talent-tree-inline--tree-container \"><div class=\"talent-tree-inline__hero-icon--wrapper\"><img title=\"Sunfury\" alt=\"Sunfury\" src=\"https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png\"></div><div class=\"talent-tree-inline--tree-container__row-container\" data-kind=\"hero\"><div class=\"talent-tree-inline--row\"><a class=\"talent-tree-node talent-tree-node-choice talent-tree-node-choice--selected \" target=\"_blank\" rel=\"noreferrer\" href=\"https://www.wowhead.com/spell=1255166?def=140354&amp;rank=1&amp;spellModifier=137019\"><span class=\"talent-tree-node-choice__tooltip-trigger--active\"><img alt=\"Time Twist\" loading=\"lazy\" src=\"https://assets.rpg"
+    },
+    {
+      "id": "row-3379-2",
+      "name": "Hyozo",
+      "url": "https://www.warcraftlogs.com/reports/c19YR3zjrTFMapCP?fight=1&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "date": "1792067590319$",
+      "hero": [
+        {
+          "name": "Sunfury",
+          "src": "https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png"
+        },
+        {
+          "name": "Merely a Setback",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/inv_helm_robe_raidmage_i_01.jpg"
+        },
+        {
+          "name": "Explosive Potential",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/6bf_explosive_shard.jpg"
+        },
+        {
+          "name": "Sunfury Execution",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/spell_shadow_shadowandflame.jpg"
+        }
+      ],
+      "heroHtml": "<div class=\"talent-tree-inline   \"><div class=\"talent-tree-inline--tree-container \"><div class=\"talent-tree-inline__hero-icon--wrapper\"><img title=\"Sunfury\" alt=\"Sunfury\" src=\"https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png\"></div><div class=\"talent-tree-inline--tree-container__row-container\" data-kind=\"hero\"><div class=\"talent-tree-inline--row\"><a class=\"talent-tree-node talent-tree-node-choice talent-tree-node-choice--selected \" target=\"_blank\" rel=\"noreferrer\" href=\"https://www.wowhead.com/spell=449330?def=122264&amp;rank=1&amp;spellModifier=137019\"><span class=\"talent-tree-node-choice__tooltip-trigger--active\"><img alt=\"Merely a Setback\" loading=\"lazy\" src=\"https://asset"
+    },
+    {
+      "id": "row-3379-3",
+      "name": "Demichelis",
+      "url": "https://www.warcraftlogs.com/reports/kHNP32Q7wRDtfv9J?fight=24&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "date": "1792214176014$",
+      "hero": [
+        {
+          "name": "Sunfury",
+          "src": "https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png"
+        },
+        {
+          "name": "Merely a Setback",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/inv_helm_robe_raidmage_i_01.jpg"
+        },
+        {
+          "name": "Explosive Potential",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/6bf_explosive_shard.jpg"
+        },
+        {
+          "name": "Sunfury Execution",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/spell_shadow_shadowandflame.jpg"
+        }
+      ],
+      "heroHtml": "<div class=\"talent-tree-inline   \"><div class=\"talent-tree-inline--tree-container \"><div class=\"talent-tree-inline__hero-icon--wrapper\"><img title=\"Sunfury\" alt=\"Sunfury\" src=\"https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png\"></div><div class=\"talent-tree-inline--tree-container__row-container\" data-kind=\"hero\"><div class=\"talent-tree-inline--row\"><a class=\"talent-tree-node talent-tree-node-choice talent-tree-node-choice--selected \" target=\"_blank\" rel=\"noreferrer\" href=\"https://www.wowhead.com/spell=449330?def=122264&amp;rank=1&amp;spellModifier=137019\"><span class=\"talent-tree-node-choice__tooltip-trigger--active\"><img alt=\"Merely a Setback\" loading=\"lazy\" src=\"https://asset"
+    },
+    {
+      "id": "row-3379-4",
+      "name": "깽돌부인",
+      "url": "https://www.warcraftlogs.com/reports/QndN17CKc6WkmYqv?fight=48&type=damage-done",
+      "realm": "불타는 군단 (KR)",
+      "date": "1792163314484$",
+      "hero": [
+        {
+          "name": "Sunfury",
+          "src": "https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png"
+        },
+        {
+          "name": "Merely a Setback",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/inv_helm_robe_raidmage_i_01.jpg"
+        },
+        {
+          "name": "Lessons in Debilitation",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/ability_paladin_handoflight.jpg"
+        },
+        {
+          "name": "Savor the Moment",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/spell_fire_masterofelements.jpg"
+        }
+      ],
+      "heroHtml": "<div class=\"talent-tree-inline   \"><div class=\"talent-tree-inline--tree-container \"><div class=\"talent-tree-inline__hero-icon--wrapper\"><img title=\"Sunfury\" alt=\"Sunfury\" src=\"https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png\"></div><div class=\"talent-tree-inline--tree-container__row-container\" data-kind=\"hero\"><div class=\"talent-tree-inline--row\"><a class=\"talent-tree-node talent-tree-node-choice talent-tree-node-choice--selected \" target=\"_blank\" rel=\"noreferrer\" href=\"https://www.wowhead.com/spell=449330?def=122264&amp;rank=1&amp;spellModifier=137019\"><span class=\"talent-tree-node-choice__tooltip-trigger--active\"><img alt=\"Merely a Setback\" loading=\"lazy\" src=\"https://asset"
+    },
+    {
+      "id": "row-3379-5",
+      "name": "퀘스트하지마",
+      "url": "https://www.warcraftlogs.com/reports/LXCRgcMW4hY8qknz?fight=105&type=damage-done",
+      "realm": "세나리우스 (KR)",
+      "date": "1792326909465$",
+      "hero": [
+        {
+          "name": "Sunfury",
+          "src": "https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png"
+        },
+        {
+          "name": "Merely a Setback",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/inv_helm_robe_raidmage_i_01.jpg"
+        },
+        {
+          "name": "Explosive Potential",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/6bf_explosive_shard.jpg"
+        },
+        {
+          "name": "Sunfury Execution",
+          "src": "https://assets.rpglogs.com/img/warcraft/abilities/spell_shadow_shadowandflame.jpg"
+        }
+      ],
+      "heroHtml": "<div class=\"talent-tree-inline   \"><div class=\"talent-tree-inline--tree-container \"><div class=\"talent-tree-inline__hero-icon--wrapper\"><img title=\"Sunfury\" alt=\"Sunfury\" src=\"https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png\"></div><div class=\"talent-tree-inline--tree-container__row-container\" data-kind=\"hero\"><div class=\"talent-tree-inline--row\"><a class=\"talent-tree-node talent-tree-node-choice talent-tree-node-choice--selected \" target=\"_blank\" rel=\"noreferrer\" href=\"https://www.wowhead.com/spell=449330?def=122264&amp;rank=1&amp;spellModifier=137019\"><span class=\"talent-tree-node-choice__tooltip-trigger--active\"><img alt=\"Merely a Setback\" loading=\"lazy\" src=\"https://asset"
+    }
+  ]
+}

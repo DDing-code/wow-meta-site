@@ -1,0 +1,487 @@
+{
+  "mage-fire": {
+    "url": "https://www.warcraftlogs.com/zone/rankings/53?class=Mage&spec=Fire&region=3&difficulty=5&boss=3470",
+    "title": "Fire Mage Damage Rankings - Mythic Nek'zali the Soulcoiler | Warcraft Logs",
+    "checkedAt": "2026-10-19T06:18:46.946Z",
+    "patch": true,
+    "rows": [
+      {
+        "id": "row-3470-1",
+        "name": "Hrslkks",
+        "url": "https://www.warcraftlogs.com/reports/fcZjB2pynF61483P?fight=4&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T12:20:57.604Z",
+        "hero": "Sunfury",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/39_full.png"
+      }
+    ]
+  },
+  "druid-feral": {
+    "url": "https://www.warcraftlogs.com/zone/rankings/53?class=Druid&spec=Feral&region=3&difficulty=5&boss=3470",
+    "title": "Feral Druid Damage Rankings - Mythic Nek'zali the Soulcoiler | Warcraft Logs",
+    "checkedAt": "2026-10-19T06:18:48.210Z",
+    "patch": true,
+    "rows": [
+      {
+        "id": "row-3470-1",
+        "name": "데리바사삭",
+        "url": "https://www.warcraftlogs.com/reports/yj1qtFAaH3gNVLZJ?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T07:20:05.529Z",
+        "hero": "Wildstalker",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/22_full.png"
+      },
+      {
+        "id": "row-3470-2",
+        "name": "똥겜좋아하는드루",
+        "url": "https://www.warcraftlogs.com/reports/bj7hnX1pGcFyv3qT?fight=54&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T11:38:29.395Z",
+        "hero": "Wildstalker",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/22_full.png"
+      },
+      {
+        "id": "row-3470-3",
+        "name": "크앙뿌앙",
+        "url": "https://www.warcraftlogs.com/reports/7h2XYxn3MtZdWkfC?fight=58&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T06:07:54.688Z",
+        "hero": "Wildstalker",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/22_full.png"
+      },
+      {
+        "id": "row-3470-4",
+        "name": "호덕맨",
+        "url": "https://www.warcraftlogs.com/reports/fGDA3h4ba6tNm7Kg?fight=6&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T12:08:09.598Z",
+        "hero": "Wildstalker",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/22_full.png"
+      },
+      {
+        "id": "row-3470-5",
+        "name": "Migom",
+        "url": "https://www.warcraftlogs.com/reports/Jx6XLFhj7qH1DAnV?fight=12&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T05:17:53.720Z",
+        "hero": "Wildstalker",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/22_full.png"
+      },
+      {
+        "id": "row-3470-6",
+        "name": "친환경무농약감귤",
+        "url": "https://www.warcraftlogs.com/reports/ZWvXQM9Vrbj2HxFh?fight=34&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T08:57:07.469Z",
+        "hero": "Wildstalker",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/22_full.png"
+      },
+      {
+        "id": "row-3470-7",
+        "name": "금수맹",
+        "url": "https://www.warcraftlogs.com/reports/RfGzJZbktVTW2Byv?fight=1&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T11:01:05.250Z",
+        "hero": "Wildstalker",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/22_full.png"
+      },
+      {
+        "id": "row-3470-8",
+        "name": "잘랄",
+        "url": "https://www.warcraftlogs.com/reports/nB4yVJN1LKZxXav8?fight=4&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T07:15:45.517Z"
+      },
+      {
+        "id": "row-3470-9",
+        "name": "라셀타",
+        "url": "https://www.warcraftlogs.com/reports/xgK26vmbwFjPGr4A?fight=19&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T11:04:49.840Z"
+      },
+      {
+        "id": "row-3470-10",
+        "name": "자연과단절됨",
+        "url": "https://www.warcraftlogs.com/reports/B946NMA7DTFz1KHd?fight=50&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T11:03:23.960Z"
+      },
+      {
+        "id": "row-3470-11",
+        "name": "헤데님",
+        "url": "https://www.warcraftlogs.com/reports/vDHVkWYh38aM6dAx?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T11:15:12.726Z"
+      },
+      {
+        "id": "row-3470-12",
+        "name": "변신이하고싶었어",
+        "url": "https://www.warcraftlogs.com/reports/2hcYqXvxWHFp1b7J?fight=69&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T12:21:36.844Z"
+      },
+      {
+        "id": "row-3470-13",
+        "name": "핑키박",
+        "url": "https://www.warcraftlogs.com/reports/GTAPfmWNrRY9gqdL?fight=8&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T12:16:59.761Z"
+      },
+      {
+        "id": "row-3470-14",
+        "name": "반드루",
+        "url": "https://www.warcraftlogs.com/reports/MHnvNyJzKkrbf43C?fight=9&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T01:45:14.712Z"
+      },
+      {
+        "id": "row-3470-15",
+        "name": "이재용동생윤재영",
+        "url": "https://www.warcraftlogs.com/reports/jtHzWm1wyPcYNr9g?fight=29&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T12:37:02.081Z"
+      },
+      {
+        "id": "row-3470-16",
+        "name": "야수",
+        "url": "https://www.warcraftlogs.com/reports/2kGa1ZqK63pdRjnT?fight=14&type=damage-done",
+        "realm": "데스윙 (KR)",
+        "startedAt": "2026-10-18T07:29:29.910Z"
+      },
+      {
+        "id": "row-3470-17",
+        "name": "남자",
+        "url": "https://www.warcraftlogs.com/reports/rJ7kgLtxpwCPQnF4?fight=69&type=damage-done",
+        "realm": "하이잘 (KR)",
+        "startedAt": "2026-10-18T12:07:42.341Z"
+      },
+      {
+        "id": "row-3470-18",
+        "name": "분실한오백원",
+        "url": "https://www.warcraftlogs.com/reports/WMkxHVwad48KpZ7g?fight=4&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T09:21:33.707Z"
+      },
+      {
+        "id": "row-3470-19",
+        "name": "민혁삼",
+        "url": "https://www.warcraftlogs.com/reports/y3azvrRQVwg7k1TA?fight=25&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T09:32:47.786Z"
+      },
+      {
+        "id": "row-3470-20",
+        "name": "앙칼진암소",
+        "url": "https://www.warcraftlogs.com/reports/1PY9Jt4kdGgm3b6X?fight=3&type=damage-done",
+        "realm": "헬스크림 (KR)",
+        "startedAt": "2026-10-18T12:20:35.370Z"
+      },
+      {
+        "id": "row-3470-21",
+        "name": "멍빵",
+        "url": "https://www.warcraftlogs.com/reports/JZaCdFTWygn7zAMp?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T11:13:08.270Z"
+      },
+      {
+        "id": "row-3470-22",
+        "name": "드루응칠",
+        "url": "https://www.warcraftlogs.com/reports/qhZwyY6MC3H4vbaQ?fight=6&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T13:04:32.896Z"
+      }
+    ]
+  },
+  "shaman-enhancement": {
+    "url": "https://www.warcraftlogs.com/zone/rankings/53?class=Shaman&spec=Enhancement&region=3&difficulty=5&boss=3470",
+    "title": "Enhancement Shaman Damage Rankings - Mythic Nek'zali the Soulcoiler | Warcraft Logs",
+    "checkedAt": "2026-10-19T06:19:07.724Z",
+    "text": "ecaller\n\n\nKith'ix\nAll Stars\nComplete Raids\n+\nMythic\nMythic\nHeroic\nNormal\nLFR\n+\nKorea\nAll Regions\nUS and EU\nAsia\n+\nUnited States\nUnited States\nOceanic\n+\nEurope\nEnglish\nFrench\nGerman\nItalian\nPortuguese\nRussian\nSpanish\nKorea\nTaiwan\nChina\n+\nEnhancement Shaman\n+\nAll Classes\nTanks\nDPS\nHealers\nTanks and DPS\n+\nDeath Knight\nBlood\nFrost\nUnholy\nMelee\n+\nDemon Hunter\nHavoc\nVengeance\nDevourer\nDPS\n+\nDruid\nBalance\nFeral\nGuardian\nRestoration\n+\nEvoker\nDevastation\nPreservation\nAugmentation\nRanged\n+\nHunter\nBeast Mastery\nMarksmanship\nSurvival\nRanged\n+\nMage\nArcane\nFire\nFrost\nRanged\n+\nMonk\nBrewmaster\nMistweaver\nWindwalker\n+\nPaladin\nHoly\nProtection\nRetribution\n+\nPriest\nDiscipline\nHoly\nShadow\nHealing\n+\nRogue\nAssassination\nSubtlety\nOutlaw\nMelee\n+\nShaman\nElemental\nEnhancement\nRestoration\n+\nWarlock\nAffliction\nDemonology\nDestruction\nRanged\n+\nWarrior\nArms\nFury\nProtection\nMelee\n+\nAny Hero Tree\nAny Hero Tree\n Totemic\n Stormbringer\n+\nAll Factions\nAll Factions\nAlliance\nHorde\n+\nAll Item Levels\nAll Item Levels\n272-274\n\t\n275-277\n\t\n278-280\n\n\n281-283\n\t\n284-286\n\t\n287-289\n\n\n290-292\n\t\n293-295\n\t\n296-298\n\n\n299-301\n\t\n302-304\n\t\n305-307\n\n\n308-310\n\t\n311-313\n\t\n314-316\n\n\n317-319\n\t\n320-322\n\t\n323-325\n\n\n326-328\n\t\n329-331\n\t\n332-334\n\n\n335-337\n\t\n338-340\n\t\n341-343\n\n\n344+\n+\n12.1.5\n12.1\n12.1.5\n+\nInclude External Buffs\nInclude External Buffs\nOnly Ranks With External Buffs\nExclude External Buffs\nENHANCEMENT SHAMAN META BUILD\nDig into detailed build data for Enhancement Shaman.\nOpen Archon\nARCHON\nDATA-DRIVEN META BUILDS\nDiscover the most popular builds for Enhancement Shaman.\nOpen Archon\nThe Top 100 Breakdown\nCLASS\nTALENTS\n100.0%\n100.0%\n100.0%\n100.0%\n100.0%\n100.0%\n6.6%\n0.0%\nSTORMBRINGER\n100.0%\n100.0%\n96.6%\n100.0%\nSPEC\nTALENTS\n100.0%\n100.0%\n100.0%\nMOST USED\nTALENTS\nData derived from rankings below.\nShow More\n96.7 %\n90.0 %\n3.3 %\n3.3 %\n3.3 %\n3.3 %\nTrinkets\n73.3 %\n10.0 %\n6.7 %\n3.3 %\n3.3 %\n3.3 %\nEmbellishments\nRank\n\t\nName\n\t\n\t\nIlvl\n\t\nDPS\n\t\nDate\n\t\nDuration\n\t\nClass Talents\n\t\nSpec Talents\n\t\nHero Talents\n\t\nTrnk\n\t\nBuffs\n\t\n\n1\t\n타우렌고술 \n아이분참 - 아즈샤라 (KR)\n\t\t331\t242,297.6\tOct 18\t5:34\t\n\t\n\t\n\t\n\t\t\n2\t\n전설의바베큐치킨 \n영구정지 - 아즈샤라 (KR)\n\t\t328\t239,328.1\tOct 18\t5:14\t\n\t\n\t\n\t\n\t\n3\n\t\n3\t\n바지칼락국수 \n다스부 - 아즈샤라 (KR)\n\t\t330\t228,890.8\tOct 18\t5:13\t\n\t\n\t\n\t\n\t\n3\n\t\n4\t\n대담한정서 \n아즈샤라 (KR)\n\t\t328\t228,029.9\tOct 18\t6:30\t\n\t\n\t\n\t\n\t\n2\n\t\n5\t\n무헤이리 \n건전한 피드백 - 아즈샤라 (KR)\n\t\t326\t224,425.3\tOct 17\t6:24\t\n\t\n\t\n\t\n\t\n4\n\t\n6\t\n땡가 \n취 향 존 중 - 아즈샤라 (KR)\n\t\t329\t220,955.2\tOct 16\t5:18\t\n\t\n\t\n\t\n\t\t\n7\t\nBemate \nTears of Blood - 아즈샤라 (KR)\n\t\t330\t219,880.1\tOct 18\t5:16\t\n\t\n\t\n\t\n\t\t\n8\t\n한울천 \nCherryBlossom - 아즈샤라 (KR)\n\t\t332\t218,933.1\tOct 18\t5:58\t\n\t\n\t\n\t\n\t\t\n9\t\n소비에트박 \n김 굽듯이 - 아즈샤라 (KR)\n\t\t328\t214,981.5\tOct 16\t6:08\t\n\t\n\t\n\t\n\t\t\n10\t\n엘르아살 \nBUSOH SENSEN - 아즈샤라 (KR)\n\t\t328\t212,272.2\tOct 15\t5:18\t\n\t\n\t\n\t\n\t\t\n11\t\n찡씨 \n소주 - 아즈샤라 (KR)\n\t\t326\t210,220.3\tOct 16\t6:47\t\n\t\n\t\n\t\n\t\t\n12\t\n홍합홍압 \n영구정지 - 아즈샤라 (KR)\n\t\t328\t209,570.4\tOct 17\t5:28\t\n\t\n\t\n\t\n\t\t\n13\t\n타우라프텐 \n아즈샤라 (KR)\n\t\t331\t207,550.9\tOct 17\t5:24\t\n\t\n\t\n\t\n\t\t\n14\t\n물도저 \n썩은굴 - 아즈샤라 (KR)\n\t\t329\t207,122.4\tOct 16\t5:08\t\n\t\n\t\n\t\n\t\t\n15\t\n영원해 \n이에요 - 아즈샤라 (KR)\n\t\t328\t204,737.5\tOct 16\t6:18\t\n\t\n\t\n\t\n\t\t\n16\t\n오마수 \n탈주자들 - 아즈샤라 (KR)\n\t\t327\t203,906.1\tOct 18\t6:10\t\n\t\n\t\n\t\n\t\t\n17\t\n더캠프 \n서리풀 - 아즈샤라 (KR)\n\t\t329\t203,376.6\tOct 17\t6:21\t\n\t\n\t\n\t\n\t\n4\n\t\n18\t\n도망갈꺼예요 \n아즈샤라 (KR)\n\t\t330\t202,677.5\tOct 15\t5:27\t\n\t\n\t\n\t\n\t\t\n19\t\nSiesie \nVanilla cats - 아즈샤라 (KR)\n\t\t329\t199,896.8\tOct 16\t5:18\t\n\t\n\t\n\t\n\t\t\n20\t\n얼마있다접음 \n구름푸딩 - 아즈샤라 (KR)\n\t\t330\t198,931.2\tOct 18\t5:31\t\n\t\n\t\n\t\n\t\t\n21\t\n베나드릴 \nTwenty Five Years Ago - 아즈샤라 (KR)\n\t\t326\t196,946.4\tOct 18\t6:33\t\n\t\n\t\n\t\n\t\t\n22\t\n킹왕짱 \n아웃랜드 땅샀더니 노스랜드 웬말이냐 - 아즈샤라 (KR)\n\t\t330\t191,401.6\tOct 17\t5:58\t\n\t\n\t\n\t\n\t\t\n23\t\n시원하게싸자 \n아즈샤라 (KR)\n\t\t329\t190,342.9\tOct 18\t6:39\t\n\t\n\t\n\t\n\t\t\n24\t\n얼마웨이 \n쉬었음 - 아즈샤라 (KR)\n\t\t330\t185,301.5\tOct 17\t6:52\t\n\t\n\t\n\t\n\t\t\n25\t\n고도스 \n아즈샤라 (KR)\n\t\t329\t172,136.0\tOct 18\t6:07\t\n\t\n\t\n\t\n\t\t\n26\t\n애브라 \nDefault - 아즈샤라 (KR)\n\t\t328\t171,751.6\tOct 18\t6:50\t\n\t\n\t\n\t\n\t\n1\n\t\n27\t\n윤호선 \n깔끔 - 아즈샤라 (KR)\n\t\t326\t170,427.0\tOct 16\t5:51\t\n\t\n\t\n\t\n\t\t\n28\t\n슬기로운샤먼 \nII Moulin Rouge II - 하이잘 (KR)\n\t\t329\t169,854.6\tOct 16\t6:13\t\n\t\n\t\n\t\n\t\t\n29\t\n클래지 \n늦봄 - 아즈샤라 (KR)\n\t\t326\t169,648.7\tOct 18\t6:40\t\n\t\n\t\n\t\n\t\t\n30\t\n호도독 \n늦봄 - 아즈샤라 (KR)\n\t\t326\t151,601.0\tOct 17\t5:48\t\n\t\n\t\n\t\n\t\t\n\nTo learn more about how rankings work on the site, you can read the rankings guide. A rank with a dark gold background is considered \"at risk\", since it is using tricks that will likely be hotfixed at some point in the future. If an in-game hotfix is released, then the rank will be removed. Removed ranks have a dark red background.\n\nHEY THERE.We all want Warcraft Logs to remain free.\nWe work hard to offer you the best possible experience.\nHelp us by disabling your Adblock or supporting us on Patreon.",
+    "rows": [
+      {
+        "name": "타우렌고술",
+        "url": "https://www.warcraftlogs.com/reports/c947Gjrdz1LDKJqQ?fight=2&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T11:04:59.258Z",
+        "hero": "Stormbringer"
+      },
+      {
+        "name": "전설의바베큐치킨",
+        "url": "https://www.warcraftlogs.com/reports/6wmtMnACqZb2GBzR?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T11:01:09.384Z",
+        "hero": "Stormbringer"
+      },
+      {
+        "name": "바지칼락국수",
+        "url": "https://www.warcraftlogs.com/reports/wF9YGmDNbfKkrg2y?fight=43&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T10:02:26.226Z",
+        "hero": "Stormbringer"
+      },
+      {
+        "name": "대담한정서",
+        "url": "https://www.warcraftlogs.com/reports/mfxFhD83gyNWrbqK?fight=5&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T11:59:35.832Z",
+        "hero": "Stormbringer"
+      },
+      {
+        "name": "무헤이리",
+        "url": "https://www.warcraftlogs.com/reports/X3Gfkpm4n6hRZCyQ?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T12:17:23.650Z",
+        "hero": "Stormbringer"
+      },
+      {
+        "name": "땡가",
+        "url": "https://www.warcraftlogs.com/reports/yAb1xQmDrkgt7Ndf?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T11:02:20.233Z"
+      },
+      {
+        "name": "Bemate",
+        "url": "https://www.warcraftlogs.com/reports/GZBT123WwKbQfg8Y?fight=15&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T11:11:09.503Z"
+      },
+      {
+        "name": "한울천",
+        "url": "https://www.warcraftlogs.com/reports/NQdqBGrDcPFHwg9k?fight=18&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T07:52:17.495Z"
+      },
+      {
+        "name": "소비에트박",
+        "url": "https://www.warcraftlogs.com/reports/JgqXxCn2MzLKaBwf?fight=4&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T14:30:14.204Z"
+      },
+      {
+        "name": "엘르아살",
+        "url": "https://www.warcraftlogs.com/reports/fMA9D1ZmjPbJhypd?fight=5&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-15T12:30:40.516Z"
+      },
+      {
+        "name": "찡씨",
+        "url": "https://www.warcraftlogs.com/reports/jtHzWm1wyPcYNr9g?fight=29&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T12:37:02.081Z"
+      },
+      {
+        "name": "홍합홍압",
+        "url": "https://www.warcraftlogs.com/reports/JykRHLnXKwxm1Bgp?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T13:07:06.803Z"
+      },
+      {
+        "name": "타우라프텐",
+        "url": "https://www.warcraftlogs.com/reports/cMVh7dZ9tzKHyLqf?fight=7&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T11:29:59.901Z"
+      },
+      {
+        "name": "물도저",
+        "url": "https://www.warcraftlogs.com/reports/aV19yPb7LtTc34hX?fight=2&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T12:08:45.892Z"
+      },
+      {
+        "name": "영원해",
+        "url": "https://www.warcraftlogs.com/reports/JWdMH9a2Bt3F1zrV?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T10:30:48.131Z"
+      },
+      {
+        "name": "오마수",
+        "url": "https://www.warcraftlogs.com/reports/gYpaZHF4XyvW3DKL?fight=4&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T12:38:37.840Z"
+      },
+      {
+        "name": "더캠프",
+        "url": "https://www.warcraftlogs.com/reports/R7ZKTHkfXrAx2dVz?fight=5&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T12:16:10.565Z"
+      },
+      {
+        "name": "도망갈꺼예요",
+        "url": "https://www.warcraftlogs.com/reports/hHWL94KVYGCvzm8x?fight=23&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-15T11:11:57.474Z"
+      },
+      {
+        "name": "Siesie",
+        "url": "https://www.warcraftlogs.com/reports/yAb1xQmDrkgt7Ndf?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T11:02:20.233Z"
+      },
+      {
+        "name": "얼마있다접음",
+        "url": "https://www.warcraftlogs.com/reports/A6JLXnWvgkahtDP1?fight=9&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T10:00:46.431Z"
+      },
+      {
+        "name": "베나드릴",
+        "url": "https://www.warcraftlogs.com/reports/rGDF3WthpC7vP6d8?fight=7&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T10:29:34.660Z"
+      },
+      {
+        "name": "킹왕짱",
+        "url": "https://www.warcraftlogs.com/reports/2hcYqXvxWHFp1b7J?fight=69&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T12:21:36.844Z"
+      },
+      {
+        "name": "시원하게싸자",
+        "url": "https://www.warcraftlogs.com/reports/Vw7nF6JHBcTY9Zry?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T05:59:55.720Z"
+      },
+      {
+        "name": "얼마웨이",
+        "url": "https://www.warcraftlogs.com/reports/3JpQmzFxr7hytk9R?fight=9&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T13:21:57.849Z"
+      },
+      {
+        "name": "고도스",
+        "url": "https://www.warcraftlogs.com/reports/whTF4V6qfKyDbMX8?fight=84&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T10:25:47.303Z"
+      },
+      {
+        "name": "애브라",
+        "url": "https://www.warcraftlogs.com/reports/BANf1cyGH82F6zVQ?fight=21&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T11:11:04.988Z"
+      },
+      {
+        "name": "윤호선",
+        "url": "https://www.warcraftlogs.com/reports/khwGpvHyMTbr74cd?fight=42&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T14:04:32.733Z"
+      },
+      {
+        "name": "슬기로운샤먼",
+        "url": "https://www.warcraftlogs.com/reports/wmf4cZB6H3N2tV1C?fight=5&type=damage-done",
+        "realm": "하이잘 (KR)",
+        "startedAt": "2026-10-16T13:51:47.765Z"
+      },
+      {
+        "name": "클래지",
+        "url": "https://www.warcraftlogs.com/reports/K7GRgHd2hWTPZaQy?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T04:57:32.428Z"
+      },
+      {
+        "name": "호도독",
+        "url": "https://www.warcraftlogs.com/reports/WH6FjbhfGRYXgyd9?fight=4&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T14:16:43.465Z"
+      }
+    ]
+  },
+  "hunter-survival": {
+    "url": "https://www.warcraftlogs.com/zone/rankings/53?class=Hunter&spec=Survival&region=3&difficulty=5&boss=3470",
+    "title": "Survival Hunter Damage Rankings - Mythic Nek'zali the Soulcoiler | Warcraft Logs",
+    "checkedAt": "2026-10-19T06:18:50.479Z",
+    "patch": true,
+    "rows": [
+      {
+        "id": "row-3470-1",
+        "name": "참외씨",
+        "url": "https://www.warcraftlogs.com/reports/f2gtzJqWPTYdwVZx?fight=1&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T11:28:38.190Z",
+        "hero": "Sentinel",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/42_full.png"
+      },
+      {
+        "id": "row-3470-2",
+        "name": "마른마른",
+        "url": "https://www.warcraftlogs.com/reports/HvzhxPJFnA9pG7fL?fight=8&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T11:26:09.916Z",
+        "hero": "Sentinel",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/42_full.png"
+      },
+      {
+        "id": "row-3470-3",
+        "name": "민렵",
+        "url": "https://www.warcraftlogs.com/reports/RzmkdHM1XYxCcawg?fight=5&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-16T11:45:51.531Z",
+        "hero": "Sentinel",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/42_full.png"
+      },
+      {
+        "id": "row-3470-4",
+        "name": "갈비된장",
+        "url": "https://www.warcraftlogs.com/reports/tCzRKwM23VkGqdbm?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T11:11:49.588Z",
+        "hero": "Pack Leader",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/43_full.png"
+      },
+      {
+        "id": "row-3470-5",
+        "name": "사랑꾼임신규",
+        "url": "https://www.warcraftlogs.com/reports/qxV7ht2GYTpQwLaW?fight=9&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-15T12:13:58.035Z",
+        "hero": "Sentinel",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/42_full.png"
+      },
+      {
+        "id": "row-3470-6",
+        "name": "개성껏",
+        "url": "https://www.warcraftlogs.com/reports/W91J6QDT37cnXfAq?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T12:19:43.567Z",
+        "hero": "Sentinel",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/42_full.png"
+      },
+      {
+        "id": "row-3470-7",
+        "name": "Atena",
+        "url": "https://www.warcraftlogs.com/reports/WMkxHVwad48KpZ7g?fight=4&type=damage-done",
+        "realm": "줄진 (KR)",
+        "startedAt": "2026-10-18T09:21:33.707Z",
+        "hero": "Pack Leader",
+        "heroIcon": "https://assets.rpglogs.com/img/warcraft/talents/hero/43_full.png"
+      },
+      {
+        "id": "row-3470-8",
+        "name": "건사",
+        "url": "https://www.warcraftlogs.com/reports/VM1wJykFDtC2j3NB?fight=2&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-19T05:34:51.429Z"
+      },
+      {
+        "id": "row-3470-9",
+        "name": "Deadlytrap",
+        "url": "https://www.warcraftlogs.com/reports/7MWXtnBVDb3FaLRd?fight=6&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T11:52:48.337Z"
+      },
+      {
+        "id": "row-3470-10",
+        "name": "사과떠리떠리",
+        "url": "https://www.warcraftlogs.com/reports/X3Gfkpm4n6hRZCyQ?fight=3&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T12:17:23.650Z"
+      },
+      {
+        "id": "row-3470-11",
+        "name": "사시보",
+        "url": "https://www.warcraftlogs.com/reports/whTF4V6qfKyDbMX8?fight=84&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-18T10:25:47.303Z"
+      }
+    ]
+  }
+}

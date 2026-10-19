@@ -1,0 +1,65 @@
+{
+  "url": "https://www.warcraftlogs.com/zone/rankings/53?class=Mage&spec=Fire&region=3&difficulty=5",
+  "title": "Fire Mage Damage Rankings - Mythic The Venomous Abyss | Warcraft Logs",
+  "checkedAt": "2026-10-19T06:20:04.796Z",
+  "rows": [
+    {
+      "id": "row-3470-1",
+      "name": "Hrslkks",
+      "url": "https://www.warcraftlogs.com/reports/fcZjB2pynF61483P?fight=4&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "startedAt": "2026-10-17T12:20:57.604Z",
+      "hero": "Sunfury"
+    },
+    {
+      "id": "row-3445-1",
+      "name": "Hrslkks",
+      "url": "https://www.warcraftlogs.com/reports/f8ZB2Mhp1myDdxcT?fight=14&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "startedAt": "2026-10-17T12:36:07.853Z",
+      "hero": "Sunfury"
+    },
+    {
+      "id": "row-3455-1",
+      "name": "Hrslkks",
+      "url": "https://www.warcraftlogs.com/reports/YnAxZBmzVFfqgkMt?fight=24&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "startedAt": "2026-10-17T13:02:06.173Z"
+    },
+    {
+      "id": "row-3497-1",
+      "name": "Hrslkks",
+      "url": "https://www.warcraftlogs.com/reports/jV2qgpyR8ctYvmQr?fight=57&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "startedAt": "2026-10-17T13:25:51.714Z"
+    },
+    {
+      "id": "row-3420-1",
+      "name": "Hrslkks",
+      "url": "https://www.warcraftlogs.com/reports/YnAxZBmzVFfqgkMt?fight=43&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "startedAt": "2026-10-17T13:56:43.307Z"
+    },
+    {
+      "id": "row-3421-1",
+      "name": "Hrslkks",
+      "url": "https://www.warcraftlogs.com/reports/jV2qgpyR8ctYvmQr?fight=76&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "startedAt": "2026-10-17T14:44:28.421Z"
+    },
+    {
+      "id": "row-3429-1",
+      "name": "Seorap",
+      "url": "https://www.warcraftlogs.com/reports/79tvCVhjDNL6Hxdm?fight=2&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "startedAt": "2026-10-15T12:17:55.604Z"
+    },
+    {
+      "id": "row-3492-1",
+      "name": "Seorap",
+      "url": "https://www.warcraftlogs.com/reports/aZ6NnwL8g9PdpGJ1?fight=44&type=damage-done",
+      "realm": "아즈샤라 (KR)",
+      "startedAt": "2026-10-15T12:56:50.805Z"
+    }
+  ]
+}

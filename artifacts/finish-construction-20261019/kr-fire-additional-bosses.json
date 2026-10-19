@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://www.warcraftlogs.com/zone/rankings/53?class=Mage&spec=Fire&region=3&difficulty=5&boss=3455",
+    "title": "Fire Mage Damage Rankings - Mythic Vashnik the Malignant | Warcraft Logs",
+    "rows": [
+      {
+        "id": "row-3455-1",
+        "name": "Hrslkks",
+        "url": "https://www.warcraftlogs.com/reports/YnAxZBmzVFfqgkMt?fight=24&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T13:02:06.173Z",
+        "hero": "Sunfury"
+      }
+    ]
+  },
+  {
+    "url": "https://www.warcraftlogs.com/zone/rankings/53?class=Mage&spec=Fire&region=3&difficulty=5&boss=3497",
+    "title": "Fire Mage Damage Rankings - Mythic The Lost Explorers | Warcraft Logs",
+    "rows": [
+      {
+        "id": "row-3497-1",
+        "name": "Hrslkks",
+        "url": "https://www.warcraftlogs.com/reports/jV2qgpyR8ctYvmQr?fight=57&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T13:25:51.714Z",
+        "hero": "Sunfury"
+      }
+    ]
+  },
+  {
+    "url": "https://www.warcraftlogs.com/zone/rankings/53?class=Mage&spec=Fire&region=3&difficulty=5&boss=3420",
+    "title": "Fire Mage Damage Rankings - Mythic Sszorak | Warcraft Logs",
+    "rows": [
+      {
+        "id": "row-3420-1",
+        "name": "Hrslkks",
+        "url": "https://www.warcraftlogs.com/reports/YnAxZBmzVFfqgkMt?fight=43&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T13:56:43.307Z",
+        "hero": "Sunfury"
+      }
+    ]
+  },
+  {
+    "url": "https://www.warcraftlogs.com/zone/rankings/53?class=Mage&spec=Fire&region=3&difficulty=5&boss=3421",
+    "title": "Fire Mage Damage Rankings - Mythic The Twin Fangs | Warcraft Logs",
+    "rows": [
+      {
+        "id": "row-3421-1",
+        "name": "Hrslkks",
+        "url": "https://www.warcraftlogs.com/reports/jV2qgpyR8ctYvmQr?fight=76&type=damage-done",
+        "realm": "아즈샤라 (KR)",
+        "startedAt": "2026-10-17T14:44:28.421Z",
+        "hero": "Sunfury"
+      }
+    ]
+  }
+]
