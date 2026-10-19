@@ -17,6 +17,7 @@ module.exports = {
     '- 영웅 탭 비늘사령관 단일 우선순위: 전세역전을 5번(불의 숨결 뒤)에서 3번(용의 분노 뒤, 영원의 쇄도 앞)으로 옮김 (근거: 레이드 전세역전 다음 버튼 영원의 쇄도 56%·불의 숨결 44%, 용의 분노 직후 사용 25회 중 13회)',
     '- 같은 순서를 말하는 문장 맞춤: 단일 연습 본문(우선순위 요약), 오프닝 장 본문, 광역 장 본문, 심화 장 두 번째 깊은 숨결 시점',
     '- 그대로 둔 것: 첫 깊은 숨결 → 용의 분노(레이드 8개 중 4개만, 나머지는 용의 분노부터), 첫 영원의 쇄도·불의 숨결 앞뒤(4:4), 불꽃형성자 전체(레이드 로그 0개)',
+    "- [후속·최신 메타] 1부 강화 주문 그림의 하늘빛 휩쓸기 칸을 '골랐을 때만'으로 표시(견본 3개 모두 없음, 상위 비늘사령관 로그 0회, 불꽃형성자 쐐기 2명 중 1명 사용이라 칸은 유지)",
   ].join('\n'),
   apply(m) {
     const block = t => { const b = m.blocks.find(x => x.title.startsWith(t)); must(b, '장 ' + t); return b; };
@@ -138,6 +139,7 @@ module.exports = {
     const ap = sc.aoe.priority;
     must(ap[6].skillId === SWEEP, '비늘사령관 광역 우선순위');
     sc.aoe.priority = ap.filter(r => r.skillId !== SWEEP);
+    { const p = require.resolve('./evoker-devastation.followup.cjs'); delete require.cache[p]; require(p)(m); }
     return m;
   },
 };

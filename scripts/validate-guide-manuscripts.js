@@ -1456,11 +1456,24 @@ function main() {
   for (const branch of brewmaster.heroBranches) {
     assert(branch.opener.steps.length >= 10 && branch.singleTarget.priority.length >= 10 && branch.aoe.priority.length >= 10, 'Both Brewmaster heroes need authored opener, ST and AoE modes');
     assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Brewmaster ST and AoE must retain different conditions');
+    assert(branch.singleTarget.priority[0].skillId === '115399' && branch.aoe.priority[0].skillId === '115399', 'Both Brewmaster heroes list Black Ox Brew first (top logs and both samples take it)');
     for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
       for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
         assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Brewmaster flow rows must be actual casts with readable conditions');
       }
     }
+  }
+
+  assert(brewmaster.talentBuilds.map(build => build.heroLabel).join(',') === '음영파,조화의 종사,음영파', 'Brewmaster samples follow 12.1.5 top logs: raid Shado-Pan, Mythic+ Master of Harmony');
+
+  // 2026-10-20 최신 메타: 복원 화염 충격·용암 폭발과 쐐기 견본 생명 폭발, 보호 성기사 쐐기 광역 풀 시작 순서
+  const restoShaman = manuscripts['shaman-restoration'];
+  assert(['188389', '51505'].every(id => kbSkills[id]?.specs.includes('Restoration') && kbSkills[id]?.specs.includes('Elemental')), 'Flame Shock and Lava Burst must stay usable by Restoration');
+  const totemic = restoShaman.heroBranches.find(branch => branch.label === '토템술사');
+  const totemicOpen = totemic.opener.steps.map(row => row.skillId);
+  assert(totemicOpen.indexOf('188389') === totemicOpen.indexOf('444995') + 1 && totemic.aoe.priority.some(row => row.skillId === '73685'), 'Totemic opener keeps pre-damage Flame Shock and Mythic+ Unleash Life');
+  for (const branch of protection.heroBranches) {
+    assert(branch.aoe.priority.slice(0, 4).map(row => row.skillId).join(',') === '204019,275779,31935,26573', 'Protection Mythic+ AoE table follows the logged pull-start order');
   }
 
   const mageFrost = manuscripts['mage-frost'];
@@ -1541,6 +1554,8 @@ function main() {
   assert(!JSON.stringify(packLeaderSurvival).includes('"skillId":"1264949"') && packLeaderSurvival.opener.steps.find(row => row.skillId === '1250646').trigger.includes('두 개'), 'Pack Leader must not borrow Chakram or lose its non-Twin-Fangs Takedown condition');
   const survivalTakedown = packLeaderSurvival.opener.steps.findIndex(row => row.skillId === '1250646');
   assert(packLeaderSurvival.opener.steps[survivalTakedown + 1]?.skillId === '259489', 'Pack Leader must execute its prepared summon after Takedown');
+  // 2026-10-20 최신 메타: 무리의 지도자 예시는 쌍둥이 송곳니 빌드(상위 순서 로그 5개 중 4개가 풀 직후 제압)라 제압 앞에 준비용 살상 명령을 두지 않는다.
+  assert(packLeaderSurvival.opener.steps.findIndex(row => row.skillId === '259489') > survivalTakedown && packLeaderSurvival.aoe.steps[0]?.skillId === '1250646', 'Twin Fangs Pack Leader example must open with Takedown, not a priming Kill Command');
 
   const marksmanship = manuscripts['hunter-marksmanship'];
   const marksmanshipSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '05-사냥꾼', '사격', 'Meta', 'guide-12.1.json');

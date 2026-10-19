@@ -275,6 +275,7 @@ const manuscript = {
       '10월 10일 영웅 특성 결론: 공개 추천과 한국 사례는 토템술사를 레이드·쐐기의 첫 비교로 삼습니다. 선견자는 단일 복구와 이전 시즌 세트 운용을 비교하는 대안이며 현재 시즌 장비 조건과 혼합하지 않습니다.',
       '한국 공식 주간 점검 예정 종료(10월 8일 06:00 한국 시간) 뒤의 레이드 1건·쐐기 1건을 확인했습니다. 예정 종료 시각과 실제 적용 순간은 구분합니다. 한국 최신 메타나 영웅 특성 간 우열을 확정하는 자료로 사용하지 않습니다.',
       '개념서형 개편(2026-10-18): 기존 검수 본문과 KB 공식 툴팁을 처음 하는 사람이 읽는 순서(준비 → 원리 → 연습 → 실전 → 심화)로 다시 엮었습니다. 우선순위·오프닝·영웅 특성 결론은 바꾸지 않았고, 현장의 목소리는 아직 모으지 않았습니다.',
+      '최신 메타 후속(2026-10-20): KB에서 화염 충격·용암 폭발의 사용 전문화에 복원을 더하고(용암 폭발은 SimC 트리 자료상 정기·복원 직업 노드, 복원 견본 3개 모두 선택), 토템술사 오프닝(쇄도하는 토템 뒤)·한 명 치유 흐름 끝·단일 우선순위에 넣었습니다(상위 레이드 8개 중 6개가 첫 피해 전 화염 충격, 분당 2.2·1.4회). 쐐기 견본은 상위 쐐기 토템술사 84행 중 71행이 고른 생명 폭발이 빠져 있어, 같은 빌드가 가장 많은 실제 빌드(전체 1위)로 바꾸고 한국어 Wowhead 계산기로 확인했습니다. 생명 폭발은 쐐기 토템술사 기록 8개에서 분당 1.92회, 성난 해일 뒤·치유의 물결/연쇄 치유 앞에 많아 토템술사 광역 우선순위와 끼워 넣기에 넣었습니다.',
       '딜사이클 순서 대조(2026-10-20): 12.1.5 이후 WCL 상위 레이드 8개·쐐기 8개(모두 토템술사)의 실제 시전 순서를 대조했습니다(치유 전문화라 심크 APL 없음). 쐐기 광역 풀에서 쇄도하는 토템(68개 중 61개)과 치유의 토템(66개 중 45개)이 자연의 신속함보다 먼저였고, 폭풍의 흐름 토템은 자연의 신속함 직후(66개 중 60개, 레이드 43번 중 36번)라 토템술사 광역 흐름과 오프닝을 그 순서로 고쳤습니다. 대지의 보호막은 전투 중 거의 다시 걸지 않아(레이드 8개 합계 1번) 한 명 치유 반복 흐름에서 뺐습니다. 레이드 8개 중 6개가 첫 피해 전에 화염 충격을 걸었지만 KB의 화염 충격·용암 폭발이 정기 전용으로 묶여 있어 순서 칸에는 넣지 못하고 본문·메모에만 적었습니다. 선견자는 로그가 없어 바꾸지 않았습니다.',
     ],
     caveats: [
@@ -797,6 +798,14 @@ const manuscript = {
                   skillId: '5394',
                   caption: '충전 상한 확인',
                 },
+                {
+                  skillId: '188389',
+                  caption: '파티가 안전할 때',
+                  above: {
+                    skillId: '51505',
+                    when: '화염 충격 대상에',
+                  },
+                },
               ],
               note: '폭풍의 흐름 토템은 사용권이 있을 때만 씁니다. 대지의 보호막은 전투 전에 걸어 둡니다. 테라제인의 탄력을 골랐다면 충전이 줄지 않아 상위 기록도 전투 중에는 거의 다시 걸지 않았습니다. 파티가 안전하고 차단이 준비됐을 때만 화염 충격을 걸고 그 대상에게 용암 폭발을 이어 딜을 넣습니다.',
             },
@@ -819,6 +828,10 @@ const manuscript = {
                 {
                   skillId: '444995',
                   caption: '토템술사 · 아군이 머물 자리',
+                },
+                {
+                  skillId: '73685',
+                  caption: '쐐기 견본 · 성난 해일 뒤',
                 },
               ],
             },
@@ -871,6 +884,14 @@ const manuscript = {
                 {
                   skillId: '444995',
                   caption: '파티가 머물 자리',
+                },
+                {
+                  skillId: '188389',
+                  caption: '피해 전 여유 글쿨',
+                  above: {
+                    skillId: '51505',
+                    when: '이어서 같은 대상',
+                  },
                 },
                 {
                   skillId: '5394',
@@ -997,7 +1018,7 @@ const manuscript = {
                   },
                 },
               ],
-              note: '대상 수가 줄거나 과치유가 커지면 연쇄 치유를 치유의 물결로 바꿉니다. 폭풍의 흐름 토템 사용권이 이미 2중첩이면 자연의 신속함 전에 하나를 먼저 씁니다.',
+              note: '대상 수가 줄거나 과치유가 커지면 연쇄 치유를 치유의 물결로 바꿉니다. 폭풍의 흐름 토템 사용권이 이미 2중첩이면 자연의 신속함 전에 하나를 먼저 씁니다. 쐐기 견본은 생명 폭발을 골랐습니다. 상위 쐐기 기록은 성난 해일 뒤, 연쇄 치유나 치유의 물결 앞에 분당 약 두 번 썼습니다.',
             },
             {
               label: '영웅 특성·선택 특성별로 끼워 넣는 것',
@@ -1010,6 +1031,10 @@ const manuscript = {
                 {
                   skillId: '73685',
                   caption: '선견자 · 다음 연쇄 치유 강화',
+                },
+                {
+                  skillId: '73685',
+                  caption: '토템 쐐기 · 연쇄 치유 앞',
                 },
                 {
                   skillId: '73920',
@@ -1506,6 +1531,13 @@ const manuscript = {
               trigger: '사용 조건 충족 시',
             },
             {
+              skillId: '188389',
+              label: '화염 충격',
+              phase: '피해 전',
+              trigger: '첫 피해 전 여유 글쿨',
+              note: '아직 치유할 피해가 없으면 화염 충격을 걸고 용암 폭발을 잇습니다. 상위 레이드 기록 8개 중 6개가 첫 피해 전에 걸었습니다. 피해가 들어오면 바로 치유로 돌아갑니다.',
+            },
+            {
               skillId: '5394',
               label: '치유의 토템',
               note: '활발한 토템을 골랐다면 소환할 때 무료 연쇄 치유가 함께 나갑니다. 상위 레이드 기록은 자연의 신속함보다 먼저 첫 충전을 썼습니다. 충전 상한과 실제 회복 필요도 함께 확인합니다.',
@@ -1569,11 +1601,21 @@ const manuscript = {
               label: '치유의 토템',
               note: '필요한 회복과 충전 상한을 확인합니다. 활발한 토템 선택과 연결된 무료 치유를 회수하고 무조건 충전을 오래 보관하지 않습니다.',
             },
+            {
+              skillId: '188389',
+              label: '화염 충격',
+              note: '파티가 안전하고 차단이 준비됐을 때 주 대상에 겁니다. 상위 레이드 기록은 분당 약 두 번 썼습니다. 치유가 필요한 아군이 있으면 걸지 않습니다.',
+            },
+            {
+              skillId: '51505',
+              label: '용암 폭발',
+              note: '화염 충격이 걸린 대상에게 씁니다. 2초 시전이라 곧 피해가 오거나 움직여야 하면 미루고, 여유 글쿨에만 넣습니다.',
+            },
           ],
         },
         aoe: {
           title: '토템술사 다중 회복',
-          summary: '쇄도하는 토템과 치유의 토템을 먼저 깔고, 성난 해일을 넓게 건 뒤 자연의 신속함과 폭풍의 흐름 토템을 묶어 씁니다. 마나가 허용하는 만큼 연쇄 치유를 쓰고 큰 피해는 배정한 쿨다운 하나씩 대응합니다.',
+          summary: '쇄도하는 토템과 치유의 토템을 먼저 깔고, 성난 해일을 넓게 건 뒤 자연의 신속함과 폭풍의 흐름 토템을 묶어 씁니다. 마나가 허용하는 만큼 연쇄 치유를 쓰고 큰 피해는 배정한 쿨다운 하나씩 대응합니다. 쐐기 견본은 생명 폭발을 골라 성난 해일 뒤에 다음 치유를 강화합니다.',
           priority: [
             {
               skillId: '444995',
@@ -1589,6 +1631,11 @@ const manuscript = {
               skillId: '61295',
               label: '성난 해일',
               note: '피해를 받을 아군에게 효과를 넓힙니다. 이미 남아 있는 효과와 굽이치는 물결을 확인하며 같은 대상 갱신만 반복하지 않습니다.',
+            },
+            {
+              skillId: '73685',
+              label: '생명 폭발',
+              note: '쐐기 견본처럼 생명 폭발을 골랐다면 성난 해일 뒤에 써서 다음 연쇄 치유나 치유의 물결을 강화합니다. 상위 쐐기 기록은 분당 약 두 번 썼고, 레이드 견본에는 없습니다.',
             },
             {
               skillId: '378081',
@@ -1943,12 +1990,12 @@ const manuscript = {
       {
         id: 'mythic-plus',
         label: '쐐기',
-        code: 'CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMzMzMjZGjZgFYDmxmGbDIzAbMzMY2mZMa2WmZ2MjZhFjZGDLzyAAAAzMDmZAgBzA',
-        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMzMzMjZGjZgFYDmxmGbDIzAbMzMY2mZMa2WmZ2MjZhFjZGDLzyAAAAzMDmZAgBzA',
-        sourceUrl: 'https://www.wowhead.com/ko/guide/classes/shaman/restoration/talent-builds-pve-healer',
-        sourceLabel: 'Mythic+  (Best)',
-        checkedAt: '2026-10-08',
-        note: '쐐기용 견본입니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
+        code: 'CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMjhFYDmxiGbDIzAbYmZY2mZMaWWmZ2MjZjFjZGDmlZAAYAMzgZGAGDG',
+        url: 'https://www.wowhead.com/ko/talent-calc/blizzard/CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMjhFYDmxiGbDIzAbYmZY2mZMaWWmZ2MjZjFjZGDmlZAAYAMzgZGAGDG',
+        sourceUrl: 'https://www.warcraftlogs.com/reports/CZVL9gHnbrWzpJmD#fight=19',
+        sourceLabel: 'WCL 12.1.5 이후 쐐기 상위 토템술사 대표 빌드(전체 1위, 같은 빌드 6행, 2026-10-16)',
+        checkedAt: '2026-10-20',
+        note: '쐐기용 견본입니다. 12.1.5 이후 쐐기 상위 토템술사 84행에서 가장 많이 겹친 실제 빌드로, 생명 폭발을 골랐습니다(상위 행 84개 중 71개). 레이드 견본에는 생명 폭발이 없습니다. 던전과 파티에 맞춰 차단·군중 제어·해제 선택을 조정하세요.',
         validation: {
           specId: 264,
           heroTreeId: 54,
@@ -1958,11 +2005,11 @@ const manuscript = {
             '3': 13,
             '4': 1,
           },
-          checkedAt: '2026-10-18',
+          checkedAt: '2026-10-20',
           traitDataCommit: '5537d8813dfc59707927722b1e23ffa6fd67ee59',
           gameBuild: '12.1.5.70448',
           browser: {
-            checkedAt: '2026-10-18',
+            checkedAt: '2026-10-20',
             points: [
               34,
               34,
@@ -1970,9 +2017,9 @@ const manuscript = {
             ],
             parentConnections: true,
             available: true,
-            sha256: 'f224389ec4851b2d3d2c132a9e044289956bbccab26cf56b1868105e06797e6f',
+            sha256: '1309f7eda39ea0b63d3f58c6d048f6de0c29974d4706c976e35220c84170d0ab',
           },
-          scope: '12.1.5 SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
+          scope: '12.1.5 상위 로그 특성으로 만든 코드. SimC midnight(5537d881, 12.1.5.70448) 전문화·노드·랭크·포인트 문턱과 한국어 Wowhead 계산기 포인트·선택 가능 여부·부모 연결 확인.',
         },
         heroLabel: '토템술사',
       },

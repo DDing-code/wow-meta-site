@@ -57,7 +57,7 @@ for (const id of REVIEWED) {
   const m = guideManuscripts[id];
   const review = m.logReview.publicationReview;
   assert.equal(review?.patch, P, `${id}: publication needs current recommendation evidence`);
-  assert.equal(review.checkedAt, '2026-10-19');
+  assert.ok(review.checkedAt >= '2026-10-19', `${id}: publication review date`);
   assert.ok(review.choice?.length > 50 && review.evidence?.length > 100, `${id}: publication cannot be a flag-only change`);
   assert.ok(m.blocks.some(b => b.part === 'field' && b.paragraphs?.includes(review.choice)), `${id}: readers must see the choice conditions`);
   assert.equal(m.logReview.heroConclusion.confirmedRanking, false, `${id}: publication is not a performance ranking`);

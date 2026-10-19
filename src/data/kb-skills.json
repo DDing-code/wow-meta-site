@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-19T18:00:32.688Z",
+    "generatedAt": "2026-10-19T18:57:54.960Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
@@ -13474,7 +13474,8 @@
       "class": "Shaman",
       "spec": "정기",
       "specs": [
-        "Elemental"
+        "Elemental",
+        "Restoration"
       ],
       "name": "용암 폭발",
       "koreanName": "용암 폭발",
@@ -13508,7 +13509,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 0,
-        "linkDensity": 0.03,
+        "linkDensity": 0.024,
         "hasWikilinks": true
       },
       "source": {
@@ -26268,7 +26269,8 @@
       "class": "Shaman",
       "spec": "정기",
       "specs": [
-        "Elemental"
+        "Elemental",
+        "Restoration"
       ],
       "name": "화염 충격",
       "koreanName": "화염 충격",
@@ -26304,7 +26306,7 @@
       "quality": {
         "wikilinkCount": 4,
         "synergyCount": 1,
-        "linkDensity": 0.032,
+        "linkDensity": 0.025,
         "hasWikilinks": true
       },
       "source": {
@@ -87891,7 +87893,7 @@
       ],
       "name": "우레 작렬",
       "koreanName": "우레 작렬",
-      "englishName": "",
+      "englishName": "Thunder Blast",
       "icon": "warrior_talent_icon_bloodandthunder",
       "iconName": "warrior_talent_icon_bloodandthunder",
       "school": "",
@@ -87926,7 +87928,7 @@
       "quality": {
         "wikilinkCount": 7,
         "synergyCount": 2,
-        "linkDensity": 0.049,
+        "linkDensity": 0.042,
         "hasWikilinks": true
       },
       "source": {
