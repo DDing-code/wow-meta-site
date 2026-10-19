@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-19T18:57:54.960Z",
+    "generatedAt": "2026-10-19T20:10:10.853Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
-    "totalSkills": 3003,
-    "rawTotalSkills": 3003,
+    "totalSkills": 3004,
+    "rawTotalSkills": 3004,
     "duplicateIds": [],
     "totalSynergies": 607,
     "stats": {
-      "total": 3003,
+      "total": 3004,
       "byType": {
         "buff": 140,
         "hero-talent": 553,
@@ -17,7 +17,7 @@
         "proc": 29,
         "skill": 125,
         "talent": 1009,
-        "spec-talent": 387,
+        "spec-talent": 388,
         "passive": 81,
         "hero-tree": 2,
         "set-bonus": 19,
@@ -42,7 +42,7 @@
         "Rogue": 296,
         "Shaman": 271,
         "Warlock": 296,
-        "Warrior": 249
+        "Warrior": 250
       },
       "bySpec": {
         "DeathKnight-공용": 22,
@@ -100,13 +100,13 @@
         "Warrior-Arms": 39,
         "Warrior-Common": 1,
         "Warrior-무기": 3,
-        "Warrior-Protection": 43,
+        "Warrior-Protection": 44,
         "Warrior-Fury": 48,
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2908,
-        "withSynergies": 2119,
+        "withWikilinks": 2909,
+        "withSynergies": 2121,
         "avgLinkDensity": "0.037"
       }
     }
@@ -2956,13 +2956,15 @@
       },
       "synergies": {
         "relatedSkills": [],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Talents/천둥군주"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 2,
-        "synergyCount": 0,
-        "linkDensity": 0.012,
+        "wikilinkCount": 3,
+        "synergyCount": 1,
+        "linkDensity": 0.014,
         "hasWikilinks": true
       },
       "source": {
@@ -26270,6 +26272,7 @@
       "spec": "정기",
       "specs": [
         "Elemental",
+        "Enhancement",
         "Restoration"
       ],
       "name": "화염 충격",
@@ -26300,13 +26303,15 @@
         "relatedSkills": [
           "08-직업별-Knowledge-Base/11-주술사/정기/Skills/용암폭발"
         ],
-        "relatedTalents": [],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/11-주술사/정기/Talents/전격의불길"
+        ],
         "relatedHeroTalents": []
       },
       "quality": {
-        "wikilinkCount": 4,
-        "synergyCount": 1,
-        "linkDensity": 0.025,
+        "wikilinkCount": 5,
+        "synergyCount": 2,
+        "linkDensity": 0.023,
         "hasWikilinks": true
       },
       "source": {
@@ -26463,7 +26468,7 @@
       "quality": {
         "wikilinkCount": 2,
         "synergyCount": 2,
-        "linkDensity": 0.036,
+        "linkDensity": 0.018,
         "hasWikilinks": true
       },
       "source": {
@@ -63882,6 +63887,58 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Talents\\피투성이발톱.md",
+        "lastUpdate": ""
+      }
+    },
+    "385840": {
+      "id": "385840",
+      "type": "spec-talent",
+      "class": "Warrior",
+      "spec": "Protection",
+      "specs": [
+        "Protection"
+      ],
+      "name": "천둥군주",
+      "koreanName": "천둥군주",
+      "englishName": "Thunderlord",
+      "icon": "ability_vehicle_electrocharge",
+      "iconName": "ability_vehicle_electrocharge",
+      "school": "",
+      "cooldown": "",
+      "castTime": "",
+      "resourceCost": "",
+      "range": "",
+      "description": "사기의 외침의 반경이 5미터만큼 증가합니다.  천둥벼락이 적에게 적중할 때마다 사기의 외침의 남은 재사용 시간이 1.5초만큼 감소하여 최대 4.5초만큼 감소합니다.",
+      "category": "spec-talent",
+      "tags": [],
+      "patch": "12.1.5",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_vehicle_electrocharge.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_vehicle_electrocharge.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_vehicle_electrocharge.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_vehicle_electrocharge.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_vehicle_electrocharge.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/13-전사/방어/Skills/사기의-외침"
+        ],
+        "relatedTalents": [
+          "08-직업별-Knowledge-Base/13-전사/공용/Talents/천둥벼락"
+        ],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 2,
+        "synergyCount": 2,
+        "linkDensity": 0.01,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\13-전사\\방어\\Talents\\천둥군주.md",
         "lastUpdate": ""
       }
     },

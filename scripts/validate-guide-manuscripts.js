@@ -1475,6 +1475,15 @@ function main() {
   for (const branch of protection.heroBranches) {
     assert(branch.aoe.priority.slice(0, 4).map(row => row.skillId).join(',') === '204019,275779,31935,26573', 'Protection Mythic+ AoE table follows the logged pull-start order');
   }
+  // 2026-10-20 최신 메타 후속: 고양도 화염 충격 사용 전문화, 방어 전사 사기의 외침은 천둥군주 기준(상위 기록 간격 45초보다 짧음),
+  // 복수 불지옥 일격은 시전 기록에 안 찍힐 뿐 진입에 쓴다(궤멸자 레이드 8개 중 4개) — 오프닝 첫 칸 위 가지로 둔다.
+  assert(kbSkills['188389']?.specs.includes('Enhancement'), 'Flame Shock must list Enhancement as a user spec');
+  assert(kbSkills['385840']?.specs.includes('Protection') && kbSkills['385840']?.description.includes('1.5초'), 'Thunderlord must exist with its official cooldown-reduction tooltip');
+  const protWarriorText = JSON.stringify(manuscripts['warrior-protection']);
+  assert(!protWarriorText.includes('45초라 두 번째에는 돌아오지 않') && !protWarriorText.includes('사기의 외침은 45초마다') && protWarriorText.includes('천둥군주'), 'Protection Warrior Demoralizing Shout timing must account for Thunderlord');
+  const vengeanceOpen = manuscripts['demonhunter-vengeance'].blocks.find(block => block.title.startsWith('쿨기와 오프닝')).timeline.rails[0].nodes[0];
+  assert(vengeanceOpen.skillId === '203720' && vengeanceOpen.above?.skillId === '189110', 'Vengeance opener keeps Infernal Strike as the optional entry branch');
+  assert(!JSON.stringify(manuscripts['demonhunter-vengeance']).includes('불지옥 일격은 한 번도 쓰지 않았습니다'), 'Vengeance must not repeat the cast-log artifact that Infernal Strike was never used');
 
   const mageFrost = manuscripts['mage-frost'];
   const mageFrostSource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '06-마법사', '냉기', 'Meta', 'guide-12.1.json');
