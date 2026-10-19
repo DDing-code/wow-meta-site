@@ -616,7 +616,7 @@ function BeginnerPage() {
                 {section.id === 'crafting' && screens.length ? (
                   <ScreenGuide aria-label="주문 제작 창 화면 안내">
                     <h3>게임 창에서 어디를 누르나요?</h3>
-                    <p>주문 제작 담당 NPC에게 말을 걸면 열리는 ‘주문 제작 의뢰’ 창을 본떠 그렸습니다. 번호 상자가 가리키는 곳을 위 단계와 맞춰 보세요. 실제 화면과 글자·배치가 조금 다를 수 있고, 장비·재료·숫자는 예시입니다.</p>
+                    <p>주문 제작 담당 NPC에게 말을 걸면 열리는 ‘주문 제작 의뢰’ 창을 실제 한국어 게임 화면의 배치와 문구대로 본떠 그렸습니다. 번호 상자가 가리키는 곳을 위 단계와 맞춰 보세요. 장비·재료·숫자는 예시입니다.</p>
                     {screens.map(screen => (
                       <ScreenFigure key={screen.id} data-screen-id={screen.id}>
                         <figcaption>
