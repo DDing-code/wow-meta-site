@@ -871,3 +871,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 페이지 테스트 10개(화면 5장·번호 상자와 설명 수 일치·검색 유지 검사 추가) 통과. 320·390·1440px 캡처와 넘침·깨진 그림 0 확인: artifacts/beginner-screens-20261019/.
 - 초보자 주문 창 그림 재작업(2026-10-19): 사용자가 보낸 실제 한국어 '주문 제작 의뢰' 창 캡처를 기준으로 `CraftingScreens.js` 5장을 다시 그렸다. 초상화·뒤로 단추·금색 제목·닫기 단추·소지금 줄을 넣고, 2·3번 그림은 실제처럼 한 창(왼쪽 재료 제공·선택 재료 제공·최고 품질 재료 사용, 오른쪽 개인 주문·받는이·최소 품질(없음)·제작 참고 사항·수수료·망치·기간(48시간)·게시 수수료·총 가격·주문 의뢰하기)을 보여 주고 번호 상자만 다르게 두었다. 불꽃 칸은 Wowhead 재료 분류 #401(해일의 불꽃·광휘의 불꽃)대로 고르는 칸과 '사용 불가 아이템 숨기기' 목록으로 그렸다. 사진으로 '최소 품질' 표기를 확인했고 KB screensNote·설명 3곳을 고쳤다. 320·390·1440px 넘침·깨진 아이콘 0(artifacts/beginner-screens-20261019-r2). 우편 창 제목과 '장인의 진정성' 칸 역할은 아직 미확인.
   - 배포: 사이트 `eef84e03` main 푸시, KB 로컬 `a8bfb49`, Vercel `dpl_DMuNGrDoV7EipzzZzyr3tnAvr9Sf` Ready. 공개 https://wowmeta.vercel.app 의 `main.4472d792.js`가 로컬 정리 빌드와 SHA-256 일치(7bcbabed…). 공개 주소에서 320·390·1440px 재촬영 넘침·깨진 아이콘 0(artifacts/beginner-screens-20261019-r2/public).
+
+### 2026-10-20 흐름도 노드 아이콘 키우기
+- 사용자 요청("노드 아이콘이 너무 작아 더 키워줘")으로 개념서 '스킬 구조' 흐름도 상자(BookDiagramNodeBox)의 스킬 아이콘을 18px→32px(520px 이하 28px)로 키웠다. 아이콘 없는 상자의 반짝이 표시(BookDiagramGlyph)도 같은 크기로 맞췄고, 밑줄은 아이콘 아래가 아니라 이름 아래에만 둔다. 딜사이클 타임라인 아이콘(36~40px)과 본문 속 작은 아이콘은 그대로다.
+- 39개 가이드 경로를 320·390·1440px로 돌려 상자 넘침·문서 가로 넘침·깨진 아이콘 0을 확인했다. 390px에서 두 상자가 나란히 놓일 때 이름이 두 줄로 꺾이는 곳이 48→88곳으로 늘었지만 단어 단위로 꺾이고 아이콘은 이름 옆 가운데에 남는다. 캡처·측정: artifacts/diagram-icons-20261020/(before-*·after-*·wrap-*, sweep-before.json·sweep-after.json).

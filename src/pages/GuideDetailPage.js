@@ -2103,7 +2103,7 @@ function BookDiagramNode({ node, guide, inlineTerms }) {
       <strong>
         {skill
           ? <InlineSkillTerm skill={skill}>{label}</InlineSkillTerm>
-          : <span><BookDiagramGlyph aria-hidden="true"><Sparkles size={13} /></BookDiagramGlyph><em>{renderGuideText(label, inlineTerms)}</em></span>}
+          : <span><BookDiagramGlyph aria-hidden="true"><Sparkles size={16} /></BookDiagramGlyph><em>{renderGuideText(label, inlineTerms)}</em></span>}
       </strong>
       {!!node.note && <p>{renderGuideText(node.note, inlineTerms)}</p>}
     </BookDiagramNodeBox>
@@ -6503,7 +6503,7 @@ const BookDiagramNodeBox = styled.div`
   strong > span {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
     max-width: 100%;
     margin: 0;
     white-space: normal;
@@ -6517,11 +6517,32 @@ const BookDiagramNodeBox = styled.div`
     overflow-wrap: anywhere;
   }
 
+  /* 노드 아이콘은 이름 글자보다 크게 보여 준다. 밑줄은 아이콘 아래가 아니라 이름 아래에만 둔다 */
+  strong > a {
+    border-bottom: 0;
+  }
+
+  strong > a > em {
+    border-bottom: 1px solid rgba(231, 196, 111, 0.22);
+  }
+
+  strong > a:hover > em {
+    border-bottom-color: rgba(247, 221, 160, 0.76);
+  }
+
   strong > a > img,
   strong > a > span {
     flex: 0 0 auto;
-    width: 18px;
-    height: 18px;
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (max-width: 520px) {
+    strong > a > img,
+    strong > a > span {
+      width: 28px;
+      height: 28px;
+    }
   }
 
   strong > span > em {
@@ -6543,11 +6564,16 @@ const BookDiagramGlyph = styled.span`
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
-  width: 18px;
-  height: 18px;
+  width: 32px;
+  height: 32px;
   border: 1px dashed rgba(244, 239, 229, 0.3);
   border-radius: 3px;
   color: #c9bd9c;
+
+  @media (max-width: 520px) {
+    width: 28px;
+    height: 28px;
+  }
 `;
 
 const BookDiagramLoop = styled.div`
