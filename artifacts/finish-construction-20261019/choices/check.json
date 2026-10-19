@@ -1,0 +1,314 @@
+[
+  {
+    "id": "monk-brewmaster",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "druid-balance",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "paladin-holy",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "rogue-assassination",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "demonhunter-havoc",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "warrior-fury",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "mage-frost",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "druid-feral",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "shaman-enhancement",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "hunter-survival",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 320,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "monk-brewmaster",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "druid-balance",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "paladin-holy",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "rogue-assassination",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "demonhunter-havoc",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "warrior-fury",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "mage-frost",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "druid-feral",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "shaman-enhancement",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "hunter-survival",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 390,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "monk-brewmaster",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "druid-balance",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "paladin-holy",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "rogue-assassination",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "demonhunter-havoc",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "warrior-fury",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "mage-frost",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "druid-feral",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "shaman-enhancement",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "hunter-survival",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 1440,
+    "paragraph": true,
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  }
+]

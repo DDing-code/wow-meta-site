@@ -14,6 +14,7 @@ for (const [id, d] of Object.entries(decisions)) {
   const canonical = kbGuidePath(id).file;
   const m = JSON.parse(fs.readFileSync(canonical, 'utf8'));
   assert.equal(m.patch, '12.1.5');
+  m.status = '실전 심화 공략';
   const oldConclusion = m.logReview.heroConclusion.conclusion;
   const conclusion = `${d.choice} ${d.evidence} ${scope}`;
   const chapter = m.blocks.find(b => b.part === 'field');
@@ -22,7 +23,7 @@ for (const [id, d] of Object.entries(decisions)) {
   chapter.paragraphs.unshift(d.choice);
   m.logReview.heroConclusion = { ...m.logReview.heroConclusion, checkedAt: '2026-10-19', conclusion, confirmedRanking: false };
   m.sourceStatus = '2026-10-19 · 12.1.5 추천 조건 검수. 레이드·일반 쐐기·고단과 학습 난도를 나눠 견본의 목적을 구분합니다. 자료 간 의견 차이와 관측 기록 한계는 본문에 명시합니다.';
-  m.sourceNote = `${m.sourceNote.replace(oldConclusion, '').trim()} ${conclusion}`;
+  m.sourceNote = `${m.sourceNote.replace(oldConclusion, '').replace('최신 로그 비교와 전체 세부 검수는 진행 중입니다. ', '').trim()} ${conclusion}`;
   m.evidence.push(`12.1.5 추천 조건 재검수(2026-10-19): ${d.evidence}`);
   if (id === 'druid-feral') m.caveats = m.caveats.map(x => x.replace('한국 레이드 행은 3행뿐입니다.', '당시 한국 님리사 신화는 3행뿐이었으며, 이번에는 다른 신화 네임드의 한국 적용 후 기록을 추가 대조했습니다.'));
   m.caveats.push(scope);
@@ -31,7 +32,7 @@ for (const [id, d] of Object.entries(decisions)) {
   assert(date, `${id}: source date missing`);
   const fresh = {tier: 'A', label: 'Icy Veins 12.1.5 추천 조건 재검수', url: pages[id].url, updated: `${date} 갱신 / 2026-10-19 브라우저 확인`, note: d.evidence};
   if (source) Object.assign(source, fresh); else m.sources.push(fresh);
-  if (extra[id]) m.sources.push({tier: 'S', label: 'WCL 한국 12.1.5 네크잘리 신화 순위', url: extra[id].url, updated: '2026-10-19 브라우저 확인', note: d.evidence});
+  if (extra[id]) m.sources.push({tier: 'S', label: "WCL 한국 12.1.5 Nek'zali 신화 순위", url: extra[id].url, updated: '2026-10-19 브라우저 확인', note: d.evidence});
   if (id === 'mage-fire') {
     m.sources.push({tier: 'S', label: 'WCL 한국 12.1.5 화염 신화 다른 네임드', url: 'https://www.warcraftlogs.com/zone/rankings/53?class=Mage&spec=Fire&region=3&difficulty=5', updated: '2026-10-19 브라우저 확인', note: d.evidence});
     m.sources.push({tier: 'S', label: 'WCL 한국 12.1.5 화염 님리사 영웅 난이도', url: require('./kr-fire-heroic.json').url, updated: '2026-10-19 브라우저 확인', note: '10월 15~18일 서로 다른 한국 플레이어 5명, 성난태양. 신화 난이도 표본과 합산하지 않습니다.'});

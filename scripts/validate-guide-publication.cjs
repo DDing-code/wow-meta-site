@@ -41,18 +41,28 @@ for (const id of ids) {
 }
 assert.equal(getGuidePublication('unknown', null).label, '확인 중');
 assert.equal(getGuidePublication('unknown', null).date, null);
-assert.equal(getGuidePublication('rogue-assassination', guideManuscripts['rogue-assassination']).partial, true);
-assert.equal(getGuidePublication('rogue-subtlety', guideManuscripts['rogue-subtlety']).partial, true);
+assert.equal(getGuidePublication('rogue-assassination', guideManuscripts['rogue-assassination']).partial, false);
+assert.equal(getGuidePublication('rogue-subtlety', guideManuscripts['rogue-subtlety']).partial, false);
 assert.equal(getGuidePublication('rogue-outlaw', guideManuscripts['rogue-outlaw']).partial, false);
 for (const id of ['mage-fire', 'mage-frost']) {
-  assert.equal(getGuidePublication(id, guideManuscripts[id]).partial, true);
+  assert.equal(getGuidePublication(id, guideManuscripts[id]).partial, false);
 }
 assert.equal(getGuidePublication('mage-arcane', guideManuscripts['mage-arcane']).partial, false);
-// 2026-10-19 6라운드 재판단 뒤 공사 중으로 남는 13개(근거: docs/patch-12.1-progress.md).
-const STILL_PARTIAL = ['monk-brewmaster', 'monk-windwalker', 'druid-balance', 'paladin-holy', 'rogue-assassination',
+// 2026-10-19 추천 목적별 검수: 의견 차이를 지우지 않고 본문·KB·출판 근거를 함께 보완한 13개.
+const REVIEWED = ['monk-brewmaster', 'monk-windwalker', 'druid-balance', 'paladin-holy', 'rogue-assassination',
   'demonhunter-havoc', 'rogue-subtlety', 'warrior-fury', 'mage-frost', 'druid-feral', 'shaman-enhancement',
   'hunter-survival', 'mage-fire'];
-assert.deepEqual([...ids].filter(id => getGuidePublication(id, guideManuscripts[id]).partial).sort(), [...STILL_PARTIAL].sort());
+assert.deepEqual([...ids].filter(id => getGuidePublication(id, guideManuscripts[id]).partial), []);
+for (const id of REVIEWED) {
+  const m = guideManuscripts[id];
+  const review = m.logReview.publicationReview;
+  assert.equal(review?.patch, P, `${id}: publication needs current recommendation evidence`);
+  assert.equal(review.checkedAt, '2026-10-19');
+  assert.ok(review.choice?.length > 50 && review.evidence?.length > 100, `${id}: publication cannot be a flag-only change`);
+  assert.ok(m.blocks.some(b => b.part === 'field' && b.paragraphs?.includes(review.choice)), `${id}: readers must see the choice conditions`);
+  assert.equal(m.logReview.heroConclusion.confirmedRanking, false, `${id}: publication is not a performance ranking`);
+  assert.ok(m.sources.some(s => s.url === review.sourceUrl && s.updated.includes('2026-10-19')));
+}
 for (const id of ids) {
   if (!getGuidePublication(id, guideManuscripts[id]).partial) {
     assert.doesNotMatch(guideManuscripts[id].status || '', /검수 중/, `Released guide ${id} must not say 검수 중`);
