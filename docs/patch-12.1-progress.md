@@ -16,6 +16,7 @@
 - 47개 설명은 줄마다 가는 선으로 나열하던 정의 목록 대신, 1px 테두리 패널의 2열 격자(760px 이하 1열)로 바꿨습니다. 패널은 영역 아이콘 상자·제목·개수의 머리글 아래에 놓이고, 영약 영역의 사용 시점은 금색 칩으로, 팁은 점선 위에 금색 "팁" 라벨로 구분합니다. "첫 파티에 가기 전"의 01~05는 큰 금색 숫자가 있는 1열 목록으로 보여 주되 데이터 문자열은 그대로 둡니다. 마무리는 금색 윗선 패널과 테두리형 "내 직업 가이드 찾기" 단추, 접히는 출처 목록입니다. `src/data/beginnerGuide.js`의 내용은 한 글자도 바꾸지 않았습니다.
 - 홈(`src/pages/HomePage.js`)의 초보자 진입은 나침반 아이콘과 화살표가 있는 금색 왼쪽 선 패널로 바꿨고(560px 이하에서는 화살표 숨김), 다른 부분은 손대지 않았습니다.
 - 검증: `BeginnerPage.test.js` 4개, `npm run validate:quiet` 9단계, 환경 파일을 읽지 않는 정리 빌드(`main.410e0e5e.js`, 소스맵 0개) 통과. `artifacts/beginner-design-20261019/shots.cjs`로 빌드본(4410)에서 320·390·1440px의 첫 화면·목차 이동·검색·빈 결과·마무리·홈 진입을 찍었고 가로 넘침·화면 오류 0, 목차 이동 뒤 현재 위치 표시가 맞습니다(`shots-4/`, `ui-check.json`). ODDIN 브라우저에서 실제로 검색("영약" 7개·강조 5곳)·검색 지우기·바로가기 이동·상단 메뉴 표시를 직접 눌러 확인했습니다. 빌드 경고는 기존 `GuideDetailPage.js` 미사용 코드뿐입니다.
+- 디자인은 `0ec234ae`로 main에 푸시했고, `artifacts/beginner-design-20261019/stage-deploy.cjs`(새 `deploy/` 폴더, 기존 `artifacts/beginner-20261019/deploy`는 그대로)로 만든 준비본을 `vercel deploy --prebuilt --prod`로 올려 운영 배포 `dpl_BLoqXvhqre6ffqiqT2Bm2SJq5YF9`가 production·Ready, 별칭 https://wowmeta.vercel.app 임을 확인했습니다. 공개 https://wowmeta.vercel.app/beginner 가 `main.410e0e5e.js`를 내며, 공개 파일 6개의 SHA-256이 로컬 정리 빌드와 모두 같습니다. ODDIN 브라우저로 공개 주소에서 새 디자인·47설명·목차·메뉴 표시를 다시 확인했습니다.
 
 ## 2026-10-19 가이드 시너지 연결 — 관계도 탐색과 모션 연결
 
