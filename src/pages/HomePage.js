@@ -83,6 +83,17 @@ const Section = styled.section`
   padding-top: 38px;
 `;
 
+const BeginnerLink = styled(Link)`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.14);
+  strong { color: #d2b373; }
+  span { color: #aeb8be; font-size: 0.88rem; word-break: keep-all; }
+  &:hover span { color: #eef1f3; }
+`;
+
 const ActionGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -191,6 +202,11 @@ function HomePage() {
           </Stat>
         </Stats>
       </Hero>
+
+      <BeginnerLink to="/beginner">
+        <strong>와우가 처음이신가요? →</strong>
+        <span>전투 용어부터 영약·물약·파티 준비까지, 초보자 안내에서 시작하세요.</span>
+      </BeginnerLink>
 
       <Section>
         <ActionGrid>
