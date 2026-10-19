@@ -56,7 +56,7 @@ const { chromium } = require('playwright');
       assert((await page.locator('#guide-section-1').innerText()).includes('내 스킬 한눈에 보기'));
       assert((await page.locator('body').innerText()).includes('12.1.5'));
       assert.equal(await page.locator('#uptime').count(), 0);
-      const graph = page.locator('#synergies svg[role="img"]');
+      const graph = page.locator('#synergies svg[role="group"]');
       const center = await graph.locator('.graph-center-node').textContent();
       assert(center.includes('최후의 선고') && center.includes('10개 시너지 연결'));
       await graph.evaluate(element => window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 80));

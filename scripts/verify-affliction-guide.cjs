@@ -62,7 +62,7 @@ const { chromium } = require('playwright');
         assert.equal(await page.locator(`a[href$="spell=${id}"]`).count(), 0);
       }
       assert.equal(await page.locator('#uptime').count(), 0);
-      const graph = page.locator('#synergies svg[role="img"]');
+      const graph = page.locator('#synergies svg[role="group"]');
       const centerText = await graph.locator('.graph-center-node').textContent();
       assert(centerText.includes('불안정한 고통') && centerText.includes('10개 시너지 연결'));
       await graph.evaluate(element => window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 80));

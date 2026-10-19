@@ -1,6 +1,22 @@
 import kbData from './kb-skills.json';
 import kbSynergies from './kb-synergies.json';
-import { buildSpellGraph, marksmanshipGraph, matchesSpell, matchesSpellSpec, spellKind } from './spellRelations';
+import { buildGuideSpellGraph, buildSpellGraph, marksmanshipGraph, matchesSpell, matchesSpellSpec, spellKind } from './spellRelations';
+
+test('가이드 지도는 생략된 참여 스킬도 연결하고 방향과 조건 원문을 유지한다', () => {
+  const note = kbSynergies.synergies.hunter_mm_trick_multishot;
+  const allLinkedSkills = note.participants.map(id => kbData.skills[id]);
+  const graph = buildGuideSpellGraph({
+    height: 660, centerPoint: { x: 500, y: 330 },
+    center: { skill: kbData.skills['19434'], connectionCount: 1 }, skillNodes: [],
+    synergyNodes: [{ synergy: note, allLinkedSkills, x: 200, y: 120 }],
+  });
+  expect(graph.centerId).toBe('19434');
+  expect(graph.nodes).toHaveLength(note.participants.length + 1);
+  expect(graph.edges.map(edge => edge.target)).toEqual(note.participants);
+  expect(graph.nodes.find(node => node.id === note.id).relations).toEqual(note.relations);
+  expect(graph.nodes.every(node => Number.isFinite(node.x) && Number.isFinite(node.y))).toBe(true);
+  expect(note.relations).toHaveLength(4);
+});
 
 test('사격 지도는 방향과 조건을 기록한 KB 관계만 연결한다', () => {
   const nodes = new Map(marksmanshipGraph.nodes.map(node => [node.id, node]));

@@ -53,7 +53,7 @@ const { chromium } = require('playwright');
       assert.equal(await page.locator('#uptime').count(), 0);
       assert(await page.locator('a[href$="spell=454735"]').filter({ hasText: '전문화 황폐' }).count() > 0);
       assert(await page.locator('a[href$="spell=434589"]').filter({ hasText: '거대마귀의 혼돈의 화살' }).count() > 0);
-      const graph = page.locator('#synergies svg[role="img"]');
+      const graph = page.locator('#synergies svg[role="group"]');
       const center = await graph.locator('.graph-center-node').textContent();
       assert(center.includes('혼돈의 화살') && center.includes('12개 시너지 연결'));
       await graph.evaluate(element => window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 80));

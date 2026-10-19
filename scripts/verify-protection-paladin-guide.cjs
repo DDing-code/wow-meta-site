@@ -58,7 +58,7 @@ const { chromium } = require('playwright');
       assert((await defense.innerText()).includes('12초') && (await defense.innerText()).includes('마지막 저항'));
       await defense.evaluate(element => window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 80));
       await page.screenshot({ path: path.join(output, `${width}-defense.png`) });
-      const graph = page.locator('#synergies svg[role="img"]');
+      const graph = page.locator('#synergies svg[role="group"]');
       const center = await graph.locator('.graph-center-node').textContent();
       assert(center.includes('정의의 방패') && center.includes('11개 시너지 연결'));
       await graph.evaluate(element => window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 80));

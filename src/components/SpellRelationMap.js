@@ -2,8 +2,7 @@ import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { marksmanshipGraph, relationKinds, spellKind, spellKinds, spellName, matchesSpell } from '../data/spellRelations';
 import './SpellRelationMap.css';
 
-const graphById = new Map(marksmanshipGraph.nodes.map(node => [node.id, node]));
-const neighbors = id => marksmanshipGraph.edges
+const graphNeighbors = (graph, id) => graph.edges
   .filter(edge => edge.source === id || edge.target === id)
   .map(edge => edge.source === id ? edge.target : edge.source);
 
@@ -39,9 +38,10 @@ export function SpellReference({ record, children, onClick, ...props }) {
   </>;
 }
 
-export function SpellDetail({ record, onSelect, onClear }) {
+export function SpellDetail({ record, onSelect, onClear, graph = marksmanshipGraph }) {
+  const graphById = new Map(graph.nodes.map(node => [node.id, node]));
   const kind = record ? spellKind(record) : null;
-  const related = record ? neighbors(record.id).map(id => graphById.get(id)) : [];
+  const related = record ? graphNeighbors(graph, record.id).map(id => graphById.get(id)) : [];
   const directions = record?.type === 'synergy' ? record.relations || [] : [];
   return (
     <aside className="detail" aria-label="선택한 스킬 상세" aria-live="polite">
@@ -113,17 +113,21 @@ function nodeLines(node) {
 }
 
 // 움직이는 좌표는 React 상태에 넣지 않고 SVG에 그린다.
-function useMapMotion(svgRef, nodes, edges, onSelect, motion, setZoomValue) {
+function useMapMotion(svgRef, graph, nodes, edges, onSelect, motion, setZoomValue) {
   const controller = useRef(null);
   const selectRef = useRef(onSelect);
   selectRef.current = onSelect;
   const motionRef = useRef(motion);
   motionRef.current = motion;
-  const positions = useRef(new Map(marksmanshipGraph.nodes.map(node => [node.id, { ...node, homeX: node.x, homeY: node.y, vx: 0, vy: 0 }])));
+  const positions = useRef(new Map());
   useEffect(() => {
     const svg = svgRef.current;
     const viewport = svg.querySelector('[data-viewport]');
+    const graphById = new Map(graph.nodes.map(node => [node.id, node]));
     const byId = positions.current;
+    graph.nodes.forEach(node => {
+      if (!byId.has(node.id)) byId.set(node.id, { ...node, homeX: node.x, homeY: node.y, vx: 0, vy: 0 });
+    });
     const moving = nodes.map(node => byId.get(node.id));
     const nodeElements = [...svg.querySelectorAll('[data-node-id]')];
     const edgeElements = [...svg.querySelectorAll('[data-edge]')];
@@ -253,16 +257,17 @@ function useMapMotion(svgRef, nodes, edges, onSelect, motion, setZoomValue) {
       svg.removeEventListener('pointerup', up); svg.removeEventListener('pointercancel', up);
       svg.removeEventListener('lostpointercapture', up);
     };
-  }, [nodes, edges, svgRef, setZoomValue]);
+  }, [graph, nodes, edges, svgRef, setZoomValue]);
   useEffect(() => { if (motion) controller.current?.wake(); else controller.current?.stop(); }, [motion]);
   return controller;
 }
 
-export default function SpellRelationMap({ selected, onSelect, onClear, query, kind, resetFilters }) {
+export default function SpellRelationMap({ selected, onSelect, onClear, query = '', kind = 'all', resetFilters, graph = marksmanshipGraph, label = '사격 사냥꾼' }) {
+  const graphById = useMemo(() => new Map(graph.nodes.map(node => [node.id, node])), [graph]);
   const svgRef = useRef(null);
   const tooltipRef = useRef(null);
   const [hovered, setHovered] = useState(null);
-  const [local, setLocal] = useState(false);
+  const [local, setLocal] = useState(!!graph.centerId);
   const [zoomValue, setZoomValue] = useState(100);
   const [motion, setMotion] = useState(() => !window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const [tooltip, setTooltip] = useState(null);
@@ -277,25 +282,25 @@ export default function SpellRelationMap({ selected, onSelect, onClear, query, k
     if (!selectedId || query) setLocal(false);
   }, [selectedId, query]);
   const nodes = useMemo(() => {
-    let records = marksmanshipGraph.nodes;
+    let records = graph.nodes;
     if (query) {
       const hits = records.filter(node => matchesSpell(node, query));
-      const ids = new Set(hits.flatMap(node => [node.id, ...neighbors(node.id)]));
+      const ids = new Set(hits.flatMap(node => [node.id, ...graphNeighbors(graph, node.id)]));
       records = records.filter(node => ids.has(node.id));
     }
     if (local && selectedId) {
-      const ids = new Set([selectedId, ...neighbors(selectedId)]);
+      const ids = new Set([selectedId, ...graphNeighbors(graph, selectedId)]);
       records = records.filter(node => ids.has(node.id));
     }
     return kind === 'all' ? records : records.filter(node => node.kind === kind);
-  }, [query, kind, local, selectedId]);
+  }, [graph, query, kind, local, selectedId]);
   const edges = useMemo(() => {
     const ids = new Set(nodes.map(node => node.id));
-    return marksmanshipGraph.edges.filter(edge => ids.has(edge.source) && ids.has(edge.target));
-  }, [nodes]);
-  const controller = useMapMotion(svgRef, nodes, edges, onSelect, motion, setZoomValue);
+    return graph.edges.filter(edge => ids.has(edge.source) && ids.has(edge.target));
+  }, [graph, nodes]);
+  const controller = useMapMotion(svgRef, graph, nodes, edges, onSelect, motion, setZoomValue);
   const activeId = hovered || selectedId;
-  const near = new Set(neighbors(activeId));
+  const near = new Set(graphNeighbors(graph, activeId));
   useEffect(() => {
     if (selectedId) controller.current?.focus(selectedId);
   }, [selectedId, controller]);
@@ -308,10 +313,10 @@ export default function SpellRelationMap({ selected, onSelect, onClear, query, k
     }
   };
   const hideTooltip = () => { setHovered(null); setTooltip(null); };
-  const reset = () => { setLocal(false); resetFilters(); controller.current?.reset(); };
+  const reset = () => { setLocal(false); resetFilters?.(); controller.current?.reset(); };
   return (
     <>
-      <section className="workbench" aria-label="사격 사냥꾼 관계 지도">
+      <section className="workbench" aria-label={`${label} 관계 지도`}>
         <div className="map-area">
           <div className="map-top">
             <span className="map-count" role="status">{nodes.length}개 노드 / {edges.length}개 연결</span>
@@ -321,14 +326,14 @@ export default function SpellRelationMap({ selected, onSelect, onClear, query, k
             </div>
           </div>
           {selected && <div className="mobile-selection" aria-hidden="true"><SpellIcon record={selected} /><span>{spellName(selected)}</span></div>}
-          <svg ref={svgRef} className="canvas" viewBox="0 0 1000 720" role="group" aria-label="사격 스킬 관계 지도. 탭으로 이동하고 엔터로 선택하세요." onPointerDown={hideTooltip}>
+          <svg ref={svgRef} className="canvas" viewBox="0 0 1000 720" role="group" aria-label={`${label} 시너지 그래프. 탭으로 이동하고 엔터로 선택하세요.`} onPointerDown={hideTooltip}>
             <g data-viewport="">
               <g aria-hidden="true">{edges.map(edge => (
                 <line key={edge.source + edge.target} data-edge="" className={'edge' + (activeId ? edge.source === activeId || edge.target === activeId ? ' emphasis' : ' muted' : '')} />
               ))}</g>
               {nodes.map(node => (
                 <g key={node.id} data-node-id={node.id}
-                  className={['node', node.kind, node.id === selectedId ? 'selected' : near.has(node.id) ? 'related' : activeId ? 'muted' : ''].join(' ')}
+                  className={['node', node.id === graph.centerId ? 'graph-center-node' : '', node.kind, node.id === selectedId ? 'selected' : near.has(node.id) ? 'related' : activeId ? 'muted' : ''].join(' ')}
                   style={{ '--node-color': spellKinds[node.kind].color }}
                   tabIndex="0" role="button" aria-pressed={node.id === selectedId}
                   aria-label={spellName(node) + ', ' + spellKinds[node.kind].label + (node.kind === 'note' ? '' : ', 주문 번호 ' + node.id)}
@@ -338,9 +343,11 @@ export default function SpellRelationMap({ selected, onSelect, onClear, query, k
                   }}
                   onMouseEnter={event => showTooltip(node, event)} onMouseLeave={hideTooltip}
                   onFocus={event => showTooltip(node, event)} onBlur={hideTooltip}>
+                  {node.id === graph.centerId && <title>{spellName(node)} · {graph.centerConnections}개 시너지 연결</title>}
                   <rect className="hit" x={node.kind === 'note' ? -115 : -70} y="-22" width={node.kind === 'note' ? 230 : 140} height="68" />
                   <circle className="ring" r={node.id === selectedId ? 15 : 13} />
                   {node.kind === 'note' ? <path className="dot" d="M0 -7 L7 0 L0 7 L-7 0Z" /> : <circle className="dot" r={node.id === selectedId ? 8 : node.kind === 'skill' ? 6 : 5} />}
+                  {graph.centerId && node.kind !== 'note' && <image href={node.iconUrls?.medium || node.iconUrl} x="-9" y="-9" width="18" height="18" />}
                   <text y="24">{nodeLines(node).map((line, index) => <tspan key={index} x="0" dy={index ? 16 : 0}>{line}</tspan>)}
                     {node.kind === 'buff' && <tspan x="0" dy="15" className="qualifier">버프</tspan>}
                   </text>
@@ -360,11 +367,11 @@ export default function SpellRelationMap({ selected, onSelect, onClear, query, k
             </div>
           </div>
         </div>
-        <SpellDetail record={selected} onSelect={onSelect} onClear={onClear} />
+        <SpellDetail record={selected} onSelect={onSelect} onClear={onClear} graph={graph} />
       </section>
       <div className="map-footer">
         <p>선 = 확인된 관계에 참여한 스킬·특성<br />딜사이클 순서는 아닙니다. 발동·강화의 방향과 조건은 관계 노트에서 확인하세요.</p>
-        <p>사격 핵심 관계 {marksmanshipGraph.nodes.filter(node => node.kind === 'note').length}개<br />이름·설명은 KB에서 생성한 DB 원문입니다.</p>
+        <p>{label} 관계 {graph.nodes.filter(node => node.kind === 'note').length}개<br />이름·설명은 KB에서 생성한 DB 원문입니다.</p>
       </div>
       <div ref={tooltipRef} className="tooltip" role="tooltip" hidden={!tooltip}>
         {tooltip && <><div className="tooltip-head"><SpellIcon record={tooltip} />{spellName(tooltip)}</div><p className="description">{tooltip.description}</p></>}

@@ -76,6 +76,20 @@
 .spell-explorer .requirements { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
 .spell-explorer .list-workbench { display:grid; grid-template-columns:minmax(0,1fr) 330px; gap:24px; }
 .spell-explorer .list-workbench .detail { position:sticky; top:82px; align-self:start; }
+.guide-synergy-explorer { min-width:0; --map-bg:#0b1014; }
+.guide-synergy-explorer .map-area { position:relative; top:auto; }
+.guide-synergy-explorer .workbench { display:block; }
+.guide-synergy-explorer .detail { border-left:0; border-top:1px solid var(--map-line); padding:18px 0; }
+.guide-synergy-explorer .detail-placeholder { padding:0; }
+.guide-synergy-explorer .canvas { height:660px; }
+.guide-synergy-explorer .map-top { position:relative; top:auto; right:auto; padding-top:10px; }
+.guide-synergy-explorer .map-footer { flex-wrap:wrap; }
+.guide-synergy-explorer .map-footer p { margin:0; text-align:left; }
+@media (max-width:1100px) {
+  .guide-synergy-explorer .workbench { display:block; }
+  .guide-synergy-explorer .detail { border-left:0; border-top:1px solid var(--map-line); padding:18px 0; }
+  .guide-synergy-explorer .canvas { height:520px; }
+}
 @media (min-width:1500px) { .spell-explorer .canvas { height:710px; } }
 @media (max-width:1100px) {
   .spell-explorer .workbench { grid-template-columns:minmax(0,1fr) 260px; }

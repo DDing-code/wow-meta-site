@@ -2,6 +2,8 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import SpecializationIcon from '../components/SpecializationIcon.js';
+import SpellRelationMap from '../components/SpellRelationMap.js';
+import { buildGuideSpellGraph } from '../data/spellRelations.js';
 import {
   Activity,
   ArrowDown,
@@ -892,27 +894,6 @@ function graphElementId(prefix, value, fallbackIndex = 0) {
   return `${prefix}-${Math.abs(hash).toString(36)}${suffix}`;
 }
 
-function graphLabelLines(value, maxChars = 9) {
-  const text = cleanText(value).replace(/\s+/g, ' ');
-  if (!text) return [];
-  if (text.length <= maxChars) return [text];
-
-  const separators = ['-', '·', ':', ' '];
-  const splitAt = separators
-    .map(separator => text.lastIndexOf(separator, maxChars + 2))
-    .filter(index => index > 2)
-    .sort((a, b) => b - a)[0];
-
-  if (splitAt) {
-    return [
-      text.slice(0, splitAt).replace(/[-·:\s]+$/g, ''),
-      text.slice(splitAt + 1, splitAt + 1 + maxChars).replace(/^[-·:\s]+/g, ''),
-    ].filter(Boolean);
-  }
-
-  return [text.slice(0, maxChars), text.slice(maxChars, maxChars * 2)].filter(Boolean);
-}
-
 function getSynergyGraphModel(data, guide) {
   const width = 1000;
   const height = 660;
@@ -1185,7 +1166,7 @@ function getResearchPanels(guide, data, manuscript, profile) {
     {
       label: '시너지',
       title: '스킬·특성 연결',
-      body: `강한 연결은 ${topSynergies.map(synergyName).slice(0, 3).join(', ') || 'KB 시너지 노트'}에서 확인됩니다. 그래프의 금색 노드는 판단 묶음이고, 보라/푸른/청록 노드는 실제 스킬·특성·영웅 특성입니다.`,
+      body: `강한 연결은 ${topSynergies.map(synergyName).slice(0, 3).join(', ') || 'KB 시너지 노트'}에서 확인됩니다. 그래프의 금색 노드는 판단 묶음이고, 연두/푸른/청록 노드는 실제 스킬·특성·영웅 특성입니다.`,
       chips: graph.skillNodes.slice(0, 5).map(node => node.skill),
     },
     {
@@ -3289,7 +3270,12 @@ function getChartSet(guide) {
 }
 
 function SynergyGraphView({ guide, data }) {
-  const graph = getSynergyGraphModel(data, guide);
+  const graph = useMemo(() => getSynergyGraphModel(data, guide), [data, guide]);
+  const interactiveGraph = useMemo(() => buildGuideSpellGraph(graph), [graph]);
+  const [selected, setSelected] = useState(() => interactiveGraph.nodes.find(node => node.id === interactiveGraph.centerId) || null);
+  useEffect(() => {
+    setSelected(interactiveGraph.nodes.find(node => node.id === interactiveGraph.centerId) || null);
+  }, [interactiveGraph]);
   const centerSkill = graph.center?.skill;
 
   if (!graph.synergyNodes.length) {
@@ -3297,199 +3283,34 @@ function SynergyGraphView({ guide, data }) {
   }
 
   const centerName = centerSkill ? skillName(centerSkill) : guide.spec;
-  const centerLines = graphLabelLines(centerName, 10);
 
   return (
     <SynergyGraphPanel>
       <SynergyGraphIntro>
         <div>
-          <strong>중요도 기반 그래프</strong>
-        <span>옵시디언 그래프처럼 스킬 노드, 시너지 노드, 연결선을 함께 보여줍니다. 가운데는 이 전문화 운용을 해석할 때 가장 먼저 보는 핵심 스킬입니다.</span>
+          <strong>스킬과 시너지 탐색</strong>
+          <span>점을 끌면 연결된 스킬도 함께 움직입니다. 점이나 이름을 누르면 원문 설명과 연결된 시너지를 확인할 수 있습니다.</span>
         </div>
         <SynergyGraphLegend>
-          <span>가운데 = 중심 스킬</span>
-          <span>보라 = 스킬</span>
+          <span>연두색 = 스킬</span>
           <span>푸른색 = 특성</span>
+          <span>보라색 = 버프</span>
           <span>청록색 = 영웅 특성</span>
           <span>금색 = 시너지 노드</span>
-          <span>선 굵기 = 연결 강도</span>
         </SynergyGraphLegend>
       </SynergyGraphIntro>
 
       <SynergyGraphStats>
         <span>중심 <b>{centerName}</b></span>
         <span>{centerConnectionLabel(graph.center)}</span>
-        <span>{graph.totalNodes}개 노드</span>
-        <span>{graph.edges.length}개 연결선</span>
+        <span>{interactiveGraph.nodes.length}개 노드</span>
+        <span>{interactiveGraph.edges.length}개 연결선</span>
       </SynergyGraphStats>
 
-      <SynergyGraphCanvas>
-        <SynergyGraphSvg
-          viewBox={`0 0 ${graph.width} ${graph.height}`}
-          role="img"
-          aria-label={`${guide.spec} ${guide.className} 시너지 그래프`}
-          $color={guide.color}
-        >
-          <defs>
-            <radialGradient id="synergy-graph-center-glow" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor={guide.color} stopOpacity="0.32" />
-              <stop offset="62%" stopColor={guide.color} stopOpacity="0.08" />
-              <stop offset="100%" stopColor={guide.color} stopOpacity="0" />
-            </radialGradient>
-          </defs>
-
-          <g className="graph-orbits" aria-hidden="true">
-            <ellipse cx={graph.centerPoint.x} cy={graph.centerPoint.y} rx="305" ry="188" />
-            <ellipse cx={graph.centerPoint.x} cy={graph.centerPoint.y} rx="405" ry="252" />
-          </g>
-
-          <g className="graph-edges" aria-hidden="true">
-            {graph.edges.map(edge => (
-              <line
-                key={edge.id}
-                className={edge.center ? 'graph-edge graph-edge-center' : 'graph-edge'}
-                x1={edge.from.x}
-                y1={edge.from.y}
-                x2={edge.to.x}
-                y2={edge.to.y}
-                strokeWidth={edge.center ? 2 + edge.strength * 0.7 : 0.7 + edge.strength * 0.45}
-              />
-            ))}
-          </g>
-
-          <g className="graph-synergies">
-            {graph.synergyNodes.map(node => {
-              const lines = graphLabelLines(synergyName(node.synergy), 12);
-              return (
-                <g
-                  key={node.id}
-                  className={`graph-node graph-synergy-node ${node.major ? 'graph-major' : 'graph-secondary'}`}
-                  transform={`translate(${node.x} ${node.y})`}
-                  aria-label={`${synergyName(node.synergy)}: ${node.linkedCount}개 연결`}
-                >
-                  <rect
-                    className="node-hitbox"
-                    x="-72"
-                    y={-(node.r + 15)}
-                    width="144"
-                    height={node.major ? node.r + 72 : node.r + 42}
-                    rx="12"
-                  />
-                  <circle className="node-glow" r={node.r + 13} />
-                  <circle className="node-body" r={node.r} />
-                  <circle className="node-core" r={Math.max(5, node.r * 0.36)} />
-                  {node.major && (
-                    <text className="graph-label synergy-label" textAnchor="middle" y={node.r + 19}>
-                      {lines.slice(0, 2).map((line, index) => (
-                        <tspan key={line} x="0" dy={index ? 13 : 0}>{line}</tspan>
-                      ))}
-                    </text>
-                  )}
-                </g>
-              );
-            })}
-          </g>
-
-          <g className="graph-skills">
-            {graph.skillNodes.map(node => {
-              const iconUrl = getIconUrl(node.skill, 'medium');
-              const labelLines = graphLabelLines(skillName(node.skill), 9);
-              const clipId = `${node.id}-clip`;
-              return (
-                <a
-                  key={node.id}
-                  href={wowheadUrl(node.skill)}
-                  data-wowhead={`spell=${node.skill.id}&domain=ko`}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`${skillNodeKindLabel(node.skill)} ${skillName(node.skill)}: ${node.connectionCount}개 시너지 연결`}
-                >
-                  <g
-                    className={`graph-node graph-skill-node graph-kind-${node.nodeKind} ${node.major ? 'graph-major' : 'graph-secondary'}`}
-                    transform={`translate(${node.x} ${node.y})`}
-                  >
-                    <rect
-                      className="node-hitbox"
-                      x="-72"
-                      y={-(node.r + 18)}
-                      width="144"
-                      height={node.major ? node.r + 95 : node.r + 64}
-                      rx="12"
-                    />
-                    <clipPath id={clipId}>
-                      <circle cx="0" cy="0" r={Math.max(9, node.r - 4)} />
-                    </clipPath>
-                    <circle className="skill-halo" r={node.r + 10} />
-                    <circle className="skill-frame" r={node.r} />
-                    {iconUrl ? (
-                      <image
-                        href={iconUrl}
-                        x={-(node.r - 4)}
-                        y={-(node.r - 4)}
-                        width={(node.r - 4) * 2}
-                        height={(node.r - 4) * 2}
-                        clipPath={`url(#${clipId})`}
-                        preserveAspectRatio="xMidYMid slice"
-                      />
-                    ) : (
-                      <circle className="skill-fallback" r={Math.max(8, node.r - 6)} />
-                    )}
-                    <text className="graph-label skill-label" textAnchor="middle" y={node.r + 19}>
-                      {labelLines.slice(0, 2).map((line, index) => (
-                        <tspan key={line} x="0" dy={index ? 13 : 0}>{line}</tspan>
-                      ))}
-                    </text>
-                    {node.major && (
-                      <text className="graph-label kind-label" textAnchor="middle" y={node.r + 47}>
-                        {skillNodeKindLabel(node.skill)}
-                      </text>
-                    )}
-                  </g>
-                </a>
-              );
-            })}
-          </g>
-
-          <g className="graph-center-node" transform={`translate(${graph.centerPoint.x} ${graph.centerPoint.y})`}>
-            <circle className="center-outer" r="96" />
-            <circle className="center-glow" r="72" />
-            <circle className="center-frame" r="48" />
-            {centerSkill && (
-              <a
-                href={wowheadUrl(centerSkill)}
-                data-wowhead={`spell=${centerSkill.id}&domain=ko`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <clipPath id="graph-center-icon-clip">
-                  <circle cx="0" cy="0" r="38" />
-                </clipPath>
-                <image
-                  href={getIconUrl(centerSkill, 'medium')}
-                  x="-38"
-                  y="-38"
-                  width="76"
-                  height="76"
-                  clipPath="url(#graph-center-icon-clip)"
-                  preserveAspectRatio="xMidYMid slice"
-                />
-              </a>
-            )}
-            <text className="center-kicker" textAnchor="middle" y="-70">중심 스킬</text>
-            <text className="center-name" textAnchor="middle" y="72">
-              {centerLines.slice(0, 2).map((line, index) => (
-                <tspan key={line} x="0" dy={index ? 17 : 0}>{line}</tspan>
-              ))}
-            </text>
-            <text className="center-meta" textAnchor="middle" y="110">{centerConnectionLabel(graph.center)}</text>
-          </g>
-
-          <g className="graph-corner-note" aria-hidden="true">
-            <text x="34" y="42">OBSIDIAN-LIKE NETWORK</text>
-            <text x="34" y="66">skill ↔ synergy ↔ skill</text>
-          </g>
-        </SynergyGraphSvg>
-      </SynergyGraphCanvas>
+      <div className="spell-explorer guide-synergy-explorer">
+        <SpellRelationMap key={guide.id} graph={interactiveGraph} label={`${guide.spec} ${guide.className}`}
+          selected={selected} onSelect={setSelected} onClear={() => setSelected(null)} />
+      </div>
 
       <SynergyRelationBoard graph={graph} centerSkill={centerSkill} guide={guide} />
     </SynergyGraphPanel>
@@ -8225,257 +8046,6 @@ const SynergyGraphStats = styled.div`
   b {
     color: #f4efe5;
     font-weight: 950;
-  }
-`;
-
-const SynergyGraphCanvas = styled.div`
-  position: relative;
-  min-height: 560px;
-  overflow: hidden;
-  border: 1px solid rgba(244, 239, 229, 0.08);
-  background:
-    linear-gradient(rgba(244, 239, 229, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(244, 239, 229, 0.035) 1px, transparent 1px),
-    radial-gradient(circle at center, rgba(184, 145, 91, 0.13), transparent 58%),
-    #080d11;
-  background-size: 42px 42px, 42px 42px, auto, auto;
-
-  @media (max-width: 760px) {
-    min-height: 620px;
-  }
-
-  @media (max-width: 520px) {
-    min-height: 360px;
-    overflow: hidden;
-    background:
-      radial-gradient(circle at top, rgba(184, 145, 91, 0.12), transparent 52%),
-      #080d11;
-  }
-`;
-
-const SynergyGraphSvg = styled.svg`
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: inherit;
-
-  .graph-orbits ellipse {
-    fill: none;
-    stroke: rgba(244, 239, 229, 0.07);
-    stroke-width: 1;
-    stroke-dasharray: 7 10;
-  }
-
-  .graph-edge {
-    stroke: rgba(169, 158, 145, 0.36);
-    stroke-linecap: round;
-  }
-
-  .graph-edge-center {
-    stroke: ${props => props.$color};
-    opacity: 0.82;
-  }
-
-  .graph-node {
-    transition: opacity 160ms ease, filter 160ms ease, transform 160ms ease;
-  }
-
-  .graph-synergy-node .node-glow {
-    fill: rgba(184, 145, 91, 0.12);
-  }
-
-  .graph-synergy-node .node-hitbox {
-    fill: rgba(8, 13, 17, 0.001);
-    stroke: none;
-  }
-
-  .graph-synergy-node .node-body {
-    fill: rgba(184, 145, 91, 0.82);
-    stroke: rgba(244, 239, 229, 0.55);
-    stroke-width: 1.2;
-  }
-
-  .graph-synergy-node .node-core {
-    fill: #080d11;
-    opacity: 0.72;
-  }
-
-  .graph-skill-node .skill-halo {
-    fill: ${props => props.$color}22;
-  }
-
-  .graph-skill-node .node-hitbox {
-    fill: rgba(8, 13, 17, 0.001);
-    stroke: none;
-  }
-
-  .graph-skill-node .skill-frame {
-    fill: rgba(8, 13, 17, 0.95);
-    stroke: ${props => props.$color};
-    stroke-width: 2;
-  }
-
-  .graph-kind-talent .skill-halo {
-    fill: rgba(77, 163, 255, 0.18);
-  }
-
-  .graph-kind-talent .skill-frame {
-    stroke: #4da3ff;
-  }
-
-  .graph-kind-hero .skill-halo {
-    fill: rgba(64, 214, 184, 0.18);
-  }
-
-  .graph-kind-hero .skill-frame {
-    stroke: #40d6b8;
-  }
-
-  .graph-kind-passive .skill-halo {
-    fill: rgba(216, 203, 183, 0.14);
-  }
-
-  .graph-kind-passive .skill-frame {
-    stroke: #d8cbb7;
-  }
-
-  .graph-skill-node .skill-fallback {
-    fill: ${props => props.$color}55;
-  }
-
-  .graph-skills a:hover .graph-skill-node,
-  .graph-skills a:focus .graph-skill-node {
-    filter: drop-shadow(0 0 14px ${props => props.$color}88);
-  }
-
-  .graph-label {
-    pointer-events: none;
-    paint-order: stroke;
-    stroke: rgba(8, 13, 17, 0.94);
-    stroke-width: 4px;
-    stroke-linejoin: round;
-    fill: #f4efe5;
-    font-weight: 900;
-  }
-
-  .synergy-label {
-    fill: #d8cbb7;
-    font-size: 12px;
-  }
-
-  .skill-label {
-    fill: #f4efe5;
-    font-size: 12px;
-  }
-
-  .kind-label {
-    fill: #8d9aa3;
-    font-size: 10px;
-  }
-
-  .graph-secondary {
-    opacity: 0.76;
-  }
-
-  .graph-center-node .center-outer {
-    fill: url(#synergy-graph-center-glow);
-  }
-
-  .graph-center-node .center-glow {
-    fill: ${props => props.$color}26;
-    stroke: ${props => props.$color}66;
-    stroke-width: 1.5;
-  }
-
-  .graph-center-node .center-frame {
-    fill: rgba(8, 13, 17, 0.96);
-    stroke: ${props => props.$color};
-    stroke-width: 3;
-  }
-
-  .center-kicker,
-  .center-name,
-  .center-meta,
-  .graph-corner-note text {
-    pointer-events: none;
-    paint-order: stroke;
-    stroke: rgba(8, 13, 17, 0.95);
-    stroke-width: 5px;
-    stroke-linejoin: round;
-    font-weight: 950;
-  }
-
-  .center-kicker {
-    fill: #b8915b;
-    font-size: 14px;
-  }
-
-  .center-name {
-    fill: #f4efe5;
-    font-size: 18px;
-  }
-
-  .center-meta {
-    fill: #aeb8bd;
-    font-size: 12px;
-  }
-
-  .graph-corner-note text {
-    fill: rgba(174, 184, 189, 0.46);
-    font-size: 11px;
-    letter-spacing: 0;
-  }
-
-  @media (max-width: 760px) {
-    .graph-secondary .graph-label,
-    .graph-secondary.skill-label {
-      display: none;
-    }
-
-    .synergy-label,
-    .skill-label {
-      font-size: 13px;
-    }
-
-    .kind-label {
-      display: none;
-    }
-  }
-
-  @media (max-width: 520px) {
-    width: 100%;
-    max-width: 100%;
-    height: 360px;
-    min-height: 360px;
-
-    .graph-secondary {
-      opacity: 0.42;
-    }
-
-    .graph-secondary .graph-label,
-    .synergy-label {
-      display: none;
-    }
-
-    .graph-skill-node .skill-label {
-      display: none;
-    }
-
-    .center-meta {
-      display: none;
-    }
-
-    .graph-edge:not(.graph-edge-center) {
-      opacity: 0.42;
-    }
-
-    .graph-corner-note {
-      display: none;
-    }
-
-    .center-name {
-      font-size: 20px;
-    }
   }
 `;
 

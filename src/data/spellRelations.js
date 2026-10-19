@@ -73,3 +73,37 @@ export function buildSpellGraph(skills, synergies, layout) {
 }
 
 export const marksmanshipGraph = buildSpellGraph(kbData.skills, kbSynergies.synergies, positions);
+
+export function buildGuideSpellGraph(model) {
+  const nodes = new Map();
+  const edges = [];
+  const centerId = String(model.center?.skill?.id || '');
+  const placements = new Map(model.skillNodes.map(node => [String(node.skill.id), node]));
+  if (centerId) placements.set(centerId, model.centerPoint);
+  model.synergyNodes.forEach((note, index) => {
+    const angle = -Math.PI / 2 + index * 2 * Math.PI / model.synergyNodes.length;
+    nodes.set(note.synergy.id, {
+      ...note.synergy, kind: 'note',
+      x: 500 + Math.cos(angle) * 370, y: 360 + Math.sin(angle) * 245,
+    });
+    note.allLinkedSkills.forEach(skill => {
+      const id = String(skill.id);
+      if (!nodes.has(id)) {
+        const point = placements.get(id);
+        const angle = nodes.size * 2.399963;
+        nodes.set(id, {
+          ...skill, id, kind: spellKind(skill),
+          x: point?.x ?? 500 + Math.cos(angle) * 400,
+          y: point ? point.y * 720 / model.height : 360 + Math.sin(angle) * 275,
+        });
+      }
+      edges.push({ source: note.synergy.id, target: id });
+    });
+  });
+  // 관계의 방향은 실제로 표시하는 참여 항목이 모두 있을 때만 보여 준다.
+  nodes.forEach(node => {
+    if (node.kind === 'note') node.relations = (node.relations || []).filter(relation =>
+      [relation.from, relation.to, ...(relation.requires || [])].every(id => nodes.has(String(id))));
+  });
+  return { nodes: [...nodes.values()], edges, centerId, centerConnections: model.center?.connectionCount || 0 };
+}

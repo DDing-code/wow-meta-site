@@ -70,3 +70,21 @@ test('움직임 줄이기에서는 즉시 이동하고 켜기·끄기가 계산�
   act(() => toggle.click()); expect(frames.size).toBeGreaterThan(0);
   act(() => toggle.click()); expect(frames.size).toBe(0);
 });
+
+test('가이드의 노드 선택과 상세 연결에 다른 전문화의 지도를 섞지 않는다', () => {
+  const skill = { id: '100', koreanName: '가이드 스킬', type: 'skill', kind: 'skill', description: '가이드 원문', x: 400, y: 300 };
+  const note = { id: 'guide-note', name: '가이드 시너지', type: 'synergy', kind: 'note', x: 600, y: 400 };
+  const graph = { nodes: [skill, note], edges: [{ source: note.id, target: skill.id }] };
+  const onSelect = jest.fn();
+  render({ graph, label: '가이드 전문화', selected: skill, onSelect });
+  expect(container.querySelector('section').getAttribute('aria-label')).toBe('가이드 전문화 관계 지도');
+  expect(container.querySelectorAll('[data-node-id]')).toHaveLength(2);
+  expect(container.querySelector('.detail').textContent).toContain('가이드 원문');
+  expect(container.querySelector('.detail').textContent).toContain('주문 번호 100');
+  act(() => container.querySelector('.detail .relation').click());
+  expect(onSelect).toHaveBeenLastCalledWith(note);
+  const node = container.querySelector('[data-node-id="guide-note"]');
+  act(() => node.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })));
+  expect(onSelect).toHaveBeenLastCalledWith(note);
+  expect(container.textContent).not.toContain('조준 사격');
+});
