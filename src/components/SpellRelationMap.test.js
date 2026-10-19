@@ -88,3 +88,17 @@ test('가이드의 노드 선택과 상세 연결에 다른 전문화의 지도�
   expect(onSelect).toHaveBeenLastCalledWith(note);
   expect(container.textContent).not.toContain('조준 사격');
 });
+
+test('노드 점은 화면 픽셀 기준 크기라 좁은 화면에서 지도가 줄어도 같이 작아지지 않는다', () => {
+  const sizeAt = (width, height) => {
+    jest.spyOn(SVGElement.prototype, 'getBoundingClientRect').mockReturnValue({ width, height });
+    render();
+    const radius = Number(container.querySelector('[data-node-id="19434"] .dot').getAttribute('r'));
+    act(() => root.render(null));
+    SVGElement.prototype.getBoundingClientRect.mockRestore();
+    return radius * Math.min(width / 1000, height / 720);
+  };
+  // 화면에 보이는 스킬 점 반지름(px): PC 10px, 휴대폰 8px. 예전에는 휴대폰에서 2px까지 줄었다.
+  expect(sizeAt(900, 660)).toBeCloseTo(10, 0);
+  expect(sizeAt(344, 440)).toBeCloseTo(8, 0);
+});

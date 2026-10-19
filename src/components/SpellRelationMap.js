@@ -112,6 +112,47 @@ function nodeLines(node) {
   return lines;
 }
 
+// 점·아이콘 크기는 화면 픽셀로 정한다. 지도(1000×720)가 좁은 화면에 맞춰 줄어도 노드가 같이 작아지지 않는다.
+// 좁은 화면(지도가 60% 이하로 줄어든 경우)은 노드가 몰리므로 한 단계 작게 둔다.
+const NODE_PX = {
+  wide: { icon: 32, dot: 9, skillDot: 10, selectedDot: 13, note: 12, ring: 5 },
+  compact: { icon: 26, dot: 7, skillDot: 8, selectedDot: 10, note: 9, ring: 5 },
+};
+
+function useMapUnit(svgRef) {
+  const [unit, setUnit] = useState(1);
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return undefined;
+    const measure = () => {
+      const { width, height } = svg.getBoundingClientRect();
+      const ratio = Math.min(width / 1000, height / 720);
+      if (ratio > 0) setUnit(Math.round(100 / ratio) / 100);
+    };
+    measure();
+    if (typeof ResizeObserver === 'undefined') return undefined;
+    const observer = new ResizeObserver(measure);
+    observer.observe(svg);
+    return () => observer.disconnect();
+  }, [svgRef]);
+  return unit;
+}
+
+function nodeShape(node, { selected, withIcon, unit }) {
+  const px = unit > 1.6 ? NODE_PX.compact : NODE_PX.wide;
+  const dotPx = selected ? px.selectedDot : node.kind === 'skill' ? px.skillDot : px.dot;
+  const halfPx = withIcon ? px.icon / 2 : node.kind === 'note' ? px.note : dotPx;
+  const half = halfPx * unit;
+  return {
+    icon: px.icon * unit,
+    dot: dotPx * unit,
+    note: px.note * unit,
+    ring: (halfPx + px.ring + (selected ? 2 : 0)) * unit,
+    half,
+    textY: half + 18,
+  };
+}
+
 // 움직이는 좌표는 React 상태에 넣지 않고 SVG에 그린다.
 function useMapMotion(svgRef, graph, nodes, edges, onSelect, motion, setZoomValue) {
   const controller = useRef(null);
@@ -299,6 +340,7 @@ export default function SpellRelationMap({ selected, onSelect, onClear, query = 
     return graph.edges.filter(edge => ids.has(edge.source) && ids.has(edge.target));
   }, [graph, nodes]);
   const controller = useMapMotion(svgRef, graph, nodes, edges, onSelect, motion, setZoomValue);
+  const unit = useMapUnit(svgRef);
   const activeId = hovered || selectedId;
   const near = new Set(graphNeighbors(graph, activeId));
   useEffect(() => {
@@ -331,7 +373,12 @@ export default function SpellRelationMap({ selected, onSelect, onClear, query = 
               <g aria-hidden="true">{edges.map(edge => (
                 <line key={edge.source + edge.target} data-edge="" className={'edge' + (activeId ? edge.source === activeId || edge.target === activeId ? ' emphasis' : ' muted' : '')} />
               ))}</g>
-              {nodes.map(node => (
+              {nodes.map(node => {
+                const withIcon = !!graph.centerId && node.kind !== 'note';
+                const shape = nodeShape(node, { selected: node.id === selectedId, withIcon, unit });
+                const hitY = Math.max(22, shape.half + 6);
+                const hitHalfWidth = Math.max(node.kind === 'note' ? 115 : 70, shape.half + 10);
+                return (
                 <g key={node.id} data-node-id={node.id}
                   className={['node', node.id === graph.centerId ? 'graph-center-node' : '', node.kind, node.id === selectedId ? 'selected' : near.has(node.id) ? 'related' : activeId ? 'muted' : ''].join(' ')}
                   style={{ '--node-color': spellKinds[node.kind].color }}
@@ -344,15 +391,18 @@ export default function SpellRelationMap({ selected, onSelect, onClear, query = 
                   onMouseEnter={event => showTooltip(node, event)} onMouseLeave={hideTooltip}
                   onFocus={event => showTooltip(node, event)} onBlur={hideTooltip}>
                   {node.id === graph.centerId && <title>{spellName(node)} · {graph.centerConnections}개 시너지 연결</title>}
-                  <rect className="hit" x={node.kind === 'note' ? -115 : -70} y="-22" width={node.kind === 'note' ? 230 : 140} height="68" />
-                  <circle className="ring" r={node.id === selectedId ? 15 : 13} />
-                  {node.kind === 'note' ? <path className="dot" d="M0 -7 L7 0 L0 7 L-7 0Z" /> : <circle className="dot" r={node.id === selectedId ? 8 : node.kind === 'skill' ? 6 : 5} />}
-                  {graph.centerId && node.kind !== 'note' && <image href={node.iconUrls?.medium || node.iconUrl} x="-9" y="-9" width="18" height="18" />}
-                  <text y="24">{nodeLines(node).map((line, index) => <tspan key={index} x="0" dy={index ? 16 : 0}>{line}</tspan>)}
+                  <rect className="hit" x={-hitHalfWidth} y={-hitY} width={hitHalfWidth * 2} height={hitY + shape.textY + 22} />
+                  <circle className="ring" r={shape.ring} />
+                  {node.kind === 'note'
+                    ? <path className="dot" d={`M0 ${-shape.note} L${shape.note} 0 L0 ${shape.note} L${-shape.note} 0Z`} />
+                    : <circle className="dot" r={shape.dot} />}
+                  {withIcon && <image href={node.iconUrls?.medium || node.iconUrl} x={-shape.icon / 2} y={-shape.icon / 2} width={shape.icon} height={shape.icon} />}
+                  <text y={shape.textY}>{nodeLines(node).map((line, index) => <tspan key={index} x="0" dy={index ? 16 : 0}>{line}</tspan>)}
                     {node.kind === 'buff' && <tspan x="0" dy="15" className="qualifier">버프</tspan>}
                   </text>
                 </g>
-              ))}
+                );
+              })}
             </g>
           </svg>
           {nodes.length === 0 && <div className="empty"><div><strong>표시할 연결이 없습니다</strong><span>검색어나 유형 필터를 바꿔 보세요.</span><button type="button" onClick={reset}>전체 다시 보기</button></div></div>}
