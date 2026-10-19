@@ -132,8 +132,21 @@ function useMapMotion(svgRef, nodes, edges, onSelect, motion, setZoomValue) {
       const ah = graphById.get(a.id), bh = graphById.get(b.id);
       return { ...edge, length: Math.hypot(ah.x - bh.x, ah.y - bh.y) };
     });
-    let scale = 1, panX = 0, panY = 0, drag = null, frame = 0, energy = 0;
+    let scale = 1, targetScale = 1, panX = 0, panY = 0, drag = null, frame = 0, cameraFrame = 0, energy = 0;
     const transform = () => viewport.setAttribute('transform', 'translate(' + (500 + panX) + ' ' + (360 + panY) + ') scale(' + scale + ') translate(-500 -360)');
+    const cameraTo = (x, y, zoom = targetScale) => {
+      cancelAnimationFrame(cameraFrame);
+      const startX = panX, startY = panY, startScale = scale, start = performance.now();
+      const animate = now => {
+        const progress = motionRef.current ? Math.min(1, (now - start) / 360) : 1;
+        const ease = 1 - Math.pow(1 - progress, 3);
+        panX = startX + (x - startX) * ease; panY = startY + (y - startY) * ease;
+        scale = startScale + (zoom - startScale) * ease;
+        transform();
+        cameraFrame = progress < 1 ? requestAnimationFrame(animate) : 0;
+      };
+      animate(start);
+    };
     const paint = () => {
       nodeElements.forEach(element => {
         const node = byId.get(element.dataset.nodeId);
@@ -162,21 +175,22 @@ function useMapMotion(svgRef, nodes, edges, onSelect, motion, setZoomValue) {
           a.vy -= push; b.vy += push;
         }
       }
-      let speed = 0;
       moving.forEach(node => {
         if (drag?.node === node) { node.vx = 0; node.vy = 0; return; }
         node.vx *= .76; node.vy *= .76;
         node.x = Math.max(70, Math.min(930, node.x + node.vx));
         node.y = Math.max(65, Math.min(655, node.y + node.vy));
-        speed += Math.abs(node.vx) + Math.abs(node.vy);
       });
       paint(); energy *= .96;
-      if (drag?.moved || energy > .02 || speed > .15) frame = requestAnimationFrame(tick);
+      // 이동 후 잠깐만 계산하고 멈춰 유휴 상태에서는 프레임을 쓰지 않는다.
+      if (drag?.moved || energy > .02) frame = requestAnimationFrame(tick);
     };
     const wake = () => { energy = 1; if (motionRef.current && !frame) frame = requestAnimationFrame(tick); };
     const point = event => new DOMPoint(event.clientX, event.clientY).matrixTransform(viewport.getScreenCTM().inverse());
     const down = event => {
       if (event.button !== 0 || drag) return;
+      cancelAnimationFrame(cameraFrame); cameraFrame = 0;
+      targetScale = scale; setZoomValue(Math.round(scale * 100));
       const node = byId.get(event.target.closest('[data-node-id]')?.dataset.nodeId);
       const p = point(event);
       drag = { pointer: event.pointerId, node, x: event.clientX, y: event.clientY, panX, panY, offsetX: node ? node.x - p.x : 0, offsetY: node ? node.y - p.y : 0, moved: false };
@@ -205,7 +219,8 @@ function useMapMotion(svgRef, nodes, edges, onSelect, motion, setZoomValue) {
       if (previous.moved && previous.node) wake();
     };
     const zoom = factor => {
-      scale = Math.min(2.5, Math.max(.6, scale * factor)); setZoomValue(Math.round(scale * 100)); transform();
+      targetScale = Math.min(2.5, Math.max(.6, targetScale * factor));
+      setZoomValue(Math.round(targetScale * 100)); cameraTo(panX, panY);
     };
     // 모바일 세로 스크롤은 지도의 위아래에서 이어가고, 휠은 페이지 스크롤을 유지한다.
     controller.current = {
@@ -213,29 +228,33 @@ function useMapMotion(svgRef, nodes, edges, onSelect, motion, setZoomValue) {
       reset() {
         cancelAnimationFrame(frame); frame = 0;
         moving.forEach(node => Object.assign(node, { x: node.homeX, y: node.homeY, vx: 0, vy: 0 }));
-        scale = 1; panX = 0; panY = 0; paint(); transform(); setZoomValue(100);
+        targetScale = 1; paint(); cameraTo(0, 0); setZoomValue(100); wake();
       },
       focus(id) {
         const node = byId.get(id);
         if (!node) return;
-        panX = (500 - node.x) * scale; panY = (360 - node.y) * scale; transform();
+        cameraTo((500 - node.x) * targetScale, (360 - node.y) * targetScale); wake();
       },
       stop() { cancelAnimationFrame(frame); frame = 0; },
+      wake,
     };
     svg.addEventListener('pointerdown', down);
     svg.addEventListener('pointermove', move);
     svg.addEventListener('pointerup', up);
     svg.addEventListener('pointercancel', up);
     svg.addEventListener('lostpointercapture', up);
-    paint(); transform(); setZoomValue(100);
+    if (motionRef.current) moving.forEach(node => {
+      node.x = 500 + (node.x - 500) * .9; node.y = 360 + (node.y - 360) * .9;
+    });
+    paint(); transform(); setZoomValue(100); wake();
     return () => {
-      cancelAnimationFrame(frame); controller.current = null;
+      cancelAnimationFrame(frame); cancelAnimationFrame(cameraFrame); controller.current = null;
       svg.removeEventListener('pointerdown', down); svg.removeEventListener('pointermove', move);
       svg.removeEventListener('pointerup', up); svg.removeEventListener('pointercancel', up);
       svg.removeEventListener('lostpointercapture', up);
     };
   }, [nodes, edges, svgRef, setZoomValue]);
-  useEffect(() => { if (!motion) controller.current?.stop(); }, [motion]);
+  useEffect(() => { if (motion) controller.current?.wake(); else controller.current?.stop(); }, [motion]);
   return controller;
 }
 
@@ -297,7 +316,7 @@ export default function SpellRelationMap({ selected, onSelect, onClear, query, k
           <div className="map-top">
             <span className="map-count" role="status">{nodes.length}개 노드 / {edges.length}개 연결</span>
             <div className="map-actions">
-              <button type="button" aria-pressed={motion} onClick={() => setMotion(value => !value)}>탄성 움직임 {motion ? '켜짐' : '꺼짐'}</button>
+              <button type="button" aria-pressed={motion} onClick={() => setMotion(value => !value)}>움직임 {motion ? '켜짐' : '꺼짐'}</button>
               <button type="button" aria-pressed={local && !!selectedId} disabled={!selectedId || !graphById.has(selectedId)} onClick={() => setLocal(value => !value)}>선택 주변만 보기</button>
             </div>
           </div>

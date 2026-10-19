@@ -122,6 +122,7 @@ const Count = styled.div`
 
 const List = styled.div`
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 0;
   border-top: 1px solid rgba(168, 178, 188, 0.12);
 `;
@@ -347,6 +348,7 @@ function SpellDatabasePage() {
             <SpellIcon record={skill} />
             <div>
               <Name>{spellName(skill)}</Name>
+              <Detail className="spell-id">주문 번호 {skill.id}</Detail>
               <Detail>{classLabels[skill.class] || skill.class} / {skill.spec || '공용'} / {skill.englishName}</Detail>
             </div>
             <Type>{spellKinds[spellKind(skill)].label}</Type>

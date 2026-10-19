@@ -107,4 +107,9 @@
   .spell-explorer .mobile-selection img { width:23px; height:23px; }
   .spell-explorer .mobile-selection .note-icon { width:23px; height:23px; font-size:17px; }
 }
-@media (prefers-reduced-motion:no-preference) { .spell-explorer .node, .spell-explorer .edge { transition:opacity .18s; } }
+.spell-explorer .spell-id { color:#b6c2c9; font-variant-numeric:tabular-nums; }
+@media (prefers-reduced-motion:no-preference) {
+  .spell-explorer .node, .spell-explorer .edge { transition:opacity .22s; }
+  .spell-explorer .node .ring { transition:opacity .22s, r .22s; }
+  .spell-explorer .node .dot { transition:r .22s; }
+}
