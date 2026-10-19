@@ -38,7 +38,8 @@ const { chromium } = require('playwright');
             assert.equal(metrics.icons.length, 10);
             assert(metrics.icons.every(icon => icon.size === 16 && /^spell=\d+&domain=ko$/.test(icon.id)));
             assert(!metrics.icons.some(icon => /spell=(1261149|264571|449793)&/.test(icon.id)));
-            assert(metrics.icons.some(icon => icon.id === 'spell=1261153&domain=ko'));
+            // 재앙의 손아귀는 지옥소환사 오프닝에만 둔다(2026-10-20 상위 레이드 로그: 영혼 수확자 오프닝 6개 모두 사용 안 함).
+            assert(metrics.icons.some(icon => icon.id === 'spell=1261153&domain=ko') === (key === 'hell'));
             assert(metrics.icons.some(icon => icon.id === `spell=${key === 'soul' ? '172' : '442726'}&domain=ko`));
             const details = region.locator('details');
             await details.locator('summary').focus();

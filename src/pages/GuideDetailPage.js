@@ -2017,23 +2017,51 @@ function OpenerFlowPreview({ guide, steps = [], fallbackItems = [], inlineTerms 
   );
 }
 
-function GuideRotationModes({ branch, guide, profile, inlineTerms }) {
+// 영웅 특성 탭의 전투 상황. 탱커 원고에 tankRaid·tankMythic이 있으면 '딜사이클'과 '탱사이클' 두 묶음으로 나눈다.
+const ROTATION_MODE_GROUPS = [
+  { id: 'damage', label: '딜사이클', modes: [['opener', '오프닝'], ['singleTarget', '단일'], ['aoe', '광역']] },
+  { id: 'tank', label: '탱사이클', modes: [['tankRaid', '레이드'], ['tankMythic', '쐐기']] },
+];
+
+function GuideRotationModes({ branch, guide, profile, inlineTerms, talentBuilds }) {
   const [mode, setMode] = useState('opener');
-  const current = branch[mode];
+  const groups = ROTATION_MODE_GROUPS
+    .map(group => ({ ...group, modes: group.modes.filter(([id]) => branch[id]) }))
+    .filter(group => group.modes.length);
+  const grouped = groups.length > 1;
+  const current = branch[mode] || branch.opener;
+  const talentBuild = current.talentBuildId ? (talentBuilds || []).find(build => build.id === current.talentBuildId) : null;
+  const renderTabs = group => (
+    <HeroBranchTabs role="group" aria-label={grouped ? `${group.label} 전투 상황 선택` : '전투 상황 선택'}>
+      {group.modes.map(([id, label]) => (
+        <HeroBranchTab key={id} type="button" aria-pressed={mode === id} $active={mode === id} $color={guide.color} onClick={() => setMode(id)}>
+          {branch[id]?.tabLabel || label}
+        </HeroBranchTab>
+      ))}
+    </HeroBranchTabs>
+  );
 
   return (
     <div data-guide-rotation-modes>
-      <HeroBranchTabs role="group" aria-label="전투 상황 선택">
-        {[['opener', '오프닝'], ['singleTarget', '단일'], ['aoe', '광역']].map(([id, label]) => (
-          <HeroBranchTab key={id} type="button" aria-pressed={mode === id} $active={mode === id} $color={guide.color} onClick={() => setMode(id)}>
-            {branch[id]?.tabLabel || label}
-          </HeroBranchTab>
-        ))}
-      </HeroBranchTabs>
+      {grouped ? (
+        <RotationModeGroups>
+          {groups.map(group => (
+            <RotationModeGroup key={group.id} $color={guide.color} data-rotation-group={group.id}>
+              <span>{group.label}</span>
+              {renderTabs(group)}
+            </RotationModeGroup>
+          ))}
+        </RotationModeGroups>
+      ) : renderTabs(groups[0])}
       <div key={mode} role="region" aria-label={current.title} data-rotation-mode={mode}>
         <OpenerFlowIntro>
           <strong>{renderGuideText(current.title, inlineTerms)}</strong>
           <p>{renderGuideText(current.summary, inlineTerms)}</p>
+          {!!talentBuild && (
+            <RotationModeTalent href="#guide-talents" data-rotation-talent={talentBuild.id}>
+              특성 견본: {displayGuideText(talentBuild.label)} 견본 기준
+            </RotationModeTalent>
+          )}
         </OpenerFlowIntro>
         {!!current.steps?.length && (
           <OpenerFlowPreview guide={guide} steps={getOpenerFlowSteps({ opener: current }, profile, guide)} inlineTerms={inlineTerms} />
@@ -2050,6 +2078,7 @@ const BOOK_BOX_LABELS = {
   concept: '개념 정리',
   diagram: '스킬 구조',
   timeline: '딜사이클 타임라인',
+  tankTimeline: '탱사이클 타임라인',
   example: '예시 상황',
   fieldTips: '현장 팁',
   mistakes: '자주 하는 실수',
@@ -2600,7 +2629,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                     </HeroBranchSkillBlock>
                   )}
                   {hasRotationModes && (
-                    <GuideRotationModes key={branch.label} branch={branch} guide={guide} profile={profile} inlineTerms={inlineTerms} />
+                    <GuideRotationModes key={branch.label} branch={branch} guide={guide} profile={profile} inlineTerms={inlineTerms} talentBuilds={manuscript.talentBuilds} />
                   )}
                   {!hasRotationModes && !!branch.opener?.steps?.length && (
                     <OpenerFlowPreview guide={guide} steps={getOpenerFlowSteps(branch, profile, guide)} inlineTerms={inlineTerms} />
@@ -2835,7 +2864,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                       timeline={timeline}
                       guide={guide}
                       inlineTerms={inlineTerms}
-                      label={bookLayout.labels.timeline}
+                      label={timeline.kind === 'tank' ? (bookLayout.labels.tankTimeline || BOOK_BOX_LABELS.tankTimeline) : bookLayout.labels.timeline}
                     />
                   ))}
                 </BookDiagramStack>
@@ -5862,6 +5891,63 @@ const OpenerFlowCard = styled(FieldGuideCard)`
   box-shadow:
     inset 0 1px 0 rgba(244, 239, 229, 0.06),
     0 18px 34px rgba(0, 0, 0, 0.18);
+`;
+
+// 탱커: 딜사이클·탱사이클 탭 묶음. 묶음 이름을 왼쪽에 작게 두고, 좁은 화면에서는 이름 아래로 탭을 내린다.
+const RotationModeGroups = styled.div`
+  display: grid;
+  gap: 0;
+  border-bottom: 1px solid rgba(168, 178, 188, 0.12);
+
+  > div + div {
+    border-top: 1px solid rgba(168, 178, 188, 0.08);
+  }
+`;
+
+const RotationModeGroup = styled.div`
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  align-items: end;
+
+  > span {
+    align-self: center;
+    padding: 14px 0 0 16px;
+    color: ${props => props.$color};
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    word-break: keep-all;
+  }
+
+  > div {
+    border-bottom: 0;
+    padding-left: 0;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: minmax(0, 1fr);
+
+    > span {
+      padding: 10px 14px 0;
+    }
+
+    > div {
+      padding-left: 14px;
+    }
+  }
+`;
+
+const RotationModeTalent = styled.a`
+  justify-self: start;
+  color: #d2b373;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: #f4efe5;
+  }
 `;
 
 const OpenerFlowIntro = styled.div`

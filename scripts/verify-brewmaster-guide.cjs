@@ -3,6 +3,13 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { chromium } = require('playwright');
+const { loadGuideManuscript } = require('./lib/guideManuscripts.cjs');
+
+// 탱커 영웅 탭은 딜사이클(오프닝·레이드 단일·쐐기 광역)과 탱사이클(레이드·쐐기) 두 묶음이다(2026-10-20).
+const MODES = [['opener', 'damage'], ['singleTarget', 'damage'], ['aoe', 'damage'], ['tankRaid', 'tank'], ['tankMythic', 'tank']];
+const GROUP_LABELS = { damage: '딜사이클', tank: '탱사이클' };
+const DEFAULT_TABS = { opener: '오프닝', singleTarget: '레이드 단일', aoe: '쐐기 광역', tankRaid: '레이드', tankMythic: '쐐기' };
+const manuscript = loadGuideManuscript('monk-brewmaster');
 
 (async () => {
   const browser = await chromium.launch();
@@ -16,10 +23,13 @@ const { chromium } = require('playwright');
       await page.goto(`${process.env.TEST_ORIGIN || 'http://127.0.0.1:3002'}/guide/monk/brewmaster`, { waitUntil: 'networkidle' });
       await page.getByRole('heading', { name: '양조 수도사 가이드', exact: true }).waitFor();
       const heroes = page.getByRole('group', { name: '영웅 특성 선택', exact: true });
-      for (const [hero, key, expected] of [['음영파', 'shado', 10], ['조화의 종사', 'harmony', 12]]) {
+      for (const [hero, key] of [['음영파', 'shado'], ['조화의 종사', 'harmony']]) {
+        const branch = manuscript.heroBranches.find(item => item.label === hero);
         await heroes.getByRole('button', { name: hero, exact: true }).click();
-        for (const [mode, label] of [['opener', '오프닝'], ['singleTarget', '단일'], ['aoe', '광역']]) {
-          await page.getByRole('group', { name: '전투 상황 선택', exact: true }).getByRole('button', { name: label, exact: true }).click();
+        for (const [mode, group] of MODES) {
+          const label = branch[mode]?.tabLabel || DEFAULT_TABS[mode];
+          const expected = (branch[mode].steps || []).length;
+          await page.getByRole('group', { name: `${GROUP_LABELS[group]} 전투 상황 선택`, exact: true }).getByRole('button', { name: label, exact: true }).click();
           const region = page.locator(`[data-rotation-mode="${mode}"]`);
           await region.evaluate(element => window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 80));
           const metrics = await region.evaluate(element => {
@@ -34,7 +44,11 @@ const { chromium } = require('playwright');
             };
           });
           assert(metrics.pageOverflow <= 1 && metrics.railOverflow <= 1, `${width}/${key}/${mode}: overflow`);
-          if (mode === 'opener') {
+          if (group === 'tank') {
+            assert.equal(metrics.steps, expected);
+            assert(expected >= 4 && metrics.icons.every(icon => /^spell=\d+&domain=ko$/.test(icon.id)));
+            assert(metrics.text.includes('특성 견본'), `${width}/${key}/${mode}: talent sample link`);
+          } else if (mode === 'opener') {
             assert.equal(metrics.steps, expected);
             assert(metrics.icons.every(icon => icon.size === 16 && /^spell=\d+&domain=ko$/.test(icon.id)));
             const details = region.locator('details');
@@ -59,7 +73,7 @@ const { chromium } = require('playwright');
       assert.equal(await page.locator('a[href$="spell=292601"], a[href$="spell=115450"]').count(), 0);
       await page.locator('#synergies').scrollIntoViewIfNeeded();
       await page.screenshot({ path: path.join(output, `${width}-graph.png`) });
-      console.log(`${width}px: both heroes, all three modes, tooltip links and responsive layout passed`);
+      console.log(`${width}px: both heroes, damage and tank cycle modes, tooltip links and responsive layout passed`);
       await page.close();
     }
     assert.deepEqual(errors, []);

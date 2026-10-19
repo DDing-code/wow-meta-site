@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-19T14:49:05.451Z",
+    "generatedAt": "2026-10-19T18:00:32.688Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
-    "totalSkills": 3000,
-    "rawTotalSkills": 3000,
+    "totalSkills": 3003,
+    "rawTotalSkills": 3003,
     "duplicateIds": [],
     "totalSynergies": 607,
     "stats": {
-      "total": 3000,
+      "total": 3003,
       "byType": {
         "buff": 140,
         "hero-talent": 553,
-        "atomic-skill": 564,
+        "atomic-skill": 567,
         "proc": 29,
         "skill": 125,
         "talent": 1009,
@@ -30,9 +30,9 @@
         "atomic-talent": 1
       },
       "byClass": {
-        "DeathKnight": 127,
-        "DemonHunter": 152,
-        "Druid": 219,
+        "DeathKnight": 128,
+        "DemonHunter": 153,
+        "Druid": 220,
         "Evoker": 148,
         "Hunter": 225,
         "Mage": 229,
@@ -45,15 +45,15 @@
         "Warrior": 249
       },
       "bySpec": {
-        "DeathKnight-공용": 21,
+        "DeathKnight-공용": 22,
         "DeathKnight-냉기": 33,
         "DeathKnight-부정": 44,
         "DeathKnight-혈기": 29,
-        "DemonHunter-공용": 16,
+        "DemonHunter-공용": 17,
         "DemonHunter-복수": 44,
         "DemonHunter-파멸": 54,
         "DemonHunter-포식": 38,
-        "Druid-공용": 55,
+        "Druid-공용": 56,
         "Druid-수호": 41,
         "Druid-야성": 51,
         "Druid-조화": 37,
@@ -6350,6 +6350,57 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\12-흑마법사\\공용\\Talents\\필멸의-고리.md",
+        "lastUpdate": ""
+      }
+    },
+    "6795": {
+      "id": "6795",
+      "type": "atomic-skill",
+      "class": "Druid",
+      "spec": "공용",
+      "specs": [
+        "Balance",
+        "Feral",
+        "Guardian",
+        "Restoration"
+      ],
+      "name": "포효",
+      "koreanName": "포효",
+      "englishName": "Growl",
+      "icon": "ability_physical_taunt",
+      "iconName": "ability_physical_taunt",
+      "school": "",
+      "cooldown": "8초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "30야드",
+      "description": "곰 변신 필요 적을 도발하여 자신을 공격하게 합니다. 6초 동안 대상을 향해 생성되는 위협 수준이 800%만큼 증가합니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1.5",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_physical_taunt.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_physical_taunt.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_physical_taunt.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_physical_taunt.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_physical_taunt.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\공용\\Skills\\포효.md",
         "lastUpdate": ""
       }
     },
@@ -14474,6 +14525,56 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\06-마법사\\공용\\Skills\\환영복제.md",
+        "lastUpdate": ""
+      }
+    },
+    "56222": {
+      "id": "56222",
+      "type": "atomic-skill",
+      "class": "DeathKnight",
+      "spec": "공용",
+      "specs": [
+        "Blood",
+        "Frost",
+        "Unholy"
+      ],
+      "name": "어둠의 명령",
+      "koreanName": "어둠의 명령",
+      "englishName": "Dark Command",
+      "icon": "spell_nature_shamanrage",
+      "iconName": "spell_nature_shamanrage",
+      "school": "",
+      "cooldown": "8초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "30야드",
+      "description": "적을 호령하여 자신을 공격하게 합니다. 6초 동안 대상을 향해 생성되는 위협 수준이 800%만큼 증가합니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1.5",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_shamanrage.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/spell_nature_shamanrage.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/spell_nature_shamanrage.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/spell_nature_shamanrage.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/spell_nature_shamanrage.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\01-죽음의기사\\공용\\Skills\\어둠의명령.md",
         "lastUpdate": ""
       }
     },
@@ -25122,6 +25223,56 @@
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\파멸\\Skills\\글레이브투척.md",
         "lastUpdate": "2026-09-13"
+      }
+    },
+    "185245": {
+      "id": "185245",
+      "type": "atomic-skill",
+      "class": "DemonHunter",
+      "spec": "공용",
+      "specs": [
+        "Havoc",
+        "Vengeance",
+        "Devourer"
+      ],
+      "name": "고문",
+      "koreanName": "고문",
+      "englishName": "Torment",
+      "icon": "ability_demonhunter_torment",
+      "iconName": "ability_demonhunter_torment",
+      "school": "",
+      "cooldown": "8초",
+      "castTime": "즉시",
+      "resourceCost": "없음",
+      "range": "30야드",
+      "description": "적을 도발하여 자신을 공격하게 합니다. 6초 동안 대상을 향해 생성되는 위협 수준이 800%만큼 증가합니다.",
+      "category": "ability",
+      "tags": [],
+      "patch": "12.1.5",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_torment.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_demonhunter_torment.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_demonhunter_torment.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_demonhunter_torment.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_demonhunter_torment.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 0,
+        "synergyCount": 0,
+        "linkDensity": 0,
+        "hasWikilinks": false
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\02-악마사냥꾼\\공용\\Skills\\고문.md",
+        "lastUpdate": ""
       }
     },
     "185311": {

@@ -1,0 +1,292 @@
+{
+  "origin": "http://127.0.0.1:4410",
+  "checkedAt": "2026-10-19T18:20:00.542Z",
+  "results": [
+    {
+      "id": "evoker/augmentation",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "wingLines": [
+        "날개지도",
+        "자로당겨지면"
+      ],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "evoker/augmentation",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "wingLines": [
+        "날개지도",
+        "자로당겨지면"
+      ],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "evoker/augmentation",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "wingLines": [
+        "날개지도",
+        "자로당겨지면"
+      ],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "priest/holy",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "titleLines": [
+        "평온의쿨다운을당기고",
+        "평온이돌려주는것"
+      ],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "priest/holy",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "titleLines": [
+        "평온의쿨다운을당기고평온이돌려주는것"
+      ],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "priest/holy",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "titleLines": [
+        "평온의쿨다운을당기고평온이돌려주는것"
+      ],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "evoker/preservation",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": 30.171875,
+      "errors": []
+    },
+    {
+      "id": "evoker/preservation",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": 30.171875,
+      "errors": []
+    },
+    {
+      "id": "evoker/preservation",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": 46.171875,
+      "errors": []
+    },
+    {
+      "id": "deathknight/blood",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "deathknight/blood",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "deathknight/blood",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "deathknight/frost",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "deathknight/frost",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "deathknight/frost",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "druid/guardian",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "druid/guardian",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "druid/guardian",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "demonhunter/vengeance",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "demonhunter/vengeance",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "demonhunter/vengeance",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "warrior/fury",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "warrior/fury",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "warrior/fury",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "rogue/assassination",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "rogue/assassination",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "rogue/assassination",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "shaman/enhancement",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "shaman/enhancement",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "shaman/enhancement",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "hunter/survival",
+      "width": 320,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "hunter/survival",
+      "width": 390,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    },
+    {
+      "id": "hunter/survival",
+      "width": 1440,
+      "overflow": false,
+      "dotStarts": [],
+      "gap": null,
+      "errors": []
+    }
+  ]
+}

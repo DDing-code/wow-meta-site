@@ -3,6 +3,13 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { chromium } = require('playwright');
+const { loadGuideManuscript } = require('./lib/guideManuscripts.cjs');
+
+// 탱커 영웅 탭은 딜사이클(오프닝·레이드 단일·쐐기 광역)과 탱사이클(레이드·쐐기) 두 묶음이다(2026-10-20).
+const MODES = [['opener', 'damage'], ['singleTarget', 'damage'], ['aoe', 'damage'], ['tankRaid', 'tank'], ['tankMythic', 'tank']];
+const GROUP_LABELS = { damage: '딜사이클', tank: '탱사이클' };
+const DEFAULT_TABS = { opener: '오프닝', singleTarget: '레이드 단일', aoe: '쐐기 광역', tankRaid: '레이드', tankMythic: '쐐기' };
+const manuscript = loadGuideManuscript('paladin-protection');
 
 (async () => {
   const browser = await chromium.launch();
@@ -15,15 +22,27 @@ const { chromium } = require('playwright');
       page.on('pageerror', error => errors.push(error.message));
       await page.goto(`${process.env.TEST_ORIGIN || 'http://127.0.0.1:3002'}/guide/paladin/protection`, { waitUntil: 'networkidle' });
       await page.getByRole('heading', { name: '보호 성기사 가이드', exact: true }).waitFor();
-      for (const [hero, key, expected] of [['기사단', 'templar', 11], ['빛의 대장장이', 'lightsmith', 12]]) {
+      for (const [hero, key] of [['기사단', 'templar'], ['빛의 대장장이', 'lightsmith']]) {
+        const branch = manuscript.heroBranches.find(item => item.label === hero);
         await page.getByRole('group', { name: '영웅 특성 선택', exact: true }).getByRole('button', { name: hero, exact: true }).click();
-        for (const [mode, label] of [['opener', '오프닝'], ['singleTarget', '단일'], ['aoe', '광역']]) {
-          await page.getByRole('group', { name: '전투 상황 선택', exact: true }).getByRole('button', { name: label, exact: true }).click();
+        for (const [mode, group] of MODES) {
+          const label = branch[mode]?.tabLabel || DEFAULT_TABS[mode];
+          const expected = (branch[mode].steps || []).length;
+          await page.getByRole('group', { name: `${GROUP_LABELS[group]} 전투 상황 선택`, exact: true }).getByRole('button', { name: label, exact: true }).click();
           const region = page.locator(`[data-rotation-mode="${mode}"]`);
           await region.evaluate(element => window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 80));
           assert(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), `${width}/${key}/${mode}: overflow`);
-          const actionLinks = region.locator(mode === 'opener' ? '[data-opener-flow-rail] a' : 'strong > a[data-wowhead]');
+          const actionLinks = region.locator(mode === 'opener' || group === 'tank' ? '[data-opener-flow-rail] a' : 'strong > a[data-wowhead]');
           const links = await actionLinks.evaluateAll(items => items.map(item => item.getAttribute('data-wowhead')));
+          if (group === 'tank') {
+            assert.equal(links.length, expected);
+            assert(expected >= 4 && links.every(link => /^spell=\d+&domain=ko$/.test(link)));
+            assert((await region.innerText()).includes('특성 견본'), `${width}/${key}/${mode}: talent sample link`);
+            const brokenTank = await region.locator('img').evaluateAll(items => items.filter(img => img.complete && !img.naturalWidth).map(img => img.src));
+            assert.deepEqual(brokenTank, []);
+            await page.screenshot({ path: path.join(output, `${width}-${key}-${mode}.png`) });
+            continue;
+          }
           assert(links.length >= 10 && links.every(link => /^spell=\d+&domain=ko$/.test(link)));
           assert(!links.some(link => /spell=(20271|24275|385438|53595|431398|1268810|1300662)&/.test(link)));
           assert(!links.some(link => (key === 'templar' ? /spell=(432459|432472)&/ : /spell=427453&/).test(link)));
@@ -63,7 +82,7 @@ const { chromium } = require('playwright');
       assert(center.includes('정의의 방패') && center.includes('11개 시너지 연결'));
       await graph.evaluate(element => window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 80));
       await page.screenshot({ path: path.join(output, `${width}-graph.png`) });
-      console.log(`${width}px: both heroes, three modes, defenses, current cast identities and layout passed`);
+      console.log(`${width}px: both heroes, damage and tank cycle modes, defenses, current cast identities and layout passed`);
       await page.close();
     }
     assert.deepEqual(errors, []);

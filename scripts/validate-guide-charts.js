@@ -457,8 +457,10 @@ function main() {
   assert(priorityPreview.includes('<InlineSkillTerm skill={row.skill}>') && priorityPreview.includes('renderGuideText(row.note, inlineTerms)'), 'Compact priorities must retain linked icons, names and readable use conditions');
   assert(priorityStyles.includes('grid-template-columns: 22px minmax(0, 1fr);') && priorityStyles.includes('min-height: 24px;') && priorityStyles.includes('> span {'), 'Priorities must not reserve an empty icon column or stack nested inline terms');
   assert(/strong\s*\{\s*display: inline;/.test(priorityStyles) && /> span\s*\{\s*display: inline;/.test(priorityStyles) && priorityStyles.includes('width: 18px;'), 'Priority spell names and conditions must flow inline with compact icons, not require a second line');
-  const modePreview = guideDetailSource.slice(guideDetailSource.indexOf('function GuideRotationModes('), guideDetailSource.indexOf('function NarrativeGuideSection('));
+  // 전투 상황 목록은 GuideRotationModes 바로 위 ROTATION_MODE_GROUPS에 있다(탱커는 딜사이클·탱사이클 두 묶음, 2026-10-20).
+  const modePreview = guideDetailSource.slice(guideDetailSource.indexOf('const ROTATION_MODE_GROUPS'), guideDetailSource.indexOf('function NarrativeGuideSection('));
   assert(modePreview.includes("['opener', '오프닝']") && modePreview.includes("['singleTarget', '단일']") && modePreview.includes("['aoe', '광역']"), 'Authored combat modes must offer opener, single target and AoE');
+  assert(modePreview.includes("label: '딜사이클'") && modePreview.includes("label: '탱사이클'") && modePreview.includes("['tankRaid', '레이드']") && modePreview.includes("['tankMythic', '쐐기']") && modePreview.includes('href="#guide-talents"'), 'Tank hero tabs must group damage and tank cycles and link each tank cycle to its talent sample');
   assert(modePreview.includes('aria-pressed={mode === id}') && modePreview.includes('manualPriority={current.priority}'), 'Mode selection must expose its state and render conditional priorities, not duplicate the opener');
   assert(modePreview.includes('branch[id]?.tabLabel || label'), 'Authored healer situation labels must retain the existing mode-label fallback');
   assert(guideDetailSource.includes('hasOpenerGuide && !hasRotationModes') && guideDetailSource.includes('priorityChart && !hasRotationModes'), 'Authored combat modes must not also show duplicate generic opener and priority charts');

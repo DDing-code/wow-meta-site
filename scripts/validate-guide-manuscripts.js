@@ -456,7 +456,7 @@ function collectActiveSkillRefs(manuscript) {
     (branch.priority || []).forEach((item, index) => {
       skillRefs.push([`heroBranches[${branchIndex}].priority[${index}].skillId`, item.skillId]);
     });
-    for (const mode of ['opener', 'singleTarget', 'aoe']) {
+    for (const mode of ['opener', 'singleTarget', 'aoe', 'tankRaid', 'tankMythic']) {
       for (const field of ['steps', 'priority']) {
         (branch[mode]?.[field] || []).forEach((row, index) => {
           skillRefs.push([`heroBranches[${branchIndex}].${mode}.${field}[${index}].skillId`, row.skillId]);
@@ -981,6 +981,7 @@ function validateBookLayout(spec, manuscript, kbSkills = {}) {
     timelines.forEach((timeline, timelineIndex) => {
       const timelinePrefix = `${blockPrefix}.timeline[${timelineIndex}]`;
       assert(timeline.title?.length >= 4 && timeline.rails?.length >= 1, `${timelinePrefix}: timeline needs a title and rails`);
+      assert(!timeline.kind || (timeline.kind === 'tank' && spec.role === 'tanks'), `${timelinePrefix}: timeline kind must be empty or 'tank' (tank guides only)`);
       timeline.rails.forEach((rail, railIndex) => {
         const railPrefix = `${timelinePrefix}.rails[${railIndex}]`;
         assert(rail.label?.length >= 2 && rail.nodes?.length >= 1, `${railPrefix}: rail needs a label and nodes`);
@@ -1008,6 +1009,7 @@ function validateBookLayout(spec, manuscript, kbSkills = {}) {
   });
   assert(!/우두머리(?! 포식자)|졸개|보스/.test(JSON.stringify(manuscript)), `${prefix}: fixed guide terms are 네임드 and 쫄 (not 보스/우두머리/졸개; official skill name 우두머리 포식자 excepted)`);
   validateBookTemplate(spec, manuscript, kbSkills);
+  validateTankCycles(spec, manuscript, kbSkills);
   const partOrder = blocks.map(block => parts.findIndex(part => part.id === block.part));
   assert(partOrder.every((value, index) => index === 0 || value >= partOrder[index - 1]), `${prefix}: chapters must follow part order`);
   voices.forEach(voice => {
@@ -1015,6 +1017,37 @@ function validateBookLayout(spec, manuscript, kbSkills = {}) {
     assert(/^https?:\/\//.test(voice.url || '') && voice.date && voice.access, `${prefix}.voices.${voice.id}: url/date/access required`);
     assert(!/maxroll/i.test(voice.url || ''), `${prefix}.voices.${voice.id}: Maxroll must not be used as a guide source`);
   });
+}
+
+// 탱커 딜사이클·탱사이클 분류(2026-10-20 사용자 요청: 탱커는 레이드/쐐기 특성과 딜사이클이 다르고, 탱사이클과 딜사이클이 따로 있다).
+// 영웅 특성 탭: 딜사이클(오프닝·레이드 단일·쐐기 광역) + 탱사이클(tankRaid·tankMythic, 각 특성 견본 연결).
+// 개념서: 3부 실전의 쐐기·공격대 장에 kind 'tank' 타임라인을 하나씩 둔다.
+function validateTankCycles(spec, manuscript, kbSkills) {
+  const prefix = `${spec.id}.tankCycles`;
+  const branches = manuscript.heroBranches || [];
+  const blocks = manuscript.blocks || [];
+  const tankTimelines = blocks.flatMap(block => [].concat(block.timeline || []).filter(timeline => timeline.kind === 'tank').map(timeline => ({ block, timeline })));
+  if (spec.role !== 'tanks') {
+    assert(!branches.some(branch => branch.tankRaid || branch.tankMythic), `${prefix}: tank cycles are only for tank guides`);
+    return;
+  }
+  const builds = new Set((manuscript.talentBuilds || []).map(build => build.id));
+  branches.forEach((branch, branchIndex) => {
+    const branchPrefix = `${prefix}.heroBranches[${branchIndex}]`;
+    assert(/레이드/.test(branch.singleTarget?.tabLabel || '') && /쐐기/.test(branch.aoe?.tabLabel || ''), `${branchPrefix}: tank damage tabs must say 레이드 (singleTarget) and 쐐기 (aoe)`);
+    [['tankRaid', 'raid', /레이드|공격대/], ['tankMythic', 'mythic-plus', /쐐기/]].forEach(([key, buildId, pattern]) => {
+      const mode = branch[key];
+      const modePrefix = `${branchPrefix}.${key}`;
+      assert(mode && mode.title?.length >= 4 && pattern.test(mode.title) && mode.summary?.length >= 30, `${modePrefix}: tank cycle needs a ${pattern} title and summary`);
+      const rows = [...(mode?.steps || []), ...(mode?.priority || [])];
+      assert(rows.length >= 4, `${modePrefix}: tank cycle needs at least four rows`);
+      rows.forEach((row, rowIndex) => assert(kbSkills[String(row.skillId)] && row.note?.length >= 15, `${modePrefix}[${rowIndex}]: row needs a known skill and a note`));
+      assert(!builds.has(buildId) || mode?.talentBuildId === buildId, `${modePrefix}: talentBuildId must point to the ${buildId} talent sample`);
+    });
+    assert(JSON.stringify(branch.tankRaid?.steps || branch.tankRaid?.priority) !== JSON.stringify(branch.tankMythic?.steps || branch.tankMythic?.priority), `${branchPrefix}: raid and Mythic+ tank cycles must differ`);
+  });
+  const fieldTank = tankTimelines.filter(item => item.block.part === 'field');
+  assert(fieldTank.some(item => /쐐기/.test(item.block.title + item.timeline.title)) && fieldTank.some(item => /공격대|레이드/.test(item.block.title + item.timeline.title)), `${prefix}: field part needs a Mythic+ and a raid tank-cycle timeline`);
 }
 
 // 노 베이스 목차(2026-10-10 사용자 확정): 0부 시작 전 준비(내 스킬 한눈에 보기만, 특성·쓰는 말 제외)
@@ -1456,7 +1489,7 @@ function main() {
   const frostSpellslinger = mageFrost.heroBranches.find(branch => branch.label === '주문술사');
   const frostFrostfire = mageFrost.heroBranches.find(branch => branch.label === '서리불꽃');
   assert(frostSpellslinger.opener.steps.slice(0, 4).map(row => row.skillId).join(',') === '116,44614,84714,205021', 'Spellslinger must retain its sourced opening order');
-  assert(frostFrostfire.opener.steps.slice(0, 4).map(row => row.skillId).join(',') === '431044,205021,44614,84714', 'Frostfire must retain its distinct sourced opening order');
+  assert(frostFrostfire.opener.steps.slice(0, 4).map(row => row.skillId).join(',') === '431044,44614,205021,84714', 'Frostfire must retain its log-sourced opening order (bolt, Flurry, Ray, Orb; 2026-10-20 top logs 4 of 5)');
   assert(JSON.stringify(frostFrostfire).includes('정점') && JSON.stringify(frostFrostfire.aoe).includes('GCD') && JSON.stringify(frostFrostfire.aoe).includes('신속한 재동결'), 'Frostfire AoE must retain no-apex, channel clipping and tier conditions');
 
   const fire = manuscripts['mage-fire'];
