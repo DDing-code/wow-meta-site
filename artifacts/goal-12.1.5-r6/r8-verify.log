@@ -1,0 +1,21 @@
+빌드 main.ef4d5916.js · TEST_ORIGIN=http://127.0.0.1:4410
+통과 scripts/verify-affliction-guide.cjs
+통과 scripts/verify-assassination-kb.cjs
+통과 scripts/verify-brewmaster-guide.cjs
+통과 scripts/verify-demonology-guide.cjs
+통과 scripts/verify-destruction-guide.cjs
+통과 scripts/verify-devastation-12-1.cjs
+통과 scripts/verify-enhancement-kb.cjs
+통과 scripts/verify-enhancement-log-evidence.cjs
+통과 scripts/verify-guide-index.cjs
+통과 scripts/verify-guide-resume.cjs
+통과 scripts/verify-healer-september-hotfix.cjs
+통과 scripts/verify-outlaw-kb.cjs
+통과 scripts/verify-protection-paladin-guide.cjs
+통과 scripts/verify-restoration-shaman-kb.cjs
+통과 scripts/verify-retribution-guide.cjs
+통과 scripts/verify-route-scroll.cjs
+통과 scripts/verify-shadow-kb.cjs
+통과 scripts/verify-subtlety-kb.cjs
+통과 scripts/verify-warrior-rend-kb.cjs
+합계 통과 19 실패 0

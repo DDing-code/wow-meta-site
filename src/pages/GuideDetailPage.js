@@ -6864,6 +6864,8 @@ const BookTimelineItem = styled.div`
     line-height: 1.3;
     word-break: keep-all;
     overflow-wrap: anywhere;
+    /* 마지막 줄에 한 글자만 남지 않게 줄 길이를 고르게 나눈다 */
+    text-wrap: balance;
   }
 
   /* 설명·가지 글 안의 스킬 이름표도 칸 폭 안에서 줄바꿈해 옆 칸 글과 겹치지 않게 한다 */
@@ -6876,6 +6878,34 @@ const BookTimelineItem = styled.div`
   > p ${InlineTermGlue},
   small ${InlineTermGlue} {
     white-space: nowrap;
+  }
+
+  /* 좁은 칸에서 긴 이름이 꺾여도 아이콘이 첫 글자 옆에 붙어 있도록 이름표를 글줄처럼 흐르게 한다 */
+  /* 아이콘과 이름 첫 글자 사이는 링크(공통 부모)의 nowrap으로 막고, 이름 안에서만 줄을 바꾼다 */
+  > p a[data-wowhead],
+  small a[data-wowhead] {
+    display: inline;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+
+  > p a[data-wowhead] img,
+  small a[data-wowhead] img {
+    margin-right: 3px;
+    vertical-align: -0.16em;
+  }
+
+  > p a[data-wowhead] em,
+  small a[data-wowhead] em {
+    display: inline;
+    white-space: normal;
+  }
+
+  > p a[data-wowhead] > span,
+  small a[data-wowhead] > span {
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: -0.16em;
   }
 `;
 
@@ -6901,6 +6931,7 @@ const BookTimelineAbove = styled.div`
     line-height: 1.2;
     word-break: keep-all;
     overflow-wrap: anywhere;
+    text-wrap: balance;
   }
 
   i {

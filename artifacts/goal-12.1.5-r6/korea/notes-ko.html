@@ -1,0 +1,558 @@
+<!DOCTYPE html><html lang="ko-KR"><head><script type="text/javascript" src="https://assets-bwa.worldofwarcraft.blizzard.com/forge-components.a3a536fa2513a6b95637.js"></script><title>12.1.5 콘텐츠 업데이트 노트</title><script>var optimizelyEnabled = false;
+try {
+  optimizelyEnabled = JSON.parse('true');
+} catch (err) {
+  console.log(err);
+}
+</script><script>var optimizelyLoaded = (function () {
+  var OPTIMIZELY_AGENT_LOADED_EVENT = 'OptimizelyWebLoaded';
+  var OPTIMIZELY_FULLSTACK_DATAFILE_LOADED_EVENT = 'OptimizelyFullstackDataFileLoaded';
+
+  function initOptimizely() {
+    var agentScript = document.createElement('script');
+    agentScript.src = 'https://cdn.optimizely.com/js/8521175242.js';
+    agentScript.onload = function () {
+      optimizelyLoaded = true;
+      trigger(OPTIMIZELY_AGENT_LOADED_EVENT);
+    };
+    document.head.appendChild(agentScript);
+
+    var optimizelySdkKey = '';
+    var optimizelySdkEnabled = false;
+    try {
+      optimizelySdkEnabled = JSON.parse('true');
+    } catch (err) {
+      console.log(err);
+    }
+    if (optimizelySdkKey && optimizelySdkEnabled) {
+      var dataFileScript = document.createElement('script');
+      dataFileScript.src = 'https://cdn.optimizely.com/datafiles/' + optimizelySdkKey + '.json/tag.js';
+      dataFileScript.onload = function () {
+        trigger(OPTIMIZELY_FULLSTACK_DATAFILE_LOADED_EVENT);
+      };
+      document.head.appendChild(dataFileScript);
+    }
+  }
+
+  var optimizelyLoaded = false;
+  var COOKIE_CONSENT_EVENT = 'CookieConsentChange';
+  var cookieConsentChangeEventListener = window.addEventListener(COOKIE_CONSENT_EVENT, function () {
+    if (BlzCookieConsent.isPerformanceStorageAllowed()) {
+      initOptimizely();
+    }
+    window.removeEventListener(COOKIE_CONSENT_EVENT, cookieConsentChangeEventListener);
+  });
+
+  return function () {
+    return optimizelyLoaded;
+  };
+})();</script><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="referrer" content="no-referrer-when-downgrade"><meta name="description" content="12.1.5 콘텐츠 업데이트로 적용될 모든 변경 사항을 확인하세요."/><meta property="fb:app_id" content="175314325675"/><meta property="og:site_name" content="World of Warcraft"/><meta property="og:title" content="12.1.5 콘텐츠 업데이트 노트 - WoW"/><meta property="og:image" content="https://bnetcmsus-a.akamaihd.net/cms/blog_header/yn/YNR5OVERF9B31790809021642.png"/><meta property="og:description" content="12.1.5 콘텐츠 업데이트로 적용될 모든 변경 사항을 확인하세요."/><meta property="og:url" content="https://worldofwarcraft.blizzard.com/ko-kr/news/24304162"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@warcraft"/><link rel="icon" type="image/x-icon" href="https://assets-bwa.worldofwarcraft.blizzard.com/static/wow-icon-32x32.1a38d7c1c3d8df560d53f5c2ad5442c0401edf83.png"><script>var dataLayer = dataLayer || [];
+dataLayer.push({"blog":{"author":"Blizzard Entertainment","id":24304162,"publishDate":"2026-10-01","title":"12.1.5 콘텐츠 업데이트 노트"}});
+</script><script>(function (w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+  var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s),
+    dl = l != 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-TVHPB9J');
+</script><link rel="stylesheet" type="text/css" media="screen" href="https://assets-bwa.worldofwarcraft.blizzard.com/css/index.f721adc78471f31e88e0233a4b9f1d23eafa8a93.css"><script>window.__WOW_UI_PUBLIC_PATH__ = 'https://assets-bwa.worldofwarcraft.blizzard.com/';</script><script src="https://assets-bwa.worldofwarcraft.blizzard.com/core.20032001020d8c899d2e.js"></script><script id="init">//- defined in _pollyfills.js
+window.trigger('init');</script><script>var BlzCookieConsent = JSON.parse('{"host":".blizzard.com","cookieInfoUrlPattern":"/cookies/?$","onetrustScriptUrl":"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js","onetrustDomainScript":"22011b0f-2c46-49a3-a7bf-5f98a4d4da65"}');</script><script src="https://assets-bwa.worldofwarcraft.blizzard.com/cookie-consent-filter.df3d119618b1f2193781.js" defer></script><link href="https://assets-bwa.worldofwarcraft.blizzard.com/core.ca99066eb0b376d89abf.css" rel="stylesheet" type="text/css"/><link href="https://assets-bwa.worldofwarcraft.blizzard.com/static/izimodal.df3420266654fd7974759048907176f23513e765.css" rel="stylesheet"><link href="https://assets-bwa.worldofwarcraft.blizzard.com/static/simplebar.9d79d89318973e13b0ce47c1c4de660bcf0f049f.css" rel="stylesheet"><link href="https://assets-bwa.worldofwarcraft.blizzard.com/vendor.a13b1698c611ba160a07.css" rel="stylesheet" type="text/css"/><link href="https://assets-bwa.worldofwarcraft.blizzard.com/632.624ece844ebdff7209a6.css" rel="stylesheet" type="text/css"/><link href="https://assets-bwa.worldofwarcraft.blizzard.com/news.1971374d6661c8e54e29.css" rel="stylesheet" type="text/css"/><link href="/opensearch/opensearch.xml" title="월드 오브 워크래프트 검색하기" rel="search" type="application/opensearchdescription+xml"><link rel="canonical" href="http://worldofwarcraft.blizzard.com/news/24304162/1215-콘텐츠-업데이트-노트"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/en-us/news/24304162" hreflang="en-us"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/en-gb/news/24304162" hreflang="en-gb"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/de-de/news/24304162" hreflang="de-de"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/es-es/news/24304162" hreflang="es-es"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/es-mx/news/24304162" hreflang="es-mx"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/fr-fr/news/24304162" hreflang="fr-fr"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/ja-jp/news/24304162" hreflang="ja-jp"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/it-it/news/24304162" hreflang="it-it"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/pl-pl/news/24304162" hreflang="pl-pl"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/pt-br/news/24304162" hreflang="pt-br"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/ru-ru/news/24304162" hreflang="ru-ru"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/th-th/news/24304162" hreflang="th-th"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/ko-kr/news/24304162" hreflang="ko-kr"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/zh-cn/news/24304162" hreflang="zh-cn"><link rel="alternate" href="http://worldofwarcraft.blizzard.com/zh-tw/news/24304162" hreflang="zh-tw"><script type="application/ld+json">{"@context":"http://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"http://worldofwarcraft.blizzard.com/news/24304162/1215-콘텐츠-업데이트-노트"},"headline":"12.1.5 콘텐츠 업데이트 노트","image":["https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/7l/7LZQ5LXTX4V51790809002992.png"],"datePublished":"2026-10-01T17:00:00+00:00","dateModified":"2026-10-13T00:09:57+00:00","author":{"@type":"Organization","name":"Blizzard Entertainment"},"publisher":{"@type":"Organization","name":"Blizzard Entertainment","logo":{"@type":"ImageObject","width":136,"url":"https://bnetcmsus-a.akamaihd.net/cms/template_resource/vv/VVJVJIDMCPSU1513896602867.png"},"url":"https://blizzard.com"},"description":"12.1.5 콘텐츠 업데이트로 적용될 모든 변경 사항을 확인하세요."}</script></head><body class="ko-kr"><header class="sitenav"><blz-nav class="SiteNav" hidden="hidden" user-endpoint="/navbar/authenticate" content="wow-site-modern" theme="wow-site-modern" search-url="/worldsoul/us/armory?q={value}"><script src="https://navbar.blizzard.com/static/v1/nav.js" async="async"></script></blz-nav><script>(() => {
+  if (nav = document.querySelector('blz-nav, blz-nav-battlenet')) {
+    nav.addEventListener('blz-nav:cms-loaded', ({ detail }) => {
+      detail.cmsContent.filter((e) => ['/login', '/logout', '/?logout'].includes(e.href)).forEach((e) => {
+        e.setAttribute('href', `${e.href}?redirect=${window.location.pathname}`)
+      })
+    })
+  }
+})();</script></header><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVHPB9J" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript><script>!(function (i, d, e, n) {
+  (i[e] = i[e] || {}),
+    i[e][n] ||
+      (i[e][n] = function (i, e, n) {
+        if (void 0 !== i) {
+          (e = void 0 === e ? 0 : e), (n = void 0 === n ? 0 : n);
+          var a = d.createElement('iframe');
+          (a.width = e), (a.height = n), (a.hidden = !0), (a.src = i), d.body.appendChild(a);
+        }
+      });
+})(window, document, 'analytics', 'appendFrame');</script><script>var dataLayer = dataLayer || [];
+dataLayer.push({"locale":"en-US","serverRegion":"us","region":"us","_localeRegion":"kr","project":"wow","authenticated":"0","platform":"web"});
+</script><div class="body"><div class="page"><main id="main" role="main"><article><header><div class="Pane Pane--underSiteNav Pane--fadeBottom bordered" data-url="//bnetcmsus-a.akamaihd.net/cms/blog_header/yn/YNR5OVERF9B31790809021642.png"><div class="Pane-bg" style="background-color:#000000;background-image:url(&quot;//bnetcmsus-a.akamaihd.net/cms/blog_header/yn/YNR5OVERF9B31790809021642.png&quot;);"><div class="Pane-overlay"></div></div><div class="Pane-content"><div class="space-huge"></div><div class="space-large" media-large="!space-large"></div><div media-medium="space-medium" media-large="!space-medium space-huge"></div><div media-wide="space-huge"></div><div media-wide="space-huge"></div><div media-huge="space-huge"></div><div media-huge="space-huge"></div><div class="contain-max"><h1 class="margin-none font-title-large-onDark">12.1.5 콘텐츠 업데이트 노트</h1><div class="space-small"></div><div class="List"><div class="font-bliz-light-small-beige" media-medium="List-item gutter-tiny"><div class="Content"><span class="LocalizedDateMount" data-props='{"format":"LL","iso8601":"2026-10-01T17:00:00.000Z"}'>October 1st</span> <span class="LocalizedDateMount" data-props='{"format":"LT z","iso8601":"2026-10-01T17:00:00.000Z"}'>5:00pm</span>에 등록 게시자: <a href="/worldsoul/us/search/blog?a=Blizzard%20Entertainment">Blizzard Entertainment</a></div></div><div class="List-item gutter-tiny"><a class="Link Link--external" href="https://kr.forums.blizzard.com/ko/wow/t/13030"><div class="CommentTotal CommentTotal--horizontal CommentTotal--transition"><span class="Icon Icon--comment Icon--small CommentTotal-icon"><img class="Icon-svg" src="https://assets-bwa.worldofwarcraft.blizzard.com/images/comment.b10aee4bad3db6c7f85762d4250662e16f71c80a.svg"/></span><div class="CommentTotal-number">0</div></div></a></div></div><div class="space-medium" media-large="space-large"></div></div></div></div></header><div class="Pane Pane--dirtDark"><div class="Pane-bg"><div class="Pane-overlay"></div></div><div class="Pane-content"><div class="space-medium" media-large="space-large"></div><div class="contain-wide"><div class="flex flex-items-center margin-bottom-normal"><div class="SocialButtons font-none"><div class="SocialButtons-button"><a class="SocialButtons-link font-size-xSmall SocialButtons-link--facebook" href="javascript:void(0);" data-url="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fworldofwarcraft.blizzard.com%2Fko-kr%2Fnews%2F24304162" data-popup-height="450" data-popup-width="550" data-analytics="sns-share" data-analytics-placement="News - facebook"><span class="Icon Icon--social-facebook-white SocialButtons-icon SocialButtons-icon--facebook"><img class="Icon-svg" src="https://assets-bwa.worldofwarcraft.blizzard.com/images/social-facebook-white.f68561886322327848a09343bf755edde2b557df.svg"/></span><span>공유</span></a></div><div class="SocialButtons-button"><a class="SocialButtons-link font-size-xSmall SocialButtons-link--twitter" href="javascript:void(0);" data-url="https://twitter.com/intent/tweet?text=12.1.5%20%EC%BD%98%ED%85%90%EC%B8%A0%20%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%20%EB%85%B8%ED%8A%B8&amp;url=https%3A%2F%2Fworldofwarcraft.blizzard.com%2Fko-kr%2Fnews%2F24304162&amp;hashtags=Warcraft" data-popup-height="450" data-popup-width="550" data-analytics="sns-share" data-analytics-placement="News - twitter"><span class="Icon Icon--social-twitter-white SocialButtons-icon SocialButtons-icon--twitter"><img class="Icon-svg" src="https://assets-bwa.worldofwarcraft.blizzard.com/images/social-twitter-white.06e67f4c8c6b85c88da5014c935292615ce6b3ec.svg"/></span><span>트윗하기</span></a></div></div><a class="Link Link--external Button Button--ghost Button--small Button--social Icon--tiny" href="https://kr.forums.blizzard.com/ko/wow/t/13030"><div class="Button-outer"><div class="Button-inner"><div class="Button-label" data-text="댓글 0개">댓글 0개<span class="Icon Icon--external Button-icon"><img class="Icon-svg" src="https://assets-bwa.worldofwarcraft.blizzard.com/images/external.135044fa88ea3954efeebdad4209a3dcb3d7548f.svg"/></span></div></div></div></a></div><div id="blog"><div class="Blog margin-bottom-medium"><div class="detail"><p>한밤의 12.1.5 콘텐츠 업데이트와 함께, 9개의 방으로 이루어져 있으며 구렁과 비슷한 콘텐츠인 킨도잔의 미궁과 신규 단일 우두머리 공격대가 추가되고 2 시즌의 시즌 중반 개편이 적용되며, 쿠엘탈라스와 줄아만에서 계속되는 한밤 서사시와 아퀴르 침공 등이 공개됩니다.</p>
+
+<div class="table-responsive">
+<h2 class="text-center" id="toc">목차</h2>
+
+<table class="table table-striped">
+	<tbody>
+		<tr>
+			<td><a href="#item1">이야기 대장정: "내일의 약속"</a></td>
+			<td><a href="#item2">신규 단일 우두머리 공격대: 키식스 해방</a></td>
+		</tr>
+		<tr>
+			<td><a href="#item3">미궁: 심층부를 정복하고 보상을 획득하세요</a></td>
+			<td><a href="#item4">아퀴르 침공</a></td>
+		</tr>
+		<tr>
+			<td><a href="#item5">시즌 중반 개편: 새로운 힘을 손에 넣으세요</a></td>
+			<td><a href="#item6">업적</a></td>
+		</tr>
+		<tr>
+			<td><a href="#item7">직업</a></td>
+			<td><a href="#item8">구렁</a></td>
+		</tr>
+		<tr>
+			<td><a href="#item9">던전</a></td>
+			<td><a href="#item10">하우징</a></td>
+		</tr>
+		<tr>
+			<td><a href="#item11">플레이어 간 전투</a></td>
+			<td><a href="#item12">사냥감</a></td>
+		</tr>
+		<tr>
+			<td><a href="#item13">사용자 인터페이스 및 손쉬운 사용</a></td>
+			<td><a href="#item14">전투부대 평판</a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<h4 style="text-align: center;">새로운 업데이트 요소는 <span style="color:#DAA520;">금색</span>으로 강조되어 있습니다.</h4>
+
+<hr class="image-divider" />
+<h2 id="item1"><strong>이야기 대장정: "내일의 약속"</strong></h2>
+
+<aside class="center-block">
+<div class="image"><a class="lightbox" href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/16/16X9BK5EUC0K1787859653468.png"><img src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/16/16X9BK5EUC0K1787859653468.png" /></a></div>
+</aside>
+
+<p>울라텍은 쓰러졌지만, 그로 인해 오랫동안 잠들어 있던 공포가 깨어났습니다. 쿠엘탈라스와 줄아만 사이의 위태로운 평화를 다지고, 똬리의 섬 가장 깊은 곳으로 내려가 아마니의 숙적인 크트락시 장군 키식스와 최후의 결전을 벌이세요.</p>
+
+<hr class="image-divider" />
+<h2 id="item2"><strong>신규 단일 우두머리 공격대: 키식스 해방</strong></h2>
+
+<aside class="center-block">
+<div class="image"><a class="lightbox" href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/OOONXLDUTFUE1786560511932.png"><img src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/OOONXLDUTFUE1786560511932.png" /></a></div>
+</aside>
+
+<p>맹독 심연 아래 숨겨진 지하 소굴에는 키식스가 갇혀 있었습니다. 울라텍이 쓰러지자 키식스를 억누르던 속박이 약해지면서, 아마니가 먼 옛날 가두었던 그 괴물이 풀려났습니다.</p>
+
+<p>이야기 모드와 공격대 찾기, 일반, 영웅, 신화 난이도가 있는 집약된 구성의 단일 우두머리 공격대에서 여군주 리아드린과 함께 키식스에 맞서세요. 대장정을 거치며 고조되어 온 위협이 마침내 결전으로 치닫습니다. 신화 난이도에서는 15~25인으로 탄력적 공격대를 구성해 키식스와 싸울 수 있습니다.</p>
+
+<p>아군을 불러 모아 쿠엘탈라스와 줄아만 이야기의 대미를 장식할 전투에 대비하세요.</p>
+
+<hr class="image-divider" />
+<h2 id="item3"><strong>미궁: 심층부를 정복하고 보상을 획득하세요</strong></h2>
+
+<aside class="center-block">
+<div class="image"><a class="lightbox" href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/UDVKV95593QV1786560513837.png"><img src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/UDVKV95593QV1786560513837.png" /></a></div>
+</aside>
+
+<p>이 고대 아마니의 묘역은 수백 년 동안 봉인되어 있었습니다. 오랜 봉인이 풀린 지금, 약탈자들과 썩은가지 부족이 유물을 찾아 내부를 샅샅이 뒤지고 있으며, 이곳에 안치되었던 영혼들은 침입자를 가차 없이 처단하며 묘역을 수호하고 있습니다.</p>
+
+<p>구렁도 좋지만, 더 큰 보상이 걸린 방대한 탐험을 떠나고 싶으셨나요? 그렇다면 킨도잔의 미궁이 제격입니다.</p>
+
+<p>미궁은 동료와 함께 탐험하고 새로운 것을 발견하며 난관을 헤쳐 나아간다는 구렁 특유의 재미를 그대로 담고 있으면서도, 거대 던전에 버금가게 광활하며 원하는 방식으로 공략할 수 있도록 설계되었습니다. 전용 성장 시스템을 통해 강력한 능력을 해제하고, 신화 장비를 포함하여 도전의 규모에 걸맞은 보상을 손에 넣을 수 있습니다.</p>
+
+<p>구렁과 마찬가지로 킨도잔의 미궁에서도, 미지의 세계 깊은 곳으로 우리를 안내해 줄 믿음직한 동료 발리라 생귀나르와 함께 위험 속으로 뛰어들게 됩니다.</p>
+
+<p>한 번의 파란만장한 모험으로 미궁을 통과하거나, 한 번에 지구 하나씩 공략해 보세요. 단일 지구를 탐험해도 보상을 받을 수 있지만, 방을 하나씩 추가로 완료할 때마다 보물을 얻을 기회가 많아지고 극복해야 할 위험도 커집니다.</p>
+
+<hr class="image-divider" />
+<h2 id="item4"><strong>아퀴르 침공</strong></h2>
+
+<aside class="center-block">
+<div class="image"><a class="lightbox" href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/GL9YI8KWSY041786560512749.png"><img src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/GL9YI8KWSY041786560512749.png" /></a></div>
+</aside>
+
+<p>영원노래 숲이나 줄아만 전역에서 펼쳐지는 새로운 공개 이벤트, 아퀴르 침공에 참전하세요. 용사들은 매시 정각부터 10분 동안 지역 곳곳에서 연달아 진행되는 공개 이벤트를 완료한 뒤, 치열한 우두머리 전투에 돌입하게 됩니다.</p>
+
+<p>공습을 막아 내거나 지상의 수비 병력을 규합하세요. 아제로스의 용사들 앞에서 아퀴르 군대에 승산은 없습니다.</p>
+
+<p>각각의 침공에는 전투 시나리오 3종과 비전투 시나리오 3종의 6가지 시나리오가 준비되어 있습니다. 전투 시나리오에는 8가지 속성 중 하나를 적용할 수 있습니다. 용사들은 제한 시간인 10분 안에 힘을 합쳐 최대한 많은 목표를 완료해야 하며, 완료한 목표 수에 따라 보상을 받게 됩니다.</p>
+
+<h3>속성</h3>
+
+<ul>
+	<li><strong>공허의 보호</strong>: 일정 확률로 아퀴르 공허술사가 나타나 다른 모든 아퀴르를 둘러싸는 보호의 방벽을 생성합니다.</li>
+	<li><strong>아퀴르 잠복꾼</strong>: 여러 마리의 아퀴르가 지역 곳곳의 땅속을 헤집고 다닙니다. 이들은 가까이 다가간 플레이어를 공중으로 날려 버립니다.</li>
+	<li><strong>공허의 구슬</strong>: 공허의 구슬이 지역 곳곳을 떠돌며 플레이어를 가두려 합니다.</li>
+	<li><strong>아스탈로르의 고뇌</strong>: 아스탈로르의 실험은 계속됩니다. 그가 전투를 돕고자 보낸 고통의 수정은 폭발에 휘말린 아퀴르와 모험가 모두에게 피해를 줍니다.</li>
+	<li><strong>무리!</strong>: 모든 아퀴르 적이 더 작은 아퀴르로 이루어진 무리로 대체됩니다.</li>
+	<li><strong>아퀴르 정예</strong> 모든 아퀴르 적이 수는 적지만 더욱 강력한 아퀴르로 대체됩니다.</li>
+	<li><strong>공허 감염</strong>: 일부 아퀴르가 공허에 감염되어, 전투를 시작하고 몇 초 후 폭발하여 플레이어들에게 피해를 주고 다른 아퀴르를 감염시킵니다.</li>
+	<li><strong>그물방직공</strong>: 일정 확률로 아퀴르 그물방직공이 등장합니다. 놈의 정신 집중을 중단시키지 않으면 놈이 플레이어 한 명을 그물로 뒤덮습니다.</li>
+</ul>
+
+<hr class="image-divider" />
+<h2 id="item5"><strong>시즌 중반 개편: 새로운 힘을 손에 넣으세요</strong></h2>
+
+<aside class="center-block">
+<div class="image"><a class="lightbox" href="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/y1/Y1J9Q92R6AZE1787854522909.png"><img src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/y1/Y1J9Q92R6AZE1787854522909.png" /></a></div>
+</aside>
+
+<p>10월 7일의 주간 점검 후로, 오린 스타리라이트가 매주 성운의 공허핵을 1개씩 더 판매하여 추가 전리품을 얻을 기회를 제공합니다.</p>
+
+<p>한밤의 12.1.5 콘텐츠 업데이트가 적용되기 전, 이 추가적인 성운의 공허핵을 해제할 준비를 하세요. 우선 공허폭풍에 있는 데시무스에게 "촉매가 드리운 그늘" 퀘스트를 받은 후, 실버문으로 가서 오린 스타리라이트에게 "오색의 가능성" 퀘스트를 받습니다. 성운의 공허핵 연계 퀘스트를 미리 시작하고 싶은 아제로스의 용사들이 계신다면, 10월 7일 주간 점검이 있기 전에 이 두 퀘스트를 먼저 완료하시는 것을 권장합니다.</p>
+
+<p>"오색의 가능성"이 시작되면 오린이 연구를 시작하고, 오린의 머리 위에 진행 현황 타이머가 나타납니다. 10월 7일 주에 연구가 완료되면 오린이 "암영에 물든 촉매의 축복" 퀘스트를 줍니다. 이 퀘스트를 완료하면 골드나 공허불빛 이회토, 노련가 안개문장으로 오린에게 매주 성운의 공허핵을 1개 추가로 구매할 수 있게 됩니다.</p>
+
+<p>10월 14일 주간 점검을 기점으로는 오린이 "고대의 심연, 고대의 맹독" 퀘스트를 줍니다. 이 퀘스트를 완료하면 오린이 이번에는 승천의 맹독석 연구를 시작합니다. 오린은 10월 21일 주간 점검 중에 연구를 끝내고 플레이어들에게 "맹독석과 승천" 퀘스트와 함께, 힘을 새로운 경지로 끌어올릴 기회를 줍니다. 이 퀘스트를 완료하면 세계를 지키는 용사들이 승천의 맹독석을 획득할 수 있게 됩니다. 승천의 맹독석은 모든 영웅 또는 신화 공격대 우두머리가 떨어뜨리고, +10 이상의 신화+ 쐐기돌 던전, 11 레벨 풍요로운 구렁, 악몽 난이도 사냥감 추적의 용사 장비 상자에서 나옵니다.</p>
+
+<p>승천의 맹독석을 10개 모은 후에 이것을 실버문에 있는 촉매 근처에서 사용하면, 이것으로 최대로 강화된 2 시즌 영웅, 신화 또는 최고급 해일제작 무기, 장신구 또는 목걸이의 아이템 레벨을 올릴 수 있습니다.</p>
+
+<p>10월 21일에는 승천의 맹독석과 함께 문장 상한이 없어집니다.</p>
+
+<hr class="image-divider" />
+<h2 id="item6"><strong>업적</strong></h2>
+
+<ul>
+	<li>새로운 신화+ 던전 업적: <em>한밤 쐐기돌 신화: 2 시즌</em> - 한밤 2 시즌 동안 신화+ 평점 3,600점 이상 달성 보상: "맹독의 경쟁자" 칭호와 잃어버린 시간의 안장</li>
+	<li>이제 <em>좋은 센스다</em>, <em>여기는 스네이크</em>, <em>잘 자요, 왕자님</em>을 달성하지 않아도 영예의 전쟁나락 영웅 업적을 달성할 수 있습니다.</li>
+</ul>
+
+<hr class="image-divider" />
+<h2 id="item7"><strong>직업</strong></h2>
+
+<ul>
+	<li><strong>악마사냥꾼</strong>
+
+	<ul>
+		<li><strong>포식</strong>
+
+		<ul>
+			<li><em>개발자의 한마디: 붕괴하는 별 시전 취소는 포식의 도입 후로 대표적인 고충점이었습니다. 이번 업데이트로 적용되는 변경 사항의 목표는 그런 답답함을 일부 완화하는 것입니다.<br />
+			<br />
+			지금까지는 붕괴하는 별이 중단되거나 취소된 후에 재사용 대기시간이 적용되었습니다. 이는 시전 도중 격노 소모가 느려지는 것을 이용해 공허 탈태를 연장하고 붕괴하는 별을 '적시'에 적중시키는 게임플레이를 억제하기 위한 조치였습니다. 이 조치는 그 목표 자체는 달성했지만, 게임플레이상의 정상적인 이유로 시전을 중단하거나 수동으로 취소하는 플레이어에게는 이 재사용 대기시간이 거슬리는 것이 사실이었습니다. 이번 업데이트로 붕괴하는 별에 적용되는 변화를 통해, 정상적으로 플레이하는 플레이어가 불이익을 받거나 새롭게 적용되는 제한에 불편을 느끼는 일이 없으면서도, 격노 소모 속도 감소 메커니즘을 이용할 기회와 그로 인해 얻는 이익은 최대한 줄어드는 중간 지점을 찾을 수 있기를 바랍니다.<br />
+			<br />
+			둘째로, 시전 시간이 길고 사정거리는 중거리이다 보니, 대상이 사거리 밖으로 나가면서 붕괴하는 별이 취소되는 경우가 너무 잦았습니다. 붕괴하는 별의 시전이 시작된 후에 추가 사거리를 부여하여, 시전을 마칠 여지를 마련해 주려 합니다.</em></li>
+			<li>시전 시작 후 붕괴하는 별의 사거리가 증가하여, 대상이 사거리 밖으로 나가서 시전이 실패하는 상황이 줄어듭니다.</li>
+			<li>이제 붕괴하는 별의 시전이 취소되어도 5초의 재사용 대기시간이 적용되지 않습니다.</li>
+			<li>붕괴하는 별이 이제 시전 도중 일정 시간 동안만 격노 소모 속도를 감소시킵니다.
+			<ul>
+				<li>붕괴하는 별의 시전을 취소한 후 다시 시전할 경우, 격노 소모 속도가 시전을 1.5회 완료하는 데 소요되는 시간만큼만 감소합니다.</li>
+				<li>이 시간 제한이 끝나면 시전 중단이나 재시작 여부와 무관하게 격노 소모 속도가 다시 정상적인 수준으로 돌아옵니다.</li>
+			</ul>
+			</li>
+			<li>영혼벼림 칼날이 이제 굶주린 베기와 공허칼날의 치명타 및 극대화율을 18%만큼 증가시킵니다. (기존 15%)</li>
+			<li>공허정화가 이제 공허 탈태 중 공허 광선의 재사용 대기시간을 2.5초만큼 감소시킵니다. (기존 2초)</li>
+			<li>많은 특성의 위치가 변경되었습니다.
+			<ul>
+				<li><em>개발자의 한마디: 각종 빌드로 핵심적인 효과들을 이용하기가 쉽도록 특성의 위치를 바꾸었습니다. 최종 관문의 밀집도가 아주 높았기에, 여기에 해당하던 특성들이 일부 중간 관문으로 이동합니다. 최종 관문의 정점 특성에도 빌드 구성에 핵심적이었던 효과들이 포함되어 있었습니다. 사냥은 공허상흔 빌드에 필요하고, 박멸은 광역 피해가 필요한 빌드의 핵심 구성 요소입니다. 이 두 특성이 트리의 중간 관문으로 이동하여 더 이용하기 쉬워지고, 다른 특성들이 두 특성이 원래 있던 정점을 채웁니다.</em></li>
+			</ul>
+			</li>
+			<li><strong>공허상흔</strong>
+			<ul>
+				<li><em>개발자의 한마디: 공허상흔 특성 트리에는 공허 탈태 상태를 중심으로 하는 강력한 보너스가 여러 개 있었습니다. 이에 따라 플레이어들이 붕괴하는 별 시전을 꺼리게 되었는데, 붕괴하는 별을 시전하면 공허 탈태 상태가 되어 보너스를 다시 받을 때까지 소요되는 시간이 길어지기 때문이었습니다. 붕괴하는 별은 어느 영웅 특성을 선택하든 포식 악마사냥꾼 로테이션에서 핵심을 이루도록 기획되었으므로, 공허상흔의 보너스 중 일부를 공허 탈태 상태에 진입하는 데서 나아가 붕괴하는 별을 시전해야만 받을 수 있게 했습니다.</em></li>
+				<li>이제 악마의 격화 특성을 찍으면 붕괴하는 별이 사냥의 재사용 대기시간을 초기화합니다.</li>
+				<li>악마의 격화가 사냥에 적용하는 강화 효과가 이제 공격력을 30%만큼 증가시킵니다.</li>
+				<li>격렬한 변신이 이제 영혼 제물의 재사용 대기시간을 초기화합니다.</li>
+				<li>격렬한 변신이 이제 사냥의 재사용 대기시간을 초기화하지 않습니다.</li>
+				<li>격렬한 변신이 이제 사냥의 공격력을 증가시키거나(기존 25% 증가) 사냥이 영혼 제물의 재사용 대기시간을 초기화하게 하지 않습니다.</li>
+				<li>괴물의 각성이 이제 악마 형상이 아닐 때 지능을 10%만큼 증가시킵니다. (기존 15%)</li>
+				<li>괴물의 각성이 이제 붕괴하는 별의 공격력을 20%만큼 증가시킵니다. (기존 15%)</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li><strong>드루이드</strong>
+	<ul>
+		<li><strong>회복</strong>
+		<ul>
+			<li><em>개발자의 한마디: 자연의 선물의 현재 디자인은 로테이션에 약간의 마찰을 일으키고 있습니다. 이에 나머지 치유 능력과의 시너지를 개선하는 방향으로 자연의 선물을 개편했습니다.</em></li>
+			<li>자연의 선물 개편 - 재생이 회복이 활성화된 아군 최대 3명을 치유량의 15%만큼 치유합니다. 생명력이 가장 낮은 아군을 우선 치유합니다.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li><strong>기원사</strong>
+	<ul>
+		<li><strong>증강</strong>
+		<ul>
+			<li><strong>시간 감시자</strong>
+			<ul>
+				<li>이제 시간성의 지속시간이 특화: 시간여행단으로 증가합니다.</li>
+				<li>이제 시간의 폭발의 지속시간이 특화: 시간여행단으로 증가합니다.</li>
+			</ul>
+			</li>
+			<li><strong>비늘사령관</strong>
+			<ul>
+				<li>방어구 녹이기의 공격력이 100%만큼 증가했습니다.</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+		<li><strong>보존</strong>
+		<ul>
+			<li>메리스라의 축복 지속시간이 30초로 감소했습니다. (기존 1분)</li>
+			<li>화염 흡수가 이제 대상에게 걸린 치유량 증가의 효과를 2배로 받지 않습니다.</li>
+			<li><strong>시간 감시자</strong>
+			<ul>
+				<li>시시각각으로 불의 숨결을 연장하면 생명을 베푸는 자의 불꽃의 치유가 중단되던 문제를 수정하였습니다.</li>
+				<li>잔상이 간혹 깊은 숨결이 기원사에게 살아있는 불꽃을 시전하게 하던 문제를 수정하였습니다.</li>
+			</ul>
+			</li>
+			<li><span style="color:#DAA520;"><strong>불꽃형성자</strong></span>
+			<ul>
+				<li><span style="color:#DAA520;"><em>개발자의 한마디: 최근 화염 흡수에 치유량 증가 효과가 중복 적용되던 문제를 수정했지만, 그 결과 불꽃형성자의 성능이 상당히 감소했습니다. 해당 버그 수정을 상쇄하기 위해 화염 흡수의 치유량을 상향 조정했습니다.</em></span></li>
+				<li><span style="color:#DAA520;">화염 흡수의 치유량이 20%만큼 증가했습니다.</span></li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li><strong>사냥꾼</strong>
+	<ul>
+		<li><strong>사격</strong>
+		<ul>
+			<li><em>개발자의 한마디: 쏟아내기를 조준 사격 중심의 특성으로 교체하여, 조준 사격이 치명타로 적중할 때 기회가 생기도록 했습니다.&#160;</em></li>
+			<li>새로운 특성: 피의 깃 - 조준 사격이 치명타로 적중하면 사격의 명수가 입힌 피해의 20%에 해당하는 출혈 효과를 부여합니다. 조준 사격이 치명타로 적중한 후 4초 동안 대상에게 능력으로 피해를 입힐 때마다 대상은 추가로 출혈 피해를 입습니다.</li>
+			<li>대상을 선택하지 않은 상태로 폭발 사격을 누르면 자동으로 주위의 대상이 선택되고 폭발 사격이 발사되던 문제를 수정하였습니다.</li>
+			<li>쏟아내기가 삭제되었습니다.</li>
+			<li><strong>어둠 순찰자</strong>
+			<ul>
+				<li>황폐의 화약이 딱 2마리의 대상에게 명중했을 때 암영의 영역이 교묘한 사격을 생성하지 않던 문제를 수정하였습니다.</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+		<li><strong>생존</strong>
+		<ul>
+			<li>랩터의 휩쓸기(3 등급)가 부여하는 한마음 한뜻으로 보너스 공격력이, 독수리의 상이 활성화되어 있을 때 정상적으로 적용되지 않던 문제를 수정하였습니다.</li>
+			<li>독수리의 상이 활성화되어 있는 동안 랩터의 휩쓸기의 사거리가 의도보다 길던 문제를 수정하였습니다.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li><strong>마법사</strong>
+	<ul>
+		<li><strong>비전</strong>
+		<ul>
+			<li>몇몇 비전 주문이 주문 밀도 시스템에 추가되어, 마법사가 아닌 플레이어들이 가시성을 조정할 수 있게 됩니다.</li>
+		</ul>
+		</li>
+		<li><strong>냉기</strong>
+		<ul>
+			<li>갈라지는 얼음의 피해 보정이 얼음 화살에 적용되지 않아, 얼음 화살 2개가 모두 온전한 피해를 주던 문제를 수정하였습니다.</li>
+			<li>얼음불꽃 화살을 시전한 후 주문술사로 영웅 전문화를 변경하면, 얼음 화살이 부가 대상뿐만 아니라 주 대상에게도 갈라지는 얼음의 피해 보정을 적용하던 문제를 수정하였습니다.</li>
+			<li>갈라지는 얼음의 얼음 화살이 두 번째 대상을 탐색하는 반경이 다른 주문들보다&#160;작던 문제를 수정하였습니다.</li>
+			<li>산산조각과 관련하여 얼음창 2개가 동시에 공중에 있고 첫 번째 얼음창은 서리의 손가락의 효과를 받고 두 번째는 받지 못해야 정상인 경우, 둘 다 서리의 손가락의 효과를 받지 못하던 문제를 수정하였습니다. 이 문제는 열기 동공과 관련해서도 발생했으며, 이 경우도 수정되었습니다.</li>
+			<li>서리 광선을 시전하여 서리 광선 시전을 끊으면 결정화된 굴절이 서리의 손가락 중첩을 생성하지 않던 문제를 수정하였습니다.</li>
+			<li><strong>서리불꽃</strong>
+			<ul>
+				<li>얼음불꽃 화살이 갈라지는 얼음으로 인해 두 번째 대상에게 명중했을 때 서리불꽃 강화의 효과가 두 번째 대상에게 적용되지 않던 문제를 수정하였습니다.</li>
+				<li>서리불꽃 주입의 툴팁이 업데이트되었습니다. 기능에는 변동이 없습니다.</li>
+			</ul>
+			</li>
+			<li><strong>주문술사</strong>
+			<ul>
+				<li>쇄편폭풍을 이제 재사용 대기시간 관리자에서 강화 효과로 추적할 수 있습니다.</li>
+				<li>이제 공격대 인카운터나 신화+ 인카운터를 시작할 때 쇄편폭풍이 사라지지 않습니다.</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li><strong>수도사</strong>
+	<ul>
+		<li>해탈: 영혼 연결 특성을 찍은 경우 침묵 상태에서 해탈: 전환을 사용할 수 있었던 문제를 수정하였습니다.</li>
+	</ul>
+	</li>
+	<li><strong>사제</strong>
+	<ul>
+		<li><strong>수양</strong>
+		<ul>
+			<li>어둠 지배의 지속시간이 30초로 감소했습니다. (기존 1분)</li>
+		</ul>
+		</li>
+		<li><strong>신성</strong>
+		<ul>
+			<li>전문화 트리에서 신성한 기민함과 궁극의 평온의 위치가 맞바뀌었습니다.
+			<ul>
+				<li><em>개발자의 한마디: 궁극의 평온은 특히 신화+에서 신성 사제에게 강력한 도구가 되어 줍니다. 이 특성을 특성 트리의 위쪽으로 옮겨, 신성 사제가 이 특성을 찍기 위해 투자해야 하는 점수를 줄이고 두 번째 관문 뒤에서 특성 선택의 여지를 넓혔습니다.</em></li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li><strong>도적</strong>
+	<ul>
+		<li>독칼이 이제 도적에게 올바르지 않은 충격 시각 효과를 재생하지 않습니다.</li>
+		<li><strong>암살</strong>
+		<ul>
+			<li>절단의 무기 궤적이 업데이트되었습니다.</li>
+			<li>혈폭풍의 애니메이션이 업데이트되어 이제 무기 궤적이 표시됩니다.</li>
+		</ul>
+		</li>
+		<li><strong>무법</strong>
+		<ul>
+			<li>날렵한 몸놀림이 업데이트되어, 이제 폭풍의 칼날의 기력 소모량을 30만큼 증가시키지 않습니다. 그 대신 폭풍의 칼날의 기력 소모량을 적중당한 대상 하나당 5씩, 최대 30만큼 증가시킵니다.
+			<ul>
+				<li><em>개발자의 한마디: 이 변경의 의도는, 소수의 추가 대상과 싸울 때 폭풍의 칼날을 유지하는 비용을 소폭 줄이는 것입니다.</em></li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+		<li><strong>잠행</strong>
+		<ul>
+			<li>피해 보너스가 올바르지 않게 적용되던 상황을 해결하기 위해, 암흑 피해에 적용되는 모든 속성과 암흑 피해를 주는 많은 능력이 업데이트되었습니다.
+			<ul>
+				<li><em>개발자의 한마디: 이제 암흑 피해 보너스가 개별적인 암흑 피해 능력(예: 은밀한 기술의 2차 적중, 어둠에 물든 마무리 일격 공격, 그림자 복제가 적용된 공격)에 일관적으로 적용됩니다. 이제 바탕이 되는 공격이 물리 공격일 때 공격이 준 피해에 따라 암흑 피해를 주는 능력들(예: 어둠의 칼날 효과, 피아귀의 이빨의 피해 반사 효과, 머무는 그림자)에 효과가 정상적으로 적용되고, 바탕이 되는 공격이 암흑 공격일 때 효과가 2배로 적용되지 않습니다.&#160;저희는 이 변화가 전체 피해량에 미칠 영향을 검토하는 중입니다.</em></li>
+			</ul>
+			</li>
+			<li>어둠의 칼날의 시전 시각 효과와 무기 시각 효과가 업데이트되었습니다.</li>
+			<li data_liveedit_tagid="000000001DBD6140"><span data_liveedit_tagid="000000001DBD6D20" style="color: rgb(218, 165, 32);">모든 능력의 공격력이 14%만큼 증가했습니다.</span>
+			<ul>
+				<li data_liveedit_tagid="000000001DA296C0"><span data_liveedit_tagid="000000001DBD7680" style="color: rgb(218, 165, 32);"><em data_liveedit_tagid="000000001DBD1570">개발자의 한마디: 잠행 도적의 암흑 피해 속성들에 적용된 변경 내용과 그 속성들이 효과를 한 번 넘게 적용하고 있었던 상황들을 고려하여, 잠행의 능력 공격력을 상향 조정했습니다.</em></span></li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li><strong>주술사</strong>
+	<ul>
+		<li><strong>고양</strong>
+		<ul>
+			<li>승천이나 파멸의 바람의 특정 지점이 활성화된 상태에서 전하 축적이 소용돌이치는 무기 중첩이 자동으로 생성되는 것을 중단시키던 문제를 수정하였습니다.</li>
+		</ul>
+		</li>
+		<li><strong>복원</strong>
+		<ul>
+			<li>이제 너울대는 물결을 통해 성난 해일을 연장하면, 성난 해일의 타이머가 초기화되지 않고 연장됩니다.</li>
+			<li>자연의 신속함과 선조의 신속함이 치유의 비를 정상적으로 즉시 시전으로 만들지 않던 문제를 수정하였습니다.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li><strong>전사</strong>
+	<ul>
+		<li><strong>방어</strong>
+		<ul>
+			<li>마무리 일격의 공격력이 30%만큼 증가했습니다.</li>
+			<li><strong>거신</strong>
+			<ul>
+				<li><em>개발자의 한마디: 거신의 기획 의도는 전사의 타고난 기량과 역량을 반영하는 것이며, 방어 전사의 경우 이는 분노의 효율을 높이는 방향으로 작용합니다. 거신이 복수와 마무리 일격을 더 효율적으로 이용하여 더 독보적인 로테이션과 위협 수준 관리 수단을 확보할 수 있다면 거신에 이익이 될 것이라 판단했습니다.</em></li>
+				<li>숙련된 공격에 마무리 일격과 복수의 분노 소모량을 10만큼 감소시키는 효과가 추가됩니다.</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<hr class="image-divider" />
+<h2 id="item8"><span style="color:#DAA520;"><strong>구렁</strong></span></h2>
+
+<ul>
+	<li><span style="color:#DAA520;">구렁에서 제조법을 획득할 확률이 증가합니다.</span></li>
+</ul>
+
+<hr class="image-divider" />
+<h2 id="item9"><span style="color:#DAA520;"><strong>던전</strong></span></h2>
+
+<ul>
+	<li><span style="color:#DAA520;"><strong>죽음의 골목</strong></span>
+
+	<ul>
+		<li><span style="color:#DAA520;">자엔 블레이드소로우의 죽음의 사선이 플레이어가 뒤에 숨어 있지 않은 통을 안전 지점으로 잘못 지정하던 문제를 수정하였습니다.</span></li>
+	</ul>
+	</li>
+</ul>
+
+<hr class="image-divider" />
+<h2 id="item10"><strong>하우징</strong></h2>
+
+<ul>
+	<li><strong>사용자 인터페이스 업데이트</strong>
+
+	<ul>
+		<li>이제 평면도 편집 모드에서 위층, 아래층으로 이동하는 키를 지정할 수 있습니다. (기본 키는 Page Up, Page Down입니다.)</li>
+		<li>하우징 조작법의 청사진 버튼을 통해 청사진 수집품을 빠르게 확인하는 기능에 단축키가 추가되었습니다.</li>
+	</ul>
+	</li>
+	<li><strong>교류회</strong>
+	<ul>
+		<li>전에는 공개 거주구에서 전에 받았던 것과 같은 교류회를 받는 것이 가능했습니다. 이 문제를 수정하여, 이제 공개 거주구에서 같은 교류회를 연달아 받을 수 없습니다.</li>
+	</ul>
+	</li>
+	<li><strong>청사진</strong>
+	<ul>
+		<li>계단통이 <span style="color:#DAA520;">이제</span> 수직으로 연결되어 있는 계단통 방을 모두 내보냅니다. 높이가 4유닛인 계단통이 있을 경우 방이 모두 포함됩니다. 이 청사진을 가져오면, 청사진의 제일 아래층 또는 위층 중 선택한 층이 기존 방에 연결됩니다. 단, 집에 있는 다른 방과 충돌하지 않아야 합니다.</li>
+		<li>이제 청사진 콘텐츠 목록 사용자 인터페이스에 이미 일치하는 염료가 있는 하우징 장식에서 가져와야 하는 염료가 포함되지 않고, 염료 아이템을 소모하여 적용되는 염료만 나열됩니다.</li>
+		<li>이제 꾸미기 모드의 염료 툴팁에, 해당 염료를 적용할 때 사용된 염료 아이템이 명시됩니다.</li>
+		<li>이제 집이나 부지에서 화면 상단에 있는 청사진 버튼을 사용해 청사진 수집품을 바로 열 수 있습니다.</li>
+		<li>청사진 수집품 사용자 인터페이스에 설명과 툴팁이 더 추가되었습니다.</li>
+	</ul>
+	</li>
+	<li data_liveedit_tagid="000000001DA23BA0"><span data_liveedit_tagid="000000001DBD3DA0" style="color: rgb(218, 165, 32);"><em data_liveedit_tagid="000000001DBD37B0">한밤</em> 출시 전의 전문기술로 만드는 모든 하우징 장식의 비용이 감소합니다.</span></li>
+</ul>
+
+<hr class="image-divider" />
+<h2 id="item11"><strong>플레이어 간 전투</strong></h2>
+
+<ul>
+	<li><strong>기원사</strong>
+
+	<ul>
+		<li><strong>보존</strong>
+
+		<ul>
+			<li>메리스라의 축복이 이제 비전 주문으로 간주되어, 자연 주문을 사용할 수 없는 상황에서도 시전할 수 있습니다.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<hr class="image-divider" />
+<h2 id="item12"><strong>사냥감</strong></h2>
+
+<ul>
+	<li>평판 획득량을 증가시키는 따라잡기 메커니즘이 추가되었습니다. 등급이 4 미만인 플레이어에게는 사냥 하나당 여정 진행도가 4000(1개 등급에 해당) 부여되고, 이는 그 주에 처음 진행한 사냥 4회로 획득한 여정 진행도보다 우선합니다. 등급이 4~9인 플레이어는 그 주에 처음 진행한 사냥 4회 하나당 여정 진행도를 2000 획득합니다.
+	<ul>
+		<li><em>개발자의 한마디: 12.1.5 업데이트에서는, 신규 플레이어와 복귀하는 플레이어, 2 시즌 동안 사냥감에 많이 투자하지 않은 플레이어 모두 따라잡기 힘들 거라는 부담 없이 사냥감 콘텐츠를 이용할 수 있게 하고 싶습니다. 이번 변경으로 플레이어가 사냥감 여정을 완료하여 하우징 장식과 구렁과 연계된 영웅 트랙 장비를 비롯한 관련 보상을 받기가 쉬워질 것입니다.</em></li>
+	</ul>
+	</li>
+	<li>이제 사냥이 진행 중일 때는 괴로워하는 영혼과 고통받는 영혼을 사용할 수 없으며, 사냥 사이에 사용해야 합니다.</li>
+</ul>
+
+<hr class="image-divider" />
+<h2 id="item13"><strong>사용자 인터페이스 및 손쉬운 사용</strong></h2>
+
+<ul>
+	<li>미니맵 아래에 플레이어 좌표를 추가했습니다. 좌표 표시를 끄거나 지도 좌표를 정수 또는 소수로 표시하는 설정도 있습니다.</li>
+	<li>해당 유닛에게 플레이어가 무효화할 수 있는 약화 효과가 걸려 있을 경우, 공격대창 테두리에 "개미 떼"(움직이는 점선 테두리)를 표시하는 옵션을 추가했습니다.</li>
+	<li>공격대창의 무효화 오버레이가 맥동하는 알파 효과로 움직이게 하는 옵션을 추가했습니다.</li>
+	<li>매크로를 신호로 보내면 이제 신호 경보에 #showtooltip 입력 시 나타나는 정보가 표시됩니다.</li>
+	<li>음성 지원 설정의 전투 음성 경보 항목에 "생명력 맥박 재생" 설정을 새로 추가했습니다. 이 설정을 사용하면 생명력 백분율을 지정하여 생명력이 그 미만으로 떨어졌을 때 맥박 소리가 반복 재생되게 할 수 있습니다. 이 소리는 생명력이 낮아질수록 점점 공격적으로 변합니다.</li>
+	<li>"전투 애니메이션"을 비롯한 교역소 사용자 인터페이스의 미리 보기 설정이 아이템이 바뀌어도 플레이어의 선택을 기억합니다.</li>
+</ul>
+
+<hr class="image-divider" />
+<h2 id="item14"><strong>전투부대 평판</strong></h2>
+
+<ul>
+	<li>이제 군단과 격전의 아제로스 평판이 전투부대 전체에 공유됩니다.</li>
+</ul>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<hr />
+<p>모든 콘텐츠 업데이트 패치 노트를 확인하려면 <a href="https://worldofwarcraft.blizzard.com/content-update-notes" target="_blank">여기</a>를 클릭하세요.</p>
+
+<p><em>월드 오브 워크래프트</em> 고객지원을 받고자 하는 분은 <a href="https://battle.net/support/help/" target="_blank">고객지원 웹사이트</a> 혹은 <a href="https://us.forums.blizzard.com/en/wow/c/support/customer-support" target="_blank">고객 지원 게시판</a>을 방문해주시기 바랍니다. 오류를 발견하셨다면 <a href="https://us.forums.blizzard.com/en/wow/c/support/bug-report" target="_blank">토론장</a>에 알려주세요.</p>
+
+<p><a href="/news/24304162#toc">처음으로 돌아가기</a></p>
+</div></div></div><a class="Link Link--external Button Button--ghost Button--social Icon--tiny width-full" href="https://kr.forums.blizzard.com/ko/wow/t/13030"><div class="Button-outer"><div class="Button-inner"><div class="Button-label" data-text="댓글 0개">댓글 0개<span class="Icon Icon--external Button-icon"><img class="Icon-svg" src="https://assets-bwa.worldofwarcraft.blizzard.com/images/external.135044fa88ea3954efeebdad4209a3dcb3d7548f.svg"/></span></div></div></div></a><div class="space-medium"></div><div class="space-normal"></div></div></div></div></article></main><div class="Divider"></div><blz-social-section><blz-image slot="background" src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltc84f261fbf1df38b/66a95ecef86a4a0858e0ff5b/Pane-dirtLight.jpg"></blz-image><h2 slot="header">워크래프트 팔로우하기</h2><blz-icon-group variant="large" slot="icons"><a href="https://www.facebook.com/WarcraftKR" target="_blank"><blz-icon icon="facebook"></blz-icon></a><a href="https://x.com/warcraft_kr" target="_blank"><blz-icon icon="twitter"></blz-icon></a><a href="https://www.youtube.com/BLIZZARDKOREA" target="_blank"><blz-icon icon="youtube"></blz-icon></a></blz-icon-group></blz-social-section><div class="Pane z-index-above" data-lazyload-modifier="Pane--dirtDark"><div class="Pane-bg"><div class="Pane-overlay"></div></div><div class="Pane-content"><blz-nav-footer legal-title-id="5730135" legal-subtitle-id="15" supported-locales='["en-us","en-gb","de-de","es-es","es-mx","fr-fr","it-it","pt-br","ru-ru","ko-kr","zh-tw"]' cookies-url="https://www.blizzard.com/cookies"><script src="https://navbar.blizzard.com/static/v1/footer.js" async="async" fetchpriority="low"></script></blz-nav-footer></div></div></div></div><div class="Photoswipe pswp Photoswipe--modal Photoswipe--wow" name="modal" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar Photoswipe-top"><div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="닫기(ESC)"></button><button class="pswp__button pswp__button--share" title="공유"></button><button class="pswp__button pswp__button--fs" title="눌러서 전체 화면 보기"></button><button class="pswp__button pswp__button--zoom" title="확대/축소"></button><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div><div class="pswp__caption"><div class="pswp__caption__center"></div></div><button class="pswp__button pswp__button--arrow--left" title="이전(왼쪽 화살표)"></button><button class="pswp__button pswp__button--arrow--right" title="다음(오른쪽 화살표)"></button><div class="Photoswipe-prev" title="이전(왼쪽 화살표)"><span class="Icon Icon--prev"></span></div><div class="Photoswipe-next" title="다음(오른쪽 화살표)"><span class="Icon Icon--next"></span></div></div></div></div><div class="Photoswipe pswp Photoswipe--lightbox Photoswipe--wow" name="lightbox" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar Photoswipe-top"><div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="닫기(ESC)"></button><button class="pswp__button pswp__button--share" title="공유"></button><button class="pswp__button pswp__button--fs" title="눌러서 전체 화면 보기"></button><button class="pswp__button pswp__button--zoom" title="확대/축소"></button><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div><div class="pswp__caption"><div class="pswp__caption__center"></div></div><button class="pswp__button pswp__button--arrow--left" title="이전(왼쪽 화살표)"></button><button class="pswp__button pswp__button--arrow--right" title="다음(오른쪽 화살표)"></button><div class="Photoswipe-prev" title="이전(왼쪽 화살표)"><span class="Icon Icon--prev"></span></div><div class="Photoswipe-next" title="다음(오른쪽 화살표)"><span class="Icon Icon--next"></span></div></div></div></div><script src="https://assets-bwa.worldofwarcraft.blizzard.com/runtime.7c334d4cae2069c94139.js"></script><script src="https://assets-bwa.worldofwarcraft.blizzard.com/responsive-blogs.bbbdc9d3fa51917c64bc.js"></script><script src="https://assets-bwa.worldofwarcraft.blizzard.com/vendor.8a57ba792e1f4c5a93c9.js"></script><script src="https://assets-bwa.worldofwarcraft.blizzard.com/632.da0f16006516bbf4fe31.js"></script><script src="https://assets-bwa.worldofwarcraft.blizzard.com/news.6a3ee7fc003dfc8a22da.js"></script><script id="model">model = {};</script><script id="settings">settings = {"x-powered-by":false,"etag":"weak","env":"production","query parser":"extended","subdomain offset":2,"trust proxy":true,"views":"/usr/src/app/templates","jsonp callback name":"callback","view cache":true,"view engine":"pug"};</script></body></html>

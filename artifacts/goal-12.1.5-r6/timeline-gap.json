@@ -1,0 +1,602 @@
+[
+  {
+    "id": "warrior-protection",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "warrior-protection",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "warrior-protection",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "paladin-protection",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "paladin-protection",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "paladin-protection",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "deathknight-blood",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "deathknight-blood",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "deathknight-blood",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "monk-brewmaster",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "monk-brewmaster",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "monk-brewmaster",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "druid-guardian",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "druid-guardian",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "druid-guardian",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "demonhunter-vengeance",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "demonhunter-vengeance",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "demonhunter-vengeance",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "warrior-arms",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "warrior-arms",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "warrior-arms",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "warrior-fury",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "warrior-fury",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "warrior-fury",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "paladin-retribution",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "paladin-retribution",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "paladin-retribution",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "rogue-assassination",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "rogue-assassination",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "rogue-assassination",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "rogue-outlaw",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "rogue-outlaw",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "rogue-outlaw",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "deathknight-frost",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "deathknight-frost",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "deathknight-frost",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "deathknight-unholy",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "deathknight-unholy",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "deathknight-unholy",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "druid-feral",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "druid-feral",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "druid-feral",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "demonhunter-havoc",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "demonhunter-havoc",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "demonhunter-havoc",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "shaman-enhancement",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "shaman-enhancement",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "shaman-enhancement",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "hunter-survival",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "hunter-survival",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "hunter-survival",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "hunter-beastmastery",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "hunter-beastmastery",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "hunter-beastmastery",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "hunter-marksmanship",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "hunter-marksmanship",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "hunter-marksmanship",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "priest-shadow",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "priest-shadow",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "priest-shadow",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "demonhunter-devourer",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "demonhunter-devourer",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "demonhunter-devourer",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "shaman-elemental",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "shaman-elemental",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "shaman-elemental",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "mage-arcane",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "mage-arcane",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "mage-arcane",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "mage-fire",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "mage-frost",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "mage-frost",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "mage-frost",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "warlock-affliction",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "warlock-affliction",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "warlock-affliction",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "warlock-demonology",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "warlock-demonology",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "warlock-demonology",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "warlock-destruction",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "warlock-destruction",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "warlock-destruction",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "druid-balance",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "druid-balance",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "druid-balance",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "evoker-devastation",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "evoker-devastation",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "evoker-devastation",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "evoker-augmentation",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "evoker-augmentation",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "evoker-augmentation",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "paladin-holy",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "paladin-holy",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "paladin-holy",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "priest-discipline",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "priest-discipline",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "priest-discipline",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "priest-holy",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "priest-holy",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "priest-holy",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "shaman-restoration",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "shaman-restoration",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "shaman-restoration",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "monk-mistweaver",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "monk-mistweaver",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "monk-mistweaver",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "druid-restoration",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "druid-restoration",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "druid-restoration",
+    "width": 1440,
+    "hits": []
+  },
+  {
+    "id": "evoker-preservation",
+    "width": 320,
+    "hits": []
+  },
+  {
+    "id": "evoker-preservation",
+    "width": 390,
+    "hits": []
+  },
+  {
+    "id": "evoker-preservation",
+    "width": 1440,
+    "hits": []
+  }
+]

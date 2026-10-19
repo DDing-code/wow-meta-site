@@ -1,0 +1,540 @@
+[
+  {
+    "id": "warrior-protection",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 산왕 80% / KR 20 산왕 100% · 쐐기 전체 36 산왕 100% / KR 15 산왕 100%",
+    "sampleCheck": {
+      "raidSample": "산왕",
+      "mpSample": "산왕",
+      "defaultTab": "산왕",
+      "raidTop": "산왕",
+      "raidKr": "산왕",
+      "mpTop": "산왕",
+      "mpKr": "산왕",
+      "ok": true
+    }
+  },
+  {
+    "id": "paladin-protection",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 98 빛의 대장장이 100% / KR 41 빛의 대장장이 98% · 쐐기 전체 50 빛의 대장장이 100% / KR 17 빛의 대장장이 100%",
+    "sampleCheck": {
+      "raidSample": "빛의 대장장이",
+      "mpSample": "빛의 대장장이",
+      "defaultTab": "빛의 대장장이",
+      "raidTop": "빛의 대장장이",
+      "raidKr": "빛의 대장장이",
+      "mpTop": "빛의 대장장이",
+      "mpKr": "빛의 대장장이",
+      "ok": true
+    }
+  },
+  {
+    "id": "deathknight-blood",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 99 산레인 72% / KR 100 산레인 94% · 쐐기 전체 61 산레인 100% / KR 24 산레인 100%",
+    "sampleCheck": {
+      "raidSample": "산레인",
+      "mpSample": "산레인",
+      "defaultTab": "산레인",
+      "raidTop": "산레인",
+      "raidKr": "산레인",
+      "mpTop": "산레인",
+      "mpKr": "산레인",
+      "ok": true
+    }
+  },
+  {
+    "id": "monk-brewmaster",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "레이드 로그 음영파·쐐기 로그 조화의 종사 ↔ 공개 가이드는 반대"
+    ],
+    "evidence": "레이드 전체 100 음영파 85% / KR 17 음영파 82% · 쐐기 전체 27 조화의 종사 96% / KR 18 조화의 종사 89%"
+  },
+  {
+    "id": "druid-guardian",
+    "done": true,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 엘룬의 대행자 100% / KR 25 엘룬의 대행자 100% · 쐐기 전체 58 엘룬의 대행자 100% / KR 32 엘룬의 대행자 100%"
+  },
+  {
+    "id": "demonhunter-vengeance",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 궤멸자 95% / KR 13 궤멸자 100% · 쐐기 전체 40 궤멸자 100% / KR 10 궤멸자 100%",
+    "sampleCheck": {
+      "raidSample": "궤멸자",
+      "mpSample": "궤멸자",
+      "defaultTab": "궤멸자",
+      "raidTop": "궤멸자",
+      "raidKr": "궤멸자",
+      "mpTop": "궤멸자",
+      "mpKr": "궤멸자",
+      "ok": true
+    }
+  },
+  {
+    "id": "warrior-arms",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 99 학살자 100% / KR 95 학살자 100% · 쐐기 전체 62 학살자 100% / KR 28 학살자 100%",
+    "sampleCheck": {
+      "raidSample": "학살자",
+      "mpSample": "학살자",
+      "defaultTab": "학살자",
+      "raidTop": "학살자",
+      "raidKr": "학살자",
+      "mpTop": "학살자",
+      "mpKr": "학살자",
+      "ok": true
+    }
+  },
+  {
+    "id": "warrior-fury",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "쐐기 혼재: 전 지역 산왕 59% ↔ KR 학살자 59%"
+    ],
+    "evidence": "레이드 전체 100 학살자 91% / KR 5 학살자 100% · 쐐기 전체 34 산왕 59% / KR 17 학살자 59%"
+  },
+  {
+    "id": "paladin-retribution",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 태양의 사자 95% / KR 45 태양의 사자 100% · 쐐기 전체 53 태양의 사자 100% / KR 27 태양의 사자 100%",
+    "sampleCheck": {
+      "raidSample": "태양의 사자",
+      "mpSample": "태양의 사자",
+      "defaultTab": "태양의 사자",
+      "raidTop": "태양의 사자",
+      "raidKr": "태양의 사자",
+      "mpTop": "태양의 사자",
+      "mpKr": "태양의 사자",
+      "ok": true
+    }
+  },
+  {
+    "id": "rogue-assassination",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "쐐기: 로그 죽음추적자(표본 작음) ↔ 견본·공개 가이드 운명결속"
+    ],
+    "evidence": "레이드 전체 99 운명결속 99% / KR 27 운명결속 100% · 쐐기 전체 16 죽음추적자 100% / KR 10 죽음추적자 80%"
+  },
+  {
+    "id": "rogue-outlaw",
+    "done": true,
+    "pass": false,
+    "reasons": [
+      "한국 레이드 12.1.5 이후 판정 1건(<5)"
+    ],
+    "evidence": "레이드 전체 89 기만자 100% / KR 1 기만자 100% · 쐐기 전체 12 기만자 100% / KR 6 기만자 100%"
+  },
+  {
+    "id": "rogue-subtlety",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "순수 단일: 로그와 공개 가이드가 갈림"
+    ],
+    "evidence": "레이드 전체 99 기만자 97% / KR 69 기만자 91% · 쐐기 전체 93 기만자 99% / KR 60 기만자 93%"
+  },
+  {
+    "id": "deathknight-frost",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 죽음의 인도자 100% / KR 32 죽음의 인도자 100% · 쐐기 전체 43 죽음의 인도자 100% / KR 19 죽음의 인도자 100%",
+    "sampleCheck": {
+      "raidSample": "죽음의 인도자",
+      "mpSample": "죽음의 인도자",
+      "defaultTab": "죽음의 인도자",
+      "raidTop": "죽음의 인도자",
+      "raidKr": "죽음의 인도자",
+      "mpTop": "죽음의 인도자",
+      "mpKr": "죽음의 인도자",
+      "ok": true
+    }
+  },
+  {
+    "id": "deathknight-unholy",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 99 산레인 100% / KR 40 산레인 98% · 쐐기 전체 10 산레인 100% / KR 8 산레인 100%",
+    "sampleCheck": {
+      "raidSample": "산레인",
+      "mpSample": "산레인",
+      "defaultTab": "산레인",
+      "raidTop": "산레인",
+      "raidKr": "산레인",
+      "mpTop": "산레인",
+      "mpKr": "산레인",
+      "ok": true
+    }
+  },
+  {
+    "id": "monk-windwalker",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "레이드: 로그 천신의 대변자 ↔ 공개 가이드 음영파"
+    ],
+    "evidence": "레이드 전체 99 천신의 대변자 95% / KR 50 천신의 대변자 96% · 쐐기 전체 31 천신의 대변자 100% / KR 13 천신의 대변자 100%"
+  },
+  {
+    "id": "druid-feral",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "한국 레이드 12.1.5 이후 판정 3건(<5)"
+    ],
+    "evidence": "레이드 전체 100 야생추적자 93% / KR 3 야생추적자 100% · 쐐기 전체 24 발톱의 드루이드 100% / KR 13 발톱의 드루이드 100%"
+  },
+  {
+    "id": "demonhunter-havoc",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "쐐기: 전 지역 로그 알드라치 파괴자 ↔ 견본 지옥상흔, KR 쐐기 7:7"
+    ],
+    "evidence": "레이드 전체 99 알드라치 파괴자 91% / KR 45 알드라치 파괴자 78% · 쐐기 전체 39 알드라치 파괴자 85% / KR 14 지옥상흔 50%"
+  },
+  {
+    "id": "shaman-enhancement",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "한국 레이드 12.1.5 이후 판정 3건(<5)"
+    ],
+    "evidence": "레이드 전체 98 폭풍인도자 100% / KR 3 폭풍인도자 100% · 쐐기 전체 47 폭풍인도자 100% / KR 14 폭풍인도자 100%"
+  },
+  {
+    "id": "hunter-survival",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "한국 레이드 12.1.5 이후 판정 2건(<5)"
+    ],
+    "evidence": "레이드 전체 100 파수꾼 90% / KR 2 파수꾼 100% · 쐐기 전체 21 파수꾼 95% / KR 7 파수꾼 71%"
+  },
+  {
+    "id": "hunter-beastmastery",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 무리의 지도자 100% / KR 57 무리의 지도자 100% · 쐐기 전체 46 무리의 지도자 100% / KR 29 무리의 지도자 100%",
+    "sampleCheck": {
+      "raidSample": "무리의 지도자",
+      "mpSample": "무리의 지도자",
+      "defaultTab": "무리의 지도자",
+      "raidTop": "무리의 지도자",
+      "raidKr": "무리의 지도자",
+      "mpTop": "무리의 지도자",
+      "mpKr": "무리의 지도자",
+      "ok": true
+    }
+  },
+  {
+    "id": "hunter-marksmanship",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 파수꾼 100% / KR 92 파수꾼 100% · 쐐기 전체 24 파수꾼 100% / KR 18 파수꾼 94%",
+    "sampleCheck": {
+      "raidSample": "파수꾼",
+      "mpSample": "파수꾼",
+      "defaultTab": "파수꾼",
+      "raidTop": "파수꾼",
+      "raidKr": "파수꾼",
+      "mpTop": "파수꾼",
+      "mpKr": "파수꾼",
+      "ok": true
+    }
+  },
+  {
+    "id": "priest-shadow",
+    "done": true,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 집정관 99% / KR 70 집정관 100% · 쐐기 전체 32 집정관 75% / KR 8 집정관 88%"
+  },
+  {
+    "id": "demonhunter-devourer",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 궤멸자 85% / KR 51 궤멸자 82% · 쐐기 전체 62 궤멸자 81% / KR 15 궤멸자 93%",
+    "sampleCheck": {
+      "raidSample": "궤멸자",
+      "mpSample": "궤멸자",
+      "defaultTab": "공허상흔",
+      "raidTop": "궤멸자",
+      "raidKr": "궤멸자",
+      "mpTop": "궤멸자",
+      "mpKr": "궤멸자",
+      "ok": true
+    }
+  },
+  {
+    "id": "shaman-elemental",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 99 선견자 100% / KR 77 선견자 100% · 쐐기 전체 63 선견자 100% / KR 32 선견자 100%",
+    "sampleCheck": {
+      "raidSample": "선견자",
+      "mpSample": "선견자",
+      "defaultTab": "선견자",
+      "raidTop": "선견자",
+      "raidKr": "선견자",
+      "mpTop": "선견자",
+      "mpKr": "선견자",
+      "ok": true
+    }
+  },
+  {
+    "id": "mage-arcane",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 성난태양 100% / KR 96 성난태양 100% · 쐐기 전체 34 성난태양 100% / KR 24 성난태양 100%",
+    "sampleCheck": {
+      "raidSample": "성난태양",
+      "mpSample": "성난태양",
+      "defaultTab": "성난태양",
+      "raidTop": "성난태양",
+      "raidKr": "성난태양",
+      "mpTop": "성난태양",
+      "mpKr": "성난태양",
+      "ok": true
+    }
+  },
+  {
+    "id": "mage-fire",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "한국 레이드 12.1.5 이후 판정 0건(<5)"
+    ],
+    "evidence": "레이드 전체 52 성난태양 100% / KR 0 - · 쐐기 전체 27 성난태양 100% / KR 10 성난태양 100%"
+  },
+  {
+    "id": "mage-frost",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "쐐기 혼재: 전 지역 서리불꽃 67% ↔ KR 주문술사 57%"
+    ],
+    "evidence": "레이드 전체 100 주문술사 85% / KR 8 주문술사 100% · 쐐기 전체 36 서리불꽃 67% / KR 21 주문술사 57%"
+  },
+  {
+    "id": "warlock-affliction",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 영혼 수확자 95% / KR 35 영혼 수확자 97% · 쐐기 전체 25 영혼 수확자 100% / KR 5 영혼 수확자 100%",
+    "sampleCheck": {
+      "raidSample": "영혼 수확자",
+      "mpSample": "영혼 수확자",
+      "defaultTab": "영혼 수확자",
+      "raidTop": "영혼 수확자",
+      "raidKr": "영혼 수확자",
+      "mpTop": "영혼 수확자",
+      "mpKr": "영혼 수확자",
+      "ok": true
+    }
+  },
+  {
+    "id": "warlock-demonology",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 99 악마학자 100% / KR 100 악마학자 100% · 쐐기 전체 36 악마학자 100% / KR 24 악마학자 100%",
+    "sampleCheck": {
+      "raidSample": "악마학자",
+      "mpSample": "악마학자",
+      "defaultTab": "악마학자",
+      "raidTop": "악마학자",
+      "raidKr": "악마학자",
+      "mpTop": "악마학자",
+      "mpKr": "악마학자",
+      "ok": true
+    }
+  },
+  {
+    "id": "warlock-destruction",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 58 지옥소환사 93% / KR 5 지옥소환사 100% · 쐐기 전체 19 악마학자 95% / KR 7 악마학자 86%",
+    "sampleCheck": {
+      "raidSample": "지옥소환사",
+      "mpSample": "악마학자",
+      "defaultTab": "지옥소환사",
+      "raidTop": "지옥소환사",
+      "raidKr": "지옥소환사",
+      "mpTop": "악마학자",
+      "mpKr": "악마학자",
+      "ok": true
+    }
+  },
+  {
+    "id": "druid-balance",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "레이드: 로그 숲의 수호자 ↔ 공개 가이드 엘룬의 대행자"
+    ],
+    "evidence": "레이드 전체 100 숲의 수호자 98% / KR 85 숲의 수호자 87% · 쐐기 전체 26 엘룬의 대행자 100% / KR 16 엘룬의 대행자 100%"
+  },
+  {
+    "id": "evoker-devastation",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 비늘사령관 100% / KR 14 비늘사령관 100% · 쐐기 전체 34 비늘사령관 91% / KR 7 비늘사령관 100%",
+    "sampleCheck": {
+      "raidSample": "비늘사령관",
+      "mpSample": "비늘사령관",
+      "defaultTab": "비늘사령관",
+      "raidTop": "비늘사령관",
+      "raidKr": "비늘사령관",
+      "mpTop": "비늘사령관",
+      "mpKr": "비늘사령관",
+      "ok": true
+    }
+  },
+  {
+    "id": "evoker-augmentation",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 시간 감시자 100% / KR 46 시간 감시자 100% · 쐐기 전체 28 시간 감시자 82% / KR 9 시간 감시자 78%",
+    "sampleCheck": {
+      "raidSample": "시간 감시자",
+      "mpSample": "시간 감시자",
+      "defaultTab": "시간 감시자",
+      "raidTop": "시간 감시자",
+      "raidKr": "시간 감시자",
+      "mpTop": "시간 감시자",
+      "mpKr": "시간 감시자",
+      "ok": true
+    }
+  },
+  {
+    "id": "paladin-holy",
+    "done": false,
+    "pass": false,
+    "reasons": [
+      "쐐기: 로그 빛의 대장장이 ↔ 공개 가이드 태양의 사자"
+    ],
+    "evidence": "레이드 전체 100 태양의 사자 100% / KR 60 태양의 사자 98% · 쐐기 전체 56 빛의 대장장이 100% / KR 29 빛의 대장장이 86%"
+  },
+  {
+    "id": "priest-discipline",
+    "done": true,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 공허술사 93% / KR 7 공허술사 86% · 쐐기 전체 31 예언자 97% / KR 10 예언자 80%"
+  },
+  {
+    "id": "priest-holy",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 99 예언자 100% / KR 91 예언자 100% · 쐐기 전체 49 예언자 100% / KR 27 예언자 100%",
+    "sampleCheck": {
+      "raidSample": "예언자",
+      "mpSample": "예언자",
+      "defaultTab": "예언자",
+      "raidTop": "예언자",
+      "raidKr": "예언자",
+      "mpTop": "예언자",
+      "mpKr": "예언자",
+      "ok": true
+    }
+  },
+  {
+    "id": "shaman-restoration",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 토템술사 100% / KR 66 토템술사 100% · 쐐기 전체 57 토템술사 100% / KR 27 토템술사 100%",
+    "sampleCheck": {
+      "raidSample": "토템술사",
+      "mpSample": "토템술사",
+      "defaultTab": "토템술사",
+      "raidTop": "토템술사",
+      "raidKr": "토템술사",
+      "mpTop": "토템술사",
+      "mpKr": "토템술사",
+      "ok": true
+    }
+  },
+  {
+    "id": "monk-mistweaver",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 천신의 대변자 96% / KR 35 천신의 대변자 97% · 쐐기 전체 25 천신의 대변자 100% / KR 13 천신의 대변자 100%",
+    "sampleCheck": {
+      "raidSample": "천신의 대변자",
+      "mpSample": "천신의 대변자",
+      "defaultTab": "천신의 대변자",
+      "raidTop": "천신의 대변자",
+      "raidKr": "천신의 대변자",
+      "mpTop": "천신의 대변자",
+      "mpKr": "천신의 대변자",
+      "ok": true
+    }
+  },
+  {
+    "id": "druid-restoration",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 98 야생추적자 100% / KR 40 야생추적자 100% · 쐐기 전체 31 야생추적자 94% / KR 15 야생추적자 100%",
+    "sampleCheck": {
+      "raidSample": "야생추적자",
+      "mpSample": "야생추적자",
+      "defaultTab": "야생추적자",
+      "raidTop": "야생추적자",
+      "raidKr": "야생추적자",
+      "mpTop": "야생추적자",
+      "mpKr": "야생추적자",
+      "ok": true
+    }
+  },
+  {
+    "id": "evoker-preservation",
+    "done": false,
+    "pass": true,
+    "reasons": [],
+    "evidence": "레이드 전체 100 불꽃형성자 100% / KR 73 불꽃형성자 100% · 쐐기 전체 28 불꽃형성자 100% / KR 10 불꽃형성자 100%",
+    "sampleCheck": {
+      "raidSample": "불꽃형성자",
+      "mpSample": "불꽃형성자",
+      "defaultTab": "불꽃형성자",
+      "raidTop": "불꽃형성자",
+      "raidKr": "불꽃형성자",
+      "mpTop": "불꽃형성자",
+      "mpKr": "불꽃형성자",
+      "ok": true
+    }
+  }
+]
