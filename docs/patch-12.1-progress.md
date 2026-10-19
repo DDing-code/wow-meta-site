@@ -918,3 +918,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 뺀 것: 도구 마법부여(전문 기술용), 어깨 환영 2종(공허에 물듦·자연의 은총, 일시적인 겉모습), 구렁 전용 장갑 '고대 하셰이 전투 기술' 4종.
 - 화면: 섹션 이름을 '소모품 · 보석 · 마법부여'로 줄였다(PC 목차 두 줄 꺾임 방지). 설명 '마법부여 고르기 · 다시 바르기' 1개 추가(48설명). 묶음의 `keywords`로 '마부' 검색이 마법부여 46종을 찾는다. 테스트 11개(마법부여 1개 추가).
 - 확인: `validate:quiet` 9단계 통과, 빌드본 320·390·1440px 마법부여 46종 넘침·깨진 아이콘·글자 넘침·오류 0(`artifacts/beginner-enchants-20261020/shots`, `ui-check.json`).
+- 배포: 사이트 `bf89486c` main 푸시, KB 로컬 `bc66abd`. 정리 빌드 `main.5327e95a.js`(소스맵 0, 공개 파일 6개)를 `vercel deploy --prebuilt --prod`로 올렸고, 공개 `/`·`/beginner`가 같은 번들을 내며 로컬과 SHA-256이 같다. ODDIN 브라우저로 공개 /beginner에서 마법부여 46종·전체 129종·섹션 이름을 확인했다.
