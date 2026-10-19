@@ -451,6 +451,329 @@
           "source": "https://www.wowhead.com/ko/item=242297"
         }
       ]
+    },
+    {
+      "id": "gems-peridot",
+      "title": "보석 · 감람석 (가속)",
+      "intro": "가속을 중심으로 다른 보조 능력치를 조합합니다. 일반 보석과 무결한 보석의 효과·품질·가격을 비교하세요.",
+      "items": [
+        {
+          "id": 240856,
+          "name": "쾌속의 감람석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_nature_green",
+          "effect": "가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240856"
+        },
+        {
+          "id": 240858,
+          "name": "치명적인 감람석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_fire_green",
+          "effect": "가속·치명타 및 극대화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240858"
+        },
+        {
+          "id": 240860,
+          "name": "강력한 감람석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_void_green",
+          "effect": "가속·특화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240860"
+        },
+        {
+          "id": 240862,
+          "name": "유연한 감람석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_frost_green",
+          "effect": "가속·유연성",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240862"
+        },
+        {
+          "id": 240888,
+          "name": "무결한 쾌속의 감람석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_green",
+          "effect": "가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240888"
+        },
+        {
+          "id": 240890,
+          "name": "무결한 치명적인 감람석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green",
+          "effect": "가속·치명타 및 극대화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240890"
+        },
+        {
+          "id": 240892,
+          "name": "무결한 강력한 감람석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+          "effect": "가속·특화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240892"
+        },
+        {
+          "id": 240894,
+          "name": "무결한 유연한 감람석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_green",
+          "effect": "가속·유연성",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240894"
+        }
+      ]
+    },
+    {
+      "id": "gems-amethyst",
+      "title": "보석 · 자수정 (특화)",
+      "intro": "특화을 중심으로 다른 보조 능력치를 조합합니다. 일반 보석과 무결한 보석의 효과·품질·가격을 비교하세요.",
+      "items": [
+        {
+          "id": 240864,
+          "name": "강력한 자수정",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_void_purple",
+          "effect": "특화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240864"
+        },
+        {
+          "id": 240866,
+          "name": "치명적인 자수정",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_fire_purple",
+          "effect": "특화·치명타 및 극대화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240866"
+        },
+        {
+          "id": 240868,
+          "name": "쾌속의 자수정",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_nature_purple",
+          "effect": "특화·가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240868"
+        },
+        {
+          "id": 240870,
+          "name": "유연한 자수정",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_frost_purple",
+          "effect": "특화·유연성",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240870"
+        },
+        {
+          "id": 240896,
+          "name": "무결한 강력한 자수정",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_purple",
+          "effect": "특화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240896"
+        },
+        {
+          "id": 240898,
+          "name": "무결한 치명적인 자수정",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple",
+          "effect": "특화·치명타 및 극대화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240898"
+        },
+        {
+          "id": 240900,
+          "name": "무결한 쾌속의 자수정",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+          "effect": "특화·가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240900"
+        },
+        {
+          "id": 240902,
+          "name": "무결한 유연한 자수정",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_purple",
+          "effect": "특화·유연성",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240902"
+        }
+      ]
+    },
+    {
+      "id": "gems-garnet",
+      "title": "보석 · 석류석 (치명타 및 극대화)",
+      "intro": "치명타 및 극대화을 중심으로 다른 보조 능력치를 조합합니다. 일반 보석과 무결한 보석의 효과·품질·가격을 비교하세요.",
+      "items": [
+        {
+          "id": 240872,
+          "name": "치명적인 석류석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_fire_red",
+          "effect": "치명타 및 극대화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240872"
+        },
+        {
+          "id": 240874,
+          "name": "쾌속의 석류석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_nature_red",
+          "effect": "치명타 및 극대화·가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240874"
+        },
+        {
+          "id": 240876,
+          "name": "강력한 석류석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_void_red",
+          "effect": "치명타 및 극대화·특화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240876"
+        },
+        {
+          "id": 240878,
+          "name": "유연한 석류석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_frost_red",
+          "effect": "치명타 및 극대화·유연성",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240878"
+        },
+        {
+          "id": 240904,
+          "name": "무결한 치명적인 석류석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_red",
+          "effect": "치명타 및 극대화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240904"
+        },
+        {
+          "id": 240906,
+          "name": "무결한 쾌속의 석류석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red",
+          "effect": "치명타 및 극대화·가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240906"
+        },
+        {
+          "id": 240908,
+          "name": "무결한 강력한 석류석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red",
+          "effect": "치명타 및 극대화·특화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240908"
+        },
+        {
+          "id": 240910,
+          "name": "무결한 유연한 석류석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_red",
+          "effect": "치명타 및 극대화·유연성",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240910"
+        }
+      ]
+    },
+    {
+      "id": "gems-lapis",
+      "title": "보석 · 청금석 (유연성)",
+      "intro": "유연성을 중심으로 다른 보조 능력치를 조합합니다. 일반 보석과 무결한 보석의 효과·품질·가격을 비교하세요.",
+      "items": [
+        {
+          "id": 240880,
+          "name": "유연한 청금석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_frost_blue",
+          "effect": "유연성",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240880"
+        },
+        {
+          "id": 240882,
+          "name": "치명적인 청금석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_fire_blue",
+          "effect": "유연성·치명타 및 극대화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240882"
+        },
+        {
+          "id": 240884,
+          "name": "쾌속의 청금석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_nature_blue",
+          "effect": "유연성·가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240884"
+        },
+        {
+          "id": 240886,
+          "name": "강력한 청금석",
+          "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_void_blue",
+          "effect": "유연성·특화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240886"
+        },
+        {
+          "id": 240912,
+          "name": "무결한 유연한 청금석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_blue",
+          "effect": "유연성",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240912"
+        },
+        {
+          "id": 240914,
+          "name": "무결한 치명적인 청금석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue",
+          "effect": "유연성·치명타 및 극대화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240914"
+        },
+        {
+          "id": 240916,
+          "name": "무결한 쾌속의 청금석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_blue",
+          "effect": "유연성·가속",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240916"
+        },
+        {
+          "id": 240918,
+          "name": "무결한 강력한 청금석",
+          "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_blue",
+          "effect": "유연성·특화",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240918"
+        }
+      ]
+    },
+    {
+      "id": "gems-diamonds",
+      "title": "보석 · 영원노래 다이아몬드",
+      "intro": "주 능력치와 추가 효과를 확인하세요. 탈라시안 다이아몬드는 종류를 합쳐 하나만 장착할 수 있습니다.",
+      "items": [
+        {
+          "id": 240967,
+          "name": "힘의 영원노래 다이아몬드",
+          "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange",
+          "effect": "주 능력치 · 한밤 보석 색상 종류당 치명타 및 극대화 효과",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240967"
+        },
+        {
+          "id": 240969,
+          "name": "대지의 영원노래 다이아몬드",
+          "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_blue",
+          "effect": "주 능력치 · 한밤 보석 색상 종류당 최대 마나",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240969"
+        },
+        {
+          "id": 240971,
+          "name": "극기의 영원노래 다이아몬드",
+          "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_pink",
+          "effect": "주 능력치·방어도",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240971"
+        },
+        {
+          "id": 240983,
+          "name": "불가해의 영원노래 다이아몬드",
+          "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+          "effect": "주 능력치",
+          "hearty": false,
+          "source": "https://www.wowhead.com/ko/item=240983"
+        }
+      ]
     }
   ]
 }

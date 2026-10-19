@@ -850,3 +850,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - KB 원본: 08-직업별-Knowledge-Base/00-공통/공용/Meta/beginner-consumables.json. 기존 sync-kb 래퍼가 src/data/beginnerConsumables.json으로 복사한다. 전문화 원고와 스킬·시너지 내용은 변경하지 않았다.
 - 테스트 6개, 전체 검증 9단계 통과. 4410 빌드본에서 ODDIN 브라우저로 320·390·1440px의 목록·이름 검색·메뉴·이동을 확인했다. 가로 넘침 0, 47개 아이콘 로드 성공. 증거: artifacts/beginner-review-20261019/.
 - 환경 파일을 읽지 않는 빌드 성공(main.d8081773.js), 소스맵 없음. 기존 GuideDetailPage·RagereaverHeroicLogReportPage 경고는 유지한다.
+
+### 2026-10-19 초보자 안내 — 보석과 주문제작
+- 사용자 요청으로 기존 아이템 목록에 보석 36종을 추가했다. 감람석·자수정·석류석·청금석의 일반/무결한 보석 32종과 영원노래 다이아몬드 4종이며, 한국어 개별 아이템 페이지에서 이름·아이콘·효과를 확인했다. 기존 소모품을 합쳐 아이템 83종이다.
+- 추가 지시로 주문제작·장식·제작 장비 10단계 안내를 같은 페이지에 넣었다. 부위 선택, 장식됨 2개 제한, 제작자 상담, 재료·품질·개인/공개/길드 주문, 수령, 재제작과 장식 교체를 다룬다. 특정 전문화의 최적 장비나 수수료·아이템 레벨을 고정하지 않는다.
+- KB 공용 Meta/beginner-consumables.json과 beginner-crafting.json이 원본이다. sync-kb로 beginnerConsumables.json·beginnerCrafting.json을 생성하며, Fable의 기존 화면·목차·검색을 재사용한다. 설명은 총 57개다.
+- 전체 검증 9단계, 페이지 테스트 8개, 환경 파일을 읽지 않는 운영 빌드 통과(main.f88d5858.js). 기존 파일의 빌드 경고는 유지한다. 테스트는 npm의 옵션 전달이 누락돼 감시 모드로 남았으므로 해당 테스트 PID만 종료한 뒤 react-scripts 직접 실행으로 정상 종료·통과를 확인했다.
+- ODDIN 브라우저 안의 같은 출처 iframe에서 320·390·1440px로 렌더링해 직접 검수했다. 각 문서 가로 넘침 0, 보석 아이콘 36개 로드 성공, 이름 검색 1종 일치. PC 캡처는 1440px 문서를 화면 안에 축소 표시했다. 캡처·출처: artifacts/beginner-gems-20261019/.

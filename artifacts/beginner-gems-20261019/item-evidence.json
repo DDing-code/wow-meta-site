@@ -1,0 +1,258 @@
+{
+  "verifiedAt": "2026-10-19",
+  "method": "ODDIN 브라우저 · Wowhead 한국어 개별 아이템 페이지 직접 대조",
+  "items": [
+    {
+      "id": 240890,
+      "name": "무결한 치명적인 감람석",
+      "tooltip": "무결한 치명적인 감람석\n감람석\n아이템 레벨 295\n가속 +16 / 치명타 및 극대화 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_green",
+      "url": "https://www.wowhead.com/ko/item=240890/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%B9%98%EB%AA%85%EC%A0%81%EC%9D%B8-%EA%B0%90%EB%9E%8C%EC%84%9D"
+    },
+    {
+      "id": 240892,
+      "name": "무결한 강력한 감람석",
+      "tooltip": "무결한 강력한 감람석\n감람석\n아이템 레벨 295\n가속 +16 / 특화 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_green",
+      "url": "https://www.wowhead.com/ko/item=240892/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EA%B0%95%EB%A0%A5%ED%95%9C-%EA%B0%90%EB%9E%8C%EC%84%9D"
+    },
+    {
+      "id": 240888,
+      "name": "무결한 쾌속의 감람석",
+      "tooltip": "무결한 쾌속의 감람석\n감람석\n아이템 레벨 295\n가속 +17\n\n\n최대 묶음 개수: 200\n판매 가격: 3 10\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_green",
+      "url": "https://www.wowhead.com/ko/item=240888/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%BE%8C%EC%86%8D%EC%9D%98-%EA%B0%90%EB%9E%8C%EC%84%9D"
+    },
+    {
+      "id": 240894,
+      "name": "무결한 유연한 감람석",
+      "tooltip": "무결한 유연한 감람석\n감람석\n아이템 레벨 295\n가속 +16 / 유연성 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_green",
+      "url": "https://www.wowhead.com/ko/item=240894/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%9C%A0%EC%97%B0%ED%95%9C-%EA%B0%90%EB%9E%8C%EC%84%9D"
+    },
+    {
+      "id": 240862,
+      "name": "유연한 감람석",
+      "tooltip": "유연한 감람석\n감람석\n아이템 레벨 295\n가속 +12 / 유연성 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_frost_green",
+      "url": "https://www.wowhead.com/ko/item=240862/%EC%9C%A0%EC%97%B0%ED%95%9C-%EA%B0%90%EB%9E%8C%EC%84%9D"
+    },
+    {
+      "id": 240860,
+      "name": "강력한 감람석",
+      "tooltip": "강력한 감람석\n감람석\n아이템 레벨 295\n가속 +12 / 특화 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_void_green",
+      "url": "https://www.wowhead.com/ko/item=240860/%EA%B0%95%EB%A0%A5%ED%95%9C-%EA%B0%90%EB%9E%8C%EC%84%9D"
+    },
+    {
+      "id": 240858,
+      "name": "치명적인 감람석",
+      "tooltip": "치명적인 감람석\n감람석\n아이템 레벨 295\n가속 +12 / 치명타 및 극대화 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_fire_green",
+      "url": "https://www.wowhead.com/ko/item=240858/%EC%B9%98%EB%AA%85%EC%A0%81%EC%9D%B8-%EA%B0%90%EB%9E%8C%EC%84%9D"
+    },
+    {
+      "id": 240856,
+      "name": "쾌속의 감람석",
+      "tooltip": "쾌속의 감람석\n감람석\n아이템 레벨 295\n가속 +13\n\n\n최대 묶음 개수: 200\n판매 가격: 1\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_nature_green",
+      "url": "https://www.wowhead.com/ko/item=240856/%EC%BE%8C%EC%86%8D%EC%9D%98-%EA%B0%90%EB%9E%8C%EC%84%9D"
+    },
+    {
+      "id": 240914,
+      "name": "무결한 치명적인 청금석",
+      "tooltip": "무결한 치명적인 청금석\n청금석\n아이템 레벨 295\n유연성 +16 / 치명타 및 극대화 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_blue",
+      "url": "https://www.wowhead.com/ko/item=240914/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%B9%98%EB%AA%85%EC%A0%81%EC%9D%B8-%EC%B2%AD%EA%B8%88%EC%84%9D"
+    },
+    {
+      "id": 240918,
+      "name": "무결한 강력한 청금석",
+      "tooltip": "무결한 강력한 청금석\n청금석\n아이템 레벨 295\n유연성 +16 / 특화 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_blue",
+      "url": "https://www.wowhead.com/ko/item=240918/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EA%B0%95%EB%A0%A5%ED%95%9C-%EC%B2%AD%EA%B8%88%EC%84%9D"
+    },
+    {
+      "id": 240916,
+      "name": "무결한 쾌속의 청금석",
+      "tooltip": "무결한 쾌속의 청금석\n청금석\n아이템 레벨 295\n유연성 +16 / 가속 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_blue",
+      "url": "https://www.wowhead.com/ko/item=240916/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%BE%8C%EC%86%8D%EC%9D%98-%EC%B2%AD%EA%B8%88%EC%84%9D"
+    },
+    {
+      "id": 240912,
+      "name": "무결한 유연한 청금석",
+      "tooltip": "무결한 유연한 청금석\n청금석\n아이템 레벨 295\n유연성 +17\n\n\n최대 묶음 개수: 200\n판매 가격: 3 10\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_blue",
+      "url": "https://www.wowhead.com/ko/item=240912/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%9C%A0%EC%97%B0%ED%95%9C-%EC%B2%AD%EA%B8%88%EC%84%9D"
+    },
+    {
+      "id": 240884,
+      "name": "쾌속의 청금석",
+      "tooltip": "쾌속의 청금석\n청금석\n아이템 레벨 295\n유연성 +12 / 가속 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_nature_blue",
+      "url": "https://www.wowhead.com/ko/item=240884/%EC%BE%8C%EC%86%8D%EC%9D%98-%EC%B2%AD%EA%B8%88%EC%84%9D"
+    },
+    {
+      "id": 240886,
+      "name": "강력한 청금석",
+      "tooltip": "강력한 청금석\n청금석\n아이템 레벨 295\n유연성 +12 / 특화 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_void_blue",
+      "url": "https://www.wowhead.com/ko/item=240886/%EA%B0%95%EB%A0%A5%ED%95%9C-%EC%B2%AD%EA%B8%88%EC%84%9D"
+    },
+    {
+      "id": 240882,
+      "name": "치명적인 청금석",
+      "tooltip": "치명적인 청금석\n청금석\n아이템 레벨 295\n유연성 +12 / 치명타 및 극대화 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_fire_blue",
+      "url": "https://www.wowhead.com/ko/item=240882/%EC%B9%98%EB%AA%85%EC%A0%81%EC%9D%B8-%EC%B2%AD%EA%B8%88%EC%84%9D"
+    },
+    {
+      "id": 240880,
+      "name": "유연한 청금석",
+      "tooltip": "유연한 청금석\n청금석\n아이템 레벨 295\n유연성 +13\n\n\n최대 묶음 개수: 200\n판매 가격: 1\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_frost_blue",
+      "url": "https://www.wowhead.com/ko/item=240880/%EC%9C%A0%EC%97%B0%ED%95%9C-%EC%B2%AD%EA%B8%88%EC%84%9D"
+    },
+    {
+      "id": 240898,
+      "name": "무결한 치명적인 자수정",
+      "tooltip": "무결한 치명적인 자수정\n자수정\n아이템 레벨 295\n특화 +16 / 치명타 및 극대화 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_purple",
+      "url": "https://www.wowhead.com/ko/item=240898/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%B9%98%EB%AA%85%EC%A0%81%EC%9D%B8-%EC%9E%90%EC%88%98%EC%A0%95"
+    },
+    {
+      "id": 240896,
+      "name": "무결한 강력한 자수정",
+      "tooltip": "무결한 강력한 자수정\n자수정\n아이템 레벨 295\n특화 +17\n\n\n최대 묶음 개수: 200\n판매 가격: 3 10\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_purple",
+      "url": "https://www.wowhead.com/ko/item=240896/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EA%B0%95%EB%A0%A5%ED%95%9C-%EC%9E%90%EC%88%98%EC%A0%95"
+    },
+    {
+      "id": 240900,
+      "name": "무결한 쾌속의 자수정",
+      "tooltip": "무결한 쾌속의 자수정\n자수정\n아이템 레벨 295\n특화 +16 / 가속 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_purple",
+      "url": "https://www.wowhead.com/ko/item=240900/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%BE%8C%EC%86%8D%EC%9D%98-%EC%9E%90%EC%88%98%EC%A0%95"
+    },
+    {
+      "id": 240902,
+      "name": "무결한 유연한 자수정",
+      "tooltip": "무결한 유연한 자수정\n자수정\n아이템 레벨 295\n특화 +16 / 유연성 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_purple",
+      "url": "https://www.wowhead.com/ko/item=240902/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%9C%A0%EC%97%B0%ED%95%9C-%EC%9E%90%EC%88%98%EC%A0%95"
+    },
+    {
+      "id": 240870,
+      "name": "유연한 자수정",
+      "tooltip": "유연한 자수정\n자수정\n아이템 레벨 295\n특화 +12 / 유연성 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_frost_purple",
+      "url": "https://www.wowhead.com/ko/item=240870/%EC%9C%A0%EC%97%B0%ED%95%9C-%EC%9E%90%EC%88%98%EC%A0%95"
+    },
+    {
+      "id": 240868,
+      "name": "쾌속의 자수정",
+      "tooltip": "쾌속의 자수정\n자수정\n아이템 레벨 295\n특화 +12 / 가속 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_nature_purple",
+      "url": "https://www.wowhead.com/ko/item=240868/%EC%BE%8C%EC%86%8D%EC%9D%98-%EC%9E%90%EC%88%98%EC%A0%95"
+    },
+    {
+      "id": 240866,
+      "name": "치명적인 자수정",
+      "tooltip": "치명적인 자수정\n자수정\n아이템 레벨 295\n특화 +12 / 치명타 및 극대화 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_fire_purple",
+      "url": "https://www.wowhead.com/ko/item=240866/%EC%B9%98%EB%AA%85%EC%A0%81%EC%9D%B8-%EC%9E%90%EC%88%98%EC%A0%95"
+    },
+    {
+      "id": 240864,
+      "name": "강력한 자수정",
+      "tooltip": "강력한 자수정\n자수정\n아이템 레벨 295\n특화 +13\n\n\n최대 묶음 개수: 200\n판매 가격: 1\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_void_purple",
+      "url": "https://www.wowhead.com/ko/item=240864/%EA%B0%95%EB%A0%A5%ED%95%9C-%EC%9E%90%EC%88%98%EC%A0%95"
+    },
+    {
+      "id": 240904,
+      "name": "무결한 치명적인 석류석",
+      "tooltip": "무결한 치명적인 석류석\n석류석\n아이템 레벨 295\n치명타 및 극대화 +17\n\n\n최대 묶음 개수: 200\n판매 가격: 3 10\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_fire_red",
+      "url": "https://www.wowhead.com/ko/item=240904/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%B9%98%EB%AA%85%EC%A0%81%EC%9D%B8-%EC%84%9D%EB%A5%98%EC%84%9D"
+    },
+    {
+      "id": 240908,
+      "name": "무결한 강력한 석류석",
+      "tooltip": "무결한 강력한 석류석\n석류석\n아이템 레벨 295\n치명타 및 극대화 +16 / 특화 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_void_red",
+      "url": "https://www.wowhead.com/ko/item=240908/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EA%B0%95%EB%A0%A5%ED%95%9C-%EC%84%9D%EB%A5%98%EC%84%9D"
+    },
+    {
+      "id": 240906,
+      "name": "무결한 쾌속의 석류석",
+      "tooltip": "무결한 쾌속의 석류석\n석류석\n아이템 레벨 295\n치명타 및 극대화 +16 / 가속 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_nature_red",
+      "url": "https://www.wowhead.com/ko/item=240906/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%BE%8C%EC%86%8D%EC%9D%98-%EC%84%9D%EB%A5%98%EC%84%9D"
+    },
+    {
+      "id": 240910,
+      "name": "무결한 유연한 석류석",
+      "tooltip": "무결한 유연한 석류석\n석류석\n아이템 레벨 295\n치명타 및 극대화 +16 / 유연성 +7\n\n\n최대 묶음 개수: 200\n판매 가격: 2 60\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_rare_gem_cut_frost_red",
+      "url": "https://www.wowhead.com/ko/item=240910/%EB%AC%B4%EA%B2%B0%ED%95%9C-%EC%9C%A0%EC%97%B0%ED%95%9C-%EC%84%9D%EB%A5%98%EC%84%9D"
+    },
+    {
+      "id": 240878,
+      "name": "유연한 석류석",
+      "tooltip": "유연한 석류석\n석류석\n아이템 레벨 295\n치명타 및 극대화 +12 / 유연성 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_frost_red",
+      "url": "https://www.wowhead.com/ko/item=240878/%EC%9C%A0%EC%97%B0%ED%95%9C-%EC%84%9D%EB%A5%98%EC%84%9D"
+    },
+    {
+      "id": 240876,
+      "name": "강력한 석류석",
+      "tooltip": "강력한 석류석\n석류석\n아이템 레벨 295\n치명타 및 극대화 +12 / 특화 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_void_red",
+      "url": "https://www.wowhead.com/ko/item=240876/%EA%B0%95%EB%A0%A5%ED%95%9C-%EC%84%9D%EB%A5%98%EC%84%9D"
+    },
+    {
+      "id": 240874,
+      "name": "쾌속의 석류석",
+      "tooltip": "쾌속의 석류석\n석류석\n아이템 레벨 295\n치명타 및 극대화 +12 / 가속 +5\n\n\n최대 묶음 개수: 200\n판매 가격: 50\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_nature_red",
+      "url": "https://www.wowhead.com/ko/item=240874/%EC%BE%8C%EC%86%8D%EC%9D%98-%EC%84%9D%EB%A5%98%EC%84%9D"
+    },
+    {
+      "id": 240872,
+      "name": "치명적인 석류석",
+      "tooltip": "치명적인 석류석\n석류석\n아이템 레벨 295\n치명타 및 극대화 +13\n\n\n최대 묶음 개수: 200\n판매 가격: 1\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_uncommon_gem_cut_fire_red",
+      "url": "https://www.wowhead.com/ko/item=240872/%EC%B9%98%EB%AA%85%EC%A0%81%EC%9D%B8-%EC%84%9D%EB%A5%98%EC%84%9D"
+    },
+    {
+      "id": 240983,
+      "name": "불가해의 영원노래 다이아몬드",
+      "tooltip": "불가해의 영원노래 다이아몬드\n아이템 레벨 295\n고유 장착 아이템: 탈라시안 다이아몬드 (1)\n주 능력치 +32\n최대 묶음 개수: 200\n판매 가격: 6\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_green",
+      "url": "https://www.wowhead.com/ko/item=240983/%EB%B6%88%EA%B0%80%ED%95%B4%EC%9D%98-%EC%98%81%EC%9B%90%EB%85%B8%EB%9E%98-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C"
+    },
+    {
+      "id": 240967,
+      "name": "힘의 영원노래 다이아몬드",
+      "tooltip": "힘의 영원노래 다이아몬드\n아이템 레벨 295\n고유 장착 아이템: 탈라시안 다이아몬드 (1)\n주 능력치 +23<br />홈에 삽입된 한밤 보석 색상 종류당 치명타 및 극대화 효과 +0.15%\n최대 묶음 개수: 200\n판매 가격: 6\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_orange",
+      "url": "https://www.wowhead.com/ko/item=240967/%ED%9E%98%EC%9D%98-%EC%98%81%EC%9B%90%EB%85%B8%EB%9E%98-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C"
+    },
+    {
+      "id": 240971,
+      "name": "극기의 영원노래 다이아몬드",
+      "tooltip": "극기의 영원노래 다이아몬드\n아이템 레벨 295\n고유 장착 아이템: 탈라시안 다이아몬드 (1)\n주 능력치 +23 / 방어도 +13\n최대 묶음 개수: 200\n판매 가격: 6\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_pink",
+      "url": "https://www.wowhead.com/ko/item=240971/%EA%B7%B9%EA%B8%B0%EC%9D%98-%EC%98%81%EC%9B%90%EB%85%B8%EB%9E%98-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C"
+    },
+    {
+      "id": 240969,
+      "name": "대지의 영원노래 다이아몬드",
+      "tooltip": "대지의 영원노래 다이아몬드\n아이템 레벨 295\n고유 장착 아이템: 탈라시안 다이아몬드 (1)\n주 능력치 +23<br />홈에 삽입된 한밤 보석 색상 종류당 최대 마나 +1%\n최대 묶음 개수: 200\n판매 가격: 6\n\t\n\t",
+      "icon": "inv_12_profession_jewelcrafting_epic_gem_cut_blue",
+      "url": "https://www.wowhead.com/ko/item=240969/%EB%8C%80%EC%A7%80%EC%9D%98-%EC%98%81%EC%9B%90%EB%85%B8%EB%9E%98-%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C"
+    }
+  ]
+}

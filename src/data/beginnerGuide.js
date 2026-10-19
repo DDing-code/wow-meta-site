@@ -1,4 +1,6 @@
 // 특정 시즌의 아이템 추천이나 주문 툴팁 대신, 본 서버에서 쓰는 공통 개념을 설명한다.
+import crafting from './beginnerCrafting.json';
+
 export const beginnerSections = [
   {
     id: 'basics', title: '처음 알아둘 것', intro: '직업을 골랐다면, 내가 어떤 역할로 싸우는지부터 확인하세요.',
@@ -57,7 +59,7 @@ export const beginnerSections = [
     ],
   },
   {
-    id: 'consumables', title: '영약 · 물약 · 음식', intro: '영약은 오래 유지하는 준비, 물약은 필요한 순간의 사용, 음식은 전투 사이의 준비로 구분하면 쉽습니다.',
+    id: 'consumables', title: '영약 · 물약 · 음식 · 보석', intro: '영약은 오래 유지하는 준비, 물약은 필요한 순간의 사용, 음식은 전투 사이의 준비입니다. 보석은 장비 홈에 끼워 능력치를 보완합니다.',
     note: '아래는 종류를 구별하는 설명입니다. 실제로 살 물품은 내 전문화의 현재 가이드에서 고르세요. 지속시간·사망 시 유지·재사용 대기시간·중복 제한은 아이템 설명이 기준입니다.',
     entries: [
       { term: '영약', aliases: '플라스크 flask 약병', when: '던전·공격대 시작 전', description: '비교적 오랫동안 능력치를 보완하는 소모품입니다. 짧은 전투 한 번보다 여러 전투에 걸쳐 사용할 준비물로 생각하면 됩니다.', tip: '종류를 여러 개 사기 전에 내 전문화에 맞는 효과인지 확인하세요. 이전 확장팩의 약병과 현재 영약을 혼동하지 마세요.' },
@@ -67,6 +69,9 @@ export const beginnerSections = [
       { term: '룬 · 무기 강화 소모품', aliases: '증강 룬 기름 숫돌 무게추 임시 강화', when: '필요한 콘텐츠에 맞춰', description: '룬이나 임시 무기 강화 물품 등, 영약·음식 외에도 전투를 보조하는 소모품이 있습니다. 사용 가능한 물품과 조합은 장비·시즌에 따라 달라집니다.', tip: '모든 종류를 무조건 준비할 필요는 없습니다. 현재 가이드와 파티의 준비물 안내를 확인하세요.' },
       { term: '소모품 품질 · 사용 조건', aliases: '등급 별 랭크 가격 레벨', when: '경매장에서 사기 전', description: '품질이 나뉘는 물품은 같은 이름이어도 효과나 지속시간 등이 다를 수 있습니다. 이름이 비슷한 옛 확장팩 물품도 있으므로 설명을 비교해야 합니다.', tip: '사용 레벨·효과·수량·가격을 확인하세요. 품질 표시와 아이템 이름의 색깔은 서로 다른 구분입니다.' },
     ],
+  },
+  {
+    ...crafting.section,
   },
   {
     id: 'ready', title: '첫 파티에 가기 전', intro: '전부 외우기보다, 아래 다섯 가지부터 준비해 보세요.',
@@ -81,6 +86,7 @@ export const beginnerSections = [
 ];
 
 export const beginnerSources = [
+  ...crafting.sources,
   { title: '직업과 역할', href: 'https://worldofwarcraft.blizzard.com/ko-kr/game/classes', detail: '블리자드 직업 안내' },
   { title: '추종자 던전', href: 'https://worldofwarcraft.blizzard.com/ko-kr/news/24054790/', detail: 'NPC 동료와 던전 익히기' },
   { title: '구렁의 기본 개념', href: 'https://worldofwarcraft.blizzard.com/ko-kr/news/24025828/', detail: '블리자드 시스템 소개 · 2023년' },

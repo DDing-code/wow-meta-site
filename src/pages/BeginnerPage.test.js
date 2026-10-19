@@ -86,3 +86,33 @@ test('설명에 없는 아이템 이름도 검색하고 결과를 지우면 전�
   act(() => container.querySelector('[aria-label="검색 지우기"]').click());
   expect(container.querySelectorAll('[data-item-id]')).toHaveLength(consumables.groups.reduce((n, g) => n + g.items.length, 0));
 });
+
+test('보석 전체와 이름 검색 결과를 표시하고 아이콘도 설명 링크에 포함한다', () => {
+  const gems = consumables.groups.filter(group => group.id.startsWith('gems-'));
+  expect(gems.map(group => group.items.length)).toEqual([8, 8, 8, 8, 4]);
+  expect(container.querySelector('[aria-label="현재 버전 소모품·보석 목록"]')).not.toBeNull();
+  search('보석');
+  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(36);
+  search('무결한 쾌속의 감람석');
+  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(1);
+  const link = container.querySelector('[data-item-id="240888"]');
+  expect(link.querySelector('img')).not.toBeNull();
+  expect(link.href).toBe('https://www.wowhead.com/ko/item=240888');
+  expect(container.querySelector('nav a[href="#consumables"]')).not.toBeNull();
+  search('영원노래 다이아몬드');
+  expect(container.querySelectorAll('[data-item-id]')).toHaveLength(4);
+  expect(container.textContent).toContain('종류를 합쳐 하나만 장착');
+});
+
+test('주문제작 안내를 목차와 검색으로 찾고 장식 제한과 재제작을 확인한다', () => {
+  expect(container.querySelector('#crafting dt').textContent).toContain('어떤 제작 장비');
+  expect(container.querySelector('nav a[href="#crafting"]')).not.toBeNull();
+  search('주문제작');
+  expect(container.querySelectorAll('#crafting dt')).toHaveLength(10);
+  expect(container.querySelector('#crafting').textContent).toContain('동시에 최대 두 개');
+  expect(container.querySelector('#crafting').textContent).toContain('최소 품질');
+  expect(container.querySelector('#crafting').textContent).toContain('개인 주문');
+  search('리크래프트');
+  expect(container.querySelectorAll('dt')).toHaveLength(1);
+  expect(container.querySelector('dt').textContent).toContain('재제작');
+});

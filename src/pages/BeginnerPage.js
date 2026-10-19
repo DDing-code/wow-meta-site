@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ArrowRight, BookOpen, Castle, Compass, FlaskConical, ListChecks, Search, Shield, Swords, X } from 'lucide-react';
+import { ArrowRight, BookOpen, Castle, Compass, FlaskConical, Hammer, ListChecks, Search, Shield, Swords, X } from 'lucide-react';
 import { beginnerSections, beginnerSources } from '../data/beginnerGuide.js';
 import consumables from '../data/beginnerConsumables.json';
 
@@ -11,10 +11,10 @@ const LINE = 'rgba(168, 178, 188, 0.14)';
 const LINE_STRONG = 'rgba(168, 178, 188, 0.2)';
 const PANEL = 'rgba(13, 18, 22, 0.62)';
 
-const sectionIcons = { basics: Compass, combat: Swords, content: Castle, equipment: Shield, consumables: FlaskConical, ready: ListChecks };
+const sectionIcons = { basics: Compass, combat: Swords, content: Castle, equipment: Shield, consumables: FlaskConical, crafting: Hammer, ready: ListChecks };
 const startLinks = [
   { id: 'basics', icon: Compass, title: '와우가 처음이라면', text: '직업과 역할부터 알아보기' },
-  { id: 'consumables', icon: FlaskConical, title: '무엇을 챙겨야 할까?', text: '영약·물약·음식 구별하기' },
+  { id: 'consumables', icon: FlaskConical, title: '무엇을 챙겨야 할까?', text: '영약·물약·음식·보석 찾아보기' },
   { id: 'ready', icon: ListChecks, title: '첫 파티를 앞두고 있다면', text: '출발 전 다섯 가지 확인' },
 ];
 
@@ -469,16 +469,16 @@ function BeginnerPage() {
         <div>
           <Eyebrow>와우의 첫걸음 · 본 서버 공통 개념</Eyebrow>
           <Title>초보자 안내</Title>
-          <Lead>처음 보는 말이 많아도 괜찮습니다. 역할과 전투 용어부터 영약·물약을 쓰는 이유까지, 가이드를 읽기 전에 알아두면 좋은 내용을 모았습니다.</Lead>
+          <Lead>처음 보는 말이 많아도 괜찮습니다. 역할과 전투 용어부터 소모품·보석, 주문제작과 장식까지, 가이드를 읽기 전에 알아두면 좋은 내용을 모았습니다.</Lead>
         </div>
         <SearchPanel>
           <label htmlFor="beginner-search">모르는 말 찾아보기</label>
           <SearchField>
             <Search size={18} aria-hidden="true" />
-            <input id="beginner-search" type="search" value={search} onChange={event => setSearch(event.target.value)} placeholder="예: 영약, 쐐기, 어그로, 마부" aria-controls="beginner-results" autoComplete="off" />
+            <input id="beginner-search" type="search" value={search} onChange={event => setSearch(event.target.value)} placeholder="예: 영약, 보석, 주문제작, 장식" aria-controls="beginner-results" autoComplete="off" />
             {search ? <ClearButton type="button" onClick={clear} aria-label="검색 지우기"><X size={18} aria-hidden="true" /></ClearButton> : null}
           </SearchField>
-          <Status role="status">{query ? <>검색 결과 <strong>{count}개 설명</strong>{itemCount ? <> · 아이템 <strong>{itemCount}종</strong></> : null}</> : <><strong>{count}개 설명</strong> · 소모품 <strong>{itemCount}종</strong></>}</Status>
+          <Status role="status">{query ? <>검색 결과 <strong>{count}개 설명</strong>{itemCount ? <> · 아이템 <strong>{itemCount}종</strong></> : null}</> : <><strong>{count}개 설명</strong> · 아이템 <strong>{itemCount}종</strong></>}</Status>
         </SearchPanel>
       </Hero>
       <Start aria-label="상황별 바로가기">
@@ -532,9 +532,9 @@ function BeginnerPage() {
                   </Entry>
                 ))}</Entries>
                 {section.id === 'consumables' && itemCount ? (
-                  <ItemCatalog aria-label="현재 버전 소모품 목록">
-                    <h3>한밤 {consumables.metadata.patch} 소모품 목록</h3>
-                    <p>이름과 아이콘을 누르면 한국어 아이템 설명이 열립니다. 같은 이름의 품질별 효과와 사용 조건도 확인하세요. 아래는 전투 준비에 쓰는 주요 소모품이며, 모두 구매할 필요는 없습니다.</p>
+                  <ItemCatalog aria-label="현재 버전 소모품·보석 목록">
+                    <h3>한밤 {consumables.metadata.patch} 소모품·보석 목록</h3>
+                    <p>이름과 아이콘을 누르면 한국어 아이템 설명이 열립니다. 같은 이름의 품질별 효과와 사용 조건도 확인하세요. 아래는 전투 준비에 쓰는 주요 소모품과 장비 홈에 끼우는 보석이며, 모두 구매할 필요는 없습니다.</p>
                     <p>1차 스탯은 힘·민첩·지능, 2차 스탯은 치명타·가속·특화·유연성을 말합니다. ‘든든한’ 음식은 사망 후에도 효과가 남습니다. 귀속 조건을 확인해 준비하세요.</p>
                     {itemGroups.map(group => (
                       <ItemGroup key={group.id} data-item-group={group.id}>
