@@ -125,7 +125,7 @@ const manuscript = {
       },
       {
         tier: 'A',
-        label: 'Archon · 화염 신화 raid 전체 보스',
+        label: 'Archon · 화염 신화 raid 전체 네임드',
         url: 'https://www.archon.gg/wow/builds/fire/mage/raid/talents/mythic/all-bosses',
         updated: '2026-09-13 접근 제한',
         note: '403으로 최신 레이드 집계·사용률·DPS를 확보하지 못했습니다. 이전 시즌 수치를 현재 추천 근거로 재사용하지 않습니다.',

@@ -400,7 +400,7 @@ function displayGuideText(value) {
     .replace(/\bMythic\+ high keys\b/gi, '쐐기 고단')
     .replace(/\bMythic\+\b/g, '쐐기')
     .replace(/\bHigh Keys\b/g, '쐐기 고단')
-    .replace(/\bMythic All Bosses\b/g, '신화 전체 보스')
+    .replace(/\bMythic All Bosses\b/g, '신화 전체 네임드')
     .replace(/\bMythic Raid\b/g, '신화 레이드')
     .replace(/\bAll Dungeons\b/g, '전체 던전')
     .replace(/고정 딜사이클/g, '고정 순서')
@@ -655,21 +655,38 @@ function renderGuideText(value, terms) {
       break;
     }
 
-    if (match.index > cursor) {
-      nodes.push(text.slice(cursor, match.index));
-    }
+    // 스킬 이름 바로 앞의 여는 괄호·따옴표와 바로 뒤에 붙은 조사·문장부호는 이름과 같은 줄에 묶는다
+    // (줄 끝에 "("만 남거나 다음 줄이 "로 걸기"처럼 조사로 시작하지 않게).
+    let before = text.slice(cursor, match.index);
+    const lead = /[(“"'「[]$/.test(before) ? before.slice(-1) : '';
+    if (lead) before = before.slice(0, -1);
+    if (before) nodes.push(before);
 
-    const label = text.slice(match.index, match.index + match.term.label.length);
-    nodes.push(
+    const end = match.index + match.term.label.length;
+    const label = text.slice(match.index, end);
+    const next = findInlineTerm(text, terms, end);
+    const tail = (text.slice(end, next ? next.index : text.length).match(/^[^\s]{1,6}/) || [''])[0];
+    const term = (
       <InlineSkillTerm key={`${match.term.skill.id}-${match.index}-${nodes.length}`} skill={match.term.skill}>
         {label}
       </InlineSkillTerm>
     );
-    cursor = match.index + match.term.label.length;
+    nodes.push(lead || tail ? <InlineTermGlue key={`glue-${match.index}-${nodes.length}`}>{lead}{term}{tail}</InlineTermGlue> : term);
+    cursor = end + tail.length;
   }
 
   return nodes;
 }
+
+/* 이름표와 앞뒤 글 사이에서만 줄을 바꾸지 않는다. 긴 스킬 이름 안(띄어쓰기)에서는 그대로 줄바꿈된다 */
+const InlineTermGlue = styled.span`
+  white-space: nowrap;
+
+  > a,
+  > span {
+    white-space: normal;
+  }
+`;
 
 function formatSkillMeta(skill) {
   const parts = [
@@ -1415,7 +1432,7 @@ const SPECIALIST_CHARTS = {
         phase: '여러 적의 근접 자동 공격 집중',
         skillId: '325153',
         action: '평타 피해 완화',
-        note: '선택한 폭발하는 맥주통을 사용합니다. 보스 특수 공격·마법 주문까지 무효화하지 않으며 맥주통 초기화와 후속 강화를 따로 회수합니다.'
+        note: '선택한 폭발하는 맥주통을 사용합니다. 네임드 특수 공격·마법 주문까지 무효화하지 않으며 맥주통 초기화와 후속 강화를 따로 회수합니다.'
       }
     ]
   },
@@ -2119,7 +2136,7 @@ function BookSkillDiagram({ diagram, guide, inlineTerms, label }) {
               <BookDiagramLink $color={guide.color} $connected={index > 0}>
                 <span>
                   {index > 0 && <ArrowDown size={12} aria-hidden="true" />}
-                  {!!layer.link && renderGuideText(layer.link, inlineTerms)}
+                  {!!layer.link && <em>{renderGuideText(layer.link, inlineTerms)}</em>}
                 </span>
               </BookDiagramLink>
             )}
@@ -2203,7 +2220,7 @@ function BookRotationTimeline({ timeline, guide, inlineTerms, label }) {
         return (
           <BookTimelineRailBlock key={rail.label} data-timeline-rail={rail.kind || 'sequence'}>
             <BookTimelineRailLabel $color={guide.color}>{renderGuideText(rail.label, inlineTerms)}</BookTimelineRailLabel>
-            <BookTimelineRail role="list" aria-label={displayGuideText(rail.label)} $line={line}>
+            <BookTimelineRail role="list" aria-label={displayGuideText(rail.label)} $line={line} $hasAbove={hasAbove}>
               {nodes.map((node, nodeIndex) => (
                 <li key={`${node.skillId}-${nodeIndex}`}>
                   <BookTimelineNode node={node} guide={guide} hasAbove={hasAbove} line={line} inlineTerms={inlineTerms} />
@@ -3005,7 +3022,7 @@ function GuideDetailPage() {
     },
     {
       label: '공격대',
-      text: playstyleItem(/레이드|공격대/)?.text || '보스의 공격 가능 시간과 주요 기믹에 맞춰 쿨기를 배치합니다.',
+      text: playstyleItem(/레이드|공격대/)?.text || '네임드의 공격 가능 시간과 주요 기믹에 맞춰 쿨기를 배치합니다.',
     },
     {
       label: '쐐기',
@@ -4694,10 +4711,11 @@ const HeroTop = styled.div`
 
 const BackLink = styled(Link)`
   display: inline-flex;
+  flex-shrink: 0;
   align-items: center;
   gap: 7px;
-  min-width: 0;
   color: #c7bba7;
+  white-space: nowrap;
   font-size: 0.82rem;
   font-weight: 650;
 
@@ -4958,6 +4976,7 @@ const GuideNavGroupLabel = styled.div`
   color: #75818a;
   font-size: 0.65rem;
   font-weight: 720;
+  word-break: keep-all;
 
   @media (max-width: 980px) {
     display: none;
@@ -6473,12 +6492,20 @@ const BookDiagramHead = styled.div`
   justify-content: space-between;
   gap: 10px;
 
+  > :first-child {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  /* 좁은 화면에서는 제목 대신 안내 문구가 줄바꿈된다. */
   > span {
+    min-width: 0;
     color: #7f8a92;
     font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.04em;
-    white-space: nowrap;
+    text-align: right;
+    word-break: keep-all;
   }
 `;
 
@@ -6511,7 +6538,8 @@ const BookDiagramLink = styled.div`
     background: ${props => props.$color}66;
   }
 
-  span {
+  /* 바깥 한 겹만 아이콘·글을 가로로 놓는다. 글(em)은 한 덩어리라 스킬 이름과 조사·괄호가 떨어지지 않는다 */
+  > span {
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -6532,7 +6560,12 @@ const BookDiagramLink = styled.div`
     justify-content: center;
   }
 
-  svg {
+  > span > em {
+    min-width: 0;
+    font-style: normal;
+  }
+
+  > span > svg {
     flex: 0 0 auto;
     color: ${props => props.$color};
   }
@@ -6772,53 +6805,58 @@ const BookTimelineRailLabel = styled.div`
   word-break: keep-all;
 `;
 
-/* 굵은 가로줄: 노드마다 자기 칸 폭만큼 줄 조각을 그려 이어 붙인다. 줄이 넘치면 다음 행으로 이어진다 */
+/* 굵은 가로줄: 노드마다 자기 칸 폭만큼 줄 조각을 그려 이어 붙인다. 줄이 넘치면 다음 행으로 이어진다.
+   노드는 위쪽 가지·아이콘·설명 세 칸을 부모 격자에 맞춰(subgrid) 같은 행의 노드끼리 칸 높이를 공유한다.
+   그래서 가지 조건 글이 길어지면 그 행의 가지 칸이 함께 커지고, 윗행 설명과 포개지지 않는다. */
 const BookTimelineRail = styled.ol`
   --timeline-icon: 40px;
   --timeline-above: 70px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  row-gap: 12px;
+  --timeline-cell: ${props => (props.$line ? '88px' : '128px')};
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--timeline-cell));
+  grid-auto-rows: auto;
+  align-items: start;
   margin: 8px 0 0;
   padding: 6px 0 0;
   list-style: none;
 
   li {
-    flex: 0 0 auto;
-    width: ${props => (props.$line ? '88px' : '128px')};
+    display: grid;
+    grid-row: span ${props => (props.$hasAbove ? 3 : 2)};
+    grid-template-rows: subgrid;
     min-width: 0;
   }
 
   @container (max-width: 640px) {
     --timeline-icon: 36px;
     --timeline-above: 64px;
-
-    li {
-      width: ${props => (props.$line ? '72px' : '104px')};
-    }
+    --timeline-cell: ${props => (props.$line ? '72px' : '104px')};
   }
 `;
 
 const BookTimelineItem = styled.div`
   position: relative;
   display: grid;
-  grid-template-rows: ${props => (props.$hasAbove ? 'var(--timeline-above) ' : '')}var(--timeline-icon) auto;
+  grid-row: 1 / -1;
+  grid-template-rows: subgrid;
   justify-items: center;
+  padding-bottom: 12px;
   text-align: center;
 
-  &::before {
+  /* 가로줄은 아이콘 칸 한가운데에 칸 폭 전체로 그린다 */
+  > div[data-timeline-icon]::before {
     content: '';
     display: ${props => (props.$line ? 'block' : 'none')};
     position: absolute;
-    left: 0;
-    right: 0;
-    top: calc(${props => (props.$hasAbove ? 'var(--timeline-above)' : '0px')} + var(--timeline-icon) / 2 - 2px);
+    left: calc((var(--timeline-cell) - var(--timeline-icon)) / -2);
+    right: calc((var(--timeline-cell) - var(--timeline-icon)) / -2);
+    top: calc(50% - 2px);
     height: 4px;
     background: #414b55;
   }
 
   > p {
+    max-width: calc(100% - 4px);
     margin: 5px 2px 0;
     color: #c7cfd4;
     font-size: 0.66rem;
@@ -6826,6 +6864,18 @@ const BookTimelineItem = styled.div`
     line-height: 1.3;
     word-break: keep-all;
     overflow-wrap: anywhere;
+  }
+
+  /* 설명·가지 글 안의 스킬 이름표도 칸 폭 안에서 줄바꿈해 옆 칸 글과 겹치지 않게 한다 */
+  > p *,
+  small * {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  > p ${InlineTermGlue},
+  small ${InlineTermGlue} {
+    white-space: nowrap;
   }
 `;
 
@@ -6839,12 +6889,12 @@ const BookTimelineAbove = styled.div`
   justify-content: flex-end;
   width: 100%;
   height: 100%;
-  min-height: 0;
+  min-height: var(--timeline-above);
 
   small {
     display: block;
     margin-bottom: 2px;
-    padding: 0 1px;
+    padding: 0 4px;
     color: ${props => props.$color};
     font-size: 0.6rem;
     font-weight: 760;
@@ -6861,7 +6911,7 @@ const BookTimelineAbove = styled.div`
   }
 `;
 
-const BookTimelineIcon = styled.div`
+const BookTimelineIcon = styled.div.attrs({ 'data-timeline-icon': '' })`
   position: relative;
   z-index: 1;
   display: grid;
@@ -6871,6 +6921,8 @@ const BookTimelineIcon = styled.div`
 
   > a,
   > span {
+    position: relative;
+    z-index: 1;
     width: var(--timeline-icon);
     height: var(--timeline-icon);
   }
@@ -7250,13 +7302,17 @@ const BookContentsPart = styled.section`
     text-decoration: none;
   }
 
+  /* 부 번호("1부")는 긴 부 제목에 밀려 두 줄로 꺾이지 않게 한 줄로 고정한다 */
   > a span {
+    flex-shrink: 0;
     color: #b8915b;
     font-size: 0.72rem;
     font-weight: 900;
+    white-space: nowrap;
   }
 
   > a strong {
+    min-width: 0;
     font-size: 0.92rem;
     word-break: keep-all;
   }

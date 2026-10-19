@@ -1006,7 +1006,7 @@ function validateBookLayout(spec, manuscript, kbSkills = {}) {
       });
     });
   });
-  assert(!/우두머리(?! 포식자)|졸개/.test(JSON.stringify(manuscript)), `${prefix}: fixed guide terms are 네임드 and 쫄 (not 우두머리/졸개; official skill name 우두머리 포식자 excepted)`);
+  assert(!/우두머리(?! 포식자)|졸개|보스/.test(JSON.stringify(manuscript)), `${prefix}: fixed guide terms are 네임드 and 쫄 (not 보스/우두머리/졸개; official skill name 우두머리 포식자 excepted)`);
   validateBookTemplate(spec, manuscript, kbSkills);
   const partOrder = blocks.map(block => parts.findIndex(part => part.id === block.part));
   assert(partOrder.every((value, index) => index === 0 || value >= partOrder[index - 1]), `${prefix}: chapters must follow part order`);
@@ -1864,6 +1864,8 @@ function main() {
   assert(kbSkills['281238']?.description.includes('무료'), 'Obliteration must include the free-spender interaction');
   assert(!collectActiveSkillRefs(frost).some(([, id]) => String(id) === '152279'), 'Current Frost guide must not link the obsolete Breath ID');
   assert(frost.heroBranches[frost.defaultHeroBranchIndex]?.label === '죽음의 인도자', 'Frost default hero tab must match the recommended Deathbringer build');
+  const devourerBook = manuscripts['demonhunter-devourer'];
+  assert(devourerBook.heroBranches[devourerBook.defaultHeroBranchIndex]?.label === '궤멸자', 'Devourer default hero tab must match the 12.1.5 Annihilator samples, logs and public guides');
   assert(frost.heroBranches[0].flowSkillIds.every(id => kbSkills[id]?.castTime === '즉시'), 'Rider flow icons must show actual cast buttons, not its passive defining talents');
   for (const flow of [frost.opener, ...frost.heroBranches.map(branch => branch.opener).filter(Boolean)]) {
     for (const step of flow.steps) {

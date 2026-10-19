@@ -44,8 +44,19 @@ assert.equal(getGuidePublication('unknown', null).date, null);
 assert.equal(getGuidePublication('rogue-assassination', guideManuscripts['rogue-assassination']).partial, true);
 assert.equal(getGuidePublication('rogue-subtlety', guideManuscripts['rogue-subtlety']).partial, true);
 assert.equal(getGuidePublication('rogue-outlaw', guideManuscripts['rogue-outlaw']).partial, false);
-for (const id of ['mage-arcane', 'mage-fire', 'mage-frost']) {
+for (const id of ['mage-fire', 'mage-frost']) {
   assert.equal(getGuidePublication(id, guideManuscripts[id]).partial, true);
+}
+assert.equal(getGuidePublication('mage-arcane', guideManuscripts['mage-arcane']).partial, false);
+// 2026-10-19 6라운드 재판단 뒤 공사 중으로 남는 13개(근거: docs/patch-12.1-progress.md).
+const STILL_PARTIAL = ['monk-brewmaster', 'monk-windwalker', 'druid-balance', 'paladin-holy', 'rogue-assassination',
+  'demonhunter-havoc', 'rogue-subtlety', 'warrior-fury', 'mage-frost', 'druid-feral', 'shaman-enhancement',
+  'hunter-survival', 'mage-fire'];
+assert.deepEqual([...ids].filter(id => getGuidePublication(id, guideManuscripts[id]).partial).sort(), [...STILL_PARTIAL].sort());
+for (const id of ids) {
+  if (!getGuidePublication(id, guideManuscripts[id]).partial) {
+    assert.doesNotMatch(guideManuscripts[id].status || '', /검수 중/, `Released guide ${id} must not say 검수 중`);
+  }
 }
 // 목록 화면 공사 중 안내는 패치 번호를 직접 쓰지 않고 레지스트리 값을 쓴다.
 const listPage = fs.readFileSync(path.join(root, 'src/pages/GuidePage.js'), 'utf8');

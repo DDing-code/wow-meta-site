@@ -448,6 +448,7 @@ const manuscript = {
                 {
                   skillId: '8092',
                   label: '정신 분열',
+                  note: '1.5초 시전 · 재사용 9초',
                 },
                 {
                   skillId: '585',
