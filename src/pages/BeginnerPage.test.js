@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Simulate } from 'react-dom/test-utils';
 import { MemoryRouter } from 'react-router-dom';
 import BeginnerPage from './BeginnerPage.js';
-import { beginnerEmbellishments, beginnerSections } from '../data/beginnerGuide.js';
+import { beginnerCraftingScreens, beginnerEmbellishments, beginnerSections } from '../data/beginnerGuide.js';
 import consumables from '../data/beginnerConsumables.json';
 
 let container;
@@ -141,4 +141,25 @@ test('장식 재료와 효과가 붙은 장비를 구분하고 이름만 검색�
   act(() => container.querySelector('[aria-label="검색 지우기"]').click());
   expect(container.querySelectorAll('[data-embellishment-id]')).toHaveLength(items.length);
   expect(container.querySelectorAll('[data-item-id]')).toHaveLength(83);
+});
+
+test('주문 창을 본뜬 화면 5장을 번호 상자와 설명으로 보여 주고 검색에도 남긴다', () => {
+  expect(container.querySelectorAll('[data-screen-id]')).toHaveLength(5);
+  expect(beginnerCraftingScreens.map(screen => screen.id)).toEqual(['browse', 'reagents', 'order', 'recraft', 'result']);
+  for (const screen of beginnerCraftingScreens) {
+    const figure = container.querySelector(`[data-screen-id="${screen.id}"]`);
+    const callouts = Array.from(figure.querySelectorAll('[data-callout]')).map(node => Number(node.dataset.callout)).sort((a, b) => a - b);
+    expect(callouts).toEqual(screen.legend.map((item, index) => index + 1));
+    expect(figure.querySelectorAll('ol li')).toHaveLength(screen.legend.length);
+    expect(figure.querySelector('[role="img"]').getAttribute('aria-label')).toContain('본뜬 그림');
+    for (const step of screen.steps) expect(figure.textContent).toContain(step);
+  }
+  expect(container.querySelector('[data-screen-id="reagents"]').textContent).toContain('장식 추가');
+  expect(container.querySelector('[data-screen-id="result"]').textContent).toContain('고유 장착: 장식됨 (2)');
+  search('최소 품질');
+  expect(container.querySelectorAll('[data-screen-id]')).toHaveLength(1);
+  expect(container.querySelector('[data-screen-id="order"]')).not.toBeNull();
+  expect(container.querySelector('nav a[href="#crafting"]')).not.toBeNull();
+  search('없는말12345');
+  expect(container.querySelectorAll('[data-screen-id]')).toHaveLength(0);
 });

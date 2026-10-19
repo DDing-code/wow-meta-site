@@ -2,6 +2,7 @@
 import crafting from './beginnerCrafting.json';
 
 export const beginnerEmbellishments = crafting.catalog;
+export const beginnerCraftingScreens = crafting.screens;
 
 export const beginnerSections = [
   {

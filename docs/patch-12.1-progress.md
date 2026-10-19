@@ -863,3 +863,9 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 이름·아이콘·효과는 ODDIN 브라우저에서 Wowhead 본 서버 한국어 개별 아이템 페이지로 대조했다. 장비 미리보기의 효과 수치가 0으로 표시되는 경우 연결된 한국어 효과 주문 페이지를 확인해 effectSource를 남겼다. 원문은 artifacts/beginner-embellishments-20261019/item-evidence.json에 보존했고, 한글 조사 제어 표기만 풀어 표시한다.
 - 페이지 테스트 9개, 전체 검증 9단계, 소스맵 없는 빌드 통과. ODDIN 브라우저에서 320·390·1440px 문서를 직접 검수했다. 가로 넘침 0, 장식 아이콘 44개 로드 성공, 장식 이름 검색 1종과 목차 유지 확인. 캡처는 같은 출처 iframe을 사용하며 artifacts/beginner-embellishments-20261019/에 있다.
 - 이 작업은 커밋까지만 담당한다. 실제 인게임 UI의 강조 상자 설명과 운영 배포는 후속 t2가 이어 맡는다.
+
+### 2026-10-19 초보자 안내 — 주문 창을 본뜬 화면 안내
+- 사용자 요청(장식 목록과 실제 인게임 UI를 상자로 강조해 설명)에 따라 /beginner 주문제작 10단계 아래에 ‘게임 창에서 어디를 누르나요?’ 블록을 넣었다. 주문 창 찾기·재료와 선택 재료·주문 종류와 수수료·재제작·받은 장비 툴팁의 5장이며, 각 그림에 번호 상자와 설명, 관련 단계 번호를 붙였다.
+- 실제 게임은 캡처할 수 없어 화면을 본뜬 그림(HTML/CSS)으로 그렸다. 배치와 문구는 Wowhead 주문제작·재제작 안내의 창 캡처(2026-10-19 확인)와 한국어 클라이언트 캡처(인벤 2022-12-30 글)를 따랐고, 선택 재료 칸 이름(힘 주입·보조 능력치 증폭·장식 추가·장인의 진정성)과 예시 장비·재료는 Wowhead 한국어 제작법(spell=1229873)의 실제 이름이다. 숫자·캐릭터 이름은 예시이며 페이지에도 본뜬 그림임을 밝혔다.
+- 그림은 src/components/beginner/CraftingScreens.js, 제목·단계·번호 설명은 KB 공용 Meta/beginner-crafting.json의 screens(sync-kb → src/data/beginnerCrafting.json)에 둔다. 좁은 화면에서는 두 칸이 한 칸으로 쌓이고 가로 넘침이 없다. 실제 창 모습이 바뀌면 그림 파일만 고치면 된다.
+- 페이지 테스트 10개(화면 5장·번호 상자와 설명 수 일치·검색 유지 검사 추가) 통과. 320·390·1440px 캡처와 넘침·깨진 그림 0 확인: artifacts/beginner-screens-20261019/.

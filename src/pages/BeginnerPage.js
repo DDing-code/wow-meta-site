@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowRight, BookOpen, Castle, Compass, FlaskConical, Hammer, ListChecks, Search, Shield, Swords, X } from 'lucide-react';
-import { beginnerEmbellishments, beginnerSections, beginnerSources } from '../data/beginnerGuide.js';
+import { beginnerCraftingScreens, beginnerEmbellishments, beginnerSections, beginnerSources } from '../data/beginnerGuide.js';
 import consumables from '../data/beginnerConsumables.json';
+import { CraftingScreen } from '../components/beginner/CraftingScreens.js';
 
 // 기존 가이드 페이지의 평면 언어(어두운 배경, 금색 강조, 1px 구분선, 각진 모서리)를 그대로 쓴다.
 const GOLD = '#d2b373';
@@ -299,6 +300,43 @@ const Tip = styled.p`
   line-height: 1.7;
   b { margin-right: 8px; color: ${GOLD}; font-size: 0.74rem; font-weight: 750; }
 `;
+const ScreenGuide = styled.div`
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid ${LINE_STRONG};
+  > h3 { color: #eef1f3; font-size: 1.3rem; }
+  > p { max-width: 68ch; margin-top: 10px; color: #aeb8be; font-size: 0.9rem; line-height: 1.75; }
+`;
+const ScreenFigure = styled.figure`
+  margin: 30px 0 0;
+  padding: 22px 0 0;
+  border-top: 1px dashed rgba(168, 178, 188, 0.22);
+  figcaption h4 { color: #eef1f3; font-size: 1.06rem; line-height: 1.45; }
+  figcaption h4 b { margin-right: 10px; color: ${GOLD}; font-size: 0.8rem; font-weight: 750; letter-spacing: 0.04em; }
+  figcaption > p { max-width: 68ch; margin-top: 8px; color: #aeb8be; font-size: 0.88rem; line-height: 1.7; }
+  @media (max-width: 560px) { margin-top: 24px; padding-top: 18px; }
+`;
+const StepLinks = styled.span`
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+  color: #98a6af;
+  font-size: 0.76rem;
+  b { padding: 1px 7px; border: 1px solid rgba(210, 179, 115, 0.35); color: ${GOLD}; font-weight: 700; font-variant-numeric: tabular-nums; }
+`;
+const Legend = styled.ol`
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 10px; align-items: start; color: #c3cbd0; font-size: 0.88rem; line-height: 1.7; }
+  li > b { display: grid; place-items: center; width: 22px; height: 22px; margin-top: 2px; border-radius: 50%; background: #ff7a59; color: #140c08; font-size: 0.74rem; font-weight: 800; }
+  li strong { margin-right: 6px; color: #eef1f3; font-weight: 720; }
+  mark { background: transparent; color: ${GOLD}; box-shadow: inset 0 -1px 0 rgba(210, 179, 115, 0.6); }
+  @media (min-width: 761px) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px; }
+`;
 const ItemCatalog = styled.div`
   margin-top: 32px;
   padding-top: 28px;
@@ -472,11 +510,13 @@ function BeginnerPage() {
   })).filter(group => group.items.length);
   const embellishmentCount = embellishmentGroups.reduce((total, group) => total + group.items.length, 0);
   const totalItemCount = itemCount + embellishmentCount;
+  const screens = beginnerCraftingScreens.filter(screen => !query ||
+    ['주문 제작 화면', screen.title, screen.summary, ...screen.legend.flatMap(item => [item.label, item.text])].join(' ').toLocaleLowerCase().includes(query));
   const sections = beginnerSections.map(section => ({
     ...section,
     entries: section.entries.filter(entry => !query ||
       [section.title, entry.term, entry.aliases, entry.when, entry.description, entry.tip].filter(Boolean).join(' ').toLocaleLowerCase().includes(query)),
-  })).filter(section => section.entries.length || (section.id === 'consumables' && itemCount) || (section.id === 'crafting' && embellishmentCount));
+  })).filter(section => section.entries.length || (section.id === 'consumables' && itemCount) || (section.id === 'crafting' && (embellishmentCount || screens.length)));
   const count = sections.reduce((total, section) => total + section.entries.length, 0);
   const active = useActiveSection(sections.map(section => section.id).join(' '));
   const clear = () => setSearch('');
@@ -572,6 +612,25 @@ function BeginnerPage() {
                       </ItemGroup>
                     ))}
                   </ItemCatalog>
+                ) : null}
+                {section.id === 'crafting' && screens.length ? (
+                  <ScreenGuide aria-label="주문 제작 창 화면 안내">
+                    <h3>게임 창에서 어디를 누르나요?</h3>
+                    <p>주문 제작 담당 NPC에게 말을 걸면 열리는 ‘주문 제작 의뢰’ 창을 본떠 그렸습니다. 번호 상자가 가리키는 곳을 위 단계와 맞춰 보세요. 실제 화면과 글자·배치가 조금 다를 수 있고, 장비·재료·숫자는 예시입니다.</p>
+                    {screens.map(screen => (
+                      <ScreenFigure key={screen.id} data-screen-id={screen.id}>
+                        <figcaption>
+                          <h4><b>화면 {beginnerCraftingScreens.indexOf(screen) + 1}</b><Highlight text={screen.title} query={query} /></h4>
+                          <StepLinks>위 단계 {screen.steps.map(step => <b key={step}>{step}</b>)}</StepLinks>
+                          <p><Highlight text={screen.summary} query={query} /></p>
+                        </figcaption>
+                        <CraftingScreen id={screen.id} />
+                        <Legend>{screen.legend.map((item, index) => (
+                          <li key={item.label}><b aria-hidden="true">{index + 1}</b><span><strong><Highlight text={item.label} query={query} /></strong><Highlight text={item.text} query={query} /></span></li>
+                        ))}</Legend>
+                      </ScreenFigure>
+                    ))}
+                  </ScreenGuide>
                 ) : null}
                 {section.id === 'crafting' && embellishmentCount ? (
                   <ItemCatalog aria-label="현재 버전 장식 목록">
