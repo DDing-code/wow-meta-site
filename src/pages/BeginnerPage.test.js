@@ -180,3 +180,48 @@ test('주문 창을 본뜬 화면 5장을 번호 상자와 설명으로 보여 �
   search('없는말12345');
   expect(container.querySelectorAll('[data-screen-id]')).toHaveLength(0);
 });
+
+test('영역마다 한눈에 보기 그림을 두고, 그림의 낱말은 실제 설명으로 이어지며, 검색 중에는 숨긴다', () => {
+  const { beginnerMaps } = require('../data/beginnerGuide.js');
+  const maps = container.querySelectorAll('[data-map]');
+  expect(Array.from(maps).map(node => node.dataset.map)).toEqual(beginnerSections.map(section => section.id));
+  for (const map of maps) {
+    expect(map.querySelectorAll('dt')).toHaveLength(0);
+    for (const link of map.querySelectorAll('a[href^="#"]')) {
+      const target = container.querySelector(link.getAttribute('href'));
+      expect(target).not.toBeNull();
+      expect(target.querySelector('dt')).not.toBeNull();
+    }
+    expect(map.querySelectorAll('a:not([href])')).toHaveLength(0);
+  }
+  const terms = new Set(beginnerSections.flatMap(section => section.entries.map(entry => entry.term)));
+  const referenced = [
+    beginnerMaps.basics.structure.term, ...beginnerMaps.basics.roles.map(role => role.term),
+    ...beginnerMaps.combat.stages.flatMap(stage => stage.terms), ...beginnerMaps.combat.clock.rows.map(row => row.term), beginnerMaps.combat.clock.slotTerm,
+    ...beginnerMaps.content.ladder.map(rung => rung.term), ...beginnerMaps.content.sideTerms,
+    ...beginnerMaps.equipment.callouts.map(item => item.term), ...beginnerMaps.equipment.extraTerms,
+    ...beginnerMaps.consumables.timeline.flatMap(stop => stop.terms),
+  ];
+  for (const term of referenced) expect(terms.has(term)).toBe(true);
+  expect(container.querySelectorAll('[data-map="equipment"] [data-map-callout]')).toHaveLength(beginnerMaps.equipment.callouts.length);
+  expect(container.querySelectorAll('[data-map="consumables"] img')).toHaveLength(beginnerMaps.consumables.timeline.reduce((n, stop) => n + stop.groups.length, 0));
+  expect(container.querySelectorAll('[data-map="crafting"] a')).toHaveLength(10);
+  expect(container.querySelectorAll('#crafting h3').length).toBeGreaterThanOrEqual(5);
+  search('어그로');
+  expect(container.querySelectorAll('[data-map]')).toHaveLength(0);
+  expect(container.querySelectorAll('nav a')).toHaveLength(1);
+});
+
+test('첫 파티 준비 다섯 가지는 눌러서 확인 표시하고 진행 수를 보여 준다', () => {
+  const buttons = container.querySelectorAll('#ready button[aria-pressed]');
+  expect(buttons).toHaveLength(5);
+  expect(container.querySelector('[data-map="ready"]').textContent).toContain('0/ 5 확인');
+  act(() => buttons[0].click());
+  act(() => buttons[2].click());
+  expect(container.querySelector('[data-map="ready"]').textContent).toContain('2/ 5 확인');
+  expect(container.querySelectorAll('#ready [data-done="true"]')).toHaveLength(2);
+  expect(buttons[0].getAttribute('aria-pressed')).toBe('true');
+  act(() => buttons[0].click());
+  expect(container.querySelectorAll('#ready [data-done="true"]')).toHaveLength(1);
+  expect(container.querySelectorAll('#ready dt')).toHaveLength(5);
+});

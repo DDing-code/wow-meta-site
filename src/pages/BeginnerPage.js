@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ArrowRight, BookOpen, Castle, Compass, FlaskConical, Hammer, ListChecks, Search, Shield, Swords, X } from 'lucide-react';
-import { beginnerCraftingScreens, beginnerEmbellishments, beginnerSections, beginnerSources } from '../data/beginnerGuide.js';
+import { ArrowRight, BookOpen, Castle, Check, Compass, FlaskConical, Hammer, ListChecks, Search, Shield, Swords, X } from 'lucide-react';
+import { beginnerCraftingScreens, beginnerEmbellishments, beginnerMaps, beginnerSections, beginnerSources } from '../data/beginnerGuide.js';
 import consumables from '../data/beginnerConsumables.json';
 import { CraftingScreen } from '../components/beginner/CraftingScreens.js';
+import { SectionMap, parseStep } from '../components/beginner/BeginnerMaps.js';
 
 // 기존 가이드 페이지의 평면 언어(어두운 배경, 금색 강조, 1px 구분선, 각진 모서리)를 그대로 쓴다.
 const GOLD = '#d2b373';
@@ -267,6 +268,8 @@ const Entry = styled.div`
   dt { color: #eef1f3; font-size: 1rem; font-weight: 720; line-height: 1.45; }
   dd { color: #c3cbd0; font-size: 0.9rem; line-height: 1.8; }
   mark { background: transparent; color: ${GOLD}; box-shadow: inset 0 -1px 0 rgba(210, 179, 115, 0.6); }
+  &[data-done='true'] { border-color: rgba(210, 179, 115, 0.5); box-shadow: inset 0 2px 0 ${GOLD}; }
+  &[data-done='true'] dt { color: ${GOLD}; }
   @media (max-width: 560px) { padding: 15px 14px 17px; }
 `;
 const When = styled.span`
@@ -299,6 +302,38 @@ const Tip = styled.p`
   font-size: 0.84rem;
   line-height: 1.7;
   b { margin-right: 8px; color: ${GOLD}; font-size: 0.74rem; font-weight: 750; }
+`;
+const PhaseHead = styled.h3`
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 28px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid ${LINE_STRONG};
+  color: #eef1f3;
+  font-size: 1.02rem;
+  font-weight: 720;
+  b { color: ${GOLD}; font-size: 0.74rem; font-weight: 750; letter-spacing: 0.04em; }
+  small { color: #7f8b94; font-size: 0.76rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  & + dl { margin-top: 14px; }
+`;
+const CheckRow = styled.div`
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+`;
+const CheckButton = styled.button`
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid ${props => (props.$done ? GOLD : '#59636b')};
+  background: ${props => (props.$done ? GOLD : 'transparent')};
+  color: #0a0d10;
+  transition: background 160ms ease, border-color 160ms ease;
+  &:hover { border-color: ${GOLD}; }
+  &:focus-visible { outline: 2px solid ${GOLD}; outline-offset: 2px; }
 `;
 const ScreenGuide = styled.div`
   margin-top: 32px;
@@ -520,6 +555,59 @@ function BeginnerPage() {
   const count = sections.reduce((total, section) => total + section.entries.length, 0);
   const active = useActiveSection(sections.map(section => section.id).join(' '));
   const clear = () => setSearch('');
+  // 그림의 낱말을 누르면 아래 설명으로 내려간다. 설명 id는 영역 id와 원래 순서로 정한다(검색으로 걸러도 같은 id).
+  const entryIds = new Map(beginnerSections.flatMap(section => section.entries.map((entry, index) => [entry.term, `${section.id}-e${index + 1}`])));
+  const hrefFor = term => (entryIds.has(term) ? `#${entryIds.get(term)}` : undefined);
+  const [done, setDone] = useState(() => new Set());
+  const toggleDone = term => setDone(current => {
+    const next = new Set(current);
+    if (next.has(term)) next.delete(term); else next.add(term);
+    return next;
+  });
+  const readyTotal = beginnerSections.find(section => section.id === 'ready').entries.length;
+  const renderEntry = (section, entry) => (
+    <Entry key={entry.term} id={entryIds.get(entry.term)} data-done={section.id === 'ready' && done.has(entry.term) ? 'true' : undefined}>
+      {section.id === 'ready' ? (
+        <CheckRow>
+          <CheckButton type="button" $done={done.has(entry.term)} aria-pressed={done.has(entry.term)} aria-label={`${entry.term} 확인`} onClick={() => toggleDone(entry.term)}>{done.has(entry.term) ? <Check size={22} strokeWidth={2.5} aria-hidden="true" /> : null}</CheckButton>
+          <div>
+            <dt><Term term={entry.term} query={query} /></dt>
+            <dd>
+              <p><Highlight text={entry.description} query={query} /></p>
+              <Tip><b>팁</b>{' '}<Highlight text={entry.tip} query={query} /></Tip>
+            </dd>
+          </div>
+        </CheckRow>
+      ) : (
+        <>
+          <dt>{entry.when ? <When>{entry.when}</When> : null}<Term term={entry.term} query={query} /></dt>
+          <dd>
+            <p><Highlight text={entry.description} query={query} /></p>
+            <Tip><b>팁</b>{' '}<Highlight text={entry.tip} query={query} /></Tip>
+          </dd>
+        </>
+      )}
+    </Entry>
+  );
+  const renderEntries = section => {
+    if (section.id === 'crafting') {
+      // 열 단계를 지도와 같은 네 묶음으로 나눠 보여 준다. 묶음에 남은 단계가 없으면(검색) 그 묶음은 건너뛴다.
+      const phases = beginnerMaps.crafting.phases.map(phase => ({ ...phase, entries: section.entries.filter(entry => phase.steps.includes(parseStep(entry.term)?.number)) })).filter(phase => phase.entries.length);
+      const rest = section.entries.filter(entry => !parseStep(entry.term));
+      return (
+        <>
+          {phases.map((phase, index) => (
+            <React.Fragment key={phase.title}>
+              <PhaseHead><b>{index + 1}단계</b>{phase.title}<small>{phase.steps[0]}–{phase.steps[phase.steps.length - 1]}</small></PhaseHead>
+              <Entries $columns={2}>{phase.entries.map(entry => renderEntry(section, entry))}</Entries>
+            </React.Fragment>
+          ))}
+          {rest.length ? <Entries $columns={2}>{rest.map(entry => renderEntry(section, entry))}</Entries> : null}
+        </>
+      );
+    }
+    return <Entries $columns={section.id === 'ready' ? 1 : 2}>{section.entries.map(entry => renderEntry(section, entry))}</Entries>;
+  };
 
   return (
     <Page>
@@ -527,7 +615,7 @@ function BeginnerPage() {
         <div>
           <Eyebrow>와우의 첫걸음 · 본 서버 공통 개념</Eyebrow>
           <Title>초보자 안내</Title>
-          <Lead>처음 보는 말이 많아도 괜찮습니다. 역할과 전투 용어부터 소모품·보석·마법부여, 주문제작과 장식까지, 가이드를 읽기 전에 알아두면 좋은 내용을 모았습니다.</Lead>
+          <Lead>처음 보는 말이 많아도 괜찮습니다. 역할과 전투 용어부터 소모품·보석·마법부여, 주문제작과 장식까지, 영역마다 그림으로 먼저 보고 필요한 설명만 찾아 읽을 수 있게 모았습니다.</Lead>
         </div>
         <SearchPanel>
           <label htmlFor="beginner-search">모르는 말 찾아보기</label>
@@ -579,16 +667,9 @@ function BeginnerPage() {
                   <SectionCount>{section.entries.length}개 설명{section.id === 'consumables' && itemCount ? ` · 아이템 ${itemCount}종` : section.id === 'crafting' && embellishmentCount ? ` · 아이템 ${embellishmentCount}종` : ''}</SectionCount>
                 </SectionHead>
                 <Intro>{section.intro}</Intro>
+                {!query ? <SectionMap id={section.id} map={beginnerMaps[section.id]} hrefFor={hrefFor} groups={consumables.groups} entries={section.entries} done={done.size} total={readyTotal} /> : null}
                 {section.note ? <Note>{section.note}</Note> : null}
-                <Entries $columns={section.id === 'ready' ? 1 : 2}>{section.entries.map(entry => (
-                  <Entry key={entry.term}>
-                    <dt>{entry.when ? <When>{entry.when}</When> : null}<Term term={entry.term} query={query} /></dt>
-                    <dd>
-                      <p><Highlight text={entry.description} query={query} /></p>
-                      <Tip><b>팁</b>{' '}<Highlight text={entry.tip} query={query} /></Tip>
-                    </dd>
-                  </Entry>
-                ))}</Entries>
+                {renderEntries(section)}
                 {section.id === 'consumables' && itemCount ? (
                   <ItemCatalog aria-label="현재 버전 소모품·보석·마법부여 목록">
                     <h3>한밤 {consumables.metadata.patch} 소모품·보석·마법부여 목록</h3>

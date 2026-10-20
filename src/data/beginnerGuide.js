@@ -89,6 +89,86 @@ export const beginnerSections = [
   },
 ];
 
+// 영역마다 글 앞에 두는 '한눈에 보기' 그림의 자료. terms는 아래 beginnerSections의 term과 글자까지 같아야 한다(검사: BeginnerPage.test.js).
+export const beginnerMaps = {
+  basics: {
+    structure: {
+      className: '직업', classExample: '예: 전사',
+      specs: [{ name: '무기' }, { name: '분노' }, { name: '방어', picked: true }],
+      inside: ['특성', '영웅 특성'],
+      caption: '직업 → 전문화 → 특성 순서로 좁혀집니다. 가이드는 전문화마다 따로 있습니다.',
+      term: '직업 · 전문화 · 특성',
+    },
+    roles: [
+      { id: 'tank', name: '탱커', job: '적을 붙잡고 앞장선다', term: '탱커' },
+      { id: 'healer', name: '힐러', job: '아군을 회복하고 돌본다', term: '힐러' },
+      { id: 'dps', name: '딜러', job: '적에게 피해를 준다', term: '딜러' },
+    ],
+    party: { title: '5인 파티', slots: ['tank', 'healer', 'dps', 'dps', 'dps'], caption: '던전은 탱커 1 · 힐러 1 · 딜러 3으로 갑니다. 공격대는 인원만 늘어나고 역할은 같습니다.' },
+  },
+  combat: {
+    stages: [
+      { title: '풀링', text: '탱커가 전투를 시작합니다', terms: ['어그로 · 풀링', '네임드 · 쫄'] },
+      { title: '오프닝', text: '시작 직후 정해진 순서', terms: ['딜사이클 · 오프닝', '쿨타임 · 쿨기', '글쿨'] },
+      { title: '딜사이클', text: '상황에 맞춰 반복', terms: ['단일 · 광역 · 점사', '버프 · 디버프 · 중첩', '발동 · 유지'] },
+      { title: '위기 대처', text: '기믹에 맞춰 반응', terms: ['차단 · 군중 제어', '해제', '생존기 · 외생기', '기믹 · 바닥 · 무빙', '전투 부활'] },
+      { title: '처치 또는 전멸', text: '기록을 보고 다시', terms: ['전멸 · 트라이', 'DPS · HPS · 로그'] },
+    ],
+    clock: {
+      title: '12초 동안 일어나는 일',
+      slots: 8,
+      rows: [
+        { label: '쿨기', span: 1, tail: '2분 뒤에 다시', term: '쿨타임 · 쿨기' },
+        { label: '버프 유지', span: 5, tail: '끊기기 전에 다시', term: '발동 · 유지' },
+      ],
+      slotLabel: '글쿨 1.5초씩 · 한 칸에 스킬 하나',
+      slotTerm: '글쿨',
+    },
+  },
+  content: {
+    ladder: [
+      { name: '퀘스트', people: '혼자', note: '이야기와 기본 조작', term: '퀘스트 · 전역 퀘스트' },
+      { name: '구렁', people: '1~5명', note: '단계별 난이도', term: '구렁' },
+      { name: '던전', people: '5명', note: '일반 · 영웅 · 신화', term: '던전 · 추종자 던전' },
+      { name: '쐐기', people: '5명', note: '시간 제한 · 단계', term: '쐐기' },
+      { name: '공격대', people: '10~30명', note: '공격대 찾기 · 일반 · 영웅 · 신화', term: '공격대' },
+    ],
+    caption: '오른쪽으로 갈수록 함께 맞출 사람과 준비가 늘어납니다. 파티는 찾기 기능이나 모집 글로 모으고, PvP(전장·투기장)는 별도의 길입니다.',
+    sideTerms: ['파티 찾기 · 파티 구성하기', 'PvE · PvP'],
+  },
+  equipment: {
+    title: '장비 설명(툴팁)에서 보는 곳',
+    note: '예시 장비입니다. 이름·수치는 임의이고, 강화 계열 이름과 단수는 시즌마다 다릅니다.',
+    callouts: [
+      { n: 1, label: '아이템 레벨', term: '아이템 레벨' },
+      { n: 2, label: '강화 단계와 계열', term: '장비 업그레이드 · 문장' },
+      { n: 3, label: '귀속 조건', term: '귀속 · 경매장' },
+      { n: 4, label: '주 능력치', term: '주 능력치 · 보조 능력치' },
+      { n: 5, label: '보조 능력치', term: '주 능력치 · 보조 능력치' },
+      { n: 6, label: '보석 홈 · 마법부여', term: '마법부여 · 보석' },
+      { n: 7, label: '세트 효과', term: '티어 세트' },
+    ],
+    extraTerms: ['위대한 금고', '전문 기술 · 주문 제작'],
+  },
+  consumables: {
+    timeline: [
+      { when: '출발 전', text: '오래 가는 준비. 보석·마법부여는 미리 발라 둡니다.', terms: ['영약', '룬 · 무기 강화 소모품', '마법부여 고르기 · 다시 바르기'], groups: ['flasks', 'runes-oils', 'enchants-weapon', 'gems-peridot'] },
+      { when: '전투 직전', text: '먹고 나서 강화 효과가 떴는지 확인합니다.', terms: ['음식 · 잔칫상'], groups: ['primary-feasts', 'secondary-food'] },
+      { when: '전투 중', text: '전투 물약은 쿨기와 함께, 회복 물약은 급할 때.', terms: ['전투 물약', '회복 물약'], groups: ['combat-potions', 'recovery-potions'] },
+      { when: '전투 사이', text: '죽었으면 음식을 다시 먹고 영약 남은 시간을 봅니다.', terms: ['음식 · 잔칫상', '소모품 품질 · 사용 조건'], groups: ['drinks', 'primary-food'] },
+    ],
+  },
+  crafting: {
+    phases: [
+      { title: '정하기', steps: ['01', '02', '03'] },
+      { title: '재료 준비', steps: ['04', '05', '06'] },
+      { title: '주문 보내기', steps: ['07', '08'] },
+      { title: '나중에 바꾸기', steps: ['09', '10'] },
+    ],
+  },
+  ready: { title: '출발 준비', caption: '다섯 가지를 누르며 확인하세요. 표시는 이 화면에서만 남습니다.' },
+};
+
 export const beginnerSources = [
   ...crafting.sources,
   { title: '직업과 역할', href: 'https://worldofwarcraft.blizzard.com/ko-kr/game/classes', detail: '블리자드 직업 안내' },
