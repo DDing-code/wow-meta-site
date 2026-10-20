@@ -2086,6 +2086,8 @@ const BOOK_BOX_LABELS = {
   voices: '현장의 목소리',
   skillGroups: '내 스킬',
   aside: '참고',
+  cards: '한눈에 비교',
+  steps: '순서대로',
 };
 
 // 개념서형 가이드: manuscript.book이 있으면 장을 부(part)로 묶고 장마다 보조 상자를 붙인다.
@@ -2188,6 +2190,65 @@ function BookSkillDiagram({ diagram, guide, inlineTerms, label }) {
           ))}
         </BookDiagramLegend>
       )}
+    </BookDiagramFigure>
+  );
+}
+
+// 비교·순서 카드: 흐름도(층)로 그리기 어려운 "무엇과 무엇이 다른가", "1 → 2 → 3" 을 짧은 카드로 보여 준다.
+// 글 대신 그림을 쓰는 개념서(book.visual)에서 본문을 대신한다. 카드마다 스킬 아이콘 줄과 한두 줄 설명만 둔다.
+// 자료: block.cards = { title, intro?, numbered?, items: [{ label, tag?, tone?('good'|'warn'), skillIds?, lines? }], note? }
+function getBlockCards(block) {
+  const cards = block?.cards;
+  if (!cards) return [];
+  return (Array.isArray(cards) ? cards : [cards]).filter(item => item?.items?.length);
+}
+
+function BookCardFigure({ cards, guide, inlineTerms, labels }) {
+  const items = cards?.items || [];
+  if (!items.length) return null;
+  const title = displayGuideText(cards.title);
+  const label = cards.label || (cards.numbered ? labels.steps : labels.cards);
+  return (
+    <BookDiagramFigure $color={guide.color} data-book-box="cards" data-cards-kind={cards.numbered ? 'steps' : 'compare'} aria-label={title}>
+      <BookDiagramHead>
+        <BookBoxLabel>{label}</BookBoxLabel>
+        <span>{cards.numbered ? '번호 순서로 읽기' : '칸마다 따로 읽기'}</span>
+      </BookDiagramHead>
+      <strong>{renderGuideText(cards.title, inlineTerms)}</strong>
+      {!!cards.intro && <BookTimelineIntro>{renderGuideText(cards.intro, inlineTerms)}</BookTimelineIntro>}
+      <BookCardGrid $count={items.length} role="list">
+        {items.map((item, index) => {
+          const skills = (item.skillIds || []).map(skillFromBranchId).filter(Boolean);
+          return (
+            <BookCard key={`${item.label}-${index}`} $color={guide.color} $tone={item.tone} role="listitem" data-book-card={item.tone || 'plain'}>
+              <BookCardHead>
+                {!!cards.numbered && <BookCardNumber $color={guide.color} aria-label={`${index + 1}단계`}>{index + 1}</BookCardNumber>}
+                <div>
+                  {!!item.tag && <small>{displayGuideText(item.tag)}</small>}
+                  <strong>{renderGuideText(item.label, inlineTerms)}</strong>
+                </div>
+              </BookCardHead>
+              {!!skills.length && (
+                <BookCardIcons aria-label="관련 스킬">
+                  {skills.map(skill => (
+                    <li key={`${item.label}-${skill.id}`}>
+                      <InlineSkillTerm skill={skill}>{skillName(skill)}</InlineSkillTerm>
+                    </li>
+                  ))}
+                </BookCardIcons>
+              )}
+              {!!item.lines?.length && (
+                <ul>
+                  {item.lines.map(line => (
+                    <li key={line}>{renderGuideText(line, inlineTerms)}</li>
+                  ))}
+                </ul>
+              )}
+            </BookCard>
+          );
+        })}
+      </BookCardGrid>
+      {!!cards.note && <p>{renderGuideText(cards.note, inlineTerms)}</p>}
     </BookDiagramFigure>
   );
 }
@@ -2847,7 +2908,7 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                 </BookDiagramStack>
               )}
 
-              {!!bookLayout && (!!getBlockDiagrams(block).length || !!getBlockTimelines(block).length) && (
+              {!!bookLayout && (!!getBlockDiagrams(block).length || !!getBlockTimelines(block).length || !!getBlockCards(block).length) && (
                 <BookDiagramStack>
                   {getBlockDiagrams(block).map((diagram, diagramIndex) => (
                     <BookSkillDiagram
@@ -2856,6 +2917,15 @@ function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, in
                       guide={guide}
                       inlineTerms={inlineTerms}
                       label={bookLayout.labels.diagram}
+                    />
+                  ))}
+                  {getBlockCards(block).map((cards, cardsIndex) => (
+                    <BookCardFigure
+                      key={`${cards.title}-${cardsIndex}`}
+                      cards={cards}
+                      guide={guide}
+                      inlineTerms={inlineTerms}
+                      labels={bookLayout.labels}
                     />
                   ))}
                   {getBlockTimelines(block).map((timeline, timelineIndex) => (
@@ -6642,6 +6712,157 @@ const BookDiagramNodeBox = styled.div`
     line-height: 1.55;
     word-break: keep-all;
     overflow-wrap: anywhere;
+  }
+`;
+
+/* 비교·순서 카드: 흐름도 상자와 같은 평면 언어(1px 테두리·왼쪽 3px 선·각진 모서리). 아이콘은 흐름도 상자와 같은 32px. */
+const BookCardGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(${props => Math.min(props.$count || 1, 4)}, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+
+  @container (max-width: 760px) {
+    grid-template-columns: repeat(${props => Math.min(props.$count || 1, 2)}, minmax(0, 1fr));
+  }
+
+  @container (max-width: 430px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const BookCard = styled.section`
+  min-width: 0;
+  padding: 10px 11px 11px;
+  border: 1px solid rgba(168, 178, 188, 0.16);
+  border-left: 3px solid ${props => (
+    props.$tone === 'good' ? '#6fae8a'
+      : props.$tone === 'warn' ? '#c8644f'
+      : props.$color
+  )};
+  background: ${props => (
+    props.$tone === 'good' ? 'rgba(111, 174, 138, 0.07)'
+      : props.$tone === 'warn' ? 'rgba(200, 100, 79, 0.07)'
+      : `${props.$color}0e`
+  )};
+
+  small {
+    display: inline-block;
+    margin-bottom: 4px;
+    padding: 0 6px;
+    border-left: 2px solid ${props => props.$color};
+    color: #d5b97d;
+    font-size: 0.62rem;
+    font-weight: 950;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  strong {
+    display: block;
+    color: #eef1f3;
+    font-size: 0.88rem;
+    font-weight: 760;
+    line-height: 1.4;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  > ul {
+    display: grid;
+    gap: 4px;
+    margin: 8px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  > ul > li {
+    position: relative;
+    min-width: 0;
+    padding-left: 11px;
+    color: #c3ccd2;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  > ul > li::before {
+    content: '';
+    position: absolute;
+    top: 0.62em;
+    left: 0;
+    width: 5px;
+    height: 1px;
+    background: ${props => props.$color};
+  }
+`;
+
+const BookCardHead = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+
+  > div {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+`;
+
+const BookCardNumber = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border: 1px solid ${props => props.$color}88;
+  background: ${props => props.$color}22;
+  color: #f2ece2;
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1;
+`;
+
+/* 카드 안 스킬 줄: 아이콘 32px(좁은 화면 28px)에 이름을 붙인다. 아이콘·이름 어디에 마우스를 올려도 툴팁이 뜬다. */
+const BookCardIcons = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 6px 12px;
+  margin: 9px 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    min-width: 0;
+    font-size: 0.8rem;
+    font-weight: 650;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    max-width: 100%;
+    margin: 0;
+    border-bottom: 0;
+    white-space: normal;
+  }
+
+  a > img,
+  a > span:first-child {
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (max-width: 520px) {
+    a > img,
+    a > span:first-child {
+      width: 28px;
+      height: 28px;
+    }
   }
 `;
 

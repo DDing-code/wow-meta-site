@@ -212,6 +212,29 @@ test('영역마다 한눈에 보기 그림을 두고, 그림의 낱말은 실제
   expect(container.querySelectorAll('nav a')).toHaveLength(1);
 });
 
+test('설명 카드마다 그림이 있고, 설명과 팁은 한두 줄을 넘지 않는다', () => {
+  // 2026-10-20 사용자 원칙 '글은 적게, 그림은 많이'. 설명 60자·팁 55자·영역 안내 60자를 넘으면 세 줄로 꺾인다.
+  const entries = container.querySelectorAll('dl > div[data-art]');
+  expect(entries).toHaveLength(beginnerSections.reduce((sum, section) => sum + section.entries.length, 0));
+  for (const entry of entries) expect(entry.querySelector('img, svg')).not.toBeNull();
+  expect(container.querySelectorAll('#consumables dl img')).toHaveLength(6);
+  expect(container.querySelectorAll('#ready button[aria-pressed] svg')).toHaveLength(5);
+  for (const section of beginnerSections) {
+    expect(section.intro.length).toBeLessThanOrEqual(60);
+    if (section.note) expect(section.note.length).toBeLessThanOrEqual(60);
+    for (const entry of section.entries) {
+      expect(entry.description.length).toBeLessThanOrEqual(60);
+      expect(entry.tip.length).toBeLessThanOrEqual(55);
+    }
+  }
+  for (const screen of beginnerCraftingScreens) {
+    expect(screen.summary.length).toBeLessThanOrEqual(60);
+    for (const item of screen.legend) expect(item.text.length).toBeLessThanOrEqual(60);
+  }
+  for (const group of [...consumables.groups, ...beginnerEmbellishments.groups]) expect(group.intro.length).toBeLessThanOrEqual(60);
+  expect(container.querySelector('header h1 + p').textContent.length).toBeLessThanOrEqual(60);
+});
+
 test('첫 파티 준비 다섯 가지는 눌러서 확인 표시하고 진행 수를 보여 준다', () => {
   const buttons = container.querySelectorAll('#ready button[aria-pressed]');
   expect(buttons).toHaveLength(5);

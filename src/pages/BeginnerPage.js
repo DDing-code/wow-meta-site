@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ArrowRight, BookOpen, Castle, Check, Compass, FlaskConical, Hammer, ListChecks, Search, Shield, Swords, X } from 'lucide-react';
-import { beginnerCraftingScreens, beginnerEmbellishments, beginnerMaps, beginnerSections, beginnerSources } from '../data/beginnerGuide.js';
+import {
+  ArrowRight, ArrowUpCircle, Backpack, BadgeCheck, Ban, BarChart3, BookOpen, Castle, ChartNoAxesColumn, Check, Coins, Compass, Crosshair, DoorOpen, Eraser, Flag,
+  FlaskConical, Footprints, Gauge, Gem, Hammer, Hand, HeartHandshake, HeartPulse, Hourglass, Keyboard, KeyRound, Layers, ListChecks, Magnet, Mail,
+  MessageCircleQuestion, Package, PenLine, Puzzle, RefreshCw, Repeat, Replace, RotateCcw, ScrollText, Search, Send, Shield, ShieldPlus, Shirt, Skull,
+  Sparkle, Sparkles, Star, Swords, Timer, Users, UsersRound, Vault, Wrench, X, Zap,
+} from 'lucide-react';
+import { beginnerCraftingScreens, beginnerEmbellishments, beginnerMaps, beginnerSections, beginnerSources, craftingStepIcons } from '../data/beginnerGuide.js';
 import consumables from '../data/beginnerConsumables.json';
 import { CraftingScreen } from '../components/beginner/CraftingScreens.js';
 import { SectionMap, parseStep } from '../components/beginner/BeginnerMaps.js';
@@ -12,8 +17,15 @@ const GOLD = '#d2b373';
 const LINE = 'rgba(168, 178, 188, 0.14)';
 const LINE_STRONG = 'rgba(168, 178, 188, 0.2)';
 const PANEL = 'rgba(13, 18, 22, 0.62)';
+const INK = '#0f1419';
 
 const sectionIcons = { basics: Compass, combat: Swords, content: Castle, equipment: Shield, consumables: FlaskConical, crafting: Hammer, ready: ListChecks };
+// 설명 카드마다 두는 그림. 자료(beginnerGuide.js)의 icon 이름 → lucide 부품. 소모품 카드는 group의 게임 아이콘을 대신 쓴다.
+const cardIcons = {
+  ArrowUpCircle, Backpack, BadgeCheck, Ban, BarChart3, BookOpen, Castle, ChartNoAxesColumn, Coins, Compass, Crosshair, DoorOpen, Eraser, Flag, Footprints, Gauge, Gem, Hammer, Hand,
+  HeartHandshake, HeartPulse, Hourglass, Keyboard, KeyRound, Layers, Magnet, Mail, MessageCircleQuestion, Package, PenLine, Puzzle, RefreshCw, Repeat, Replace, RotateCcw, ScrollText,
+  Send, Shield, ShieldPlus, Shirt, Skull, Sparkle, Sparkles, Star, Swords, Timer, Users, UsersRound, Vault, Wrench, Zap,
+};
 const startLinks = [
   { id: 'basics', icon: Compass, title: '와우가 처음이라면', text: '직업과 역할부터 알아보기' },
   { id: 'consumables', icon: FlaskConical, title: '무엇을 챙겨야 할까?', text: '영약·물약·음식·보석·마법부여 찾아보기' },
@@ -257,20 +269,35 @@ const Entries = styled.dl`
 `;
 const Entry = styled.div`
   display: grid;
-  align-content: start;
-  gap: 8px;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
   min-width: 0;
-  padding: 18px 18px 20px;
+  padding: 16px 18px 16px 16px;
   border: 1px solid ${LINE_STRONG};
   background: ${PANEL};
   transition: border-color 160ms ease, box-shadow 160ms ease;
   &:hover { border-color: rgba(210, 179, 115, 0.4); box-shadow: inset 0 2px 0 ${GOLD}; }
-  dt { color: #eef1f3; font-size: 1rem; font-weight: 720; line-height: 1.45; }
-  dd { color: #c3cbd0; font-size: 0.9rem; line-height: 1.8; }
+  dt { color: #eef1f3; font-size: 0.98rem; font-weight: 720; line-height: 1.4; }
+  dd { margin-top: 5px; color: #c3cbd0; font-size: 0.86rem; line-height: 1.65; }
+  dd > p { text-wrap: pretty; }
   mark { background: transparent; color: ${GOLD}; box-shadow: inset 0 -1px 0 rgba(210, 179, 115, 0.6); }
   &[data-done='true'] { border-color: rgba(210, 179, 115, 0.5); box-shadow: inset 0 2px 0 ${GOLD}; }
   &[data-done='true'] dt { color: ${GOLD}; }
-  @media (max-width: 560px) { padding: 15px 14px 17px; }
+  @media (max-width: 560px) { grid-template-columns: 44px minmax(0, 1fr); gap: 12px; padding: 14px 14px 14px 12px; }
+`;
+// 카드의 그림 칸. 선 아이콘은 영역 아이콘과 같은 금색, 게임 아이콘(소모품)은 그대로 보여 준다.
+const EntryArt = styled.div`
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-top: 1px;
+  border: 1px solid rgba(168, 178, 188, 0.18);
+  background: ${INK};
+  color: #d9bd7b;
+  img { width: 36px; height: 36px; border: 1px solid #59636b; }
+  @media (max-width: 560px) { width: 44px; height: 44px; svg { width: 22px; height: 22px; } img { width: 32px; height: 32px; } }
 `;
 const When = styled.span`
   display: block;
@@ -296,12 +323,13 @@ const Step = styled.b`
 `;
 const Tip = styled.p`
   margin-top: 6px;
-  padding-top: 10px;
+  padding-top: 7px;
   border-top: 1px dashed rgba(168, 178, 188, 0.22);
   color: #a4b0b8;
-  font-size: 0.84rem;
-  line-height: 1.7;
-  b { margin-right: 8px; color: ${GOLD}; font-size: 0.74rem; font-weight: 750; }
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-wrap: pretty;
+  b { margin-right: 8px; color: ${GOLD}; font-size: 0.72rem; font-weight: 750; }
 `;
 const PhaseHead = styled.h3`
   display: flex;
@@ -317,23 +345,20 @@ const PhaseHead = styled.h3`
   small { color: #7f8b94; font-size: 0.76rem; font-weight: 600; font-variant-numeric: tabular-nums; }
   & + dl { margin-top: 14px; }
 `;
-const CheckRow = styled.div`
-  display: grid;
-  grid-template-columns: 44px minmax(0, 1fr);
-  gap: 14px;
-  align-items: start;
-`;
+// 출발 준비 카드는 그림 칸이 곧 확인 단추다. 누르기 전에는 단계 그림, 누르면 금색 바탕에 확인 표시.
 const CheckButton = styled.button`
   display: grid;
   place-items: center;
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
+  margin-top: 1px;
   border: 1px solid ${props => (props.$done ? GOLD : '#59636b')};
-  background: ${props => (props.$done ? GOLD : 'transparent')};
-  color: #0a0d10;
+  background: ${props => (props.$done ? GOLD : INK)};
+  color: ${props => (props.$done ? '#0a0d10' : '#d9bd7b')};
   transition: background 160ms ease, border-color 160ms ease;
   &:hover { border-color: ${GOLD}; }
   &:focus-visible { outline: 2px solid ${GOLD}; outline-offset: 2px; }
+  @media (max-width: 560px) { width: 44px; height: 44px; svg { width: 22px; height: 22px; } }
 `;
 const ScreenGuide = styled.div`
   margin-top: 32px;
@@ -565,28 +590,25 @@ function BeginnerPage() {
     return next;
   });
   const readyTotal = beginnerSections.find(section => section.id === 'ready').entries.length;
+  const groupIcon = new Map(consumables.groups.map(group => [group.id, group.items[0].icon]));
+  // 카드의 그림: 소모품은 묶음의 게임 아이콘, 주문제작 단계는 번호별 그림, 나머지는 자료의 icon 이름.
+  const renderArt = entry => {
+    if (entry.group && groupIcon.has(entry.group)) return <img src={`https://wow.zamimg.com/images/wow/icons/medium/${groupIcon.get(entry.group)}.jpg`} alt="" width="36" height="36" loading="lazy" />;
+    const Icon = cardIcons[entry.icon || craftingStepIcons[parseStep(entry.term)?.number]] || BookOpen;
+    return <Icon size={26} strokeWidth={1.6} aria-hidden="true" />;
+  };
   const renderEntry = (section, entry) => (
-    <Entry key={entry.term} id={entryIds.get(entry.term)} data-done={section.id === 'ready' && done.has(entry.term) ? 'true' : undefined}>
-      {section.id === 'ready' ? (
-        <CheckRow>
-          <CheckButton type="button" $done={done.has(entry.term)} aria-pressed={done.has(entry.term)} aria-label={`${entry.term} 확인`} onClick={() => toggleDone(entry.term)}>{done.has(entry.term) ? <Check size={22} strokeWidth={2.5} aria-hidden="true" /> : null}</CheckButton>
-          <div>
-            <dt><Term term={entry.term} query={query} /></dt>
-            <dd>
-              <p><Highlight text={entry.description} query={query} /></p>
-              <Tip><b>팁</b>{' '}<Highlight text={entry.tip} query={query} /></Tip>
-            </dd>
-          </div>
-        </CheckRow>
-      ) : (
-        <>
-          <dt>{entry.when ? <When>{entry.when}</When> : null}<Term term={entry.term} query={query} /></dt>
-          <dd>
-            <p><Highlight text={entry.description} query={query} /></p>
-            <Tip><b>팁</b>{' '}<Highlight text={entry.tip} query={query} /></Tip>
-          </dd>
-        </>
-      )}
+    <Entry key={entry.term} id={entryIds.get(entry.term)} data-done={section.id === 'ready' && done.has(entry.term) ? 'true' : undefined} data-art={entry.group ? 'item' : 'icon'}>
+      {section.id === 'ready'
+        ? <CheckButton type="button" $done={done.has(entry.term)} aria-pressed={done.has(entry.term)} aria-label={`${entry.term} 확인`} onClick={() => toggleDone(entry.term)}>{done.has(entry.term) ? <Check size={26} strokeWidth={2.5} aria-hidden="true" /> : renderArt(entry)}</CheckButton>
+        : <EntryArt aria-hidden="true">{renderArt(entry)}</EntryArt>}
+      <div>
+        <dt>{entry.when ? <When>{entry.when}</When> : null}<Term term={entry.term} query={query} /></dt>
+        <dd>
+          <p><Highlight text={entry.description} query={query} /></p>
+          <Tip><b>팁</b>{' '}<Highlight text={entry.tip} query={query} /></Tip>
+        </dd>
+      </div>
     </Entry>
   );
   const renderEntries = section => {
@@ -615,7 +637,7 @@ function BeginnerPage() {
         <div>
           <Eyebrow>와우의 첫걸음 · 본 서버 공통 개념</Eyebrow>
           <Title>초보자 안내</Title>
-          <Lead>처음 보는 말이 많아도 괜찮습니다. 역할과 전투 용어부터 소모품·보석·마법부여, 주문제작과 장식까지, 영역마다 그림으로 먼저 보고 필요한 설명만 찾아 읽을 수 있게 모았습니다.</Lead>
+          <Lead>그림으로 먼저 보고, 필요한 설명만 찾아 읽으세요.</Lead>
         </div>
         <SearchPanel>
           <label htmlFor="beginner-search">모르는 말 찾아보기</label>
@@ -673,8 +695,7 @@ function BeginnerPage() {
                 {section.id === 'consumables' && itemCount ? (
                   <ItemCatalog aria-label="현재 버전 소모품·보석·마법부여 목록">
                     <h3>한밤 {consumables.metadata.patch} 소모품·보석·마법부여 목록</h3>
-                    <p>이름과 아이콘을 누르면 한국어 아이템 설명이 열립니다. 같은 이름의 품질별 효과와 사용 조건도 확인하세요. 아래는 전투 준비에 쓰는 주요 소모품, 장비 홈에 끼우는 보석, 장비 부위에 바르는 마법부여이며, 모두 구매할 필요는 없습니다.</p>
-                    <p>1차 스탯은 힘·민첩·지능, 2차 스탯은 치명타·가속·특화·유연성을 말합니다. ‘든든한’ 음식은 사망 후에도 효과가 남습니다. 마법부여는 같은 이름도 품질이 두 단계라, 목록에는 높은 단계의 아이템과 수치를 적었습니다. 귀속 조건을 확인해 준비하세요.</p>
+                    <p>이름이나 아이콘을 누르면 한국어 아이템 설명이 열립니다. 다 살 필요는 없습니다. 1차 스탯은 힘·민첩·지능, 2차 스탯은 치명타·가속·특화·유연성. 마법부여는 높은 품질 단계 기준입니다.</p>
                     {itemGroups.map(group => (
                       <ItemGroup key={group.id} data-item-group={group.id}>
                         <h4>{group.title}</h4>
@@ -697,7 +718,7 @@ function BeginnerPage() {
                 {section.id === 'crafting' && screens.length ? (
                   <ScreenGuide aria-label="주문 제작 창 화면 안내">
                     <h3>게임 창에서 어디를 누르나요?</h3>
-                    <p>주문 제작 담당 NPC에게 말을 걸면 열리는 ‘주문 제작 의뢰’ 창을 실제 한국어 게임 화면의 배치와 문구대로 본떠 그렸습니다. 번호 상자가 가리키는 곳을 위 단계와 맞춰 보세요. 장비·재료·숫자는 예시입니다.</p>
+                    <p>실제 한국어 게임 창을 본떠 그렸습니다. 번호를 위 단계와 맞춰 보세요. 장비·숫자는 예시입니다.</p>
                     {screens.map(screen => (
                       <ScreenFigure key={screen.id} data-screen-id={screen.id}>
                         <figcaption>
@@ -752,13 +773,13 @@ function BeginnerPage() {
             <NextPanel>
               <div>
                 <h2>이제 내 직업을 알아볼까요?</h2>
-                <p>공통 개념을 익혔다면 전문화 가이드에서 내 스킬과 전투 흐름, 특성 견본을 확인하세요.</p>
+                <p>전문화 가이드에서 내 스킬과 전투 흐름, 특성 견본을 보세요.</p>
               </div>
               <NextLink to="/guide">내 직업 가이드 찾기 <ArrowRight size={16} aria-hidden="true" /></NextLink>
             </NextPanel>
             <Sources>
               <summary>설명의 범위와 공식 참고 자료</summary>
-              <p>클래식이 아닌 본 서버의 공통 개념을 다룹니다. 시즌별 입장 조건·보상 수치·구매할 소모품 목록은 게임 안 안내와 현재 전문화 가이드를 확인하세요. 과거 공식 소개 글은 시스템의 기본 개념을 참고한 자료이며, 당시 수치를 현재 시즌에 적용하지 않습니다.</p>
+              <p>본 서버 공통 개념입니다. 시즌별 수치는 게임 안 안내와 전문화 가이드가 기준입니다.</p>
               <ul>{beginnerSources.map(source => <li key={source.href}><a href={source.href} target="_blank" rel="noreferrer">{source.title}</a> — {source.detail}</li>)}</ul>
             </Sources>
           </Footer>

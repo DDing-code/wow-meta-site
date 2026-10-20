@@ -1076,12 +1076,67 @@ function validateBookTemplate(spec, manuscript, kbSkills) {
       ...[].concat(block.diagram || []).flatMap(diagram => (diagram.layers || []).flatMap(layer => layer.nodes || [])).filter(node => node.kind !== 'effect'),
     ];
     nodes.forEach(node => assert(known(node.skillId), `${blockPrefix}: unknown skill ${node.skillId} in diagram/timeline`));
+    // 비교·순서 카드(cards): 칸마다 이름과 스킬 아이콘 줄·한두 줄 설명. 줄은 짧게(60자) 둔다.
+    [].concat(block.cards || []).forEach((cardSet, cardIndex) => {
+      const cardPrefix = `${blockPrefix}.cards[${cardIndex}]`;
+      assert(cardSet.title?.length >= 4 && cardSet.items?.length >= 2, `${cardPrefix}: cards need a title and at least two items`);
+      cardSet.items.forEach((item, itemIndex) => {
+        const itemPrefix = `${cardPrefix}.items[${itemIndex}]`;
+        assert(item.label?.length >= 2, `${itemPrefix}: item needs a label`);
+        assert(!item.tone || ['good', 'warn'].includes(item.tone), `${itemPrefix}: tone must be empty, 'good' or 'warn'`);
+        assert((item.skillIds || []).length || (item.lines || []).length, `${itemPrefix}: item needs skillIds or lines`);
+        (item.skillIds || []).forEach(id => assert(/^\d+$/.test(String(id)) && known(id), `${itemPrefix}: unknown skill ${id}`));
+        (item.lines || []).forEach(line => assert(String(line || '').length >= 2 && String(line).length <= VISUAL_LIMITS.cardLine, `${itemPrefix}: card line must be 2~${VISUAL_LIMITS.cardLine} chars — ${line}`));
+      });
+    });
   });
   const drillTimelines = blocks.filter(block => block.part === 'drill' && block.timeline);
   assert(drillTimelines.length >= 3, `${prefix}: practice part needs opener, single-target and AoE timelines`);
   const fieldTitles = blocks.filter(block => block.part === 'field').map(block => block.title).join(' ');
   assert(/쐐기/.test(fieldTitles) && /공격대/.test(fieldTitles), `${prefix}: field part needs Mythic+ and raid chapters`);
   assert(!book.start || (book.start.beginner?.label && book.start.expert?.label), `${prefix}: start fork needs beginner and expert labels`);
+  if (book.visual) validateVisualBook(spec, manuscript);
+}
+
+// '글은 적게, 그림은 많이' 개념서(book.visual): 장마다 그림이 하나 이상 있고, 글은 한두 줄을 넘지 않는다.
+// 글자 수 기준은 PC 본문 폭(74ch)에서 두 줄 안에 들어오는 길이다. 2026-10-20 악마 흑마법사에서 처음 적용.
+const VISUAL_LIMITS = {
+  intro: 120,
+  partSummary: 70,
+  concept: 110,
+  paragraphs: 2,
+  paragraphChars: 150,
+  bullets: 4,
+  bullet: 50,
+  mistake: 55,
+  quizAnswer: 120,
+  example: 130,
+  aside: 160,
+  cardLine: 60,
+};
+function validateVisualBook(spec, manuscript) {
+  const book = manuscript.book;
+  const prefix = `${spec.id}.book(visual)`;
+  const len = value => String(value || '').length;
+  assert(len(book.intro) <= VISUAL_LIMITS.intro, `${prefix}: intro must be ≤${VISUAL_LIMITS.intro} chars`);
+  (book.parts || []).forEach(part => assert(len(part.summary) <= VISUAL_LIMITS.partSummary, `${prefix}.parts.${part.id}: summary must be ≤${VISUAL_LIMITS.partSummary} chars`));
+  (manuscript.blocks || []).forEach((block, index) => {
+    const blockPrefix = `${spec.id}.blocks[${index}](visual)`;
+    const figures = (block.skillGroups?.length ? 1 : 0)
+      + [].concat(block.diagram || []).length
+      + [].concat(block.timeline || []).length
+      + [].concat(block.cards || []).length;
+    assert(figures >= 1, `${blockPrefix}: every chapter needs a figure (skillGroups, diagram, timeline or cards)`);
+    assert(len(block.concept) <= VISUAL_LIMITS.concept, `${blockPrefix}: concept must be ≤${VISUAL_LIMITS.concept} chars`);
+    const paragraphs = block.paragraphs || [];
+    assert(paragraphs.length <= VISUAL_LIMITS.paragraphs && paragraphs.join('').length <= VISUAL_LIMITS.paragraphChars, `${blockPrefix}: body must be ≤${VISUAL_LIMITS.paragraphs} paragraphs and ≤${VISUAL_LIMITS.paragraphChars} chars`);
+    const bullets = block.bullets || [];
+    assert(bullets.length <= VISUAL_LIMITS.bullets && bullets.every(item => len(item) <= VISUAL_LIMITS.bullet), `${blockPrefix}: bullets must be ≤${VISUAL_LIMITS.bullets} items of ≤${VISUAL_LIMITS.bullet} chars`);
+    (block.mistakes || []).forEach(item => assert(len(item) <= VISUAL_LIMITS.mistake, `${blockPrefix}: mistake must be ≤${VISUAL_LIMITS.mistake} chars — ${item}`));
+    (block.quiz || []).forEach(item => assert(len(item.a) <= VISUAL_LIMITS.quizAnswer, `${blockPrefix}: quiz answer must be ≤${VISUAL_LIMITS.quizAnswer} chars — ${item.q}`));
+    assert(!block.example?.text || len(block.example.text) <= VISUAL_LIMITS.example, `${blockPrefix}: example must be ≤${VISUAL_LIMITS.example} chars`);
+    assert(!block.aside?.text || len(block.aside.text) <= VISUAL_LIMITS.aside, `${blockPrefix}: aside must be ≤${VISUAL_LIMITS.aside} chars`);
+  });
 }
 
 function validateManuscript(spec, manuscript, kbSkills) {
