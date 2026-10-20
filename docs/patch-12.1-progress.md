@@ -919,3 +919,9 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 화면: 섹션 이름을 '소모품 · 보석 · 마법부여'로 줄였다(PC 목차 두 줄 꺾임 방지). 설명 '마법부여 고르기 · 다시 바르기' 1개 추가(48설명). 묶음의 `keywords`로 '마부' 검색이 마법부여 46종을 찾는다. 테스트 11개(마법부여 1개 추가).
 - 확인: `validate:quiet` 9단계 통과, 빌드본 320·390·1440px 마법부여 46종 넘침·깨진 아이콘·글자 넘침·오류 0(`artifacts/beginner-enchants-20261020/shots`, `ui-check.json`).
 - 배포: 사이트 `bf89486c` main 푸시, KB 로컬 `bc66abd`. 정리 빌드 `main.5327e95a.js`(소스맵 0, 공개 파일 6개)를 `vercel deploy --prebuilt --prod`로 올렸고, 공개 `/`·`/beginner`가 같은 번들을 내며 로컬과 SHA-256이 같다. ODDIN 브라우저로 공개 /beginner에서 마법부여 46종·전체 129종·섹션 이름을 확인했다.
+
+### 2026-10-20 초보자 안내 — 영역별 '한눈에 보기' 그림
+- 요청: 초보자 페이지가 줄글 위주라 지루하다는 의견. 영역 7곳 글 앞에 그림을 넣었다(`src/components/beginner/BeginnerMaps.js`, 자료 `beginnerGuide.js`의 `beginnerMaps`). 역할·파티, 전투 흐름과 12초 시간 막대, 콘텐츠 계단, 장비 설명 번호 짚기, 소모품 타임라인, 주문제작 10단계 네 묶음 지도, 누르는 출발 준비 체크리스트(진행 수 표시)다. 그림 낱말은 설명 카드 id `<영역 id>-e<순서>`로 이동하고, 검색 중에는 그림을 숨긴다. Fable 디자인과 설명 카드 글은 그대로 두었다. 장비 그림의 이름·수치는 예시라고 그림에 적었다.
+- 확인: 초보자 테스트 13개(그림·체크리스트 2개 추가) 통과, `npm run build`의 전체 검증 통과. 빌드본 320·390·1440px 캡처 넘침·오류 0(`artifacts/beginner-visual-20261020/shots.cjs`, 대표 3장만 커밋).
+- 커밋에서 뺀 것: `kb-skills.json`·`kb-synergies.json`·`translation-validation-report.json`(생성 시각만 바뀜), 관계없는 artifacts.
+- 배포: 사이트 `6c6c0f98` main 푸시. 정리 빌드 `main.effc26ab.js`(소스맵 0, 공개 파일 6개, `artifacts/beginner-visual-20261020/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 공개 `/`·`/beginner`가 같은 번들을 내며 로컬과 SHA-256이 같다. ODDIN 브라우저로 공개 /beginner에서 그림 7개, 낱말 누르면 해당 설명으로 이동(전멸·트라이 → `#combat-e13`), 체크리스트 0/5 → 1/5, 가로 넘침 없음을 확인했다.
