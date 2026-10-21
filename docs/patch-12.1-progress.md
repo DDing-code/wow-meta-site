@@ -972,3 +972,5 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 원고: `link-guides.cjs`에 교체 기능을 더해 26개 원고와 KB 정본의 `video.youtubeId`만 새 번호로 바꿨다. 붙어 있던 번호가 매니페스트의 예전 번호와 같을 때만 바꾸고, 다시 돌리면 0건이다. 제목·채널·악마 흑마 영상은 그대로다.
 - 검사: validate-guide-manuscripts의 고정 목록(GUIDE_VIDEOS) 26개를 새 번호로 바꿨다. 사이트 `src`·`scripts`와 KB에 예전 번호는 남아 있지 않다.
 - 화면 확인: `artifacts/guide-videos-v4-20261022/shots.cjs`(앞 판 복사)로 빌드본 32곳 통과. 캡처는 `shots/`.
+- 배포: 사이트 `3ef590c8` main 푸시, KB 로컬 `fb5071a`. 정리 빌드 `main.4177d310.js`(소스맵 0, 공개 파일 6개, `artifacts/guide-videos-v4-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 https://wowmeta.vercel.app 이 새 번들을 내보내고 소스맵은 열리지 않는다(403). shots.cjs를 운영 주소로 다시 돌려 32곳 모두 통과(`shots/`는 운영 캡처).
+- 예전 판 삭제: 배포 확인 뒤 ai-hub `youtube-upload.mjs delete-replaced`로 와우메타 채널의 예전 26편(cutout-v3)을 영구 삭제했다. 편집 화면에서 채널 번호·영상 번호·파일 이름·제목이 모두 맞을 때만 누르고, 새 판 번호와 악마 흑마 영상은 지우지 못하게 막았다. 공개 조회(oEmbed)로 예전 26편 404, 새 26편 200, 악마 흑마 200을 확인했다.
