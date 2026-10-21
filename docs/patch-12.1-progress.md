@@ -949,3 +949,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 원고: `video: { youtubeId, title, channel }`을 악마 흑마 원고와 KB 정본(guide-12.1.json)에 같이 넣었다(`artifacts/visual-guide-20261020/warlock-demonology.cjs` → `apply.cjs`). 제목 '한밤 2시즌 12.1.5 악마 흑마법사 가이드'·채널 '띵진이'는 유튜브 oEmbed 원문 그대로다.
 - 화면: `GuideVideoSection`이 본문(Article) 맨 위, 운용 요약 앞에 16:9 영상 칸(최대 930px, 기존 평면 테두리)과 제목·채널·'유튜브에서 보기' 줄을 둔다. 목차 맨 위에 '영상으로 보기'가 붙는다. 원고에 `video`가 없으면 아무것도 그리지 않는다.
 - 검사: validate-guide-manuscripts가 악마 흑마에만 영상이 있는지, 화면이 원고 영상을 그리는지 확인한다. 화면 확인은 `artifacts/guide-video-20261021/shots.cjs <origin>`(1440·390·320, 결과 shots/).
+- 배포: 사이트 `4a390f50` main 푸시, KB 로컬 `1c44d70`. 정리 빌드 `main.a7cc92c7.js`(소스맵 0, 공개 파일 6개, `artifacts/guide-video-20261021/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 공개 `/`·`/guide/warlock/demonology`가 같은 번들을 내며 로컬과 SHA-256이 같다. 공개 사이트에서 1440·390·320px 모두 영상이 본문 맨 위에 16:9로 나오고 가로 넘침이 없으며, 고통 가이드에는 영상 칸이 없다.
