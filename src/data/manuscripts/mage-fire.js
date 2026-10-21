@@ -2961,7 +2961,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'jHxVRWuDRrU',
+      youtubeId: 'VryKveYgh3E',
       title: '한밤 2시즌 12.1.5 화염 마법사 가이드',
       channel: 'wowmeta 와우메타',
     },

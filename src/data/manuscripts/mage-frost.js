@@ -3033,7 +3033,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'Qq7-Px-mWPI',
+      youtubeId: 'AZNhRLnrLWg',
       title: '한밤 2시즌 12.1.5 냉기 마법사 가이드',
       channel: 'wowmeta 와우메타',
     },

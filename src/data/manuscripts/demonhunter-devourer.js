@@ -3125,7 +3125,7 @@ const manuscript = {
     },
     defaultHeroBranchIndex: 1,
     video: {
-      youtubeId: 'ZNkS37HCaEk',
+      youtubeId: 'Nn2Lv5eO4i8',
       title: '한밤 2시즌 12.1.5 포식 악마사냥꾼 가이드',
       channel: 'wowmeta 와우메타',
     },

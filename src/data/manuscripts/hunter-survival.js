@@ -3058,7 +3058,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'snj6Ti5rTPk',
+      youtubeId: 'rHz7tAP-5DQ',
       title: '한밤 2시즌 12.1.5 생존 사냥꾼 가이드',
       channel: 'wowmeta 와우메타',
     },

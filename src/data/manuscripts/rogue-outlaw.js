@@ -2824,7 +2824,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'VpSNve8G0OY',
+      youtubeId: 'fawuQO6Y4wY',
       title: '한밤 2시즌 12.1.5 무법 도적 가이드',
       channel: 'wowmeta 와우메타',
     },

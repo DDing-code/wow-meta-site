@@ -2851,7 +2851,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: '2b200laSzSc',
+      youtubeId: '9cRRD1pR714',
       title: '한밤 2시즌 12.1.5 무기 전사 가이드',
       channel: 'wowmeta 와우메타',
     },

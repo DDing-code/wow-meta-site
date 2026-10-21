@@ -3092,7 +3092,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'pHJKb9gkpUA',
+      youtubeId: 'FKYlere9xM8',
       title: '한밤 2시즌 12.1.5 암살 도적 가이드',
       channel: 'wowmeta 와우메타',
     },

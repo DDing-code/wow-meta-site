@@ -965,3 +965,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 화면 확인: `artifacts/guide-videos-20261022/shots.cjs`가 빌드본에서 27개 가이드의 영상 칸(본문 첫 칸, iframe 번호, 채널 표시, 16:9, 목차 링크, 가로 넘침)과 영상이 없어야 할 가이드 3곳을 본다. 32곳 모두 통과. 캡처는 `shots/`(화염 마법사 1440·390·320, 냉기 죽기 1440).
 - 남은 일: 사용자가 같은 날 '누끼 잔여·기계적인 효과음'을 다시 지적했다. 공개된 26편은 cutout-v3 판이고, 수정판으로 다시 올리면 번호가 바뀌므로 그때 원고·검사 목록을 함께 갱신해야 한다.
 - 배포: 사이트 `1b1a7b2f` main 푸시, KB 로컬 `409e712`. 정리 빌드 `main.c8cb0d96.js`(소스맵 0, 공개 파일 6개, `artifacts/guide-videos-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 https://wowmeta.vercel.app 이 새 번들을 내보내는 것과 소스맵이 열리지 않는 것을 확인했고, shots.cjs를 운영 주소로 다시 돌려 32곳 모두 통과했다(`shots/`는 운영 캡처).
+
+## 2026-10-22 · 딜러 26개 가이드 영상을 새 판으로 교체
+
+- 요청: "26편 새로 만들어서 올려. 새 주소에 맞춰서 가이드도 업데이트 하면 돼. 예전 건 다 지워". 투명 그림·자연스러운 효과음으로 다시 만든 native-alpha-v4 26편이 와우메타 채널에 새 번호로 공개됐다(ai-hub `outputs/pixel-guides/youtube-manifest.json`의 `youtubeId`, 예전 번호는 각 항목 `replacedUpload.youtubeId`).
+- 원고: `link-guides.cjs`에 교체 기능을 더해 26개 원고와 KB 정본의 `video.youtubeId`만 새 번호로 바꿨다. 붙어 있던 번호가 매니페스트의 예전 번호와 같을 때만 바꾸고, 다시 돌리면 0건이다. 제목·채널·악마 흑마 영상은 그대로다.
+- 검사: validate-guide-manuscripts의 고정 목록(GUIDE_VIDEOS) 26개를 새 번호로 바꿨다. 사이트 `src`·`scripts`와 KB에 예전 번호는 남아 있지 않다.
+- 화면 확인: `artifacts/guide-videos-v4-20261022/shots.cjs`(앞 판 복사)로 빌드본 32곳 통과. 캡처는 `shots/`.

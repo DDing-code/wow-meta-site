@@ -2790,7 +2790,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'dhiaVJB8zG8',
+      youtubeId: '4mEWcRJCyJg',
       title: '한밤 2시즌 12.1.5 정기 주술사 가이드',
       channel: 'wowmeta 와우메타',
     },

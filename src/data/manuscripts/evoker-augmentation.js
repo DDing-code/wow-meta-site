@@ -3309,7 +3309,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'ltk5MOvr4o8',
+      youtubeId: 'YkvKzuUkmU4',
       title: '한밤 2시즌 12.1.5 증강 기원사 가이드',
       channel: 'wowmeta 와우메타',
     },

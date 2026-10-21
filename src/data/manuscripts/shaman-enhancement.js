@@ -3107,7 +3107,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'tHEf3FJPoRg',
+      youtubeId: 'FAQ08MxAc-8',
       title: '한밤 2시즌 12.1.5 고양 주술사 가이드',
       channel: 'wowmeta 와우메타',
     },

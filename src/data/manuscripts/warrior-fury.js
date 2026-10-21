@@ -3015,7 +3015,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'AnjQyV8TFS8',
+      youtubeId: 'zhfLQwO4oms',
       title: '한밤 2시즌 12.1.5 분노 전사 가이드',
       channel: 'wowmeta 와우메타',
     },

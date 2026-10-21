@@ -2938,7 +2938,7 @@ const manuscript = {
     },
   },
     video: {
-      youtubeId: 'nx77BtEFF1w',
+      youtubeId: 'B_xITeY9RW4',
       title: '한밤 2시즌 12.1.5 암흑 사제 가이드',
       channel: 'wowmeta 와우메타',
     },

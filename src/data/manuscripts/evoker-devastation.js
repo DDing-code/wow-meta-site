@@ -2946,7 +2946,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'zQ9wLlmLec8',
+      youtubeId: 'qkDCGOuyOjE',
       title: '한밤 2시즌 12.1.5 황폐 기원사 가이드',
       channel: 'wowmeta 와우메타',
     },

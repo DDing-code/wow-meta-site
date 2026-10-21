@@ -2872,7 +2872,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: '2ncZmWBLugU',
+      youtubeId: 'kizl0s4_cv8',
       title: '한밤 2시즌 12.1.5 징벌 성기사 가이드',
       channel: 'wowmeta 와우메타',
     },

@@ -3045,7 +3045,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'T6lV1oa0Ajw',
+      youtubeId: 'C88_MxxpPfY',
       title: '한밤 2시즌 12.1.5 조화 드루이드 가이드',
       channel: 'wowmeta 와우메타',
     },

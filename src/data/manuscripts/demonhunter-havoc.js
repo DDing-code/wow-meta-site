@@ -3219,7 +3219,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'I2RqcnCI5S8',
+      youtubeId: 'sN2NnShDDKQ',
       title: '한밤 2시즌 12.1.5 파멸 악마사냥꾼 가이드',
       channel: 'wowmeta 와우메타',
     },

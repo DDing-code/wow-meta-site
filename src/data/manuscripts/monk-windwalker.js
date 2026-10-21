@@ -3314,7 +3314,7 @@ const manuscript = {
       },
     },
     video: {
-      youtubeId: 'GG1iy4D-dro',
+      youtubeId: 'E7E2bk-wF5s',
       title: '한밤 2시즌 12.1.5 풍운 수도사 가이드',
       channel: 'wowmeta 와우메타',
     },

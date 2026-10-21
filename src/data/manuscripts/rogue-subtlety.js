@@ -2924,7 +2924,7 @@ const manuscript = {
     },
     defaultHeroBranchIndex: 1,
     video: {
-      youtubeId: 'bfc4qHU2p9o',
+      youtubeId: 'zV_MNF4n9qM',
       title: '한밤 2시즌 12.1.5 잠행 도적 가이드',
       channel: 'wowmeta 와우메타',
     },
