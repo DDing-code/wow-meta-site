@@ -15,6 +15,7 @@ import {
   Gauge,
   Link2,
   Map as MapIcon,
+  Play,
   RotateCcw,
   Shield,
   Sparkles,
@@ -2457,6 +2458,43 @@ function BookVoicesSection({ layout, guide, inlineTerms }) {
   );
 }
 
+// 글 상단 영상: manuscript.video = { youtubeId, title, channel? }. 원고에 있을 때만 본문 맨 위에 둔다.
+function GuideVideoSection({ video }) {
+  const youtubeId = String(video?.youtubeId || '');
+  if (!/^[A-Za-z0-9_-]{11}$/.test(youtubeId)) return null;
+  const watchUrl = `https://www.youtube.com/watch?v=${youtubeId}`;
+  return (
+    <SectionBlock id="guide-video" data-guide-block="video">
+      <SectionHead>
+        <SectionIcon><Play size={17} /></SectionIcon>
+        <div>
+          <SectionKicker>video</SectionKicker>
+          <SectionTitle>영상으로 보기</SectionTitle>
+        </div>
+      </SectionHead>
+      <GuideVideoFrame>
+        <iframe
+          src={`https://www.youtube.com/embed/${youtubeId}?rel=0`}
+          title={video.title || '가이드 영상'}
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        />
+      </GuideVideoFrame>
+      <GuideVideoCaption>
+        <span>
+          <strong>{video.title}</strong>
+          {!!video.channel && <small>{video.channel}</small>}
+        </span>
+        <a href={watchUrl} target="_blank" rel="noopener noreferrer">
+          유튜브에서 보기
+          <ArrowRight size={13} aria-hidden="true" />
+        </a>
+      </GuideVideoCaption>
+    </SectionBlock>
+  );
+}
+
 function NarrativeGuideSection({ guide, manuscript, data, profile, chartPlan, inlineTerms }) {
   const [tipsExpanded, setTipsExpanded] = useState(false);
   const [activeHeroBranchIndex, setActiveHeroBranchIndex] = useState(manuscript?.defaultHeroBranchIndex || 0);
@@ -3185,6 +3223,7 @@ function GuideDetailPage() {
         <GuideNav aria-label="가이드 목차">
           <GuideNavTitle>목차</GuideNavTitle>
           {[
+            ...(manuscript?.video?.youtubeId ? [['guide-video', '영상으로 보기']] : []),
             ['overview', '운용 요약'],
             ...(manuscript ? [['guide-core', '공략 핵심']] : []),
             ...(manuscript?.talentBuilds?.length ? [['guide-talents', '특성 견본']] : []),
@@ -3222,6 +3261,8 @@ function GuideDetailPage() {
         </GuideNav>
 
         <Article>
+          {!!manuscript?.video && <GuideVideoSection video={manuscript.video} />}
+
           <SectionBlock id="overview">
             <SectionHead>
               <SectionIcon><BookOpen size={17} /></SectionIcon>
@@ -4936,6 +4977,71 @@ const SectionBlock = styled.section`
   &#guide-core {
     display: flex;
     flex-direction: column;
+  }
+`;
+
+const GuideVideoFrame = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 930px;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(168, 178, 188, 0.18);
+  background: rgba(13, 18, 22, 0.66);
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+`;
+
+const GuideVideoCaption = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 930px;
+  margin-top: 12px;
+
+  > span {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    align-items: baseline;
+    min-width: 0;
+  }
+
+  strong {
+    color: #e3e7e9;
+    font-size: 0.94rem;
+    font-weight: 650;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  small {
+    color: #95a1a9;
+    font-size: 0.8rem;
+  }
+
+  a {
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+    color: #d9bd7b;
+    font-size: 0.84rem;
+    font-weight: 650;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  a:hover,
+  a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 `;
 

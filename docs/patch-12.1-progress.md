@@ -942,3 +942,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 확인: `npm run validate:quiet` 9단계 통과. 빌드본(4413) 320·390·1440px에서 오류·가로 넘침·깨진 아이콘·카드 줄 세 줄 초과 0, `verify-demonology-guide.cjs` 통과. 장별 캡처 `artifacts/visual-guide-20261020/shots/`.
 - 심화 확인(배포 전): 17장·5부 구성, 심화·부록 3장(영혼 수확자·시즌 2 세트 자동 파열·로그 복기), 흐름도, 영웅 특성 탭의 오프닝·우선순위, 특성 견본·근거가 모두 남아 있다. 본문에서 뺀 수치는 그림·카드·참고 상자·근거로 옮겨졌고, 원고 어디에도 없는 것은 툴팁에 있는 3개(연발 파멸의 화살 40미터, 영혼각인 마법진 6초, 마음의 눈 지능 2%)뿐이다. 다른 39개 가이드는 그대로다.
 - 배포: 초보자 글 줄이기와 함께 사이트 `7fb80162` main 푸시, KB 로컬 `e2eb521`. 정리 빌드 `main.7f55b173.js`(소스맵 0, 공개 파일 6개, `artifacts/visual-guide-20261020/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 공개 `/`·`/beginner`·`/guide/warlock/demonology`가 같은 번들을 내며 로컬과 SHA-256이 같다. ODDIN 브라우저로 공개 악마 흑마 가이드에서 심화·부록 부와 3장·마력 착취 변형·카드 6개, 가로 넘침 없음을 확인했다.
+
+### 2026-10-21 악마 흑마법사 — 글 상단 유튜브 영상
+
+- 요청: "https://youtu.be/siB3vmyt0W0 이 영상 악마 흑마법사 가이드 글 상단에 박아줘". 다른 39개 가이드는 그대로다.
+- 원고: `video: { youtubeId, title, channel }`을 악마 흑마 원고와 KB 정본(guide-12.1.json)에 같이 넣었다(`artifacts/visual-guide-20261020/warlock-demonology.cjs` → `apply.cjs`). 제목 '한밤 2시즌 12.1.5 악마 흑마법사 가이드'·채널 '띵진이'는 유튜브 oEmbed 원문 그대로다.
+- 화면: `GuideVideoSection`이 본문(Article) 맨 위, 운용 요약 앞에 16:9 영상 칸(최대 930px, 기존 평면 테두리)과 제목·채널·'유튜브에서 보기' 줄을 둔다. 목차 맨 위에 '영상으로 보기'가 붙는다. 원고에 `video`가 없으면 아무것도 그리지 않는다.
+- 검사: validate-guide-manuscripts가 악마 흑마에만 영상이 있는지, 화면이 원고 영상을 그리는지 확인한다. 화면 확인은 `artifacts/guide-video-20261021/shots.cjs <origin>`(1440·390·320, 결과 shots/).

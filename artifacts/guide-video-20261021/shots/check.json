@@ -1,0 +1,48 @@
+[
+  {
+    "width": 1440,
+    "errors": [],
+    "firstInArticle": true,
+    "src": "https://www.youtube.com/embed/siB3vmyt0W0?rel=0",
+    "frame": {
+      "w": 928,
+      "h": 521
+    },
+    "ratio": 1.781,
+    "docOverflow": false,
+    "navLink": true,
+    "captionLink": "https://www.youtube.com/watch?v=siB3vmyt0W0"
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "firstInArticle": true,
+    "src": "https://www.youtube.com/embed/siB3vmyt0W0?rel=0",
+    "frame": {
+      "w": 368,
+      "h": 206
+    },
+    "ratio": 1.785,
+    "docOverflow": false,
+    "navLink": true,
+    "captionLink": "https://www.youtube.com/watch?v=siB3vmyt0W0"
+  },
+  {
+    "width": 320,
+    "errors": [],
+    "firstInArticle": true,
+    "src": "https://www.youtube.com/embed/siB3vmyt0W0?rel=0",
+    "frame": {
+      "w": 298,
+      "h": 167
+    },
+    "ratio": 1.787,
+    "docOverflow": false,
+    "navLink": true,
+    "captionLink": "https://www.youtube.com/watch?v=siB3vmyt0W0"
+  },
+  {
+    "other": "warlock-affliction",
+    "hasVideo": 0
+  }
+]

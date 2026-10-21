@@ -1314,6 +1314,10 @@ function main() {
   if (fs.existsSync(demonologySource)) {
     assert(JSON.stringify(JSON.parse(read(demonologySource))) === JSON.stringify(demonology), 'Demonology must match its canonical 12.1 manuscript');
   }
+  // 글 상단 영상(2026-10-21 사용자 요청)은 악마 흑마에만 둔다.
+  assert(demonology.video?.youtubeId === 'siB3vmyt0W0' && demonology.video.title, 'Demonology must keep the requested top video');
+  assert(Object.entries(manuscripts).every(([id, item]) => id === 'warlock-demonology' || !item.video), 'Only Demonology was asked to show a top video');
+  assert(read(path.join(SITE_ROOT, 'src/pages/GuideDetailPage.js')).includes('{!!manuscript?.video && <GuideVideoSection video={manuscript.video} />}'), 'Guide page must render the manuscript video above the article');
   const demonologyNotes = Object.values(kbSkills).filter(skill => /[\\/]12-흑마법사[\\/]악마[\\/]/.test(skill.source?.kbPath || ''));
   assert(demonologyNotes.length === 65 && demonologyNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 65 Demonology notes must retain reviewed descriptions');
   assert(!demonology.extraSkills?.length && !kbSkills['186185'], 'Demonology must not restore NPC Demonic Sacrifice or bypass canonical skills');
