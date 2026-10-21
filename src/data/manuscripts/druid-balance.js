@@ -3044,6 +3044,11 @@ const manuscript = {
         sourceUrl: 'https://www.icy-veins.com/wow/balance-druid-pve-dps-spec-builds-talents',
       },
     },
+    video: {
+      youtubeId: 'T6lV1oa0Ajw',
+      title: '한밤 2시즌 12.1.5 조화 드루이드 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

@@ -3292,6 +3292,11 @@ const manuscript = {
         sourceUrl: 'https://www.icy-veins.com/wow/feral-druid-pve-dps-spec-builds-talents',
       },
     },
+    video: {
+      youtubeId: 'eSYVU9EMAUI',
+      title: '한밤 2시즌 12.1.5 야성 드루이드 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

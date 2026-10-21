@@ -956,3 +956,11 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 사용자 수정 지시(2026-10-22) "포식 풀링 1초 전 영혼 제물 → 흡수로 풀링". 2026-10-20 로그 대조 때 흡수 → 영혼 제물로 바꿨던 2부 오프닝 장(제목·개념·첫 문단·요점·rail 2개), 영웅 탭 오프닝 2개(궤멸자·공허상흔), 맨 위 오프닝을 풀링 1초 전 영혼 제물 → 흡수(풀링 타이머 0초)로 되돌렸다. 첫 별 뒤 공허 광선 등 나머지 순서는 그대로다. 적용은 `artifacts/cycle-order-20261020/patches/demonhunter-devourer.followup.cjs`(기존 패치 끝에서 호출)로 했고, 근거는 원고 evidence '풀링 순서 확정(2026-10-22)'에 남겼다.
 - 배포: 사이트 `20f14f69` main 푸시, KB 로컬 `24f79dc`. 정리 빌드 `main.0ea4afa6.js`(소스맵 0, 공개 파일 6개, `artifacts/devourer-pull-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다.
 - 같은 날 도트 가이드 영상(ai-hub `outputs/pixel-guides/specs/demonhunter-devourer`)의 시작 순서 컷도 같은 순서로 다시 출력했다.
+
+## 2026-10-22 · 딜러 26개 가이드에 와우메타 채널 영상 연결
+
+- 요청: "냉기 죽기 영상만 올라가있네. 인증했으니까 전부 올려줘". 딜러 26편을 새 채널 wowmeta 와우메타(@wowmeta-kr)에 공개한 뒤, 각 가이드 글 맨 위에 그 영상을 넣었다. 번호는 ai-hub `outputs/pixel-guides/youtube-manifest.json`(26편 모두 공개 확인)에서 가져왔다.
+- 원고: 26개 원고와 KB 정본(guide-12.1.json)에 `video { youtubeId, title, channel: 'wowmeta 와우메타' }`를 같이 넣었다(ai-hub `outputs/pixel-guides/link-guides.cjs`). 악마 흑마 영상(siB3vmyt0W0, 띵진이 채널)은 그대로다. 탱커·힐러 14개에는 영상이 없다.
+- 검사: validate-guide-manuscripts가 이제 27개 가이드의 영상 번호를 고정 목록(GUIDE_VIDEOS)과 대조하고, 제목 형식·채널 이름을 확인하며, 목록 밖 가이드에는 영상이 없는지 본다.
+- 화면 확인: `artifacts/guide-videos-20261022/shots.cjs`가 빌드본에서 27개 가이드의 영상 칸(본문 첫 칸, iframe 번호, 채널 표시, 16:9, 목차 링크, 가로 넘침)과 영상이 없어야 할 가이드 3곳을 본다. 32곳 모두 통과. 캡처는 `shots/`(화염 마법사 1440·390·320, 냉기 죽기 1440).
+- 남은 일: 사용자가 같은 날 '누끼 잔여·기계적인 효과음'을 다시 지적했다. 공개된 26편은 cutout-v3 판이고, 수정판으로 다시 올리면 번호가 바뀌므로 그때 원고·검사 목록을 함께 갱신해야 한다.

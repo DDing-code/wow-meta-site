@@ -3057,6 +3057,11 @@ const manuscript = {
         sourceUrl: 'https://www.icy-veins.com/wow/survival-hunter-pve-dps-spec-builds-talents',
       },
     },
+    video: {
+      youtubeId: 'snj6Ti5rTPk',
+      title: '한밤 2시즌 12.1.5 생존 사냥꾼 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

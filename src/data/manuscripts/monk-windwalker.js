@@ -3313,6 +3313,11 @@ const manuscript = {
         sourceUrl: 'https://www.icy-veins.com/wow/windwalker-monk-pve-dps-spec-builds-talents',
       },
     },
+    video: {
+      youtubeId: 'GG1iy4D-dro',
+      title: '한밤 2시즌 12.1.5 풍운 수도사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

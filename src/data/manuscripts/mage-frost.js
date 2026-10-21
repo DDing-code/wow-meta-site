@@ -3032,6 +3032,11 @@ const manuscript = {
         sourceUrl: 'https://www.icy-veins.com/wow/frost-mage-pve-dps-spec-builds-talents',
       },
     },
+    video: {
+      youtubeId: 'Qq7-Px-mWPI',
+      title: '한밤 2시즌 12.1.5 냉기 마법사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

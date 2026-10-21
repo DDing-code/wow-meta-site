@@ -1314,9 +1314,48 @@ function main() {
   if (fs.existsSync(demonologySource)) {
     assert(JSON.stringify(JSON.parse(read(demonologySource))) === JSON.stringify(demonology), 'Demonology must match its canonical 12.1 manuscript');
   }
-  // 글 상단 영상(2026-10-21 사용자 요청)은 악마 흑마에만 둔다.
+  // 글 상단 영상: 악마 흑마(2026-10-21 사용자 요청)와 wowmeta 와우메타 채널에 공개한 딜러 26편(2026-10-22).
+  // 번호는 ai-hub outputs/pixel-guides/youtube-manifest.json 의 공개 확인된 값이다. 여기 없는 가이드에는 영상을 두지 않는다.
+  const GUIDE_VIDEOS = new Map([
+    ['warlock-demonology', 'siB3vmyt0W0'],
+  ['deathknight-frost', 'jCAfRaK1CIQ'],
+    ['deathknight-unholy', 'k3fi3ZNVXWU'],
+    ['demonhunter-devourer', 'ZNkS37HCaEk'],
+    ['demonhunter-havoc', 'I2RqcnCI5S8'],
+    ['druid-balance', 'T6lV1oa0Ajw'],
+    ['druid-feral', 'eSYVU9EMAUI'],
+    ['evoker-augmentation', 'ltk5MOvr4o8'],
+    ['evoker-devastation', 'zQ9wLlmLec8'],
+    ['hunter-beastmastery', 'q_-lniZhL9o'],
+    ['hunter-marksmanship', 'DjTU6TNhV0s'],
+    ['hunter-survival', 'snj6Ti5rTPk'],
+    ['mage-arcane', 'uOg_CQIeZ80'],
+    ['mage-fire', 'jHxVRWuDRrU'],
+    ['mage-frost', 'Qq7-Px-mWPI'],
+    ['monk-windwalker', 'GG1iy4D-dro'],
+    ['paladin-retribution', '2ncZmWBLugU'],
+    ['priest-shadow', 'nx77BtEFF1w'],
+    ['rogue-assassination', 'pHJKb9gkpUA'],
+    ['rogue-outlaw', 'VpSNve8G0OY'],
+    ['rogue-subtlety', 'bfc4qHU2p9o'],
+    ['shaman-elemental', 'dhiaVJB8zG8'],
+    ['shaman-enhancement', 'tHEf3FJPoRg'],
+    ['warlock-affliction', 'QxEujB0cpFg'],
+    ['warlock-destruction', '7itfmRUC_Bk'],
+    ['warrior-arms', '2b200laSzSc'],
+    ['warrior-fury', 'AnjQyV8TFS8'],
+  ]);
   assert(demonology.video?.youtubeId === 'siB3vmyt0W0' && demonology.video.title, 'Demonology must keep the requested top video');
-  assert(Object.entries(manuscripts).every(([id, item]) => id === 'warlock-demonology' || !item.video), 'Only Demonology was asked to show a top video');
+  for (const [id, item] of Object.entries(manuscripts)) {
+    const expected = GUIDE_VIDEOS.get(id);
+    if (!expected) {
+      assert(!item.video, `${id} has no published guide video`);
+      continue;
+    }
+    assert(item.video?.youtubeId === expected, `${id} must link its published guide video ${expected}`);
+    assert(/^한밤 2시즌 12\.1\.5 .+ 가이드$/.test(item.video.title || ''), `${id} video title must match the uploaded title`);
+    assert(id === 'warlock-demonology' || item.video.channel === 'wowmeta 와우메타', `${id} video must come from the wowmeta 와우메타 channel`);
+  }
   assert(read(path.join(SITE_ROOT, 'src/pages/GuideDetailPage.js')).includes('{!!manuscript?.video && <GuideVideoSection video={manuscript.video} />}'), 'Guide page must render the manuscript video above the article');
   const demonologyNotes = Object.values(kbSkills).filter(skill => /[\\/]12-흑마법사[\\/]악마[\\/]/.test(skill.source?.kbPath || ''));
   assert(demonologyNotes.length === 65 && demonologyNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 65 Demonology notes must retain reviewed descriptions');

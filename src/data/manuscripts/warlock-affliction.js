@@ -3026,6 +3026,11 @@ const manuscript = {
         confirmedRanking: false,
       },
     },
+    video: {
+      youtubeId: 'QxEujB0cpFg',
+      title: '한밤 2시즌 12.1.5 고통 흑마법사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

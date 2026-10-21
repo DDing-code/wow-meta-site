@@ -3014,6 +3014,11 @@ const manuscript = {
         sourceUrl: 'https://www.icy-veins.com/wow/fury-warrior-pve-dps-spec-builds-talents',
       },
     },
+    video: {
+      youtubeId: 'AnjQyV8TFS8',
+      title: '한밤 2시즌 12.1.5 분노 전사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

@@ -3091,6 +3091,11 @@ const manuscript = {
         sourceUrl: 'https://www.icy-veins.com/wow/assassination-rogue-pve-dps-spec-builds-talents',
       },
     },
+    video: {
+      youtubeId: 'pHJKb9gkpUA',
+      title: '한밤 2시즌 12.1.5 암살 도적 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

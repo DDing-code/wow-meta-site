@@ -3218,6 +3218,11 @@ const manuscript = {
         sourceUrl: 'https://www.icy-veins.com/wow/havoc-demon-hunter-pve-dps-spec-builds-talents',
       },
     },
+    video: {
+      youtubeId: 'I2RqcnCI5S8',
+      title: '한밤 2시즌 12.1.5 파멸 악마사냥꾼 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

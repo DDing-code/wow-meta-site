@@ -3106,6 +3106,11 @@ const manuscript = {
         sourceUrl: 'https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-spec-builds-talents',
       },
     },
+    video: {
+      youtubeId: 'tHEf3FJPoRg',
+      title: '한밤 2시즌 12.1.5 고양 주술사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;
