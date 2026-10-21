@@ -950,3 +950,9 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 화면: `GuideVideoSection`이 본문(Article) 맨 위, 운용 요약 앞에 16:9 영상 칸(최대 930px, 기존 평면 테두리)과 제목·채널·'유튜브에서 보기' 줄을 둔다. 목차 맨 위에 '영상으로 보기'가 붙는다. 원고에 `video`가 없으면 아무것도 그리지 않는다.
 - 검사: validate-guide-manuscripts가 악마 흑마에만 영상이 있는지, 화면이 원고 영상을 그리는지 확인한다. 화면 확인은 `artifacts/guide-video-20261021/shots.cjs <origin>`(1440·390·320, 결과 shots/).
 - 배포: 사이트 `4a390f50` main 푸시, KB 로컬 `1c44d70`. 정리 빌드 `main.a7cc92c7.js`(소스맵 0, 공개 파일 6개, `artifacts/guide-video-20261021/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 공개 `/`·`/guide/warlock/demonology`가 같은 번들을 내며 로컬과 SHA-256이 같다. 공개 사이트에서 1440·390·320px 모두 영상이 본문 맨 위에 16:9로 나오고 가로 넘침이 없으며, 고통 가이드에는 영상 칸이 없다.
+
+## 2026-10-22 · 포식 오프닝 풀링 순서 되돌림
+
+- 사용자 수정 지시(2026-10-22) "포식 풀링 1초 전 영혼 제물 → 흡수로 풀링". 2026-10-20 로그 대조 때 흡수 → 영혼 제물로 바꿨던 2부 오프닝 장(제목·개념·첫 문단·요점·rail 2개), 영웅 탭 오프닝 2개(궤멸자·공허상흔), 맨 위 오프닝을 풀링 1초 전 영혼 제물 → 흡수(풀링 타이머 0초)로 되돌렸다. 첫 별 뒤 공허 광선 등 나머지 순서는 그대로다. 적용은 `artifacts/cycle-order-20261020/patches/demonhunter-devourer.followup.cjs`(기존 패치 끝에서 호출)로 했고, 근거는 원고 evidence '풀링 순서 확정(2026-10-22)'에 남겼다.
+- 배포: 사이트 `20f14f69` main 푸시, KB 로컬 `24f79dc`. 정리 빌드 `main.0ea4afa6.js`(소스맵 0, 공개 파일 6개, `artifacts/devourer-pull-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다.
+- 같은 날 도트 가이드 영상(ai-hub `outputs/pixel-guides/specs/demonhunter-devourer`)의 시작 순서 컷도 같은 순서로 다시 출력했다.
