@@ -128,7 +128,9 @@ const orbStep = nymrissa.phases.flatMap(p => p.steps).find(step => step.title.in
 for (const name of ['그림자 망토', '거북의 상', '천상의 보호막']) assert.ok(orbStep.text.includes(name), `nymrissa immune squad: ${name}`);
 assert.ok(orbStep.text.includes('얼음 방패는 쓰지 못합니다'), 'nymrissa: ice block cannot be used');
 const vashnik = bosses.find(b => b.id === 'vashnik');
-assert.ok(JSON.stringify(vashnik).includes('주황 동그라미, 보라 마름모, 파란 네모, 해골, 빨간 가위'), 'vashnik marker line');
+// 2026-10-22 '레이드스트래츠 있는 건 바꿔' 요청으로 첫 파도 징표 줄은 raidstrats 오프셋 플랜의 색 순서를 따른다.
+assert.ok(JSON.stringify(vashnik).includes('은빛 달, 주황 동그라미, 초록 세모, 노란 별, 빨간 가위'), 'vashnik marker line (raidstrats offset order)');
+assert.ok(!JSON.stringify(vashnik).includes('보라 마름모, 파란 네모, 해골, 빨간 가위'), 'vashnik: old marker order is gone');
 const sentinels = bosses.find(b => b.id === 'sentinels');
 assert.ok(JSON.stringify(sentinels).includes('초록 하나인 사람은 멈춰서 핑을 찍고'), 'sentinels: 1 pings');
 const explorers = bosses.find(b => b.id === 'explorers');
