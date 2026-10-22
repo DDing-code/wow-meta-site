@@ -995,3 +995,13 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 레이드 글에도 조사 묶기(`TermGlue`)를 넣었다('영혼결속 / 으로').
 - 레이드 그림: 스토리보드 배치도 74장(1920×1080 PNG)을 `public/images/raid/plan/<컷>-960.webp`·`-1600.webp`(합 23MB), 네임드 스프라이트 17종을 `public/images/raid/sprites/<id>.webp`(투명)로 줄였다(`artifacts/text-wrap-20261022/raid-images.py`). KB 정본에 행동마다 `figure{plan,caption}`, 네임드 `sprites`·`figure`(개요)·`recap`(복습), 맹독 심연 편 `figure`·`recap`을 붙였다(`raid-figures.cjs`, 74컷 각 1번, 그림 없는 행동 2개: 키식스 '쿨기 시점', 파수꾼 '사잇단계 뒤 교대'). 화면은 넓을 때 왼쪽 배치도·오른쪽 글, 좁을 때 그림→글, 누르면 1600px 큰 그림(Esc·닫기).
 - 검사: validate-raid-guide에 74컷·파일·스프라이트 확인, RaidGuidePage.test.js에 배치도·확대·조사 묶기 2개, verify-guide-wrapping에 파괴 흑마와 '이름표 조각 블록화·한 글자 꺾임' 확인을 더했다. validate-guide-tooltips·charts의 코드 모양 검사를 새 동작에 맞췄다.
+
+## 2026-10-22 · 레이드 배치도 전장을 실제 네임드 방 모양·바닥 문양으로
+
+- 요청: "실제 전장 모양이랑 좀 맞게 해줘 바닥 문양이랑". 배치도 74장의 바탕(전장) 그림이 글로만 지시해 만든 것이라 실제 방과 달랐다(키식스는 네모 신전 홀로, 네크잘리는 네모, 송곳니는 꽉 찬 삼각형, 제단은 둥근 바닥 등).
+- 참고 자료: raidstrats.gg 신화 공략의 플래너(iframe `/planner?embed=true&id=…`)가 canvas 위에 까는 실제 위에서 본 지도 `raidstrats.gg/background/<이름>.png`를 받았다(스토리보드 `references/planner/fetch.py`, 10장: Soulcoiler·Entombed_Sentinels·explorers_1·kithix·Sszorak·Twin_Fangs_2·bargained_crown·ulatek1·vashnik·님리사 ebb83c6f…). WebFetch·ODDIN 브라우저는 Cloudflare에 막혀 사용자 크롬(ODDIN 확장)으로 주소만 읽었다. 바쉬니크는 2880×2560 지도를 예전 구도(바닥 왼쪽 2/3·웅덩이 오른쪽)로 16:9 잘라 썼다.
+- 다시 만들기: `assets.py`에 ARENA_REFS·ARENA_REF_NOTE(실제 지도를 붙여 같은 윤곽·비율·바닥 문양·주변으로, 구조를 바꾸거나 더하지 말 것)를 넣고 `gen_assets.py`가 전장 생성 때 참고 지도를 `-i`로 붙이게 했다. 전장 10장(복도 `hall`은 참고 지도가 없어 그대로)을 codex image_gen으로 다시 만들고 `plan.py`로 74장을 다시 그렸다. 실제 모양에 맞춰 네크잘리 우물 표시를 전장 한가운데로, 울라텍 옆 단상 표시를 양쪽 돌문 위로, 바쉬니크 '구역 유지' 상자를 웅덩이 테두리 앞까지로 옮겼다. 예전 판은 `assets/arenas/_before-real/`·`plan/_before-real/`에 보존.
+- 사이트: `raid-images.py`로 WebP 148장 교체(144장 바뀜, 복도 바탕 컷 2개×2는 동일). 컷 이름·개수가 같아 KB의 figure 연결은 그대로이고, 정본 안내문에 "전장 모양과 바닥 문양은 실제 게임의 위에서 본 지도를 따라 그렸다"를 넣었다(`artifacts/text-wrap-20261022/raid-note-real-arenas.py`, raid-figures.cjs 문구도 맞춤).
+- 검사: `npm run validate:quiet` 10단계 통과, `RaidGuidePage.test.js` 9개 통과. 운영 확인은 `artifacts/raid-arenas-20261022/raid-shots.cjs`(TEST_ORIGIN=운영)로 5편×1440·390px 10곳 통과(깨진 그림 0, 넘침 0, 오류 0).
+- 남은 일: 송곳니(속 빈 삼각형)·파수꾼(네모 바닥) 컷의 네임드·조 자리는 전장 밖 독·구조물 위에 놓인 예시 배치 그대로다(실제 자리 근거가 없어 옮기지 않음). 복도(`hall`) 바탕은 참고 지도가 없다. 울라텍 마지막 단상은 플래너 지도에 없어 주 단상 위쪽에 표시만 둔다.
+- 배포: 사이트 `8e459b2f` main 푸시, KB 로컬 `cd702d2`. 정리 빌드 `main.3debc2a2.js`(소스맵 0, `artifacts/raid-arenas-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 https://wowmeta.vercel.app/raid 가 새 번들을 내고 배치도 WebP가 로컬과 SHA-256이 같으며 소스맵은 403이다.
