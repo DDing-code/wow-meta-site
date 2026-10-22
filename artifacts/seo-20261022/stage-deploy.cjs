@@ -30,7 +30,7 @@ function copy(dir, dest) {
 }
 copy(path.join(root, 'build'), target);
 assert(fs.existsSync(path.join(target, 'assets/spec-icons-white-v1.png')));
-assert(fs.existsSync(path.join(target, 'robots.txt')) && fs.existsSync(path.join(target, 'sitemap.xml')));
+assert(fs.existsSync(path.join(target, 'robots.txt')) && fs.existsSync(path.join(target, 'sitemap.xml')) && fs.existsSync(path.join(target, 'google2591626ad1cc3f8d.html')));
 fs.writeFileSync(path.join(output, 'config.json'), JSON.stringify({version:3,routes:[{handle:'filesystem'},{src:'/(.*)',dest:'/index.html'}]}, null, 2));
 fs.writeFileSync(path.join(stage, '.vercel/project.json'), JSON.stringify(project, null, 2));
 const manifest = JSON.parse(fs.readFileSync(path.join(target, 'asset-manifest.json'), 'utf8'));

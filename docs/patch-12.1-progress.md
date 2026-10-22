@@ -1032,3 +1032,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 그림 15컷: 스토리보드 `plan.py`를 고쳐(예전 판 `plan.before-tactics.py`, 예전 PNG `plan/_before-tactics/`) 네크잘리 우물 조 5명, 바쉬니크 징표 색·역할, 탐험가 상자 2명·물고기 시점, 스조라크 집결 탱커 제외·문구, 송곳니 구슬·나눠 맞기 문구, 제단 단두대 5명·2단계 유령/보호막 네임드를 말라크라스로 다시 그렸다(raidstrats 2단계 탱킹 대상). `raid-planner-20261022/raid-images.py`로 WebP 28장 교체.
 - 검사: `validate-raid-guide`의 바쉬니크 징표 문구를 새 순서로 바꾸고 예전 순서가 남지 않는지 막았다. `npm run validate:quiet` 10단계, `RaidGuidePage.test.js` 9개 통과. 빌드본에서 네크잘리·바쉬니크·제단 화면과 새 스킬 툴팁 링크를 확인했다.
 - 배포: 사이트 `e2eb5efd` main 푸시, KB 로컬 `5d21047`. 정리 빌드 `main.a825534f.js`(소스맵 0, `artifacts/raid-tactics-compare-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 /raid가 새 번들을 내고 바뀐 배치도 WebP가 로컬과 SHA-256이 같으며 소스맵은 403이다. 운영 화면에서 새 징표 순서·우물 조·송곳니 글을 확인했다.
+
+## 2026-10-22 · 구글 검색 노출 설정
+
+- 요청: "와우메타 버셀 앱 사이트가 구글 검색에 노출되도록 설정해줘". 운영 주소는 검색 차단(X-Robots-Tag·noindex)이 없었지만 robots.txt·sitemap.xml이 없어 홈 HTML이 대신 나왔고, 모든 페이지 제목·설명이 같았다.
+- 바꾼 것: `public/robots.txt`(전체 허용, /mockups 제외, 사이트맵 주소), `public/sitemap.xml` 63개 주소(주요 메뉴 7·가이드 40·레이드 편 5·로그 리포트 11, `npm run seo:sitemap`이 만들고 `validate:seo`가 막음), `src/data/siteMeta.js`+`src/components/RouteMeta.js`로 주소마다 제목·설명·canonical·robots·og 태그, `public/index.html` 기본 설명·og 태그. 테스트 `src/data/siteMeta.test.js`.
+- 서치 콘솔: 사용자 승인 후 크롬(sunwait777 계정)에서 URL 접두어 속성 `https://wowmeta.vercel.app/`을 추가하고 HTML 파일(`public/google2591626ad1cc3f8d.html`)로 소유권을 확인했다. sitemap.xml을 제출했고(제출 직후 상태는 '가져올 수 없음' — 서버는 Googlebot에게 200 application/xml로 줌), 홈 주소 색인 생성을 요청했다.
+- 배포: 사이트 `022525ef` main 푸시. 정리 빌드 `main.44471181.js`(소스맵 0, `artifacts/seo-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다(확인 파일 넣고 한 번 더). 운영에서 robots.txt 200 text/plain, sitemap.xml 200 application/xml, 확인 파일 200, 소스맵 403이고, `artifacts/seo-20261022/check-meta.cjs`를 운영 주소로 돌려 6개 페이지 제목·canonical이 맞았다.

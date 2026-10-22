@@ -20,3 +20,4 @@
 
 - 페이지별 제목·설명·대표 주소(canonical)는 `src/data/siteMeta.js`가 정하고 `src/components/RouteMeta.js`가 붙인다. 새 페이지 경로를 만들면 `STATIC_PAGES`에 넣는다.
 - `public/sitemap.xml`은 `npm run seo:sitemap`으로 만든다(직접 고치지 않음). 가이드·레이드 편·로그 리포트가 늘거나 경로가 바뀌면 다시 만든다. `npm run validate:seo`가 목록과 다르면 막는다.
+- `public/google2591626ad1cc3f8d.html`은 구글 서치 콘솔 소유 확인 파일이다. 지우면 확인이 풀린다(속성 `https://wowmeta.vercel.app/`, sunwait777 계정).
