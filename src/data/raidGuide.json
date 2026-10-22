@@ -4,7 +4,7 @@
     "updated": "2026-10-22",
     "difficulty": "신화",
     "status": "글과 배치도 공개 · 영상은 준비 중",
-    "storyboard": "ai-hub workspace/outputs/mythic-raid-storyboard-20261022 (5편 74컷·팁 108개)의 내레이션·팁을 글로 옮기고, 위에서 본 배치도 74장(plan/)과 네임드 스프라이트를 사이트 public/images/raid에 WebP로 넣었다. 배치도의 전장 바탕 10장은 2026-10-22 raidstrats.gg 플래너의 실제 위에서 본 지도를 참고 그림으로 붙여 같은 윤곽·바닥 문양으로 다시 그렸다(예전 판은 assets/arenas/_before-real). 영상은 다음 단계.",
+    "storyboard": "ai-hub workspace/outputs/mythic-raid-storyboard-20261022 (5편 74컷·팁 108개)의 내레이션·팁을 글로 옮기고, 위에서 본 배치도 74장(plan/)과 네임드 스프라이트를 사이트 public/images/raid에 WebP로 넣었다. 배치도의 전장 바탕 10장은 2026-10-22 raidstrats.gg 플래너의 실제 위에서 본 지도를 참고 그림으로 붙여 같은 윤곽·바닥 문양으로 다시 그렸다(예전 판은 assets/arenas/_before-real). 영상은 다음 단계. 눈으로 확인한 뒤 파수꾼·송곳니 8컷의 인물·기믹 예시를 전장 바닥 안으로 보정했다(수정 전 plan/_before-floor-fit).",
     "basis": "기본안은 Method의 신화 공개 공략. 똬리의 제단·울라텍은 그랄(Grarl)의 한국어 설명회를 함께 참고하고 2026-10-07·10-13 공식 완화 수치로 보정했다. 실제 공대 사용률은 세지 않았다."
   },
   "page": {
