@@ -7,6 +7,7 @@ import Navigation from './components/Navigation.js';
 import HomePage from './pages/HomePage.js';
 import GuidePage from './pages/GuidePage.js';
 import BeginnerPage from './pages/BeginnerPage.js';
+import RaidGuidePage from './pages/RaidGuidePage.js';
 import NewsPage from './pages/NewsPage.js';
 import MockupsPage from './pages/MockupsPage.js';
 import SpellDatabasePage from './pages/WoWSpellDatabasePage.js';
@@ -139,6 +140,8 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/guide" element={<GuidePage />} />
               <Route path="/beginner" element={<BeginnerPage />} />
+              <Route path="/raid" element={<RaidGuidePage />} />
+              <Route path="/raid/:episodeId" element={<RaidGuidePage />} />
               <Route path="/news" element={<NewsPage />} />
               <Route path="/spells" element={<SpellDatabasePage />} />
               <Route path="/logs" element={<LogAnalysisPage />} />

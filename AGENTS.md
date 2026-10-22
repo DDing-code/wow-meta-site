@@ -8,6 +8,7 @@
 - 작업 중 검증은 `npm run validate:quiet`로 한다. 고친 범위의 단계만 줘도 된다(예: `npm run validate:quiet -- guide-copy guide-manuscripts`). 끝낼 때 인자 없이 전체를 한 번 돌린다. 실패한 단계의 전체 출력은 `logs/validate-last.log`에 있다.
 - `npm run sync-kb`는 KB를 고친 뒤 한 번만 돌린다(전체 검증의 첫 단계가 한 번 돌리므로 그 앞뒤로 따로 돌리지 않는다).
 - 배포본을 파일 목록으로 만들 때 `src/data/manuscripts/`와 `scripts/lib/guideManuscripts.cjs`를 빼먹지 않는다.
+- 레이드 가이드(`/raid`, `src/pages/RaidGuidePage.js`)의 글은 KB `08-직업별-Knowledge-Base/00-공통/공용/Meta/raid-guide.json` 하나가 정본이다. 고친 뒤 `npm run sync-kb`로 `src/data/raidGuide.json`을 다시 만들고(직접 고치지 않음), `npm run validate:raid-guide`와 `src/pages/RaidGuidePage.test.js`로 확인한다. 본문 속 직업 스킬은 `skills`, 네임드 기술은 `spells`(번호·아이콘은 한국어 공식 툴팁으로 확인)에 등록해야 아이콘·툴팁이 붙는다.
 
 ## 가이드 용어 (사용자 고정, 2026-10-10)
 
