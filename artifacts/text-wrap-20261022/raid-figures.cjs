@@ -42,15 +42,17 @@ for (const episode of guide.episodes) {
 }
 if (used.size !== Object.keys(scenes).length) throw new Error(`used ${used.size} of ${Object.keys(scenes).length}`);
 guide.metadata.status = '글과 배치도 공개 · 영상은 준비 중';
-guide.metadata.storyboard = 'ai-hub workspace/outputs/mythic-raid-storyboard-20261022 (5편 74컷·팁 108개)의 내레이션·팁을 글로 옮기고, 위에서 본 배치도 74장(plan/)과 네임드 스프라이트를 사이트 public/images/raid에 WebP로 넣었다. 영상은 다음 단계.';
+guide.metadata.storyboard = 'ai-hub workspace/outputs/mythic-raid-storyboard-20261022 (5편 74컷·팁 108개)의 내레이션·팁을 글로 옮기고, 위에서 본 배치도 74장(plan/)과 네임드 스프라이트를 사이트 public/images/raid에 WebP로 넣었다. 배치도의 전장 바탕 10장은 2026-10-22 raidstrats.gg 플래너의 실제 위에서 본 지도를 참고 그림으로 붙여 같은 윤곽·바닥 문양으로 다시 그렸다(예전 판은 assets/arenas/_before-real). 영상은 다음 단계.';
 fs.writeFileSync(KB, JSON.stringify(guide, null, 2) + '\n');
 console.log('figures', used.size);
 // 기준과 한계 안내도 현재 상태로 맞춘다.
 {
   const g = JSON.parse(fs.readFileSync(KB, 'utf8'));
   const old = '이 글은 영상용 스토리보드(5편 74컷)의 내용을 글로 먼저 옮긴 것입니다. 위에서 본 배치도와 영상은 다음 단계에서 붙습니다.';
-  const now = '이 글은 영상용 스토리보드(5편 74컷)의 내용을 글로 옮기고, 컷마다 그린 위에서 본 배치도를 해당 행동 옆에 붙인 것입니다. 배치도의 자리·인원은 예시이며, 영상은 다음 단계에서 붙습니다.';
-  g.basisNotes = g.basisNotes.map(note => (note === old ? now : note));
+  const mid = '이 글은 영상용 스토리보드(5편 74컷)의 내용을 글로 옮기고, 컷마다 그린 위에서 본 배치도를 해당 행동 옆에 붙인 것입니다. 배치도의 자리·인원은 예시이며, 영상은 다음 단계에서 붙습니다.';
+  // 2026-10-22 전장 바탕을 실제 지도대로 다시 그린 뒤의 문구
+  const now = '이 글은 영상용 스토리보드(5편 74컷)의 내용을 글로 옮기고, 컷마다 그린 위에서 본 배치도를 해당 행동 옆에 붙인 것입니다. 배치도의 전장 모양과 바닥 문양은 실제 게임의 위에서 본 지도를 따라 그렸고, 자리·인원은 예시입니다. 영상은 다음 단계에서 붙습니다.';
+  g.basisNotes = g.basisNotes.map(note => (note === old || note === mid ? now : note));
   if (!g.basisNotes.includes(now)) throw new Error('basis note not updated');
   fs.writeFileSync(KB, JSON.stringify(g, null, 2) + '\n');
 }

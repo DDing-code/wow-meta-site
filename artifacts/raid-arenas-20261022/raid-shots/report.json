@@ -1,0 +1,102 @@
+[
+  {
+    "id": "kithix",
+    "width": 1440,
+    "figures": 12,
+    "sprites": 1,
+    "broken": [],
+    "pieces": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "id": "kithix",
+    "width": 390,
+    "figures": 12,
+    "sprites": 1,
+    "broken": [],
+    "pieces": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "id": "nymrissa",
+    "width": 1440,
+    "figures": 9,
+    "sprites": 1,
+    "broken": [],
+    "pieces": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "id": "nymrissa",
+    "width": 390,
+    "figures": 9,
+    "sprites": 1,
+    "broken": [],
+    "pieces": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "id": "venomous-1-6",
+    "width": 1440,
+    "figures": 26,
+    "sprites": 10,
+    "broken": [],
+    "pieces": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "id": "venomous-1-6",
+    "width": 390,
+    "figures": 26,
+    "sprites": 10,
+    "broken": [],
+    "pieces": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "id": "coiled-altar",
+    "width": 1440,
+    "figures": 12,
+    "sprites": 2,
+    "broken": [],
+    "pieces": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "id": "coiled-altar",
+    "width": 390,
+    "figures": 12,
+    "sprites": 2,
+    "broken": [],
+    "pieces": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "id": "ulatek",
+    "width": 1440,
+    "figures": 15,
+    "sprites": 2,
+    "broken": [],
+    "pieces": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "id": "ulatek",
+    "width": 390,
+    "figures": 15,
+    "sprites": 2,
+    "broken": [],
+    "pieces": [],
+    "overflow": false,
+    "errors": []
+  }
+]
