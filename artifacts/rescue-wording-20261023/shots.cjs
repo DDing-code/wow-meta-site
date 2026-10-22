@@ -1,13 +1,13 @@
 // 2026-10-23 '한 명이 급락하면' → '한 명을 살리려면' 문구 교체 확인.
 // 힐러 가이드 5개에서 새 문구가 보이는 곳을 찾아 캡처하고, 예전 문구가 남았는지 센다.
-// 사용: node shots.cjs [origin]   origin 이 없으면 build/ 를 4418 포트로 띄워서 본다. 결과: shots/*.png, shots/check.json
+// 사용: node shots.cjs [origin]   origin 이 없으면 build/ 를 4418 포트로 띄워서 본다. 결과: shots/ (운영 주소를 주면 live/)
 const fs = require('node:fs');
 const http = require('node:http');
 const path = require('node:path');
 const { chromium } = require('F:/01_프로젝트/90_개발/wowmeta/node_modules/playwright');
 
 const SITE = path.resolve(__dirname, '../..');
-const OUT = path.join(__dirname, 'shots');
+const OUT = path.join(__dirname, process.argv[2] ? 'live' : 'shots');
 const GUIDES = ['/guide/druid/restoration', '/guide/evoker/preservation', '/guide/monk/mistweaver', '/guide/priest/discipline', '/guide/priest/holy'];
 const NEW = /한 명을 살리려면|한 명을 살려야 하면/;
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.png': 'image/png', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.woff2': 'font/woff2', '.webp': 'image/webp' };
