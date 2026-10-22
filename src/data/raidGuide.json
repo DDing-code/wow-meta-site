@@ -4,7 +4,7 @@
     "updated": "2026-10-22",
     "difficulty": "신화",
     "status": "글과 배치도 공개 · 영상은 준비 중",
-    "storyboard": "ai-hub workspace/outputs/mythic-raid-storyboard-20261022 (5편 74컷·팁 108개)의 내레이션·팁을 글로 옮기고, 위에서 본 배치도 74장(plan/)과 네임드 스프라이트를 사이트 public/images/raid에 WebP로 넣었다. 배치도의 전장 바탕 10장은 2026-10-22 raidstrats.gg 플래너의 실제 위에서 본 지도를 참고 그림으로 붙여 같은 윤곽·바닥 문양으로 다시 그렸다(예전 판은 assets/arenas/_before-real). 영상은 다음 단계. 눈으로 확인한 뒤 파수꾼·송곳니 8컷의 인물·기믹 예시를 전장 바닥 안으로 보정했다(수정 전 plan/_before-floor-fit).",
+    "storyboard": "ai-hub workspace/outputs/mythic-raid-storyboard-20261022 (5편 74컷·팁 108개)의 내레이션·팁을 글로 옮기고, 위에서 본 배치도 74장(plan/)과 네임드 스프라이트를 사이트 public/images/raid에 WebP로 넣었다. 배치도의 전장 바탕 10장은 2026-10-22 raidstrats.gg 플래너의 실제 위에서 본 지도를 참고 그림으로 붙여 같은 윤곽·바닥 문양으로 다시 그렸다(예전 판은 assets/arenas/_before-real). 영상은 다음 단계. 눈으로 확인한 뒤 파수꾼·송곳니 8컷의 인물·기믹 예시를 전장 바닥 안으로 보정했다(수정 전 plan/_before-floor-fit). 2026-10-22 사용자 요청으로 '한 장 복습' 4장과 맹독 심연 맨 위 개요 그림(선택한 네임드만 밝힌다) 1장은 사이트에서 뺐다. 사이트에 붙인 배치도는 69장이다.",
     "basis": "기본안은 Method의 신화 공개 공략. 똬리의 제단·울라텍은 그랄(Grarl)의 한국어 설명회를 함께 참고하고 2026-10-07·10-13 공식 완화 수치로 보정했다. 실제 공대 사용률은 세지 않았다."
   },
   "page": {
@@ -248,11 +248,7 @@
           ],
           "sprites": [
             "kithix"
-          ],
-          "recap": {
-            "plan": "01-kithix-12",
-            "caption": "분리 / 빛 / 관문"
-          }
+          ]
         }
       ]
     },
@@ -1192,15 +1188,7 @@
             "fang_r"
           ]
         }
-      ],
-      "figure": {
-        "plan": "03-venomous-1-6-01",
-        "caption": "신화에서 바뀌는 행동"
-      },
-      "recap": {
-        "plan": "03-venomous-1-6-26",
-        "caption": "우물 / 짝 / 버섯 / 파도 / 집결 / 차단"
-      }
+      ]
     },
     {
       "id": "coiled-altar",
@@ -1461,10 +1449,6 @@
           "figure": {
             "plan": "04-coiled-altar-01",
             "caption": "구슬 → 영혼 → 둘 다"
-          },
-          "recap": {
-            "plan": "04-coiled-altar-12",
-            "caption": "운반 / 구출 / 폭탄 / 쿨기"
           }
         }
       ]
@@ -1797,10 +1781,6 @@
           "figure": {
             "plan": "05-ulatek-01",
             "caption": "알을 어디로 옮길까"
-          },
-          "recap": {
-            "plan": "05-ulatek-15",
-            "caption": "알 / 송곳니 / 마지막 방향"
           }
         }
       ]

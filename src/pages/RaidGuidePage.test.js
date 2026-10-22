@@ -133,7 +133,8 @@ test('스토리보드 배치도를 행동 옆에 붙이고 네임드 스프라�
   expect(figured).toHaveLength(steps.filter(step => step.figure).length);
   expect(figured[0].getAttribute('src')).toBe(`/images/raid/plan/${steps[0].figure.plan}-960.webp`);
   expect(container.querySelector(`figure[data-plan="${boss.figure.plan}"]`)).not.toBeNull();
-  expect(container.querySelector(`figure[data-plan="${boss.recap.plan}"]`)).not.toBeNull();
+  expect(boss.recap).toBeUndefined();
+  expect(container.textContent).not.toContain('한 장 복습');
   expect(container.querySelectorAll('#coiled-altar img[src^="/images/raid/sprites/"]')).toHaveLength(boss.sprites.length);
   act(() => container.querySelector('li[data-figure] figure button').click());
   const dialog = container.querySelector('[role="dialog"]');

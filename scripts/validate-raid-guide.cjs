@@ -90,7 +90,9 @@ for (const spell of guide.spells) {
 }
 assert.equal(guide.spells.length, 9, 'nine confirmed Coiled Altar spells');
 
-// 스토리보드 그림: 배치도 74컷이 한 번씩 붙고(행동·개요·복습), 파일(public/images/raid)과 네임드 스프라이트가 있어야 한다.
+// 스토리보드 그림: 배치도 69장이 한 번씩 붙고(행동·네임드 개요), 파일(public/images/raid)과 네임드 스프라이트가 있어야 한다.
+// 2026-10-22 사용자 요청으로 '한 장 복습' 4장과 맹독 심연 맨 위 개요(선택한 네임드만 밝힌다)는 뺐다. 다시 붙지 않게 막는다.
+const REMOVED_PLANS = ['01-kithix-12', '03-venomous-1-6-01', '03-venomous-1-6-26', '04-coiled-altar-12', '05-ulatek-15'];
 const RAID_IMAGES = path.join(SITE, 'public', 'images', 'raid');
 const plans = [];
 const pushFigure = (figure, where) => {
@@ -100,18 +102,18 @@ const pushFigure = (figure, where) => {
   plans.push(figure.plan);
 };
 for (const episode of guide.episodes) {
-  pushFigure(episode.figure, episode.id);
-  pushFigure(episode.recap, episode.id);
+  assert.ok(!episode.figure && !episode.recap, `${episode.id}: episode overview/recap figures were removed`);
   for (const boss of episode.bosses) {
     assert.ok(Array.isArray(boss.sprites) && boss.sprites.length, `${boss.id}: sprites`);
     for (const id of boss.sprites) assert.ok(fs.existsSync(path.join(RAID_IMAGES, 'sprites', `${id}.webp`)), `${boss.id}: missing sprite ${id}`);
     pushFigure(boss.figure, boss.id);
-    pushFigure(boss.recap, boss.id);
+    assert.ok(!boss.recap, `${boss.id}: recap figure was removed`);
     boss.phases.forEach(phase => phase.steps.forEach(step => pushFigure(step.figure, `${boss.id}/${step.title}`)));
   }
 }
-assert.equal(plans.length, 74, `74 storyboard plans, got ${plans.length}`);
-assert.equal(new Set(plans).size, 74, 'each plan used once');
+assert.equal(plans.length, 69, `69 storyboard plans, got ${plans.length}`);
+assert.equal(new Set(plans).size, 69, 'each plan used once');
+for (const plan of REMOVED_PLANS) assert.ok(!plans.includes(plan), `removed plan is back: ${plan}`);
 const stepFigures = bosses.flatMap(b => b.phases.flatMap(p => p.steps)).filter(step => step.figure).length;
 assert.ok(stepFigures >= 60, `most steps need a plan figure, got ${stepFigures}`);
 

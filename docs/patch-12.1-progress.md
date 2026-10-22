@@ -1005,3 +1005,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 검사: `npm run validate:quiet` 10단계 통과, `RaidGuidePage.test.js` 9개 통과. 운영 확인은 `artifacts/raid-arenas-20261022/raid-shots.cjs`(TEST_ORIGIN=운영)로 5편×1440·390px 10곳 통과(깨진 그림 0, 넘침 0, 오류 0).
 - 남은 일: 송곳니(속 빈 삼각형)·파수꾼(네모 바닥) 컷의 네임드·조 자리는 전장 밖 독·구조물 위에 놓인 예시 배치 그대로다(실제 자리 근거가 없어 옮기지 않음). 복도(`hall`) 바탕은 참고 지도가 없다. 울라텍 마지막 단상은 플래너 지도에 없어 주 단상 위쪽에 표시만 둔다.
 - 배포: 사이트 `8e459b2f` main 푸시, KB 로컬 `cd702d2`. 정리 빌드 `main.3debc2a2.js`(소스맵 0, `artifacts/raid-arenas-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 https://wowmeta.vercel.app/raid 가 새 번들을 내고 배치도 WebP가 로컬과 SHA-256이 같으며 소스맵은 403이다.
+
+## 2026-10-22 · 레이드 가이드에서 '한 장 복습'·맨 위 개요 그림 빼기
+
+- 요청: "한장복습이랑 맨위 선택한 네임드만 밝힌다 뺴줘".
+- 판단: '맨위 선택한 네임드만 밝힌다'는 맹독 심연 1~6넴 편 맨 위 '한눈에 보기' 그림(`03-venomous-1-6-01`, 여섯 네임드 중 네크잘리만 밝고 아래에 "선택한 네임드만 밝힌다" 글씨가 그려진 배치도)이다. 글씨만이 아니라 그림 전체를 뺐다. 네임드마다 붙은 도트 스프라이트·목차 강조는 그대로다.
+- 뺀 그림: 키식스·제단·울라텍 '들어가기 전 한 장 복습' 3장, 맹독 심연 '출발 전 한 장 복습' 1장, 맹독 심연 맨 위 개요 1장. KB 정본에서 `recap`·편 `figure`를 지우고 sync-kb로 생성, 화면 코드(`RecapHead`, 편 개요 그림)와 WebP 10개를 지웠다. 사이트 배치도는 69장이다.
+- 검사: `validate-raid-guide`가 69장과 뺀 5장이 다시 붙지 않는지 확인하고, `RaidGuidePage.test.js`가 '한 장 복습'이 없는지 본다. 화면 확인 `artifacts/raid-no-recap-20261022/raid-shots.cjs`.

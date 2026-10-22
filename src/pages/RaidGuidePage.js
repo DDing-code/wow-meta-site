@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import { ArrowRight, Castle, Check, ExternalLink, ListChecks, Map as MapIcon, Users, X, Youtube } from 'lucide-react';
+import { ArrowRight, Castle, Check, ExternalLink, ListChecks, Users, X, Youtube } from 'lucide-react';
 import raidGuide from '../data/raidGuide.json';
 import kbSkills from '../data/kb-skills.json';
 import { CURRENT_PATCH_LABEL } from '../data/guideRegistry.js';
@@ -209,16 +209,6 @@ const Figure = styled.figure`
   img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
   figcaption { display: flex; flex-wrap: wrap; gap: 2px 8px; margin-top: 6px; color: #a4b0b8; font-size: 0.78rem; line-height: 1.5; }
   figcaption b { color: ${GOLD}; font-size: 0.7rem; font-weight: 750; letter-spacing: 0.03em; }
-`;
-const RecapHead = styled.h3`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 30px;
-  color: #eef1f3;
-  font-size: 1.06rem;
-  font-weight: 720;
-  svg { color: ${GOLD}; }
 `;
 const Lightbox = styled.div`
   position: fixed;
@@ -675,7 +665,6 @@ function RaidGuidePage() {
           <h2 id="episode-title">{episode.title}<small>{episode.place}</small></h2>
           <Principle>{episode.principle}</Principle>
           <Scope>{episode.scope}</Scope>
-          <PlanFigure figure={episode.figure} title={episode.title} onZoom={setZoom} wide label="한눈에 보기" />
         </div>
       </EpisodeHead>
 
@@ -733,12 +722,6 @@ function RaidGuidePage() {
                     </Steps>
                   </React.Fragment>
                 ))}
-                {boss.recap ? (
-                  <>
-                    <RecapHead><MapIcon size={16} aria-hidden="true" />들어가기 전 한 장 복습</RecapHead>
-                    <PlanFigure figure={boss.recap} title={`${boss.name} 복습`} onZoom={setZoom} wide label="복습" />
-                  </>
-                ) : null}
                 <SubHead id={`${boss.id}-tips`}><Users size={16} aria-hidden="true" />역할별 실전 팁<small>{boss.tips.length}개</small></SubHead>
                 <Tips data-tips={boss.id}>
                   {boss.tips.map((tip, index) => {
@@ -800,12 +783,6 @@ function RaidGuidePage() {
               </Boss>
             );
           })}
-          {episode.recap ? (
-            <Boss as="section" aria-labelledby="episode-recap">
-              <RecapHead id="episode-recap"><MapIcon size={16} aria-hidden="true" />{episode.title} 출발 전 한 장 복습</RecapHead>
-              <PlanFigure figure={episode.recap} title={`${episode.title} 복습`} onZoom={setZoom} wide label="복습" />
-            </Boss>
-          ) : null}
           <Footer>
             <NextPanel>
               <div>
