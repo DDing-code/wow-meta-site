@@ -1045,3 +1045,5 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 요청: "님리사 같은 경우는 죽음의 기사가 큰 쫄을 보호범위 밖으로(안쪽이 아니라 시계나 반시계 방향으로) 죽음의 손을 쓰는 택틱이 대중적이야". 큰 쫄은 주변 쫄의 피해를 99% 줄이는 신화 보호막 쫄로 보고 적었다.
 - KB `raid-guide.json` 님리사: 원리 문구, 요약, 확인 항목 2번, '신화 큰 쫄은 옆으로 당기기' 단계(근거 메모 포함), 딜러 팁, 선택지 '보호막 쫄 처리'(기본: 옆으로 당기기 · 다른 안: raidstrats의 무리 안에서 먼저 잡기)를 고쳤다. 단계 69개·팁 108개는 그대로다.
 - 그림: 스토리보드 `plan.py`의 `shield-add` 컷(02-nymrissa-03)을 보호 범위 원·시계 방향 링 위 죽음의 기사·당기는 화살표·'안쪽은 X'로 다시 그리고 `raid-planner-20261022/raid-images.py`로 WebP 2장만 바뀌었다. 스토리보드 `content.py`·`tips.py`·`timeline/segments/nymrissa.json`도 맞추고 님리사 영상만 다시 만들었다(예전 판 `video/02-nymrissa-nymrissa.before-grip-20261022.mp4`).
+- 검사: `npm run validate:quiet` 11단계, `RaidGuidePage.test.js` 9개, 스토리보드 `build.py --check`·`build_timeline.py --check` 통과.
+- 배포: 사이트 `ba7ae1f8` main 푸시, KB 로컬 `7d1b8b5`. 정리 빌드 `main.5a4b0eb3.js`(소스맵 0, `artifacts/raid-nymrissa-grip-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 /raid/nymrissa가 새 번들을 내고 바뀐 WebP 2장이 로컬과 SHA-256이 같으며 소스맵은 403이다. 운영 화면 캡처 `artifacts/raid-nymrissa-grip-20261022/live-nymrissa-adds.png`.
