@@ -15,3 +15,8 @@
 - 보스는 "네임드"로 쓴다. "우두머리"로 바꾸지 않는다.
 - 잡몹·추가로 나오는 적은 "쫄"로 쓴다. "졸개"로 바꾸지 않는다. 받침이 있으므로 조사는 "쫄이·쫄을·쫄은·쫄과"로 쓴다.
 - 문장을 다듬거나 게임 용어로 바꿀 때도 이 두 용어는 유지한다. 개념서형(`book`) 가이드는 `validate-guide-manuscripts.js`가 검사한다.
+
+## 검색 노출 (2026-10-22)
+
+- 페이지별 제목·설명·대표 주소(canonical)는 `src/data/siteMeta.js`가 정하고 `src/components/RouteMeta.js`가 붙인다. 새 페이지 경로를 만들면 `STATIC_PAGES`에 넣는다.
+- `public/sitemap.xml`은 `npm run seo:sitemap`으로 만든다(직접 고치지 않음). 가이드·레이드 편·로그 리포트가 늘거나 경로가 바뀌면 다시 만든다. `npm run validate:seo`가 목록과 다르면 막는다.

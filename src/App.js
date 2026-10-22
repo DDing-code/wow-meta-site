@@ -4,6 +4,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './styles/GlobalStyle.js';
 import { theme } from './styles/theme.js';
 import Navigation from './components/Navigation.js';
+import RouteMeta from './components/RouteMeta.js';
 import HomePage from './pages/HomePage.js';
 import GuidePage from './pages/GuidePage.js';
 import BeginnerPage from './pages/BeginnerPage.js';
@@ -166,6 +167,7 @@ function App() {
           </MainContent>
         </AppContainer>
         <RouteScroll />
+        <RouteMeta />
       </Router>
     </ThemeProvider>
   );
