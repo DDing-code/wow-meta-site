@@ -114,6 +114,11 @@ for (const episode of guide.episodes) {
 assert.equal(plans.length, 69, `69 storyboard plans, got ${plans.length}`);
 assert.equal(new Set(plans).size, 69, 'each plan used once');
 for (const plan of REMOVED_PLANS) assert.ok(!plans.includes(plan), `removed plan is back: ${plan}`);
+// 2026-10-22 배치도 자리는 raidstrats 공략 속 플랜을 따른다. 공개 플랜이 있는 네임드는 그 공략을 근거로 걸어 둔다(키식스·울라텍은 공개 플랜 없음).
+for (const id of ['nymrissa', 'nekzali', 'sentinels', 'explorers', 'vashnik', 'sszorak', 'fangs', 'coiled-altar']) {
+  const boss = bosses.find(b => b.id === id);
+  assert.ok(boss.sources.some(key => /raidstrats\.gg\/guides\//.test(guide.sources[key].href)), `${id}: raidstrats plan source for diagram positions`);
+}
 const stepFigures = bosses.flatMap(b => b.phases.flatMap(p => p.steps)).filter(step => step.figure).length;
 assert.ok(stepFigures >= 60, `most steps need a plan figure, got ${stepFigures}`);
 

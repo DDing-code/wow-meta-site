@@ -4,7 +4,7 @@
     "updated": "2026-10-22",
     "difficulty": "신화",
     "status": "글과 배치도 공개 · 영상은 준비 중",
-    "storyboard": "ai-hub workspace/outputs/mythic-raid-storyboard-20261022 (5편 74컷·팁 108개)의 내레이션·팁을 글로 옮기고, 위에서 본 배치도 74장(plan/)과 네임드 스프라이트를 사이트 public/images/raid에 WebP로 넣었다. 배치도의 전장 바탕 10장은 2026-10-22 raidstrats.gg 플래너의 실제 위에서 본 지도를 참고 그림으로 붙여 같은 윤곽·바닥 문양으로 다시 그렸다(예전 판은 assets/arenas/_before-real). 영상은 다음 단계. 눈으로 확인한 뒤 파수꾼·송곳니 8컷의 인물·기믹 예시를 전장 바닥 안으로 보정했다(수정 전 plan/_before-floor-fit). 2026-10-22 사용자 요청으로 '한 장 복습' 4장과 맹독 심연 맨 위 개요 그림(선택한 네임드만 밝힌다) 1장은 사이트에서 뺐다. 사이트에 붙인 배치도는 69장이다.",
+    "storyboard": "ai-hub workspace/outputs/mythic-raid-storyboard-20261022 (5편 74컷·팁 108개)의 내레이션·팁을 글로 옮기고, 위에서 본 배치도 74장(plan/)과 네임드 스프라이트를 사이트 public/images/raid에 WebP로 넣었다. 배치도의 전장 바탕 10장은 2026-10-22 raidstrats.gg 플래너의 실제 위에서 본 지도를 참고 그림으로 붙여 같은 윤곽·바닥 문양으로 다시 그렸다(예전 판은 assets/arenas/_before-real). 영상은 다음 단계. 눈으로 확인한 뒤 파수꾼·송곳니 8컷의 인물·기믹 예시를 전장 바닥 안으로 보정했다(수정 전 plan/_before-floor-fit). 2026-10-22 사용자 요청으로 '한 장 복습' 4장과 맹독 심연 맨 위 개요 그림(선택한 네임드만 밝힌다) 1장은 사이트에서 뺐다. 사이트에 붙인 배치도는 69장이다. 같은 날 사용자 지적(\"실제 레이드플랜 사이트에서 짜던 것과 도식 위치가 다르다\")에 따라 공개 플랜이 있는 8네임드 44컷의 네임드·공대·징표 자리를 raidstrats 공략 속 플랜(스토리보드 references/planner/plans, 받기 fetch_plans.py · 대조 render_plans.py)에 맞춰 다시 그렸다(수정 전 references/planner/plan.before-planner.py). 키식스·울라텍은 공개 플랜이 없어 그대로다.",
     "basis": "기본안은 Method의 신화 공개 공략. 똬리의 제단·울라텍은 그랄(Grarl)의 한국어 설명회를 함께 참고하고 2026-10-07·10-13 공식 완화 수치로 보정했다. 실제 공대 사용률은 세지 않았다."
   },
   "page": {
@@ -435,7 +435,8 @@
             }
           ],
           "sources": [
-            "nymrissa"
+            "nymrissa",
+            "nymrissa-2"
           ],
           "sprites": [
             "nymrissa"
@@ -557,7 +558,8 @@
           ],
           "choices": [],
           "sources": [
-            "nekzali"
+            "nekzali",
+            "nekzali-2"
           ],
           "sprites": [
             "nekzali"
@@ -818,7 +820,8 @@
             }
           ],
           "sources": [
-            "explorers"
+            "explorers",
+            "explorers-2"
           ],
           "sprites": [
             "nama",
@@ -875,8 +878,8 @@
                 {
                   "kind": "신화",
                   "title": "징표 한 줄에서 파도",
-                  "text": "토템은 직접 공격해 지울 수 없습니다. 독 웅덩이 왼쪽을 따라 주황 동그라미, 보라 마름모, 파란 네모, 해골, 빨간 가위 징표를 대각선 한 줄로 둡니다. 첫 파도 대상자는 각자 징표에 서서 웅덩이 쪽과 공대 쪽 토템으로 파도를 보내고, 공대는 줄 아래쪽에서 피합니다. 남은 토템은 두 번째 파도로 지웁니다.",
-                  "note": "징표 자리는 Method 공개 그림 기준입니다. 두 번째 파도는 징표 없이 콜로 보완합니다.",
+                  "text": "토템은 직접 공격해 지울 수 없습니다. 네임드 자리에서 독 웅덩이 왼쪽 앞까지 주황 동그라미, 보라 마름모, 파란 네모, 해골, 빨간 가위 징표를 비스듬한 대각선 한 줄로 둡니다. 첫 파도 대상자는 각자 징표에 서서 웅덩이 쪽과 공대 쪽 토템으로 파도를 보내고, 공대는 줄 아래쪽에서 피합니다. 남은 토템은 두 번째 파도로 지웁니다.",
+                  "note": "징표 자리는 raidstrats 공개 플랜의 오프셋 줄 기준이고, Method 그림은 같은 한 줄을 웅덩이 왼쪽 가장자리에 붙여 둡니다. 두 번째 파도는 징표 없이 콜로 보완합니다.",
                   "figure": {
                     "plan": "03-venomous-1-6-16",
                     "caption": "징표 5개 한 줄 → 양쪽 토템으로"
@@ -945,7 +948,8 @@
             }
           ],
           "sources": [
-            "vashnik"
+            "vashnik",
+            "vashnik-2"
           ],
           "sprites": [
             "vashnik"
@@ -1438,6 +1442,7 @@
           ],
           "sources": [
             "altar",
+            "altar-2",
             "altar-kr",
             "grarl",
             "official-latest"
@@ -1904,10 +1909,20 @@
       "href": "https://www.method.gg/guides/the-tidebound-grotto/nymrissa-wavecaller",
       "note": "2026-08-19 · 신화 얼음비늘·구슬 처리 추가 항목"
     },
+    "nymrissa-2": {
+      "title": "Raidstrats · 님리사 신화",
+      "href": "https://raidstrats.gg/guides/nymrissa-wavecaller/mythic",
+      "note": "쫄·물거품·소용돌이 빈틈·무적기 담당 자리 플랜 · 배치도의 네임드·공대·징표 자리는 이 공략 속 플랜 기준"
+    },
     "nekzali": {
       "title": "Method · 네크잘리 신화",
       "href": "https://www.method.gg/guides/the-venomous-abyss/nekzali-the-soulcoiler",
       "note": "2026-09-22"
+    },
+    "nekzali-2": {
+      "title": "Raidstrats · 네크잘리 신화",
+      "href": "https://raidstrats.gg/guides/nek-zali-the-soulcoiler/mythic",
+      "note": "우물 전담 조·관 많은 구역으로 끌기·사잇단계 시체 자리 플랜 · 배치도의 네임드·공대·징표 자리는 이 공략 속 플랜 기준"
     },
     "sentinels": {
       "title": "Method · 매장된 파수꾼 신화",
@@ -1917,17 +1932,27 @@
     "sentinels-2": {
       "title": "Raidstrats · 파수꾼 신화",
       "href": "https://raidstrats.gg/guides/entombed-sentinels/mythic",
-      "note": "합이 4가 되는 짝·사잇단계 후 탱커 교대 교차 확인"
+      "note": "합이 4가 되는 짝·사잇단계 후 탱커 교대 교차 확인 · 배치도의 네임드·공대·징표 자리는 이 공략 속 플랜 기준"
     },
     "explorers": {
       "title": "Method · 길 잃은 탐험가 신화",
       "href": "https://www.method.gg/guides/the-venomous-abyss/the-lost-explorers",
       "note": "2026-09-22 · 상자 전담·버섯·원소 해제·연속 나눠 맞기"
     },
+    "explorers-2": {
+      "title": "Raidstrats · 길 잃은 탐험가 신화",
+      "href": "https://raidstrats.gg/guides/the-lost-explorers/mythic",
+      "note": "세 네임드 첫 자리·상자·버섯·관문·이쿠 궁극기 원 자리 플랜 · 배치도의 네임드·공대·징표 자리는 이 공략 속 플랜 기준"
+    },
     "vashnik": {
       "title": "Method · 바쉬니크 신화",
       "href": "https://www.method.gg/guides/the-venomous-abyss/vashnik-the-malignant",
       "note": "2026-09-22 · 불/암흑 샘 사이 한 구역 유지 방식은 선택 택틱"
+    },
+    "vashnik-2": {
+      "title": "Raidstrats · 바쉬니크 신화",
+      "href": "https://raidstrats.gg/guides/vashnik-the-malignant/mythic",
+      "note": "네임드 자리와 징표 오프셋 줄(첫 파도 줄) 플랜 · 배치도의 네임드·공대·징표 자리는 이 공략 속 플랜 기준"
     },
     "sszorak": {
       "title": "Method · 스조라크 신화",
@@ -1937,7 +1962,7 @@
     "sszorak-2": {
       "title": "Raidstrats · 스조라크 신화",
       "href": "https://raidstrats.gg/guides/sszorak/mythic",
-      "note": "지정 대상·14명 집결·바람 안내 담당 확인"
+      "note": "지정 대상·14명 집결·바람 안내 담당 확인 · 배치도의 네임드·공대·징표 자리는 이 공략 속 플랜 기준"
     },
     "fangs": {
       "title": "Method · 쌍둥이 송곳니 신화",
@@ -1947,12 +1972,17 @@
     "fangs-2": {
       "title": "Raidstrats · 쌍둥이 송곳니 신화",
       "href": "https://raidstrats.gg/guides/the-twin-fangs/mythic",
-      "note": "Consequence 협업 공개안 · 광역 제어기·구역별 차단 확인"
+      "note": "Consequence 협업 공개안 · 광역 제어기·구역별 차단 확인 · 배치도 자리는 이 공략 속 영웅 플랜 기준(신화 양옆 쫄은 Method 기준)"
     },
     "altar": {
       "title": "Method · 똬리의 제단 신화",
       "href": "https://www.method.gg/guides/the-venomous-abyss/the-coiled-altar",
       "note": "2026-10-03 · 보라 구슬·암영폭탄·유령·사잇단계 쿨기"
+    },
+    "altar-2": {
+      "title": "Raidstrats · 똬리의 제단 신화",
+      "href": "https://raidstrats.gg/guides/the-coiled-altar/mythic",
+      "note": "구역별 구슬·단두대·마름모 구출·쫄 둘·3단계 정리 자리 플랜 · 배치도의 네임드·공대·징표 자리는 이 공략 속 플랜 기준"
     },
     "altar-kr": {
       "title": "와우헤드 한국어 · 똬리의 제단",
@@ -1976,6 +2006,6 @@
     "울라텍 두 번째 알은 그랄 설명회가 비교한 에코/팻샤크 방식으로 통일했고, 송곳니는 에코·리퀴드·Method가 쓰는 1+5를 택했습니다. MATE의 6개 동시 해제와 리퀴드의 고정 징표 배정은 비교로만 남겼습니다.",
     "그랄 설명회는 공개 자동 자막으로 관련 구간을 찾아 읽고 구슬 배치·보호막·알 배정 화면을 확인했습니다. 3시간 52분을 연속으로 들은 검수는 아닙니다.",
     "2026-10-22 사용자 확인으로 정한 것: 님리사 얼음 구슬은 무적조가 차례로 밟는다(얼음 방패는 쓰지 못함), 바쉬니크 징표는 독 웅덩이 왼쪽 대각선 한 줄, 파수꾼 퍼즐은 1이 멈춰 핑·3이 찾아가기, 탐험가 물고기 순서 예시는 나마 → 게보 → 이쿠.",
-    "이 글은 영상용 스토리보드(5편 74컷)의 내용을 글로 옮기고, 컷마다 그린 위에서 본 배치도를 해당 행동 옆에 붙인 것입니다. 배치도의 전장 모양과 바닥 문양은 실제 게임의 위에서 본 지도를 따라 그렸고, 자리·인원은 예시입니다. 영상은 다음 단계에서 붙습니다."
+    "이 글은 영상용 스토리보드(5편 74컷)의 내용을 글로 옮기고, 컷마다 그린 위에서 본 배치도를 해당 행동 옆에 붙인 것입니다. 배치도의 전장 모양과 바닥 문양은 실제 게임의 위에서 본 지도를 따라 그렸습니다. 네임드·공대·징표 자리는 raidstrats 공략 속 플랜을 따랐고(님리사·맹독 심연 1~6넴·똬리의 제단, 송곳니는 영웅 플랜), 공개 플랜이 없는 키식스·울라텍과 인원은 예시입니다. 영상은 다음 단계에서 붙습니다."
   ]
 }
