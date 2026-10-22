@@ -1054,3 +1054,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 기록: ai-hub `outputs/pixel-guides/youtube-manifest.json`에 27번째 항목으로 넣고, 예전 띵진이 채널 영상(siB3vmyt0W0)은 `previousLink`(keep)로 남겼다. 이 영상은 지우지 않는다. `youtube-upload.mjs delete-replaced`는 `replacedUpload`가 있는 26편만 보도록 고쳤다.
 - 원고: `link-guides.cjs`가 previousLink도 교체 대상으로 받게 해 원고와 KB 정본의 `video`를 새 번호·채널 'wowmeta 와우메타'로 바꿨다(바뀐 가이드 1개). 검사 GUIDE_VIDEOS도 새 번호로 바꾸고, 이제 27개 모두 와우메타 채널이어야 한다.
 - 화면 확인: `artifacts/guide-videos-demonology-20261022/shots.cjs`(앞 판 복사, 악마 흑마도 매니페스트에서 읽음)로 빌드본 33곳 통과. 캡처는 `shots/`(악마 흑마 1440·390 추가).
+- 배포: 사이트 `6539f317` main 푸시, KB 로컬 `0e16579`. 정리 빌드 `main.0db785b8.js`(소스맵 0, `artifacts/guide-videos-demonology-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 https://wowmeta.vercel.app 이 새 번들을 내보내고(새 번호 포함) 소스맵은 403이다. shots.cjs를 운영 주소로 다시 돌려 33곳 모두 통과(`shots/`는 운영 캡처).
