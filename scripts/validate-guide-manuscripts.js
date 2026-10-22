@@ -1314,10 +1314,10 @@ function main() {
   if (fs.existsSync(demonologySource)) {
     assert(JSON.stringify(JSON.parse(read(demonologySource))) === JSON.stringify(demonology), 'Demonology must match its canonical 12.1 manuscript');
   }
-  // 글 상단 영상: 악마 흑마(2026-10-21 사용자 요청)와 wowmeta 와우메타 채널에 공개한 딜러 26편(2026-10-22, 같은 날 투명 그림·효과음 새 판으로 교체).
+  // 글 상단 영상: wowmeta 와우메타 채널에 공개한 딜러 26편(2026-10-22, 같은 날 투명 그림·효과음 새 판으로 교체)과 악마 흑마(2026-10-21 띵진이 채널 siB3vmyt0W0 → 2026-10-22 와우메타 채널 새 업로드로 교체, 예전 영상은 지우지 않음).
   // 번호는 ai-hub outputs/pixel-guides/youtube-manifest.json 의 공개 확인된 값이다. 여기 없는 가이드에는 영상을 두지 않는다.
   const GUIDE_VIDEOS = new Map([
-    ['warlock-demonology', 'siB3vmyt0W0'],
+    ['warlock-demonology', 'YxLg3BZFmx4'],
     ['deathknight-frost', 'Ue4TGhGZ-fE'],
     ['deathknight-unholy', 'W7f5VzTJdjc'],
     ['demonhunter-devourer', 'Nn2Lv5eO4i8'],
@@ -1345,7 +1345,7 @@ function main() {
     ['warrior-arms', '9cRRD1pR714'],
     ['warrior-fury', 'zhfLQwO4oms'],
   ]);
-  assert(demonology.video?.youtubeId === 'siB3vmyt0W0' && demonology.video.title, 'Demonology must keep the requested top video');
+  assert(demonology.video?.youtubeId === 'YxLg3BZFmx4' && demonology.video.title, 'Demonology must keep the requested top video');
   for (const [id, item] of Object.entries(manuscripts)) {
     const expected = GUIDE_VIDEOS.get(id);
     if (!expected) {
@@ -1354,7 +1354,7 @@ function main() {
     }
     assert(item.video?.youtubeId === expected, `${id} must link its published guide video ${expected}`);
     assert(/^한밤 2시즌 12\.1\.5 .+ 가이드$/.test(item.video.title || ''), `${id} video title must match the uploaded title`);
-    assert(id === 'warlock-demonology' || item.video.channel === 'wowmeta 와우메타', `${id} video must come from the wowmeta 와우메타 channel`);
+    assert(item.video.channel === 'wowmeta 와우메타', `${id} video must come from the wowmeta 와우메타 channel`);
   }
   assert(read(path.join(SITE_ROOT, 'src/pages/GuideDetailPage.js')).includes('{!!manuscript?.video && <GuideVideoSection video={manuscript.video} />}'), 'Guide page must render the manuscript video above the article');
   const demonologyNotes = Object.values(kbSkills).filter(skill => /[\\/]12-흑마법사[\\/]악마[\\/]/.test(skill.source?.kbPath || ''));

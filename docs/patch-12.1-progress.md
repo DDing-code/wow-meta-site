@@ -1047,3 +1047,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 그림: 스토리보드 `plan.py`의 `shield-add` 컷(02-nymrissa-03)을 보호 범위 원·시계 방향 링 위 죽음의 기사·당기는 화살표·'안쪽은 X'로 다시 그리고 `raid-planner-20261022/raid-images.py`로 WebP 2장만 바뀌었다. 스토리보드 `content.py`·`tips.py`·`timeline/segments/nymrissa.json`도 맞추고 님리사 영상만 다시 만들었다(예전 판 `video/02-nymrissa-nymrissa.before-grip-20261022.mp4`).
 - 검사: `npm run validate:quiet` 11단계, `RaidGuidePage.test.js` 9개, 스토리보드 `build.py --check`·`build_timeline.py --check` 통과.
 - 배포: 사이트 `ba7ae1f8` main 푸시, KB 로컬 `7d1b8b5`. 정리 빌드 `main.5a4b0eb3.js`(소스맵 0, `artifacts/raid-nymrissa-grip-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 /raid/nymrissa가 새 번들을 내고 바뀐 WebP 2장이 로컬과 SHA-256이 같으며 소스맵은 403이다. 운영 화면 캡처 `artifacts/raid-nymrissa-grip-20261022/live-nymrissa-adds.png`.
+
+## 2026-10-22 · 악마 흑마 영상을 와우메타 채널로 교체
+
+- 요청: "악마 흑마법사 영상 올려줘". 마지막 완성본 `demonology-warlock-guide-v7-tighter.mp4`(3분 23초, 1080p, ai-hub `outputs/demonology-pixel-video-20261021-v4-sound/`)와 다른 26편과 같은 형식의 썸네일 `warlock-demonology-thumbnail-v2-1280x720.png`를 wowmeta 와우메타 채널에 공개했다. 새 번호 `YxLg3BZFmx4`, 제목 '한밤 2시즌 12.1.5 악마 흑마법사 가이드', 설명은 가이드 주소다.
+- 기록: ai-hub `outputs/pixel-guides/youtube-manifest.json`에 27번째 항목으로 넣고, 예전 띵진이 채널 영상(siB3vmyt0W0)은 `previousLink`(keep)로 남겼다. 이 영상은 지우지 않는다. `youtube-upload.mjs delete-replaced`는 `replacedUpload`가 있는 26편만 보도록 고쳤다.
+- 원고: `link-guides.cjs`가 previousLink도 교체 대상으로 받게 해 원고와 KB 정본의 `video`를 새 번호·채널 'wowmeta 와우메타'로 바꿨다(바뀐 가이드 1개). 검사 GUIDE_VIDEOS도 새 번호로 바꾸고, 이제 27개 모두 와우메타 채널이어야 한다.
+- 화면 확인: `artifacts/guide-videos-demonology-20261022/shots.cjs`(앞 판 복사, 악마 흑마도 매니페스트에서 읽음)로 빌드본 33곳 통과. 캡처는 `shots/`(악마 흑마 1440·390 추가).

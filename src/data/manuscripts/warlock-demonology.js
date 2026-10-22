@@ -3165,9 +3165,9 @@ const manuscript = {
     },
     defaultHeroBranchIndex: 1,
     video: {
-      youtubeId: 'siB3vmyt0W0',
+      youtubeId: 'YxLg3BZFmx4',
       title: '한밤 2시즌 12.1.5 악마 흑마법사 가이드',
-      channel: '띵진이',
+      channel: 'wowmeta 와우메타',
     },
 };
 
