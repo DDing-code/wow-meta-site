@@ -645,7 +645,8 @@ function findInlineTerm(text, terms, startIndex) {
 }
 
 function renderGuidePunctuation(text) {
-  return text.split(/(\S[ ]*·)/g).map((part, index) => (
+  // 가운뎃점은 앞 낱말 전체와 묶는다(마지막 글자만 묶으면 "정 / 령·지속"처럼 낱말 가운데서 꺾인다).
+  return text.split(/([^\s·]+[ ]*·)/g).map((part, index) => (
     part.endsWith('·') ? <InlineTermEnding key={index}>{part}</InlineTermEnding> : part
   ));
 }
@@ -687,9 +688,26 @@ function renderGuideText(value, terms) {
   return nodes;
 }
 
+/* 상자마다 있는 `span { display: block; font-size… }` 규칙이 줄글 속 조각에 번지지 않게 되돌린다
+   (번지면 "쇠 / 퇴가"처럼 이름표가 줄마다 쪼개지고 조사만 작은 글씨가 된다). */
+const inlinePieceReset = `
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: none;
+`;
+
 /* 이름표와 앞뒤 글 사이에서만 줄을 바꾸지 않는다. 긴 스킬 이름 안(띄어쓰기)에서는 그대로 줄바꿈된다 */
-const InlineTermGlue = styled.span`
-  white-space: nowrap;
+const InlineTermGlue = styled.span.attrs({ 'data-term-piece': '' })`
+  &&& {
+    ${inlinePieceReset}
+    display: inline;
+    white-space: nowrap;
+  }
 
   > a,
   > span {
@@ -698,9 +716,19 @@ const InlineTermGlue = styled.span`
 `;
 
 // 좁은 타임라인에서도 마지막 글자와 조사·가운뎃점은 한 조각으로 둔다.
-const InlineTermEnding = styled.span`
-  display: inline-block;
-  && { white-space: nowrap; }
+const InlineTermEnding = styled.span.attrs({ 'data-term-piece': '' })`
+  &&& {
+    ${inlinePieceReset}
+    display: inline-block;
+    white-space: nowrap;
+  }
+`;
+
+const InlineTermPlain = styled.span.attrs({ 'data-term-piece': '' })`
+  &&& {
+    ${inlinePieceReset}
+    display: inline;
+  }
 `;
 
 function formatSkillMeta(skill) {
@@ -1290,7 +1318,7 @@ function SkillIconLink({ skill, size = 36, stacked = false }) {
 }
 
 function InlineSkillTerm({ skill, children, suffix = '' }) {
-  if (isInactiveSkillReference(skill)) return <span>{children}{suffix}</span>;
+  if (isInactiveSkillReference(skill)) return <InlineTermPlain>{children}{suffix}</InlineTermPlain>;
   return (
     <InlineSkillAnchor
       href={wowheadUrl(skill)}
@@ -1300,8 +1328,9 @@ function InlineSkillTerm({ skill, children, suffix = '' }) {
       aria-label={`${skillName(skill)} Wowhead tooltip`}
     >
       <SkillIconImage skill={skill} inline />
+      {/* 조사는 마지막 낱말 전체와 묶는다(마지막 글자만 묶으면 좁은 칸에서 "황 / 폐로"로 갈라진다). */}
       <InlineSkillText>{suffix && typeof children === 'string'
-        ? <>{children.slice(0, -1)}<InlineTermEnding>{children.slice(-1)}{suffix}</InlineTermEnding></>
+        ? <>{children.slice(0, children.lastIndexOf(' ') + 1)}<InlineTermEnding>{children.slice(children.lastIndexOf(' ') + 1)}{suffix}</InlineTermEnding></>
         : children}</InlineSkillText>
     </InlineSkillAnchor>
   );

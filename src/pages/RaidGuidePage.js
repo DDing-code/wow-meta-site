@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import { ArrowRight, Castle, Check, ExternalLink, ListChecks, Skull, Users, Youtube } from 'lucide-react';
+import { ArrowRight, Castle, Check, ExternalLink, ListChecks, Map as MapIcon, Users, X, Youtube } from 'lucide-react';
 import raidGuide from '../data/raidGuide.json';
 import kbSkills from '../data/kb-skills.json';
 import { CURRENT_PATCH_LABEL } from '../data/guideRegistry.js';
@@ -182,20 +182,58 @@ const Boss = styled.section`
 `;
 const BossHead = styled.div`
   display: grid;
-  grid-template-columns: 38px minmax(0, 1fr);
-  gap: 6px 14px;
-  align-items: center;
-  h2 { color: #eef1f3; font-size: clamp(1.34rem, 2.4vw, 1.72rem); line-height: 1.3; }
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 6px 16px;
+  align-items: end;
+  h2 { padding-bottom: 6px; color: #eef1f3; font-size: clamp(1.34rem, 2.4vw, 1.72rem); line-height: 1.3; }
   h2 small { display: block; margin-top: 2px; color: ${GOLD}; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.04em; }
 `;
-const BossIcon = styled.div`
+// 네임드 스프라이트(스토리보드 도트, 투명 배경). 여럿이면 조금씩 겹쳐 한 무리로 보이게 한다.
+const BossSprites = styled.div`
+  display: flex;
+  align-items: flex-end;
+  min-width: 88px;
+  height: 88px;
+  padding: 0 4px;
+  border-bottom: 2px solid ${props => props.$color};
+  img { width: 88px; height: 88px; image-rendering: pixelated; filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.55)); }
+  img + img { margin-left: -26px; }
+  @media (max-width: 560px) { min-width: 64px; height: 64px; img { width: 64px; height: 64px; } img + img { margin-left: -20px; } }
+`;
+// 위에서 본 배치도. 누르면 큰 그림으로 연다.
+const Figure = styled.figure`
+  min-width: 0;
+  margin: ${props => (props.$wide ? '18px 0 0' : '0')};
+  button { display: block; width: 100%; padding: 0; border: 1px solid ${LINE_STRONG}; background: #0a0e11; cursor: zoom-in; }
+  button:hover, button:focus-visible { border-color: ${GOLD}; }
+  img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
+  figcaption { display: flex; flex-wrap: wrap; gap: 2px 8px; margin-top: 6px; color: #a4b0b8; font-size: 0.78rem; line-height: 1.5; }
+  figcaption b { color: ${GOLD}; font-size: 0.7rem; font-weight: 750; letter-spacing: 0.03em; }
+`;
+const RecapHead = styled.h3`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 30px;
+  color: #eef1f3;
+  font-size: 1.06rem;
+  font-weight: 720;
+  svg { color: ${GOLD}; }
+`;
+const Lightbox = styled.div`
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
   display: grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
-  color: #d9bd7b;
-  border: 1px solid rgba(168, 178, 188, 0.18);
-  background: ${PANEL};
+  padding: 24px;
+  background: rgba(4, 6, 8, 0.9);
+  cursor: zoom-out;
+  figure { margin: 0; max-width: min(1600px, 100%); }
+  img { display: block; max-width: 100%; max-height: calc(100vh - 110px); width: auto; height: auto; border: 1px solid ${LINE_STRONG}; }
+  figcaption { margin-top: 10px; color: #c6d0d6; font-size: 0.9rem; line-height: 1.5; }
+  figcaption b { margin-right: 10px; color: ${GOLD}; }
+  button { position: absolute; top: 14px; right: 16px; display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid ${LINE_STRONG}; background: #0d1216; color: #eef1f3; cursor: pointer; }
 `;
 const Summary = styled.p`
   max-width: 74ch;
@@ -246,18 +284,40 @@ const Steps = styled.ol`
   margin: 14px 0 0;
   padding: 0;
   list-style: none;
+  container-type: inline-size;
 `;
+// 그림이 있는 행동은 넓은 화면에서 왼쪽 배치도·오른쪽 글, 좁은 화면에서 그림 → 글 순서로 쌓는다.
 const Step = styled.li`
   display: grid;
   grid-template-columns: 84px minmax(0, 1fr);
+  grid-template-areas: 'kind body';
   gap: 4px 16px;
   padding: 14px 18px 14px 14px;
   border: 1px solid ${LINE_STRONG};
   border-left: 3px solid ${props => props.$color};
   background: ${PANEL};
+  > figure { grid-area: fig; }
+  > span { grid-area: kind; }
+  > div { grid-area: body; min-width: 0; }
   h4 { color: #eef1f3; font-size: 0.98rem; font-weight: 720; line-height: 1.45; }
   p { margin-top: 6px; color: #c3cbd0; font-size: 0.88rem; line-height: 1.72; text-wrap: pretty; }
-  @media (max-width: 560px) { grid-template-columns: minmax(0, 1fr); gap: 6px; padding: 12px 14px 12px 12px; }
+  @media (max-width: 560px) { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'kind' 'body'; gap: 6px; padding: 12px 14px 12px 12px; }
+
+  &[data-figure] {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'fig' 'kind' 'body';
+    gap: 10px;
+    padding: 12px;
+  }
+  @container (min-width: 640px) {
+    &[data-figure] {
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+      grid-template-rows: auto 1fr;
+      grid-template-areas: 'fig kind' 'fig body';
+      gap: 8px 18px;
+      padding: 12px 18px 12px 12px;
+    }
+  }
 `;
 const Kind = styled.span`
   display: inline-flex;
@@ -387,6 +447,9 @@ const Term = styled.a`
   img { flex: 0 0 auto; width: 1.05em; height: 1.05em; object-fit: cover; border: 1px solid rgba(255, 209, 102, 0.38); border-radius: 3px; }
   &:hover { color: #f7dda0; border-bottom-color: rgba(247, 221, 160, 0.76); }
 `;
+const TermGlue = styled.span`
+  white-space: nowrap;
+`;
 const Footer = styled.footer`
   margin-top: 8px;
 `;
@@ -432,6 +495,51 @@ const Basis = styled.details`
   li a:hover { color: ${GOLD}; }
 `;
 
+// 스토리보드 배치도·스프라이트(public/images/raid). 정본의 figure.plan 이 컷 번호다.
+const PLAN = (key, width) => `/images/raid/plan/${key}-${width}.webp`;
+const SPRITE = id => `/images/raid/sprites/${id}.webp`;
+
+function PlanFigure({ figure, title, onZoom, wide = false, label = '배치도' }) {
+  if (!figure) return null;
+  const alt = `${title} 배치도 — ${figure.caption}`;
+  return (
+    <Figure $wide={wide} data-plan={figure.plan}>
+      <button type="button" onClick={() => onZoom({ ...figure, title, alt })} aria-label={`${alt} 크게 보기`}>
+        <img
+          src={PLAN(figure.plan, 960)}
+          srcSet={`${PLAN(figure.plan, 960)} 960w, ${PLAN(figure.plan, 1600)} 1600w`}
+          sizes={wide ? '(max-width: 900px) 100vw, 852px' : '(max-width: 700px) 100vw, 420px'}
+          alt={alt}
+          width="960"
+          height="540"
+          loading="lazy"
+          decoding="async"
+        />
+      </button>
+      <figcaption><b>{label}</b>{figure.caption}</figcaption>
+    </Figure>
+  );
+}
+
+function PlanLightbox({ zoom, onClose }) {
+  useEffect(() => {
+    if (!zoom) return undefined;
+    const onKey = event => { if (event.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [zoom, onClose]);
+  if (!zoom) return null;
+  return (
+    <Lightbox role="dialog" aria-modal="true" aria-label={zoom.alt} onClick={onClose}>
+      <button type="button" onClick={onClose} aria-label="닫기"><X size={20} aria-hidden="true" /></button>
+      <figure>
+        <img src={PLAN(zoom.plan, 1600)} alt={zoom.alt} width="1600" height="900" />
+        <figcaption><b>{zoom.title}</b>{zoom.caption}</figcaption>
+      </figure>
+    </Lightbox>
+  );
+}
+
 const ICON = icon => `https://wow.zamimg.com/images/wow/icons/medium/${icon}.jpg`;
 const wowhead = id => `https://ko.wowhead.com/spell=${id}`;
 
@@ -465,13 +573,21 @@ export function TermText({ text, bossId }) {
     if (!best) break;
     if (best.at > from) nodes.push(text.slice(from, best.at));
     const { term } = best;
-    nodes.push(
+    const end = best.at + term.name.length;
+    // 바로 뒤에 붙은 조사·문장부호는 이름표와 같은 줄에 둔다("영혼결속 / 으로"처럼 조사만 떨어지지 않게). 다음 이름표 앞에서 멈춘다.
+    let tail = (text.slice(end).match(/^[^\s·]{0,4}[·.,)」”'"!?:;]?/) || [''])[0];
+    for (const other of terms) {
+      const at = tail.indexOf(other.name);
+      if (at !== -1) tail = tail.slice(0, at);
+    }
+    const link = (
       <Term key={`${term.id}-${best.at}`} href={wowhead(term.id)} data-wowhead={`spell=${term.id}&domain=ko`} data-wh-rename-link="false" target="_blank" rel="noreferrer" data-term-id={term.id}>
         {term.icon ? <img src={ICON(term.icon)} alt="" width="18" height="18" loading="lazy" /> : null}
         <span>{term.name}</span>
       </Term>
     );
-    from = best.at + term.name.length;
+    nodes.push(tail ? <TermGlue key={`glue-${best.at}`} data-term-piece="">{link}{tail}</TermGlue> : link);
+    from = end + tail.length;
   }
   if (from < text.length) nodes.push(text.slice(from));
   return nodes;
@@ -522,6 +638,8 @@ function RaidGuidePage() {
   const episode = raidGuide.episodes.find(item => item.id === episodeId) || raidGuide.episodes[0];
   const active = useActiveSection(episode.bosses.map(boss => boss.id).join(' '));
   const grarl = raidGuide.sources.grarl;
+  const [zoom, setZoom] = useState(null);
+  const closeZoom = useCallback(() => setZoom(null), []);
 
   return (
     <Page>
@@ -557,6 +675,7 @@ function RaidGuidePage() {
           <h2 id="episode-title">{episode.title}<small>{episode.place}</small></h2>
           <Principle>{episode.principle}</Principle>
           <Scope>{episode.scope}</Scope>
+          <PlanFigure figure={episode.figure} title={episode.title} onZoom={setZoom} wide label="한눈에 보기" />
         </div>
       </EpisodeHead>
 
@@ -583,10 +702,13 @@ function RaidGuidePage() {
             return (
               <Boss key={boss.id} id={boss.id} aria-labelledby={`${boss.id}-title`} data-boss={boss.id}>
                 <BossHead>
-                  <BossIcon><Skull size={19} strokeWidth={1.75} aria-hidden="true" /></BossIcon>
+                  <BossSprites $color={episode.color} aria-hidden="true">
+                    {(boss.sprites || []).map(id => <img key={id} src={SPRITE(id)} alt="" width="88" height="88" loading="lazy" decoding="async" />)}
+                  </BossSprites>
                   <h2 id={`${boss.id}-title`}><small>{boss.order}</small>{boss.name}</h2>
                 </BossHead>
                 <Summary><TermText text={boss.summary} bossId={boss.id} /></Summary>
+                <PlanFigure figure={boss.figure} title={boss.name} onZoom={setZoom} wide label="전장 한눈에 보기" />
                 <ChecksTitle><ListChecks size={16} aria-hidden="true" />들어가기 전 확인</ChecksTitle>
                 <Checks>
                   {boss.checks.map(check => (
@@ -598,7 +720,8 @@ function RaidGuidePage() {
                     <PhaseHead id={`${boss.id}-${phase.id}`}><b>{index + 1}</b>{phase.title}</PhaseHead>
                     <Steps>
                       {phase.steps.map(step => (
-                        <Step key={step.title} $color={KIND_COLORS[step.kind] || KIND_COLORS['공통']} data-kind={step.kind}>
+                        <Step key={step.title} $color={KIND_COLORS[step.kind] || KIND_COLORS['공통']} data-kind={step.kind} data-figure={step.figure ? step.figure.plan : undefined}>
+                          <PlanFigure figure={step.figure} title={step.title} onZoom={setZoom} />
                           <Kind $color={KIND_COLORS[step.kind] || KIND_COLORS['공통']}>{step.kind}</Kind>
                           <div>
                             <h4>{step.title}</h4>
@@ -610,6 +733,12 @@ function RaidGuidePage() {
                     </Steps>
                   </React.Fragment>
                 ))}
+                {boss.recap ? (
+                  <>
+                    <RecapHead><MapIcon size={16} aria-hidden="true" />들어가기 전 한 장 복습</RecapHead>
+                    <PlanFigure figure={boss.recap} title={`${boss.name} 복습`} onZoom={setZoom} wide label="복습" />
+                  </>
+                ) : null}
                 <SubHead id={`${boss.id}-tips`}><Users size={16} aria-hidden="true" />역할별 실전 팁<small>{boss.tips.length}개</small></SubHead>
                 <Tips data-tips={boss.id}>
                   {boss.tips.map((tip, index) => {
@@ -671,6 +800,12 @@ function RaidGuidePage() {
               </Boss>
             );
           })}
+          {episode.recap ? (
+            <Boss as="section" aria-labelledby="episode-recap">
+              <RecapHead id="episode-recap"><MapIcon size={16} aria-hidden="true" />{episode.title} 출발 전 한 장 복습</RecapHead>
+              <PlanFigure figure={episode.recap} title={`${episode.title} 복습`} onZoom={setZoom} wide label="복습" />
+            </Boss>
+          ) : null}
           <Footer>
             <NextPanel>
               <div>
@@ -694,6 +829,7 @@ function RaidGuidePage() {
           </Footer>
         </Main>
       </Body>
+      <PlanLightbox zoom={zoom} onClose={closeZoom} />
     </Page>
   );
 }

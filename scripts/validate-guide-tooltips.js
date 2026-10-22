@@ -117,7 +117,7 @@ function validateRendererSource(source) {
   assert(source.includes('href={wowheadUrl(skill)}'), 'guide skill links must use ko Wowhead URLs');
   assert(source.includes('<SkillIconImage skill={skill} size={size}'), 'SkillIconLink must render spell icons through the fallback image component');
   assert(source.includes('<SkillIconImage skill={skill} inline'), 'Inline skill renderers must use the fallback image component');
-  assert(source.includes("<InlineSkillText>{suffix && typeof children === 'string'") && source.includes('<InlineTermEnding>{children.slice(-1)}{suffix}</InlineTermEnding>') && source.includes(': children}</InlineSkillText>'), 'InlineSkillTerm must keep visible names and bind attached text to their last character');
+  assert(source.includes("<InlineSkillText>{suffix && typeof children === 'string'") && source.includes("<InlineTermEnding>{children.slice(children.lastIndexOf(' ') + 1)}{suffix}</InlineTermEnding>") && source.includes(': children}</InlineSkillText>'), 'InlineSkillTerm must keep visible names and bind attached text to their last word');
   assert(source.includes('<InlineSkillTerm'), 'renderGuideText must replace skill names with InlineSkillTerm');
   assert(source.includes('...(manuscript?.extraSkills || [])'), 'inline term builder must include manuscript extraSkills');
   assert(source.includes('<InlineSkillTerm skill={step.skill}>'), 'opener flow steps must render linked skill icons and names');

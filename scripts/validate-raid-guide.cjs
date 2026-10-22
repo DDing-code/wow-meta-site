@@ -90,6 +90,31 @@ for (const spell of guide.spells) {
 }
 assert.equal(guide.spells.length, 9, 'nine confirmed Coiled Altar spells');
 
+// 스토리보드 그림: 배치도 74컷이 한 번씩 붙고(행동·개요·복습), 파일(public/images/raid)과 네임드 스프라이트가 있어야 한다.
+const RAID_IMAGES = path.join(SITE, 'public', 'images', 'raid');
+const plans = [];
+const pushFigure = (figure, where) => {
+  if (!figure) return;
+  assert.ok(/^0[1-5]-[a-z0-9-]+-\d{2}$/.test(figure.plan) && figure.caption, `${where}: figure plan/caption`);
+  for (const width of [960, 1600]) assert.ok(fs.existsSync(path.join(RAID_IMAGES, 'plan', `${figure.plan}-${width}.webp`)), `${where}: missing ${figure.plan}-${width}.webp`);
+  plans.push(figure.plan);
+};
+for (const episode of guide.episodes) {
+  pushFigure(episode.figure, episode.id);
+  pushFigure(episode.recap, episode.id);
+  for (const boss of episode.bosses) {
+    assert.ok(Array.isArray(boss.sprites) && boss.sprites.length, `${boss.id}: sprites`);
+    for (const id of boss.sprites) assert.ok(fs.existsSync(path.join(RAID_IMAGES, 'sprites', `${id}.webp`)), `${boss.id}: missing sprite ${id}`);
+    pushFigure(boss.figure, boss.id);
+    pushFigure(boss.recap, boss.id);
+    boss.phases.forEach(phase => phase.steps.forEach(step => pushFigure(step.figure, `${boss.id}/${step.title}`)));
+  }
+}
+assert.equal(plans.length, 74, `74 storyboard plans, got ${plans.length}`);
+assert.equal(new Set(plans).size, 74, 'each plan used once');
+const stepFigures = bosses.flatMap(b => b.phases.flatMap(p => p.steps)).filter(step => step.figure).length;
+assert.ok(stepFigures >= 60, `most steps need a plan figure, got ${stepFigures}`);
+
 // 2026-10-22 사용자 확인 사항이 본문에 남아 있어야 한다.
 const nymrissa = bosses.find(b => b.id === 'nymrissa');
 const orbStep = nymrissa.phases.flatMap(p => p.steps).find(step => step.title.includes('무적조'));
@@ -114,4 +139,4 @@ assert.ok(app.includes('<Route path="/raid" element={<RaidGuidePage />} />') && 
 const page = fs.readFileSync(path.join(SITE, 'src', 'pages', 'RaidGuidePage.js'), 'utf8');
 assert.ok(page.includes("from '../data/raidGuide.json'") && page.includes('data-wowhead={`spell=${term.id}&domain=ko`}'), 'page must read the generated JSON and render tooltip links');
 
-console.log(`Raid guide validation passed: ${guide.episodes.length} episodes, ${bosses.length} bosses, ${steps} steps, ${tips} tips, ${guide.spells.length} spells, ${guide.skills.length} player skills`);
+console.log(`Raid guide validation passed: ${guide.episodes.length} episodes, ${bosses.length} bosses, ${steps} steps (${stepFigures} with plans), ${plans.length} plans, ${tips} tips, ${guide.spells.length} spells, ${guide.skills.length} player skills`);

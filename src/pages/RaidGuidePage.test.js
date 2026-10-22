@@ -124,3 +124,27 @@ test('본문의 직업 스킬은 KB에 있는 이름·번호와 같고, 울라�
   expect(fangs.textContent).toContain('나머지 다섯');
   expect(container.querySelector('[data-choice="송곳니 해제"]').textContent).toContain('MATE');
 });
+
+test('스토리보드 배치도를 행동 옆에 붙이고 네임드 스프라이트를 보여 주며, 누르면 큰 그림으로 연다', () => {
+  mount('/raid/coiled-altar');
+  const boss = raidGuide.episodes.find(item => item.id === 'coiled-altar').bosses[0];
+  const steps = boss.phases.flatMap(phase => phase.steps);
+  const figured = container.querySelectorAll('li[data-figure] figure img');
+  expect(figured).toHaveLength(steps.filter(step => step.figure).length);
+  expect(figured[0].getAttribute('src')).toBe(`/images/raid/plan/${steps[0].figure.plan}-960.webp`);
+  expect(container.querySelector(`figure[data-plan="${boss.figure.plan}"]`)).not.toBeNull();
+  expect(container.querySelector(`figure[data-plan="${boss.recap.plan}"]`)).not.toBeNull();
+  expect(container.querySelectorAll('#coiled-altar img[src^="/images/raid/sprites/"]')).toHaveLength(boss.sprites.length);
+  act(() => container.querySelector('li[data-figure] figure button').click());
+  const dialog = container.querySelector('[role="dialog"]');
+  expect(dialog.querySelector('img').getAttribute('src')).toBe(`/images/raid/plan/${steps[0].figure.plan}-1600.webp`);
+  act(() => dialog.querySelector('button[aria-label="닫기"]').click());
+  expect(container.querySelector('[role="dialog"]')).toBeNull();
+});
+
+test('이름표 바로 뒤 조사는 이름표와 한 덩어리로 묶어 조사만 다음 줄로 떨어지지 않게 한다', () => {
+  mount('/raid/coiled-altar');
+  const glued = Array.from(container.querySelectorAll('[data-term-piece]')).map(piece => piece.textContent);
+  expect(glued).toContain('영혼결속으로');
+  expect(glued.every(text => !/^\s|\s$/.test(text))).toBe(true);
+});

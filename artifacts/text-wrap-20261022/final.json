@@ -1,0 +1,576 @@
+[
+  {
+    "id": "warrior/protection",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warrior/protection",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warrior/arms",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warrior/arms",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warrior/fury",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warrior/fury",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "paladin/protection",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "paladin/protection",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "paladin/retribution",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "paladin/retribution",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "paladin/holy",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "paladin/holy",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "hunter/survival",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "hunter/survival",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "hunter/beast-mastery",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "hunter/beast-mastery",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "hunter/marksmanship",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "hunter/marksmanship",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "rogue/assassination",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "rogue/assassination",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "rogue/outlaw",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "rogue/outlaw",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "rogue/subtlety",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "rogue/subtlety",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "priest/shadow",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "priest/shadow",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "priest/discipline",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "priest/discipline",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "priest/holy",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "priest/holy",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "deathknight/blood",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "deathknight/blood",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "deathknight/frost",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "deathknight/frost",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "deathknight/unholy",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "deathknight/unholy",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "shaman/enhancement",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "shaman/enhancement",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "shaman/elemental",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "shaman/elemental",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "shaman/restoration",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "shaman/restoration",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "mage/arcane",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "mage/arcane",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "mage/fire",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "mage/fire",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "mage/frost",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "mage/frost",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warlock/affliction",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warlock/affliction",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warlock/demonology",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warlock/demonology",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warlock/destruction",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "warlock/destruction",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "monk/brewmaster",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "monk/brewmaster",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "monk/windwalker",
+    "width": 1440,
+    "bad": [
+      {
+        "kind": "glue",
+        "text": "천신합일",
+        "reason": "display:block,font 11.2px/16px",
+        "ctx": "천신합일쉬엔을 먼저 소환하고 옥룡의 마음의 출처를 나누어 봅니다. 선택 쿨기와 천신합일의 효과는 이어 쓰고, 등선의 위론의 화"
+      }
+    ],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "monk/windwalker",
+    "width": 390,
+    "bad": [
+      {
+        "kind": "glue",
+        "text": "천신합일",
+        "reason": "display:block,font 11.2px/16px",
+        "ctx": "천신합일쉬엔을 먼저 소환하고 옥룡의 마음의 출처를 나누어 봅니다. 선택 쿨기와 천신합일의 효과는 이어 쓰고, 등선의 위론의 화"
+      }
+    ],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "monk/mistweaver",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "monk/mistweaver",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "druid/guardian",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "druid/guardian",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "druid/feral",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "druid/feral",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "druid/balance",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "druid/balance",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "druid/restoration",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "druid/restoration",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "demonhunter/vengeance",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "demonhunter/vengeance",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "demonhunter/havoc",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "demonhunter/havoc",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "demonhunter/devourer",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "demonhunter/devourer",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "evoker/devastation",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "evoker/devastation",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "evoker/augmentation",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "evoker/augmentation",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "evoker/preservation",
+    "width": 1440,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  },
+  {
+    "id": "evoker/preservation",
+    "width": 390,
+    "bad": [],
+    "split": [],
+    "overflow": false
+  }
+]

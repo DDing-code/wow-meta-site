@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 
 const origin = process.env.TEST_ORIGIN || 'http://127.0.0.1:4410';
 const out = path.resolve(process.env.WRAPPING_OUTPUT || 'artifacts/goal-12.1.5-r9/local');
-const ids = ['evoker/augmentation', 'priest/holy', 'evoker/preservation', 'deathknight/blood', 'deathknight/frost', 'druid/guardian', 'demonhunter/vengeance', 'warrior/fury', 'rogue/assassination', 'shaman/enhancement', 'hunter/survival'];
+const ids = ['evoker/augmentation', 'priest/holy', 'evoker/preservation', 'deathknight/blood', 'deathknight/frost', 'druid/guardian', 'demonhunter/vengeance', 'warrior/fury', 'rogue/assassination', 'shaman/enhancement', 'hunter/survival', 'warlock/destruction'];
 
 (async () => {
   fs.mkdirSync(out, { recursive: true });
@@ -46,7 +46,22 @@ const ids = ['evoker/augmentation', 'priest/holy', 'evoker/preservation', 'death
         const a = captions.find(el => el.textContent === '지난 5초 피해 회복');
         const b = captions.find(el => el.textContent === '안전할 때 2초 시전');
         const gap = a && b ? Math.min(...lines(b).flat().map(c => c.x)) - Math.max(...lines(a).flat().map(c => c.right)) : null;
-        return { overflow: document.documentElement.scrollWidth > innerWidth + 1, dotStarts, wingLines, titleLines, gap };
+        // 상자의 `span { display: block }` 규칙이 이름표 조각(조사 묶음·가운뎃점)에 번지면 "쇠 / 퇴가"처럼 줄마다 쪼개진다(2026-10-22 '먼저 이렇게 이해').
+        const brokenPieces = [...document.querySelectorAll('[data-term-piece]')]
+          .filter(el => {
+            const parent = el.parentElement;
+            if (!parent || /flex|grid/.test(getComputedStyle(parent).display)) return false;
+            const cs = getComputedStyle(el);
+            return !/inline/.test(cs.display) || Math.abs(parseFloat(cs.fontSize) - parseFloat(getComputedStyle(parent).fontSize)) > 0.5;
+          })
+          .map(el => el.textContent);
+        // 이름표 안에서 마지막 한 글자만 다음 줄로 떨어지면("황 / 폐로") 안 된다.
+        const oneCharSplits = [...document.querySelectorAll('a[data-wowhead] em')].filter(em => {
+          const tail = em.querySelector(':scope > span');
+          const first = [...em.getClientRects()].find(r => r.width > 1);
+          return tail && first && tail.getBoundingClientRect().top > first.bottom - 2 && em.textContent.length - tail.textContent.length === 1;
+        }).map(em => em.textContent);
+        return { overflow: document.documentElement.scrollWidth > innerWidth + 1, dotStarts, wingLines, titleLines, gap, brokenPieces, oneCharSplits };
       });
       results.push({ id, width, ...info, errors });
       if (id === 'evoker/augmentation') {
@@ -62,6 +77,8 @@ const ids = ['evoker/augmentation', 'priest/holy', 'evoker/preservation', 'death
       }
       assert(!info.overflow, `${id} ${width}px 넘침`);
       assert.deepEqual(info.dotStarts, [], `${id} ${width}px 가운뎃점 줄 시작`);
+      assert.deepEqual(info.brokenPieces, [], `${id} ${width}px 이름표 조각이 블록·다른 글씨 크기로 바뀜`);
+      assert.deepEqual(info.oneCharSplits, [], `${id} ${width}px 이름표 한 글자 꺾임`);
       assert.deepEqual(errors, []);
       if (ids.indexOf(id) < 3) {
         const target = id === 'priest/holy'

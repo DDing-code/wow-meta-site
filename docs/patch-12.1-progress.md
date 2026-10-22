@@ -986,3 +986,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 화면 확인: `artifacts/raid-guide-20261022/shots.cjs`로 정리 빌드(`build-sanitized.cjs`, 소스맵 0)를 띄워 5편 × 1440·390·320px 15곳과 탭 전환·목차 이동·툴팁 호버 1곳, 16곳 모두 통과(화면 오류 0, 가로 넘침 0, nowrap 글자 넘침 0, 깨진 아이콘 0, Wowhead 툴팁 표시 확인). 캡처 `shots/`(대표만 커밋), 결과 `shots/check.json`. 단계 카드의 종류 표시가 카드 높이만큼 늘어나던 것을 위쪽 정렬로 고쳤다.
 - 남은 일: 배치도(plan/ 74장)·영상을 글 옆에 붙이기, 바쉬니크 징표 색 순서와 울라텍 송곳니(1+5 vs MATE 6동시) 사용자 확인, 다른 네임드 기술의 번호 확인 후 툴팁 추가, 키식스 국내 공략의 '리혼·결의' 중 '결의'가 무엇인지 확인(지금은 리치의 혼만 적음).
 - 배포: 사이트 `317aa2d9` main 푸시, KB 로컬 `a0824af`. 정리 빌드 `main.5b6e2805.js`(소스맵 0, 공개 파일 6개, `artifacts/raid-guide-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고 운영 배포는 production·Ready, 별칭 https://wowmeta.vercel.app 이다. 공개 `/raid`가 같은 번들을 내고 SHA-256이 로컬과 같으며(`e1ab7ad9…d230`) 소스맵은 403이다. shots.cjs를 운영 주소로 다시 돌려 16곳 모두 통과했고 `shots/`는 운영 캡처다.
+
+## 2026-10-22 · 가이드 줄바꿈·자간 수정 + 레이드 가이드 배치도
+
+- 요청: "가이드 전반적으로 자간이나 줄바꿈 이상한 가이드 많은데 (특히 먼저 이것 어쩌구) 수정해줘", 이어서 "레이드 가이드 스토리보드랑 만들어둔 각종 에셋들 활용해서 그림이 풍부하면 좋겠는데 너무 글 위주야".
+- 줄바꿈 원인: 본문 속 스킬 이름표는 조사·가운뎃점을 붙여 두는 작은 조각(`InlineTermGlue`·`InlineTermEnding`)으로 감싼다. '먼저 이렇게 이해' 상자(`FieldGuideList`) 등은 라벨용 `span { display: block; font-size: 0.7rem }`을 자손 전체에 걸어서, 그 조각까지 블록·작은 글씨가 됐다(파괴 흑마 '쇠 / 퇴가', '혼돈의 화 / 살·' 처럼 이름표가 줄마다 쪼개짐). 조각들에 `&&&` 초기화(표시 inline·글꼴 상속)를 걸어 어느 상자 안에서도 줄글로 남게 했다. 꺼진 스킬용 `<span>`도 같은 초기화 조각(`InlineTermPlain`)으로 바꿨다.
+- 한 글자 꺾임: 조사를 '마지막 글자'와 묶던 것을 '마지막 낱말'과 묶게 바꿨다(타임라인 칸의 '황 / 폐로'). 가운뎃점도 앞 낱말 전체와 묶는다('정 / 령·지속').
+- 레이드 글에도 조사 묶기(`TermGlue`)를 넣었다('영혼결속 / 으로').
+- 레이드 그림: 스토리보드 배치도 74장(1920×1080 PNG)을 `public/images/raid/plan/<컷>-960.webp`·`-1600.webp`(합 23MB), 네임드 스프라이트 17종을 `public/images/raid/sprites/<id>.webp`(투명)로 줄였다(`artifacts/text-wrap-20261022/raid-images.py`). KB 정본에 행동마다 `figure{plan,caption}`, 네임드 `sprites`·`figure`(개요)·`recap`(복습), 맹독 심연 편 `figure`·`recap`을 붙였다(`raid-figures.cjs`, 74컷 각 1번, 그림 없는 행동 2개: 키식스 '쿨기 시점', 파수꾼 '사잇단계 뒤 교대'). 화면은 넓을 때 왼쪽 배치도·오른쪽 글, 좁을 때 그림→글, 누르면 1600px 큰 그림(Esc·닫기).
+- 검사: validate-raid-guide에 74컷·파일·스프라이트 확인, RaidGuidePage.test.js에 배치도·확대·조사 묶기 2개, verify-guide-wrapping에 파괴 흑마와 '이름표 조각 블록화·한 글자 꺾임' 확인을 더했다. validate-guide-tooltips·charts의 코드 모양 검사를 새 동작에 맞췄다.

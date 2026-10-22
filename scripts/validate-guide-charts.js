@@ -545,7 +545,7 @@ function main() {
   const barrierTerms = [{ label: '얼음 보호막', skill: { id: '11426' } }, { label: '얼음 보호막 연마', skill: { id: '1244069' } }];
   assert(findTerm('얼음 보호막 연마입니다.', barrierTerms, 0)?.term.skill.id === '1244069' && findTerm('얼음 보호막입니까?', barrierTerms, 0)?.term.skill.id === '11426', 'Korean copulas must preserve the complete spell name and exact tooltip');
   assert(!findTerm('얼음 보호막대', barrierTerms, 0), 'Spell boundaries must still reject unrelated word continuations');
-  assert(guideDetailSource.includes("function InlineSkillTerm({ skill, children, suffix = '' }) {\n  if (isInactiveSkillReference(skill)) return <span>{children}{suffix}</span>;"), 'Direct inline spell references must reject invalid or inactive IDs and retain attached text');
+  assert(guideDetailSource.includes("function InlineSkillTerm({ skill, children, suffix = '' }) {\n  if (isInactiveSkillReference(skill)) return <InlineTermPlain>{children}{suffix}</InlineTermPlain>;"), 'Direct inline spell references must reject invalid or inactive IDs and retain attached text');
   const inactiveReference = new Function('skill', 'cleanText', extractFunctionBody(guideDetailSource, 'isInactiveSkillReference'));
   assert(!inactiveReference({ id: '441583', type: 'hero-talent' }, String) && [null, { id: 'hero-claw' }, { id: '441583', type: 'removed' }].every(skill => inactiveReference(skill, String)), 'Inline links must accept live numeric spell IDs and reject missing, tree and removed records');
   for (const block of ['priority', 'specialist-chart']) {
