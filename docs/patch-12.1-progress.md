@@ -1055,3 +1055,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 원고: `link-guides.cjs`가 previousLink도 교체 대상으로 받게 해 원고와 KB 정본의 `video`를 새 번호·채널 'wowmeta 와우메타'로 바꿨다(바뀐 가이드 1개). 검사 GUIDE_VIDEOS도 새 번호로 바꾸고, 이제 27개 모두 와우메타 채널이어야 한다.
 - 화면 확인: `artifacts/guide-videos-demonology-20261022/shots.cjs`(앞 판 복사, 악마 흑마도 매니페스트에서 읽음)로 빌드본 33곳 통과. 캡처는 `shots/`(악마 흑마 1440·390 추가).
 - 배포: 사이트 `6539f317` main 푸시, KB 로컬 `0e16579`. 정리 빌드 `main.0db785b8.js`(소스맵 0, `artifacts/guide-videos-demonology-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 https://wowmeta.vercel.app 이 새 번들을 내보내고(새 번호 포함) 소스맵은 403이다. shots.cjs를 운영 주소로 다시 돌려 33곳 모두 통과(`shots/`는 운영 캡처).
+
+## 2026-10-23 · '한 명이 급락하면' → '한 명을 살리려면'
+
+- 요청: "한명이 급락하면 이라는 단어가 좀 어색하니까 '한 명을 살리려면'으로 바꾸자", 이어서 "영상도 수정해야해".
+- 원고와 KB 정본 `guide-12.1.json`을 함께 고쳤다: 회복 드루이드 딜사이클 가지 이름표 1곳, 보존 기원사 6곳(+ '한 명만 급락하면' → '한 명만 살리려면' 1곳), 수양 1곳, 신성 사제 1곳, 운무 1곳(문장 흐름 때문에 '한 명을 살려야 하면'). KB `current-build.md` 2곳(보존·신성)도 맞췄다. '한 명 급락 — 살리는 순서' 같은 제목은 그대로 뒀다.
+- 영상: ai-hub `outputs/pixel-guides/specs/<id>/data.py`에서 회복 드루이드·보존 기원사·복원 주술사 3편의 판 제목 줄과 자막을 바꾸고 `engine/build.py <id> --no-thumb`로 다시 만들었다(예전 판 `<id>-guide-native-alpha-v4.before-rescue-20261023.mp4`). 장면 제목 '한 명 급락 · 위에서부터'는 그대로다.
+- 검사: `npm run validate:quiet` 11단계 통과, 빌드본에서 `artifacts/rescue-wording-20261023/shots.cjs`로 힐러 5개 가이드 1440·390 모두 '급락하면' 0곳, 캡처 `shots/`. 영상은 `check_layout.py` 통과, 바뀐 장면 캡처 `pixel-guides/check-tankheal/rescue-wording-20261023/`.

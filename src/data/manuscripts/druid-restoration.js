@@ -882,7 +882,7 @@ const manuscript = {
                 caption: '풍요 켜진 동안',
                 above: {
                   skillId: '132158',
-                  when: '한 명이 급락하면 먼저',
+                  when: '한 명을 살리려면 먼저',
                 },
               },
               {
