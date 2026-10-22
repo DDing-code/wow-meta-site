@@ -1031,3 +1031,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 단계 69개·팁 108개는 그대로이고 문장만 바꿨다. 새로 쓴 직업 스킬 9개(죽음의 손아귀·피의 욕망·신의의 도약·혼돈의 회오리·팽이 차기·충격파·미풍·보호의 축복·투사의 혼)를 KB 번호로 등록했다. '구출'은 일반 낱말과 겹쳐 등록하지 않고 문장에서 뺐다.
 - 그림 15컷: 스토리보드 `plan.py`를 고쳐(예전 판 `plan.before-tactics.py`, 예전 PNG `plan/_before-tactics/`) 네크잘리 우물 조 5명, 바쉬니크 징표 색·역할, 탐험가 상자 2명·물고기 시점, 스조라크 집결 탱커 제외·문구, 송곳니 구슬·나눠 맞기 문구, 제단 단두대 5명·2단계 유령/보호막 네임드를 말라크라스로 다시 그렸다(raidstrats 2단계 탱킹 대상). `raid-planner-20261022/raid-images.py`로 WebP 28장 교체.
 - 검사: `validate-raid-guide`의 바쉬니크 징표 문구를 새 순서로 바꾸고 예전 순서가 남지 않는지 막았다. `npm run validate:quiet` 10단계, `RaidGuidePage.test.js` 9개 통과. 빌드본에서 네크잘리·바쉬니크·제단 화면과 새 스킬 툴팁 링크를 확인했다.
+- 배포: 사이트 `e2eb5efd` main 푸시, KB 로컬 `5d21047`. 정리 빌드 `main.a825534f.js`(소스맵 0, `artifacts/raid-tactics-compare-20261022/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 /raid가 새 번들을 내고 바뀐 배치도 WebP가 로컬과 SHA-256이 같으며 소스맵은 403이다. 운영 화면에서 새 징표 순서·우물 조·송곳니 글을 확인했다.
