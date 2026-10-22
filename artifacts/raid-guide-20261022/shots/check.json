@@ -1,6 +1,6 @@
 {
-  "base": "http://localhost:4418",
-  "when": "2026-10-22T06:15:03.128Z",
+  "base": "https://wowmeta.vercel.app",
+  "when": "2026-10-22T06:17:27.139Z",
   "results": [
     {
       "episode": "kithix",
