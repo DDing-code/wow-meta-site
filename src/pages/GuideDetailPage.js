@@ -9,7 +9,6 @@ import {
   ArrowDown,
   ArrowLeft,
   ArrowRight,
-  BarChart3,
   BookOpen,
   Clock3,
   Gauge,
@@ -28,7 +27,6 @@ import {
 } from '../data/guideRegistry.js';
 import guideManuscripts from '../data/guideManuscripts.js';
 import { getGuidePublication } from '../data/guideUpdates.js';
-import { getLogReportsByGuideId } from '../data/logReportRegistry.js';
 import kbSkills from '../data/kb-skills.json';
 import kbSynergies from '../data/kb-synergies.json';
 
@@ -3138,7 +3136,6 @@ function GuideDetailPage() {
   const data = useMemo(() => (guide ? buildGuideData(guide) : null), [guide]);
   const manuscript = guide ? guideManuscripts[guide.id] : null;
   const publication = getGuidePublication(guide?.id, manuscript);
-  const logReports = guide ? getLogReportsByGuideId(guide.id) : [];
   const inlineTerms = useMemo(() => buildInlineTerms(data, manuscript), [data, manuscript]);
 
   useEffect(() => {
@@ -3204,12 +3201,6 @@ function GuideDetailPage() {
             가이드 목록
           </BackLink>
           <HeroTopActions>
-            {logReports.length > 0 && (
-              <LogReportLink to={`/logs/${guide.id}`} aria-label={`${guide.spec} ${guide.className} 로그 분석 ${logReports.length}건`}>
-                <BarChart3 size={15} aria-hidden="true" />
-                <span>로그 분석 {logReports.length}건</span>
-              </LogReportLink>
-            )}
             <PatchBadge>{publication.detail}</PatchBadge>
           </HeroTopActions>
         </HeroTop>
@@ -4744,26 +4735,6 @@ const HeroTopActions = styled.div`
   justify-content: flex-end;
   gap: 14px;
   min-width: 0;
-`;
-
-const LogReportLink = styled(Link)`
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 30px;
-  color: #75bda9;
-  font-size: 0.76rem;
-  font-weight: 700;
-  border-bottom: 1px solid rgba(117, 189, 169, 0.4);
-
-  &:hover {
-    color: #a2d5c7;
-    border-bottom-color: #a2d5c7;
-  }
-
-  @media (max-width: 460px) {
-    span { display: none; }
-  }
 `;
 
 const HeroGrid = styled.div`

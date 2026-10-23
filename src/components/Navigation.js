@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { BarChart3, BookOpen, Castle, Compass, Database, Home, Menu, Newspaper, X } from 'lucide-react';
+import { BookOpen, Castle, Compass, Database, Home, Menu, Newspaper, X } from 'lucide-react';
 
 const Nav = styled.nav`
   position: sticky;
@@ -124,7 +124,6 @@ const navItems = [
   { path: '/beginner', label: '초보자 안내', icon: Compass },
   { path: '/guide', label: '가이드', icon: BookOpen },
   { path: '/raid', label: '레이드 가이드', icon: Castle },
-  { path: '/logs', label: '로그 분석', icon: BarChart3 },
   { path: '/spells', label: '스펠 DB', icon: Database },
   { path: '/news', label: '소식', icon: Newspaper },
 ];
@@ -159,14 +158,11 @@ function Navigation() {
         <Links id="primary-navigation" $open={open}>
           {navItems.map(item => {
             const Icon = item.icon;
+            // 로그 분석(/logs, /guide/.../log-analysis)은 메뉴에 없고 링크로만 연다. 그 화면에서는 어느 탭도 켜지 않는다.
             const isLogReport = location.pathname.includes('/log-analysis');
-            const active = item.path === '/logs'
-              ? isLogReport || location.pathname === '/logs' || location.pathname.startsWith('/logs/')
-              : item.path === '/guide' && isLogReport
-                ? false
-                : item.path === '/'
+            const active = item.path === '/'
               ? location.pathname === '/'
-              : location.pathname === item.path || location.pathname.startsWith(`${item.path}/`);
+              : !isLogReport && (location.pathname === item.path || location.pathname.startsWith(`${item.path}/`));
             return (
               <NavItem
                 key={item.path}

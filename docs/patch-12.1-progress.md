@@ -1063,3 +1063,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 영상: ai-hub `outputs/pixel-guides/specs/<id>/data.py`에서 회복 드루이드·보존 기원사·복원 주술사 3편의 판 제목 줄과 자막을 바꾸고 `engine/build.py <id> --no-thumb`로 다시 만들었다(예전 판 `<id>-guide-native-alpha-v4.before-rescue-20261023.mp4`). 장면 제목 '한 명 급락 · 위에서부터'는 그대로다.
 - 검사: `npm run validate:quiet` 11단계 통과, 빌드본에서 `artifacts/rescue-wording-20261023/shots.cjs`로 힐러 5개 가이드 1440·390 모두 '급락하면' 0곳, 캡처 `shots/`. 영상은 `check_layout.py` 통과, 바뀐 장면 캡처 `pixel-guides/check-tankheal/rescue-wording-20261023/`.
 - 배포: 사이트 `f289a8e8` main 푸시, KB 로컬 `bfd0643`. 정리 빌드 `main.e66b16e2.js`(소스맵 0, `artifacts/rescue-wording-20261023/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영이 새 번들을 내고 소스맵은 403이며, `shots.cjs`를 운영 주소로 돌려 5개 가이드 1440·390 모두 예전 문구 0곳(캡처 `live/`). 영상 3편은 아직 유튜브에 올리지 않은 판이라 교체 업로드는 없다.
+
+## 2026-10-23 홈 화면 재구성·로그 분석 숨김
+
+- 요청: "사이트 탭/가이드 페이지에서 로그 분석을 빼고 링크로만 접속", "홈 화면을 유튜브 홈처럼 재생목록별 영상 리스트, 가이드들로 풍성하게", 수정 지시 "헤드라인 및 서브 타이틀도 제거하고 레이아웃 다시(와우가 처음이신가요? 유지)".
+- 로그 분석: 상단 메뉴 탭과 가이드 머리의 '로그 분석 N건' 링크를 뺐다. `/logs`·리포트 주소와 사이트맵은 그대로라 링크로는 열린다. 리포트 화면에서는 어느 메뉴 탭도 켜지지 않는다.
+- 홈: 머리글·부제·숫자 줄을 빼고 '와우가 처음이신가요?' → 분류 칩(전체·탱커·힐러·근딜·원딜·레이드, 위에 붙음) → 재생목록 4줄(영상 40편, 썸네일은 유튜브로 새 창, 이름·'글 가이드'는 사이트 가이드로) → 레이드 가이드 5편(배치도 썸네일) → 바로가기 3개. 한 줄은 화면 폭 칸 수만 보이고 '모두 보기'로 펼치며, 639px 이하는 두 칸·두 줄이다.
+- 자료: `src/data/youtubePlaylists.js`(ai-hub `youtube-playlists.json`과 같음). 검사 `scripts/validate-home-videos.cjs`(`validate:home`, 전체 검사·빌드 전 검사에 넣음), 테스트 `src/pages/HomePage.test.js`. 캡처 `artifacts/home-youtube-20261023/`(`shots.cjs`).
