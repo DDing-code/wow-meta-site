@@ -90,7 +90,9 @@ for (const spell of guide.spells) {
   assert.ok(/^[a-z0-9_]+$/.test(spell.icon), `spell icon: ${spell.name}`);
   assert.ok(bossIds.has(spell.boss), `spell boss: ${spell.name}`);
 }
-assert.equal(guide.spells.length, 9, 'nine confirmed Coiled Altar spells');
+assert.equal(guide.spells.filter(spell => spell.boss === 'coiled-altar').length, 9, 'nine confirmed Coiled Altar spells');
+// 2026-10-23 님리사 구슬 설명에 넣은 심연의 비(한국어 공식 툴팁 확인).
+assert.ok(guide.spells.some(spell => spell.boss === 'nymrissa' && spell.id === 1260837 && spell.name === '심연의 비'), 'nymrissa: Abyssal Rain spell');
 
 // 스토리보드 그림: 배치도 69장이 한 번씩 붙고(행동·네임드 개요), 파일(public/images/raid)과 네임드 스프라이트가 있어야 한다.
 // 2026-10-22 사용자 요청으로 '한 장 복습' 4장과 맹독 심연 맨 위 개요(선택한 네임드만 밝힌다)는 뺐다. 다시 붙지 않게 막는다.
@@ -129,6 +131,9 @@ const nymrissa = bosses.find(b => b.id === 'nymrissa');
 const orbStep = nymrissa.phases.flatMap(p => p.steps).find(step => step.title.includes('무적조'));
 for (const name of ['그림자 망토', '거북의 상', '천상의 보호막']) assert.ok(orbStep.text.includes(name), `nymrissa immune squad: ${name}`);
 assert.ok(orbStep.text.includes('얼음 방패는 쓰지 못합니다'), 'nymrissa: ice block cannot be used');
+// 2026-10-23 사용자 정정: 심연의 비 지속 피해가 끝나면 1무적조가 먼저, 이어서 탱커·죽음의 기사 등이 한 사이클 9개를 나눠 먹는다.
+for (const phrase of ['심연의 비', '1무적조가 먼저', '구슬 9개', '죽음의 기사']) assert.ok(orbStep.text.includes(phrase), `nymrissa orb split: ${phrase}`);
+assert.ok(!JSON.stringify(nymrissa).includes('무적조가 차례로 밟'), 'nymrissa: old "무적조가 차례로 밟기" wording is gone');
 const vashnik = bosses.find(b => b.id === 'vashnik');
 // 2026-10-22 '레이드스트래츠 있는 건 바꿔' 요청으로 첫 파도 징표 줄은 raidstrats 오프셋 플랜의 색 순서를 따른다.
 assert.ok(JSON.stringify(vashnik).includes('은빛 달, 주황 동그라미, 초록 세모, 노란 별, 빨간 가위'), 'vashnik marker line (raidstrats offset order)');

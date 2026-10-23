@@ -1088,3 +1088,11 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - KB `raid-guide.json` '양쪽 단상으로 나누기'에 지도 근거 참고 한 줄을 더했다.
 - 검사: `npm run validate:quiet` 12단계 통과, `RaidGuidePage.test.js` 9개 통과. 빌드본에서 `artifacts/raid-ulatek-sides-20261023/shots.cjs`로 4장 1440·390 확인(캡처 `shots/`).
 - 배포: 사이트 `06995d35` main 푸시, KB 로컬 `513b1a6`. 정리 빌드 `main.170efbd2.js`(소스맵 403, `artifacts/raid-ulatek-sides-20261023/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 WebP 8장이 로컬과 SHA-256이 같고, `shots.cjs`를 운영 주소로 돌려 4장 1440·390 모두 통과(캡처 `live/`).
+
+## 2026-10-23 님리사 얼음 구슬 무적조 설명 정정
+
+- 요청: "심연의 비 지속데미지 끝나는 타이밍에 1무적조가 구슬을 먹고, 탱커나 나머진 사람이 구슬을 먹고 이런식으로 한 사이클에 9개인 구슬을 무적조와 탱커, 죽음의 기사 등이 나눠서 먹는 거야".
+- KB `raid-guide.json` 님리사 편: 요약·확인 항목·'얼음 구슬은 무적조가 먼저' 행동(본문·참고·그림 설명)·무적조 팁·갈리는 택틱 '얼음 구슬 담당'을 '심연의 비 지속 피해가 끝나면 1무적조가 먼저, 이어서 탱커·죽음의 기사 등이 한 사이클 9개를 나눠 먹기'로 바꿨다. 누가 몇 개씩 먹는지는 원문에 없어 적지 않았다. raidstrats PTR 공략(대상자 셋이 5개씩, 소용돌이와 겹치는 묶음마다 무적기 2개)은 참고·비교로 옮겼다.
+- 네임드 기술 '심연의 비'(1260837, `spell_fire_bluerainoffire`)를 한국어 공식 툴팁으로 확인해 `spells`에 넣었다(님리사 칩 1개). `validate-raid-guide.cjs`의 기술 수 검사는 똬리의 제단 9개로 좁히고 새 문구·예전 문구 금지를 더했다. `RaidGuidePage.test.js`도 같게 고쳤다.
+- 배치도 02-nymrissa-05(무적조 셋이 차례로 밟는 그림)는 그대로이고 그림 설명만 '신화: 1무적조가 먼저 먹기'로 바꿨다.
+- 검사: `npm run validate:quiet` 12단계 통과, `RaidGuidePage.test.js` 9개 통과, 빌드본에서 `artifacts/raid-nymrissa-orbs-20261023/shots.cjs` 1440·390 통과.

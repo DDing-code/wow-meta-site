@@ -92,13 +92,17 @@ test('님리사 무적조는 그림자 망토·거북의 상·천상의 보호�
   const orbStep = Array.from(section.querySelectorAll('li[data-kind]')).find(step => step.textContent.includes('얼음 구슬은 무적조가'));
   expect(orbStep.textContent).toContain('얼음 방패는 쓰지 못합니다');
   expect(orbStep.querySelector('a[data-term-id="45438"]')).not.toBeNull();
+  // 2026-10-23 사용자 정정: 심연의 비가 끝나면 1무적조가 먼저, 남은 구슬은 탱커·죽음의 기사 등이 나눠 먹는다.
+  expect(orbStep.querySelector('a[data-term-id="1260837"]')).not.toBeNull();
+  expect(orbStep.textContent).toContain('1무적조가 먼저 구슬을 먹고');
+  expect(orbStep.textContent).toContain('구슬 9개');
 });
 
 test('똬리의 제단은 공식 번호를 확인한 기술 9개를 툴팁 칩으로 보이고 본문에서도 긴 이름을 먼저 잡는다', () => {
   mount('/raid/coiled-altar');
   const chips = container.querySelectorAll('[data-spell-id]');
   expect(chips).toHaveLength(9);
-  expect(Array.from(chips).map(chip => chip.getAttribute('data-spell-id'))).toEqual(raidGuide.spells.map(spell => String(spell.id)));
+  expect(Array.from(chips).map(chip => chip.getAttribute('data-spell-id'))).toEqual(raidGuide.spells.filter(spell => spell.boss === 'coiled-altar').map(spell => String(spell.id)));
   for (const chip of chips) {
     expect(chip.getAttribute('data-wowhead')).toMatch(/^spell=\d+&domain=ko$/);
     expect(chip.querySelector('img').getAttribute('src')).toMatch(/\/icons\/medium\/[a-z0-9_]+\.jpg$/);
