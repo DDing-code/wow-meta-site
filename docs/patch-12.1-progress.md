@@ -1114,3 +1114,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - `skills`에 대마법 보호막(48707, KB `01-죽음의기사/공용/Skills/대마법보호막.md`, 툴팁 확인 2026-09-23)을 넣어 본문·참고에 아이콘 툴팁을 붙였다.
 - 검사: `validate-raid-guide.cjs`가 '대마법 보호막'·'대상자 3명이 3개씩'과 스킬 등록을 요구하고 '단단한 사람'을 막는다. `RaidGuidePage.test.js`도 48707 링크와 같은 문구를 본다. `npm run validate:quiet` 12단계 통과, 테스트 9개 통과, 빌드본에서 `artifacts/raid-nymrissa-ams-20261023/shots.cjs` 1440·390 통과.
 - 배치도 02-nymrissa-05 그림 속 글자('무적조: 한 명씩 시간을 나눠 밟기')는 여전히 그대로다(사용자 답 대기).
+- 배포: 사이트 `5e566d6c` main 푸시, KB 로컬 `9f2cc5f`. 정리 빌드 `main.19645f3e.js`(소스맵 403, `artifacts/raid-nymrissa-ams-20261023/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, `shots.cjs`를 운영 주소로 돌려 1440·390 통과(캡처 `live/`).
