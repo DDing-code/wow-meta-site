@@ -529,10 +529,11 @@ function RaidCard({ episode }) {
   );
 }
 
-function ShelfGrid({ items, columns, expanded, onToggle, label, renderItem }) {
+// locked: 칩으로 이 분류만 고른 상태라 늘 다 펼쳐 두고 접기 버튼을 두지 않는다.
+function ShelfGrid({ items, columns, expanded, locked, onToggle, label, renderItem }) {
   const limit = columns <= MIN_COLUMNS ? columns * 2 : columns;
-  const collapsible = items.length > limit;
-  const visible = expanded || !collapsible ? items : items.slice(0, limit);
+  const collapsible = !locked && items.length > limit;
+  const visible = locked || expanded || !collapsible ? items : items.slice(0, limit);
   return (
     <>
       <Grid>{visible.map(renderItem)}</Grid>
@@ -551,7 +552,7 @@ function HomePage() {
   const [filter, setFilter] = useState('all');
   const [open, setOpen] = useState({});
   const isShown = id => filter === 'all' || filter === id;
-  const isExpanded = id => filter === id || !!open[id];
+  const isExpanded = id => !!open[id];
   const toggle = id => setOpen(state => ({ ...state, [id]: !state[id] }));
   const totalVideos = useMemo(() => videoShelves.reduce((sum, shelf) => sum + shelf.items.length, 0), []);
 
@@ -617,6 +618,7 @@ function HomePage() {
               items={shelf.items}
               columns={columns}
               expanded={isExpanded(shelf.id)}
+              locked={filter === shelf.id}
               onToggle={() => toggle(shelf.id)}
               label={shelf.title}
               renderItem={item => (
@@ -646,6 +648,7 @@ function HomePage() {
             items={raidEpisodes}
             columns={columns}
             expanded={isExpanded('raid')}
+            locked={filter === 'raid'}
             onToggle={() => toggle('raid')}
             label="레이드 가이드"
             renderItem={episode => <RaidCard key={episode.id} episode={episode} />}

@@ -51,6 +51,7 @@ test('모두 보기와 분류 칩으로 한 재생목록을 다 펼친다', () =
   act(() => Simulate.click(chip('힐러')));
   expect(container.querySelectorAll('[data-shelf]')).toHaveLength(1);
   expect(shelf('healers').querySelectorAll('li')).toHaveLength(healers.items.length);
+  expect(shelf('healers').querySelector('button[aria-expanded]')).toBeNull();
   const first = shelf('healers').querySelector('li');
   expect(first.querySelector(`a[href^="https://www.youtube.com/watch?v=${healers.items[0][1]}"]`)).not.toBeNull();
   expect(first.querySelector('a[href="/guide/paladin/holy"]')).not.toBeNull();

@@ -1070,3 +1070,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 로그 분석: 상단 메뉴 탭과 가이드 머리의 '로그 분석 N건' 링크를 뺐다. `/logs`·리포트 주소와 사이트맵은 그대로라 링크로는 열린다. 리포트 화면에서는 어느 메뉴 탭도 켜지지 않는다.
 - 홈: 머리글·부제·숫자 줄을 빼고 '와우가 처음이신가요?' → 분류 칩(전체·탱커·힐러·근딜·원딜·레이드, 위에 붙음) → 재생목록 4줄(영상 40편, 썸네일은 유튜브로 새 창, 이름·'글 가이드'는 사이트 가이드로) → 레이드 가이드 5편(배치도 썸네일) → 바로가기 3개. 한 줄은 화면 폭 칸 수만 보이고 '모두 보기'로 펼치며, 639px 이하는 두 칸·두 줄이다.
 - 자료: `src/data/youtubePlaylists.js`(ai-hub `youtube-playlists.json`과 같음). 검사 `scripts/validate-home-videos.cjs`(`validate:home`, 전체 검사·빌드 전 검사에 넣음), 테스트 `src/pages/HomePage.test.js`. 캡처 `artifacts/home-youtube-20261023/`(`shots.cjs`).
+- 배포 뒤 운영 화면에서 칩으로 한 분류를 고르면 '접기'가 눌러도 안 접히던 것을 고쳐(칩 선택 중에는 버튼을 숨김) 다시 배포했다.
