@@ -3,6 +3,7 @@
 // - KB 정본(00-공통/공용/Meta/raid-guide.json)과 사이트의 생성 JSON(src/data/raidGuide.json)이 같은지(sync-kb를 돌렸는지)
 // - 편·네임드·단계·팁·출처 구조와 고정 용어(네임드·쫄)
 // - 본문에 툴팁을 붙일 직업 스킬이 KB(kb-skills.json)에 같은 번호로 있는지, 네임드 기술에 번호·아이콘이 있는지
+// - 인벤 공통 팁과 갈리는 택틱(참고) 구분(2026-10-23)
 // - 상단 메뉴와 라우트에 /raid 가 연결됐는지, 2026-10-22 사용자 확인 사항(구슬 무적기·징표·핑·물고기 순서·1+5)이 남아 있는지
 const fs = require('node:fs');
 const path = require('node:path');
@@ -63,12 +64,17 @@ for (const episode of guide.episodes) {
       }
       tips++;
     }
-    for (const choice of boss.choices) for (const field of ['title', 'picked', 'alt', 'why']) assert.ok(choice[field], `${boss.id}: choice ${field}`);
+    for (const choice of boss.choices) {
+      for (const field of ['title', 'picked', 'alt', 'why']) assert.ok(choice[field], `${boss.id}: choice ${field}`);
+      assert.ok(choice.open == null || choice.open === true, `${boss.id}: choice open must be true or absent`);
+    }
+    for (const tip of boss.tips) if (tip.source.startsWith('inven-')) assert.ok(boss.sources.includes(tip.source), `${boss.id}: Inven tip source must be listed in the boss sources: ${tip.source}`);
     assert.ok(boss.sources.length >= 1, `${boss.id}: sources`);
     for (const key of boss.sources) assert.ok(guide.sources[key], `${boss.id}: source ${key}`);
   }
 }
-assert.equal(tips, 108, `108 tips from the storyboard, got ${tips}`);
+// 스토리보드 팁 108개 + 2026-10-23 인벤 신화 글에서 여러 글이 함께 말한 공통 팁 20개.
+assert.equal(tips, 128, `128 tips (108 storyboard + 20 Inven common), got ${tips}`);
 assert.equal(steps, 69, `69 steps, got ${steps}`);
 for (const [key, source] of Object.entries(guide.sources)) {
   assert.ok(source.title && /^https:\/\//.test(source.href) && source.note, `source ${key}`);
@@ -163,6 +169,18 @@ assert.ok(fangStep.text.includes('한 명이 먼저 끊고') && fangStep.text.in
 const intermissionStep = ulatek.phases.flatMap(p => p.steps).find(step => step.title.startsWith('사잇단계'));
 assert.equal(intermissionStep.figure.plan, '05-ulatek-11', 'ulatek intermission figure');
 assert.ok(intermissionStep.figure.caption.includes('사잇단계 지도') && intermissionStep.text.includes('징표 8곳'), 'ulatek intermission uses the zone map');
+
+// 2026-10-23 인벤 비교 반영: 공통된 것만 팁에, 갈리는 택틱은 '갈리는 택틱'에 참고로만 둔다.
+assert.ok(guide.page.notes.some(note => note.includes('인벤') && note.includes('참고로만')), 'page note: Inven common tips / split tactics are reference only');
+const invenSources = Object.entries(guide.sources).filter(([key]) => key.startsWith('inven-'));
+assert.ok(invenSources.length >= 16 && invenSources.every(([, s]) => s.href.startsWith('https://www.inven.co.kr/board/wow/2081/')), 'Inven sources link to the raid board posts');
+const invenTipText = JSON.stringify(bosses.flatMap(b => b.tips.filter(tip => tip.source.startsWith('inven-'))));
+for (const split of ['6개 동시', '광폭시키', '추방 없이', '하지 않아도 된다']) assert.ok(!invenTipText.includes(split), `split tactic belongs in choices, not tips: ${split}`);
+for (const [id, title] of [['explorers', '게보만 광폭시키는 쉬운 공략'], ['vashnik', '셋째 불 쫄 추방'], ['coiled-altar', '두 번째 단두대 도발'], ['nekzali', '우물 조를 줄이는 운영'], ['ulatek', '남쪽 방 알 순서'], ['ulatek', '첫 번째 흡수 담당']]) {
+  assert.ok(bosses.find(b => b.id === id).choices.some(c => c.title === title && c.why.includes('참고')), `${id}: split tactic as reference choice: ${title}`);
+}
+const raidPage = fs.readFileSync(path.join(SITE, 'src', 'pages', 'RaidGuidePage.js'), 'utf8');
+assert.ok(raidPage.includes('data-choices-lead') && raidPage.includes('참고로만'), 'page must tell readers the split tactics are reference only');
 
 // 화면 연결: 상단 메뉴 탭과 라우트.
 const nav = fs.readFileSync(path.join(SITE, 'src', 'components', 'Navigation.js'), 'utf8');

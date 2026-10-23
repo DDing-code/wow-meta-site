@@ -374,6 +374,12 @@ const TipSource = styled.a`
   text-underline-offset: 3px;
   &:hover { color: ${GOLD}; }
 `;
+const ChoicesLead = styled.p`
+  margin-top: 8px;
+  color: #a4b0b8;
+  font-size: 0.84rem;
+  line-height: 1.6;
+`;
 const Choices = styled.div`
   display: grid;
   gap: 10px;
@@ -744,14 +750,15 @@ function RaidGuidePage() {
                 </Tips>
                 {boss.choices.length ? (
                   <>
-                    <SubHead>갈리는 택틱<small>{boss.choices.length}곳</small></SubHead>
+                    <SubHead>갈리는 택틱<small>{boss.choices.length}곳 · 참고</small></SubHead>
+                    <ChoicesLead data-choices-lead>공대마다 방식이 갈리는 곳입니다. 다른 안은 참고로만 보고, 실제로는 공대 배정표의 한 안을 따르세요.</ChoicesLead>
                     <Choices>
                       {boss.choices.map(choice => (
-                        <Choice key={choice.title} data-choice={choice.title}>
+                        <Choice key={choice.title} data-choice={choice.title} data-open={choice.open ? 'true' : undefined}>
                           <h4>{choice.title}</h4>
                           <dl>
-                            <div><dt>이 글</dt><dd><TermText text={choice.picked} bossId={boss.id} /></dd></div>
-                            <div><dt>다른 안</dt><dd><TermText text={choice.alt} bossId={boss.id} /></dd></div>
+                            <div><dt>{choice.open ? '한 안' : '이 글'}</dt><dd><TermText text={choice.picked} bossId={boss.id} /></dd></div>
+                            <div><dt>{choice.open ? '다른 안' : '다른 안 (참고)'}</dt><dd><TermText text={choice.alt} bossId={boss.id} /></dd></div>
                             <div><dt>왜</dt><dd><TermText text={choice.why} bossId={boss.id} /></dd></div>
                           </dl>
                         </Choice>

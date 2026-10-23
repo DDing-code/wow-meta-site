@@ -58,9 +58,9 @@ test('주소의 편 이름으로 다른 편을 열고 네임드 여섯 곳을 �
   expect(container.querySelector('#kithix')).not.toBeNull();
 });
 
-test('스토리보드의 실전 팁 108개와 단계 69개가 모두 들어 있고 네임드마다 확인 항목이 셋이다', () => {
+test('스토리보드 팁 108개에 인벤 공통 팁 20개를 더한 128개와 단계 69개가 모두 들어 있고 네임드마다 확인 항목이 셋이다', () => {
   expect(allBosses).toHaveLength(10);
-  expect(allBosses.reduce((sum, boss) => sum + boss.tips.length, 0)).toBe(108);
+  expect(allBosses.reduce((sum, boss) => sum + boss.tips.length, 0)).toBe(128);
   expect(allBosses.reduce((sum, boss) => sum + boss.phases.reduce((n, phase) => n + phase.steps.length, 0), 0)).toBe(69);
   for (const boss of allBosses) {
     expect(boss.checks).toHaveLength(3);
@@ -130,6 +130,12 @@ test('본문의 직업 스킬은 KB에 있는 이름·번호와 같고, 울라�
   expect(fangs.textContent).toContain('한 명이 먼저 끊고');
   expect(fangs.textContent).toContain('나머지 다섯');
   expect(container.querySelector('[data-choice="송곳니 해제"]').textContent).toContain('MATE');
+  // 2026-10-23 갈리는 택틱은 참고로만 보게 안내하고, 이 글이 고르지 않은 갈림은 '한 안 / 다른 안'으로 보인다.
+  expect(container.querySelector('#ulatek [data-choices-lead]').textContent).toContain('참고로만');
+  const open = container.querySelector('[data-choice="남쪽 방 알 순서"]');
+  expect(open.getAttribute('data-open')).toBe('true');
+  expect(open.querySelector('dt').textContent).toBe('한 안');
+  expect(container.querySelector('[data-choice="송곳니 해제"] dt').textContent).toBe('이 글');
 });
 
 test('스토리보드 배치도를 행동 옆에 붙이고 네임드 스프라이트를 보여 주며, 누르면 큰 그림으로 연다', () => {
