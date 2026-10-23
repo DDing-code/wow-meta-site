@@ -15,6 +15,7 @@ const { getAllGuideSpecs, CURRENT_PATCH_LABEL } = load('guideRegistry.js', 'getA
 assert.equal(GUIDE_PUBLICATION_PATCH, CURRENT_PATCH_LABEL, 'Publication patch must match the registry patch label');
 const P = CURRENT_PATCH_LABEL;
 const ids = new Set(getAllGuideSpecs().map(guide => guide.id));
+const appSource = fs.readFileSync(path.join(root, 'src/App.js'), 'utf8');
 let previous = '9999-12-31';
 for (const entry of guideUpdates) {
   assert.match(entry.date, /^\d{4}-\d{2}-\d{2}$/);
@@ -23,6 +24,11 @@ for (const entry of guideUpdates) {
   assert.ok(entry.commits.length);
   entry.commits.forEach(commit => assert.match(commit, /^[a-f0-9]{8}$/));
   entry.guideIds.forEach(id => assert.ok(ids.has(id), `Unknown guide ${id}`));
+  // 가이드가 아닌 페이지(홈·레이드·초보자 등) 연결은 실제 라우트여야 한다.
+  (entry.links || []).forEach(link => {
+    assert.ok(link.label, `Link label for ${entry.title}`);
+    assert.ok(link.path === '/' || appSource.includes(`path="${link.path}"`), `Unknown news link ${link.path}`);
+  });
 }
 for (const id of ids) {
   const manuscript = guideManuscripts[id];

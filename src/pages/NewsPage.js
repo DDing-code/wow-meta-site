@@ -8,6 +8,8 @@ const Page = styled.div`
   width: min(880px, calc(100% - 40px));
   margin: 0 auto;
   padding: 48px 0 96px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 
   @media (max-width: 560px) {
     width: calc(100% - 24px);
@@ -99,13 +101,14 @@ function NewsPage() {
             <div>
               <ItemTitle>{item.title}</ItemTitle>
               <Body>{item.body}</Body>
-              <Links aria-label="관련 페이지">
+              {(item.guideIds.length > 0 || item.links?.length > 0 || item.path) && <Links aria-label="관련 페이지">
                 {item.guideIds.map(id => {
                   const guide = guides.find(entry => entry.id === id);
                   return <Link key={id} to={guide.path}>{guide.spec} {guide.className}</Link>;
                 })}
+                {(item.links || []).map(link => <Link key={link.path} to={link.path}>{link.label}</Link>)}
                 {item.path && <Link to={item.path}>분석 보고서</Link>}
-              </Links>
+              </Links>}
               <Links aria-label="Git 변경 근거">
                 {item.commits.map(commit => <a key={commit} href={`https://github.com/DDing-code/wow-meta-site/commit/${commit}`} target="_blank" rel="noreferrer">커밋 {commit}</a>)}
               </Links>

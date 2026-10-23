@@ -1123,3 +1123,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - KB `raid-guide.json` 13곳(님리사 참고·갈리는 택틱, 파수꾼·탐험가 참고·갈리는 택틱, 그랄 영상 출처 메모, 기준과 한계 3줄, 메타데이터 2곳), `beginner-crafting.json` screensNote 1곳, 포식 `guide-12.1.json`·원고 근거 2곳, 양조 `guide-12.1.json`·원고 근거 1곳. 날짜와 택틱 내용은 그대로 두고 표시만 뺐다.
 - 검사: `validate-raid-guide.cjs`(레이드 자료 전체)와 `validate-guide-manuscripts.js`(원고 전체)가 같은 표시를 막는다. `npm run validate:quiet` 12단계 통과, 레이드·초보자 테스트 23개 통과. 빌드본에서 `artifacts/remove-user-marks-20261023/check.cjs`로 사이트맵 63개 주소의 접힌 글까지 훑어 0건.
 - 배포: 사이트 `9c645d6b` main 푸시, KB 로컬 `4d1ed21`. 정리 빌드 `main.b1858ebc.js`(소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, `check.cjs`를 운영 주소로 돌려 63개 주소 0건, 캡처 `live/`(기준과 한계는 `basis-shot.cjs`로 펼쳐 캡처).
+
+## 2026-10-23 탱커·힐러 가이드 영상 연결과 소식 탭 최신 근황
+
+- 요청: 탱커·힐러 가이드 글에 유튜브 영상을 연결하고, 소식 탭에 최근 업데이트가 없으니 배포 기록을 보고 최신 근황을 채운다.
+- 영상: 와우메타 채널에 공개된 탱커 6편·힐러 7편(oEmbed로 13편 모두 공개·제목 일치 확인)을 ai-hub `outputs/pixel-guides/link-guides.cjs`(40편으로 고침, 예전 판 `link-guides.before-tankheal-20261023.cjs`)로 원고와 KB `guide-12.1.json`에 함께 넣었다. `validate-guide-manuscripts.js`의 GUIDE_VIDEOS를 40개로 늘렸다. 사이트 `897cff98`, KB 로컬 `d0f7578`.
+- 소식: `src/data/guideUpdates.js` 맨 위에 10월 19~23일 git 이력에서 고른 14건(탱힐 영상, 레이드 님리사·울라텍, 홈 개편, 힐러 문구, 레이드 탭, 딜러 영상, 포식 오프닝, 검색 노출, 딜사이클 로그 정렬, 흐름도 아이콘, 악마 흑마 그림판, 초보자 안내 2건, 스킬 관계 그래프)을 넣었다. 가이드가 아닌 페이지 연결은 새 `links` 항목으로 쓰고 `NewsPage.js`가 보여 준다. `validate-guide-publication.cjs`가 링크 경로를 App.js 라우트와 대조한다. 소식 페이지는 낱말 단위 줄바꿈(keep-all)으로 바꿨다.
+- 확인: 빌드본에서 `artifacts/news-tankheal-videos-20261023/shots.cjs`로 13개 가이드 영상 번호·제목과 소식 탭(1440·390, 가로 넘침 없음, 레이드 연결) 확인.
