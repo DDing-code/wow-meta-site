@@ -95,6 +95,10 @@ test('님리사 얼음 구슬은 무적기 예시를 아이콘 툴팁 링크로 
   expect(orbStep.textContent).toContain('중첩이 쌓이지 않아');
   expect(orbStep.textContent).not.toContain('얼음 방패');
   expect(section.textContent).not.toContain('무적조');
+  // 2026-10-23 사용자 정정: 죽음의 기사는 대마법 보호막(48707)을 켜면 중첩이 쌓이지 않는다. 9개 = 대상자 3명 × 3개.
+  expect(orbStep.querySelector('a[data-term-id="48707"]')).not.toBeNull();
+  expect(orbStep.textContent).toContain('대상자 3명이 3개씩');
+  expect(section.textContent).not.toContain('단단한 사람');
 });
 
 test('똬리의 제단은 공식 번호를 확인한 기술 9개를 툴팁 칩으로 보이고 본문에서도 긴 이름을 먼저 잡는다', () => {

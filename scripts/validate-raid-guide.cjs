@@ -135,6 +135,10 @@ for (const name of ['그림자 망토', '거북의 상', '천상의 보호막'])
 for (const phrase of ['심연의 비', '9개', '중첩이 쌓이지 않아', '꼭 필요한 것은 아닙니다', '죽음의 기사']) assert.ok(orbStep.text.includes(phrase), `nymrissa orb split: ${phrase}`);
 // '1무적조'·'무적조'·얼음 방패 설명은 빼기로 했다(2026-10-23).
 for (const word of ['무적조', '얼음 방패', '차례로 밟']) assert.ok(!JSON.stringify(nymrissa).includes(word), `nymrissa: removed wording is back: ${word}`);
+// 2026-10-23 사용자 정정: 죽음의 기사는 단단해서가 아니라 대마법 보호막을 켜면 중첩이 쌓이지 않아서 구슬을 여러 개 맡는다. 9개는 대상자 3명이 3개씩 떨군 것이다.
+for (const phrase of ['대마법 보호막', '대상자 3명이 3개씩']) assert.ok(orbStep.text.includes(phrase), `nymrissa orb reason: ${phrase}`);
+assert.ok(guide.skills.some(skill => skill.name === '대마법 보호막' && skill.id === 48707), 'nymrissa: 대마법 보호막 tooltip skill');
+for (const word of ['단단한 사람', '죽음의 기사처럼 단단']) assert.ok(!JSON.stringify(nymrissa).includes(word), `nymrissa: DK orb reason is AMS, not tankiness: ${word}`);
 // 2026-10-23 사용자 정정: 맹독 심연 같은 보통의 신화 레이드는 20명 고정이고, 탄력 공격대는 키식스 해방뿐이다.
 assert.ok(guide.page.notes.some(note => note.includes('20명 고정')), 'page note: mythic raids are fixed 20');
 for (const ep of guide.episodes.filter(e => e.id !== 'kithix')) assert.ok(!JSON.stringify(ep).includes('탄력'), `${ep.id}: flexible raid wording only for Kithix`);
