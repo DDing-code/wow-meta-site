@@ -27,6 +27,8 @@ const text = JSON.stringify(guide);
 for (const banned of ['우두머리', '졸개', '보스', '로테이션', '오프너', '신화+', '버스트', '문서', '임의 번역']) {
   assert.ok(!text.includes(banned), `forbidden term in raid guide: ${banned}`);
 }
+// 2026-10-23 사용자 지적: '위험한 겹침'처럼 '겹침'을 이름처럼 쓰면 알아듣기 어렵다 → '위험한 구간'으로 쓴다.
+assert.ok(!text.includes('겹침'), "use '위험한 구간' instead of the noun '겹침' in the raid guide");
 
 const bosses = guide.episodes.flatMap(episode => episode.bosses);
 assert.equal(guide.episodes.length, 5, 'five episodes');
@@ -139,6 +141,10 @@ const ulatek = bosses.find(b => b.id === 'ulatek');
 const fangStep = ulatek.phases.flatMap(p => p.steps).find(step => step.title.includes('송곳니'));
 assert.equal(fangStep.kind, '선택 택틱', 'ulatek fangs is a choice');
 assert.ok(fangStep.text.includes('한 명이 먼저 끊고') && fangStep.text.includes('나머지 다섯'), 'ulatek fangs 1+5');
+// 2026-10-23 사용자 지적: 울라텍 사잇단계는 따로 된 단상 지도(raidplan 'Platform')에서 징표 8구역으로 그린다.
+const intermissionStep = ulatek.phases.flatMap(p => p.steps).find(step => step.title.startsWith('사잇단계'));
+assert.equal(intermissionStep.figure.plan, '05-ulatek-11', 'ulatek intermission figure');
+assert.ok(intermissionStep.figure.caption.includes('사잇단계 지도') && intermissionStep.text.includes('징표 8곳'), 'ulatek intermission uses the zone map');
 
 // 화면 연결: 상단 메뉴 탭과 라우트.
 const nav = fs.readFileSync(path.join(SITE, 'src', 'components', 'Navigation.js'), 'utf8');
