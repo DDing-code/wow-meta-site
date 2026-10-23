@@ -1080,3 +1080,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 참고: raidstrats 플래너의 울라텍 지도는 Full Arena·Left·Right·Phase 3 Broken 네 장이고(`references/planner/ulatek-split|left|right.webp`로 받아 둠), raidplan.io는 Platform·Broken·Left·Right·Full Room·Full Room (Broken)이다. 마지막 단상 그림(05-ulatek-14)은 이번에 바꾸지 않았다.
 - 검사: `npm run validate:quiet` 12단계 통과, `RaidGuidePage.test.js` 9개 통과. 빌드본·운영에서 `artifacts/raid-ulatek-intermission-20261023/shots.cjs`로 울라텍·님리사 1440·390 확인(그림 로드, '겹침' 0곳), 캡처 `shots/`·`live/`.
 - 배포: 사이트 `7b0cb9a1` main 푸시, KB 로컬 `f751828`. 정리 빌드 `main.7f4cf554.js`(소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 WebP 2장이 로컬과 SHA-256이 같다.
+
+## 2026-10-23 울라텍 양쪽 단상 그림을 raidplan Left·Right 지도로
+
+- 요청: "raidplan.io 울라텍(boss=8)에서 Left·Right가 사이페이즈 단상 이미지임(각각 90도 회전돼 있음)". 질문으로 범위를 확인해 양쪽 단상 그림 4장(05-ulatek-06 나누기·07 감시관·08 송곳니·09 가마솥)만 바꿨다. 그랄 설명회의 '사이페 8대 3개조'는 'Platform' 지도 위에서 설명하므로 05-ulatek-11은 그대로 뒀다.
+- 전장: ai-hub 스토리보드 `references/planner/ulatek_left.webp`는 반시계, `ulatek_right.webp`는 시계 방향으로 90도 돌려(`ulatek_left-rot.png`·`ulatek_right-rot.png`) 옆 단상이 실제처럼 왼쪽·오른쪽 끝에 오게 하고, 반씩 붙인 참고 그림 `ref/ulatek-sides.png`로 도트 전장 `assets/arenas/ulatek-sides.png`를 만들었다(가운데는 두 지도에 보이는 주 단상 가장자리). `plan.py`의 SHOT_ARENA·SIDES로 4컷을 이 전장에 좌우 같은 배치로 다시 그렸다. 예전 코드 `plan.before-sides.py`, 예전 그림 `plan/_before-sides/`. 인물·알 자리는 예시다.
+- KB `raid-guide.json` '양쪽 단상으로 나누기'에 지도 근거 참고 한 줄을 더했다.
+- 검사: `npm run validate:quiet` 12단계 통과, `RaidGuidePage.test.js` 9개 통과. 빌드본에서 `artifacts/raid-ulatek-sides-20261023/shots.cjs`로 4장 1440·390 확인(캡처 `shots/`).
