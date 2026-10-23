@@ -3650,6 +3650,11 @@ const manuscript = {
         confirmedRanking: false,
       },
     },
+    video: {
+      youtubeId: '825bprZVl6E',
+      title: '한밤 2시즌 12.1.5 수호 드루이드 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

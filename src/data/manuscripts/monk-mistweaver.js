@@ -2717,6 +2717,11 @@ const manuscript = {
       singleTarget: '단일 구조',
       aoe: '파티·공대 회복',
     },
+    video: {
+      youtubeId: '356D18J0MB0',
+      title: '한밤 2시즌 12.1.5 운무 수도사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

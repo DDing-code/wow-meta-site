@@ -3507,6 +3507,11 @@ const manuscript = {
       },
     },
     defaultHeroBranchIndex: 1,
+    video: {
+      youtubeId: 'kZSskiDAo6o',
+      title: '한밤 2시즌 12.1.5 보호 성기사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

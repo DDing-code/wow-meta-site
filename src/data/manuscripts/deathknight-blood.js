@@ -3271,6 +3271,11 @@ const manuscript = {
     inlineTermSpellIds: {
       '한밤의 춤': '1264506',
     },
+    video: {
+      youtubeId: '7HbtU4mu99c',
+      title: '한밤 2시즌 12.1.5 혈기 죽음의 기사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

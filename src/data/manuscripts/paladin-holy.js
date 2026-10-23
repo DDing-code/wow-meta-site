@@ -2710,6 +2710,11 @@ const manuscript = {
     singleTarget: '단일 구조',
     aoe: '파티·공대 회복',
   },
+    video: {
+      youtubeId: 'm6vtm8-fDb4',
+      title: '한밤 2시즌 12.1.5 신성 성기사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

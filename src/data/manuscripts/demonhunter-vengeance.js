@@ -3913,6 +3913,11 @@ const manuscript = {
         confirmedRanking: false,
       },
     },
+    video: {
+      youtubeId: 'A4UPzfhFTAY',
+      title: '한밤 2시즌 12.1.5 복수 악마사냥꾼 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

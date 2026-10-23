@@ -1347,6 +1347,20 @@ function main() {
     ['warlock-destruction', 'hMjHgejFGZA'],
     ['warrior-arms', '9cRRD1pR714'],
     ['warrior-fury', 'zhfLQwO4oms'],
+    // 탱커 6편·힐러 7편(2026-10-23 와우메타 채널에 올림)
+    ['warrior-protection', 'D-G0lqSucgs'],
+    ['paladin-protection', 'kZSskiDAo6o'],
+    ['deathknight-blood', '7HbtU4mu99c'],
+    ['monk-brewmaster', 'mOS_Xg2CTqE'],
+    ['druid-guardian', '825bprZVl6E'],
+    ['demonhunter-vengeance', 'A4UPzfhFTAY'],
+    ['paladin-holy', 'm6vtm8-fDb4'],
+    ['priest-discipline', 'veXAaKuThj0'],
+    ['priest-holy', '81Kg0R0KRm4'],
+    ['shaman-restoration', 'go4VYLhNStQ'],
+    ['monk-mistweaver', '356D18J0MB0'],
+    ['druid-restoration', 'RtN3NKFibMA'],
+    ['evoker-preservation', '5dvcr7RbgKA'],
   ]);
   assert(demonology.video?.youtubeId === 'YxLg3BZFmx4' && demonology.video.title, 'Demonology must keep the requested top video');
   for (const [id, item] of Object.entries(manuscripts)) {
