@@ -79,7 +79,7 @@ test('가이드 용어를 지킨다: 네임드·쫄만 쓰고 우두머리·졸�
   expect(allText).toContain('쫄');
 });
 
-test('님리사 무적조는 그림자 망토·거북의 상·천상의 보호막을 아이콘 툴팁 링크로 그리고 얼음 방패는 쓰지 못한다고 적는다', () => {
+test('님리사 얼음 구슬은 무적기 예시를 아이콘 툴팁 링크로 그리고 9개를 나눠 처리한다고 적는다', () => {
   mount('/raid/nymrissa');
   const section = container.querySelector('#nymrissa');
   for (const id of ['31224', '186265', '642']) {
@@ -89,13 +89,12 @@ test('님리사 무적조는 그림자 망토·거북의 상·천상의 보호�
     expect(term.getAttribute('data-wowhead')).toBe(`spell=${id}&domain=ko`);
     expect(term.querySelector('img')).not.toBeNull();
   }
-  const orbStep = Array.from(section.querySelectorAll('li[data-kind]')).find(step => step.textContent.includes('얼음 구슬은 무적조가'));
-  expect(orbStep.textContent).toContain('얼음 방패는 쓰지 못합니다');
-  expect(orbStep.querySelector('a[data-term-id="45438"]')).not.toBeNull();
-  // 2026-10-23 사용자 정정: 심연의 비가 끝나면 1무적조가 먼저, 남은 구슬은 탱커·죽음의 기사 등이 나눠 먹는다.
+  const orbStep = Array.from(section.querySelectorAll('li[data-kind]')).find(step => step.textContent.includes('얼음 구슬 9개 처리'));
+  // 2026-10-23 사용자 정리: 9개를 어떻게든 처리하면 되고 무적기는 중첩이 쌓이지 않아 쉬워질 뿐이다. 얼음 방패 설명은 뺀다.
   expect(orbStep.querySelector('a[data-term-id="1260837"]')).not.toBeNull();
-  expect(orbStep.textContent).toContain('1무적조가 먼저 구슬을 먹고');
-  expect(orbStep.textContent).toContain('구슬 9개');
+  expect(orbStep.textContent).toContain('중첩이 쌓이지 않아');
+  expect(orbStep.textContent).not.toContain('얼음 방패');
+  expect(section.textContent).not.toContain('무적조');
 });
 
 test('똬리의 제단은 공식 번호를 확인한 기술 9개를 툴팁 칩으로 보이고 본문에서도 긴 이름을 먼저 잡는다', () => {

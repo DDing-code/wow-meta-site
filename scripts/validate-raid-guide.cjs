@@ -3,7 +3,7 @@
 // - KB 정본(00-공통/공용/Meta/raid-guide.json)과 사이트의 생성 JSON(src/data/raidGuide.json)이 같은지(sync-kb를 돌렸는지)
 // - 편·네임드·단계·팁·출처 구조와 고정 용어(네임드·쫄)
 // - 본문에 툴팁을 붙일 직업 스킬이 KB(kb-skills.json)에 같은 번호로 있는지, 네임드 기술에 번호·아이콘이 있는지
-// - 상단 메뉴와 라우트에 /raid 가 연결됐는지, 2026-10-22 사용자 확인 사항(무적조·징표·핑·물고기 순서·1+5)이 남아 있는지
+// - 상단 메뉴와 라우트에 /raid 가 연결됐는지, 2026-10-22 사용자 확인 사항(구슬 무적기·징표·핑·물고기 순서·1+5)이 남아 있는지
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
@@ -128,12 +128,16 @@ assert.ok(stepFigures >= 60, `most steps need a plan figure, got ${stepFigures}`
 
 // 2026-10-22 사용자 확인 사항이 본문에 남아 있어야 한다.
 const nymrissa = bosses.find(b => b.id === 'nymrissa');
-const orbStep = nymrissa.phases.flatMap(p => p.steps).find(step => step.title.includes('무적조'));
-for (const name of ['그림자 망토', '거북의 상', '천상의 보호막']) assert.ok(orbStep.text.includes(name), `nymrissa immune squad: ${name}`);
-assert.ok(orbStep.text.includes('얼음 방패는 쓰지 못합니다'), 'nymrissa: ice block cannot be used');
-// 2026-10-23 사용자 정정: 심연의 비 지속 피해가 끝나면 1무적조가 먼저, 이어서 탱커·죽음의 기사 등이 한 사이클 9개를 나눠 먹는다.
-for (const phrase of ['심연의 비', '1무적조가 먼저', '구슬 9개', '죽음의 기사']) assert.ok(orbStep.text.includes(phrase), `nymrissa orb split: ${phrase}`);
-assert.ok(!JSON.stringify(nymrissa).includes('무적조가 차례로 밟'), 'nymrissa: old "무적조가 차례로 밟기" wording is gone');
+const orbStep = nymrissa.phases.flatMap(p => p.steps).find(step => step.title === '얼음 구슬 9개 처리');
+assert.ok(orbStep, 'nymrissa: orb step');
+for (const name of ['그림자 망토', '거북의 상', '천상의 보호막']) assert.ok(orbStep.text.includes(name), `nymrissa immunity examples: ${name}`);
+// 2026-10-23 사용자 정리: 9개를 어떻게든 처리하면 되고, 무적기는 중첩이 쌓이지 않아 쉬워지는 수단이다. 먹는 때는 심연의 비 지속 피해 뒤.
+for (const phrase of ['심연의 비', '9개', '중첩이 쌓이지 않아', '꼭 필요한 것은 아닙니다', '죽음의 기사']) assert.ok(orbStep.text.includes(phrase), `nymrissa orb split: ${phrase}`);
+// '1무적조'·'무적조'·얼음 방패 설명은 빼기로 했다(2026-10-23).
+for (const word of ['무적조', '얼음 방패', '차례로 밟']) assert.ok(!JSON.stringify(nymrissa).includes(word), `nymrissa: removed wording is back: ${word}`);
+// 2026-10-23 사용자 정정: 맹독 심연 같은 보통의 신화 레이드는 20명 고정이고, 탄력 공격대는 키식스 해방뿐이다.
+assert.ok(guide.page.notes.some(note => note.includes('20명 고정')), 'page note: mythic raids are fixed 20');
+for (const ep of guide.episodes.filter(e => e.id !== 'kithix')) assert.ok(!JSON.stringify(ep).includes('탄력'), `${ep.id}: flexible raid wording only for Kithix`);
 const vashnik = bosses.find(b => b.id === 'vashnik');
 // 2026-10-22 '레이드스트래츠 있는 건 바꿔' 요청으로 첫 파도 징표 줄은 raidstrats 오프셋 플랜의 색 순서를 따른다.
 assert.ok(JSON.stringify(vashnik).includes('은빛 달, 주황 동그라미, 초록 세모, 노란 별, 빨간 가위'), 'vashnik marker line (raidstrats offset order)');
