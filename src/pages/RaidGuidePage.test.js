@@ -58,14 +58,14 @@ test('주소의 편 이름으로 다른 편을 열고 네임드 여섯 곳을 �
   expect(container.querySelector('#kithix')).not.toBeNull();
 });
 
-test('스토리보드 팁 108개에 인벤 공통 팁 20개를 더한 128개와 단계 69개가 모두 들어 있고 네임드마다 확인 항목이 셋이다', () => {
+test('스토리보드 팁 108개에 실전 글 공통 팁 20개를 더한 128개와 단계 69개가 모두 들어 있고 네임드마다 확인 항목이 셋이다', () => {
   expect(allBosses).toHaveLength(10);
   expect(allBosses.reduce((sum, boss) => sum + boss.tips.length, 0)).toBe(128);
   expect(allBosses.reduce((sum, boss) => sum + boss.phases.reduce((n, phase) => n + phase.steps.length, 0), 0)).toBe(69);
   for (const boss of allBosses) {
     expect(boss.checks).toHaveLength(3);
     expect(boss.phases.length).toBeGreaterThan(0);
-    for (const tip of boss.tips) expect(raidGuide.sources[tip.source]).toBeDefined();
+    for (const tip of boss.tips) if (tip.source != null) expect(raidGuide.sources[tip.source]).toBeDefined();
     for (const key of boss.sources) expect(raidGuide.sources[key]).toBeDefined();
   }
   expect(new Set(allBosses.map(boss => boss.id)).size).toBe(10);

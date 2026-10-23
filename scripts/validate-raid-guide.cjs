@@ -3,7 +3,7 @@
 // - KB 정본(00-공통/공용/Meta/raid-guide.json)과 사이트의 생성 JSON(src/data/raidGuide.json)이 같은지(sync-kb를 돌렸는지)
 // - 편·네임드·단계·팁·출처 구조와 고정 용어(네임드·쫄)
 // - 본문에 툴팁을 붙일 직업 스킬이 KB(kb-skills.json)에 같은 번호로 있는지, 네임드 기술에 번호·아이콘이 있는지
-// - 인벤 공통 팁과 갈리는 택틱(참고) 구분(2026-10-23)
+// - 실전 글 공통 팁과 갈리는 택틱(참고) 구분, 출처에 인벤 대신 상위 공대 이름만(2026-10-23)
 // - 상단 메뉴와 라우트에 /raid 가 연결됐는지, 2026-10-22 사용자 확인 사항(구슬 무적기·징표·핑·물고기 순서·1+5)이 남아 있는지
 const fs = require('node:fs');
 const path = require('node:path');
@@ -57,7 +57,8 @@ for (const episode of guide.episodes) {
     assert.ok(boss.tips.length >= 7, `${boss.id}: at least 7 tips`);
     for (const tip of boss.tips) {
       assert.ok(tip.role && tip.text, `${boss.id}: tip role/text`);
-      assert.ok(guide.sources[tip.source], `${boss.id}: tip source ${tip.source}`);
+      // 실전 글에서 보충한 팁은 출처 칸이 없다(출처에는 상위 공대·공개 공략만 적는다).
+      assert.ok(tip.source == null || guide.sources[tip.source], `${boss.id}: tip source ${tip.source}`);
       if (tip.grarlSecond != null) {
         assert.equal(tip.source, 'grarl', `${boss.id}: grarlSecond only with grarl source`);
         assert.ok(Number.isInteger(tip.grarlSecond) && tip.grarlSecond > 0, `${boss.id}: grarlSecond`);
@@ -68,13 +69,12 @@ for (const episode of guide.episodes) {
       for (const field of ['title', 'picked', 'alt', 'why']) assert.ok(choice[field], `${boss.id}: choice ${field}`);
       assert.ok(choice.open == null || choice.open === true, `${boss.id}: choice open must be true or absent`);
     }
-    for (const tip of boss.tips) if (tip.source.startsWith('inven-')) assert.ok(boss.sources.includes(tip.source), `${boss.id}: Inven tip source must be listed in the boss sources: ${tip.source}`);
     assert.ok(boss.sources.length >= 1, `${boss.id}: sources`);
     for (const key of boss.sources) assert.ok(guide.sources[key], `${boss.id}: source ${key}`);
   }
 }
-// 스토리보드 팁 108개 + 2026-10-23 인벤 신화 글에서 여러 글이 함께 말한 공통 팁 20개.
-assert.equal(tips, 128, `128 tips (108 storyboard + 20 Inven common), got ${tips}`);
+// 스토리보드 팁 108개 + 2026-10-23 신화 실전 글에서 여러 글이 함께 말한 공통 팁 20개.
+assert.equal(tips, 128, `128 tips (108 storyboard + 20 field common), got ${tips}`);
 assert.equal(steps, 69, `69 steps, got ${steps}`);
 for (const [key, source] of Object.entries(guide.sources)) {
   assert.ok(source.title && /^https:\/\//.test(source.href) && source.note, `source ${key}`);
@@ -170,12 +170,14 @@ const intermissionStep = ulatek.phases.flatMap(p => p.steps).find(step => step.t
 assert.equal(intermissionStep.figure.plan, '05-ulatek-11', 'ulatek intermission figure');
 assert.ok(intermissionStep.figure.caption.includes('사잇단계 지도') && intermissionStep.text.includes('징표 8곳'), 'ulatek intermission uses the zone map');
 
-// 2026-10-23 인벤 비교 반영: 공통된 것만 팁에, 갈리는 택틱은 '갈리는 택틱'에 참고로만 둔다.
-assert.ok(guide.page.notes.some(note => note.includes('인벤') && note.includes('참고로만')), 'page note: Inven common tips / split tactics are reference only');
-const invenSources = Object.entries(guide.sources).filter(([key]) => key.startsWith('inven-'));
-assert.ok(invenSources.length >= 16 && invenSources.every(([, s]) => s.href.startsWith('https://www.inven.co.kr/board/wow/2081/')), 'Inven sources link to the raid board posts');
-const invenTipText = JSON.stringify(bosses.flatMap(b => b.tips.filter(tip => tip.source.startsWith('inven-'))));
-for (const split of ['6개 동시', '광폭시키', '추방 없이', '하지 않아도 된다']) assert.ok(!invenTipText.includes(split), `split tactic belongs in choices, not tips: ${split}`);
+// 2026-10-23 실전 글 비교 반영: 공통된 것만 팁에, 갈리는 택틱은 '갈리는 택틱'에 참고로만 둔다.
+assert.ok(guide.page.notes.some(note => note.includes('실전 글') && note.includes('참고로만')), 'page note: field common tips / split tactics are reference only');
+const fieldTips = bosses.flatMap(b => b.tips.filter(tip => tip.source == null));
+assert.ok(fieldTips.length >= 20, `field common tips without a source key: ${fieldTips.length}`);
+for (const split of ['6개 동시', '광폭시키', '추방 없이', '하지 않아도 된다', '도발 없이']) assert.ok(!JSON.stringify(fieldTips).includes(split), `split tactic belongs in choices, not tips: ${split}`);
+// 2026-10-23 사용자 지시: 출처에 인벤과 글쓴이 닉네임을 적지 않고 상위 공대 이름만 적는다.
+const guideText = JSON.stringify(guide);
+for (const banned of ['인벤', 'inven', '이당이당', '레키엘', '애기트럴', 'Lucide', '동그란기린', '극려']) assert.ok(!guideText.includes(banned), `no Inven / author nickname in the raid guide: ${banned}`);
 for (const [id, title] of [['explorers', '게보만 광폭시키는 쉬운 공략'], ['vashnik', '셋째 불 쫄 추방'], ['coiled-altar', '두 번째 단두대 도발'], ['nekzali', '우물 조를 줄이는 운영'], ['ulatek', '남쪽 방 알 순서'], ['ulatek', '첫 번째 흡수 담당']]) {
   assert.ok(bosses.find(b => b.id === id).choices.some(c => c.title === title && c.why.includes('참고')), `${id}: split tactic as reference choice: ${title}`);
 }
