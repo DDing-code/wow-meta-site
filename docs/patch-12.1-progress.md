@@ -1122,3 +1122,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 기준: 결정한 사람을 밝히는 내부 작업 표시('사용자 확인·결정·요청·지정·지적·확정', '사용자가 정한·보낸')를 지웠다. 근거 자료의 한계를 알리는 '미확인'(로그·비교쌍 미확인 등)과 게임 용어 '사용자 인터페이스', 일반 낱말 '특정 사용자'·'사용자 시전'은 독자에게 필요한 정보라 남겼다.
 - KB `raid-guide.json` 13곳(님리사 참고·갈리는 택틱, 파수꾼·탐험가 참고·갈리는 택틱, 그랄 영상 출처 메모, 기준과 한계 3줄, 메타데이터 2곳), `beginner-crafting.json` screensNote 1곳, 포식 `guide-12.1.json`·원고 근거 2곳, 양조 `guide-12.1.json`·원고 근거 1곳. 날짜와 택틱 내용은 그대로 두고 표시만 뺐다.
 - 검사: `validate-raid-guide.cjs`(레이드 자료 전체)와 `validate-guide-manuscripts.js`(원고 전체)가 같은 표시를 막는다. `npm run validate:quiet` 12단계 통과, 레이드·초보자 테스트 23개 통과. 빌드본에서 `artifacts/remove-user-marks-20261023/check.cjs`로 사이트맵 63개 주소의 접힌 글까지 훑어 0건.
+- 배포: 사이트 `9c645d6b` main 푸시, KB 로컬 `4d1ed21`. 정리 빌드 `main.b1858ebc.js`(소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, `check.cjs`를 운영 주소로 돌려 63개 주소 0건, 캡처 `live/`(기준과 한계는 `basis-shot.cjs`로 펼쳐 캡처).
