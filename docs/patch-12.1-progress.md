@@ -1071,3 +1071,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 홈: 머리글·부제·숫자 줄을 빼고 '와우가 처음이신가요?' → 분류 칩(전체·탱커·힐러·근딜·원딜·레이드, 위에 붙음) → 재생목록 4줄(영상 40편, 썸네일은 유튜브로 새 창, 이름·'글 가이드'는 사이트 가이드로) → 레이드 가이드 5편(배치도 썸네일) → 바로가기 3개. 한 줄은 화면 폭 칸 수만 보이고 '모두 보기'로 펼치며, 639px 이하는 두 칸·두 줄이다.
 - 자료: `src/data/youtubePlaylists.js`(ai-hub `youtube-playlists.json`과 같음). 검사 `scripts/validate-home-videos.cjs`(`validate:home`, 전체 검사·빌드 전 검사에 넣음), 테스트 `src/pages/HomePage.test.js`. 캡처 `artifacts/home-youtube-20261023/`(`shots.cjs`).
 - 배포 뒤 운영 화면에서 칩으로 한 분류를 고르면 '접기'가 눌러도 안 접히던 것을 고쳐(칩 선택 중에는 버튼을 숨김) 다시 배포했다.
+
+## 2026-10-23 레이드 가이드 '위험한 구간'·울라텍 사잇단계 지도
+
+- 요청: "위험한 겹침? 이런 단어는 직관적이지 않음, '위험한 구간' 정도로", "울라텍 사잇단계 지도가 따로 있음(구역) — 맵 및 실제 영상 참고해서 교체".
+- 문구: KB `raid-guide.json`에서 님리사 편 범위 줄 '위험한 겹침만' → '위험한 구간만', 행동 제목 '가장 아픈 겹침' → '가장 위험한 구간', 본문 '이 겹침에' → '이 구간에'. 영상 원고(ai-hub 스토리보드 `content.py`·`tips.py`)도 같게 고쳤다. `validate-raid-guide.cjs`가 '겹침'을 막는다.
+- 울라텍 사잇단계: 그랄 설명회(HWLx3GB_m2I 3:02~3:06)는 raidplan.io 울라텍 'Platform' 지도(주 단상을 가깝게 본 따로 된 지도)에 징표 8개를 놓고, 조별 자리 표(첫 타격 엑스·별·역삼 × 1·2·3조)로 설명한다. 이 지도(`references/planner/raidplan-ulatek-platform.jpg`, ref `ulatek-platform.png`)를 참고 그림으로 전장 `assets/arenas/ulatek-platform.png`를 새로 만들고, `plan.py`의 사잇단계 컷(05-ulatek-11)만 이 전장에 '첫 타격 = 엑스' 열(1조 ①엑스 ④동그라미 ⑦별, 2조 ②다이아 ⑤해골 ⑧달, 3조 ③세모 ⑥네모)로 다시 그렸다. 예전 코드는 `plan.before-intermission.py`. 본문에 '징표 8곳이 타격 구역, 1조→2조→3조 차례'를 더하고 그림 설명·참고를 바꿨다. 범위 줄의 '하나의 지도 위에서'도 고쳤다.
+- 참고: raidstrats 플래너의 울라텍 지도는 Full Arena·Left·Right·Phase 3 Broken 네 장이고(`references/planner/ulatek-split|left|right.webp`로 받아 둠), raidplan.io는 Platform·Broken·Left·Right·Full Room·Full Room (Broken)이다. 마지막 단상 그림(05-ulatek-14)은 이번에 바꾸지 않았다.
+- 검사: `npm run validate:quiet` 12단계 통과, `RaidGuidePage.test.js` 9개 통과. 빌드본·운영에서 `artifacts/raid-ulatek-intermission-20261023/shots.cjs`로 울라텍·님리사 1440·390 확인(그림 로드, '겹침' 0곳), 캡처 `shots/`·`live/`.
+- 배포: 사이트 `7b0cb9a1` main 푸시, KB 로컬 `f751828`. 정리 빌드 `main.7f4cf554.js`(소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 WebP 2장이 로컬과 SHA-256이 같다.
