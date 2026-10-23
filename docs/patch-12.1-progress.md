@@ -1096,3 +1096,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 네임드 기술 '심연의 비'(1260837, `spell_fire_bluerainoffire`)를 한국어 공식 툴팁으로 확인해 `spells`에 넣었다(님리사 칩 1개). `validate-raid-guide.cjs`의 기술 수 검사는 똬리의 제단 9개로 좁히고 새 문구·예전 문구 금지를 더했다. `RaidGuidePage.test.js`도 같게 고쳤다.
 - 배치도 02-nymrissa-05(무적조 셋이 차례로 밟는 그림)는 그대로이고 그림 설명만 '신화: 1무적조가 먼저 먹기'로 바꿨다.
 - 검사: `npm run validate:quiet` 12단계 통과, `RaidGuidePage.test.js` 9개 통과, 빌드본에서 `artifacts/raid-nymrissa-orbs-20261023/shots.cjs` 1440·390 통과.
+- 배포: 사이트 `e82b3bbc` main 푸시, KB 로컬 `9146db0`. 정리 빌드 `main.f8678a04.js`(소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, `shots.cjs`를 운영 주소로 돌려 1440·390 통과(캡처 `live/`).
