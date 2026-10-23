@@ -1115,3 +1115,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 검사: `validate-raid-guide.cjs`가 '대마법 보호막'·'대상자 3명이 3개씩'과 스킬 등록을 요구하고 '단단한 사람'을 막는다. `RaidGuidePage.test.js`도 48707 링크와 같은 문구를 본다. `npm run validate:quiet` 12단계 통과, 테스트 9개 통과, 빌드본에서 `artifacts/raid-nymrissa-ams-20261023/shots.cjs` 1440·390 통과.
 - 배치도 02-nymrissa-05 그림 속 글자('무적조: 한 명씩 시간을 나눠 밟기')는 여전히 그대로다(사용자 답 대기).
 - 배포: 사이트 `5e566d6c` main 푸시, KB 로컬 `9f2cc5f`. 정리 빌드 `main.19645f3e.js`(소스맵 403, `artifacts/raid-nymrissa-ams-20261023/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, `shots.cjs`를 운영 주소로 돌려 1440·390 통과(캡처 `live/`).
+
+## 2026-10-23 화면의 '사용자 확인' 같은 내부 표시 제거
+
+- 요청: '사용자 확인' 같은 표시를 모든 페이지에서 뺀다.
+- 기준: 결정한 사람을 밝히는 내부 작업 표시('사용자 확인·결정·요청·지정·지적·확정', '사용자가 정한·보낸')를 지웠다. 근거 자료의 한계를 알리는 '미확인'(로그·비교쌍 미확인 등)과 게임 용어 '사용자 인터페이스', 일반 낱말 '특정 사용자'·'사용자 시전'은 독자에게 필요한 정보라 남겼다.
+- KB `raid-guide.json` 13곳(님리사 참고·갈리는 택틱, 파수꾼·탐험가 참고·갈리는 택틱, 그랄 영상 출처 메모, 기준과 한계 3줄, 메타데이터 2곳), `beginner-crafting.json` screensNote 1곳, 포식 `guide-12.1.json`·원고 근거 2곳, 양조 `guide-12.1.json`·원고 근거 1곳. 날짜와 택틱 내용은 그대로 두고 표시만 뺐다.
+- 검사: `validate-raid-guide.cjs`(레이드 자료 전체)와 `validate-guide-manuscripts.js`(원고 전체)가 같은 표시를 막는다. `npm run validate:quiet` 12단계 통과, 레이드·초보자 테스트 23개 통과. 빌드본에서 `artifacts/remove-user-marks-20261023/check.cjs`로 사이트맵 63개 주소의 접힌 글까지 훑어 0건.

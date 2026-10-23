@@ -1215,6 +1215,9 @@ function validateManuscriptSourceShape() {
   assert(PRACTICAL_TIP_CONTEXT_PATTERN.test('쐐기'), 'Practical context matching must accept correctly spelled Korean Mythic+');
   // 원고는 전문화별 파일(src/data/manuscripts/<가이드 ID>.js)에 있고 guideManuscripts.js 는 모으기만 한다. 두 쪽 글자를 모두 본다.
   const manuscriptSource = `${read(MANUSCRIPT_INDEX_PATH)}\n${readAllGuideManuscriptText()}`;
+  // 2026-10-23 사용자 지시("사용자 확인 이런 건 빼줘 모든 사이트에서"): 화면에 '사용자 확인·결정' 같은 내부 작업 표시를 쓰지 않는다.
+  const userMark = manuscriptSource.match(/사용자 ?(확인|결정|요청|지정|정정|지시|확정|지적|원칙)|사용자가 (정한|보낸|확인)/);
+  assert(!userMark, `guide manuscripts must not show internal user-decision marks: ${userMark && userMark[0]}`);
   const listedManuscriptFiles = new Set(listGuideManuscriptFiles().map(item => path.basename(item.filePath)));
   const unlistedManuscriptFiles = fs.readdirSync(MANUSCRIPT_DIR).filter(name => !listedManuscriptFiles.has(name));
 

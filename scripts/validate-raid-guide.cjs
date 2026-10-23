@@ -139,6 +139,11 @@ for (const word of ['무적조', '얼음 방패', '차례로 밟']) assert.ok(!J
 for (const phrase of ['대마법 보호막', '대상자 3명이 3개씩']) assert.ok(orbStep.text.includes(phrase), `nymrissa orb reason: ${phrase}`);
 assert.ok(guide.skills.some(skill => skill.name === '대마법 보호막' && skill.id === 48707), 'nymrissa: 대마법 보호막 tooltip skill');
 for (const word of ['단단한 사람', '죽음의 기사처럼 단단']) assert.ok(!JSON.stringify(nymrissa).includes(word), `nymrissa: DK orb reason is AMS, not tankiness: ${word}`);
+// 2026-10-23 사용자 지시: 화면에 '사용자 확인·요청·지정' 같은 내부 작업 표시를 쓰지 않는다(메타데이터도 번들에 실리므로 함께 본다).
+{
+  const mark = JSON.stringify(guide).match(/사용자 ?(확인|결정|요청|지정|정정|지시|확정|지적|원칙)|사용자가 (정한|보낸|확인)/);
+  assert.ok(!mark, `raid guide shows an internal user-decision mark: ${mark && mark[0]}`);
+}
 // 2026-10-23 사용자 정정: 맹독 심연 같은 보통의 신화 레이드는 20명 고정이고, 탄력 공격대는 키식스 해방뿐이다.
 assert.ok(guide.page.notes.some(note => note.includes('20명 고정')), 'page note: mythic raids are fixed 20');
 for (const ep of guide.episodes.filter(e => e.id !== 'kithix')) assert.ok(!JSON.stringify(ep).includes('탄력'), `${ep.id}: flexible raid wording only for Kithix`);
