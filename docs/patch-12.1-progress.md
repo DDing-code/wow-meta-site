@@ -1105,3 +1105,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 신화 인원: 페이지 안내를 '맹독 심연 같은 보통의 신화 레이드는 20명 고정, 단일 네임드 공격대인 키식스 해방만 15~25명 탄력'으로, 키식스 편 범위 문구를 '키식스 해방 신화는 15~25명 탄력'으로 고쳤다.
 - 검사: `validate-raid-guide.cjs`가 새 문구와 '무적조'·'얼음 방패'·'차례로 밟' 금지, '20명 고정', 키식스 밖 '탄력' 금지를 본다. `RaidGuidePage.test.js`도 같게 고쳤다.
 - 배치도 02-nymrissa-05 그림 속 글자('무적조: 한 명씩 시간을 나눠 밟기', 1·2·3 번호)는 그대로다. 생성기가 ai-hub 쪽이라 이번 범위에서 고치지 않았다.
+- 배포: 사이트 `d43f7a88` main 푸시, KB 로컬 `c1ac9c8`. 정리 빌드 `main.ce3d7a49.js`(소스맵 403, `artifacts/raid-nymrissa-orbs-r2-20261023/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, `shots.cjs`를 운영 주소로 돌려 1440·390 통과(캡처 `live/`).
