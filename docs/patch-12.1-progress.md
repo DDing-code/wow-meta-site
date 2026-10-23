@@ -1087,3 +1087,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 전장: ai-hub 스토리보드 `references/planner/ulatek_left.webp`는 반시계, `ulatek_right.webp`는 시계 방향으로 90도 돌려(`ulatek_left-rot.png`·`ulatek_right-rot.png`) 옆 단상이 실제처럼 왼쪽·오른쪽 끝에 오게 하고, 반씩 붙인 참고 그림 `ref/ulatek-sides.png`로 도트 전장 `assets/arenas/ulatek-sides.png`를 만들었다(가운데는 두 지도에 보이는 주 단상 가장자리). `plan.py`의 SHOT_ARENA·SIDES로 4컷을 이 전장에 좌우 같은 배치로 다시 그렸다. 예전 코드 `plan.before-sides.py`, 예전 그림 `plan/_before-sides/`. 인물·알 자리는 예시다.
 - KB `raid-guide.json` '양쪽 단상으로 나누기'에 지도 근거 참고 한 줄을 더했다.
 - 검사: `npm run validate:quiet` 12단계 통과, `RaidGuidePage.test.js` 9개 통과. 빌드본에서 `artifacts/raid-ulatek-sides-20261023/shots.cjs`로 4장 1440·390 확인(캡처 `shots/`).
+- 배포: 사이트 `06995d35` main 푸시, KB 로컬 `513b1a6`. 정리 빌드 `main.170efbd2.js`(소스맵 403, `artifacts/raid-ulatek-sides-20261023/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸다. 운영 WebP 8장이 로컬과 SHA-256이 같고, `shots.cjs`를 운영 주소로 돌려 4장 1440·390 모두 통과(캡처 `live/`).
