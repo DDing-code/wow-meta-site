@@ -184,12 +184,66 @@ for (const [id, title] of [['explorers', '게보만 광폭시키는 쉬운 공�
 const raidPage = fs.readFileSync(path.join(SITE, 'src', 'pages', 'RaidGuidePage.js'), 'utf8');
 assert.ok(raidPage.includes('data-choices-lead') && raidPage.includes('참고로만'), 'page must tell readers the split tactics are reference only');
 
+// 2026-10-24 영웅 난이도 글: 영웅 통합 영상 v2 원고(네임드 10곳·장면 66개)를 네임드별 탭으로 옮겼다(/raid/heroic/<네임드 id>).
+const heroic = guide.heroic;
+assert.ok(heroic && heroic.page && heroic.page.lead && heroic.page.notes.length >= 3, 'heroic: page lead/notes');
+assert.equal(heroic.metadata.difficulty, '영웅', 'heroic: difficulty label');
+assert.deepEqual(heroic.bosses.map(b => b.id), bosses.map(b => b.id), 'heroic: same ten bosses in the same order as mythic');
+assert.ok(/^[A-Za-z0-9_-]{11}$/.test(heroic.video.id), 'heroic: video id');
+let heroicSteps = 0;
+let lastSecond = -1;
+for (const boss of heroic.bosses) {
+  for (const field of ['label', 'name', 'place', 'principle', 'summary']) assert.ok(boss[field], `heroic ${boss.id}: ${field}`);
+  assert.ok(/^#[0-9a-f]{6}$/i.test(boss.color), `heroic ${boss.id}: color`);
+  assert.deepEqual(boss.roles.map(r => r.role), ['탱커', '힐러', '딜러'], `heroic ${boss.id}: tank/healer/dps roles`);
+  for (const role of boss.roles) assert.ok(role.text, `heroic ${boss.id}: role text`);
+  assert.ok(Number.isInteger(boss.videoSecond) && boss.videoSecond > lastSecond, `heroic ${boss.id}: video chapter second`);
+  lastSecond = boss.videoSecond;
+  for (const id of boss.sprites) assert.ok(fs.existsSync(path.join(RAID_IMAGES, 'sprites', `${id}.webp`)), `heroic ${boss.id}: missing sprite ${id}`);
+  assert.ok(boss.phases.length >= 3 && boss.phases.length <= 4, `heroic ${boss.id}: 3~4 phases`);
+  assert.equal(new Set(boss.phases.map(p => p.id)).size, boss.phases.length, `heroic ${boss.id}: phase ids unique`);
+  for (const phase of boss.phases) {
+    assert.ok(phase.title && phase.steps.length >= 1, `heroic ${boss.id}/${phase.id}: steps`);
+    for (const s of phase.steps) {
+      assert.ok(['공통', '배정', '선택 택틱'].includes(s.kind), `heroic ${boss.id}: kind ${s.kind} (no 신화 steps on the heroic tab)`);
+      assert.ok(s.title && s.text && s.warn, `heroic ${boss.id}/${s.title}: title/text/warn`);
+      assert.ok(!s.figure, `heroic ${boss.id}: no mythic plan figure on heroic steps`);
+      heroicSteps++;
+    }
+  }
+  for (const choice of boss.choices || []) for (const field of ['title', 'picked', 'alt', 'why']) assert.ok(choice[field], `heroic ${boss.id}: choice ${field}`);
+  assert.ok(boss.sources.length >= 1, `heroic ${boss.id}: sources`);
+  for (const key of boss.sources) assert.ok(heroic.sources[key], `heroic ${boss.id}: source ${key}`);
+}
+assert.equal(heroicSteps, 66, `heroic: 66 steps (one per video scene), got ${heroicSteps}`);
+for (const [key, source] of Object.entries(heroic.sources)) assert.ok(source.title && /^https:\/\//.test(source.href) && source.note, `heroic source ${key}`);
+for (const id of ['nekzali', 'sentinels', 'explorers', 'vashnik', 'sszorak', 'fangs', 'coiled-altar', 'kithix']) {
+  const boss = heroic.bosses.find(b => b.id === id);
+  assert.ok(boss.sources.some(key => /raidstrats\.gg\/guides\/[^/]+\/heroic$/.test(heroic.sources[key].href)), `heroic ${id}: raidstrats heroic source`);
+}
+const heroicText = JSON.stringify(heroic);
+assert.ok(!heroicText.includes('탄력'), 'heroic: no 탄력 wording');
+// 영웅 선택 규칙(heroic-raid-integrated-20261024/sources/selection.json): 울라텍 송곳니는 양쪽 합쳐 두 명씩, 신화 1+5를 옮겨 쓰지 않는다.
+const heroicUlatek = heroic.bosses.find(b => b.id === 'ulatek');
+const heroicFangs = heroicUlatek.phases.flatMap(p => p.steps).find(s => s.title.includes('송곳니'));
+assert.ok(heroicFangs.text.includes('두 명씩') && !heroicFangs.text.includes('다섯'), 'heroic ulatek fangs: two at a time');
+assert.ok(heroicUlatek.phases.flatMap(p => p.steps).some(s => s.title.startsWith('물어뜯기') && s.title.includes('세 조') && s.text.includes('근접 조·힐러 조·원거리 조')), 'heroic ulatek: three soak groups');
+const heroicExplorers = heroic.bosses.find(b => b.id === 'explorers');
+const fishStep = heroicExplorers.phases.flatMap(p => p.steps).find(s => s.pairs);
+assert.deepEqual(fishStep.pairs.map(p => p.boss), ['나마', '게보', '이쿠'], 'heroic explorers: fish order example 나마 → 게보 → 이쿠');
+assert.ok(heroicExplorers.choices.some(c => c.alt.includes('게보 → 나마 → 이쿠')), 'heroic explorers: raidstrats order as reference');
+// 님리사 영웅에는 신화 전용 얼음비늘 멀록·구슬 흡수 폭발을 넣지 않는다.
+const heroicNymrissa = heroic.bosses.find(b => b.id === 'nymrissa');
+assert.ok(!JSON.stringify(heroicNymrissa.phases).includes('얼음비늘'), 'heroic nymrissa: mythic-only frost-scale murlocs stay out of the steps');
+
 // 화면 연결: 상단 메뉴 탭과 라우트.
 const nav = fs.readFileSync(path.join(SITE, 'src', 'components', 'Navigation.js'), 'utf8');
 assert.ok(nav.includes("{ path: '/raid', label: '레이드 가이드'"), 'Navigation must have the 레이드 가이드 tab');
 const app = fs.readFileSync(path.join(SITE, 'src', 'App.js'), 'utf8');
 assert.ok(app.includes('<Route path="/raid" element={<RaidGuidePage />} />') && app.includes('<Route path="/raid/:episodeId" element={<RaidGuidePage />} />'), 'App must route /raid and /raid/:episodeId');
+assert.ok(app.includes('<Route path="/raid/heroic" element={<RaidGuidePage heroic />} />') && app.includes('<Route path="/raid/heroic/:bossId" element={<RaidGuidePage heroic />} />'), 'App must route /raid/heroic and /raid/heroic/:bossId');
+assert.ok(!guide.episodes.some(e => e.id === 'heroic'), "mythic episode id must not be 'heroic' (reserved for the heroic tab)");
 const page = fs.readFileSync(path.join(SITE, 'src', 'pages', 'RaidGuidePage.js'), 'utf8');
 assert.ok(page.includes("from '../data/raidGuide.json'") && page.includes('data-wowhead={`spell=${term.id}&domain=ko`}'), 'page must read the generated JSON and render tooltip links');
 
-console.log(`Raid guide validation passed: ${guide.episodes.length} episodes, ${bosses.length} bosses, ${steps} steps (${stepFigures} with plans), ${plans.length} plans, ${tips} tips, ${guide.spells.length} spells, ${guide.skills.length} player skills`);
+console.log(`Raid guide validation passed: ${guide.episodes.length} episodes, ${bosses.length} bosses, ${steps} steps (${stepFigures} with plans), ${plans.length} plans, ${tips} tips, ${guide.spells.length} spells, ${guide.skills.length} player skills; heroic ${heroic.bosses.length} bosses, ${heroicSteps} steps`);

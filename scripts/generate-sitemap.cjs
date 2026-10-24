@@ -37,6 +37,7 @@ function collectPaths() {
     ...staticPaths,
     ...getAllGuideSpecs().map(spec => spec.path),
     ...raidGuide.episodes.map(episode => `/raid/${episode.id}`),
+    ...(raidGuide.heroic ? raidGuide.heroic.bosses.map(boss => `/raid/heroic/${boss.id}`) : []),
     ...logReports.map(report => report.path),
   ];
   return { origin, paths: [...new Set(paths)] };

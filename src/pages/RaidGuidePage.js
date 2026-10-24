@@ -76,11 +76,36 @@ const Notes = styled.ul`
   li + li { border-top: 1px solid ${LINE}; }
   @media (min-width: 761px) { grid-template-columns: repeat(2, minmax(0, 1fr)); li + li { border-top: 0; } li:nth-child(n + 3) { border-top: 1px solid ${LINE}; } li:nth-child(odd) { border-right: 1px solid ${LINE}; } }
 `;
+// 난이도 전환(신화 / 영웅). 아래 편·네임드 탭보다 한 단계 위라 칸으로 나눈 단추 모양으로 둔다.
+const Difficulty = styled.nav`
+  display: flex;
+  align-items: stretch;
+  width: fit-content;
+  margin-top: 30px;
+  border: 1px solid ${LINE_STRONG};
+  a {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 128px;
+    min-height: 48px;
+    padding: 6px 18px;
+    color: #8f9aa2;
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+  a + a { border-left: 1px solid ${LINE_STRONG}; }
+  a small { color: #6f7b84; font-size: 0.7rem; font-weight: 650; }
+  a[aria-current='page'] { background: ${GOLD}; color: #0a0d10; font-weight: 750; }
+  a[aria-current='page'] small { color: rgba(10, 13, 16, 0.72); }
+  a:not([aria-current='page']):hover { color: #eef1f3; }
+  @media (max-width: 560px) { width: 100%; a { flex: 1 1 0; min-width: 0; padding: 6px 12px; } }
+`;
 const Tabs = styled.nav`
   display: flex;
   flex-wrap: wrap;
   gap: 0 22px;
-  margin-top: 30px;
+  margin-top: 18px;
   border-bottom: 1px solid ${LINE};
   @media (max-width: 560px) { gap: 0 14px; }
 `;
@@ -328,6 +353,48 @@ const Kind = styled.span`
 const StepNote = styled.p`
   && { margin-top: 8px; padding-top: 7px; border-top: 1px dashed rgba(168, 178, 188, 0.22); color: #a4b0b8; font-size: 0.8rem; line-height: 1.6; }
   b { margin-right: 8px; color: ${GOLD}; font-size: 0.72rem; font-weight: 750; }
+`;
+// 영웅 행동의 '주의할 점'. 영상 장면의 경고 줄을 그대로 옮긴 것이라 참고보다 눈에 띄게 붉은 표식을 단다.
+const StepWarn = styled.p`
+  && { margin-top: 8px; padding-top: 7px; border-top: 1px dashed rgba(168, 178, 188, 0.22); color: #d9c9c3; font-size: 0.82rem; line-height: 1.6; }
+  b { margin-right: 8px; color: #e8836f; font-size: 0.72rem; font-weight: 750; }
+`;
+// 탐험가 물고기 → 네임드 → 강화 짝 표. 좁은 화면에서는 한 줄씩 쌓는다.
+const Pairs = styled.ol`
+  display: grid;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid ${LINE};
+  li { display: grid; grid-template-columns: 22px 64px 112px minmax(0, 1fr); gap: 4px 10px; align-items: baseline; padding: 8px 0; border-bottom: 1px solid ${LINE}; font-size: 0.84rem; line-height: 1.6; }
+  li > b { color: ${GOLD}; font-variant-numeric: tabular-nums; }
+  li > strong { color: #eef1f3; }
+  li > em { color: #e7c46f; font-style: normal; font-weight: 680; }
+  li > span { color: #c3cbd0; }
+  @media (max-width: 560px) { li { grid-template-columns: 22px auto minmax(0, 1fr); } li > span { grid-column: 2 / -1; } }
+`;
+const MythicOnly = styled.p`
+  max-width: 74ch;
+  margin-top: 18px;
+  padding: 10px 14px;
+  border: 1px solid ${LINE_STRONG};
+  border-left: 3px solid ${KIND_COLORS['신화']};
+  background: ${PANEL};
+  color: #c3cbd0;
+  font-size: 0.86rem;
+  line-height: 1.65;
+  b { margin-right: 8px; color: ${KIND_COLORS['신화']}; font-size: 0.74rem; font-weight: 750; }
+`;
+const FlowList = styled.ol`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  li { display: inline-flex; align-items: center; gap: 6px; color: #aeb8be; font-size: 0.84rem; font-weight: 600; }
+  li b { display: inline-grid; place-items: center; width: 20px; height: 20px; border: 1px solid rgba(210, 179, 115, 0.5); color: ${GOLD}; font-size: 0.7rem; font-variant-numeric: tabular-nums; }
+  li + li::before { content: '→'; margin-right: 2px; color: #59636b; }
 `;
 const SubHead = styled.h3`
   display: flex;
@@ -629,7 +696,196 @@ export const raidEpisodes = raidGuide.episodes;
 const bossCount = raidGuide.episodes.reduce((total, episode) => total + episode.bosses.length, 0);
 const tipCount = raidGuide.episodes.reduce((total, episode) => total + episode.bosses.reduce((sum, boss) => sum + boss.tips.length, 0), 0);
 
-function RaidGuidePage() {
+// 영웅 난이도 글(정본의 heroic). 네임드마다 한 탭이고, 영웅 통합 영상의 장면 하나가 행동 하나다.
+const heroicGuide = raidGuide.heroic;
+const heroicStepCount = heroicGuide.bosses.reduce((total, boss) => total + boss.phases.reduce((sum, phase) => sum + phase.steps.length, 0), 0);
+const heroicRoleCount = heroicGuide.bosses.reduce((total, boss) => total + boss.roles.length, 0);
+
+function DifficultySwitch({ heroic }) {
+  return (
+    <Difficulty aria-label="난이도 선택">
+      <Link to="/raid" aria-current={heroic ? undefined : 'page'} data-difficulty="mythic">
+        신화<small>{raidGuide.episodes.length}편 · 네임드 {bossCount}곳</small>
+      </Link>
+      <Link to="/raid/heroic" aria-current={heroic ? 'page' : undefined} data-difficulty="heroic">
+        영웅<small>네임드별 {heroicGuide.bosses.length}곳</small>
+      </Link>
+    </Difficulty>
+  );
+}
+
+function ChoiceList({ boss }) {
+  if (!boss.choices || !boss.choices.length) return null;
+  return (
+    <>
+      <SubHead>갈리는 택틱<small>{boss.choices.length}곳 · 참고</small></SubHead>
+      <ChoicesLead data-choices-lead>공대마다 방식이 갈리는 곳입니다. 다른 안은 참고로만 보고, 실제로는 공대 배정표의 한 안을 따르세요.</ChoicesLead>
+      <Choices>
+        {boss.choices.map(choice => (
+          <Choice key={choice.title} data-choice={choice.title} data-open={choice.open ? 'true' : undefined}>
+            <h4>{choice.title}</h4>
+            <dl>
+              <div><dt>{choice.open ? '한 안' : '이 글'}</dt><dd><TermText text={choice.picked} bossId={boss.id} /></dd></div>
+              <div><dt>{choice.open ? '다른 안' : '다른 안 (참고)'}</dt><dd><TermText text={choice.alt} bossId={boss.id} /></dd></div>
+              <div><dt>왜</dt><dd><TermText text={choice.why} bossId={boss.id} /></dd></div>
+            </dl>
+          </Choice>
+        ))}
+      </Choices>
+    </>
+  );
+}
+
+function HeroicRaidGuide() {
+  const { bossId } = useParams();
+  const boss = heroicGuide.bosses.find(item => item.id === bossId) || heroicGuide.bosses[0];
+  const sectionIds = [`${boss.id}-roles`, ...boss.phases.map(phase => `${boss.id}-${phase.id}`), `${boss.id}-sources`];
+  const active = useActiveSection(sectionIds.join(' '));
+  const video = heroicGuide.video;
+  const contents = [
+    { id: `${boss.id}-roles`, label: '역할별 핵심', tag: '3역할' },
+    ...boss.phases.map((phase, index) => ({ id: `${boss.id}-${phase.id}`, label: phase.title, tag: `${index + 1}단계` })),
+    { id: `${boss.id}-sources`, label: '근거', tag: `${boss.sources.length}곳` },
+  ];
+
+  return (
+    <Page data-difficulty="heroic">
+      <Hero>
+        <div>
+          <Eyebrow>{heroicGuide.page.eyebrow}</Eyebrow>
+          <Title>{raidGuide.page.title}</Title>
+          <Lead>{heroicGuide.page.lead}</Lead>
+        </div>
+        <Metrics aria-label="영웅 레이드 가이드 범위">
+          <div><dt>네임드</dt><dd>{heroicGuide.bosses.length}곳</dd></div>
+          <div><dt>행동</dt><dd>{heroicStepCount}개</dd></div>
+          <div><dt>역할별 핵심</dt><dd>{heroicRoleCount}개</dd></div>
+          <div><dt>기준</dt><dd>{CURRENT_PATCH_LABEL} · {heroicGuide.metadata.difficulty}</dd></div>
+        </Metrics>
+      </Hero>
+      <Notes aria-label="읽기 전에">
+        {heroicGuide.page.notes.map(note => <li key={note}>{note}</li>)}
+      </Notes>
+
+      <DifficultySwitch heroic />
+      <Tabs aria-label="영웅 네임드 선택">
+        {heroicGuide.bosses.map(item => (
+          <Tab key={item.id} to={`/raid/heroic/${item.id}`} $active={item.id === boss.id} $color={item.color} aria-current={item.id === boss.id ? 'page' : undefined}>
+            {item.label}
+            <small>{item.place}</small>
+          </Tab>
+        ))}
+      </Tabs>
+
+      <EpisodeHead $color={boss.color} aria-labelledby="episode-title">
+        <span aria-hidden="true" />
+        <div>
+          <h2 id="episode-title">{boss.name}<small>{boss.place} · 영웅</small></h2>
+          <Principle>{boss.principle}</Principle>
+          <FlowList aria-label="전투 흐름">
+            {boss.phases.map((phase, index) => <li key={phase.id}><b>{index + 1}</b>{phase.title}</li>)}
+          </FlowList>
+        </div>
+      </EpisodeHead>
+
+      <Body>
+        <Contents aria-label="이 네임드의 순서">
+          <p>이 네임드에서</p>
+          <ContentsList>
+            {contents.map(item => (
+              <ContentsGroup key={item.id}>
+                <ContentsLink href={`#${item.id}`} $active={item.id === active} aria-current={item.id === active ? 'location' : undefined}>
+                  {item.label}<b>{item.tag}</b>
+                </ContentsLink>
+              </ContentsGroup>
+            ))}
+          </ContentsList>
+        </Contents>
+        <Main>
+          <Boss id={boss.id} aria-labelledby={`${boss.id}-title`} data-boss={boss.id}>
+            <BossHead>
+              <BossSprites $color={boss.color} aria-hidden="true">
+                {boss.sprites.map(id => <img key={id} src={SPRITE(id)} alt="" width="88" height="88" loading="lazy" decoding="async" />)}
+              </BossSprites>
+              <h2 id={`${boss.id}-title`}><small>영웅 · {boss.place}</small>{boss.name}</h2>
+            </BossHead>
+            <Summary><TermText text={boss.summary} bossId={boss.id} /></Summary>
+            {video && boss.videoSecond != null ? (
+              <TipSource href={`https://www.youtube.com/watch?v=${video.id}&t=${boss.videoSecond}s`} target="_blank" rel="noreferrer" data-video-second={boss.videoSecond}>
+                <Youtube size={13} aria-hidden="true" />영웅 통합 영상에서 보기 {clock(boss.videoSecond)}
+              </TipSource>
+            ) : null}
+            <SubHead id={`${boss.id}-roles`}><Users size={16} aria-hidden="true" />역할별 핵심<small>{boss.roles.length}개</small></SubHead>
+            <Tips data-roles={boss.id}>
+              {boss.roles.map(item => (
+                <li key={item.role}>
+                  <Role>{item.role}</Role>
+                  <div><p><TermText text={item.text} bossId={boss.id} /></p></div>
+                </li>
+              ))}
+            </Tips>
+            {boss.phases.map((phase, index) => (
+              <React.Fragment key={phase.id}>
+                <PhaseHead id={`${boss.id}-${phase.id}`}><b>{index + 1}</b>{phase.title}</PhaseHead>
+                <Steps>
+                  {phase.steps.map(step => (
+                    <Step key={step.title} $color={KIND_COLORS[step.kind] || KIND_COLORS['공통']} data-kind={step.kind}>
+                      <Kind $color={KIND_COLORS[step.kind] || KIND_COLORS['공통']}>{step.kind}</Kind>
+                      <div>
+                        <h4>{step.title}</h4>
+                        <p><TermText text={step.text} bossId={boss.id} /></p>
+                        {step.pairs ? (
+                          <Pairs aria-label={`${step.title} 짝 표`} data-pairs={boss.id}>
+                            {step.pairs.map(pair => (
+                              <li key={pair.order}><b>{pair.order}</b><strong>{pair.boss}</strong><em>{pair.buff}</em><span>{pair.how}</span></li>
+                            ))}
+                          </Pairs>
+                        ) : null}
+                        {step.warn ? <StepWarn data-warn=""><b>주의</b><TermText text={step.warn} bossId={boss.id} /></StepWarn> : null}
+                      </div>
+                    </Step>
+                  ))}
+                </Steps>
+              </React.Fragment>
+            ))}
+            {boss.mythicOnly ? <MythicOnly data-mythic-only=""><b>신화와 다른 점</b><TermText text={boss.mythicOnly} bossId={boss.id} /></MythicOnly> : null}
+            <ChoiceList boss={boss} />
+            <SubHead id={`${boss.id}-sources`}>근거</SubHead>
+            <SourceList>
+              {boss.sources.map(key => {
+                const source = heroicGuide.sources[key];
+                return source ? <li key={key}><a href={source.href} target="_blank" rel="noreferrer">{source.title}</a> — {source.note}</li> : null;
+              })}
+            </SourceList>
+          </Boss>
+          <Footer>
+            <NextPanel>
+              <div>
+                <h2>신화도 준비한다면</h2>
+                <p>신화 탭에는 같은 네임드의 신화 택틱을 배치도와 함께 적었습니다. 내 전문화의 레이드 운용은 직업 가이드의 실전 부에서 봅니다.</p>
+              </div>
+              <NextLink to="/raid">신화 택틱 보기 <ArrowRight size={16} aria-hidden="true" /></NextLink>
+            </NextPanel>
+            <Basis>
+              <summary><Castle size={15} aria-hidden="true" />영웅 글의 참고 자료 전체</summary>
+              <ul>
+                {Object.entries(heroicGuide.sources).map(([key, source]) => (
+                  <li key={key}><a href={source.href} target="_blank" rel="noreferrer">{source.title}<ExternalLink size={11} aria-hidden="true" style={{ marginLeft: 4, verticalAlign: '-1px' }} /></a> — {source.note}</li>
+                ))}
+              </ul>
+            </Basis>
+          </Footer>
+        </Main>
+      </Body>
+    </Page>
+  );
+}
+
+function RaidGuidePage({ heroic = false }) {
+  return heroic ? <HeroicRaidGuide /> : <MythicRaidGuide />;
+}
+
+function MythicRaidGuide() {
   const { episodeId } = useParams();
   const episode = raidGuide.episodes.find(item => item.id === episodeId) || raidGuide.episodes[0];
   const active = useActiveSection(episode.bosses.map(boss => boss.id).join(' '));
@@ -656,6 +912,7 @@ function RaidGuidePage() {
         {raidGuide.page.notes.map(note => <li key={note}>{note}</li>)}
       </Notes>
 
+      <DifficultySwitch />
       <Tabs aria-label="레이드 편 선택">
         {raidGuide.episodes.map(item => (
           <Tab key={item.id} to={`/raid/${item.id}`} $active={item.id === episode.id} $color={item.color} aria-current={item.id === episode.id ? 'page' : undefined}>
@@ -748,24 +1005,7 @@ function RaidGuidePage() {
                     );
                   })}
                 </Tips>
-                {boss.choices.length ? (
-                  <>
-                    <SubHead>갈리는 택틱<small>{boss.choices.length}곳 · 참고</small></SubHead>
-                    <ChoicesLead data-choices-lead>공대마다 방식이 갈리는 곳입니다. 다른 안은 참고로만 보고, 실제로는 공대 배정표의 한 안을 따르세요.</ChoicesLead>
-                    <Choices>
-                      {boss.choices.map(choice => (
-                        <Choice key={choice.title} data-choice={choice.title} data-open={choice.open ? 'true' : undefined}>
-                          <h4>{choice.title}</h4>
-                          <dl>
-                            <div><dt>{choice.open ? '한 안' : '이 글'}</dt><dd><TermText text={choice.picked} bossId={boss.id} /></dd></div>
-                            <div><dt>{choice.open ? '다른 안' : '다른 안 (참고)'}</dt><dd><TermText text={choice.alt} bossId={boss.id} /></dd></div>
-                            <div><dt>왜</dt><dd><TermText text={choice.why} bossId={boss.id} /></dd></div>
-                          </dl>
-                        </Choice>
-                      ))}
-                    </Choices>
-                  </>
-                ) : null}
+                <ChoiceList boss={boss} />
                 {spells.length ? (
                   <>
                     <SubHead>네임드 기술 툴팁<small>{spells.length}개</small></SubHead>

@@ -1157,3 +1157,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 검사: `artifacts/sszorak-cycle-20261024/guard.cjs`(범위 검사, 암살·암흑의 상단 opener는 검사기가 영웅 탭 오프닝과 같기를 요구해 맞춤), `npm run validate:quiet` 12단계 통과, 빌드본에서 `shots.cjs`로 27개 가이드 78화면(320·390·1440) 오류·가로 넘침·깨진 아이콘 0.
 - 배포: 사이트 `9dd90b52` main 푸시, KB 로컬 `1b3e566`(바꾼 54개 파일만). 정리 빌드 `main.591e03bf.js`(소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `shots.cjs`(4개 가이드 12화면 문제 0)와 `live-text.cjs`(새 문장 3개 보임)로 확인했다.
 - 2026-10-24 레이드 배치도: 쫄 도트를 실제 모델로 다시 그린 판(스토리보드 assets/sprites)으로 74컷을 다시 만들어 35컷 WebP를 바꿨다. 탐험가 03-venomous-1-6-11은 물고기 → 먹은 네임드 강화 짝(나마 연속 나눠 맞기·게보 버섯과 폭탄·이쿠 화염과 냉기 원)과 나마 강화의 실제 자리, 12·13은 물고기 ②·③ 표시. 울라텍 마지막 단계 05-ulatek-12~14는 raidplan Broken 지도(네 조각, 전장 ulatek-broken)에 Method 신화 단상별 자리로 다시 짰다. KB는 로컬 `999a957`. 확인 `artifacts/raid-broken-20261024/shots.cjs`.
+
+## 2026-10-24 레이드 가이드 영웅 탭(네임드별 글)
+
+- 요청: 사이트 영웅 공략에 레이드 탭을 만들어 네임드별 글로 정리. 사이트에 따로 '영웅 공략' 화면은 없어서 영웅 난이도 레이드 공략으로 보고, /raid 안에 난이도 단추(신화 | 영웅)를 두고 영웅은 네임드마다 한 탭(/raid/heroic/<네임드 id>)으로 만들었다.
+- 근거: 영웅 통합 영상 v2 원고(ai-hub outputs/heroic-raid-integrated-20261024/heroic_content.py, 장면 66개)와 자료 선택 규칙(sources/selection.json). 장면 하나 = 글의 행동 하나이고, 자막의 '~하세요'를 합니다체로 옮겼을 뿐 내용은 더하거나 빼지 않았다. 키식스 관문·부정·8번째 광역 피해는 raidstrats 영웅 원문으로 다시 확인했다.
+- 정본: KB raid-guide.json의 `heroic`(page·video·bosses·sources). 다시 넣기 `artifacts/raid-heroic-20261024/heroic.cjs` → `npm run sync-kb`. 네임드마다 전투 흐름(3~4단계)·역할별 핵심 3개·행동(주의할 점 포함)·영상 장 링크·근거, 탐험가는 물고기 짝 표와 순서 비교, 님리사·울라텍은 '신화와 다른 점'.
+- 검사: validate-raid-guide에 영웅 구조(네임드 10곳·행동 66개·영웅 근거·울라텍 송곳니 두 명씩·탐험가 순서)와 라우트 검사를 더했고, RaidGuidePage.test.js에 영웅 탭 테스트 2개. 사이트맵 74개 주소(영웅 10개 추가). 화면 확인 `artifacts/raid-heroic-20261024/shots.cjs`(1440·390, 가로 넘침 0).

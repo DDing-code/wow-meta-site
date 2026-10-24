@@ -142,6 +142,8 @@ function App() {
               <Route path="/guide" element={<GuidePage />} />
               <Route path="/beginner" element={<BeginnerPage />} />
               <Route path="/raid" element={<RaidGuidePage />} />
+              <Route path="/raid/heroic" element={<RaidGuidePage heroic />} />
+              <Route path="/raid/heroic/:bossId" element={<RaidGuidePage heroic />} />
               <Route path="/raid/:episodeId" element={<RaidGuidePage />} />
               <Route path="/news" element={<NewsPage />} />
               <Route path="/spells" element={<SpellDatabasePage />} />

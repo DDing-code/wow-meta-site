@@ -17,6 +17,8 @@ function mount(path = '/raid') {
     <MemoryRouter initialEntries={[path]} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Routes>
         <Route path="/raid" element={<RaidGuidePage />} />
+        <Route path="/raid/heroic" element={<RaidGuidePage heroic />} />
+        <Route path="/raid/heroic/:bossId" element={<RaidGuidePage heroic />} />
         <Route path="/raid/:episodeId" element={<RaidGuidePage />} />
       </Routes>
     </MemoryRouter>
@@ -161,4 +163,52 @@ test('이름표 바로 뒤 조사는 이름표와 한 덩어리로 묶어 조사
   const glued = Array.from(container.querySelectorAll('[data-term-piece]')).map(piece => piece.textContent);
   expect(glued).toContain('영혼결속으로');
   expect(glued.every(text => !/^\s|\s$/.test(text))).toBe(true);
+});
+
+test('난이도 전환으로 영웅 탭을 열면 네임드 10곳이 한 탭씩이고 첫 네임드(키식스)를 기본으로 보여 준다', () => {
+  mount('/raid');
+  const mythicSwitch = container.querySelector('nav[aria-label="난이도 선택"]');
+  expect(mythicSwitch.querySelector('a[aria-current="page"]').getAttribute('data-difficulty')).toBe('mythic');
+  expect(mythicSwitch.querySelector('a[data-difficulty="heroic"]').getAttribute('href')).toBe('/raid/heroic');
+  act(() => root.unmount());
+  container.remove();
+  mount('/raid/heroic');
+  const heroic = raidGuide.heroic;
+  expect(container.querySelector('nav[aria-label="난이도 선택"] a[aria-current="page"]').getAttribute('data-difficulty')).toBe('heroic');
+  const tabs = container.querySelectorAll('nav[aria-label="영웅 네임드 선택"] a');
+  expect(tabs).toHaveLength(10);
+  expect(Array.from(tabs).map(tab => tab.getAttribute('href'))).toEqual(heroic.bosses.map(boss => `/raid/heroic/${boss.id}`));
+  expect(container.querySelector('nav[aria-label="영웅 네임드 선택"] a[aria-current="page"]').textContent).toContain('키식스');
+  expect(container.querySelector('nav[aria-label="레이드 편 선택"]')).toBeNull();
+  expect(container.querySelectorAll('[data-boss]')).toHaveLength(1);
+  expect(container.querySelectorAll('[data-roles="kithix"] > li')).toHaveLength(3);
+  expect(container.querySelector('a[data-video-second="10"]').getAttribute('href')).toBe(`https://www.youtube.com/watch?v=${heroic.video.id}&t=10s`);
+});
+
+test('영웅 네임드 탭은 영상 장면마다 행동 하나와 주의할 점을 그리고, 울라텍 송곳니는 두 명씩이다', () => {
+  for (const boss of raidGuide.heroic.bosses) {
+    mount(`/raid/heroic/${boss.id}`);
+    const steps = boss.phases.flatMap(phase => phase.steps);
+    expect(container.querySelectorAll(`#${boss.id} li[data-kind]`)).toHaveLength(steps.length);
+    expect(container.querySelectorAll(`#${boss.id} [data-warn]`)).toHaveLength(steps.length);
+    for (const phase of boss.phases) expect(container.querySelector(`#${boss.id}-${phase.id}`)).not.toBeNull();
+    expect(container.querySelectorAll(`#${boss.id} img[src^="/images/raid/sprites/"]`)).toHaveLength(boss.sprites.length);
+    expect(container.querySelector('li[data-figure]')).toBeNull();
+    act(() => root.unmount());
+    container.remove();
+  }
+  mount('/raid/heroic/ulatek');
+  const fangs = Array.from(container.querySelectorAll('#ulatek li[data-kind]')).find(step => step.textContent.includes('송곳니'));
+  expect(fangs.textContent).toContain('두 명씩');
+  expect(fangs.textContent).not.toContain('나머지 다섯');
+  expect(container.querySelector('[data-mythic-only]').textContent).toContain('신화와 다른 점');
+  act(() => root.unmount());
+  container.remove();
+  mount('/raid/heroic/explorers');
+  expect(Array.from(container.querySelectorAll('[data-pairs="explorers"] li strong')).map(node => node.textContent)).toEqual(['나마', '게보', '이쿠']);
+  expect(container.querySelector('[data-choice="물고기 먹이는 순서"]').textContent).toContain('게보 → 나마 → 이쿠');
+  act(() => root.unmount());
+  container.remove();
+  mount('/raid/heroic/coiled-altar');
+  expect(container.querySelector('#coiled-altar a[data-term-id="1286620"]').textContent).toBe('영혼 절단');
 });

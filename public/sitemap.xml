@@ -4,6 +4,7 @@
   <url><loc>https://wowmeta.vercel.app/guide</loc></url>
   <url><loc>https://wowmeta.vercel.app/beginner</loc></url>
   <url><loc>https://wowmeta.vercel.app/raid</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic</loc></url>
   <url><loc>https://wowmeta.vercel.app/spells</loc></url>
   <url><loc>https://wowmeta.vercel.app/logs</loc></url>
   <url><loc>https://wowmeta.vercel.app/news</loc></url>
@@ -52,6 +53,16 @@
   <url><loc>https://wowmeta.vercel.app/raid/venomous-1-6</loc></url>
   <url><loc>https://wowmeta.vercel.app/raid/coiled-altar</loc></url>
   <url><loc>https://wowmeta.vercel.app/raid/ulatek</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic/kithix</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic/nymrissa</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic/nekzali</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic/sentinels</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic/explorers</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic/vashnik</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic/sszorak</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic/fangs</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic/coiled-altar</loc></url>
+  <url><loc>https://wowmeta.vercel.app/raid/heroic/ulatek</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/deathknight/unholy/log-analysis/peal-mythic</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/evoker/preservation/log-analysis/chaeyong-mythic</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/warlock/demonology/log-analysis/ragereaver-heroic</loc></url>

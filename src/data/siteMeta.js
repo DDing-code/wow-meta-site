@@ -25,6 +25,10 @@ const STATIC_PAGES = {
     title: `레이드 가이드 | ${SITE_NAME}`,
     description: raidGuide.page.lead,
   },
+  '/raid/heroic': {
+    title: `영웅 레이드 공략 | 레이드 가이드 | ${SITE_NAME}`,
+    description: raidGuide.heroic.page.lead,
+  },
   '/spells': {
     title: `스펠 DB | ${SITE_NAME}`,
     description: '전문화별 스킬·특성·영웅 특성의 한국어 툴팁과 스킬 연결 지도를 찾아볼 수 있습니다.',
@@ -58,6 +62,17 @@ export function getPageMeta(pathname) {
     return {
       title: `${guide.spec} ${guide.className} 가이드 ${CURRENT_PATCH_LABEL} | ${SITE_NAME}`,
       description: `${guide.className} ${guide.spec} 전문화 ${CURRENT_PATCH_LABEL} 가이드 — 딜사이클, 특성 견본, 오프닝, 영웅 특성. ${guide.focus}`,
+      canonical,
+      index: true,
+    };
+  }
+
+  const heroicMatch = path.match(/^\/raid\/heroic\/([^/]+)$/);
+  const heroicBoss = heroicMatch && raidGuide.heroic.bosses.find(item => item.id === heroicMatch[1]);
+  if (heroicBoss) {
+    return {
+      title: `${heroicBoss.name} 영웅 공략 | 레이드 가이드 | ${SITE_NAME}`,
+      description: `${heroicBoss.place} ${heroicBoss.name} 영웅 택틱: ${heroicBoss.principle}.`,
       canonical,
       index: true,
     };
