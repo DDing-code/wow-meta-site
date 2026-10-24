@@ -1165,3 +1165,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 정본: KB raid-guide.json의 `heroic`(page·video·bosses·sources). 다시 넣기 `artifacts/raid-heroic-20261024/heroic.cjs` → `npm run sync-kb`. 네임드마다 전투 흐름(3~4단계)·역할별 핵심 3개·행동(주의할 점 포함)·영상 장 링크·근거, 탐험가는 물고기 짝 표와 순서 비교, 님리사·울라텍은 '신화와 다른 점'.
 - 검사: validate-raid-guide에 영웅 구조(네임드 10곳·행동 66개·영웅 근거·울라텍 송곳니 두 명씩·탐험가 순서)와 라우트 검사를 더했고, RaidGuidePage.test.js에 영웅 탭 테스트 2개. 사이트맵 74개 주소(영웅 10개 추가). 화면 확인 `artifacts/raid-heroic-20261024/shots.cjs`(1440·390, 가로 넘침 0).
 - 배포: 사이트 `8613b3a6` main 푸시, KB 로컬 `05e7d09`(raid-guide.json만). 정리 빌드 `main.2e93283e.js`(소스맵 403, `artifacts/raid-heroic-20261024/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 키식스·탐험가·울라텍 영웅 탭 1440·390 확인(탭 10개, 행동 수 일치, 가로 넘침 0).
+
+## 2026-10-24 레이드 가이드 영웅 탭 배치도
+
+- 요청: "배치도도 해줘" — 영웅 글 탭의 행동마다 배치도를 붙였다(행동 66개 중 65개, 탐험가 '물고기 순서 = 강화 순서'는 짝 표가 있어 그림 없음).
+- 고른 방식: 영웅 통합 영상 v2의 장면을 그대로 쓴다. 장면 하나 = 영웅 글의 행동 하나이고, 장면은 실제 전장 지도 위에 영웅 20인 자리(raidstrats 영웅 공개 플랜, 키식스·울라텍은 공략 글 자리 설명)를 그렸기 때문에 글·영상·그림이 같은 원고에서 나온다. 신화 배치도는 송곳니 1+5·님리사 신화 구슬처럼 택틱이 달라서 쓰지 않았고, 새로 그리는 것보다 이미 영웅 택틱으로 짠 장면이 정확하다.
+- 생성: `python artifacts/raid-heroic-20261024/plans.py`가 영상 생성기(build.py, 읽기만)로 장면 마지막 프레임(이동이 끝난 상태)의 지도 부분(1440x810)만 잘라 `public/images/raid/plan/heroic-<네임드>-NN-{960,1600}.webp`와 순서표 plans.json을 만든다. 머리글·전투 흐름·자막은 사이트 글과 겹쳐 뺐다. `heroic.cjs`가 plans.json 순서대로 행동에 figure를 붙인다(개수가 안 맞으면 멈춤) → `npm run sync-kb`.
+- 화면: 영웅 탭 행동 칸이 신화와 같은 PlanFigure(넓은 화면 왼쪽 그림·좁은 화면 위 그림, 눌러서 크게 보기)를 쓴다.
+- 검사: validate-raid-guide가 영웅 행동마다 heroic-<네임드>-NN 그림(신화 그림 금지, 짝 표 행동은 그림 없음, 65장·중복 없음)과 화면 연결을 확인하고, RaidGuidePage.test.js도 같은 계약으로 바꿨다. 화면 확인 `artifacts/raid-heroic-20261024/plans-shots.cjs`(10곳 × 1440·390, 그림 65장 모두 불러옴, 가로 넘침 0).
+- 배포: 사이트 `3bea74d4` main 푸시, KB 로컬 `26595dc`(raid-guide.json만). 다른 세션의 커밋 전 원고 변경이 작업 폴더에 있어 HEAD만 담은 임시 작업 트리에서 빌드했다. 정리 빌드 `main.71932102.js`(소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 plans-shots.cjs 통과(캡처 `shots/live/`).
