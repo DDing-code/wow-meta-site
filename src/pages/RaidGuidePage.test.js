@@ -193,7 +193,10 @@ test('영웅 네임드 탭은 영상 장면마다 행동 하나와 주의할 점
     expect(container.querySelectorAll(`#${boss.id} [data-warn]`)).toHaveLength(steps.length);
     for (const phase of boss.phases) expect(container.querySelector(`#${boss.id}-${phase.id}`)).not.toBeNull();
     expect(container.querySelectorAll(`#${boss.id} img[src^="/images/raid/sprites/"]`)).toHaveLength(boss.sprites.length);
-    expect(container.querySelector('li[data-figure]')).toBeNull();
+    // 배치도: 행동마다 같은 영상 장면의 영웅 그림(heroic-<네임드>-NN). 탐험가 물고기 짝 표 행동만 그림이 없다.
+    const figures = Array.from(container.querySelectorAll(`#${boss.id} li[data-figure] > figure img`));
+    expect(figures).toHaveLength(steps.filter(step => !step.pairs).length);
+    for (const img of figures) expect(img.getAttribute('src')).toMatch(new RegExp(`^/images/raid/plan/heroic-${boss.id}-\\d{2}-960\\.webp$`));
     act(() => root.unmount());
     container.remove();
   }

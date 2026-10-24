@@ -3,7 +3,9 @@
 // 원본: ai-hub workspace/outputs/heroic-raid-integrated-20261024/heroic_content.py (영웅 통합 영상 v2 원고)
 //       와 sources/selection.json(영웅 자료 선택 규칙). 영상 장면 하나 = 글의 행동 하나다.
 // 영상의 "~하세요" 자막을 레이드 가이드 문체(합니다체)로 옮겼고, 내용은 더하거나 빼지 않았다.
-// 다시 넣기: node artifacts/raid-heroic-20261024/heroic.cjs → npm run sync-kb
+// 배치도(2026-10-24): 같은 영상 장면의 지도 부분을 plans.py 가 public/images/raid/plan/heroic-<네임드>-NN 으로 뽑고 plans.json 에 순서를 남긴다.
+//       행동마다 그 장면 그림을 figure 로 붙인다(탐험가 '물고기 순서 = 강화 순서'는 짝 표 장면이라 그림 없음).
+// 다시 넣기: python artifacts/raid-heroic-20261024/plans.py → node artifacts/raid-heroic-20261024/heroic.cjs → npm run sync-kb
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -312,6 +314,15 @@ const bosses = [
   },
 ];
 
+// 행동 순서대로 영상 장면 그림을 붙인다. 장면 제목이 바뀌어 순서가 어긋나면 여기서 멈춘다.
+const plans = JSON.parse(fs.readFileSync(path.join(__dirname, 'plans.json'), 'utf8'));
+for (const boss of bosses) {
+  const mine = plans.filter(p => p.boss === boss.id);
+  const targets = boss.phases.flatMap(phase => phase.steps.filter(s => !s.pairs).map(s => ({ s, phase })));
+  if (mine.length !== targets.length) throw new Error(`${boss.id}: 장면 ${mine.length}개, 행동 ${targets.length}개`);
+  targets.forEach(({ s, phase }, i) => { s.figure = { plan: mine[i].plan, caption: `${phase.title} · 영웅 20인 자리` }; });
+}
+
 const heroic = {
   metadata: {
     updated: '2026-10-24',
@@ -320,10 +331,11 @@ const heroic = {
   },
   page: {
     eyebrow: '한밤 시즌 2 · 영웅 기준 · 네임드별 글 공략',
-    lead: '키식스 해방, 해일결속 동굴, 맹독 심연의 영웅 네임드 10곳을 네임드마다 한 탭으로 정리했습니다. 전투 흐름 네 단계, 역할별 핵심, 단계마다 할 행동과 주의할 점을 차례로 적었습니다.',
+    lead: '키식스 해방, 해일결속 동굴, 맹독 심연의 영웅 네임드 10곳을 네임드마다 한 탭으로 정리했습니다. 전투 흐름 네 단계, 역할별 핵심, 단계마다 할 행동과 주의할 점을 배치도와 함께 차례로 적었습니다.',
     notes: [
       '맹독 심연 일곱 네임드와 키식스는 raidstrats 영웅 공략을 기본으로 했습니다. 님리사는 Method 공략의 영웅·신화 공통 부분을, 울라텍은 Method 영웅 공략과 10월 7일 공식 완화를 따릅니다.',
       '영웅은 10~30명으로 인원이 바뀌는 난이도입니다. 글의 조 인원은 20명(탱커 2·힐러 5·딜러 13) 예시이므로 공대 구성에 맞춰 다시 나누세요.',
+      '배치도는 영웅 통합 영상과 같은 그림입니다. 실제 전장 지도 위에 영웅 20인 자리를 그렸고, raidstrats 공개 플랜의 네임드·징표·공대 자리를 옮겼습니다. 플랜이 없는 키식스·울라텍은 공략 글의 자리 설명을 옮긴 것입니다.',
       '신화에서만 나오는 기믹은 넣지 않았습니다. 신화 택틱은 아래 난이도 단추의 ‘신화’에서 봅니다.',
       '실제 전투의 초 단위 시각은 적지 않았고, 실제 공대 사용률도 세지 않았습니다. 같은 내용을 와우메타 채널의 영웅 통합 영상으로도 볼 수 있습니다.',
     ],

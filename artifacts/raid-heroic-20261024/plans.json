@@ -1,0 +1,392 @@
+[
+ {
+  "plan": "heroic-kithix-01",
+  "boss": "kithix",
+  "title": "네임드와 쫄을 떨어뜨리기",
+  "arena": "kithix"
+ },
+ {
+  "plan": "heroic-kithix-02",
+  "boss": "kithix",
+  "title": "딱정벌레는 하나씩 터뜨리기",
+  "arena": "kithix"
+ },
+ {
+  "plan": "heroic-kithix-03",
+  "boss": "kithix",
+  "title": "쫄이 죽은 자리에 생긴 알부터",
+  "arena": "kithix"
+ },
+ {
+  "plan": "heroic-kithix-04",
+  "boss": "kithix",
+  "title": "빛을 챙기고 공포는 밖으로",
+  "arena": "kithix"
+ },
+ {
+  "plan": "heroic-kithix-05",
+  "boss": "kithix",
+  "title": "어둠 속에서는 빛 안에 머물기",
+  "arena": "kithix"
+ },
+ {
+  "plan": "heroic-kithix-06",
+  "boss": "kithix",
+  "title": "25%부터 관문은 정한 구역에",
+  "arena": "kithix"
+ },
+ {
+  "plan": "heroic-nymrissa-01",
+  "boss": "nymrissa",
+  "title": "멀록이 중앙 거품에 닿기 전에",
+  "arena": "grotto"
+ },
+ {
+  "plan": "heroic-nymrissa-02",
+  "boss": "nymrissa",
+  "title": "얼음 구슬은 모아서 떨구기",
+  "arena": "grotto"
+ },
+ {
+  "plan": "heroic-nymrissa-03",
+  "boss": "nymrissa",
+  "title": "탱커 물줄기로 얼음 바닥 청소",
+  "arena": "grotto"
+ },
+ {
+  "plan": "heroic-nymrissa-04",
+  "boss": "nymrissa",
+  "title": "소용돌이가 없는 틈으로 모이기",
+  "arena": "grotto"
+ },
+ {
+  "plan": "heroic-nymrissa-05",
+  "boss": "nymrissa",
+  "title": "거품 폭발을 버틴 뒤 다시 쫄 처리",
+  "arena": "grotto"
+ },
+ {
+  "plan": "heroic-nekzali-01",
+  "boss": "nekzali",
+  "title": "빛나는 관이 많은 쪽으로 네임드 이동",
+  "arena": "nekzali"
+ },
+ {
+  "plan": "heroic-nekzali-02",
+  "boss": "nekzali",
+  "title": "해제 대상은 가장자리로",
+  "arena": "nekzali"
+ },
+ {
+  "plan": "heroic-nekzali-03",
+  "boss": "nekzali",
+  "title": "사잇단계 큰 쫄은 하나씩 처치",
+  "arena": "nekzali"
+ },
+ {
+  "plan": "heroic-nekzali-04",
+  "boss": "nekzali",
+  "title": "나눠 맞는 불을 시체 위에",
+  "arena": "nekzali"
+ },
+ {
+  "plan": "heroic-nekzali-05",
+  "boss": "nekzali",
+  "title": "마지막 단계는 화력과 치유 집중",
+  "arena": "nekzali"
+ },
+ {
+  "plan": "heroic-sentinels-01",
+  "boss": "sentinels",
+  "title": "두 조가 떨어져서 시작",
+  "arena": "sentinels"
+ },
+ {
+  "plan": "heroic-sentinels-02",
+  "boss": "sentinels",
+  "title": "작은 독은 밟고 큰 독 덩어리는 점사",
+  "arena": "sentinels"
+ },
+ {
+  "plan": "heroic-sentinels-03",
+  "boss": "sentinels",
+  "title": "피 쪽은 함께 맞고 바닥은 구석에",
+  "arena": "sentinels"
+ },
+ {
+  "plan": "heroic-sentinels-04",
+  "boss": "sentinels",
+  "title": "사잇단계: 1+3 또는 2+2",
+  "arena": "sentinels"
+ },
+ {
+  "plan": "heroic-sentinels-05",
+  "boss": "sentinels",
+  "title": "끝나면 원래 자리로, 탱커는 교대",
+  "arena": "sentinels"
+ },
+ {
+  "plan": "heroic-explorers-01",
+  "boss": "explorers",
+  "title": "나마·이쿠는 함께, 게보는 따로",
+  "arena": "explorers"
+ },
+ {
+  "plan": "heroic-explorers-02",
+  "boss": "explorers",
+  "title": "상자를 모두 밟아 물고기 찾기",
+  "arena": "explorers"
+ },
+ {
+  "plan": "heroic-explorers-03",
+  "boss": "explorers",
+  "title": "물고기 ① 나마 강화: 한 줄 세 원",
+  "arena": "explorers"
+ },
+ {
+  "plan": "heroic-explorers-04",
+  "boss": "explorers",
+  "title": "물고기 ② 게보 강화: 폭탄은 가장자리, 버섯으로 넘기",
+  "arena": "explorers"
+ },
+ {
+  "plan": "heroic-explorers-05",
+  "boss": "explorers",
+  "title": "물고기 ③ 이쿠 강화: 화염은 안, 냉기는 가장자리",
+  "arena": "explorers"
+ },
+ {
+  "plan": "heroic-explorers-06",
+  "boss": "explorers",
+  "title": "마지막에는 남은 체력을 함께 보기",
+  "arena": "explorers"
+ },
+ {
+  "plan": "heroic-vashnik-01",
+  "boss": "vashnik",
+  "title": "가장 가까운 샘 둘이 다음 강화",
+  "arena": "vashnik"
+ },
+ {
+  "plan": "heroic-vashnik-02",
+  "boss": "vashnik",
+  "title": "쫄 우선순위는 불 → 피 → 암흑",
+  "arena": "vashnik"
+ },
+ {
+  "plan": "heroic-vashnik-03",
+  "boss": "vashnik",
+  "title": "흩어진 흡수 바닥을 끝까지 밟기",
+  "arena": "vashnik"
+ },
+ {
+  "plan": "heroic-vashnik-04",
+  "boss": "vashnik",
+  "title": "파도는 공대 밖으로, 폭발 해제는 차례로",
+  "arena": "vashnik"
+ },
+ {
+  "plan": "heroic-vashnik-05",
+  "boss": "vashnik",
+  "title": "치유 흡수는 붙고, 바닥 대상은 이동",
+  "arena": "vashnik"
+ },
+ {
+  "plan": "heroic-sszorak-01",
+  "boss": "sszorak",
+  "title": "혼자 받을 정면과 함께 받을 정면 구분",
+  "arena": "sszorak"
+ },
+ {
+  "plan": "heroic-sszorak-02",
+  "boss": "sszorak",
+  "title": "공대 강타는 1조 → 2조",
+  "arena": "sszorak"
+ },
+ {
+  "plan": "heroic-sszorak-03",
+  "boss": "sszorak",
+  "title": "탱커는 첫 종류마다 교대",
+  "arena": "sszorak"
+ },
+ {
+  "plan": "heroic-sszorak-04",
+  "boss": "sszorak",
+  "title": "구슬은 켜진 바람 통로 반대편에",
+  "arena": "sszorak"
+ },
+ {
+  "plan": "heroic-sszorak-05",
+  "boss": "sszorak",
+  "title": "바람 시작 전 가운데, 밀리면 구슬 활용",
+  "arena": "sszorak"
+ },
+ {
+  "plan": "heroic-sszorak-06",
+  "boss": "sszorak",
+  "title": "엇갈린 바람은 반대 방향 짝과",
+  "arena": "sszorak"
+ },
+ {
+  "plan": "heroic-fangs-01",
+  "boss": "fangs",
+  "title": "두 네임드는 위 꼭짓점, 쫄이 나오면 먼저",
+  "arena": "fangs"
+ },
+ {
+  "plan": "heroic-fangs-02",
+  "boss": "fangs",
+  "title": "독은 10중첩에 도달하지 않게",
+  "arena": "fangs"
+ },
+ {
+  "plan": "heroic-fangs-03",
+  "boss": "fangs",
+  "title": "중첩을 낮추는 분출은 한 번만",
+  "arena": "fangs"
+ },
+ {
+  "plan": "heroic-fangs-04",
+  "boss": "fangs",
+  "title": "회전 광선·바닥을 피한 뒤 건너가기",
+  "arena": "fangs"
+ },
+ {
+  "plan": "heroic-fangs-05",
+  "boss": "fangs",
+  "title": "다음 구간도 쫄·중첩·체력 균형",
+  "arena": "fangs"
+ },
+ {
+  "plan": "heroic-coiled-altar-01",
+  "boss": "coiled-altar",
+  "title": "1단계: 구슬을 모아 정면으로 지우기",
+  "arena": "altar"
+ },
+ {
+  "plan": "heroic-coiled-altar-02",
+  "boss": "coiled-altar",
+  "title": "단두대: 배정 조가 함께 맞고 관문으로 복귀",
+  "arena": "altar"
+ },
+ {
+  "plan": "heroic-coiled-altar-03",
+  "boss": "coiled-altar",
+  "title": "2단계: 정신 지배는 마름모 구석에서 구출",
+  "arena": "altar"
+ },
+ {
+  "plan": "heroic-coiled-altar-04",
+  "boss": "coiled-altar",
+  "title": "유령은 보고 멈춘 뒤 정면으로",
+  "arena": "altar"
+ },
+ {
+  "plan": "heroic-coiled-altar-05",
+  "boss": "coiled-altar",
+  "title": "차단 쫄·네임드 보호막에 바로 반응",
+  "arena": "altar"
+ },
+ {
+  "plan": "heroic-coiled-altar-06",
+  "boss": "coiled-altar",
+  "title": "사잇단계: 화력 집중, 영혼은 길목에서",
+  "arena": "altar"
+ },
+ {
+  "plan": "heroic-coiled-altar-07",
+  "boss": "coiled-altar",
+  "title": "마지막: 두 네임드는 해골 쪽, 구슬은 가운데",
+  "arena": "altar"
+ },
+ {
+  "plan": "heroic-coiled-altar-08",
+  "boss": "coiled-altar",
+  "title": "두 네임드의 체력을 맞춰 함께 끝내기",
+  "arena": "altar"
+ },
+ {
+  "plan": "heroic-ulatek-01",
+  "boss": "ulatek",
+  "title": "시작 전 두 조, 본체·꼬리 탱커",
+  "arena": "ulatek"
+ },
+ {
+  "plan": "heroic-ulatek-02",
+  "boss": "ulatek",
+  "title": "파도 반대쪽으로, 솟아날 자리에 붙기",
+  "arena": "ulatek"
+ },
+ {
+  "plan": "heroic-ulatek-03",
+  "boss": "ulatek",
+  "title": "똬리는 조별로 맞고 심장에 화력",
+  "arena": "ulatek"
+ },
+ {
+  "plan": "heroic-ulatek-04",
+  "boss": "ulatek",
+  "title": "2단계: 양쪽 단상 감시관부터 처치",
+  "arena": "ulatek-sides"
+ },
+ {
+  "plan": "heroic-ulatek-05",
+  "boss": "ulatek",
+  "title": "송곳니는 두 명씩, 피해가 끝난 뒤 다음",
+  "arena": "ulatek-sides"
+ },
+ {
+  "plan": "heroic-ulatek-06",
+  "boss": "ulatek",
+  "title": "작은 알 먼저, 큰 알은 마지막에 반납",
+  "arena": "ulatek-sides"
+ },
+ {
+  "plan": "heroic-ulatek-07",
+  "boss": "ulatek",
+  "title": "사잇단계: 1조 홀수, 2조 짝수",
+  "arena": "ulatek-platform"
+ },
+ {
+  "plan": "heroic-ulatek-08",
+  "boss": "ulatek",
+  "title": "단상이 넷으로 갈라지면 옆으로",
+  "arena": "ulatek-broken"
+ },
+ {
+  "plan": "heroic-ulatek-09",
+  "boss": "ulatek",
+  "title": "마지막 단계 자리: 근접 조각과 반시계 조각",
+  "arena": "ulatek-broken"
+ },
+ {
+  "plan": "heroic-ulatek-10",
+  "boss": "ulatek",
+  "title": "물어뜯기: 세 조가 끝까지 흡수",
+  "arena": "ulatek-broken"
+ },
+ {
+  "plan": "heroic-ulatek-11",
+  "boss": "ulatek",
+  "title": "흡수가 끝났으면 즉시 흩어지기",
+  "arena": "ulatek-broken"
+ },
+ {
+  "plan": "heroic-ulatek-12",
+  "boss": "ulatek",
+  "title": "근접 조각이 부서지기 전에 옮기기",
+  "arena": "ulatek-broken"
+ },
+ {
+  "plan": "heroic-ulatek-13",
+  "boss": "ulatek",
+  "title": "두 번째 붕괴가 가장 위험",
+  "arena": "ulatek-broken"
+ },
+ {
+  "plan": "heroic-ulatek-14",
+  "boss": "ulatek",
+  "title": "마지막 조각: 마지막 물어뜯기 뒤 화력",
+  "arena": "ulatek-broken"
+ }
+]

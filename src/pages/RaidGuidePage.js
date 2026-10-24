@@ -697,6 +697,7 @@ const bossCount = raidGuide.episodes.reduce((total, episode) => total + episode.
 const tipCount = raidGuide.episodes.reduce((total, episode) => total + episode.bosses.reduce((sum, boss) => sum + boss.tips.length, 0), 0);
 
 // 영웅 난이도 글(정본의 heroic). 네임드마다 한 탭이고, 영웅 통합 영상의 장면 하나가 행동 하나다.
+// 행동의 배치도(heroic-<네임드>-NN)는 같은 장면의 지도 부분이다(artifacts/raid-heroic-20261024/plans.py).
 const heroicGuide = raidGuide.heroic;
 const heroicStepCount = heroicGuide.bosses.reduce((total, boss) => total + boss.phases.reduce((sum, phase) => sum + phase.steps.length, 0), 0);
 const heroicRoleCount = heroicGuide.bosses.reduce((total, boss) => total + boss.roles.length, 0);
@@ -742,6 +743,8 @@ function HeroicRaidGuide() {
   const sectionIds = [`${boss.id}-roles`, ...boss.phases.map(phase => `${boss.id}-${phase.id}`), `${boss.id}-sources`];
   const active = useActiveSection(sectionIds.join(' '));
   const video = heroicGuide.video;
+  const [zoom, setZoom] = useState(null);
+  const closeZoom = useCallback(() => setZoom(null), []);
   const contents = [
     { id: `${boss.id}-roles`, label: '역할별 핵심', tag: '3역할' },
     ...boss.phases.map((phase, index) => ({ id: `${boss.id}-${phase.id}`, label: phase.title, tag: `${index + 1}단계` })),
@@ -829,7 +832,8 @@ function HeroicRaidGuide() {
                 <PhaseHead id={`${boss.id}-${phase.id}`}><b>{index + 1}</b>{phase.title}</PhaseHead>
                 <Steps>
                   {phase.steps.map(step => (
-                    <Step key={step.title} $color={KIND_COLORS[step.kind] || KIND_COLORS['공통']} data-kind={step.kind}>
+                    <Step key={step.title} $color={KIND_COLORS[step.kind] || KIND_COLORS['공통']} data-kind={step.kind} data-figure={step.figure ? step.figure.plan : undefined}>
+                      <PlanFigure figure={step.figure} title={step.title} onZoom={setZoom} />
                       <Kind $color={KIND_COLORS[step.kind] || KIND_COLORS['공통']}>{step.kind}</Kind>
                       <div>
                         <h4>{step.title}</h4>
@@ -877,6 +881,7 @@ function HeroicRaidGuide() {
           </Footer>
         </Main>
       </Body>
+      <PlanLightbox zoom={zoom} onClose={closeZoom} />
     </Page>
   );
 }

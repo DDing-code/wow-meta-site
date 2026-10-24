@@ -191,6 +191,8 @@ assert.equal(heroic.metadata.difficulty, '영웅', 'heroic: difficulty label');
 assert.deepEqual(heroic.bosses.map(b => b.id), bosses.map(b => b.id), 'heroic: same ten bosses in the same order as mythic');
 assert.ok(/^[A-Za-z0-9_-]{11}$/.test(heroic.video.id), 'heroic: video id');
 let heroicSteps = 0;
+// 2026-10-24 영웅 배치도: 행동마다 같은 영상 장면의 지도(heroic-<네임드>-NN)를 붙인다. 신화 배치도를 섞지 않는다.
+const heroicPlans = [];
 let lastSecond = -1;
 for (const boss of heroic.bosses) {
   for (const field of ['label', 'name', 'place', 'principle', 'summary']) assert.ok(boss[field], `heroic ${boss.id}: ${field}`);
@@ -207,7 +209,13 @@ for (const boss of heroic.bosses) {
     for (const s of phase.steps) {
       assert.ok(['공통', '배정', '선택 택틱'].includes(s.kind), `heroic ${boss.id}: kind ${s.kind} (no 신화 steps on the heroic tab)`);
       assert.ok(s.title && s.text && s.warn, `heroic ${boss.id}/${s.title}: title/text/warn`);
-      assert.ok(!s.figure, `heroic ${boss.id}: no mythic plan figure on heroic steps`);
+      if (s.pairs) {
+        assert.ok(!s.figure, `heroic ${boss.id}/${s.title}: pair-table step has no map`);
+      } else {
+        assert.ok(s.figure && s.figure.caption && s.figure.plan.startsWith(`heroic-${boss.id}-`) && /-\d{2}$/.test(s.figure.plan), `heroic ${boss.id}/${s.title}: heroic plan figure (not a mythic one)`);
+        for (const width of [960, 1600]) assert.ok(fs.existsSync(path.join(RAID_IMAGES, 'plan', `${s.figure.plan}-${width}.webp`)), `heroic: missing ${s.figure.plan}-${width}.webp`);
+        heroicPlans.push(s.figure.plan);
+      }
       heroicSteps++;
     }
   }
@@ -216,6 +224,8 @@ for (const boss of heroic.bosses) {
   for (const key of boss.sources) assert.ok(heroic.sources[key], `heroic ${boss.id}: source ${key}`);
 }
 assert.equal(heroicSteps, 66, `heroic: 66 steps (one per video scene), got ${heroicSteps}`);
+assert.equal(heroicPlans.length, 65, `heroic: 65 plan figures (every step but the fish pair table), got ${heroicPlans.length}`);
+assert.equal(new Set(heroicPlans).size, heroicPlans.length, 'heroic: each plan used once');
 for (const [key, source] of Object.entries(heroic.sources)) assert.ok(source.title && /^https:\/\//.test(source.href) && source.note, `heroic source ${key}`);
 for (const id of ['nekzali', 'sentinels', 'explorers', 'vashnik', 'sszorak', 'fangs', 'coiled-altar', 'kithix']) {
   const boss = heroic.bosses.find(b => b.id === id);
@@ -244,6 +254,7 @@ assert.ok(app.includes('<Route path="/raid" element={<RaidGuidePage />} />') && 
 assert.ok(app.includes('<Route path="/raid/heroic" element={<RaidGuidePage heroic />} />') && app.includes('<Route path="/raid/heroic/:bossId" element={<RaidGuidePage heroic />} />'), 'App must route /raid/heroic and /raid/heroic/:bossId');
 assert.ok(!guide.episodes.some(e => e.id === 'heroic'), "mythic episode id must not be 'heroic' (reserved for the heroic tab)");
 const page = fs.readFileSync(path.join(SITE, 'src', 'pages', 'RaidGuidePage.js'), 'utf8');
+assert.ok(/function HeroicRaidGuide[\s\S]*<PlanFigure figure={step\.figure}[\s\S]*<PlanLightbox zoom={zoom}[\s\S]*function RaidGuidePage/.test(page), 'heroic tab must render step plan figures with the zoom box');
 assert.ok(page.includes("from '../data/raidGuide.json'") && page.includes('data-wowhead={`spell=${term.id}&domain=ko`}'), 'page must read the generated JSON and render tooltip links');
 
-console.log(`Raid guide validation passed: ${guide.episodes.length} episodes, ${bosses.length} bosses, ${steps} steps (${stepFigures} with plans), ${plans.length} plans, ${tips} tips, ${guide.spells.length} spells, ${guide.skills.length} player skills; heroic ${heroic.bosses.length} bosses, ${heroicSteps} steps`);
+console.log(`Raid guide validation passed: ${guide.episodes.length} episodes, ${bosses.length} bosses, ${steps} steps (${stepFigures} with plans), ${plans.length} plans, ${tips} tips, ${guide.spells.length} spells, ${guide.skills.length} player skills; heroic ${heroic.bosses.length} bosses, ${heroicSteps} steps (${heroicPlans.length} with plans)`);
