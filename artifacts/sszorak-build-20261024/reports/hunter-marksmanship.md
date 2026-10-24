@@ -1,0 +1,15 @@
+# hunter-marksmanship
+- 판정: 일부 고침 (순서 그대로, 폭발 사격 ×2 묶음·근거 문장·단일 우선순위의 두 대상 갈래)
+- 기준 영웅 특성·기본 탭: 파수꾼, 기본 탭 [0] 그대로(자동 결정). 글에서 맞춘 곳: 파수꾼 탭 요약(스조라크 200행·한국 100행, 님리사 100행, 쐐기 24행 모두), 어둠 순찰자 탭 요약(스조라크·님리사 0행, 쐐기 한국 18행 중 1행), 3부 파수꾼 장 첫 문단("실제 선택 비율도 대부분" → 행 수), 4부 어둠 순찰자 장 첫 문단("고르는 사람이 적고" → 0행).
+- 프리풀: 사냥꾼의 징표·조준 사격(풀링 2.5초 전) 그대로 — 심크 우선순위 precombat aimed_shot, Icy Veins·Method 같음, 로그 4/8.
+- 오프닝: 순서 그대로(징표 → 조준 사격 → 폭발 사격 → 폭발 사격 → 연발 공격 → 정조준 → 속사 → 신비한 사격 → 조준 사격 → 신비한 사격) → 폭발 사격 두 칸을 한 칸 ×2 로 묶음(rail·영웅 탭 모두). 근거: 파수꾼 로그 8개 모두 폭발 사격 → 연발 공격 → 정조준 → 속사, 풀링 전 조준 사격을 쓴 4개는 모두 폭발 사격 ×2(나머지 4개는 한 번), 새 견본 유동성 제동장치 300/300, 반복 구간 폭발 사격 65묶음 중 61묶음이 ×2. 속사 뒤 신비한 사격 5/8. 예: https://www.warcraftlogs.com/reports/RanbCzckZWDQqXg7#fight=31&source=10
+- 단일 반복: 순서 그대로. 폭발 사격이 위쪽 가지라 count 를 못 달아 조건 글을 "쿨이 돌면 먼저 · 두 번"으로 바꿈. 다른 스킬은 이어 누른 횟수 중앙값 1. rail note·파수꾼 탭 bullets[1] 에 스조라크 근거 추가.
+- 뺀 광역기: 파수꾼 단일 우선순위 속사 행 note 의 "히드라의 상으로 두 대상 이상이면 그대로 씁니다"(새 견본에 히드라의 상 없음, 광역 탭은 그대로).
+- 고친 글: 정조준과 오프닝 장 · 파수꾼 rail note / 훈련용 허수아비 장 · 반복 rail note·폭발 사격 위쪽 가지 / 파수꾼 탭 summary·bullets[1]·오프닝 summary·폭발 사격 단계·단일 summary·속사 행 / 어둠 순찰자 탭 summary / 3부 파수꾼 장 첫 문단 / 4부 어둠 순찰자 장 첫 문단.
+- 그대로 둔 것과 이유: 어둠 순찰자 오프닝 rail·영웅 탭(폭발 사격 두 칸 포함) — 기준 영웅 특성이 아니고 스조라크 로그 0개. 최상위 opener(화면에 안 나옴, 기본 탭 오프닝과 원래 달랐음). 1부 개념 장의 히드라의 상 설명(속사 개념 설명이지 단일 순서가 아님), 공격대 장의 "스조라크만 단일 빌드" 문장(새 견본과 맞음).
+- KB 추가 필요: 없음
+- 검사기 고칠 곳: scripts/validate-guide-manuscripts.js 1715줄
+  - 지금: `assert(branch.opener.steps.filter(row => row.skillId === '212431').length === 2 && branch.opener.summary.includes('유동성 제동장치'), 'Double Explosive Shot openers must retain their build condition');`
+  - 바꿀 것: `assert(branch.opener.steps.filter(row => row.skillId === '212431').reduce((n, row) => n + (Number(row.count) || 1), 0) === 2 && branch.opener.summary.includes('유동성 제동장치'), 'Double Explosive Shot openers must retain their build condition');`
+  - 이유: 파수꾼 탭 폭발 사격 두 단계를 한 단계 count: 2 로 묶어 행 수가 1이 됨. 횟수 합으로 세면 두 영웅 탭 모두 통과(메모리 안에서 바꿔 돌려 보니 이 가이드 오류가 사라짐).
+- 보류·사용자 확인 필요: 오프닝 첫 폭발 사격은 로그 8개 중 4개가 한 번만 썼음(그 4개는 풀링 전 조준 사격도 안 씀). 원고는 풀링 전 조준 사격을 넣는 쪽(심크·Icy·Method)이라 그 4개 기준인 ×2 로 둠.

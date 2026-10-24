@@ -1,0 +1,897 @@
+[
+ {
+  "id": "warrior-arms",
+  "hero": "학살자",
+  "same": false,
+  "curHero": "학살자",
+  "removed": [
+   "Interpose"
+  ],
+  "added": [
+   "재기의 바람"
+  ],
+  "best": {
+   "code": "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphZGzMWmZmZGMmZAAAAAMzyMDIMWWGYBMgZYCZGsBmZYsNwyMLDwMDAmhBA",
+   "url": "https://www.warcraftlogs.com/reports/CRBwpKLmyrFnA6QG#fight=29",
+   "scope": "ALL",
+   "rank": 1,
+   "name": "불라방",
+   "region": "KR",
+   "startedAt": "2026-10-17T10:50:25.121Z",
+   "sameRows": null
+  },
+  "rows": 298
+ },
+ {
+  "id": "warrior-fury",
+  "hero": "학살자",
+  "same": true,
+  "curHero": "학살자",
+  "removed": [],
+  "added": [],
+  "best": {
+   "code": "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2MzMzMDjZmZGzMzsMzMmZmZzYmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM",
+   "url": "https://www.warcraftlogs.com/reports/Yr4MLtpjb1J73An2#fight=45",
+   "scope": "ALL",
+   "rank": 10,
+   "name": "Rjay",
+   "region": "US",
+   "startedAt": "2026-10-15T02:41:18.728Z",
+   "sameRows": null
+  },
+  "rows": 193
+ },
+ {
+  "id": "paladin-retribution",
+  "hero": "태양의 사자",
+  "same": false,
+  "curHero": "태양의 사자",
+  "removed": [
+   "Punishment"
+  ],
+  "added": [
+   "독소 정화"
+  ],
+  "best": {
+   "code": "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGmZAAAAAAYmyYGmZsNmthZ2mxYMGmxCbDAzysNzMbNIAAgFADAGzwMYGzMbAzMDjhBD",
+   "url": "https://www.warcraftlogs.com/reports/VYqJGPgCmcxMpaRB#fight=21",
+   "scope": "ALL",
+   "rank": 41,
+   "name": "Judexd",
+   "region": "US",
+   "startedAt": "2026-10-18T09:34:19.541Z",
+   "sameRows": null
+  },
+  "rows": 290
+ },
+ {
+  "id": "rogue-assassination",
+  "hero": "운명결속",
+  "same": false,
+  "curHero": "운명결속",
+  "removed": [
+   "공수 자극제"
+  ],
+  "added": [
+   "독 묻은 스틸레토"
+  ],
+  "best": {
+   "code": "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsNDGAAAAAYWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMzYGzYMmZMMAGYBmxoxsBy2A2MAYmZMGA",
+   "url": "https://www.warcraftlogs.com/reports/dVJpyqcgmj9PZhFt#fight=12",
+   "scope": "ALL",
+   "rank": 4,
+   "name": "Rasengone",
+   "region": "US",
+   "startedAt": "2026-10-21T02:07:22.821Z",
+   "sameRows": null
+  },
+  "rows": 262
+ },
+ {
+  "id": "rogue-outlaw",
+  "hero": "기만자",
+  "same": false,
+  "curHero": "기만자",
+  "removed": [
+   "고요한 장막"
+  ],
+  "added": [
+   "어둠질주"
+  ],
+  "best": {
+   "code": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMmZmtZmZmZMmF4BmZbaZw2MAAAAAAbbzMzwMzMziZmZbAAAAYMAYMLGGyAzCL0CbMAzMYGMA",
+   "url": "https://www.warcraftlogs.com/reports/nHPpytf72CdDkxhV#fight=29",
+   "scope": "ALL",
+   "rank": 4,
+   "name": "Tomelvis",
+   "region": "EU",
+   "startedAt": "2026-10-14T19:33:28.826Z",
+   "sameRows": null
+  },
+  "rows": 79
+ },
+ {
+  "id": "rogue-subtlety",
+  "hero": "기만자",
+  "same": false,
+  "curHero": "죽음추적자",
+  "removed": [
+   "경고 표지",
+   "어둠 혼합물",
+   "종극 2",
+   "실체 없는 은폐막",
+   "피 타락",
+   "머무는 암흑",
+   "목격자 제거",
+   "하나 된 집중력",
+   "그늘걸음",
+   "절망의 탄력",
+   "사냥감을 노려라",
+   "확고한 결심",
+   "어둡고 어두운 밤",
+   "0",
+   "대규모 사상자",
+   "종지부의 신속함",
+   "정밀한 살육자"
+  ],
+  "added": [
+   "치밀한 처형",
+   "은밀한 기술 연마",
+   "죽음의 무도",
+   "무결한 형상",
+   "최후의 일격",
+   "구름 덮개",
+   "혼란을 부르는 일격",
+   "기습의 일격",
+   "날렵한 질풍",
+   "음험한 주의 분산",
+   "교활함의 극치",
+   "천참만륙",
+   "연기",
+   "0",
+   "영리한 전투원",
+   "번쩍이는 강철",
+   "농락"
+  ],
+  "best": {
+   "code": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
+   "url": "https://www.warcraftlogs.com/reports/rfCPDgAVbzYanZHN#fight=112",
+   "scope": "ALL",
+   "rank": 2,
+   "name": "Parse",
+   "region": "US",
+   "startedAt": "2026-10-21T02:48:35.676Z",
+   "sameRows": null
+  },
+  "rows": 299
+ },
+ {
+  "id": "deathknight-frost",
+  "hero": "죽음의 인도자",
+  "same": false,
+  "curHero": "죽음의 인도자",
+  "removed": [
+   "Enfeeble"
+  ],
+  "added": [
+   "Unholy Endurance"
+  ],
+  "best": {
+   "code": "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZYY2mZmZmZZmZkZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAmBD",
+   "url": "https://www.warcraftlogs.com/reports/PgWTpQCrYAkzLZXn#fight=81",
+   "scope": "ALL",
+   "rank": 4,
+   "name": "최졍우",
+   "region": "KR",
+   "startedAt": "2026-10-18T13:57:39.436Z",
+   "sameRows": null
+  },
+  "rows": 300
+ },
+ {
+  "id": "deathknight-unholy",
+  "hero": "산레인",
+  "same": false,
+  "curHero": "산레인",
+  "removed": [
+   "Runic Protection",
+   "피에 젖은 땅",
+   "Bloody Fortitude",
+   "Death Defiance"
+  ],
+  "added": [
+   "Blood Draw",
+   "March of Darkness",
+   "Desecrate",
+   "흡혈의 오라"
+  ],
+  "best": {
+   "code": "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMGDz2MzMTzyMzYMjBAAAAAAAg5BGGDAWmhZ2MzYmZMwAzYTjlFAbTsBgZAMzMzMmBzMYGjB",
+   "url": "https://www.warcraftlogs.com/reports/2pZyWAbzjq3GaFmC#fight=27",
+   "scope": "ALL",
+   "rank": 67,
+   "name": "Pangrip",
+   "region": "US",
+   "startedAt": "2026-10-15T03:31:32.757Z",
+   "sameRows": null
+  },
+  "rows": 298
+ },
+ {
+  "id": "monk-windwalker",
+  "hero": "천신의 대변자",
+  "same": false,
+  "curHero": "음영파",
+  "removed": [
+   "공용 마력",
+   "호랑이의 손길",
+   "Tiger Tail Sweep",
+   "내면의 평화",
+   "0",
+   "철두철미한 경계",
+   "무쇠 회오리",
+   "무예의 정밀함",
+   "판다리아의 긍지",
+   "고수의 시선",
+   "일대다 전투",
+   "효율적인 수련",
+   "장벽의 지혜",
+   "고난과 역경을 넘어",
+   "전투 태세",
+   "전장을 호령하는 그림자",
+   "대기 준비",
+   "장벽의 무기"
+  ],
+  "added": [
+   "바람과의 교감",
+   "폭발하는 기운",
+   "학의 회오리",
+   "0",
+   "별똥별의 길",
+   "내면의 나침반",
+   "사원 훈련",
+   "츠지의 날렵함",
+   "니우짜오의 보호",
+   "내면의 단결",
+   "백호의 용기",
+   "조화로운 연계",
+   "흐르는 지혜",
+   "옥룡의 마음",
+   "Vigorous Expulsion",
+   "흑우의 힘",
+   "위론의 화신",
+   "천신합일",
+   "쉬엔의 결속"
+  ],
+  "best": {
+   "code": "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAmxwMzMDz2wMYZmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWGImZmNXA",
+   "url": "https://www.warcraftlogs.com/reports/GX2L4qc3RMphzQNk#fight=40",
+   "scope": "ALL",
+   "rank": 97,
+   "name": "牛僧儒",
+   "region": "TW",
+   "startedAt": "2026-10-15T15:29:24.223Z",
+   "sameRows": null
+  },
+  "rows": 258
+ },
+ {
+  "id": "druid-feral",
+  "hero": "야생추적자",
+  "same": false,
+  "curHero": "야생추적자",
+  "removed": [
+   "감염된 상처",
+   "Forestwalk 2",
+   "Perfectly-Honed Instincts"
+  ],
+  "added": [
+   "무자비한 발톱",
+   "Improved Stampeding Roar",
+   "액체 형상",
+   "Lycara's Inspiration"
+  ],
+  "best": {
+   "code": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwgZMGzMzMmtFWGbzMzYmZAAAAYJY2gxMjaGzyYmZGjZMDAAAAAgBGAAAABAz2MLNLzssBmZAWMDGAAzMAYA",
+   "url": "https://www.warcraftlogs.com/reports/xrVZjhYvX4taJT6f#fight=36",
+   "scope": "ALL",
+   "rank": 9,
+   "name": "沈牧之",
+   "region": "CN",
+   "startedAt": "2026-10-22T15:08:02.361Z",
+   "sameRows": null
+  },
+  "rows": 203
+ },
+ {
+  "id": "demonhunter-havoc",
+  "hero": "알드라치 파괴자",
+  "same": false,
+  "curHero": "알드라치 파괴자",
+  "removed": [
+   "Master of the Glaive"
+  ],
+  "added": [
+   "Champion of the Glaive"
+  ],
+  "best": {
+   "code": "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAY2egxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
+   "url": "https://www.warcraftlogs.com/reports/4WtGBhmvwNMgKyR8#fight=3",
+   "scope": "ALL",
+   "rank": 5,
+   "name": "Mortex",
+   "region": "EU",
+   "startedAt": "2026-10-20T17:18:52.874Z",
+   "sameRows": null
+  },
+  "rows": 271
+ },
+ {
+  "id": "shaman-enhancement",
+  "hero": "폭풍인도자",
+  "same": false,
+  "curHero": "폭풍인도자",
+  "removed": [
+   "팽창하는 폭풍",
+   "토템 재배치"
+  ],
+  "added": [
+   "초자력 충전",
+   "독 정화 토템"
+  ],
+  "best": {
+   "code": "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzYjZmNWmZmZYYMDAwMMmZYmAzMYwYA",
+   "url": "https://www.warcraftlogs.com/reports/YmghzQ4TpjyXbKDZ#fight=51",
+   "scope": "ALL",
+   "rank": 32,
+   "name": "킹왕짱",
+   "region": "KR",
+   "startedAt": "2026-10-17T14:46:14.227Z",
+   "sameRows": null
+  },
+  "rows": 220
+ },
+ {
+  "id": "hunter-survival",
+  "hero": "파수꾼",
+  "same": false,
+  "curHero": "파수꾼",
+  "removed": [
+   "맹타",
+   "희생의 포효"
+  ],
+  "added": [
+   "피투성이 발톱",
+   "Guardian's Hide"
+  ],
+  "best": {
+   "code": "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgNjZmxwyAAAAAAwMmZmhZMmxMYMNDAAAwAgZssMzMLmZmZGzMzAwMWAjxM2MAA",
+   "url": "https://www.warcraftlogs.com/reports/grT1a39DZfn8Kkjz#fight=31",
+   "scope": "ALL",
+   "rank": 51,
+   "name": "Helsyer",
+   "region": "EU",
+   "startedAt": "2026-10-19T20:58:47.823Z",
+   "sameRows": null
+  },
+  "rows": 87
+ },
+ {
+  "id": "hunter-beastmastery",
+  "hero": "무리의 지도자",
+  "same": false,
+  "curHero": "무리의 지도자",
+  "removed": [
+   "광포한 야수",
+   "구속의 사격"
+  ],
+  "added": [
+   "날카로운 공격",
+   "Emergency Salve"
+  ],
+  "best": {
+   "code": "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzwQDbAAYGGzsMzwMmZMDzMGzMMzYmZGmZGzYGM0MAAAAgZAAAYmZGAzsRYYWAbDAD",
+   "url": "https://www.warcraftlogs.com/reports/ZmNGMdfP8vVbTX9F#fight=34",
+   "scope": "ALL",
+   "rank": 15,
+   "name": "玩出效率",
+   "region": "CN",
+   "startedAt": "2026-10-22T15:59:39.822Z",
+   "sameRows": null
+  },
+  "rows": 300
+ },
+ {
+  "id": "hunter-marksmanship",
+  "hero": "파수꾼",
+  "same": false,
+  "curHero": "파수꾼",
+  "removed": [
+   "타르 덫",
+   "Guttural Roar",
+   "히드라의 상",
+   "Intimidation",
+   "경탄약",
+   "구속의 사격"
+  ],
+  "added": [
+   "Emergency Salve",
+   "흑요석 화살촉",
+   "Improved Feign Death 2",
+   "죽음의 강타"
+  ],
+  "best": {
+   "code": "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGAzgNAAAAAAAAwMmZmhZMzMmBjpZMYstMzMzMzMzMwsMYGAAwMzMMDwM2YYA2YmtZMA",
+   "url": "https://www.warcraftlogs.com/reports/wykLFB97fmn6ApQM#fight=35",
+   "scope": "ALL",
+   "rank": 31,
+   "name": "Jazzpub",
+   "region": "KR",
+   "startedAt": "2026-10-21T12:33:36.301Z",
+   "sameRows": null
+  },
+  "rows": 300
+ },
+ {
+  "id": "priest-shadow",
+  "hero": "공허술사",
+  "same": false,
+  "curHero": "집정관",
+  "removed": [
+   "광기의 손길",
+   "보호의 빛",
+   "Purify Disease",
+   "공명하는 마력",
+   "완벽한 형상",
+   "지속되는 잠재력",
+   "마력 보존",
+   "마력의 쇄도",
+   "마력 순환",
+   "끊임없는 비명",
+   "강화된 쇄도",
+   "현신하는 권능",
+   "천상의 후광",
+   "0",
+   "정신의 부식",
+   "무너진 정신",
+   "암흑 사도",
+   "영혼 우물",
+   "우월성의 진언",
+   "집중된 폭발"
+  ],
+  "added": [
+   "어둠의 생각",
+   "어둠의 통찰",
+   "Angelic Bulwark",
+   "Move with Grace",
+   "물질 포식",
+   "공허 주입",
+   "내면의 종지부",
+   "맥박 촉진",
+   "암흑 마력",
+   "공허 붕괴",
+   "어둠에 물드는 지평선",
+   "공허 흡혈",
+   "공허의 폭발",
+   "0",
+   "공허의 망령",
+   "주입된 의심 2",
+   "압도적인 어둠",
+   "공허의 손길",
+   "공허의 심장"
+  ],
+  "best": {
+   "code": "CIQAAAAAAAAAAAAAAAAAAAAAAMMDzAAAAAAAAAAAAwMLmxMbzMDz2MzYGzmZGzMzYjJDLmpBYmZGAIAz2stEMbMAwIjZmZMbMDmZwMxA",
+   "url": "https://www.warcraftlogs.com/reports/JqtkHf8pYQCBMKaL#fight=15",
+   "scope": "ALL",
+   "rank": 2,
+   "name": "Cutejustice",
+   "region": "EU",
+   "startedAt": "2026-10-21T18:53:52.751Z",
+   "sameRows": null
+  },
+  "rows": 228
+ },
+ {
+  "id": "demonhunter-devourer",
+  "hero": "공허상흔",
+  "same": false,
+  "curHero": "궤멸자",
+  "removed": [
+   "Soul Cleanse",
+   "불행의 인장",
+   "Sweet Suffering 2",
+   "Gift of the Void",
+   "0",
+   "Scythe's Embrace",
+   "세계 학살자",
+   "Otherworldly Focus",
+   "암흑 물질",
+   "최종 국면",
+   "운석 낙하",
+   "대규모 가속",
+   "State of Matter",
+   "우주의 힘",
+   "Celestial Echoes",
+   "위상 변화",
+   "Catastrophe",
+   "신속한 말소",
+   "Meteoric Rise",
+   "Voidrage 2",
+   "들끓는 고통"
+  ],
+  "added": [
+   "Burn It Out",
+   "Vengeful Bonds",
+   "굶주린 베기",
+   "0",
+   "Duty Eternal",
+   "사냥",
+   "괴물의 각성",
+   "눈먼 집중력",
+   "Enduring Torment",
+   "Flamebound",
+   "죽지 않는 불씨",
+   "Untethered Fury",
+   "불안정한 본능",
+   "불타는 칼날",
+   "Focused Hatred",
+   "Pursuit of Angriness",
+   "격렬한 변신",
+   "악마의 격화",
+   "Improved Soul Rending",
+   "포식자의 이빨",
+   "Singular Strikes",
+   "Voidrush"
+  ],
+  "best": {
+   "code": "CgcBAAAAAAAAAAAAAAAAAAAAAAAWMzMzMzMzMwMAAAAAAALPwY2GMDAAAAAAAAzYwYmZmxMzMMzyMjxm2WAQADgxMzsNzMNbzsNzwYGD",
+   "url": "https://www.warcraftlogs.com/reports/NFgmrWXaQnY8Vj2L#fight=32",
+   "scope": "ALL",
+   "rank": 5,
+   "name": "잠탱이",
+   "region": "KR",
+   "startedAt": "2026-10-22T12:16:00.837Z",
+   "sameRows": null
+  },
+  "rows": 160
+ },
+ {
+  "id": "shaman-elemental",
+  "hero": "선견자",
+  "same": false,
+  "curHero": "선견자",
+  "removed": [
+   "지진",
+   "늑대 정령",
+   "바람 장막"
+  ],
+  "added": [
+   "지진",
+   "천둥발",
+   "독 정화 토템"
+  ],
+  "best": {
+   "code": "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZbmZGjtFTbMzsMWmZmZMsMLDLmZYmlBAMAwMjhhB",
+   "url": "https://www.warcraftlogs.com/reports/ThgKqJcL19FMxZzY#fight=44",
+   "scope": "ALL",
+   "rank": 63,
+   "name": "Fluffyman",
+   "region": "EU",
+   "startedAt": "2026-10-15T18:28:54.865Z",
+   "sameRows": null
+  },
+  "rows": 299
+ },
+ {
+  "id": "mage-arcane",
+  "hero": "성난태양",
+  "same": false,
+  "curHero": "성난태양",
+  "removed": [
+   "에테르 조율 2",
+   "공명"
+  ],
+  "added": [
+   "충만한 전령",
+   "자극",
+   "비전 전령"
+  ],
+  "best": {
+   "code": "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAzMzM2sMzMzyMGjZmBLMjZmZAAGAAgBYmBMDAGmZG",
+   "url": "https://www.warcraftlogs.com/reports/3DAnBVm1Z94grW8G#fight=26",
+   "scope": "ALL",
+   "rank": 7,
+   "name": "Boorat",
+   "region": "EU",
+   "startedAt": "2026-10-14T20:11:41.527Z",
+   "sameRows": null
+  },
+  "rows": 291
+ },
+ {
+  "id": "mage-fire",
+  "hero": "성난태양",
+  "same": false,
+  "curHero": "성난태양",
+  "removed": [
+   "Improved Counterspell"
+  ],
+  "added": [
+   "Master of Escape"
+  ],
+  "best": {
+   "code": "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzIzMzAAAwAAmZmmlttZAA2MzM2mZmZGLAAAAAYxMzMDAAMjxMzMjZmlBgZGCjBMDjB",
+   "url": "https://www.warcraftlogs.com/reports/vH8x4DXqjbQAYzMr#fight=39",
+   "scope": "ALL",
+   "rank": 1,
+   "name": "Padflash",
+   "region": "US",
+   "startedAt": "2026-10-18T10:13:52.911Z",
+   "sameRows": null
+  },
+  "rows": 35
+ },
+ {
+  "id": "mage-frost",
+  "hero": "주문술사",
+  "same": true,
+  "curHero": "주문술사",
+  "removed": [],
+  "added": [],
+  "best": {
+   "code": "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGjZMziZmZmZMDAAAMzMzyyMTbAAAAAAwGAbLjZmZgtZMzMsAAAwMbAzEGwADD",
+   "url": "https://www.warcraftlogs.com/reports/j4b2czaTXCmHBA7M#fight=36",
+   "scope": "ALL",
+   "rank": 2,
+   "name": "丧乱絶杀",
+   "region": "CN",
+   "startedAt": "2026-10-22T13:41:23.947Z",
+   "sameRows": null
+  },
+  "rows": 153
+ },
+ {
+  "id": "warlock-affliction",
+  "hero": "지옥소환사",
+  "same": false,
+  "curHero": "영혼 수확자",
+  "removed": [
+   "악마의 영액",
+   "Drain Soul",
+   "사악한 수확",
+   "이어진 운명",
+   "영원한 예속",
+   "강령사의 가르침",
+   "악령술사의 열정",
+   "사타이엘의 자유 의지",
+   "종지부",
+   "영혼 파문",
+   "음지의 친구",
+   "죽음의 그림자",
+   "0",
+   "Eternal Hunger",
+   "Shared Vessel",
+   "실체화된 탐욕",
+   "불지옥 수혜자",
+   "약자 도태",
+   "Empowered Drain Life"
+  ],
+  "added": [
+   "단골 기부자",
+   "어둠의 화살 연마",
+   "사티로스의 저주",
+   "파멸의 씨앗",
+   "자비우스의 징표",
+   "제브림의 탄력",
+   "검게 물든 영혼",
+   "Malevolence",
+   "페로스안의 징표",
+   "잘란의 잔혹성",
+   "잘란의 야성",
+   "서릿발분노의 의식",
+   "0",
+   "알진의 불합리성",
+   "악마의 열매",
+   "지옥의 덩굴을 지나",
+   "방랑 기질",
+   "언어의 저주",
+   "사크로래쉬의 암흑 일격"
+  ],
+  "best": {
+   "code": "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmlBAAYmZZWmZmlxAAWgBmFjGzAysAWGAAAmBAAmZgZGzMMzwMjZmxgZmZAAmBG",
+   "url": "https://www.warcraftlogs.com/reports/WYdfnqTx47m1KgVc#fight=33",
+   "scope": "ALL",
+   "rank": 40,
+   "name": "Vïzër",
+   "region": "US",
+   "startedAt": "2026-10-21T04:19:36.049Z",
+   "sameRows": null
+  },
+  "rows": 185
+ },
+ {
+  "id": "warlock-demonology",
+  "hero": "악마학자",
+  "same": false,
+  "curHero": "악마학자",
+  "removed": [
+   "Demonic Resilience",
+   "고어핀드의 탐욕",
+   "지옥수호병 소환",
+   "Empowered Drain Life"
+  ],
+  "added": [
+   "지옥의 결속력 2",
+   "심연방랑자",
+   "공포채찍"
+  ],
+  "best": {
+   "code": "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAAAAAgxMGWgB2GtQDLGzMWmlZmZMDAMzYmZMzAMzMmZAAAGzMzYYYZGDYA",
+   "url": "https://www.warcraftlogs.com/reports/tbrq6KyTf47wXnJP#fight=36",
+   "scope": "ALL",
+   "rank": 102,
+   "name": "Nyrolock",
+   "region": "EU",
+   "startedAt": "2026-10-22T19:09:59.734Z",
+   "sameRows": null
+  },
+  "rows": 300
+ },
+ {
+  "id": "warlock-destruction",
+  "hero": "지옥소환사",
+  "same": false,
+  "curHero": "지옥소환사",
+  "removed": [
+   "악마의 영액",
+   "추방",
+   "어둠의 격노",
+   "쇠약의 오라",
+   "언어의 저주",
+   "언어의 역병"
+  ],
+  "added": [
+   "고어핀드의 탐욕",
+   "단골 기부자",
+   "악귀의 걸음",
+   "사티로스의 저주",
+   "방랑 기질",
+   "피로의 저주"
+  ],
+  "best": {
+   "code": "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmlZxMzMLGjFzAAgZmxMzsYBGYWMaMDgZL2YAAgxAjNAgZGMzMGDAAAzMzAAwYYA",
+   "url": "https://www.warcraftlogs.com/reports/KfycB4Pat1HTk7Ab#fight=12",
+   "scope": "ALL",
+   "rank": 58,
+   "name": "Dragzul",
+   "region": "EU",
+   "startedAt": "2026-10-15T18:49:53.886Z",
+   "sameRows": null
+  },
+  "rows": 77
+ },
+ {
+  "id": "druid-balance",
+  "hero": "숲의 수호자",
+  "same": false,
+  "curHero": "엘룬의 대행자",
+  "removed": [
+   "태풍",
+   "Improved Stampeding Roar",
+   "쌍둥이 달",
+   "Incarnation: Chosen of Elune",
+   "엘룬의 분노",
+   "Astral Insight",
+   "비전 친화",
+   "영원한 달",
+   "Lunar Insight",
+   "달의 부름",
+   "Glistening Fur",
+   "Stellar Command",
+   "Elune's Grace",
+   "달의 수호자",
+   "Atmospheric Exposure",
+   "0",
+   "Light of the Sun",
+   "Bask in Moonlight",
+   "반그늘의 팽창",
+   "쏟아지는 별",
+   "Nature's Grace"
+  ],
+  "added": [
+   "Killer Instinct 2",
+   "영혼 소집",
+   "자연의 군대",
+   "Soul of the Forest",
+   "Astral Communion",
+   "Lycara's Inspiration",
+   "풍성한 개화",
+   "꿈의 통제",
+   "Protective Growth",
+   "Grove's Inspiration",
+   "달의 나무정령",
+   "Blooming Infusion",
+   "Expansiveness",
+   "세나리우스의 권능",
+   "Power of Nature",
+   "숲의 조화",
+   "0",
+   "Spirit of the Thicket",
+   "Dryad's Dance",
+   "녹음의 유혹"
+  ],
+  "best": {
+   "code": "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbZMmZgxsYmZmBDzgZ2mxMmxyMLzYmxYmNMMADwy2YBTzMLjAAAAsZmZmZwmBGzAYmBAGA",
+   "url": "https://www.warcraftlogs.com/reports/hxVnAJLQBMD1cF4t#fight=25",
+   "scope": "ALL",
+   "rank": 33,
+   "name": "Superdruid",
+   "region": "CN",
+   "startedAt": "2026-10-22T14:13:04.863Z",
+   "sameRows": null
+  },
+  "rows": 290
+ },
+ {
+  "id": "evoker-devastation",
+  "hero": "비늘사령관",
+  "same": false,
+  "curHero": "비늘사령관",
+  "removed": [
+   "Heat Wave 2",
+   "Star Salvo",
+   "영원의 전역",
+   "Strike from Above"
+  ],
+  "added": [
+   "Power Nexus",
+   "Engulfing Blaze",
+   "Ruby Embers",
+   "Tailwind",
+   "이글거리는 잿불"
+  ],
+  "best": {
+   "code": "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZGzMGzwMDMYMTjZmpZM2GzMzMzMzMzAmxMzYmZZmZwMwYwGsMGN2GQmBBbYgZGM8AA",
+   "url": "https://www.warcraftlogs.com/reports/tATWgqPZVrabmLF6#fight=3",
+   "scope": "ALL",
+   "rank": 7,
+   "name": "Azalth",
+   "region": "US",
+   "startedAt": "2026-10-23T00:27:35.883Z",
+   "sameRows": null
+  },
+  "rows": 180
+ },
+ {
+  "id": "evoker-augmentation",
+  "hero": "시간 감시자",
+  "same": false,
+  "curHero": "시간 감시자",
+  "removed": [
+   "진압",
+   "군주",
+   "Clairvoyant",
+   "시간 수호물",
+   "Twin Guardian"
+  ],
+  "added": [
+   "불지옥의 축복",
+   "Arcane Reach",
+   "Tailwind",
+   "웨이른석 부여",
+   "강대한 불지옥"
+  ],
+  "best": {
+   "code": "CEcBAAAAAAAAAAAAAAAAAAAAAMmxMbzMzgBzMLzMjZMDAAAAAAAAMzYMDGTNmZmBAAAAzYGjZmlxMDMjZgxMWYBGYGGaELYmxMDAM",
+   "url": "https://www.warcraftlogs.com/reports/Xfnkby6wVAP4FtmW#fight=35",
+   "scope": "ALL",
+   "rank": 103,
+   "name": "想吃火龙果",
+   "region": "CN",
+   "startedAt": "2026-10-17T07:49:33.351Z",
+   "sameRows": null
+  },
+  "rows": 300
+ }
+]

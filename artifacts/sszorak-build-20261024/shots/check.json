@@ -1,0 +1,4013 @@
+[
+ {
+  "id": "warrior-arms",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warrior-arms-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "warrior-arms-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warrior-arms-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warrior-arms-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "학살자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warrior-arms",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warrior-arms-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "warrior-arms-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warrior-arms-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warrior-arms-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "학살자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warrior-arms",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warrior-arms-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "warrior-arms-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warrior-arms-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warrior-arms-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "학살자",
+  "heroOk": true,
+  "talents": "warrior-arms-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warrior-fury",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warrior-fury-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "warrior-fury-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warrior-fury-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warrior-fury-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "학살자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warrior-fury",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warrior-fury-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "warrior-fury-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warrior-fury-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warrior-fury-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "학살자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warrior-fury",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warrior-fury-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "warrior-fury-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warrior-fury-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warrior-fury-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "학살자",
+  "heroOk": true,
+  "talents": "warrior-fury-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "paladin-retribution",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "paladin-retribution-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "paladin-retribution-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "paladin-retribution-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "paladin-retribution-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "태양의 사자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "paladin-retribution",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "paladin-retribution-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "paladin-retribution-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "paladin-retribution-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "paladin-retribution-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "태양의 사자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "paladin-retribution",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "paladin-retribution-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "paladin-retribution-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "paladin-retribution-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "paladin-retribution-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "태양의 사자",
+  "heroOk": true,
+  "talents": "paladin-retribution-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "rogue-assassination",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "rogue-assassination-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "rogue-assassination-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "rogue-assassination-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "rogue-assassination-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "운명결속",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "rogue-assassination",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "rogue-assassination-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "rogue-assassination-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "rogue-assassination-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "rogue-assassination-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "운명결속",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "rogue-assassination",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "rogue-assassination-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "rogue-assassination-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "rogue-assassination-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "rogue-assassination-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "운명결속",
+  "heroOk": true,
+  "talents": "rogue-assassination-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "rogue-outlaw",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "rogue-outlaw-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "rogue-outlaw-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "rogue-outlaw-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "rogue-outlaw-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "기만자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "rogue-outlaw",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "rogue-outlaw-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "rogue-outlaw-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "rogue-outlaw-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "rogue-outlaw-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "기만자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "rogue-outlaw",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "rogue-outlaw-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "rogue-outlaw-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "rogue-outlaw-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "rogue-outlaw-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "기만자",
+  "heroOk": true,
+  "talents": "rogue-outlaw-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "rogue-subtlety",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "rogue-subtlety-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "rogue-subtlety-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "rogue-subtlety-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "rogue-subtlety-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "기만자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "rogue-subtlety",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "rogue-subtlety-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "rogue-subtlety-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "rogue-subtlety-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "rogue-subtlety-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "기만자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "rogue-subtlety",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "rogue-subtlety-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "rogue-subtlety-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "rogue-subtlety-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "rogue-subtlety-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "기만자",
+  "heroOk": true,
+  "talents": "rogue-subtlety-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "deathknight-frost",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "deathknight-frost-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "deathknight-frost-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "deathknight-frost-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "deathknight-frost-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "죽음의 인도자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "deathknight-frost",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "deathknight-frost-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "deathknight-frost-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "deathknight-frost-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "deathknight-frost-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "죽음의 인도자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "deathknight-frost",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "deathknight-frost-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "deathknight-frost-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "deathknight-frost-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "deathknight-frost-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "죽음의 인도자",
+  "heroOk": true,
+  "talents": "deathknight-frost-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "deathknight-unholy",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "deathknight-unholy-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "deathknight-unholy-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2~3",
+     "×3~5"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "deathknight-unholy-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2~3",
+     "×3~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "deathknight-unholy-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "산레인",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "deathknight-unholy",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "deathknight-unholy-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "deathknight-unholy-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2~3",
+     "×3~5"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "deathknight-unholy-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2~3",
+     "×3~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "deathknight-unholy-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "산레인",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "deathknight-unholy",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "deathknight-unholy-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "deathknight-unholy-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2~3",
+     "×3~5"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "deathknight-unholy-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2~3",
+     "×3~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "deathknight-unholy-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "산레인",
+  "heroOk": true,
+  "talents": "deathknight-unholy-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "monk-windwalker",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "monk-windwalker-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "monk-windwalker-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "monk-windwalker-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "monk-windwalker-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "천신의 대변자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "monk-windwalker",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "monk-windwalker-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "monk-windwalker-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "monk-windwalker-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "monk-windwalker-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "천신의 대변자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "monk-windwalker",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "monk-windwalker-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "monk-windwalker-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "monk-windwalker-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "monk-windwalker-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "천신의 대변자",
+  "heroOk": true,
+  "talents": "monk-windwalker-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "druid-feral",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "druid-feral-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "druid-feral-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "druid-feral-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "druid-feral-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "야생추적자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "druid-feral",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "druid-feral-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "druid-feral-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "druid-feral-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "druid-feral-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "야생추적자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "druid-feral",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "druid-feral-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "druid-feral-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "druid-feral-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "druid-feral-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "야생추적자",
+  "heroOk": true,
+  "talents": "druid-feral-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "demonhunter-havoc",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "demonhunter-havoc-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "demonhunter-havoc-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "demonhunter-havoc-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "demonhunter-havoc-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "알드라치 파괴자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "demonhunter-havoc",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "demonhunter-havoc-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "demonhunter-havoc-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "demonhunter-havoc-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "demonhunter-havoc-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "알드라치 파괴자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "demonhunter-havoc",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "demonhunter-havoc-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "demonhunter-havoc-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "demonhunter-havoc-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "demonhunter-havoc-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "알드라치 파괴자",
+  "heroOk": true,
+  "talents": "demonhunter-havoc-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "shaman-enhancement",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "shaman-enhancement-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "shaman-enhancement-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2~4"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "shaman-enhancement-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2~4"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "shaman-enhancement-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "폭풍인도자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "shaman-enhancement",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "shaman-enhancement-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "shaman-enhancement-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2~4"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "shaman-enhancement-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2~4"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "shaman-enhancement-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "폭풍인도자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "shaman-enhancement",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "shaman-enhancement-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "shaman-enhancement-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2~4"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "shaman-enhancement-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2~4"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "shaman-enhancement-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "폭풍인도자",
+  "heroOk": true,
+  "talents": "shaman-enhancement-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "hunter-survival",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "hunter-survival-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "hunter-survival-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "hunter-survival-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "파수꾼",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "hunter-survival",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "hunter-survival-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "hunter-survival-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "hunter-survival-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "파수꾼",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "hunter-survival",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "hunter-survival-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "hunter-survival-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "hunter-survival-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "파수꾼",
+  "heroOk": true,
+  "talents": "hunter-survival-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "hunter-beastmastery",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "hunter-beastmastery-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "hunter-beastmastery-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "hunter-beastmastery-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "hunter-beastmastery-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "무리의 지도자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "hunter-beastmastery",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "hunter-beastmastery-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "hunter-beastmastery-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "hunter-beastmastery-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "hunter-beastmastery-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "무리의 지도자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "hunter-beastmastery",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "hunter-beastmastery-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "hunter-beastmastery-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "hunter-beastmastery-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "hunter-beastmastery-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "무리의 지도자",
+  "heroOk": true,
+  "talents": "hunter-beastmastery-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "hunter-marksmanship",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "hunter-marksmanship-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "hunter-marksmanship-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "hunter-marksmanship-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "hunter-marksmanship-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "파수꾼",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "hunter-marksmanship",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "hunter-marksmanship-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "hunter-marksmanship-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "hunter-marksmanship-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "hunter-marksmanship-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "파수꾼",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "hunter-marksmanship",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "hunter-marksmanship-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "hunter-marksmanship-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "hunter-marksmanship-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "hunter-marksmanship-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "파수꾼",
+  "heroOk": true,
+  "talents": "hunter-marksmanship-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "priest-shadow",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "priest-shadow-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (시즌 2 4세트·깨어난 악몽, 단일)",
+    "file": "priest-shadow-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "priest-shadow-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "priest-shadow-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "공허술사",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "priest-shadow",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "priest-shadow-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (시즌 2 4세트·깨어난 악몽, 단일)",
+    "file": "priest-shadow-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "priest-shadow-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "priest-shadow-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "공허술사",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "priest-shadow",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "priest-shadow-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (시즌 2 4세트·깨어난 악몽, 단일)",
+    "file": "priest-shadow-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "priest-shadow-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "priest-shadow-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "공허술사",
+  "heroOk": true,
+  "talents": "priest-shadow-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "demonhunter-devourer",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "demonhunter-devourer-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "demonhunter-devourer-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2~3"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "demonhunter-devourer-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2~3"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "demonhunter-devourer-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "공허상흔",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "demonhunter-devourer",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "demonhunter-devourer-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "demonhunter-devourer-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2~3"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "demonhunter-devourer-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2~3"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "demonhunter-devourer-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "공허상흔",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "demonhunter-devourer",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "demonhunter-devourer-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인",
+    "file": "demonhunter-devourer-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2~3"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "demonhunter-devourer-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2~3"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "demonhunter-devourer-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "공허상흔",
+  "heroOk": true,
+  "talents": "demonhunter-devourer-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "shaman-elemental",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "shaman-elemental-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (단일)",
+    "file": "shaman-elemental-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "shaman-elemental-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "shaman-elemental-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "선견자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "shaman-elemental",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "shaman-elemental-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (단일)",
+    "file": "shaman-elemental-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "shaman-elemental-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "shaman-elemental-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "선견자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "shaman-elemental",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "shaman-elemental-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (단일)",
+    "file": "shaman-elemental-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "shaman-elemental-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "shaman-elemental-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "선견자",
+  "heroOk": true,
+  "talents": "shaman-elemental-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "mage-arcane",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "mage-arcane-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×4~6"
+    ],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "mage-arcane-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×3~6"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "mage-arcane-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×3~6"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "mage-arcane-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "성난태양",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "mage-arcane",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "mage-arcane-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×4~6"
+    ],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "mage-arcane-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×3~6"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "mage-arcane-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×3~6"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "mage-arcane-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "성난태양",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "mage-arcane",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "mage-arcane-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×4~6"
+    ],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별",
+    "file": "mage-arcane-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×3~6"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "mage-arcane-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×3~6"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "mage-arcane-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "성난태양",
+  "heroOk": true,
+  "talents": "mage-arcane-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "mage-fire",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "오프닝 타임라인 (방화광 선택, 단일)",
+    "file": "mage-fire-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "mage-fire-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "mage-fire-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "성난태양",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "mage-fire",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "오프닝 타임라인 (방화광 선택, 단일)",
+    "file": "mage-fire-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "mage-fire-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "mage-fire-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "성난태양",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "mage-fire",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "오프닝 타임라인 (방화광 선택, 단일)",
+    "file": "mage-fire-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "mage-fire-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "mage-fire-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "성난태양",
+  "heroOk": true,
+  "talents": "mage-fire-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "mage-frost",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "오프닝 타임라인 (단일)",
+    "file": "mage-frost-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×3~5"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "mage-frost-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×3~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "mage-frost-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "주문술사",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "mage-frost",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "오프닝 타임라인 (단일)",
+    "file": "mage-frost-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×3~5"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "mage-frost-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×3~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "mage-frost-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "주문술사",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "mage-frost",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "오프닝 타임라인 (단일)",
+    "file": "mage-frost-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×3~5"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "mage-frost-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×3~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "mage-frost-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "주문술사",
+  "heroOk": true,
+  "talents": "mage-frost-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warlock-affliction",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warlock-affliction-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (영웅 특성별)",
+    "file": "warlock-affliction-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×4~5"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warlock-affliction-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×4~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warlock-affliction-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "지옥소환사",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warlock-affliction",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warlock-affliction-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (영웅 특성별)",
+    "file": "warlock-affliction-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×4~5"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warlock-affliction-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×4~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warlock-affliction-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "지옥소환사",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warlock-affliction",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warlock-affliction-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (영웅 특성별)",
+    "file": "warlock-affliction-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×4~5"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warlock-affliction-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×4~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warlock-affliction-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "지옥소환사",
+  "heroOk": true,
+  "talents": "warlock-affliction-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warlock-demonology",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "오프닝 타임라인 (영웅 특성별)",
+    "file": "warlock-demonology-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×2~4",
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warlock-demonology-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2",
+     "×2~4",
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warlock-demonology-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "악마학자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warlock-demonology",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "오프닝 타임라인 (영웅 특성별)",
+    "file": "warlock-demonology-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×2~4",
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warlock-demonology-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2",
+     "×2~4",
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warlock-demonology-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "악마학자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warlock-demonology",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "오프닝 타임라인 (영웅 특성별)",
+    "file": "warlock-demonology-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×2~4",
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warlock-demonology-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2",
+     "×2~4",
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warlock-demonology-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "악마학자",
+  "heroOk": true,
+  "talents": "warlock-demonology-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warlock-destruction",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warlock-destruction-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (영웅 특성별)",
+    "file": "warlock-destruction-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warlock-destruction-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warlock-destruction-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "지옥소환사",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warlock-destruction",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warlock-destruction-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (영웅 특성별)",
+    "file": "warlock-destruction-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warlock-destruction-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warlock-destruction-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "지옥소환사",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "warlock-destruction",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "warlock-destruction-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (영웅 특성별)",
+    "file": "warlock-destruction-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "warlock-destruction-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "warlock-destruction-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "지옥소환사",
+  "heroOk": true,
+  "talents": "warlock-destruction-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "druid-balance",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "druid-balance-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "druid-balance-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×3",
+     "×3~4",
+     "×2",
+     "×3",
+     "×2~3"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "druid-balance-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×3",
+     "×3~4",
+     "×2",
+     "×3"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "druid-balance-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "숲의 수호자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "druid-balance",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "druid-balance-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "druid-balance-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×3",
+     "×3~4",
+     "×2",
+     "×3",
+     "×2~3"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "druid-balance-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×3",
+     "×3~4",
+     "×2",
+     "×3"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "druid-balance-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "숲의 수호자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "druid-balance",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "druid-balance-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "영웅 특성별 오프닝 타임라인",
+    "file": "druid-balance-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×3",
+     "×3~4",
+     "×2",
+     "×3",
+     "×2~3"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "druid-balance-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×3",
+     "×3~4",
+     "×2",
+     "×3"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "druid-balance-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "숲의 수호자",
+  "heroOk": true,
+  "talents": "druid-balance-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "evoker-devastation",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "evoker-devastation-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별 (단일)",
+    "file": "evoker-devastation-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×3~5",
+     "×3~5",
+     "×3"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "evoker-devastation-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2",
+     "×3~5",
+     "×3~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "evoker-devastation-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "비늘사령관",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "evoker-devastation",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "evoker-devastation-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별 (단일)",
+    "file": "evoker-devastation-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×3~5",
+     "×3~5",
+     "×3"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "evoker-devastation-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2",
+     "×3~5",
+     "×3~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "evoker-devastation-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "비늘사령관",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "evoker-devastation",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "evoker-devastation-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 — 영웅 특성별 (단일)",
+    "file": "evoker-devastation-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×3~5",
+     "×3~5",
+     "×3"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "evoker-devastation-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2",
+     "×3~5",
+     "×3~5"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "evoker-devastation-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "비늘사령관",
+  "heroOk": true,
+  "talents": "evoker-devastation-1440-talents.png",
+  "docOverflowAfter": false
+ },
+ {
+  "id": "evoker-augmentation",
+  "width": 320,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "evoker-augmentation-320-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (영겁의 숨결 선택, 단일)",
+    "file": "evoker-augmentation-320-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "evoker-augmentation-320-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2",
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "evoker-augmentation-320-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "시간 감시자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "evoker-augmentation",
+  "width": 390,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "evoker-augmentation-390-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (영겁의 숨결 선택, 단일)",
+    "file": "evoker-augmentation-390-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "evoker-augmentation-390-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2",
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "evoker-augmentation-390-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "시간 감시자",
+  "heroOk": true,
+  "docOverflowAfter": false
+ },
+ {
+  "id": "evoker-augmentation",
+  "width": 1440,
+  "errors": [],
+  "timelines": [
+   {
+    "title": "단일 딜사이클 타임라인",
+    "file": "evoker-augmentation-1440-tl1.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [],
+    "clipped": [],
+    "broken": 0
+   },
+   {
+    "title": "오프닝 타임라인 (영겁의 숨결 선택, 단일)",
+    "file": "evoker-augmentation-1440-tl2.png",
+    "overflow": false,
+    "railOverflow": 0,
+    "badges": [
+     "×2",
+     "×2"
+    ],
+    "clipped": [],
+    "broken": 0
+   }
+  ],
+  "modes": [
+   {
+    "mode": "opener",
+    "file": "evoker-augmentation-1440-opener.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [
+     "×2",
+     "×2"
+    ],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   },
+   {
+    "mode": "singleTarget",
+    "file": "evoker-augmentation-1440-singleTarget.png",
+    "overflow": false,
+    "broken": 0,
+    "counts": [],
+    "talentLink": "특성 견본: 단일 견본 기준"
+   }
+  ],
+  "docOverflow": false,
+  "activeHero": "시간 감시자",
+  "heroOk": true,
+  "talents": "evoker-augmentation-1440-talents.png",
+  "docOverflowAfter": false
+ }
+]

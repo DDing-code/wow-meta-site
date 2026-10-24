@@ -1,0 +1,218 @@
+{
+ "warrior-arms": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "학살자",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "warrior-fury": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "학살자",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "paladin-retribution": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "태양의 사자",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "rogue-assassination": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "운명결속",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "rogue-outlaw": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "기만자",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "rogue-subtlety": {
+  "from": 1,
+  "defaultHeroBranchIndex": 1,
+  "hero": "기만자",
+  "heroIndex": 1,
+  "changed": false,
+  "why": ""
+ },
+ "deathknight-frost": {
+  "from": 1,
+  "defaultHeroBranchIndex": 1,
+  "hero": "죽음의 인도자",
+  "heroIndex": 1,
+  "changed": false,
+  "why": ""
+ },
+ "deathknight-unholy": {
+  "from": 1,
+  "defaultHeroBranchIndex": 1,
+  "hero": "산레인",
+  "heroIndex": 1,
+  "changed": false,
+  "why": ""
+ },
+ "monk-windwalker": {
+  "from": 0,
+  "defaultHeroBranchIndex": 1,
+  "hero": "천신의 대변자",
+  "heroIndex": 1,
+  "changed": true,
+  "why": "처음 열리는 오프닝·단일 탭이 스조라크 상위 기록의 영웅 특성과 맞도록 바꿈"
+ },
+ "druid-feral": {
+  "from": 0,
+  "defaultHeroBranchIndex": 1,
+  "hero": "야생추적자",
+  "heroIndex": 1,
+  "changed": true,
+  "why": "처음 열리는 오프닝·단일 탭이 스조라크 상위 기록의 영웅 특성과 맞도록 바꿈"
+ },
+ "demonhunter-havoc": {
+  "from": 0,
+  "defaultHeroBranchIndex": 1,
+  "hero": "알드라치 파괴자",
+  "heroIndex": 1,
+  "changed": true,
+  "why": "처음 열리는 오프닝·단일 탭이 스조라크 상위 기록의 영웅 특성과 맞도록 바꿈"
+ },
+ "shaman-enhancement": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "폭풍인도자",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "hunter-survival": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "파수꾼",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "hunter-beastmastery": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "무리의 지도자",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "hunter-marksmanship": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "파수꾼",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "priest-shadow": {
+  "from": 0,
+  "defaultHeroBranchIndex": 1,
+  "hero": "공허술사",
+  "heroIndex": 1,
+  "changed": true,
+  "why": "처음 열리는 오프닝·단일 탭이 스조라크 상위 기록의 영웅 특성과 맞도록 바꿈"
+ },
+ "demonhunter-devourer": {
+  "from": 1,
+  "defaultHeroBranchIndex": 0,
+  "hero": "공허상흔",
+  "heroIndex": 0,
+  "changed": true,
+  "why": "처음 열리는 오프닝·단일 탭이 스조라크 상위 기록의 영웅 특성과 맞도록 바꿈"
+ },
+ "shaman-elemental": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "선견자",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "mage-arcane": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "성난태양",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "mage-fire": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "성난태양",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "mage-frost": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "주문술사",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "warlock-affliction": {
+  "from": 0,
+  "defaultHeroBranchIndex": 1,
+  "hero": "지옥소환사",
+  "heroIndex": 1,
+  "changed": true,
+  "why": "처음 열리는 오프닝·단일 탭이 스조라크 상위 기록의 영웅 특성과 맞도록 바꿈"
+ },
+ "warlock-demonology": {
+  "from": 1,
+  "defaultHeroBranchIndex": 1,
+  "hero": "악마학자",
+  "heroIndex": 1,
+  "changed": false,
+  "why": ""
+ },
+ "warlock-destruction": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "지옥소환사",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "druid-balance": {
+  "from": 0,
+  "defaultHeroBranchIndex": 1,
+  "hero": "숲의 수호자",
+  "heroIndex": 1,
+  "changed": true,
+  "why": "처음 열리는 오프닝·단일 탭이 스조라크 상위 기록의 영웅 특성과 맞도록 바꿈"
+ },
+ "evoker-devastation": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "비늘사령관",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ },
+ "evoker-augmentation": {
+  "from": 0,
+  "defaultHeroBranchIndex": 0,
+  "hero": "시간 감시자",
+  "heroIndex": 0,
+  "changed": false,
+  "why": ""
+ }
+}

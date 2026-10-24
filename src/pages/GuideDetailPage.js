@@ -390,6 +390,7 @@ function displayGuideText(value) {
     .replace(/해석합니다/g, '판단합니다')
     .replace(/시간표/g, '타이밍표')
     .replace(/천체의 맞추기/g, '천체의 정렬')
+    .replace(/천체의 타이밍/g, '천체의 정렬')
     .replace(/시간 재맞추기/g, '시간 재정렬')
     .replace(/재맞추기/g, '재정렬')
     .replace(/회복HoT/g, '회복 지속 치유')
@@ -1952,6 +1953,7 @@ function getOpenerFlowSteps(manuscript, profile, guide) {
       key: `${step.skillId || 'opener'}-${index}`,
       skill,
       label: step.label || profile.steps[index] || `${index + 1}단계`,
+      count: step.count || null,
       note: step.note || (skill ? skillName(skill) : ''),
       stage,
       phase,
@@ -2025,6 +2027,7 @@ function OpenerFlowPreview({ guide, steps = [], fallbackItems = [], inlineTerms 
         {flowItems.map((step, index) => (
           <li key={step.key}>
             <InlineSkillTerm skill={step.skill}>{displayGuideText(step.label)}</InlineSkillTerm>
+            {!!step.count && <OpenerFlowCount $color={guide.color} data-step-count={step.count}>×{step.count}</OpenerFlowCount>}
             {index < flowItems.length - 1 && <ArrowRight size={13} aria-hidden="true" />}
           </li>
         ))}
@@ -2034,7 +2037,7 @@ function OpenerFlowPreview({ guide, steps = [], fallbackItems = [], inlineTerms 
         <ol>
           {flowItems.map(step => (
             <li key={step.key}>
-              <strong>{renderGuideText(step.label, inlineTerms)}</strong>
+              <strong>{renderGuideText(step.label, inlineTerms)}{!!step.count && ` ×${step.count}`}</strong>
               <p>{renderGuideText([step.phase, step.trigger].filter(Boolean).join(' · '), inlineTerms)}</p>
               {!!step.note && <p>{renderGuideText(step.note, inlineTerms)}</p>}
             </li>
@@ -2308,6 +2311,7 @@ function BookTimelineNode({ node, guide, hasAbove, line, inlineTerms }) {
       )}
       <BookTimelineIcon>
         <SkillIconLink skill={skill} size={40} />
+        {!!node.count && <BookTimelineCount $color={guide.color} data-timeline-count={node.count} title={`${node.count}번 이어서`}>×{node.count}</BookTimelineCount>}
       </BookTimelineIcon>
       {!!node.caption && <p>{renderGuideText(node.caption, inlineTerms)}</p>}
     </BookTimelineItem>
@@ -6287,6 +6291,14 @@ const OpenerFlowList = styled.ol`
   }
 `;
 
+const OpenerFlowCount = styled.b`
+  flex: 0 0 auto;
+  color: ${props => props.$color || '#e7c46f'};
+  font-size: 0.78rem;
+  font-weight: 800;
+  white-space: nowrap;
+`;
+
 const OpenerFlowDetails = styled.details`
   min-width: 0;
   border-top: 1px solid rgba(244, 239, 229, 0.07);
@@ -7252,6 +7264,23 @@ const BookTimelineIcon = styled.div.attrs({ 'data-timeline-icon': '' })`
     outline: 2px solid #d2b373;
     outline-offset: 2px;
   }
+`;
+
+/* 같은 스킬을 이어서 누르는 횟수(예: ×3). 아이콘 오른쪽 아래에 붙인다. */
+const BookTimelineCount = styled.b`
+  position: absolute;
+  right: -9px;
+  bottom: -7px;
+  z-index: 2;
+  padding: 0 3px;
+  border: 1px solid ${props => props.$color};
+  background: #080d11;
+  color: #f4efe5;
+  font-size: 0.66rem;
+  font-weight: 800;
+  line-height: 1.35;
+  white-space: nowrap;
+  pointer-events: none;
 `;
 
 const BookTimelineLoopBadge = styled.span`

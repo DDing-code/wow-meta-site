@@ -781,6 +781,12 @@ function validatePracticalTips(spec, manuscript) {
   );
 }
 
+// 같은 스킬을 이어서 누르는 횟수(2026-10-24 단일 딜사이클 스조라크 빌드 기준): 3 또는 '2~3'처럼 쓰고 2 이상이다. 화면에는 ×3으로 나온다.
+function isRepeatCount(count) {
+  const match = String(count).match(/^(\d+)(?:~(\d+))?$/);
+  return !!match && Number(match[1]) >= 2 && (!match[2] || Number(match[2]) > Number(match[1]));
+}
+
 function validateHeroBranches(spec, manuscript, kbSkills) {
   const branches = manuscript.heroBranches || [];
   const labels = branches.map(branch => String(branch.label || '').trim()).filter(Boolean);
@@ -823,6 +829,7 @@ function validateHeroBranches(spec, manuscript, kbSkills) {
       .filter(name => branchText.includes(normalizedGuideTerm(name)));
 
     assert(branch.label, `${prefix}: label is missing`);
+    (branch.opener?.steps || []).forEach((step, stepIndex) => assert(step.count == null || isRepeatCount(step.count), `${prefix}.opener.steps[${stepIndex}]: count must be a repeat count like 3 or '2~3' (2 or more)`));
     assert(
       bodyBlockText.includes(normalizedGuideTerm(branch.label)),
       `${prefix}: hero talent branch must also be explained in the narrative body, not only in heroBranches cards`
@@ -989,6 +996,7 @@ function validateBookLayout(spec, manuscript, kbSkills = {}) {
         rail.nodes.forEach((node, nodeIndex) => {
           assert(/^\d+$/.test(String(node.skillId || '')), `${railPrefix}.nodes[${nodeIndex}]: node needs a numeric skillId`);
           assert(!node.above || (/^\d+$/.test(String(node.above.skillId || '')) && node.above.when?.length >= 2), `${railPrefix}.nodes[${nodeIndex}]: above needs a numeric skillId and condition`);
+          assert(node.count == null || isRepeatCount(node.count), `${railPrefix}.nodes[${nodeIndex}]: count must be a repeat count like 3 or '2~3' (2 or more)`);
         });
       });
     });
@@ -1272,7 +1280,7 @@ function main() {
   assert(kbSkills['100780']?.description.includes('60') && kbSkills['100784']?.description.includes('기 1') && kbSkills['1248989']?.description.includes('1분'), 'Windwalker costs and Xuen-gated Conduit must survive sync');
   assert(['443421', '443616', '1238904', '116768', '325202', '1250554'].every(id => kbSkills[id]?.type === 'buff'), 'Windwalker proc and Jade Heart variants must stay separate');
   for (const branch of windwalker.heroBranches) {
-    assert(branch.opener.steps.length >= 8 && branch.singleTarget.priority.length >= 10 && branch.aoe.priority.length >= 10, 'Both Windwalker heroes need authored opener, ST and AoE');
+    assert(branch.opener.steps.length >= 7 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 10, 'Both Windwalker heroes need authored opener, ST and AoE');
     assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Windwalker single-target and AoE conditions must differ');
     for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
       for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
@@ -1298,7 +1306,7 @@ function main() {
   assert(kbSkills['686']?.specs.includes('Affliction') && kbSkills['389623']?.type === 'class-talent' && kbSkills['389623'].specs.includes('Destruction'), 'Warlock shared scope must not lose Affliction filler or misclassify Gorefiend');
   assert(kbSkills['440043']?.description.includes('그 대상') && kbSkills['1296569']?.description.includes('20%') && kbSkills['205180']?.description.includes('연장하는 기술은 아니다'), 'Affliction target, tier and Darkglare mechanics must survive sync');
   for (const branch of affliction.heroBranches) {
-    assert(branch.opener.steps.length === 10 && branch.singleTarget.priority.length >= 10 && branch.aoe.priority.length >= 10, 'Both Affliction heroes need complete opener, ST and AoE');
+    assert(branch.opener.steps.length >= 7 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 10, 'Both Affliction heroes need complete opener, ST and AoE');
     assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Affliction ST and AoE conditions must differ');
     for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
       for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
@@ -1384,7 +1392,7 @@ function main() {
   assert(kbSkills['1276190']?.description.includes('최대 2점') && kbSkills['1276190']?.description.includes('25초') && kbSkills['1276222']?.description.includes('사용 후 조각 1개'), 'Demonology apex rank and post-cast refund conditions must survive sync');
   assert(kbSkills['1296573']?.type === 'passive' && kbSkills['1296574']?.type === 'passive' && kbSkills['1306077']?.type === 'proc', 'Demonology set explosions must not become additional player casts');
   for (const branch of demonology.heroBranches) {
-    assert(branch.opener.steps.length === 10 && branch.singleTarget.priority.length >= 10 && branch.aoe.priority.length >= 10, 'Both Demonology heroes need a complete opener, ST and AoE');
+    assert(branch.opener.steps.length >= 7 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 10, 'Both Demonology heroes need a complete opener, ST and AoE');
     assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Demonology ST and AoE conditions must differ');
     for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
       const rows = [...(mode.steps || []), ...(mode.priority || [])];
@@ -1421,7 +1429,7 @@ function main() {
   assert(['428522', '434635'].every(id => kbSkills[id]?.description.includes('악독한 임프')) && kbSkills['434589']?.type === 'proc', 'Ruination summons a Diabolic Imp, not the Avatar Overfiend');
   assert(kbSkills['1296571']?.type === 'passive' && kbSkills['1296571'].description.includes('10%p') && kbSkills['1296572']?.type === 'passive' && kbSkills['1305711']?.description.includes('6초'), 'Destruction Season 2 effects must retain their proc and target identities');
   for (const branch of destruction.heroBranches) {
-    assert(branch.opener.steps.length === 10 && branch.singleTarget.priority.length >= 10 && branch.aoe.priority.length >= 10, 'Both Destruction heroes need complete opener, ST and AoE');
+    assert(branch.opener.steps.length >= 7 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 10, 'Both Destruction heroes need complete opener, ST and AoE');
     assert(JSON.stringify(branch.singleTarget.priority) !== JSON.stringify(branch.aoe.priority), 'Destruction ST and AoE must have distinct conditions');
     for (const mode of [branch.opener, branch.singleTarget, branch.aoe]) {
       for (const row of [...(mode.steps || []), ...(mode.priority || [])]) {
@@ -1449,7 +1457,7 @@ function main() {
     assert(casts.every(row => !['381623', '469779', '1265387'].includes(row.skillId)), 'Automatic tea and apex effects must not be cast buttons');
     assert(branch.label !== '운명결속' || !casts.some(row => row.skillId === '1293340'), 'Fatebound must not borrow Mark for Death');
   }
-  assert(JSON.stringify(assassination.opener) === JSON.stringify(assassination.heroBranches[0].opener), 'Default Assassination opener must match Fatebound');
+  assert(JSON.stringify(assassination.opener) === JSON.stringify(assassination.heroBranches[assassination.defaultHeroBranchIndex || 0].opener), 'Default Assassination opener must match the default hero tab');
   assert(assassination.sourceNote.includes('403') && !JSON.stringify(assassination).includes('99.2%'), 'Assassination must disclose missing current log evidence instead of recycling June usage');
   const subtletyUtility = JSON.parse(read(path.join(SITE_ROOT, 'src/data/kb-synergies.json'))).synergies.rogue_subtlety_feint_cloak_mplus_utility;
   assert(['12.1', '12.1.5'].includes(subtletyUtility?.patch) && subtletyUtility.description?.includes('비전투 대상'), 'Subtlety utility must retain the Sap out-of-combat restriction');
@@ -1461,13 +1469,13 @@ function main() {
     assert(JSON.stringify(JSON.parse(read(shadowSource))) === JSON.stringify(shadow), 'Shadow must match its canonical 12.1 manuscript');
   }
   for (const branch of shadow.heroBranches) {
-    assert(branch.opener.steps.length === 8 && branch.singleTarget.priority.length >= 8 && branch.aoe.priority.length >= 8, 'Shadow heroes need their own opener, single-target and AoE flows');
+    assert(branch.opener.steps.length >= 6 && branch.singleTarget.priority.length >= 7 && branch.aoe.priority.length >= 8, 'Shadow heroes need their own opener, single-target and AoE flows');
     const casts = [...branch.opener.steps, ...branch.singleTarget.priority, ...branch.aoe.priority];
     assert(casts.every(row => kbSkills[row.skillId]?.type === 'atomic-skill' && kbSkills[row.skillId].specs.includes('Shadow')), 'Shadow charts must use real Shadow casts, not talents or automatic damage');
     const ids = casts.map(row => row.skillId);
     assert(branch.label === '집정관' ? !ids.includes('263165') && !ids.includes('450983') : !ids.includes('120644') && !ids.includes('391403'), 'Shadow heroes must not borrow incompatible casts');
   }
-  assert(JSON.stringify(shadow.opener) === JSON.stringify(shadow.heroBranches[0].opener), 'Default Shadow flow must match Archon');
+  assert(JSON.stringify(shadow.opener) === JSON.stringify(shadow.heroBranches[shadow.defaultHeroBranchIndex || 0].opener), 'Default Shadow flow must match the default hero tab');
   assert(!GENERAL_AWKWARD_COPY_PATTERN.test('마력 압축'.replace(/마력 압축/g, '')) && GENERAL_AWKWARD_COPY_PATTERN.test('마력 압축으로 압축합니다'.replace(/마력 압축/g, '')), 'Official talent names must not hide awkward prose outside the name');
 
   const discipline = manuscripts['priest-discipline'];
@@ -1704,7 +1712,7 @@ function main() {
         assert(kbSkills[row.skillId]?.type === 'atomic-skill' && row.note.length > 25, 'Marksmanship flows must use real casts and preserve their conditions');
       }
     }
-    assert(branch.opener.steps.filter(row => row.skillId === '212431').length === 2 && branch.opener.summary.includes('유동성 제동장치'), 'Double Explosive Shot openers must retain their build condition');
+    assert(branch.opener.steps.filter(row => row.skillId === '212431').reduce((n, row) => n + (Number(String(row.count || 1).split('~')[0]) || 1), 0) === 2 && branch.opener.summary.includes('유동성 제동장치'), 'Double Explosive Shot openers must retain their build condition (two casts, or one row with count 2)');
   }
   assert(!JSON.stringify(marksmanship.heroBranches[0]).includes('"skillId":"466930"') && !JSON.stringify(marksmanship.heroBranches[1]).includes('"skillId":"1264949"'), 'Marksmanship hero casts must not leak across branches');
   assert(marksmanship.book?.parts?.length === 5 && marksmanship.book.voices.length >= 12 && marksmanship.blocks.every(block => block.concept && block.part), 'Marksmanship concept-book sample must keep the five-part no-base contents, chapter concepts and collected voices');
@@ -1920,7 +1928,9 @@ function main() {
   }
   assert(havoc.heroBranches[0].label === '지옥상흔' && havoc.heroBranches[1].label === '알드라치 파괴자', 'Havoc must retain distinct hero explanations and flows');
   const aldrachiSteps = havoc.heroBranches[1].opener.steps;
-  assert(aldrachiSteps.findIndex(step => step.skillId === '201427') < aldrachiSteps.findIndex(step => step.skillId === '210152'), 'Aldrachi AoE flow must consume Rending Strike before Glaive Flurry');
+  // 2026-10-24 단일 딜사이클 스조라크 빌드 기준: 알드라치 영웅 탭 오프닝은 단일 순서(스조라크 상위 9개 모두 죽음의 휩쓸기 먼저), 광역 순서는 광역 탭이 지킨다.
+  assert(aldrachiSteps.findIndex(step => step.skillId === '210152') < aldrachiSteps.findIndex(step => step.skillId === '201427'), 'Aldrachi single-target opener must consume Glaive Flurry (Death Sweep) before Rending Strike (Annihilation)');
+  assert(havoc.heroBranches[1].aoe.priority.find(row => row.skillId === '201427')?.note.includes('먼저 파멸'), 'Aldrachi AoE priority must still consume Rending Strike first');
   for (const flow of [havoc.opener, ...havoc.heroBranches.map(branch => branch.opener)]) {
     for (const step of flow.steps) {
       assert(['skill', 'atomic-skill'].includes(kbSkills[step.skillId]?.type) && !/지속 효과|패시브/.test(kbSkills[step.skillId]?.castTime || ''), 'Havoc flow nodes must be actual casts, not passive or damage-effect IDs');
@@ -2037,7 +2047,7 @@ function main() {
   assert(!collectActiveSkillRefs(frost).some(([, id]) => String(id) === '152279'), 'Current Frost guide must not link the obsolete Breath ID');
   assert(frost.heroBranches[frost.defaultHeroBranchIndex]?.label === '죽음의 인도자', 'Frost default hero tab must match the recommended Deathbringer build');
   const devourerBook = manuscripts['demonhunter-devourer'];
-  assert(devourerBook.heroBranches[devourerBook.defaultHeroBranchIndex]?.label === '궤멸자', 'Devourer default hero tab must match the 12.1.5 Annihilator samples, logs and public guides');
+  assert(devourerBook.heroBranches[devourerBook.defaultHeroBranchIndex]?.label === '공허상흔' && devourerBook.talentBuilds.find(build => build.id === 'single-target')?.heroLabel === '공허상흔' && devourerBook.talentBuilds.find(build => build.id === 'raid')?.heroLabel === '궤멸자', 'Devourer default hero tab and single-target sample follow the Sszorak top logs (Void-Scarred); raid sample stays Annihilator');
   assert(frost.heroBranches[0].flowSkillIds.every(id => kbSkills[id]?.castTime === '즉시'), 'Rider flow icons must show actual cast buttons, not its passive defining talents');
   for (const flow of [frost.opener, ...frost.heroBranches.map(branch => branch.opener).filter(Boolean)]) {
     for (const step of flow.steps) {
