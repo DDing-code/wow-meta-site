@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import {
   ArrowRight, ArrowUpCircle, Backpack, BadgeCheck, Ban, BarChart3, BookOpen, Castle, ChartNoAxesColumn, Check, Coins, Compass, Crosshair, DoorOpen, Eraser, Flag,
-  FlaskConical, Footprints, Gauge, Gem, Hammer, Hand, HeartHandshake, HeartPulse, Hourglass, Keyboard, KeyRound, Layers, ListChecks, Magnet, Mail,
+  FlaskConical, Footprints, Gauge, Gem, Hammer, Hand, HeartHandshake, HeartPulse, Hourglass, Keyboard, KeyRound, Layers, ListChecks, Lock, Magnet, Mail,
   MessageCircleQuestion, Package, PenLine, Puzzle, RefreshCw, Repeat, Replace, RotateCcw, ScrollText, Search, Send, Shield, ShieldPlus, Shirt, Skull,
   Sparkle, Sparkles, Star, Swords, Timer, Users, UsersRound, Vault, Wrench, X, Zap,
 } from 'lucide-react';
@@ -23,7 +23,7 @@ const sectionIcons = { basics: Compass, combat: Swords, content: Castle, equipme
 // 설명 카드마다 두는 그림. 자료(beginnerGuide.js)의 icon 이름 → lucide 부품. 소모품 카드는 group의 게임 아이콘을 대신 쓴다.
 const cardIcons = {
   ArrowUpCircle, Backpack, BadgeCheck, Ban, BarChart3, BookOpen, Castle, ChartNoAxesColumn, Coins, Compass, Crosshair, DoorOpen, Eraser, Flag, Footprints, Gauge, Gem, Hammer, Hand,
-  HeartHandshake, HeartPulse, Hourglass, Keyboard, KeyRound, Layers, Magnet, Mail, MessageCircleQuestion, Package, PenLine, Puzzle, RefreshCw, Repeat, Replace, RotateCcw, ScrollText,
+  HeartHandshake, HeartPulse, Hourglass, Keyboard, KeyRound, Layers, Lock, Magnet, Mail, MessageCircleQuestion, Package, PenLine, Puzzle, RefreshCw, Repeat, Replace, RotateCcw, ScrollText,
   Send, Shield, ShieldPlus, Shirt, Skull, Sparkle, Sparkles, Star, Swords, Timer, Users, UsersRound, Vault, Wrench, Zap,
 };
 const startLinks = [

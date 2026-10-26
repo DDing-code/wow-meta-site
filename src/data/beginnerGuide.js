@@ -31,7 +31,8 @@ export const beginnerSections = [
       { term: '글쿨', aliases: '전역 재사용 대기시간 GCD 글로벌 쿨다운', icon: 'Timer', description: '스킬 하나를 쓰면 다른 스킬도 잠깐 함께 기다리는 공통 시간입니다.', tip: '모든 스킬이 글쿨을 일으키지는 않습니다.' },
       { term: '버프 · 디버프 · 중첩', aliases: '강화 효과 약화 효과 스택', icon: 'Sparkles', description: '버프는 이로운 효과, 디버프는 해로운 효과, 중첩은 쌓인 겹수입니다.', tip: '남은 시간과 겹수를 함께 봅니다.' },
       { term: '발동 · 유지', aliases: '프록 proc 업타임', icon: 'Zap', description: '발동은 조건·확률로 생기는 효과, 유지는 효과가 끊기지 않게 하기입니다.', tip: '빛나는 스킬은 무엇이 발동했는지 보고 누릅니다.' },
-      { term: '차단 · 군중 제어', aliases: '인터럽트 interrupt CC 메즈 스턴 기절', icon: 'Ban', description: '차단은 적의 시전 끊기, 군중 제어는 기절 등으로 행동 막기입니다.', tip: '던전에서 먼저 끊을 주문부터 익힙니다.' },
+      { term: '차단 · 군중 제어', aliases: '인터럽트 interrupt CC 스턴 기절', icon: 'Ban', description: '차단은 적의 시전 끊기, 군중 제어는 기절·메즈 등으로 행동 막기입니다.', tip: '던전에서 먼저 끊을 주문부터 익힙니다.' },
+      { term: '메즈', aliases: 'mez 메즈기 CC 묶기 재우기 장시간 군중 제어 징표', icon: 'Lock', description: '적 하나를 오래 묶어 두는 군중 제어입니다. 대부분 피해를 받으면 풀립니다.', tip: '징표로 묶을 적을 정하고, 묶인 적은 치지 않습니다.' },
       { term: '해제', aliases: '디스펠 dispel 정화', icon: 'Eraser', description: '아군의 해로운 효과나 적의 이로운 효과를 없앱니다.', tip: '해제하면 터지는 기믹도 있으니 공략을 봅니다.' },
       { term: '생존기 · 외생기', aliases: '방어기 뎀감 피해 감소', icon: 'ShieldPlus', description: '생존기는 나를 지키는 스킬, 외생기는 아군이 나를 지켜 주는 스킬입니다.', tip: '큰 피해 전에 미리 쓰는 스킬도 있습니다.' },
       { term: '기믹 · 바닥 · 무빙', aliases: '공략 패턴 장판 이동', icon: 'Footprints', description: '기믹은 전투 규칙, 바닥은 지면 효과, 무빙은 피하거나 자리 잡기입니다.', tip: '들어가야 하는 바닥도 있습니다. 공략에서 구분합니다.' },
@@ -115,7 +116,7 @@ export const beginnerMaps = {
       { title: '풀링', text: '탱커가 전투를 시작합니다', terms: ['어그로 · 풀링', '네임드 · 쫄'] },
       { title: '오프닝', text: '시작 직후 정해진 순서', terms: ['딜사이클 · 오프닝', '쿨타임 · 쿨기', '글쿨'] },
       { title: '딜사이클', text: '상황에 맞춰 반복', terms: ['단일 · 광역 · 점사', '버프 · 디버프 · 중첩', '발동 · 유지'] },
-      { title: '위기 대처', text: '기믹에 맞춰 반응', terms: ['차단 · 군중 제어', '해제', '생존기 · 외생기', '기믹 · 바닥 · 무빙', '전투 부활'] },
+      { title: '위기 대처', text: '기믹에 맞춰 반응', terms: ['차단 · 군중 제어', '메즈', '해제', '생존기 · 외생기', '기믹 · 바닥 · 무빙', '전투 부활'] },
       { title: '처치 또는 전멸', text: '기록을 보고 다시', terms: ['전멸 · 트라이', 'DPS · HPS · 로그'] },
     ],
     clock: {

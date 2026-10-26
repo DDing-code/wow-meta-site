@@ -43,6 +43,16 @@ test('줄임말과 영문 대소문자로 검색하고 일치한 항목만 남�
   expect(container.querySelectorAll('nav a')).toHaveLength(1);
 });
 
+test('메즈는 따로 설명하고 줄임말로도 찾으며, 전투 흐름 그림의 위기 대처에서 이어진다', () => {
+  const chip = Array.from(container.querySelectorAll('a')).find(link => link.textContent === '메즈' && link.getAttribute('href')?.startsWith('#'));
+  expect(chip).toBeTruthy();
+  expect(container.querySelector(chip.getAttribute('href'))).not.toBeNull();
+  search('MEZ');
+  expect(container.querySelectorAll('dt')).toHaveLength(1);
+  expect(container.querySelector('dt').textContent).toBe('메즈');
+  expect(container.querySelector('dd').textContent).toContain('피해를 받으면 풀립니다');
+});
+
 test('검색 결과가 없으면 안내하고 전체 설명으로 돌아갈 수 있다', () => {
   search('없는말12345');
   expect(container.querySelectorAll('dt')).toHaveLength(0);
