@@ -1191,3 +1191,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 반영: `beginnerGuide.js` '전투에서 쓰는 말'에 '메즈' 카드를 따로 두었다(적 하나를 오래 묶는 군중 제어, 대부분 피해를 받으면 풀림, 징표로 대상 정하고 묶인 적은 치지 않음). '차단 · 군중 제어'의 검색어에서 메즈를 옮기고 설명에 '기절·메즈'를 적었다. 전투 흐름 그림 '위기 대처'에 메즈 칩을 더했다. 카드 그림은 lucide `Lock`.
 - 특정 스킬 이름은 넣지 않았다(초보자 안내는 공통 개념만 다루고, 스킬을 쓰면 아이콘·툴팁 규칙이 붙음). 사이트 초보자 안내에는 원래 예시 던전 내용이 없어 던전 관련 글은 바꾸지 않았다.
 - 검사: `BeginnerPage.test.js` 15개 통과(메즈 검색·그림 칩 연결 테스트 추가), 빌드본 1440·390·320 캡처 가로 넘침 0(`artifacts/beginner-mez-20261026/shots/`).
+- 배포: 사이트 `2e09bd05` main 푸시. 정리 빌드 `main.7bffb418.js`(소스맵 403, `artifacts/beginner-mez-20261026/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `shots.cjs`로 1440·390·320 확인(오류·가로 넘침 0, 검색 "mez" 1개, 캡처 `live/`).
