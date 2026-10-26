@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import {
   ArrowRight, ArrowUpCircle, Backpack, BadgeCheck, Ban, BarChart3, BookOpen, Castle, ChartNoAxesColumn, Check, Coins, Compass, Crosshair, DoorOpen, Eraser, Flag,
   FlaskConical, Footprints, Gauge, Gem, Hammer, Hand, HeartHandshake, HeartPulse, Hourglass, Keyboard, KeyRound, Layers, ListChecks, Lock, Magnet, Mail,
-  MessageCircleQuestion, Package, PenLine, Puzzle, RefreshCw, Repeat, Replace, RotateCcw, ScrollText, Search, Send, Shield, ShieldPlus, Shirt, Skull,
+  MessageCircleQuestion, Package, PenLine, Play, Puzzle, RefreshCw, Repeat, Replace, RotateCcw, ScrollText, Search, Send, Shield, ShieldPlus, Shirt, Skull,
   Sparkle, Sparkles, Star, Swords, Timer, Users, UsersRound, Vault, Wrench, X, Zap,
 } from 'lucide-react';
-import { beginnerCraftingScreens, beginnerEmbellishments, beginnerMaps, beginnerSections, beginnerSources, craftingStepIcons } from '../data/beginnerGuide.js';
+import { beginnerCraftingScreens, beginnerEmbellishments, beginnerMaps, beginnerSections, beginnerSources, beginnerVideo, craftingStepIcons } from '../data/beginnerGuide.js';
 import consumables from '../data/beginnerConsumables.json';
 import { CraftingScreen } from '../components/beginner/CraftingScreens.js';
 import { SectionMap, parseStep } from '../components/beginner/BeginnerMaps.js';
@@ -135,6 +135,75 @@ const StartLink = styled.a`
   &:hover { background: rgba(168, 178, 188, 0.035); box-shadow: inset 0 2px 0 ${GOLD}; }
   &:hover span { color: #c6d0d6; }
   @media (max-width: 720px) { min-height: 68px; padding: 12px 16px; }
+`;
+// 같은 내용의 영상. 왼쪽은 유튜브 화면, 오른쪽은 장면 목록(누르면 그 장면부터 재생, '글'은 아래 설명으로).
+const VideoPanel = styled.section`
+  display: grid;
+  grid-template-columns: minmax(0, 1.75fr) minmax(250px, 1fr);
+  margin-top: 28px;
+  border: 1px solid ${LINE_STRONG};
+  background: ${PANEL};
+  scroll-margin-top: 86px;
+  @media (max-width: 900px) { grid-template-columns: minmax(0, 1fr); }
+`;
+const VideoFrame = styled.div`
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: ${INK};
+  iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+`;
+const VideoSide = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 18px 18px 14px;
+  border-left: 1px solid ${LINE_STRONG};
+  box-shadow: inset 0 2px 0 ${GOLD};
+  h2 { color: #eef1f3; font-size: 1rem; line-height: 1.4; }
+  > p { margin-top: 6px; color: #98a6af; font-size: 0.8rem; }
+  > a { display: inline-flex; gap: 5px; align-items: center; align-self: flex-start; margin-top: auto; padding-top: 12px; color: #d9bd7b; font-size: 0.84rem; font-weight: 650; }
+  > a:hover { color: #eef1f3; }
+  @media (max-width: 900px) { border-left: 0; border-top: 1px solid ${LINE_STRONG}; }
+`;
+const Chapters = styled.ol`
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid ${LINE};
+  li { display: flex; align-items: stretch; border-bottom: 1px solid ${LINE}; }
+  li > a { display: inline-flex; align-items: center; padding: 0 4px 0 10px; color: #8f9aa2; font-size: 0.76rem; font-weight: 650; }
+  li > a:hover { color: ${GOLD}; }
+`;
+const ChapterButton = styled.button`
+  display: flex;
+  flex: 1 1 auto;
+  gap: 12px;
+  align-items: center;
+  min-width: 0;
+  min-height: 38px;
+  padding: 6px 4px;
+  border: 0;
+  background: transparent;
+  color: ${props => (props.$current ? '#eef1f3' : '#c6d0d6')};
+  font-size: 0.86rem;
+  font-weight: ${props => (props.$current ? 700 : 500)};
+  text-align: left;
+  b { flex: 0 0 auto; min-width: 38px; color: ${GOLD}; font-size: 0.78rem; font-variant-numeric: tabular-nums; }
+  &:hover { color: #eef1f3; }
+`;
+const VideoJump = styled.button`
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 12px;
+  padding: 6px 10px;
+  border: 1px solid ${LINE_STRONG};
+  background: ${PANEL};
+  color: #d9bd7b;
+  font-size: 0.8rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  &:hover { color: #eef1f3; border-color: ${GOLD}; }
 `;
 const Body = styled.div`
   display: grid;
@@ -554,6 +623,11 @@ function useActiveSection(key) {
   return active;
 }
 
+const clock = second => `${Math.floor(second / 60)}:${String(second % 60).padStart(2, '0')}`;
+const videoReady = /^[A-Za-z0-9_-]{11}$/.test(beginnerVideo.youtubeId);
+// 영역마다 영상에서 그 영역이 처음 나오는 장면.
+const sectionVideoSecond = new Map(beginnerVideo.chapters.slice().reverse().map(chapter => [chapter.section, chapter.second]));
+
 function BeginnerPage() {
   const [search, setSearch] = useState('');
   const query = search.trim().toLocaleLowerCase();
@@ -580,6 +654,14 @@ function BeginnerPage() {
   const count = sections.reduce((total, section) => total + section.entries.length, 0);
   const active = useActiveSection(sections.map(section => section.id).join(' '));
   const clear = () => setSearch('');
+  // 장면을 누르면 그 시각부터 다시 불러 재생한다. 처음에는 재생하지 않는다.
+  const [videoStart, setVideoStart] = useState(null);
+  const videoRef = useRef(null);
+  const playFrom = second => {
+    setVideoStart(second);
+    videoRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
+  };
+  const currentChapter = videoStart == null ? null : beginnerVideo.chapters.filter(chapter => chapter.second <= videoStart).pop();
   // 그림의 낱말을 누르면 아래 설명으로 내려간다. 설명 id는 영역 id와 원래 순서로 정한다(검색으로 걸러도 같은 id).
   const entryIds = new Map(beginnerSections.flatMap(section => section.entries.map((entry, index) => [entry.term, `${section.id}-e${index + 1}`])));
   const hrefFor = term => (entryIds.has(term) ? `#${entryIds.get(term)}` : undefined);
@@ -661,6 +743,35 @@ function BeginnerPage() {
           );
         })}
       </Start>
+      {videoReady && !query ? (
+        <VideoPanel ref={videoRef} id="beginner-video" aria-labelledby="beginner-video-title">
+          <VideoFrame>
+            <iframe
+              key={videoStart ?? 'start'}
+              src={`https://www.youtube.com/embed/${beginnerVideo.youtubeId}?rel=0${videoStart != null ? `&start=${videoStart}&autoplay=1` : ''}`}
+              title={beginnerVideo.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </VideoFrame>
+          <VideoSide>
+            <h2 id="beginner-video-title">영상으로 먼저 보기</h2>
+            <p>{beginnerVideo.length} · 장면을 누르면 그 부분부터 재생합니다.</p>
+            <Chapters aria-label="영상 장면">
+              {beginnerVideo.chapters.map(chapter => (
+                <li key={chapter.second}>
+                  <ChapterButton type="button" onClick={() => playFrom(chapter.second)} $current={chapter === currentChapter} aria-current={chapter === currentChapter ? 'true' : undefined} data-video-second={chapter.second}>
+                    <b>{clock(chapter.second)}</b>{chapter.label}
+                  </ChapterButton>
+                  <a href={`#${chapter.section}`} aria-label={`${chapter.label} 설명으로 가기`}>글</a>
+                </li>
+              ))}
+            </Chapters>
+            <a href={`https://www.youtube.com/watch?v=${beginnerVideo.youtubeId}`} target="_blank" rel="noopener noreferrer">유튜브에서 보기 · {beginnerVideo.channel}<ArrowRight size={13} aria-hidden="true" /></a>
+          </VideoSide>
+        </VideoPanel>
+      ) : null}
       <Body>
         <Contents aria-label="초보자 안내 목차">
           <p>이 페이지에서</p>
@@ -689,6 +800,11 @@ function BeginnerPage() {
                   <SectionCount>{section.entries.length}개 설명{section.id === 'consumables' && itemCount ? ` · 아이템 ${itemCount}종` : section.id === 'crafting' && embellishmentCount ? ` · 아이템 ${embellishmentCount}종` : ''}</SectionCount>
                 </SectionHead>
                 <Intro>{section.intro}</Intro>
+                {videoReady && !query && sectionVideoSecond.has(section.id) ? (
+                  <VideoJump type="button" onClick={() => playFrom(sectionVideoSecond.get(section.id))} data-video-second={sectionVideoSecond.get(section.id)}>
+                    <Play size={13} aria-hidden="true" />영상으로 보기 {clock(sectionVideoSecond.get(section.id))}
+                  </VideoJump>
+                ) : null}
                 {!query ? <SectionMap id={section.id} map={beginnerMaps[section.id]} hrefFor={hrefFor} groups={consumables.groups} entries={section.entries} done={done.size} total={readyTotal} /> : null}
                 {section.note ? <Note>{section.note}</Note> : null}
                 {renderEntries(section)}

@@ -1192,3 +1192,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 특정 스킬 이름은 넣지 않았다(초보자 안내는 공통 개념만 다루고, 스킬을 쓰면 아이콘·툴팁 규칙이 붙음). 사이트 초보자 안내에는 원래 예시 던전 내용이 없어 던전 관련 글은 바꾸지 않았다.
 - 검사: `BeginnerPage.test.js` 15개 통과(메즈 검색·그림 칩 연결 테스트 추가), 빌드본 1440·390·320 캡처 가로 넘침 0(`artifacts/beginner-mez-20261026/shots/`).
 - 배포: 사이트 `2e09bd05` main 푸시. 정리 빌드 `main.7bffb418.js`(소스맵 403, `artifacts/beginner-mez-20261026/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `shots.cjs`로 1440·390·320 확인(오류·가로 넘침 0, 검색 "mez" 1개, 캡처 `live/`).
+
+## 2026-10-26 초보자 안내에 초보자 영상 연결
+
+- 요청: "유튜브 업로드 해주고, 글 링크랑 연결해줘". 초보자 도트 영상(5분 20초)을 와우메타 채널(@wowmeta-kr, UCYXt-DyhdhkkRqB-UUJRdKQ)에 `Yg-7VunbNaQ`로 공개했다. 제목 '한밤 2시즌 12.1.5 초보자 가이드', 설명 첫 줄은 `https://wowmeta.vercel.app/beginner`, 그 아래 장면 바로 가기 9개다. 업로드 기록은 ai-hub `outputs/beginner-pixel-video-20261026/youtube-upload.json`.
+- 반영: `beginnerGuide.js`의 `beginnerVideo`(영상 번호·장면 시각·장면이 가리키는 영역 id)를 `BeginnerPage.js`가 읽는다. 상황별 바로가기 아래에 영상 칸(왼쪽 유튜브 화면, 오른쪽 장면 목록)을 두었다. 장면을 누르면 그 시각부터 재생하고, '글'은 아래 설명으로 간다. 영역마다 소개 아래에 '영상으로 보기 m:ss' 단추가 있다. 검색 중에는 영상 칸과 단추를 숨긴다.
+- 홈 재생목록(`youtubePlaylists.js`)과 재생목록에는 넣지 않았다(역할 4개만 허용하는 validate:home 규칙).
+- 검사: `BeginnerPage.test.js` 16개 통과(영상 테스트 추가), `npm run build`(빌드 전 검사 포함) 통과, 빌드본 1440·390·320 캡처 오류·가로 넘침 0(`artifacts/beginner-video-20261026/shots/`).

@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Simulate } from 'react-dom/test-utils';
 import { MemoryRouter } from 'react-router-dom';
 import BeginnerPage from './BeginnerPage.js';
-import { beginnerCraftingScreens, beginnerEmbellishments, beginnerSections } from '../data/beginnerGuide.js';
+import { beginnerCraftingScreens, beginnerEmbellishments, beginnerSections, beginnerVideo } from '../data/beginnerGuide.js';
 import consumables from '../data/beginnerConsumables.json';
 
 let container;
@@ -257,4 +257,31 @@ test('첫 파티 준비 다섯 가지는 눌러서 확인 표시하고 진행 �
   act(() => buttons[0].click());
   expect(container.querySelectorAll('#ready [data-done="true"]')).toHaveLength(1);
   expect(container.querySelectorAll('#ready dt')).toHaveLength(5);
+});
+
+test('같은 내용의 영상을 위에 두고, 장면과 영역 단추로 그 시각부터 재생하며, 검색 중에는 숨긴다', () => {
+  expect(beginnerVideo.youtubeId).toMatch(/^[A-Za-z0-9_-]{11}$/);
+  const frame = () => container.querySelector('#beginner-video iframe');
+  expect(frame().getAttribute('src')).toBe(`https://www.youtube.com/embed/${beginnerVideo.youtubeId}?rel=0`);
+  expect(container.querySelector(`#beginner-video a[href="https://www.youtube.com/watch?v=${beginnerVideo.youtubeId}"]`)).not.toBeNull();
+  const ids = new Set(beginnerSections.map(section => section.id));
+  const seconds = beginnerVideo.chapters.map(chapter => chapter.second);
+  expect(seconds).toEqual([...seconds].sort((a, b) => a - b));
+  for (const chapter of beginnerVideo.chapters) {
+    expect(ids.has(chapter.section)).toBe(true);
+    expect(container.querySelector(`#beginner-video a[href="#${chapter.section}"]`)).not.toBeNull();
+  }
+  // 모든 영역에 영상 단추가 있고, 그 영역이 처음 나오는 장면을 가리킨다.
+  for (const section of beginnerSections) {
+    const first = beginnerVideo.chapters.find(chapter => chapter.section === section.id);
+    expect(container.querySelector(`#${section.id} button[data-video-second]`).dataset.videoSecond).toBe(String(first.second));
+  }
+  act(() => container.querySelector('#beginner-video button[data-video-second="142"]').click());
+  expect(frame().getAttribute('src')).toContain('&start=142&autoplay=1');
+  expect(container.querySelector('#beginner-video [aria-current="true"]').textContent).toContain('메즈');
+  act(() => container.querySelector('#ready button[data-video-second]').click());
+  expect(frame().getAttribute('src')).toContain('&start=290&autoplay=1');
+  search('물약');
+  expect(container.querySelector('#beginner-video')).toBeNull();
+  expect(container.querySelector('button[data-video-second]')).toBeNull();
 });

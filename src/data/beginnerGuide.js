@@ -181,3 +181,22 @@ export const beginnerSources = [
   { title: '구렁의 기본 개념', href: 'https://worldofwarcraft.blizzard.com/ko-kr/news/24025828/', detail: '블리자드 시스템 소개 · 2023년' },
   { title: '제작과 소모품 품질의 기본 개념', href: 'https://worldofwarcraft.blizzard.com/ko-kr/news/23876529/', detail: '블리자드 시스템 소개 · 2022년' },
 ];
+
+// 이 페이지와 같은 내용을 담은 와우메타 채널 영상. 유튜브 설명에는 이 페이지 주소를 넣었다.
+// 장면 시각(초)은 유튜브 설명의 '바로 가기'와 같다. section은 위 beginnerSections의 id다(검사: BeginnerPage.test.js).
+export const beginnerVideo = {
+  youtubeId: 'Yg-7VunbNaQ',
+  title: '한밤 2시즌 12.1.5 초보자 가이드',
+  channel: 'wowmeta 와우메타',
+  length: '5분 20초',
+  chapters: [
+    { second: 8, label: '처음 알아둘 것', section: 'basics' },
+    { second: 62, label: '전투에서 쓰는 말', section: 'combat' },
+    { second: 142, label: '메즈', section: 'combat' },
+    { second: 178, label: '던전과 공격대', section: 'content' },
+    { second: 210, label: '장비와 성장', section: 'equipment' },
+    { second: 248, label: '소모품', section: 'consumables' },
+    { second: 270, label: '주문 제작', section: 'crafting' },
+    { second: 290, label: '첫 파티에 가기 전', section: 'ready' },
+  ],
+};
