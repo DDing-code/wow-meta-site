@@ -1199,3 +1199,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 반영: `beginnerGuide.js`의 `beginnerVideo`(영상 번호·장면 시각·장면이 가리키는 영역 id)를 `BeginnerPage.js`가 읽는다. 상황별 바로가기 아래에 영상 칸(왼쪽 유튜브 화면, 오른쪽 장면 목록)을 두었다. 장면을 누르면 그 시각부터 재생하고, '글'은 아래 설명으로 간다. 영역마다 소개 아래에 '영상으로 보기 m:ss' 단추가 있다. 검색 중에는 영상 칸과 단추를 숨긴다.
 - 홈 재생목록(`youtubePlaylists.js`)과 재생목록에는 넣지 않았다(역할 4개만 허용하는 validate:home 규칙).
 - 검사: `BeginnerPage.test.js` 16개 통과(영상 테스트 추가), `npm run build`(빌드 전 검사 포함) 통과, 빌드본 1440·390·320 캡처 오류·가로 넘침 0(`artifacts/beginner-video-20261026/shots/`).
+- 배포: 사이트 `52fda1d8` main 푸시. 정리 빌드 `main.26ed2216.js`(소스맵 403, `artifacts/beginner-video-20261026/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `shots.cjs`로 1440·390·320 확인(오류·가로 넘침 0, 장면 누르면 그 시각부터 재생, 캡처 `live/`).
