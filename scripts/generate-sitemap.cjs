@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // public/sitemap.xml을 만든다(구글 검색 등록용).
 // 주소 목록: src/data/siteMeta.js의 STATIC_PAGES, 가이드 레지스트리의 40개 가이드,
-// 레이드 가이드 편(raidGuide.json), 로그 분석 리포트(logReportRegistry.js).
+// 레이드 가이드 편(raidGuide.json), 쐐기 가이드 던전(mythicPlusGuide.json), 로그 분석 리포트(logReportRegistry.js).
 // --check: 파일을 쓰지 않고 지금 목록과 같은지만 검사한다(npm run validate:seo).
 const fs = require('fs');
 const path = require('path');
@@ -33,11 +33,13 @@ function collectPaths() {
   const { getAllGuideSpecs } = loadModule('guideRegistry.js', ['getAllGuideSpecs']);
   const { logReports } = loadModule('logReportRegistry.js', ['logReports']);
   const raidGuide = JSON.parse(fs.readFileSync(path.join(DATA, 'raidGuide.json'), 'utf8'));
+  const mythicPlusGuide = JSON.parse(fs.readFileSync(path.join(DATA, 'mythicPlusGuide.json'), 'utf8'));
   const paths = [
     ...staticPaths,
     ...getAllGuideSpecs().map(spec => spec.path),
     ...raidGuide.episodes.map(episode => `/raid/${episode.id}`),
     ...(raidGuide.heroic ? raidGuide.heroic.bosses.map(boss => `/raid/heroic/${boss.id}`) : []),
+    ...mythicPlusGuide.dungeons.map(dungeon => `/mythicplus/${dungeon.id}`),
     ...logReports.map(report => report.path),
   ];
   return { origin, paths: [...new Set(paths)] };

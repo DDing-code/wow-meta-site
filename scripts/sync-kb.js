@@ -20,6 +20,7 @@ for (const [source, output] of [
   ['00-공통/공용/Meta/beginner-consumables.json', 'beginnerConsumables.json'],
   ['00-공통/공용/Meta/beginner-crafting.json', 'beginnerCrafting.json'],
   ['00-공통/공용/Meta/raid-guide.json', 'raidGuide.json'],
+  ['00-공통/공용/Meta/mythicplus-guide.json', 'mythicPlusGuide.json'],
   ['01-죽음의기사/부정/Meta/log-peal-mythic.json', 'pealMythicReport.json'],
   ['08-성기사/징벌/Meta/log-coiled-altar.json', 'retributionCoiledAltarReport.json'],
   ['12-흑마법사/악마/Meta/log-ragereaver-heroic.json', 'ragereaverHeroicReport.json'],

@@ -5,6 +5,7 @@
   <url><loc>https://wowmeta.vercel.app/beginner</loc></url>
   <url><loc>https://wowmeta.vercel.app/raid</loc></url>
   <url><loc>https://wowmeta.vercel.app/raid/heroic</loc></url>
+  <url><loc>https://wowmeta.vercel.app/mythicplus</loc></url>
   <url><loc>https://wowmeta.vercel.app/spells</loc></url>
   <url><loc>https://wowmeta.vercel.app/logs</loc></url>
   <url><loc>https://wowmeta.vercel.app/news</loc></url>
@@ -63,6 +64,14 @@
   <url><loc>https://wowmeta.vercel.app/raid/heroic/fangs</loc></url>
   <url><loc>https://wowmeta.vercel.app/raid/heroic/coiled-altar</loc></url>
   <url><loc>https://wowmeta.vercel.app/raid/heroic/ulatek</loc></url>
+  <url><loc>https://wowmeta.vercel.app/mythicplus/altar-of-fangs</loc></url>
+  <url><loc>https://wowmeta.vercel.app/mythicplus/den-of-nalorakk</loc></url>
+  <url><loc>https://wowmeta.vercel.app/mythicplus/murder-row</loc></url>
+  <url><loc>https://wowmeta.vercel.app/mythicplus/the-blinding-vale</loc></url>
+  <url><loc>https://wowmeta.vercel.app/mythicplus/voidscar-arena</loc></url>
+  <url><loc>https://wowmeta.vercel.app/mythicplus/kings-rest</loc></url>
+  <url><loc>https://wowmeta.vercel.app/mythicplus/temple-of-sethraliss</loc></url>
+  <url><loc>https://wowmeta.vercel.app/mythicplus/ruby-life-pools</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/deathknight/unholy/log-analysis/peal-mythic</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/evoker/preservation/log-analysis/chaeyong-mythic</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/warlock/demonology/log-analysis/ragereaver-heroic</loc></url>

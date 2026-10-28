@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage.js';
 import GuidePage from './pages/GuidePage.js';
 import BeginnerPage from './pages/BeginnerPage.js';
 import RaidGuidePage from './pages/RaidGuidePage.js';
+import MythicPlusGuidePage from './pages/MythicPlusGuidePage.js';
 import NewsPage from './pages/NewsPage.js';
 import MockupsPage from './pages/MockupsPage.js';
 import SpellDatabasePage from './pages/WoWSpellDatabasePage.js';
@@ -145,6 +146,8 @@ function App() {
               <Route path="/raid/heroic" element={<RaidGuidePage heroic />} />
               <Route path="/raid/heroic/:bossId" element={<RaidGuidePage heroic />} />
               <Route path="/raid/:episodeId" element={<RaidGuidePage />} />
+              <Route path="/mythicplus" element={<MythicPlusGuidePage />} />
+              <Route path="/mythicplus/:dungeonId" element={<MythicPlusGuidePage />} />
               <Route path="/news" element={<NewsPage />} />
               <Route path="/spells" element={<SpellDatabasePage />} />
               <Route path="/logs" element={<LogAnalysisPage />} />

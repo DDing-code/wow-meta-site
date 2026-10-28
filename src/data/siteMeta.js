@@ -2,6 +2,7 @@
 // 사이트맵(public/sitemap.xml)은 scripts/generate-sitemap.cjs가 같은 가이드·레이드 목록으로 만든다.
 import { CURRENT_PATCH_LABEL, getAllGuideSpecs } from './guideRegistry.js';
 import raidGuide from './raidGuide.json';
+import mythicPlusGuide from './mythicPlusGuide.json';
 
 export const SITE_ORIGIN = 'https://wowmeta.vercel.app';
 export const SITE_NAME = 'wowmeta';
@@ -28,6 +29,10 @@ const STATIC_PAGES = {
   '/raid/heroic': {
     title: `영웅 레이드 공략 | 레이드 가이드 | ${SITE_NAME}`,
     description: raidGuide.heroic.page.lead,
+  },
+  '/mythicplus': {
+    title: `쐐기 가이드 | ${SITE_NAME}`,
+    description: mythicPlusGuide.page.lead,
   },
   '/spells': {
     title: `스펠 DB | ${SITE_NAME}`,
@@ -73,6 +78,17 @@ export function getPageMeta(pathname) {
     return {
       title: `${heroicBoss.name} 영웅 공략 | 레이드 가이드 | ${SITE_NAME}`,
       description: `${heroicBoss.place} ${heroicBoss.name} 영웅 택틱: ${heroicBoss.principle}.`,
+      canonical,
+      index: true,
+    };
+  }
+
+  const dungeonMatch = path.match(/^\/mythicplus\/([^/]+)$/);
+  const dungeon = dungeonMatch && mythicPlusGuide.dungeons.find(item => item.id === dungeonMatch[1]);
+  if (dungeon) {
+    return {
+      title: `${dungeon.name} 쐐기 공략 | 쐐기 가이드 | ${SITE_NAME}`,
+      description: `${dungeon.name}(${dungeon.en}) 쐐기 가이드 — 가장 많이 쓴 루트의 풀링 ${dungeon.pulls.length}개, 네임드 ${dungeon.bosses.filter(boss => !boss.major).length}곳 전투 흐름, 몹별 차단·해제 표시.`,
       canonical,
       index: true,
     };

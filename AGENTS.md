@@ -9,6 +9,7 @@
 - `npm run sync-kb`는 KB를 고친 뒤 한 번만 돌린다(전체 검증의 첫 단계가 한 번 돌리므로 그 앞뒤로 따로 돌리지 않는다).
 - 배포본을 파일 목록으로 만들 때 `src/data/manuscripts/`와 `scripts/lib/guideManuscripts.cjs`를 빼먹지 않는다.
 - 레이드 가이드(`/raid`, `src/pages/RaidGuidePage.js`)의 글은 KB `08-직업별-Knowledge-Base/00-공통/공용/Meta/raid-guide.json` 하나가 정본이다. 고친 뒤 `npm run sync-kb`로 `src/data/raidGuide.json`을 다시 만들고(직접 고치지 않음), `npm run validate:raid-guide`와 `src/pages/RaidGuidePage.test.js`로 확인한다. 본문 속 직업 스킬은 `skills`, 네임드 기술은 `spells`(번호·아이콘은 한국어 공식 툴팁으로 확인)에 등록해야 아이콘·툴팁이 붙는다.
+- 쐐기 가이드(`/mythicplus`, `src/pages/MythicPlusGuidePage.js`)의 정본은 KB `00-공통/공용/Meta/mythicplus-guide.json` 하나다. 이 파일과 그림(`public/images/mythicplus`)은 ai-hub 스토리보드(`workspace/outputs/mythicplus-dungeon-storyboard-20261026`)에서 `artifacts/mythicplus-20261028/build.py`로 만든다(요령·풀링·몹 글을 고치려면 스토리보드 자료를 고치고 다시 돌린다). `npm run sync-kb`가 `src/data/mythicPlusGuide.json`을 만들고, `npm run validate:mythicplus-guide`와 `src/pages/MythicPlusGuidePage.test.js`로 확인한다. 던전 영상 번호는 정본의 `dungeons[].video.youtubeId`에 넣는다(비어 있으면 영상 칸을 그리지 않는다). 몹 스킬 설명은 와우헤드 한국어·게임 공식 문장 그대로이고 임의로 쓰지 않는다.
 
 ## 가이드 용어 (사용자 고정, 2026-10-10)
 

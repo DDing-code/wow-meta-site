@@ -12,11 +12,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "npm run validate:generated-data && npm run validate:pipeline && npm run validate:guide-registry && npm run validate:guide-copy && npm run validate:guide-manuscripts && npm run validate:guide-charts && npm run validate:guide-tooltips && npm run validate:kb-tooltips && npm run validate:raid-guide && npm run validate:seo && npm run validate:home && node scripts/validate-translations.js",
+    "prebuild": "npm run validate:generated-data && npm run validate:pipeline && npm run validate:guide-registry && npm run validate:guide-copy && npm run validate:guide-manuscripts && npm run validate:guide-charts && npm run validate:guide-tooltips && npm run validate:kb-tooltips && npm run validate:raid-guide && npm run validate:mythicplus-guide && npm run validate:seo && npm run validate:home && node scripts/validate-translations.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "validate": "npm run validate:generated-data && npm run validate:pipeline && npm run validate:guide-registry && npm run validate:guide-copy && npm run validate:guide-manuscripts && npm run validate:guide-charts && npm run validate:guide-tooltips && npm run validate:kb-tooltips && npm run validate:raid-guide && npm run validate:seo && npm run validate:home && npm run validate:translations",
+    "validate": "npm run validate:generated-data && npm run validate:pipeline && npm run validate:guide-registry && npm run validate:guide-copy && npm run validate:guide-manuscripts && npm run validate:guide-charts && npm run validate:guide-tooltips && npm run validate:kb-tooltips && npm run validate:raid-guide && npm run validate:mythicplus-guide && npm run validate:seo && npm run validate:home && npm run validate:translations",
     "validate:translations": "node scripts/validate-translations.js",
     "validate:translations:strict": "node scripts/validate-translations.js --strict",
     "validate:translations:verbose": "node scripts/validate-translations.js --verbose",
@@ -40,6 +40,7 @@
     "presync-kb": "echo Syncing KB from Obsidian vault...",
     "dev": "npm run sync-kb && react-scripts start",
     "validate:raid-guide": "node scripts/validate-raid-guide.cjs",
+    "validate:mythicplus-guide": "node scripts/validate-mythicplus-guide.cjs",
     "validate:seo": "node scripts/generate-sitemap.cjs --check",
     "validate:home": "node scripts/validate-home-videos.cjs",
     "seo:sitemap": "node scripts/generate-sitemap.cjs"

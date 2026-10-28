@@ -11,6 +11,7 @@ import {
   Database,
   ExternalLink,
   HeartPulse,
+  KeyRound,
   Newspaper,
   Play,
   Shield,
@@ -27,8 +28,9 @@ import {
   youtubePlaylists,
 } from '../data/youtubePlaylists.js';
 import raidGuide from '../data/raidGuide.json';
+import mythicPlusGuide from '../data/mythicPlusGuide.json';
 
-// 홈은 유튜브 첫 화면처럼 분류 칩 → 재생목록별 영상 줄 → 레이드 가이드 줄 순서다.
+// 홈은 유튜브 첫 화면처럼 분류 칩 → 재생목록별 영상 줄 → 레이드 가이드 줄 → 쐐기 가이드 줄 순서다.
 // 한 줄은 화면 폭에 맞는 칸 수만 보이고 '모두 보기'로 펼친다. 칩으로 한 분류를 고르면 그 줄만 다 펼쳐 보인다.
 
 const GOLD = '#d2b373';
@@ -461,10 +463,17 @@ const raidEpisodes = (raidGuide.episodes || []).map(episode => {
   return { ...episode, plan: match ? match[1] : null };
 });
 
+// 쐐기 가이드 줄: 던전마다 유튜브 썸네일과 같은 픽셀아트 그림(public/images/mythicplus/thumb)과 한 줄 사실.
+const dungeonCards = (mythicPlusGuide.dungeons || []).map(dungeon => ({
+  ...dungeon,
+  facts: `${Math.round(dungeon.timer / 60)}분 · 네임드 ${dungeon.bosses.filter(boss => !boss.major).length}곳 · 풀링 ${dungeon.pulls.length}개`,
+}));
+
 const FILTERS = [
   { id: 'all', label: '전체' },
   ...videoShelves.map(shelf => ({ id: shelf.id, label: shelf.label, icon: shelf.icon })),
   { id: 'raid', label: '레이드', icon: Castle },
+  { id: 'mythicplus', label: '쐐기', icon: KeyRound },
 ];
 
 function VideoCard({ guide, youtubeId, playlistId }) {
@@ -524,6 +533,28 @@ function RaidCard({ episode }) {
       <MetaText>
         <CardTitle to={`/raid/${episode.id}`}>{episode.title}</CardTitle>
         <Clamp>{episode.principle}</Clamp>
+      </MetaText>
+    </Card>
+  );
+}
+
+function DungeonCard({ dungeon }) {
+  return (
+    <Card>
+      <RaidThumb to={`/mythicplus/${dungeon.id}`} $color={dungeon.color} aria-label={`${dungeon.name} 쐐기 가이드 열기`}>
+        <img
+          src={`/images/mythicplus/thumb/${dungeon.thumbnail}-960.webp`}
+          alt=""
+          width="960"
+          height="540"
+          loading="lazy"
+          decoding="async"
+        />
+        <RaidPlace $color={dungeon.color}>{dungeon.abbr}</RaidPlace>
+      </RaidThumb>
+      <MetaText>
+        <CardTitle to={`/mythicplus/${dungeon.id}`}>{dungeon.name}</CardTitle>
+        <Clamp>{dungeon.facts}</Clamp>
       </MetaText>
     </Card>
   );
@@ -652,6 +683,33 @@ function HomePage() {
             onToggle={() => toggle('raid')}
             label="레이드 가이드"
             renderItem={episode => <RaidCard key={episode.id} episode={episode} />}
+          />
+        </Shelf>
+      )}
+
+      {isShown('mythicplus') && dungeonCards.length > 0 && (
+        <Shelf aria-labelledby="shelf-mythicplus" data-shelf="mythicplus">
+          <ShelfHead>
+            <ShelfTitle id="shelf-mythicplus">
+              <KeyRound size={19} aria-hidden="true" />
+              쐐기 가이드
+            </ShelfTitle>
+            <ShelfCount>던전 {dungeonCards.length}곳</ShelfCount>
+            <ShelfLinks>
+              <ShelfLink as={Link} to="/mythicplus">
+                <span>전체 보기</span>
+                <ArrowRight size={13} aria-hidden="true" />
+              </ShelfLink>
+            </ShelfLinks>
+          </ShelfHead>
+          <ShelfGrid
+            items={dungeonCards}
+            columns={columns}
+            expanded={isExpanded('mythicplus')}
+            locked={filter === 'mythicplus'}
+            onToggle={() => toggle('mythicplus')}
+            label="쐐기 가이드"
+            renderItem={dungeon => <DungeonCard key={dungeon.id} dungeon={dungeon} />}
           />
         </Shelf>
       )}

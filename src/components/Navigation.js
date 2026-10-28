@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { BookOpen, Castle, Compass, Database, Home, Menu, Newspaper, X } from 'lucide-react';
+import { BookOpen, Castle, Compass, Database, Home, KeyRound, Menu, Newspaper, X } from 'lucide-react';
 
 const Nav = styled.nav`
   position: sticky;
@@ -124,6 +124,7 @@ const navItems = [
   { path: '/beginner', label: '초보자 안내', icon: Compass },
   { path: '/guide', label: '가이드', icon: BookOpen },
   { path: '/raid', label: '레이드 가이드', icon: Castle },
+  { path: '/mythicplus', label: '쐐기 가이드', icon: KeyRound },
   { path: '/spells', label: '스펠 DB', icon: Database },
   { path: '/news', label: '소식', icon: Newspaper },
 ];
