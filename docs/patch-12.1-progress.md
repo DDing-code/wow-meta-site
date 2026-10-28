@@ -1210,3 +1210,13 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 검사: `validate:mythicplus-guide`(validate·prebuild 체인에 추가 — 던전 8·풀링 143·네임드 28+주요 쫄 4·도식 144·몹 설명 166·스킬 533, 그림 파일, 고정 용어, 메뉴·라우트·사이트맵·홈 연결), `MythicPlusGuidePage.test.js` 5개, `HomePage.test.js`·`siteMeta.test.js` 통과, `npm run validate:quiet` 13단계 통과, 빌드본 1440·390 캡처 오류·가로 넘침·그림 404 0(`artifacts/mythicplus-20261028/shots/`, 요소별 `shots/parts/`).
 - 배포: 사이트 `c61cd05b` main 푸시, KB 로컬 `78cacc1`. 정리 빌드 `main.aac6577e.js`(소스맵 없음, `artifacts/mythicplus-20261028/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 새 번들·그림 SHA-256 일치·사이트맵 9개 주소 확인, `shots.cjs`로 1440·390 통과(문제 0건, 캡처 `live/`).
 - 남은 일: 유튜브 번호 8개 넣기(다른 작업), 홈 영상 줄에 쐐기 재생목록을 넣을지(validate:home이 역할 4개만 허용). 두 글자 스킬 이름의 본문 링크 여부는 사용자 결정.
+
+## 2026-10-28 쐐기 던전 영상 8편 유튜브 공개·가이드 연결
+
+- 요청: "사이트 가이드 게시/유튜브 업로드 진행해줘". 이 기록은 유튜브 업로드 몫이다(사이트 게시는 바로 위 기록).
+- 공개: 쐐기 던전 영상 8편(ai-hub `outputs/mythicplus-dungeon-storyboard-20261026/video/<id>.mp4`, 1920×1080·30fps, 8:38~14:22)을 와우메타 채널(@wowmeta-kr, UCYXt-DyhdhkkRqB-UUJRdKQ)에 공개로 올렸다. 제목 '한밤 2시즌 12.1.5 <던전> 가이드', 설명 첫 줄 `쐐기 가이드: https://wowmeta.vercel.app/mythicplus/<id>`, 그 아래 장면 바로 가기(정본 `video.chapters`와 같은 시각), 썸네일은 픽셀아트 8장(`thumbnails/<id>-thumbnail-1280x720.png`). 번호: 송곳니의 제단 `DZuaYY7iHzI` · 날로라크의 소굴 `S8XgeOkcW9o` · 죽음의 골목 `7utuj_jzn3Q` · 눈부신 골짜기 `JSmDaugmVJI` · 공허흉터 투기장 `idfVijJMpcw` · 왕들의 안식처 `SxhudgmuvI4` · 세스랄리스 사원 `8vQ73kZoPAQ` · 루비 생명의 웅덩이 `d27wR6IE-ds`. 업로드 기록 `youtube-upload.json`(verify 8/8 공개), 로그 `upload.log`.
+- 업로드 도구(`outputs/pixel-guides/youtube-upload.mjs batch`)는 왕들의 안식처·루비 생명의 웅덩이에서 게시 단추를 누른 뒤 편집 화면 대기가 시간 초과로 끊겼다(초안으로 남음). 왕들의 안식처는 batch 재실행으로, 루비는 편집 화면이 '오류가 발생했습니다'만 보여 목록의 '초안 수정' 창에서 공개 단계로 게시했다.
+- 반영: 번호 8개를 KB 정본 `dungeons[].video.youtubeId`에 넣었다(`artifacts/mythicplus-20261028/apply-youtube-ids.py` → `youtube-ids.json`, `build.py`가 읽음). 페이지는 던전 머리 아래 영상 칸(장면 단추·'글' 링크·유튜브 링크)과 풀링 카드 '영상 M:SS'·네임드 '영상에서 보기 M:SS' 단추를 그린다(코드 변경 없음, t1 구현).
+- 검사: `validate:mythicplus-guide` 통과, `MythicPlusGuidePage.test.js` 5개(영상 칸·풀링·네임드 단추 수 검사 추가)·`HomePage.test.js` 통과, `npm run build`(빌드 전 검사 포함) 통과. 빌드본·운영 모두 `shots.cjs` 1440·390 문제 0건(영상 칸 표시), `video-shots.cjs`로 운영에서 장면 단추·네임드 단추를 누르면 iframe에 `start=`·`autoplay=1`이 붙는 것과 가로 넘침 0을 확인(캡처 `artifacts/mythicplus-20261028/live-video/`).
+- 배포: KB 로컬 커밋, 정리 빌드 `main.e59be9c1.js`(소스맵 403, `stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고 운영 주소에서 새 번들과 영상 번호를 확인했다.
+- 남은 일: 홈 영상 줄(재생목록 4개)에 쐐기 재생목록을 넣을지(validate:home이 역할 4개만 허용), 유튜브 재생목록 묶기(이번에는 만들지 않음).

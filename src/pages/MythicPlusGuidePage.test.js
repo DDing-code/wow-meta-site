@@ -87,7 +87,11 @@ test('영상 번호가 없으면 영상 칸을 그리지 않고, 있으면 장�
   mount('/mythicplus/altar-of-fangs');
   if (/^[A-Za-z0-9_-]{11}$/.test(first.video.youtubeId || '')) {
     expect(container.querySelector(`[data-video="${first.video.youtubeId}"] iframe`)).not.toBeNull();
+    expect(container.querySelector(`[data-video="${first.video.youtubeId}"] iframe`).getAttribute('src')).toContain(`https://www.youtube.com/embed/${first.video.youtubeId}`);
     expect(container.querySelectorAll('[data-video] [data-video-second]')).toHaveLength(first.video.chapters.length);
+    // 풀링 카드·네임드마다 '영상 M:SS' 단추가 장면 시각 수만큼 붙는다.
+    expect(container.querySelectorAll('[data-pull] [data-video-second]')).toHaveLength(first.pulls.filter(pull => pull.videoSecond != null).length);
+    expect(container.querySelectorAll('section[data-boss] [data-video-second]')).toHaveLength(first.bosses.filter(boss => boss.videoSecond != null).length);
   } else {
     expect(container.querySelector('[data-video]')).toBeNull();
     expect(container.querySelector('iframe')).toBeNull();

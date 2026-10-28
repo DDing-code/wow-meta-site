@@ -26,6 +26,9 @@ SB = Path(r"F:/01_프로젝트/90_개발/ai-hub/workspace/outputs/mythicplus-dun
 BEGINNER = SB.parent / "beginner-pixel-video-20261026" / "assets" / "cut"
 OUT = SITE / "public" / "images" / "mythicplus"
 NO_IMAGES = "--no-images" in sys.argv
+# 유튜브 번호(던전 slug → 11자리). apply-youtube-ids.py 가 업로드 기록에서 만든다. 다시 돌려도 번호가 지워지지 않게 여기서 읽는다.
+YOUTUBE_IDS_FILE = Path(__file__).with_name("youtube-ids.json")
+YOUTUBE_IDS = json.loads(YOUTUBE_IDS_FILE.read_text(encoding="utf-8")) if YOUTUBE_IDS_FILE.exists() else {}
 
 BG = (11, 15, 19)
 # 송곳니의 제단은 초보자 영상 때 그린 도트 모델을 쓴다(build_frames.SPRITE 와 같다)
@@ -256,7 +259,7 @@ def build_dungeon(D, n_index):
         "route": {"runs": r["runs"], "timed": r["timed"], "medianSec": r["medianSec"], "level": r.get("level"),
                   "totalRuns": D["routeTotalRuns"], "key": r.get("routeKey"), "url": D.get("routeKeyUrl") or ""},
         "overview": tac.get("overview") or "",
-        "video": {"youtubeId": None, "title": f"한밤 2시즌 12.1.5 {D['ko']} 가이드", "length": clock(total), "chapters": chapters},
+        "video": {"youtubeId": YOUTUBE_IDS.get(slug), "title": f"한밤 2시즌 12.1.5 {D['ko']} 가이드", "length": clock(total), "chapters": chapters},
         "thumbnail": slug,
         "routeFigure": "route",
         "bosses": boss_out,
