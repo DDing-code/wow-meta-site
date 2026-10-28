@@ -1200,3 +1200,13 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 홈 재생목록(`youtubePlaylists.js`)과 재생목록에는 넣지 않았다(역할 4개만 허용하는 validate:home 규칙).
 - 검사: `BeginnerPage.test.js` 16개 통과(영상 테스트 추가), `npm run build`(빌드 전 검사 포함) 통과, 빌드본 1440·390·320 캡처 오류·가로 넘침 0(`artifacts/beginner-video-20261026/shots/`).
 - 배포: 사이트 `52fda1d8` main 푸시. 정리 빌드 `main.26ed2216.js`(소스맵 403, `artifacts/beginner-video-20261026/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `shots.cjs`로 1440·390·320 확인(오류·가로 넘침 0, 장면 누르면 그 시각부터 재생, 캡처 `live/`).
+
+## 2026-10-28 쐐기 가이드(/mythicplus) 던전 8곳 게시
+
+- 요청: "사이트 가이드 게시/유튜브 업로드 진행해줘". 이 기록은 사이트 게시 몫이다(유튜브 업로드는 다른 작업).
+- 자리: 상단 메뉴 '레이드 가이드' 다음에 '쐐기 가이드'(/mythicplus). 던전마다 한 탭(/mythicplus/<던전 id>: altar-of-fangs·den-of-nalorakk·murder-row·the-blinding-vale·voidscar-arena·kings-rest·temple-of-sethraliss·ruby-life-pools)이고, 순서는 전체 루트(꼭 끊을 것·지울 것) → 네임드(역할별 요령·전투 흐름 5단계 도식·위험한 구간·핵심 스킬) → 풀링 순서(지도·병력·몹별 차단/해제/피하기/탱커/통제 칩·주의·처음 나오는 몹 설명 접힘) → 근거다. 홈에 '쐐기 가이드' 줄(픽셀아트 썸네일 8장)과 분류 칩 '쐐기'를 넣었다.
+- 정본: KB `00-공통/공용/Meta/mythicplus-guide.json`(KB 로컬 `78cacc1`). ai-hub 스토리보드(`outputs/mythicplus-dungeon-storyboard-20261026`, 2026-10-27 한글화·공식 설명 복원판)의 `data/dungeons.json`·`data/tactics`·장면표·캡처 시각을 `artifacts/mythicplus-20261028/build.py`로 옮겼다. 그림 516장(16MB, `public/images/mythicplus`): 전체 루트(컷의 지도 부분), 풀링 지도 143장(컷 왼쪽 800×720), 네임드 동작 도식 144장(영상 장면의 지도 부분), 도트 모델 205장, 썸네일 픽셀아트 8장. 컷의 글은 사이트에서 글로 보인다.
+- 글 규칙: 요령은 Method 한밤 2시즌판, 이름·설명은 와우헤드 한국어와 게임 공식 문장(클라이언트 설명 24종) 그대로, 설명이 없는 스킬 13종은 비워 둔다(임의로 쓰지 않음). 본문의 스킬 이름은 세 글자 이상만 아이콘·툴팁 링크로 바꾼다(두 글자 '치유·강화·독살'은 흔한 말이라 본문에서는 그대로, 몹 카드 칩에는 보임). 영상 번호 칸은 `dungeons[].video.youtubeId`(지금 null)이고, 번호가 들어오면 던전 머리 아래 영상 칸(장면 바로 가기)과 풀링·네임드의 '영상 m:ss' 단추가 보인다. 장면 시각은 captured.json의 실제 렌더 시각이다.
+- 검사: `validate:mythicplus-guide`(validate·prebuild 체인에 추가 — 던전 8·풀링 143·네임드 28+주요 쫄 4·도식 144·몹 설명 166·스킬 533, 그림 파일, 고정 용어, 메뉴·라우트·사이트맵·홈 연결), `MythicPlusGuidePage.test.js` 5개, `HomePage.test.js`·`siteMeta.test.js` 통과, `npm run validate:quiet` 13단계 통과, 빌드본 1440·390 캡처 오류·가로 넘침·그림 404 0(`artifacts/mythicplus-20261028/shots/`, 요소별 `shots/parts/`).
+- 배포: 사이트 `c61cd05b` main 푸시, KB 로컬 `78cacc1`. 정리 빌드 `main.aac6577e.js`(소스맵 없음, `artifacts/mythicplus-20261028/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 새 번들·그림 SHA-256 일치·사이트맵 9개 주소 확인, `shots.cjs`로 1440·390 통과(문제 0건, 캡처 `live/`).
+- 남은 일: 유튜브 번호 8개 넣기(다른 작업), 홈 영상 줄에 쐐기 재생목록을 넣을지(validate:home이 역할 4개만 허용). 두 글자 스킬 이름의 본문 링크 여부는 사용자 결정.
