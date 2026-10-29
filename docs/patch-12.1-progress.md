@@ -1220,3 +1220,9 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 검사: `validate:mythicplus-guide` 통과, `MythicPlusGuidePage.test.js` 5개(영상 칸·풀링·네임드 단추 수 검사 추가)·`HomePage.test.js` 통과, `npm run build`(빌드 전 검사 포함) 통과. 빌드본·운영 모두 `shots.cjs` 1440·390 문제 0건(영상 칸 표시), `video-shots.cjs`로 운영에서 장면 단추·네임드 단추를 누르면 iframe에 `start=`·`autoplay=1`이 붙는 것과 가로 넘침 0을 확인(캡처 `artifacts/mythicplus-20261028/live-video/`).
 - 배포: KB 로컬 커밋, 정리 빌드 `main.e59be9c1.js`(소스맵 403, `stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고 운영 주소에서 새 번들과 영상 번호를 확인했다.
 - 남은 일: 홈 영상 줄(재생목록 4개)에 쐐기 재생목록을 넣을지(validate:home이 역할 4개만 허용), 유튜브 재생목록 묶기(이번에는 만들지 않음).
+
+## 2026-10-30 파멸 심화 영상 공개·기본/심화 영상 연결
+- 요청: "업로드 진행해주고 사이트에 링크도 해줘(기본/심화 둘다 하면 될듯)".
+- 공개: 파멸 악마사냥꾼 심화 도트 영상(ai-hub `outputs/pixel-guides/specs/demonhunter-havoc-advanced/demonhunter-havoc-advanced-guide-native-alpha-v6.mp4`, 10분 14초)을 와우메타 채널(@wowmeta-kr, UCYXt-DyhdhkkRqB-UUJRdKQ)에 `bFrBTJqCUuU`로 공개했다. 제목 '한밤 2시즌 12.1.5 파멸 악마사냥꾼 심화 가이드', 설명은 가이드 주소·기본편 주소·구간 바로 가기 5개, 썸네일은 심화 전용판. 업로드 기록은 같은 폴더 `youtube-upload.json`(40편 목록 youtube-manifest.json과 따로).
+- 사이트: 원고에 `advancedVideo`가 있으면 영상 칸 위에 '기본편 · 심화편' 단추가 생긴다(처음엔 기본편). 파멸은 기본 `sN2NnShDDKQ`·심화 `bFrBTJqCUuU`. `validate-guide-manuscripts.js`의 GUIDE_ADVANCED_VIDEOS가 번호·제목('… 심화 가이드')·채널을 고정한다. KB `02-악마사냥꾼/파멸/Meta/guide-12.1.json`도 같은 값이다.
+- 배포: 사이트 `9075ed3f` main 푸시, KB 로컬 `05ca3d0`. 정리 빌드 `main.d492b722.js`(소스맵 403, `artifacts/havoc-advanced-video-20261030/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `shots.cjs`로 1440·390·320 확인(단추로 영상 번호 바뀜, 오류·영상 칸 가로 넘침 0, 캡처 `live/`).
