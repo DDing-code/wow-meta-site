@@ -3246,6 +3246,11 @@ const manuscript = {
       title: '한밤 2시즌 12.1.5 파멸 악마사냥꾼 가이드',
       channel: 'wowmeta 와우메타',
     },
+    advancedVideo: {
+      youtubeId: 'bFrBTJqCUuU',
+      title: '한밤 2시즌 12.1.5 파멸 악마사냥꾼 심화 가이드',
+      channel: 'wowmeta 와우메타',
+    },
     defaultHeroBranchIndex: 1,
 };
 

@@ -1381,7 +1381,22 @@ function main() {
     assert(/^한밤 2시즌 12\.1\.5 .+ 가이드$/.test(item.video.title || ''), `${id} video title must match the uploaded title`);
     assert(item.video.channel === 'wowmeta 와우메타', `${id} video must come from the wowmeta 와우메타 channel`);
   }
-  assert(read(path.join(SITE_ROOT, 'src/pages/GuideDetailPage.js')).includes('{!!manuscript?.video && <GuideVideoSection video={manuscript.video} />}'), 'Guide page must render the manuscript video above the article');
+  assert(read(path.join(SITE_ROOT, 'src/pages/GuideDetailPage.js')).includes('{!!manuscript?.video && <GuideVideoSection video={manuscript.video} advancedVideo={manuscript.advancedVideo} />}'), 'Guide page must render the manuscript video above the article');
+  // 심화편 영상(기본편과 따로 올린 편): 기본편 아래 '심화편' 단추로 본다. 번호는 ai-hub outputs/pixel-guides/specs/<id>-advanced/youtube-upload.json 의 공개 확인된 값이다.
+  const GUIDE_ADVANCED_VIDEOS = new Map([
+    ['demonhunter-havoc', 'bFrBTJqCUuU'],
+  ]);
+  for (const [id, item] of Object.entries(manuscripts)) {
+    const expected = GUIDE_ADVANCED_VIDEOS.get(id);
+    if (!expected) {
+      assert(!item.advancedVideo, `${id} has no published advanced video`);
+      continue;
+    }
+    assert(item.video?.youtubeId && item.advancedVideo?.youtubeId === expected, `${id} must link its published advanced video ${expected} next to the basic video`);
+    assert(item.advancedVideo.youtubeId !== item.video.youtubeId, `${id} advanced video must differ from the basic video`);
+    assert(/^한밤 2시즌 12\.1\.5 .+ 심화 가이드$/.test(item.advancedVideo.title || ''), `${id} advanced video title must match the uploaded title`);
+    assert(item.advancedVideo.channel === 'wowmeta 와우메타', `${id} advanced video must come from the wowmeta 와우메타 channel`);
+  }
   const demonologyNotes = Object.values(kbSkills).filter(skill => /[\\/]12-흑마법사[\\/]악마[\\/]/.test(skill.source?.kbPath || ''));
   assert(demonologyNotes.length === 65 && demonologyNotes.every(skill => ['12.1', '12.1.5'].includes(skill.patch) && skill.description?.length >= 25), 'All 65 Demonology notes must retain reviewed descriptions');
   assert(!demonology.extraSkills?.length && !kbSkills['186185'], 'Demonology must not restore NPC Demonic Sacrifice or bypass canonical skills');

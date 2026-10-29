@@ -2490,9 +2490,19 @@ function BookVoicesSection({ layout, guide, inlineTerms }) {
 }
 
 // 글 상단 영상: manuscript.video = { youtubeId, title, channel? }. 원고에 있을 때만 본문 맨 위에 둔다.
-function GuideVideoSection({ video }) {
+// manuscript.advancedVideo(같은 형식)가 있으면 기본편·심화편 단추로 바꿔 본다. 처음엔 기본편.
+const GUIDE_VIDEO_KINDS = [
+  { key: 'basic', label: '기본편', note: '핵심 기본기' },
+  { key: 'advanced', label: '심화편', note: '원리·영웅 특성' },
+];
+const isYoutubeId = id => /^[A-Za-z0-9_-]{11}$/.test(String(id || ''));
+
+function GuideVideoSection({ video: basicVideo, advancedVideo }) {
+  const [kind, setKind] = useState('basic');
+  const hasAdvanced = isYoutubeId(advancedVideo?.youtubeId);
+  const video = hasAdvanced && kind === 'advanced' ? advancedVideo : basicVideo;
   const youtubeId = String(video?.youtubeId || '');
-  if (!/^[A-Za-z0-9_-]{11}$/.test(youtubeId)) return null;
+  if (!isYoutubeId(youtubeId)) return null;
   const watchUrl = `https://www.youtube.com/watch?v=${youtubeId}`;
   return (
     <SectionBlock id="guide-video" data-guide-block="video">
@@ -2503,8 +2513,25 @@ function GuideVideoSection({ video }) {
           <SectionTitle>영상으로 보기</SectionTitle>
         </div>
       </SectionHead>
+      {hasAdvanced && (
+        <GuideVideoTabs role="group" aria-label="영상 고르기">
+          {GUIDE_VIDEO_KINDS.map(item => (
+            <button
+              key={item.key}
+              type="button"
+              data-video-kind={item.key}
+              aria-pressed={kind === item.key}
+              onClick={() => setKind(item.key)}
+            >
+              <strong>{item.label}</strong>
+              <small>{item.note}</small>
+            </button>
+          ))}
+        </GuideVideoTabs>
+      )}
       <GuideVideoFrame>
         <iframe
+          key={youtubeId}
           src={`https://www.youtube.com/embed/${youtubeId}?rel=0`}
           title={video.title || '가이드 영상'}
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -3285,7 +3312,7 @@ function GuideDetailPage() {
         </GuideNav>
 
         <Article>
-          {!!manuscript?.video && <GuideVideoSection video={manuscript.video} />}
+          {!!manuscript?.video && <GuideVideoSection video={manuscript.video} advancedVideo={manuscript.advancedVideo} />}
 
           <SectionBlock id="overview">
             <SectionHead>
@@ -4981,6 +5008,68 @@ const SectionBlock = styled.section`
   &#guide-core {
     display: flex;
     flex-direction: column;
+  }
+`;
+
+const GuideVideoTabs = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 930px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(168, 178, 188, 0.22);
+
+  button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 10px;
+    align-items: baseline;
+    min-width: 0;
+    padding: 11px 16px;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    background: rgba(13, 18, 22, 0.66);
+    color: #b9c3c9;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  button + button {
+    border-left: 1px solid rgba(168, 178, 188, 0.22);
+  }
+
+  button[aria-pressed='true'] {
+    border-bottom-color: #d9bd7b;
+    background: rgba(217, 189, 123, 0.1);
+    color: #f1e3bf;
+  }
+
+  button:hover {
+    color: #f1e3bf;
+  }
+
+  button:focus-visible {
+    outline: 2px solid #d9bd7b;
+    outline-offset: -2px;
+  }
+
+  strong {
+    font-size: 0.98rem;
+    font-weight: 700;
+  }
+
+  small {
+    color: #95a1a9;
+    font-size: 0.8rem;
+    word-break: keep-all;
+  }
+
+  @media (max-width: 520px) {
+    button {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 12px;
+    }
   }
 `;
 
