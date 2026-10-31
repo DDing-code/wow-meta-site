@@ -1235,3 +1235,5 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 10월 24일 단일 견본 교체 뒤 반대가 된 낡은 문장을 고쳤다: 풍운 "단일·레이드 음영파 견본 유지", 조화 "엘룬 견본은 기본 학습용", 잠행 "죽음추적자 단일 견본", 포식 "단일·쐐기·레이드 모두 궤멸자"(근거·출처·영웅 결론·sourceNote).
 - 반영: `artifacts/meta-fix-20261031/apply.cjs`(시작 때 정본 orig/ 에 적용해 KB 정본과 원고를 같은 객체로 쓰고 KB Meta/patch-changelog.md 에 기록) → `npm run sync-kb`. 확인 `check.cjs`(종료 코드), 화면 `shots.cjs`(11개 가이드 1440·390, 새 문장 표시·오류·가로 넘침 0, 아이콘 붙음).
 - 검사: `npm run validate:quiet` 13단계 통과, `validate-guide-publication.cjs`·`verify-guide-resume.cjs` 통과, 회복 드루이드 KB 온라인 툴팁 대조 36개 통과. `verify-subtlety-kb.cjs`(기만자 단일 우선순위 첫 칸)·`verify-warrior-rend-kb.cjs`는 이번에 건드리지 않은 칸에서 원래 실패한다(10월 24일 스조라크 반영 뒤 검사기를 고치지 않음).
+- 배포: 사이트 `a7909f8c` main 푸시, KB 로컬 `ff276c3`(바꾼 23개 파일만). 정리 빌드 `main.318cefe3.js`(소스맵 403, `artifacts/meta-fix-20261031/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `shots.cjs`로 11개 가이드 1440·390 확인(문제 0건, 캡처 `live/`).
+- 남은 결정: 포식 레이드 견본을 공허상흔으로 바꿀지(다음 주 로그·공개 가이드 갱신 뒤), 생존 견본에 아웃랜드 맹독을 넣을지, 회복 드루이드 쐐기 견본에 신속한 치유 연마를 넣을지. 사격·파괴 광역 대상 수 기준은 새 공개 자료가 나오면 다시 본다. 와우헤드 한국어 툴팁이 갱신되면 KB 설명(교묘한 사격·신속한 치유 연마)을 툴팁대로 고친다.
