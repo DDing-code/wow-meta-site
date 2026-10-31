@@ -2593,11 +2593,6 @@ const manuscript = {
       title: '한밤 2시즌 12.1.5 비전 마법사 가이드',
       channel: 'wowmeta 와우메타',
     },
-    advancedVideo: {
-      youtubeId: '_npgF82jaq4',
-      title: '한밤 2시즌 12.1.5 비전 마법사 심화 가이드',
-      channel: 'wowmeta 와우메타',
-    },
 };
 
 export default manuscript;

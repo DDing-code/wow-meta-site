@@ -1384,16 +1384,7 @@ function main() {
   assert(read(path.join(SITE_ROOT, 'src/pages/GuideDetailPage.js')).includes('{!!manuscript?.video && <GuideVideoSection video={manuscript.video} advancedVideo={manuscript.advancedVideo} />}'), 'Guide page must render the manuscript video above the article');
   // 심화편 영상(기본편과 따로 올린 편): 기본편 아래 '심화편' 단추로 본다. 번호는 ai-hub outputs/pixel-guides/specs/<id>-advanced/youtube-upload.json 의 공개 확인된 값이다.
   const GUIDE_ADVANCED_VIDEOS = new Map([
-    ['deathknight-frost', 'DU1_-Wy1-oA'],
-    ['deathknight-unholy', 'r_7JES1bYbg'],
     ['demonhunter-havoc', 'bFrBTJqCUuU'],
-    ['evoker-augmentation', 'nk5LAbwnq2I'],
-    ['evoker-preservation', '89L5SNB17YU'],
-    ['mage-arcane', '_npgF82jaq4'],
-    ['priest-shadow', '5LMqYfcu0bk'],
-    ['rogue-assassination', 'o9PKA2gUltU'],
-    ['rogue-outlaw', 'M6_it7-6ApU'],
-    ['shaman-enhancement', 'Jhj5RYL3OtY'],
   ]);
   for (const [id, item] of Object.entries(manuscripts)) {
     const expected = GUIDE_ADVANCED_VIDEOS.get(id);

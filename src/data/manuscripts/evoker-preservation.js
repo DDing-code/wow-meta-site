@@ -2929,11 +2929,6 @@ const manuscript = {
       title: '한밤 2시즌 12.1.5 보존 기원사 가이드',
       channel: 'wowmeta 와우메타',
     },
-    advancedVideo: {
-      youtubeId: '89L5SNB17YU',
-      title: '한밤 2시즌 12.1.5 보존 기원사 심화 가이드',
-      channel: 'wowmeta 와우메타',
-    },
 };
 
 export default manuscript;

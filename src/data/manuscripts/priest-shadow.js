@@ -2957,11 +2957,6 @@ const manuscript = {
     title: '한밤 2시즌 12.1.5 암흑 사제 가이드',
     channel: 'wowmeta 와우메타',
   },
-  advancedVideo: {
-    youtubeId: '5LMqYfcu0bk',
-    title: '한밤 2시즌 12.1.5 암흑 사제 심화 가이드',
-    channel: 'wowmeta 와우메타',
-  },
   defaultHeroBranchIndex: 1,
 };
 

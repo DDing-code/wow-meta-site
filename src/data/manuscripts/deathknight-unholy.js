@@ -3048,11 +3048,6 @@ const manuscript = {
       title: '한밤 2시즌 12.1.5 부정 죽음의 기사 가이드',
       channel: 'wowmeta 와우메타',
     },
-    advancedVideo: {
-      youtubeId: 'r_7JES1bYbg',
-      title: '한밤 2시즌 12.1.5 부정 죽음의 기사 심화 가이드',
-      channel: 'wowmeta 와우메타',
-    },
 };
 
 export default manuscript;
