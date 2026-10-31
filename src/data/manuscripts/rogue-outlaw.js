@@ -2823,6 +2823,11 @@ const manuscript = {
       title: '한밤 2시즌 12.1.5 무법 도적 가이드',
       channel: 'wowmeta 와우메타',
     },
+    advancedVideo: {
+      youtubeId: 'M6_it7-6ApU',
+      title: '한밤 2시즌 12.1.5 무법 도적 심화 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;

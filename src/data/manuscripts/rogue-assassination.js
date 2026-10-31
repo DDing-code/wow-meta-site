@@ -3126,6 +3126,11 @@ const manuscript = {
       title: '한밤 2시즌 12.1.5 암살 도적 가이드',
       channel: 'wowmeta 와우메타',
     },
+    advancedVideo: {
+      youtubeId: 'o9PKA2gUltU',
+      title: '한밤 2시즌 12.1.5 암살 도적 심화 가이드',
+      channel: 'wowmeta 와우메타',
+    },
 };
 
 export default manuscript;
