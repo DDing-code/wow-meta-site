@@ -1237,3 +1237,11 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 검사: `npm run validate:quiet` 13단계 통과, `validate-guide-publication.cjs`·`verify-guide-resume.cjs` 통과, 회복 드루이드 KB 온라인 툴팁 대조 36개 통과. `verify-subtlety-kb.cjs`(기만자 단일 우선순위 첫 칸)·`verify-warrior-rend-kb.cjs`는 이번에 건드리지 않은 칸에서 원래 실패한다(10월 24일 스조라크 반영 뒤 검사기를 고치지 않음).
 - 배포: 사이트 `a7909f8c` main 푸시, KB 로컬 `ff276c3`(바꾼 23개 파일만). 정리 빌드 `main.318cefe3.js`(소스맵 403, `artifacts/meta-fix-20261031/stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `shots.cjs`로 11개 가이드 1440·390 확인(문제 0건, 캡처 `live/`).
 - 남은 결정: 포식 레이드 견본을 공허상흔으로 바꿀지(다음 주 로그·공개 가이드 갱신 뒤), 생존 견본에 아웃랜드 맹독을 넣을지, 회복 드루이드 쐐기 견본에 신속한 치유 연마를 넣을지. 사격·파괴 광역 대상 수 기준은 새 공개 자료가 나오면 다시 본다. 와우헤드 한국어 툴팁이 갱신되면 KB 설명(교묘한 사격·신속한 치유 연마)을 툴팁대로 고친다.
+
+## 2026-10-31 심화편 9편 업로드 → 사용자 지시로 삭제
+
+- 요청: "9편 먼저 업로드 하고 사이트도 양식 맞춰서 갱신해줘". 대상은 검수 묶음 `ai-hub/.../pixel-guides/review-13-20261031`의 심화편 중 냉기·부정·증강·보존·비전·암흑·암살·무법·고양 9편(storyboard-v3 편집본, 썸네일은 검수 묶음의 심화 썸네일).
+- 업로드: `pixel-guides/youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-9-20261031.json`)로 와우메타 채널에 공개. 제목·설명은 파멸 심화편 양식(가이드 주소·기본편 주소·바로 가기 5구간, 구간 시각은 편집 파일 `storyboardSeries.chapters`). 새로 올린 영상은 첫 게시 직후 편집 화면이 임시본으로 남아 스크립트가 시간 초과로 멈추는 일이 반복돼, 다시 돌려 공개를 마쳤다(중복 업로드 없음).
+- 사이트: `artifacts/advanced-videos-9-20261031/apply.cjs`로 원고·KB·검사기에 advancedVideo를 넣어 `dbf466cf`(KB `f38a07c`)로 배포(main.80329b66.js), `shots.cjs`로 운영 19화면 통과.
+- 같은 날 사용자 지시("지금 올린 심화 가이드(파멸 제외) 다 삭제")로 9편을 영구 삭제했다(`pixel-guides/delete-advanced-9-20261031.mjs`, 편집 화면의 채널·번호·제목·파일 이름 확인 뒤 삭제, oEmbed 404로 확인). 사이트는 `b0bc488d`, KB는 `e691978`(되돌림)로 원래대로 돌려 다시 배포했다(main.318cefe3.js, 이번 작업 전과 같은 번들). 파멸 심화편 bFrBTJqCUuU와 기본편은 그대로다.
+- 다시 올릴 때: 업로드 목록의 status를 지우고 batch → verify → `apply.cjs` → 빌드·배포 → `shots.cjs`. apply.cjs는 공개 확인된 기록만 받는다.
