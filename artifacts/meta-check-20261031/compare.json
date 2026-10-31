@@ -1,0 +1,2870 @@
+[
+ {
+  "id": "warrior-protection",
+  "role": "tanks",
+  "defaultHero": "산왕",
+  "builds": {
+   "single-target": "산왕",
+   "mythic-plus": "산왕",
+   "raid": "산왕"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "거신": 61,
+     "산왕": 39
+    },
+    "n2": 26,
+    "cnt2": {
+     "산왕": 11,
+     "거신": 15
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "산왕": 74,
+     "거신": 26
+    },
+    "n2": 24,
+    "cnt2": {
+     "거신": 6,
+     "산왕": 18
+    },
+    "prev": {
+     "산왕": {
+      "heroTreeId": 61,
+      "count": 80,
+      "share": 0.8
+     },
+     "거신": {
+      "heroTreeId": 62,
+      "count": 20,
+      "share": 0.2
+     }
+    }
+   },
+   "mythic": {
+    "n": 81,
+    "cnt": {
+     "산왕": 80,
+     "거신": 1
+    },
+    "n2": 36,
+    "cnt2": {
+     "산왕": 35,
+     "거신": 1
+    },
+    "prev": {
+     "산왕": {
+      "heroTreeId": 61,
+      "count": 36,
+      "share": 1
+     },
+     "거신": {
+      "heroTreeId": 62,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "paladin-protection",
+  "role": "tanks",
+  "defaultHero": "빛의 대장장이",
+  "builds": {
+   "single-target": "빛의 대장장이",
+   "mythic-plus": "빛의 대장장이",
+   "raid": "빛의 대장장이"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "빛의 대장장이": 99,
+     "기사단": 1
+    },
+    "n2": 31,
+    "cnt2": {
+     "빛의 대장장이": 30,
+     "기사단": 1
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "빛의 대장장이": 98,
+     "기사단": 2
+    },
+    "n2": 24,
+    "cnt2": {
+     "빛의 대장장이": 23,
+     "기사단": 1
+    },
+    "prev": {
+     "기사단": {
+      "heroTreeId": 48,
+      "count": 0,
+      "share": 0
+     },
+     "빛의 대장장이": {
+      "heroTreeId": 49,
+      "count": 98,
+      "share": 1
+     }
+    }
+   },
+   "mythic": {
+    "n": 94,
+    "cnt": {
+     "빛의 대장장이": 93,
+     "기사단": 1
+    },
+    "n2": 35,
+    "cnt2": {
+     "빛의 대장장이": 34,
+     "기사단": 1
+    },
+    "prev": {
+     "기사단": {
+      "heroTreeId": 48,
+      "count": 0,
+      "share": 0
+     },
+     "빛의 대장장이": {
+      "heroTreeId": 49,
+      "count": 50,
+      "share": 1
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "deathknight-blood",
+  "role": "tanks",
+  "defaultHero": "산레인",
+  "builds": {
+   "single-target": "산레인",
+   "mythic-plus": "산레인",
+   "raid": "산레인"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "죽음의 인도자": 73,
+     "산레인": 27
+    },
+    "n2": 40,
+    "cnt2": {
+     "죽음의 인도자": 24,
+     "산레인": 16
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "산레인": 61,
+     "죽음의 인도자": 39
+    },
+    "n2": 32,
+    "cnt2": {
+     "죽음의 인도자": 11,
+     "산레인": 21
+    },
+    "prev": {
+     "산레인": {
+      "heroTreeId": 31,
+      "count": 71,
+      "share": 0.717
+     },
+     "죽음의 인도자": {
+      "heroTreeId": 33,
+      "count": 28,
+      "share": 0.283
+     }
+    }
+   },
+   "mythic": {
+    "n": 94,
+    "cnt": {
+     "산레인": 94
+    },
+    "n2": 31,
+    "cnt2": {
+     "산레인": 31
+    },
+    "prev": {
+     "산레인": {
+      "heroTreeId": 31,
+      "count": 61,
+      "share": 1
+     },
+     "죽음의 인도자": {
+      "heroTreeId": 33,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "monk-brewmaster",
+  "role": "tanks",
+  "defaultHero": "음영파",
+  "builds": {
+   "single-target": "음영파",
+   "mythic-plus": "조화의 종사",
+   "raid": "음영파"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "음영파": 94,
+     "조화의 종사": 6
+    },
+    "n2": 20,
+    "cnt2": {
+     "음영파": 19,
+     "조화의 종사": 1
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "음영파": 91,
+     "조화의 종사": 9
+    },
+    "n2": 16,
+    "cnt2": {
+     "음영파": 14,
+     "조화의 종사": 2
+    },
+    "prev": {
+     "음영파": {
+      "heroTreeId": 65,
+      "count": 85,
+      "share": 0.85
+     },
+     "조화의 종사": {
+      "heroTreeId": 66,
+      "count": 15,
+      "share": 0.15
+     }
+    }
+   },
+   "mythic": {
+    "n": 66,
+    "cnt": {
+     "조화의 종사": 64,
+     "음영파": 2
+    },
+    "n2": 18,
+    "cnt2": {
+     "조화의 종사": 17,
+     "음영파": 1
+    },
+    "prev": {
+     "음영파": {
+      "heroTreeId": 65,
+      "count": 1,
+      "share": 0.037
+     },
+     "조화의 종사": {
+      "heroTreeId": 66,
+      "count": 26,
+      "share": 0.963
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "druid-guardian",
+  "role": "tanks",
+  "defaultHero": "엘룬의 대행자",
+  "builds": {
+   "single-target": "엘룬의 대행자",
+   "mythic-plus": "엘룬의 대행자",
+   "raid": "엘룬의 대행자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "엘룬의 대행자": 100
+    },
+    "n2": 31,
+    "cnt2": {
+     "엘룬의 대행자": 31
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "엘룬의 대행자": 100
+    },
+    "n2": 21,
+    "cnt2": {
+     "엘룬의 대행자": 21
+    },
+    "prev": {
+     "엘룬의 대행자": {
+      "heroTreeId": 24,
+      "count": 100,
+      "share": 1
+     },
+     "발톱의 드루이드": {
+      "heroTreeId": 21,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 92,
+    "cnt": {
+     "엘룬의 대행자": 92
+    },
+    "n2": 44,
+    "cnt2": {
+     "엘룬의 대행자": 44
+    },
+    "prev": {
+     "엘룬의 대행자": {
+      "heroTreeId": 24,
+      "count": 58,
+      "share": 1
+     },
+     "발톱의 드루이드": {
+      "heroTreeId": 21,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "demonhunter-vengeance",
+  "role": "tanks",
+  "defaultHero": "궤멸자",
+  "builds": {
+   "single-target": "궤멸자",
+   "mythic-plus": "궤멸자",
+   "raid": "궤멸자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "궤멸자": 94,
+     "알드라치 파괴자": 6
+    },
+    "n2": 28,
+    "cnt2": {
+     "궤멸자": 27,
+     "알드라치 파괴자": 1
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "궤멸자": 96,
+     "알드라치 파괴자": 4
+    },
+    "n2": 27,
+    "cnt2": {
+     "궤멸자": 27
+    },
+    "prev": {
+     "궤멸자": {
+      "heroTreeId": 124,
+      "count": 95,
+      "share": 0.95
+     },
+     "알드라치 파괴자": {
+      "heroTreeId": 35,
+      "count": 5,
+      "share": 0.05
+     }
+    }
+   },
+   "mythic": {
+    "n": 80,
+    "cnt": {
+     "궤멸자": 80
+    },
+    "n2": 22,
+    "cnt2": {
+     "궤멸자": 22
+    },
+    "prev": {
+     "궤멸자": {
+      "heroTreeId": 124,
+      "count": 40,
+      "share": 1
+     },
+     "알드라치 파괴자": {
+      "heroTreeId": 35,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "warrior-arms",
+  "role": "melee",
+  "defaultHero": "학살자",
+  "builds": {
+   "single-target": "학살자",
+   "mythic-plus": "학살자",
+   "raid": "학살자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "학살자": 100
+    },
+    "n2": 49,
+    "cnt2": {
+     "학살자": 49
+    },
+    "prev": {
+     "학살자": 198,
+     "거신": 0
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "학살자": 100
+    },
+    "n2": 34,
+    "cnt2": {
+     "학살자": 34
+    },
+    "prev": {
+     "학살자": {
+      "heroTreeId": 60,
+      "count": 99,
+      "share": 1
+     },
+     "거신": {
+      "heroTreeId": 62,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 93,
+    "cnt": {
+     "학살자": 93
+    },
+    "n2": 46,
+    "cnt2": {
+     "학살자": 46
+    },
+    "prev": {
+     "학살자": {
+      "heroTreeId": 60,
+      "count": 62,
+      "share": 1
+     },
+     "거신": {
+      "heroTreeId": 62,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "warrior-fury",
+  "role": "melee",
+  "defaultHero": "학살자",
+  "builds": {
+   "single-target": "학살자",
+   "mythic-plus": "학살자",
+   "raid": "학살자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "학살자": 100
+    },
+    "n2": 27,
+    "cnt2": {
+     "학살자": 27
+    },
+    "prev": {
+     "학살자": 187,
+     "산왕": 4
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "학살자": 88,
+     "산왕": 12
+    },
+    "n2": 30,
+    "cnt2": {
+     "학살자": 28,
+     "산왕": 2
+    },
+    "prev": {
+     "학살자": {
+      "heroTreeId": 60,
+      "count": 91,
+      "share": 0.91
+     },
+     "산왕": {
+      "heroTreeId": 61,
+      "count": 9,
+      "share": 0.09
+     }
+    }
+   },
+   "mythic": {
+    "n": 77,
+    "cnt": {
+     "산왕": 38,
+     "학살자": 39
+    },
+    "n2": 22,
+    "cnt2": {
+     "학살자": 13,
+     "산왕": 9
+    },
+    "prev": {
+     "학살자": {
+      "heroTreeId": 60,
+      "count": 14,
+      "share": 0.412
+     },
+     "산왕": {
+      "heroTreeId": 61,
+      "count": 20,
+      "share": 0.588
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "paladin-retribution",
+  "role": "melee",
+  "defaultHero": "태양의 사자",
+  "builds": {
+   "single-target": "태양의 사자",
+   "mythic-plus": "태양의 사자",
+   "raid": "태양의 사자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "태양의 사자": 95,
+     "기사단": 5
+    },
+    "n2": 47,
+    "cnt2": {
+     "태양의 사자": 45,
+     "기사단": 2
+    },
+    "prev": {
+     "태양의 사자": 193,
+     "기사단": 7
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "태양의 사자": 95,
+     "기사단": 5
+    },
+    "n2": 42,
+    "cnt2": {
+     "태양의 사자": 41,
+     "기사단": 1
+    },
+    "prev": {
+     "태양의 사자": {
+      "heroTreeId": 50,
+      "count": 95,
+      "share": 0.95
+     },
+     "기사단": {
+      "heroTreeId": 48,
+      "count": 5,
+      "share": 0.05
+     }
+    }
+   },
+   "mythic": {
+    "n": 89,
+    "cnt": {
+     "태양의 사자": 89
+    },
+    "n2": 30,
+    "cnt2": {
+     "태양의 사자": 30
+    },
+    "prev": {
+     "태양의 사자": {
+      "heroTreeId": 50,
+      "count": 53,
+      "share": 1
+     },
+     "기사단": {
+      "heroTreeId": 48,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "rogue-assassination",
+  "role": "melee",
+  "defaultHero": "운명결속",
+  "builds": {
+   "single-target": "운명결속",
+   "mythic-plus": "운명결속",
+   "raid": "운명결속"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "운명결속": 100
+    },
+    "n2": 50,
+    "cnt2": {
+     "운명결속": 50
+    },
+    "prev": {
+     "운명결속": 198,
+     "죽음추적자": 2
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "운명결속": 99,
+     "죽음추적자": 1
+    },
+    "n2": 42,
+    "cnt2": {
+     "운명결속": 42
+    },
+    "prev": {
+     "운명결속": {
+      "heroTreeId": 52,
+      "count": 98,
+      "share": 0.99
+     },
+     "죽음추적자": {
+      "heroTreeId": 53,
+      "count": 1,
+      "share": 0.01
+     }
+    }
+   },
+   "mythic": {
+    "n": 34,
+    "cnt": {
+     "죽음추적자": 34
+    },
+    "n2": 20,
+    "cnt2": {
+     "죽음추적자": 20
+    },
+    "prev": {
+     "운명결속": {
+      "heroTreeId": 52,
+      "count": 0,
+      "share": 0
+     },
+     "죽음추적자": {
+      "heroTreeId": 53,
+      "count": 16,
+      "share": 1
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "rogue-outlaw",
+  "role": "melee",
+  "defaultHero": "기만자",
+  "builds": {
+   "single-target": "기만자",
+   "mythic-plus": "기만자",
+   "raid": "기만자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 95,
+    "cnt": {
+     "기만자": 94,
+     "운명결속": 1
+    },
+    "n2": 22,
+    "cnt2": {
+     "기만자": 22
+    },
+    "prev": {
+     "기만자": 73,
+     "운명결속": 1
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "기만자": 100
+    },
+    "n2": 20,
+    "cnt2": {
+     "기만자": 20
+    },
+    "prev": {
+     "기만자": {
+      "heroTreeId": 51,
+      "count": 89,
+      "share": 1
+     },
+     "운명결속": {
+      "heroTreeId": 52,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 31,
+    "cnt": {
+     "기만자": 31
+    },
+    "n2": 10,
+    "cnt2": {
+     "기만자": 10
+    },
+    "prev": {
+     "기만자": {
+      "heroTreeId": 51,
+      "count": 12,
+      "share": 1
+     },
+     "운명결속": {
+      "heroTreeId": 52,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "rogue-subtlety",
+  "role": "melee",
+  "defaultHero": "기만자",
+  "builds": {
+   "single-target": "기만자",
+   "mythic-plus": "기만자",
+   "raid": "기만자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "기만자": 100
+    },
+    "n2": 9,
+    "cnt2": {
+     "기만자": 9
+    },
+    "prev": {
+     "죽음추적자": 0,
+     "기만자": 199
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "기만자": 100
+    },
+    "n2": 7,
+    "cnt2": {
+     "기만자": 7
+    },
+    "prev": {
+     "죽음추적자": {
+      "heroTreeId": 53,
+      "count": 3,
+      "share": 0.03
+     },
+     "기만자": {
+      "heroTreeId": 51,
+      "count": 96,
+      "share": 0.97
+     }
+    }
+   },
+   "mythic": {
+    "n": 98,
+    "cnt": {
+     "기만자": 98
+    },
+    "n2": 17,
+    "cnt2": {
+     "기만자": 17
+    },
+    "prev": {
+     "죽음추적자": {
+      "heroTreeId": 53,
+      "count": 1,
+      "share": 0.011
+     },
+     "기만자": {
+      "heroTreeId": 51,
+      "count": 92,
+      "share": 0.989
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "deathknight-frost",
+  "role": "melee",
+  "defaultHero": "죽음의 인도자",
+  "builds": {
+   "single-target": "죽음의 인도자",
+   "mythic-plus": "죽음의 인도자",
+   "raid": "죽음의 인도자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "죽음의 인도자": 100
+    },
+    "n2": 52,
+    "cnt2": {
+     "죽음의 인도자": 52
+    },
+    "prev": {
+     "종말의 기수": 0,
+     "죽음의 인도자": 200
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "죽음의 인도자": 100
+    },
+    "n2": 38,
+    "cnt2": {
+     "죽음의 인도자": 38
+    },
+    "prev": {
+     "종말의 기수": {
+      "heroTreeId": 32,
+      "count": 0,
+      "share": 0
+     },
+     "죽음의 인도자": {
+      "heroTreeId": 33,
+      "count": 100,
+      "share": 1
+     }
+    }
+   },
+   "mythic": {
+    "n": 83,
+    "cnt": {
+     "죽음의 인도자": 82,
+     "종말의 기수": 1
+    },
+    "n2": 32,
+    "cnt2": {
+     "죽음의 인도자": 31,
+     "종말의 기수": 1
+    },
+    "prev": {
+     "종말의 기수": {
+      "heroTreeId": 32,
+      "count": 0,
+      "share": 0
+     },
+     "죽음의 인도자": {
+      "heroTreeId": 33,
+      "count": 43,
+      "share": 1
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "deathknight-unholy",
+  "role": "melee",
+  "defaultHero": "산레인",
+  "builds": {
+   "single-target": "산레인",
+   "mythic-plus": "산레인",
+   "raid": "산레인"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "산레인": 100
+    },
+    "n2": 52,
+    "cnt2": {
+     "산레인": 52
+    },
+    "prev": {
+     "종말의 기수": 0,
+     "산레인": 199
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "산레인": 100
+    },
+    "n2": 31,
+    "cnt2": {
+     "산레인": 31
+    },
+    "prev": {
+     "종말의 기수": {
+      "heroTreeId": 32,
+      "count": 0,
+      "share": 0
+     },
+     "산레인": {
+      "heroTreeId": 31,
+      "count": 99,
+      "share": 1
+     }
+    }
+   },
+   "mythic": {
+    "n": 39,
+    "cnt": {
+     "산레인": 39
+    },
+    "n2": 9,
+    "cnt2": {
+     "산레인": 9
+    },
+    "prev": {
+     "종말의 기수": {
+      "heroTreeId": 32,
+      "count": 0,
+      "share": 0
+     },
+     "산레인": {
+      "heroTreeId": 31,
+      "count": 10,
+      "share": 1
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "monk-windwalker",
+  "role": "melee",
+  "defaultHero": "천신의 대변자",
+  "builds": {
+   "single-target": "천신의 대변자",
+   "mythic-plus": "천신의 대변자",
+   "raid": "음영파"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "천신의 대변자": 93,
+     "음영파": 7
+    },
+    "n2": 41,
+    "cnt2": {
+     "천신의 대변자": 38,
+     "음영파": 3
+    },
+    "prev": {
+     "음영파": 30,
+     "천신의 대변자": 170
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "천신의 대변자": 97,
+     "음영파": 3
+    },
+    "n2": 23,
+    "cnt2": {
+     "천신의 대변자": 22,
+     "음영파": 1
+    },
+    "prev": {
+     "음영파": {
+      "heroTreeId": 65,
+      "count": 5,
+      "share": 0.051
+     },
+     "천신의 대변자": {
+      "heroTreeId": 64,
+      "count": 94,
+      "share": 0.949
+     }
+    }
+   },
+   "mythic": {
+    "n": 82,
+    "cnt": {
+     "천신의 대변자": 79,
+     "음영파": 3
+    },
+    "n2": 24,
+    "cnt2": {
+     "천신의 대변자": 23,
+     "음영파": 1
+    },
+    "prev": {
+     "음영파": {
+      "heroTreeId": 65,
+      "count": 0,
+      "share": 0
+     },
+     "천신의 대변자": {
+      "heroTreeId": 64,
+      "count": 31,
+      "share": 1
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "druid-feral",
+  "role": "melee",
+  "defaultHero": "야생추적자",
+  "builds": {
+   "single-target": "야생추적자",
+   "mythic-plus": "발톱의 드루이드",
+   "raid": "야생추적자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "야생추적자": 98,
+     "발톱의 드루이드": 2
+    },
+    "n2": 43,
+    "cnt2": {
+     "야생추적자": 42,
+     "발톱의 드루이드": 1
+    },
+    "prev": {
+     "발톱의 드루이드": 13,
+     "야생추적자": 187
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "야생추적자": 97,
+     "발톱의 드루이드": 3
+    },
+    "n2": 35,
+    "cnt2": {
+     "야생추적자": 33,
+     "발톱의 드루이드": 2
+    },
+    "prev": {
+     "발톱의 드루이드": {
+      "heroTreeId": 21,
+      "count": 7,
+      "share": 0.07
+     },
+     "야생추적자": {
+      "heroTreeId": 22,
+      "count": 93,
+      "share": 0.93
+     }
+    }
+   },
+   "mythic": {
+    "n": 86,
+    "cnt": {
+     "발톱의 드루이드": 82,
+     "야생추적자": 4
+    },
+    "n2": 39,
+    "cnt2": {
+     "발톱의 드루이드": 37,
+     "야생추적자": 2
+    },
+    "prev": {
+     "발톱의 드루이드": {
+      "heroTreeId": 21,
+      "count": 24,
+      "share": 1
+     },
+     "야생추적자": {
+      "heroTreeId": 22,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "demonhunter-havoc",
+  "role": "melee",
+  "defaultHero": "알드라치 파괴자",
+  "builds": {
+   "single-target": "알드라치 파괴자",
+   "mythic-plus": "지옥상흔",
+   "raid": "알드라치 파괴자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 99,
+    "cnt": {
+     "알드라치 파괴자": 97,
+     "지옥상흔": 2
+    },
+    "n2": 51,
+    "cnt2": {
+     "알드라치 파괴자": 51
+    },
+    "prev": {
+     "지옥상흔": 15,
+     "알드라치 파괴자": 185
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "알드라치 파괴자": 91,
+     "지옥상흔": 9
+    },
+    "n2": 36,
+    "cnt2": {
+     "알드라치 파괴자": 35,
+     "지옥상흔": 1
+    },
+    "prev": {
+     "지옥상흔": {
+      "heroTreeId": 34,
+      "count": 9,
+      "share": 0.091
+     },
+     "알드라치 파괴자": {
+      "heroTreeId": 35,
+      "count": 90,
+      "share": 0.909
+     }
+    }
+   },
+   "mythic": {
+    "n": 79,
+    "cnt": {
+     "지옥상흔": 6,
+     "알드라치 파괴자": 73
+    },
+    "n2": 33,
+    "cnt2": {
+     "지옥상흔": 5,
+     "알드라치 파괴자": 28
+    },
+    "prev": {
+     "지옥상흔": {
+      "heroTreeId": 34,
+      "count": 6,
+      "share": 0.154
+     },
+     "알드라치 파괴자": {
+      "heroTreeId": 35,
+      "count": 33,
+      "share": 0.846
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "shaman-enhancement",
+  "role": "melee",
+  "defaultHero": "폭풍인도자",
+  "builds": {
+   "single-target": "폭풍인도자",
+   "mythic-plus": "폭풍인도자",
+   "raid": "폭풍인도자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "폭풍인도자": 100
+    },
+    "n2": 39,
+    "cnt2": {
+     "폭풍인도자": 39
+    },
+    "prev": {
+     "폭풍인도자": 199,
+     "토템술사": 0
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "폭풍인도자": 100
+    },
+    "n2": 37,
+    "cnt2": {
+     "폭풍인도자": 37
+    },
+    "prev": {
+     "폭풍인도자": {
+      "heroTreeId": 55,
+      "count": 98,
+      "share": 1
+     },
+     "토템술사": {
+      "heroTreeId": 54,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 85,
+    "cnt": {
+     "폭풍인도자": 85
+    },
+    "n2": 40,
+    "cnt2": {
+     "폭풍인도자": 40
+    },
+    "prev": {
+     "폭풍인도자": {
+      "heroTreeId": 55,
+      "count": 47,
+      "share": 1
+     },
+     "토템술사": {
+      "heroTreeId": 54,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "hunter-survival",
+  "role": "melee",
+  "defaultHero": "파수꾼",
+  "builds": {
+   "single-target": "파수꾼",
+   "mythic-plus": "파수꾼",
+   "raid": "파수꾼"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "파수꾼": 97,
+     "무리의 지도자": 3
+    },
+    "n2": 16,
+    "cnt2": {
+     "파수꾼": 16
+    },
+    "prev": {
+     "파수꾼": 83,
+     "무리의 지도자": 4
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "파수꾼": 95,
+     "무리의 지도자": 5
+    },
+    "n2": 23,
+    "cnt2": {
+     "파수꾼": 22,
+     "무리의 지도자": 1
+    },
+    "prev": {
+     "파수꾼": {
+      "heroTreeId": 42,
+      "count": 90,
+      "share": 0.9
+     },
+     "무리의 지도자": {
+      "heroTreeId": 43,
+      "count": 10,
+      "share": 0.1
+     }
+    }
+   },
+   "mythic": {
+    "n": 69,
+    "cnt": {
+     "파수꾼": 65,
+     "무리의 지도자": 4
+    },
+    "n2": 20,
+    "cnt2": {
+     "파수꾼": 18,
+     "무리의 지도자": 2
+    },
+    "prev": {
+     "파수꾼": {
+      "heroTreeId": 42,
+      "count": 20,
+      "share": 0.952
+     },
+     "무리의 지도자": {
+      "heroTreeId": 43,
+      "count": 1,
+      "share": 0.048
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "hunter-beastmastery",
+  "role": "ranged",
+  "defaultHero": "무리의 지도자",
+  "builds": {
+   "single-target": "무리의 지도자",
+   "mythic-plus": "무리의 지도자",
+   "raid": "무리의 지도자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "무리의 지도자": 100
+    },
+    "n2": 52,
+    "cnt2": {
+     "무리의 지도자": 52
+    },
+    "prev": {
+     "무리의 지도자": 200,
+     "어둠 순찰자": 0
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "무리의 지도자": 100
+    },
+    "n2": 33,
+    "cnt2": {
+     "무리의 지도자": 33
+    },
+    "prev": {
+     "무리의 지도자": {
+      "heroTreeId": 43,
+      "count": 100,
+      "share": 1
+     },
+     "어둠 순찰자": {
+      "heroTreeId": 44,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 90,
+    "cnt": {
+     "무리의 지도자": 90
+    },
+    "n2": 30,
+    "cnt2": {
+     "무리의 지도자": 30
+    },
+    "prev": {
+     "무리의 지도자": {
+      "heroTreeId": 43,
+      "count": 46,
+      "share": 1
+     },
+     "어둠 순찰자": {
+      "heroTreeId": 44,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "hunter-marksmanship",
+  "role": "ranged",
+  "defaultHero": "파수꾼",
+  "builds": {
+   "single-target": "파수꾼",
+   "mythic-plus": "파수꾼",
+   "raid": "파수꾼"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "파수꾼": 100
+    },
+    "n2": 54,
+    "cnt2": {
+     "파수꾼": 54
+    },
+    "prev": {
+     "파수꾼": 200,
+     "어둠 순찰자": 0
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "파수꾼": 100
+    },
+    "n2": 49,
+    "cnt2": {
+     "파수꾼": 49
+    },
+    "prev": {
+     "파수꾼": {
+      "heroTreeId": 42,
+      "count": 100,
+      "share": 1
+     },
+     "어둠 순찰자": {
+      "heroTreeId": 44,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 83,
+    "cnt": {
+     "파수꾼": 79,
+     "어둠 순찰자": 4
+    },
+    "n2": 43,
+    "cnt2": {
+     "어둠 순찰자": 2,
+     "파수꾼": 41
+    },
+    "prev": {
+     "파수꾼": {
+      "heroTreeId": 42,
+      "count": 24,
+      "share": 1
+     },
+     "어둠 순찰자": {
+      "heroTreeId": 44,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "priest-shadow",
+  "role": "ranged",
+  "defaultHero": "공허술사",
+  "builds": {
+   "single-target": "공허술사",
+   "mythic-plus": "집정관",
+   "raid": "집정관"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "공허술사": 63,
+     "집정관": 37
+    },
+    "n2": 45,
+    "cnt2": {
+     "공허술사": 26,
+     "집정관": 19
+    },
+    "prev": {
+     "집정관": 45,
+     "공허술사": 154
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "집정관": 99,
+     "공허술사": 1
+    },
+    "n2": 35,
+    "cnt2": {
+     "집정관": 35
+    },
+    "prev": {
+     "집정관": {
+      "heroTreeId": 19,
+      "count": 99,
+      "share": 0.99
+     },
+     "공허술사": {
+      "heroTreeId": 18,
+      "count": 1,
+      "share": 0.01
+     }
+    }
+   },
+   "mythic": {
+    "n": 79,
+    "cnt": {
+     "공허술사": 25,
+     "집정관": 54
+    },
+    "n2": 27,
+    "cnt2": {
+     "공허술사": 9,
+     "집정관": 18
+    },
+    "prev": {
+     "집정관": {
+      "heroTreeId": 19,
+      "count": 24,
+      "share": 0.75
+     },
+     "공허술사": {
+      "heroTreeId": 18,
+      "count": 8,
+      "share": 0.25
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "demonhunter-devourer",
+  "role": "ranged",
+  "defaultHero": "공허상흔",
+  "builds": {
+   "single-target": "공허상흔",
+   "mythic-plus": "궤멸자",
+   "raid": "궤멸자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "공허상흔": 93,
+     "궤멸자": 7
+    },
+    "n2": 51,
+    "cnt2": {
+     "공허상흔": 45,
+     "궤멸자": 6
+    },
+    "prev": {
+     "공허상흔": 111,
+     "궤멸자": 88
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "공허상흔": 43,
+     "궤멸자": 57
+    },
+    "n2": 39,
+    "cnt2": {
+     "공허상흔": 22,
+     "궤멸자": 17
+    },
+    "prev": {
+     "공허상흔": {
+      "heroTreeId": 126,
+      "count": 15,
+      "share": 0.15
+     },
+     "궤멸자": {
+      "heroTreeId": 124,
+      "count": 85,
+      "share": 0.85
+     }
+    }
+   },
+   "mythic": {
+    "n": 92,
+    "cnt": {
+     "공허상흔": 27,
+     "궤멸자": 65
+    },
+    "n2": 34,
+    "cnt2": {
+     "공허상흔": 12,
+     "궤멸자": 22
+    },
+    "prev": {
+     "공허상흔": {
+      "heroTreeId": 126,
+      "count": 12,
+      "share": 0.194
+     },
+     "궤멸자": {
+      "heroTreeId": 124,
+      "count": 50,
+      "share": 0.806
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "shaman-elemental",
+  "role": "ranged",
+  "defaultHero": "선견자",
+  "builds": {
+   "single-target": "선견자",
+   "mythic-plus": "선견자",
+   "raid": "선견자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "선견자": 100
+    },
+    "n2": 50,
+    "cnt2": {
+     "선견자": 50
+    },
+    "prev": {
+     "선견자": 200,
+     "폭풍인도자": 0
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "선견자": 100
+    },
+    "n2": 32,
+    "cnt2": {
+     "선견자": 32
+    },
+    "prev": {
+     "선견자": {
+      "heroTreeId": 56,
+      "count": 99,
+      "share": 1
+     },
+     "폭풍인도자": {
+      "heroTreeId": 55,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 96,
+    "cnt": {
+     "선견자": 96
+    },
+    "n2": 40,
+    "cnt2": {
+     "선견자": 40
+    },
+    "prev": {
+     "선견자": {
+      "heroTreeId": 56,
+      "count": 63,
+      "share": 1
+     },
+     "폭풍인도자": {
+      "heroTreeId": 55,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "mage-arcane",
+  "role": "ranged",
+  "defaultHero": "성난태양",
+  "builds": {
+   "single-target": "성난태양",
+   "mythic-plus": "성난태양",
+   "raid": "성난태양"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "성난태양": 100
+    },
+    "n2": 54,
+    "cnt2": {
+     "성난태양": 54
+    },
+    "prev": {
+     "성난태양": 196,
+     "주문술사": 0
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "성난태양": 100
+    },
+    "n2": 25,
+    "cnt2": {
+     "성난태양": 25
+    },
+    "prev": {
+     "성난태양": {
+      "heroTreeId": 39,
+      "count": 100,
+      "share": 1
+     },
+     "주문술사": {
+      "heroTreeId": 40,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 77,
+    "cnt": {
+     "성난태양": 77
+    },
+    "n2": 36,
+    "cnt2": {
+     "성난태양": 36
+    },
+    "prev": {
+     "성난태양": {
+      "heroTreeId": 39,
+      "count": 34,
+      "share": 1
+     },
+     "주문술사": {
+      "heroTreeId": 40,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "mage-fire",
+  "role": "ranged",
+  "defaultHero": "성난태양",
+  "builds": {
+   "single-target": "성난태양",
+   "mythic-plus": "성난태양",
+   "raid": "성난태양"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 69,
+    "cnt": {
+     "성난태양": 69
+    },
+    "n2": 30,
+    "cnt2": {
+     "성난태양": 30
+    },
+    "prev": {
+     "성난태양": 33,
+     "서리불꽃": 0
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "성난태양": 100
+    },
+    "n2": 44,
+    "cnt2": {
+     "성난태양": 44
+    },
+    "prev": {
+     "성난태양": {
+      "heroTreeId": 39,
+      "count": 52,
+      "share": 1
+     },
+     "서리불꽃": {
+      "heroTreeId": 41,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 79,
+    "cnt": {
+     "성난태양": 79
+    },
+    "n2": 38,
+    "cnt2": {
+     "성난태양": 38
+    },
+    "prev": {
+     "성난태양": {
+      "heroTreeId": 39,
+      "count": 27,
+      "share": 1
+     },
+     "서리불꽃": {
+      "heroTreeId": 41,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "mage-frost",
+  "role": "ranged",
+  "defaultHero": "주문술사",
+  "builds": {
+   "single-target": "주문술사",
+   "mythic-plus": "서리불꽃",
+   "raid": "주문술사"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "주문술사": 100
+    },
+    "n2": 33,
+    "cnt2": {
+     "주문술사": 33
+    },
+    "prev": {
+     "주문술사": 140,
+     "서리불꽃": 1
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "주문술사": 83,
+     "서리불꽃": 17
+    },
+    "n2": 34,
+    "cnt2": {
+     "주문술사": 29,
+     "서리불꽃": 5
+    },
+    "prev": {
+     "주문술사": {
+      "heroTreeId": 40,
+      "count": 85,
+      "share": 0.85
+     },
+     "서리불꽃": {
+      "heroTreeId": 41,
+      "count": 15,
+      "share": 0.15
+     }
+    }
+   },
+   "mythic": {
+    "n": 75,
+    "cnt": {
+     "주문술사": 24,
+     "서리불꽃": 51
+    },
+    "n2": 27,
+    "cnt2": {
+     "서리불꽃": 17,
+     "주문술사": 10
+    },
+    "prev": {
+     "주문술사": {
+      "heroTreeId": 40,
+      "count": 12,
+      "share": 0.333
+     },
+     "서리불꽃": {
+      "heroTreeId": 41,
+      "count": 24,
+      "share": 0.667
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "warlock-affliction",
+  "role": "ranged",
+  "defaultHero": "지옥소환사",
+  "builds": {
+   "single-target": "지옥소환사",
+   "mythic-plus": "영혼 수확자",
+   "raid": "영혼 수확자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "지옥소환사": 97,
+     "영혼 수확자": 3
+    },
+    "n2": 92,
+    "cnt2": {
+     "지옥소환사": 89,
+     "영혼 수확자": 3
+    },
+    "prev": {
+     "영혼 수확자": 28,
+     "지옥소환사": 171
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "영혼 수확자": 95,
+     "지옥소환사": 5
+    },
+    "n2": 49,
+    "cnt2": {
+     "영혼 수확자": 46,
+     "지옥소환사": 3
+    },
+    "prev": {
+     "영혼 수확자": {
+      "heroTreeId": 57,
+      "count": 95,
+      "share": 0.95
+     },
+     "지옥소환사": {
+      "heroTreeId": 58,
+      "count": 5,
+      "share": 0.05
+     }
+    }
+   },
+   "mythic": {
+    "n": 65,
+    "cnt": {
+     "영혼 수확자": 65
+    },
+    "n2": 23,
+    "cnt2": {
+     "영혼 수확자": 23
+    },
+    "prev": {
+     "영혼 수확자": {
+      "heroTreeId": 57,
+      "count": 25,
+      "share": 1
+     },
+     "지옥소환사": {
+      "heroTreeId": 58,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "warlock-demonology",
+  "role": "ranged",
+  "defaultHero": "악마학자",
+  "builds": {
+   "single-target": "악마학자",
+   "mythic-plus": "악마학자",
+   "raid": "악마학자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "악마학자": 100
+    },
+    "n2": 39,
+    "cnt2": {
+     "악마학자": 39
+    },
+    "prev": {
+     "영혼 수확자": 0,
+     "악마학자": 200
+    }
+   },
+   "raid": {
+    "n": 99,
+    "cnt": {
+     "악마학자": 99
+    },
+    "n2": 37,
+    "cnt2": {
+     "악마학자": 37
+    },
+    "prev": {
+     "영혼 수확자": {
+      "heroTreeId": 57,
+      "count": 0,
+      "share": 0
+     },
+     "악마학자": {
+      "heroTreeId": 59,
+      "count": 99,
+      "share": 1
+     }
+    }
+   },
+   "mythic": {
+    "n": 88,
+    "cnt": {
+     "악마학자": 88
+    },
+    "n2": 34,
+    "cnt2": {
+     "악마학자": 34
+    },
+    "prev": {
+     "영혼 수확자": {
+      "heroTreeId": 57,
+      "count": 0,
+      "share": 0
+     },
+     "악마학자": {
+      "heroTreeId": 59,
+      "count": 36,
+      "share": 1
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "warlock-destruction",
+  "role": "ranged",
+  "defaultHero": "지옥소환사",
+  "builds": {
+   "single-target": "지옥소환사",
+   "mythic-plus": "악마학자",
+   "raid": "지옥소환사"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "지옥소환사": 99,
+     "악마학자": 1
+    },
+    "n2": 19,
+    "cnt2": {
+     "지옥소환사": 19
+    },
+    "prev": {
+     "지옥소환사": 70,
+     "악마학자": 3
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "지옥소환사": 95,
+     "악마학자": 5
+    },
+    "n2": 20,
+    "cnt2": {
+     "지옥소환사": 19,
+     "악마학자": 1
+    },
+    "prev": {
+     "지옥소환사": {
+      "heroTreeId": 58,
+      "count": 54,
+      "share": 0.931
+     },
+     "악마학자": {
+      "heroTreeId": 59,
+      "count": 4,
+      "share": 0.069
+     }
+    }
+   },
+   "mythic": {
+    "n": 63,
+    "cnt": {
+     "악마학자": 59,
+     "지옥소환사": 4
+    },
+    "n2": 24,
+    "cnt2": {
+     "악마학자": 23,
+     "지옥소환사": 1
+    },
+    "prev": {
+     "지옥소환사": {
+      "heroTreeId": 58,
+      "count": 1,
+      "share": 0.053
+     },
+     "악마학자": {
+      "heroTreeId": 59,
+      "count": 18,
+      "share": 0.947
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "druid-balance",
+  "role": "ranged",
+  "defaultHero": "숲의 수호자",
+  "builds": {
+   "single-target": "숲의 수호자",
+   "mythic-plus": "엘룬의 대행자",
+   "raid": "엘룬의 대행자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "숲의 수호자": 99,
+     "엘룬의 대행자": 1
+    },
+    "n2": 42,
+    "cnt2": {
+     "숲의 수호자": 42
+    },
+    "prev": {
+     "엘룬의 대행자": 5,
+     "숲의 수호자": 193
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "숲의 수호자": 97,
+     "엘룬의 대행자": 3
+    },
+    "n2": 30,
+    "cnt2": {
+     "숲의 수호자": 29,
+     "엘룬의 대행자": 1
+    },
+    "prev": {
+     "엘룬의 대행자": {
+      "heroTreeId": 24,
+      "count": 2,
+      "share": 0.02
+     },
+     "숲의 수호자": {
+      "heroTreeId": 23,
+      "count": 98,
+      "share": 0.98
+     }
+    }
+   },
+   "mythic": {
+    "n": 74,
+    "cnt": {
+     "엘룬의 대행자": 74
+    },
+    "n2": 17,
+    "cnt2": {
+     "엘룬의 대행자": 17
+    },
+    "prev": {
+     "엘룬의 대행자": {
+      "heroTreeId": 24,
+      "count": 26,
+      "share": 1
+     },
+     "숲의 수호자": {
+      "heroTreeId": 23,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "evoker-devastation",
+  "role": "ranged",
+  "defaultHero": "비늘사령관",
+  "builds": {
+   "single-target": "비늘사령관",
+   "mythic-plus": "비늘사령관",
+   "raid": "비늘사령관"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "비늘사령관": 81,
+     "불꽃형성자": 19
+    },
+    "n2": 42,
+    "cnt2": {
+     "불꽃형성자": 10,
+     "비늘사령관": 32
+    },
+    "prev": {
+     "비늘사령관": 159,
+     "불꽃형성자": 40
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "비늘사령관": 100
+    },
+    "n2": 30,
+    "cnt2": {
+     "비늘사령관": 30
+    },
+    "prev": {
+     "비늘사령관": {
+      "heroTreeId": 36,
+      "count": 100,
+      "share": 1
+     },
+     "불꽃형성자": {
+      "heroTreeId": 37,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 64,
+    "cnt": {
+     "비늘사령관": 58,
+     "불꽃형성자": 6
+    },
+    "n2": 16,
+    "cnt2": {
+     "비늘사령관": 13,
+     "불꽃형성자": 3
+    },
+    "prev": {
+     "비늘사령관": {
+      "heroTreeId": 36,
+      "count": 31,
+      "share": 0.912
+     },
+     "불꽃형성자": {
+      "heroTreeId": 37,
+      "count": 3,
+      "share": 0.088
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "evoker-augmentation",
+  "role": "ranged",
+  "defaultHero": "시간 감시자",
+  "builds": {
+   "single-target": "시간 감시자",
+   "mythic-plus": "시간 감시자",
+   "raid": "시간 감시자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "시간 감시자": 100
+    },
+    "n2": 42,
+    "cnt2": {
+     "시간 감시자": 42
+    },
+    "prev": {
+     "시간 감시자": 200,
+     "비늘사령관": 0
+    }
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "시간 감시자": 100
+    },
+    "n2": 32,
+    "cnt2": {
+     "시간 감시자": 32
+    },
+    "prev": {
+     "시간 감시자": {
+      "heroTreeId": 38,
+      "count": 100,
+      "share": 1
+     },
+     "비늘사령관": {
+      "heroTreeId": 36,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 79,
+    "cnt": {
+     "시간 감시자": 76,
+     "비늘사령관": 3
+    },
+    "n2": 27,
+    "cnt2": {
+     "시간 감시자": 26,
+     "비늘사령관": 1
+    },
+    "prev": {
+     "시간 감시자": {
+      "heroTreeId": 38,
+      "count": 23,
+      "share": 0.821
+     },
+     "비늘사령관": {
+      "heroTreeId": 36,
+      "count": 5,
+      "share": 0.179
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "paladin-holy",
+  "role": "healers",
+  "defaultHero": "태양의 사자",
+  "builds": {
+   "single-target": "태양의 사자",
+   "mythic-plus": "태양의 사자",
+   "raid": "태양의 사자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 99,
+    "cnt": {
+     "태양의 사자": 99
+    },
+    "n2": 26,
+    "cnt2": {
+     "태양의 사자": 26
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "태양의 사자": 100
+    },
+    "n2": 21,
+    "cnt2": {
+     "태양의 사자": 21
+    },
+    "prev": {
+     "태양의 사자": {
+      "heroTreeId": 50,
+      "count": 100,
+      "share": 1
+     },
+     "빛의 대장장이": {
+      "heroTreeId": 49,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 93,
+    "cnt": {
+     "빛의 대장장이": 92,
+     "태양의 사자": 1
+    },
+    "n2": 34,
+    "cnt2": {
+     "빛의 대장장이": 33,
+     "태양의 사자": 1
+    },
+    "prev": {
+     "태양의 사자": {
+      "heroTreeId": 50,
+      "count": 0,
+      "share": 0
+     },
+     "빛의 대장장이": {
+      "heroTreeId": 49,
+      "count": 56,
+      "share": 1
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "priest-discipline",
+  "role": "healers",
+  "defaultHero": "공허술사",
+  "builds": {
+   "single-target": "공허술사",
+   "mythic-plus": "예언자",
+   "raid": "공허술사"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "공허술사": 92,
+     "예언자": 8
+    },
+    "n2": 27,
+    "cnt2": {
+     "공허술사": 22,
+     "예언자": 5
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "공허술사": 94,
+     "예언자": 6
+    },
+    "n2": 22,
+    "cnt2": {
+     "예언자": 2,
+     "공허술사": 20
+    },
+    "prev": {
+     "공허술사": {
+      "heroTreeId": 18,
+      "count": 93,
+      "share": 0.93
+     },
+     "예언자": {
+      "heroTreeId": 20,
+      "count": 7,
+      "share": 0.07
+     }
+    }
+   },
+   "mythic": {
+    "n": 80,
+    "cnt": {
+     "예언자": 77,
+     "공허술사": 3
+    },
+    "n2": 29,
+    "cnt2": {
+     "예언자": 28,
+     "공허술사": 1
+    },
+    "prev": {
+     "공허술사": {
+      "heroTreeId": 18,
+      "count": 1,
+      "share": 0.032
+     },
+     "예언자": {
+      "heroTreeId": 20,
+      "count": 30,
+      "share": 0.968
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "priest-holy",
+  "role": "healers",
+  "defaultHero": "예언자",
+  "builds": {
+   "single-target": "예언자",
+   "mythic-plus": "예언자",
+   "raid": "예언자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "예언자": 100
+    },
+    "n2": 33,
+    "cnt2": {
+     "예언자": 33
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "예언자": 100
+    },
+    "n2": 24,
+    "cnt2": {
+     "예언자": 24
+    },
+    "prev": {
+     "집정관": {
+      "heroTreeId": 19,
+      "count": 0,
+      "share": 0
+     },
+     "예언자": {
+      "heroTreeId": 20,
+      "count": 99,
+      "share": 1
+     }
+    }
+   },
+   "mythic": {
+    "n": 89,
+    "cnt": {
+     "예언자": 89
+    },
+    "n2": 35,
+    "cnt2": {
+     "예언자": 35
+    },
+    "prev": {
+     "집정관": {
+      "heroTreeId": 19,
+      "count": 0,
+      "share": 0
+     },
+     "예언자": {
+      "heroTreeId": 20,
+      "count": 49,
+      "share": 1
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "shaman-restoration",
+  "role": "healers",
+  "defaultHero": "토템술사",
+  "builds": {
+   "single-target": "토템술사",
+   "mythic-plus": "토템술사",
+   "raid": "토템술사"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "토템술사": 100
+    },
+    "n2": 29,
+    "cnt2": {
+     "토템술사": 29
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "토템술사": 100
+    },
+    "n2": 31,
+    "cnt2": {
+     "토템술사": 31
+    },
+    "prev": {
+     "토템술사": {
+      "heroTreeId": 54,
+      "count": 100,
+      "share": 1
+     },
+     "선견자": {
+      "heroTreeId": 56,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 94,
+    "cnt": {
+     "토템술사": 94
+    },
+    "n2": 36,
+    "cnt2": {
+     "토템술사": 36
+    },
+    "prev": {
+     "토템술사": {
+      "heroTreeId": 54,
+      "count": 57,
+      "share": 1
+     },
+     "선견자": {
+      "heroTreeId": 56,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "monk-mistweaver",
+  "role": "healers",
+  "defaultHero": "천신의 대변자",
+  "builds": {
+   "single-target": "천신의 대변자",
+   "mythic-plus": "천신의 대변자",
+   "raid": "천신의 대변자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "천신의 대변자": 98,
+     "조화의 종사": 2
+    },
+    "n2": 36,
+    "cnt2": {
+     "천신의 대변자": 36
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "천신의 대변자": 98,
+     "조화의 종사": 2
+    },
+    "n2": 23,
+    "cnt2": {
+     "천신의 대변자": 23
+    },
+    "prev": {
+     "천신의 대변자": {
+      "heroTreeId": 64,
+      "count": 96,
+      "share": 0.96
+     },
+     "조화의 종사": {
+      "heroTreeId": 66,
+      "count": 4,
+      "share": 0.04
+     }
+    }
+   },
+   "mythic": {
+    "n": 77,
+    "cnt": {
+     "천신의 대변자": 77
+    },
+    "n2": 25,
+    "cnt2": {
+     "천신의 대변자": 25
+    },
+    "prev": {
+     "천신의 대변자": {
+      "heroTreeId": 64,
+      "count": 25,
+      "share": 1
+     },
+     "조화의 종사": {
+      "heroTreeId": 66,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "druid-restoration",
+  "role": "healers",
+  "defaultHero": "야생추적자",
+  "builds": {
+   "single-target": "야생추적자",
+   "mythic-plus": "야생추적자",
+   "raid": "야생추적자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "야생추적자": 100
+    },
+    "n2": 34,
+    "cnt2": {
+     "야생추적자": 34
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "야생추적자": 100
+    },
+    "n2": 36,
+    "cnt2": {
+     "야생추적자": 36
+    },
+    "prev": {
+     "야생추적자": {
+      "heroTreeId": 22,
+      "count": 98,
+      "share": 1
+     },
+     "숲의 수호자": {
+      "heroTreeId": 23,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 86,
+    "cnt": {
+     "야생추적자": 81,
+     "숲의 수호자": 5
+    },
+    "n2": 32,
+    "cnt2": {
+     "야생추적자": 30,
+     "숲의 수호자": 2
+    },
+    "prev": {
+     "야생추적자": {
+      "heroTreeId": 22,
+      "count": 29,
+      "share": 0.935
+     },
+     "숲의 수호자": {
+      "heroTreeId": 23,
+      "count": 2,
+      "share": 0.065
+     }
+    }
+   }
+  }
+ },
+ {
+  "id": "evoker-preservation",
+  "role": "healers",
+  "defaultHero": "불꽃형성자",
+  "builds": {
+   "single-target": "불꽃형성자",
+   "mythic-plus": "불꽃형성자",
+   "raid": "불꽃형성자"
+  },
+  "modes": {
+   "sszorak": {
+    "n": 100,
+    "cnt": {
+     "불꽃형성자": 100
+    },
+    "n2": 25,
+    "cnt2": {
+     "불꽃형성자": 25
+    },
+    "prev": null
+   },
+   "raid": {
+    "n": 100,
+    "cnt": {
+     "불꽃형성자": 100
+    },
+    "n2": 28,
+    "cnt2": {
+     "불꽃형성자": 28
+    },
+    "prev": {
+     "불꽃형성자": {
+      "heroTreeId": 37,
+      "count": 100,
+      "share": 1
+     },
+     "시간 감시자": {
+      "heroTreeId": 38,
+      "count": 0,
+      "share": 0
+     }
+    }
+   },
+   "mythic": {
+    "n": 73,
+    "cnt": {
+     "불꽃형성자": 69,
+     "시간 감시자": 4
+    },
+    "n2": 21,
+    "cnt2": {
+     "불꽃형성자": 21
+    },
+    "prev": {
+     "불꽃형성자": {
+      "heroTreeId": 37,
+      "count": 28,
+      "share": 1
+     },
+     "시간 감시자": {
+      "heroTreeId": 38,
+      "count": 0,
+      "share": 0
+     }
+    }
+   }
+  }
+ }
+]

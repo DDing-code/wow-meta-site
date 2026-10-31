@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-24T05:08:50.866Z",
+    "generatedAt": "2026-10-31T10:15:12.519Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
-    "totalSkills": 3004,
-    "rawTotalSkills": 3004,
+    "totalSkills": 3005,
+    "rawTotalSkills": 3005,
     "duplicateIds": [],
     "totalSynergies": 607,
     "stats": {
-      "total": 3004,
+      "total": 3005,
       "byType": {
         "buff": 140,
         "hero-talent": 553,
         "atomic-skill": 567,
         "proc": 29,
         "skill": 125,
-        "talent": 1009,
+        "talent": 1010,
         "spec-talent": 388,
         "passive": 81,
         "hero-tree": 2,
@@ -32,7 +32,7 @@
       "byClass": {
         "DeathKnight": 128,
         "DemonHunter": 153,
-        "Druid": 220,
+        "Druid": 221,
         "Evoker": 148,
         "Hunter": 225,
         "Mage": 229,
@@ -57,7 +57,7 @@
         "Druid-수호": 41,
         "Druid-야성": 51,
         "Druid-조화": 37,
-        "Druid-회복": 35,
+        "Druid-회복": 36,
         "Evoker-공용": 46,
         "Evoker-보존": 32,
         "Evoker-증강": 42,
@@ -105,8 +105,8 @@
         "Warrior-분노": 1
       },
       "quality": {
-        "withWikilinks": 2909,
-        "withSynergies": 2121,
+        "withWikilinks": 2910,
+        "withSynergies": 2122,
         "avgLinkDensity": "0.037"
       }
     }
@@ -111445,6 +111445,56 @@
       },
       "source": {
         "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\05-사냥꾼\\생존\\Buffs\\유탄곡예사.md",
+        "lastUpdate": ""
+      }
+    },
+    "470549": {
+      "id": "470549",
+      "type": "talent",
+      "class": "Druid",
+      "spec": "회복",
+      "specs": [
+        "Restoration"
+      ],
+      "name": "신속한 치유 연마",
+      "koreanName": "신속한 치유 연마",
+      "englishName": "Improved Swiftmend",
+      "icon": "ability_druid_empoweredtouch",
+      "iconName": "ability_druid_empoweredtouch",
+      "school": "",
+      "cooldown": "신속한 치유 연계",
+      "castTime": "지속 효과",
+      "resourceCost": "없음",
+      "range": "아군",
+      "description": "신속한 치유의 치유량이 30%만큼 증가합니다.",
+      "category": "talent",
+      "tags": [],
+      "patch": "12.1.5",
+      "created": "",
+      "updated": "",
+      "nonAtomic": false,
+      "iconUrl": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_empoweredtouch.jpg",
+      "iconUrls": {
+        "tiny": "https://wow.zamimg.com/images/wow/icons/tiny/ability_druid_empoweredtouch.jpg",
+        "small": "https://wow.zamimg.com/images/wow/icons/small/ability_druid_empoweredtouch.jpg",
+        "medium": "https://wow.zamimg.com/images/wow/icons/medium/ability_druid_empoweredtouch.jpg",
+        "large": "https://wow.zamimg.com/images/wow/icons/large/ability_druid_empoweredtouch.jpg"
+      },
+      "synergies": {
+        "relatedSkills": [
+          "08-직업별-Knowledge-Base/03-드루이드/회복/Skills/신속한치유"
+        ],
+        "relatedTalents": [],
+        "relatedHeroTalents": []
+      },
+      "quality": {
+        "wikilinkCount": 1,
+        "synergyCount": 1,
+        "linkDensity": 0.007,
+        "hasWikilinks": true
+      },
+      "source": {
+        "kbPath": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base\\03-드루이드\\회복\\Talents\\신속한치유연마.md",
         "lastUpdate": ""
       }
     },

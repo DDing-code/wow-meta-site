@@ -1,0 +1,40 @@
+deathknight-blood | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+deathknight-frost | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+deathknight-unholy | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+demonhunter-devourer | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Updated for Patch 12.1.5.
+demonhunter-havoc | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Updated for Patch 12.1.5, adjusted Aldrachi to recommended to align with mid Season 2 buffs.
+demonhunter-vengeance | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5, no changes needed.
+druid-balance | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+druid-feral | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+druid-guardian | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+druid-restoration | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Updated for Patch 12.1.5.
+evoker-augmentation | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Updated for Patch 12.1.5.
+evoker-devastation | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+evoker-preservation | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Updated for Patch 12.1.5.
+hunter-beastmastery | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+hunter-marksmanship | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Updated for Patch 12.1.5.
+hunter-survival | Oct 22, 2026 - 12:17 PM | 22 Oct. 2026: Updated the Sentinel Single-Target, Raid AoE/Cleave, Mythic+ and Delve builds to take Outland Venom now that it is fixed to grant its full 
+mage-arcane | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+mage-fire | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+mage-frost | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+monk-brewmaster | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+monk-mistweaver | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+monk-windwalker | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+paladin-holy | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Lightsmith Mythic+ build updated.
+paladin-protection | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Updated for Patch 12.1.5.
+paladin-retribution | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Updated for Patch 12.1.5.
+priest-discipline | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+priest-holy | Oct 17, 2026 - 6:30 AM | 17 Oct. 2026: Fixed a the Oracle Mythic+ build export.
+priest-shadow | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Update Voidweaver Raid builds.
+rogue-assassination | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+rogue-outlaw | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+rogue-subtlety | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Updated for Patch 12.1.5.
+shaman-elemental | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+shaman-enhancement | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+shaman-restoration | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+warlock-affliction | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+warlock-demonology | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+warlock-destruction | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+warrior-arms | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+warrior-fury | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Reviewed for Patch 12.1.5.
+warrior-protection | Oct 12, 2026 - 4:30 PM | 12 Oct. 2026: Updated and reviewed for 12.1.5.

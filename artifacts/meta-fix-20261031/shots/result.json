@@ -1,0 +1,222 @@
+[
+  {
+    "route": "druid/feral",
+    "width": 1440,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\druid-feral-1440.png"
+  },
+  {
+    "route": "druid/feral",
+    "width": 390,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\druid-feral-390.png"
+  },
+  {
+    "route": "druid/restoration",
+    "width": 1440,
+    "found": true,
+    "icons": 5,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\druid-restoration-1440.png"
+  },
+  {
+    "route": "druid/restoration",
+    "width": 390,
+    "found": true,
+    "icons": 5,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\druid-restoration-390.png"
+  },
+  {
+    "route": "hunter/marksmanship",
+    "width": 1440,
+    "found": true,
+    "icons": 5,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\hunter-marksmanship-1440.png"
+  },
+  {
+    "route": "hunter/marksmanship",
+    "width": 390,
+    "found": true,
+    "icons": 5,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\hunter-marksmanship-390.png"
+  },
+  {
+    "route": "mage/fire",
+    "width": 1440,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\mage-fire-1440.png"
+  },
+  {
+    "route": "mage/fire",
+    "width": 390,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\mage-fire-390.png"
+  },
+  {
+    "route": "rogue/subtlety",
+    "width": 1440,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\rogue-subtlety-1440.png"
+  },
+  {
+    "route": "rogue/subtlety",
+    "width": 390,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\rogue-subtlety-390.png"
+  },
+  {
+    "route": "warlock/affliction",
+    "width": 1440,
+    "found": true,
+    "icons": 1,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\warlock-affliction-1440.png"
+  },
+  {
+    "route": "warlock/affliction",
+    "width": 390,
+    "found": true,
+    "icons": 1,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\warlock-affliction-390.png"
+  },
+  {
+    "route": "warlock/destruction",
+    "width": 1440,
+    "found": true,
+    "icons": 2,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\warlock-destruction-1440.png"
+  },
+  {
+    "route": "warlock/destruction",
+    "width": 390,
+    "found": true,
+    "icons": 2,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\warlock-destruction-390.png"
+  },
+  {
+    "route": "monk/windwalker",
+    "width": 1440,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\monk-windwalker-1440.png"
+  },
+  {
+    "route": "monk/windwalker",
+    "width": 390,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\monk-windwalker-390.png"
+  },
+  {
+    "route": "druid/balance",
+    "width": 1440,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\druid-balance-1440.png"
+  },
+  {
+    "route": "druid/balance",
+    "width": 390,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\druid-balance-390.png"
+  },
+  {
+    "route": "demonhunter/devourer",
+    "width": 1440,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\demonhunter-devourer-1440.png"
+  },
+  {
+    "route": "demonhunter/devourer",
+    "width": 390,
+    "found": true,
+    "icons": 0,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\demonhunter-devourer-390.png"
+  },
+  {
+    "route": "hunter/survival",
+    "width": 1440,
+    "found": true,
+    "icons": 3,
+    "errors": [],
+    "scrollWidth": 1440,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\hunter-survival-1440.png"
+  },
+  {
+    "route": "hunter/survival",
+    "width": 390,
+    "found": true,
+    "icons": 3,
+    "errors": [],
+    "scrollWidth": 390,
+    "ok": true,
+    "file": "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\meta-fix-20261031\\shots\\hunter-survival-390.png"
+  }
+]
