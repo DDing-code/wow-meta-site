@@ -1,0 +1,52 @@
+{
+  "390": {
+    "overflow": false,
+    "overflowBoxes": 0,
+    "diagrams": 8,
+    "diagramsWithLinks": 8,
+    "linkPaths": 48,
+    "affectRows": 37,
+    "affectIcons": 66,
+    "timelines": 3,
+    "talentCells": 32,
+    "talentIcons": 52,
+    "brokenIcons": 0,
+    "pathOutside": 0,
+    "hover": {
+      "active": [
+        "392792"
+      ],
+      "related": [
+        "12294",
+        "845"
+      ],
+      "activeLinks": 2
+    },
+    "errors": []
+  },
+  "1440": {
+    "overflow": false,
+    "overflowBoxes": 0,
+    "diagrams": 8,
+    "diagramsWithLinks": 8,
+    "linkPaths": 48,
+    "affectRows": 37,
+    "affectIcons": 66,
+    "timelines": 3,
+    "talentCells": 32,
+    "talentIcons": 52,
+    "brokenIcons": 0,
+    "pathOutside": 0,
+    "hover": {
+      "active": [
+        "392792"
+      ],
+      "related": [
+        "12294",
+        "845"
+      ],
+      "activeLinks": 2
+    },
+    "errors": []
+  }
+}
