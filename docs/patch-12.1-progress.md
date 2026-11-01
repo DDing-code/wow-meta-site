@@ -1263,3 +1263,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 반영: `artifacts/wording-open-20261101/apply.cjs warrior-arms`(표 `warrior-arms.cjs` 42줄, 원고·KB 정본 동시, `talent-links-20261101/orig`도 같은 표 적용). 흐름도·타임라인 제목은 특성 연결 자료와 영상 도식의 열쇠라 두었다. 남은 칸 찾기 `list.cjs <ID>`.
 - 검사·배포: `npm run validate` 통과, 사이트 `75aafe25` main 푸시, KB 로컬 `d69f0de`. 빌드 `main.4085a991.js`(소스맵 403, `stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고 `shots.cjs`로 운영 1440·390 확인(새 제목 있음, 오류·가로 넘침 0).
 - 남은 것: 화면 코드의 시너지 분류 이름표 '피해 구간'(`GuideDetailPage.js` synergy 분류, 40개 가이드 공용)과 다른 가이드 원고.
+
+## 2026-11-02 전사 심화 영상 3편(v10) 공개·가이드 연결
+
+- 요청: "업로드 진행하고 가이드글에 반영해줘". 대상은 전사 3편 v10 최종본(ai-hub `outputs/pixel-guides/specs/<id>/<id>-guide-storyboard-v10-transition-fix-v2.mp4`)과 특성창 배경 썸네일(`<id>-thumbnail-talentbg-v1-1280x720.png`).
+- 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-warrior-20261102.json`, 목록 생성 `upload-advanced-v10-warrior-20261102/prepare.py`)로 와우메타 채널에 무기 `KgLPXpTh6BU`·분노 `cxgkqi6Px7U`·방어 `4pLAYVCJeUU`를 공개했다. 제목·설명은 v9와 같은 양식(가이드 주소·기본편 주소·바로 가기, 시각은 v10 편집 파일의 장 시작). `verify`로 채널·제목·설명·썸네일·공개 3/3, oEmbed로 공개 링크를 확인했다.
+- 사이트: `artifacts/advanced-videos-warrior-20261102/apply.cjs`로 원고·KB `13-전사/*/Meta/guide-12.1.json`·검사기 GUIDE_ADVANCED_VIDEOS에 advancedVideo를 넣었다(파멸과 같은 기본편·심화편 단추). `npm run validate` 통과, 사이트 `3d7e1a11` main 푸시, KB 로컬 `3616783`. 빌드 `main.805eca70.js`(`stage-deploy.cjs`, 820개 파일)를 `vercel deploy --prebuilt --prod`로 올렸고 운영 주소에서 `shots.cjs`로 1440·390·320 7화면 통과(캡처 `live/`).
+- 남은 결정: 11-01에 공개한 전사 v9 심화 3편(`OqZf2WXUXt0`·`hvp8EZRkGGQ`·`rJfg3QUsuNU`)은 같은 제목으로 채널에 남아 있다. 사이트에는 연결된 적이 없고, 지울지는 답을 기다린다.
