@@ -346,12 +346,18 @@ const manuscript = {
                   label: '노련한 병사',
                   kind: 'talent',
                   note: '자동 공격 치명타의 분노 10% 증가',
+                  affects: [
+                    '자동 공격',
+                  ],
                 },
                 {
                   skillId: '1261048',
                   label: '몸풀기였을 뿐',
                   kind: 'talent',
                   note: '골랐다면 거인의 강타가 분노 15 생성',
+                  affects: [
+                    '167105',
+                  ],
                 },
               ],
             },
@@ -404,12 +410,19 @@ const manuscript = {
                   label: '거품 무는 광전사',
                   kind: 'talent',
                   note: '필사의 일격·회전베기가 20% 확률로 실제 소모의 10% 반환',
+                  affects: [
+                    '12294',
+                    '845',
+                  ],
                 },
                 {
                   skillId: '316405',
                   label: '마무리 일격 연마',
                   kind: 'talent',
                   note: '맞은 적이 살아남으면 실제 소모의 10% 반환',
+                  affects: [
+                    '163201',
+                  ],
                 },
               ],
             },
@@ -477,18 +490,30 @@ const manuscript = {
                   label: '전술가',
                   kind: 'talent',
                   note: '분노를 쓰는 공격이 30% 확률로 제압 1회 충전 · 전술의 대가면 35%',
+                  affects: [
+                    '7384',
+                  ],
                 },
                 {
                   skillId: '386630',
                   label: '전투군주',
                   kind: 'talent',
                   note: '제압이 35% 확률로 필사의 일격 초기화 · 다음 비용 33% 감소',
+                  affects: [
+                    '7384',
+                    '12294',
+                  ],
                 },
                 {
                   skillId: '1273062',
                   label: '무예 기량',
                   kind: 'talent',
                   note: '제압·격돌이 다음 필사의 일격 5% · 최대 3중첩',
+                  affects: [
+                    '7384',
+                    '1464',
+                    '12294',
+                  ],
                 },
               ],
             },
@@ -500,12 +525,19 @@ const manuscript = {
                   label: '집행자의 정밀함',
                   kind: 'talent',
                   note: '마무리 일격마다 35% · 최대 2중첩',
+                  affects: [
+                    '163201',
+                    '12294',
+                  ],
                 },
                 {
                   skillId: '382764',
                   label: '분쇄의 무력',
                   kind: 'talent',
                   note: '필사의 일격 공격력·치명타 피해 5%씩',
+                  affects: [
+                    '12294',
+                  ],
                 },
               ],
             },
@@ -579,24 +611,39 @@ const manuscript = {
                   label: '전술적 우위',
                   kind: 'talent',
                   note: '급살 1회',
+                  affects: [
+                    '167105',
+                    '163201',
+                  ],
                 },
                 {
                   skillId: '1261049',
                   label: '광범위한 타격',
                   kind: 'talent',
                   note: '휩쓸기 일격 6중첩',
+                  affects: [
+                    '167105',
+                    '260708',
+                  ],
                 },
                 {
                   skillId: '1261048',
                   label: '몸풀기였을 뿐',
                   kind: 'talent',
                   note: '분노 15',
+                  affects: [
+                    '167105',
+                  ],
                 },
                 {
                   skillId: '1261056',
                   label: '궤멸적인 연계',
                   kind: 'talent',
                   note: '20초 안 회전베기 2회 쿨다운 없음',
+                  affects: [
+                    '167105',
+                    '845',
+                  ],
                 },
               ],
             },
@@ -677,6 +724,10 @@ const manuscript = {
                   label: '유혈',
                   kind: 'talent',
                   note: '생명력 35% 미만이면 필사의 일격도 분쇄 적용',
+                  affects: [
+                    '772',
+                    '12294',
+                  ],
                 },
               ],
             },
@@ -694,6 +745,11 @@ const manuscript = {
                   label: '죽음의 상처',
                   kind: 'talent',
                   note: '필사의 일격·격돌 치명타로도 적용',
+                  affects: [
+                    '12294',
+                    '1464',
+                    '1261060',
+                  ],
                 },
               ],
             },
@@ -710,6 +766,10 @@ const manuscript = {
                   label: '혈행성 전이',
                   kind: 'talent',
                   note: '출혈 공격력·치명타 피해 5%씩 · 최대 2포인트',
+                  affects: [
+                    '772',
+                    '1261060',
+                  ],
                 },
               ],
             },
@@ -721,12 +781,19 @@ const manuscript = {
                   label: '피의 쇄도',
                   kind: 'talent',
                   note: '분쇄 피해가 확률로 분노 5',
+                  affects: [
+                    '772',
+                  ],
                 },
                 {
                   skillId: '383103',
                   label: '격렬한 원동력',
                   kind: 'talent',
                   note: '분쇄·치명상 피해의 85%만큼 치유',
+                  affects: [
+                    '772',
+                    '1261060',
+                  ],
                 },
               ],
             },
@@ -769,6 +836,9 @@ const manuscript = {
                   label: '대학살',
                   kind: 'talent',
                   note: '일반 사용 기준 생명력 35% 미만 · 없으면 20% 미만',
+                  affects: [
+                    '163201',
+                  ],
                 },
                 {
                   skillId: '29725',
@@ -781,6 +851,10 @@ const manuscript = {
                   label: '전술적 우위',
                   kind: 'talent',
                   note: '거인의 강타가 급살 1회',
+                  affects: [
+                    '167105',
+                    '163201',
+                  ],
                 },
               ],
             },
@@ -803,18 +877,28 @@ const manuscript = {
                   label: '집행자의 정밀함',
                   kind: 'talent',
                   note: '다음 필사의 일격 35% · 최대 2중첩',
+                  affects: [
+                    '163201',
+                    '12294',
+                  ],
                 },
                 {
                   skillId: '1261060',
                   label: '치명상',
                   kind: 'talent',
                   note: '6초 출혈',
+                  affects: [
+                    '163201',
+                  ],
                 },
                 {
                   skillId: '316405',
                   label: '마무리 일격 연마',
                   kind: 'talent',
                   note: '살아남으면 쿨다운 없음 · 실제 소모의 10% 반환',
+                  affects: [
+                    '163201',
+                  ],
                 },
               ],
             },
@@ -826,12 +910,19 @@ const manuscript = {
                   label: '치명적 공격',
                   kind: 'talent',
                   note: '필사의 일격이 50% 확률로 척살의 징표 · 최대 5중첩',
+                  affects: [
+                    '12294',
+                    '163201',
+                  ],
                 },
                 {
                   skillId: '389306',
                   label: '치명적 감각',
                   kind: 'talent',
                   note: '치명타 확률 5% · 실제 소모의 10% 추가 반환',
+                  affects: [
+                    '163201',
+                  ],
                 },
               ],
             },
@@ -878,6 +969,11 @@ const manuscript = {
                     skillId: '107574',
                     when: '거인의 강타와 함께',
                   },
+                  talents: [
+                    '383154',
+                    '1261056',
+                    '392792',
+                  ],
                 },
                 {
                   skillId: '12294',
@@ -886,18 +982,35 @@ const manuscript = {
                     skillId: '167105',
                     when: '쿨이 돌고 대상이 10초 맞을 때',
                   },
+                  talents: [
+                    '386630',
+                    '1273062',
+                    '386634',
+                  ],
                 },
                 {
                   skillId: '163201',
                   caption: '급살이 뜨면 · 무료',
+                  talents: [
+                    '1261051',
+                    '281001',
+                    '316405',
+                  ],
                 },
                 {
                   skillId: '7384',
                   caption: '2충전 전에',
+                  talents: [
+                    '385571',
+                    '184783',
+                  ],
                 },
                 {
                   skillId: '1269383',
                   caption: '발동했을 때 · 분노 20',
+                  talents: [
+                    '1269314',
+                  ],
                 },
                 {
                   skillId: '12294',
@@ -910,6 +1023,11 @@ const manuscript = {
                 {
                   skillId: '1464',
                   caption: '분노가 남을 때',
+                  talents: [
+                    '1273062',
+                    '202316',
+                    '1261062',
+                  ],
                 },
               ],
               note: '분쇄는 남은 시간이 짧고 곧 거인의 강타를 열 때만 다시 겁니다. 스조라크 신화 상위 로그 8개(학살자)는 모두 분쇄를 직접 쓰지 않고 회전베기(분당 약 2.8회)로 걸었습니다. 처형 구간(대학살이면 35% 미만)에서는 남는 분노를 마무리 일격에 쓰되, 다음 필사의 일격 몫 30은 남깁니다.',
@@ -921,26 +1039,45 @@ const manuscript = {
                 {
                   skillId: '163201',
                   caption: '학살자 · 칼날폭풍 직전',
+                  talents: [
+                    '444769',
+                  ],
                 },
                 {
                   skillId: '227847',
                   caption: '학살자 · 거인의 강타 초반',
+                  talents: [
+                    '386628',
+                    '446085',
+                  ],
                 },
                 {
                   skillId: '107570',
                   caption: '학살자 · 칼날폭풍 중',
+                  talents: [
+                    '444780',
+                  ],
                 },
                 {
                   skillId: '12294',
                   caption: '거신 · 거인의 힘 쌓기',
+                  talents: [
+                    '431548',
+                  ],
                 },
                 {
                   skillId: '436358',
                   caption: '거신 · 거인의 강타 안에서',
+                  talents: [
+                    '429636',
+                  ],
                 },
                 {
                   skillId: '12294',
                   caption: '거신 · 쇄파 뒤 치명타 보상',
+                  talents: [
+                    '1270710',
+                  ],
                 },
               ],
             },
@@ -985,10 +1122,18 @@ const manuscript = {
                 {
                   skillId: '845',
                   caption: '분쇄 걸기',
+                  talents: [
+                    '383154',
+                  ],
                 },
                 {
                   skillId: '167105',
                   caption: '공격 가능한 10초',
+                  talents: [
+                    '1261051',
+                    '1261048',
+                    '1261056',
+                  ],
                 },
                 {
                   skillId: '107574',
@@ -997,18 +1142,31 @@ const manuscript = {
                 {
                   skillId: '163201',
                   caption: '급살 먼저 쓰기',
+                  talents: [
+                    '444769',
+                  ],
                 },
                 {
                   skillId: '227847',
                   caption: '구간 초반에 겹치기',
+                  talents: [
+                    '386628',
+                    '446085',
+                  ],
                 },
                 {
                   skillId: '107570',
                   caption: '칼날폭풍 중에',
+                  talents: [
+                    '444780',
+                  ],
                 },
                 {
                   skillId: '12294',
                   caption: '발동 처리 뒤',
+                  talents: [
+                    '386634',
+                  ],
                 },
               ],
               note: '투신은 거인의 강타 바로 뒤에 겹쳐 씁니다. 스조라크 신화 상위 로그 8개 중 7개가 이 순서였고, 5개는 칼날폭풍 중에 폭풍망치를 던졌습니다. 칼날폭풍 중에 연달아 나가는 필사의 일격은 불안정한 정신의 자동 시전입니다. 칼날폭풍이 끝나면 8개 모두 마무리 일격·제압·영웅의 일격으로 한 글쿨 이상을 채운 뒤 다음 필사의 일격을 썼습니다. 칼날폭풍은 쇄파와 함께 쓰는 순서가 아닙니다.',
@@ -1023,10 +1181,17 @@ const manuscript = {
                 {
                   skillId: '12294',
                   caption: '피해 + 거인의 힘',
+                  talents: [
+                    '431548',
+                  ],
                 },
                 {
                   skillId: '772',
                   caption: '직접 또는 회전베기',
+                  talents: [
+                    '383154',
+                    '384361',
+                  ],
                 },
                 {
                   skillId: '107574',
@@ -1035,6 +1200,10 @@ const manuscript = {
                 {
                   skillId: '167105',
                   caption: '쇄파 방향 확인',
+                  talents: [
+                    '1261051',
+                    '1261048',
+                  ],
                 },
                 {
                   skillId: '12294',
@@ -1043,6 +1212,10 @@ const manuscript = {
                 {
                   skillId: '436358',
                   caption: '구간 안에서 끝까지',
+                  talents: [
+                    '429636',
+                    '1270710',
+                  ],
                 },
               ],
               note: '쇠날발톱을 골랐다면 거인의 강타 바로 앞에 맞힙니다. 두 번째 필사의 일격은 쇄파가 구간 밖으로 밀리지 않을 때만 넣습니다. 칼날폭풍은 이 영웅 특성의 기본 순서가 아닙니다.',
@@ -1085,6 +1258,11 @@ const manuscript = {
                     skillId: '107574',
                     when: '거인의 강타 직전이나 함께',
                   },
+                  talents: [
+                    '1261050',
+                    '334779',
+                    '1261049',
+                  ],
                 },
                 {
                   skillId: '845',
@@ -1093,10 +1271,17 @@ const manuscript = {
                     skillId: '167105',
                     when: '적이 10미터 안에 모이면',
                   },
+                  talents: [
+                    '202316',
+                    '444775',
+                  ],
                 },
                 {
                   skillId: '845',
                   caption: '연계면 쿨 없이 한 번 더',
+                  talents: [
+                    '1261056',
+                  ],
                 },
                 {
                   skillId: '12294',
@@ -1105,6 +1290,10 @@ const manuscript = {
                 {
                   skillId: '7384',
                   caption: '충전 넘치기 전',
+                  talents: [
+                    '385571',
+                    '262150',
+                  ],
                 },
                 {
                   skillId: '845',
@@ -1113,6 +1302,9 @@ const manuscript = {
                 {
                   skillId: '163201',
                   caption: '급살이 뜨면',
+                  talents: [
+                    '281001',
+                  ],
                 },
               ],
               note: '전투의 열정을 골랐다면 회전베기가 실제로 3명 이상에게 맞을 때 주 대상에게 강화된 격돌이 따로 나갑니다. 그 격돌을 직접 한 번 더 쓸 필요는 없습니다.',
@@ -1124,14 +1316,23 @@ const manuscript = {
                 {
                   skillId: '163201',
                   caption: '학살자 · 칼날폭풍 직전',
+                  talents: [
+                    '444769',
+                  ],
                 },
                 {
                   skillId: '227847',
                   caption: '학살자 · 구간 초반 · 이탈 확인',
+                  talents: [
+                    '386628',
+                  ],
                 },
                 {
                   skillId: '7384',
                   caption: '학살자 광역 · 제압 우선도 상승',
+                  talents: [
+                    '262150',
+                  ],
                 },
                 {
                   skillId: '845',
@@ -1140,10 +1341,16 @@ const manuscript = {
                 {
                   skillId: '12294',
                   caption: '거신 · 거인의 힘 더 쌓기',
+                  talents: [
+                    '431548',
+                  ],
                 },
                 {
                   skillId: '436358',
                   caption: '거신 · 한가운데서 끝까지',
+                  talents: [
+                    '440995',
+                  ],
                 },
               ],
             },
@@ -1239,6 +1446,10 @@ const manuscript = {
                   label: '임박한 파멸',
                   kind: 'talent',
                   note: '학살자의 일격 3회마다 급살',
+                  affects: [
+                    '445579',
+                    '227847',
+                  ],
                 },
               ],
             },
@@ -1255,6 +1466,10 @@ const manuscript = {
                   label: '폭풍을 거두는 자',
                   kind: 'talent',
                   note: '급살 소비로 발동 · 회전베기 3명 이상 적중 때는 20%',
+                  affects: [
+                    '163201',
+                    '845',
+                  ],
                 },
                 {
                   label: '다음 칼날폭풍 추가 공격',
@@ -1277,12 +1492,20 @@ const manuscript = {
                   label: '불안정한 정신',
                   kind: 'talent',
                   note: '적중 2회마다 필사의 일격 자동 시전',
+                  affects: [
+                    '227847',
+                    '12294',
+                  ],
                 },
                 {
                   skillId: '446085',
                   label: '잔혹한 마무리',
                   kind: 'talent',
                   note: '끝난 뒤 다음 필사의 일격 50%',
+                  affects: [
+                    '227847',
+                    '12294',
+                  ],
                 },
               ],
             },
@@ -1410,6 +1633,10 @@ const manuscript = {
                   label: '정밀한 힘',
                   kind: 'talent',
                   note: '필사의 일격 치명타면 1중첩 더',
+                  affects: [
+                    '12294',
+                    '429634',
+                  ],
                 },
               ],
             },
@@ -1432,12 +1659,22 @@ const manuscript = {
                   label: '전투의 해일',
                   kind: 'talent',
                   note: '중첩마다 제압·마무리 일격 3%',
+                  affects: [
+                    '429634',
+                    '7384',
+                    '163201',
+                  ],
                 },
                 {
                   skillId: '440995',
                   label: '동맥 출혈',
                   kind: 'talent',
                   note: '중첩마다 분쇄·치명상 3%',
+                  affects: [
+                    '429634',
+                    '772',
+                    '1261060',
+                  ],
                 },
               ],
             },
@@ -1460,12 +1697,20 @@ const manuscript = {
                   label: '거신의 지배',
                   kind: 'talent',
                   note: '10초 동안 내가 주는 피해 최대 10% 증가 · 그 적이 주는 피해 최대 20% 감소',
+                  affects: [
+                    '429634',
+                    '436358',
+                  ],
                 },
                 {
                   skillId: '1270710',
                   label: '빠르게 찾아오는 결말',
                   kind: 'talent',
                   note: '10초 가속 10% · 다음 필사의 일격 치명타율 100%',
+                  affects: [
+                    '436358',
+                    '12294',
+                  ],
                 },
               ],
             },
@@ -1507,6 +1752,10 @@ const manuscript = {
                   label: '전쟁의 지배자',
                   kind: 'talent',
                   note: '단일 대상 근접 능력이 확률로 격돌을 영웅의 일격으로',
+                  affects: [
+                    '1464',
+                    '1269383',
+                  ],
                 },
               ],
             },
@@ -1530,6 +1779,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 노드',
                   note: '다음 거인의 강타 3% · 최대 5중첩',
+                  affects: [
+                    '1269383',
+                    '167105',
+                  ],
                 },
               ],
             },
@@ -1568,6 +1821,10 @@ const manuscript = {
                   label: '전투의 열정',
                   kind: 'talent',
                   note: '회전베기 3명 이상 적중 시 자동 격돌',
+                  affects: [
+                    '845',
+                    '1464',
+                  ],
                 },
               ],
             },

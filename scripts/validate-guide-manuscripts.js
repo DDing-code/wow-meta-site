@@ -787,6 +787,9 @@ function isRepeatCount(count) {
   return !!match && Number(match[1]) >= 2 && (!match[2] || Number(match[2]) > Number(match[1]));
 }
 
+// 타임라인 자리에 붙는 특성(talents)으로 허용하는 KB 노트 종류: 특성·지속 효과·세트 효과. 시전 스킬은 자리(skillId) 쪽이다.
+const TIMELINE_TALENT_TYPES = new Set(['talent', 'class-talent', 'spec-talent', 'hero-talent', 'apex-talent', 'passive', 'set-bonus', 'tier-set']);
+
 function validateHeroBranches(spec, manuscript, kbSkills) {
   const branches = manuscript.heroBranches || [];
   const labels = branches.map(branch => String(branch.label || '').trim()).filter(Boolean);
@@ -997,6 +1000,8 @@ function validateBookLayout(spec, manuscript, kbSkills = {}) {
           assert(/^\d+$/.test(String(node.skillId || '')), `${railPrefix}.nodes[${nodeIndex}]: node needs a numeric skillId`);
           assert(!node.above || (/^\d+$/.test(String(node.above.skillId || '')) && node.above.when?.length >= 2), `${railPrefix}.nodes[${nodeIndex}]: above needs a numeric skillId and condition`);
           assert(node.count == null || isRepeatCount(node.count), `${railPrefix}.nodes[${nodeIndex}]: count must be a repeat count like 3 or '2~3' (2 or more)`);
+          // 자리마다 붙는 특성(talents): 칸이 좁아 1~3개, 숫자 Spell ID. KB 에 있는지와 특성 종류인지는 아래 book 검사에서 본다.
+          assert(node.talents == null || (Array.isArray(node.talents) && node.talents.length >= 1 && node.talents.length <= 3 && node.talents.every(id => /^\d+$/.test(String(id)))), `${railPrefix}.nodes[${nodeIndex}]: talents must be 1~3 numeric skillIds`);
         });
       });
     });
@@ -1004,6 +1009,8 @@ function validateBookLayout(spec, manuscript, kbSkills = {}) {
     diagrams.forEach((diagram, diagramIndex) => {
       const diagramPrefix = `${blockPrefix}.diagram[${diagramIndex}]`;
       assert(diagram.title?.length >= 4 && diagram.layers?.length >= 2, `${diagramPrefix}: diagram needs a title and at least two layers`);
+      // 효과 상자(skillId 없음)는 이름이 열쇠다. 특성 상자의 affects 는 숫자 Spell ID 거나 같은 흐름도 효과 상자의 이름이어야 한다.
+      const effectLabels = new Set(diagram.layers.flatMap(layer => (layer.nodes || []).filter(node => !node.skillId).map(node => node.label)));
       diagram.layers.forEach((layer, layerIndex) => {
         assert(layer.nodes?.length >= 1, `${diagramPrefix}.layers[${layerIndex}]: layer needs nodes`);
         assert(layerIndex === 0 || layer.link?.length >= 2, `${diagramPrefix}.layers[${layerIndex}]: layers after the first need a link label`);
@@ -1011,6 +1018,7 @@ function validateBookLayout(spec, manuscript, kbSkills = {}) {
           assert(node.label?.length >= 2, `${diagramPrefix}.layers[${layerIndex}].nodes[${nodeIndex}]: node needs a label`);
           assert(!node.kind || ['core', 'skill', 'buff', 'talent', 'effect'].includes(node.kind), `${diagramPrefix}.layers[${layerIndex}].nodes[${nodeIndex}]: unknown node kind ${node.kind}`);
           assert(node.kind === 'effect' || /^\d+$/.test(String(node.skillId || '')), `${diagramPrefix}.layers[${layerIndex}].nodes[${nodeIndex}]: skill nodes need a numeric skillId`);
+          assert(node.affects == null || (/^\d+$/.test(String(node.skillId || '')) && Array.isArray(node.affects) && node.affects.length >= 1 && node.affects.every(target => /^\d+$/.test(String(target)) || effectLabels.has(target))), `${diagramPrefix}.layers[${layerIndex}].nodes[${nodeIndex}]: affects must be on a skill node and list numeric skillIds or effect-node labels of this diagram`);
         });
       });
     });
@@ -1082,8 +1090,14 @@ function validateBookTemplate(spec, manuscript, kbSkills) {
     const nodes = [
       ...[].concat(block.timeline || []).flatMap(timeline => (timeline.rails || []).flatMap(rail => rail.nodes || [])).flatMap(node => [node, node.above].filter(Boolean)),
       ...[].concat(block.diagram || []).flatMap(diagram => (diagram.layers || []).flatMap(layer => layer.nodes || [])).filter(node => node.kind !== 'effect'),
+      ...[].concat(block.diagram || []).flatMap(diagram => (diagram.layers || []).flatMap(layer => (layer.nodes || []).flatMap(node => (node.affects || []).filter(target => /^\d+$/.test(String(target))).map(target => ({ skillId: target }))))),
     ];
     nodes.forEach(node => assert(known(node.skillId), `${blockPrefix}: unknown skill ${node.skillId} in diagram/timeline`));
+    // 타임라인 자리에 붙는 특성(talents)은 KB 에 특성(또는 지속 효과·세트)으로 적힌 것만 둔다. 시전 스킬을 특성 칸에 넣지 않는다.
+    [].concat(block.timeline || []).flatMap(timeline => (timeline.rails || []).flatMap(rail => rail.nodes || [])).flatMap(node => node.talents || []).forEach(id => {
+      assert(known(id), `${blockPrefix}: unknown talent ${id} in timeline talents`);
+      assert(!Object.keys(kbSkills).length || TIMELINE_TALENT_TYPES.has(kbSkills[String(id)]?.type), `${blockPrefix}: timeline talent ${id} must be a talent-type KB note (got ${kbSkills[String(id)]?.type})`);
+    });
     // 비교·순서 카드(cards): 칸마다 이름과 스킬 아이콘 줄·한두 줄 설명. 줄은 짧게(60자) 둔다.
     [].concat(block.cards || []).forEach((cardSet, cardIndex) => {
       const cardPrefix = `${blockPrefix}.cards[${cardIndex}]`;
@@ -1382,6 +1396,12 @@ function main() {
     assert(item.video.channel === 'wowmeta 와우메타', `${id} video must come from the wowmeta 와우메타 channel`);
   }
   assert(read(path.join(SITE_ROOT, 'src/pages/GuideDetailPage.js')).includes('{!!manuscript?.video && <GuideVideoSection video={manuscript.video} advancedVideo={manuscript.advancedVideo} />}'), 'Guide page must render the manuscript video above the article');
+  // 특성 ↔ 스킬 연결 도식(2026-11-01): 흐름도 특성 상자의 affects 는 점선·강조로, 타임라인 자리의 talents 는 설명 밑 점선 칸으로 그린다.
+  {
+    const page = read(path.join(SITE_ROOT, 'src/pages/GuideDetailPage.js'));
+    assert(page.includes('data-diagram-link={line.fromKey}') && page.includes('data-diagram-related={related') && page.includes('<BookDiagramAffects'), 'Guide page must draw diagram talent links (affects) as dashed lines with hover highlight and a 붙는 스킬 icon row');
+    assert(page.includes('data-timeline-talents={talents.length') && page.includes('hasTalents={hasTalents}'), 'Guide page must draw timeline node talents under the caption');
+  }
   // 심화편 영상(기본편과 따로 올린 편): 기본편 아래 '심화편' 단추로 본다. 번호는 ai-hub outputs/pixel-guides/specs/<id>-advanced/youtube-upload.json 의 공개 확인된 값이다.
   const GUIDE_ADVANCED_VIDEOS = new Map([
     ['demonhunter-havoc', 'bFrBTJqCUuU'],
@@ -1735,6 +1755,23 @@ function main() {
   assert(marksmanship.blocks.filter(block => block.timeline).length >= 2, 'Marksmanship concept-book sample must keep single-target and AoE rotation timelines');
   assert(marksmanship.blocks.reduce((count, block) => count + (block.fieldTips || []).length, 0) >= 20 && marksmanship.blocks.some(block => block.quiz?.length), 'Marksmanship sample must keep sourced field tips and review questions');
   assert(/파수꾼.*광역/.test(marksmanship.blocks.find(block => block.title.includes('속사 끝'))?.concept || ''), 'Rapid Fire clipping must stay limited to Sentinel AoE after the August 20 hotfix');
+
+  // 무기 전사(2026-11-01 첫 적용): 흐름도 특성 상자마다 붙는 스킬(affects), 단일·오프닝·광역 타임라인 자리마다 붙는 특성(talents)
+  {
+    const arms = manuscripts['warrior-arms'];
+    const armsDiagramTalents = arms.blocks.flatMap(block => [].concat(block.diagram || []).flatMap(diagram => diagram.layers.flatMap(layer => layer.nodes.filter(node => node.kind === 'talent'))));
+    assert(armsDiagramTalents.length >= 30 && armsDiagramTalents.every(node => node.affects?.length), 'Arms skill-structure diagrams must list the skills every talent box attaches to (affects)');
+    const rage = arms.blocks.find(block => block.diagram?.title === '분노가 들어오고 나가는 길')?.diagram;
+    const berserker = rage?.layers.flatMap(layer => layer.nodes).find(node => node.skillId === '392792');
+    assert(berserker?.affects?.includes('12294') && berserker.affects.includes('845'), 'Arms rage diagram must link 거품 무는 광전사 to 필사의 일격 and 회전베기');
+    assert(rage.layers.flatMap(layer => layer.nodes).find(node => node.skillId === '279423')?.affects?.includes('자동 공격'), 'Arms rage diagram must link 노련한 병사 to the 자동 공격 effect box');
+    for (const title of ['단일 딜사이클 타임라인', '오프닝 타임라인', '광역 딜사이클 타임라인 (적이 모인 뒤)']) {
+      const timeline = arms.blocks.find(block => block.timeline?.title === title)?.timeline;
+      assert(timeline && timeline.rails.every(rail => rail.nodes.some(node => node.talents?.length)), `Arms ${title} must show talents under its rotation slots`);
+    }
+    const single = arms.blocks.find(block => block.timeline?.title === '단일 딜사이클 타임라인').timeline.rails[0].nodes;
+    assert(single.find(node => node.skillId === '12294')?.talents?.includes('386630'), 'Arms single-target timeline must attach 전투군주 to the first 필사의 일격 slot');
+  }
 
   const beastMastery = manuscripts['hunter-beastmastery'];
   const beastMasterySource = path.join(SITE_ROOT, '..', 'WoW-Meta-Knowledge', '08-직업별-Knowledge-Base', '05-사냥꾼', '야수', 'Meta', 'guide-12.1.json');

@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import SpecializationIcon from '../components/SpecializationIcon.js';
@@ -2153,14 +2153,39 @@ const BOOK_DIAGRAM_KIND_LEGEND = [
   ['core', '이 장의 중심'],
   ['buff', '발동·강화 상태'],
   ['talent', '선택 특성'],
+  ['link', '특성이 붙는 스킬 (점선 · 마우스를 올리면 강조)'],
 ];
 
-function BookDiagramNode({ node, guide, inlineTerms }) {
+// 흐름도 상자를 가리키는 열쇠: 스킬 상자는 Spell ID, 효과 상자는 이름. 특성 상자의 affects 는 이 열쇠로 상자를 찾는다.
+function diagramNodeKey(node) {
+  return node?.skillId ? String(node.skillId) : displayGuideText(node?.label || '');
+}
+
+// 특성 ↔ 스킬 연결 쌍 [특성 열쇠, 붙는 스킬 열쇠]. 상자가 흐름도에 없는 스킬은 선 없이 상자 안 작은 아이콘으로만 보인다.
+function diagramAffectPairs(layers) {
+  return layers.flatMap(layer => (layer.nodes || []).flatMap(node => (node.affects || []).map(target => [diagramNodeKey(node), String(target)])));
+}
+
+function BookDiagramNode({ node, guide, inlineTerms, nodeKey, linkState, onHover }) {
   const skill = node.skillId ? skillFromBranchId(node.skillId) : null;
   const kind = node.kind || (skill ? 'skill' : 'effect');
   const label = displayGuideText(node.label || (skill ? skillName(skill) : ''));
+  const affects = (node.affects || []).map(target => ({ key: String(target), skill: skillFromBranchId(target) }));
+  const active = !!linkState && linkState.active === nodeKey;
+  const related = !active && !!linkState?.related.has(nodeKey);
   return (
-    <BookDiagramNodeBox $color={guide.color} $kind={kind} data-diagram-node={kind}>
+    <BookDiagramNodeBox
+      $color={guide.color}
+      $kind={kind}
+      data-diagram-node={kind}
+      data-diagram-key={nodeKey}
+      data-diagram-active={active ? 'true' : undefined}
+      data-diagram-related={related ? 'true' : undefined}
+      onMouseEnter={onHover ? () => onHover(nodeKey) : undefined}
+      onMouseLeave={onHover ? () => onHover(null) : undefined}
+      onFocus={onHover ? () => onHover(nodeKey) : undefined}
+      onBlur={onHover ? () => onHover(null) : undefined}
+    >
       {!!node.tag && <small>{displayGuideText(node.tag)}</small>}
       <strong>
         {skill
@@ -2168,16 +2193,147 @@ function BookDiagramNode({ node, guide, inlineTerms }) {
           : <span><BookDiagramGlyph aria-hidden="true"><Sparkles size={16} /></BookDiagramGlyph><em>{renderGuideText(label, inlineTerms)}</em></span>}
       </strong>
       {!!node.note && <p>{renderGuideText(node.note, inlineTerms)}</p>}
+      {!!affects.length && (
+        <BookDiagramAffects $color={guide.color} aria-label="붙는 스킬">
+          <span>붙는 스킬</span>
+          {affects.map((item, index) => (item.skill
+            ? <SkillIconLink key={`${item.key}-${index}`} skill={item.skill} size={22} />
+            : <em key={`${item.key}-${index}`}>{renderGuideText(item.key, inlineTerms)}</em>))}
+        </BookDiagramAffects>
+      )}
     </BookDiagramNodeBox>
+  );
+}
+
+// 특성 상자에서 붙는 스킬 상자까지 점선. 상자 자리를 실제로 재서 그리므로 폭이 바뀌어 줄이 바뀌어도 따라간다.
+// 위·아래 층이면 위아래 변 가운데를, 같은 줄이면 옆 변을 잇는다. 한 변에 선이 여럿 닿으면 조금씩 벌린다.
+function measureDiagramLinks(root, pairs) {
+  const base = root.getBoundingClientRect();
+  const boxes = new Map();
+  root.querySelectorAll('[data-diagram-key]').forEach(element => {
+    const rect = element.getBoundingClientRect();
+    const box = { left: rect.left - base.left, top: rect.top - base.top, width: rect.width, height: rect.height };
+    box.right = box.left + box.width;
+    box.bottom = box.top + box.height;
+    box.cx = box.left + box.width / 2;
+    box.cy = box.top + box.height / 2;
+    const key = element.getAttribute('data-diagram-key');
+    if (!boxes.has(key)) boxes.set(key, []);
+    boxes.get(key).push(box);
+  });
+  const distance = (a, b) => Math.hypot(a.cx - b.cx, a.cy - b.cy);
+  const lines = [];
+  pairs.forEach(([fromKey, toKey]) => {
+    const from = (boxes.get(fromKey) || [])[0];
+    const to = from ? (boxes.get(toKey) || []).reduce((best, box) => (box !== from && (!best || distance(box, from) < distance(best, from)) ? box : best), null) : null;
+    if (!from || !to || !from.width || !to.width) return;
+    const vertical = Math.abs(to.cy - from.cy) > (from.height + to.height) / 2 - 4;
+    const up = to.cy < from.cy;
+    const left = to.cx < from.cx;
+    lines.push(vertical
+      ? { fromKey, toKey, vertical, x1: from.cx, y1: up ? from.top : from.bottom, x2: to.cx, y2: up ? to.bottom : to.top, start: from, end: to, startSide: up ? 'top' : 'bottom', endSide: up ? 'bottom' : 'top' }
+      : { fromKey, toKey, vertical, x1: left ? from.left : from.right, y1: from.cy, x2: left ? to.right : to.left, y2: to.cy, start: from, end: to, startSide: left ? 'left' : 'right', endSide: left ? 'right' : 'left' });
+  });
+  // 같은 상자의 같은 변에 닿는 끝점들을 반대쪽 끝 위치 순서로 나란히 벌린다
+  const groups = new Map();
+  lines.forEach((line, index) => {
+    [['start', line.startSide], ['end', line.endSide]].forEach(([end, side]) => {
+      const box = line[end];
+      if (!groups.has(box)) groups.set(box, new Map());
+      const sides = groups.get(box);
+      if (!sides.has(side)) sides.set(side, []);
+      sides.get(side).push({ index, end });
+    });
+  });
+  groups.forEach((sides, box) => sides.forEach((items, side) => {
+    if (items.length < 2) return;
+    const horizontalSide = side === 'top' || side === 'bottom';
+    const axis = horizontalSide ? 'x' : 'y';
+    const other = item => (item.end === 'start' ? lines[item.index][`${axis}2`] : lines[item.index][`${axis}1`]);
+    items.sort((a, b) => other(a) - other(b));
+    const step = Math.min(16, (horizontalSide ? box.width : box.height) / (items.length + 1));
+    items.forEach((item, position) => {
+      const key = `${axis}${item.end === 'start' ? 1 : 2}`;
+      lines[item.index][key] += (position - (items.length - 1) / 2) * step;
+    });
+  }));
+  return lines.map(({ fromKey, toKey, vertical, x1, y1, x2, y2 }) => ({
+    fromKey,
+    toKey,
+    x2,
+    y2,
+    d: vertical
+      ? `M ${x1} ${y1} C ${x1} ${(y1 + y2) / 2}, ${x2} ${(y1 + y2) / 2}, ${x2} ${y2}`
+      : `M ${x1} ${y1} C ${(x1 + x2) / 2} ${y1}, ${(x1 + x2) / 2} ${y2}, ${x2} ${y2}`,
+  }));
+}
+
+function BookDiagramLinkLines({ rootRef, pairs, linkState, color }) {
+  const [lines, setLines] = useState([]);
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root || !pairs.length) {
+      setLines([]);
+      return undefined;
+    }
+    let frame = 0;
+    const measure = () => {
+      frame = 0;
+      const next = measureDiagramLinks(root, pairs);
+      setLines(current => (JSON.stringify(current) === JSON.stringify(next) ? current : next));
+    };
+    const schedule = () => {
+      if (frame) return;
+      frame = window.requestAnimationFrame(measure);
+    };
+    measure();
+    const observer = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(schedule);
+    observer?.observe(root);
+    window.addEventListener('resize', schedule);
+    const settle = window.setTimeout(schedule, 600);
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener('resize', schedule);
+      window.clearTimeout(settle);
+      if (frame) window.cancelAnimationFrame(frame);
+    };
+  }, [rootRef, pairs]);
+  if (!lines.length) return null;
+  return (
+    <BookDiagramLinks $color={color} aria-hidden="true" focusable="false">
+      {lines.map(line => {
+        const on = !!linkState.active && (linkState.active === line.fromKey || linkState.active === line.toKey);
+        return (
+          <g key={`${line.fromKey}-${line.toKey}-${line.x2}-${line.y2}`} data-diagram-link={line.fromKey} data-diagram-link-active={on ? 'true' : undefined}>
+            <path d={line.d} />
+            <circle cx={line.x2} cy={line.y2} r={on ? 3.5 : 2.5} />
+          </g>
+        );
+      })}
+    </BookDiagramLinks>
   );
 }
 
 function BookSkillDiagram({ diagram, guide, inlineTerms, label }) {
   const layers = diagram?.layers || [];
+  const pairs = useMemo(() => diagramAffectPairs(layers), [layers]);
+  const [active, setActive] = useState(null);
+  const related = useMemo(() => {
+    const set = new Set();
+    if (!active) return set;
+    pairs.forEach(([from, to]) => {
+      if (from === active) set.add(to);
+      if (to === active) set.add(from);
+    });
+    return set;
+  }, [active, pairs]);
+  const layersRef = useRef(null);
   if (!layers.length) return null;
   const usedKinds = new Set(layers.flatMap(layer => (layer.nodes || []).map(node => node.kind || (node.skillId ? 'skill' : 'effect'))));
+  if (pairs.length) usedKinds.add('link');
   const legend = BOOK_DIAGRAM_KIND_LEGEND.filter(([kind]) => usedKinds.has(kind));
   const title = displayGuideText(diagram.title);
+  const linkState = pairs.length ? { active, related } : null;
 
   return (
     <BookDiagramFigure $color={guide.color} data-book-box="diagram" aria-label={title}>
@@ -2186,7 +2342,8 @@ function BookSkillDiagram({ diagram, guide, inlineTerms, label }) {
         <span>위에서 아래로 읽기</span>
       </BookDiagramHead>
       <strong>{renderGuideText(diagram.title, inlineTerms)}</strong>
-      <BookDiagramLayers>
+      <BookDiagramLayers ref={layersRef} data-diagram-links={pairs.length || undefined}>
+        {!!pairs.length && <BookDiagramLinkLines rootRef={layersRef} pairs={pairs} linkState={linkState} color={guide.color} />}
         {layers.map((layer, index) => (
           <React.Fragment key={`${title}-${index}`}>
             {(index > 0 || !!layer.link) && (
@@ -2200,7 +2357,14 @@ function BookSkillDiagram({ diagram, guide, inlineTerms, label }) {
             <BookDiagramRow $color={guide.color} role="list" aria-label={layer.link ? displayGuideText(layer.link) : `${index + 1}단계`}>
               {(layer.nodes || []).map((node, nodeIndex) => (
                 <li key={`${node.skillId || node.label}-${nodeIndex}`}>
-                  <BookDiagramNode node={node} guide={guide} inlineTerms={inlineTerms} />
+                  <BookDiagramNode
+                    node={node}
+                    guide={guide}
+                    inlineTerms={inlineTerms}
+                    nodeKey={diagramNodeKey(node)}
+                    linkState={linkState}
+                    onHover={linkState ? setActive : undefined}
+                  />
                 </li>
               ))}
             </BookDiagramRow>
@@ -2292,10 +2456,12 @@ function getBlockTimelines(block) {
   return (Array.isArray(timeline) ? timeline : [timeline]).filter(item => item?.rails?.length);
 }
 
-function BookTimelineNode({ node, guide, hasAbove, line, inlineTerms }) {
+// 자리마다 붙는 특성(talents): 설명 밑 점선 칸에 작은 아이콘으로 둔다(툴팁은 아이콘에). 같은 행의 다른 칸도 줄을 맞추려고 빈 칸을 둔다.
+function BookTimelineNode({ node, guide, hasAbove, hasTalents, line, inlineTerms }) {
   const skill = skillFromBranchId(node.skillId);
   const above = node.above && skillFromBranchId(node.above.skillId) ? node.above : null;
   const aboveSkill = above ? skillFromBranchId(above.skillId) : null;
+  const talents = hasTalents ? (node.talents || []).map(skillFromBranchId).filter(Boolean) : [];
   return (
     <BookTimelineItem $hasAbove={hasAbove} $line={line} data-timeline-node>
       {hasAbove && (
@@ -2313,7 +2479,22 @@ function BookTimelineNode({ node, guide, hasAbove, line, inlineTerms }) {
         <SkillIconLink skill={skill} size={40} />
         {!!node.count && <BookTimelineCount $color={guide.color} data-timeline-count={node.count} title={`${node.count}번 이어서`}>×{node.count}</BookTimelineCount>}
       </BookTimelineIcon>
-      {!!node.caption && <p>{renderGuideText(node.caption, inlineTerms)}</p>}
+      {(!!node.caption || hasTalents) && <p>{!!node.caption && renderGuideText(node.caption, inlineTerms)}</p>}
+      {hasTalents && (
+        <BookTimelineTalents
+          $color={guide.color}
+          data-timeline-talents={talents.length || undefined}
+          aria-label={talents.length ? '이 자리에 붙는 특성' : undefined}
+          aria-hidden={talents.length ? undefined : 'true'}
+        >
+          {!!talents.length && (
+            <>
+              <i aria-hidden="true" />
+              <span>{talents.map((talent, index) => <SkillIconLink key={`${talent.id}-${index}`} skill={talent} size={22} />)}</span>
+            </>
+          )}
+        </BookTimelineTalents>
+      )}
     </BookTimelineItem>
   );
 }
@@ -2322,6 +2503,7 @@ function BookRotationTimeline({ timeline, guide, inlineTerms, label }) {
   const rails = timeline?.rails || [];
   if (!rails.length) return null;
   const title = displayGuideText(timeline.title);
+  const anyTalents = rails.some(rail => (rail.nodes || []).some(node => node.talents?.length));
   return (
     <BookDiagramFigure $color={guide.color} data-book-box="timeline" aria-label={title}>
       <BookDiagramHead>
@@ -2334,13 +2516,15 @@ function BookRotationTimeline({ timeline, guide, inlineTerms, label }) {
         const nodes = rail.nodes || [];
         const line = rail.kind !== 'inserts';
         const hasAbove = line && nodes.some(node => node.above);
+        const hasTalents = nodes.some(node => node.talents?.length);
+        const rows = 2 + (hasAbove ? 1 : 0) + (hasTalents ? 1 : 0);
         return (
           <BookTimelineRailBlock key={rail.label} data-timeline-rail={rail.kind || 'sequence'}>
             <BookTimelineRailLabel $color={guide.color}>{renderGuideText(rail.label, inlineTerms)}</BookTimelineRailLabel>
-            <BookTimelineRail role="list" aria-label={displayGuideText(rail.label)} $line={line} $hasAbove={hasAbove}>
+            <BookTimelineRail role="list" aria-label={displayGuideText(rail.label)} $line={line} $rows={rows}>
               {nodes.map((node, nodeIndex) => (
                 <li key={`${node.skillId}-${nodeIndex}`}>
-                  <BookTimelineNode node={node} guide={guide} hasAbove={hasAbove} line={line} inlineTerms={inlineTerms} />
+                  <BookTimelineNode node={node} guide={guide} hasAbove={hasAbove} hasTalents={hasTalents} line={line} inlineTerms={inlineTerms} />
                 </li>
               ))}
               {!!rail.loop && (
@@ -2351,6 +2535,7 @@ function BookRotationTimeline({ timeline, guide, inlineTerms, label }) {
                       <BookTimelineLoopBadge $color={guide.color} aria-hidden="true"><RotateCcw size={16} /></BookTimelineLoopBadge>
                     </BookTimelineIcon>
                     <p>반복</p>
+                    {hasTalents && <BookTimelineTalents $color={guide.color} aria-hidden="true" />}
                   </BookTimelineItem>
                 </li>
               )}
@@ -2359,6 +2544,11 @@ function BookRotationTimeline({ timeline, guide, inlineTerms, label }) {
           </BookTimelineRailBlock>
         );
       })}
+      {anyTalents && (
+        <BookDiagramLegend $color={guide.color} aria-label="표시 뜻">
+          <li data-legend-kind="talent"><i aria-hidden="true" />설명 밑 점선 칸: 그 자리를 바꾸는 특성 · 아이콘에 마우스를 올리면 설명</li>
+        </BookDiagramLegend>
+      )}
     </BookDiagramFigure>
   );
 }
@@ -6709,14 +6899,55 @@ const BookDiagramHead = styled.div`
 `;
 
 const BookDiagramLayers = styled.div`
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 0;
   margin-top: 12px;
 `;
 
+/* 특성 ↔ 스킬 점선: 상자들 뒤(z-index 0)에 깔리는 SVG 한 장. 마우스가 닿은 상자의 선만 직업 색 실선으로 굵어진다. */
+const BookDiagramLinks = styled.svg`
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+
+  path {
+    fill: none;
+    stroke: rgba(244, 239, 229, 0.4);
+    stroke-width: 1.25;
+    stroke-dasharray: 4 3;
+  }
+
+  circle {
+    fill: rgba(244, 239, 229, 0.6);
+  }
+
+  g[data-diagram-link-active] path {
+    stroke: ${props => props.$color};
+    stroke-width: 2;
+    stroke-dasharray: none;
+  }
+
+  g[data-diagram-link-active] circle {
+    fill: ${props => props.$color};
+  }
+
+  /* 좁은 화면에서는 한 층이 두 줄로 꺾여 선이 다른 상자 뒤를 지나가 엉뚱한 상자와 이어진 듯 보인다.
+     선은 숨기고 상자 안 '붙는 스킬' 아이콘과 눌렀을 때 강조로만 보여 준다. */
+  @container (max-width: 560px) {
+    display: none;
+  }
+`;
+
 /* 층 사이 연결: 위 층에서 내려오는 선 → 금색 작은 제목 → 아래 층 가지로 이어지는 선 */
 const BookDiagramLink = styled.div`
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6782,6 +7013,7 @@ const BookDiagramRow = styled.ul`
 
   li {
     position: relative;
+    z-index: 1;
     flex: 1 1 150px;
     min-width: 0;
     max-width: 300px;
@@ -6838,6 +7070,20 @@ const BookDiagramNodeBox = styled.div`
       : props.$kind === 'buff' ? 'rgba(120, 156, 190, 0.08)'
       : 'rgba(11, 16, 20, 0.6)'
   )};
+
+  /* 특성 ↔ 스킬 연결 강조: 마우스가 닿은 상자(active)와 그 상자에 점선으로 이어진 상자(related)만 직업 색 테두리 */
+  &[data-diagram-active],
+  &[data-diagram-related] {
+    border-style: solid;
+    border-color: ${props => props.$color};
+    outline: 1px solid ${props => props.$color}66;
+    outline-offset: 0;
+  }
+
+  &[data-diagram-related] {
+    border-color: ${props => props.$color}bb;
+    outline-color: ${props => props.$color}44;
+  }
 
   small {
     display: inline-block;
@@ -7090,6 +7336,47 @@ const BookDiagramGlyph = styled.span`
   }
 `;
 
+/* 특성 상자 안 '붙는 스킬' 줄: 점선 위에 작은 아이콘(툴팁). 흐름도에 그 스킬 상자가 없어도 여기서는 보인다. */
+const BookDiagramAffects = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin-top: 7px;
+  padding-top: 6px;
+  border-top: 1px dashed rgba(244, 239, 229, 0.18);
+
+  > span {
+    margin-right: 2px;
+    color: #8f9aa2;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+
+  > a {
+    border-color: rgba(244, 239, 229, 0.3);
+  }
+
+  > a:hover {
+    border-color: #e7c46f;
+  }
+
+  > a:focus-visible {
+    outline: 2px solid #d2b373;
+    outline-offset: 2px;
+  }
+
+  > em {
+    color: #e9edf0;
+    font-size: 0.72rem;
+    font-style: normal;
+    font-weight: 700;
+    word-break: keep-all;
+  }
+`;
+
 const BookDiagramLoop = styled.div`
   display: flex;
   align-items: flex-start;
@@ -7155,6 +7442,14 @@ const BookDiagramLegend = styled.ul`
   li[data-legend-kind='talent'] i {
     border: 1px dashed rgba(244, 239, 229, 0.3);
   }
+
+  li[data-legend-kind='link'] i {
+    width: 18px;
+    height: 0;
+    border: 0;
+    border-top: 1px dashed rgba(244, 239, 229, 0.6);
+    background: none;
+  }
 `;
 
 const BookTimelineIntro = styled.p`
@@ -7198,7 +7493,7 @@ const BookTimelineRail = styled.ol`
 
   li {
     display: grid;
-    grid-row: span ${props => (props.$hasAbove ? 3 : 2)};
+    grid-row: span ${props => props.$rows || 2};
     grid-template-rows: subgrid;
     min-width: 0;
   }
@@ -7207,6 +7502,50 @@ const BookTimelineRail = styled.ol`
     --timeline-icon: 36px;
     --timeline-above: 64px;
     --timeline-cell: ${props => (props.$line ? '72px' : '104px')};
+  }
+`;
+
+/* 설명 밑 점선 칸: 그 자리를 바꾸는 특성 아이콘(작게). 위쪽 가지처럼 짧은 선으로 잇고, 툴팁은 아이콘에 뜬다. */
+const BookTimelineTalents = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 3px;
+
+  i {
+    display: block;
+    width: 0;
+    height: 7px;
+    border-left: 1px dashed ${props => props.$color}aa;
+  }
+
+  > span {
+    display: inline-flex;
+    gap: 3px;
+    padding: 2px;
+    border: 1px dashed rgba(244, 239, 229, 0.3);
+    background: rgba(11, 16, 20, 0.6);
+  }
+
+  > span > a {
+    border-color: rgba(244, 239, 229, 0.22);
+  }
+
+  > span > a:hover {
+    border-color: #e7c46f;
+  }
+
+  > span > a:focus-visible {
+    outline: 2px solid #d2b373;
+    outline-offset: 1px;
+  }
+
+  @container (max-width: 640px) {
+    > span > a {
+      width: 20px;
+      height: 20px;
+    }
   }
 `;
 
