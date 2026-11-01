@@ -1255,3 +1255,11 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 검사: `validate-guide-manuscripts.js`에 affects/talents 규칙(숫자 ID·KB 존재·특성 종류·1~3개·효과 상자 이름)과 무기 전사 회귀(특성 상자마다 affects, 타임라인 3개 레일마다 talents, 거품 무는 광전사→필사의 일격·회전베기, 노련한 병사→자동 공격, 첫 필사의 일격 자리 전투군주)와 화면 코드 확인을 넣었다. `npm run build`의 전체 검증 13단계 통과.
 - 배포: 사이트 `3edbd874` main 푸시, KB 로컬 `6c70c7b`(무기 Meta 2개 파일만). 정리 빌드 `main.372374a1.js`(소스맵 403, `stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `shots.cjs`로 1440·390 확인(선 48·붙는 스킬 아이콘 66·특성 칸 아이콘 52, 오류·가로 넘침·깨진 아이콘 0, 캡처 `live/`).
 - 남은 결정: 나머지 39개 가이드에도 자료를 넣을지(부품은 공용), 휴대폰 범례 문구('마우스를 올리면' → 누르면)와 선 숨김 기준 폭.
+
+## 2026-11-01 문장 다듬기: '피해 구간을 엽니다' → 공략글 말투 (무기 전사)
+
+- 요청: "'피해 구간을 연다' 이런 표현 좀 안 와닿는데 다른 공략글 참고해서 자연스럽게 풀어서 써줘". 범위는 영상 v10 대본 39편 전체와 사이트 무기 전사 원고(나머지 사이트 원고 약 300곳은 다음).
+- 말투 기준: 인벤 무기 전사 공략의 "거인의 강타 동안 풀 딜", "투신은 ~에 맞춰 사용"을 참고해 '거인의 강타를 건 10초', '극딜 타이밍', '거인의 강타를 씁니다', 받는 피해는 '큰 피해가 들어올 때'로 바꿨다. 숫자·스킬 이름·뜻은 그대로다.
+- 반영: `artifacts/wording-open-20261101/apply.cjs warrior-arms`(표 `warrior-arms.cjs` 42줄, 원고·KB 정본 동시, `talent-links-20261101/orig`도 같은 표 적용). 흐름도·타임라인 제목은 특성 연결 자료와 영상 도식의 열쇠라 두었다. 남은 칸 찾기 `list.cjs <ID>`.
+- 검사·배포: `npm run validate` 통과, 사이트 `75aafe25` main 푸시, KB 로컬 `d69f0de`. 빌드 `main.4085a991.js`(소스맵 403, `stage-deploy.cjs`)를 `vercel deploy --prebuilt --prod`로 올렸고 `shots.cjs`로 운영 1440·390 확인(새 제목 있음, 오류·가로 넘침 0).
+- 남은 것: 화면 코드의 시너지 분류 이름표 '피해 구간'(`GuideDetailPage.js` synergy 분류, 40개 가이드 공용)과 다른 가이드 원고.
