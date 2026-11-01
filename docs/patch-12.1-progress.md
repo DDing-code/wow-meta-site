@@ -1270,3 +1270,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-warrior-20261102.json`, 목록 생성 `upload-advanced-v10-warrior-20261102/prepare.py`)로 와우메타 채널에 무기 `KgLPXpTh6BU`·분노 `cxgkqi6Px7U`·방어 `4pLAYVCJeUU`를 공개했다. 제목·설명은 v9와 같은 양식(가이드 주소·기본편 주소·바로 가기, 시각은 v10 편집 파일의 장 시작). `verify`로 채널·제목·설명·썸네일·공개 3/3, oEmbed로 공개 링크를 확인했다.
 - 사이트: `artifacts/advanced-videos-warrior-20261102/apply.cjs`로 원고·KB `13-전사/*/Meta/guide-12.1.json`·검사기 GUIDE_ADVANCED_VIDEOS에 advancedVideo를 넣었다(파멸과 같은 기본편·심화편 단추). `npm run validate` 통과, 사이트 `3d7e1a11` main 푸시, KB 로컬 `3616783`. 빌드 `main.805eca70.js`(`stage-deploy.cjs`, 820개 파일)를 `vercel deploy --prebuilt --prod`로 올렸고 운영 주소에서 `shots.cjs`로 1440·390·320 7화면 통과(캡처 `live/`).
 - 남은 결정: 11-01에 공개한 전사 v9 심화 3편(`OqZf2WXUXt0`·`hvp8EZRkGGQ`·`rJfg3QUsuNU`)은 같은 제목으로 채널에 남아 있다. 사이트에는 연결된 적이 없고, 지울지는 답을 기다린다.
+
+## 2026-11-02 성기사 심화 영상 3편(v10) 공개·가이드 연결
+
+- 요청: "업로드하고 사이트랑 동기화 시켜줘". 대상은 성기사 3편 v10 최신판(ai-hub `outputs/pixel-guides/specs/<id>/<id>-guide-storyboard-v10-reading-focus-v2.mp4`, 성기사 테마곡·pixelfx 신성 효과판)과 썸네일(`<id>-thumbnail-talentbg-v3-1280x720.png`).
+- 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-paladin-20261102.json`, 목록 생성 `upload-advanced-v10-paladin-20261102/prepare.py`)로 와우메타 채널에 신성 `EZ3vLNckjYs`·보호 `MT7hghuzlWU`·징벌 `_HHEKlLi7Qs`를 공개했다. 징벌은 첫 실행에서 게시 뒤 편집 화면 대기 시간이 초과돼 임시본으로 남아 같은 명령을 다시 돌려 공개했다. `verify`로 채널·제목·설명·썸네일·공개 3/3, oEmbed로 공개 링크를 확인했다.
+- 사이트: `artifacts/advanced-videos-paladin-20261102/apply.cjs`로 원고·KB `08-성기사/*/Meta/guide-12.1.json`·검사기 GUIDE_ADVANCED_VIDEOS에 advancedVideo를 넣었다(전사와 같은 기본편·심화편 단추). `npm run build`(검사 전체) 통과, 사이트 `f35eaa37` main 푸시, KB 로컬 `c411a24`. 빌드 `main.94b57710.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고 운영 주소에서 `shots.cjs`로 1440·390·320 7화면 통과(캡처 `live/`).
+- 남은 결정: 11-01에 공개한 성기사 v9 심화 3편(`A873-0wi5kE`·`JyRtHCOWK2E`·`2AKMwkgfgO4`)은 같은 제목으로 채널에 남아 있다. 사이트에는 연결된 적이 없고, 지울지는 답을 기다린다.
