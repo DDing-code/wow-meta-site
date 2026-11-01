@@ -1405,6 +1405,9 @@ function main() {
   // 심화편 영상(기본편과 따로 올린 편): 기본편 아래 '심화편' 단추로 본다. 번호는 ai-hub outputs/pixel-guides/specs/<id>-advanced/youtube-upload.json 의 공개 확인된 값이다.
   const GUIDE_ADVANCED_VIDEOS = new Map([
     ['demonhunter-havoc', 'bFrBTJqCUuU'],
+    ['warrior-arms', 'KgLPXpTh6BU'],
+    ['warrior-fury', 'cxgkqi6Px7U'],
+    ['warrior-protection', '4pLAYVCJeUU'],
   ]);
   for (const [id, item] of Object.entries(manuscripts)) {
     const expected = GUIDE_ADVANCED_VIDEOS.get(id);
