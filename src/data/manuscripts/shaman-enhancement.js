@@ -468,6 +468,10 @@ const manuscript = {
                   label: '정령의 맹공',
                   kind: 'talent',
                   note: '폭풍의 일격·용암 채찍이 1중첩을 100% 확률로 생성',
+                  affects: [
+                    '17364',
+                    '60103',
+                  ],
                 },
                 {
                   skillId: '470057',
@@ -490,6 +494,9 @@ const manuscript = {
                   label: '넘치는 소용돌이',
                   kind: 'talent',
                   note: '저장 상한을 10중첩으로',
+                  affects: [
+                    '187880',
+                  ],
                 },
               ],
             },
@@ -511,6 +518,10 @@ const manuscript = {
                   label: '분노의 소용돌이',
                   kind: 'talent',
                   note: '한 번에 최대 10중첩까지 소비',
+                  affects: [
+                    '188196',
+                    '188443',
+                  ],
                 },
               ],
             },
@@ -577,6 +588,10 @@ const manuscript = {
                   label: '정기의 속도',
                   kind: 'core',
                   note: '남은 쿨다운 0.3초 감소 · 10중첩이면 3초 · 원소 피해 10%',
+                  affects: [
+                    '17364',
+                    '60103',
+                  ],
                 },
               ],
             },
@@ -669,6 +684,10 @@ const manuscript = {
                   label: '폭풍의 합일',
                   kind: 'talent',
                   note: '낙뢰 적중 대상 하나당 다음 폭풍의 일격 25% · 최대 6중첩',
+                  affects: [
+                    '187874',
+                    '17364',
+                  ],
                 },
                 {
                   skillId: '1262713',
@@ -676,6 +695,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '첫 단계',
                   note: '소비 중첩 하나당 2% 확률로 다음 낙뢰가 쿨다운 무시',
+                  affects: [
+                    '187874',
+                  ],
                 },
                 {
                   skillId: '1252373',
@@ -683,6 +705,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 단계',
                   note: '적중 지역에 2초 동안 50% 추가 피해 2회 · 자동 공격 속도 15%',
+                  affects: [
+                    '187874',
+                  ],
                 },
               ],
             },
@@ -741,6 +766,10 @@ const manuscript = {
                   label: '토림의 기원',
                   kind: 'talent',
                   note: '파멸의 바람 2초 연장 · 승천 쿨다운 60초 감소',
+                  affects: [
+                    '384352',
+                    '114051',
+                  ],
                 },
               ],
             },
@@ -835,6 +864,9 @@ const manuscript = {
                   label: '불꽃 회오리',
                   kind: 'talent',
                   note: '선택 특성 · 전격의 불길이 2중첩 추가 생성',
+                  affects: [
+                    '470057',
+                  ],
                 },
               ],
             },
@@ -902,10 +934,17 @@ const manuscript = {
                     skillId: '197214',
                     when: '선택 특성 · 승천과 맞출 수 있으면',
                   },
+                  talents: [
+                    '1260666',
+                  ],
                 },
                 {
                   skillId: '187874',
                   caption: '12초 강화 · 쿨마다',
+                  talents: [
+                    '1262713',
+                    '384363',
+                  ],
                 },
                 {
                   skillId: '17364',
@@ -914,6 +953,10 @@ const manuscript = {
                     skillId: '114051',
                     when: '쿨이 돌고 계속 칠 수 있을 때',
                   },
+                  talents: [
+                    '210853',
+                    '384363',
+                  ],
                 },
                 {
                   skillId: '17364',
@@ -930,6 +973,9 @@ const manuscript = {
                     skillId: '452201',
                     when: '폭풍이 발동했으면 번개 화살 대신',
                   },
+                  talents: [
+                    '384149',
+                  ],
                 },
                 {
                   skillId: '187874',
@@ -957,6 +1003,10 @@ const manuscript = {
                 {
                   skillId: '452201',
                   caption: '폭풍인도자 · 발동하면 번개 화살 자리',
+                  talents: [
+                    '455110',
+                    '455096',
+                  ],
                 },
                 {
                   skillId: '1218090',
@@ -965,18 +1015,31 @@ const manuscript = {
                 {
                   skillId: '444995',
                   caption: '토템술사 · 적이 머무는 자리에',
+                  talents: [
+                    '445024',
+                  ],
                 },
                 {
                   skillId: '60103',
                   caption: '토템술사 · 불 티끌·뜨거운 손',
+                  talents: [
+                    '445024',
+                  ],
                 },
                 {
                   skillId: '384352',
                   caption: '토템술사 · 토템 구간에 맞춰',
+                  talents: [
+                    '384444',
+                  ],
                 },
                 {
                   skillId: '17364',
                   caption: '토템술사 · 파멸의 바람 중 자동 소비',
+                  talents: [
+                    '1250364',
+                    '210853',
+                  ],
                 },
               ],
             },
@@ -1017,14 +1080,25 @@ const manuscript = {
                 {
                   skillId: '470057',
                   caption: '풀링 · 화염 충격',
+                  talents: [
+                    '1260666',
+                  ],
                 },
                 {
                   skillId: '187874',
                   caption: '승천 전 강화',
+                  talents: [
+                    '1262713',
+                    '384363',
+                  ],
                 },
                 {
                   skillId: '114051',
                   caption: '계속 칠 수 있을 때',
+                  talents: [
+                    '1264688',
+                    '384444',
+                  ],
                 },
                 {
                   skillId: '115356',
@@ -1044,30 +1118,53 @@ const manuscript = {
                 {
                   skillId: '470057',
                   caption: '진입 · 화염 충격',
+                  talents: [
+                    '1260666',
+                  ],
                 },
                 {
                   skillId: '17364',
                   caption: '첫 중첩',
+                  talents: [
+                    '1250364',
+                    '210853',
+                  ],
                 },
                 {
                   skillId: '444995',
                   caption: '적 위치가 고정되면',
+                  talents: [
+                    '445024',
+                  ],
                 },
                 {
                   skillId: '197214',
                   caption: '대지 티끌',
+                  talents: [
+                    '445024',
+                  ],
                 },
                 {
                   skillId: '60103',
                   caption: '불 티끌 · 뜨거운 손 시작',
+                  talents: [
+                    '445024',
+                  ],
                 },
                 {
                   skillId: '384352',
                   caption: '직접 쓰는 빌드',
+                  talents: [
+                    '384444',
+                  ],
                 },
                 {
                   skillId: '187874',
                   caption: '자동 소비',
+                  talents: [
+                    '1262713',
+                    '384363',
+                  ],
                 },
                 {
                   skillId: '60103',
@@ -1122,6 +1219,9 @@ const manuscript = {
                     skillId: '197214',
                     when: '선택 특성 · 전방에 적이 모이면',
                   },
+                  talents: [
+                    '1260666',
+                  ],
                 },
                 {
                   skillId: '187874',
@@ -1130,10 +1230,18 @@ const manuscript = {
                     skillId: '114051',
                     when: '낙뢰 뒤 · 무리가 모이면',
                   },
+                  talents: [
+                    '1262713',
+                    '384363',
+                  ],
                 },
                 {
                   skillId: '17364',
                   caption: '중첩 모으기',
+                  talents: [
+                    '210853',
+                    '384363',
+                  ],
                 },
                 {
                   skillId: '17364',
@@ -1150,6 +1258,9 @@ const manuscript = {
                     skillId: '452201',
                     when: '발동·10중첩이면 먼저',
                   },
+                  talents: [
+                    '384149',
+                  ],
                 },
                 {
                   skillId: '187874',
@@ -1177,10 +1288,18 @@ const manuscript = {
                 {
                   skillId: '452201',
                   caption: '폭풍인도자 · 발동·10중첩',
+                  talents: [
+                    '455110',
+                    '455096',
+                  ],
                 },
                 {
                   skillId: '188443',
                   caption: '폭풍인도자 · 폭풍 뒤 전격 방전',
+                  talents: [
+                    '455096',
+                    '384149',
+                  ],
                 },
                 {
                   skillId: '1218090',
@@ -1189,14 +1308,23 @@ const manuscript = {
                 {
                   skillId: '444995',
                   caption: '토템술사 · 적이 머무는 자리',
+                  talents: [
+                    '445024',
+                  ],
                 },
                 {
                   skillId: '384352',
                   caption: '토템술사 · 용암 채찍보다 먼저',
+                  talents: [
+                    '384444',
+                  ],
                 },
                 {
                   skillId: '60103',
                   caption: '토템술사 · 불 티끌·뜨거운 손',
+                  talents: [
+                    '445024',
+                  ],
                 },
               ],
             },
@@ -1291,12 +1419,20 @@ const manuscript = {
                   label: '깨어나는 폭풍',
                   kind: 'talent',
                   note: '폭풍의 일격 사용 시 낮은 확률',
+                  affects: [
+                    '17364',
+                    '452201',
+                  ],
                 },
                 {
                   skillId: '1264688',
                   label: '하강하는 하늘',
                   kind: 'talent',
                   note: '승천이 다음 번개 화살을 폭풍으로 강화',
+                  affects: [
+                    '114051',
+                    '452201',
+                  ],
                 },
               ],
             },
@@ -1319,12 +1455,21 @@ const manuscript = {
                   label: '초자력 충전',
                   kind: 'talent',
                   note: '번개 화살·폭풍·연쇄 번개가 35% 확률로 2중첩 반환',
+                  affects: [
+                    '188196',
+                    '452201',
+                    '188443',
+                  ],
                 },
                 {
                   skillId: '455096',
                   label: '전격 방전',
                   kind: 'talent',
                   note: '다음 연쇄 번개 즉시 시전·40% 증가·한 번 더 · 최대 2회',
+                  affects: [
+                    '452201',
+                    '188443',
+                  ],
                 },
               ],
             },
@@ -1458,6 +1603,11 @@ const manuscript = {
                   label: '휘몰아치는 정기',
                   kind: 'talent',
                   note: '바람·대지·불 티끌을 능력으로 소비',
+                  affects: [
+                    '197214',
+                    '60103',
+                    '188196',
+                  ],
                 },
               ],
             },
@@ -1489,11 +1639,20 @@ const manuscript = {
                   label: '토템의 기세',
                   kind: 'talent',
                   note: '소비 중첩당 0.20초 연장 · 10중첩이면 2초',
+                  affects: [
+                    '60103',
+                    '188196',
+                    '188443',
+                  ],
                 },
                 {
                   skillId: '1250364',
                   label: '정기의 속도',
                   note: '같은 소비로 용암 채찍 쿨다운 중첩당 0.3초 감소',
+                  affects: [
+                    '17364',
+                    '60103',
+                  ],
                 },
               ],
             },
@@ -3093,6 +3252,11 @@ const manuscript = {
     video: {
       youtubeId: 'FAQ08MxAc-8',
       title: '한밤 2시즌 12.1.5 고양 주술사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'Hy8_v64nwAU',
+      title: '한밤 2시즌 12.1.5 고양 주술사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

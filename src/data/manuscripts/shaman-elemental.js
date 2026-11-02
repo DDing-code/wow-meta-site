@@ -371,6 +371,9 @@ const manuscript = {
                     kind: 'talent',
                     tag: '여러 적',
                     note: '주 대상과 주변 10미터 추가 적 5명에게 화염 충격 · 재사용 10초',
+                    affects: [
+                      '188389',
+                    ],
                   },
                 ],
               },
@@ -393,12 +396,19 @@ const manuscript = {
                     label: '원소의 대가',
                     kind: 'talent',
                     note: '다음 자연·물리·냉기 주문 피해 15% 증가',
+                    affects: [
+                      '117014',
+                      '188196',
+                    ],
                   },
                   {
                     skillId: '1258843',
                     label: '작열하는 분노',
                     kind: 'talent',
                     note: '용암 폭발 10% 추가 피해',
+                    affects: [
+                      '51505',
+                    ],
                   },
                 ],
               },
@@ -512,6 +522,9 @@ const manuscript = {
                   label: '전격의 불길',
                   kind: 'talent',
                   note: '소용돌이 6',
+                  affects: [
+                    '188389',
+                  ],
                 },
                 {
                   skillId: '191634',
@@ -533,6 +546,10 @@ const manuscript = {
                   label: '팽창하는 소용돌이',
                   kind: 'talent',
                   note: '최대 소용돌이 50 증가',
+                  affects: [
+                    '117014',
+                    '61882',
+                  ],
                 },
                 {
                   skillId: '443448',
@@ -540,6 +557,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '선견자',
                   note: '최대 소용돌이 25 증가',
+                  affects: [
+                    '117014',
+                    '61882',
+                  ],
                 },
               ],
             },
@@ -734,6 +755,11 @@ const manuscript = {
                   label: '2세트',
                   kind: 'talent',
                   note: '대지 충격·지진·정기 작렬 피해 25% 증가',
+                  affects: [
+                    '8042',
+                    '61882',
+                    '117014',
+                  ],
                 },
               ],
             },
@@ -784,6 +810,9 @@ const manuscript = {
                     skillId: '470057',
                     when: '골랐다면 갱신 구간에',
                   },
+                  talents: [
+                    '470057',
+                  ],
                 },
                 {
                   skillId: '51505',
@@ -792,6 +821,10 @@ const manuscript = {
                     skillId: '191634',
                     when: '쿨이 돌면 먼저',
                   },
+                  talents: [
+                    '1258843',
+                    '16166',
+                  ],
                 },
                 {
                   skillId: '117014',
@@ -800,6 +833,10 @@ const manuscript = {
                     skillId: '443454',
                     when: '쿨이 돌면 선조 부르기',
                   },
+                  talents: [
+                    '16166',
+                    '1296625',
+                  ],
                 },
                 {
                   skillId: '188196',
@@ -808,6 +845,9 @@ const manuscript = {
                     skillId: '114050',
                     when: '강화 번개 두 번 뒤',
                   },
+                  talents: [
+                    '16166',
+                  ],
                 },
                 {
                   skillId: '51505',
@@ -835,18 +875,33 @@ const manuscript = {
                 {
                   skillId: '443454',
                   caption: '선견자 · 시전 주문에 소비',
+                  talents: [
+                    '443444',
+                    '443446',
+                  ],
                 },
                 {
                   skillId: '51505',
                   caption: '선견자 · 선조 중 실제 단일 주문',
+                  talents: [
+                    '1258843',
+                    '16166',
+                  ],
                 },
                 {
                   skillId: '188196',
                   caption: '폭풍수호자 · 강화 두 번 회수',
+                  talents: [
+                    '16166',
+                  ],
                 },
                 {
                   skillId: '452201',
                   caption: '폭풍인도자 · 발동 있으면 번개 화살 대신',
+                  talents: [
+                    '455096',
+                    '455110',
+                  ],
                 },
                 {
                   skillId: '51505',
@@ -855,6 +910,9 @@ const manuscript = {
                 {
                   skillId: '8042',
                   caption: '대지 충격을 골랐다면 소비기',
+                  talents: [
+                    '1296625',
+                  ],
                 },
               ],
             },
@@ -895,15 +953,25 @@ const manuscript = {
                 {
                   skillId: '191634',
                   caption: '전투 약 3초 전',
+                  talents: [
+                    '443451',
+                  ],
                 },
                 {
                   skillId: '188196',
                   caption: '승천 전 강화',
                   count: 2,
+                  talents: [
+                    '16166',
+                  ],
                 },
                 {
                   skillId: '443454',
                   caption: '승천 직전',
+                  talents: [
+                    '443444',
+                    '443446',
+                  ],
                 },
                 {
                   skillId: '114050',
@@ -912,10 +980,18 @@ const manuscript = {
                 {
                   skillId: '51505',
                   caption: '신속함으로 소비',
+                  talents: [
+                    '1258843',
+                    '16166',
+                  ],
                 },
                 {
                   skillId: '117014',
                   caption: '원소의 대가·무료 소비',
+                  talents: [
+                    '16166',
+                    '443448',
+                  ],
                 },
                 {
                   skillId: '51505',
@@ -930,11 +1006,19 @@ const manuscript = {
                 {
                   skillId: '191634',
                   caption: '전투 전 시전',
+                  talents: [
+                    '454026',
+                    '455096',
+                  ],
                 },
                 {
                   skillId: '188196',
                   caption: '승천 전 강화',
                   count: 2,
+                  talents: [
+                    '455110',
+                    '16166',
+                  ],
                 },
                 {
                   skillId: '470057',
@@ -943,18 +1027,33 @@ const manuscript = {
                 {
                   skillId: '114050',
                   caption: '폭풍수호자 뒤',
+                  talents: [
+                    '1264688',
+                  ],
                 },
                 {
                   skillId: '51505',
                   caption: '원소의 대가 준비',
+                  talents: [
+                    '1258843',
+                    '16166',
+                  ],
                 },
                 {
                   skillId: '452201',
                   caption: '발동이 있을 때만',
+                  talents: [
+                    '455096',
+                    '455110',
+                  ],
                 },
                 {
                   skillId: '117014',
                   caption: '소용돌이·무료 소비 정리',
+                  talents: [
+                    '16166',
+                    '1296625',
+                  ],
                 },
               ],
               note: '폭풍인도자에는 선조의 신속함이 없습니다. 강화 번개 화살 두 번은 선견자처럼 승천 전에 씁니다. 첫 풀에 폭풍 발동이 반드시 있다고 가정하지 않고, 없으면 그 칸을 건너뜁니다.',
@@ -1000,6 +1099,9 @@ const manuscript = {
                 {
                   skillId: '191634',
                   caption: '추가 적이 모인 구간',
+                  talents: [
+                    '443451',
+                  ],
                 },
                 {
                   skillId: '188443',
@@ -1008,6 +1110,10 @@ const manuscript = {
                 {
                   skillId: '443454',
                   caption: '승천 직전',
+                  talents: [
+                    '443444',
+                    '443446',
+                  ],
                 },
                 {
                   skillId: '114050',
@@ -1016,10 +1122,18 @@ const manuscript = {
                 {
                   skillId: '61882',
                   caption: '선조 중 먼저',
+                  talents: [
+                    '1296625',
+                    '381707',
+                  ],
                 },
                 {
                   skillId: '51505',
                   caption: '전격 뒤 퍼뜨리기',
+                  talents: [
+                    '1258843',
+                    '16166',
+                  ],
                 },
               ],
               note: '전격의 불길은 탱커가 몹을 모은 뒤 씁니다. 폭풍수호자로 강화한 연쇄 번개 두 번은 승천 전에 다 씁니다. 선조의 신속함은 시전 주문에 소비합니다.',
@@ -1035,6 +1149,10 @@ const manuscript = {
                 {
                   skillId: '51505',
                   caption: '정화의 불길로 퍼뜨리기',
+                  talents: [
+                    '1258843',
+                    '16166',
+                  ],
                 },
                 {
                   skillId: '61882',
@@ -1043,6 +1161,10 @@ const manuscript = {
                     skillId: '1296626',
                     when: '4세트 무료 지진',
                   },
+                  talents: [
+                    '1296625',
+                    '381707',
+                  ],
                 },
                 {
                   skillId: '188443',
@@ -1074,18 +1196,32 @@ const manuscript = {
                 {
                   skillId: '117014',
                   caption: '2~3대상 · 고른 단일 소비기',
+                  talents: [
+                    '16166',
+                    '1296625',
+                  ],
                 },
                 {
                   skillId: '8042',
                   caption: '몹이 곧 이동 · 우선 대상',
+                  talents: [
+                    '1296625',
+                  ],
                 },
                 {
                   skillId: '452201',
                   caption: '폭풍인도자 · 발동 폭풍',
+                  talents: [
+                    '455096',
+                    '455110',
+                  ],
                 },
                 {
                   skillId: '188196',
                   caption: '적이 하나로 줄면 단일로',
+                  talents: [
+                    '16166',
+                  ],
                 },
               ],
             },
@@ -1198,18 +1334,27 @@ const manuscript = {
                   label: '최후의 부름',
                   kind: 'talent',
                   note: '선조가 떠날 때 근처 적에게 정기 작렬',
+                  affects: [
+                    '443450',
+                  ],
                 },
                 {
                   skillId: '443444',
                   label: '내 부름에 응하라',
                   kind: 'talent',
                   note: '선조 지속시간 4초 증가',
+                  affects: [
+                    '443450',
+                  ],
                 },
                 {
                   skillId: '443451',
                   label: '저 너머의 공물',
                   kind: 'talent',
                   note: '선조 소환 때 폭풍수호자 쿨다운 3초 감소',
+                  affects: [
+                    '191634',
+                  ],
                 },
               ],
             },
@@ -1341,6 +1486,10 @@ const manuscript = {
                   label: '하강하는 하늘',
                   kind: 'talent',
                   note: '승천이 다음 번개 화살을 폭풍으로 강화',
+                  affects: [
+                    '114050',
+                    '452201',
+                  ],
                 },
               ],
             },
@@ -1363,18 +1512,30 @@ const manuscript = {
                   label: '전격 방전',
                   kind: 'talent',
                   note: '폭풍 시전이 폭풍수호자 중첩 부여',
+                  affects: [
+                    '452201',
+                    '191634',
+                  ],
                 },
                 {
                   skillId: '455110',
                   label: '초자력 충전',
                   kind: 'talent',
                   note: '번개 화살·폭풍·연쇄 번개 정기 과부하 피해 10% 증가',
+                  affects: [
+                    '188196',
+                    '452201',
+                    '188443',
+                  ],
                 },
                 {
                   skillId: '454026',
                   label: '구르는 천둥',
                   kind: 'talent',
                   note: '폭풍수호자 쿨다운 15초 감소',
+                  affects: [
+                    '191634',
+                  ],
                 },
               ],
             },
@@ -2794,6 +2955,11 @@ const manuscript = {
     video: {
       youtubeId: '4mEWcRJCyJg',
       title: '한밤 2시즌 12.1.5 정기 주술사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: '-wiVBCRaxcs',
+      title: '한밤 2시즌 12.1.5 정기 주술사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

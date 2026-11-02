@@ -26,6 +26,9 @@ const GUIDES = {
   'deathknight-frost': '/guide/deathknight/frost',
   'deathknight-unholy': '/guide/deathknight/unholy',
   'deathknight-blood': '/guide/deathknight/blood',
+  'shaman-elemental': '/guide/shaman/elemental',
+  'shaman-enhancement': '/guide/shaman/enhancement',
+  'shaman-restoration': '/guide/shaman/restoration',
 };
 const only = process.argv.slice(3);
 (async () => {

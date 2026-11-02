@@ -397,12 +397,19 @@ const manuscript = {
                   label: '격류',
                   kind: 'talent',
                   note: '최초 치유량 20% · 치명타 및 극대화율 10%',
+                  affects: [
+                    '61295',
+                  ],
                 },
                 {
                   skillId: '1267016',
                   label: '폭풍의 흐름 토템',
                   kind: 'talent',
                   note: '6% 확률로 다음 치유의 토템 강화',
+                  affects: [
+                    '61295',
+                    '5394',
+                  ],
                 },
               ],
             },
@@ -435,6 +442,10 @@ const manuscript = {
                   label: '너울대는 물결',
                   kind: 'talent',
                   note: '치유의 토템을 쓰면 걸려 있는 성난 해일 3초 연장 · 남은 시간에 더해짐',
+                  affects: [
+                    '5394',
+                    '61295',
+                  ],
                 },
               ],
             },
@@ -570,18 +581,28 @@ const manuscript = {
                   label: '범람의 파도',
                   kind: 'talent',
                   note: '범위 2미터 증가 · 영역 안 최대 5명 즉시 치유',
+                  affects: [
+                    '73920',
+                  ],
                 },
                 {
                   skillId: '462424',
                   label: '조석수',
                   kind: 'talent',
                   note: '성난 해일이 걸린 각 아군 즉시 치유',
+                  affects: [
+                    '73920',
+                    '61295',
+                  ],
                 },
                 {
                   skillId: '1252874',
                   label: '위안의 비',
                   kind: 'talent',
                   note: '치유의 비 치유량 10% · 직접 시전 0.5초 단축',
+                  affects: [
+                    '73920',
+                  ],
                 },
               ],
             },
@@ -672,6 +693,10 @@ const manuscript = {
                   label: '폭풍의 흐름 토템',
                   kind: 'core',
                   note: '사용권 60초 · 최대 2중첩',
+                  affects: [
+                    '61295',
+                    '5394',
+                  ],
                 },
               ],
             },
@@ -688,6 +713,9 @@ const manuscript = {
                   label: '폭풍의 흐름 토템',
                   kind: 'talent',
                   note: '마지막 단계: 치유의 토템 충전을 소모하지 않음',
+                  affects: [
+                    '5394',
+                  ],
                 },
               ],
             },
@@ -699,12 +727,19 @@ const manuscript = {
                   label: '폭풍의 흐름 토템',
                   kind: 'talent',
                   note: '가운데 단계: 토템 치유량 1포인트 20% · 2포인트 40%',
+                  affects: [
+                    '5394',
+                  ],
                 },
                 {
                   skillId: '1312843',
                   label: '너울대는 물결',
                   kind: 'talent',
                   note: '걸려 있는 성난 해일 3초 연장 · 타이머 초기화 없이 늘어남',
+                  affects: [
+                    '5394',
+                    '61295',
+                  ],
                 },
               ],
             },
@@ -773,10 +808,17 @@ const manuscript = {
                 {
                   skillId: '61295',
                   caption: '위험 대상 표시',
+                  talents: [
+                    '1267016',
+                    '1312843',
+                  ],
                 },
                 {
                   skillId: '378081',
                   caption: '급락·예정 피해에',
+                  talents: [
+                    '1267016',
+                  ],
                 },
                 {
                   skillId: '77472',
@@ -789,14 +831,26 @@ const manuscript = {
                 {
                   skillId: '1267016',
                   caption: '사용권 있으면 소비',
+                  talents: [
+                    '1267120',
+                    '1267093',
+                  ],
                 },
                 {
                   skillId: '444995',
                   caption: '회복할 아군 자리 유지',
+                  talents: [
+                    '445029',
+                    '445030',
+                  ],
                 },
                 {
                   skillId: '5394',
                   caption: '충전 상한 확인',
+                  talents: [
+                    '1312843',
+                    '1267093',
+                  ],
                 },
                 {
                   skillId: '188389',
@@ -816,18 +870,34 @@ const manuscript = {
                 {
                   skillId: '443454',
                   caption: '선견자 · 자연의 신속함 자리',
+                  talents: [
+                    '443444',
+                    '443449',
+                  ],
                 },
                 {
                   skillId: '73685',
                   caption: '선견자 · 치유의 물결 앞 강화',
+                  talents: [
+                    '443449',
+                    '443423',
+                  ],
                 },
                 {
                   skillId: '73920',
                   caption: '선견자 · 쇄도하는 토템 대신',
+                  talents: [
+                    '383222',
+                    '462424',
+                  ],
                 },
                 {
                   skillId: '444995',
                   caption: '토템술사 · 아군이 머물 자리',
+                  talents: [
+                    '445029',
+                    '445030',
+                  ],
                 },
                 {
                   skillId: '73685',
@@ -880,10 +950,18 @@ const manuscript = {
                 {
                   skillId: '61295',
                   caption: '다음 피해 대상',
+                  talents: [
+                    '1267016',
+                    '1312843',
+                  ],
                 },
                 {
                   skillId: '444995',
                   caption: '파티가 머물 자리',
+                  talents: [
+                    '445029',
+                    '445030',
+                  ],
                 },
                 {
                   skillId: '188389',
@@ -896,14 +974,25 @@ const manuscript = {
                 {
                   skillId: '5394',
                   caption: '첫 피해 · 무료 연쇄 치유',
+                  talents: [
+                    '445034',
+                    '445035',
+                  ],
                 },
                 {
                   skillId: '378081',
                   caption: '큰 피해에 맞춰',
+                  talents: [
+                    '1267016',
+                  ],
                 },
                 {
                   skillId: '1267016',
                   caption: '신속함 사용권 바로',
+                  talents: [
+                    '1267120',
+                    '1267093',
+                  ],
                 },
                 {
                   skillId: '1064',
@@ -912,6 +1001,10 @@ const manuscript = {
                     skillId: '108280',
                     when: '골랐고 배정한 큰 피해면',
                   },
+                  talents: [
+                    '445025',
+                    '445036',
+                  ],
                 },
               ],
               note: '쇄도하는 토템이 치유의 비를 대체합니다. 승천과 치유의 해일 토템은 선택한 하나만 씁니다. 상위 레이드 기록 8개 중 6개가 첫 피해 전에 화염 충격을 걸었고, 치유의 토템은 자연의 신속함보다 먼저(6개 중 5개), 폭풍의 흐름 토템은 자연의 신속함 직후에 썼습니다.',
@@ -930,14 +1023,26 @@ const manuscript = {
                 {
                   skillId: '61295',
                   caption: '피해 받을 대상',
+                  talents: [
+                    '443451',
+                    '1267016',
+                  ],
                 },
                 {
                   skillId: '73920',
                   caption: '부상자가 머물 자리',
+                  talents: [
+                    '383222',
+                    '462424',
+                  ],
                 },
                 {
                   skillId: '443454',
                   caption: '선조와 즉시 시전',
+                  talents: [
+                    '443444',
+                    '443449',
+                  ],
                 },
                 {
                   skillId: '77472',
@@ -946,10 +1051,18 @@ const manuscript = {
                 {
                   skillId: '73685',
                   caption: '선조 구간 연결',
+                  talents: [
+                    '443449',
+                    '443423',
+                  ],
                 },
                 {
                   skillId: '1267016',
                   caption: '사용권 있으면 소비',
+                  talents: [
+                    '1267120',
+                    '1267093',
+                  ],
                 },
               ],
               note: '쇄도하는 토템과 토템술사 전용 흐름은 넣지 않습니다. 대상이 많으면 치유의 물결 자리에 연쇄 치유를 검토합니다.',
@@ -992,22 +1105,41 @@ const manuscript = {
                     skillId: '207778',
                     when: '폭우를 골랐을 때만 16초 안에',
                   },
+                  talents: [
+                    '445029',
+                    '445030',
+                  ],
                 },
                 {
                   skillId: '5394',
                   caption: '무료 연쇄 치유',
+                  talents: [
+                    '1312843',
+                    '1267093',
+                  ],
                 },
                 {
                   skillId: '61295',
                   caption: '피해 받을 아군에게 넓게',
+                  talents: [
+                    '1267016',
+                    '1312843',
+                  ],
                 },
                 {
                   skillId: '378081',
                   caption: '예정한 회복 구간에',
+                  talents: [
+                    '1267016',
+                  ],
                 },
                 {
                   skillId: '1267016',
                   caption: '신속함 사용권 바로',
+                  talents: [
+                    '1267120',
+                    '1267093',
+                  ],
                 },
                 {
                   skillId: '1064',
@@ -1027,10 +1159,18 @@ const manuscript = {
                 {
                   skillId: '443454',
                   caption: '선견자 · 피해 구간에 선조',
+                  talents: [
+                    '443444',
+                    '443449',
+                  ],
                 },
                 {
                   skillId: '73685',
                   caption: '선견자 · 다음 연쇄 치유 강화',
+                  talents: [
+                    '443449',
+                    '443423',
+                  ],
                 },
                 {
                   skillId: '73685',
@@ -1039,6 +1179,10 @@ const manuscript = {
                 {
                   skillId: '73920',
                   caption: '선견자 · 직접 치유의 비',
+                  talents: [
+                    '383222',
+                    '462424',
+                  ],
                 },
                 {
                   skillId: '108280',
@@ -1124,12 +1268,20 @@ const manuscript = {
                   label: '증폭 핵',
                   kind: 'talent',
                   note: '내 치유량 3% 증가',
+                  affects: [
+                    '444995',
+                  ],
                 },
                 {
                   skillId: '445030',
                   label: '과잉 쇄도',
                   kind: 'talent',
                   note: '승천·치유의 해일 토템 중 쇄도하는 토템 치유 증가 · 증폭 핵과 양자택일',
+                  affects: [
+                    '444995',
+                    '114052',
+                    '108280',
+                  ],
                 },
               ],
             },
@@ -1141,12 +1293,20 @@ const manuscript = {
                   label: '활발한 토템',
                   kind: 'talent',
                   note: '치유의 해일 토템·치유의 토템·정신의 고리 토템 소환 시 무료 즉시 연쇄 치유',
+                  affects: [
+                    '5394',
+                    '108280',
+                    '98008',
+                  ],
                 },
                 {
                   skillId: '445025',
                   label: '토템의 반향',
                   kind: 'talent',
                   note: '연쇄 치유 마지막 대상 → 20미터 안 토템 → 추가 연쇄 치유',
+                  affects: [
+                    '1064',
+                  ],
                 },
               ],
             },
@@ -1158,18 +1318,29 @@ const manuscript = {
                   label: '갈라지는 지류',
                   kind: 'talent',
                   note: '치유의 토템 추가 1명 30% · 치유의 해일 토템 25%',
+                  affects: [
+                    '5394',
+                    '108280',
+                  ],
                 },
                 {
                   skillId: '1260874',
                   label: '원시 촉매',
                   kind: 'talent',
                   note: '토템 치유가 8% 확률로 대지생명 부여',
+                  affects: [
+                    '5394',
+                    '108280',
+                  ],
                 },
                 {
                   skillId: '445036',
                   label: '토템의 협응',
                   kind: 'talent',
                   note: '활발한 토템·토템의 반향 연쇄 치유 25%',
+                  affects: [
+                    '1064',
+                  ],
                 },
               ],
             },
@@ -1317,18 +1488,27 @@ const manuscript = {
                   label: '잔류하는 지혜',
                   kind: 'talent',
                   note: '선조가 시전하는 주문 효과 25%',
+                  affects: [
+                    '443450',
+                  ],
                 },
                 {
                   skillId: '443451',
                   label: '저 너머의 공물',
                   kind: 'talent',
                   note: '선조 소환 시 성난 해일 쿨다운 2초 감소',
+                  affects: [
+                    '61295',
+                  ],
                 },
                 {
                   skillId: '443444',
                   label: '내 부름에 응하라',
                   kind: 'talent',
                   note: '선조 지속시간 4초 증가',
+                  affects: [
+                    '443450',
+                  ],
                 },
               ],
             },
@@ -1340,12 +1520,18 @@ const manuscript = {
                   label: '최후의 부름',
                   kind: 'talent',
                   note: '근처 부상 아군에게 수력방울 · 15초 흡수',
+                  affects: [
+                    '443450',
+                  ],
                 },
                 {
                   skillId: '443423',
                   label: '고대의 결속',
                   kind: 'talent',
                   note: '20% 확률로 새 선조 8초',
+                  affects: [
+                    '443450',
+                  ],
                 },
               ],
             },
@@ -2737,6 +2923,11 @@ const manuscript = {
     video: {
       youtubeId: 'go4VYLhNStQ',
       title: '한밤 2시즌 12.1.5 복원 주술사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'hK7BDmTeFmQ',
+      title: '한밤 2시즌 12.1.5 복원 주술사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };
