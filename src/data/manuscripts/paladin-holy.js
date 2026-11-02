@@ -458,12 +458,21 @@ const manuscript = {
                 label: '각성',
                 kind: 'talent',
                 note: '소비기가 15% 확률로 8초 응징의 격노',
+                affects: [
+                  '461432',
+                  '85673',
+                  '31884',
+                ],
               },
               {
                 skillId: '461245',
                 label: '번뜩이는 광휘',
                 kind: 'talent',
                 note: '소비하면 25% 확률로 빛의 보살핌 보호막',
+                affects: [
+                  '신성한 힘',
+                  '157047',
+                ],
               },
             ],
           },
@@ -554,12 +563,21 @@ const manuscript = {
                 label: '끝없는 빛',
                 kind: 'talent',
                 note: '서약에 쓴 신성한 힘 하나당 다음 여명 5% · 최대 45%',
+                affects: [
+                  '85673',
+                  '85222',
+                ],
               },
               {
                 skillId: '461278',
                 label: '해방(회복)',
                 kind: 'talent',
                 note: '잃은 생명력에 따라 세 소비기 치명타 최대 30%',
+                affects: [
+                  '461432',
+                  '85673',
+                  '85222',
+                ],
               },
             ],
           },
@@ -652,24 +670,42 @@ const manuscript = {
                 label: '연민의 순간',
                 kind: 'talent',
                 note: '봉화 대상에게 쓴 빛의 섬광 50% 증가',
+                affects: [
+                  '19750',
+                  '200025',
+                ],
               },
               {
                 skillId: '1232616',
                 label: '빛의 기둥',
                 kind: 'talent',
                 note: '고결은 적용 순간, 신념은 주기적으로 추가 치유',
+                affects: [
+                  '156910',
+                  '200025',
+                ],
               },
               {
                 skillId: '461243',
                 label: '빛의 보호',
                 kind: 'talent',
                 note: '봉화 대상이 받는 피해 5% 감소',
+                affects: [
+                  '53563',
+                  '156910',
+                  '200025',
+                ],
               },
               {
                 skillId: '157047',
                 label: '빛의 보살핌',
                 kind: 'talent',
                 note: '봉화 대상이 맞을 때 보호막 · 낮을수록 최대 300%',
+                affects: [
+                  '53563',
+                  '156910',
+                  '200025',
+                ],
               },
             ],
           },
@@ -763,12 +799,20 @@ const manuscript = {
                 label: '마력 깃든 주입',
                 kind: 'talent',
                 note: '신성 충격 남은 쿨다운 1초 감소',
+                affects: [
+                  '53576',
+                  '20473',
+                ],
               },
               {
                 skillId: '387808',
                 label: '성스러운 계시',
                 kind: 'talent',
                 note: '강화 섬광 20% 추가 · 강화 심판은 기본 마나 0.5% 회복',
+                affects: [
+                  '19750',
+                  '20271',
+                ],
               },
             ],
           },
@@ -819,6 +863,11 @@ const manuscript = {
                   skillId: '19750',
                   when: '빛 주입과 급한 대상이 있으면',
                 },
+                talents: [
+                  '387805',
+                  '461244',
+                  '447985',
+                ],
               },
               {
                 skillId: '461432',
@@ -827,6 +876,10 @@ const manuscript = {
                   skillId: '85222',
                   when: '여럿이 고르게 다쳐 넘칠 때',
                 },
+                talents: [
+                  '461278',
+                  '461245',
+                ],
               },
               {
                 skillId: '20473',
@@ -839,6 +892,11 @@ const manuscript = {
                   skillId: '26573',
                   when: '적이 오래 머물 때만',
                 },
+                talents: [
+                  '231663',
+                  '461273',
+                  '387808',
+                ],
               },
               {
                 skillId: '53600',
@@ -865,6 +923,10 @@ const manuscript = {
               {
                 skillId: '19750',
                 caption: '빛 주입이 있으면 즉시',
+                talents: [
+                  '387786',
+                  '1296656',
+                ],
               },
               {
                 skillId: '20473',
@@ -873,6 +935,10 @@ const manuscript = {
               {
                 skillId: '82326',
                 caption: '자원·발동이 없을 때만',
+                talents: [
+                  '1296657',
+                  '1270916',
+                ],
               },
             ],
             note: '빛의 대장장이는 신의 축복 다음에 신성한 보루를 먼저 보고, 희생의 축복은 맨 뒤에 따로 배정합니다.',
@@ -884,18 +950,33 @@ const manuscript = {
               {
                 skillId: '375576',
                 caption: '태양의 사자 · 뒤 두 소비에 새벽빛',
+                talents: [
+                  '431377',
+                  '439760',
+                ],
               },
               {
                 skillId: '432459',
                 caption: '빛의 대장장이 · 큰 타격 전 보루',
+                talents: [
+                  '469701',
+                  '432804',
+                ],
               },
               {
                 skillId: '432472',
                 caption: '빛의 대장장이 · 행동할 아군에게',
+                talents: [
+                  '432802',
+                  '1271387',
+                ],
               },
               {
                 skillId: '85673',
                 caption: '빛의 대장장이 · 무장 자원 비우기',
+                talents: [
+                  '433106',
+                ],
               },
             ],
           },
@@ -936,30 +1017,59 @@ const manuscript = {
               {
                 skillId: '53563',
                 caption: '영구 봉화 선택 시',
+                talents: [
+                  '387781',
+                ],
               },
               {
                 skillId: '20473',
                 caption: '자원 2 이하에서',
+                talents: [
+                  '445200',
+                  '431402',
+                ],
               },
               {
                 skillId: '20271',
                 caption: '자원 모으기',
+                talents: [
+                  '231663',
+                ],
               },
               {
                 skillId: '31884',
                 caption: '긴 피해 직전',
+                talents: [
+                  '53376',
+                  '1263782',
+                  '1263920',
+                ],
               },
               {
                 skillId: '200025',
                 caption: '고결 선택 시·피해 직전',
+                talents: [
+                  '1232616',
+                  '461243',
+                  '157047',
+                ],
               },
               {
                 skillId: '375576',
                 caption: '여러 명 부상·자원 2 이하',
+                talents: [
+                  '431377',
+                  '439760',
+                ],
               },
               {
                 skillId: '461432',
                 caption: '첫 소비 · 새벽빛',
+                talents: [
+                  '431480',
+                  '431425',
+                  '461278',
+                ],
               },
               {
                 skillId: '461432',
@@ -986,10 +1096,17 @@ const manuscript = {
               {
                 skillId: '85673',
                 caption: '자원 3 이상이면 먼저 소비',
+                talents: [
+                  '433106',
+                ],
               },
               {
                 skillId: '432459',
                 caption: '큰 피해 직전 위험 대상',
+                talents: [
+                  '469701',
+                  '432804',
+                ],
               },
               {
                 skillId: '85673',
@@ -998,6 +1115,10 @@ const manuscript = {
               {
                 skillId: '432472',
                 caption: '행동할 아군에게',
+                talents: [
+                  '432802',
+                  '1271387',
+                ],
               },
               {
                 skillId: '20473',
@@ -1010,6 +1131,9 @@ const manuscript = {
               {
                 skillId: '26573',
                 caption: '강화된 상태·머무를 위치',
+                talents: [
+                  '414113',
+                ],
               },
             ],
             note: '두 무장 모두 신성한 힘 3을 만들어서 소비와 번갈아 씁니다. 영원의 불꽃을 골랐다면 영광의 서약 자리는 영원의 불꽃입니다.',
@@ -1052,10 +1176,18 @@ const manuscript = {
                   skillId: '31884',
                   when: '다음 긴 피해 배정이면 대신',
                 },
+                talents: [
+                  '1241542',
+                ],
               },
               {
                 skillId: '200025',
                 caption: '골랐다면 피해 직전',
+                talents: [
+                  '1232616',
+                  '461243',
+                  '157047',
+                ],
               },
               {
                 skillId: '375576',
@@ -1068,14 +1200,25 @@ const manuscript = {
                   skillId: '19750',
                   when: '빛 주입이면 봉화 대상에게',
                 },
+                talents: [
+                  '461278',
+                  '461245',
+                ],
               },
               {
                 skillId: '85222',
                 caption: '단일이 넘칠 만큼 고르게 다쳤을 때',
+                talents: [
+                  '461278',
+                ],
               },
               {
                 skillId: '20473',
                 caption: '즉시 치유와 자원 회수',
+                talents: [
+                  '387805',
+                  '461244',
+                ],
               },
             ],
             note: '영구 봉화 빌드는 고결의 봉화 단계 없이 직접 치유와 소비기를 피해에 맞춥니다. 천상의 울림을 골랐다면 오라 숙련이 천상의 종을 함께 시전하니 직접 쓰는 천상의 종과 겹치지 않게 조율합니다.',
@@ -1087,18 +1230,32 @@ const manuscript = {
               {
                 skillId: '114165',
                 caption: '태양의 사자 · 반사도 새벽빛 시작',
+                talents: [
+                  '439760',
+                  '431377',
+                ],
               },
               {
                 skillId: '85673',
                 caption: '빛의 대장장이 · 한 명 급하면 서약',
+                talents: [
+                  '433106',
+                ],
               },
               {
                 skillId: '26573',
                 caption: '빛의 대장장이 · 소비 뒤 강화 신성화',
+                talents: [
+                  '414113',
+                ],
               },
               {
                 skillId: '432472',
                 caption: '빛의 대장장이 · 무기 상태면 활동 구간에',
+                talents: [
+                  '432802',
+                  '1271387',
+                ],
               },
             ],
           },
@@ -1196,12 +1353,19 @@ const manuscript = {
                 label: '잔존하는 광휘',
                 kind: 'talent',
                 note: '새벽빛이 끝나면 아군에게 6초 영원의 불꽃',
+                affects: [
+                  '431377',
+                  '461432',
+                ],
               },
               {
                 skillId: '431482',
                 label: '샛별',
                 kind: 'talent',
                 note: '5초마다 다음 새벽빛 5% · 최대 10중첩',
+                affects: [
+                  '431377',
+                ],
               },
             ],
           },
@@ -1213,12 +1377,20 @@ const manuscript = {
                 label: '티르의 해방',
                 kind: 'talent',
                 note: '격노에 자동 발동 · 부상자 5명 치유 · 12초 동안 직접 치유 10% 더',
+                affects: [
+                  '31884',
+                  '20473',
+                ],
               },
               {
                 skillId: '1263920',
                 label: '햇빛 태생',
                 kind: 'talent',
                 note: '격노 동안 새벽빛 치명타 확률 증가',
+                affects: [
+                  '431377',
+                  '31884',
+                ],
               },
             ],
           },
@@ -1358,6 +1530,11 @@ const manuscript = {
                 label: '축복의 무장',
                 kind: 'talent',
                 note: '무장이 끝나면 신의 축복 쿨다운 15초 감소 · 빛 주입',
+                affects: [
+                  '432459',
+                  '432472',
+                  '53576',
+                ],
               },
             ],
           },
@@ -1369,6 +1546,9 @@ const manuscript = {
                 label: '천상의 인도',
                 kind: 'talent',
                 note: '다음 신성화 첫 피해·치유 강화 · 최대 3명 치유',
+                affects: [
+                  '26573',
+                ],
               },
               {
                 skillId: '26573',
@@ -1386,18 +1566,31 @@ const manuscript = {
                 label: '망치와 모루',
                 kind: 'talent',
                 note: '심판 치명타 → 부상자 최대 5명 치유',
+                affects: [
+                  '20271',
+                ],
               },
               {
                 skillId: '432919',
                 label: '투혼',
                 kind: 'talent',
                 note: '빛 주입 소비 → 무장 쿨다운 3초 감소',
+                affects: [
+                  '53576',
+                  '432459',
+                  '432472',
+                ],
               },
               {
                 skillId: '1271387',
                 label: '걸작',
                 kind: 'talent',
                 note: '무장 뒤 다음 생성기 3회가 하급 무장',
+                affects: [
+                  '432459',
+                  '432472',
+                  '20473',
+                ],
               },
             ],
           },
@@ -2710,16 +2903,16 @@ const manuscript = {
     singleTarget: '단일 구조',
     aoe: '파티·공대 회복',
   },
-    video: {
-      youtubeId: 'm6vtm8-fDb4',
-      title: '한밤 2시즌 12.1.5 신성 성기사 가이드',
-      channel: 'wowmeta 와우메타',
-    },
-    advancedVideo: {
-      youtubeId: 'EZ3vLNckjYs',
-      title: '한밤 2시즌 12.1.5 신성 성기사 심화 가이드',
-      channel: 'wowmeta 와우메타',
-    },
+  video: {
+    youtubeId: 'm6vtm8-fDb4',
+    title: '한밤 2시즌 12.1.5 신성 성기사 가이드',
+    channel: 'wowmeta 와우메타',
+  },
+  advancedVideo: {
+    youtubeId: 'EZ3vLNckjYs',
+    title: '한밤 2시즌 12.1.5 신성 성기사 심화 가이드',
+    channel: 'wowmeta 와우메타',
+  },
 };
 
 export default manuscript;

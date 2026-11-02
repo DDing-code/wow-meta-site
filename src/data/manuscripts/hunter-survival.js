@@ -407,6 +407,10 @@ const manuscript = {
                   label: '원시의 쇄도',
                   kind: 'talent',
                   note: '명령 한 번에 창끝 2개 · 강화량 5% 증가',
+                  affects: [
+                    '259489',
+                    '260286',
+                  ],
                 },
               ],
             },
@@ -438,6 +442,9 @@ const manuscript = {
                   label: '한마음 한뜻으로',
                   kind: 'talent',
                   note: '창끝을 소모하면 야수가 대상을 추가 공격',
+                  affects: [
+                    '260286',
+                  ],
                 },
               ],
             },
@@ -490,12 +497,20 @@ const manuscript = {
                   label: '첫 정점',
                   kind: 'talent',
                   note: '다음 공격이 휩쓸기로 바뀔 확률 25%',
+                  affects: [
+                    '186270',
+                    '1262293',
+                  ],
                 },
                 {
                   skillId: '1259019',
                   label: '마지막 정점',
                   kind: 'talent',
                   note: '일반 일격 뒤 휩쓸기가 확정',
+                  affects: [
+                    '186270',
+                    '1262293',
+                  ],
                 },
               ],
             },
@@ -507,6 +522,9 @@ const manuscript = {
                   label: '랩터의 휩쓸기!',
                   kind: 'buff',
                   note: '다음 버튼이 휩쓸기로 바뀐 상태',
+                  affects: [
+                    '1262293',
+                  ],
                 },
               ],
             },
@@ -529,12 +547,18 @@ const manuscript = {
                   label: '한마음 한뜻으로',
                   kind: 'talent',
                   note: '마지막 정점이면 300% 효율',
+                  affects: [
+                    '260286',
+                  ],
                 },
                 {
                   skillId: '1251718',
                   label: '일당백',
                   kind: 'talent',
                   note: '야수 후속 공격이 두 명 더',
+                  affects: [
+                    '1251717',
+                  ],
                 },
               ],
             },
@@ -587,12 +611,19 @@ const manuscript = {
                   label: '야생불 탄환',
                   kind: 'talent',
                   note: '폭탄 쿨다운 3초 감소',
+                  affects: [
+                    '259495',
+                  ],
                 },
                 {
                   skillId: '1253945',
                   label: '살쾡이 탄환',
                   kind: 'talent',
                   note: '살쾡이의 격노 1중첩',
+                  affects: [
+                    '1261193',
+                    '259388',
+                  ],
                 },
               ],
             },
@@ -604,6 +635,9 @@ const manuscript = {
                   label: '유탄 곡예사',
                   kind: 'buff',
                   note: '폭탄 충전 회복 속도 60% 증가',
+                  affects: [
+                    '259495',
+                  ],
                 },
               ],
             },
@@ -626,6 +660,9 @@ const manuscript = {
                   label: '치명적 보정',
                   kind: 'talent',
                   note: '붐스틱 2초 감소 · 폭탄 한 번에 최대 10초',
+                  affects: [
+                    '1261193',
+                  ],
                 },
               ],
             },
@@ -672,12 +709,19 @@ const manuscript = {
                   label: '살쾡이의 격노',
                   kind: 'talent',
                   note: '랩터의 일격을 쓸 때 중첩',
+                  affects: [
+                    '186270',
+                  ],
                 },
                 {
                   skillId: '1253945',
                   label: '살쾡이 탄환',
                   kind: 'talent',
                   note: '붐스틱 발사가 맞으면 1중첩',
+                  affects: [
+                    '1261193',
+                    '259388',
+                  ],
                 },
               ],
             },
@@ -700,12 +744,18 @@ const manuscript = {
                   label: '맹타',
                   kind: 'talent',
                   note: '중첩을 얻을 때 20% 확률로 다음 랩터의 일격 50% 강화',
+                  affects: [
+                    '186270',
+                  ],
                 },
                 {
                   skillId: '385737',
                   label: '피투성이 발톱',
                   kind: 'talent',
                   note: '중첩 하나당 한마음 한뜻으로 피해 10%',
+                  affects: [
+                    '1251717',
+                  ],
                 },
               ],
             },
@@ -771,18 +821,28 @@ const manuscript = {
                   label: '포악성',
                   kind: 'talent',
                   note: '한 점당 15초 · 두 점이면 쿨다운 60초',
+                  affects: [
+                    '1250646',
+                  ],
                 },
                 {
                   skillId: '1272139',
                   label: '쌍둥이 송곳니',
                   kind: 'talent',
                   note: '제압이 창끝 3중첩을 줌',
+                  affects: [
+                    '1250646',
+                    '260286',
+                  ],
                 },
                 {
                   skillId: '1256938',
                   label: '측면 노출',
                   kind: 'talent',
                   note: '제압 피해 50% · 주변 네 대상 추가 공격 · 공격 속도 100%',
+                  affects: [
+                    '1250646',
+                  ],
                 },
               ],
             },
@@ -795,6 +855,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '파수꾼',
                   note: '올빼미 소환 · 표식 준비',
+                  affects: [
+                    '1250646',
+                    '1264949',
+                  ],
                 },
                 {
                   skillId: '1264949',
@@ -808,6 +872,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '무리의 지도자',
                   note: '다음 살상 명령이 돌진을 일으킴',
+                  affects: [
+                    '259489',
+                  ],
                 },
               ],
             },
@@ -850,14 +917,24 @@ const manuscript = {
                     skillId: '1261193',
                     when: '쿨이 돌고 집중 50이면 먼저',
                   },
+                  talents: [
+                    '1272154',
+                  ],
                 },
                 {
                   skillId: '259495',
                   caption: '창끝 소비 · 완충 전에',
+                  talents: [
+                    '1261229',
+                  ],
                 },
                 {
                   skillId: '186270',
                   caption: '창끝 소비 · 다음은 휩쓸기',
+                  talents: [
+                    '1259003',
+                    '1259019',
+                  ],
                 },
                 {
                   skillId: '259489',
@@ -866,6 +943,10 @@ const manuscript = {
                 {
                   skillId: '1262293',
                   caption: '창끝 실어 사용',
+                  talents: [
+                    '1251717',
+                    '1251718',
+                  ],
                 },
                 {
                   skillId: '186270',
@@ -897,18 +978,33 @@ const manuscript = {
                 {
                   skillId: '1250646',
                   caption: '파수꾼 · 쌍둥이 송곳니 · 창끝 없을 때',
+                  talents: [
+                    '1253852',
+                  ],
                 },
                 {
                   skillId: '259495',
                   caption: '파수꾼 · 표식이 있거나 완충 4초 전',
+                  talents: [
+                    '1253599',
+                    '1253825',
+                  ],
                 },
                 {
                   skillId: '1264949',
                   caption: '파수꾼 · 제압 뒤 15초 안 한 번',
+                  talents: [
+                    '1266069',
+                    '1264904',
+                  ],
                 },
                 {
                   skillId: '259489',
                   caption: '무리 · 포효 준비면 소환 실행',
+                  talents: [
+                    '471876',
+                    '472741',
+                  ],
                 },
                 {
                   skillId: '1250646',
@@ -917,6 +1013,9 @@ const manuscript = {
                 {
                   skillId: '1261193',
                   caption: '무리 · 멧돼지 강화 회수',
+                  talents: [
+                    '472639',
+                  ],
                 },
               ],
             },
@@ -961,10 +1060,17 @@ const manuscript = {
                 {
                   skillId: '259495',
                   caption: '풀링 1초 전',
+                  talents: [
+                    '1253599',
+                    '1253825',
+                  ],
                 },
                 {
                   skillId: '1250646',
                   caption: '창끝과 표식 준비',
+                  talents: [
+                    '1253852',
+                  ],
                 },
                 {
                   skillId: '259495',
@@ -973,18 +1079,33 @@ const manuscript = {
                 {
                   skillId: '1264949',
                   caption: '사용 기회 안에',
+                  talents: [
+                    '1266069',
+                    '1264904',
+                  ],
                 },
                 {
                   skillId: '259489',
                   caption: '창끝 다시 채우기',
+                  talents: [
+                    '1272154',
+                  ],
                 },
                 {
                   skillId: '1261193',
                   caption: '네 발 다 맞히기',
+                  talents: [
+                    '1262409',
+                    '1253945',
+                  ],
                 },
                 {
                   skillId: '186270',
                   caption: '이후 우선순위로',
+                  talents: [
+                    '1259003',
+                    '1259019',
+                  ],
                 },
               ],
               note: '스조라크 신화 상위 로그 11개 중 7개가 붐스틱보다 제압을 먼저 썼고, 9개가 제압 바로 다음에 폭탄을 던졌습니다. 표창과 붐스틱의 앞뒤는 로그마다 다릅니다. 붐스틱을 제압보다 먼저 쓴 로그 4개 중 2개는 4부 심화 시작처럼 랩터 공격으로 격노를 먼저 쌓았습니다.',
@@ -999,14 +1120,25 @@ const manuscript = {
                 {
                   skillId: '259495',
                   caption: '풀링 1초 전',
+                  talents: [
+                    '1261229',
+                  ],
                 },
                 {
                   skillId: '1250646',
                   caption: '첫 쿨기 열기',
+                  talents: [
+                    '1272139',
+                    '1251790',
+                  ],
                 },
                 {
                   skillId: '259489',
                   caption: '제압 직후 · 소환 실행',
+                  talents: [
+                    '471876',
+                    '472741',
+                  ],
                 },
                 {
                   skillId: '259495',
@@ -1015,6 +1147,9 @@ const manuscript = {
                 {
                   skillId: '1261193',
                   caption: '네 발 다 맞히기',
+                  talents: [
+                    '472639',
+                  ],
                 },
                 {
                   skillId: '259495',
@@ -1023,6 +1158,10 @@ const manuscript = {
                 {
                   skillId: '186270',
                   caption: '이후 우선순위로',
+                  talents: [
+                    '1259003',
+                    '1259019',
+                  ],
                 },
               ],
               note: '쌍둥이 송곳니 제압이 창끝을 직접 주니 제압 앞에 살상 명령을 끼우지 않습니다. 스조라크 신화 상위 로그 4개 모두 제압 바로 다음에 살상 명령을 썼습니다. 제압 앞 한두 손은 로그마다 다릅니다. 붐스틱 앞 폭탄은 하나만 쓰고, 두 번째 폭탄은 붐스틱으로 앞당겨진 충전으로 씁니다. 첫 붐스틱에 멧돼지 강화가 반드시 붙어 있다고 가정하지 않습니다. 쌍둥이 송곳니가 없다면 제압 앞에 살상 명령으로 창끝 두 개를 먼저 만듭니다.',
@@ -1064,18 +1203,32 @@ const manuscript = {
                 {
                   skillId: '1250646',
                   caption: '적이 모이면 시작',
+                  talents: [
+                    '1253852',
+                  ],
                 },
                 {
                   skillId: '1261193',
                   caption: '창끝 · 모인 쪽으로 네 발',
+                  talents: [
+                    '1262409',
+                    '1253945',
+                  ],
                 },
                 {
                   skillId: '259495',
                   caption: '주 대상 확인',
+                  talents: [
+                    '1253599',
+                    '1253825',
+                  ],
                 },
                 {
                   skillId: '259489',
                   caption: '창끝 보충',
+                  talents: [
+                    '1272154',
+                  ],
                 },
                 {
                   skillId: '259495',
@@ -1084,6 +1237,10 @@ const manuscript = {
                 {
                   skillId: '1264949',
                   caption: '창끝 · 사용 기회 안에',
+                  talents: [
+                    '1266069',
+                    '1264904',
+                  ],
                 },
                 {
                   skillId: '259489',
@@ -1102,18 +1259,32 @@ const manuscript = {
                 {
                   skillId: '1250646',
                   caption: '모이면 바로',
+                  talents: [
+                    '1272139',
+                    '1251790',
+                  ],
                 },
                 {
                   skillId: '259489',
                   caption: '포효·쇄도 실행',
+                  talents: [
+                    '471876',
+                    '472741',
+                  ],
                 },
                 {
                   skillId: '259495',
                   caption: '완충 먼저 비우기',
+                  talents: [
+                    '1261229',
+                  ],
                 },
                 {
                   skillId: '1261193',
                   caption: '네 발 끝까지',
+                  talents: [
+                    '472639',
+                  ],
                 },
                 {
                   skillId: '259495',
@@ -1122,6 +1293,10 @@ const manuscript = {
                 {
                   skillId: '186270',
                   caption: '이후 반복 흐름으로',
+                  talents: [
+                    '1259003',
+                    '1259019',
+                  ],
                 },
               ],
               note: '쇄도는 살상 명령을 누르는 순간 경로가 정해집니다. 내 위치에서 적 무리를 관통하도록 서고 누릅니다. 쌍둥이 송곳니가 없다면 제압 앞에 살상 명령으로 창끝 두 개를 먼저 만듭니다.',
@@ -1137,14 +1312,24 @@ const manuscript = {
                     skillId: '259495',
                     when: '완충 임박이면 먼저 비우기',
                   },
+                  talents: [
+                    '1272154',
+                  ],
                 },
                 {
                   skillId: '1261193',
                   caption: '창끝·집중 50 · 무리 쪽으로',
+                  talents: [
+                    '1262409',
+                    '1253945',
+                  ],
                 },
                 {
                   skillId: '259495',
                   caption: '붐스틱 뒤 · 맞힌 적 수만큼 회복',
+                  talents: [
+                    '1261229',
+                  ],
                 },
                 {
                   skillId: '259489',
@@ -1157,10 +1342,18 @@ const manuscript = {
                 {
                   skillId: '186270',
                   caption: '일반 일격',
+                  talents: [
+                    '1259003',
+                    '1259019',
+                  ],
                 },
                 {
                   skillId: '1262293',
                   caption: '창끝 · 무리 방향으로',
+                  talents: [
+                    '1251717',
+                    '1251718',
+                  ],
                 },
                 {
                   skillId: '259495',
@@ -1176,22 +1369,40 @@ const manuscript = {
                 {
                   skillId: '259495',
                   caption: '파수꾼 · 표식 대상을 주 대상으로',
+                  talents: [
+                    '1253599',
+                    '1253825',
+                  ],
                 },
                 {
                   skillId: '1264949',
                   caption: '파수꾼 · 창끝·사용 기회',
+                  talents: [
+                    '1266069',
+                    '1264904',
+                  ],
                 },
                 {
                   skillId: '1250646',
                   caption: '파수꾼 · 표식 없는 적에 새 표식',
+                  talents: [
+                    '1253852',
+                  ],
                 },
                 {
                   skillId: '259489',
                   caption: '무리 · 쇄도 경로에 적이 있을 때',
+                  talents: [
+                    '471876',
+                    '472741',
+                  ],
                 },
                 {
                   skillId: '1261193',
                   caption: '무리 · 멧돼지 강화 회수',
+                  talents: [
+                    '472639',
+                  ],
                 },
               ],
             },
@@ -1262,6 +1473,9 @@ const manuscript = {
                     label: '파수꾼의 표식',
                     kind: 'buff',
                     note: '16초 · 다음 야생불 폭탄 직접 피해 40% 증가',
+                    affects: [
+                      '259495',
+                    ],
                   },
                 ],
               },
@@ -1273,6 +1487,9 @@ const manuscript = {
                     label: '달의 축복',
                     kind: 'talent',
                     note: '야생불 폭탄 쿨다운 6초 감소',
+                    affects: [
+                      '259495',
+                    ],
                   },
                 ],
               },
@@ -1295,6 +1512,9 @@ const manuscript = {
                     label: '달의 폭풍',
                     kind: 'talent',
                     note: '주변 10야드에 달의 투사체 4개 · 직접 쓰는 스킬 아님',
+                    affects: [
+                      '259495',
+                    ],
                   },
                 ],
               },
@@ -1332,12 +1552,19 @@ const manuscript = {
                     label: '추적과 타격',
                     kind: 'talent',
                     note: '표창을 던지면 야생불 폭탄 10초 감소 · 폭탄을 먼저 비워 둠',
+                    affects: [
+                      '1264949',
+                      '259495',
+                    ],
                   },
                   {
                     skillId: '1264904',
                     label: '황혼의 진혼곡',
                     kind: 'talent',
                     note: '표창이 끝날 때 근처 적에게 비전 폭발',
+                    affects: [
+                      '1264949',
+                    ],
                   },
                 ],
               },
@@ -1466,6 +1693,9 @@ const manuscript = {
                   label: '쇄도!',
                   kind: 'talent',
                   note: '포효 준비 · 다음 살상 명령이 7초 돌진을 일으킴',
+                  affects: [
+                    '259489',
+                  ],
                 },
               ],
             },
@@ -1488,6 +1718,9 @@ const manuscript = {
                   label: '무리의 지도자의 포효',
                   kind: 'talent',
                   note: '와이번 → 멧돼지 → 곰',
+                  affects: [
+                    '259489',
+                  ],
                 },
                 {
                   label: '와이번 소환',
@@ -1514,6 +1747,9 @@ const manuscript = {
                   label: '멧돼지 기수',
                   kind: 'talent',
                   note: '다음 붐스틱 5%씩 최대 20% · 1분 유지, 전투 시작 때 지워짐',
+                  affects: [
+                    '1261193',
+                  ],
                 },
                 {
                   skillId: '1261193',
@@ -3076,6 +3312,11 @@ const manuscript = {
     video: {
       youtubeId: 'rHz7tAP-5DQ',
       title: '한밤 2시즌 12.1.5 생존 사냥꾼 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: '8dkksyQUsUw',
+      title: '한밤 2시즌 12.1.5 생존 사냥꾼 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

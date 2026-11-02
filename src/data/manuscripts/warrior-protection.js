@@ -397,6 +397,9 @@ const manuscript = {
                   label: '충전 2회',
                   kind: 'talent',
                   note: '방어 지속 효과 · 기본 재충전 16초',
+                  affects: [
+                    '2565',
+                  ],
                 },
                 {
                   skillId: '23922',
@@ -413,18 +416,29 @@ const manuscript = {
                   label: '인내하는 방어',
                   kind: 'talent',
                   note: '방패 올리기 지속시간 1초 증가',
+                  affects: [
+                    '2565',
+                  ],
                 },
                 {
                   skillId: '203177',
                   label: '묵직한 반격',
                   kind: 'talent',
                   note: '방패 밀쳐내기마다 분노 2 · 방패 올리기 1초 연장',
+                  affects: [
+                    '23922',
+                    '2565',
+                  ],
                 },
                 {
                   skillId: '1269313',
                   label: '결사단원',
                   kind: 'talent',
                   note: '켜진 동안 방패 밀쳐내기 피해 10% · 치명타율 20%',
+                  affects: [
+                    '2565',
+                    '23922',
+                  ],
                 },
               ],
             },
@@ -493,18 +507,30 @@ const manuscript = {
                   label: '전략가',
                   kind: 'talent',
                   note: '압도·천둥벼락·복수·마무리 일격에서 25% 확률 초기화',
+                  affects: [
+                    '6343',
+                    '6572',
+                    '23922',
+                  ],
                 },
                 {
                   skillId: '236279',
                   label: '압도자',
                   kind: 'talent',
                   note: '압도 대신 자동 공격이 25% 확률 초기화',
+                  affects: [
+                    '23922',
+                  ],
                 },
                 {
                   skillId: '203177',
                   label: '묵직한 반격',
                   kind: 'talent',
                   note: '방패 밀쳐내기마다 분노 2 더',
+                  affects: [
+                    '23922',
+                    '2565',
+                  ],
                 },
               ],
             },
@@ -593,6 +619,9 @@ const manuscript = {
                   label: '잔혹한 활력',
                   kind: 'talent',
                   note: '입힌 피해의 10%만큼 흡수량 보강',
+                  affects: [
+                    '190456',
+                  ],
                 },
                 {
                   skillId: '429644',
@@ -600,12 +629,19 @@ const manuscript = {
                   kind: 'talent',
                   tag: '거신',
                   note: '고통 감내 한 번의 방지량 30% 증가',
+                  affects: [
+                    '190456',
+                  ],
                 },
                 {
                   skillId: '386477',
                   label: '격렬한 울분',
                   kind: 'talent',
                   note: '누적 분노 250마다 다음 방패 밀쳐내기가 분노·고통 감내 50% 더',
+                  affects: [
+                    '190456',
+                    '23922',
+                  ],
                 },
               ],
             },
@@ -654,6 +690,9 @@ const manuscript = {
                   label: '불굴의 태세',
                   kind: 'talent',
                   note: '골랐다면 방어 태세 중 6% 추가 감소',
+                  affects: [
+                    '386208',
+                  ],
                 },
               ],
             },
@@ -686,6 +725,9 @@ const manuscript = {
                   label: '불길을 지나',
                   kind: 'talent',
                   note: '골랐다면 방어 태세 중 마법 피해 8% 추가 감소',
+                  affects: [
+                    '386208',
+                  ],
                 },
               ],
             },
@@ -762,6 +804,10 @@ const manuscript = {
                   label: '차디찬 복수',
                   kind: 'talent',
                   note: '골랐다면 발동 확률 20% 증가 · 무료 복수 피해 15%',
+                  affects: [
+                    '6572',
+                    '6343',
+                  ],
                 },
               ],
             },
@@ -784,12 +830,19 @@ const manuscript = {
                   label: '시즌 2 두 세트',
                   kind: 'talent',
                   note: '무료 복수 피해 15% · 다음 방패 밀쳐내기 피해 20%',
+                  affects: [
+                    '6572',
+                    '23922',
+                  ],
                 },
                 {
                   skillId: '1296648',
                   label: '시즌 2 네 세트',
                   kind: 'talent',
                   note: '쇠날발톱·무료 복수 적중 대상에 12초 출혈 · 쇠날발톱 쿨다운 30초 감소',
+                  affects: [
+                    '6572',
+                  ],
                 },
               ],
             },
@@ -854,6 +907,10 @@ const manuscript = {
                     skillId: '871',
                     when: '가장 위험한 구간 전',
                   },
+                  talents: [
+                    '231847',
+                    '386027',
+                  ],
                 },
                 {
                   skillId: '23922',
@@ -862,6 +919,11 @@ const manuscript = {
                     skillId: '385952',
                     when: '쿨마다 · 골랐다면',
                   },
+                  talents: [
+                    '384041',
+                    '236279',
+                    '386030',
+                  ],
                 },
                 {
                   skillId: '6343',
@@ -870,6 +932,11 @@ const manuscript = {
                     skillId: '107574',
                     when: '쿨이 돌 때마다',
                   },
+                  talents: [
+                    '384277',
+                    '385840',
+                    '275336',
+                  ],
                 },
                 {
                   skillId: '6572',
@@ -878,6 +945,10 @@ const manuscript = {
                     skillId: '1160',
                     when: '쿨마다 · 적이 10미터 안',
                   },
+                  talents: [
+                    '202560',
+                    '392792',
+                  ],
                 },
                 {
                   skillId: '190456',
@@ -886,6 +957,10 @@ const manuscript = {
                     skillId: '23920',
                     when: '반사할 주문 전',
                   },
+                  talents: [
+                    '384036',
+                    '386477',
+                  ],
                 },
                 {
                   skillId: '23922',
@@ -905,22 +980,40 @@ const manuscript = {
                 {
                   skillId: '435607',
                   caption: '산왕 · 투신 중이거나 2중첩 직전',
+                  talents: [
+                    '1270724',
+                    '438590',
+                  ],
                 },
                 {
                   skillId: '107574',
                   caption: '산왕 · 남은 중첩 쓰고 투신',
+                  talents: [
+                    '437134',
+                  ],
                 },
                 {
                   skillId: '1160',
                   caption: '산왕 · 일격 유도면 1중첩',
+                  talents: [
+                    '456270',
+                  ],
                 },
                 {
                   skillId: '23922',
                   caption: '거신 · 거인의 힘 쌓기',
+                  talents: [
+                    '431548',
+                    '429647',
+                  ],
                 },
                 {
                   skillId: '436358',
                   caption: '거신 · 중첩과 방어 준비 뒤',
+                  talents: [
+                    '429636',
+                    '1270710',
+                  ],
                 },
               ],
             },
@@ -969,14 +1062,26 @@ const manuscript = {
                 {
                   skillId: '107574',
                   caption: '풀 직후 · 2중첩 받기',
+                  talents: [
+                    '437134',
+                    '275336',
+                  ],
                 },
                 {
                   skillId: '435607',
                   caption: '투신이 준 중첩',
+                  talents: [
+                    '437079',
+                    '1270724',
+                  ],
                 },
                 {
                   skillId: '2565',
                   caption: '첫 근접 전 · 분노 30',
+                  talents: [
+                    '231847',
+                    '386027',
+                  ],
                 },
                 {
                   skillId: '1160',
@@ -985,6 +1090,10 @@ const manuscript = {
                     skillId: '871',
                     when: '가장 위험한 첫 피해',
                   },
+                  talents: [
+                    '202743',
+                    '456270',
+                  ],
                 },
                 {
                   skillId: '23922',
@@ -993,6 +1102,10 @@ const manuscript = {
                     skillId: '386071',
                     when: '캐스터 풀',
                   },
+                  talents: [
+                    '384041',
+                    '386030',
+                  ],
                 },
                 {
                   skillId: '385952',
@@ -1005,10 +1118,17 @@ const manuscript = {
                     skillId: '23920',
                     when: '반사할 주문 예고',
                   },
+                  talents: [
+                    '384036',
+                  ],
                 },
                 {
                   skillId: '6343',
                   caption: '중첩 없을 때 · 분쇄',
+                  talents: [
+                    '384277',
+                    '385840',
+                  ],
                 },
               ],
               note: '상위 산왕 레이드 기록 7개 모두 풀 4초 안에 투신을 켰고, 6개는 투신 직후 우레 작렬을 썼습니다. 풀 직후에는 남은 우레 작렬이 없으니 투신을 미루지 않습니다. 일격 유도를 골랐다면 우레 작렬을 하나 쓴 뒤 사기의 외침을 켜야 새 중첩이 버려지지 않습니다. 시작 분노가 없다면 방패 올리기가 이미 켜졌다고 가정하지 않습니다.',
@@ -1027,6 +1147,10 @@ const manuscript = {
                 {
                   skillId: '23922',
                   caption: '분노와 거인의 힘',
+                  talents: [
+                    '431548',
+                    '429647',
+                  ],
                 },
                 {
                   skillId: '107574',
@@ -1039,10 +1163,16 @@ const manuscript = {
                     skillId: '386071',
                     when: '캐스터 풀',
                   },
+                  talents: [
+                    '384277',
+                  ],
                 },
                 {
                   skillId: '1160',
                   caption: '쇄파 앞 · 10미터 안',
+                  talents: [
+                    '202743',
+                  ],
                 },
                 {
                   skillId: '2565',
@@ -1051,10 +1181,18 @@ const manuscript = {
                     skillId: '385952',
                     when: '골랐다면 · 방패 올리기 포함',
                   },
+                  talents: [
+                    '231847',
+                    '386027',
+                  ],
                 },
                 {
                   skillId: '6572',
                   caption: '3명 이상 적중 · 거인의 힘',
+                  talents: [
+                    '429637',
+                    '429641',
+                  ],
                 },
                 {
                   skillId: '436358',
@@ -1063,10 +1201,17 @@ const manuscript = {
                     skillId: '23920',
                     when: '쇄파와 겹칠 위험 주문',
                   },
+                  talents: [
+                    '429636',
+                    '1270710',
+                  ],
                 },
                 {
                   skillId: '190456',
                   caption: '쇄파 뒤 분노로',
+                  talents: [
+                    '429644',
+                  ],
                 },
               ],
               note: '상위 거신 레이드 기록 5개 모두 풀 5초 안에 투신과 사기의 외침을 켰고, 쇄파는 그 뒤에 썼습니다. 쇄파 전에 고통 감내를 쓴 기록은 없었습니다. 큰 피해 대응이 비는 시점에는 쇄파 집중을 시작하지 않습니다. 단일 대상에게 쓴 복수는 거인의 힘을 만들지 않습니다.',
@@ -1114,6 +1259,11 @@ const manuscript = {
                     skillId: '386071',
                     when: '캐스터 풀 · 차단과 도발',
                   },
+                  talents: [
+                    '384277',
+                    '385840',
+                    '203201',
+                  ],
                 },
                 {
                   skillId: '2565',
@@ -1122,6 +1272,10 @@ const manuscript = {
                     skillId: '871',
                     when: '큰 풀 첫 몰림',
                   },
+                  talents: [
+                    '231847',
+                    '386027',
+                  ],
                 },
                 {
                   skillId: '23922',
@@ -1130,6 +1284,10 @@ const manuscript = {
                     skillId: '107574',
                     when: '다 모인 뒤 · 쿨마다',
                   },
+                  talents: [
+                    '384041',
+                    '236279',
+                  ],
                 },
                 {
                   skillId: '190456',
@@ -1138,6 +1296,9 @@ const manuscript = {
                     skillId: '1160',
                     when: '10미터 안에 모였을 때',
                   },
+                  talents: [
+                    '384036',
+                  ],
                 },
                 {
                   skillId: '6572',
@@ -1146,6 +1307,10 @@ const manuscript = {
                     skillId: '23920',
                     when: '반사할 주문 전',
                   },
+                  talents: [
+                    '202560',
+                    '392792',
+                  ],
                 },
                 {
                   skillId: '6343',
@@ -1165,18 +1330,31 @@ const manuscript = {
                 {
                   skillId: '435607',
                   caption: '산왕 · 2대상 이상이면 먼저',
+                  talents: [
+                    '437079',
+                    '436148',
+                  ],
                 },
                 {
                   skillId: '107574',
                   caption: '산왕 · 투신 중 천둥벼락 자주',
+                  talents: [
+                    '275336',
+                  ],
                 },
                 {
                   skillId: '6572',
                   caption: '거신 · 3명 이상 맞히면 거인의 힘',
+                  talents: [
+                    '429637',
+                  ],
                 },
                 {
                   skillId: '436358',
                   caption: '거신 · 모인 방향 확인 뒤',
+                  talents: [
+                    '429636',
+                  ],
                 },
               ],
             },
@@ -1288,12 +1466,20 @@ const manuscript = {
                   label: '용솟음치는 폭풍',
                   kind: 'talent',
                   note: '천둥벼락 피해 50% · 쿨다운 50% 감소',
+                  affects: [
+                    '107574',
+                    '6343',
+                  ],
                 },
                 {
                   skillId: '1270724',
                   label: '전기 축적',
                   kind: 'talent',
                   note: '투신 중 우레 작렬마다 투신 2초 연장',
+                  affects: [
+                    '435607',
+                    '107574',
+                  ],
                 },
               ],
             },
@@ -1305,12 +1491,19 @@ const manuscript = {
                   label: '굳건한 자세',
                   kind: 'talent',
                   note: '받는 물리 피해 상시 2% · 우레 작렬 뒤 5초 동안 8% 추가',
+                  affects: [
+                    '435607',
+                  ],
                 },
                 {
                   skillId: '437068',
                   label: '태산의 힘',
                   kind: 'talent',
                   note: '방패 밀쳐내기 피해 15% · 사기의 외침 피해 감소 5% 추가',
+                  affects: [
+                    '23922',
+                    '1160',
+                  ],
                 },
               ],
             },
@@ -1408,14 +1601,25 @@ const manuscript = {
                       skillId: '57755',
                       when: '멀리 있는 적',
                     },
+                    talents: [
+                      '103827',
+                    ],
                   },
                   {
                     skillId: '6343',
                     caption: '진입하자마자 위협',
+                    talents: [
+                      '384277',
+                      '385840',
+                    ],
                   },
                   {
                     skillId: '2565',
                     caption: '근접 무리 앞',
+                    talents: [
+                      '231847',
+                      '386027',
+                    ],
                   },
                   {
                     skillId: '355',
@@ -1428,6 +1632,10 @@ const manuscript = {
                   {
                     skillId: '23922',
                     caption: '분노 만들기',
+                    talents: [
+                      '384041',
+                      '236279',
+                    ],
                   },
                   {
                     skillId: '190456',
@@ -1436,6 +1644,9 @@ const manuscript = {
                       skillId: '23920',
                       when: '반사할 주문',
                     },
+                    talents: [
+                      '384036',
+                    ],
                   },
                 ],
                 note: '상위 쐐기 기록의 큰 풀 6개 모두 천둥벼락이 방패 올리기보다 먼저였습니다. 떨어진 적이 둘이면 도발 → 영웅의 도약 → 도발로 잡습니다. 캐스터 풀은 훼방의 외침으로 끊으면서 도발합니다.',
@@ -1446,14 +1657,25 @@ const manuscript = {
                   {
                     skillId: '871',
                     caption: '첫 몰림 · 30초 안',
+                    talents: [
+                      '397103',
+                    ],
                   },
                   {
                     skillId: '107574',
                     caption: '다 모인 뒤',
+                    talents: [
+                      '275336',
+                      '1270724',
+                    ],
                   },
                   {
                     skillId: '1160',
                     caption: '10미터 안에 모였을 때',
+                    talents: [
+                      '202743',
+                      '385840',
+                    ],
                   },
                   {
                     skillId: '871',
@@ -1462,6 +1684,9 @@ const manuscript = {
                   {
                     skillId: '202168',
                     caption: '풀 끝 · 처치로 초기화',
+                    talents: [
+                      '434970',
+                    ],
                   },
                 ],
                 note: '상위 쐐기 기록의 큰 풀 3개 모두 시작 30초 안팎에 방패의 벽·투신·사기의 외침을 썼습니다. 수호자의 아이기스로 방패의 벽이 2회 충전이면 두 번째 충전은 다음 몰림에 남깁니다. 풀 끝에는 예견된 승리로 생명력을 채우고, 다음 풀에서 방패 올리기를 켤 분노를 남겨 갑니다.',
@@ -1473,10 +1698,17 @@ const manuscript = {
                   {
                     skillId: '435607',
                     caption: '산왕 · 투신 직후',
+                    talents: [
+                      '438590',
+                      '1270724',
+                    ],
                   },
                   {
                     skillId: '436358',
                     caption: '거신 · 다 모이고 방어 갖춘 뒤',
+                    talents: [
+                      '429636',
+                    ],
                   },
                 ],
               },
@@ -1521,6 +1753,10 @@ const manuscript = {
                   {
                     skillId: '190456',
                     caption: '도발 전 쌓기',
+                    talents: [
+                      '384036',
+                      '386477',
+                    ],
                   },
                   {
                     skillId: '2565',
@@ -1529,6 +1765,10 @@ const manuscript = {
                       skillId: '1160',
                       when: '쿨이면 넘겨받는 순간',
                     },
+                    talents: [
+                      '231847',
+                      '386027',
+                    ],
                   },
                   {
                     skillId: '355',
@@ -1541,6 +1781,10 @@ const manuscript = {
                       skillId: '385952',
                       when: '골랐다면 · 방패 올리기 보충',
                     },
+                    talents: [
+                      '384041',
+                      '386030',
+                    ],
                   },
                   {
                     skillId: '23920',
@@ -1549,6 +1793,9 @@ const manuscript = {
                   {
                     skillId: '871',
                     caption: '탱 버스터 · 반사와 함께',
+                    talents: [
+                      '397103',
+                    ],
                   },
                   {
                     skillId: '23922',
@@ -1564,10 +1811,17 @@ const manuscript = {
                   {
                     skillId: '435607',
                     caption: '산왕 · 투신 직후',
+                    talents: [
+                      '438590',
+                    ],
                   },
                   {
                     skillId: '436358',
                     caption: '거신 · 탱 버스터 뒤 여유 구간',
+                    talents: [
+                      '429636',
+                      '1270710',
+                    ],
                   },
                   {
                     skillId: '202168',
@@ -1631,12 +1885,20 @@ const manuscript = {
                   label: '거신의 지배',
                   kind: 'talent',
                   note: '맞은 적이 나에게 주는 피해 10초 동안 최대 20% 감소',
+                  affects: [
+                    '429634',
+                    '436358',
+                  ],
                 },
                 {
                   skillId: '1270710',
                   label: '빠르게 찾아오는 결말',
                   kind: 'talent',
                   note: '골랐다면 10초 가속 10% · 다음 방패 밀쳐내기 치명타율 100%',
+                  affects: [
+                    '436358',
+                    '23922',
+                  ],
                 },
               ],
             },
@@ -1648,18 +1910,29 @@ const manuscript = {
                   label: '익숙한 고통',
                   kind: 'talent',
                   note: '고통 감내 한 번의 방지량 30% 증가',
+                  affects: [
+                    '190456',
+                  ],
                 },
                 {
                   skillId: '429647',
                   label: '숙련된 공격',
                   kind: 'talent',
                   note: '방패 밀쳐내기 피해 25% · 분노 4 더 · 복수·마무리 일격 분노 소모 10 감소',
+                  affects: [
+                    '23922',
+                    '6572',
+                  ],
                 },
                 {
                   skillId: '429641',
                   label: '전투의 해일',
                   kind: 'talent',
                   note: '중첩마다 복수·마무리 일격 3%',
+                  affects: [
+                    '429634',
+                    '6572',
+                  ],
                 },
               ],
             },

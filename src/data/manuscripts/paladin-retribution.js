@@ -351,6 +351,9 @@ const manuscript = {
                   label: '성전의 강타',
                   kind: 'talent',
                   note: '성전사의 일격을 자동 공격으로 바꿈',
+                  affects: [
+                    '신성한 힘',
+                  ],
                 },
               ],
             },
@@ -552,12 +555,20 @@ const manuscript = {
                   label: '성전',
                   kind: 'talent',
                   note: '가속 2%로 시작 · 소비한 신성한 힘마다 2% · 최대 20%',
+                  affects: [
+                    '31884',
+                  ],
                 },
                 {
                   skillId: '1261111',
                   label: '내면의 빛',
                   kind: 'talent',
                   note: '날개 중 선고·폭풍 피해 계급당 10%',
+                  affects: [
+                    '31884',
+                    '383328',
+                    '53385',
+                  ],
                 },
               ],
             },
@@ -574,6 +585,9 @@ const manuscript = {
                   label: '진실의 상흔',
                   kind: 'talent',
                   note: '9초 지속 피해 · 이동 속도 50% 감소',
+                  affects: [
+                    '255937',
+                  ],
                 },
               ],
             },
@@ -626,6 +640,10 @@ const manuscript = {
                   label: '전쟁의 기술',
                   kind: 'talent',
                   note: '자동 공격 15% 확률 · 치명타면 10%p 더 · 내부 1초',
+                  affects: [
+                    '406086',
+                    '184575',
+                  ],
                 },
                 {
                   skillId: '402912',
@@ -633,6 +651,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '같은 노드의 대안',
                   note: '소비량 1개당 6% 확률',
+                  affects: [
+                    '406086',
+                    '184575',
+                  ],
                 },
               ],
             },
@@ -667,6 +689,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '첫 노드',
                   note: '피해 80% 증가 · 발동 한 번 더 저장',
+                  affects: [
+                    '406086',
+                    '184575',
+                  ],
                 },
                 {
                   skillId: '1261159',
@@ -674,12 +700,18 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 노드',
                   note: '경로의 적에게 신성 마력 · 주 대상은 2.5배',
+                  affects: [
+                    '184575',
+                  ],
                 },
                 {
                   skillId: '383344',
                   label: '정화',
                   kind: 'talent',
                   note: '9초 지속 피해 · 다시 걸면 남은 피해 합산',
+                  affects: [
+                    '184575',
+                  ],
                 },
               ],
             },
@@ -823,6 +855,11 @@ const manuscript = {
                     skillId: '31884',
                     when: '쿨이 돌면 · 공격 가능한 구간',
                   },
+                  talents: [
+                    '406064',
+                    '1261113',
+                    '383344',
+                  ],
                 },
                 {
                   skillId: '255937',
@@ -831,6 +868,9 @@ const manuscript = {
                     skillId: '343527',
                     when: '골랐다면 · 주 대상 10초 생존',
                   },
+                  talents: [
+                    '446663',
+                  ],
                 },
                 {
                   skillId: '383328',
@@ -839,6 +879,11 @@ const manuscript = {
                     skillId: '53385',
                     when: '4세트 · 선고발 심판관이면 대신',
                   },
+                  talents: [
+                    '408459',
+                    '402971',
+                    '1296661',
+                  ],
                 },
                 {
                   skillId: '375576',
@@ -855,6 +900,9 @@ const manuscript = {
                     skillId: '24275',
                     when: '날개 중에는 이 자리',
                   },
+                  talents: [
+                    '405461',
+                  ],
                 },
                 {
                   skillId: '184575',
@@ -874,26 +922,46 @@ const manuscript = {
                 {
                   skillId: '24275',
                   caption: '태양의 사자 · 날개 중 2충전이면 먼저',
+                  talents: [
+                    '1263782',
+                  ],
                 },
                 {
                   skillId: '383328',
                   caption: '태양의 사자 · 파멸의 재 뒤 두 소비가 새벽빛',
+                  talents: [
+                    '431377',
+                    '431480',
+                  ],
                 },
                 {
                   skillId: '427453',
                   caption: '기사단 · 파멸의 재 뒤 열리면 바로',
+                  talents: [
+                    '431533',
+                    '431463',
+                  ],
                 },
                 {
                   skillId: '427453',
                   caption: '기사단 · 무료 망치는 만료 전에',
+                  talents: [
+                    '425518',
+                  ],
                 },
                 {
                   skillId: '184575',
                   caption: '기사단 · 2중첩 회수로 천상 연장',
+                  talents: [
+                    '431687',
+                  ],
                 },
                 {
                   skillId: '24275',
                   caption: '기사단 · 날개 중 천상 연장',
+                  talents: [
+                    '431687',
+                  ],
                 },
               ],
             },
@@ -934,23 +1002,43 @@ const manuscript = {
                 {
                   skillId: '184575',
                   caption: '사거리 안 · 첫 자원',
+                  talents: [
+                    '406064',
+                    '1261113',
+                  ],
                 },
                 {
                   skillId: '31884',
                   caption: '날개 · 자원 2개 더',
+                  talents: [
+                    '1253598',
+                    '1263782',
+                    '1261111',
+                  ],
                 },
                 {
                   skillId: '343527',
                   caption: '주 대상 10초 생존',
+                  talents: [
+                    '406157',
+                  ],
                 },
                 {
                   skillId: '255937',
                   caption: '두 새벽빛 준비',
+                  talents: [
+                    '439760',
+                    '446663',
+                  ],
                 },
                 {
                   skillId: '383328',
                   caption: '새벽빛 · 첫 번은 자동 폭풍',
                   count: 2,
+                  talents: [
+                    '387170',
+                    '431377',
+                  ],
                 },
                 {
                   skillId: '375576',
@@ -969,26 +1057,47 @@ const manuscript = {
                 {
                   skillId: '31884',
                   caption: '공격 구간 확보',
+                  talents: [
+                    '1253598',
+                    '1261111',
+                  ],
                 },
                 {
                   skillId: '343527',
                   caption: '주 대상 생존 · 적 모임',
+                  talents: [
+                    '406157',
+                  ],
                 },
                 {
                   skillId: '255937',
                   caption: '빛의 망치 열기',
+                  talents: [
+                    '403695',
+                  ],
                 },
                 {
                   skillId: '427453',
                   caption: '열리면 바로 · 자원 3',
+                  talents: [
+                    '431533',
+                    '432626',
+                    '431463',
+                  ],
                 },
                 {
                   skillId: '375576',
                   caption: '후속 심판 자원',
+                  talents: [
+                    '1260429',
+                  ],
                 },
                 {
                   skillId: '383328',
                   caption: '후속 자원 소비',
+                  talents: [
+                    '432463',
+                  ],
                 },
               ],
               note: '보호의 천상의 종 뒤 빛의 망치 순서를 가져오지 않습니다. 징벌 기사단은 파멸의 재가 빛의 망치를 엽니다.',
@@ -1039,6 +1148,10 @@ const manuscript = {
                     skillId: '31884',
                     when: '모인 적을 공격할 수 있으면',
                   },
+                  talents: [
+                    '406064',
+                    '1261159',
+                  ],
                 },
                 {
                   skillId: '255937',
@@ -1047,6 +1160,10 @@ const manuscript = {
                     skillId: '343527',
                     when: '우선 대상 10야드 안에 모이면',
                   },
+                  talents: [
+                    '446663',
+                    '403695',
+                  ],
                 },
                 {
                   skillId: '53385',
@@ -1055,6 +1172,10 @@ const manuscript = {
                     skillId: '383328',
                     when: '날개 뒤 첫 소비 · 최고천의 유산',
                   },
+                  talents: [
+                    '387170',
+                    '383396',
+                  ],
                 },
                 {
                   skillId: '375576',
@@ -1075,6 +1196,9 @@ const manuscript = {
                     skillId: '24275',
                     when: '날개 중에는 이 자리',
                   },
+                  talents: [
+                    '405461',
+                  ],
                 },
                 {
                   skillId: '184575',
@@ -1094,26 +1218,45 @@ const manuscript = {
                 {
                   skillId: '24275',
                   caption: '태양의 사자 · 날개 중 망치 2충전 먼저',
+                  talents: [
+                    '1263782',
+                  ],
                 },
                 {
                   skillId: '53385',
                   caption: '태양의 사자 · 두 새벽빛 함께 맞히기',
+                  talents: [
+                    '1263787',
+                  ],
                 },
                 {
                   skillId: '427453',
                   caption: '기사단 · 파멸의 재 뒤 3개로 바로',
+                  talents: [
+                    '431533',
+                    '431463',
+                  ],
                 },
                 {
                   skillId: '427453',
                   caption: '기사단 · 무료 망치는 풀 끝나기 전',
+                  talents: [
+                    '425518',
+                  ],
                 },
                 {
                   skillId: '184575',
                   caption: '기사단 · 광역 적중과 천상 연장',
+                  talents: [
+                    '431687',
+                  ],
                 },
                 {
                   skillId: '375576',
                   caption: '기사단 · 모인 적에게 추가 심판',
+                  talents: [
+                    '1260429',
+                  ],
                 },
               ],
             },
@@ -1200,6 +1343,11 @@ const manuscript = {
                   label: '빛을 향하여',
                   kind: 'talent',
                   note: '심판의 칼날을 100% 효율로 자동 시전',
+                  affects: [
+                    '31884',
+                    '24275',
+                    '184575',
+                  ],
                 },
               ],
             },
@@ -1237,18 +1385,28 @@ const manuscript = {
                   label: '무한한 광채',
                   kind: 'talent',
                   note: '소비기 적중마다 0.3초 · 두 새벽빛을 폭풍으로 함께 맞히면 0.5초 더',
+                  affects: [
+                    '431377',
+                    '53385',
+                  ],
                 },
                 {
                   skillId: '431425',
                   label: '태양의 화신',
                   kind: 'talent',
                   note: '나와 30야드 안 새벽빛 사이 광선',
+                  affects: [
+                    '431377',
+                  ],
                 },
                 {
                   skillId: '431407',
                   label: '잔존하는 광휘',
                   kind: 'talent',
                   note: '만료·연장 때 상급 심판',
+                  affects: [
+                    '431377',
+                  ],
                 },
               ],
             },
@@ -1395,18 +1553,27 @@ const manuscript = {
                   label: '격동하는 천상',
                   kind: 'talent',
                   note: '8초 동안 2초마다 최고천의 망치',
+                  affects: [
+                    '427453',
+                  ],
                 },
                 {
                   skillId: '432626',
                   label: '만장일치 판결',
                   kind: 'talent',
                   note: '6초 동안 가속 12% · 주 대상에게 심판',
+                  affects: [
+                    '427453',
+                  ],
                 },
                 {
                   skillId: '431463',
                   label: '광신의 비호',
                   kind: 'talent',
                   note: '최고천의 망치 즉시 두 번 추가',
+                  affects: [
+                    '427453',
+                  ],
                 },
               ],
             },
@@ -1418,12 +1585,21 @@ const manuscript = {
                   label: '드높은 소명',
                   kind: 'talent',
                   note: '심판의 칼날·천벌의 망치로 1초씩 연장 · 일반 심판은 아님',
+                  affects: [
+                    '431533',
+                    '184575',
+                    '24275',
+                  ],
                 },
                 {
                   skillId: '432463',
                   label: '망치 낙하',
                   kind: 'talent',
                   note: '최후의 선고·천상의 폭풍에서 망치 · 천상 중 하나 더',
+                  affects: [
+                    '383328',
+                    '53385',
+                  ],
                 },
               ],
             },
@@ -1435,6 +1611,9 @@ const manuscript = {
                   label: '구세의 빛',
                   kind: 'talent',
                   note: '최고천의 망치 60회 → 무료 빛의 망치',
+                  affects: [
+                    '427453',
+                  ],
                 },
               ],
             },

@@ -360,12 +360,18 @@ const manuscript = {
                   label: '자연의 동맹',
                   kind: 'buff',
                   note: '마지막 특성 · 다음 살상 명령 공격력 30% 증가',
+                  affects: [
+                    '34026',
+                  ],
                 },
                 {
                   skillId: '424558',
                   label: '조련술의 거장',
                   kind: 'talent',
                   note: '날카로운 사격 출혈이 피해를 줄 때마다 0.5초 단축',
+                  affects: [
+                    '34026',
+                  ],
                 },
               ],
             },
@@ -433,18 +439,27 @@ const manuscript = {
                   label: '무리 전술',
                   kind: 'talent',
                   note: '집중 25 즉시',
+                  affects: [
+                    '217200',
+                  ],
                 },
                 {
                   skillId: '393933',
                   label: '전쟁 명령',
                   kind: 'talent',
                   note: '살상 명령 남은 시간 3초 감소',
+                  affects: [
+                    '34026',
+                  ],
                 },
                 {
                   skillId: '199530',
                   label: '발구르기',
                   kind: 'talent',
                   note: '야수가 주변 모든 적을 공격',
+                  affects: [
+                    '217200',
+                  ],
                 },
               ],
             },
@@ -456,12 +471,18 @@ const manuscript = {
                   label: '조련술의 거장',
                   kind: 'talent',
                   note: '피해마다 살상 명령 0.5초 감소',
+                  affects: [
+                    '34026',
+                  ],
                 },
                 {
                   skillId: '120679',
                   label: '광포한 야수',
                   kind: 'talent',
                   note: '출혈 피해 때 4% 확률로 야수가 8초 동안 함께 싸움',
+                  affects: [
+                    '217200',
+                  ],
                 },
               ],
             },
@@ -473,6 +494,9 @@ const manuscript = {
                   label: '피의 향기',
                   kind: 'talent',
                   note: '날카로운 사격 충전 1개 반환 · 두 충전이면 받을 자리가 없음',
+                  affects: [
+                    '217200',
+                  ],
                 },
               ],
             },
@@ -521,18 +545,27 @@ const manuscript = {
                   label: '피의 향기',
                   kind: 'talent',
                   note: '날카로운 사격 충전 1개',
+                  affects: [
+                    '217200',
+                  ],
                 },
                 {
                   skillId: '1272099',
                   label: '유혈',
                   kind: 'talent',
                   note: '야수가 대상에게 12초 출혈',
+                  affects: [
+                    '19574',
+                  ],
                 },
                 {
                   skillId: '1273043',
                   label: '자연의 동맹',
                   kind: 'talent',
                   note: '첫 특성 · 추가 야수 15초',
+                  affects: [
+                    '19574',
+                  ],
                 },
                 {
                   skillId: '407412',
@@ -540,6 +573,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '골랐다면',
                   note: '10초 동안 날카로운 사격 출혈이 더 빠르게',
+                  affects: [
+                    '217200',
+                  ],
                 },
                 {
                   skillId: '459693',
@@ -547,6 +583,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '골랐다면',
                   note: '야수들이 200% 효율로 발구르기',
+                  affects: [
+                    '199530',
+                  ],
                 },
               ],
             },
@@ -559,6 +598,9 @@ const manuscript = {
                   kind: 'buff',
                   tag: '무리의 지도자',
                   note: '포효 준비 · 다음 살상 명령이 돌진을 일으킴',
+                  affects: [
+                    '34026',
+                  ],
                 },
                 {
                   skillId: '466990',
@@ -566,6 +608,9 @@ const manuscript = {
                   kind: 'buff',
                   tag: '어둠 순찰자',
                   note: '10초 동안 검은 화살이 추가 화살을 쏨',
+                  affects: [
+                    '466930',
+                  ],
                 },
                 {
                   skillId: '1264290',
@@ -573,6 +618,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '어둠 순찰자',
                   note: '15초 동안 버튼이 울부짖는 화살로',
+                  affects: [
+                    '392060',
+                  ],
                 },
               ],
             },
@@ -630,6 +678,9 @@ const manuscript = {
                   label: '살상의 회전베기',
                   kind: 'talent',
                   note: '살상 명령 피해의 20%를 주변에 · 70%와 다른 숫자',
+                  affects: [
+                    '34026',
+                  ],
                 },
                 {
                   skillId: '1299409',
@@ -637,6 +688,9 @@ const manuscript = {
                   kind: 'buff',
                   tag: '시즌 2 4세트',
                   note: '코브라 송곳니 소비가 광역 복제로 바뀜',
+                  affects: [
+                    '193455',
+                  ],
                 },
               ],
             },
@@ -648,12 +702,18 @@ const manuscript = {
                   label: '자연의 동맹',
                   kind: 'talent',
                   note: '격노 때 나온 야수는 이전 난타를 받지 않음 → 격노 뒤 난타 한 번 더',
+                  affects: [
+                    '19574',
+                  ],
                 },
                 {
                   skillId: '1217524',
                   label: '광포한 회전베기',
                   kind: 'talent',
                   note: '광포한 야수는 소환될 때 8초 동안 100% 효율 회전베기를 따로 받음',
+                  affects: [
+                    '120679',
+                  ],
                 },
               ],
             },
@@ -701,6 +761,9 @@ const manuscript = {
                   label: '발구르기',
                   kind: 'talent',
                   note: '야수의 발구르기',
+                  affects: [
+                    '217200',
+                  ],
                 },
                 {
                   label: '추가 발구르기',
@@ -718,6 +781,9 @@ const manuscript = {
                   label: '코브라 송곳니',
                   kind: 'buff',
                   note: '최대 4중첩 · 다음 코브라 사격으로 소비',
+                  affects: [
+                    '193455',
+                  ],
                 },
               ],
             },
@@ -736,6 +802,9 @@ const manuscript = {
                   kind: 'buff',
                   tag: '회전베기 켜짐',
                   note: '중첩당 30% 효율 광역 복제',
+                  affects: [
+                    '193455',
+                  ],
                 },
               ],
             },
@@ -778,6 +847,10 @@ const manuscript = {
                 {
                   skillId: '217200',
                   caption: '두 충전 전에',
+                  talents: [
+                    '393933',
+                    '424558',
+                  ],
                 },
                 {
                   skillId: '34026',
@@ -821,14 +894,25 @@ const manuscript = {
                 {
                   skillId: '34026',
                   caption: '무리 · 포효 준비되면 바로',
+                  talents: [
+                    '471876',
+                    '472358',
+                  ],
                 },
                 {
                   skillId: '466930',
                   caption: '어둠 · 부패의 사격 중',
+                  talents: [
+                    '469638',
+                    '467911',
+                  ],
                 },
                 {
                   skillId: '392060',
                   caption: '어둠 · 부패 끝나기 전',
+                  talents: [
+                    '1264290',
+                  ],
                 },
                 {
                   skillId: '193455',
@@ -882,14 +966,26 @@ const manuscript = {
                   skillId: '217200',
                   count: 2,
                   caption: '출혈 · 반환 자리',
+                  talents: [
+                    '393933',
+                    '424558',
+                  ],
                 },
                 {
                   skillId: '19574',
                   caption: '극딜 진입',
+                  talents: [
+                    '193532',
+                    '1273043',
+                  ],
                 },
                 {
                   skillId: '34026',
                   caption: '포효 실행 · 쇄도!',
+                  talents: [
+                    '471876',
+                    '472358',
+                  ],
                 },
                 {
                   skillId: '217200',
@@ -902,6 +998,9 @@ const manuscript = {
                 {
                   skillId: '193455',
                   caption: '다음 강화 준비',
+                  talents: [
+                    '472639',
+                  ],
                 },
                 {
                   skillId: '34026',
@@ -920,6 +1019,10 @@ const manuscript = {
                 {
                   skillId: '217200',
                   caption: '첫 출혈',
+                  talents: [
+                    '393933',
+                    '424558',
+                  ],
                 },
                 {
                   skillId: '217200',
@@ -928,6 +1031,10 @@ const manuscript = {
                 {
                   skillId: '19574',
                   caption: '10초·15초 시작',
+                  talents: [
+                    '193532',
+                    '1273043',
+                  ],
                 },
                 {
                   skillId: '34026',
@@ -936,6 +1043,10 @@ const manuscript = {
                 {
                   skillId: '466930',
                   caption: '부패의 사격 중',
+                  talents: [
+                    '469638',
+                    '467911',
+                  ],
                 },
                 {
                   skillId: '34026',
@@ -944,6 +1055,9 @@ const manuscript = {
                 {
                   skillId: '392060',
                   caption: '부패 끝나기 전',
+                  talents: [
+                    '1264290',
+                  ],
                 },
                 {
                   skillId: '466930',
@@ -990,18 +1104,33 @@ const manuscript = {
                 {
                   skillId: '217200',
                   caption: '준비 공격',
+                  talents: [
+                    '393933',
+                    '424558',
+                  ],
                 },
                 {
                   skillId: '34026',
                   caption: '준비 공격',
+                  talents: [
+                    '471876',
+                    '472358',
+                  ],
                 },
                 {
                   skillId: '193455',
                   caption: '난타 집중 남기기',
+                  talents: [
+                    '472639',
+                  ],
                 },
                 {
                   skillId: '19574',
                   caption: '다음 난타 직전',
+                  talents: [
+                    '193532',
+                    '1273043',
+                  ],
                 },
                 {
                   skillId: '1264359',
@@ -1020,10 +1149,18 @@ const manuscript = {
                 {
                   skillId: '466930',
                   caption: '앞쪽 적에게 · 화약',
+                  talents: [
+                    '469638',
+                    '467911',
+                  ],
                 },
                 {
                   skillId: '19574',
                   caption: '회전베기 확보 후',
+                  talents: [
+                    '193532',
+                    '1273043',
+                  ],
                 },
                 {
                   skillId: '1264359',
@@ -1036,6 +1173,10 @@ const manuscript = {
                 {
                   skillId: '217200',
                   caption: '출혈 연결',
+                  talents: [
+                    '393933',
+                    '424558',
+                  ],
                 },
                 {
                   skillId: '466930',
@@ -1055,6 +1196,10 @@ const manuscript = {
                 {
                   skillId: '217200',
                   caption: '두 충전 전에',
+                  talents: [
+                    '393933',
+                    '424558',
+                  ],
                 },
                 {
                   skillId: '34026',
@@ -1094,10 +1239,18 @@ const manuscript = {
                 {
                   skillId: '34026',
                   caption: '무리 · 포효를 무리 쪽으로',
+                  talents: [
+                    '471876',
+                    '472358',
+                  ],
                 },
                 {
                   skillId: '466930',
                   caption: '어둠 · 격노 전 화약 준비',
+                  talents: [
+                    '469638',
+                    '467911',
+                  ],
                 },
                 {
                   skillId: '466930',
@@ -1106,6 +1259,9 @@ const manuscript = {
                 {
                   skillId: '392060',
                   caption: '어둠 · 부패 끝나기 전',
+                  talents: [
+                    '1264290',
+                  ],
                 },
               ],
             },
@@ -1193,12 +1349,18 @@ const manuscript = {
                     label: '쇄도!',
                     kind: 'buff',
                     note: '야생동물 돌진 · 7초 동안 피해',
+                    affects: [
+                      '34026',
+                    ],
                   },
                   {
                     skillId: '471876',
                     label: '무리의 지도자의 포효',
                     kind: 'talent',
                     note: '기본 30초마다 다음 살상 명령이 와이번·멧돼지·곰을 순서대로 부름',
+                    affects: [
+                      '34026',
+                    ],
                   },
                 ],
               },
@@ -1211,6 +1373,9 @@ const manuscript = {
                     kind: 'talent',
                     tag: '와이번',
                     note: '와이번 12초 공격력 10% · 활동 중 살상 명령마다 0.5초, 최대 5초 연장',
+                    affects: [
+                      '34026',
+                    ],
                   },
                   {
                     skillId: '472639',
@@ -1218,6 +1383,9 @@ const manuscript = {
                     kind: 'talent',
                     tag: '멧돼지',
                     note: '멧돼지 피해 뒤 다음 코브라 사격 피해 100% 증가',
+                    affects: [
+                      '193455',
+                    ],
                   },
                   {
                     label: '곰 소환',
@@ -1255,6 +1423,10 @@ const manuscript = {
                     label: '무리 본능',
                     kind: 'talent',
                     note: '포효가 살상 명령 피해 25% 증가 · 맹수 소환 때 날카로운 사격 대기시간 4초 감소',
+                    affects: [
+                      '34026',
+                      '217200',
+                    ],
                   },
                 ],
               },
@@ -1394,6 +1566,9 @@ const manuscript = {
                     kind: 'buff',
                     tag: '10초',
                     note: '검은 화살 시전 때 주변에 30% 효율 화살 두 발 추가',
+                    affects: [
+                      '466930',
+                    ],
                   },
                   {
                     skillId: '1264290',
@@ -1401,6 +1576,9 @@ const manuscript = {
                     kind: 'talent',
                     tag: '15초',
                     note: '어둠 사냥개 소환 · 버튼이 울부짖는 화살로 바뀜',
+                    affects: [
+                      '392060',
+                    ],
                   },
                 ],
               },
@@ -1429,6 +1607,9 @@ const manuscript = {
                     label: '영혼 흡수자',
                     kind: 'talent',
                     note: '살상 명령 20%, 날카로운 사격 50% 확률로 죽음의 강타',
+                    affects: [
+                      '466930',
+                    ],
                   },
                 ],
               },
@@ -1455,6 +1636,9 @@ const manuscript = {
                     label: '황폐의 화약',
                     kind: 'talent',
                     note: '주 대상 뒤쪽 8미터 부채꼴에 암흑 피해',
+                    affects: [
+                      '466930',
+                    ],
                   },
                 ],
               },
@@ -1466,6 +1650,9 @@ const manuscript = {
                     label: '암영의 영역',
                     kind: 'talent',
                     note: '맞은 적에게 검은 화살 지속 피해',
+                    affects: [
+                      '466930',
+                    ],
                   },
                   {
                     skillId: '115939',
@@ -2824,6 +3011,11 @@ const manuscript = {
     video: {
       youtubeId: 'iF-E0vaPQ04',
       title: '한밤 2시즌 12.1.5 야수 사냥꾼 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'VHeIr835EXs',
+      title: '한밤 2시즌 12.1.5 야수 사냥꾼 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

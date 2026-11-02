@@ -1405,6 +1405,9 @@ function main() {
   // 심화편 영상(기본편과 따로 올린 편): 기본편 아래 '심화편' 단추로 본다. 번호는 ai-hub outputs/pixel-guides/specs/<id>-advanced/youtube-upload.json 의 공개 확인된 값이다.
   const GUIDE_ADVANCED_VIDEOS = new Map([
     ['demonhunter-havoc', 'bFrBTJqCUuU'],
+    ['hunter-beastmastery', 'VHeIr835EXs'],
+    ['hunter-marksmanship', '0h_iQv0eD3w'],
+    ['hunter-survival', '8dkksyQUsUw'],
     ['paladin-holy', 'EZ3vLNckjYs'],
     ['paladin-protection', 'MT7hghuzlWU'],
     ['paladin-retribution', '_HHEKlLi7Qs'],
@@ -1777,6 +1780,15 @@ function main() {
     }
     const single = arms.blocks.find(block => block.timeline?.title === '단일 딜사이클 타임라인').timeline.rails[0].nodes;
     assert(single.find(node => node.skillId === '12294')?.talents?.includes('386630'), 'Arms single-target timeline must attach 전투군주 to the first 필사의 일격 slot');
+  }
+
+  // 영상 v10과 같은 특성 ↔ 스킬 연결(2026-11-02 사이트 글에도 넣음, artifacts/talent-links-20261102): 흐름도 특성 상자마다 affects, 타임라인 자리에 talents
+  for (const id of ['warrior-fury', 'warrior-protection', 'paladin-holy', 'paladin-protection', 'paladin-retribution', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival']) {
+    const linked = manuscripts[id];
+    const talentBoxes = linked.blocks.flatMap(block => [].concat(block.diagram || []).flatMap(diagram => diagram.layers.flatMap(layer => layer.nodes.filter(node => node.kind === 'talent'))));
+    assert(talentBoxes.length >= 10 && talentBoxes.every(node => node.affects?.length), `${id} skill-structure diagrams must list the skills every talent box attaches to (affects)`);
+    const slots = linked.blocks.flatMap(block => [].concat(block.timeline || []).flatMap(timeline => timeline.rails.flatMap(rail => rail.nodes))).filter(node => node.talents?.length);
+    assert(slots.length >= 20, `${id} rotation timelines must show talents under their slots`);
   }
 
   const beastMastery = manuscripts['hunter-beastmastery'];

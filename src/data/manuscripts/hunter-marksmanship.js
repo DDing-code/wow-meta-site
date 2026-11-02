@@ -495,6 +495,11 @@ const manuscript = {
                   label: '정밀 사격',
                   kind: 'buff',
                   note: '소비할 때마다 집중력으로 1초 단축',
+                  affects: [
+                    '185358',
+                    '257620',
+                    '466930',
+                  ],
                 },
                 {
                   skillId: '56641',
@@ -527,12 +532,20 @@ const manuscript = {
                   label: '정밀 사격',
                   kind: 'buff',
                   note: '다음 신비한 사격·일제 사격을 강화',
+                  affects: [
+                    '185358',
+                    '257620',
+                    '466930',
+                  ],
                 },
                 {
                   skillId: '391559',
                   label: '쇄도 사격',
                   kind: 'talent',
                   note: '15% 확률로 속사 초기화',
+                  affects: [
+                    '257044',
+                  ],
                 },
               ],
             },
@@ -594,6 +607,11 @@ const manuscript = {
                   label: '정밀 사격',
                   kind: 'buff',
                   note: '다음 소비 스킬 피해 50% 증가 · 집중 60% 절감',
+                  affects: [
+                    '185358',
+                    '257620',
+                    '466930',
+                  ],
                 },
               ],
             },
@@ -634,6 +652,9 @@ const manuscript = {
                   label: '집중력',
                   kind: 'talent',
                   note: '조준 사격 충전 1초 단축',
+                  affects: [
+                    '19434',
+                  ],
                 },
                 {
                   skillId: '466872',
@@ -698,18 +719,27 @@ const manuscript = {
                   label: '조준하기',
                   kind: 'talent',
                   note: '한 발마다 충전 0.5초 단축 · 7발 3.5초, 빠른 사격 10발 5초',
+                  affects: [
+                    '19434',
+                  ],
                 },
                 {
                   skillId: '389020',
                   label: '총알 세례',
                   kind: 'buff',
                   note: '다음 조준 사격 20% 강화 · 물량 공세면 한 번 더',
+                  affects: [
+                    '19434',
+                  ],
                 },
                 {
                   skillId: '473385',
                   label: '조준경은 거들 뿐',
                   kind: 'talent',
                   note: '속사가 정밀 사격도 줌',
+                  affects: [
+                    '260242',
+                  ],
                 },
               ],
             },
@@ -732,12 +762,18 @@ const manuscript = {
                   label: '쇄도 사격',
                   kind: 'talent',
                   note: '15% 확률로 속사 초기화',
+                  affects: [
+                    '257044',
+                  ],
                 },
                 {
                   skillId: '1277546',
                   label: '화력 집중',
                   kind: 'talent',
                   note: '초기화로 돌아온 속사 20% 강화',
+                  affects: [
+                    '257044',
+                  ],
                 },
               ],
             },
@@ -812,6 +848,9 @@ const manuscript = {
                   label: '정밀 폭파',
                   kind: 'talent',
                   note: '지속시간 +1초',
+                  affects: [
+                    '212431',
+                  ],
                 },
                 {
                   label: '시즌 2 2세트',
@@ -844,12 +883,18 @@ const manuscript = {
                   label: '유동성 제동장치',
                   kind: 'talent',
                   note: '폭발 사격 뒤 3초 안에 한 번 더',
+                  affects: [
+                    '212431',
+                  ],
                 },
                 {
                   skillId: '1301406',
                   label: '전술 재장전',
                   kind: 'talent',
                   note: '폭발 사격마다 실탄 장전 → 다음 조준 사격을 즉시, 집중 없이',
+                  affects: [
+                    '19434',
+                  ],
                 },
               ],
             },
@@ -902,6 +947,10 @@ const manuscript = {
                     skillId: '212431',
                     when: '쿨이 돌면 먼저 · 두 번',
                   },
+                  talents: [
+                    '1273132',
+                    '391559',
+                  ],
                 },
                 {
                   skillId: '185358',
@@ -910,6 +959,9 @@ const manuscript = {
                     skillId: '53351',
                     when: '쓸 수 있으면 대신',
                   },
+                  talents: [
+                    '378767',
+                  ],
                 },
                 {
                   skillId: '257044',
@@ -918,6 +970,10 @@ const manuscript = {
                     skillId: '288613',
                     when: '쿨이 돌면 · 속사 바로 앞',
                   },
+                  talents: [
+                    '473385',
+                    '1277546',
+                  ],
                 },
                 {
                   skillId: '185358',
@@ -953,18 +1009,31 @@ const manuscript = {
                 {
                   skillId: '1264949',
                   caption: '파수꾼 · 정조준 뒤 15초 안에 한 번',
+                  talents: [
+                    '1266069',
+                  ],
                 },
                 {
                   skillId: '19434',
                   caption: '파수꾼 · 표식 있는 대상에게',
+                  talents: [
+                    '1253599',
+                    '1253825',
+                  ],
                 },
                 {
                   skillId: '466930',
                   caption: '어둠 순찰자 · 쓸 수 있고 정밀 사격 있으면 맨 먼저',
+                  talents: [
+                    '469638',
+                  ],
                 },
                 {
                   skillId: '392060',
                   caption: '어둠 순찰자 · 죽음의 통곡 · 정조준 뒤 15초',
+                  talents: [
+                    '1264290',
+                  ],
                 },
               ],
             },
@@ -1019,15 +1088,25 @@ const manuscript = {
                 {
                   skillId: '19434',
                   caption: '풀링 2.5초 전',
+                  talents: [
+                    '1253599',
+                    '1253825',
+                  ],
                 },
                 {
                   skillId: '212431',
                   count: 2,
                   caption: '유동성 제동장치',
+                  talents: [
+                    '471369',
+                  ],
                 },
                 {
                   skillId: '260243',
                   caption: '골랐다면',
+                  talents: [
+                    '400456',
+                  ],
                 },
                 {
                   skillId: '288613',
@@ -1036,10 +1115,17 @@ const manuscript = {
                 {
                   skillId: '257044',
                   caption: '정조준 직후',
+                  talents: [
+                    '473385',
+                    '1277546',
+                  ],
                 },
                 {
                   skillId: '185358',
                   caption: '속사가 준 정밀 사격 소비',
+                  talents: [
+                    '378767',
+                  ],
                 },
                 {
                   skillId: '19434',
@@ -1062,14 +1148,24 @@ const manuscript = {
                 {
                   skillId: '19434',
                   caption: '풀링 2.5초 전',
+                  talents: [
+                    '1273132',
+                    '391559',
+                  ],
                 },
                 {
                   skillId: '466930',
                   caption: '실제 사용 가능할 때',
+                  talents: [
+                    '469638',
+                  ],
                 },
                 {
                   skillId: '212431',
                   caption: '지속 피해',
+                  talents: [
+                    '471369',
+                  ],
                 },
                 {
                   skillId: '212431',
@@ -1078,6 +1174,9 @@ const manuscript = {
                 {
                   skillId: '260243',
                   caption: '골랐다면',
+                  talents: [
+                    '400456',
+                  ],
                 },
                 {
                   skillId: '288613',
@@ -1092,6 +1191,10 @@ const manuscript = {
                 {
                   skillId: '257044',
                   caption: '이후 반복 흐름으로',
+                  talents: [
+                    '473385',
+                    '1277546',
+                  ],
                 },
               ],
               note: '공개 작성자마다 일부 순서가 다릅니다. 첫 검은 화살은 실제 사용 가능 조건을 확인하고 씁니다.',
@@ -1192,6 +1295,10 @@ const manuscript = {
                   label: '연사',
                   kind: 'talent',
                   note: '연발 공격에 맞은 적 최대 2명에게 폭발 사격이 저절로 걸림',
+                  affects: [
+                    '260243',
+                    '212431',
+                  ],
                 },
                 {
                   skillId: '470945',
@@ -1199,6 +1306,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '두 대상 전투',
                   note: '조준 사격·속사가 추가 대상 한 명에게 35% · 일제 사격 3명 적중을 기다리지 않음',
+                  affects: [
+                    '19434',
+                    '257044',
+                  ],
                 },
               ],
             },
@@ -1219,6 +1330,9 @@ const manuscript = {
                     skillId: '260243',
                     when: '적이 멈추면 먼저',
                   },
+                  talents: [
+                    '378767',
+                  ],
                 },
                 {
                   skillId: '19434',
@@ -1227,6 +1341,10 @@ const manuscript = {
                     skillId: '212431',
                     when: '쿨이 돌면 · 오래 살 적에게',
                   },
+                  talents: [
+                    '1273132',
+                    '391559',
+                  ],
                 },
                 {
                   skillId: '257620',
@@ -1243,6 +1361,10 @@ const manuscript = {
                     skillId: '288613',
                     when: '쿨이 돌면 · 속사 바로 앞',
                   },
+                  talents: [
+                    '473385',
+                    '1277546',
+                  ],
                 },
                 {
                   skillId: '257620',
@@ -1262,18 +1384,31 @@ const manuscript = {
                 {
                   skillId: '257620',
                   caption: '파수꾼 · 표식 없는 적에게 소비',
+                  talents: [
+                    '378767',
+                  ],
                 },
                 {
                   skillId: '19434',
                   caption: '파수꾼 · 표식 있는 적에게',
+                  talents: [
+                    '1253599',
+                    '1253825',
+                  ],
                 },
                 {
                   skillId: '1264949',
                   caption: '파수꾼 · 정조준 뒤 15초 안',
+                  talents: [
+                    '1266069',
+                  ],
                 },
                 {
                   skillId: '466930',
                   caption: '어둠 순찰자 · 쓸 수 있고 정밀 사격 있으면',
+                  talents: [
+                    '469638',
+                  ],
                 },
               ],
             },
@@ -1284,10 +1419,18 @@ const manuscript = {
                 {
                   skillId: '19434',
                   caption: '추가 대상에게 35%',
+                  talents: [
+                    '1273132',
+                    '391559',
+                  ],
                 },
                 {
                   skillId: '257044',
                   caption: '추가 대상에게 35%',
+                  talents: [
+                    '473385',
+                    '1277546',
+                  ],
                 },
               ],
               note: '이 빌드에서는 일제 사격 세 명 적중을 기다리지 않습니다.',
@@ -1377,6 +1520,11 @@ const manuscript = {
                     label: '정밀 사격',
                     kind: 'buff',
                     note: '신비한 사격·일제 사격으로 소비',
+                    affects: [
+                      '185358',
+                      '257620',
+                      '466930',
+                    ],
                   },
                 ],
               },
@@ -1388,12 +1536,18 @@ const manuscript = {
                     label: '파수꾼의 표식',
                     kind: 'buff',
                     note: '척후병의 징표 대신 남음 · 다음 조준 사격 피해 증가',
+                    affects: [
+                      '19434',
+                    ],
                   },
                   {
                     skillId: '1253825',
                     label: '달의 축복',
                     kind: 'talent',
                     note: '표식이 붙을 때마다 조준 사격 1초 단축',
+                    affects: [
+                      '19434',
+                    ],
                   },
                 ],
               },
@@ -1447,6 +1601,10 @@ const manuscript = {
                     label: '추적과 타격',
                     kind: 'talent',
                     note: '표창이 실탄 장전도 줌',
+                    affects: [
+                      '1264949',
+                      '19434',
+                    ],
                   },
                 ],
               },
@@ -1622,6 +1780,9 @@ const manuscript = {
                     label: '죽음의 인도자',
                     kind: 'buff',
                     note: '다음 조준 사격이 죽음의 강타를 주도록 예약 · 이 단계에서는 검은 화살이 아직 꺼져 있음',
+                    affects: [
+                      '19434',
+                    ],
                   },
                 ],
               },
@@ -1633,6 +1794,9 @@ const manuscript = {
                     label: '죽음의 강타',
                     kind: 'buff',
                     note: '생명력 조건 없이 검은 화살 사용 가능',
+                    affects: [
+                      '466930',
+                    ],
                   },
                   {
                     skillId: '469638',
@@ -1640,6 +1804,9 @@ const manuscript = {
                     kind: 'talent',
                     tag: '지름길',
                     note: '속사가 확정으로 죽음의 강타를 줌 · 속사 직후 검은 화살 확인',
+                    affects: [
+                      '466930',
+                    ],
                   },
                 ],
               },
@@ -3462,6 +3629,11 @@ const manuscript = {
     video: {
       youtubeId: 'VQD0JrtCIY0',
       title: '한밤 2시즌 12.1.5 사격 사냥꾼 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: '0h_iQv0eD3w',
+      title: '한밤 2시즌 12.1.5 사격 사냥꾼 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

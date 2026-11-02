@@ -375,18 +375,27 @@ const manuscript = {
                   label: '거품 무는 광전사',
                   kind: 'talent',
                   note: '광란 때 20% 확률 · 실제 쓴 분노의 10%',
+                  affects: [
+                    '184367',
+                  ],
                 },
                 {
                   skillId: '316402',
                   label: '마무리 일격 연마',
                   kind: 'talent',
                   note: '마무리 일격이 분노 20 생성',
+                  affects: [
+                    '5308',
+                  ],
                 },
                 {
                   skillId: '262231',
                   label: '전쟁 기계',
                   kind: 'talent',
                   note: '자동 공격 분노 · 처치 시 분노 5',
+                  affects: [
+                    '분노',
+                  ],
                 },
               ],
             },
@@ -445,6 +454,10 @@ const manuscript = {
                   label: '신선한 고기',
                   kind: 'talent',
                   note: '새 대상에게 처음 적중하면 보장',
+                  affects: [
+                    '23881',
+                    '184362',
+                  ],
                 },
               ],
             },
@@ -467,6 +480,9 @@ const manuscript = {
                   label: '특화: 구속되지 않은 분노',
                   kind: 'talent',
                   note: '피해 증가 · 특화에 따라 달라짐',
+                  affects: [
+                    '184362',
+                  ],
                 },
                 {
                   skillId: '383848',
@@ -474,6 +490,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '둘 중 하나',
                   note: '가속 15% · 이동 속도 10%',
+                  affects: [
+                    '184362',
+                  ],
                 },
                 {
                   skillId: '440277',
@@ -481,12 +500,18 @@ const manuscript = {
                   kind: 'talent',
                   tag: '둘 중 하나',
                   note: '특화 15% · 생기흡수 3%',
+                  affects: [
+                    '184362',
+                  ],
                 },
                 {
                   skillId: '208154',
                   label: '전쟁 물감',
                   kind: 'talent',
                   note: '받는 피해 10% 감소',
+                  affects: [
+                    '184362',
+                  ],
                 },
               ],
             },
@@ -498,6 +523,10 @@ const manuscript = {
                   label: '숙련된 경험',
                   kind: 'talent',
                   note: '격노 중 피의 갈증마다 0.5초 · 주 대상 치명타면 두 배',
+                  affects: [
+                    '23881',
+                    '184362',
+                  ],
                 },
               ],
             },
@@ -559,12 +588,20 @@ const manuscript = {
                   label: '자르고 베기',
                   kind: 'talent',
                   note: '75% 확률로 분노의 강타 충전 1회 · 다음 분노의 강타 20%',
+                  affects: [
+                    '184367',
+                    '85288',
+                  ],
                 },
                 {
                   skillId: '1265355',
                   label: '피의 향기',
                   kind: 'talent',
                   note: '다음 피의 갈증 10% · 최대 2중첩',
+                  affects: [
+                    '184367',
+                    '23881',
+                  ],
                 },
               ],
             },
@@ -593,18 +630,30 @@ const manuscript = {
                   label: '피의 광기',
                   kind: 'talent',
                   note: '분노의 강타가 다음 피의 갈증 5% · 최대 5중첩',
+                  affects: [
+                    '85288',
+                    '23881',
+                  ],
                 },
                 {
                   skillId: '392936',
                   label: '천벌과 분노',
                   kind: 'talent',
                   note: '분노의 강타 15% · 격노 중 초기화 확률 10%포인트',
+                  affects: [
+                    '85288',
+                    '335097',
+                  ],
                 },
                 {
                   skillId: '1265356',
                   label: '분노를 마시는 자',
                   kind: 'talent',
                   note: '피의 갈증 치명타면 4초 동안 분노의 강타 10%',
+                  affects: [
+                    '23881',
+                    '85288',
+                  ],
                 },
               ],
             },
@@ -664,6 +713,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 단계',
                   note: '광폭화 3중첩 · 구간 12초에서 18초',
+                  affects: [
+                    '1719',
+                  ],
                 },
                 {
                   skillId: '1269309',
@@ -671,12 +723,21 @@ const manuscript = {
                   kind: 'talent',
                   tag: '가운데 단계',
                   note: '구간 중 광란 비용 1포인트당 15 감소',
+                  affects: [
+                    '1719',
+                    '184367',
+                  ],
                 },
                 {
                   skillId: '396749',
                   label: '막무가내',
                   kind: 'talent',
                   note: '시작할 때 분노 50 · 생성기가 강화형으로 바뀜',
+                  affects: [
+                    '1719',
+                    '335096',
+                    '335097',
+                  ],
                 },
               ],
             },
@@ -776,12 +837,22 @@ const manuscript = {
                   label: '소용돌이 연마',
                   kind: 'talent',
                   note: '다음 단일 대상 공격 4번 · 최대 4명 추가 · 65% 피해',
+                  affects: [
+                    '190411',
+                    '184367',
+                    '85288',
+                    '23881',
+                  ],
                 },
                 {
                   skillId: '1299025',
                   label: '피의 폭풍',
                   kind: 'talent',
                   note: '맞은 적에게 분쇄 · 15초 출혈',
+                  affects: [
+                    '190411',
+                    '6343',
+                  ],
                 },
               ],
             },
@@ -814,12 +885,19 @@ const manuscript = {
                   label: '고기칼',
                   kind: 'talent',
                   note: '3명 이상 적중 시 그 기술 50%',
+                  affects: [
+                    '190411',
+                    '6343',
+                  ],
                 },
                 {
                   skillId: '1300463',
                   label: '새기는 칼날',
                   kind: 'talent',
                   note: '소용돌이가 정확히 1명 적중 시 50%',
+                  affects: [
+                    '190411',
+                  ],
                 },
               ],
             },
@@ -867,6 +945,10 @@ const manuscript = {
                     skillId: '1719',
                     when: '쿨이 돌면 · 분노 여유 확인',
                   },
+                  talents: [
+                    '392792',
+                    '335077',
+                  ],
                 },
                 {
                   skillId: '85288',
@@ -875,6 +957,11 @@ const manuscript = {
                     skillId: '335097',
                     when: '막무가내 · 무모한 희생 중',
                   },
+                  talents: [
+                    '383854',
+                    '392936',
+                    '383877',
+                  ],
                 },
                 {
                   skillId: '184367',
@@ -887,6 +974,11 @@ const manuscript = {
                 {
                   skillId: '5308',
                   caption: '급살 발동·마무리 구간',
+                  talents: [
+                    '316402',
+                    '1265570',
+                    '206315',
+                  ],
                 },
                 {
                   skillId: '184367',
@@ -907,6 +999,11 @@ const manuscript = {
                     skillId: '335096',
                     when: '막무가내 · 무모한 희생 중',
                   },
+                  talents: [
+                    '215568',
+                    '393950',
+                    '392931',
+                  ],
                 },
               ],
               note: '스조라크 신화 상위 기록 11개(학살자)의 반복 구간에서 광란 다음은 분쇄의 타격 35%·마무리 일격 18%·분노의 강타 18%, 마무리 일격 다음은 광란 64%, 분노의 강타 다음은 분노의 강타 34%·광란 27%였습니다. 분당 광란 26.9회, 분노의 강타 12.5회, 마무리 일격 9.4회에 비해 피의 갈증은 2.7회라 분노의 강타 충전이 없을 때 씁니다. 같은 스킬을 이어 누른 횟수는 한 번이 가장 많아 정해 두지 않았습니다. 분노가 광란 비용에 모자라고 격노가 넉넉하면 생성기를 한 번 더 넣고, 격노가 곧 끝나거나 분노가 넘치면 바로 광란으로 넘어갑니다.',
@@ -918,22 +1015,38 @@ const manuscript = {
                 {
                   skillId: '184367',
                   caption: '학살자 · 칼날폭풍 뒤 바로',
+                  talents: [
+                    '446085',
+                  ],
                 },
                 {
                   skillId: '23881',
                   caption: '산왕 · 광란 뒤 먼저',
+                  talents: [
+                    '437118',
+                  ],
                 },
                 {
                   skillId: '107574',
                   caption: '산왕 · 무모한 희생과 함께',
+                  talents: [
+                    '437134',
+                  ],
                 },
                 {
                   skillId: '435607',
                   caption: '산왕 · 2중첩 전 · 투신 끝나기 전',
+                  talents: [
+                    '437079',
+                    '1270724',
+                  ],
                 },
                 {
                   skillId: '6343',
                   caption: '산왕 · 다른 핵심 기술이 비면',
+                  talents: [
+                    '436707',
+                  ],
                 },
               ],
             },
@@ -978,18 +1091,32 @@ const manuscript = {
                 {
                   skillId: '1719',
                   caption: '광란 반복 구간 시작',
+                  talents: [
+                    '396749',
+                    '1269310',
+                  ],
                 },
                 {
                   skillId: '184367',
                   caption: '분노 비우기 · 격노',
+                  talents: [
+                    '1269309',
+                  ],
                 },
                 {
                   skillId: '227847',
                   caption: '격노 상태로 진입',
+                  talents: [
+                    '1270717',
+                    '444772',
+                  ],
                 },
                 {
                   skillId: '184367',
                   caption: '칼날폭풍 뒤 바로',
+                  talents: [
+                    '446085',
+                  ],
                 },
                 {
                   skillId: '385059',
@@ -998,6 +1125,9 @@ const manuscript = {
                 {
                   skillId: '335097',
                   caption: '막무가내 · 광란 사이',
+                  talents: [
+                    '392936',
+                  ],
                 },
                 {
                   skillId: '184367',
@@ -1016,6 +1146,9 @@ const manuscript = {
                 {
                   skillId: '1719',
                   caption: '공격 가능하면',
+                  talents: [
+                    '396749',
+                  ],
                 },
                 {
                   skillId: '184367',
@@ -1024,6 +1157,9 @@ const manuscript = {
                 {
                   skillId: '23881',
                   caption: '분노 · 격노 기회',
+                  talents: [
+                    '215568',
+                  ],
                 },
                 {
                   skillId: '85288',
@@ -1046,26 +1182,46 @@ const manuscript = {
                 {
                   skillId: '1719',
                   caption: '투신과 함께 큰 구간',
+                  talents: [
+                    '396749',
+                    '456270',
+                  ],
                 },
                 {
                   skillId: '107574',
                   caption: '우레 작렬 2중첩',
+                  talents: [
+                    '437134',
+                  ],
                 },
                 {
                   skillId: '435607',
                   caption: '2중첩 바로 하나',
+                  talents: [
+                    '437079',
+                    '1270724',
+                  ],
                 },
                 {
                   skillId: '184367',
                   caption: '격노 켜기',
+                  talents: [
+                    '1269309',
+                  ],
                 },
                 {
                   skillId: '335096',
                   caption: '4세트 치명타 쌓기',
+                  talents: [
+                    '1296646',
+                  ],
                 },
                 {
                   skillId: '335097',
                   caption: '2세트 구간 연장',
+                  talents: [
+                    '1296645',
+                  ],
                 },
                 {
                   skillId: '184367',
@@ -1108,6 +1264,11 @@ const manuscript = {
                 {
                   skillId: '190411',
                   caption: '연마가 꺼졌으면 먼저',
+                  talents: [
+                    '12950',
+                    '1299025',
+                    '280392',
+                  ],
                 },
                 {
                   skillId: '184367',
@@ -1116,6 +1277,9 @@ const manuscript = {
                     skillId: '385059',
                     when: '선택했다면 · 모인 적에게',
                   },
+                  talents: [
+                    '1265357',
+                  ],
                 },
                 {
                   skillId: '85288',
@@ -1148,6 +1312,9 @@ const manuscript = {
                 {
                   skillId: '5308',
                   caption: '마무리 구간·급살 발동',
+                  talents: [
+                    '316402',
+                  ],
                 },
               ],
               note: '복제는 다음 4번의 단일 대상 공격까지입니다. 출혈이 남아 있어도 복제 횟수를 다 썼다면 다시 소용돌이를 씁니다.',
@@ -1159,26 +1326,47 @@ const manuscript = {
                 {
                   skillId: '227847',
                   caption: '학살자 · 모인 대상에게',
+                  talents: [
+                    '444772',
+                    '386628',
+                  ],
                 },
                 {
                   skillId: '184367',
                   caption: '학살자 · 3명 이상 적중',
+                  talents: [
+                    '444775',
+                  ],
                 },
                 {
                   skillId: '5308',
                   caption: '학살자 · 급살 발동 소비',
+                  talents: [
+                    '444769',
+                    '444780',
+                  ],
                 },
                 {
                   skillId: '6343',
                   caption: '산왕 · 복제 준비 · 여섯 넘으면',
+                  talents: [
+                    '436707',
+                  ],
                 },
                 {
                   skillId: '107574',
                   caption: '산왕 · 무모한 희생과 함께',
+                  talents: [
+                    '437134',
+                  ],
                 },
                 {
                   skillId: '435607',
                   caption: '산왕 · 투신 뒤 바로',
+                  talents: [
+                    '437079',
+                    '436148',
+                  ],
                 },
               ],
             },
@@ -1274,12 +1462,19 @@ const manuscript = {
                     label: '치명적인 집중',
                     kind: 'talent',
                     note: '집행자 12초에서 18초',
+                    affects: [
+                      '집행자',
+                    ],
                   },
                   {
                     skillId: '444771',
                     label: '무자비',
                     kind: 'talent',
                     note: '중첩마다 마무리 일격 치명타율·치명타 피해 3%',
+                    affects: [
+                      '집행자',
+                      '5308',
+                    ],
                   },
                 ],
               },
@@ -1302,6 +1497,11 @@ const manuscript = {
                     label: '임박한 파멸',
                     kind: 'talent',
                     note: '학살자의 일격 3회마다 급살 · 급살 소비 시 다음 칼날폭풍 추가 공격',
+                    affects: [
+                      '445579',
+                      '5308',
+                      '227847',
+                    ],
                   },
                 ],
               },
@@ -1340,24 +1540,38 @@ const manuscript = {
                     label: '잔혹한 마무리',
                     kind: 'talent',
                     note: '끝난 뒤 다음 광란 50%',
+                    affects: [
+                      '227847',
+                      '184367',
+                    ],
                   },
                   {
                     skillId: '1270717',
                     label: '격렬한 희열',
                     kind: 'talent',
                     note: '끝난 뒤 8초 동안 가속 15%',
+                    affects: [
+                      '227847',
+                    ],
                   },
                   {
                     skillId: '444780',
                     label: '붉은돌격대의 무자비함',
                     kind: 'talent',
                     note: '급살 사용마다 칼날폭풍 쿨다운 5초 감소',
+                    affects: [
+                      '227847',
+                      '5308',
+                    ],
                   },
                   {
                     skillId: '444772',
                     label: '압도적인 칼날',
                     kind: 'talent',
                     note: '맞은 적마다 압도당함 · 1%씩 최대 5중첩',
+                    affects: [
+                      '227847',
+                    ],
                   },
                 ],
               },
@@ -1528,12 +1742,21 @@ const manuscript = {
                   label: '번뜩이는 하늘',
                   kind: 'talent',
                   note: '우레 작렬에 맞은 적에게 벼락',
+                  affects: [
+                    '435607',
+                    '434969',
+                  ],
                 },
                 {
                   skillId: '434969',
                   label: '벼락',
                   kind: 'talent',
                   note: '천둥벼락·분노의 강타·마무리 일격 적중 시 25% · 투신 중 30% 더 자주',
+                  affects: [
+                    '85288',
+                    '5308',
+                    '6343',
+                  ],
                 },
               ],
             },
@@ -1545,24 +1768,41 @@ const manuscript = {
                   label: '지면 전류',
                   kind: 'talent',
                   note: '주변 적 추가 자연 피해 · 5명 넘으면 감소',
+                  affects: [
+                    '434969',
+                  ],
                 },
                 {
                   skillId: '436152',
                   label: '토림의 힘',
                   kind: 'talent',
                   note: '벼락마다 분노 3 · 분노의 강타·마무리 일격 25%',
+                  affects: [
+                    '434969',
+                    '85288',
+                    '5308',
+                  ],
                 },
                 {
                   skillId: '437118',
                   label: '폭발적인 힘',
                   kind: 'talent',
                   note: '15% 확률로 피의 갈증 2회를 쿨다운 없이',
+                  affects: [
+                    '434969',
+                    '23881',
+                  ],
                 },
                 {
                   skillId: '437134',
                   label: '폭풍의 화신',
                   kind: 'talent',
                   note: '투신이 꺼져 있을 때 벼락 적중 10% 확률로 4초 투신',
+                  affects: [
+                    '107574',
+                    '435607',
+                    '6343',
+                  ],
                 },
               ],
             },
