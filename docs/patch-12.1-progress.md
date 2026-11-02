@@ -1295,3 +1295,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 13편 기준으로 바꿔 도적 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 10편은 그대로임을 다시 확인했다.
 - 배포: `npm run validate`·`npm run build` 통과, 사이트 `010f735a`, KB 로컬 `1023fb8`. 빌드 `main.144d820b.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-rogue-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 도적 3개×1440·390 통과(캡처 `live/`).
 - 남은 결정: 11-01에 공개한 도적 v9 심화 3편(`GlqJ2EMfqxw`·`PnA8yzGxC8I`·`Slg4DDxPqh4`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
+
+## 2026-11-02 사제 심화편 공개·사이트 상호연동 (업로드, 심화편 단추, 특성 ↔ 스킬 연결, 기본편 설명)
+
+- 요청: "업로드/사이트 상호보완" → 사제 심화 가이드. 도적과 같은 방식으로 사제 3편을 반영했다.
+- 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-priest-20261102.json`, 목록 생성 `upload-advanced-v10-priest-20261102/prepare.py`, 영상 `…-storyboard-v10-reading-focus-v1.mp4`, 썸네일 빛 번짐판 talentbg-v6)로 와우메타 채널에 수양 `FQrOykNcG5M`·신성 `Tq-gPQtNepI`·암흑 `hfb5WTCRFzk`를 공개했다. 올리기 전 채널 번호를 화면에서 확인했고, `verify` 3/3·oEmbed 공개 링크·공개 썸네일(maxresdefault)이 v6과 같은지 확인했다.
+- 사이트: `artifacts/advanced-videos-priest-20261102/apply.cjs`로 advancedVideo(기본편·심화편 단추)를, `artifacts/talent-links-20261102/apply.cjs priest-*`(`_priest.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `09-사제/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다. 신성 궁극의 평온(1246517)의 KB 노트 종류가 `atomic-talent`(유일)라서 검사기 TIMELINE_TALENT_TYPES에 그 종류를 더했다(kb-brief.cjs도 '특성'으로 묶는 종류).
+- 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 16편 기준으로 바꿔 사제 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 13편은 그대로임을 다시 확인했다.
+- 배포: `npm run validate`·`npm run build` 통과, 사이트 `0311d4b3`. 빌드 `main.57f73b67.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-priest-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 사제 3개×1440·390 통과(캡처 `live/`).
+- 남은 결정: 11-01에 공개한 사제 v9 심화 3편(`4EI98w801-w`·`6cB8OGi-7AU`·`_f42uwqFoyI`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.

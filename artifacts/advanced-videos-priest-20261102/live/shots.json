@@ -1,0 +1,98 @@
+[
+  {
+    "id": "priest-discipline",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-discipline-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-discipline-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/veXAaKuThj0?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/FQrOykNcG5M?rel=0",
+    "caption": "한밤 2시즌 12.1.5 수양 사제 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "priest-discipline",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-discipline-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/veXAaKuThj0?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/FQrOykNcG5M?rel=0",
+    "caption": "한밤 2시즌 12.1.5 수양 사제 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "priest-holy",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-holy-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-holy-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/81Kg0R0KRm4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/Tq-gPQtNepI?rel=0",
+    "caption": "한밤 2시즌 12.1.5 신성 사제 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "priest-holy",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-holy-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/81Kg0R0KRm4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/Tq-gPQtNepI?rel=0",
+    "caption": "한밤 2시즌 12.1.5 신성 사제 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "priest-shadow",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-shadow-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-shadow-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/B_xITeY9RW4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/hfb5WTCRFzk?rel=0",
+    "caption": "한밤 2시즌 12.1.5 암흑 사제 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "priest-shadow",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-shadow-390-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-shadow-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/B_xITeY9RW4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/hfb5WTCRFzk?rel=0",
+    "caption": "한밤 2시즌 12.1.5 암흑 사제 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "priest-shadow",
+    "width": 320,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-shadow-320-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-priest-20261102\\live\\priest-shadow-320-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/B_xITeY9RW4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/hfb5WTCRFzk?rel=0",
+    "caption": "한밤 2시즌 12.1.5 암흑 사제 심화 가이드",
+    "scrollWidth": 320,
+    "ok": true
+  }
+]
