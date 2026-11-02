@@ -346,12 +346,18 @@ const manuscript = {
                   label: '기회',
                   kind: 'talent',
                   note: '다음 권총 사격 기력 비용 50% 감소 · 피해 100% 증가',
+                  affects: [
+                    '185763',
+                  ],
                 },
                 {
                   skillId: '381846',
                   label: '속전속결',
                   kind: 'talent',
                   note: '기회가 여러 중첩 쌓임 · 최대 6중첩',
+                  affects: [
+                    '279876',
+                  ],
                 },
               ],
             },
@@ -368,6 +374,9 @@ const manuscript = {
                   label: '빠른 사격',
                   kind: 'talent',
                   note: '소비한 기회 중첩 하나당 1점 더',
+                  affects: [
+                    '185763',
+                  ],
                 },
               ],
             },
@@ -405,6 +414,9 @@ const manuscript = {
                   label: '신속한 결말',
                   kind: 'talent',
                   note: '속결에 쓴 점수 1점당 난도질 3초',
+                  affects: [
+                    '2098',
+                  ],
                 },
               ],
             },
@@ -497,12 +509,19 @@ const manuscript = {
                   label: '납 주사위',
                   kind: 'talent',
                   note: '아드레날린 촉진 뒤 다음 결과 1단계 위',
+                  affects: [
+                    '315508',
+                    '13750',
+                  ],
                 },
                 {
                   skillId: '381839',
                   label: '날렵한 손재주',
                   kind: 'talent',
                   note: '더 강한 결과가 나올 확률 20% 증가',
+                  affects: [
+                    '315508',
+                  ],
                 },
               ],
             },
@@ -560,12 +579,18 @@ const manuscript = {
                     label: '신속 대응',
                     kind: 'talent',
                     note: '쿨다운 8초 감소 · 버프 1%p 증가',
+                    affects: [
+                      '315341',
+                    ],
                   },
                   {
                     skillId: '1259498',
                     label: '전문 결투사',
                     kind: 'talent',
                     note: '버프 2% 추가',
+                    affects: [
+                      '315341',
+                    ],
                   },
                   {
                     skillId: '1265861',
@@ -573,6 +598,9 @@ const manuscript = {
                     kind: 'talent',
                     tag: '첫 노드',
                     note: '45% 확률로 버프 2중첩',
+                    affects: [
+                      '315341',
+                    ],
                   },
                 ],
               },
@@ -584,6 +612,9 @@ const manuscript = {
                     label: '비장의 일격',
                     kind: 'talent',
                     note: '쓴 점수에 따른 확률 · 연계 점수 4점과 쿨다운 초기화',
+                    affects: [
+                      '315341',
+                    ],
                   },
                   {
                     skillId: '1265863',
@@ -591,6 +622,9 @@ const manuscript = {
                     kind: 'talent',
                     tag: '마지막 노드',
                     note: '탄환 6발이면 기력 없이 사용 · 연계 점수 6점과 쿨다운 초기화',
+                    affects: [
+                      '315341',
+                    ],
                   },
                 ],
               },
@@ -618,18 +652,28 @@ const manuscript = {
                     label: '아드레날린 촉진 연마',
                     kind: 'talent',
                     note: '연계 점수를 최대치까지',
+                    affects: [
+                      '13750',
+                    ],
                   },
                   {
                     skillId: '470347',
                     label: '초자력 충전기',
                     kind: 'talent',
                     note: '과충전 · 쓰면 2점을 더 쓴 효과',
+                    affects: [
+                      '13750',
+                    ],
                   },
                   {
                     skillId: '256170',
                     label: '납 주사위',
                     kind: 'talent',
                     note: '다음 뼈주사위 1단계 위',
+                    affects: [
+                      '315508',
+                      '13750',
+                    ],
                   },
                 ],
               },
@@ -708,10 +752,17 @@ const manuscript = {
                     skillId: '315508',
                     when: '효과가 없거나 1단계 이하면 다시 굴리기',
                   },
+                  talents: [
+                    '279876',
+                  ],
                 },
                 {
                   skillId: '185763',
                   caption: '기회 6중첩이면 처리',
+                  talents: [
+                    '196938',
+                    '279876',
+                  ],
                 },
                 {
                   skillId: '315341',
@@ -720,6 +771,10 @@ const manuscript = {
                     skillId: '2098',
                     when: '세트 무료 속결이 뜨면 점수와 상관없이 먼저',
                   },
+                  talents: [
+                    '1259480',
+                    '381828',
+                  ],
                 },
                 {
                   skillId: '193315',
@@ -736,6 +791,9 @@ const manuscript = {
                     skillId: '51690',
                     when: '쿨이 돌았고 6점 이상이면 속결보다 먼저',
                   },
+                  talents: [
+                    '51667',
+                  ],
                 },
                 {
                   skillId: '193315',
@@ -763,10 +821,17 @@ const manuscript = {
                 {
                   skillId: '2098',
                   caption: '기만자 · 최후의 일격이 붙은 속결',
+                  talents: [
+                    '441321',
+                  ],
                 },
                 {
                   skillId: '51690',
                   caption: '기만자 · 당혹과 무결한 형상 연결',
+                  talents: [
+                    '441263',
+                    '441274',
+                  ],
                 },
                 {
                   skillId: '381989',
@@ -783,6 +848,9 @@ const manuscript = {
                 {
                   skillId: '13750',
                   caption: '운명결속 · 곧게 선 동전',
+                  talents: [
+                    '453457',
+                  ],
                 },
               ],
             },
@@ -827,6 +895,9 @@ const manuscript = {
                 {
                   skillId: '13750',
                   caption: '전투 직전 · 낮은 점수',
+                  talents: [
+                    '441429',
+                  ],
                 },
                 {
                   skillId: '315496',
@@ -835,6 +906,10 @@ const manuscript = {
                 {
                   skillId: '315508',
                   caption: '버프가 없거나 낮은 단계',
+                  talents: [
+                    '381839',
+                    '256170',
+                  ],
                 },
                 {
                   skillId: '381989',
@@ -844,14 +919,25 @@ const manuscript = {
                   skillId: '193315',
                   caption: '6점 이상까지 모으기',
                   count: 2,
+                  talents: [
+                    '1276630',
+                  ],
                 },
                 {
                   skillId: '315341',
                   caption: '첫 피해 버프',
+                  talents: [
+                    '1259480',
+                    '381828',
+                  ],
                 },
                 {
                   skillId: '51690',
                   caption: '돌아온 점수로 바로',
+                  talents: [
+                    '441263',
+                    '441274',
+                  ],
                 },
                 {
                   skillId: '1277933',
@@ -878,6 +964,9 @@ const manuscript = {
                 {
                   skillId: '13750',
                   caption: '낮은 점수 · 곧게 선 동전',
+                  talents: [
+                    '453457',
+                  ],
                 },
                 {
                   skillId: '315496',
@@ -886,6 +975,10 @@ const manuscript = {
                 {
                   skillId: '315508',
                   caption: '효과 없음·낮은 단계',
+                  talents: [
+                    '381839',
+                    '256170',
+                  ],
                 },
                 {
                   skillId: '381989',
@@ -898,10 +991,17 @@ const manuscript = {
                 {
                   skillId: '193315',
                   caption: '운명과의 타협 점수 포함',
+                  talents: [
+                    '454419',
+                  ],
                 },
                 {
                   skillId: '315341',
                   caption: '일반 6점 이상',
+                  talents: [
+                    '1259480',
+                    '381828',
+                  ],
                 },
                 {
                   skillId: '51690',
@@ -964,6 +1064,9 @@ const manuscript = {
                     skillId: '13750',
                     when: '낮은 점수 · 첫 적중으로 찼다면 소비 먼저',
                   },
+                  talents: [
+                    '279876',
+                  ],
                 },
                 {
                   skillId: '271877',
@@ -972,6 +1075,10 @@ const manuscript = {
                 {
                   skillId: '315341',
                   caption: '6점 이상',
+                  talents: [
+                    '1259480',
+                    '381828',
+                  ],
                 },
                 {
                   skillId: '2098',
@@ -980,6 +1087,9 @@ const manuscript = {
                     skillId: '51690',
                     when: '6점 이상·안전한 정신 집중이면 속결보다 먼저',
                   },
+                  talents: [
+                    '51667',
+                  ],
                 },
                 {
                   skillId: '185763',
@@ -988,6 +1098,10 @@ const manuscript = {
                     skillId: '1277933',
                     when: '주요 쿨기를 쓴 뒤 적이 남았다면',
                   },
+                  talents: [
+                    '196938',
+                    '279876',
+                  ],
                 },
                 {
                   skillId: '13877',
@@ -1007,14 +1121,24 @@ const manuscript = {
                 {
                   skillId: '2098',
                   caption: '기만자 · 최후의 일격 속결',
+                  talents: [
+                    '441321',
+                  ],
                 },
                 {
                   skillId: '13877',
                   caption: '기만자 · 날렵한 질풍 25%',
+                  talents: [
+                    '441367',
+                  ],
                 },
                 {
                   skillId: '51690',
                   caption: '기만자 · 맞힌 적에 당혹',
+                  talents: [
+                    '441263',
+                    '441274',
+                  ],
                 },
                 {
                   skillId: '2098',
@@ -1096,6 +1220,10 @@ const manuscript = {
                   label: '영리한 전투원',
                   kind: 'talent',
                   note: '권총 사격도 발동 · 권총 사격 치명타 20%',
+                  affects: [
+                    '185763',
+                    '441146',
+                  ],
                 },
               ],
             },
@@ -1113,6 +1241,9 @@ const manuscript = {
                   label: '번쩍이는 강철',
                   kind: 'talent',
                   note: '간격 15초 · 25% 확률로 두 번 적중',
+                  affects: [
+                    '441146',
+                  ],
                 },
               ],
             },
@@ -1130,6 +1261,9 @@ const manuscript = {
                   label: '무결한 형상',
                   kind: 'talent',
                   note: '중첩당 마무리 일격 피해 4% · 12초 · 최대 5중첩',
+                  affects: [
+                    '2098',
+                  ],
                 },
               ],
             },
@@ -1152,24 +1286,37 @@ const manuscript = {
                   label: '음험한 주의 분산',
                   kind: 'talent',
                   note: '광기의 학살자가 맞힌 대상에 당혹',
+                  affects: [
+                    '51690',
+                  ],
                 },
                 {
                   skillId: '441274',
                   label: '혼란을 부르는 일격',
                   kind: 'talent',
                   note: '광기의 학살자 쿨다운 10% 감소 · 다음 무형검 2회 대기 무시',
+                  affects: [
+                    '51690',
+                    '441146',
+                  ],
                 },
                 {
                   skillId: '441429',
                   label: '구름 덮개',
                   kind: 'talent',
                   note: '아드레날린 촉진으로 6초 연막 · 당혹 추가 1중첩',
+                  affects: [
+                    '13750',
+                  ],
                 },
                 {
                   skillId: '441367',
                   label: '날렵한 질풍',
                   kind: 'talent',
                   note: '무결한 형상 중 폭풍의 칼날 피해 25%',
+                  affects: [
+                    '13877',
+                  ],
                 },
               ],
             },
@@ -1317,12 +1464,18 @@ const manuscript = {
                   label: '행운 주화',
                   kind: 'talent',
                   note: '7번 던질 때마다 12초',
+                  affects: [
+                    '452536',
+                  ],
                 },
                 {
                   skillId: '1276816',
                   label: '통제된 혼돈',
                   kind: 'talent',
                   note: '4회 이상 연속이 끝나면 같은 면 한 번 더',
+                  affects: [
+                    '452536',
+                  ],
                 },
               ],
             },
@@ -1334,18 +1487,28 @@ const manuscript = {
                   label: '필연으로의 질주',
                   kind: 'talent',
                   note: '일반 동전 기력 2 · 수직 동전 기력 10',
+                  affects: [
+                    '452536',
+                  ],
                 },
                 {
                   skillId: '453457',
                   label: '곧게 선 동전',
                   kind: 'talent',
                   note: '아드레날린 촉진 때 수직 동전',
+                  affects: [
+                    '13750',
+                    '452536',
+                  ],
                 },
                 {
                   skillId: '1249190',
                   label: '넘치는 돈주머니',
                   kind: 'talent',
                   note: '속결 4% 확률로 동전 3개',
+                  affects: [
+                    '2098',
+                  ],
                 },
               ],
             },
@@ -2821,6 +2984,11 @@ const manuscript = {
     video: {
       youtubeId: 'fawuQO6Y4wY',
       title: '한밤 2시즌 12.1.5 무법 도적 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'LPFgOxQFDaM',
+      title: '한밤 2시즌 12.1.5 무법 도적 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

@@ -413,6 +413,11 @@ const manuscript = {
                   label: '가혹한 일격',
                   kind: 'talent',
                   note: '쓴 점수 1점당 기력 4',
+                  affects: [
+                    '196819',
+                    '280719',
+                    '319175',
+                  ],
                 },
               ],
             },
@@ -465,18 +470,28 @@ const manuscript = {
                   label: '어둠의 대가',
                   kind: 'talent',
                   note: '3초에 걸쳐 기력 30',
+                  affects: [
+                    '185313',
+                  ],
                 },
                 {
                   skillId: '382015',
                   label: '부패자',
                   kind: 'talent',
                   note: '다음 생성 공격 2회 피해 35%',
+                  affects: [
+                    '185438',
+                  ],
                 },
                 {
                   skillId: '426594',
                   label: '어둠추적자',
                   kind: 'talent',
                   note: '춤 중 그림자 기술 발동 빈도 25% 증가 · 발동당 1점 더 저장',
+                  affects: [
+                    '185313',
+                    '196912',
+                  ],
                 },
               ],
             },
@@ -508,6 +523,10 @@ const manuscript = {
                   label: '머무는 그림자',
                   kind: 'talent',
                   note: '기습·어둠칼날·표창 폭풍에 추가 암흑 50% · 1초마다 2.8% 감소',
+                  affects: [
+                    '53',
+                    '197835',
+                  ],
                 },
                 {
                   label: '시즌 2 4세트',
@@ -596,6 +615,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '기만자',
                   note: '칼날을 쓰면 6초 연막 · 당혹 추가 2중첩',
+                  affects: [
+                    '121471',
+                  ],
                 },
                 {
                   skillId: '457056',
@@ -603,6 +625,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '죽음추적자',
                   note: '칼날이 끝난 뒤 30초 동안 암흑 피해 30%',
+                  affects: [
+                    '121471',
+                  ],
                 },
               ],
             },
@@ -656,6 +681,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '첫 노드',
                   note: '쓴 중첩 하나당 15% 확률로 복제 · 원래 피해 50%의 암흑 피해',
+                  affects: [
+                    '196912',
+                  ],
                 },
                 {
                   skillId: '1268936',
@@ -663,6 +691,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '가운데 노드',
                   note: '1등급 기준 암흑 피해 5% · 복제가 50% 확률로 그림자 기술 발동',
+                  affects: [
+                    '196912',
+                  ],
                 },
               ],
             },
@@ -675,6 +706,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 노드',
                   note: '다음 공격 마무리 일격이 저장분을 써서 점수를 최대치까지',
+                  affects: [
+                    '280719',
+                    '196819',
+                  ],
                 },
               ],
             },
@@ -737,6 +772,10 @@ const manuscript = {
                   label: '약점 포착',
                   kind: 'talent',
                   note: '10초 · 내 공격이 방어도 30% 무시',
+                  affects: [
+                    '196819',
+                    '319175',
+                  ],
                 },
               ],
             },
@@ -748,12 +787,20 @@ const manuscript = {
                   label: '기습 연마',
                   kind: 'talent',
                   note: '뒤에서 치명타로 맞힌 기습·어둠칼날 → 10초',
+                  affects: [
+                    '53',
+                    '91023',
+                  ],
                 },
                 {
                   skillId: '319951',
                   label: '표창 폭풍 연마',
                   kind: 'talent',
                   note: '치명타로 맞은 대상 → 10초',
+                  affects: [
+                    '197835',
+                    '91023',
+                  ],
                 },
               ],
             },
@@ -765,6 +812,10 @@ const manuscript = {
                   label: '어둠에 물든 마무리 일격',
                   kind: 'talent',
                   note: '약점 포착 대상에게 추가 암흑 30%',
+                  affects: [
+                    '196819',
+                    '319175',
+                  ],
                 },
                 {
                   skillId: '196819',
@@ -826,10 +877,18 @@ const manuscript = {
                 {
                   skillId: '53',
                   caption: '춤 밖 · 점수 모으기',
+                  talents: [
+                    '319949',
+                    '382524',
+                  ],
                 },
                 {
                   skillId: '196819',
                   caption: '6점 이상이면 소비',
+                  talents: [
+                    '382511',
+                    '58423',
+                  ],
                 },
                 {
                   skillId: '426591',
@@ -842,6 +901,10 @@ const manuscript = {
                     skillId: '121471',
                     when: '쿨이 돌면 춤과 함께',
                   },
+                  talents: [
+                    '196976',
+                    '382015',
+                  ],
                 },
                 {
                   skillId: '280719',
@@ -850,10 +913,17 @@ const manuscript = {
                     skillId: '185438',
                     when: '점수가 모자랄 때만 먼저',
                   },
+                  talents: [
+                    '1268939',
+                    '58423',
+                  ],
                 },
                 {
                   skillId: '185438',
                   caption: '춤 안 생성',
+                  talents: [
+                    '382015',
+                  ],
                 },
                 {
                   skillId: '196819',
@@ -873,14 +943,25 @@ const manuscript = {
                 {
                   skillId: '280719',
                   caption: '기만자 · 춤 첫 소비',
+                  talents: [
+                    '441263',
+                    '441274',
+                  ],
                 },
                 {
                   skillId: '185438',
                   caption: '기만자 · 무형검을 발동',
+                  talents: [
+                    '382015',
+                  ],
                 },
                 {
                   skillId: '196819',
                   caption: '기만자 · 최후의 일격 준비되면',
+                  talents: [
+                    '441321',
+                    '441398',
+                  ],
                 },
                 {
                   skillId: '196819',
@@ -937,10 +1018,17 @@ const manuscript = {
                 {
                   skillId: '185438',
                   caption: '은신 · 첫 점수',
+                  talents: [
+                    '382015',
+                  ],
                 },
                 {
                   skillId: '196819',
                   caption: '6점 이상 · 첫 소비',
+                  talents: [
+                    '441321',
+                    '441398',
+                  ],
                 },
                 {
                   skillId: '1856',
@@ -954,6 +1042,10 @@ const manuscript = {
                   skillId: '53',
                   caption: '6점까지 채우기',
                   count: 2,
+                  talents: [
+                    '319949',
+                    '382524',
+                  ],
                 },
                 {
                   skillId: '426591',
@@ -962,14 +1054,25 @@ const manuscript = {
                 {
                   skillId: '121471',
                   caption: '춤과 함께',
+                  talents: [
+                    '441429',
+                  ],
                 },
                 {
                   skillId: '185313',
                   caption: '6점 이상·은밀한 기술 준비',
+                  talents: [
+                    '196976',
+                    '382015',
+                  ],
                 },
                 {
                   skillId: '280719',
                   caption: '첫 소비',
+                  talents: [
+                    '441263',
+                    '441274',
+                  ],
                 },
                 {
                   skillId: '185438',
@@ -992,10 +1095,17 @@ const manuscript = {
                 {
                   skillId: '185438',
                   caption: '은신 · 첫 징표',
+                  talents: [
+                    '1273017',
+                  ],
                 },
                 {
                   skillId: '196819',
                   caption: '6점 이상 · 첫 징표 소비',
+                  talents: [
+                    '382511',
+                    '58423',
+                  ],
                 },
                 {
                   skillId: '1856',
@@ -1012,10 +1122,17 @@ const manuscript = {
                 {
                   skillId: '121471',
                   caption: '바로 이어 춤',
+                  talents: [
+                    '457056',
+                  ],
                 },
                 {
                   skillId: '185313',
                   caption: '첫 춤',
+                  talents: [
+                    '196976',
+                    '382015',
+                  ],
                 },
                 {
                   skillId: '426591',
@@ -1028,6 +1145,10 @@ const manuscript = {
                     skillId: '196819',
                     when: '강화 절개가 켜졌으면 먼저',
                   },
+                  talents: [
+                    '1268939',
+                    '58423',
+                  ],
                 },
                 {
                   skillId: '185438',
@@ -1074,6 +1195,10 @@ const manuscript = {
                 {
                   skillId: '197835',
                   caption: '2대상부터 · 점수 생성',
+                  talents: [
+                    '319951',
+                    '382524',
+                  ],
                 },
                 {
                   skillId: '426591',
@@ -1086,10 +1211,18 @@ const manuscript = {
                     skillId: '121471',
                     when: '쿨이 돌면 춤과 함께',
                   },
+                  talents: [
+                    '196976',
+                    '382015',
+                  ],
                 },
                 {
                   skillId: '280719',
                   caption: '춤 안 · 6점 이상 최우선',
+                  talents: [
+                    '1268939',
+                    '58423',
+                  ],
                 },
                 {
                   skillId: '197835',
@@ -1102,6 +1235,10 @@ const manuscript = {
                     skillId: '196819',
                     when: '강화 절개·최후의 일격이 준비되면 먼저',
                   },
+                  talents: [
+                    '382511',
+                    '58423',
+                  ],
                 },
                 {
                   skillId: '197835',
@@ -1121,14 +1258,25 @@ const manuscript = {
                 {
                   skillId: '196819',
                   caption: '기만자 · 준비된 최후의 일격 먼저',
+                  talents: [
+                    '441321',
+                    '441398',
+                  ],
                 },
                 {
                   skillId: '319175',
                   caption: '기만자 · 그다음 검은 화약',
+                  talents: [
+                    '382511',
+                    '58423',
+                  ],
                 },
                 {
                   skillId: '121471',
                   caption: '기만자 · 칼날 연막 안에서 공격',
+                  talents: [
+                    '441429',
+                  ],
                 },
                 {
                   skillId: '196819',
@@ -1237,6 +1385,10 @@ const manuscript = {
                     label: '무양심',
                     kind: 'talent',
                     note: '당혹 대상에게 쓰는 마무리 일격 치명타 12%',
+                    affects: [
+                      '196819',
+                      '280719',
+                    ],
                   },
                 ],
               },
@@ -1259,6 +1411,10 @@ const manuscript = {
                     label: '무결한 형상',
                     kind: 'talent',
                     note: '중첩당 2% · 12초 · 최대 5중첩 · 무형검과 은밀한 기술로도 쌓임',
+                    affects: [
+                      '196819',
+                      '280719',
+                    ],
                   },
                 ],
               },
@@ -1290,18 +1446,28 @@ const manuscript = {
                     label: '구름 덮개',
                     kind: 'talent',
                     note: '칼날 사용 시 6초 연막 · 당혹 추가 2중첩',
+                    affects: [
+                      '121471',
+                    ],
                   },
                   {
                     skillId: '441274',
                     label: '혼란을 부르는 일격',
                     kind: 'talent',
                     note: '은밀한 기술 쿨다운 10% 감소 · 다음 무형검 2회 대기 무시',
+                    affects: [
+                      '280719',
+                      '441146',
+                    ],
                   },
                   {
                     skillId: '441263',
                     label: '음험한 주의 분산',
                     kind: 'talent',
                     note: '은밀한 기술이 맞힌 대상에 당혹',
+                    affects: [
+                      '280719',
+                    ],
                   },
                 ],
               },
@@ -1313,6 +1479,10 @@ const manuscript = {
                     label: '날렵한 질풍',
                     kind: 'talent',
                     note: '자동 공격·무형검·최후의 일격이 추가 적 최대 7명에게 50%',
+                    affects: [
+                      '441146',
+                      '441423',
+                    ],
                   },
                 ],
               },
@@ -1449,6 +1619,9 @@ const manuscript = {
                     label: '종지부의 신속함',
                     kind: 'talent',
                     note: '붙일 때 30% 확률로 1중첩 즉시 소비',
+                    affects: [
+                      '457052',
+                    ],
                   },
                 ],
               },
@@ -1517,6 +1690,9 @@ const manuscript = {
                     label: '하나 된 집중력',
                     kind: 'talent',
                     note: '다른 적에게 준 피해의 5%를 징표 대상에게',
+                    affects: [
+                      '457052',
+                    ],
                   },
                 ],
               },
@@ -1538,12 +1714,19 @@ const manuscript = {
                     label: '대규모 사상자',
                     kind: 'talent',
                     note: '검은 화약으로 징표 소비 시 8미터 안 다른 적에게 75%',
+                    affects: [
+                      '319175',
+                    ],
                   },
                   {
                     skillId: '457068',
                     label: '혈흔 추적',
                     kind: 'talent',
                     note: '약점 포착 중 표창 폭풍·검은 화약 15%',
+                    affects: [
+                      '197835',
+                      '319175',
+                    ],
                   },
                 ],
               },
@@ -2983,6 +3166,11 @@ const manuscript = {
     video: {
       youtubeId: 'zV_MNF4n9qM',
       title: '한밤 2시즌 12.1.5 잠행 도적 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'wDpLBdPpe54',
+      title: '한밤 2시즌 12.1.5 잠행 도적 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

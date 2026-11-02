@@ -17,6 +17,9 @@ const GUIDES = {
   'hunter-beastmastery': '/guide/hunter/beast-mastery',
   'hunter-marksmanship': '/guide/hunter/marksmanship',
   'hunter-survival': '/guide/hunter/survival',
+  'rogue-assassination': '/guide/rogue/assassination',
+  'rogue-outlaw': '/guide/rogue/outlaw',
+  'rogue-subtlety': '/guide/rogue/subtlety',
 };
 const only = process.argv.slice(3);
 (async () => {

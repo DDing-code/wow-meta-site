@@ -427,6 +427,10 @@ const manuscript = {
                   label: '맹독 상처',
                   kind: 'talent',
                   note: '내 무기 독에 걸린 대상에게 목조르기·파열이 피해를 줄 때마다 기력 3',
+                  affects: [
+                    '703',
+                    '1943',
+                  ],
                 },
                 {
                   skillId: '1265385',
@@ -434,6 +438,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '첫 노드',
                   note: '독살에 실제로 쓴 점수 1점당 기력 2',
+                  affects: [
+                    '32645',
+                  ],
                 },
                 {
                   skillId: '360194',
@@ -497,18 +504,28 @@ const manuscript = {
                   label: '목조르기 연마',
                   kind: 'talent',
                   note: '은신 중이거나 은신 해제 후 6초 동안 쓴 목조르기 피해 50% 증가 · 쿨다운 없음',
+                  affects: [
+                    '703',
+                  ],
                 },
                 {
                   skillId: '1249802',
                   label: '서슬 교살줄',
                   kind: 'talent',
                   note: '목조르기 지속시간 6초 증가 · 18초가 24초로',
+                  affects: [
+                    '703',
+                  ],
                 },
                 {
                   skillId: '381626',
                   label: '피바다',
                   kind: 'talent',
                   note: '목조르기·파열 피해 15% 증가',
+                  affects: [
+                    '703',
+                    '1943',
+                  ],
                 },
               ],
             },
@@ -520,6 +537,10 @@ const manuscript = {
                   label: '맹독 상처',
                   kind: 'talent',
                   note: '독에 걸린 대상의 출혈 피해마다 기력 3',
+                  affects: [
+                    '703',
+                    '1943',
+                  ],
                 },
                 {
                   skillId: '1247227',
@@ -531,6 +552,9 @@ const manuscript = {
                   label: '피의 향기',
                   kind: 'talent',
                   note: '파열이 걸린 적마다 민첩성 증가',
+                  affects: [
+                    '1943',
+                  ],
                 },
               ],
             },
@@ -598,6 +622,10 @@ const manuscript = {
                   label: '늠름한 불한당',
                   kind: 'talent',
                   note: '독살 효과 중 무기 독 치명타 확률 8%',
+                  affects: [
+                    '32645',
+                    '2823',
+                  ],
                 },
               ],
             },
@@ -624,18 +652,27 @@ const manuscript = {
                   label: '신속한 주입',
                   kind: 'talent',
                   note: '다음 독살 피해 증가',
+                  affects: [
+                    '32645',
+                  ],
                 },
                 {
                   skillId: '1250036',
                   label: '경외의 일격',
                   kind: 'talent',
                   note: '모든 피해 5% 증가',
+                  affects: [
+                    '32645',
+                  ],
                 },
                 {
                   skillId: '1250318',
                   label: '독술사의 결심',
                   kind: 'talent',
                   note: '연계 점수 1점',
+                  affects: [
+                    '32645',
+                  ],
                 },
               ],
             },
@@ -725,12 +762,18 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 노드',
                   note: '왕의 파멸 뒤 1초 동안 자동 공격 다섯 번 · 각각 치명독과 연계 점수 1점',
+                  affects: [
+                    '385627',
+                  ],
                 },
                 {
                   skillId: '1250325',
                   label: '시해의 보상',
                   kind: 'talent',
                   note: '왕의 파멸이 끝날 때 중첩 5개당 가속 2% · 2초마다 2%씩 감소',
+                  affects: [
+                    '385627',
+                  ],
                 },
               ],
             },
@@ -784,6 +827,9 @@ const manuscript = {
                   label: '독 묻은 스틸레토',
                   kind: 'talent',
                   note: '기력 20 감소 · 쿨다운 15초 감소 · 사정거리 3미터 증가 → 기력 10, 15초마다',
+                  affects: [
+                    '5938',
+                  ],
                 },
               ],
             },
@@ -849,6 +895,10 @@ const manuscript = {
                     skillId: '1856',
                     when: '죽음표식에 맞춰',
                   },
+                  talents: [
+                    '1249802',
+                    '381626',
+                  ],
                 },
                 {
                   skillId: '1329',
@@ -861,6 +911,10 @@ const manuscript = {
                 {
                   skillId: '1943',
                   caption: '5점 이상 · 필요할 때만',
+                  talents: [
+                    '381799',
+                    '79134',
+                  ],
                 },
                 {
                   skillId: '1329',
@@ -869,6 +923,10 @@ const manuscript = {
                 {
                   skillId: '32645',
                   caption: '5점 이상 독살',
+                  talents: [
+                    '1265385',
+                    '381797',
+                  ],
                 },
                 {
                   skillId: '1329',
@@ -896,14 +954,26 @@ const manuscript = {
                 {
                   skillId: '32645',
                   caption: '운명결속 · 5점 이상마다 동전',
+                  talents: [
+                    '452536',
+                    '1248970',
+                  ],
                 },
                 {
                   skillId: '1329',
                   caption: '운명결속 · 추가 점수 보고 소비',
+                  talents: [
+                    '14190',
+                    '454419',
+                  ],
                 },
                 {
                   skillId: '703',
                   caption: '죽음추적자 · 징표 없으면 먼저',
+                  talents: [
+                    '1249802',
+                    '381626',
+                  ],
                 },
                 {
                   skillId: '32645',
@@ -912,14 +982,24 @@ const manuscript = {
                 {
                   skillId: '5938',
                   caption: '독 묻은 스틸레토 · 점수 보충',
+                  talents: [
+                    '1267182',
+                  ],
                 },
                 {
                   skillId: '8676',
                   caption: '죽음추적자 · 확고한 결심 뒤 생성',
+                  talents: [
+                    '1248774',
+                  ],
                 },
                 {
                   skillId: '51723',
                   caption: '죽음추적자 · 1점 모자랄 때',
+                  talents: [
+                    '1248793',
+                    '457067',
+                  ],
                 },
               ],
             },
@@ -965,6 +1045,10 @@ const manuscript = {
                 {
                   skillId: '703',
                   caption: '은신 · 강화 출혈',
+                  talents: [
+                    '1249802',
+                    '381626',
+                  ],
                 },
                 {
                   skillId: '1329',
@@ -973,10 +1057,18 @@ const manuscript = {
                     skillId: '8676',
                     when: '무료 매복이면 활용',
                   },
+                  talents: [
+                    '14190',
+                    '454419',
+                  ],
                 },
                 {
                   skillId: '1943',
                   caption: '5점 이상 · 주 대상',
+                  talents: [
+                    '381799',
+                    '79134',
+                  ],
                 },
                 {
                   skillId: '1329',
@@ -997,6 +1089,10 @@ const manuscript = {
                     skillId: '1298826',
                     when: '수동 선택 · 기력 부족 시',
                   },
+                  talents: [
+                    '452536',
+                    '1248970',
+                  ],
                 },
                 {
                   skillId: '360194',
@@ -1005,6 +1101,10 @@ const manuscript = {
                 {
                   skillId: '385627',
                   caption: '죽음표식 직후',
+                  talents: [
+                    '1250325',
+                    '1265387',
+                  ],
                 },
                 {
                   skillId: '32645',
@@ -1023,14 +1123,25 @@ const manuscript = {
                 {
                   skillId: '703',
                   caption: '징표 없음 · 징표 준비',
+                  talents: [
+                    '1249802',
+                    '381626',
+                  ],
                 },
                 {
                   skillId: '1329',
                   caption: '5점 이상까지',
+                  talents: [
+                    '1248774',
+                  ],
                 },
                 {
                   skillId: '1943',
                   caption: '첫 출혈 · 확산 원본',
+                  talents: [
+                    '381799',
+                    '79134',
+                  ],
                 },
                 {
                   skillId: '703',
@@ -1047,6 +1158,10 @@ const manuscript = {
                 {
                   skillId: '32645',
                   caption: '강화 조건 확인',
+                  talents: [
+                    '1265385',
+                    '381797',
+                  ],
                 },
                 {
                   skillId: '360194',
@@ -1055,6 +1170,10 @@ const manuscript = {
                 {
                   skillId: '385627',
                   caption: '죽음표식 직후',
+                  talents: [
+                    '1250325',
+                    '1265387',
+                  ],
                 },
                 {
                   skillId: '32645',
@@ -1102,6 +1221,10 @@ const manuscript = {
                 {
                   skillId: '703',
                   caption: '오래 살 원본 대상',
+                  talents: [
+                    '1249802',
+                    '381626',
+                  ],
                 },
                 {
                   skillId: '51723',
@@ -1110,6 +1233,10 @@ const manuscript = {
                 {
                   skillId: '1943',
                   caption: '원본 · 5점 이상',
+                  talents: [
+                    '381799',
+                    '79134',
+                  ],
                 },
                 {
                   skillId: '1247227',
@@ -1130,6 +1257,10 @@ const manuscript = {
                 {
                   skillId: '32645',
                   caption: '주 대상 · 5점 이상',
+                  talents: [
+                    '1265385',
+                    '381797',
+                  ],
                 },
                 {
                   skillId: '51723',
@@ -1149,18 +1280,34 @@ const manuscript = {
                 {
                   skillId: '32645',
                   caption: '운명결속 · 5점 이상마다 동전',
+                  talents: [
+                    '452536',
+                    '1248970',
+                  ],
                 },
                 {
                   skillId: '51723',
                   caption: '운명결속 · 추가 점수 보며 생성',
+                  talents: [
+                    '14190',
+                    '454419',
+                  ],
                 },
                 {
                   skillId: '385627',
                   caption: '운명결속 · 부식성 분사 위치 확인',
+                  talents: [
+                    '1250325',
+                    '1265387',
+                  ],
                 },
                 {
                   skillId: '703',
                   caption: '죽음추적자 · 강화 시간 안 한 번 더',
+                  talents: [
+                    '1249802',
+                    '381626',
+                  ],
                 },
                 {
                   skillId: '1293340',
@@ -1258,12 +1405,20 @@ const manuscript = {
                   label: '운명의 낙인',
                   kind: 'talent',
                   note: '연계 점수 1점 추가',
+                  affects: [
+                    '1329',
+                    '8676',
+                    '51723',
+                  ],
                 },
                 {
                   skillId: '454419',
                   label: '운명과의 타협',
                   kind: 'talent',
                   note: '운명의 낙인이 발동하면 60% 확률로 1점 더',
+                  affects: [
+                    '14190',
+                  ],
                 },
               ],
             },
@@ -1286,12 +1441,18 @@ const manuscript = {
                   label: '운명의 손',
                   kind: 'talent',
                   note: '앞면: 15초 또는 뒷면이 나올 때까지 공격 피해 10% 증가 · 뒷면: 우주 피해',
+                  affects: [
+                    '32645',
+                  ],
                 },
                 {
                   skillId: '1248970',
                   label: '행운 주화',
                   kind: 'talent',
                   note: '동전 7번마다 12초 · 민첩성 4% · 동전 피해와 추가 효과 50%',
+                  affects: [
+                    '452536',
+                  ],
                 },
               ],
             },
@@ -1430,6 +1591,10 @@ const manuscript = {
                     label: '확고한 결심',
                     kind: 'talent',
                     note: '중첩 소모 뒤 다음 매복 또는 절단 피해 50% 증가',
+                    affects: [
+                      '8676',
+                      '1329',
+                    ],
                   },
                 ],
               },
@@ -1473,12 +1638,19 @@ const manuscript = {
                     label: '목격자 제거',
                     kind: 'talent',
                     note: '칼날 부채 피해 60% 증가',
+                    affects: [
+                      '51723',
+                    ],
                   },
                   {
                     skillId: '457067',
                     label: '절망의 탄력',
                     kind: 'talent',
                     note: '칼날 부채 치명타 시 8초 동안 칼날 부채·혈폭풍 치명타 확률 10%, 치명타 피해 20%',
+                    affects: [
+                      '51723',
+                      '1247227',
+                    ],
                   },
                 ],
               },
@@ -1559,18 +1731,27 @@ const manuscript = {
                   label: '목조르기 연마',
                   kind: 'talent',
                   note: '은신 중이거나 은신 해제 후 6초 동안 · 피해 50% 증가 · 쿨다운 없음',
+                  affects: [
+                    '703',
+                  ],
                 },
                 {
                   skillId: '385478',
                   label: '장막 속의 질식',
                   kind: 'talent',
                   note: '목조르기 피해 30% 증가 · 은신 상태 목조르기면 연계 점수 2점 추가',
+                  affects: [
+                    '703',
+                  ],
                 },
                 {
                   skillId: '196861',
                   label: '무쇠 철사',
                   kind: 'talent',
                   note: '5초 침묵 · 그 적의 피해 5초 동안 15% 감소',
+                  affects: [
+                    '703',
+                  ],
                 },
               ],
             },
@@ -3124,6 +3305,11 @@ const manuscript = {
     video: {
       youtubeId: 'FKYlere9xM8',
       title: '한밤 2시즌 12.1.5 암살 도적 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'zVJOxpx12qg',
+      title: '한밤 2시즌 12.1.5 암살 도적 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };
