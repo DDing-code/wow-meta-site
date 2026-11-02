@@ -1340,3 +1340,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 요청: "심화편이 원딜 /레이드 사이에 가야 할듯", "우상단 '가이드'를 '직업 가이드'로". 홈 줄 순서를 기본편(탱커·힐러·근딜·원딜) → 직업 심화편 → 레이드 → 쐐기로 바꾸고, 분류 칩도 '원딜' 다음에 '심화편'을 둔다. `AGENTS.md` 홈 순서 문장도 고쳤다.
 - 상단 메뉴(`Navigation.js`) '가이드' → '직업 가이드'. 781~860px에서 메뉴 글자가 두 줄로 꺾이던 문제(예전부터 있음)를 함께 막았다: 글자 줄바꿈 금지, 781~960px은 아이콘을 빼고 간격 14px.
 - 검사: `HomePage.test.js`에 줄·칩 순서 검사 추가, `npm run build`(전체 검증)·`validate:home` 통과. 사이트 `733d25db`, 빌드 `main.1372eb81.js`(820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `home-advanced-order-20261102/shots.cjs` 1440·1024·390·320 순서·넘침·오류 통과, `navfit.cjs` 781~1100px 메뉴 한 줄(캡처 `live/`).
+
+## 2026-11-02 마법사 심화편 공개·사이트 상호연동 (업로드, 심화편 단추, 특성 ↔ 스킬 연결, 기본편 설명)
+
+- 요청: "진행시켜" → 직전에 렌더만 해 둔 마법사 심화 v10 3편. 주술사와 같은 방식으로 반영했다.
+- 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-mage-20261102.json`, 목록 생성 `upload-advanced-v10-mage-20261102/prepare.py`, 영상 `…-storyboard-v10-reading-focus-v1.mp4`, 썸네일 talentbg-v6)로 와우메타 채널에 비전 `FzF88STMgR8`·화염 `vHj32M1FYco`·냉기 `UjzEaZSte6Y`를 공개했다. 올리기 전 `studio/cli.mjs verify --strict`(최신 렌더 3/3)와 채널 번호를 확인했고, `verify` 3/3·oEmbed 공개 링크·공개 썸네일이 v6과 같은지 확인했다.
+- 사이트: `artifacts/advanced-videos-mage-20261102/apply.cjs`로 advancedVideo를, `artifacts/talent-links-20261102/apply.cjs mage-*`(`_mage.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `06-마법사/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다. 원고 검사기의 특성 연결 검사 목록에 마법사 3개를 더했다.
+- 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 25편 기준으로 바꿔 마법사 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 22편은 그대로임을 다시 확인했다.
+- 배포: `npm run build`(전체 검증) 통과, 사이트 `62ca8714`. 빌드 `main.09c93905.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `advanced-videos-mage-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 마법사 3개×1440·390 통과(캡처 `live/`). 비전 첫 흐름도는 붙는 스킬(비전 쇄도)이 그 흐름도에 상자로 없어 강조선 없이 아이콘으로만 보인다.
+- 남은 결정: 11-01에 공개한 마법사 v9 심화 3편(`_arkcg3ShKY`·`bB-BKfcPkf8`·`hgyqKOHz4XA`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다. 두 전문화 설명이 한 문장에 섞인 공용 특성 카드 정리도 답을 기다린다.

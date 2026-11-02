@@ -1,0 +1,98 @@
+[
+  {
+    "id": "mage-arcane",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-arcane-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-arcane-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/shdTiGJmyYg?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/FzF88STMgR8?rel=0",
+    "caption": "한밤 2시즌 12.1.5 비전 마법사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "mage-arcane",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-arcane-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/shdTiGJmyYg?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/FzF88STMgR8?rel=0",
+    "caption": "한밤 2시즌 12.1.5 비전 마법사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "mage-fire",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-fire-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-fire-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/VryKveYgh3E?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/vHj32M1FYco?rel=0",
+    "caption": "한밤 2시즌 12.1.5 화염 마법사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "mage-fire",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-fire-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/VryKveYgh3E?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/vHj32M1FYco?rel=0",
+    "caption": "한밤 2시즌 12.1.5 화염 마법사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "mage-frost",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-frost-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-frost-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/AZNhRLnrLWg?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/UjzEaZSte6Y?rel=0",
+    "caption": "한밤 2시즌 12.1.5 냉기 마법사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "mage-frost",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-frost-390-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-frost-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/AZNhRLnrLWg?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/UjzEaZSte6Y?rel=0",
+    "caption": "한밤 2시즌 12.1.5 냉기 마법사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "mage-frost",
+    "width": 320,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-frost-320-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-mage-20261102\\live\\mage-frost-320-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/AZNhRLnrLWg?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/UjzEaZSte6Y?rel=0",
+    "caption": "한밤 2시즌 12.1.5 냉기 마법사 심화 가이드",
+    "scrollWidth": 320,
+    "ok": true
+  }
+]
