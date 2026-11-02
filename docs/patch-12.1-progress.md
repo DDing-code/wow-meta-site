@@ -1335,3 +1335,8 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 칸 수: 넓은 화면 6칸(직업 둘), 중간 3칸(직업 하나), 휴대폰 2칸. 접힌 상태는 한 줄(휴대폰 두 줄) 안에 들어가는 앞쪽 직업만 보이고 '직업 심화편 모두 보기'로 펼친다. 영상 개수는 적지 않는다.
 - 검사: `HomePage.test.js`(직업 순서·묶음별 칸·접기), `npm run build`(전체 검증) 통과. 사이트 `9cca4272`, 빌드 `main.8d74c049.js`(820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `home-advanced-classes-20261102/shots.cjs` 1440·1024·390·320 통과(캡처 `live/`).
 - 확인 필요: 파멸 악마사냥꾼 심화편 `bFrBTJqCUuU`가 유튜브에서 Not Found(썸네일 404, oembed 404)라 홈 칸 그림이 회색 자리표시로 나온다. 데이터는 이번에 고치지 않았다.
+
+## 2026-11-02 홈 직업 심화편 줄을 원딜 뒤로, 상단 메뉴 '직업 가이드'
+- 요청: "심화편이 원딜 /레이드 사이에 가야 할듯", "우상단 '가이드'를 '직업 가이드'로". 홈 줄 순서를 기본편(탱커·힐러·근딜·원딜) → 직업 심화편 → 레이드 → 쐐기로 바꾸고, 분류 칩도 '원딜' 다음에 '심화편'을 둔다. `AGENTS.md` 홈 순서 문장도 고쳤다.
+- 상단 메뉴(`Navigation.js`) '가이드' → '직업 가이드'. 781~860px에서 메뉴 글자가 두 줄로 꺾이던 문제(예전부터 있음)를 함께 막았다: 글자 줄바꿈 금지, 781~960px은 아이콘을 빼고 간격 14px.
+- 검사: `HomePage.test.js`에 줄·칩 순서 검사 추가, `npm run build`(전체 검증)·`validate:home` 통과. 사이트 `733d25db`, 빌드 `main.1372eb81.js`(820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `home-advanced-order-20261102/shots.cjs` 1440·1024·390·320 순서·넘침·오류 통과, `navfit.cjs` 781~1100px 메뉴 한 줄(캡처 `live/`).
