@@ -1,0 +1,98 @@
+[
+  {
+    "id": "rogue-assassination",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-assassination-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-assassination-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/FKYlere9xM8?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/zVJOxpx12qg?rel=0",
+    "caption": "한밤 2시즌 12.1.5 암살 도적 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "rogue-assassination",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-assassination-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/FKYlere9xM8?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/zVJOxpx12qg?rel=0",
+    "caption": "한밤 2시즌 12.1.5 암살 도적 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "rogue-outlaw",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-outlaw-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-outlaw-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/fawuQO6Y4wY?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/LPFgOxQFDaM?rel=0",
+    "caption": "한밤 2시즌 12.1.5 무법 도적 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "rogue-outlaw",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-outlaw-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/fawuQO6Y4wY?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/LPFgOxQFDaM?rel=0",
+    "caption": "한밤 2시즌 12.1.5 무법 도적 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-subtlety-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-subtlety-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/zV_MNF4n9qM?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/wDpLBdPpe54?rel=0",
+    "caption": "한밤 2시즌 12.1.5 잠행 도적 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-subtlety-390-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-subtlety-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/zV_MNF4n9qM?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/wDpLBdPpe54?rel=0",
+    "caption": "한밤 2시즌 12.1.5 잠행 도적 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "rogue-subtlety",
+    "width": 320,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-subtlety-320-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-rogue-20261102\\live\\rogue-subtlety-320-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/zV_MNF4n9qM?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/wDpLBdPpe54?rel=0",
+    "caption": "한밤 2시즌 12.1.5 잠행 도적 심화 가이드",
+    "scrollWidth": 320,
+    "ok": true
+  }
+]

@@ -1286,3 +1286,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 기본편 영상 설명: 심화편이 있는 기본편 10편(파멸·전사 3·성기사 3·사냥꾼 3)의 설명에 `심화편: https://youtu.be/<번호>` 한 줄을 더했다(ai-hub `pixel-guides/link-basic-advanced-20261102.mjs`, 기록 `.json`). 심화편 설명에는 원래 기본편 주소가 있어 서로 이어진다. youtube-manifest.json의 description은 사이트 도구가 가이드 주소로 읽으므로 그대로 뒀다.
 - 배포: `npm run build`(검사 전체) 통과, 사이트 `e7892900` main 푸시, KB 로컬 `23977dc`. 빌드 `main.20282792.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `talent-links-20261102/shots.cjs`로 8개×1440·390, `advanced-videos-hunter-20261102/shots.cjs`로 7화면 통과(캡처 `live/`).
 - 순서 주의: 특성 연결을 넣은 원고가 다른 도구로 바뀌면 `refresh-orig.cjs <id>`로 원본 스냅샷을 맞춘 뒤 apply.cjs를 돌린다.
+
+## 2026-11-02 도적 심화편 공개·사이트 상호연동 (업로드, 심화편 단추, 특성 ↔ 스킬 연결, 기본편 설명)
+
+- 요청: "업로드/사이트 상호보완". 사냥꾼과 같은 방식으로 도적 3편을 반영했다.
+- 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-rogue-20261102.json`, 목록 생성 `upload-advanced-v10-rogue-20261102/prepare.py`, 영상 `…-storyboard-v10-reading-focus-v1.mp4`, 썸네일 talentbg-v5)로 와우메타 채널에 암살 `zVJOxpx12qg`·무법 `LPFgOxQFDaM`·잠행 `wDpLBdPpe54`를 공개했다. 올리기 전 채널 번호를 화면에서 확인했고, `verify` 3/3·oEmbed 공개 링크·공개 썸네일(maxresdefault)이 v5와 같은지 확인했다.
+- 사이트: `artifacts/advanced-videos-rogue-20261102/apply.cjs`로 advancedVideo(기본편·심화편 단추)를, `artifacts/talent-links-20261102/apply.cjs rogue-*`(`_rogue.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `10-도적/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다. 암살 엉겅퀴 차 두 상자(469779·1298826)는 독칼 아래에서 고르는 특성이라 붙는 스킬이 없어 affects 칸을 만들지 않았고, 검사기는 이 둘만 예외로 둔다(11개 가이드 회귀).
+- 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 13편 기준으로 바꿔 도적 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 10편은 그대로임을 다시 확인했다.
+- 배포: `npm run validate`·`npm run build` 통과, 사이트 `010f735a`, KB 로컬 `1023fb8`. 빌드 `main.144d820b.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-rogue-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 도적 3개×1440·390 통과(캡처 `live/`).
+- 남은 결정: 11-01에 공개한 도적 v9 심화 3편(`GlqJ2EMfqxw`·`PnA8yzGxC8I`·`Slg4DDxPqh4`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
