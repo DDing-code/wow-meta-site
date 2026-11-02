@@ -1329,3 +1329,9 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 22편 기준으로 바꿔 주술사 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 19편은 그대로임을 다시 확인했다.
 - 배포: `npm run validate`·`npm run build` 통과, 사이트 `783f8299`. 빌드 `main.9688d03c.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-shaman-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 주술사 3개×1440·390 통과(캡처 `live/`).
 - 남은 결정: 11-01에 공개한 주술사 v9 심화 3편(`6Kmiidajaks`·`oJxANBCsHDY`·`s2Rzg6gICT0`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
+
+## 2026-11-02 홈 직업 심화편 줄을 직업별로 나눔
+- 요청: "직업 심화편은 가이드 리스트처럼 직업별로 나눠줘". 홈(`HomePage.js`) 심화편 줄을 가이드 목록과 같은 직업 순서(`classOrder`, `getGroupedGuideSpecs`)로 묶고, 묶음마다 직업 색 막대·직업 이름 제목을 달았다. 칸 제목은 가이드 목록처럼 전문화 이름만 쓴다.
+- 칸 수: 넓은 화면 6칸(직업 둘), 중간 3칸(직업 하나), 휴대폰 2칸. 접힌 상태는 한 줄(휴대폰 두 줄) 안에 들어가는 앞쪽 직업만 보이고 '직업 심화편 모두 보기'로 펼친다. 영상 개수는 적지 않는다.
+- 검사: `HomePage.test.js`(직업 순서·묶음별 칸·접기), `npm run build`(전체 검증) 통과. 사이트 `9cca4272`, 빌드 `main.8d74c049.js`(820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `home-advanced-classes-20261102/shots.cjs` 1440·1024·390·320 통과(캡처 `live/`).
+- 확인 필요: 파멸 악마사냥꾼 심화편 `bFrBTJqCUuU`가 유튜브에서 Not Found(썸네일 404, oembed 404)라 홈 칸 그림이 회색 자리표시로 나온다. 데이터는 이번에 고치지 않았다.

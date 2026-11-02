@@ -1,0 +1,151 @@
+[
+  {
+    "width": 1440,
+    "collapsed": {
+      "bundle": "https://wowmeta.vercel.app/static/js/main.8d74c049.js",
+      "overflow": 0,
+      "countText": [],
+      "groups": [
+        "전사:3",
+        "성기사:3"
+      ],
+      "cardWidths": [
+        200
+      ],
+      "wrappedClassNames": 0,
+      "maxTitleHeight": 19.859375
+    },
+    "expanded": {
+      "bundle": "https://wowmeta.vercel.app/static/js/main.8d74c049.js",
+      "overflow": 0,
+      "countText": [],
+      "groups": [
+        "전사:3",
+        "성기사:3",
+        "사냥꾼:3",
+        "도적:3",
+        "사제:3",
+        "죽음의 기사:3",
+        "주술사:3",
+        "악마사냥꾼:1"
+      ],
+      "cardWidths": [
+        200
+      ],
+      "wrappedClassNames": 0,
+      "maxTitleHeight": 19.859375
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "collapsed": {
+      "bundle": "https://wowmeta.vercel.app/static/js/main.8d74c049.js",
+      "overflow": 0,
+      "countText": [],
+      "groups": [
+        "전사:3"
+      ],
+      "cardWidths": [
+        320
+      ],
+      "wrappedClassNames": 0,
+      "maxTitleHeight": 19.859375
+    },
+    "expanded": {
+      "bundle": "https://wowmeta.vercel.app/static/js/main.8d74c049.js",
+      "overflow": 0,
+      "countText": [],
+      "groups": [
+        "전사:3",
+        "성기사:3",
+        "사냥꾼:3",
+        "도적:3",
+        "사제:3",
+        "죽음의 기사:3",
+        "주술사:3",
+        "악마사냥꾼:1"
+      ],
+      "cardWidths": [
+        320
+      ],
+      "wrappedClassNames": 0,
+      "maxTitleHeight": 19.859375
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "collapsed": {
+      "bundle": "https://wowmeta.vercel.app/static/js/main.8d74c049.js",
+      "overflow": 0,
+      "countText": [],
+      "groups": [
+        "전사:3"
+      ],
+      "cardWidths": [
+        178
+      ],
+      "wrappedClassNames": 0,
+      "maxTitleHeight": 19.859375
+    },
+    "expanded": {
+      "bundle": "https://wowmeta.vercel.app/static/js/main.8d74c049.js",
+      "overflow": 0,
+      "countText": [],
+      "groups": [
+        "전사:3",
+        "성기사:3",
+        "사냥꾼:3",
+        "도적:3",
+        "사제:3",
+        "죽음의 기사:3",
+        "주술사:3",
+        "악마사냥꾼:1"
+      ],
+      "cardWidths": [
+        178
+      ],
+      "wrappedClassNames": 0,
+      "maxTitleHeight": 19.859375
+    },
+    "errors": []
+  },
+  {
+    "width": 320,
+    "collapsed": {
+      "bundle": "https://wowmeta.vercel.app/static/js/main.8d74c049.js",
+      "overflow": 0,
+      "countText": [],
+      "groups": [
+        "전사:3"
+      ],
+      "cardWidths": [
+        143
+      ],
+      "wrappedClassNames": 0,
+      "maxTitleHeight": 19.859375
+    },
+    "expanded": {
+      "bundle": "https://wowmeta.vercel.app/static/js/main.8d74c049.js",
+      "overflow": 0,
+      "countText": [],
+      "groups": [
+        "전사:3",
+        "성기사:3",
+        "사냥꾼:3",
+        "도적:3",
+        "사제:3",
+        "죽음의 기사:3",
+        "주술사:3",
+        "악마사냥꾼:1"
+      ],
+      "cardWidths": [
+        143
+      ],
+      "wrappedClassNames": 0,
+      "maxTitleHeight": 19.859375
+    },
+    "errors": []
+  }
+]
