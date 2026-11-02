@@ -44,6 +44,23 @@ for (const list of youtubePlaylists) {
 }
 assert.equal(seenGuides.size, specs.length, 'Every guide needs exactly one home video');
 
+// 심화편 줄은 원고의 advancedVideo를 그대로 읽는다. 번호가 올바르고 기본편·다른 심화편과 겹치지 않아야 한다.
+let advancedCount = 0;
+for (const [guideId, manuscript] of Object.entries(manuscripts)) {
+  const advanced = manuscript?.advancedVideo;
+  if (!advanced) continue;
+  assert.ok(specById.has(guideId), `${guideId} advanced video belongs to an unregistered guide`);
+  assert.match(advanced.youtubeId || '', /^[A-Za-z0-9_-]{11}$/, `${guideId} advanced video id`);
+  assert.ok(!seenVideos.has(advanced.youtubeId), `${guideId} advanced video ${advanced.youtubeId} repeats another home video`);
+  seenVideos.add(advanced.youtubeId);
+  advancedCount++;
+}
+
+// 영상은 계속 늘거나 바뀌므로 홈 화면에 영상·편 개수를 적지 않는다(던전의 네임드·풀링 수 같은 사실은 괜찮다).
+const home = read('src/pages/HomePage.js');
+assert.ok(!/\.length\}?\s*\)?\s*편/.test(home) && !/영상 \{/.test(home) && !/\(\$\{items\.length\}\)/.test(home),
+  'Home must not show video or episode counts');
+
 // 공개 기록은 이 PC의 ai-hub 작업 폴더에만 있다. 없으면 건너뛴다.
 const published = [path.resolve(root, '..', '..', 'ai-hub', 'workspace', 'outputs', 'pixel-guides', 'youtube-playlists.json')]
   .find(file => fs.existsSync(file));
@@ -69,4 +86,4 @@ assert.ok(!guidePage.includes('/logs/') && !guidePage.includes('logReportRegistr
 const app = read('src/App.js');
 assert.ok(app.includes('path="/logs"') && app.includes('path="/logs/:guideId"'), 'Log analysis must stay reachable by direct link');
 
-console.log(`home videos: ${youtubePlaylists.length} playlists, ${seenVideos.size} videos${published ? ' (matches published record)' : ''}; log analysis hidden from menus`);
+console.log(`home videos: ${youtubePlaylists.length} playlists, ${seenVideos.size - advancedCount} basic + ${advancedCount} advanced videos${published ? ' (matches published record)' : ''}; log analysis hidden from menus`);

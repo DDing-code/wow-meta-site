@@ -6,6 +6,8 @@ import HomePage from './HomePage.js';
 import Navigation from '../components/Navigation.js';
 import { youtubePlaylists } from '../data/youtubePlaylists.js';
 import raidGuide from '../data/raidGuide.json';
+import mythicPlusGuide from '../data/mythicPlusGuide.json';
+import guideManuscripts from '../data/guideManuscripts.js';
 
 let container;
 let root;
@@ -55,6 +57,35 @@ test('모두 보기와 분류 칩으로 한 재생목록을 다 펼친다', () =
   const first = shelf('healers').querySelector('li');
   expect(first.querySelector(`a[href^="https://www.youtube.com/watch?v=${healers.items[0][1]}"]`)).not.toBeNull();
   expect(first.querySelector('a[href="/guide/paladin/holy"]')).not.toBeNull();
+});
+
+test('심화편 줄은 원고의 심화편 영상을 보이고, 기본편 칸에는 심화편 링크가 붙는다', () => {
+  render(<HomePage />);
+  const advanced = Object.entries(guideManuscripts).filter(([, manuscript]) => manuscript.advancedVideo);
+  expect(advanced.length).toBeGreaterThan(0);
+  expect(chip('심화편')).not.toBeUndefined();
+  act(() => Simulate.click(chip('심화편')));
+  expect(container.querySelectorAll('[data-shelf]')).toHaveLength(1);
+  expect(shelf('advanced').querySelectorAll('li')).toHaveLength(advanced.length);
+  for (const [, manuscript] of advanced) {
+    expect(shelf('advanced').querySelector(`a[href^="https://www.youtube.com/watch?v=${manuscript.advancedVideo.youtubeId}"]`)).not.toBeNull();
+  }
+
+  act(() => Simulate.click(chip('근딜')));
+  const arms = guideManuscripts['warrior-arms'].advancedVideo.youtubeId;
+  expect(shelf('melee').querySelector(`a[data-video-kind="advanced"][href^="https://www.youtube.com/watch?v=${arms}"]`)).not.toBeNull();
+});
+
+test('영상·편 개수는 화면에 적지 않고, 영웅 레이드와 던전 영상 링크가 있다', () => {
+  render(<HomePage />);
+  expect(container.textContent).not.toMatch(/\d+\s*편/);
+  expect(container.textContent).not.toMatch(/모두 보기 \(/);
+  expect(shelf('raid').querySelector('a[href="/raid/heroic"]')).not.toBeNull();
+  const dungeon = mythicPlusGuide.dungeons.find(item => item.video?.youtubeId);
+  if (dungeon) {
+    act(() => Simulate.click(chip('쐐기')));
+    expect(shelf('mythicplus').querySelector(`a[href="https://www.youtube.com/watch?v=${dungeon.video.youtubeId}"]`)).not.toBeNull();
+  }
 });
 
 test('상단 메뉴에 로그 분석 탭이 없다', () => {

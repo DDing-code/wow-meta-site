@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import {
@@ -10,6 +10,7 @@ import {
   Crosshair,
   Database,
   ExternalLink,
+  GraduationCap,
   HeartPulse,
   KeyRound,
   Newspaper,
@@ -27,11 +28,13 @@ import {
   watchUrl,
   youtubePlaylists,
 } from '../data/youtubePlaylists.js';
+import guideManuscripts from '../data/guideManuscripts.js';
 import raidGuide from '../data/raidGuide.json';
 import mythicPlusGuide from '../data/mythicPlusGuide.json';
 
-// 홈은 유튜브 첫 화면처럼 분류 칩 → 재생목록별 영상 줄 → 레이드 가이드 줄 → 쐐기 가이드 줄 순서다.
+// 홈은 유튜브 첫 화면처럼 분류 칩 → 직업 심화편 줄 → 재생목록별 기본편 줄 → 레이드 가이드 줄 → 쐐기 가이드 줄 순서다.
 // 한 줄은 화면 폭에 맞는 칸 수만 보이고 '모두 보기'로 펼친다. 칩으로 한 분류를 고르면 그 줄만 다 펼쳐 보인다.
+// 영상은 계속 늘거나 바뀌므로 영상·편 개수는 화면에 적지 않는다(validate:home이 막는다).
 
 const GOLD = '#d2b373';
 const LINE = 'rgba(168, 178, 188, 0.14)';
@@ -192,13 +195,6 @@ const ShelfTitle = styled.h2`
   svg { flex: 0 0 auto; color: ${props => props.$color || GOLD}; }
 `;
 
-const ShelfCount = styled.span`
-  color: #7f8b94;
-  font-size: 0.8rem;
-  font-weight: 600;
-  white-space: nowrap;
-`;
-
 const ShelfLinks = styled.div`
   display: flex;
   align-items: center;
@@ -217,8 +213,9 @@ const ShelfLink = styled.a`
 
   &:hover { color: #eef1f3; }
 
+  // $keepLabel: 링크가 둘이라 화살표만 남으면 구별이 안 되는 곳(레이드 신화·영웅)은 좁은 화면에도 글자를 둔다.
   @media (max-width: 520px) {
-    span { display: none; }
+    span { display: ${props => (props.$keepLabel ? 'inline' : 'none')}; }
   }
 `;
 
@@ -347,17 +344,36 @@ const CardSub = styled.span`
   word-break: keep-all;
 `;
 
+const CardLinks = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 14px;
+  margin-top: 2px;
+`;
+
 const GuideLink = styled(Link)`
-  justify-self: start;
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  margin-top: 2px;
   color: ${GOLD};
   font-size: 0.76rem;
   font-weight: 700;
 
   &:hover { color: #f0d9a4; }
+`;
+
+// 다른 편 영상(기본편↔심화편, 던전 영상)으로 가는 작은 링크. 글 가이드 링크보다 한 단계 약하게 보인다.
+const VideoLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #aeb8be;
+  font-size: 0.76rem;
+  font-weight: 650;
+
+  svg { color: #c4302b; }
+  &:hover { color: #eef1f3; }
 `;
 
 const RaidThumb = styled(Link)`
@@ -446,6 +462,13 @@ const Shortcut = styled(Link)`
 `;
 
 const guideById = Object.fromEntries(getAllGuideSpecs().map(spec => [spec.id, spec]));
+const isYoutubeId = id => /^[A-Za-z0-9_-]{11}$/.test(id || '');
+
+// 심화편 번호는 가이드 원고의 advancedVideo 하나가 정본이다(가이드 페이지의 기본편·심화편 단추와 같은 값).
+const advancedIdOf = guideId => {
+  const id = guideManuscripts[guideId]?.advancedVideo?.youtubeId;
+  return isYoutubeId(id) ? id : null;
+};
 
 const videoShelves = youtubePlaylists.map(playlist => ({
   id: playlist.role,
@@ -454,9 +477,14 @@ const videoShelves = youtubePlaylists.map(playlist => ({
   icon: ROLE_ICONS[playlist.role],
   playlist,
   items: playlist.items
-    .map(([guideId, youtubeId]) => ({ guide: guideById[guideId], youtubeId }))
+    .map(([guideId, youtubeId]) => ({ guide: guideById[guideId], youtubeId, advancedId: advancedIdOf(guideId) }))
     .filter(item => item.guide),
 }));
+
+// 심화편 줄: 심화편이 있는 전문화만, 재생목록 순서(탱커 → 힐러 → 근딜 → 원딜)대로.
+const advancedItems = videoShelves.flatMap(shelf => shelf.items
+  .filter(item => item.advancedId)
+  .map(item => ({ ...item, playlistId: shelf.playlist.playlistId })));
 
 const raidEpisodes = (raidGuide.episodes || []).map(episode => {
   const match = JSON.stringify(episode).match(/"plan":"([\w-]+)"/);
@@ -471,24 +499,30 @@ const dungeonCards = (mythicPlusGuide.dungeons || []).map(dungeon => ({
 
 const FILTERS = [
   { id: 'all', label: '전체' },
+  ...(advancedItems.length ? [{ id: 'advanced', label: '심화편', icon: GraduationCap }] : []),
   ...videoShelves.map(shelf => ({ id: shelf.id, label: shelf.label, icon: shelf.icon })),
   { id: 'raid', label: '레이드', icon: Castle },
   { id: 'mythicplus', label: '쐐기', icon: KeyRound },
 ];
 
-function VideoCard({ guide, youtubeId, playlistId }) {
+// advanced: 심화편 줄의 칸이면 심화편 영상을 크게 보이고 기본편을 작은 링크로, 아니면 그 반대다.
+function VideoCard({ guide, youtubeId, advancedId, playlistId, advanced = false }) {
   const name = `${guide.spec} ${guide.className}`;
+  const mainId = advanced ? advancedId : youtubeId;
+  const otherId = advanced ? youtubeId : advancedId;
+  const mainLabel = advanced ? '심화편' : '기본편';
+  const otherLabel = advanced ? '기본편' : '심화편';
   return (
     <Card>
       <Thumb
-        href={watchUrl(youtubeId, playlistId)}
+        href={advanced ? watchUrl(mainId) : watchUrl(mainId, playlistId)}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`${name} 가이드 영상 유튜브에서 보기 (새 창)`}
+        aria-label={`${name} ${mainLabel} 가이드 영상 유튜브에서 보기 (새 창)`}
       >
         <img
-          src={thumbnailUrl(youtubeId, 'mqdefault')}
-          srcSet={`${thumbnailUrl(youtubeId, 'mqdefault')} 320w, ${thumbnailUrl(youtubeId, 'hqdefault')} 480w`}
+          src={thumbnailUrl(mainId, 'mqdefault')}
+          srcSet={`${thumbnailUrl(mainId, 'mqdefault')} 320w, ${thumbnailUrl(mainId, 'hqdefault')} 480w`}
           sizes="(max-width: 639px) 50vw, 260px"
           alt=""
           width="320"
@@ -504,10 +538,23 @@ function VideoCard({ guide, youtubeId, playlistId }) {
         </Avatar>
         <MetaText>
           <CardTitle to={guide.path}>{name}</CardTitle>
-          <CardSub>{VIDEO_SEASON_LABEL} {CURRENT_PATCH_LABEL} · {guide.roleLabel}</CardSub>
-          <GuideLink to={guide.path} aria-label={`${name} 글 가이드 읽기`}>
-            글 가이드 <ArrowRight size={12} aria-hidden="true" />
-          </GuideLink>
+          <CardSub>{VIDEO_SEASON_LABEL} {CURRENT_PATCH_LABEL} · {guide.roleLabel}{advanced ? ' · 심화편' : ''}</CardSub>
+          <CardLinks>
+            <GuideLink to={guide.path} aria-label={`${name} 글 가이드 읽기`}>
+              글 가이드 <ArrowRight size={12} aria-hidden="true" />
+            </GuideLink>
+            {otherId && (
+              <VideoLink
+                href={watchUrl(otherId, advanced ? playlistId : undefined)}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${name} ${otherLabel} 영상 유튜브에서 보기 (새 창)`}
+                data-video-kind={advanced ? 'basic' : 'advanced'}
+              >
+                <Play size={11} fill="currentColor" aria-hidden="true" />{otherLabel}
+              </VideoLink>
+            )}
+          </CardLinks>
         </MetaText>
       </Meta>
     </Card>
@@ -555,6 +602,18 @@ function DungeonCard({ dungeon }) {
       <MetaText>
         <CardTitle to={`/mythicplus/${dungeon.id}`}>{dungeon.name}</CardTitle>
         <Clamp>{dungeon.facts}</Clamp>
+        {isYoutubeId(dungeon.video?.youtubeId) && (
+          <CardLinks>
+            <VideoLink
+              href={watchUrl(dungeon.video.youtubeId)}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${dungeon.name} 공략 영상 유튜브에서 보기 (새 창)`}
+            >
+              <Play size={11} fill="currentColor" aria-hidden="true" />공략 영상
+            </VideoLink>
+          </CardLinks>
+        )}
       </MetaText>
     </Card>
   );
@@ -570,7 +629,7 @@ function ShelfGrid({ items, columns, expanded, locked, onToggle, label, renderIt
       <Grid>{visible.map(renderItem)}</Grid>
       {collapsible && (
         <MoreButton type="button" $open={expanded} aria-expanded={expanded} onClick={onToggle}>
-          {expanded ? '접기' : `${label} 모두 보기 (${items.length})`}
+          {expanded ? '접기' : `${label} 모두 보기`}
           <ChevronDown size={15} aria-hidden="true" />
         </MoreButton>
       )}
@@ -585,7 +644,6 @@ function HomePage() {
   const isShown = id => filter === 'all' || filter === id;
   const isExpanded = id => !!open[id];
   const toggle = id => setOpen(state => ({ ...state, [id]: !state[id] }));
-  const totalVideos = useMemo(() => videoShelves.reduce((sum, shelf) => sum + shelf.items.length, 0), []);
 
   return (
     <Page>
@@ -595,7 +653,7 @@ function HomePage() {
         <Compass size={22} strokeWidth={1.75} aria-hidden="true" />
         <div>
           <strong>와우가 처음이신가요?</strong>
-          <span>전투 용어부터 영약·물약·파티 준비까지, 초보자 안내에서 시작하세요.</span>
+          <span>초보자 영상과 함께 전투 용어부터 영약·물약·파티 준비까지 차근차근 시작하세요.</span>
         </div>
         <ArrowRight size={18} aria-hidden="true" />
       </BeginnerLink>
@@ -619,9 +677,49 @@ function HomePage() {
           })}
         </Chips>
         <ChannelLink href={YOUTUBE_CHANNEL.url} target="_blank" rel="noopener noreferrer">
-          유튜브 채널 · 영상 {totalVideos}편 <ExternalLink size={13} aria-hidden="true" />
+          유튜브 채널 <ExternalLink size={13} aria-hidden="true" />
         </ChannelLink>
       </ChipBar>
+
+      {isShown('advanced') && advancedItems.length > 0 && (
+        <Shelf aria-labelledby="shelf-advanced" data-shelf="advanced">
+          <ShelfHead>
+            <ShelfTitle id="shelf-advanced">
+              <GraduationCap size={19} aria-hidden="true" />
+              직업 심화편
+            </ShelfTitle>
+            <ShelfLinks>
+              <ShelfLink
+                href={YOUTUBE_CHANNEL.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${YOUTUBE_CHANNEL.name} 유튜브 채널 열기 (새 창)`}
+              >
+                <span>채널에서 보기</span>
+                <ExternalLink size={13} aria-hidden="true" />
+              </ShelfLink>
+            </ShelfLinks>
+          </ShelfHead>
+          <ShelfGrid
+            items={advancedItems}
+            columns={columns}
+            expanded={isExpanded('advanced')}
+            locked={filter === 'advanced'}
+            onToggle={() => toggle('advanced')}
+            label="직업 심화편"
+            renderItem={item => (
+              <VideoCard
+                key={item.guide.id}
+                guide={item.guide}
+                youtubeId={item.youtubeId}
+                advancedId={item.advancedId}
+                playlistId={item.playlistId}
+                advanced
+              />
+            )}
+          />
+        </Shelf>
+      )}
 
       {videoShelves.filter(shelf => isShown(shelf.id)).map(shelf => {
         const Icon = shelf.icon;
@@ -632,7 +730,6 @@ function HomePage() {
                 <Icon size={19} aria-hidden="true" />
                 {shelf.title}
               </ShelfTitle>
-              <ShelfCount>영상 {shelf.items.length}편</ShelfCount>
               <ShelfLinks>
                 <ShelfLink
                   href={playlistUrl(shelf.playlist.playlistId)}
@@ -653,7 +750,13 @@ function HomePage() {
               onToggle={() => toggle(shelf.id)}
               label={shelf.title}
               renderItem={item => (
-                <VideoCard key={item.guide.id} guide={item.guide} youtubeId={item.youtubeId} playlistId={shelf.playlist.playlistId} />
+                <VideoCard
+                  key={item.guide.id}
+                  guide={item.guide}
+                  youtubeId={item.youtubeId}
+                  advancedId={item.advancedId}
+                  playlistId={shelf.playlist.playlistId}
+                />
               )}
             />
           </Shelf>
@@ -667,10 +770,13 @@ function HomePage() {
               <Castle size={19} aria-hidden="true" />
               레이드 가이드
             </ShelfTitle>
-            <ShelfCount>{raidEpisodes.length}편</ShelfCount>
             <ShelfLinks>
-              <ShelfLink as={Link} to="/raid">
-                <span>전체 보기</span>
+              <ShelfLink as={Link} to="/raid/heroic" $keepLabel aria-label="영웅 난이도 레이드 가이드 열기">
+                <span>영웅</span>
+                <ArrowRight size={13} aria-hidden="true" />
+              </ShelfLink>
+              <ShelfLink as={Link} to="/raid" $keepLabel aria-label="신화 레이드 가이드 전체 보기">
+                <span>신화</span>
                 <ArrowRight size={13} aria-hidden="true" />
               </ShelfLink>
             </ShelfLinks>
@@ -694,7 +800,6 @@ function HomePage() {
               <KeyRound size={19} aria-hidden="true" />
               쐐기 가이드
             </ShelfTitle>
-            <ShelfCount>던전 {dungeonCards.length}곳</ShelfCount>
             <ShelfLinks>
               <ShelfLink as={Link} to="/mythicplus">
                 <span>전체 보기</span>
