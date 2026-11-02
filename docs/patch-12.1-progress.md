@@ -1277,3 +1277,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-paladin-20261102.json`, 목록 생성 `upload-advanced-v10-paladin-20261102/prepare.py`)로 와우메타 채널에 신성 `EZ3vLNckjYs`·보호 `MT7hghuzlWU`·징벌 `_HHEKlLi7Qs`를 공개했다. 징벌은 첫 실행에서 게시 뒤 편집 화면 대기 시간이 초과돼 임시본으로 남아 같은 명령을 다시 돌려 공개했다. `verify`로 채널·제목·설명·썸네일·공개 3/3, oEmbed로 공개 링크를 확인했다.
 - 사이트: `artifacts/advanced-videos-paladin-20261102/apply.cjs`로 원고·KB `08-성기사/*/Meta/guide-12.1.json`·검사기 GUIDE_ADVANCED_VIDEOS에 advancedVideo를 넣었다(전사와 같은 기본편·심화편 단추). `npm run build`(검사 전체) 통과, 사이트 `f35eaa37` main 푸시, KB 로컬 `c411a24`. 빌드 `main.94b57710.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고 운영 주소에서 `shots.cjs`로 1440·390·320 7화면 통과(캡처 `live/`).
 - 남은 결정: 11-01에 공개한 성기사 v9 심화 3편(`A873-0wi5kE`·`JyRtHCOWK2E`·`2AKMwkgfgO4`)은 같은 제목으로 채널에 남아 있다. 사이트에는 연결된 적이 없고, 지울지는 답을 기다린다.
+
+## 2026-11-02 사이트 글·기본편 상호연동 (특성 ↔ 스킬 연결 8개 가이드, 사냥꾼 심화편 단추, 기본편 설명)
+
+- 요청: "사이트 글/기초 가이드에도 상호연동 해주고". 세 가지로 반영했다.
+- 특성 ↔ 스킬 연결: 영상 v10에 쓴 표(ai-hub `engine/talent-links/tables`)의 사본으로 분노·방어 전사, 신성·보호·징벌 성기사, 야수·사격·생존 사냥꾼 8개 가이드의 흐름도 affects·타임라인 talents를 넣었다(`artifacts/talent-links-20261102/apply.cjs <id>`, 원고·KB 정본 동시, 글은 그대로). 사냥꾼 사본만 타임라인 특성 칸 규칙 때문에 파수꾼의 표식(강화 효과 1253601)을 영웅 특성 파수꾼(1253599)으로 바꾸고, 4세트 코브라 송곳니(1299389)는 뺐다. 검사기에 8개 가이드 회귀(특성 상자마다 affects, 타임라인 특성 칸 20개 이상)를 넣었다. 무기 전사는 11-01 판 그대로다.
+- 사냥꾼 심화편 단추: `artifacts/advanced-videos-hunter-20261102/apply.cjs`로 야수 `VHeIr835EXs`·사격 `0h_iQv0eD3w`·생존 `8dkksyQUsUw`를 advancedVideo로 넣었다(전사·성기사와 같은 기본편·심화편 단추).
+- 기본편 영상 설명: 심화편이 있는 기본편 10편(파멸·전사 3·성기사 3·사냥꾼 3)의 설명에 `심화편: https://youtu.be/<번호>` 한 줄을 더했다(ai-hub `pixel-guides/link-basic-advanced-20261102.mjs`, 기록 `.json`). 심화편 설명에는 원래 기본편 주소가 있어 서로 이어진다. youtube-manifest.json의 description은 사이트 도구가 가이드 주소로 읽으므로 그대로 뒀다.
+- 배포: `npm run build`(검사 전체) 통과, 사이트 `e7892900` main 푸시, KB 로컬 `23977dc`. 빌드 `main.20282792.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `talent-links-20261102/shots.cjs`로 8개×1440·390, `advanced-videos-hunter-20261102/shots.cjs`로 7화면 통과(캡처 `live/`).
+- 순서 주의: 특성 연결을 넣은 원고가 다른 도구로 바뀌면 `refresh-orig.cjs <id>`로 원본 스냅샷을 맞춘 뒤 apply.cjs를 돌린다.

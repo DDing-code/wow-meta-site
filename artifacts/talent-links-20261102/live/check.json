@@ -1,0 +1,338 @@
+[
+  {
+    "id": "warrior-fury",
+    "width": 1440,
+    "overflow": false,
+    "diagrams": 8,
+    "diagramsWithLinks": 8,
+    "linkPaths": 53,
+    "affectIcons": 59,
+    "talentCells": 31,
+    "talentIcons": 48,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\warrior-fury-1440-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\warrior-fury-1440-diagram-hover.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\warrior-fury-1440-timeline.png"
+    ],
+    "hover": {
+      "active": 1,
+      "related": 1,
+      "activeLinks": 1
+    },
+    "ok": true
+  },
+  {
+    "id": "warrior-fury",
+    "width": 390,
+    "overflow": false,
+    "diagrams": 8,
+    "diagramsWithLinks": 8,
+    "linkPaths": 53,
+    "affectIcons": 59,
+    "talentCells": 31,
+    "talentIcons": 48,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\warrior-fury-390-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\warrior-fury-390-timeline.png"
+    ],
+    "ok": true
+  },
+  {
+    "id": "warrior-protection",
+    "width": 1440,
+    "overflow": false,
+    "diagrams": 7,
+    "diagramsWithLinks": 7,
+    "linkPaths": 36,
+    "affectIcons": 39,
+    "talentCells": 50,
+    "talentIcons": 86,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\warrior-protection-1440-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\warrior-protection-1440-diagram-hover.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\warrior-protection-1440-timeline.png"
+    ],
+    "hover": {
+      "active": 1,
+      "related": 1,
+      "activeLinks": 1
+    },
+    "ok": true
+  },
+  {
+    "id": "warrior-protection",
+    "width": 390,
+    "overflow": false,
+    "diagrams": 7,
+    "diagramsWithLinks": 7,
+    "linkPaths": 36,
+    "affectIcons": 39,
+    "talentCells": 50,
+    "talentIcons": 86,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\warrior-protection-390-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\warrior-protection-390-timeline.png"
+    ],
+    "ok": true
+  },
+  {
+    "id": "paladin-holy",
+    "width": 1440,
+    "overflow": false,
+    "diagrams": 6,
+    "diagramsWithLinks": 6,
+    "linkPaths": 32,
+    "affectIcons": 41,
+    "talentCells": 29,
+    "talentIcons": 55,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-holy-1440-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-holy-1440-diagram-hover.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-holy-1440-timeline.png"
+    ],
+    "hover": {
+      "active": 1,
+      "related": 2,
+      "activeLinks": 2
+    },
+    "ok": true
+  },
+  {
+    "id": "paladin-holy",
+    "width": 390,
+    "overflow": false,
+    "diagrams": 6,
+    "diagramsWithLinks": 6,
+    "linkPaths": 32,
+    "affectIcons": 41,
+    "talentCells": 29,
+    "talentIcons": 55,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-holy-390-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-holy-390-timeline.png"
+    ],
+    "ok": true
+  },
+  {
+    "id": "paladin-protection",
+    "width": 1440,
+    "overflow": false,
+    "diagrams": 7,
+    "diagramsWithLinks": 7,
+    "linkPaths": 30,
+    "affectIcons": 42,
+    "talentCells": 52,
+    "talentIcons": 89,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-protection-1440-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-protection-1440-diagram-hover.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-protection-1440-timeline.png"
+    ],
+    "hover": {
+      "active": 1,
+      "related": 1,
+      "activeLinks": 1
+    },
+    "ok": true
+  },
+  {
+    "id": "paladin-protection",
+    "width": 390,
+    "overflow": false,
+    "diagrams": 7,
+    "diagramsWithLinks": 7,
+    "linkPaths": 30,
+    "affectIcons": 42,
+    "talentCells": 52,
+    "talentIcons": 89,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-protection-390-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-protection-390-timeline.png"
+    ],
+    "ok": true
+  },
+  {
+    "id": "paladin-retribution",
+    "width": 1440,
+    "overflow": false,
+    "diagrams": 7,
+    "diagramsWithLinks": 5,
+    "linkPaths": 23,
+    "affectIcons": 29,
+    "talentCells": 31,
+    "talentIcons": 49,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-retribution-1440-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-retribution-1440-diagram-hover.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-retribution-1440-timeline.png"
+    ],
+    "hover": {
+      "active": 1,
+      "related": 1,
+      "activeLinks": 1
+    },
+    "ok": true
+  },
+  {
+    "id": "paladin-retribution",
+    "width": 390,
+    "overflow": false,
+    "diagrams": 7,
+    "diagramsWithLinks": 5,
+    "linkPaths": 23,
+    "affectIcons": 29,
+    "talentCells": 31,
+    "talentIcons": 49,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-retribution-390-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\paladin-retribution-390-timeline.png"
+    ],
+    "ok": true
+  },
+  {
+    "id": "hunter-beastmastery",
+    "width": 1440,
+    "overflow": false,
+    "diagrams": 9,
+    "diagramsWithLinks": 9,
+    "linkPaths": 20,
+    "affectIcons": 34,
+    "talentCells": 23,
+    "talentIcons": 41,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-beastmastery-1440-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-beastmastery-1440-diagram-hover.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-beastmastery-1440-timeline.png"
+    ],
+    "hover": {
+      "active": 1,
+      "related": 1,
+      "activeLinks": 1
+    },
+    "ok": true
+  },
+  {
+    "id": "hunter-beastmastery",
+    "width": 390,
+    "overflow": false,
+    "diagrams": 9,
+    "diagramsWithLinks": 9,
+    "linkPaths": 20,
+    "affectIcons": 34,
+    "talentCells": 23,
+    "talentIcons": 41,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-beastmastery-390-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-beastmastery-390-timeline.png"
+    ],
+    "ok": true
+  },
+  {
+    "id": "hunter-marksmanship",
+    "width": 1440,
+    "overflow": false,
+    "diagrams": 9,
+    "diagramsWithLinks": 8,
+    "linkPaths": 21,
+    "affectIcons": 33,
+    "talentCells": 26,
+    "talentIcons": 38,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-marksmanship-1440-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-marksmanship-1440-diagram-hover.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-marksmanship-1440-timeline.png"
+    ],
+    "hover": {
+      "active": 2,
+      "related": 0,
+      "activeLinks": 0
+    },
+    "ok": true
+  },
+  {
+    "id": "hunter-marksmanship",
+    "width": 390,
+    "overflow": false,
+    "diagrams": 9,
+    "diagramsWithLinks": 8,
+    "linkPaths": 21,
+    "affectIcons": 33,
+    "talentCells": 26,
+    "talentIcons": 38,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-marksmanship-390-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-marksmanship-390-timeline.png"
+    ],
+    "ok": true
+  },
+  {
+    "id": "hunter-survival",
+    "width": 1440,
+    "overflow": false,
+    "diagrams": 8,
+    "diagramsWithLinks": 8,
+    "linkPaths": 27,
+    "affectIcons": 36,
+    "talentCells": 40,
+    "talentIcons": 64,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-survival-1440-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-survival-1440-diagram-hover.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-survival-1440-timeline.png"
+    ],
+    "hover": {
+      "active": 1,
+      "related": 2,
+      "activeLinks": 2
+    },
+    "ok": true
+  },
+  {
+    "id": "hunter-survival",
+    "width": 390,
+    "overflow": false,
+    "diagrams": 8,
+    "diagramsWithLinks": 8,
+    "linkPaths": 27,
+    "affectIcons": 36,
+    "talentCells": 40,
+    "talentIcons": 64,
+    "brokenIcons": 0,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-survival-390-diagram.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\talent-links-20261102\\live\\hunter-survival-390-timeline.png"
+    ],
+    "ok": true
+  }
+]

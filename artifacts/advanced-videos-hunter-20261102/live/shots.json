@@ -1,0 +1,98 @@
+[
+  {
+    "id": "hunter-beastmastery",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-beastmastery-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-beastmastery-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/iF-E0vaPQ04?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/VHeIr835EXs?rel=0",
+    "caption": "한밤 2시즌 12.1.5 야수 사냥꾼 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "hunter-beastmastery",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-beastmastery-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/iF-E0vaPQ04?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/VHeIr835EXs?rel=0",
+    "caption": "한밤 2시즌 12.1.5 야수 사냥꾼 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "hunter-marksmanship",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-marksmanship-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-marksmanship-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/VQD0JrtCIY0?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/0h_iQv0eD3w?rel=0",
+    "caption": "한밤 2시즌 12.1.5 사격 사냥꾼 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "hunter-marksmanship",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-marksmanship-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/VQD0JrtCIY0?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/0h_iQv0eD3w?rel=0",
+    "caption": "한밤 2시즌 12.1.5 사격 사냥꾼 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "hunter-survival",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-survival-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-survival-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/rHz7tAP-5DQ?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/8dkksyQUsUw?rel=0",
+    "caption": "한밤 2시즌 12.1.5 생존 사냥꾼 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "hunter-survival",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-survival-390-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-survival-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/rHz7tAP-5DQ?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/8dkksyQUsUw?rel=0",
+    "caption": "한밤 2시즌 12.1.5 생존 사냥꾼 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "hunter-survival",
+    "width": 320,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-survival-320-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-hunter-20261102\\live\\hunter-survival-320-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/rHz7tAP-5DQ?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/8dkksyQUsUw?rel=0",
+    "caption": "한밤 2시즌 12.1.5 생존 사냥꾼 심화 가이드",
+    "scrollWidth": 320,
+    "ok": true
+  }
+]
