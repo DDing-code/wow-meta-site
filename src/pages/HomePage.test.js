@@ -8,6 +8,7 @@ import { youtubePlaylists } from '../data/youtubePlaylists.js';
 import raidGuide from '../data/raidGuide.json';
 import mythicPlusGuide from '../data/mythicPlusGuide.json';
 import guideManuscripts from '../data/guideManuscripts.js';
+import { classOrder, getAllGuideSpecs } from '../data/guideRegistry.js';
 
 let container;
 let root;
@@ -70,6 +71,23 @@ test('심화편 줄은 원고의 심화편 영상을 보이고, 기본편 칸에
   for (const [, manuscript] of advanced) {
     expect(shelf('advanced').querySelector(`a[href^="https://www.youtube.com/watch?v=${manuscript.advancedVideo.youtubeId}"]`)).not.toBeNull();
   }
+
+  // 가이드 목록처럼 직업마다 묶고, 직업 순서는 가이드 목록(classOrder)과 같다.
+  const groups = [...shelf('advanced').querySelectorAll('[data-class-group]')];
+  const names = groups.map(group => group.dataset.classGroup);
+  const advancedClasses = [...new Set(getAllGuideSpecs().filter(spec => guideManuscripts[spec.id]?.advancedVideo).map(spec => spec.className))];
+  expect(names).toEqual(classOrder.filter(name => advancedClasses.includes(name)));
+  for (const group of groups) {
+    expect(group.querySelector('h3').textContent).toBe(group.dataset.classGroup);
+    const ids = getAllGuideSpecs().filter(spec => spec.className === group.dataset.classGroup && guideManuscripts[spec.id]?.advancedVideo);
+    expect(group.querySelectorAll('li')).toHaveLength(ids.length);
+  }
+
+  act(() => Simulate.click(chip('전체')));
+  // 접힌 상태(jsdom 5칸 → 심화편 6칸)는 앞 직업 묶음만 보이고 '모두 보기'로 다 펼친다.
+  expect(shelf('advanced').querySelectorAll('li').length).toBeLessThanOrEqual(6);
+  act(() => Simulate.click(shelf('advanced').querySelector('button[aria-expanded]')));
+  expect(shelf('advanced').querySelectorAll('li')).toHaveLength(advanced.length);
 
   act(() => Simulate.click(chip('근딜')));
   const arms = guideManuscripts['warrior-arms'].advancedVideo.youtubeId;

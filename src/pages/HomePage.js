@@ -19,7 +19,7 @@ import {
   Swords,
 } from 'lucide-react';
 import SpecializationIcon from '../components/SpecializationIcon.js';
-import { CURRENT_PATCH_LABEL, getAllGuideSpecs } from '../data/guideRegistry.js';
+import { CURRENT_PATCH_LABEL, getAllGuideSpecs, getGroupedGuideSpecs } from '../data/guideRegistry.js';
 import {
   VIDEO_SEASON_LABEL,
   YOUTUBE_CHANNEL,
@@ -32,7 +32,7 @@ import guideManuscripts from '../data/guideManuscripts.js';
 import raidGuide from '../data/raidGuide.json';
 import mythicPlusGuide from '../data/mythicPlusGuide.json';
 
-// 홈은 유튜브 첫 화면처럼 분류 칩 → 직업 심화편 줄 → 재생목록별 기본편 줄 → 레이드 가이드 줄 → 쐐기 가이드 줄 순서다.
+// 홈은 유튜브 첫 화면처럼 분류 칩 → 직업 심화편 줄(직업별 묶음) → 재생목록별 기본편 줄 → 레이드 가이드 줄 → 쐐기 가이드 줄 순서다.
 // 한 줄은 화면 폭에 맞는 칸 수만 보이고 '모두 보기'로 펼친다. 칩으로 한 분류를 고르면 그 줄만 다 펼쳐 보인다.
 // 영상은 계속 늘거나 바뀌므로 영상·편 개수는 화면에 적지 않는다(validate:home이 막는다).
 
@@ -237,6 +237,57 @@ const Card = styled.li`
   align-content: start;
   gap: 10px;
   min-width: 0;
+`;
+
+// 직업 심화편 줄은 가이드 목록처럼 직업마다 묶는다. 묶음 하나가 자기 칸 수(min(전문화 수, 칸 수))만큼 차지하고,
+// 안쪽 칸은 바깥과 같은 간격이라 묶음끼리도 칸 폭이 같다. 칸 수는 advancedColumns가 정한다.
+const ClassGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  gap: 30px 16px;
+
+  @media (max-width: 639px) { gap: 24px 10px; }
+`;
+
+const ClassGroup = styled.section`
+  grid-column: span var(--span);
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+`;
+
+// 가이드 목록(GuidePage)의 직업 제목과 같은 모양: 직업 색 막대 + 직업 이름.
+const ClassName = styled.h3`
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid ${LINE};
+  color: ${props => props.$color};
+  font-size: 0.98rem;
+  font-weight: 720;
+  line-height: 1.3;
+  white-space: nowrap;
+
+  &::before {
+    content: '';
+    flex: 0 0 auto;
+    width: 4px;
+    height: 15px;
+    background: ${props => props.$color};
+  }
+`;
+
+const ClassCards = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(var(--span), minmax(0, 1fr));
+  gap: 26px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: 639px) { gap: 20px 10px; }
 `;
 
 const Thumb = styled.a`
@@ -481,10 +532,16 @@ const videoShelves = youtubePlaylists.map(playlist => ({
     .filter(item => item.guide),
 }));
 
-// 심화편 줄: 심화편이 있는 전문화만, 재생목록 순서(탱커 → 힐러 → 근딜 → 원딜)대로.
+// 심화편 줄: 심화편이 있는 전문화만, 가이드 목록과 같은 직업 순서(guideRegistry의 classOrder)로 직업마다 묶는다.
 const advancedItems = videoShelves.flatMap(shelf => shelf.items
   .filter(item => item.advancedId)
   .map(item => ({ ...item, playlistId: shelf.playlist.playlistId })));
+const advancedItemById = Object.fromEntries(advancedItems.map(item => [item.guide.id, item]));
+const advancedGroups = getGroupedGuideSpecs(getAllGuideSpecs().filter(spec => advancedItemById[spec.id]))
+  .map(group => ({ ...group, items: group.specs.map(spec => advancedItemById[spec.id]) }));
+
+// 직업 묶음은 대개 전문화 3개라 넓은 화면은 6칸(묶음 둘), 중간은 3칸(묶음 하나), 휴대폰은 다른 줄과 같은 2칸이다.
+const advancedColumns = columns => (columns >= 5 ? 6 : columns >= 3 ? 3 : MIN_COLUMNS);
 
 const raidEpisodes = (raidGuide.episodes || []).map(episode => {
   const match = JSON.stringify(episode).match(/"plan":"([\w-]+)"/);
@@ -506,7 +563,8 @@ const FILTERS = [
 ];
 
 // advanced: 심화편 줄의 칸이면 심화편 영상을 크게 보이고 기본편을 작은 링크로, 아니면 그 반대다.
-function VideoCard({ guide, youtubeId, advancedId, playlistId, advanced = false }) {
+// specOnly: 직업 제목 아래에 놓인 칸이라 제목을 전문화 이름만 쓴다(가이드 목록과 같음).
+function VideoCard({ guide, youtubeId, advancedId, playlistId, advanced = false, specOnly = false }) {
   const name = `${guide.spec} ${guide.className}`;
   const mainId = advanced ? advancedId : youtubeId;
   const otherId = advanced ? youtubeId : advancedId;
@@ -537,7 +595,7 @@ function VideoCard({ guide, youtubeId, advancedId, playlistId, advanced = false 
           <SpecializationIcon $specId={guide.id} />
         </Avatar>
         <MetaText>
-          <CardTitle to={guide.path}>{name}</CardTitle>
+          <CardTitle to={guide.path} aria-label={specOnly ? `${name} 가이드` : undefined}>{specOnly ? guide.spec : name}</CardTitle>
           <CardSub>{VIDEO_SEASON_LABEL} {CURRENT_PATCH_LABEL} · {guide.roleLabel}{advanced ? ' · 심화편' : ''}</CardSub>
           <CardLinks>
             <GuideLink to={guide.path} aria-label={`${name} 글 가이드 읽기`}>
@@ -637,6 +695,42 @@ function ShelfGrid({ items, columns, expanded, locked, onToggle, label, renderIt
   );
 }
 
+// 직업별로 묶은 줄. 접힌 상태는 앞에서부터 묶음을 통째로 넣되 한 줄 칸 수(휴대폰은 두 줄)를 넘기 전까지만 보인다.
+function ClassShelfGrid({ groups, columns, expanded, locked, onToggle, label, renderItem }) {
+  const cols = advancedColumns(columns);
+  const limit = cols <= MIN_COLUMNS ? cols * 2 : cols;
+  let fitCount = 0;
+  let total = 0;
+  for (const group of groups) {
+    total += group.items.length;
+    if (fitCount > 0 && total > limit) break;
+    fitCount += 1;
+  }
+  const collapsible = !locked && fitCount < groups.length;
+  const visible = locked || expanded || !collapsible ? groups : groups.slice(0, fitCount);
+  return (
+    <>
+      <ClassGrid style={{ '--cols': cols }}>
+        {visible.map(group => {
+          const span = Math.min(group.items.length, cols);
+          return (
+            <ClassGroup key={group.name} style={{ '--span': span }} aria-label={`${group.name} ${label}`} data-class-group={group.name}>
+              <ClassName $color={group.color}>{group.name}</ClassName>
+              <ClassCards>{group.items.map(renderItem)}</ClassCards>
+            </ClassGroup>
+          );
+        })}
+      </ClassGrid>
+      {collapsible && (
+        <MoreButton type="button" $open={expanded} aria-expanded={expanded} onClick={onToggle}>
+          {expanded ? '접기' : `${label} 모두 보기`}
+          <ChevronDown size={15} aria-hidden="true" />
+        </MoreButton>
+      )}
+    </>
+  );
+}
+
 function HomePage() {
   const columns = useColumns();
   const [filter, setFilter] = useState('all');
@@ -700,8 +794,8 @@ function HomePage() {
               </ShelfLink>
             </ShelfLinks>
           </ShelfHead>
-          <ShelfGrid
-            items={advancedItems}
+          <ClassShelfGrid
+            groups={advancedGroups}
             columns={columns}
             expanded={isExpanded('advanced')}
             locked={filter === 'advanced'}
@@ -715,6 +809,7 @@ function HomePage() {
                 advancedId={item.advancedId}
                 playlistId={item.playlistId}
                 advanced
+                specOnly
               />
             )}
           />
