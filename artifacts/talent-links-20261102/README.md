@@ -8,4 +8,5 @@
 - 2026-11-02 오후 사제 심화편 업로드('업로드/사이트 상호보완')와 함께 priest-discipline, priest-holy, priest-shadow 도 넣었다(`_priest.cjs`, 영상 표 사본). 신성 궁극의 평온(1246517)은 KB 노트 종류가 `atomic-talent` 하나뿐이라 검사기 TIMELINE_TALENT_TYPES 에 그 종류를 더했다.
 - 2026-11-02 오후 죽음의 기사 심화편 업로드('진행시켜')와 함께 deathknight-frost, deathknight-unholy, deathknight-blood 도 넣었다(`_deathknight.cjs`, 영상 표 사본). 기수의 용사(444005)·신속하고 고통스럽게(443560)는 붙는 스킬이 없어 affects 칸을 만들지 않는다. 혈기 탐식(273953)·피의 희열(317614)은 KB 노트 type 이 atomic-skill 로 잘못 적혀 있어 talent 로 바로잡고 sync-kb 했다.
 - 2026-11-02 오후 주술사 심화편 업로드('사이트/유튜브 동기화 작업 ㄱㄱ')와 함께 shaman-elemental, shaman-enhancement, shaman-restoration 도 넣었다(`_shaman.cjs`, 영상 표 사본). 격류(200072)는 KB 종류가 시전 스킬이라 흐름도 상자 연결만 있고 타임라인 특성 칸에는 넣지 않는다.
+- 2026-11-02 저녁 마법사 심화편 공개('진행시켜')와 함께 mage-arcane, mage-fire, mage-frost 도 넣었다(`_mage.cjs`, 영상 표 사본). 유성 파편·유성은 같은 흐름도의 효과 상자 이름으로 잇는다. 원고 검사기의 특성 연결 검사 목록에 마법사 3개를 더했다.
 - 순서 주의: 특성 연결을 넣은 뒤 원고가 바뀌면(심화편 단추 등) `refresh-orig.cjs <id>`로 원본 스냅샷을 다시 맞춘 다음에 apply.cjs 를 돌린다. 2026-11-02 사냥꾼 단추를 넣은 뒤 8개 모두 다시 맞췄다.

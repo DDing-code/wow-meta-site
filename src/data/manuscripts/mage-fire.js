@@ -459,12 +459,18 @@ const manuscript = {
                   label: '꺼지지 않는 불꽃',
                   kind: 'talent',
                   note: '최대 충전 +1, 기본 재사용 2초 감소',
+                  affects: [
+                    '108853',
+                  ],
                 },
                 {
                   skillId: '387044',
                   label: '열성적인 깜빡임',
                   kind: 'talent',
                   note: '최대 충전 +1, 피해 25% 증가',
+                  affects: [
+                    '108853',
+                  ],
                 },
               ],
             },
@@ -476,24 +482,38 @@ const manuscript = {
                   label: '잿불의 생명',
                   kind: 'talent',
                   note: '직접 피해 주문마다 재사용 0.5초 감소',
+                  affects: [
+                    '108853',
+                  ],
                 },
                 {
                   skillId: '451875',
                   label: '자연 발화',
                   kind: 'talent',
                   note: '발화를 쓰면 충전 회복',
+                  affects: [
+                    '190319',
+                    '108853',
+                  ],
                 },
                 {
                   skillId: '383634',
                   label: '불타는 격정',
                   kind: 'talent',
                   note: '발화 중 50% 더 빠르게 재충전',
+                  affects: [
+                    '190319',
+                    '108853',
+                  ],
                 },
                 {
                   skillId: '1257349',
                   label: '광열(중간 단계)',
                   kind: 'talent',
                   note: '광열을 얻을 때 재사용 2.5초(2등급 5초) 감소',
+                  affects: [
+                    '108853',
+                  ],
                 },
               ],
             },
@@ -564,12 +584,20 @@ const manuscript = {
                   label: '자연 발화',
                   kind: 'talent',
                   note: '화염 작렬 충전 회복',
+                  affects: [
+                    '190319',
+                    '108853',
+                  ],
                 },
                 {
                   skillId: '383634',
                   label: '불타는 격정',
                   kind: 'talent',
                   note: '발화 중 화염 작렬 50% 빠른 재충전',
+                  affects: [
+                    '190319',
+                    '108853',
+                  ],
                 },
               ],
             },
@@ -591,6 +619,9 @@ const manuscript = {
                   label: '광열(마지막 단계)',
                   kind: 'talent',
                   note: '발화 중 광열이 더 자주 뜨고, 얻을 때마다 발화 1초 연장',
+                  affects: [
+                    '190319',
+                  ],
                 },
               ],
             },
@@ -643,6 +674,11 @@ const manuscript = {
                   kind: 'talent',
                   tag: '성난태양',
                   note: '유성이 화염 파열을 줌 · 보너스 20% 증가',
+                  affects: [
+                    '153561',
+                    '11366',
+                    '2120',
+                  ],
                 },
               ],
             },
@@ -759,18 +795,27 @@ const manuscript = {
                   label: '점화',
                   kind: 'talent',
                   note: '화염 작렬이 대상 작열의 50%를 다른 적 1명에게 전이',
+                  affects: [
+                    '108853',
+                  ],
                 },
                 {
                   skillId: '457735',
                   label: '일렁이는 열기',
                   kind: 'talent',
                   note: '발화 밖 작열 피해가 확률로 다음 불태우기를 즉시·강화',
+                  affects: [
+                    '2948',
+                  ],
                 },
                 {
                   skillId: '1271177',
                   label: '완전 연소',
                   kind: 'talent',
                   note: '발화가 끝날 때 남은 작열 피해의 75%가 폭발',
+                  affects: [
+                    '190319',
+                  ],
                 },
               ],
             },
@@ -816,6 +861,10 @@ const manuscript = {
                 {
                   skillId: '108853',
                   caption: '열기만 있으면 시전 중에',
+                  talents: [
+                    '205029',
+                    '342344',
+                  ],
                 },
                 {
                   skillId: '11366',
@@ -824,6 +873,9 @@ const manuscript = {
                     skillId: '153561',
                     when: '중간 유성 · 쿨이 돌면',
                   },
+                  talents: [
+                    '12846',
+                  ],
                 },
                 {
                   skillId: '133',
@@ -863,14 +915,25 @@ const manuscript = {
                     skillId: '2948',
                     when: '화염 파열 없으면 대신',
                   },
+                  talents: [
+                    '12846',
+                  ],
                 },
                 {
                   skillId: '190319',
                   caption: '진입 시전 끝나기 전',
+                  talents: [
+                    '451875',
+                    '383634',
+                  ],
                 },
                 {
                   skillId: '108853',
                   caption: '열기만 있을 때',
+                  talents: [
+                    '205029',
+                    '342344',
+                  ],
                 },
                 {
                   skillId: '11366',
@@ -883,6 +946,9 @@ const manuscript = {
                 {
                   skillId: '2948',
                   caption: '화염 작렬 충전이 없으면',
+                  talents: [
+                    '457735',
+                  ],
                 },
                 {
                   skillId: '11366',
@@ -898,14 +964,23 @@ const manuscript = {
                 {
                   skillId: '11366',
                   caption: '성난태양 · 발화 뒤 이상 고열 즉시 소비',
+                  talents: [
+                    '449349',
+                  ],
                 },
                 {
                   skillId: '2948',
                   caption: '성난태양 · 30% 미만 기본 주문',
+                  talents: [
+                    '457735',
+                  ],
                 },
                 {
                   skillId: '431044',
                   caption: '서리불꽃 · 화염구 대신 기본 주문',
+                  talents: [
+                    '431176',
+                  ],
                 },
                 {
                   skillId: '431044',
@@ -914,10 +989,16 @@ const manuscript = {
                 {
                   skillId: '153561',
                   caption: '서리불꽃 · 발화 남은 8초 안',
+                  talents: [
+                    '431176',
+                  ],
                 },
                 {
                   skillId: '2948',
                   caption: '서리불꽃 · 골랐을 때 이동 공백만',
+                  talents: [
+                    '457735',
+                  ],
                 },
               ],
             },
@@ -958,6 +1039,9 @@ const manuscript = {
                 {
                   skillId: '11366',
                   caption: '풀링 직전 미리 시전',
+                  talents: [
+                    '449349',
+                  ],
                 },
                 {
                   skillId: '133',
@@ -966,6 +1050,10 @@ const manuscript = {
                 {
                   skillId: '108853',
                   caption: '시전 중 열기 전환',
+                  talents: [
+                    '449394',
+                    '205029',
+                  ],
                 },
                 {
                   skillId: '11366',
@@ -974,6 +1062,9 @@ const manuscript = {
                 {
                   skillId: '153561',
                   caption: '발화 직전 · 먼저 누르기',
+                  talents: [
+                    '449349',
+                  ],
                 },
                 {
                   skillId: '11366',
@@ -982,10 +1073,17 @@ const manuscript = {
                 {
                   skillId: '2948',
                   caption: '진입 B · 화염 파열 없을 때만',
+                  talents: [
+                    '457735',
+                  ],
                 },
                 {
                   skillId: '190319',
                   caption: '진입 시전 끝나기 직전',
+                  talents: [
+                    '448658',
+                    '449382',
+                  ],
                 },
                 {
                   skillId: '11366',
@@ -1000,14 +1098,24 @@ const manuscript = {
                 {
                   skillId: '11366',
                   caption: '풀링 직전 미리 시전',
+                  talents: [
+                    '12846',
+                  ],
                 },
                 {
                   skillId: '431044',
                   caption: '방화광 · 90% 초과',
+                  talents: [
+                    '431176',
+                  ],
                 },
                 {
                   skillId: '108853',
                   caption: '시전 중 열기 전환',
+                  talents: [
+                    '205029',
+                    '342344',
+                  ],
                 },
                 {
                   skillId: '11366',
@@ -1020,6 +1128,10 @@ const manuscript = {
                 {
                   skillId: '190319',
                   caption: '진입 시전 끝나기 전',
+                  talents: [
+                    '451875',
+                    '383634',
+                  ],
                 },
                 {
                   skillId: '11366',
@@ -1028,6 +1140,9 @@ const manuscript = {
                 {
                   skillId: '153561',
                   caption: '발화 남은 8초 안 · 착탄 여유',
+                  talents: [
+                    '431176',
+                  ],
                 },
               ],
               note: '화염 파열이 있고 즉시 버프가 없다면 발화 진입을 직접 불덩이 작렬로 대신할 수 있습니다. 풀 전부터 화염 파열이 있다고 가정하지 않습니다.',
@@ -1069,6 +1184,9 @@ const manuscript = {
                 {
                   skillId: '153561',
                   caption: '모인 지점 · 발화 직전',
+                  talents: [
+                    '449349',
+                  ],
                 },
                 {
                   skillId: '2120',
@@ -1077,14 +1195,25 @@ const manuscript = {
                     skillId: '2948',
                     when: '화염 파열 없으면 대신',
                   },
+                  talents: [
+                    '449349',
+                  ],
                 },
                 {
                   skillId: '190319',
                   caption: '진입 시전 끝나기 전',
+                  talents: [
+                    '448658',
+                    '449382',
+                  ],
                 },
                 {
                   skillId: '108853',
                   caption: '열기만 있을 때',
+                  talents: [
+                    '449394',
+                    '205029',
+                  ],
                 },
                 {
                   skillId: '2120',
@@ -1103,22 +1232,39 @@ const manuscript = {
                 {
                   skillId: '431044',
                   caption: '몹 집결 · 직접 시전',
+                  talents: [
+                    '431176',
+                  ],
                 },
                 {
                   skillId: '108853',
                   caption: '열기만 있을 때',
+                  talents: [
+                    '205029',
+                    '342344',
+                  ],
                 },
                 {
                   skillId: '190319',
                   caption: '진입 시전 끝나기 전',
+                  talents: [
+                    '451875',
+                    '383634',
+                  ],
                 },
                 {
                   skillId: '2120',
                   caption: '몰아치는 열기! 즉시 소비',
+                  talents: [
+                    '12846',
+                  ],
                 },
                 {
                   skillId: '153561',
                   caption: '발화 후반 착탄',
+                  talents: [
+                    '431176',
+                  ],
                 },
                 {
                   skillId: '431044',
@@ -1146,10 +1292,17 @@ const manuscript = {
                     skillId: '190319',
                     when: '적이 모였고 시간이 충분하면',
                   },
+                  talents: [
+                    '205029',
+                    '342344',
+                  ],
                 },
                 {
                   skillId: '2120',
                   caption: '몰아치는 열기! 즉시 소비',
+                  talents: [
+                    '12846',
+                  ],
                 },
                 {
                   skillId: '108853',
@@ -1166,6 +1319,9 @@ const manuscript = {
                 {
                   skillId: '2948',
                   caption: '발화 중 충전 없으면',
+                  talents: [
+                    '457735',
+                  ],
                 },
               ],
               note: '기본 주문까지 긴 불기둥 시전으로 바꾸지 않습니다. 다음 화염 작렬을 누르기 전에 열기와 소비 상태를 다시 봅니다. 성난태양은 유성을 발화보다 먼저 누르고, 서리불꽃은 발화 안 후반에 씁니다.',
@@ -1177,22 +1333,37 @@ const manuscript = {
                 {
                   skillId: '11366',
                   caption: '우선 대상·방화광 구간이면 유지',
+                  talents: [
+                    '12846',
+                  ],
                 },
                 {
                   skillId: '2120',
                   caption: '성난태양 · 이상 고열로 즉시',
+                  talents: [
+                    '449349',
+                  ],
                 },
                 {
                   skillId: '2948',
                   caption: '일렁이는 열기 · 소비가 없을 때',
+                  talents: [
+                    '457735',
+                  ],
                 },
                 {
                   skillId: '431044',
                   caption: '서리불꽃 · 강화 화살 주변 폭발',
+                  talents: [
+                    '431176',
+                  ],
                 },
                 {
                   skillId: '153561',
                   caption: '서리불꽃 · 발화 후반 착탄',
+                  talents: [
+                    '431176',
+                  ],
                 },
               ],
             },
@@ -1270,12 +1441,19 @@ const manuscript = {
                     label: '비전화염 구슬',
                     kind: 'talent',
                     note: '하나당 주문 피해 1% · 비전투 중에도 서서히 생성',
+                    affects: [
+                      '11366',
+                      '190319',
+                    ],
                   },
                   {
                     skillId: '449394',
                     label: '영광스러운 광채',
                     kind: 'talent',
                     note: '구슬이 생기면 다음 화염 작렬이 유성 파편 4개',
+                    affects: [
+                      '108853',
+                    ],
                   },
                 ],
               },
@@ -1293,6 +1471,9 @@ const manuscript = {
                     label: '태양길잡이 전서',
                     kind: 'talent',
                     note: '구슬을 모두 소비 · 구슬마다 발화 중 주문 피해 1%',
+                    affects: [
+                      '190319',
+                    ],
                   },
                 ],
               },
@@ -1471,6 +1652,10 @@ const manuscript = {
                     label: '서리불꽃 강화',
                     kind: 'talent',
                     note: '급속 냉동화상이 유성으로 제공 · 복합 주문 사용 시 10% 확률',
+                    affects: [
+                      '153561',
+                      '431044',
+                    ],
                   },
                 ],
               },
@@ -2975,6 +3160,11 @@ const manuscript = {
     video: {
       youtubeId: 'VryKveYgh3E',
       title: '한밤 2시즌 12.1.5 화염 마법사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'vHj32M1FYco',
+      title: '한밤 2시즌 12.1.5 화염 마법사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

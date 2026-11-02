@@ -397,6 +397,9 @@ const manuscript = {
                   label: '얼음 심장',
                   kind: 'talent',
                   note: '+1중첩',
+                  affects: [
+                    '30455',
+                  ],
                 },
                 {
                   skillId: '1261082',
@@ -404,6 +407,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '주문술사',
                   note: '+1중첩 · 산산조각 피해 20% 증가',
+                  affects: [
+                    '30455',
+                  ],
                 },
                 {
                   skillId: '1247730',
@@ -616,6 +622,9 @@ const manuscript = {
                   label: '고드름',
                   kind: 'talent',
                   note: '전투 중 기본 6초마다 생성 · 우박이면 5초',
+                  affects: [
+                    '199786',
+                  ],
                 },
                 {
                   label: '시즌 2 2세트',
@@ -655,18 +664,28 @@ const manuscript = {
                   label: '빙하의 한기',
                   kind: 'talent',
                   note: '빙결 2중첩 추가 · 합쳐 5중첩 생성',
+                  affects: [
+                    '199786',
+                  ],
                 },
                 {
                   skillId: '1280780',
                   label: '빙하 분쇄',
                   kind: 'talent',
                   note: '빙결을 쌓는 대신 5중첩을 산산조각',
+                  affects: [
+                    '199786',
+                  ],
                 },
                 {
                   skillId: '379993',
                   label: '순간 빙결',
                   kind: 'talent',
                   note: '서리의 손가락 확정',
+                  affects: [
+                    '199786',
+                    '30455',
+                  ],
                 },
               ],
             },
@@ -729,24 +748,39 @@ const manuscript = {
                   label: '겨울해일',
                   kind: 'talent',
                   note: '구슬 시전 시 두뇌 빙결 확정',
+                  affects: [
+                    '84714',
+                    '44614',
+                  ],
                 },
                 {
                   skillId: '385167',
                   label: '영원한 서리',
                   kind: 'talent',
                   note: '구슬 시전 시 서리의 손가락 1중첩',
+                  affects: [
+                    '84714',
+                    '30455',
+                  ],
                 },
                 {
                   skillId: '270233',
                   label: '빗발치는 냉기',
                   kind: 'talent',
                   note: '구슬 뒤 눈보라 즉시 시전 · 눈보라 피해 20% 증가',
+                  affects: [
+                    '84714',
+                    '190356',
+                  ],
                 },
                 {
                   skillId: '1263249',
                   label: '차디찬 손길(정점 마지막)',
                   kind: 'talent',
                   note: '광선 2충전 · 채널 중 손길 4개 · 피해 25% 증가',
+                  affects: [
+                    '205021',
+                  ],
                 },
               ],
             },
@@ -758,12 +792,20 @@ const manuscript = {
                   label: '백시 현상',
                   kind: 'talent',
                   note: '구슬 재사용 0.5초 + 터뜨린 중첩당 0.1초 감소',
+                  affects: [
+                    '30455',
+                    '84714',
+                  ],
                 },
                 {
                   skillId: '1247798',
                   label: '빙하 작용',
                   kind: 'talent',
                   note: '터뜨린 중첩당 광선 재사용 0.10초 감소',
+                  affects: [
+                    '30455',
+                    '205021',
+                  ],
                 },
               ],
             },
@@ -810,14 +852,24 @@ const manuscript = {
                     skillId: '199786',
                     when: '혹한의 쐐기!가 뜨면 그 자리에',
                   },
+                  talents: [
+                    '443739',
+                  ],
                 },
                 {
                   skillId: '44614',
                   caption: '두뇌 빙결 · 열기 동공 없음',
+                  talents: [
+                    '443739',
+                  ],
                 },
                 {
                   skillId: '30455',
                   caption: '열기 동공 실어 소비',
+                  talents: [
+                    '444719',
+                    '1261082',
+                  ],
                 },
                 {
                   skillId: '116',
@@ -861,6 +913,9 @@ const manuscript = {
                     skillId: '199786',
                     when: '혹한의 쐐기!면 가장 먼저',
                   },
+                  talents: [
+                    '431178',
+                  ],
                 },
                 {
                   skillId: '44614',
@@ -873,6 +928,10 @@ const manuscript = {
                 {
                   skillId: '30455',
                   caption: '열기 동공 실어 소비',
+                  talents: [
+                    '1247799',
+                    '1281638',
+                  ],
                 },
                 {
                   skillId: '431044',
@@ -912,22 +971,37 @@ const manuscript = {
                 {
                   skillId: '30455',
                   caption: '서리의 손가락 2충전이면 먼저',
+                  talents: [
+                    '1247799',
+                  ],
                 },
                 {
                   skillId: '199786',
                   caption: '빙하 분쇄면 빙결을 남겨 두고',
+                  talents: [
+                    '1246832',
+                  ],
                 },
                 {
                   skillId: '205021',
                   caption: '정점이면 2충전 · 쌓아 두지 않기',
+                  talents: [
+                    '1247798',
+                  ],
                 },
                 {
                   skillId: '431044',
                   caption: '서리불꽃 강화면 즉시 화살',
+                  talents: [
+                    '431178',
+                  ],
                 },
                 {
                   skillId: '84714',
                   caption: '겨울해일 전 열기 동공 확인',
+                  talents: [
+                    '378406',
+                  ],
                 },
               ],
             },
@@ -972,18 +1046,32 @@ const manuscript = {
                 {
                   skillId: '116',
                   caption: '풀링 직전 미리 시전',
+                  talents: [
+                    '443739',
+                  ],
                 },
                 {
                   skillId: '44614',
                   caption: '첫 빙결 쌓기',
+                  talents: [
+                    '443739',
+                  ],
                 },
                 {
                   skillId: '84714',
                   caption: '경로·대상 확보',
+                  talents: [
+                    '444986',
+                    '378406',
+                  ],
                 },
                 {
                   skillId: '205021',
                   caption: '안전한 자리에서 채널',
+                  talents: [
+                    '1263249',
+                    '443783',
+                  ],
                 },
                 {
                   skillId: '44614',
@@ -993,10 +1081,18 @@ const manuscript = {
                   skillId: '30455',
                   caption: '발동·중첩 조건',
                   count: '3~5',
+                  talents: [
+                    '444719',
+                    '1261082',
+                  ],
                 },
                 {
                   skillId: '199786',
                   caption: '실제로 준비됐을 때만',
+                  talents: [
+                    '1246832',
+                    '1280779',
+                  ],
                 },
               ],
               note: '광선 뒤 진눈깨비 → 얼음창은 스조라크 신화 상위 주문술사 기록 9개 중 6개의 순서이고, 얼음창은 3·3·4·4·5·1번 이어 썼습니다. 마지막 혹한의 쐐기는 조건부입니다. 고드름이나 발동이 없으면 기다리지 말고 단일 우선순위로 넘어갑니다.',
@@ -1007,6 +1103,9 @@ const manuscript = {
                 {
                   skillId: '431044',
                   caption: '풀링 2초 전 미리 시전',
+                  talents: [
+                    '431178',
+                  ],
                 },
                 {
                   skillId: '44614',
@@ -1015,22 +1114,40 @@ const manuscript = {
                 {
                   skillId: '205021',
                   caption: '단일은 끝까지 · 1충전',
+                  talents: [
+                    '1247798',
+                  ],
                 },
                 {
                   skillId: '84714',
                   caption: '경로·대상 확보',
+                  talents: [
+                    '378406',
+                    '385167',
+                  ],
                 },
                 {
                   skillId: '30455',
                   caption: '발동·열기 동공·12중첩',
+                  talents: [
+                    '1247799',
+                    '1281638',
+                  ],
                 },
                 {
                   skillId: '199786',
                   caption: '준비됐으면 혜성보다 먼저',
+                  talents: [
+                    '431178',
+                    '1246832',
+                  ],
                 },
                 {
                   skillId: '153595',
                   caption: '혜성 폭풍! · 쐐기 뒤',
+                  talents: [
+                    '1248016',
+                  ],
                 },
               ],
               note: '혹한의 쐐기가 준비되면 혜성 폭풍보다 먼저 씁니다. 12.1.5 상위 레이드 로그 5개 중 4개도 첫 쐐기 뒤에 혜성 폭풍을 썼습니다. 얼음창은 조건이 없으면 억지로 쓰지 않고, 쐐기는 실제로 준비됐을 때만 씁니다.',
@@ -1071,22 +1188,40 @@ const manuscript = {
                 {
                   skillId: '84714',
                   caption: '모인 적에게 먼저',
+                  talents: [
+                    '444986',
+                    '378406',
+                  ],
                 },
                 {
                   skillId: '190356',
                   caption: '빗발치는 냉기로 즉시',
+                  talents: [
+                    '270233',
+                  ],
                 },
                 {
                   skillId: '44614',
                   caption: '두뇌 빙결 · 주 대상 빙결',
+                  talents: [
+                    '443739',
+                  ],
                 },
                 {
                   skillId: '30455',
                   caption: '발동 또는 6중첩',
+                  talents: [
+                    '444719',
+                    '1261082',
+                  ],
                 },
                 {
                   skillId: '205021',
                   caption: '첫 광선 · 안전 위치',
+                  talents: [
+                    '1263249',
+                    '443783',
+                  ],
                 },
                 {
                   skillId: '30455',
@@ -1101,6 +1236,9 @@ const manuscript = {
                 {
                   skillId: '205021',
                   caption: '풀 시작 · 글쿨 뒤 끊어도 됨',
+                  talents: [
+                    '1247798',
+                  ],
                 },
                 {
                   skillId: '44614',
@@ -1113,18 +1251,32 @@ const manuscript = {
                     skillId: '190356',
                     when: '빗발치는 냉기를 골랐다면 즉시',
                   },
+                  talents: [
+                    '378406',
+                    '385167',
+                  ],
                 },
                 {
                   skillId: '431044',
                   caption: '강화 화살일 때만',
+                  talents: [
+                    '431178',
+                  ],
                 },
                 {
                   skillId: '199786',
                   caption: '준비되면 혜성보다 먼저',
+                  talents: [
+                    '431178',
+                    '1246832',
+                  ],
                 },
                 {
                   skillId: '153595',
                   caption: '재동결 끝을 확인하고',
+                  talents: [
+                    '1248016',
+                  ],
                 },
               ],
               note: '혜성 폭풍 뒤 유성은 저절로 떨어집니다. 직접 쓰는 단계가 아닙니다. 12.1.5 상위 쐐기 로그의 서리불꽃은 눈보라를 거의 쓰지 않았습니다. 빗발치는 냉기를 골랐거나 적이 8명 이상일 때만 눈보라를 넣습니다.',
@@ -1140,10 +1292,16 @@ const manuscript = {
                     skillId: '199786',
                     when: '쐐기가 준비되면',
                   },
+                  talents: [
+                    '443739',
+                  ],
                 },
                 {
                   skillId: '44614',
                   caption: '두뇌 빙결 · 열기 동공 없음',
+                  talents: [
+                    '443739',
+                  ],
                 },
                 {
                   skillId: '30455',
@@ -1152,10 +1310,17 @@ const manuscript = {
                     skillId: '84714',
                     when: '모인 적 · 경로 확보',
                   },
+                  talents: [
+                    '444719',
+                    '1261082',
+                  ],
                 },
                 {
                   skillId: '190356',
                   caption: '빗발치는 냉기로 즉시',
+                  talents: [
+                    '270233',
+                  ],
                 },
                 {
                   skillId: '30455',
@@ -1187,6 +1352,9 @@ const manuscript = {
                     skillId: '199786',
                     when: '쐐기가 준비되면 가장 먼저',
                   },
+                  talents: [
+                    '431178',
+                  ],
                 },
                 {
                   skillId: '44614',
@@ -1203,6 +1371,10 @@ const manuscript = {
                     skillId: '205021',
                     when: '글쿨 뒤 끊고 혜성으로',
                   },
+                  talents: [
+                    '1247799',
+                    '1281638',
+                  ],
                 },
                 {
                   skillId: '431044',
@@ -1215,6 +1387,9 @@ const manuscript = {
                 {
                   skillId: '190356',
                   caption: '빗발치는 냉기 또는 8대상',
+                  talents: [
+                    '270233',
+                  ],
                 },
                 {
                   skillId: '30455',
@@ -1317,18 +1492,28 @@ const manuscript = {
                   label: '쇄편의 마술',
                   kind: 'talent',
                   note: '얼음 화살·진눈깨비 시전으로 쇄편',
+                  affects: [
+                    '116',
+                    '44614',
+                  ],
                 },
                 {
                   skillId: '444719',
                   label: '의지의 힘',
                   kind: 'talent',
                   note: '얼음창이 주 대상에서 터뜨린 2중첩마다 쇄편',
+                  affects: [
+                    '30455',
+                  ],
                 },
                 {
                   skillId: '443783',
                   label: '쇄편폭풍',
                   kind: 'talent',
                   note: '광선 피해마다 쇄편 · 이후 10초 추가 쇄편 확률 100%',
+                  affects: [
+                    '205021',
+                  ],
                 },
               ],
             },
@@ -1351,12 +1536,18 @@ const manuscript = {
                   label: '비전냉기의 가르침',
                   kind: 'talent',
                   note: '얼어붙은 구슬 재사용 0.30초 감소',
+                  affects: [
+                    '84714',
+                  ],
                 },
                 {
                   skillId: '1261080',
                   label: '마력 깃든 쇄편',
                   kind: 'talent',
                   note: '15% 확률로 대상 빙결 1중첩',
+                  affects: [
+                    '30455',
+                  ],
                 },
               ],
             },
@@ -1522,6 +1713,10 @@ const manuscript = {
                     label: '폭발 반경',
                     kind: 'talent',
                     note: '혜성 폭풍 50% · 유성 20% 증가',
+                    affects: [
+                      '153595',
+                      '유성',
+                    ],
                   },
                 ],
               },
@@ -1547,6 +1742,10 @@ const manuscript = {
                     label: '급속 냉동화상',
                     kind: 'talent',
                     note: '쐐기 피해 15% · 주변 최대 5명에 25% 폭발 · 서리불꽃 강화 제공',
+                    affects: [
+                      '199786',
+                      '431044',
+                    ],
                   },
                   {
                     label: '불덩이 작렬',
@@ -3052,6 +3251,11 @@ const manuscript = {
     video: {
       youtubeId: 'AZNhRLnrLWg',
       title: '한밤 2시즌 12.1.5 냉기 마법사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'UjzEaZSte6Y',
+      title: '한밤 2시즌 12.1.5 냉기 마법사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

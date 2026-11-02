@@ -703,6 +703,9 @@ const manuscript = {
                 {
                   skillId: '1295924',
                   caption: '발동했으면 탄막 전에',
+                  talents: [
+                    '1243557',
+                  ],
                 },
                 {
                   skillId: '44425',
@@ -723,10 +726,16 @@ const manuscript = {
                 {
                   skillId: '153626',
                   caption: '충전물 0이면 복구',
+                  talents: [
+                    '1243557',
+                  ],
                 },
                 {
                   skillId: '30451',
                   caption: '위 조건이 모두 없을 때',
+                  talents: [
+                    '383676',
+                  ],
                 },
               ],
               note: '오색 화살은 충전물 4개를 채워 주니, 켜져 있으면 탄막보다 먼저 씁니다. 스조라크 신화 상위 로그 10개에서도 오색 화살 다음은 85%가 탄막이었습니다. 4세트가 있으면 축적된 힘 8중첩을 노리되 덮어쓰기와 시전 공백을 만들면서 기다리지 않습니다.',
@@ -737,11 +746,18 @@ const manuscript = {
                 {
                   skillId: '5143',
                   caption: '번뜩임 · 12 미만이면 먼저',
+                  talents: [
+                    '1260673',
+                  ],
                 },
                 {
                   skillId: '44425',
                   caption: '영혼 끝까지 탄막',
                   count: '4~6',
+                  talents: [
+                    '1260616',
+                    '449394',
+                  ],
                 },
                 {
                   skillId: '5143',
@@ -757,18 +773,30 @@ const manuscript = {
                 {
                   skillId: '1295924',
                   caption: '성난태양 · 4세트면 축적된 힘 8중첩 목표',
+                  talents: [
+                    '1243557',
+                  ],
                 },
                 {
                   skillId: '44425',
                   caption: '성난태양 · 마나가 실제로 막혔을 때만',
+                  talents: [
+                    '1260616',
+                  ],
                 },
                 {
                   skillId: '1295924',
                   caption: '주문술사 · 연사 13 초과 + 축적된 힘 6 이상 등',
+                  talents: [
+                    '1243557',
+                  ],
                 },
                 {
                   skillId: '44425',
                   caption: '주문술사 · 충전물 4 · 연사 20',
+                  talents: [
+                    '1261080',
+                  ],
                 },
                 {
                   skillId: '5143',
@@ -777,6 +805,9 @@ const manuscript = {
                 {
                   skillId: '153626',
                   caption: '주문술사 · 충전물 없을 때 복구',
+                  talents: [
+                    '1243435',
+                  ],
                 },
               ],
             },
@@ -817,18 +848,32 @@ const manuscript = {
                 {
                   skillId: '153626',
                   caption: '충전물이 모자랄 때만 준비',
+                  talents: [
+                    '1243557',
+                  ],
                 },
                 {
                   skillId: '365350',
                   caption: '풀링 직전 미리 시전',
+                  talents: [
+                    '448658',
+                    '449382',
+                  ],
                 },
                 {
                   skillId: '5143',
                   caption: '번뜩임 · 연사 12 미만',
+                  talents: [
+                    '1260673',
+                  ],
                 },
                 {
                   skillId: '44425',
                   caption: '충전물 4 · 투사체 발사',
+                  talents: [
+                    '1260616',
+                    '449394',
+                  ],
                 },
                 {
                   skillId: '321507',
@@ -842,6 +887,9 @@ const manuscript = {
                   skillId: '30451',
                   caption: '오색 화살 없으면 채우기',
                   count: '3~6',
+                  talents: [
+                    '383676',
+                  ],
                 },
                 {
                   skillId: '44425',
@@ -856,10 +904,17 @@ const manuscript = {
                 {
                   skillId: '153626',
                   caption: '충전물이 부족할 때 준비',
+                  talents: [
+                    '1243435',
+                    '444986',
+                  ],
                 },
                 {
                   skillId: '365350',
                   caption: '계획한 첫 공격 구간',
+                  talents: [
+                    '443783',
+                  ],
                 },
                 {
                   skillId: '5143',
@@ -868,6 +923,9 @@ const manuscript = {
                 {
                   skillId: '44425',
                   caption: '충전물 4 · 투사체 발사',
+                  talents: [
+                    '1261080',
+                  ],
                 },
                 {
                   skillId: '321507',
@@ -876,6 +934,9 @@ const manuscript = {
                 {
                   skillId: '1295924',
                   caption: '발동했다면',
+                  talents: [
+                    '1243557',
+                  ],
                 },
                 {
                   skillId: '44425',
@@ -926,10 +987,16 @@ const manuscript = {
                     skillId: '365350',
                     when: '무리가 충분히 오래 살면',
                   },
+                  talents: [
+                    '1260673',
+                  ],
                 },
                 {
                   skillId: '1295924',
                   caption: '발동 · 살아 있는 무리에',
+                  talents: [
+                    '1243557',
+                  ],
                 },
                 {
                   skillId: '44425',
@@ -938,10 +1005,17 @@ const manuscript = {
                     skillId: '321507',
                     when: '오래 살 적 · 탄막 비행 중',
                   },
+                  talents: [
+                    '1260616',
+                    '449394',
+                  ],
                 },
                 {
                   skillId: '153626',
                   caption: '탄막 뒤 충전물 복구',
+                  talents: [
+                    '1243557',
+                  ],
                 },
                 {
                   skillId: '5143',
@@ -954,6 +1028,9 @@ const manuscript = {
                 {
                   skillId: '30451',
                   caption: '조건이 모두 없을 때',
+                  talents: [
+                    '383676',
+                  ],
                 },
               ],
               note: '오색 화살이 켜져 있으면 탄막보다 먼저 써서 충전물 4개를 채웁니다. 12.1.5 상위 쐐기 로그에서도 오색 화살 다음 버튼은 대개 탄막이었습니다. 보주가 준비됐다는 말은 실제로 적에게 맞혀 충전물을 돌려받을 위치라는 뜻까지 포함합니다. 흩어진 적이나 지형에 막힌 방향으로 던지지 않습니다.',
@@ -965,14 +1042,24 @@ const manuscript = {
                 {
                   skillId: '1295924',
                   caption: '2대상 이상 · 발동 우선',
+                  talents: [
+                    '1243557',
+                  ],
                 },
                 {
                   skillId: '153626',
                   caption: '보주 숙련 · 충전물 상한까지',
+                  talents: [
+                    '1243435',
+                    '444986',
+                  ],
                 },
                 {
                   skillId: '44425',
                   caption: '충전물 4 · 연사 20',
+                  talents: [
+                    '1261080',
+                  ],
                 },
                 {
                   skillId: '5143',
@@ -989,6 +1076,9 @@ const manuscript = {
                 {
                   skillId: '30451',
                   caption: '앞선 조건이 없을 때',
+                  talents: [
+                    '443739',
+                  ],
                 },
               ],
               note: '적이 한 명으로 줄면 광역 보주 우선순위를 끝내고 단일 기준으로 돌아갑니다.',
@@ -1000,18 +1090,30 @@ const manuscript = {
                 {
                   skillId: '1241462',
                   caption: '비전 파동을 골랐다면 · 보주 대신 복구 수단',
+                  talents: [
+                    '281482',
+                  ],
                 },
                 {
                   skillId: '44425',
                   caption: '성난태양 · 영혼 중이면 화살 조건 다음',
+                  talents: [
+                    '1260616',
+                  ],
                 },
                 {
                   skillId: '1295924',
                   caption: '우선 대상을 직접 대상으로',
+                  talents: [
+                    '1243557',
+                  ],
                 },
                 {
                   skillId: '30451',
                   caption: '적이 줄면 단일 판단으로',
+                  talents: [
+                    '383676',
+                  ],
                 },
               ],
             },
@@ -1078,6 +1180,9 @@ const manuscript = {
                     label: '비전화염 구슬',
                     kind: 'talent',
                     note: '공격 주문 시전 시 기본 6% 확률 · 하나당 주문 피해 1% · 최대 3개',
+                    affects: [
+                      '365350',
+                    ],
                   },
                 ],
               },
@@ -1095,6 +1200,9 @@ const manuscript = {
                     label: '태양길잡이 전서',
                     kind: 'talent',
                     note: '구슬을 모두 소비 · 구슬마다 쇄도 중 주문 피해 1%',
+                    affects: [
+                      '365350',
+                    ],
                   },
                 ],
               },
@@ -1122,6 +1230,10 @@ const manuscript = {
                     label: '비전화염 연사',
                     kind: 'talent',
                     note: '비전 연사 최대 +5(25중첩) · 유성 파편 피해 15%',
+                    affects: [
+                      '44425',
+                      '유성 파편',
+                    ],
                   },
                 ],
               },
@@ -1133,12 +1245,20 @@ const manuscript = {
                     label: '영광스러운 광채',
                     kind: 'talent',
                     note: '탄막이 소비한 연사 5중첩마다 파편 1개',
+                    affects: [
+                      '44425',
+                      '유성 파편',
+                    ],
                   },
                   {
                     skillId: '1260673',
                     label: '화염계',
                     kind: 'talent',
                     note: '화살 파동마다 파편 발동 판정',
+                    affects: [
+                      '5143',
+                      '유성 파편',
+                    ],
                   },
                 ],
               },
@@ -1269,12 +1389,19 @@ const manuscript = {
                     label: '쇄편의 마술',
                     kind: 'talent',
                     note: '비전 작렬·비전 파동 시전으로 쇄편 생성',
+                    affects: [
+                      '30451',
+                      '1241462',
+                    ],
                   },
                   {
                     skillId: '443783',
                     label: '쇄편폭풍',
                     kind: 'talent',
                     note: '비전 쇄도로 쇄편 8개 · 지속 중 추가 쇄편 확률 100%',
+                    affects: [
+                      '365350',
+                    ],
                   },
                 ],
               },
@@ -1286,12 +1413,18 @@ const manuscript = {
                     label: '마력 깃든 쇄편',
                     kind: 'talent',
                     note: '25% 확률로 비전 연사 1중첩',
+                    affects: [
+                      '44425',
+                    ],
                   },
                   {
                     skillId: '444986',
                     label: '비전냉기의 가르침',
                     kind: 'talent',
                     note: '비전 보주 재사용 0.30초 감소',
+                    affects: [
+                      '153626',
+                    ],
                   },
                 ],
               },
@@ -1329,6 +1462,9 @@ const manuscript = {
                     label: '보주 숙련',
                     kind: 'talent',
                     note: '50% 효율 보주 2개 추가 · 번뜩임을 소비하지 않음',
+                    affects: [
+                      '153626',
+                    ],
                   },
                 ],
               },
@@ -2591,6 +2727,11 @@ const manuscript = {
     video: {
       youtubeId: 'shdTiGJmyYg',
       title: '한밤 2시즌 12.1.5 비전 마법사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'FzF88STMgR8',
+      title: '한밤 2시즌 12.1.5 비전 마법사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

@@ -29,6 +29,9 @@ const GUIDES = {
   'shaman-elemental': '/guide/shaman/elemental',
   'shaman-enhancement': '/guide/shaman/enhancement',
   'shaman-restoration': '/guide/shaman/restoration',
+  'mage-arcane': '/guide/mage/arcane',
+  'mage-fire': '/guide/mage/fire',
+  'mage-frost': '/guide/mage/frost',
 };
 const only = process.argv.slice(3);
 (async () => {
