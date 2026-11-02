@@ -547,12 +547,19 @@ const manuscript = {
                     label: '북극의 맹공',
                     kind: 'talent',
                     note: '60% 효율 빙하 진군 자동 발사',
+                    affects: [
+                      '49020',
+                      '207230',
+                    ],
                   },
                   {
                     skillId: '1230153',
                     label: '살상의 연쇄',
                     kind: 'talent',
                     note: '소비한 중첩에 따라 8초 치명타 피해·가속',
+                    affects: [
+                      '51128',
+                    ],
                   },
                 ],
               },
@@ -647,6 +654,10 @@ const manuscript = {
                   label: '얼어붙은 지배',
                   kind: 'talent',
                   note: '지속시간이 4초 늘어난 냉혹한 겨울이 저절로 발동',
+                  affects: [
+                    '51271',
+                    '196770',
+                  ],
                 },
                 {
                   skillId: '279302',
@@ -663,6 +674,11 @@ const manuscript = {
                   label: '말살',
                   kind: 'talent',
                   note: '냉기의 일격·빙하 진군·한파가 도살기 부여, 20% 확률로 룬',
+                  affects: [
+                    '51271',
+                    '49143',
+                    '49184',
+                  ],
                 },
                 {
                   skillId: '47568',
@@ -679,12 +695,19 @@ const manuscript = {
                   label: '기나긴 겨울',
                   kind: 'talent',
                   note: '평타 치명타마다 1초, 최대 4초',
+                  affects: [
+                    '51271',
+                  ],
                 },
                 {
                   skillId: '1265633',
                   label: '서리고룡족의 선택',
                   kind: 'talent',
                   note: '서리고룡을 쓰면 이미 켜진 기둥 연장 · 기본 랭크 2초',
+                  affects: [
+                    '279302',
+                    '51271',
+                  ],
                 },
               ],
             },
@@ -883,6 +906,9 @@ const manuscript = {
                   label: '기나긴 겨울',
                   kind: 'talent',
                   note: '기둥 중 1초씩 최대 4초 연장',
+                  affects: [
+                    '51271',
+                  ],
                 },
               ],
             },
@@ -925,6 +951,10 @@ const manuscript = {
                     skillId: '47568',
                     when: '2충전 전에',
                   },
+                  talents: [
+                    '456230',
+                    '1230153',
+                  ],
                 },
                 {
                   skillId: '49143',
@@ -933,10 +963,16 @@ const manuscript = {
                     skillId: '51271',
                     when: '쿨이 돌면 · 근접에서',
                   },
+                  talents: [
+                    '281238',
+                  ],
                 },
                 {
                   skillId: '49184',
                   caption: '단단한 얼음 발동',
+                  talents: [
+                    '281238',
+                  ],
                 },
                 {
                   skillId: '49020',
@@ -972,18 +1008,32 @@ const manuscript = {
                 {
                   skillId: '439843',
                   caption: '죽음의 인도자 · 기둥 직전',
+                  talents: [
+                    '434905',
+                    '455857',
+                  ],
                 },
                 {
                   skillId: '49020',
                   caption: '죽음의 인도자 · 몰살 두 번',
+                  talents: [
+                    '456230',
+                    '1230153',
+                  ],
                 },
                 {
                   skillId: '279302',
                   caption: '죽음의 인도자 · 몰살 뒤 회수',
+                  talents: [
+                    '1265637',
+                  ],
                 },
                 {
                   skillId: '51271',
                   caption: '종말의 기수 · 공격 가능 구간',
+                  talents: [
+                    '377253',
+                  ],
                 },
                 {
                   skillId: '279302',
@@ -1036,10 +1086,18 @@ const manuscript = {
                 {
                   skillId: '439843',
                   caption: '기둥 직전 징표',
+                  talents: [
+                    '434905',
+                    '455857',
+                  ],
                 },
                 {
                   skillId: '51271',
                   caption: '극딜 시작',
+                  talents: [
+                    '377253',
+                    '456240',
+                  ],
                 },
                 {
                   skillId: '1249658',
@@ -1048,10 +1106,17 @@ const manuscript = {
                 {
                   skillId: '49020',
                   caption: '숨결 켜지면 바로',
+                  talents: [
+                    '456230',
+                    '1230153',
+                  ],
                 },
                 {
                   skillId: '279302',
                   caption: '첫 절멸 뒤',
+                  talents: [
+                    '1265637',
+                  ],
                 },
                 {
                   skillId: '49020',
@@ -1082,14 +1147,24 @@ const manuscript = {
                 {
                   skillId: '49020',
                   caption: '룬 마력 60 준비',
+                  talents: [
+                    '456230',
+                    '1230153',
+                  ],
                 },
                 {
                   skillId: '51271',
                   caption: '근접 유지 구간',
+                  talents: [
+                    '377253',
+                  ],
                 },
                 {
                   skillId: '279302',
                   caption: '기둥 초반 · 기사단',
+                  talents: [
+                    '444040',
+                  ],
                 },
                 {
                   skillId: '1249658',
@@ -1102,6 +1177,9 @@ const manuscript = {
                 {
                   skillId: '49143',
                   caption: '숨결 중에도',
+                  talents: [
+                    '281238',
+                  ],
                 },
                 {
                   skillId: '279302',
@@ -1152,6 +1230,10 @@ const manuscript = {
                     skillId: '51271',
                     when: '적이 멈추면 · 겨울 적중',
                   },
+                  talents: [
+                    '456230',
+                    '1230153',
+                  ],
                 },
                 {
                   skillId: '194913',
@@ -1164,6 +1246,9 @@ const manuscript = {
                 {
                   skillId: '49184',
                   caption: '단단한 얼음 발동',
+                  talents: [
+                    '281238',
+                  ],
                 },
                 {
                   skillId: '207230',
@@ -1199,14 +1284,24 @@ const manuscript = {
                 {
                   skillId: '49143',
                   caption: '냉기파멸 발동 · 광역',
+                  talents: [
+                    '281238',
+                  ],
                 },
                 {
                   skillId: '207230',
                   caption: '도살기 소비',
+                  talents: [
+                    '456230',
+                    '1230153',
+                  ],
                 },
                 {
                   skillId: '49184',
                   caption: '단단한 얼음',
+                  talents: [
+                    '281238',
+                  ],
                 },
                 {
                   skillId: '194913',
@@ -1226,22 +1321,41 @@ const manuscript = {
                 {
                   skillId: '439843',
                   caption: '죽음의 인도자 · 오래 살 적에게',
+                  talents: [
+                    '434905',
+                    '455857',
+                  ],
                 },
                 {
                   skillId: '207230',
                   caption: '죽음의 인도자 · 몰살 두 번',
+                  talents: [
+                    '456230',
+                    '1230153',
+                  ],
                 },
                 {
                   skillId: '49020',
                   caption: '적이 둘 이하로 줄면',
+                  talents: [
+                    '456230',
+                    '1230153',
+                  ],
                 },
                 {
                   skillId: '51271',
                   caption: '공통 · 적이 멈춘 뒤',
+                  talents: [
+                    '377253',
+                    '456240',
+                  ],
                 },
                 {
                   skillId: '279302',
                   caption: '종말의 기수 · 모인 적에 기사단',
+                  talents: [
+                    '444040',
+                  ],
                 },
                 {
                   skillId: '279302',
@@ -1315,6 +1429,9 @@ const manuscript = {
                   label: '공포의 사신',
                   kind: 'talent',
                   note: '최초 공격이 도살기 1회 · 폭발 피해는 대상이 잃은 생명력에 따라 최대 30%',
+                  affects: [
+                    '439843',
+                  ],
                 },
               ],
             },
@@ -1331,6 +1448,9 @@ const manuscript = {
                   label: '영혼의 파도',
                   kind: 'talent',
                   note: '징표에 연결된 암흑냉기 피해 · 직접 시전 아님',
+                  affects: [
+                    '439843',
+                  ],
                 },
               ],
             },
@@ -1492,6 +1612,9 @@ const manuscript = {
                   label: '대재앙의 묵시록',
                   kind: 'talent',
                   note: '20초 동안 4인 기사단 전원 소환 · 회수는 50% 효율이라 첫 소환과 같게 보지 않음',
+                  affects: [
+                    '279302',
+                  ],
                 },
               ],
             },
@@ -1563,6 +1686,9 @@ const manuscript = {
                   label: '서리고룡족의 선택 (첫 노드)',
                   kind: 'talent',
                   note: '첫 적중 대상 피해 100% · 12초 동안 가속 15%',
+                  affects: [
+                    '279302',
+                  ],
                 },
                 {
                   skillId: '279302',
@@ -1580,6 +1706,10 @@ const manuscript = {
                   label: '서리고룡족의 선택 (연장)',
                   kind: 'talent',
                   note: '기둥 지속시간 연장 · 기본 랭크 2초',
+                  affects: [
+                    '279302',
+                    '51271',
+                  ],
                 },
               ],
             },
@@ -1591,6 +1721,9 @@ const manuscript = {
                   label: '서리고룡족의 선택 (회수)',
                   kind: 'talent',
                   note: '50% 효율로 다시 부름 · 같은 서리고룡의 격노 버튼',
+                  affects: [
+                    '279302',
+                  ],
                 },
               ],
             },
@@ -3100,6 +3233,11 @@ const manuscript = {
     video: {
       youtubeId: 'Ue4TGhGZ-fE',
       title: '한밤 2시즌 12.1.5 냉기 죽음의 기사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'QIx13NYCA8A',
+      title: '한밤 2시즌 12.1.5 냉기 죽음의 기사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

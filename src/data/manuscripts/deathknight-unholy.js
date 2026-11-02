@@ -542,6 +542,10 @@ const manuscript = {
                   label: '불시의 파멸',
                   kind: 'talent',
                   note: '35% 확률 · 다음 죽음의 고리·전염병 비용 15 감소, 피해 35% 증가',
+                  affects: [
+                    '47541',
+                    '207317',
+                  ],
                 },
               ],
             },
@@ -590,6 +594,9 @@ const manuscript = {
                   label: '부패의 메아리',
                   kind: 'talent',
                   note: '최대 3충전 · 한 번에 최대 2충전 소비 · 부패 피해 20%',
+                  affects: [
+                    '1247378',
+                  ],
                 },
               ],
             },
@@ -601,6 +608,10 @@ const manuscript = {
                   label: '죽은 자의 군주',
                   kind: 'talent',
                   note: '100% 확률로 15초 동안 죽은 자의 학자로 되살림',
+                  affects: [
+                    '1247378',
+                    '1254252',
+                  ],
                 },
               ],
             },
@@ -622,18 +633,29 @@ const manuscript = {
                   label: '파멸의 전조',
                   kind: 'talent',
                   note: '스컬지의 일격으로 하급 구울 소환 시 부패 쿨 2.5초 감소',
+                  affects: [
+                    '55090',
+                    '1247378',
+                  ],
                 },
                 {
                   skillId: '1256566',
                   label: '금단의 지식 (마지막 노드)',
                   kind: 'talent',
                   note: '공포의 역병이 20% 확률로 100% 효율의 부패 사용',
+                  affects: [
+                    '1240996',
+                    '1247378',
+                  ],
                 },
                 {
                   skillId: '1290864',
                   label: '죽음의 순환',
                   kind: 'talent',
                   note: '죽음과 부패가 맞힌 적 하나당 0.3초, 최대 3초',
+                  affects: [
+                    '1247378',
+                  ],
                 },
               ],
             },
@@ -694,6 +716,11 @@ const manuscript = {
                   label: '금단의 지식',
                   kind: 'talent',
                   note: '죽음의 고리 → 괴저 고리, 전염병 → 무덤',
+                  affects: [
+                    '42650',
+                    '1242174',
+                    '383269',
+                  ],
                 },
               ],
             },
@@ -722,12 +749,18 @@ const manuscript = {
                   label: '망자의 사령관',
                   kind: 'talent',
                   note: '30초 동안 학자·하급 구울 등 하수인 공격력 25%',
+                  affects: [
+                    '1233448',
+                  ],
                 },
                 {
                   skillId: '1241705',
                   label: '물량 공세',
                   kind: 'talent',
                   note: '변신 중 하급 구울의 발톱 공격이 발톱 휩쓸기로',
+                  affects: [
+                    '1233448',
+                  ],
                 },
               ],
             },
@@ -781,6 +814,10 @@ const manuscript = {
                   label: '수확',
                   kind: 'talent',
                   note: '어둠의 변신이 영혼 수확자 쿨을 초기화 · 생명력 제한 없이 사용',
+                  affects: [
+                    '1233448',
+                    '343294',
+                  ],
                 },
               ],
             },
@@ -870,6 +907,9 @@ const manuscript = {
                     skillId: '42650',
                     when: '쿨이 돌면 · 변신과 함께',
                   },
+                  talents: [
+                    '276023',
+                  ],
                 },
                 {
                   skillId: '47541',
@@ -878,6 +918,9 @@ const manuscript = {
                     skillId: '1233448',
                     when: '45초마다 · 군대 없이도',
                   },
+                  talents: [
+                    '49530',
+                  ],
                 },
                 {
                   skillId: '433895',
@@ -917,22 +960,41 @@ const manuscript = {
                 {
                   skillId: '433895',
                   caption: '산레인 · 정수 만료 직전',
+                  talents: [
+                    '434143',
+                    '434075',
+                  ],
                 },
                 {
                   skillId: '1247378',
                   caption: '역병내림 뒤 · 반환 부패로 재적용',
+                  talents: [
+                    '377580',
+                    '276023',
+                  ],
                 },
                 {
                   skillId: '55090',
                   caption: '종말의 기수 · 흡혈의 일격 자리에',
+                  talents: [
+                    '276023',
+                  ],
                 },
                 {
                   skillId: '42650',
                   caption: '종말의 기수 · 군대에 기사단',
+                  talents: [
+                    '444040',
+                    '1242158',
+                  ],
                 },
                 {
                   skillId: '1233448',
                   caption: '종말의 기수 · 중간 변신 따로',
+                  talents: [
+                    '390259',
+                    '1241705',
+                  ],
                 },
               ],
             },
@@ -985,32 +1047,57 @@ const manuscript = {
                 {
                   skillId: '42650',
                   caption: '군대 · 30초 유지',
+                  talents: [
+                    '1242158',
+                  ],
                 },
                 {
                   skillId: '1233448',
                   caption: '군대와 함께',
+                  talents: [
+                    '434152',
+                    '390259',
+                  ],
                 },
                 {
                   skillId: '1247378',
                   caption: '변신 중 학자 소환',
+                  talents: [
+                    '377580',
+                    '276023',
+                  ],
                 },
                 {
                   skillId: '1242174',
                   caption: '금단의 지식 · 단일',
                   count: '2~3',
+                  talents: [
+                    '1242158',
+                  ],
                 },
                 {
                   skillId: '433895',
                   caption: '번갈아 · 역병 연장',
                   count: '3~5',
+                  talents: [
+                    '434143',
+                    '434075',
+                  ],
                 },
                 {
                   skillId: '343294',
                   caption: '준비 중첩 최대 3',
+                  talents: [
+                    '377514',
+                  ],
                 },
                 {
                   skillId: '1271967',
                   caption: '증폭 끝나기 전',
+                  talents: [
+                    '1271974',
+                    '1254552',
+                  ],
                 },
               ],
               note: '스조라크 신화 상위 산레인 로그 9개 중 5개가 부패 뒤 괴저 고리를 두세 번, 6개가 흡혈의 일격을 세 번에서 다섯 번 이어 썼고, 9개 모두 영혼 수확자 전까지 이 둘을 두 차례 이상 번갈아 썼습니다. 흡혈의 일격으로 슬픔의 고통 분출과 피의 여왕의 정수를 얻되 룬 마력 초과를 피합니다. 역병내림 뒤에는 반환된 부패로 질병을 다시 겁니다. 종말의 기수나 역병내림을 고르지 않은 빌드는 이 줄을 그대로 따라 하지 않습니다.',
@@ -1033,22 +1120,40 @@ const manuscript = {
                 {
                   skillId: '42650',
                   caption: '큰 풀 · 시간 충분',
+                  talents: [
+                    '1242158',
+                  ],
                 },
                 {
                   skillId: '1233448',
                   caption: '산레인 진입',
+                  talents: [
+                    '434152',
+                    '390259',
+                  ],
                 },
                 {
                   skillId: '1247378',
                   caption: '학자 소환 미루지 않기',
+                  talents: [
+                    '377580',
+                    '276023',
+                  ],
                 },
                 {
                   skillId: '433895',
                   caption: '정수 쌓기',
+                  talents: [
+                    '434143',
+                    '434075',
+                  ],
                 },
                 {
                   skillId: '383269',
                   caption: '금단 · 4대상 이상',
+                  talents: [
+                    '1242158',
+                  ],
                 },
                 {
                   skillId: '433895',
@@ -1075,22 +1180,40 @@ const manuscript = {
                 {
                   skillId: '42650',
                   caption: '군대 · 기수 효과',
+                  talents: [
+                    '444040',
+                    '1242158',
+                  ],
                 },
                 {
                   skillId: '1233448',
                   caption: '군대와 겹치기',
+                  talents: [
+                    '390259',
+                    '1241705',
+                  ],
                 },
                 {
                   skillId: '1247378',
                   caption: '변신 중 충전 소비',
+                  talents: [
+                    '377580',
+                    '276023',
+                  ],
                 },
                 {
                   skillId: '1242174',
                   caption: '금단의 지식 · 단일',
+                  talents: [
+                    '1242158',
+                  ],
                 },
                 {
                   skillId: '343294',
                   caption: '군주와 겹치기',
+                  talents: [
+                    '377514',
+                  ],
                 },
               ],
               note: '흡혈의 일격과 역병내림은 넣지 않습니다. 군대가 대재앙의 묵시록으로 기사단을 함께 부르니, 기수의 용사를 따로 누를 스킬로 찾지 않습니다.',
@@ -1137,6 +1260,10 @@ const manuscript = {
                     skillId: '42650',
                     when: '큰 풀 · 시간 충분',
                   },
+                  talents: [
+                    '377580',
+                    '276023',
+                  ],
                 },
                 {
                   skillId: '85948',
@@ -1157,6 +1284,9 @@ const manuscript = {
                     skillId: '1233448',
                     when: '45초마다',
                   },
+                  talents: [
+                    '276023',
+                  ],
                 },
                 {
                   skillId: '207317',
@@ -1165,6 +1295,9 @@ const manuscript = {
                     skillId: '383269',
                     when: '금단의 지식 중 · 4대상+',
                   },
+                  talents: [
+                    '49530',
+                  ],
                 },
                 {
                   skillId: '55090',
@@ -1184,6 +1317,10 @@ const manuscript = {
                 {
                   skillId: '433895',
                   caption: '산레인 · 변신 중 일격',
+                  talents: [
+                    '434143',
+                    '434075',
+                  ],
                 },
                 {
                   skillId: '433895',
@@ -1192,14 +1329,26 @@ const manuscript = {
                 {
                   skillId: '1271967',
                   caption: '역병내림 · 남은 질병 소비',
+                  talents: [
+                    '1271974',
+                    '1254552',
+                  ],
                 },
                 {
                   skillId: '1247378',
                   caption: '반환된 부패로 재적용',
+                  talents: [
+                    '377580',
+                    '276023',
+                  ],
                 },
                 {
                   skillId: '42650',
                   caption: '종말의 기수 · 큰 풀 기사단',
+                  talents: [
+                    '444040',
+                    '1242158',
+                  ],
                 },
               ],
             },
@@ -1269,6 +1418,10 @@ const manuscript = {
                   label: '산레인의 선물',
                   kind: 'talent',
                   note: '변신 중 피의 여왕의 정수 효과 80% 증가',
+                  affects: [
+                    '1233448',
+                    '433925',
+                  ],
                 },
               ],
             },
@@ -1298,12 +1451,18 @@ const manuscript = {
                   label: '슬픔의 고통',
                   kind: 'talent',
                   note: '역병 걸린 적: 역병 3초 연장 · 75% 증가한 효율로 분출',
+                  affects: [
+                    '433895',
+                  ],
                 },
                 {
                   skillId: '434075',
                   label: '광적인 피의 갈증',
                   kind: 'talent',
                   note: '정수 2중첩 더 · 중첩당 죽음의 고리·전염병 5%',
+                  affects: [
+                    '433925',
+                  ],
                 },
               ],
             },
@@ -1315,12 +1474,19 @@ const manuscript = {
                   label: '흡혈의 일격 (발동 특성)',
                   kind: 'talent',
                   note: '죽음의 고리·전염병·죽음의 일격 사용 시 25% 확률',
+                  affects: [
+                    '433895',
+                  ],
                 },
                 {
                   skillId: '434157',
                   label: '원초적 본능의 힘',
                   kind: 'talent',
                   note: '불시의 파멸을 소비하면 5초 동안 힘 4%',
+                  affects: [
+                    '47541',
+                    '207317',
+                  ],
                 },
               ],
             },
@@ -1458,6 +1624,9 @@ const manuscript = {
                   label: '대재앙의 묵시록',
                   kind: 'talent',
                   note: '20초 동안 4인 기사단 전원 소환 · 따로 쓰는 스킬이 아님',
+                  affects: [
+                    '42650',
+                  ],
                 },
               ],
             },
@@ -1541,6 +1710,9 @@ const manuscript = {
                   label: '역병내림 (특성)',
                   kind: 'talent',
                   note: '이 특성을 골랐을 때만',
+                  affects: [
+                    '1271967',
+                  ],
                 },
               ],
             },
@@ -1568,6 +1740,9 @@ const manuscript = {
                   label: '파멸의 역병 폭발',
                   kind: 'talent',
                   note: '부패 시전 시 질병 없는 대상에게 질병 부여 · 질병 3초 연장 · 남은 지속 피해 35% 즉시',
+                  affects: [
+                    '1247378',
+                  ],
                 },
               ],
             },
@@ -3046,6 +3221,11 @@ const manuscript = {
     video: {
       youtubeId: 'W7f5VzTJdjc',
       title: '한밤 2시즌 12.1.5 부정 죽음의 기사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: '-LpsQFaY_t4',
+      title: '한밤 2시즌 12.1.5 부정 죽음의 기사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

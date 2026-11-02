@@ -6,4 +6,5 @@
 - 대상: warrior-fury, warrior-protection, paladin-holy, paladin-protection, paladin-retribution, hunter-beastmastery, hunter-marksmanship, hunter-survival.
 - 2026-11-02 오후 도적 심화편 업로드('업로드/사이트 상호보완')와 함께 rogue-assassination, rogue-outlaw, rogue-subtlety 도 넣었다(`_rogue.cjs`, 영상 표 사본). 붙는 스킬이 없는 암살 엉겅퀴 차 두 상자(469779·1298826)는 affects 칸을 만들지 않고, 검사기가 이 둘만 예외로 둔다.
 - 2026-11-02 오후 사제 심화편 업로드('업로드/사이트 상호보완')와 함께 priest-discipline, priest-holy, priest-shadow 도 넣었다(`_priest.cjs`, 영상 표 사본). 신성 궁극의 평온(1246517)은 KB 노트 종류가 `atomic-talent` 하나뿐이라 검사기 TIMELINE_TALENT_TYPES 에 그 종류를 더했다.
+- 2026-11-02 오후 죽음의 기사 심화편 업로드('진행시켜')와 함께 deathknight-frost, deathknight-unholy, deathknight-blood 도 넣었다(`_deathknight.cjs`, 영상 표 사본). 기수의 용사(444005)·신속하고 고통스럽게(443560)는 붙는 스킬이 없어 affects 칸을 만들지 않는다. 혈기 탐식(273953)·피의 희열(317614)은 KB 노트 type 이 atomic-skill 로 잘못 적혀 있어 talent 로 바로잡고 sync-kb 했다.
 - 순서 주의: 특성 연결을 넣은 뒤 원고가 바뀌면(심화편 단추 등) `refresh-orig.cjs <id>`로 원본 스냅샷을 다시 맞춘 다음에 apply.cjs 를 돌린다. 2026-11-02 사냥꾼 단추를 넣은 뒤 8개 모두 다시 맞췄다.

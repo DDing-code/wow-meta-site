@@ -1405,6 +1405,9 @@ function main() {
   }
   // 심화편 영상(기본편과 따로 올린 편): 기본편 아래 '심화편' 단추로 본다. 번호는 ai-hub outputs/pixel-guides/specs/<id>-advanced/youtube-upload.json 의 공개 확인된 값이다.
   const GUIDE_ADVANCED_VIDEOS = new Map([
+    ['deathknight-blood', 'jWS2CP-ftTs'],
+    ['deathknight-frost', 'QIx13NYCA8A'],
+    ['deathknight-unholy', '-LpsQFaY_t4'],
     ['demonhunter-havoc', 'bFrBTJqCUuU'],
     ['hunter-beastmastery', 'VHeIr835EXs'],
     ['hunter-marksmanship', '0h_iQv0eD3w'],

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-11-02T02:43:21.887Z",
+    "generatedAt": "2026-11-02T05:55:43.983Z",
     "source": "Obsidian Knowledge Base",
     "kbRoot": "WoW-Meta-Knowledge\\08-직업별-Knowledge-Base",
     "patch": "12.1",
@@ -13,10 +13,10 @@
       "byType": {
         "buff": 140,
         "hero-talent": 553,
-        "atomic-skill": 567,
+        "atomic-skill": 565,
         "proc": 29,
         "skill": 125,
-        "talent": 1010,
+        "talent": 1012,
         "spec-talent": 388,
         "passive": 81,
         "hero-tree": 2,
@@ -41805,7 +41805,7 @@
     },
     "273953": {
       "id": "273953",
-      "type": "atomic-skill",
+      "type": "talent",
       "class": "DeathKnight",
       "spec": "혈기",
       "specs": [
@@ -41822,7 +41822,7 @@
       "resourceCost": "",
       "range": "",
       "description": "선택하면 죽음의 일격 치유량이 5% 증가하고, 죽음의 일격 후 8초 동안 생기흡수 15%를 얻습니다. 12.1에서 생기흡수 효과가 12%에서 15%로 상향되었습니다.",
-      "category": "ability",
+      "category": "talent",
       "tags": [],
       "patch": "12.1",
       "created": "",
@@ -43812,7 +43812,7 @@
     },
     "317614": {
       "id": "317614",
-      "type": "atomic-skill",
+      "type": "talent",
       "class": "DeathKnight",
       "spec": "혈기",
       "specs": [
@@ -43829,7 +43829,7 @@
       "resourceCost": "",
       "range": "",
       "description": "진홍빛 스컬지가 활성화된 동안 다음 죽음과 부패가 뼈의 보호막 충전당 전투력 37.5%만큼 생명력을 회복시키고 룬 마력 10을 생성합니다. 12.1 출시 노트의 치유량 25% 상향이 반영된 한국어 툴팁 수치입니다.",
-      "category": "ability",
+      "category": "talent",
       "tags": [],
       "patch": "12.1",
       "created": "",

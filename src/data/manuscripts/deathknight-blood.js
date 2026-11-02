@@ -477,6 +477,9 @@ const manuscript = {
                   label: '혈안',
                   kind: 'talent',
                   note: '골랐다면 보호막이 있는 동안 받는 피해 4% 감소',
+                  affects: [
+                    '77513',
+                  ],
                 },
               ],
             },
@@ -643,12 +646,18 @@ const manuscript = {
                   label: '탐식',
                   kind: 'talent',
                   note: '골랐다면 치유 5% 증가 · 이후 8초 생기흡수 15%',
+                  affects: [
+                    '49998',
+                  ],
                 },
                 {
                   skillId: '1264235',
                   label: '치명적인 접촉',
                   kind: 'talent',
                   note: '골랐다면 추가 적 2명에게 60% 효율로 적중',
+                  affects: [
+                    '49998',
+                  ],
                 },
               ],
             },
@@ -737,18 +746,28 @@ const manuscript = {
                   label: '한밤의 춤 첫 단계',
                   kind: 'talent',
                   note: '무기 막기 성공 뒤 다음 심장 강타가 룬 없이 추가 피해 150%',
+                  affects: [
+                    '49028',
+                    '206930',
+                  ],
                 },
                 {
                   skillId: '1264405',
                   label: '한밤의 춤 중간 단계',
                   kind: 'talent',
                   note: '활성 무기 하나당 공격력 3%/6% · 받는 피해 6% 감소',
+                  affects: [
+                    '49028',
+                  ],
                 },
                 {
                   skillId: '1264351',
                   label: '한밤의 춤 마지막 단계',
                   kind: 'talent',
                   note: '룬을 쓸 때 확률로 8초짜리 무기 추가',
+                  affects: [
+                    '49028',
+                  ],
                 },
               ],
             },
@@ -760,12 +779,18 @@ const manuscript = {
                   label: '핏빛 안개',
                   kind: 'talent',
                   note: '8초 · 무기 막기 5% · 적중 대상당 룬 마력 2, 한 번에 최대 10',
+                  affects: [
+                    '49028',
+                  ],
                 },
                 {
                   skillId: '1263781',
                   label: '유혈의 폭발',
                   kind: 'talent',
                   note: '안개가 끝날 때 주위 피해 · 입힌 피해의 18% 회복',
+                  affects: [
+                    '49028',
+                  ],
                 },
               ],
             },
@@ -826,12 +851,18 @@ const manuscript = {
                   label: '혈안',
                   kind: 'talent',
                   note: '보호막이 있는 동안 받는 피해 4% 감소 · 공격력 8% 증가',
+                  affects: [
+                    '77513',
+                  ],
                 },
                 {
                   skillId: '374747',
                   label: '칠흑의 기사단의 인내',
                   kind: 'talent',
                   note: '스컬지 소모 뒤 10초 동안 받는 피해 4% 감소',
+                  affects: [
+                    '81136',
+                  ],
                 },
                 {
                   skillId: '434033',
@@ -839,6 +870,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '산레인',
                   note: '자신이 바닥 안이면 받는 물리 피해 8% 감소',
+                  affects: [
+                    '43265',
+                    '433895',
+                  ],
                 },
               ],
             },
@@ -850,6 +885,10 @@ const manuscript = {
                   label: '피의 희열',
                   kind: 'talent',
                   note: '뼈의 보호막 충전당 전투력 37.5% 회복 · 룬 마력 10',
+                  affects: [
+                    '81136',
+                    '195181',
+                  ],
                 },
                 {
                   skillId: '434157',
@@ -857,6 +896,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '산레인',
                   note: '12초 동안 힘 6%',
+                  affects: [
+                    '81136',
+                  ],
                 },
               ],
             },
@@ -912,6 +954,10 @@ const manuscript = {
                     skillId: '49028',
                     when: '쿨이 돌면 · 위험 피격에 맞춰',
                   },
+                  talents: [
+                    '374747',
+                    '317614',
+                  ],
                 },
                 {
                   skillId: '50842',
@@ -924,6 +970,9 @@ const manuscript = {
                     skillId: '55233',
                     when: '배정한 위험 구간',
                   },
+                  talents: [
+                    '1264506',
+                  ],
                 },
                 {
                   skillId: '206930',
@@ -936,6 +985,10 @@ const manuscript = {
                     skillId: '48792',
                     when: '회복 전에 죽을 피해',
                   },
+                  talents: [
+                    '273953',
+                    '391398',
+                  ],
                 },
                 {
                   skillId: '195182',
@@ -951,6 +1004,10 @@ const manuscript = {
                 {
                   skillId: '433895',
                   caption: '산레인 · 룬 무기 중 심장 강타 대신',
+                  talents: [
+                    '434152',
+                    '434033',
+                  ],
                 },
                 {
                   skillId: '433895',
@@ -963,10 +1020,17 @@ const manuscript = {
                 {
                   skillId: '49028',
                   caption: '죽음의 인도자 · 징표 앞',
+                  talents: [
+                    '1264405',
+                    '1263774',
+                  ],
                 },
                 {
                   skillId: '439843',
                   caption: '죽음의 인도자 · 룬 무기 뒤',
+                  talents: [
+                    '455857',
+                  ],
                 },
                 {
                   skillId: '195182',
@@ -1019,6 +1083,9 @@ const manuscript = {
                 {
                   skillId: '43265',
                   caption: '설 자리에 바닥',
+                  talents: [
+                    '434033',
+                  ],
                 },
                 {
                   skillId: '46585',
@@ -1031,6 +1098,9 @@ const manuscript = {
                     skillId: '55233',
                     when: '첫 피해가 크면',
                   },
+                  talents: [
+                    '434152',
+                  ],
                 },
                 {
                   skillId: '50842',
@@ -1039,10 +1109,18 @@ const manuscript = {
                 {
                   skillId: '433895',
                   caption: '룬 무기 중 연달아',
+                  talents: [
+                    '434152',
+                    '434033',
+                  ],
                 },
                 {
                   skillId: '49998',
                   caption: '필요한 회복',
+                  talents: [
+                    '273953',
+                    '391398',
+                  ],
                 },
                 {
                   skillId: '433895',
@@ -1061,6 +1139,10 @@ const manuscript = {
                 {
                   skillId: '43265',
                   caption: '설 자리에 바닥',
+                  talents: [
+                    '374747',
+                    '317614',
+                  ],
                 },
                 {
                   skillId: '46585',
@@ -1073,14 +1155,24 @@ const manuscript = {
                     skillId: '55233',
                     when: '첫 피해가 크면',
                   },
+                  talents: [
+                    '1264405',
+                    '1263774',
+                  ],
                 },
                 {
                   skillId: '439843',
                   caption: '룬 무기 바로 뒤',
+                  talents: [
+                    '455857',
+                  ],
                 },
                 {
                   skillId: '50842',
                   caption: '질병',
+                  talents: [
+                    '443532',
+                  ],
                 },
                 {
                   skillId: '195182',
@@ -1089,10 +1181,17 @@ const manuscript = {
                 {
                   skillId: '206930',
                   caption: '남는 룬',
+                  talents: [
+                    '1264506',
+                  ],
                 },
                 {
                   skillId: '49998',
                   caption: '회복 · 넘치기 전',
+                  talents: [
+                    '1265932',
+                    '273953',
+                  ],
                 },
               ],
               note: '산레인의 선물과 흡혈의 일격은 섞지 않습니다. 상위 레이드 로그 8개 중 5개가 룬 무기를 켠 뒤 징표를 걸었습니다. 피의 소용돌이와 골수분쇄의 순서는 로그마다 다릅니다. 몰살은 자동 강화 효과이고 골수분쇄로 소비합니다.',
@@ -1134,6 +1233,10 @@ const manuscript = {
                     skillId: '49576',
                     when: '멀리 있는 적은 먼저 끌어오기',
                   },
+                  talents: [
+                    '374747',
+                    '317614',
+                  ],
                 },
                 {
                   skillId: '50842',
@@ -1146,6 +1249,9 @@ const manuscript = {
                     skillId: '55233',
                     when: '풀 시작 · 첫 평타',
                   },
+                  talents: [
+                    '1264506',
+                  ],
                 },
                 {
                   skillId: '50842',
@@ -1166,6 +1272,10 @@ const manuscript = {
                     skillId: '48792',
                     when: '회복 전에 죽을 피해',
                   },
+                  talents: [
+                    '273953',
+                    '391398',
+                  ],
                 },
                 {
                   skillId: '195182',
@@ -1185,10 +1295,17 @@ const manuscript = {
                 {
                   skillId: '433895',
                   caption: '산레인 · 사용 가능하면 연결',
+                  talents: [
+                    '434152',
+                    '434033',
+                  ],
                 },
                 {
                   skillId: '439843',
                   caption: '죽음의 인도자 · 오래 살 대상에게',
+                  talents: [
+                    '455857',
+                  ],
                 },
                 {
                   skillId: '195182',
@@ -1197,6 +1314,10 @@ const manuscript = {
                 {
                   skillId: '43265',
                   caption: '진홍빛 스컬지 · 룬 없이 다시',
+                  talents: [
+                    '374747',
+                    '317614',
+                  ],
                 },
               ],
             },
@@ -1271,6 +1392,10 @@ const manuscript = {
                   label: '산레인의 선물',
                   kind: 'talent',
                   note: '피의 여왕의 정수 효과 200% 증가 · 흡혈의 일격이 심장 강타를 대체',
+                  affects: [
+                    '49028',
+                    '433895',
+                  ],
                 },
               ],
             },
@@ -1319,6 +1444,10 @@ const manuscript = {
                   label: '피에 젖은 땅',
                   kind: 'talent',
                   note: '자신이 바닥 안이면 물리 피해 8% 감소 · 흡혈의 일격 확률 5% 증가',
+                  affects: [
+                    '43265',
+                    '433895',
+                  ],
                 },
               ],
             },
@@ -1435,6 +1564,10 @@ const manuscript = {
                 {
                   skillId: '43265',
                   caption: '다 모인 자리',
+                  talents: [
+                    '374747',
+                    '317614',
+                  ],
                 },
                 {
                   skillId: '49998',
@@ -1443,10 +1576,18 @@ const manuscript = {
                     skillId: '47528',
                     when: '위험 시전',
                   },
+                  talents: [
+                    '273953',
+                    '391398',
+                  ],
                 },
                 {
                   skillId: '49028',
                   caption: '다 모인 뒤',
+                  talents: [
+                    '1264405',
+                    '1263774',
+                  ],
                 },
               ],
               note: '흡혈은 대개 첫 10초 안, 춤추는 룬 무기는 대략 10~17초 뒤였습니다. 둘 다 쓴 풀 31개 중 28개가 흡혈 먼저였습니다.',
@@ -1462,6 +1603,10 @@ const manuscript = {
                     skillId: '48707',
                     when: '큰 마법 피해 전',
                   },
+                  talents: [
+                    '273953',
+                    '391398',
+                  ],
                 },
                 {
                   skillId: '195182',
@@ -1493,10 +1638,17 @@ const manuscript = {
                 {
                   skillId: '433895',
                   caption: '산레인 · 룬 무기 중 연달아',
+                  talents: [
+                    '434152',
+                    '434033',
+                  ],
                 },
                 {
                   skillId: '439843',
                   caption: '죽음의 인도자 · 오래 살 적',
+                  talents: [
+                    '455857',
+                  ],
                 },
                 {
                   skillId: '195182',
@@ -1546,6 +1698,10 @@ const manuscript = {
                 {
                   skillId: '49998',
                   caption: '맞은 직후 회복',
+                  talents: [
+                    '273953',
+                    '391398',
+                  ],
                 },
                 {
                   skillId: '195182',
@@ -1581,6 +1737,9 @@ const manuscript = {
                 {
                   skillId: '49028',
                   caption: '산레인 · 쿨마다',
+                  talents: [
+                    '434152',
+                  ],
                 },
                 {
                   skillId: '195292',
@@ -1589,6 +1748,10 @@ const manuscript = {
                 {
                   skillId: '433895',
                   caption: '산레인 · 룬 무기 중 연달아',
+                  talents: [
+                    '434152',
+                    '434033',
+                  ],
                 },
                 {
                   skillId: '49028',
@@ -1597,6 +1760,9 @@ const manuscript = {
                 {
                   skillId: '439843',
                   caption: '죽음의 인도자 · 룬 무기 뒤',
+                  talents: [
+                    '455857',
+                  ],
                 },
               ],
             },
@@ -1634,6 +1800,9 @@ const manuscript = {
                   label: '영혼의 파도',
                   kind: 'talent',
                   note: '징표에 연결된 발동 피해',
+                  affects: [
+                    '439843',
+                  ],
                 },
               ],
             },
@@ -1656,12 +1825,18 @@ const manuscript = {
                   label: '어둠의 구속',
                   kind: 'talent',
                   note: '피의 소용돌이 공격력 증가 30% → 50%',
+                  affects: [
+                    '50842',
+                  ],
                 },
                 {
                   skillId: '1265932',
                   label: '죽음을 부르는 일격',
                   kind: 'talent',
                   note: '죽음의 일격 공격력 12% → 20%',
+                  affects: [
+                    '49998',
+                  ],
                 },
                 {
                   skillId: '443560',
@@ -3274,6 +3449,11 @@ const manuscript = {
     video: {
       youtubeId: '7HbtU4mu99c',
       title: '한밤 2시즌 12.1.5 혈기 죽음의 기사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'jWS2CP-ftTs',
+      title: '한밤 2시즌 12.1.5 혈기 죽음의 기사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

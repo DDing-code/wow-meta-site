@@ -23,6 +23,9 @@ const GUIDES = {
   'priest-discipline': '/guide/priest/discipline',
   'priest-holy': '/guide/priest/holy',
   'priest-shadow': '/guide/priest/shadow',
+  'deathknight-frost': '/guide/deathknight/frost',
+  'deathknight-unholy': '/guide/deathknight/unholy',
+  'deathknight-blood': '/guide/deathknight/blood',
 };
 const only = process.argv.slice(3);
 (async () => {
