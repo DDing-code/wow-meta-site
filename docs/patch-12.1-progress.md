@@ -1304,3 +1304,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 16편 기준으로 바꿔 사제 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 13편은 그대로임을 다시 확인했다.
 - 배포: `npm run validate`·`npm run build` 통과, 사이트 `0311d4b3`. 빌드 `main.57f73b67.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-priest-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 사제 3개×1440·390 통과(캡처 `live/`).
 - 남은 결정: 11-01에 공개한 사제 v9 심화 3편(`4EI98w801-w`·`6cB8OGi-7AU`·`_f42uwqFoyI`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
+
+## 2026-11-02 죽음의 기사 심화편 공개·사이트 상호연동 (업로드, 심화편 단추, 특성 ↔ 스킬 연결, 기본편 설명)
+
+- 요청: "진행시켜" → 직전에 만든 죽음의 기사 심화 v10 3편. 사제와 같은 방식으로 반영했다.
+- 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-deathknight-20261102.json`, 목록 생성 `upload-advanced-v10-deathknight-20261102/prepare.py`, 영상 `…-storyboard-v10-reading-focus-v1.mp4`, 썸네일 talentbg-v6)로 와우메타 채널에 냉기 `QIx13NYCA8A`·부정 `-LpsQFaY_t4`·혈기 `jWS2CP-ftTs`를 공개했다. 혈기 편집 파일이 렌더 뒤 같은 내용으로 다시 저장돼 prepare.py는 시각 비교 대신 `studio/cli.mjs verify --strict`(최신 렌더 3/3)를 쓴다. 올리기 전 채널 번호를 화면에서 확인했고, `verify` 3/3·oEmbed 공개 링크·공개 썸네일이 v6과 같은지 확인했다.
+- 사이트: `artifacts/advanced-videos-deathknight-20261102/apply.cjs`로 advancedVideo를, `artifacts/talent-links-20261102/apply.cjs deathknight-*`(`_deathknight.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `01-죽음의기사/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다. 혈기 탐식(273953)·피의 희열(317614) KB 노트가 Talents 폴더·skill_type talent인데 type만 atomic-skill이라 타임라인 특성 칸 검사에 걸려, 두 노트 type을 talent로 바로잡고 sync-kb 했다(생성 JSON은 두 항목만 바뀜). KB Talents 폴더는 원래 git 추적 밖이라 노트 수정은 혈기 patch-changelog에만 남겼다.
+- 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 19편 기준으로 바꿔 죽음의 기사 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 16편은 그대로임을 다시 확인했다.
+- 배포: `npm run validate`·`npm run build` 통과, 사이트 `4549ba57`. 빌드 `main.b2672db5.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-deathknight-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 죽음의 기사 3개×1440·390 통과(캡처 `live/`).
+- 남은 결정: 11-01에 공개한 죽음의 기사 v9 심화 3편(`fz3spBsoeeg`·`qKb20gJxx0s`·`qVvK6a8NwuE`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
