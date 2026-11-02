@@ -20,6 +20,9 @@ const GUIDES = {
   'rogue-assassination': '/guide/rogue/assassination',
   'rogue-outlaw': '/guide/rogue/outlaw',
   'rogue-subtlety': '/guide/rogue/subtlety',
+  'priest-discipline': '/guide/priest/discipline',
+  'priest-holy': '/guide/priest/holy',
+  'priest-shadow': '/guide/priest/shadow',
 };
 const only = process.argv.slice(3);
 (async () => {

@@ -441,12 +441,18 @@ const manuscript = {
                 label: '치유의 잔향',
                 kind: 'talent',
                 note: '대상에게 12초 동안 소생',
+                affects: [
+                  '2050',
+                ],
               },
               {
                 skillId: '1246517',
                 label: '궁극의 평온',
                 kind: 'talent',
                 note: '주위 부상자 4명에게 치유량의 15%',
+                affects: [
+                  '2050',
+                ],
               },
             ],
           },
@@ -495,6 +501,9 @@ const manuscript = {
                 kind: 'talent',
                 tag: '예언자',
                 note: '추가 충전 1회',
+                affects: [
+                  '33076',
+                ],
               },
             ],
           },
@@ -511,12 +520,18 @@ const manuscript = {
                 label: '빛의 회생',
                 kind: 'talent',
                 note: '대상마다 12% 확률로 소생',
+                affects: [
+                  '33076',
+                ],
               },
               {
                 skillId: '390977',
                 label: '고결한 자의 기도',
                 kind: 'talent',
                 note: '전달 2번 추가',
+                affects: [
+                  '33076',
+                ],
               },
             ],
           },
@@ -596,6 +611,9 @@ const manuscript = {
                 label: '우주의 파장',
                 kind: 'talent',
                 note: '주위 부상자를 함께 회복',
+                affects: [
+                  '1262763',
+                ],
               },
             ],
           },
@@ -729,14 +747,25 @@ const manuscript = {
                   skillId: '47788',
                   when: '다음 타격이 치명적이면 먼저',
                 },
+                talents: [
+                  '1246517',
+                  '471504',
+                ],
               },
               {
                 skillId: '1262763',
                 caption: '평온 직후 다친 아군',
+                talents: [
+                  '238136',
+                ],
               },
               {
                 skillId: '33076',
                 caption: '쿨마다 · 가능하면 다친 아군',
+                talents: [
+                  '390977',
+                  '193157',
+                ],
               },
               {
                 skillId: '2061',
@@ -771,6 +800,9 @@ const manuscript = {
               {
                 skillId: '47788',
                 caption: '탱커 강타 직전',
+                talents: [
+                  '440738',
+                ],
               },
               {
                 skillId: '527',
@@ -779,18 +811,32 @@ const manuscript = {
               {
                 skillId: '2050',
                 caption: '가장 위험한 대상',
+                talents: [
+                  '1246517',
+                  '433905',
+                ],
               },
               {
                 skillId: '1262763',
                 caption: '같은 대상 또는 다음 대상',
+                talents: [
+                  '238136',
+                ],
               },
               {
                 skillId: '33076',
                 caption: '위험 대상에게 직접',
+                talents: [
+                  '1248423',
+                  '440662',
+                ],
               },
               {
                 skillId: '2061',
                 caption: '축도가 없으면',
+                talents: [
+                  '433905',
+                ],
               },
               {
                 skillId: '19236',
@@ -810,18 +856,31 @@ const manuscript = {
               {
                 skillId: '33076',
                 caption: '예언자 · 최대 충전이면 바로 한 번',
+                talents: [
+                  '1248423',
+                  '440662',
+                ],
               },
               {
                 skillId: '2061',
                 caption: '예언자 · 나에게 쓰면 30% 강화',
+                talents: [
+                  '433905',
+                ],
               },
               {
                 skillId: '47788',
                 caption: '예언자 · 지속시간 2초 증가',
+                talents: [
+                  '440738',
+                ],
               },
               {
                 skillId: '596',
                 caption: '집정관 · 영혼 우물 빛의 쇄도',
+                talents: [
+                  '1247178',
+                ],
               },
             ],
           },
@@ -862,6 +921,10 @@ const manuscript = {
               {
                 skillId: '33076',
                 caption: '탱커가 모으기 시작할 때',
+                talents: [
+                  '390977',
+                  '193157',
+                ],
               },
               {
                 skillId: '2050',
@@ -870,10 +933,17 @@ const manuscript = {
                   skillId: '47788',
                   when: '탱커 강타 직전이면',
                 },
+                talents: [
+                  '1246517',
+                  '471504',
+                ],
               },
               {
                 skillId: '1262763',
                 caption: '평온 직후 소비',
+                talents: [
+                  '238136',
+                ],
               },
               {
                 skillId: '33076',
@@ -908,14 +978,26 @@ const manuscript = {
               {
                 skillId: '33076',
                 caption: '피해 8~10초 전',
+                talents: [
+                  '390977',
+                  '193157',
+                ],
               },
               {
                 skillId: '2050',
                 caption: '피해 3초 전 · 1충전 확인만',
+                talents: [
+                  '1246517',
+                  '471504',
+                ],
               },
               {
                 skillId: '120517',
                 caption: '공대와 적을 지나는 위치',
+                talents: [
+                  '453783',
+                  '453109',
+                ],
               },
               {
                 skillId: '200183',
@@ -928,10 +1010,16 @@ const manuscript = {
               {
                 skillId: '1262763',
                 caption: '다른 부상 대상',
+                talents: [
+                  '238136',
+                ],
               },
               {
                 skillId: '596',
                 caption: '빛의 쇄도 소비',
+                talents: [
+                  '1247178',
+                ],
               },
               {
                 skillId: '2050',
@@ -1002,10 +1090,17 @@ const manuscript = {
                   skillId: '200183',
                   when: '큰 피해 시작이면 먼저',
                 },
+                talents: [
+                  '1246517',
+                  '471504',
+                ],
               },
               {
                 skillId: '1262763',
                 caption: '다른 부상 대상 · 우주의 파장',
+                talents: [
+                  '238136',
+                ],
               },
               {
                 skillId: '33076',
@@ -1014,6 +1109,10 @@ const manuscript = {
                   skillId: '34861',
                   when: '궁극의 평온 미선택이면',
                 },
+                talents: [
+                  '390977',
+                  '193157',
+                ],
               },
               {
                 skillId: '2061',
@@ -1049,6 +1148,10 @@ const manuscript = {
               {
                 skillId: '33076',
                 caption: '예언자 · 2충전 계속 이동',
+                talents: [
+                  '1248423',
+                  '440662',
+                ],
               },
               {
                 skillId: '32375',
@@ -1057,10 +1160,17 @@ const manuscript = {
               {
                 skillId: '120517',
                 caption: '집정관 · 피해 시작에 후광',
+                talents: [
+                  '453783',
+                  '453109',
+                ],
               },
               {
                 skillId: '596',
                 caption: '집정관 · 빛의 쇄도 치유의 기원',
+                talents: [
+                  '1247178',
+                ],
               },
             ],
           },
@@ -1126,6 +1236,9 @@ const manuscript = {
                 label: '인도의 빛',
                 kind: 'talent',
                 note: '회복의 기원 추가 충전 1회',
+                affects: [
+                  '33076',
+                ],
               },
             ],
           },
@@ -1148,18 +1261,27 @@ const manuscript = {
                 label: '즉발적인 예측',
                 kind: 'talent',
                 note: '시전 대상을 바로 직접 치유 · 8월 18일 치유량 55% 증가',
+                affects: [
+                  '33076',
+                ],
               },
               {
                 skillId: '440662',
                 label: '예방의 기술',
                 kind: 'talent',
                 note: '회복의 기원 치유량 40% 증가',
+                affects: [
+                  '33076',
+                ],
               },
               {
                 skillId: '1246802',
                 label: '경건',
                 kind: 'talent',
                 note: '초과 치유의 20%를 주위 부상자 최대 4명에게',
+                affects: [
+                  '33076',
+                ],
               },
             ],
           },
@@ -1176,12 +1298,19 @@ const manuscript = {
                 label: '예언자의 의지',
                 kind: 'talent',
                 note: '나에게 쓰는 순간 치유·평온 30% 강화',
+                affects: [
+                  '2061',
+                  '2050',
+                ],
               },
               {
                 skillId: '440738',
                 label: '예견된 상황',
                 kind: 'talent',
                 note: '수호 영혼 지속시간 2초 증가',
+                affects: [
+                  '47788',
+                ],
               },
             ],
           },
@@ -1313,12 +1442,18 @@ const manuscript = {
                 label: '현신하는 권능',
                 kind: 'talent',
                 note: '빛의 쇄도 획득',
+                affects: [
+                  '120517',
+                ],
               },
               {
                 skillId: '453109',
                 label: '마력의 쇄도',
                 kind: 'talent',
                 note: '10초 동안 5초마다 추가 후광',
+                affects: [
+                  '120517',
+                ],
               },
             ],
           },
@@ -1330,6 +1465,9 @@ const manuscript = {
                 label: '영혼 우물',
                 kind: 'talent',
                 note: '빛의 쇄도를 치유의 기원에도 소비',
+                affects: [
+                  '596',
+                ],
               },
               {
                 skillId: '596',
@@ -3145,11 +3283,16 @@ const manuscript = {
     },
   },
   defaultHeroBranchIndex: 1,
-    video: {
-      youtubeId: '81Kg0R0KRm4',
-      title: '한밤 2시즌 12.1.5 신성 사제 가이드',
-      channel: 'wowmeta 와우메타',
-    },
+  video: {
+    youtubeId: '81Kg0R0KRm4',
+    title: '한밤 2시즌 12.1.5 신성 사제 가이드',
+    channel: 'wowmeta 와우메타',
+  },
+  advancedVideo: {
+    youtubeId: 'Tq-gPQtNepI',
+    title: '한밤 2시즌 12.1.5 신성 사제 심화 가이드',
+    channel: 'wowmeta 와우메타',
+  },
 };
 
 export default manuscript;

@@ -393,6 +393,9 @@ const manuscript = {
                 label: '특화: 어둠의 매듭',
                 kind: 'talent',
                 note: '걸린 지속 피해에 따라 그 대상 피해 증가 · 공허의 형상 중 최대 효과',
+                affects: [
+                  '335467',
+                ],
               },
             ],
           },
@@ -460,6 +463,9 @@ const manuscript = {
                 label: '공허에 물듦',
                 kind: 'talent',
                 note: '최대 광기 100 → 150',
+                affects: [
+                  '335467',
+                ],
               },
             ],
           },
@@ -471,12 +477,18 @@ const manuscript = {
                 label: '마음의 눈',
                 kind: 'talent',
                 note: '비용 50 → 45',
+                affects: [
+                  '335467',
+                ],
               },
               {
                 skillId: '409044',
                 label: '현실 왜곡',
                 kind: 'talent',
                 note: '비용 55 · 지속시간 12초 · 피해 20% 증가',
+                affects: [
+                  '335467',
+                ],
               },
             ],
           },
@@ -488,6 +500,10 @@ const manuscript = {
                 label: '정신 포식자',
                 kind: 'talent',
                 note: '정신 분열이 8% 확률로 다음 광기를 무료·20% 강화',
+                affects: [
+                  '8092',
+                  '335467',
+                ],
               },
             ],
           },
@@ -550,6 +566,9 @@ const manuscript = {
                 label: '환각의 마귀',
                 kind: 'talent',
                 note: '10초 동안 자동 소환 · 공격마다 광기 1',
+                affects: [
+                  '228260',
+                ],
               },
             ],
           },
@@ -572,12 +591,20 @@ const manuscript = {
                 label: '공허의 형상 연마',
                 kind: 'talent',
                 note: '사용권 2회 추가(총 5회) · 피해 증가 추가 5%',
+                affects: [
+                  '228260',
+                  '1242173',
+                ],
               },
               {
                 skillId: '1231346',
                 label: '태고의 광기',
                 kind: 'talent',
                 note: '형상 중 광기 직접 시전마다 가속 2%·지속시간 1.5초 · 최대 5중첩',
+                affects: [
+                  '228260',
+                  '335467',
+                ],
               },
             ],
           },
@@ -635,12 +662,19 @@ const manuscript = {
                 label: '불행',
                 kind: 'talent',
                 note: '골랐다면 손길이 고통도 함께 적용',
+                affects: [
+                  '34914',
+                  '589',
+                ],
               },
               {
                 skillId: '1279353',
                 label: '광기 어린 촉수',
                 kind: 'talent',
                 note: '골랐다면 주 대상에 25% 효과의 광기',
+                affects: [
+                  '1227280',
+                ],
               },
             ],
           },
@@ -720,6 +754,9 @@ const manuscript = {
                   label: '그림자 원혼',
                   kind: 'talent',
                   note: '자동으로 날아가 피해',
+                  affects: [
+                    '335467',
+                  ],
                 },
               ],
             },
@@ -731,6 +768,9 @@ const manuscript = {
                   label: '그늘폭발',
                   kind: 'talent',
                   note: '8야드 안 적에게 피해 · 5대상을 넘으면 감소',
+                  affects: [
+                    '341491',
+                  ],
                 },
               ],
             },
@@ -821,6 +861,10 @@ const manuscript = {
                   skillId: '228260',
                   when: '배정한 극딜 구간이면',
                 },
+                talents: [
+                  '407470',
+                  '343690',
+                ],
               },
               {
                 skillId: '450983',
@@ -833,6 +877,9 @@ const manuscript = {
                   skillId: '589',
                   when: '깨어난 악몽이면 고통도',
                 },
+                talents: [
+                  '1279353',
+                ],
               },
               {
                 skillId: '1242173',
@@ -845,6 +892,9 @@ const manuscript = {
               {
                 skillId: '8092',
                 caption: '균열 밖 분열',
+                talents: [
+                  '373202',
+                ],
               },
               {
                 skillId: '15407',
@@ -864,10 +914,17 @@ const manuscript = {
               {
                 skillId: '120644',
                 caption: '계속 칠 수 있을 때',
+                talents: [
+                  '453109',
+                  '453783',
+                ],
               },
               {
                 skillId: '391403',
                 caption: '후광 뒤 강화 채찍',
+                talents: [
+                  '453783',
+                ],
               },
               {
                 skillId: '1242173',
@@ -913,10 +970,16 @@ const manuscript = {
               {
                 skillId: '8092',
                 caption: '풀링 직전 시전',
+                talents: [
+                  '373202',
+                ],
               },
               {
                 skillId: '1227280',
                 caption: '교전 뒤 손길·세트',
+                talents: [
+                  '1279353',
+                ],
               },
               {
                 skillId: '589',
@@ -929,6 +992,10 @@ const manuscript = {
               {
                 skillId: '228260',
                 caption: '연사 처리 뒤 진입',
+                talents: [
+                  '341240',
+                  '1230339',
+                ],
               },
               {
                 skillId: '10060',
@@ -937,15 +1004,26 @@ const manuscript = {
               {
                 skillId: '263165',
                 caption: '균열 열기',
+                talents: [
+                  '451018',
+                  '1266856',
+                ],
               },
               {
                 skillId: '450983',
                 caption: '균열 중 분열 대신',
                 count: 2,
+                talents: [
+                  '449912',
+                ],
               },
               {
                 skillId: '335467',
                 caption: '이후 단일 우선순위',
+                talents: [
+                  '448403',
+                  '407470',
+                ],
               },
             ],
             note: '후광 대신 공허의 격류로 혼돈의 균열을 여는 것이 집정관과 다른 점입니다. 형상에 들어간다고 균열이 저절로 생기지는 않습니다. 스조라크 신화 상위 공허술사 기록 10개 중 9개가 정신 분열을 풀링 직후 맞혔고, 10개 모두 공허의 형상 전에 공허 연사를 썼으며, 7개가 광기보다 격류를 먼저 썼습니다. 균열 안에서 공허의 폭발을 두 번 이어 쓴 기록이 6개, 한 번 쓰고 다른 스킬 뒤 다시 쓴 기록이 4개입니다. 마력 주입이 같은 초에 두 번 찍힌 것은 태양 여사제의 쌍둥이로 자신에게도 걸린 기록이라 한 번만 누릅니다. 공개 가이드와 심크 우선순위는 형상 안에서 광기를 먼저 두니, 광기가 거의 가득 찼다면 광기로 먼저 비웁니다.',
@@ -956,10 +1034,16 @@ const manuscript = {
               {
                 skillId: '8092',
                 caption: '풀링 직전 시전',
+                talents: [
+                  '373202',
+                ],
               },
               {
                 skillId: '1227280',
                 caption: '교전 뒤 손길·세트',
+                talents: [
+                  '1279353',
+                ],
               },
               {
                 skillId: '589',
@@ -968,6 +1052,10 @@ const manuscript = {
               {
                 skillId: '120644',
                 caption: '고통 뒤 후광',
+                talents: [
+                  '453109',
+                  '453783',
+                ],
               },
               {
                 skillId: '1242173',
@@ -976,6 +1064,10 @@ const manuscript = {
               {
                 skillId: '228260',
                 caption: '극딜 진입',
+                talents: [
+                  '341240',
+                  '1230339',
+                ],
               },
               {
                 skillId: '10060',
@@ -984,6 +1076,10 @@ const manuscript = {
               {
                 skillId: '335467',
                 caption: '이후 단일 우선순위',
+                talents: [
+                  '1272320',
+                  '407470',
+                ],
               },
             ],
             note: '불행이면 고통 칸을, 4세트가 없으면 공허 연사 칸을 건너뜁니다. 후광은 주변 비전투 몹을 끌어오지 않을 위치인지 보고 씁니다. 스조라크 신화 상위 로그 8개 중 후광을 쓴 7개에서 후광 먼저가 4개, 공허 연사 먼저가 3개라 둘의 앞뒤는 로그마다 다릅니다.',
@@ -1029,14 +1125,24 @@ const manuscript = {
                   skillId: '586',
                   when: '위협 관리가 필요하면',
                 },
+                talents: [
+                  '238558',
+                ],
               },
               {
                 skillId: '1227280',
                 caption: '모이면 격돌',
+                talents: [
+                  '1279353',
+                ],
               },
               {
                 skillId: '120644',
                 caption: '교전 뒤 후광',
+                talents: [
+                  '453109',
+                  '453783',
+                ],
               },
               {
                 skillId: '1242173',
@@ -1045,6 +1151,10 @@ const manuscript = {
               {
                 skillId: '228260',
                 caption: '살아 있는 무리에',
+                talents: [
+                  '341240',
+                  '1230339',
+                ],
               },
               {
                 skillId: '10060',
@@ -1053,6 +1163,10 @@ const manuscript = {
               {
                 skillId: '335467',
                 caption: '주 대상에 광기',
+                talents: [
+                  '1272320',
+                  '407470',
+                ],
               },
             ],
             note: '불행이면 손길로 고통도 같이 걸리니 대상마다 고통을 따로 쓰지 않습니다. 쐐기 풀에서는 후광과 4세트 연사의 앞뒤가 로그마다 다릅니다. 둘 다 형상 전에 끝내면 됩니다.',
@@ -1067,10 +1181,16 @@ const manuscript = {
                   skillId: '589',
                   when: '깨어난 악몽이면 고통',
                 },
+                talents: [
+                  '238558',
+                ],
               },
               {
                 skillId: '1227280',
                 caption: '교전 뒤 격돌',
+                talents: [
+                  '1279353',
+                ],
               },
               {
                 skillId: '1242173',
@@ -1079,6 +1199,10 @@ const manuscript = {
               {
                 skillId: '228260',
                 caption: '살아 있는 무리에',
+                talents: [
+                  '341240',
+                  '1230339',
+                ],
               },
               {
                 skillId: '10060',
@@ -1087,10 +1211,18 @@ const manuscript = {
               {
                 skillId: '335467',
                 caption: '주 대상에 광기',
+                talents: [
+                  '448403',
+                  '407470',
+                ],
               },
               {
                 skillId: '263165',
                 caption: '모였을 때 균열',
+                talents: [
+                  '451018',
+                  '1266856',
+                ],
               },
             ],
             note: '탱커가 이동하거나 몹이 바뀌면 주 대상을 다시 정합니다.',
@@ -1102,10 +1234,16 @@ const manuscript = {
               {
                 skillId: '1227280',
                 caption: '안 걸린 적에 격돌',
+                talents: [
+                  '1279353',
+                ],
               },
               {
                 skillId: '34914',
                 caption: '빠진 장수명 적만',
+                talents: [
+                  '238558',
+                ],
               },
               {
                 skillId: '335467',
@@ -1114,6 +1252,10 @@ const manuscript = {
                   skillId: '228260',
                   when: '무리가 오래 살면',
                 },
+                talents: [
+                  '407470',
+                  '343690',
+                ],
               },
               {
                 skillId: '8092',
@@ -1122,6 +1264,9 @@ const manuscript = {
                   skillId: '1242173',
                   when: '세트·종료 임박 사용권',
                 },
+                talents: [
+                  '373202',
+                ],
               },
               {
                 skillId: '335467',
@@ -1141,22 +1286,40 @@ const manuscript = {
               {
                 skillId: '120644',
                 caption: '집정관 · 교전 뒤 후광',
+                talents: [
+                  '453109',
+                  '453783',
+                ],
               },
               {
                 skillId: '391403',
                 caption: '집정관 · 원혼 보낼 강화 채찍',
+                talents: [
+                  '453783',
+                ],
               },
               {
                 skillId: '263165',
                 caption: '공허술사 · 모였을 때 격류',
+                talents: [
+                  '451018',
+                  '1266856',
+                ],
               },
               {
                 skillId: '450983',
                 caption: '공허술사 · 균열 안 폭발',
+                talents: [
+                  '449912',
+                ],
               },
               {
                 skillId: '335467',
                 caption: '공허술사 · 균열 중 직접 광기',
+                talents: [
+                  '448403',
+                  '407470',
+                ],
               },
             ],
           },
@@ -1233,6 +1396,9 @@ const manuscript = {
                   label: '마력의 쇄도',
                   kind: 'talent',
                   note: '후광 뒤 10초 동안 5초마다 추가 후광',
+                  affects: [
+                    '120644',
+                  ],
                 },
               ],
             },
@@ -1244,12 +1410,19 @@ const manuscript = {
                   label: '현신하는 권능',
                   kind: 'talent',
                   note: '다음 정신의 채찍이 정신의 채찍: 광기로',
+                  affects: [
+                    '120644',
+                    '391403',
+                  ],
                 },
                 {
                   skillId: '453845',
                   label: '공명하는 마력',
                   kind: 'talent',
                   note: '10초 동안 주문 피해 2% · 최대 4중첩',
+                  affects: [
+                    '120644',
+                  ],
                 },
               ],
             },
@@ -1272,6 +1445,9 @@ const manuscript = {
                   label: '그림자 원혼',
                   kind: 'skill',
                   note: '손길 대상에게 날아가는 자동 피해',
+                  affects: [
+                    '335467',
+                  ],
                 },
               ],
             },
@@ -1309,6 +1485,10 @@ const manuscript = {
                   label: '집중된 폭발',
                   kind: 'talent',
                   note: '25% 효과의 공허 연사 자동 발사 · 사용권이 아님',
+                  affects: [
+                    '335467',
+                    '1242173',
+                  ],
                 },
               ],
             },
@@ -1432,6 +1612,9 @@ const manuscript = {
                 label: '암흑 마력',
                 kind: 'talent',
                 note: '골랐다면 격류를 이동하며 시전 · 균열 중 이동 속도 20%',
+                affects: [
+                  '263165',
+                ],
               },
             ],
           },
@@ -1443,6 +1626,9 @@ const manuscript = {
                 label: '혼돈의 균열',
                 kind: 'talent',
                 note: '대상을 따라가는 기본 8초 균열',
+                affects: [
+                  '263165',
+                ],
               },
             ],
           },
@@ -1470,18 +1656,27 @@ const manuscript = {
                 label: '어둠에 물드는 지평선',
                 kind: 'talent',
                 note: '폭발마다 균열 1초 · 최대 3초 연장',
+                affects: [
+                  '450983',
+                ],
               },
               {
                 skillId: '448403',
                 label: '공허 붕괴',
                 kind: 'talent',
                 note: '종료 때 15미터 안 적에게 붕괴 피해',
+                affects: [
+                  '335467',
+                ],
               },
               {
                 skillId: '1266856',
                 label: '공허의 손길',
                 kind: 'talent',
                 note: '종료 뒤 공허의 심장 8초 더 유지',
+                affects: [
+                  '263165',
+                ],
               },
             ],
           },
@@ -2955,6 +3150,11 @@ const manuscript = {
   video: {
     youtubeId: 'B_xITeY9RW4',
     title: '한밤 2시즌 12.1.5 암흑 사제 가이드',
+    channel: 'wowmeta 와우메타',
+  },
+  advancedVideo: {
+    youtubeId: 'hfb5WTCRFzk',
+    title: '한밤 2시즌 12.1.5 암흑 사제 심화 가이드',
     channel: 'wowmeta 와우메타',
   },
   defaultHeroBranchIndex: 1,

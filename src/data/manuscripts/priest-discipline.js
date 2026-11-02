@@ -557,12 +557,19 @@ const manuscript = {
                   label: '인내의 광채',
                   kind: 'talent',
                   note: '광휘 속죄 +10%p · 광휘 시전 30% 단축',
+                  affects: [
+                    '194509',
+                  ],
                 },
                 {
                   skillId: '472361',
                   label: '신의 행렬',
                   kind: 'talent',
                   note: '성스러운 일격이 속죄 하나를 2초 연장',
+                  affects: [
+                    '585',
+                    '194384',
+                  ],
                 },
                 {
                   skillId: '440671',
@@ -570,6 +577,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '예언자',
                   note: '속죄 지속시간 4초 증가',
+                  affects: [
+                    '194384',
+                  ],
                 },
               ],
             },
@@ -623,6 +633,9 @@ const manuscript = {
                   label: '책망',
                   kind: 'talent',
                   note: '화살 1발 추가',
+                  affects: [
+                    '47540',
+                  ],
                 },
               ],
             },
@@ -817,6 +830,9 @@ const manuscript = {
                     skillId: '186263',
                     when: '속죄로 못 버티면 직접 치유',
                   },
+                  talents: [
+                    '193134',
+                  ],
                 },
                 {
                   skillId: '1253593',
@@ -829,6 +845,9 @@ const manuscript = {
                 {
                   skillId: '585',
                   caption: '핵심기 대기 중 빈 시간',
+                  talents: [
+                    '472361',
+                  ],
                 },
                 {
                   skillId: '8092',
@@ -863,6 +882,9 @@ const manuscript = {
                 {
                   skillId: '47540',
                   caption: '급하면 아군에게 직접',
+                  talents: [
+                    '193134',
+                  ],
                 },
                 {
                   skillId: '8092',
@@ -878,18 +900,31 @@ const manuscript = {
                 {
                   skillId: '450215',
                   caption: '공허술사 · 균열 중 일격 대신',
+                  talents: [
+                    '450612',
+                  ],
                 },
                 {
                   skillId: '47540',
                   caption: '예언자 · 회개 충전 2개',
+                  talents: [
+                    '1248423',
+                    '440742',
+                  ],
                 },
                 {
                   skillId: '33206',
                   caption: '예언자 · 예견된 상황이면 50%',
+                  talents: [
+                    '440738',
+                  ],
                 },
                 {
                   skillId: '585',
                   caption: '예언자 · 빈 시간은 늘 일격',
+                  talents: [
+                    '472361',
+                  ],
                 },
               ],
             },
@@ -942,10 +977,18 @@ const manuscript = {
                 {
                   skillId: '8092',
                   caption: '풀 5초 안 첫 균열',
+                  talents: [
+                    '449880',
+                    '451234',
+                  ],
                 },
                 {
                   skillId: '47540',
                   caption: '균열 안 적에게',
+                  talents: [
+                    '450612',
+                    '193134',
+                  ],
                 },
                 {
                   skillId: '1253593',
@@ -954,6 +997,9 @@ const manuscript = {
                 {
                   skillId: '450215',
                   caption: '균열 중 빈 시간',
+                  talents: [
+                    '450612',
+                  ],
                 },
                 {
                   skillId: '472433',
@@ -962,6 +1008,9 @@ const manuscript = {
                 {
                   skillId: '194509',
                   caption: '필요하면 1~2회',
+                  talents: [
+                    '390685',
+                  ],
                 },
                 {
                   skillId: '8092',
@@ -976,6 +1025,10 @@ const manuscript = {
                 {
                   skillId: '17',
                   caption: '탱커 첫 피해 예상',
+                  talents: [
+                    '440681',
+                    '440671',
+                  ],
                 },
                 {
                   skillId: '589',
@@ -988,10 +1041,17 @@ const manuscript = {
                 {
                   skillId: '47540',
                   caption: '피해와 대상 확인',
+                  talents: [
+                    '1248423',
+                    '440742',
+                  ],
                 },
                 {
                   skillId: '1253593',
                   caption: '흡수가 필요한 대상',
+                  talents: [
+                    '440681',
+                  ],
                 },
                 {
                   skillId: '186263',
@@ -1000,6 +1060,9 @@ const manuscript = {
                 {
                   skillId: '585',
                   caption: '여유가 있을 때',
+                  talents: [
+                    '472361',
+                  ],
                 },
               ],
               note: '다섯 명에게 레이드처럼 긴 사전 작업을 반복하지 않습니다. 진입이 위험하면 정신 분열·회개보다 보호막이나 고통 억제가 먼저입니다. 정신 분열과 회개 중 무엇을 먼저 쓰는지는 상위 쐐기 로그마다 갈립니다.',
@@ -1046,6 +1109,9 @@ const manuscript = {
                     skillId: '472433',
                     when: '배정한 큰 피해면 먼저',
                   },
+                  talents: [
+                    '390685',
+                  ],
                 },
                 {
                   skillId: '8092',
@@ -1062,6 +1128,9 @@ const manuscript = {
                     skillId: '421453',
                     when: '골랐다면 적 대상으로',
                   },
+                  talents: [
+                    '193134',
+                  ],
                 },
                 {
                   skillId: '1253593',
@@ -1070,6 +1139,9 @@ const manuscript = {
                 {
                   skillId: '585',
                   caption: '안정되면 빈 시간',
+                  talents: [
+                    '472361',
+                  ],
                 },
                 {
                   skillId: '47540',
@@ -1085,14 +1157,24 @@ const manuscript = {
                 {
                   skillId: '450215',
                   caption: '공허술사 · 균열 중 빈 시간',
+                  talents: [
+                    '450612',
+                  ],
                 },
                 {
                   skillId: '421453',
                   caption: '공허술사 · 균열 연 뒤 적 대상',
+                  talents: [
+                    '450612',
+                  ],
                 },
                 {
                   skillId: '47540',
                   caption: '예언자 · 충전 2개를 돌려 치유',
+                  talents: [
+                    '1248423',
+                    '440742',
+                  ],
                 },
                 {
                   skillId: '472433',
@@ -1187,12 +1269,19 @@ const manuscript = {
                   label: '공허 주입',
                   kind: 'talent',
                   note: '균열 중 공허의 폭발·회개 속죄 75% 증가',
+                  affects: [
+                    '450215',
+                    '47540',
+                  ],
                 },
                 {
                   skillId: '449880',
                   label: '공허의 심장',
                   kind: 'talent',
                   note: '균열 중 속죄 치유량 20% 증가',
+                  affects: [
+                    '447444',
+                  ],
                 },
               ],
             },
@@ -1204,12 +1293,18 @@ const manuscript = {
                   label: '공허의 손길',
                   kind: 'talent',
                   note: '공허의 심장만 8초 더 · 공허의 폭발은 끝',
+                  affects: [
+                    '449880',
+                  ],
                 },
                 {
                   skillId: '451234',
                   label: '공허의 망령',
                   kind: 'talent',
                   note: '5초 동안 자동 소환',
+                  affects: [
+                    '447444',
+                  ],
                 },
               ],
             },
@@ -1327,6 +1422,9 @@ const manuscript = {
                   label: '인도의 빛',
                   kind: 'talent',
                   note: '회개 추가 충전 1회',
+                  affects: [
+                    '47540',
+                  ],
                 },
               ],
             },
@@ -1349,12 +1447,18 @@ const manuscript = {
                   label: '두 개의 시야',
                   kind: 'talent',
                   note: '아군 회개 → 적에게 3발, 적 회개 → 아군에게 3발',
+                  affects: [
+                    '47540',
+                  ],
                 },
                 {
                   skillId: '1246802',
                   label: '경건',
                   kind: 'talent',
                   note: '초과 치유 15%를 주위 부상자 최대 4명에게',
+                  affects: [
+                    '47540',
+                  ],
                 },
               ],
             },
@@ -1371,12 +1475,19 @@ const manuscript = {
                   label: '천금 같은 시간',
                   kind: 'talent',
                   note: '신의 권능: 보호막 쿨다운 1.5초 감소',
+                  affects: [
+                    '17',
+                    '1253593',
+                  ],
                 },
                 {
                   skillId: '440738',
                   label: '예견된 상황',
                   kind: 'talent',
                   note: '고통 억제 피해 감소 +10%p',
+                  affects: [
+                    '33206',
+                  ],
                 },
               ],
             },
@@ -2857,6 +2968,11 @@ const manuscript = {
     video: {
       youtubeId: 'veXAaKuThj0',
       title: '한밤 2시즌 12.1.5 수양 사제 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'FQrOykNcG5M',
+      title: '한밤 2시즌 12.1.5 수양 사제 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

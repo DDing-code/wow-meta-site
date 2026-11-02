@@ -788,7 +788,8 @@ function isRepeatCount(count) {
 }
 
 // 타임라인 자리에 붙는 특성(talents)으로 허용하는 KB 노트 종류: 특성·지속 효과·세트 효과. 시전 스킬은 자리(skillId) 쪽이다.
-const TIMELINE_TALENT_TYPES = new Set(['talent', 'class-talent', 'spec-talent', 'hero-talent', 'apex-talent', 'passive', 'set-bonus', 'tier-set']);
+// atomic-talent: 신성 궁극의 평온(1246517) 한 개뿐인 특성 노트 종류(kb-brief.cjs 도 '특성'으로 묶는다).
+const TIMELINE_TALENT_TYPES = new Set(['talent', 'class-talent', 'spec-talent', 'atomic-talent', 'hero-talent', 'apex-talent', 'passive', 'set-bonus', 'tier-set']);
 
 function validateHeroBranches(spec, manuscript, kbSkills) {
   const branches = manuscript.heroBranches || [];
@@ -1411,6 +1412,9 @@ function main() {
     ['paladin-holy', 'EZ3vLNckjYs'],
     ['paladin-protection', 'MT7hghuzlWU'],
     ['paladin-retribution', '_HHEKlLi7Qs'],
+    ['priest-discipline', 'FQrOykNcG5M'],
+    ['priest-holy', 'Tq-gPQtNepI'],
+    ['priest-shadow', 'hfb5WTCRFzk'],
     ['rogue-assassination', 'zVJOxpx12qg'],
     ['rogue-outlaw', 'LPFgOxQFDaM'],
     ['rogue-subtlety', 'wDpLBdPpe54'],
