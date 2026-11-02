@@ -44,6 +44,16 @@ test('머리글 없이 초보자 안내와 재생목록 줄, 레이드 줄을 �
   expect(container.querySelector('a[href="/raid/kithix"]')).not.toBeNull();
 });
 
+test('줄 순서는 기본편(탱커·힐러·근딜·원딜) → 직업 심화편 → 레이드 → 쐐기이고 분류 칩도 같은 순서다', () => {
+  render(<HomePage />);
+  const roles = youtubePlaylists.map(list => list.role);
+  const order = [...roles, 'advanced', 'raid', 'mythicplus'];
+  expect([...container.querySelectorAll('[data-shelf]')].map(node => node.dataset.shelf)).toEqual(order);
+  const chips = [...container.querySelectorAll('button[aria-pressed]')].map(button => button.textContent);
+  expect(chips.indexOf('심화편')).toBe(chips.indexOf('레이드') - 1);
+  expect(chips.indexOf('심화편')).toBeGreaterThan(Math.max(...youtubePlaylists.map(list => chips.indexOf(list.label ?? ''))));
+});
+
 test('모두 보기와 분류 칩으로 한 재생목록을 다 펼친다', () => {
   render(<HomePage />);
   const melee = youtubePlaylists.find(list => list.role === 'melee');

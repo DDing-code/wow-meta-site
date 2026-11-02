@@ -32,7 +32,7 @@ import guideManuscripts from '../data/guideManuscripts.js';
 import raidGuide from '../data/raidGuide.json';
 import mythicPlusGuide from '../data/mythicPlusGuide.json';
 
-// 홈은 유튜브 첫 화면처럼 분류 칩 → 직업 심화편 줄(직업별 묶음) → 재생목록별 기본편 줄 → 레이드 가이드 줄 → 쐐기 가이드 줄 순서다.
+// 홈은 유튜브 첫 화면처럼 분류 칩 → 재생목록별 기본편 줄(탱커·힐러·근딜·원딜) → 직업 심화편 줄(직업별 묶음) → 레이드 가이드 줄 → 쐐기 가이드 줄 순서다.
 // 한 줄은 화면 폭에 맞는 칸 수만 보이고 '모두 보기'로 펼친다. 칩으로 한 분류를 고르면 그 줄만 다 펼쳐 보인다.
 // 영상은 계속 늘거나 바뀌므로 영상·편 개수는 화면에 적지 않는다(validate:home이 막는다).
 
@@ -556,8 +556,8 @@ const dungeonCards = (mythicPlusGuide.dungeons || []).map(dungeon => ({
 
 const FILTERS = [
   { id: 'all', label: '전체' },
-  ...(advancedItems.length ? [{ id: 'advanced', label: '심화편', icon: GraduationCap }] : []),
   ...videoShelves.map(shelf => ({ id: shelf.id, label: shelf.label, icon: shelf.icon })),
+  ...(advancedItems.length ? [{ id: 'advanced', label: '심화편', icon: GraduationCap }] : []),
   { id: 'raid', label: '레이드', icon: Castle },
   { id: 'mythicplus', label: '쐐기', icon: KeyRound },
 ];
@@ -775,47 +775,6 @@ function HomePage() {
         </ChannelLink>
       </ChipBar>
 
-      {isShown('advanced') && advancedItems.length > 0 && (
-        <Shelf aria-labelledby="shelf-advanced" data-shelf="advanced">
-          <ShelfHead>
-            <ShelfTitle id="shelf-advanced">
-              <GraduationCap size={19} aria-hidden="true" />
-              직업 심화편
-            </ShelfTitle>
-            <ShelfLinks>
-              <ShelfLink
-                href={YOUTUBE_CHANNEL.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${YOUTUBE_CHANNEL.name} 유튜브 채널 열기 (새 창)`}
-              >
-                <span>채널에서 보기</span>
-                <ExternalLink size={13} aria-hidden="true" />
-              </ShelfLink>
-            </ShelfLinks>
-          </ShelfHead>
-          <ClassShelfGrid
-            groups={advancedGroups}
-            columns={columns}
-            expanded={isExpanded('advanced')}
-            locked={filter === 'advanced'}
-            onToggle={() => toggle('advanced')}
-            label="직업 심화편"
-            renderItem={item => (
-              <VideoCard
-                key={item.guide.id}
-                guide={item.guide}
-                youtubeId={item.youtubeId}
-                advancedId={item.advancedId}
-                playlistId={item.playlistId}
-                advanced
-                specOnly
-              />
-            )}
-          />
-        </Shelf>
-      )}
-
       {videoShelves.filter(shelf => isShown(shelf.id)).map(shelf => {
         const Icon = shelf.icon;
         return (
@@ -857,6 +816,47 @@ function HomePage() {
           </Shelf>
         );
       })}
+
+      {isShown('advanced') && advancedItems.length > 0 && (
+        <Shelf aria-labelledby="shelf-advanced" data-shelf="advanced">
+          <ShelfHead>
+            <ShelfTitle id="shelf-advanced">
+              <GraduationCap size={19} aria-hidden="true" />
+              직업 심화편
+            </ShelfTitle>
+            <ShelfLinks>
+              <ShelfLink
+                href={YOUTUBE_CHANNEL.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${YOUTUBE_CHANNEL.name} 유튜브 채널 열기 (새 창)`}
+              >
+                <span>채널에서 보기</span>
+                <ExternalLink size={13} aria-hidden="true" />
+              </ShelfLink>
+            </ShelfLinks>
+          </ShelfHead>
+          <ClassShelfGrid
+            groups={advancedGroups}
+            columns={columns}
+            expanded={isExpanded('advanced')}
+            locked={filter === 'advanced'}
+            onToggle={() => toggle('advanced')}
+            label="직업 심화편"
+            renderItem={item => (
+              <VideoCard
+                key={item.guide.id}
+                guide={item.guide}
+                youtubeId={item.youtubeId}
+                advancedId={item.advancedId}
+                playlistId={item.playlistId}
+                advanced
+                specOnly
+              />
+            )}
+          />
+        </Shelf>
+      )}
 
       {isShown('raid') && raidEpisodes.length > 0 && (
         <Shelf aria-labelledby="shelf-raid" data-shelf="raid">

@@ -1,0 +1,154 @@
+[
+  {
+    "width": 1440,
+    "bundle": "http://127.0.0.1:3127/static/js/main.1372eb81.js",
+    "overflow": 0,
+    "shelves": [
+      "tanks",
+      "healers",
+      "melee",
+      "ranged",
+      "advanced",
+      "raid",
+      "mythicplus"
+    ],
+    "chips": [
+      "전체",
+      "탱커",
+      "힐러",
+      "근딜",
+      "원딜",
+      "심화편",
+      "레이드",
+      "쐐기"
+    ],
+    "nav": [
+      {
+        "text": "직업 가이드",
+        "h": 38,
+        "visible": true
+      },
+      {
+        "text": "전문화 가이드 목록역할과 직업으로 40개 전문화를 찾습니다.",
+        "h": 82,
+        "visible": true
+      }
+    ],
+    "orderOk": true,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "bundle": "http://127.0.0.1:3127/static/js/main.1372eb81.js",
+    "overflow": 0,
+    "shelves": [
+      "tanks",
+      "healers",
+      "melee",
+      "ranged",
+      "advanced",
+      "raid",
+      "mythicplus"
+    ],
+    "chips": [
+      "전체",
+      "탱커",
+      "힐러",
+      "근딜",
+      "원딜",
+      "심화편",
+      "레이드",
+      "쐐기"
+    ],
+    "nav": [
+      {
+        "text": "직업 가이드",
+        "h": 38,
+        "visible": true
+      },
+      {
+        "text": "전문화 가이드 목록역할과 직업으로 40개 전문화를 찾습니다.",
+        "h": 104,
+        "visible": true
+      }
+    ],
+    "orderOk": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "bundle": "http://127.0.0.1:3127/static/js/main.1372eb81.js",
+    "overflow": 0,
+    "shelves": [
+      "tanks",
+      "healers",
+      "melee",
+      "ranged",
+      "advanced",
+      "raid",
+      "mythicplus"
+    ],
+    "chips": [
+      "전체",
+      "탱커",
+      "힐러",
+      "근딜",
+      "원딜",
+      "심화편",
+      "레이드",
+      "쐐기"
+    ],
+    "nav": [
+      {
+        "text": "직업 가이드",
+        "h": 0,
+        "visible": false
+      },
+      {
+        "text": "전문화 가이드 목록역할과 직업으로 40개 전문화를 찾습니다.",
+        "h": 82,
+        "visible": true
+      }
+    ],
+    "orderOk": true,
+    "errors": []
+  },
+  {
+    "width": 320,
+    "bundle": "http://127.0.0.1:3127/static/js/main.1372eb81.js",
+    "overflow": 0,
+    "shelves": [
+      "tanks",
+      "healers",
+      "melee",
+      "ranged",
+      "advanced",
+      "raid",
+      "mythicplus"
+    ],
+    "chips": [
+      "전체",
+      "탱커",
+      "힐러",
+      "근딜",
+      "원딜",
+      "심화편",
+      "레이드",
+      "쐐기"
+    ],
+    "nav": [
+      {
+        "text": "직업 가이드",
+        "h": 0,
+        "visible": false
+      },
+      {
+        "text": "전문화 가이드 목록역할과 직업으로 40개 전문화를 찾습니다.",
+        "h": 104,
+        "visible": true
+      }
+    ],
+    "orderOk": true,
+    "errors": []
+  }
+]

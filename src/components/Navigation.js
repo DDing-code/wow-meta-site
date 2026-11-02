@@ -64,6 +64,15 @@ const Links = styled.div`
   align-items: center;
   gap: 18px;
 
+  /* 메뉴가 한 줄에 다 들어가지 않는 중간 폭은 아이콘을 빼고 간격을 줄인다. */
+  @media (min-width: 781px) and (max-width: 960px) {
+    gap: 14px;
+
+    svg {
+      display: none;
+    }
+  }
+
   @media (max-width: 780px) {
     position: absolute;
     top: 58px;
@@ -88,6 +97,7 @@ const NavItem = styled(Link)`
   background: transparent;
   font-size: 0.84rem;
   font-weight: ${props => (props.$active ? 700 : 560)};
+  white-space: nowrap;
 
   &:hover {
     color: #eef1f3;
@@ -122,7 +132,7 @@ const MenuButton = styled.button`
 const navItems = [
   { path: '/', label: '홈', icon: Home },
   { path: '/beginner', label: '초보자 안내', icon: Compass },
-  { path: '/guide', label: '가이드', icon: BookOpen },
+  { path: '/guide', label: '직업 가이드', icon: BookOpen },
   { path: '/raid', label: '레이드 가이드', icon: Castle },
   { path: '/mythicplus', label: '쐐기 가이드', icon: KeyRound },
   { path: '/spells', label: '스펠 DB', icon: Database },
