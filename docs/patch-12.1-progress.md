@@ -1313,3 +1313,10 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 19편 기준으로 바꿔 죽음의 기사 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 16편은 그대로임을 다시 확인했다.
 - 배포: `npm run validate`·`npm run build` 통과, 사이트 `4549ba57`. 빌드 `main.b2672db5.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-deathknight-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 죽음의 기사 3개×1440·390 통과(캡처 `live/`).
 - 남은 결정: 11-01에 공개한 죽음의 기사 v9 심화 3편(`fz3spBsoeeg`·`qKb20gJxx0s`·`qVvK6a8NwuE`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
+
+## 2026-11-02 홈 화면을 최근 변경에 맞춤 (심화편 줄, 개수 표시 제거)
+
+- 요청: "홈 화면 좀 최신 git 변경내역에 맞춰서 바꿔야 할듯? 영상 갯수는 유동적이니까 표시로 넣지 말아줘".
+- 홈(`src/pages/HomePage.js`): 분류 칩 '심화편'과 '직업 심화편' 줄을 맨 앞에 더했다. 번호는 원고의 `advancedVideo`를 그대로 읽는다(지금 19편, 따로 적는 목록 없음). 기본편 칸에는 '심화편', 심화편 칸에는 '기본편' 링크가 붙는다. 레이드 줄에는 '영웅'(/raid/heroic)·'신화' 링크, 쐐기 던전 칸에는 '공략 영상' 링크를 더했고, 초보자 안내 문구에 초보자 영상을 넣었다.
+- 개수 표시 제거: 유튜브 채널 링크의 '영상 N편', 줄 머리의 'N편'·'던전 N곳', '모두 보기 (N)'을 뺐다. `validate:home`이 심화편 번호(형식·중복)를 검사하고 홈 소스의 편 개수 표시를 막는다. `HomePage.test.js`에 심화편 줄·개수 없음·영웅·던전 영상 시험을 더했다.
+- 배포: `npm run build`(전체 검증) 통과, 사이트 `3ffc2e55`. 빌드 `main.0389a23f.js`(`artifacts/home-refresh-20261102/stage-deploy.cjs`, 820개 파일)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같고 소스맵은 403이다. 운영 주소에서 `artifacts/home-refresh-20261102/shots.cjs` 1440·390·320 모두 가로 넘침 0·개수 글자 0·오류 0(캡처 `live/`).
