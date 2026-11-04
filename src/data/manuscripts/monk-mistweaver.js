@@ -392,6 +392,9 @@ const manuscript = {
                   label: '활기의 안개',
                   kind: 'talent',
                   note: '생기 충전이 소생의 안개가 걸린 모든 아군을 회복',
+                  affects: [
+                    '116670',
+                  ],
                 },
               ],
             },
@@ -465,12 +468,19 @@ const manuscript = {
                   label: '고대의 가르침',
                   kind: 'talent',
                   note: '공격 피해의 일부로 주위의 다친 아군 치유',
+                  affects: [
+                    '467307',
+                    '107428',
+                  ],
                 },
                 {
                   skillId: '274909',
                   label: '안개오름',
                   kind: 'talent',
                   note: '해오름차기가 소생·포용의 안개 4초 연장',
+                  affects: [
+                    '107428',
+                  ],
                 },
               ],
             },
@@ -482,6 +492,10 @@ const manuscript = {
                   label: '비취불꽃의 가르침',
                   kind: 'talent',
                   note: '고대의 가르침 추가 전환율 320%',
+                  affects: [
+                    '467307',
+                    '107428',
+                  ],
                 },
                 {
                   label: '시즌 2 2세트',
@@ -539,6 +553,9 @@ const manuscript = {
                   label: '집중된 천둥',
                   kind: 'talent',
                   note: '다음 2회의 주문을 강화',
+                  affects: [
+                    '116680',
+                  ],
                 },
               ],
             },
@@ -567,12 +584,21 @@ const manuscript = {
                   label: '비밀 혼합물',
                   kind: 'talent',
                   note: '다음 주문에 따라 능력치 4% · 소생은 가속, 포용은 치명타',
+                  affects: [
+                    '116680',
+                    '115151',
+                    '124682',
+                  ],
                 },
                 {
                   skillId: '1277302',
                   label: '아침 바람',
                   kind: 'talent',
                   note: '해오름차기 쿨다운 초기화 · 질풍차기 빌드에도 반영',
+                  affects: [
+                    '116680',
+                    '107428',
+                  ],
                 },
                 {
                   skillId: '443294',
@@ -623,6 +649,9 @@ const manuscript = {
                   label: '번데기',
                   kind: 'talent',
                   note: '기의 고치 쿨다운 45초 감소',
+                  affects: [
+                    '116849',
+                  ],
                 },
               ],
             },
@@ -634,6 +663,10 @@ const manuscript = {
                   label: '원기 회복',
                   kind: 'talent',
                   note: '나에게 마나 차 최대 5중첩 · 대상에게 치유의 비약 2중첩',
+                  affects: [
+                    '116849',
+                    '115869',
+                  ],
                 },
               ],
             },
@@ -650,6 +683,9 @@ const manuscript = {
                   label: '기력 회복주',
                   kind: 'talent',
                   note: '정신 집중 50% 빠르게 · 마나 20% 추가',
+                  affects: [
+                    '115869',
+                  ],
                 },
               ],
             },
@@ -661,12 +697,18 @@ const manuscript = {
                   label: '평안의 차',
                   kind: 'talent',
                   note: '마나 차를 소모하면 안개 구름 1개',
+                  affects: [
+                    '115869',
+                  ],
                 },
                 {
                   skillId: '388038',
                   label: '위론의 속삭임',
                   kind: 'talent',
                   note: '마시는 동안 15미터 안 아군 최대 5명 치유',
+                  affects: [
+                    '115869',
+                  ],
                 },
               ],
             },
@@ -709,6 +751,9 @@ const manuscript = {
                 {
                   skillId: '115151',
                   caption: '충전 넘치기 전에',
+                  talents: [
+                    '388491',
+                  ],
                 },
                 {
                   skillId: '467307',
@@ -717,10 +762,17 @@ const manuscript = {
                     skillId: '116680',
                     when: '질풍차기 직후 · 다음 주문 강화',
                   },
+                  talents: [
+                    '388023',
+                    '467293',
+                  ],
                 },
                 {
                   skillId: '116670',
                   caption: '소생 대상이 다치면',
+                  talents: [
+                    '274586',
+                  ],
                 },
                 {
                   skillId: '124682',
@@ -755,10 +807,16 @@ const manuscript = {
                 {
                   skillId: '116849',
                   caption: '다음 큰 타격 전 흡수',
+                  talents: [
+                    '202424',
+                  ],
                 },
                 {
                   skillId: '116670',
                   caption: '즉시 필요한 치유',
+                  talents: [
+                    '274586',
+                  ],
                 },
                 {
                   skillId: '124682',
@@ -771,10 +829,17 @@ const manuscript = {
                 {
                   skillId: '115151',
                   caption: '안정되면 충전 회수',
+                  talents: [
+                    '388491',
+                  ],
                 },
                 {
                   skillId: '116680',
                   caption: '다음 강화 주문을 정하고',
+                  talents: [
+                    '197895',
+                    '388491',
+                  ],
                 },
               ],
               note: '조화의 종사는 기의 고치 → 생기 충전 → 포용의 안개 → 집중의 천둥 차 → 위안의 안개 → 셰이룬의 선물 순서입니다. 저장한 활력을 기다리느라 구조를 늦추지 않습니다.',
@@ -786,14 +851,23 @@ const manuscript = {
                 {
                   skillId: '467307',
                   caption: '천신 · 옥룡의 마음 중 다시',
+                  talents: [
+                    '1262672',
+                  ],
                 },
                 {
                   skillId: '116849',
                   caption: '천신 · 돌아온 고치는 다음 대상',
+                  talents: [
+                    '202424',
+                  ],
                 },
                 {
                   skillId: '116680',
                   caption: '조화 · 활력 모은 뒤 피해에',
+                  talents: [
+                    '450892',
+                  ],
                 },
                 {
                   skillId: '399491',
@@ -802,6 +876,9 @@ const manuscript = {
                 {
                   skillId: '107428',
                   caption: '쐐기 빌드 · 질풍차기 대신',
+                  talents: [
+                    '274909',
+                  ],
                 },
               ],
             },
@@ -842,14 +919,25 @@ const manuscript = {
                 {
                   skillId: '115151',
                   caption: '피해 전 · 충전 여유',
+                  talents: [
+                    '388491',
+                  ],
                 },
                 {
                   skillId: '467307',
                   caption: '차 전에 먼저',
+                  talents: [
+                    '1262672',
+                    '388023',
+                  ],
                 },
                 {
                   skillId: '116680',
                   caption: '다음 소생 강화',
+                  talents: [
+                    '197895',
+                    '388491',
+                  ],
                 },
                 {
                   skillId: '115151',
@@ -858,10 +946,17 @@ const manuscript = {
                 {
                   skillId: '116670',
                   caption: '소생 대상 여럿 부상',
+                  talents: [
+                    '274586',
+                  ],
                 },
                 {
                   skillId: '443028',
                   caption: '근거리 다수 부상',
+                  talents: [
+                    '443589',
+                    '443059',
+                  ],
                 },
                 {
                   skillId: '467307',
@@ -884,18 +979,33 @@ const manuscript = {
                 {
                   skillId: '115151',
                   caption: '첫 피해 전',
+                  talents: [
+                    '388491',
+                  ],
                 },
                 {
                   skillId: '467307',
                   caption: '안전하게 칠 수 있으면',
+                  talents: [
+                    '1271048',
+                    '388023',
+                  ],
                 },
                 {
                   skillId: '116670',
                   caption: '아군이 다치면',
+                  talents: [
+                    '1270958',
+                    '274586',
+                  ],
                 },
                 {
                   skillId: '116680',
                   caption: '활력 준비 · 피해 시작',
+                  talents: [
+                    '450892',
+                    '1270958',
+                  ],
                 },
                 {
                   skillId: '467307',
@@ -908,14 +1018,24 @@ const manuscript = {
                 {
                   skillId: '124682',
                   caption: '위험 대상에게',
+                  talents: [
+                    '451017',
+                  ],
                 },
                 {
                   skillId: '116849',
                   caption: '다음 큰 단일 피해',
+                  talents: [
+                    '202424',
+                  ],
                 },
                 {
                   skillId: '115869',
                   caption: '피해가 약한 구간',
+                  talents: [
+                    '422031',
+                    '467270',
+                  ],
                 },
               ],
               note: '천신합일이 없는 영웅 특성이니 위의 채널 순서를 그대로 가져오지 않습니다. 마나 차를 마시다가 파티가 위험해지면 즉시 구조로 돌아갑니다.',
@@ -958,14 +1078,25 @@ const manuscript = {
                     skillId: '116680',
                     when: '대상이 모자라면 먼저',
                   },
+                  talents: [
+                    '388491',
+                  ],
                 },
                 {
                   skillId: '443028',
                   caption: '여럿이 실제로 다칠 때',
+                  talents: [
+                    '443589',
+                    '443059',
+                  ],
                 },
                 {
                   skillId: '467307',
                   caption: '옥룡의 마음 중 다시',
+                  talents: [
+                    '1262672',
+                    '388023',
+                  ],
                 },
                 {
                   skillId: '116670',
@@ -974,6 +1105,9 @@ const manuscript = {
                     skillId: '322118',
                     when: '별도 긴 피해에 배정',
                   },
+                  talents: [
+                    '274586',
+                  ],
                 },
                 {
                   skillId: '115151',
@@ -982,6 +1116,9 @@ const manuscript = {
                 {
                   skillId: '116849',
                   caption: '다음 위험 대상',
+                  talents: [
+                    '202424',
+                  ],
                 },
                 {
                   skillId: '116670',
@@ -1001,14 +1138,25 @@ const manuscript = {
                 {
                   skillId: '115151',
                   caption: '다음 회수 대상 준비',
+                  talents: [
+                    '388491',
+                  ],
                 },
                 {
                   skillId: '116680',
                   caption: '저장한 활력을 피해에',
+                  talents: [
+                    '450892',
+                    '1270958',
+                  ],
                 },
                 {
                   skillId: '467307',
                   caption: '차 뒤 바로',
+                  talents: [
+                    '1271048',
+                    '388023',
+                  ],
                 },
                 {
                   skillId: '399491',
@@ -1029,6 +1177,10 @@ const manuscript = {
                     skillId: '322118',
                     when: '긴 광역 피해면',
                   },
+                  talents: [
+                    '1270958',
+                    '274586',
+                  ],
                 },
               ],
               note: '천신합일은 이 영웅 특성에 없습니다. 저장 효과가 켜져 있어도 직접 치유를 멈추지 않습니다.',
@@ -1048,6 +1200,9 @@ const manuscript = {
                 {
                   skillId: '107428',
                   caption: '쐐기 · 쿨마다 해오름차기',
+                  talents: [
+                    '274909',
+                  ],
                 },
                 {
                   skillId: '101546',
@@ -1128,12 +1283,18 @@ const manuscript = {
                   label: '내면의 단결',
                   kind: 'talent',
                   note: '종료 때 자동 발동 · 채널 중 다시 누르면 천신 도움 200% 효율',
+                  affects: [
+                    '443028',
+                  ],
                 },
                 {
                   skillId: '443059',
                   label: '비취 성역',
                   kind: 'talent',
                   note: '활성화 때 최대 생명력 10% 회복 · 받는 피해 15% 감소, 종료 뒤 8초 더',
+                  affects: [
+                    '443028',
+                  ],
                 },
               ],
             },
@@ -1151,6 +1312,9 @@ const manuscript = {
                   label: '흐르는 지혜',
                   kind: 'talent',
                   note: '옥룡의 마음 동안 가속 10% 증가',
+                  affects: [
+                    '443028',
+                  ],
                 },
               ],
             },
@@ -1300,12 +1464,20 @@ const manuscript = {
                   label: '목적의 명료함',
                   kind: 'talent',
                   note: '포용의 안개를 쓰면 활력 추가 저장',
+                  affects: [
+                    '124682',
+                  ],
                 },
                 {
                   skillId: '1271048',
                   label: '위치 에너지',
                   kind: 'talent',
                   note: '해오름차기·질풍차기로 잠재된 기운 1중첩',
+                  affects: [
+                    '107428',
+                    '467307',
+                    '116670',
+                  ],
                 },
               ],
             },
@@ -1322,6 +1494,9 @@ const manuscript = {
                   label: '바닥 없는 잔',
                   kind: 'talent',
                   note: '집중의 천둥 차 충전 1회 추가',
+                  affects: [
+                    '116680',
+                  ],
                 },
               ],
             },
@@ -1333,6 +1508,10 @@ const manuscript = {
                   label: '조화의 쇄도',
                   kind: 'talent',
                   note: '잠재된 기운 2중첩 획득',
+                  affects: [
+                    '116680',
+                    '116670',
+                  ],
                 },
                 {
                   skillId: '1270990',
@@ -1355,6 +1534,9 @@ const manuscript = {
                   label: '정화된 정신',
                   kind: 'talent',
                   note: '조화의 형이 끝날 때 남은 활력을 8초 지속 치유로',
+                  affects: [
+                    '116680',
+                  ],
                 },
               ],
             },
@@ -2720,6 +2902,11 @@ const manuscript = {
     video: {
       youtubeId: '356D18J0MB0',
       title: '한밤 2시즌 12.1.5 운무 수도사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'b9uuqFAUWCQ',
+      title: '한밤 2시즌 12.1.5 운무 수도사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

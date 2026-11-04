@@ -10,4 +10,5 @@
 - 2026-11-02 오후 주술사 심화편 업로드('사이트/유튜브 동기화 작업 ㄱㄱ')와 함께 shaman-elemental, shaman-enhancement, shaman-restoration 도 넣었다(`_shaman.cjs`, 영상 표 사본). 격류(200072)는 KB 종류가 시전 스킬이라 흐름도 상자 연결만 있고 타임라인 특성 칸에는 넣지 않는다.
 - 2026-11-02 저녁 마법사 심화편 공개('진행시켜')와 함께 mage-arcane, mage-fire, mage-frost 도 넣었다(`_mage.cjs`, 영상 표 사본). 유성 파편·유성은 같은 흐름도의 효과 상자 이름으로 잇는다. 원고 검사기의 특성 연결 검사 목록에 마법사 3개를 더했다.
 - 2026-11-04 흑마법사 심화편 공개('사이트 연동/영상 업로드 진행하고 다음직업')와 함께 warlock-affliction, warlock-demonology, warlock-destruction 도 넣었다(`_warlock.cjs`, 영상 표 사본). 시즌 2 세트(KB 이름이 영어)는 흐름도 상자 affects 에만 있고 타임라인 특성 칸에는 넣지 않는다. 원고 검사기의 특성 연결 검사 목록에 흑마법사 3개를 더했다.
+- 2026-11-05 수도사 심화편 공개와 함께 monk-brewmaster, monk-mistweaver, monk-windwalker 도 넣었다(`_monk.cjs`, 영상 표 사본). 원고의 끼워 넣는 칸은 영웅 이름을 줄여 쓴다('천신 · '·'조화 · '). 원고 검사기의 특성 연결 검사 목록에 수도사 3개를 더했다.
 - 순서 주의: 특성 연결을 넣은 뒤 원고가 바뀌면(심화편 단추 등) `refresh-orig.cjs <id>`로 원본 스냅샷을 다시 맞춘 다음에 apply.cjs 를 돌린다. 2026-11-02 사냥꾼 단추를 넣은 뒤 8개 모두 다시 맞췄다.

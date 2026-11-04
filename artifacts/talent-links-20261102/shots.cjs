@@ -35,6 +35,9 @@ const GUIDES = {
   'warlock-affliction': '/guide/warlock/affliction',
   'warlock-demonology': '/guide/warlock/demonology',
   'warlock-destruction': '/guide/warlock/destruction',
+  'monk-brewmaster': '/guide/monk/brewmaster',
+  'monk-mistweaver': '/guide/monk/mistweaver',
+  'monk-windwalker': '/guide/monk/windwalker',
 };
 const only = process.argv.slice(3);
 (async () => {

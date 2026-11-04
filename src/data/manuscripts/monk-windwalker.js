@@ -378,6 +378,9 @@ const manuscript = {
                   label: '폭발하는 기운',
                   kind: 'talent',
                   note: '후려차기!를 쓰면 기 1',
+                  affects: [
+                    '100784',
+                  ],
                 },
                 {
                   skillId: '1272696',
@@ -518,6 +521,12 @@ const manuscript = {
                   label: '타격 연계',
                   kind: 'talent',
                   note: '연속 적중마다 1%씩 · 최대 5중첩',
+                  affects: [
+                    '113656',
+                    '107428',
+                    '101546',
+                    '100784',
+                  ],
                 },
               ],
             },
@@ -591,12 +600,18 @@ const manuscript = {
                   label: '여세몰이',
                   kind: 'talent',
                   note: '뒤쪽 타격일수록 추가 피해 · 끝난 뒤 8초 자동 공격 속도 60%',
+                  affects: [
+                    '113656',
+                  ],
                 },
                 {
                   skillId: '457974',
                   label: '비취불꽃 진각',
                   kind: 'talent',
                   note: '끝날 때 자동 · 전방 최대 5명 · 3초 이동 속도 20%',
+                  affects: [
+                    '113656',
+                  ],
                 },
               ],
             },
@@ -742,6 +757,10 @@ const manuscript = {
                   label: '정점의 발구르기',
                   kind: 'talent',
                   note: '자동 발구르기 · 기 2',
+                  affects: [
+                    '1249625',
+                    '1272696',
+                  ],
                 },
                 {
                   skillId: '107428',
@@ -753,6 +772,9 @@ const manuscript = {
                   label: '호안주',
                   kind: 'talent',
                   note: '최대 20중첩 소비 · 중첩당 치명타 확률 1%p',
+                  affects: [
+                    '1249625',
+                  ],
                 },
               ],
             },
@@ -774,6 +796,9 @@ const manuscript = {
                   label: '바람의 무기',
                   kind: 'talent',
                   note: '등선 동안 공격력 5%',
+                  affects: [
+                    '1249625',
+                  ],
                 },
               ],
             },
@@ -824,6 +849,10 @@ const manuscript = {
                     skillId: '1249625',
                     when: '쉬엔과 함께 · 넘치기 전',
                   },
+                  talents: [
+                    '451294',
+                    '457974',
+                  ],
                 },
                 {
                   skillId: '101546',
@@ -836,6 +865,9 @@ const manuscript = {
                 {
                   skillId: '107428',
                   caption: '쿨마다 · 분노 확인',
+                  talents: [
+                    '196740',
+                  ],
                 },
                 {
                   skillId: '100780',
@@ -844,6 +876,9 @@ const manuscript = {
                 {
                   skillId: '100784',
                   caption: '발동 소비 · 쿨 당기기',
+                  talents: [
+                    '451498',
+                  ],
                 },
                 {
                   skillId: '107428',
@@ -867,18 +902,30 @@ const manuscript = {
                 {
                   skillId: '443028',
                   caption: '천신 · 일반 강화 끝난 뒤',
+                  talents: [
+                    '443589',
+                  ],
                 },
                 {
                   skillId: '113656',
                   caption: '천신 · 옥룡의 마음 1초 미만',
+                  talents: [
+                    '443589',
+                  ],
                 },
                 {
                   skillId: '101546',
                   caption: '음영파 · 츠지의 춤+박자면 위로',
+                  talents: [
+                    '1272821',
+                  ],
                 },
                 {
                   skillId: '1272696',
                   caption: '음영파 · 호안주 선택 시',
+                  talents: [
+                    '1272694',
+                  ],
                 },
               ],
             },
@@ -927,14 +974,25 @@ const manuscript = {
                 {
                   skillId: '1249625',
                   caption: '능력치 효과 켠 뒤',
+                  talents: [
+                    '1261703',
+                    '1272678',
+                  ],
                 },
                 {
                   skillId: '113656',
                   caption: '첫 채널 · 끝까지',
+                  talents: [
+                    '443589',
+                    '451294',
+                  ],
                 },
                 {
                   skillId: '107428',
                   caption: '분노 초기화 확인',
+                  talents: [
+                    '196740',
+                  ],
                 },
               ],
               note: '스조라크 신화 상위 천신의 대변자 로그 9개가 모두 범의 장풍 → 백호 쉬엔의 원령 → 등선 → 분노의 주먹으로 시작했습니다. 장신구와 물약은 쉬엔과 등선 사이에 많이 썼습니다. 첫 분노의 주먹 뒤 회전 학다리차기를 먼저 쓴 로그는 3개뿐이라 이 줄에 넣지 않았습니다.',
@@ -945,10 +1003,18 @@ const manuscript = {
                 {
                   skillId: '152175',
                   caption: '일반 옥룡의 마음',
+                  talents: [
+                    '451576',
+                    '392985',
+                  ],
                 },
                 {
                   skillId: '113656',
                   caption: '다시 준비되면',
+                  talents: [
+                    '443589',
+                    '451294',
+                  ],
                 },
                 {
                   skillId: '101546',
@@ -957,6 +1023,9 @@ const manuscript = {
                 {
                   skillId: '107428',
                   caption: '쿨이 돌면',
+                  talents: [
+                    '196740',
+                  ],
                 },
                 {
                   skillId: '113656',
@@ -969,6 +1038,9 @@ const manuscript = {
                 {
                   skillId: '443028',
                   caption: '일반 강화 끝난 뒤',
+                  talents: [
+                    '443589',
+                  ],
                 },
                 {
                   skillId: '113656',
@@ -987,26 +1059,47 @@ const manuscript = {
                 {
                   skillId: '1249625',
                   caption: '능력치 효과 켠 뒤',
+                  talents: [
+                    '1262603',
+                    '1261703',
+                  ],
                 },
                 {
                   skillId: '113656',
                   caption: '첫 채널 · 끝까지',
+                  talents: [
+                    '450988',
+                    '451294',
+                  ],
                 },
                 {
                   skillId: '107428',
                   caption: '분노 초기화 확인',
+                  talents: [
+                    '1272821',
+                  ],
                 },
                 {
                   skillId: '152175',
                   caption: '두 핵심기 쿨일 때',
+                  talents: [
+                    '451576',
+                    '392985',
+                  ],
                 },
                 {
                   skillId: '101546',
                   caption: '츠지의 춤·박자 소비',
+                  talents: [
+                    '1272821',
+                  ],
                 },
                 {
                   skillId: '100784',
                   caption: '연계 유지 · 남는 기',
+                  talents: [
+                    '451498',
+                  ],
                 },
                 {
                   skillId: '113656',
@@ -1061,6 +1154,10 @@ const manuscript = {
                 {
                   skillId: '113656',
                   caption: '정신 집중 전체 맞히기',
+                  talents: [
+                    '451294',
+                    '457974',
+                  ],
                 },
                 {
                   skillId: '101546',
@@ -1073,10 +1170,17 @@ const manuscript = {
                     skillId: '467307',
                     when: '박자를 쓴 뒤 발동이 뜨면',
                   },
+                  talents: [
+                    '196740',
+                  ],
                 },
                 {
                   skillId: '152175',
                   caption: '모인 적에게',
+                  talents: [
+                    '451576',
+                    '392985',
+                  ],
                 },
                 {
                   skillId: '100784',
@@ -1085,6 +1189,9 @@ const manuscript = {
                     skillId: '1272696',
                     when: '등선 중 기 부족·종료 임박',
                   },
+                  talents: [
+                    '451498',
+                  ],
                 },
                 {
                   skillId: '101546',
@@ -1100,22 +1207,37 @@ const manuscript = {
                 {
                   skillId: '101546',
                   caption: '음영파 · 등선 중 5명 이상',
+                  talents: [
+                    '1272821',
+                  ],
                 },
                 {
                   skillId: '113656',
                   caption: '천신 · 옥룡의 마음 만료 임박이면 맨 앞',
+                  talents: [
+                    '443589',
+                  ],
                 },
                 {
                   skillId: '152175',
                   caption: '천신 · 다음 쉬엔까지 10초 초과',
+                  talents: [
+                    '451576',
+                  ],
                 },
                 {
                   skillId: '443028',
                   caption: '천신 · 일반 옥룡의 마음 종료 뒤',
+                  talents: [
+                    '443589',
+                  ],
                 },
                 {
                   skillId: '107428',
                   caption: '천신 · 옥룡의 마음 중·박자 없음',
+                  talents: [
+                    '196740',
+                  ],
                 },
               ],
             },
@@ -1185,6 +1307,10 @@ const manuscript = {
                   label: '무인의 민첩성',
                   kind: 'talent',
                   note: '자동 공격 속도 30% · 등선 중 60%',
+                  affects: [
+                    '1249625',
+                    '450615',
+                  ],
                 },
               ],
             },
@@ -1202,6 +1328,10 @@ const manuscript = {
                   label: '일대다 전투',
                   kind: 'talent',
                   note: '자동 공격 치명타면 충전 두 배',
+                  affects: [
+                    '450615',
+                    '113656',
+                  ],
                 },
               ],
             },
@@ -1223,12 +1353,20 @@ const manuscript = {
                   label: '대기 준비',
                   kind: 'talent',
                   note: '등선 시 질풍격 10중첩 · 다음 공격에서 70% 효율',
+                  affects: [
+                    '1249625',
+                    '450615',
+                  ],
                 },
                 {
                   skillId: '1272821',
                   label: '장벽의 지혜',
                   kind: 'talent',
                   note: '해오름차기·회전 학다리차기 · 내부 제한 1초',
+                  affects: [
+                    '107428',
+                    '101546',
+                  ],
                 },
               ],
             },
@@ -1374,6 +1512,10 @@ const manuscript = {
                     label: '내면의 단결',
                     kind: 'talent',
                     note: '천신 넷의 도움을 200% 효율로',
+                    affects: [
+                      '443028',
+                      '113656',
+                    ],
                   },
                 ],
               },
@@ -1514,18 +1656,31 @@ const manuscript = {
                   label: '바람과의 교감',
                   kind: 'talent',
                   note: '쿨다운 5초 감소 · 공격력 20%',
+                  affects: [
+                    '392983',
+                    '152175',
+                  ],
                 },
                 {
                   skillId: '392985',
                   label: '천둥주먹',
                   kind: 'talent',
                   note: '쓴 뒤 기본 4중첩 · 근접 공격이 소비',
+                  affects: [
+                    '392983',
+                    '152175',
+                  ],
                 },
                 {
                   skillId: '451529',
                   label: '부서진 사원의 지식',
                   kind: 'talent',
                   note: '수도원의 가르침 4중첩 · 최대 8',
+                  affects: [
+                    '392983',
+                    '152175',
+                    '100784',
+                  ],
                 },
               ],
             },
@@ -1553,18 +1708,33 @@ const manuscript = {
                 {
                   skillId: '1249625',
                   caption: '능력치 효과 켠 뒤',
+                  talents: [
+                    '1261703',
+                    '1272678',
+                  ],
                 },
                 {
                   skillId: '392983',
                   caption: '활성 조건 없이 바로',
+                  talents: [
+                    '451576',
+                    '392985',
+                  ],
                 },
                 {
                   skillId: '113656',
                   caption: '첫 채널 · 끝까지',
+                  talents: [
+                    '451294',
+                    '457974',
+                  ],
                 },
                 {
                   skillId: '107428',
                   caption: '분노 초기화 확인',
+                  talents: [
+                    '196740',
+                  ],
                 },
               ],
             },
@@ -3330,6 +3500,11 @@ const manuscript = {
     video: {
       youtubeId: 'E7E2bk-wF5s',
       title: '한밤 2시즌 12.1.5 풍운 수도사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'hv7uMzGR_-Q',
+      title: '한밤 2시즌 12.1.5 풍운 수도사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
     defaultHeroBranchIndex: 1,

@@ -473,6 +473,10 @@ const manuscript = {
                   label: '의식 상실 연계',
                   kind: 'talent',
                   note: '골랐다면 다음 범의 장풍 피해 100% 증가 또는 다음 맥주통의 맥주 재사용 감소 2초 추가',
+                  affects: [
+                    '100780',
+                    '121253',
+                  ],
                 },
                 {
                   skillId: '100780',
@@ -541,18 +545,27 @@ const manuscript = {
                   label: '강한 내성',
                   kind: 'talent',
                   note: '고조된 시간차에서 쓰면 충전 시간 4초 환급',
+                  affects: [
+                    '119582',
+                  ],
                 },
                 {
                   skillId: '383700',
                   label: '가이 플린의 황실 맥주',
                   kind: 'talent',
                   note: '정화한 양의 25%만큼 자신을 치유',
+                  affects: [
+                    '119582',
+                  ],
                 },
                 {
                   skillId: '1262628',
                   label: '깨어나는 영혼',
                   kind: 'talent',
                   note: '사용 후 15초 동안 받는 시간차 피해를 별도 한도까지 흡수',
+                  affects: [
+                    '119582',
+                  ],
                 },
               ],
             },
@@ -627,6 +640,11 @@ const manuscript = {
                   label: '간편 양조',
                   kind: 'talent',
                   note: '정화주·천신주·천신의 주입 기본 쿨다운 20% 감소',
+                  affects: [
+                    '119582',
+                    '322507',
+                    '1241059',
+                  ],
                 },
                 {
                   skillId: '450892',
@@ -634,6 +652,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '조화의 종사',
                   note: '천신주·천신의 주입 충전 1회 추가',
+                  affects: [
+                    '322507',
+                    '1241059',
+                  ],
                 },
               ],
             },
@@ -697,12 +719,19 @@ const manuscript = {
                   label: '살살라빔의 힘',
                   kind: 'talent',
                   note: '맥주통을 쓰면 불의 숨결 남은 쿨다운 초기화',
+                  affects: [
+                    '121253',
+                    '115181',
+                  ],
                 },
                 {
                   skillId: '383698',
                   label: '끓어오르는 맥주',
                   kind: 'talent',
                   note: '불의 숨결이 걸린 적에게 맥주통 피해 20% 증가',
+                  affects: [
+                    '121253',
+                  ],
                 },
               ],
             },
@@ -770,10 +799,16 @@ const manuscript = {
                     skillId: '119582',
                     when: '큰 타격 뒤 시간차가 뛰면',
                   },
+                  talents: [
+                    '196736',
+                  ],
                 },
                 {
                   skillId: '100780',
                   caption: '연계 소비',
+                  talents: [
+                    '196736',
+                  ],
                 },
                 {
                   skillId: '121253',
@@ -782,10 +817,17 @@ const manuscript = {
                     skillId: '1241059',
                     when: '방어가 필요할 때',
                   },
+                  talents: [
+                    '383697',
+                    '383698',
+                  ],
                 },
                 {
                   skillId: '115181',
                   caption: '맥주통 바로 뒤',
+                  talents: [
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '205523',
@@ -837,14 +879,23 @@ const manuscript = {
                 {
                   skillId: '115181',
                   caption: '음영파 · 니우짜오 중 장벽의 지혜',
+                  talents: [
+                    '1272821',
+                  ],
                 },
                 {
                   skillId: '1241059',
                   caption: '조화의 종사 · 충전이 차면 한 번',
+                  talents: [
+                    '1270958',
+                  ],
                 },
                 {
                   skillId: '100780',
                   caption: '조화의 종사 · 잠재된 기운 소비',
+                  talents: [
+                    '1271048',
+                  ],
                 },
               ],
             },
@@ -885,6 +936,10 @@ const manuscript = {
                 {
                   skillId: '115181',
                   caption: '2세트면 3~10초 전',
+                  talents: [
+                    '1272821',
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '121253',
@@ -893,10 +948,17 @@ const manuscript = {
                     skillId: '115546',
                     when: '먼저 잡는 탱커라면',
                   },
+                  talents: [
+                    '450988',
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '132578',
                   caption: '첫 맥주통 직후',
+                  talents: [
+                    '1272821',
+                  ],
                 },
                 {
                   skillId: '115181',
@@ -905,10 +967,16 @@ const manuscript = {
                 {
                   skillId: '205523',
                   caption: '연계 만들기',
+                  talents: [
+                    '196736',
+                  ],
                 },
                 {
                   skillId: '100780',
                   caption: '연계 소비',
+                  talents: [
+                    '196736',
+                  ],
                 },
                 {
                   skillId: '325153',
@@ -943,6 +1011,9 @@ const manuscript = {
                 {
                   skillId: '115181',
                   caption: '2세트면 3~10초 전',
+                  talents: [
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '132578',
@@ -955,6 +1026,10 @@ const manuscript = {
                     skillId: '115546',
                     when: '먼저 잡는 탱커라면',
                   },
+                  talents: [
+                    '1271048',
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '115181',
@@ -963,14 +1038,25 @@ const manuscript = {
                 {
                   skillId: '205523',
                   caption: '연계 만들기',
+                  talents: [
+                    '196736',
+                  ],
                 },
                 {
                   skillId: '100780',
                   caption: '첫 중첩 소비',
+                  talents: [
+                    '1271048',
+                    '1270958',
+                  ],
                 },
                 {
                   skillId: '1241059',
                   caption: '첫 10초 · 피해에 맞춰',
+                  talents: [
+                    '1270958',
+                    '450892',
+                  ],
                 },
                 {
                   skillId: '121253',
@@ -1035,14 +1121,24 @@ const manuscript = {
                     skillId: '1241059',
                     when: '평타가 몰리는 첫 구간',
                   },
+                  talents: [
+                    '383697',
+                    '383698',
+                  ],
                 },
                 {
                   skillId: '115181',
                   caption: '맥주통 바로 뒤',
+                  talents: [
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '205523',
                   caption: '연계·방어 유지',
+                  talents: [
+                    '196736',
+                  ],
                 },
                 {
                   skillId: '100780',
@@ -1051,6 +1147,9 @@ const manuscript = {
                     skillId: '119582',
                     when: '큰 타격 뒤',
                   },
+                  talents: [
+                    '196736',
+                  ],
                 },
                 {
                   skillId: '121253',
@@ -1086,14 +1185,23 @@ const manuscript = {
                 {
                   skillId: '132578',
                   caption: '음영파 · 모인 적과 소환 시간',
+                  talents: [
+                    '1272821',
+                  ],
                 },
                 {
                   skillId: '115181',
                   caption: '음영파 · 니우짜오 중 먼저',
+                  talents: [
+                    '1272821',
+                  ],
                 },
                 {
                   skillId: '121253',
                   caption: '음영파 · 불의 숨결 초기화',
+                  talents: [
+                    '450988',
+                  ],
                 },
                 {
                   skillId: '325153',
@@ -1102,10 +1210,16 @@ const manuscript = {
                 {
                   skillId: '1241059',
                   caption: '조화의 종사 · 실제 집중 피해에',
+                  talents: [
+                    '1270958',
+                  ],
                 },
                 {
                   skillId: '100780',
                   caption: '조화의 종사 · 중첩 소비·전방 정렬',
+                  talents: [
+                    '1271048',
+                  ],
                 },
                 {
                   skillId: '123986',
@@ -1189,6 +1303,9 @@ const manuscript = {
                   label: '일대다 전투',
                   kind: 'talent',
                   note: '자동 공격 치명타가 충전을 두 배로 · 맥주통 피해 35% 증가',
+                  affects: [
+                    '121253',
+                  ],
                 },
               ],
             },
@@ -1216,12 +1333,20 @@ const manuscript = {
                   label: '장벽의 지혜',
                   kind: 'talent',
                   note: '불의 숨결이 질풍격을 3회 추가 방출',
+                  affects: [
+                    '115181',
+                    '132578',
+                  ],
                 },
                 {
                   skillId: '383697',
                   label: '살살라빔의 힘',
                   kind: 'talent',
                   note: '맥주통으로 불의 숨결 쿨다운 초기화',
+                  affects: [
+                    '121253',
+                    '115181',
+                  ],
                 },
               ],
             },
@@ -1389,22 +1514,40 @@ const manuscript = {
                     skillId: '115546',
                     when: '흩어진 적이 있으면',
                   },
+                  talents: [
+                    '450988',
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '115181',
                   caption: '맥주통 바로 뒤',
+                  talents: [
+                    '1272821',
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '119582',
                   caption: '첫 평타가 몰린 뒤',
+                  talents: [
+                    '196737',
+                    '383700',
+                  ],
                 },
                 {
                   skillId: '1241059',
                   caption: '첫 흡수',
+                  talents: [
+                    '325093',
+                  ],
                 },
                 {
                   skillId: '132578',
                   caption: '천신의 주입 직후',
+                  talents: [
+                    '1272821',
+                  ],
                 },
                 {
                   skillId: '325153',
@@ -1439,10 +1582,17 @@ const manuscript = {
                     skillId: '115546',
                     when: '흩어진 적이 있으면',
                   },
+                  talents: [
+                    '1271048',
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '115181',
                   caption: '맥주통 바로 뒤',
+                  talents: [
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '1241059',
@@ -1451,6 +1601,10 @@ const manuscript = {
                     skillId: '119582',
                     when: '큰 타격 뒤',
                   },
+                  talents: [
+                    '1270958',
+                    '450892',
+                  ],
                 },
                 {
                   skillId: '132578',
@@ -1459,6 +1613,10 @@ const manuscript = {
                 {
                   skillId: '100780',
                   caption: '잠재된 기운 소비',
+                  talents: [
+                    '1271048',
+                    '1270958',
+                  ],
                 },
                 {
                   skillId: '1241059',
@@ -1530,10 +1688,17 @@ const manuscript = {
                     skillId: '115399',
                     when: '맥주 충전이 비었으면',
                   },
+                  talents: [
+                    '196737',
+                    '383700',
+                  ],
                 },
                 {
                   skillId: '1241059',
                   caption: '집중 피해 전',
+                  talents: [
+                    '325093',
+                  ],
                 },
                 {
                   skillId: '121253',
@@ -1542,6 +1707,10 @@ const manuscript = {
                     skillId: '132578',
                     when: '약 95초마다',
                   },
+                  talents: [
+                    '450988',
+                    '383697',
+                  ],
                 },
                 {
                   skillId: '119582',
@@ -1569,10 +1738,18 @@ const manuscript = {
                 {
                   skillId: '1241059',
                   caption: '넘겨받은 직후',
+                  talents: [
+                    '1270958',
+                    '450892',
+                  ],
                 },
                 {
                   skillId: '100780',
                   caption: '잠재된 기운 소비',
+                  talents: [
+                    '1271048',
+                    '1270958',
+                  ],
                 },
                 {
                   skillId: '119582',
@@ -1581,6 +1758,10 @@ const manuscript = {
                     skillId: '115399',
                     when: '천신의 주입이 비면',
                   },
+                  talents: [
+                    '196737',
+                    '383700',
+                  ],
                 },
                 {
                   skillId: '1241059',
@@ -1597,6 +1778,10 @@ const manuscript = {
                     skillId: '132578',
                     when: '약 2분마다',
                   },
+                  talents: [
+                    '1271048',
+                    '383697',
+                  ],
                 },
               ],
               note: '바닥 없는 잔으로 천신의 주입이 2충전입니다. 상위 로그는 도발 뒤 15초 안에 천신의 주입을 쓴 교대가 절반쯤이었고, 흑우주 바로 뒤에 천신의 주입을 다시 쓰는 경우가 절반 가까이였습니다.',
@@ -1625,6 +1810,10 @@ const manuscript = {
                   label: '위치 에너지',
                   kind: 'talent',
                   note: '맥주통 휘두르기마다 잠재된 기운 1중첩',
+                  affects: [
+                    '121253',
+                    '100780',
+                  ],
                 },
               ],
             },
@@ -1641,6 +1830,10 @@ const manuscript = {
                   label: '조화의 쇄도',
                   kind: 'talent',
                   note: '흡수 맥주 사용으로 잠재된 기운 2중첩',
+                  affects: [
+                    '1241059',
+                    '100780',
+                  ],
                 },
               ],
             },
@@ -1664,6 +1857,10 @@ const manuscript = {
                   label: '압도적인 무력',
                   kind: 'talent',
                   note: '후려차기·범의 장풍이 전방 일직선으로 15% 추가 피해',
+                  affects: [
+                    '205523',
+                    '100780',
+                  ],
                 },
               ],
             },
@@ -1707,12 +1904,21 @@ const manuscript = {
                   label: '한 잔 더 첫 노드',
                   kind: 'talent',
                   note: '맥주 사용 시 20% 확률로 빈 통 준비',
+                  affects: [
+                    '121253',
+                  ],
                 },
                 {
                   skillId: '1265141',
                   label: '한 잔 더 마지막 노드',
                   kind: 'talent',
                   note: '강화주·천신주 계열 사용 시 빈 통 확정 · 자신과 아군 2명에게 음료',
+                  affects: [
+                    '115203',
+                    '322507',
+                    '1241059',
+                    '121253',
+                  ],
                 },
               ],
             },
@@ -1758,6 +1964,9 @@ const manuscript = {
                   label: '한 잔 더 중간 노드',
                   kind: 'talent',
                   note: '맥주통 초기화 · 1점 기력 50% 감소, 2점 100% 감소',
+                  affects: [
+                    '121253',
+                  ],
                 },
               ],
             },
@@ -3553,6 +3762,11 @@ const manuscript = {
     video: {
       youtubeId: 'mOS_Xg2CTqE',
       title: '한밤 2시즌 12.1.5 양조 수도사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: '-w-k0VAN7lQ',
+      title: '한밤 2시즌 12.1.5 양조 수도사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };
