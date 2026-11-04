@@ -455,12 +455,18 @@ const manuscript = {
                   label: '급성 발병',
                   kind: 'talent',
                   note: '첫 적용을 3중첩부터 시작',
+                  affects: [
+                    '980',
+                  ],
                 },
                 {
                   skillId: '1259825',
                   label: '고뇌 나눔',
                   kind: 'talent',
                   note: '15미터 안 추가 적 하나에게도 고통',
+                  affects: [
+                    '980',
+                  ],
                 },
               ],
             },
@@ -488,12 +494,18 @@ const manuscript = {
                   label: '완전한 부패',
                   kind: 'talent',
                   note: '일반 적에게 무한 지속 · 새 적에게는 따로 걸어야 함',
+                  affects: [
+                    '172',
+                  ],
                 },
                 {
                   skillId: '452999',
                   label: '생명력 착취',
                   kind: 'talent',
                   note: '부패 피해 30% · 주기 피해의 5% 회복 · 계속 갱신',
+                  affects: [
+                    '172',
+                  ],
                 },
               ],
             },
@@ -542,6 +554,9 @@ const manuscript = {
                   label: '유령 출몰 연마',
                   kind: 'talent',
                   note: '피해 35% 증가 · 시전 0.3초 단축',
+                  affects: [
+                    '48181',
+                  ],
                 },
               ],
             },
@@ -553,6 +568,11 @@ const manuscript = {
                   label: '성급한 분노',
                   kind: 'talent',
                   note: '필러·손아귀·수확 피해 10%, 출몰 대상이면 20%',
+                  affects: [
+                    '686',
+                    '1261153',
+                    '1257052',
+                  ],
                 },
                 {
                   skillId: '449637',
@@ -560,6 +580,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '영혼 수확자',
                   note: '출몰을 쓰면 일몰을 얻음',
+                  affects: [
+                    '48181',
+                    '172',
+                  ],
                 },
               ],
             },
@@ -572,6 +596,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '첫 노드',
                   note: '악마의 영혼이 주 대상과 부패 걸린 추가 적 셋 공격',
+                  affects: [
+                    '48181',
+                  ],
                 },
                 {
                   skillId: '1261990',
@@ -579,6 +606,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '중간 노드',
                   note: '출몰 최초 피해 증가 · 증폭에 2%p(2점 4%p) 추가',
+                  affects: [
+                    '48181',
+                  ],
                 },
                 {
                   skillId: '1261992',
@@ -586,6 +616,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 노드',
                   note: '확률로 나스레자의 분노 · 10미터',
+                  affects: [
+                    '48181',
+                  ],
                 },
               ],
             },
@@ -731,12 +764,18 @@ const manuscript = {
                   label: '시선의 계약',
                   kind: 'talent',
                   note: '소환 시간 5초 연장 → 25초',
+                  affects: [
+                    '205180',
+                  ],
                 },
                 {
                   skillId: '1280733',
                   label: '황천의 장갑판',
                   kind: 'talent',
                   note: '광선이 10미터 안 추가 적 넷도 공격',
+                  affects: [
+                    '205180',
+                  ],
                 },
               ],
             },
@@ -748,6 +787,10 @@ const manuscript = {
                   label: '재앙의 손아귀',
                   kind: 'talent',
                   note: '암흑시선 중 기본 필러를 손아귀로',
+                  affects: [
+                    '1261153',
+                    '205180',
+                  ],
                 },
                 {
                   skillId: '1261153',
@@ -812,6 +855,9 @@ const manuscript = {
                 {
                   skillId: '48181',
                   caption: '돌아오면 우선 대상에',
+                  talents: [
+                    '458034',
+                  ],
                 },
                 {
                   skillId: '980',
@@ -820,6 +866,10 @@ const manuscript = {
                     skillId: '442726',
                     when: '쿨이 돌면 · 쇠퇴 걸린 적',
                   },
+                  talents: [
+                    '1260209',
+                    '1259825',
+                  ],
                 },
                 {
                   skillId: '1259790',
@@ -836,6 +886,9 @@ const manuscript = {
                     skillId: '1257052',
                     when: '적개심 뒤 조각 쓴 다음',
                   },
+                  talents: [
+                    '1312998',
+                  ],
                 },
                 {
                   skillId: '1259790',
@@ -863,18 +916,30 @@ const manuscript = {
                 {
                   skillId: '445468',
                   caption: '지옥소환사 · 끊겼을 때 다시',
+                  talents: [
+                    '440048',
+                  ],
                 },
                 {
                   skillId: '172',
                   caption: '영혼 수확자 · 쇠퇴 대신',
+                  talents: [
+                    '449637',
+                  ],
                 },
                 {
                   skillId: '1257052',
                   caption: '영혼 수확자 · 암흑시선 뒤 2조각 이하',
+                  talents: [
+                    '449638',
+                  ],
                 },
                 {
                   skillId: '27243',
                   caption: '영혼 수확자 · 4세트 조건부 무료 씨앗',
+                  talents: [
+                    '449614',
+                  ],
                 },
                 {
                   skillId: '198590',
@@ -919,31 +984,57 @@ const manuscript = {
                 {
                   skillId: '48181',
                   caption: '전투 전 · 풀링 1초 전',
+                  talents: [
+                    '458034',
+                  ],
                 },
                 {
                   skillId: '980',
                   caption: '유지 준비',
+                  talents: [
+                    '1260209',
+                    '1259825',
+                  ],
                 },
                 {
                   skillId: '445468',
                   caption: '부패 대신 쇠퇴',
+                  talents: [
+                    '440048',
+                    '440055',
+                  ],
                 },
                 {
                   skillId: '442726',
                   caption: '쇠퇴 걸린 적에',
+                  talents: [
+                    '1266803',
+                    '1266805',
+                  ],
                 },
                 {
                   skillId: '205180',
                   caption: '공격 시간 확보',
+                  talents: [
+                    '1279521',
+                    '1280733',
+                  ],
                 },
                 {
                   skillId: '1259790',
                   count: '4~5',
                   caption: '적개심 안 조각 소비',
+                  talents: [
+                    '440043',
+                    '1266799',
+                  ],
                 },
                 {
                   skillId: '1257052',
                   caption: '소비 뒤 정신 집중',
+                  talents: [
+                    '1312998',
+                  ],
                 },
                 {
                   skillId: '1259790',
@@ -952,6 +1043,10 @@ const manuscript = {
                 {
                   skillId: '1261153',
                   caption: '추가 틱 · 이후 단일',
+                  talents: [
+                    '1261149',
+                    '1312998',
+                  ],
                 },
               ],
               note: '스조라크 신화 상위 로그 10개 중 7개가 적개심을 암흑시선보다 먼저 켰고, 6개가 그 뒤 불안정한 고통으로 조각을 먼저 쓰고 수확했습니다. 첫 묶음의 불안정한 고통은 10개 중 6개가 네다섯 번이었습니다. 수확 뒤 손아귀와 불안정한 고통의 앞뒤는 로그마다 다릅니다. 재앙의 손아귀를 고르지 않았다면 그 자리에 어둠의 화살을 씁니다.',
@@ -962,22 +1057,42 @@ const manuscript = {
                 {
                   skillId: '48181',
                   caption: '사전 시전 · 풀 타이머',
+                  talents: [
+                    '449637',
+                    '458034',
+                  ],
                 },
                 {
                   skillId: '980',
                   caption: '중첩과 조각 시작',
+                  talents: [
+                    '1260209',
+                    '1259825',
+                  ],
                 },
                 {
                   skillId: '172',
                   caption: '일몰 준비',
+                  talents: [
+                    '449637',
+                    '452999',
+                  ],
                 },
                 {
                   skillId: '205180',
                   caption: '수확 전 · 극딜 시작',
+                  talents: [
+                    '1279521',
+                    '1280733',
+                  ],
                 },
                 {
                   skillId: '1259790',
                   caption: '첫 소비',
+                  talents: [
+                    '449629',
+                    '449614',
+                  ],
                 },
                 {
                   skillId: '1259790',
@@ -986,6 +1101,10 @@ const manuscript = {
                 {
                   skillId: '1257052',
                   caption: '끝까지 · 조각 셋',
+                  talents: [
+                    '449638',
+                    '1312998',
+                  ],
                 },
                 {
                   skillId: '1259790',
@@ -998,6 +1117,10 @@ const manuscript = {
                 {
                   skillId: '1261153',
                   caption: '암흑시선 중 회수',
+                  talents: [
+                    '1261149',
+                    '1312998',
+                  ],
                 },
               ],
               note: '처음 조각이 적으면 반복 소비를 줄입니다. 암흑시선 앞뒤에 넣는 불안정한 고통 수는 로그마다 다릅니다. 스조라크 상위 로그 10개 중 8개가 암흑시선을 수확보다 먼저 켰고, 10개 모두 조각을 쓴 뒤 손아귀를 썼습니다. 재앙의 손아귀를 고르지 않았다면 마지막 자리에 일몰이 붙은 어둠의 화살을 씁니다.',
@@ -1052,6 +1175,10 @@ const manuscript = {
                 {
                   skillId: '980',
                   caption: '오래 살 적 여럿에 먼저',
+                  talents: [
+                    '1260209',
+                    '1259825',
+                  ],
                 },
                 {
                   skillId: '27243',
@@ -1060,6 +1187,9 @@ const manuscript = {
                 {
                   skillId: '48181',
                   caption: '오래 살 우선 대상에',
+                  talents: [
+                    '458034',
+                  ],
                 },
                 {
                   skillId: '1257052',
@@ -1068,6 +1198,9 @@ const manuscript = {
                     skillId: '205180',
                     when: '무리가 오래 살면 · 먼저',
                   },
+                  talents: [
+                    '1312998',
+                  ],
                 },
                 {
                   skillId: '27243',
@@ -1088,6 +1221,9 @@ const manuscript = {
                 {
                   skillId: '686',
                   caption: '할 일이 없을 때',
+                  talents: [
+                    '1312998',
+                  ],
                 },
               ],
               note: '씨앗 뿌리기가 없으면 씨앗 소비는 보통 6대상부터입니다. 그보다 적거나 먼저 잡을 적이 있으면 불안정한 고통으로 씁니다. 이미 씨앗이 날아가거나 곧 터질 때 전파용 씨앗을 또 준비하지 않습니다.',
@@ -1099,18 +1235,30 @@ const manuscript = {
                 {
                   skillId: '27243',
                   caption: '영혼 수확자 · 4세트로 장수명 적에',
+                  talents: [
+                    '449614',
+                  ],
                 },
                 {
                   skillId: '445468',
                   caption: '지옥소환사 · 씨앗이 쇠퇴를 전파',
+                  talents: [
+                    '440048',
+                  ],
                 },
                 {
                   skillId: '442726',
                   caption: '지옥소환사 · 퍼진 뒤 수확 전',
+                  talents: [
+                    '1266803',
+                  ],
                 },
                 {
                   skillId: '1259790',
                   caption: '지옥소환사 · 그 대상 쇠퇴 중첩',
+                  talents: [
+                    '440043',
+                  ],
                 },
               ],
             },
@@ -1181,6 +1329,9 @@ const manuscript = {
                   label: '죽음의 그림자',
                   kind: 'talent',
                   note: '정신 집중 중 매초 탐스러운 영혼을 동반한 조각 1개',
+                  affects: [
+                    '1257052',
+                  ],
                 },
               ],
             },
@@ -1198,6 +1349,10 @@ const manuscript = {
                   label: '악마의 영혼',
                   kind: 'talent',
                   note: '내면의 악마가 10미터 광역 피해',
+                  affects: [
+                    '1259790',
+                    '27243',
+                  ],
                 },
               ],
             },
@@ -1215,6 +1370,9 @@ const manuscript = {
                   label: '악령술사의 열정',
                   kind: 'talent',
                   note: '불안정한 고통이 있는 대상에게 악마의 영혼 피해 100% 증가',
+                  affects: [
+                    '1259790',
+                  ],
                 },
               ],
             },
@@ -1226,18 +1384,28 @@ const manuscript = {
                   label: '사타이엘의 자유 의지',
                   kind: 'talent',
                   note: '출몰 사용으로 일몰 · 부패 25% 빠른 피해',
+                  affects: [
+                    '48181',
+                    '172',
+                  ],
                 },
                 {
                   skillId: '449631',
                   label: '사악한 수확',
                   kind: 'talent',
                   note: '일몰 소비가 자동 공격',
+                  affects: [
+                    '686',
+                  ],
                 },
                 {
                   skillId: '449634',
                   label: '종지부',
                   kind: 'talent',
                   note: '일몰 소비가 고른 이어진 운명 또는 영혼의 향연을 활성화',
+                  affects: [
+                    '686',
+                  ],
                 },
               ],
             },
@@ -1363,6 +1531,9 @@ const manuscript = {
                   label: '서릿발분노의 의식',
                   kind: 'talent',
                   note: '쇠퇴 주기 피해 30% · 지속 15% 감소',
+                  affects: [
+                    '445468',
+                  ],
                 },
               ],
             },
@@ -1379,6 +1550,10 @@ const manuscript = {
                   label: '검게 물든 영혼',
                   kind: 'talent',
                   note: '그 대상의 쇠퇴 1중첩 증가 · 확률로 붕괴',
+                  affects: [
+                    '1259790',
+                    '445468',
+                  ],
                 },
               ],
             },
@@ -1390,6 +1565,9 @@ const manuscript = {
                   label: '파멸의 씨앗',
                   kind: 'talent',
                   note: '8중첩 또는 생명력 20% 이하에서 붕괴 · 한 중첩까지 소모하며 피해',
+                  affects: [
+                    '445468',
+                  ],
                 },
               ],
             },
@@ -1407,6 +1585,10 @@ const manuscript = {
                   label: '지옥의 덩굴을 지나',
                   kind: 'talent',
                   note: '불안정한 고통 8%·씨앗 4%, 적개심 중 두 배',
+                  affects: [
+                    '1259790',
+                    '27243',
+                  ],
                 },
                 {
                   skillId: '1266803',
@@ -1414,6 +1596,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '선택',
                   note: '적개심 가속 4% 추가 · 쇠퇴 2중첩 추가',
+                  affects: [
+                    '442726',
+                  ],
                 },
                 {
                   skillId: '1266805',
@@ -1421,6 +1606,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '선택',
                   note: '쇠퇴 주기 피해가 확률로 8초 적개심',
+                  affects: [
+                    '445468',
+                    '442726',
+                  ],
                 },
               ],
             },
@@ -1464,12 +1653,21 @@ const manuscript = {
                   label: '시즌 2 2세트',
                   kind: 'talent',
                   note: '부패 또는 쇠퇴 피해 25% · 고통 피해 15%',
+                  affects: [
+                    '172',
+                    '445468',
+                    '980',
+                  ],
                 },
                 {
                   skillId: '1296569',
                   label: '시즌 2 4세트',
                   kind: 'talent',
                   note: '활성 불안정한 고통 효과마다 피해 증가 · 씨앗이 주 대상에 약한 불안정한 고통',
+                  affects: [
+                    '1259790',
+                    '27243',
+                  ],
                 },
               ],
             },
@@ -1497,11 +1695,18 @@ const manuscript = {
                   label: '악마의 영혼',
                   kind: 'talent',
                   tag: '영혼 수확자',
+                  affects: [
+                    '1259790',
+                    '27243',
+                  ],
                 },
                 {
                   skillId: '452999',
                   label: '생명력 착취',
                   kind: 'talent',
+                  affects: [
+                    '172',
+                  ],
                 },
                 {
                   skillId: '1260269',
@@ -3039,6 +3244,11 @@ const manuscript = {
     video: {
       youtubeId: 'hxEaAHzomt4',
       title: '한밤 2시즌 12.1.5 고통 흑마법사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'I-GhVc_dMUc',
+      title: '한밤 2시즌 12.1.5 고통 흑마법사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
     defaultHeroBranchIndex: 1,

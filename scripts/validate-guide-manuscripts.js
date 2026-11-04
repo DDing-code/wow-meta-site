@@ -1427,6 +1427,9 @@ function main() {
     ['shaman-elemental', '-wiVBCRaxcs'],
     ['shaman-enhancement', 'Hy8_v64nwAU'],
     ['shaman-restoration', 'hK7BDmTeFmQ'],
+    ['warlock-affliction', 'I-GhVc_dMUc'],
+    ['warlock-demonology', 'U4aOIF3pWqo'],
+    ['warlock-destruction', 'i7K6WcRyZzY'],
     ['warrior-arms', 'KgLPXpTh6BU'],
     ['warrior-fury', 'cxgkqi6Px7U'],
     ['warrior-protection', '4pLAYVCJeUU'],
@@ -1800,9 +1803,10 @@ function main() {
 
   // 영상 v10과 같은 특성 ↔ 스킬 연결(2026-11-02 사이트 글에도 넣음, artifacts/talent-links-20261102): 흐름도 특성 상자마다 affects, 타임라인 자리에 talents
   // 마법사 3개(같은 날 심화편 공개와 함께)도 같은 검사를 받는다.
+  // 흑마법사 3개(2026-11-04 심화편 공개와 함께)도 같은 검사를 받는다.
   // 도적 3개(같은 날 심화편 업로드 뒤)도 같다. 암살 엉겅퀴 차(자동 469779·수동 1298826)는 독칼 아래에서 고르는 특성이라 붙는 스킬이 없다.
   const TALENT_BOXES_WITHOUT_TARGET = new Set(['469779', '1298826']);
-  for (const id of ['warrior-fury', 'warrior-protection', 'paladin-holy', 'paladin-protection', 'paladin-retribution', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'rogue-assassination', 'rogue-outlaw', 'rogue-subtlety', 'mage-arcane', 'mage-fire', 'mage-frost']) {
+  for (const id of ['warrior-fury', 'warrior-protection', 'paladin-holy', 'paladin-protection', 'paladin-retribution', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'rogue-assassination', 'rogue-outlaw', 'rogue-subtlety', 'mage-arcane', 'mage-fire', 'mage-frost', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction']) {
     const linked = manuscripts[id];
     const talentBoxes = linked.blocks.flatMap(block => [].concat(block.diagram || []).flatMap(diagram => diagram.layers.flatMap(layer => layer.nodes.filter(node => node.kind === 'talent'))));
     assert(talentBoxes.length >= 10 && talentBoxes.every(node => node.affects?.length || TALENT_BOXES_WITHOUT_TARGET.has(String(node.skillId))),`${id} skill-structure diagrams must list the skills every talent box attaches to (affects)`);

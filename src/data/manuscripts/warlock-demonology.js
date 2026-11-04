@@ -462,6 +462,9 @@ const manuscript = {
                   label: '지배자의 손',
                   kind: 'talent',
                   note: '주 대상 피해 20% 증가',
+                  affects: [
+                    '105174',
+                  ],
                 },
               ],
             },
@@ -478,12 +481,19 @@ const manuscript = {
                   label: '임프 두목',
                   kind: 'talent',
                   note: '그중 1마리 공격력 100% 증가',
+                  affects: [
+                    '105174',
+                  ],
                 },
                 {
                   skillId: '386185',
                   label: '악마의 지식',
                   kind: 'talent',
                   note: '확률로 악마의 핵 추가 · 1점 8%, 2점 15%',
+                  affects: [
+                    '105174',
+                    '264178',
+                  ],
                 },
               ],
             },
@@ -543,6 +553,10 @@ const manuscript = {
                   label: '군림하는 폭군',
                   kind: 'talent',
                   note: '폭군 5초 더 · 살아 있는 공포사냥개 15초 연장',
+                  affects: [
+                    '265187',
+                    '104316',
+                  ],
                 },
               ],
             },
@@ -560,6 +574,9 @@ const manuscript = {
                   label: '폭군의 봉헌',
                   kind: 'talent',
                   note: '폭군이 있는 동안 가속 8%',
+                  affects: [
+                    '265187',
+                  ],
                 },
               ],
             },
@@ -577,6 +594,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '중간 노드',
                   note: '1점당 차원문 5초 · 굴단의 손 피해 10%',
+                  affects: [
+                    '265187',
+                    '105174',
+                  ],
                 },
               ],
             },
@@ -589,6 +610,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 노드',
                   note: '사용 후 조각 1개 반환 · 소환 악마 4초 더',
+                  affects: [
+                    '265187',
+                  ],
                 },
               ],
             },
@@ -633,6 +657,10 @@ const manuscript = {
                   label: '내면의 악마',
                   kind: 'talent',
                   note: '12초마다 임프 자동 소환',
+                  affects: [
+                    '196277',
+                    '264130',
+                  ],
                 },
               ],
             },
@@ -661,6 +689,10 @@ const manuscript = {
                   label: '지옥으로부터의 귀환',
                   kind: 'talent',
                   note: '임프 두목 1마리 소환',
+                  affects: [
+                    '196277',
+                    '264130',
+                  ],
                 },
               ],
             },
@@ -733,18 +765,29 @@ const manuscript = {
                   label: '썩은마귀 소환',
                   kind: 'talent',
                   note: '공포사냥개와 함께 나와 15초',
+                  affects: [
+                    '104316',
+                  ],
                 },
                 {
                   skillId: '460551',
                   label: '파멸',
                   kind: 'talent',
                   note: '핵 악마 화살이 대상에 20초 파멸 · 끝나면 10미터 폭발',
+                  affects: [
+                    '264178',
+                    '105174',
+                  ],
                 },
                 {
                   skillId: '267216',
                   label: '내면의 악마',
                   kind: 'talent',
                   note: '12초마다 날뛰는 임프 1마리',
+                  affects: [
+                    '196277',
+                    '264130',
+                  ],
                 },
               ],
             },
@@ -808,6 +851,9 @@ const manuscript = {
                 {
                   skillId: '264178',
                   caption: '핵 · 3조각 이하',
+                  talents: [
+                    '460551',
+                  ],
                 },
                 {
                   skillId: '105174',
@@ -816,6 +862,10 @@ const manuscript = {
                     skillId: '1276452',
                     when: '흑마법서 쿨이 돌면',
                   },
+                  talents: [
+                    '1276433',
+                    '1276190',
+                  ],
                 },
                 {
                   skillId: '686',
@@ -855,22 +905,37 @@ const manuscript = {
                 {
                   skillId: '105174',
                   caption: '영혼 수확자 · 폭군 전 2조각 이하로',
+                  talents: [
+                    '449614',
+                  ],
                 },
                 {
                   skillId: '265187',
                   caption: '영혼 수확자 · 조각 3개를 받음',
+                  talents: [
+                    '449638',
+                  ],
                 },
                 {
                   skillId: '265187',
                   caption: '악마학자 · 5조각 준비 뒤',
+                  talents: [
+                    '429902',
+                  ],
                 },
                 {
                   skillId: '434635',
                   caption: '악마학자 · 지옥의 군주 뒤 무료',
+                  talents: [
+                    '428522',
+                  ],
                 },
                 {
                   skillId: '434506',
                   caption: '악마학자 · 2조각 이하',
+                  talents: [
+                    '428518',
+                  ],
                 },
               ],
             },
@@ -909,10 +974,17 @@ const manuscript = {
                 {
                   skillId: '264178',
                   caption: '전투 전 · 풀링 4초 전',
+                  talents: [
+                    '460551',
+                  ],
                 },
                 {
                   skillId: '104316',
                   caption: '먼저 · 공포사냥개 2마리',
+                  talents: [
+                    '1251778',
+                    '1276748',
+                  ],
                 },
                 {
                   skillId: '1276452',
@@ -925,11 +997,19 @@ const manuscript = {
                 {
                   skillId: '265187',
                   caption: '5조각 · 극딜 시작',
+                  talents: [
+                    '429902',
+                    '429581',
+                  ],
                 },
                 {
                   skillId: '105174',
                   count: 2,
                   caption: '3개 쓰고 1개 반환',
+                  talents: [
+                    '429893',
+                    '1268709',
+                  ],
                 },
                 {
                   skillId: '686',
@@ -938,6 +1018,9 @@ const manuscript = {
                 {
                   skillId: '196277',
                   caption: '임프 모이면 바로',
+                  talents: [
+                    '1281511',
+                  ],
                 },
                 {
                   skillId: '686',
@@ -958,6 +1041,9 @@ const manuscript = {
                 {
                   skillId: '264178',
                   caption: '사전 시전 · 긴 화살',
+                  talents: [
+                    '449631',
+                  ],
                 },
                 {
                   skillId: '1276452',
@@ -966,10 +1052,18 @@ const manuscript = {
                 {
                   skillId: '104316',
                   caption: '특성별 비용 확인',
+                  talents: [
+                    '1251778',
+                    '1276748',
+                  ],
                 },
                 {
                   skillId: '105174',
                   caption: '3조각 이상이면 비우기',
+                  talents: [
+                    '449614',
+                    '449629',
+                  ],
                 },
                 {
                   skillId: '686',
@@ -978,6 +1072,9 @@ const manuscript = {
                 {
                   skillId: '265187',
                   caption: '2조각 이하 · 3개 받음',
+                  talents: [
+                    '449638',
+                  ],
                 },
                 {
                   skillId: '105174',
@@ -994,6 +1091,9 @@ const manuscript = {
                 {
                   skillId: '196277',
                   caption: '임프 6마리 · 교환',
+                  talents: [
+                    '1281511',
+                  ],
                 },
               ],
               note: '이미 2조각 이하라면 넷째 굴단의 손과 다섯째 어둠의 화살은 건너뜁니다. 악마학자처럼 5조각을 모은 채 폭군을 누르지 않습니다.',
@@ -1084,6 +1184,10 @@ const manuscript = {
                     skillId: '1276452',
                     when: '무리가 오래 살면',
                   },
+                  talents: [
+                    '1251778',
+                    '1276748',
+                  ],
                 },
                 {
                   skillId: '265187',
@@ -1092,18 +1196,32 @@ const manuscript = {
                     skillId: '1276672',
                     when: '고른 빌드 · 최대 5명',
                   },
+                  talents: [
+                    '1276748',
+                    '1276746',
+                  ],
                 },
                 {
                   skillId: '105174',
                   caption: '차원문 중 3조각마다',
+                  talents: [
+                    '1276433',
+                    '1276190',
+                  ],
                 },
                 {
                   skillId: '196277',
                   caption: '임프 6마리 · 반경 안',
+                  talents: [
+                    '1281511',
+                  ],
                 },
                 {
                   skillId: '264178',
                   caption: '핵으로 조각 복구',
+                  talents: [
+                    '460551',
+                  ],
                 },
                 {
                   skillId: '105174',
@@ -1123,18 +1241,30 @@ const manuscript = {
                 {
                   skillId: '434635',
                   caption: '악마학자 · 모인 적에게 무료',
+                  talents: [
+                    '428522',
+                  ],
                 },
                 {
                   skillId: '434506',
                   caption: '악마학자 · 2조각 이하',
+                  talents: [
+                    '428518',
+                  ],
                 },
                 {
                   skillId: '105174',
                   caption: '영혼 수확자 · 폭군 전 비우기',
+                  talents: [
+                    '449614',
+                  ],
                 },
                 {
                   skillId: '265187',
                   caption: '영혼 수확자 · 2조각 이하',
+                  talents: [
+                    '449638',
+                  ],
                 },
               ],
             },
@@ -1249,18 +1379,28 @@ const manuscript = {
                   label: '케르잔의 잔혹성',
                   kind: 'talent',
                   note: '폭군으로 의식을 주고 3초 감소',
+                  affects: [
+                    '265187',
+                  ],
                 },
                 {
                   skillId: '429917',
                   label: '지옥의 기계',
                   kind: 'talent',
                   note: '폭군이 있는 동안 소비마다 1초 더',
+                  affects: [
+                    '265187',
+                    '105174',
+                  ],
                 },
                 {
                   skillId: '429581',
                   label: '심연의 지배',
                   kind: 'talent',
                   note: '폭군 피해 70% · 폭군 중 다른 악마 피해 20%',
+                  affects: [
+                    '265187',
+                  ],
                 },
               ],
             },
@@ -1298,12 +1438,18 @@ const manuscript = {
                   label: '란코라의 손길',
                   kind: 'talent',
                   note: '강화된 굴단의 손 피해 20% · 시전 50% 단축',
+                  affects: [
+                    '105174',
+                  ],
                 },
                 {
                   skillId: '1268709',
                   label: '사악한 눈',
                   kind: 'talent',
                   note: '의식이 줄 때 최대 3개 · 악마술을 쓰면 폭발',
+                  affects: [
+                    '105174',
+                  ],
                 },
               ],
             },
@@ -1593,6 +1739,9 @@ const manuscript = {
                   label: '죽음의 그림자',
                   kind: 'talent',
                   note: '폭군으로 조각 3개와 탐스러운 영혼',
+                  affects: [
+                    '265187',
+                  ],
                 },
               ],
             },
@@ -1615,12 +1764,18 @@ const manuscript = {
                   label: '악마의 영혼',
                   kind: 'talent',
                   note: '내면의 악마가 10미터 광역 피해',
+                  affects: [
+                    '105174',
+                  ],
                 },
                 {
                   skillId: '449629',
                   label: '악령술사의 열정',
                   kind: 'talent',
                   note: '굴단의 손 주 대상에 악마의 영혼 피해 200% 증가',
+                  affects: [
+                    '105174',
+                  ],
                 },
               ],
             },
@@ -1632,12 +1787,18 @@ const manuscript = {
                   label: '영혼 파문',
                   kind: 'talent',
                   note: '10초 지속 피해 · 다시 걸면 남은 피해 합산',
+                  affects: [
+                    '105174',
+                  ],
                 },
                 {
                   skillId: '449631',
                   label: '사악한 수확',
                   kind: 'talent',
                   note: '악마의 영혼 피해 30% · 핵 소비에 반응',
+                  affects: [
+                    '264178',
+                  ],
                 },
               ],
             },
@@ -1686,6 +1847,10 @@ const manuscript = {
                   label: '시즌 2 2세트',
                   kind: 'talent',
                   note: '임프 피해 10% · 파열 피해 20%',
+                  affects: [
+                    '196277',
+                    '105174',
+                  ],
                 },
               ],
             },
@@ -1697,6 +1862,9 @@ const manuscript = {
                   label: '시즌 2 4세트',
                   kind: 'talent',
                   note: '주 대상 350% · 다른 대상 315% 효율',
+                  affects: [
+                    '1306077',
+                  ],
                 },
               ],
             },
@@ -3177,6 +3345,11 @@ const manuscript = {
     video: {
       youtubeId: 'YxLg3BZFmx4',
       title: '한밤 2시즌 12.1.5 악마 흑마법사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'U4aOIF3pWqo',
+      title: '한밤 2시즌 12.1.5 악마 흑마법사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

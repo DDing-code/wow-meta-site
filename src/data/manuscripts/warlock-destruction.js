@@ -460,6 +460,9 @@ const manuscript = {
                   label: '점화 연마',
                   kind: 'talent',
                   note: '최대 충전 3회',
+                  affects: [
+                    '17962',
+                  ],
                 },
               ],
             },
@@ -477,6 +480,10 @@ const manuscript = {
                   label: '혼돈의 거대한 불길',
                   kind: 'talent',
                   note: '점화·어둠의 연소가 항상 치명타',
+                  affects: [
+                    '17962',
+                    '17877',
+                  ],
                 },
               ],
             },
@@ -562,6 +569,10 @@ const manuscript = {
                   label: '울부짖는 불길',
                   kind: 'talent',
                   note: '이미 걸린 적에게 점화 → 근처 최대 3명',
+                  affects: [
+                    '17962',
+                    '348',
+                  ],
                 },
               ],
             },
@@ -578,6 +589,10 @@ const manuscript = {
                   label: '내부 연소',
                   kind: 'talent',
                   note: '혼돈의 화살이 최대 5초분을 즉시 피해로 · 그만큼 남은 시간 감소',
+                  affects: [
+                    '116858',
+                    '348',
+                  ],
                 },
               ],
             },
@@ -695,10 +710,17 @@ const manuscript = {
                     skillId: '442726',
                     when: '쿨이 돌면 · 쇠퇴 대상에',
                   },
+                  talents: [
+                    '231793',
+                    '1244310',
+                  ],
                 },
                 {
                   skillId: '116858',
                   caption: '역류로 짧아진 시전',
+                  talents: [
+                    '266134',
+                  ],
                 },
                 {
                   skillId: '29722',
@@ -707,6 +729,9 @@ const manuscript = {
                     skillId: '17877',
                     when: '무료 발동이면',
                   },
+                  talents: [
+                    '1265770',
+                  ],
                 },
                 {
                   skillId: '17962',
@@ -734,18 +759,30 @@ const manuscript = {
                 {
                   skillId: '348',
                   caption: '악마학자 · 쇠퇴 대신 제물 유지',
+                  talents: [
+                    '266134',
+                  ],
                 },
                 {
                   skillId: '116858',
                   caption: '악마학자 · 악마술 있을 때 시작',
+                  talents: [
+                    '429893',
+                  ],
                 },
                 {
                   skillId: '434635',
                   caption: '악마학자 · 황폐로 바뀌면',
+                  talents: [
+                    '428522',
+                  ],
                 },
                 {
                   skillId: '434506',
                   caption: '악마학자 · 3조각 이하',
+                  talents: [
+                    '428518',
+                  ],
                 },
               ],
             },
@@ -794,19 +831,33 @@ const manuscript = {
                 {
                   skillId: '442726',
                   caption: '정령 직후 · 쇠퇴 대상에',
+                  talents: [
+                    '1266805',
+                  ],
                 },
                 {
                   skillId: '17962',
                   caption: '역류 준비',
+                  talents: [
+                    '231793',
+                    '1244310',
+                  ],
                 },
                 {
                   skillId: '116858',
                   count: 2,
                   caption: '역류 · 첫 소비',
+                  talents: [
+                    '440043',
+                    '266134',
+                  ],
                 },
                 {
                   skillId: '29722',
                   caption: '조각 채우기',
+                  talents: [
+                    '1265770',
+                  ],
                 },
                 {
                   skillId: '17962',
@@ -829,14 +880,25 @@ const manuscript = {
                 {
                   skillId: '1122',
                   caption: '정령 먼저',
+                  talents: [
+                    '429917',
+                  ],
                 },
                 {
                   skillId: '17962',
                   caption: '역류 얻기',
+                  talents: [
+                    '231793',
+                    '1244310',
+                  ],
                 },
                 {
                   skillId: '116858',
                   caption: '소비로 의식 시작',
+                  talents: [
+                    '429893',
+                    '429917',
+                  ],
                 },
                 {
                   skillId: '17962',
@@ -849,6 +911,9 @@ const manuscript = {
                 {
                   skillId: '29722',
                   caption: '조각 채우기',
+                  talents: [
+                    '1265770',
+                  ],
                 },
                 {
                   skillId: '29722',
@@ -913,6 +978,10 @@ const manuscript = {
                 {
                   skillId: '17962',
                   caption: '걸린 적에게 · 최대 3명 전파',
+                  talents: [
+                    '231793',
+                    '1244310',
+                  ],
                 },
                 {
                   skillId: '5740',
@@ -929,6 +998,9 @@ const manuscript = {
                     skillId: '80240',
                     when: '직접 대혼란 · 오래 살 보조 대상',
                   },
+                  talents: [
+                    '1265770',
+                  ],
                 },
                 {
                   skillId: '5740',
@@ -956,22 +1028,37 @@ const manuscript = {
                 {
                   skillId: '445468',
                   caption: '지옥소환사 · 놓친 큰 적에 보완',
+                  talents: [
+                    '440046',
+                  ],
                 },
                 {
                   skillId: '442726',
                   caption: '지옥소환사 · 쇠퇴가 퍼진 뒤',
+                  talents: [
+                    '1266805',
+                  ],
                 },
                 {
                   skillId: '116858',
                   caption: '악마학자 · 악마술 강화 소비',
+                  talents: [
+                    '429893',
+                  ],
                 },
                 {
                   skillId: '434635',
                   caption: '악마학자 · 황폐로 바뀌면',
+                  talents: [
+                    '428522',
+                  ],
                 },
                 {
                   skillId: '434506',
                   caption: '악마학자 · 3조각 미만',
+                  talents: [
+                    '428518',
+                  ],
                 },
               ],
             },
@@ -1068,6 +1155,9 @@ const manuscript = {
                   label: '자비우스의 징표',
                   kind: 'talent',
                   note: '쇠퇴 피해 25% 증가',
+                  affects: [
+                    '445468',
+                  ],
                 },
               ],
             },
@@ -1094,6 +1184,10 @@ const manuscript = {
                   label: '검게 물든 영혼',
                   kind: 'talent',
                   note: '중첩이 오를 때 확률로 붕괴 → 1초마다 중첩을 쓰며 추가 피해',
+                  affects: [
+                    '116858',
+                    '17877',
+                  ],
                 },
               ],
             },
@@ -1111,6 +1205,10 @@ const manuscript = {
                   label: '악마의 열매',
                   kind: 'talent',
                   note: '쇠퇴 주기 피해가 확률로 8초짜리 적개심을 줌',
+                  affects: [
+                    '445468',
+                    '442726',
+                  ],
                 },
               ],
             },
@@ -1235,6 +1333,10 @@ const manuscript = {
                   label: '지옥의 기계',
                   kind: 'talent',
                   note: '정령이 나와 있는 동안 소비마다 1초 더',
+                  affects: [
+                    '1122',
+                    '116858',
+                  ],
                 },
               ],
             },
@@ -1272,6 +1374,9 @@ const manuscript = {
                   label: '란코라의 손길',
                   kind: 'talent',
                   note: '강화 소비 피해 20% · 시전 50% 단축 · 혼돈의 화살은 의식 1초 더',
+                  affects: [
+                    '116858',
+                  ],
                 },
               ],
             },
@@ -1338,6 +1443,10 @@ const manuscript = {
                   label: '니힐람의 불씨',
                   kind: 'talent',
                   note: '첫 노드: 소각 시 10% 확률',
+                  affects: [
+                    '29722',
+                    '1265884',
+                  ],
                 },
               ],
             },
@@ -2862,6 +2971,11 @@ const manuscript = {
     video: {
       youtubeId: 'hMjHgejFGZA',
       title: '한밤 2시즌 12.1.5 파괴 흑마법사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'i7K6WcRyZzY',
+      title: '한밤 2시즌 12.1.5 파괴 흑마법사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };
