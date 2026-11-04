@@ -1,0 +1,98 @@
+[
+  {
+    "id": "monk-brewmaster",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-brewmaster-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-brewmaster-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/mOS_Xg2CTqE?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/-w-k0VAN7lQ?rel=0",
+    "caption": "한밤 2시즌 12.1.5 양조 수도사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "monk-brewmaster",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-brewmaster-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/mOS_Xg2CTqE?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/-w-k0VAN7lQ?rel=0",
+    "caption": "한밤 2시즌 12.1.5 양조 수도사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "monk-mistweaver",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-mistweaver-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-mistweaver-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/356D18J0MB0?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/b9uuqFAUWCQ?rel=0",
+    "caption": "한밤 2시즌 12.1.5 운무 수도사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "monk-mistweaver",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-mistweaver-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/356D18J0MB0?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/b9uuqFAUWCQ?rel=0",
+    "caption": "한밤 2시즌 12.1.5 운무 수도사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-windwalker-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-windwalker-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/E7E2bk-wF5s?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/hv7uMzGR_-Q?rel=0",
+    "caption": "한밤 2시즌 12.1.5 풍운 수도사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-windwalker-390-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-windwalker-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/E7E2bk-wF5s?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/hv7uMzGR_-Q?rel=0",
+    "caption": "한밤 2시즌 12.1.5 풍운 수도사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "monk-windwalker",
+    "width": 320,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-windwalker-320-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-monk-20261105\\live\\monk-windwalker-320-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/E7E2bk-wF5s?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/hv7uMzGR_-Q?rel=0",
+    "caption": "한밤 2시즌 12.1.5 풍운 수도사 심화 가이드",
+    "scrollWidth": 320,
+    "ok": true
+  }
+]
