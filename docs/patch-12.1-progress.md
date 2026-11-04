@@ -1294,7 +1294,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 사이트: `artifacts/advanced-videos-rogue-20261102/apply.cjs`로 advancedVideo(기본편·심화편 단추)를, `artifacts/talent-links-20261102/apply.cjs rogue-*`(`_rogue.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `10-도적/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다. 암살 엉겅퀴 차 두 상자(469779·1298826)는 독칼 아래에서 고르는 특성이라 붙는 스킬이 없어 affects 칸을 만들지 않았고, 검사기는 이 둘만 예외로 둔다(11개 가이드 회귀).
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 13편 기준으로 바꿔 도적 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 10편은 그대로임을 다시 확인했다.
 - 배포: `npm run validate`·`npm run build` 통과, 사이트 `010f735a`, KB 로컬 `1023fb8`. 빌드 `main.144d820b.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-rogue-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 도적 3개×1440·390 통과(캡처 `live/`).
-- 남은 결정: 11-01에 공개한 도적 v9 심화 3편(`GlqJ2EMfqxw`·`PnA8yzGxC8I`·`Slg4DDxPqh4`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
+- 남은 결정: 11-01에 공개한 도적 v9 심화 3편(`GlqJ2EMfqxw`·`PnA8yzGxC8I`·`Slg4DDxPqh4`)은 같은 제목으로 채널에 남아 있을 수 있다. 지울지는 답을 기다린다.
 
 ## 2026-11-02 사제 심화편 공개·사이트 상호연동 (업로드, 심화편 단추, 특성 ↔ 스킬 연결, 기본편 설명)
 
@@ -1303,7 +1303,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 사이트: `artifacts/advanced-videos-priest-20261102/apply.cjs`로 advancedVideo(기본편·심화편 단추)를, `artifacts/talent-links-20261102/apply.cjs priest-*`(`_priest.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `09-사제/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다. 신성 궁극의 평온(1246517)의 KB 노트 종류가 `atomic-talent`(유일)라서 검사기 TIMELINE_TALENT_TYPES에 그 종류를 더했다(kb-brief.cjs도 '특성'으로 묶는 종류).
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 16편 기준으로 바꿔 사제 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 13편은 그대로임을 다시 확인했다.
 - 배포: `npm run validate`·`npm run build` 통과, 사이트 `0311d4b3`. 빌드 `main.57f73b67.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-priest-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 사제 3개×1440·390 통과(캡처 `live/`).
-- 남은 결정: 11-01에 공개한 사제 v9 심화 3편(`4EI98w801-w`·`6cB8OGi-7AU`·`_f42uwqFoyI`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
+- 남은 결정: 11-01에 공개한 사제 v9 심화 3편(`4EI98w801-w`·`6cB8OGi-7AU`·`_f42uwqFoyI`)은 같은 제목으로 채널에 남아 있을 수 있다. 지울지는 답을 기다린다.
 
 ## 2026-11-02 죽음의 기사 심화편 공개·사이트 상호연동 (업로드, 심화편 단추, 특성 ↔ 스킬 연결, 기본편 설명)
 
@@ -1312,7 +1312,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 사이트: `artifacts/advanced-videos-deathknight-20261102/apply.cjs`로 advancedVideo를, `artifacts/talent-links-20261102/apply.cjs deathknight-*`(`_deathknight.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `01-죽음의기사/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다. 혈기 탐식(273953)·피의 희열(317614) KB 노트가 Talents 폴더·skill_type talent인데 type만 atomic-skill이라 타임라인 특성 칸 검사에 걸려, 두 노트 type을 talent로 바로잡고 sync-kb 했다(생성 JSON은 두 항목만 바뀜). KB Talents 폴더는 원래 git 추적 밖이라 노트 수정은 혈기 patch-changelog에만 남겼다.
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 19편 기준으로 바꿔 죽음의 기사 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 16편은 그대로임을 다시 확인했다.
 - 배포: `npm run validate`·`npm run build` 통과, 사이트 `4549ba57`. 빌드 `main.b2672db5.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-deathknight-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 죽음의 기사 3개×1440·390 통과(캡처 `live/`).
-- 남은 결정: 11-01에 공개한 죽음의 기사 v9 심화 3편(`fz3spBsoeeg`·`qKb20gJxx0s`·`qVvK6a8NwuE`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
+- 남은 결정: 11-01에 공개한 죽음의 기사 v9 심화 3편(`fz3spBsoeeg`·`qKb20gJxx0s`·`qVvK6a8NwuE`)은 같은 제목으로 채널에 남아 있을 수 있다. 지울지는 답을 기다린다.
 
 ## 2026-11-02 홈 화면을 최근 변경에 맞춤 (심화편 줄, 개수 표시 제거)
 
@@ -1328,7 +1328,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 사이트: `artifacts/advanced-videos-shaman-20261102/apply.cjs`로 advancedVideo를, `artifacts/talent-links-20261102/apply.cjs shaman-*`(`_shaman.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `11-주술사/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다.
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 22편 기준으로 바꿔 주술사 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 19편은 그대로임을 다시 확인했다.
 - 배포: `npm run validate`·`npm run build` 통과, 사이트 `783f8299`. 빌드 `main.9688d03c.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 주소에서 `advanced-videos-shaman-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 주술사 3개×1440·390 통과(캡처 `live/`).
-- 남은 결정: 11-01에 공개한 주술사 v9 심화 3편(`6Kmiidajaks`·`oJxANBCsHDY`·`s2Rzg6gICT0`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
+- 남은 결정: 11-01에 공개한 주술사 v9 심화 3편(`6Kmiidajaks`·`oJxANBCsHDY`·`s2Rzg6gICT0`)은 같은 제목으로 채널에 남아 있을 수 있다. 지울지는 답을 기다린다.
 
 ## 2026-11-02 홈 직업 심화편 줄을 직업별로 나눔
 - 요청: "직업 심화편은 가이드 리스트처럼 직업별로 나눠줘". 홈(`HomePage.js`) 심화편 줄을 가이드 목록과 같은 직업 순서(`classOrder`, `getGroupedGuideSpecs`)로 묶고, 묶음마다 직업 색 막대·직업 이름 제목을 달았다. 칸 제목은 가이드 목록처럼 전문화 이름만 쓴다.
@@ -1348,7 +1348,7 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 사이트: `artifacts/advanced-videos-mage-20261102/apply.cjs`로 advancedVideo를, `artifacts/talent-links-20261102/apply.cjs mage-*`(`_mage.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `06-마법사/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다. 원고 검사기의 특성 연결 검사 목록에 마법사 3개를 더했다.
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 25편 기준으로 바꿔 마법사 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 22편은 그대로임을 다시 확인했다.
 - 배포: `npm run build`(전체 검증) 통과, 사이트 `62ca8714`. 빌드 `main.09c93905.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `advanced-videos-mage-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 마법사 3개×1440·390 통과(캡처 `live/`). 비전 첫 흐름도는 붙는 스킬(비전 쇄도)이 그 흐름도에 상자로 없어 강조선 없이 아이콘으로만 보인다.
-- 남은 결정: 11-01에 공개한 마법사 v9 심화 3편(`_arkcg3ShKY`·`bB-BKfcPkf8`·`hgyqKOHz4XA`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다. 두 전문화 설명이 한 문장에 섞인 공용 특성 카드 정리도 답을 기다린다.
+- 남은 결정: 11-01에 공개한 마법사 v9 심화 3편(`_arkcg3ShKY`·`bB-BKfcPkf8`·`hgyqKOHz4XA`)은 같은 제목으로 채널에 남아 있을 수 있다. 지울지는 답을 기다린다. 두 전문화 설명이 한 문장에 섞인 공용 특성 카드 정리도 답을 기다린다.
 
 ## 2026-11-04 흑마법사 심화편 공개·사이트 상호연동 (업로드, 심화편 단추, 특성 ↔ 스킬 연결, 기본편 설명)
 
@@ -1375,4 +1375,4 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 사이트: `artifacts/advanced-videos-druid-20261105/apply.cjs`로 advancedVideo를, `artifacts/talent-links-20261102/apply.cjs druid-*`(`_druid.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `03-드루이드/*/Meta/guide-12.1.json`에 넣었다(KB `6331b45`). 글은 그대로다. 원고 검사기의 특성 연결 검사 목록에 드루이드 4개를 더했다.
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 35편 기준으로 바꿔 드루이드 기본편 4편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 31편은 그대로임을 다시 확인했다.
 - 배포: `npm run build`(전체 검증) 통과, 사이트 `671fb233`. 빌드 `main.4b518523.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `advanced-videos-druid-20261105/shots.cjs` 9화면, `talent-links-20261102/shots.cjs` 드루이드 4개×1440·390 통과(캡처 `live/`).
-- 남은 결정: 11-01에 공개한 드루이드 예전 심화 4편(`yKLhONsEZ3o`·`hp-60iz5uO8`·`Mf4wisSVp9g`·`PFfjKuMvEL0`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
+- 남은 결정: 11-01에 공개한 드루이드 예전 심화 4편(`yKLhONsEZ3o`·`hp-60iz5uO8`·`Mf4wisSVp9g`·`PFfjKuMvEL0`)은 같은 제목으로 채널에 남아 있을 수 있다. 지울지는 답을 기다린다.
