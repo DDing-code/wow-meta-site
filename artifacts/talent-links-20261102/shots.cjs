@@ -38,6 +38,10 @@ const GUIDES = {
   'monk-brewmaster': '/guide/monk/brewmaster',
   'monk-mistweaver': '/guide/monk/mistweaver',
   'monk-windwalker': '/guide/monk/windwalker',
+  'druid-balance': '/guide/druid/balance',
+  'druid-feral': '/guide/druid/feral',
+  'druid-guardian': '/guide/druid/guardian',
+  'druid-restoration': '/guide/druid/restoration',
 };
 const only = process.argv.slice(3);
 (async () => {

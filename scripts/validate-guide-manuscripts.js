@@ -1409,6 +1409,10 @@ function main() {
     ['deathknight-frost', 'QIx13NYCA8A'],
     ['deathknight-unholy', '-LpsQFaY_t4'],
     ['demonhunter-havoc', 'bFrBTJqCUuU'],
+    ['druid-balance', 'XaHnh_xfCOo'],
+    ['druid-feral', 'vVqsK275y0Q'],
+    ['druid-guardian', '9Oo-KGMT_-o'],
+    ['druid-restoration', 'zs-H4lceTjo'],
     ['hunter-beastmastery', 'VHeIr835EXs'],
     ['hunter-marksmanship', '0h_iQv0eD3w'],
     ['hunter-survival', '8dkksyQUsUw'],
@@ -1808,9 +1812,10 @@ function main() {
   // 마법사 3개(같은 날 심화편 공개와 함께)도 같은 검사를 받는다.
   // 흑마법사 3개(2026-11-04 심화편 공개와 함께)도 같은 검사를 받는다.
   // 수도사 3개(2026-11-05 심화편 공개와 함께)도 같은 검사를 받는다.
+  // 드루이드 4개(2026-11-05 심화편 공개와 함께)도 같은 검사를 받는다.
   // 도적 3개(같은 날 심화편 업로드 뒤)도 같다. 암살 엉겅퀴 차(자동 469779·수동 1298826)는 독칼 아래에서 고르는 특성이라 붙는 스킬이 없다.
   const TALENT_BOXES_WITHOUT_TARGET = new Set(['469779', '1298826']);
-  for (const id of ['warrior-fury', 'warrior-protection', 'paladin-holy', 'paladin-protection', 'paladin-retribution', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'rogue-assassination', 'rogue-outlaw', 'rogue-subtlety', 'mage-arcane', 'mage-fire', 'mage-frost', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'monk-brewmaster', 'monk-mistweaver', 'monk-windwalker']) {
+  for (const id of ['warrior-fury', 'warrior-protection', 'paladin-holy', 'paladin-protection', 'paladin-retribution', 'hunter-beastmastery', 'hunter-marksmanship', 'hunter-survival', 'rogue-assassination', 'rogue-outlaw', 'rogue-subtlety', 'mage-arcane', 'mage-fire', 'mage-frost', 'warlock-affliction', 'warlock-demonology', 'warlock-destruction', 'monk-brewmaster', 'monk-mistweaver', 'monk-windwalker', 'druid-balance', 'druid-feral', 'druid-guardian', 'druid-restoration']) {
     const linked = manuscripts[id];
     const talentBoxes = linked.blocks.flatMap(block => [].concat(block.diagram || []).flatMap(diagram => diagram.layers.flatMap(layer => layer.nodes.filter(node => node.kind === 'talent'))));
     assert(talentBoxes.length >= 10 && talentBoxes.every(node => node.affects?.length || TALENT_BOXES_WITHOUT_TARGET.has(String(node.skillId))),`${id} skill-structure diagrams must list the skills every talent box attaches to (affects)`);

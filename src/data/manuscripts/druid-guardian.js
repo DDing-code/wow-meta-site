@@ -411,6 +411,10 @@ const manuscript = {
                   label: '우르속의 격노',
                   kind: 'talent',
                   note: '골랐다면 난타·후려갈기기 피해의 35%를 15초 보호막으로',
+                  affects: [
+                    '77758',
+                    '6807',
+                  ],
                 },
               ],
             },
@@ -463,24 +467,40 @@ const manuscript = {
                   label: '강화 모피',
                   kind: 'talent',
                   note: '무쇠가죽의 방어도 증가 효과 15% 강화',
+                  affects: [
+                    '192081',
+                    '22812',
+                  ],
                 },
                 {
                   skillId: '1251876',
                   label: '고대 수호자의 선물',
                   kind: 'talent',
                   note: '무쇠가죽이 켜진 동안 특화 5% · 중첩 수만큼 더해지지 않음',
+                  affects: [
+                    '192081',
+                  ],
                 },
                 {
                   skillId: '471492',
                   label: '우르솔의 수호물',
                   kind: 'talent',
                   note: '방어도로 줄어드는 비율의 10%만큼 마법 피해도 감소',
+                  affects: [
+                    '192081',
+                  ],
                 },
                 {
                   skillId: '200854',
                   label: '피투성이 모피',
                   kind: 'talent',
                   note: '공격 소비 뒤 10% 확률로 다음 무쇠가죽 무료',
+                  affects: [
+                    '192081',
+                    '6807',
+                    '400254',
+                    '441605',
+                  ],
                 },
               ],
             },
@@ -542,18 +562,31 @@ const manuscript = {
                   label: '맹위',
                   kind: 'talent',
                   note: '자동 공격에서 20% 확률 · 최대 2중첩',
+                  affects: [
+                    '6807',
+                    '400254',
+                  ],
                 },
                 {
                   skillId: '210706',
                   label: '꿰뚫기',
                   kind: 'talent',
                   note: '난타·휘둘러치기·달빛섬광·후려갈기기에서 15% 확률',
+                  affects: [
+                    '33917',
+                  ],
                 },
                 {
                   skillId: '200854',
                   label: '피투성이 모피',
                   kind: 'talent',
                   note: '무쇠가죽에서 20%, 공격 소비에서 10% 확률',
+                  affects: [
+                    '192081',
+                    '6807',
+                    '400254',
+                    '441605',
+                  ],
                 },
               ],
             },
@@ -591,6 +624,9 @@ const manuscript = {
                   label: '분노를 다스리는 자',
                   kind: 'talent',
                   note: '짓이기기 충전 +1은 확정 · 80분노 조건은 한글·영문이 다름',
+                  affects: [
+                    '33917',
+                  ],
                 },
               ],
             },
@@ -679,6 +715,10 @@ const manuscript = {
                   label: '야생 수호자 마지막 노드',
                   kind: 'talent',
                   note: '난타·짓이기기 초기화 · 두 스킬 피해 30% · 영혼 공격마다 분노 8',
+                  affects: [
+                    '77758',
+                    '33917',
+                  ],
                 },
                 {
                   skillId: '77758',
@@ -745,12 +785,18 @@ const manuscript = {
                   label: '타고난 결의',
                   kind: 'talent',
                   note: '충전 +1 · 잃은 생명력에 따라 회복 최대 80% 증가',
+                  affects: [
+                    '22842',
+                  ],
                 },
                 {
                   skillId: '1278789',
                   label: '자연의 탄력',
                   kind: 'talent',
                   note: '초과 치유의 80%를 피해 흡수 보호막으로',
+                  affects: [
+                    '22842',
+                  ],
                 },
                 {
                   skillId: '441675',
@@ -758,6 +804,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '발톱의 드루이드',
                   note: '쓸 때 최대 생명력 10% 증가 · 최대 분노 20 증가',
+                  affects: [
+                    '22842',
+                  ],
                 },
               ],
             },
@@ -774,12 +823,19 @@ const manuscript = {
                   label: '꿈의 안내자',
                   kind: 'talent',
                   note: '나나 주변 아군 생명력 40% 미만이면 자동 강화 재생',
+                  affects: [
+                    '8936',
+                  ],
                 },
                 {
                   skillId: '371905',
                   label: '들불이 지나간 자리',
                   kind: 'talent',
                   note: '분노 누적 300 소모마다 20미터 안 아군 최대 5명 치유',
+                  affects: [
+                    '192081',
+                    '6807',
+                  ],
                 },
               ],
             },
@@ -826,10 +882,18 @@ const manuscript = {
                     skillId: '192081',
                     when: '분노 40 · 다음 평타 전',
                   },
+                  talents: [
+                    '210706',
+                    '377210',
+                  ],
                 },
                 {
                   skillId: '33917',
                   caption: '충전·초기화 회수',
+                  talents: [
+                    '210706',
+                    '1253035',
+                  ],
                 },
                 {
                   skillId: '1252871',
@@ -850,6 +914,10 @@ const manuscript = {
                     skillId: '22812',
                     when: '큰 피해 전',
                   },
+                  talents: [
+                    '135288',
+                    '377210',
+                  ],
                 },
                 {
                   skillId: '77758',
@@ -862,6 +930,9 @@ const manuscript = {
                     skillId: '61336',
                     when: '치명적인 강타 전',
                   },
+                  talents: [
+                    '210706',
+                  ],
                 },
               ],
               note: '체력이 위험하거나 다음 평타에 쓸 무쇠가죽이 비면 어느 자리에서든 그쪽이 먼저입니다. 상위 레이드 로그는 짓이기기 바로 뒤에 무쇠가죽을 가장 많이 썼습니다. 붉은 달을 고르지 않은 엘룬의 대행자는 휘둘러치기 자리에 달빛섬광을 씁니다.',
@@ -873,22 +944,37 @@ const manuscript = {
                 {
                   skillId: '204066',
                   caption: '엘룬 · 쿨마다',
+                  talents: [
+                    '429539',
+                  ],
                 },
                 {
                   skillId: '1269658',
                   caption: '화신 바로 뒤',
+                  talents: [
+                    '1269619',
+                  ],
                 },
                 {
                   skillId: '441605',
                   caption: '발톱 · 짓이기기 앞',
+                  talents: [
+                    '441583',
+                  ],
                 },
                 {
                   skillId: '8921',
                   caption: '엘룬 · 붉은 달 없으면',
+                  talents: [
+                    '210706',
+                  ],
                 },
                 {
                   skillId: '400254',
                   caption: '말살이면 후려갈기기 대신',
+                  talents: [
+                    '135288',
+                  ],
                 },
               ],
             },
@@ -937,10 +1023,18 @@ const manuscript = {
                     skillId: '6795',
                     when: '먼저 잡는 탱커라면',
                   },
+                  talents: [
+                    '429523',
+                    '1271206',
+                  ],
                 },
                 {
                   skillId: '204066',
                   caption: '네임드 발밑에',
+                  talents: [
+                    '429539',
+                    '424113',
+                  ],
                 },
                 {
                   skillId: '102558',
@@ -949,6 +1043,9 @@ const manuscript = {
                 {
                   skillId: '1269658',
                   caption: '화신 바로 뒤',
+                  talents: [
+                    '1269619',
+                  ],
                 },
                 {
                   skillId: '77758',
@@ -965,10 +1062,18 @@ const manuscript = {
                     skillId: '22842',
                     when: '체력이 위험하면',
                   },
+                  talents: [
+                    '210706',
+                    '1253035',
+                  ],
                 },
                 {
                   skillId: '6807',
                   caption: '영혼 깨우기',
+                  talents: [
+                    '135288',
+                    '377210',
+                  ],
                 },
                 {
                   skillId: '77758',
@@ -995,10 +1100,16 @@ const manuscript = {
                 {
                   skillId: '22812',
                   caption: '분노 부족·위험 진입',
+                  talents: [
+                    '393618',
+                  ],
                 },
                 {
                   skillId: '8921',
                   caption: '일반 달빛섬광 빌드',
+                  talents: [
+                    '210706',
+                  ],
                 },
                 {
                   skillId: '102558',
@@ -1007,6 +1118,10 @@ const manuscript = {
                 {
                   skillId: '77758',
                   caption: '모인 적에 위협',
+                  talents: [
+                    '210706',
+                    '377210',
+                  ],
                 },
                 {
                   skillId: '33917',
@@ -1015,18 +1130,33 @@ const manuscript = {
                     skillId: '22842',
                     when: '체력이 위험하면',
                   },
+                  talents: [
+                    '441824',
+                    '441835',
+                  ],
                 },
                 {
                   skillId: '192081',
                   caption: '분노가 모이는 즉시',
+                  talents: [
+                    '393618',
+                    '1251876',
+                  ],
                 },
                 {
                   skillId: '1269658',
                   caption: '사용 기회가 있으면',
+                  talents: [
+                    '1269619',
+                  ],
                 },
                 {
                   skillId: '441605',
                   caption: '발동이 있을 때만',
+                  talents: [
+                    '441583',
+                    '441809',
+                  ],
                 },
                 {
                   skillId: '77758',
@@ -1076,10 +1206,17 @@ const manuscript = {
                     skillId: '192081',
                     when: '무리의 평타 전',
                   },
+                  talents: [
+                    '210706',
+                    '377210',
+                  ],
                 },
                 {
                   skillId: '8921',
                   caption: '흩어진 적에 걸기',
+                  talents: [
+                    '210706',
+                  ],
                 },
                 {
                   skillId: '33917',
@@ -1088,6 +1225,10 @@ const manuscript = {
                     skillId: '22842',
                     when: '체력 복구가 필요하면',
                   },
+                  talents: [
+                    '210706',
+                    '1253035',
+                  ],
                 },
                 {
                   skillId: '77758',
@@ -1119,6 +1260,9 @@ const manuscript = {
                 {
                   skillId: '204066',
                   caption: '엘룬 · 적이 자리 잡으면',
+                  talents: [
+                    '429539',
+                  ],
                 },
                 {
                   skillId: '102558',
@@ -1127,14 +1271,23 @@ const manuscript = {
                 {
                   skillId: '1269658',
                   caption: '화신 바로 뒤',
+                  talents: [
+                    '1269619',
+                  ],
                 },
                 {
                   skillId: '400254',
                   caption: '영혼 깨울 때',
+                  talents: [
+                    '135288',
+                  ],
                 },
                 {
                   skillId: '441605',
                   caption: '발톱 · 발동 시 무리에',
+                  talents: [
+                    '441583',
+                  ],
                 },
               ],
             },
@@ -1215,12 +1368,18 @@ const manuscript = {
                   label: '삭망월',
                   kind: 'talent',
                   note: '쿨다운 고정 20초 감소 → 40초 · 달빛섬광 횟수와 무관',
+                  affects: [
+                    '204066',
+                  ],
                 },
                 {
                   skillId: '424113',
                   label: '영원한 달',
                   kind: 'talent',
                   note: '지속 3초 증가 → 11초 · 피해 30% 증가',
+                  affects: [
+                    '204066',
+                  ],
                 },
               ],
             },
@@ -1232,12 +1391,18 @@ const manuscript = {
                   label: '끝없는 달빛',
                   kind: 'talent',
                   note: '범위 안 적에게 입힌 피해의 12%를 생명력으로',
+                  affects: [
+                    '204066',
+                  ],
                 },
                 {
                   skillId: '1271261',
                   label: '반그늘의 팽창',
                   kind: 'talent',
                   note: '비전 피해 10% 증가',
+                  affects: [
+                    '204066',
+                  ],
                 },
               ],
             },
@@ -1249,18 +1414,28 @@ const manuscript = {
                   label: '달의 부름',
                   kind: 'talent',
                   note: '난타 피해 12% 증가 · 비전 피해로',
+                  affects: [
+                    '77758',
+                  ],
                 },
                 {
                   skillId: '1271206',
                   label: '쏟아지는 별',
                   kind: 'talent',
                   note: '난타 사용 시 50% 확률로 120% 효율 별빛쇄도 자동 발사',
+                  affects: [
+                    '77758',
+                  ],
                 },
                 {
                   skillId: '370586',
                   label: '엘룬의 총애',
                   kind: 'talent',
                   note: '곰 상태에서 비전 피해의 18% 회복',
+                  affects: [
+                    '77758',
+                    '204066',
+                  ],
                 },
               ],
             },
@@ -1423,22 +1598,40 @@ const manuscript = {
                 {
                   skillId: '77758',
                   caption: '모인 적에 위협',
+                  talents: [
+                    '429523',
+                    '1271206',
+                  ],
                 },
                 {
                   skillId: '8921',
                   caption: '흩어진 적 붙잡기',
+                  talents: [
+                    '210706',
+                  ],
                 },
                 {
                   skillId: '192081',
                   caption: '첫 평타 전',
+                  talents: [
+                    '393618',
+                    '1251876',
+                  ],
                 },
                 {
                   skillId: '22812',
                   caption: '적이 붙은 직후',
+                  talents: [
+                    '393618',
+                  ],
                 },
                 {
                   skillId: '204066',
                   caption: '적이 자리 잡으면',
+                  talents: [
+                    '429539',
+                    '424113',
+                  ],
                 },
                 {
                   skillId: '102558',
@@ -1447,6 +1640,9 @@ const manuscript = {
                 {
                   skillId: '1269658',
                   caption: '화신 바로 뒤',
+                  talents: [
+                    '1269619',
+                  ],
                 },
                 {
                   skillId: '22842',
@@ -1455,6 +1651,10 @@ const manuscript = {
                     skillId: '61336',
                     when: '마법 강타·생존기 빈 구간',
                   },
+                  talents: [
+                    '377811',
+                    '1278789',
+                  ],
                 },
                 {
                   skillId: '106898',
@@ -1469,18 +1669,33 @@ const manuscript = {
                 {
                   skillId: '77758',
                   caption: '모인 적에 위협',
+                  talents: [
+                    '210706',
+                    '377210',
+                  ],
                 },
                 {
                   skillId: '192081',
                   caption: '첫 평타 전',
+                  talents: [
+                    '393618',
+                    '1251876',
+                  ],
                 },
                 {
                   skillId: '22812',
                   caption: '적이 붙은 직후',
+                  talents: [
+                    '393618',
+                  ],
                 },
                 {
                   skillId: '441605',
                   caption: '위험한 적 전방에',
+                  talents: [
+                    '441583',
+                    '441809',
+                  ],
                 },
                 {
                   skillId: '102558',
@@ -1493,6 +1708,10 @@ const manuscript = {
                     skillId: '61336',
                     when: '마법 강타·생존기 빈 구간',
                   },
+                  talents: [
+                    '377811',
+                    '1278789',
+                  ],
                 },
                 {
                   skillId: '106898',
@@ -1566,6 +1785,10 @@ const manuscript = {
                 {
                   skillId: '192081',
                   caption: '도발 직후부터',
+                  talents: [
+                    '393618',
+                    '1251876',
+                  ],
                 },
                 {
                   skillId: '22812',
@@ -1574,10 +1797,17 @@ const manuscript = {
                     skillId: '102558',
                     when: '약 2분·4분 구간',
                   },
+                  talents: [
+                    '393618',
+                  ],
                 },
                 {
                   skillId: '204066',
                   caption: '쿨마다 · 맞는 구간',
+                  talents: [
+                    '429539',
+                    '424113',
+                  ],
                 },
                 {
                   skillId: '22842',
@@ -1586,10 +1816,18 @@ const manuscript = {
                     skillId: '61336',
                     when: '가장 큰 강타 전',
                   },
+                  talents: [
+                    '377811',
+                    '1278789',
+                  ],
                 },
                 {
                   skillId: '77758',
                   caption: '넘겨준 뒤 분노 모으기',
+                  talents: [
+                    '429523',
+                    '1271206',
+                  ],
                 },
               ],
               note: '상위 로그 6개는 교대마다 도발 → 무쇠가죽 → (대략 10~15초 뒤) 나무 껍질 순서가 많았고, 화신은 풀 직후·약 2분·약 4분에 썼습니다. 생존 본능은 전투당 0~3번만 썼습니다.',
@@ -1605,10 +1843,18 @@ const manuscript = {
                 {
                   skillId: '192081',
                   caption: '도발 직후부터',
+                  talents: [
+                    '393618',
+                    '1251876',
+                  ],
                 },
                 {
                   skillId: '441605',
                   caption: '네임드에 상처',
+                  talents: [
+                    '441583',
+                    '441809',
+                  ],
                 },
                 {
                   skillId: '22812',
@@ -1617,6 +1863,9 @@ const manuscript = {
                     skillId: '102558',
                     when: '큰 구간이면',
                   },
+                  talents: [
+                    '393618',
+                  ],
                 },
                 {
                   skillId: '22842',
@@ -1625,10 +1874,18 @@ const manuscript = {
                     skillId: '61336',
                     when: '가장 큰 강타 전',
                   },
+                  talents: [
+                    '377811',
+                    '1278789',
+                  ],
                 },
                 {
                   skillId: '33917',
                   caption: '넘겨준 뒤 분노 모으기',
+                  talents: [
+                    '210706',
+                    '1253035',
+                  ],
                 },
               ],
               note: '발톱의 드루이드 레이드 로그는 이번에 없어 엘룬의 대행자 교대 순서에 찢어발기기를 넣었습니다. 찢어발기기를 네임드에게 맞혀야 섬뜩한 상처의 피해 감소를 받습니다.',
@@ -1650,6 +1907,10 @@ const manuscript = {
                   label: '찢어발기기 특성',
                   kind: 'talent',
                   note: '자동 공격에서 확률로 후려갈기기 변환 · 사지 분쇄면 확률 30% 증가',
+                  affects: [
+                    '6807',
+                    '441605',
+                  ],
                 },
                 {
                   label: '전투 시작 후 첫 짓이기기',
@@ -1661,6 +1922,12 @@ const manuscript = {
                   label: '발톱 광란',
                   kind: 'talent',
                   note: '광폭화·화신 중 짓이기기·난타·휘둘러치기가 20% 확률로 변환',
+                  affects: [
+                    '33917',
+                    '77758',
+                    '213764',
+                    '441605',
+                  ],
                 },
               ],
             },
@@ -1683,12 +1950,20 @@ const manuscript = {
                   label: '섬뜩한 상처',
                   kind: 'talent',
                   note: '6초 출혈 · 그 적이 나에게 주는 피해 15% 감소',
+                  affects: [
+                    '441605',
+                  ],
                 },
                 {
                   skillId: '441824',
                   label: '목숨을 끊는 일격',
                   kind: 'talent',
                   note: '8초 동안 민첩성 8% · 무쇠가죽 방어도 20% 보정',
+                  affects: [
+                    '441605',
+                    '192081',
+                    '33917',
+                  ],
                 },
               ],
             },
@@ -1700,12 +1975,19 @@ const manuscript = {
                   label: '상처 악화 (연장)',
                   kind: 'talent',
                   note: '공격마다 0.6초 연장 · 추가 연장 한도 8초',
+                  affects: [
+                    '441605',
+                  ],
                 },
                 {
                   skillId: '1271839',
                   label: '상처 악화 (피해)',
                   kind: 'talent',
                   note: '상처가 걸린 대상에게 출혈·지속 피해 15% 증가',
+                  affects: [
+                    '441605',
+                    '77758',
+                  ],
                 },
               ],
             },
@@ -1759,6 +2041,10 @@ const manuscript = {
                   label: '솟구치는 자연력',
                   kind: 'talent',
                   note: '다음 표범 변신 때 연계 점수 5 · 강화 공격 준비',
+                  affects: [
+                    '33917',
+                    '768',
+                  ],
                 },
               ],
             },
@@ -1790,12 +2076,20 @@ const manuscript = {
                   label: '끈기',
                   kind: 'talent',
                   note: '곰을 벗어난 뒤 보정이 8초에 걸쳐 감소',
+                  affects: [
+                    '5487',
+                    '768',
+                  ],
                 },
                 {
                   skillId: '449193',
                   label: '액체 형상',
                   kind: 'talent',
                   note: '짓이기기를 쓰면 곰으로 자동 변신',
+                  affects: [
+                    '33917',
+                    '5487',
+                  ],
                 },
               ],
             },
@@ -3653,6 +3947,11 @@ const manuscript = {
     video: {
       youtubeId: '825bprZVl6E',
       title: '한밤 2시즌 12.1.5 수호 드루이드 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: '9Oo-KGMT_-o',
+      title: '한밤 2시즌 12.1.5 수호 드루이드 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

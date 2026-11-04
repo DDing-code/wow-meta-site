@@ -391,6 +391,10 @@ const manuscript = {
                   label: '우주의 손길',
                   kind: 'talent',
                   note: '별빛섬광 15%·천벌 12% 확률로 다음 소비가 무료',
+                  affects: [
+                    '78674',
+                    '191034',
+                  ],
                 },
               ],
             },
@@ -464,6 +468,9 @@ const manuscript = {
                   label: '쌍둥이 달',
                   kind: 'talent',
                   note: '달빛섬광 10% 증가 · 대상 15미터 안 적에게도 적중 · 큰 적은 전투 사정거리만큼 더 멀리',
+                  affects: [
+                    '8921',
+                  ],
                 },
               ],
             },
@@ -559,6 +566,12 @@ const manuscript = {
                   label: '승천자의 일월식',
                   kind: 'talent',
                   note: '다음 천벌·별빛섬광 즉시 시전 · 처음 3번 별빛쇄도·별똥별 20% 추가',
+                  affects: [
+                    '48518',
+                    '48517',
+                    '78674',
+                    '191034',
+                  ],
                 },
               ],
             },
@@ -726,6 +739,9 @@ const manuscript = {
                     skillId: '93402',
                     when: '만료가 가까우면',
                   },
+                  talents: [
+                    '450356',
+                  ],
                 },
                 {
                   skillId: '5176',
@@ -742,6 +758,10 @@ const manuscript = {
                     skillId: '78674',
                     when: '우주의 손길 무료면 바로',
                   },
+                  talents: [
+                    '450212',
+                    '1261564',
+                  ],
                 },
                 {
                   skillId: '5176',
@@ -758,6 +778,9 @@ const manuscript = {
                     skillId: '194223',
                     when: '천체의 정렬이 준비됐으면 대신',
                   },
+                  talents: [
+                    '1261564',
+                  ],
                 },
                 {
                   skillId: '78674',
@@ -789,14 +812,23 @@ const manuscript = {
                 {
                   skillId: '194153',
                   caption: '엘룬의 대행자 · 생성기',
+                  talents: [
+                    '1271206',
+                  ],
                 },
                 {
                   skillId: '48518',
                   caption: '엘룬의 대행자 · 달 모드만',
+                  talents: [
+                    '429523',
+                  ],
                 },
                 {
                   skillId: '202770',
                   caption: '엘룬의 대행자 · 구간 직전',
+                  talents: [
+                    '429539',
+                  ],
                 },
               ],
               note: '천체의 정렬과 영혼 소집은 자연의 군대와 묶는 큰 구간에 끼워 넣습니다. 엘룬의 대행자는 달의 부름 때문에 굵은 줄의 천벌 자리를 별빛섬광으로, 일월식 (태양)을 일월식 (달)로 바꾸고, 엘룬의 분노를 일월식·화신 직전에 씁니다.',
@@ -839,6 +871,9 @@ const manuscript = {
                   skillId: '5176',
                   caption: '풀링 4초 전',
                   count: 3,
+                  talents: [
+                    '450356',
+                  ],
                 },
                 {
                   skillId: '93402',
@@ -847,6 +882,10 @@ const manuscript = {
                 {
                   skillId: '205636',
                   caption: '나무정령 소환',
+                  talents: [
+                    '428731',
+                    '429215',
+                  ],
                 },
                 {
                   skillId: '194223',
@@ -856,6 +895,10 @@ const manuscript = {
                   skillId: '78674',
                   caption: '숲의 조화 중 소비',
                   count: '3~4',
+                  talents: [
+                    '428731',
+                    '450212',
+                  ],
                 },
                 {
                   skillId: '391528',
@@ -881,6 +924,10 @@ const manuscript = {
                 {
                   skillId: '48517',
                   caption: '천체의 정렬이 끝나면',
+                  talents: [
+                    '455797',
+                    '1261564',
+                  ],
                 },
                 {
                   skillId: '78674',
@@ -897,10 +944,16 @@ const manuscript = {
                   skillId: '5176',
                   caption: '풀링 4초 전',
                   count: '2~3',
+                  talents: [
+                    '450356',
+                  ],
                 },
                 {
                   skillId: '8921',
                   caption: '첫 글쿨 · 우선 대상',
+                  talents: [
+                    '279620',
+                  ],
                 },
                 {
                   skillId: '93402',
@@ -909,6 +962,9 @@ const manuscript = {
                 {
                   skillId: '202770',
                   caption: '구간 직전 자원 준비',
+                  talents: [
+                    '429539',
+                  ],
                 },
                 {
                   skillId: '102560',
@@ -917,10 +973,18 @@ const manuscript = {
                 {
                   skillId: '48518',
                   caption: 'B · 화신이 없으면',
+                  talents: [
+                    '429523',
+                    '1261564',
+                  ],
                 },
                 {
                   skillId: '78674',
                   caption: '구간 첫 소비',
+                  talents: [
+                    '450212',
+                    '1261564',
+                  ],
                 },
                 {
                   skillId: '391528',
@@ -929,6 +993,10 @@ const manuscript = {
                 {
                   skillId: '194153',
                   caption: '즉시 시전부터 모으기',
+                  talents: [
+                    '1271206',
+                    '429523',
+                  ],
                 },
                 {
                   skillId: '78674',
@@ -979,6 +1047,9 @@ const manuscript = {
                 {
                   skillId: '8921',
                   caption: '모으는 중 · 6초 이상 살 적',
+                  talents: [
+                    '279620',
+                  ],
                 },
                 {
                   skillId: '93402',
@@ -987,18 +1058,33 @@ const manuscript = {
                 {
                   skillId: '202770',
                   caption: '몹 고정 · 구간 직전',
+                  talents: [
+                    '429539',
+                  ],
                 },
                 {
                   skillId: '48518',
                   caption: '소비기 두 번분',
+                  talents: [
+                    '429523',
+                    '1261564',
+                  ],
                 },
                 {
                   skillId: '191034',
                   caption: '구간 첫 소비',
+                  talents: [
+                    '1261564',
+                    '450356',
+                  ],
                 },
                 {
                   skillId: '194153',
                   caption: '주변 적까지 맞히며 생성',
+                  talents: [
+                    '1271206',
+                    '429523',
+                  ],
                 },
               ],
               note: '화신이 이번 무리에 배정됐다면 일월식 (달) 대신 화신으로 엽니다.',
@@ -1009,6 +1095,9 @@ const manuscript = {
                 {
                   skillId: '8921',
                   caption: '오래 살 적에게만',
+                  talents: [
+                    '279620',
+                  ],
                 },
                 {
                   skillId: '93402',
@@ -1017,18 +1106,32 @@ const manuscript = {
                 {
                   skillId: '205636',
                   caption: '몹 고정 직후',
+                  talents: [
+                    '428731',
+                    '429215',
+                  ],
                 },
                 {
                   skillId: '48518',
                   caption: '별빛섬광 뒤 달 모드',
+                  talents: [
+                    '455797',
+                    '1261564',
+                  ],
                 },
                 {
                   skillId: '194153',
                   caption: '꿈의 폭발 3중첩 소비',
+                  talents: [
+                    '433831',
+                  ],
                 },
                 {
                   skillId: '191034',
                   caption: '나무정령 있는 동안',
+                  talents: [
+                    '428731',
+                  ],
                 },
               ],
               note: '짧은 무리에서 빨리 달아오르는 것이 이 영웅 특성을 고르는 이유입니다.',
@@ -1044,6 +1147,9 @@ const manuscript = {
                     skillId: '8921',
                     when: '오래 살 새 적이 붙으면',
                   },
+                  talents: [
+                    '450356',
+                  ],
                 },
                 {
                   skillId: '194153',
@@ -1060,6 +1166,10 @@ const manuscript = {
                     skillId: '191034',
                     when: '우주의 손길 무료면 바로',
                   },
+                  talents: [
+                    '1261564',
+                    '450356',
+                  ],
                 },
                 {
                   skillId: '194153',
@@ -1076,6 +1186,9 @@ const manuscript = {
                     skillId: '102560',
                     when: '이번 무리에 화신 배정이면',
                   },
+                  talents: [
+                    '1261564',
+                  ],
                 },
                 {
                   skillId: '191034',
@@ -1095,6 +1208,9 @@ const manuscript = {
                 {
                   skillId: '78674',
                   caption: '정확히 2대상·먼저 잡을 대상',
+                  talents: [
+                    '450212',
+                  ],
                 },
                 {
                   skillId: '88747',
@@ -1195,6 +1311,10 @@ const manuscript = {
                   label: '쏟아지는 별',
                   kind: 'talent',
                   note: '30% 확률로 50% 효율 별빛쇄도 자동 발사 · 12.1부터 천벌에서는 발동하지 않음',
+                  affects: [
+                    '194153',
+                    '78674',
+                  ],
                 },
               ],
             },
@@ -1213,6 +1333,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '쐐기 반복 광역',
                   note: '비전 능력이 엘룬의 분노를 1.5초씩 앞당김',
+                  affects: [
+                    '202770',
+                  ],
                 },
                 {
                   skillId: '429540',
@@ -1220,6 +1343,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '레이드 단일',
                   note: '비전 피해 3% 증가',
+                  affects: [
+                    '194153',
+                  ],
                 },
               ],
             },
@@ -1345,18 +1471,31 @@ const manuscript = {
                   label: '숲의 조화',
                   kind: 'talent',
                   note: '나무정령 하나당 주문 공격력 4%',
+                  affects: [
+                    '205636',
+                    '78674',
+                    '191034',
+                  ],
                 },
                 {
                   skillId: '429215',
                   label: '풍성한 개화',
                   kind: 'talent',
                   note: '나무정령 지속시간 4초 증가 · 추가 소환이 아님',
+                  affects: [
+                    '205636',
+                  ],
                 },
                 {
                   skillId: '433831',
                   label: '꿈의 쇄도',
                   kind: 'talent',
                   note: '꿈의 폭발 3중첩 · 다음 천벌·별빛섬광 세 번이 주변 적에게 자연 피해',
+                  affects: [
+                    '205636',
+                    '5176',
+                    '194153',
+                  ],
                 },
               ],
             },
@@ -1388,6 +1527,10 @@ const manuscript = {
                   label: '세나리우스의 권능',
                   kind: 'talent',
                   note: '6초 동안 가속 6%',
+                  affects: [
+                    '48517',
+                    '48518',
+                  ],
                 },
               ],
             },
@@ -3078,6 +3221,11 @@ const manuscript = {
     video: {
       youtubeId: 'C88_MxxpPfY',
       title: '한밤 2시즌 12.1.5 조화 드루이드 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'XaHnh_xfCOo',
+      title: '한밤 2시즌 12.1.5 조화 드루이드 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
     defaultHeroBranchIndex: 1,

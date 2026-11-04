@@ -383,6 +383,9 @@ const manuscript = {
                   label: '표범의 기만',
                   kind: 'talent',
                   note: '칼날 발톱·달빛섬광 점수 생성 시 25% 확률로 점수가 최대치까지',
+                  affects: [
+                    '5221',
+                  ],
                 },
                 {
                   skillId: '135700',
@@ -436,6 +439,11 @@ const manuscript = {
                   label: '숲의 영혼',
                   kind: 'talent',
                   note: '마무리 일격 공격력 5% · 실제로 쓴 점수당 기력 2',
+                  affects: [
+                    '22568',
+                    '1079',
+                    '285381',
+                  ],
                 },
               ],
             },
@@ -483,6 +491,9 @@ const manuscript = {
                   label: '암습의 일격',
                   kind: 'talent',
                   note: '은신 중 갈퀴 발톱 60% 강화 · 4초 기절',
+                  affects: [
+                    '1822',
+                  ],
                 },
               ],
             },
@@ -526,18 +537,31 @@ const manuscript = {
                   label: '혈관절단기',
                   kind: 'talent',
                   note: '도려내기·갈퀴 발톱 지속시간 25% 증가',
+                  affects: [
+                    '1079',
+                    '1822',
+                  ],
                 },
                 {
                   skillId: '400320',
                   label: '생사의 순환',
                   kind: 'talent',
                   note: '지속 피해 틱 간격 20% 감소',
+                  affects: [
+                    '1822',
+                    '1079',
+                  ],
                 },
                 {
                   skillId: '391872',
                   label: '호랑이의 끈기',
                   kind: 'talent',
                   note: '호랑이의 분노 중 건 출혈은 전체 지속시간 동안 10% 추가 강화',
+                  affects: [
+                    '5217',
+                    '1822',
+                    '1079',
+                  ],
                 },
               ],
             },
@@ -585,6 +609,10 @@ const manuscript = {
                   label: '최상위 포식자의 갈망',
                   kind: 'talent',
                   note: '기본 4% 확률 · 다음 흉포한 이빨이 자원 없이 최대 피해',
+                  affects: [
+                    '1079',
+                    '22568',
+                  ],
                 },
               ],
             },
@@ -614,24 +642,38 @@ const manuscript = {
                   label: '칼날이빨',
                   kind: 'talent',
                   note: '이빨 피해 15% · 점수 1점당 4초 동안 대상이 받는 출혈 피해 6% 증가',
+                  affects: [
+                    '22568',
+                  ],
                 },
                 {
                   skillId: '384665',
                   label: '피의 맛',
                   kind: 'talent',
                   note: '이빨 피해 16% · 호랑이의 분노 중 8% 추가',
+                  affects: [
+                    '22568',
+                    '5217',
+                  ],
                 },
                 {
                   skillId: '1244532',
                   label: '흩뿌려진 선혈',
                   kind: 'talent',
                   note: '도려내기 걸린 적 하나당 주 대상 이빨 피해 8% · 최대 6명',
+                  affects: [
+                    '22568',
+                    '1079',
+                  ],
                 },
                 {
                   skillId: '391709',
                   label: '날뛰는 야성',
                   kind: 'talent',
                   note: '이빨 사용 시 주위 모든 적에게 피해',
+                  affects: [
+                    '22568',
+                  ],
                 },
               ],
             },
@@ -685,18 +727,33 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 노드',
                   note: '다음 2회의 생성 공격 뒤 보이지 않는 공격이 최대 피해 · 도려내기 피해 30%',
+                  affects: [
+                    '5217',
+                    '1263827',
+                    '1263902',
+                    '1079',
+                  ],
                 },
                 {
                   skillId: '391872',
                   label: '호랑이의 끈기',
                   kind: 'talent',
                   note: '다음 3회 마무리 일격이 점수 1점 반환',
+                  affects: [
+                    '5217',
+                    '1822',
+                    '1079',
+                  ],
                 },
                 {
                   skillId: '384665',
                   label: '피의 맛',
                   kind: 'talent',
                   note: '켜진 동안 이빨 8% 추가 피해',
+                  affects: [
+                    '22568',
+                    '5217',
+                  ],
                 },
               ],
             },
@@ -726,6 +783,11 @@ const manuscript = {
                   kind: 'talent',
                   tag: '첫 노드',
                   note: '이빨 사용 시 점수당 15% 확률로 보이지 않는 공격',
+                  affects: [
+                    '22568',
+                    '1263827',
+                    '1263902',
+                  ],
                 },
                 {
                   skillId: '1263939',
@@ -792,12 +854,20 @@ const manuscript = {
                   label: '광폭화: 사자의 심장',
                   kind: 'talent',
                   note: '광폭화·화신 쿨다운 60초 감소 · 기본 3분에서 2분',
+                  affects: [
+                    '106951',
+                    '102543',
+                  ],
                 },
                 {
                   skillId: '391548',
                   label: '아샤메인의 인도',
                   kind: 'talent',
                   note: '화신이면 30초 감소 · 영혼 소집이면 쿨다운 50% 감소, 지속시간·주문 수 25% 감소',
+                  affects: [
+                    '102543',
+                    '391528',
+                  ],
                 },
               ],
             },
@@ -819,6 +889,9 @@ const manuscript = {
                   label: '집중된 광란',
                   kind: 'talent',
                   note: '야성의 광기 쿨다운 15초 감소 · 30초 주기',
+                  affects: [
+                    '274837',
+                  ],
                 },
               ],
             },
@@ -831,6 +904,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '세트 효과',
                   note: '광폭화·화신 지속시간 10초 증가',
+                  affects: [
+                    '106951',
+                    '102543',
+                  ],
                 },
                 {
                   skillId: '1301600',
@@ -889,6 +966,10 @@ const manuscript = {
                     skillId: '5217',
                     when: '공격 가능 · 쿨이 돌면',
                   },
+                  talents: [
+                    '391978',
+                    '390772',
+                  ],
                 },
                 {
                   skillId: '5221',
@@ -897,6 +978,9 @@ const manuscript = {
                     skillId: '155625',
                     when: '없음·팬데믹이면',
                   },
+                  talents: [
+                    '1280316',
+                  ],
                 },
                 {
                   skillId: '22568',
@@ -905,6 +989,10 @@ const manuscript = {
                     skillId: '22568',
                     when: '무료 이빨 발동 시 바로',
                   },
+                  talents: [
+                    '202031',
+                    '384665',
+                  ],
                 },
                 {
                   skillId: '5221',
@@ -917,6 +1005,10 @@ const manuscript = {
                 {
                   skillId: '1079',
                   caption: '5점 · 없음/팬데믹',
+                  talents: [
+                    '391978',
+                    '391881',
+                  ],
                 },
                 {
                   skillId: '5221',
@@ -948,6 +1040,9 @@ const manuscript = {
                 {
                   skillId: '441591',
                   caption: '발톱 · 이빨이 변환되면 대신',
+                  talents: [
+                    '441583',
+                  ],
                 },
                 {
                   skillId: '5221',
@@ -956,14 +1051,23 @@ const manuscript = {
                 {
                   skillId: '5221',
                   caption: '발톱 · 광폭화 중 발톱 광란 기회',
+                  talents: [
+                    '441835',
+                  ],
                 },
                 {
                   skillId: '22568',
                   caption: '야생추적자 · 덩굴 대상에 이빨',
+                  talents: [
+                    '440120',
+                  ],
                 },
                 {
                   skillId: '1822',
                   caption: '야생추적자 · 출혈 유지로 덩굴 기회',
+                  talents: [
+                    '439528',
+                  ],
                 },
               ],
             },
@@ -1008,22 +1112,37 @@ const manuscript = {
                 {
                   skillId: '5217',
                   caption: '첫 갈퀴 발톱 직전',
+                  talents: [
+                    '440118',
+                  ],
                 },
                 {
                   skillId: '1822',
                   caption: '덩굴 기다리지 않기',
+                  talents: [
+                    '439528',
+                  ],
                 },
                 {
                   skillId: '106951',
                   caption: '극딜 시작',
+                  talents: [
+                    '391174',
+                  ],
                 },
                 {
                   skillId: '274837',
                   caption: '첫 5점 만들기',
+                  talents: [
+                    '1244544',
+                  ],
                 },
                 {
                   skillId: '1079',
                   caption: '5점 · 주 출혈',
+                  talents: [
+                    '439528',
+                  ],
                 },
                 {
                   skillId: '155625',
@@ -1032,10 +1151,17 @@ const manuscript = {
                 {
                   skillId: '22568',
                   caption: '소집 직전 마무리',
+                  talents: [
+                    '440120',
+                    '1270586',
+                  ],
                 },
                 {
                   skillId: '391528',
                   caption: '점수 비운 뒤 · 끝까지',
+                  talents: [
+                    '391548',
+                  ],
                 },
                 {
                   skillId: '22568',
@@ -1054,22 +1180,40 @@ const manuscript = {
                 {
                   skillId: '5217',
                   caption: '첫 갈퀴 발톱 직전',
+                  talents: [
+                    '441824',
+                    '391872',
+                  ],
                 },
                 {
                   skillId: '1822',
                   caption: '은신 중 첫 출혈',
+                  talents: [
+                    '391978',
+                    '390772',
+                  ],
                 },
                 {
                   skillId: '106951',
                   caption: '극딜 시작',
+                  talents: [
+                    '391174',
+                  ],
                 },
                 {
                   skillId: '274837',
                   caption: '첫 5점 만들기',
+                  talents: [
+                    '1244544',
+                  ],
                 },
                 {
                   skillId: '1079',
                   caption: '5점 · 첫 출혈',
+                  talents: [
+                    '391978',
+                    '391881',
+                  ],
                 },
                 {
                   skillId: '441591',
@@ -1078,14 +1222,25 @@ const manuscript = {
                     skillId: '5221',
                     when: '점수 모자라면 먼저',
                   },
+                  talents: [
+                    '441583',
+                    '441809',
+                  ],
                 },
                 {
                   skillId: '391528',
                   caption: '점수 비운 뒤 · 끝까지',
+                  talents: [
+                    '391548',
+                  ],
                 },
                 {
                   skillId: '22568',
                   caption: '소집 뒤 유지로',
+                  talents: [
+                    '202031',
+                    '384665',
+                  ],
                 },
               ],
               note: '점수가 이미 찼다면 필요한 마무리 일격으로 먼저 비우고, 도려내기 단계에서 점수가 모자라면 생성기를 보충합니다. 스조라크 신화 상위 발톱의 드루이드 로그 8개 중 6개가 영혼 소집 전에 찢어발기기를 썼습니다. 마지막 단계 뒤에는 정해진 순서가 아니라 단일 우선순위로 돌아갑니다.',
@@ -1132,6 +1287,10 @@ const manuscript = {
                     skillId: '5217',
                     when: '공격 가능 · 쿨이 돌면',
                   },
+                  talents: [
+                    '391978',
+                    '390772',
+                  ],
                 },
                 {
                   skillId: '106785',
@@ -1152,6 +1311,9 @@ const manuscript = {
                     skillId: '22568',
                     when: '무료 이빨 발동 시 바로',
                   },
+                  talents: [
+                    '158476',
+                  ],
                 },
                 {
                   skillId: '106785',
@@ -1164,6 +1326,10 @@ const manuscript = {
                     skillId: '106951',
                     when: '배정한 무리 · 화신이면 화신',
                   },
+                  talents: [
+                    '202031',
+                    '384665',
+                  ],
                 },
                 {
                   skillId: '1822',
@@ -1183,10 +1349,16 @@ const manuscript = {
                 {
                   skillId: '441591',
                   caption: '발톱 · 변환되면 앞쪽 무리에',
+                  talents: [
+                    '441583',
+                  ],
                 },
                 {
                   skillId: '102543',
                   caption: '발톱 광역 예시 · 화신',
+                  talents: [
+                    '391174',
+                  ],
                 },
                 {
                   skillId: '5215',
@@ -1195,14 +1367,23 @@ const manuscript = {
                 {
                   skillId: '106785',
                   caption: '발톱 · 화신 중 발톱 광란 기회',
+                  talents: [
+                    '441835',
+                  ],
                 },
                 {
                   skillId: '22568',
                   caption: '야생추적자 · 덩굴 붙은 우선 대상',
+                  talents: [
+                    '440120',
+                  ],
                 },
                 {
                   skillId: '391528',
                   caption: '야생추적자 · 출혈 남고 안전할 때',
+                  talents: [
+                    '391548',
+                  ],
                 },
               ],
             },
@@ -1216,6 +1397,10 @@ const manuscript = {
                 {
                   skillId: '1822',
                   caption: '탱커 진입 뒤 오래 살 적',
+                  talents: [
+                    '391978',
+                    '390772',
+                  ],
                 },
                 {
                   skillId: '106785',
@@ -1224,14 +1409,25 @@ const manuscript = {
                 {
                   skillId: '5217',
                   caption: '교전 뒤 · 목숨을 끊는 일격',
+                  talents: [
+                    '441824',
+                    '391872',
+                  ],
                 },
                 {
                   skillId: '102543',
                   caption: '호랑이의 분노와 함께',
+                  talents: [
+                    '391174',
+                    '391548',
+                  ],
                 },
                 {
                   skillId: '285381',
                   caption: '5점 · 적이 모임',
+                  talents: [
+                    '158476',
+                  ],
                 },
                 {
                   skillId: '1243807',
@@ -1240,6 +1436,10 @@ const manuscript = {
                 {
                   skillId: '441591',
                   caption: '변환 확인 · 적이 앞에',
+                  talents: [
+                    '441583',
+                    '441809',
+                  ],
                 },
                 {
                   skillId: '5215',
@@ -1262,6 +1462,9 @@ const manuscript = {
                 {
                   skillId: '1822',
                   caption: '오래 살 대상',
+                  talents: [
+                    '439528',
+                  ],
                 },
                 {
                   skillId: '106785',
@@ -1270,14 +1473,23 @@ const manuscript = {
                 {
                   skillId: '5217',
                   caption: '원시 분노 직전',
+                  talents: [
+                    '440118',
+                  ],
                 },
                 {
                   skillId: '285381',
                   caption: '5점 · 적이 모임',
+                  talents: [
+                    '158476',
+                  ],
                 },
                 {
                   skillId: '106951',
                   caption: '이번 풀에 배정',
+                  talents: [
+                    '391174',
+                  ],
                 },
                 {
                   skillId: '1243807',
@@ -1286,10 +1498,17 @@ const manuscript = {
                 {
                   skillId: '22568',
                   caption: '덩굴 대상 확인',
+                  talents: [
+                    '440120',
+                    '1270586',
+                  ],
                 },
                 {
                   skillId: '391528',
                   caption: '출혈 유지 · 안전할 때',
+                  talents: [
+                    '391548',
+                  ],
                 },
               ],
               note: '다음 풀에 점수를 가져왔다면 0점에서 다시 시작하지 않아도 됩니다.',
@@ -1355,24 +1574,41 @@ const manuscript = {
                   label: '찢어발기기',
                   kind: 'talent',
                   note: '자동 공격 시 일정 확률로 다음 흉포한 이빨이 변환',
+                  affects: [
+                    '22568',
+                    '441591',
+                  ],
                 },
                 {
                   skillId: '441824',
                   label: '목숨을 끊는 일격',
                   kind: 'talent',
                   note: '전투 중 첫 호랑이의 분노에서 이빨이 변환',
+                  affects: [
+                    '5217',
+                    '441591',
+                  ],
                 },
                 {
                   skillId: '441835',
                   label: '발톱 광란',
                   kind: 'talent',
                   note: '광폭화 중 칼날 발톱·휘둘러치기가 20% 확률로 변환',
+                  affects: [
+                    '106951',
+                    '5221',
+                    '106785',
+                    '441591',
+                  ],
                 },
                 {
                   skillId: '1271540',
                   label: '사지 분쇄',
                   kind: 'talent',
                   note: '자동 공격에서 얻을 확률 30% 증가',
+                  affects: [
+                    '441591',
+                  ],
                 },
               ],
             },
@@ -1395,18 +1631,28 @@ const manuscript = {
                   label: '섬뜩한 상처',
                   kind: 'talent',
                   note: '6초 출혈 · 그 대상이 나에게 주는 피해 4% 감소',
+                  affects: [
+                    '441591',
+                  ],
                 },
                 {
                   skillId: '1271839',
                   label: '상처 악화',
                   kind: 'talent',
                   note: '섬뜩한 상처 대상에게 내 출혈·지속 피해 8% 강화',
+                  affects: [
+                    '441591',
+                    '1079',
+                  ],
                 },
                 {
                   skillId: '441829',
                   label: '상처 악화',
                   kind: 'talent',
                   note: '기력 소비 공격이 섬뜩한 상처 0.6초 연장 · 한도 8초',
+                  affects: [
+                    '441591',
+                  ],
                 },
               ],
             },
@@ -1545,6 +1791,10 @@ const manuscript = {
                   label: '식재',
                   kind: 'talent',
                   note: '호랑이의 분노를 얻거나 잃을 때 다음 단일 근접 기술로 4초 덩굴',
+                  affects: [
+                    '5217',
+                    '439531',
+                  ],
                 },
               ],
             },
@@ -1556,6 +1806,11 @@ const manuscript = {
                   label: '번성하는 성장물',
                   kind: 'talent',
                   note: '도려내기·갈퀴 발톱 피해로 덩굴 발생',
+                  affects: [
+                    '1822',
+                    '1079',
+                    '439531',
+                  ],
                 },
                 {
                   skillId: '439531',
@@ -1584,6 +1839,10 @@ const manuscript = {
                   label: '광분증',
                   kind: 'talent',
                   note: '덩굴이 2초마다 30% 확률로 폭발 발동',
+                  affects: [
+                    '439531',
+                    '440120',
+                  ],
                 },
               ],
             },
@@ -1606,18 +1865,28 @@ const manuscript = {
                   label: '침착한 관리인',
                   kind: 'talent',
                   note: '출혈·지속 피해 10% 증가(기존 8%)',
+                  affects: [
+                    '1822',
+                    '1079',
+                  ],
                 },
                 {
                   skillId: '439882',
                   label: '뿌리 연결망',
                   kind: 'talent',
                   note: '활성 덩굴 하나당 능력 피해 2%',
+                  affects: [
+                    '439531',
+                  ],
                 },
                 {
                   skillId: '440119',
                   label: '활력의 덩굴',
                   kind: 'talent',
                   note: '덩굴 대상에게 주는 피해 4%',
+                  affects: [
+                    '439531',
+                  ],
                 },
               ],
             },
@@ -3348,6 +3617,11 @@ const manuscript = {
     video: {
       youtubeId: 'NhgNmWArlXk',
       title: '한밤 2시즌 12.1.5 야성 드루이드 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'vVqsK275y0Q',
+      title: '한밤 2시즌 12.1.5 야성 드루이드 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
     defaultHeroBranchIndex: 1,

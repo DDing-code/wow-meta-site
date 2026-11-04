@@ -494,6 +494,9 @@ const manuscript = {
                 label: '싹틔우기',
                 kind: 'talent',
                 note: '같은 대상에게 회복 2번 중첩',
+                affects: [
+                  '774',
+                ],
               },
               {
                 skillId: '1296609',
@@ -528,12 +531,18 @@ const manuscript = {
                 label: '청명의 섬광',
                 kind: 'talent',
                 note: '번뜩임 재생 치유량 40% 증가',
+                affects: [
+                  '8936',
+                ],
               },
               {
                 skillId: '403521',
                 label: '평온한 마음',
                 kind: 'talent',
                 note: '번뜩임 최대 2회 저장',
+                affects: [
+                  '8936',
+                ],
               },
             ],
           },
@@ -545,12 +554,20 @@ const manuscript = {
                 label: '숲의 영혼',
                 kind: 'talent',
                 note: '신속한 치유 뒤 강화된 회복',
+                affects: [
+                  '18562',
+                  '774',
+                ],
               },
               {
                 skillId: '392302',
                 label: '대드루이드의 힘',
                 kind: 'talent',
                 note: '강화된 회복을 추가 대상에게 퍼뜨림',
+                affects: [
+                  '18562',
+                  '774',
+                ],
               },
             ],
           },
@@ -605,6 +622,9 @@ const manuscript = {
                 label: '상록숲',
                 kind: 'talent',
                 note: '피어나는 생명이 5초마다 중첩 · 최대 3중첩',
+                affects: [
+                  '33763',
+                ],
               },
               {
                 skillId: '774',
@@ -632,12 +652,18 @@ const manuscript = {
                 label: '신록 주입',
                 kind: 'talent',
                 note: '대상의 지속 치유를 소모하지 않음',
+                affects: [
+                  '18562',
+                ],
               },
               {
                 skillId: '200383',
                 label: '번영',
                 kind: 'talent',
                 note: '두 번째 충전',
+                affects: [
+                  '18562',
+                ],
               },
             ],
           },
@@ -654,6 +680,10 @@ const manuscript = {
                 label: '대드루이드의 힘',
                 kind: 'talent',
                 note: '신속한 치유에서 이어지는 후속 효과',
+                affects: [
+                  '18562',
+                  '774',
+                ],
               },
             ],
           },
@@ -716,6 +746,12 @@ const manuscript = {
                 label: '과성장',
                 kind: 'talent',
                 note: '피어나는 생명·회복·급속 성장 지속 치유',
+                affects: [
+                  '132158',
+                  '33763',
+                  '774',
+                  '48438',
+                ],
               },
               {
                 skillId: '1296610',
@@ -867,6 +903,9 @@ const manuscript = {
                   skillId: '145205',
                   when: '꽃 밖에 모였을 때만',
                 },
+                talents: [
+                  '392167',
+                ],
               },
               {
                 skillId: '18562',
@@ -875,10 +914,18 @@ const manuscript = {
                   skillId: '102342',
                   when: '예고된 큰 피해 전이면 먼저',
                 },
+                talents: [
+                  '392410',
+                  '200383',
+                ],
               },
               {
                 skillId: '774',
                 caption: '다음 피해 전 5개',
+                talents: [
+                  '155675',
+                  '207383',
+                ],
               },
               {
                 skillId: '8936',
@@ -887,6 +934,10 @@ const manuscript = {
                   skillId: '132158',
                   when: '한 명을 살리려면 먼저',
                 },
+                talents: [
+                  '207383',
+                  '392220',
+                ],
               },
               {
                 skillId: '5176',
@@ -913,22 +964,38 @@ const manuscript = {
               {
                 skillId: '132158',
                 caption: '다음 재생과 묶기',
+                talents: [
+                  '203651',
+                ],
               },
               {
                 skillId: '8936',
                 caption: '즉시 직접 치유',
+                talents: [
+                  '439528',
+                ],
               },
               {
                 skillId: '18562',
                 caption: '즉시 회복',
+                talents: [
+                  '440118',
+                ],
               },
               {
                 skillId: '774',
                 caption: '공생체 꽃 대상에게',
+                talents: [
+                  '440120',
+                  '1270592',
+                ],
               },
               {
                 skillId: '33763',
                 caption: '유지 확인',
+                talents: [
+                  '392167',
+                ],
               },
               {
                 skillId: '5176',
@@ -944,14 +1011,23 @@ const manuscript = {
               {
                 skillId: '18562',
                 caption: '숲의 수호자 · 자연의 신속함보다 먼저',
+                talents: [
+                  '1226140',
+                ],
               },
               {
                 skillId: '8936',
                 caption: '숲의 수호자 · 충전 없을 때 재생',
+                talents: [
+                  '207383',
+                ],
               },
               {
                 skillId: '774',
                 caption: '야생추적자 · 공생체 꽃에 회복',
+                talents: [
+                  '440120',
+                ],
               },
               {
                 skillId: '203651',
@@ -996,22 +1072,38 @@ const manuscript = {
               {
                 skillId: '33763',
                 caption: '전투 시작 전',
+                talents: [
+                  '392167',
+                ],
               },
               {
                 skillId: '774',
                 caption: '피해 4~6초 전 5개',
+                talents: [
+                  '155675',
+                  '207383',
+                ],
               },
               {
                 skillId: '8936',
                 caption: '피어나는 생명 대상에',
+                talents: [
+                  '439528',
+                ],
               },
               {
                 skillId: '18562',
                 caption: '피해 직전 · 만개 시작',
+                talents: [
+                  '440118',
+                ],
               },
               {
                 skillId: '48438',
                 caption: '여러 명 피해 시작',
+                talents: [
+                  '440118',
+                ],
               },
               {
                 skillId: '391528',
@@ -1034,26 +1126,47 @@ const manuscript = {
               {
                 skillId: '33763',
                 caption: '전투 시작 전',
+                talents: [
+                  '392167',
+                ],
               },
               {
                 skillId: '774',
                 caption: '피해 4~6초 전 5개',
+                talents: [
+                  '155675',
+                  '207383',
+                ],
               },
               {
                 skillId: '18562',
                 caption: '피해 직전 · 첫 숲 수호자',
+                talents: [
+                  '1226140',
+                  '455797',
+                ],
               },
               {
                 skillId: '48438',
                 caption: '두 번째 숲 수호자',
+                talents: [
+                  '1226140',
+                ],
               },
               {
                 skillId: '391528',
                 caption: '발동 모으기',
+                talents: [
+                  '1226140',
+                ],
               },
               {
                 skillId: '8936',
                 caption: '풍요 재생으로 복구',
+                talents: [
+                  '207383',
+                  '392220',
+                ],
               },
             ],
             note: '숲 수호자는 직접 쓰는 주문이 아닙니다. 신속한 치유와 급속 성장을 피해 직전과 시작에 맞춰 발동이 피해 구간에 놓이게 합니다.',
@@ -1073,6 +1186,9 @@ const manuscript = {
               {
                 skillId: '132158',
                 caption: '한 명 급락 · 재생과 묶기',
+                talents: [
+                  '203651',
+                ],
               },
               {
                 skillId: '102342',
@@ -1122,14 +1238,25 @@ const manuscript = {
                   skillId: '145205',
                   when: '꽃 밖에 모였을 때만',
                 },
+                talents: [
+                  '392167',
+                ],
               },
               {
                 skillId: '774',
                 caption: '피해 4~6초 전 5개',
+                talents: [
+                  '155675',
+                  '207383',
+                ],
               },
               {
                 skillId: '18562',
                 caption: '상록숲 만개',
+                talents: [
+                  '392410',
+                  '200383',
+                ],
               },
               {
                 skillId: '48438',
@@ -1146,6 +1273,10 @@ const manuscript = {
                   skillId: '740',
                   when: '배정된 큰 피해면',
                 },
+                talents: [
+                  '207383',
+                  '392220',
+                ],
               },
               {
                 skillId: '8936',
@@ -1169,22 +1300,37 @@ const manuscript = {
               {
                 skillId: '774',
                 caption: '야생추적자 · 공생체 꽃에 회복',
+                talents: [
+                  '440120',
+                ],
               },
               {
                 skillId: '18562',
                 caption: '숲의 수호자 · 피해 직전 첫 숲 수호자',
+                talents: [
+                  '1226140',
+                ],
               },
               {
                 skillId: '48438',
                 caption: '숲의 수호자 · 피해 시작 두 번째',
+                talents: [
+                  '1226140',
+                ],
               },
               {
                 skillId: '391528',
                 caption: '숲의 수호자 · 발동 모으기',
+                talents: [
+                  '1226140',
+                ],
               },
               {
                 skillId: '8936',
                 caption: '무성한 생장 · 피어나는 생명 없는 파티원',
+                talents: [
+                  '207383',
+                ],
               },
             ],
           },
@@ -1275,6 +1421,10 @@ const manuscript = {
                 label: '식재',
                 kind: 'talent',
                 note: '신속한 치유·급속 성장으로 6초 공생체 꽃',
+                affects: [
+                  '18562',
+                  '48438',
+                ],
               },
               {
                 skillId: '439528',
@@ -1287,6 +1437,9 @@ const manuscript = {
                 label: '원예의 재능',
                 kind: 'talent',
                 note: '공생체 꽃 성장 속도 20%',
+                affects: [
+                  '439528',
+                ],
               },
             ],
           },
@@ -1298,18 +1451,28 @@ const manuscript = {
                 label: '활력의 덩굴',
                 kind: 'talent',
                 note: '공생체 꽃 대상에게 주는 치유량 20% 증가',
+                affects: [
+                  '439528',
+                ],
               },
               {
                 skillId: '439882',
                 label: '뿌리 연결망',
                 kind: 'talent',
                 note: '공생체 꽃 하나당 주문 치유량 2% 증가',
+                affects: [
+                  '439528',
+                ],
               },
               {
                 skillId: '1270586',
                 label: '광분증',
                 kind: 'talent',
                 note: '공생체 꽃이 2초마다 20% 확률로 꽃 치유',
+                affects: [
+                  '439528',
+                  '440120',
+                ],
               },
             ],
           },
@@ -1326,6 +1489,11 @@ const manuscript = {
                 label: '침착한 관리인',
                 kind: 'talent',
                 note: '회복 시전자의 지속 치유 6% 증가',
+                affects: [
+                  '774',
+                  '33763',
+                  '48438',
+                ],
               },
             ],
           },
@@ -1470,24 +1638,37 @@ const manuscript = {
                 label: '꿈의 쇄도',
                 kind: 'talent',
                 note: '소환 시 주위 아군 최대 3명 추가 치유',
+                affects: [
+                  '1226140',
+                ],
               },
               {
                 skillId: '428731',
                 label: '숲의 조화',
                 kind: 'talent',
                 note: '숲 수호자 하나당 치유량 5% 증가',
+                affects: [
+                  '1226140',
+                ],
               },
               {
                 skillId: '429215',
                 label: '풍성한 개화',
                 kind: 'talent',
                 note: '숲 수호자 치유량 30% 증가',
+                affects: [
+                  '1226140',
+                ],
               },
               {
                 skillId: '428544',
                 label: '달의 나무정령',
                 kind: 'talent',
                 note: '6초마다 주위 대상에게 달빛섬광',
+                affects: [
+                  '1226140',
+                  '8921',
+                ],
               },
             ],
           },
@@ -1554,6 +1735,11 @@ const manuscript = {
                 label: '번성',
                 kind: 'talent',
                 note: '1초마다 자신의 모든 지속 치유 2초 증가',
+                affects: [
+                  '740',
+                  '774',
+                  '48438',
+                ],
               },
               {
                 skillId: '33891',
@@ -3049,6 +3235,11 @@ const manuscript = {
   video: {
     youtubeId: 'RtN3NKFibMA',
     title: '한밤 2시즌 12.1.5 회복 드루이드 가이드',
+    channel: 'wowmeta 와우메타',
+  },
+  advancedVideo: {
+    youtubeId: 'zs-H4lceTjo',
+    title: '한밤 2시즌 12.1.5 회복 드루이드 심화 가이드',
     channel: 'wowmeta 와우메타',
   },
 };
