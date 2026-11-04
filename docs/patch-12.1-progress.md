@@ -1367,3 +1367,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 31편 기준으로 바꿔 수도사 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 28편은 그대로임을 다시 확인했다.
 - 배포: `npm run build`(전체 검증) 통과, 사이트 `19a3a07e`. 빌드 `main.c68705cc.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `advanced-videos-monk-20261105/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 수도사 3개×1440·390 통과(캡처 `live/`).
 - 남은 결정: 11-01에 공개한 수도사 예전 심화 3편(`UnT4vHATcTw`·`KvwmmZMJv3A`·`s0WXauEMru8`)은 같은 제목으로 채널에 남아 있을 수 있다. 지울지는 답을 기다린다.
+
+## 2026-11-05 드루이드 심화편 공개·사이트 상호연동 (업로드, 심화편 단추, 특성 ↔ 스킬 연결, 기본편 설명)
+
+- 요청: "업로드/후처리". 11-05에 만들어 둔 드루이드 심화 v10 4편(수호 썸네일은 곰 변신 형상판)을 수도사와 같은 방식으로 반영했다.
+- 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-druid-20261105.json`, 목록 생성 `upload-advanced-v10-druid-20261105/prepare.py`, 썸네일 talentbg-v6)로 와우메타 채널에 조화 `XaHnh_xfCOo`·야성 `vVqsK275y0Q`·수호 `9Oo-KGMT_-o`·회복 `zs-H4lceTjo`를 공개했다. 올리기 전 `studio/cli.mjs verify --strict`(최신 렌더 4/4)와 채널 번호를 확인했고, `verify` 4/4·oEmbed 공개 링크·공개 썸네일을 확인했다.
+- 사이트: `artifacts/advanced-videos-druid-20261105/apply.cjs`로 advancedVideo를, `artifacts/talent-links-20261102/apply.cjs druid-*`(`_druid.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `03-드루이드/*/Meta/guide-12.1.json`에 넣었다(KB `6331b45`). 글은 그대로다. 원고 검사기의 특성 연결 검사 목록에 드루이드 4개를 더했다.
+- 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 35편 기준으로 바꿔 드루이드 기본편 4편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 31편은 그대로임을 다시 확인했다.
+- 배포: `npm run build`(전체 검증) 통과, 사이트 `671fb233`. 빌드 `main.4b518523.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `advanced-videos-druid-20261105/shots.cjs` 9화면, `talent-links-20261102/shots.cjs` 드루이드 4개×1440·390 통과(캡처 `live/`).
+- 남은 결정: 11-01에 공개한 드루이드 예전 심화 4편(`yKLhONsEZ3o`·`hp-60iz5uO8`·`Mf4wisSVp9g`·`PFfjKuMvEL0`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
