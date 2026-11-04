@@ -1349,3 +1349,12 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 25편 기준으로 바꿔 마법사 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 22편은 그대로임을 다시 확인했다.
 - 배포: `npm run build`(전체 검증) 통과, 사이트 `62ca8714`. 빌드 `main.09c93905.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `advanced-videos-mage-20261102/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 마법사 3개×1440·390 통과(캡처 `live/`). 비전 첫 흐름도는 붙는 스킬(비전 쇄도)이 그 흐름도에 상자로 없어 강조선 없이 아이콘으로만 보인다.
 - 남은 결정: 11-01에 공개한 마법사 v9 심화 3편(`_arkcg3ShKY`·`bB-BKfcPkf8`·`hgyqKOHz4XA`)은 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다. 두 전문화 설명이 한 문장에 섞인 공용 특성 카드 정리도 답을 기다린다.
+
+## 2026-11-04 흑마법사 심화편 공개·사이트 상호연동 (업로드, 심화편 단추, 특성 ↔ 스킬 연결, 기본편 설명)
+
+- 요청: "사이트 연동/영상 업로드 진행하고 다음직업" → 11-04에 렌더만 해 둔 흑마법사 심화 v10 3편. 마법사와 같은 방식으로 반영했다.
+- 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-warlock-20261104.json`, 목록 생성 `upload-advanced-v10-warlock-20261104/prepare.py`, 썸네일 talentbg-v6)로 와우메타 채널에 고통 `I-GhVc_dMUc`·악마 `U4aOIF3pWqo`·파괴 `i7K6WcRyZzY`를 공개했다. 악마는 첫 실행에서 게시 뒤 화면 확인 시간이 초과돼 초안으로 남아, 같은 명령을 다시 돌려 게시했다. 올리기 전 `studio/cli.mjs verify --strict`(최신 렌더 3/3)와 채널 번호를 확인했고, `verify` 3/3·oEmbed 공개 링크·공개 썸네일이 v6과 같은지 확인했다.
+- 사이트: `artifacts/advanced-videos-warlock-20261104/apply.cjs`로 advancedVideo를, `artifacts/talent-links-20261102/apply.cjs warlock-*`(`_warlock.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `12-흑마법사/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다. 시즌 2 세트(KB 이름이 영어)는 타임라인 특성 칸에 넣지 않았다. 원고 검사기의 특성 연결 검사 목록에 흑마법사 3개를 더했다.
+- 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 28편 기준으로 바꿔 흑마법사 기본편 3편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 25편은 그대로임을 다시 확인했다.
+- 배포: `npm run build`(전체 검증) 통과, 사이트 `69f86d7f`. 빌드 `main.a45d300d.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `advanced-videos-warlock-20261104/shots.cjs` 7화면, `talent-links-20261102/shots.cjs` 흑마법사 3개×1440·390 통과(캡처 `live/`).
+- 남은 결정: 11-01에 공개한 흑마법사 예전 심화 3편(`niQt30IaNxY`·`jo4oJB03IgU`·`IFnPBT3dpug`)은 같은 제목으로 채널에 남아 있을 수 있다. 지울지는 답을 기다린다.

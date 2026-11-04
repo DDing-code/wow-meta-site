@@ -1,0 +1,98 @@
+[
+  {
+    "id": "warlock-affliction",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-affliction-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-affliction-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/hxEaAHzomt4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/I-GhVc_dMUc?rel=0",
+    "caption": "한밤 2시즌 12.1.5 고통 흑마법사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "warlock-affliction",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-affliction-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/hxEaAHzomt4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/I-GhVc_dMUc?rel=0",
+    "caption": "한밤 2시즌 12.1.5 고통 흑마법사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "warlock-demonology",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-demonology-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-demonology-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/YxLg3BZFmx4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/U4aOIF3pWqo?rel=0",
+    "caption": "한밤 2시즌 12.1.5 악마 흑마법사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "warlock-demonology",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-demonology-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/YxLg3BZFmx4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/U4aOIF3pWqo?rel=0",
+    "caption": "한밤 2시즌 12.1.5 악마 흑마법사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "warlock-destruction",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-destruction-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-destruction-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/hMjHgejFGZA?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/i7K6WcRyZzY?rel=0",
+    "caption": "한밤 2시즌 12.1.5 파괴 흑마법사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "warlock-destruction",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-destruction-390-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-destruction-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/hMjHgejFGZA?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/i7K6WcRyZzY?rel=0",
+    "caption": "한밤 2시즌 12.1.5 파괴 흑마법사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "warlock-destruction",
+    "width": 320,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-destruction-320-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-warlock-20261104\\live\\warlock-destruction-320-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/hMjHgejFGZA?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/i7K6WcRyZzY?rel=0",
+    "caption": "한밤 2시즌 12.1.5 파괴 흑마법사 심화 가이드",
+    "scrollWidth": 320,
+    "ok": true
+  }
+]
