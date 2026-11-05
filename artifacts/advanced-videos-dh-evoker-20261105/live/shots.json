@@ -1,0 +1,179 @@
+[
+  {
+    "id": "demonhunter-havoc",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\demonhunter-havoc-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\demonhunter-havoc-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/sN2NnShDDKQ?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/6ZwdClwg91A?rel=0",
+    "caption": "한밤 2시즌 12.1.5 파멸 악마사냥꾼 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "demonhunter-havoc",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\demonhunter-havoc-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/sN2NnShDDKQ?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/6ZwdClwg91A?rel=0",
+    "caption": "한밤 2시즌 12.1.5 파멸 악마사냥꾼 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "demonhunter-devourer",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\demonhunter-devourer-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\demonhunter-devourer-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/Nn2Lv5eO4i8?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/tYYsCkZj7og?rel=0",
+    "caption": "한밤 2시즌 12.1.5 포식 악마사냥꾼 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "demonhunter-devourer",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\demonhunter-devourer-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/Nn2Lv5eO4i8?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/tYYsCkZj7og?rel=0",
+    "caption": "한밤 2시즌 12.1.5 포식 악마사냥꾼 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "demonhunter-vengeance",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\demonhunter-vengeance-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\demonhunter-vengeance-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/A4UPzfhFTAY?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/1C-knY_UikQ?rel=0",
+    "caption": "한밤 2시즌 12.1.5 복수 악마사냥꾼 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "demonhunter-vengeance",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\demonhunter-vengeance-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/A4UPzfhFTAY?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/1C-knY_UikQ?rel=0",
+    "caption": "한밤 2시즌 12.1.5 복수 악마사냥꾼 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "evoker-devastation",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-devastation-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-devastation-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/qkDCGOuyOjE?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/Khx6AQ--oTg?rel=0",
+    "caption": "한밤 2시즌 12.1.5 황폐 기원사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "evoker-devastation",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-devastation-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/qkDCGOuyOjE?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/Khx6AQ--oTg?rel=0",
+    "caption": "한밤 2시즌 12.1.5 황폐 기원사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "evoker-augmentation",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-augmentation-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-augmentation-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/YkvKzuUkmU4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/CwFBJdlmuDk?rel=0",
+    "caption": "한밤 2시즌 12.1.5 증강 기원사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "evoker-augmentation",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-augmentation-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/YkvKzuUkmU4?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/CwFBJdlmuDk?rel=0",
+    "caption": "한밤 2시즌 12.1.5 증강 기원사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "evoker-preservation",
+    "width": 1440,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-preservation-1440-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-preservation-1440-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/5dvcr7RbgKA?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/dMwyBGdbKcs?rel=0",
+    "caption": "한밤 2시즌 12.1.5 보존 기원사 심화 가이드",
+    "scrollWidth": 1440,
+    "ok": true
+  },
+  {
+    "id": "evoker-preservation",
+    "width": 390,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-preservation-390-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-preservation-390-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/5dvcr7RbgKA?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/dMwyBGdbKcs?rel=0",
+    "caption": "한밤 2시즌 12.1.5 보존 기원사 심화 가이드",
+    "scrollWidth": 390,
+    "ok": true
+  },
+  {
+    "id": "evoker-preservation",
+    "width": 320,
+    "errors": [],
+    "files": [
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-preservation-320-basic.png",
+      "F:\\01_프로젝트\\90_개발\\wowmeta\\wow-meta-site\\artifacts\\advanced-videos-dh-evoker-20261105\\live\\evoker-preservation-320-advanced.png"
+    ],
+    "basicSrc": "https://www.youtube.com/embed/5dvcr7RbgKA?rel=0",
+    "advancedSrc": "https://www.youtube.com/embed/dMwyBGdbKcs?rel=0",
+    "caption": "한밤 2시즌 12.1.5 보존 기원사 심화 가이드",
+    "scrollWidth": 320,
+    "ok": true
+  }
+]

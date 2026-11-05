@@ -1376,3 +1376,13 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 35편 기준으로 바꿔 드루이드 기본편 4편 설명에 `심화편: https://youtu.be/<번호>`를 더했고, 나머지 31편은 그대로임을 다시 확인했다.
 - 배포: `npm run build`(전체 검증) 통과, 사이트 `671fb233`. 빌드 `main.4b518523.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `advanced-videos-druid-20261105/shots.cjs` 9화면, `talent-links-20261102/shots.cjs` 드루이드 4개×1440·390 통과(캡처 `live/`).
 - 남은 결정: 11-01에 공개한 드루이드 예전 심화 4편(`yKLhONsEZ3o`·`hp-60iz5uO8`·`Mf4wisSVp9g`·`PFfjKuMvEL0`)은 같은 제목으로 채널에 남아 있을 수 있다. 지울지는 답을 기다린다.
+
+## 2026-11-05 악마사냥꾼·기원사 심화편 공개·사이트 상호연동 (파멸 v10 교체, 업로드, 심화편 단추, 특성 ↔ 스킬 연결, 기본편 설명)
+
+- 요청: "남은 두 직업 진행해줘"(작업 중 질문에 '공개·연결까지', 파멸은 'v10으로 새로' 답). 전사~드루이드와 같은 v10 방식으로 6편을 만들어 반영했다.
+- 공개: `youtube-upload.mjs batch`(YT_MANIFEST=`youtube-upload-advanced-v10-dh-evoker-20261105.json`, 목록 생성 `upload-advanced-v10-dh-evoker-20261105/prepare.py`, 썸네일 talentbg-v6)로 와우메타 채널에 파멸 `6ZwdClwg91A`·포식 `tYYsCkZj7og`·복수 `1C-knY_UikQ`·황폐 `Khx6AQ--oTg`·증강 `CwFBJdlmuDk`·보존 `dMwyBGdbKcs`를 공개했다. 올리기 전 `studio/cli.mjs verify --strict`(최신 렌더 6/6)와 채널 번호를 확인했고, `verify` 6/6·oEmbed 공개 링크·공개 썸네일을 확인했다.
+- 파멸: 10-29 시범 심화판(`bFrBTJqCUuU`)을 v10 심화편으로 바꿨다. 원고·KB의 advancedVideo와 원고 검사기 목록, 기본편 설명의 심화편 주소를 새 번호로 바꿨다. 시범판 영상은 채널에 그대로 있다.
+- 사이트: `artifacts/advanced-videos-dh-evoker-20261105/apply.cjs`로 advancedVideo를, `artifacts/talent-links-20261102/apply.cjs <6편>`(`_demonhunter.cjs`·`_evoker.cjs`, 영상 표 사본)로 흐름도 affects·타임라인 talents를 원고·KB `02-악마사냥꾼/*`·`04-기원사/*/Meta/guide-12.1.json`에 넣었다. 글은 그대로다. 원고 검사기의 특성 연결 검사 목록에 6개를 더했다.
+- 기본편 영상 설명: `link-basic-advanced-20261102.mjs`를 40편 기준으로 바꿔 5편에 `심화편: https://youtu.be/<번호>`를 더하고 파멸 설명의 시범판 주소를 바꿨다. 나머지 34편은 그대로임을 다시 확인했다(40/40).
+- 배포: `npm run build`(전체 검증) 통과, 사이트 `ec824909`. 빌드 `main.1fbcb2cf.js`(`stage-deploy.cjs`, 820개 파일, 소스맵 403)를 `vercel deploy --prebuilt --prod`로 올렸고, 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `advanced-videos-dh-evoker-20261105/shots.cjs` 13화면, `talent-links-20261102/shots.cjs` 6개×1440·390 통과(캡처 `live/`).
+- 남은 결정: 11-01에 공개한 5편 예전 심화(v9)와 파멸 시범판 `bFrBTJqCUuU`가 같은 제목으로 채널에 남아 있다. 지울지는 답을 기다린다.
