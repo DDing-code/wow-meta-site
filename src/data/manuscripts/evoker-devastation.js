@@ -394,6 +394,9 @@ const manuscript = {
                   label: '정수의 조화',
                   kind: 'talent',
                   note: '정수 폭발을 두 번까지 중첩',
+                  affects: [
+                    '359618',
+                  ],
                 },
               ],
             },
@@ -422,6 +425,12 @@ const manuscript = {
                   label: '사상자',
                   kind: 'talent',
                   note: '파열 피해마다 0.5초, 기염 적중 적 하나당 0.4초(최대 2초) 강화 주문 쿨다운 감소',
+                  affects: [
+                    '356995',
+                    '357211',
+                    '357208',
+                    '359073',
+                  ],
                 },
               ],
             },
@@ -479,6 +488,9 @@ const manuscript = {
                   label: '폭정',
                   kind: 'talent',
                   note: '대상 생명력과 관계없이 특화 최대 효과',
+                  affects: [
+                    '375087',
+                  ],
                 },
               ],
             },
@@ -490,6 +502,11 @@ const manuscript = {
                   label: '적개심',
                   kind: 'talent',
                   note: '용의 분노 5초 연장 · 같은 용의 분노 안에서 쓸 때마다 25%씩 줄어듦',
+                  affects: [
+                    '375087',
+                    '357208',
+                    '359073',
+                  ],
                 },
               ],
             },
@@ -501,6 +518,9 @@ const manuscript = {
                   label: '분노 상승',
                   kind: 'talent',
                   note: '6초마다 가속 4% · 최대 5중첩',
+                  affects: [
+                    '375087',
+                  ],
                 },
               ],
             },
@@ -564,6 +584,11 @@ const manuscript = {
                   label: '적개심',
                   kind: 'talent',
                   note: '용의 분노 안이면 지속시간 연장',
+                  affects: [
+                    '375087',
+                    '357208',
+                    '359073',
+                  ],
                 },
                 {
                   skillId: '436335',
@@ -600,6 +625,12 @@ const manuscript = {
                   label: '사상자',
                   kind: 'talent',
                   note: '파열·기염이 강화 주문 쿨다운을 줄임',
+                  affects: [
+                    '356995',
+                    '357211',
+                    '357208',
+                    '359073',
+                  ],
                 },
               ],
             },
@@ -737,12 +768,18 @@ const manuscript = {
                   label: '공중 포격',
                   kind: 'talent',
                   note: '피해 20% 증가 · 18초 안에 한 번 더 시전',
+                  affects: [
+                    '357210',
+                  ],
                 },
                 {
                   skillId: '371034',
                   label: '초토화',
                   kind: 'talent',
                   note: '피해 20% 증가',
+                  affects: [
+                    '357210',
+                  ],
                 },
               ],
             },
@@ -797,6 +834,9 @@ const manuscript = {
                     skillId: '375087',
                     when: '자원을 비운 뒤 · 강화 주문 곧 준비',
                   },
+                  talents: [
+                    '375777',
+                  ],
                 },
                 {
                   skillId: '359073',
@@ -805,6 +845,10 @@ const manuscript = {
                     skillId: '370553',
                     when: '용의 분노 직후 · 시전이 밀릴 때',
                   },
+                  talents: [
+                    '375797',
+                    '1265802',
+                  ],
                 },
                 {
                   skillId: '356995',
@@ -813,6 +857,9 @@ const manuscript = {
                 {
                   skillId: '357208',
                   caption: '1단으로 바로',
+                  talents: [
+                    '375797',
+                  ],
                 },
                 {
                   skillId: '356995',
@@ -836,22 +883,37 @@ const manuscript = {
                 {
                   skillId: '357210',
                   caption: '비늘사령관 · 두 번째는 할인 2회 뒤',
+                  talents: [
+                    '441176',
+                  ],
                 },
                 {
                   skillId: '1292321',
                   caption: '분노 상승 3등급 · 용의 분노 종료 뒤',
+                  talents: [
+                    '1271687',
+                  ],
                 },
                 {
                   skillId: '375087',
                   caption: '불꽃형성자 · 쿨마다 바로',
+                  talents: [
+                    '376888',
+                  ],
                 },
                 {
                   skillId: '357208',
                   caption: '불꽃형성자 · 1단 쿨마다',
+                  talents: [
+                    '1264269',
+                  ],
                 },
                 {
                   skillId: '356995',
                   caption: '불꽃형성자 · 불의 숨결 걸린 대상에',
+                  talents: [
+                    '444088',
+                  ],
                 },
                 {
                   skillId: '1265872',
@@ -905,10 +967,18 @@ const manuscript = {
                 {
                   skillId: '357210',
                   caption: '맞히자마자 착지',
+                  talents: [
+                    '441176',
+                    '441206',
+                  ],
                 },
                 {
                   skillId: '375087',
                   caption: '착지 직후',
+                  talents: [
+                    '376888',
+                    '375797',
+                  ],
                 },
                 {
                   skillId: '370553',
@@ -917,15 +987,27 @@ const manuscript = {
                 {
                   skillId: '357208',
                   caption: '1단 · 첫 연장',
+                  talents: [
+                    '436335',
+                    '375797',
+                  ],
                 },
                 {
                   skillId: '359073',
                   caption: '1단 · 둘째 연장',
+                  talents: [
+                    '436335',
+                    '375797',
+                  ],
                 },
                 {
                   skillId: '356995',
                   caption: '대규모 파열부터',
                   count: '3~5',
+                  talents: [
+                    '436335',
+                    '434300',
+                  ],
                 },
                 {
                   skillId: '361469',
@@ -965,6 +1047,10 @@ const manuscript = {
                 {
                   skillId: '375087',
                   caption: '전투 시작 직후',
+                  talents: [
+                    '376888',
+                    '375797',
+                  ],
                 },
                 {
                   skillId: '370553',
@@ -973,15 +1059,27 @@ const manuscript = {
                 {
                   skillId: '359073',
                   caption: '1단 · 적개심 연장',
+                  talents: [
+                    '375797',
+                    '1265802',
+                  ],
                 },
                 {
                   skillId: '357208',
                   caption: '1단 · 화염 흡수 재료',
+                  talents: [
+                    '1264269',
+                    '444088',
+                  ],
                 },
                 {
                   skillId: '356995',
                   caption: '불의 숨결 대상에',
                   count: 3,
+                  talents: [
+                    '444088',
+                    '386283',
+                  ],
                 },
                 {
                   skillId: '357208',
@@ -1035,10 +1133,18 @@ const manuscript = {
                 {
                   skillId: '357210',
                   caption: '적이 모였을 때 · 많이 지나는 짧은 경로',
+                  talents: [
+                    '441176',
+                    '441206',
+                  ],
                 },
                 {
                   skillId: '375087',
                   caption: '착지 직후 · 시작 기염',
+                  talents: [
+                    '376888',
+                    '375797',
+                  ],
                 },
                 {
                   skillId: '359073',
@@ -1047,18 +1153,33 @@ const manuscript = {
                     skillId: '370553',
                     when: '있으면 즉시 최대 단계',
                   },
+                  talents: [
+                    '436335',
+                    '375797',
+                  ],
                 },
                 {
                   skillId: '357208',
                   caption: '1단으로 바로',
+                  talents: [
+                    '436335',
+                    '375797',
+                  ],
                 },
                 {
                   skillId: '356995',
                   caption: '대규모 파열 먼저',
+                  talents: [
+                    '436335',
+                    '434300',
+                  ],
                 },
                 {
                   skillId: '357211',
                   caption: '정수·정수 폭발 비우기',
+                  talents: [
+                    '375777',
+                  ],
                 },
                 {
                   skillId: '356995',
@@ -1086,18 +1207,31 @@ const manuscript = {
                 {
                   skillId: '357211',
                   caption: '5대상 이상',
+                  talents: [
+                    '375777',
+                  ],
                 },
                 {
                   skillId: '359073',
                   caption: '대상 수 맞춤',
+                  talents: [
+                    '375797',
+                    '1265802',
+                  ],
                 },
                 {
                   skillId: '356995',
                   caption: '대규모 파열 · 3대상 정면',
+                  talents: [
+                    '375777',
+                  ],
                 },
                 {
                   skillId: '357208',
                   caption: '1단으로 바로',
+                  talents: [
+                    '375797',
+                  ],
                 },
                 {
                   skillId: '356995',
@@ -1117,14 +1251,23 @@ const manuscript = {
                 {
                   skillId: '356995',
                   caption: '우선 대상이 급하면 대상 수와 관계없이',
+                  talents: [
+                    '375777',
+                  ],
                 },
                 {
                   skillId: '1292321',
                   caption: '분노 상승 3등급 · 기염으로 비우기',
+                  talents: [
+                    '1271687',
+                  ],
                 },
                 {
                   skillId: '357211',
                   caption: '불꽃형성자 · 3대상부터',
+                  talents: [
+                    '444088',
+                  ],
                 },
                 {
                   skillId: '361469',
@@ -1223,12 +1366,18 @@ const manuscript = {
                   label: '방어구 녹이기',
                   kind: 'talent',
                   note: '12초간 폭격과 정수 능력으로 받는 피해 20% 증가',
+                  affects: [
+                    '357210',
+                  ],
                 },
                 {
                   skillId: '433871',
                   label: '기동성',
                   kind: 'talent',
                   note: '비행 방향 조정 · 12초 화산 지속 피해',
+                  affects: [
+                    '357210',
+                  ],
                 },
               ],
             },
@@ -1251,12 +1400,20 @@ const manuscript = {
                   label: '폭격',
                   kind: 'talent',
                   note: '주 대상에 6초 징표 · 확률로 주변 적 피해',
+                  affects: [
+                    '436335',
+                    '356995',
+                  ],
                 },
                 {
                   skillId: '441206',
                   label: '날개지도자',
                   kind: 'talent',
                   note: '맞힌 대상 하나당 깊은 숨결 쿨다운 1초 감소',
+                  affects: [
+                    '436335',
+                    '357210',
+                  ],
                 },
               ],
             },
@@ -1381,6 +1538,9 @@ const manuscript = {
                   label: '생명의 어머니의 유산',
                   kind: 'talent',
                   note: '불의 숨결 충전이 하나 늘어남',
+                  affects: [
+                    '357208',
+                  ],
                 },
               ],
             },
@@ -1409,6 +1569,11 @@ const manuscript = {
                   label: '화염 흡수',
                   kind: 'talent',
                   note: '불의 숨결이 없는 대상에는 생기지 않음',
+                  affects: [
+                    '356995',
+                    '357211',
+                    '357208',
+                  ],
                 },
               ],
             },
@@ -1420,12 +1585,19 @@ const manuscript = {
                   label: '촉진화',
                   kind: 'talent',
                   note: '파열 집중 동안 불의 숨결 지속 피해 100% 더 자주',
+                  affects: [
+                    '356995',
+                    '357208',
+                  ],
                 },
                 {
                   skillId: '370819',
                   label: '이글거리는 잿불',
                   kind: 'talent',
                   note: '붉은색 주문 지속 피해 25% 더 받음',
+                  affects: [
+                    '357208',
+                  ],
                 },
               ],
             },
@@ -3004,6 +3176,11 @@ const manuscript = {
     video: {
       youtubeId: 'qkDCGOuyOjE',
       title: '한밤 2시즌 12.1.5 황폐 기원사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'Khx6AQ--oTg',
+      title: '한밤 2시즌 12.1.5 황폐 기원사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

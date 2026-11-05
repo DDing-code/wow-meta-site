@@ -444,6 +444,9 @@ const manuscript = {
                 kind: 'talent',
                 tag: '불꽃형성자',
                 note: '꿈의 숨결 지속 치유 20% 증가',
+                affects: [
+                  '355936',
+                ],
               },
             ],
           },
@@ -456,6 +459,11 @@ const manuscript = {
                 kind: 'talent',
                 tag: '불꽃형성자',
                 note: '꽃·묘목·신록의 품이 지속 치유 일부를 즉시 회복으로',
+                affects: [
+                  '355936',
+                  '360995',
+                  '355913',
+                ],
               },
               {
                 skillId: '364343',
@@ -520,12 +528,19 @@ const manuscript = {
                 label: '시간의 군주',
                 kind: 'talent',
                 note: '직접 70%→105% · 시간 변칙 30%→45%',
+                affects: [
+                  '364343',
+                  '373861',
+                ],
               },
               {
                 skillId: '376237',
                 label: '노즈도르무의 가르침',
                 kind: 'talent',
                 note: '시간 변칙이 강화 주문 쿨다운 5초 감소',
+                affects: [
+                  '373861',
+                ],
               },
             ],
           },
@@ -645,12 +660,18 @@ const manuscript = {
                 label: '사활의 순간',
                 kind: 'talent',
                 note: '지난 5초 피해의 15% 즉시 회복',
+                affects: [
+                  '1256581',
+                ],
               },
               {
                 skillId: '376239',
                 label: '은총의 시간',
                 kind: 'talent',
                 note: '되감기 대상에 내 치유 10% 증가',
+                affects: [
+                  '366155',
+                ],
               },
             ],
           },
@@ -801,6 +822,10 @@ const manuscript = {
               {
                 skillId: '373861',
                 caption: '피해 직전에만',
+                talents: [
+                  '372527',
+                  '376237',
+                ],
               },
               {
                 skillId: '364343',
@@ -809,14 +834,25 @@ const manuscript = {
                   skillId: '360995',
                   when: '한 명이 크게 낮으면 먼저',
                 },
+                talents: [
+                  '372527',
+                  '1242031',
+                ],
               },
               {
                 skillId: '1256581',
                 caption: '메아리 대상이 다치면',
+                talents: [
+                  '378196',
+                  '376239',
+                ],
               },
               {
                 skillId: '355913',
                 caption: '정수 폭발 · 다친 아군',
+                talents: [
+                  '1242031',
+                ],
               },
               {
                 skillId: '364343',
@@ -843,18 +879,31 @@ const manuscript = {
               {
                 skillId: '363916',
                 caption: '생명불씨로 한 명 더',
+                talents: [
+                  '444322',
+                ],
               },
               {
                 skillId: '360995',
                 caption: '즉시 큰 치유',
+                talents: [
+                  '444088',
+                ],
               },
               {
                 skillId: '364343',
                 caption: '신록의 품이 없으면',
+                talents: [
+                  '372527',
+                  '1242031',
+                ],
               },
               {
                 skillId: '366155',
                 caption: '지난 5초 피해 회복',
+                talents: [
+                  '376239',
+                ],
               },
               {
                 skillId: '361469',
@@ -863,10 +912,18 @@ const manuscript = {
               {
                 skillId: '355913',
                 caption: '정수 폭발 · 급락 대상',
+                talents: [
+                  '444088',
+                  '1265979',
+                ],
               },
               {
                 skillId: '1256581',
                 caption: '주변 부상자 없을 때',
+                talents: [
+                  '378196',
+                  '376239',
+                ],
               },
             ],
             note: '출혈·저주·질병이 원인이면 자연화 대신 소작의 불길을 씁니다. 자유의 날개 빌드는 신록의 품 돌진 경로가 안전할 때만 다른 아군에게 씁니다.',
@@ -878,18 +935,30 @@ const manuscript = {
               {
                 skillId: '363916',
                 caption: '불꽃형성자 · 주위 한 명 50%',
+                talents: [
+                  '444322',
+                ],
               },
               {
                 skillId: '360995',
                 caption: '시간 감시자 · 반향 추가 치유',
+                talents: [
+                  '431615',
+                ],
               },
               {
                 skillId: '370553',
                 caption: '시간 감시자 · 즉시 최대 단계',
+                talents: [
+                  '431695',
+                ],
               },
               {
                 skillId: '431443',
                 caption: '시간 감시자 · 같은 대상 후속',
+                talents: [
+                  '431875',
+                ],
               },
             ],
           },
@@ -934,10 +1003,18 @@ const manuscript = {
               {
                 skillId: '355936',
                 caption: '1단계 · 레이드는 두 번',
+                talents: [
+                  '444845',
+                  '1264269',
+                ],
               },
               {
                 skillId: '373861',
                 caption: '피해 1~3초 전',
+                talents: [
+                  '372527',
+                  '376237',
+                ],
               },
               {
                 skillId: '364343',
@@ -946,10 +1023,18 @@ const manuscript = {
                   skillId: '374227',
                   when: '배정된 광역 피해 전',
                 },
+                talents: [
+                  '372527',
+                  '1242031',
+                ],
               },
               {
                 skillId: '1256581',
                 caption: '메아리 대상이 다치면',
+                talents: [
+                  '378196',
+                  '376239',
+                ],
               },
               {
                 skillId: '355913',
@@ -958,6 +1043,10 @@ const manuscript = {
                   skillId: '363916',
                   when: '내가 맞을 큰 피해 직전',
                 },
+                talents: [
+                  '444088',
+                  '1265979',
+                ],
               },
             ],
             note: '정지장은 풀 직후 켜서 다음 세 주문을 기록합니다. 상위 레이드 기록 8개 중 7개는 꿈의 숨결 두 번과 시간 변칙으로 채웠고, 쐐기에서는 꿈의 숨결·시간 변칙 뒤 메리스라의 축복이나 에메랄드 꽃을 넣는 경우가 많았습니다. 30초 안의 다음 큰 피해에 풀고, 풀 때 카메라를 공대 쪽에 둡니다. 정수 폭발이 먼저 뜨면 메아리 사이에 꽃을 섞어 써도 됩니다.',
@@ -972,18 +1061,33 @@ const manuscript = {
               {
                 skillId: '373861',
                 caption: '피해 1~3초 전',
+                talents: [
+                  '431715',
+                  '372527',
+                ],
               },
               {
                 skillId: '370553',
                 caption: '쿨마다 · 시간의 폭발',
+                talents: [
+                  '431695',
+                ],
               },
               {
                 skillId: '364343',
                 caption: '위험 대상 70%',
+                talents: [
+                  '372527',
+                  '1242031',
+                ],
               },
               {
                 skillId: '360995',
                 caption: '반향·가속 준비',
+                talents: [
+                  '431615',
+                  '431657',
+                ],
               },
               {
                 skillId: '374227',
@@ -992,10 +1096,17 @@ const manuscript = {
               {
                 skillId: '1256581',
                 caption: '메아리 대상이 다치면',
+                talents: [
+                  '378196',
+                  '376239',
+                ],
               },
               {
                 skillId: '431443',
                 caption: '방금 회복한 대상',
+                talents: [
+                  '431875',
+                ],
               },
             ],
             note: '시간 감시자는 꿈의 숨결 충전이 하나라, 더 잦고 저렴한 시간 변칙과 신록의 품 반향으로 피해를 준비합니다.',
@@ -1046,6 +1157,10 @@ const manuscript = {
               {
                 skillId: '373861',
                 caption: '숨결 뒤 · 메아리 깔기',
+                talents: [
+                  '372527',
+                  '376237',
+                ],
               },
               {
                 skillId: '1256581',
@@ -1054,14 +1169,24 @@ const manuscript = {
                   skillId: '359816',
                   when: '피해자를 가로지르는 안전한 선',
                 },
+                talents: [
+                  '378196',
+                  '376239',
+                ],
               },
               {
                 skillId: '355913',
                 caption: '정수 폭발 · 다친 아군',
+                talents: [
+                  '1242031',
+                ],
               },
               {
                 skillId: '366155',
                 caption: '남은 메아리 대상',
+                talents: [
+                  '376239',
+                ],
               },
               {
                 skillId: '357208',
@@ -1085,22 +1210,37 @@ const manuscript = {
               {
                 skillId: '355936',
                 caption: '불꽃형성자 · 두 충전 번갈아',
+                talents: [
+                  '444845',
+                ],
               },
               {
                 skillId: '370553',
                 caption: '시간 감시자 · 낮을 때 즉시 최대',
+                talents: [
+                  '431695',
+                ],
               },
               {
                 skillId: '373861',
                 caption: '시간 감시자 · 짧은 쿨다운',
+                talents: [
+                  '431715',
+                ],
               },
               {
                 skillId: '360995',
                 caption: '시간 감시자 · 폭발 중 몰아 쓰기',
+                talents: [
+                  '431615',
+                ],
               },
               {
                 skillId: '431443',
                 caption: '시간 감시자 · 여유 구간 공격',
+                talents: [
+                  '431875',
+                ],
               },
             ],
           },
@@ -1160,12 +1300,19 @@ const manuscript = {
                 label: '생명의 어머니의 유산',
                 kind: 'talent',
                 note: '꿈의 숨결·불의 숨결 충전 1회씩 추가',
+                affects: [
+                  '355936',
+                  '357208',
+                ],
               },
               {
                 skillId: '444845',
                 label: '확장된 허파',
                 kind: 'talent',
                 note: '꿈의 숨결 지속 치유 20% 증가',
+                affects: [
+                  '355936',
+                ],
               },
             ],
           },
@@ -1198,6 +1345,10 @@ const manuscript = {
                 label: '팔랑이는 묘목',
                 kind: 'talent',
                 note: '지속시간 2초 소비 · 꽃이 3명 미만이면 최대 2개 추가',
+                affects: [
+                  '355913',
+                  '355936',
+                ],
               },
             ],
           },
@@ -1209,6 +1360,11 @@ const manuscript = {
                 label: '화염 흡수',
                 kind: 'buff',
                 note: '소모량의 290%를 그 대상에게 회복',
+                affects: [
+                  '355936',
+                  '360995',
+                  '355913',
+                ],
               },
             ],
           },
@@ -1220,18 +1376,27 @@ const manuscript = {
                 label: '쌍둥이 불길',
                 kind: 'talent',
                 note: '정수 폭발 소비 대상에게 주문력 312% 치유',
+                affects: [
+                  '355913',
+                ],
               },
               {
                 skillId: '1265992',
                 label: '화염 격류',
                 kind: 'talent',
                 note: '쌍둥이 불길이 최대 두 명에게 더 튕김',
+                affects: [
+                  '355913',
+                ],
               },
               {
                 skillId: '444322',
                 label: '생명불씨',
                 kind: 'talent',
                 note: '흑요석 비늘을 주위 한 명에게 50% 효율로',
+                affects: [
+                  '363916',
+                ],
               },
             ],
           },
@@ -1345,6 +1510,9 @@ const manuscript = {
                 label: '노즈도르무의 숙련병',
                 kind: 'talent',
                 note: '시간 변칙 마나 15% 감소 · 쿨다운 4초 감소',
+                affects: [
+                  '373861',
+                ],
               },
               {
                 skillId: '370553',
@@ -1383,12 +1551,18 @@ const manuscript = {
                 label: '반향',
                 kind: 'talent',
                 note: '신록의 품에 8초간 40% 추가 치유',
+                affects: [
+                  '360995',
+                ],
               },
               {
                 skillId: '431657',
                 label: '수위',
                 kind: 'talent',
                 note: '신록의 품 지속 치유 하나당 가속 3% · 최대 9%',
+                affects: [
+                  '360995',
+                ],
               },
             ],
           },
@@ -1405,6 +1579,9 @@ const manuscript = {
                 label: '잔상',
                 kind: 'talent',
                 note: '강화 주문 사용 시 시간의 불꽃 최대 세 개 자동 발사',
+                affects: [
+                  '431443',
+                ],
               },
             ],
           },
@@ -2924,11 +3101,16 @@ const manuscript = {
       confirmedRanking: false,
     },
   },
-    video: {
-      youtubeId: '5dvcr7RbgKA',
-      title: '한밤 2시즌 12.1.5 보존 기원사 가이드',
-      channel: 'wowmeta 와우메타',
-    },
+  video: {
+    youtubeId: '5dvcr7RbgKA',
+    title: '한밤 2시즌 12.1.5 보존 기원사 가이드',
+    channel: 'wowmeta 와우메타',
+  },
+  advancedVideo: {
+    youtubeId: 'dMwyBGdbKcs',
+    title: '한밤 2시즌 12.1.5 보존 기원사 심화 가이드',
+    channel: 'wowmeta 와우메타',
+  },
 };
 
 export default manuscript;

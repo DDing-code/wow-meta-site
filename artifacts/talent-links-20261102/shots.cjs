@@ -42,6 +42,12 @@ const GUIDES = {
   'druid-feral': '/guide/druid/feral',
   'druid-guardian': '/guide/druid/guardian',
   'druid-restoration': '/guide/druid/restoration',
+  'demonhunter-havoc': '/guide/demonhunter/havoc',
+  'demonhunter-devourer': '/guide/demonhunter/devourer',
+  'demonhunter-vengeance': '/guide/demonhunter/vengeance',
+  'evoker-devastation': '/guide/evoker/devastation',
+  'evoker-augmentation': '/guide/evoker/augmentation',
+  'evoker-preservation': '/guide/evoker/preservation',
 };
 const only = process.argv.slice(3);
 (async () => {

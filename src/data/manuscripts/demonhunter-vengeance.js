@@ -421,12 +421,20 @@ const manuscript = {
                   label: '영혼 방벽',
                   kind: 'talent',
                   note: '영혼 폭탄 뒤 10초 보호막 · 8%에 파편당 2%',
+                  affects: [
+                    '247454',
+                  ],
                 },
                 {
                   skillId: '389958',
                   label: '약화',
                   kind: 'talent',
                   note: '맞은 적 8초 · 그 적에게 입힌 피해의 10% 회복',
+                  affects: [
+                    '204596',
+                    '228477',
+                    '247454',
+                  ],
                 },
               ],
             },
@@ -529,12 +537,21 @@ const manuscript = {
                   label: '고삐 풀린 분노',
                   kind: 'talent',
                   note: '소비기가 흡수한 파편마다 탈태 발동 기회',
+                  affects: [
+                    '228477',
+                    '247454',
+                    '187827',
+                  ],
                 },
                 {
                   skillId: '207387',
                   label: '고통 인도자',
                   kind: 'talent',
                   note: '골랐다면 8초 동안 받는 피해 3% 감소',
+                  affects: [
+                    '228477',
+                    '247454',
+                  ],
                 },
               ],
             },
@@ -604,18 +621,31 @@ const manuscript = {
                   label: '영혼 방벽',
                   kind: 'talent',
                   note: '골랐다면 10초 보호막 · 5개 18% · 6개 20%',
+                  affects: [
+                    '247454',
+                  ],
                 },
                 {
                   skillId: '389958',
                   label: '약화',
                   kind: 'talent',
                   note: '맞은 적에게 8초',
+                  affects: [
+                    '204596',
+                    '228477',
+                    '247454',
+                  ],
                 },
                 {
                   skillId: '1270444',
                   label: '고삐 풀린 분노',
                   kind: 'talent',
                   note: '흡수한 파편마다 발동 기회',
+                  affects: [
+                    '228477',
+                    '247454',
+                    '187827',
+                  ],
                 },
               ],
             },
@@ -673,6 +703,9 @@ const manuscript = {
                   label: '악마의 먹이',
                   kind: 'talent',
                   note: '격노 20을 쓸 때마다 악마 쐐기 쿨다운 1초 감소',
+                  affects: [
+                    '203720',
+                  ],
                 },
               ],
             },
@@ -690,6 +723,9 @@ const manuscript = {
                   label: '특화: 지옥 피',
                   kind: 'talent',
                   note: '쐐기 중 방어도 보너스 두 배',
+                  affects: [
+                    '203720',
+                  ],
                 },
               ],
             },
@@ -707,6 +743,9 @@ const manuscript = {
                   label: '불꽃의 잠식',
                   kind: 'talent',
                   note: '골랐다면 48초 · 2회 충전',
+                  affects: [
+                    '204021',
+                  ],
                 },
               ],
             },
@@ -718,12 +757,18 @@ const manuscript = {
                   label: '화형',
                   kind: 'talent',
                   note: '1초마다 주위 한 대상으로 퍼짐 · 개인 감소 중첩 아님',
+                  affects: [
+                    '204021',
+                  ],
                 },
                 {
                   skillId: '389220',
                   label: '뜨거운 최후',
                   kind: 'talent',
                   note: '낙인 대상에게 주는 화염 피해 15% 증가',
+                  affects: [
+                    '204021',
+                  ],
                 },
               ],
             },
@@ -781,6 +826,11 @@ const manuscript = {
                   label: '고삐 풀린 분노',
                   kind: 'talent',
                   note: '발동하면 일반 쿨다운을 시작하지 않는 10초 탈태',
+                  affects: [
+                    '228477',
+                    '247454',
+                    '187827',
+                  ],
                 },
                 {
                   skillId: '1270547',
@@ -809,12 +859,21 @@ const manuscript = {
                   label: '복수의 야수',
                   kind: 'talent',
                   note: '일반 탈태 5초 연장 · 탈태 중 균열·영혼 베어내기·영혼 폭탄 20%',
+                  affects: [
+                    '187827',
+                    '263642',
+                    '228477',
+                    '247454',
+                  ],
                 },
                 {
                   skillId: '209258',
                   label: '최후의 수단',
                   kind: 'talent',
                   note: '죽음에 이르는 피해에 자동 탈태 · 8분 · 다른 효과',
+                  affects: [
+                    '187827',
+                  ],
                 },
               ],
             },
@@ -862,6 +921,9 @@ const manuscript = {
                     skillId: '203720',
                     when: '물리 평타 전 · 꺼지면 바로',
                   },
+                  talents: [
+                    '1265818',
+                  ],
                 },
                 {
                   skillId: '258920',
@@ -878,6 +940,10 @@ const manuscript = {
                 {
                   skillId: '247454',
                   caption: '쿨이 돌면 · 격노 40',
+                  talents: [
+                    '263648',
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '228477',
@@ -886,10 +952,17 @@ const manuscript = {
                     skillId: '187827',
                     when: '급사 위험 · 발동 만료 전',
                   },
+                  talents: [
+                    '389958',
+                    '1270444',
+                  ],
                 },
                 {
                   skillId: '204596',
                   caption: '다른 소비·생성 뒤',
+                  talents: [
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '263642',
@@ -913,30 +986,51 @@ const manuscript = {
                 {
                   skillId: '247454',
                   caption: '궤멸자 · 공허내림 3중첩 소비',
+                  talents: [
+                    '1253391',
+                  ],
                 },
                 {
                   skillId: '228477',
                   caption: '궤멸자 · 폭탄이 없을 때 3중첩',
+                  talents: [
+                    '1253391',
+                  ],
                 },
                 {
                   skillId: '187827',
                   caption: '궤멸자 · 공허내림 비우고 폭탄 쿨일 때',
+                  talents: [
+                    '1256295',
+                  ],
                 },
                 {
                   skillId: '442294',
                   caption: '알드라치 · 두 강화가 없을 때',
+                  talents: [
+                    '442290',
+                  ],
                 },
                 {
                   skillId: '263642',
                   caption: '알드라치 · 첫 강화 · 징표',
+                  talents: [
+                    '442679',
+                  ],
                 },
                 {
                   skillId: '228477',
                   caption: '알드라치 · 둘째 강화',
+                  talents: [
+                    '442718',
+                  ],
                 },
                 {
                   skillId: '389815',
                   caption: '알드라치 · 다음 글레이브 준비',
+                  talents: [
+                    '442290',
+                  ],
                 },
                 {
                   skillId: '207407',
@@ -985,14 +1079,25 @@ const manuscript = {
                     skillId: '189110',
                     when: '멀리서 진입할 때',
                   },
+                  talents: [
+                    '218612',
+                    '203747',
+                  ],
                 },
                 {
                   skillId: '204596',
                   caption: '적이 모일 자리',
+                  talents: [
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '204021',
                   caption: '첫 피해 대응',
+                  talents: [
+                    '389732',
+                    '207739',
+                  ],
                 },
                 {
                   skillId: '258920',
@@ -1005,6 +1110,9 @@ const manuscript = {
                     skillId: '187827',
                     when: '급사 위험이면 준비 생략',
                   },
+                  talents: [
+                    '1253304',
+                  ],
                 },
                 {
                   skillId: '389815',
@@ -1017,6 +1125,10 @@ const manuscript = {
                 {
                   skillId: '247454',
                   caption: '탈태 전 소비 · 격노 40',
+                  talents: [
+                    '1253391',
+                    '1256307',
+                  ],
                 },
               ],
               note: '운석 낙하·대규모 가속·암흑 물질과 고삐 풀린 분노 중간 노드를 고른 흐름입니다. 상위 레이드 로그 8개 중 7개가 첫 6초 안에 원한의 인장을 썼습니다. 멀리서 시작하면 불지옥 일격으로 진입해도 됩니다(8개 중 4개가 풀 직후 사용). 지옥 황폐를 일찍 쓴 로그 5개 중 4개는 첫 폭탄 전이었습니다.',
@@ -1027,18 +1139,32 @@ const manuscript = {
                 {
                   skillId: '187827',
                   caption: '폭탄 직후 · 초기화',
+                  talents: [
+                    '1256295',
+                  ],
                 },
                 {
                   skillId: '263642',
                   caption: '격노 채우기',
+                  talents: [
+                    '1253304',
+                  ],
                 },
                 {
                   skillId: '247454',
                   caption: '초기화된 첫 폭탄',
+                  talents: [
+                    '1253391',
+                    '1256307',
+                  ],
                 },
                 {
                   skillId: '228477',
                   caption: '일반 소비로 복귀',
+                  talents: [
+                    '1253391',
+                    '1253304',
+                  ],
                 },
               ],
               note: '탈태를 일찍 연 로그 6개 중 4개가 첫 폭탄 직후 바로 탈태로 이었습니다. 초기화된 폭탄으로 운석 낙하의 세 중첩과 암흑 물질의 첫 폭탄 보상을 거둡니다. 탈태가 파편을 공짜로 채우지는 않으니, 이미 자원이 충분하면 탈태 뒤 균열은 건너뜁니다.',
@@ -1049,14 +1175,25 @@ const manuscript = {
                 {
                   skillId: '203720',
                   caption: '첫 물리 피해 전',
+                  talents: [
+                    '218612',
+                    '203747',
+                  ],
                 },
                 {
                   skillId: '204596',
                   caption: '인장 맞을 자리',
+                  talents: [
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '204021',
                   caption: '첫 방어기',
+                  talents: [
+                    '389732',
+                    '207739',
+                  ],
                 },
                 {
                   skillId: '258920',
@@ -1065,6 +1202,9 @@ const manuscript = {
                 {
                   skillId: '389815',
                   caption: '글레이브 준비',
+                  talents: [
+                    '442290',
+                  ],
                 },
               ],
               note: '전투검술·칼날의 기예와 원한의 인장을 고른 흐름입니다. 상위 레이드 로그 5개 중 4개는 원한의 인장 앞에 균열을 쓰지 않고 바로 글레이브로 이었습니다. 폭탄 초기화는 기대하지 않습니다.',
@@ -1075,22 +1215,42 @@ const manuscript = {
                 {
                   skillId: '442294',
                   caption: '오래 살 대상에게',
+                  talents: [
+                    '442290',
+                    '442686',
+                  ],
                 },
                 {
                   skillId: '263642',
                   caption: '첫 강화 · 징표',
+                  talents: [
+                    '442679',
+                    '1272153',
+                  ],
                 },
                 {
                   skillId: '228477',
                   caption: '둘째 강화 · 격노 35',
+                  talents: [
+                    '442718',
+                    '1272153',
+                  ],
                 },
                 {
                   skillId: '187827',
                   caption: '쿨마다 · 방어 겸',
+                  talents: [
+                    '1265818',
+                    '1270444',
+                  ],
                 },
                 {
                   skillId: '247454',
                   caption: '5~6파편 · 쿨이 돌면',
+                  talents: [
+                    '263648',
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '212084',
@@ -1150,6 +1310,9 @@ const manuscript = {
                     skillId: '204021',
                     when: '모인 직후 큰 평타',
                   },
+                  talents: [
+                    '1265818',
+                  ],
                 },
                 {
                   skillId: '212084',
@@ -1162,14 +1325,25 @@ const manuscript = {
                     skillId: '187827',
                     when: '급사 위험 · 발동 만료 전',
                   },
+                  talents: [
+                    '263648',
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '228477',
                   caption: '폭탄 쿨 동안',
+                  talents: [
+                    '389958',
+                    '1270444',
+                  ],
                 },
                 {
                   skillId: '204596',
                   caption: '다 모인 자리',
+                  talents: [
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '389815',
@@ -1193,26 +1367,44 @@ const manuscript = {
                 {
                   skillId: '187827',
                   caption: '궤멸자 · 다 모인 뒤 폭탄 앞',
+                  talents: [
+                    '1256295',
+                  ],
                 },
                 {
                   skillId: '247454',
                   caption: '궤멸자 · 탈태 직후 첫 폭탄',
+                  talents: [
+                    '1253391',
+                  ],
                 },
                 {
                   skillId: '228477',
                   caption: '궤멸자 · 폭탄이 없을 때 3중첩',
+                  talents: [
+                    '1253391',
+                  ],
                 },
                 {
                   skillId: '442294',
                   caption: '알드라치 · 오래 살 적에게',
+                  talents: [
+                    '442290',
+                  ],
                 },
                 {
                   skillId: '263642',
                   caption: '알드라치 · 광역은 강화 균열 먼저',
+                  talents: [
+                    '442679',
+                  ],
                 },
                 {
                   skillId: '228477',
                   caption: '알드라치 · 둘째 강화 12회 베기',
+                  talents: [
+                    '442718',
+                  ],
                 },
                 {
                   skillId: '207407',
@@ -1298,12 +1490,18 @@ const manuscript = {
                     label: '신속한 말소',
                     kind: 'talent',
                     note: '중첩당 가속 2%',
+                    affects: [
+                      '1253304',
+                    ],
                   },
                   {
                     skillId: '1256245',
                     label: '위상 변화',
                     kind: 'talent',
                     note: '중첩당 받는 피해 2% 감소',
+                    affects: [
+                      '1253304',
+                    ],
                   },
                 ],
               },
@@ -1325,6 +1523,10 @@ const manuscript = {
                     label: '운석 낙하',
                     kind: 'talent',
                     note: '유성 세 개를 빠르게',
+                    affects: [
+                      '247454',
+                      '228477',
+                    ],
                   },
                 ],
               },
@@ -1336,18 +1538,28 @@ const manuscript = {
                     label: '세계 학살자',
                     kind: 'talent',
                     note: '세 번째 유성 반경·피해 50% · 탈태 남은 쿨다운 10초 감소',
+                    affects: [
+                      '187827',
+                    ],
                   },
                   {
                     skillId: '1253805',
                     label: '최종 국면',
                     kind: 'talent',
                     note: '소비 뒤에도 가속·피해 감소 8초',
+                    affects: [
+                      '1253304',
+                    ],
                   },
                   {
                     skillId: '1279247',
                     label: '우주의 힘',
                     kind: 'talent',
                     note: '유성 공격력 15% 증가',
+                    affects: [
+                      '247454',
+                      '228477',
+                    ],
                   },
                 ],
               },
@@ -1375,6 +1587,10 @@ const manuscript = {
                     label: '대규모 가속',
                     kind: 'talent',
                     note: '공허내림 3중첩 · 영혼 폭탄 쿨다운 초기화',
+                    affects: [
+                      '187827',
+                      '247454',
+                    ],
                   },
                 ],
               },
@@ -1392,6 +1608,9 @@ const manuscript = {
                     label: '암흑 물질',
                     kind: 'talent',
                     note: '그 지역에 6초 동안 암흑불길 유성',
+                    affects: [
+                      '247454',
+                    ],
                   },
                 ],
               },
@@ -1509,6 +1728,9 @@ const manuscript = {
                     skillId: '204021',
                     when: '첫 큰 평타',
                   },
+                  talents: [
+                    '1265818',
+                  ],
                 },
                 {
                   skillId: '212084',
@@ -1517,14 +1739,25 @@ const manuscript = {
                 {
                   skillId: '187827',
                   caption: '다 모인 뒤',
+                  talents: [
+                    '1265818',
+                    '1270444',
+                  ],
                 },
                 {
                   skillId: '247454',
                   caption: '탈태 직후 폭탄',
+                  talents: [
+                    '263648',
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '204596',
                   caption: '다 모인 자리',
+                  talents: [
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '389815',
@@ -1548,6 +1781,9 @@ const manuscript = {
                     skillId: '203720',
                     when: '꺼지면 바로',
                   },
+                  talents: [
+                    '1265818',
+                  ],
                 },
                 {
                   skillId: '228477',
@@ -1556,6 +1792,10 @@ const manuscript = {
                     skillId: '204021',
                     when: '두 번째 충전 · 큰 평타',
                   },
+                  talents: [
+                    '389958',
+                    '1270444',
+                  ],
                 },
                 {
                   skillId: '247454',
@@ -1564,6 +1804,10 @@ const manuscript = {
                     skillId: '187827',
                     when: '발동 만료 전',
                   },
+                  talents: [
+                    '263648',
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '258920',
@@ -1579,18 +1823,30 @@ const manuscript = {
                 {
                   skillId: '187827',
                   caption: '궤멸자 · 폭탄 앞에 탈태',
+                  talents: [
+                    '1256295',
+                  ],
                 },
                 {
                   skillId: '204596',
                   caption: '알드라치 · 오라 앞(심크 우선순위)',
+                  talents: [
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '442294',
                   caption: '알드라치 · 오래 살 적',
+                  talents: [
+                    '442290',
+                  ],
                 },
                 {
                   skillId: '263642',
                   caption: '알드라치 · 강화 균열 먼저',
+                  talents: [
+                    '442679',
+                  ],
                 },
               ],
             },
@@ -1642,10 +1898,17 @@ const manuscript = {
                 {
                   skillId: '247454',
                   caption: '교대 앞뒤 · 영혼 방벽',
+                  talents: [
+                    '263648',
+                    '389958',
+                  ],
                 },
                 {
                   skillId: '263642',
                   caption: '파편·격노',
+                  talents: [
+                    '1265818',
+                  ],
                 },
                 {
                   skillId: '228477',
@@ -1654,6 +1917,10 @@ const manuscript = {
                     skillId: '204021',
                     when: '궤멸자 · 첫 강타',
                   },
+                  talents: [
+                    '389958',
+                    '1270444',
+                  ],
                 },
                 {
                   skillId: '263642',
@@ -1677,18 +1944,30 @@ const manuscript = {
                 {
                   skillId: '187827',
                   caption: '궤멸자 · 낙인 다음 강타',
+                  talents: [
+                    '1256295',
+                  ],
                 },
                 {
                   skillId: '247454',
                   caption: '궤멸자 · 탈태 직후 폭탄',
+                  talents: [
+                    '1253391',
+                  ],
                 },
                 {
                   skillId: '187827',
                   caption: '알드라치 · 넘겨받고 먼저',
+                  talents: [
+                    '1265818',
+                  ],
                 },
                 {
                   skillId: '442294',
                   caption: '알드라치 · 맡은 네임드',
+                  talents: [
+                    '442290',
+                  ],
                 },
               ],
             },
@@ -1710,6 +1989,10 @@ const manuscript = {
                     label: '전투검술',
                     kind: 'talent',
                     note: '영혼 파편 20개 흡수 또는 원한의 인장',
+                    affects: [
+                      '442294',
+                      '389815',
+                    ],
                   },
                   {
                     skillId: '389815',
@@ -1769,6 +2052,9 @@ const manuscript = {
                     label: '전투의 전율',
                     kind: 'talent',
                     note: '다음 글레이브 피해 30% · 30초 가속 8%',
+                    affects: [
+                      '442294',
+                    ],
                   },
                 ],
               },
@@ -1796,6 +2082,9 @@ const manuscript = {
                     label: '파괴자의 징표',
                     kind: 'talent',
                     note: '복수는 중첩당 8%',
+                    affects: [
+                      '263642',
+                    ],
                   },
                 ],
               },
@@ -1807,12 +2096,19 @@ const manuscript = {
                     label: '부상당한 사냥감',
                     kind: 'talent',
                     note: '물리 피해의 25%를 징표 대상에 혼돈 피해로',
+                    affects: [
+                      '442679',
+                    ],
                   },
                   {
                     skillId: '1272153',
                     label: '칼날의 기예',
                     kind: 'talent',
                     note: '역순(영혼 베어내기 → 균열)이면 징표 추가 중첩',
+                    affects: [
+                      '263642',
+                      '228477',
+                    ],
                   },
                 ],
               },
@@ -3916,6 +4212,11 @@ const manuscript = {
     video: {
       youtubeId: 'A4UPzfhFTAY',
       title: '한밤 2시즌 12.1.5 복수 악마사냥꾼 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: '1C-knY_UikQ',
+      title: '한밤 2시즌 12.1.5 복수 악마사냥꾼 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };

@@ -394,6 +394,9 @@ const manuscript = {
                   label: '악마 칼날',
                   kind: 'talent',
                   note: '자동 공격마다 격노 10~16',
+                  affects: [
+                    '격노',
+                  ],
                 },
                 {
                   skillId: '232893',
@@ -405,12 +408,18 @@ const manuscript = {
                   label: '전략적 후퇴',
                   kind: 'talent',
                   note: '복수의 퇴각 뒤 10초에 걸쳐 격노 80',
+                  affects: [
+                    '198793',
+                  ],
                 },
                 {
                   skillId: '203550',
                   label: '눈먼 격노',
                   kind: 'talent',
                   note: '안광 도중 초당 격노 10(2점이면 20)',
+                  affects: [
+                    '198013',
+                  ],
                 },
               ],
             },
@@ -509,6 +518,11 @@ const manuscript = {
                   label: '악마성',
                   kind: 'talent',
                   note: '안광 공격이 끝난 뒤 5초 동안 악마 형상',
+                  affects: [
+                    '198013',
+                    '210152',
+                    '201427',
+                  ],
                 },
                 {
                   skillId: '1270901',
@@ -516,12 +530,20 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 노드',
                   note: '다음 칼춤 계열을 쓴 직후 그 쿨다운 초기화',
+                  affects: [
+                    '198013',
+                    '210152',
+                  ],
                 },
                 {
                   skillId: '258887',
                   label: '증오의 순환',
                   kind: 'talent',
                   note: '다음 안광 쿨다운 2.5초 단축 · 최대 10초',
+                  affects: [
+                    '198013',
+                    '258860',
+                  ],
                 },
               ],
             },
@@ -601,6 +623,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '첫 노드',
                   note: '사냥 다음 안광의 공격력 100% 증가 · 넓은 지역에 적중',
+                  affects: [
+                    '370965',
+                    '198013',
+                  ],
                 },
                 {
                   skillId: '1270900',
@@ -608,6 +634,9 @@ const manuscript = {
                   kind: 'talent',
                   tag: '중간 노드',
                   note: '1점마다 사냥 쿨다운 15초 감소 · 피해 15% 증가 · 지속 피해 대상 2명 추가',
+                  affects: [
+                    '370965',
+                  ],
                 },
                 {
                   skillId: '1270901',
@@ -615,6 +644,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '마지막 노드',
                   note: '칼춤 피해 20% 증가 · 안광 완주 뒤 다음 칼춤 계열 초기화',
+                  affects: [
+                    '198013',
+                    '210152',
+                  ],
                 },
               ],
             },
@@ -699,6 +732,11 @@ const manuscript = {
                   label: '혼돈의 변신',
                   kind: 'talent',
                   note: '안광·칼춤 쿨다운 초기화',
+                  affects: [
+                    '191427',
+                    '198013',
+                    '210152',
+                  ],
                 },
                 {
                   skillId: '452409',
@@ -706,6 +744,10 @@ const manuscript = {
                   kind: 'talent',
                   tag: '지옥상흔',
                   note: '제물의 오라 쿨다운 초기화',
+                  affects: [
+                    '191427',
+                    '258920',
+                  ],
                 },
               ],
             },
@@ -830,6 +872,10 @@ const manuscript = {
                   label: '증오의 순환',
                   kind: 'talent',
                   note: '최대로 줄어도 안광 20초 · 정수 파쇄 30초',
+                  affects: [
+                    '198013',
+                    '258860',
+                  ],
                 },
               ],
             },
@@ -876,6 +922,10 @@ const manuscript = {
                     skillId: '370965',
                     when: '글레이브 없고 쿨이 돌면',
                   },
+                  talents: [
+                    '213410',
+                    '258887',
+                  ],
                 },
                 {
                   skillId: '442294',
@@ -888,6 +938,9 @@ const manuscript = {
                 {
                   skillId: '210152',
                   caption: '전투검 먼저',
+                  talents: [
+                    '1270901',
+                  ],
                 },
                 {
                   skillId: '201427',
@@ -939,10 +992,16 @@ const manuscript = {
                 {
                   skillId: '452497',
                   caption: '직접 탈태 중 안광 자리',
+                  talents: [
+                    '452415',
+                  ],
                 },
                 {
                   skillId: '456640',
                   caption: '직접 탈태 중 오라 자리',
+                  talents: [
+                    '452415',
+                  ],
                 },
               ],
               note: '지옥상흔에는 글레이브가 없어 안광 → 죽음의 휩쓸기 → 파멸 → 죽음의 휩쓸기 → 칼춤 → 혼돈의 일격 → 지옥칼로 돌립니다. 스조라크 상위 기록(지옥상흔)도 안광 뒤 약 3분의 2가 죽음의 휩쓸기 → 파멸 → 죽음의 휩쓸기 순서였습니다.',
@@ -988,26 +1047,48 @@ const manuscript = {
                 {
                   skillId: '370965',
                   caption: '보유 글레이브 없을 때',
+                  talents: [
+                    '442290',
+                    '1270898',
+                  ],
                 },
                 {
                   skillId: '442294',
                   caption: '오래 살 대상에게',
+                  talents: [
+                    '442290',
+                    '442686',
+                  ],
                 },
                 {
                   skillId: '198013',
                   caption: '격노 30 · 끝까지',
+                  talents: [
+                    '213410',
+                    '258887',
+                  ],
                 },
                 {
                   skillId: '258860',
                   caption: '안광 바로 뒤',
+                  talents: [
+                    '258887',
+                  ],
                 },
                 {
                   skillId: '210152',
                   caption: '전투검 먼저 회수',
+                  talents: [
+                    '442718',
+                    '1270901',
+                  ],
                 },
                 {
                   skillId: '201427',
                   caption: '분쇄 일격 · 징표',
+                  talents: [
+                    '442679',
+                  ],
                 },
                 {
                   skillId: '210152',
@@ -1022,18 +1103,32 @@ const manuscript = {
                 {
                   skillId: '198793',
                   caption: '안전한 복귀 경로',
+                  talents: [
+                    '389688',
+                  ],
                 },
                 {
                   skillId: '191427',
                   caption: '안광·휩쓸기 쓴 뒤',
+                  talents: [
+                    '388112',
+                  ],
                 },
                 {
                   skillId: '210152',
                   caption: '초기화 소비',
+                  talents: [
+                    '442718',
+                    '1270901',
+                  ],
                 },
                 {
                   skillId: '198013',
                   caption: '다음 완주 → 반복',
+                  talents: [
+                    '213410',
+                    '258887',
+                  ],
                 },
               ],
               note: '스조라크 신화 상위 기록 9개 모두 복수의 퇴각 → 탈태 → 죽음의 휩쓸기 순서였습니다. 5개는 다음 안광 앞에 파멸을 한두 번 넣었고, 두 번째 안광 뒤에는 모두 죽음의 휩쓸기가 돌아올 때까지 파멸을 먼저 썼습니다.',
@@ -1048,6 +1143,9 @@ const manuscript = {
                 {
                   skillId: '370965',
                   caption: '붙으며 · 첫 안광 강화',
+                  talents: [
+                    '1270898',
+                  ],
                 },
                 {
                   skillId: '232893',
@@ -1056,18 +1154,32 @@ const manuscript = {
                 {
                   skillId: '198013',
                   caption: '격노 30 · 끝까지',
+                  talents: [
+                    '213410',
+                    '258887',
+                  ],
                 },
                 {
                   skillId: '258860',
                   caption: '안광 바로 뒤',
+                  talents: [
+                    '258887',
+                  ],
                 },
                 {
                   skillId: '210152',
                   caption: '완주 보상 · 첫 사용',
+                  talents: [
+                    '452402',
+                    '1270901',
+                  ],
                 },
                 {
                   skillId: '201427',
                   caption: '형상 첫 사용 회수',
+                  talents: [
+                    '452402',
+                  ],
                 },
                 {
                   skillId: '210152',
@@ -1082,26 +1194,46 @@ const manuscript = {
                 {
                   skillId: '198793',
                   caption: '뒤쪽 안전 확인',
+                  talents: [
+                    '389688',
+                  ],
                 },
                 {
                   skillId: '191427',
                   caption: '초기화할 주문 쓴 뒤',
+                  talents: [
+                    '452409',
+                    '1272453',
+                  ],
                 },
                 {
                   skillId: '210152',
                   caption: '탈태 초기화 · 새 첫 사용',
+                  talents: [
+                    '452402',
+                    '1270901',
+                  ],
                 },
                 {
                   skillId: '201427',
                   caption: '새 형상 첫 사용',
+                  talents: [
+                    '452402',
+                  ],
                 },
                 {
                   skillId: '456640',
                   caption: '악마의 격화 · 오라 자리',
+                  talents: [
+                    '452415',
+                  ],
                 },
                 {
                   skillId: '452497',
                   caption: '탈태 중 안광 · 끝까지',
+                  talents: [
+                    '452415',
+                  ],
                 },
                 {
                   skillId: '201427',
@@ -1161,6 +1293,10 @@ const manuscript = {
                     skillId: '370965',
                     when: '쿨이 돌면 · 모인 뒤',
                   },
+                  talents: [
+                    '213410',
+                    '258887',
+                  ],
                 },
                 {
                   skillId: '210152',
@@ -1169,6 +1305,9 @@ const manuscript = {
                     skillId: '258860',
                     when: '쿨이 돌고 격노 준비되면',
                   },
+                  talents: [
+                    '1270901',
+                  ],
                 },
                 {
                   skillId: '210152',
@@ -1208,26 +1347,44 @@ const manuscript = {
                 {
                   skillId: '456640',
                   caption: '지옥상흔 · 탈태 중 모인 적에게',
+                  talents: [
+                    '452415',
+                  ],
                 },
                 {
                   skillId: '452497',
                   caption: '지옥상흔 · 탈태 중 강화 안광',
+                  talents: [
+                    '452415',
+                  ],
                 },
                 {
                   skillId: '370965',
                   caption: '알드라치 · 글레이브가 없을 때',
+                  talents: [
+                    '442290',
+                  ],
                 },
                 {
                   skillId: '442294',
                   caption: '알드라치 · 오래 살 적에게',
+                  talents: [
+                    '442290',
+                  ],
                 },
                 {
                   skillId: '201427',
                   caption: '알드라치 광역 · 두 강화면 먼저',
+                  talents: [
+                    '442679',
+                  ],
                 },
                 {
                   skillId: '210152',
                   caption: '알드라치 · 그다음, 추가 베기 12회',
+                  talents: [
+                    '442718',
+                  ],
                 },
               ],
             },
@@ -1306,6 +1463,10 @@ const manuscript = {
                   label: '불안정한 본능',
                   kind: 'talent',
                   note: '변신 즉시 악마쇄도 · 직접 누른 시전이 아님',
+                  affects: [
+                    '191427',
+                    '452402',
+                  ],
                 },
               ],
             },
@@ -1353,6 +1514,11 @@ const manuscript = {
                   label: '악마의 격화',
                   kind: 'talent',
                   note: '악마쇄도 발동에 따라 5%씩 추가 보정',
+                  affects: [
+                    '452497',
+                    '456640',
+                    '452402',
+                  ],
                 },
               ],
             },
@@ -1477,12 +1643,21 @@ const manuscript = {
                     label: '무너진 영혼',
                     kind: 'talent',
                     note: '사냥 시 파편 1개 · 칼춤·혼돈의 일격 20% 확률',
+                    affects: [
+                      '370965',
+                      '188499',
+                      '162794',
+                    ],
                   },
                   {
                     skillId: '442290',
                     label: '전투검술',
                     kind: 'talent',
                     note: '영혼 파편 6개 흡수 또는 사냥',
+                    affects: [
+                      '442294',
+                      '370965',
+                    ],
                   },
                 ],
               },
@@ -1537,6 +1712,9 @@ const manuscript = {
                     label: '전투의 전율',
                     kind: 'talent',
                     note: '다음 글레이브 피해 30% 증가 · 30초 가속',
+                    affects: [
+                      '442294',
+                    ],
                   },
                 ],
               },
@@ -1565,6 +1743,9 @@ const manuscript = {
                     kind: 'talent',
                     tag: '광역: 파멸 → 죽음의 휩쓸기',
                     note: '두 번째 칼춤 계열의 추가 베기 12회',
+                    affects: [
+                      '210152',
+                    ],
                   },
                   {
                     skillId: '442679',
@@ -1572,6 +1753,9 @@ const manuscript = {
                     kind: 'talent',
                     tag: '단일: 죽음의 휩쓸기 → 파멸',
                     note: '징표 추가 중첩 · 20초 · 최대 2중첩',
+                    affects: [
+                      '201427',
+                    ],
                   },
                 ],
               },
@@ -1583,12 +1767,18 @@ const manuscript = {
                     label: '부상당한 사냥감',
                     kind: 'talent',
                     note: '다른 적에게 준 물리 피해의 30%를 징표 대상에 혼돈 피해로',
+                    affects: [
+                      '442679',
+                    ],
                   },
                   {
                     skillId: '1272138',
                     label: '뾰족한 칼끝',
                     kind: 'talent',
                     note: '파괴자의 글레이브 피해 20% · 다른 물리 공격 10%',
+                    affects: [
+                      '442294',
+                    ],
                   },
                 ],
               },
@@ -3247,7 +3437,7 @@ const manuscript = {
       channel: 'wowmeta 와우메타',
     },
     advancedVideo: {
-      youtubeId: 'bFrBTJqCUuU',
+      youtubeId: '6ZwdClwg91A',
       title: '한밤 2시즌 12.1.5 파멸 악마사냥꾼 심화 가이드',
       channel: 'wowmeta 와우메타',
     },

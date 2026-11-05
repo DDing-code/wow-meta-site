@@ -431,6 +431,13 @@ const manuscript = {
                   label: '시간의 모래',
                   kind: 'talent',
                   note: '연장량 50% 증가',
+                  affects: [
+                    '395152',
+                    '395160',
+                    '357208',
+                    '396286',
+                    '403631',
+                  ],
                 },
               ],
             },
@@ -487,12 +494,18 @@ const manuscript = {
                   label: '노즈도르무의 숙련병',
                   kind: 'talent',
                   note: '예지 재사용 2초 감소 · 치명타 증가량 1% 추가',
+                  affects: [
+                    '409311',
+                  ],
                 },
                 {
                   skillId: '432004',
                   label: '황금빛 기회',
                   kind: 'talent',
                   note: '예지 지속시간 15% 증가',
+                  affects: [
+                    '409311',
+                  ],
                 },
               ],
             },
@@ -504,12 +517,19 @@ const manuscript = {
                   label: '운명의 거울',
                   kind: 'talent',
                   note: '대상의 피해·치유 15%가 일정 확률로 메아리',
+                  affects: [
+                    '409311',
+                  ],
                 },
                 {
                   skillId: '407869',
                   label: '시대착오',
                   kind: 'talent',
                   note: '예지를 쓸 때 35% 확률로 정수 폭발',
+                  affects: [
+                    '409311',
+                    '396187',
+                  ],
                 },
               ],
             },
@@ -604,18 +624,28 @@ const manuscript = {
                   label: '점화 질주',
                   kind: 'talent',
                   note: '시전 시간 40% 감소 · 피해 20% 증가',
+                  affects: [
+                    '395160',
+                  ],
                 },
                 {
                   skillId: '375796',
                   label: '비축한 힘',
                   kind: 'talent',
                   note: '20% 확률로 정수 폭발이 사라지지 않음',
+                  affects: [
+                    '396187',
+                    '395160',
+                  ],
                 },
                 {
                   skillId: '408004',
                   label: '가속 전환',
                   kind: 'talent',
                   note: '6초간 지능 5% · 2중첩',
+                  affects: [
+                    '396187',
+                  ],
                 },
               ],
             },
@@ -684,6 +714,13 @@ const manuscript = {
                   label: '시간의 모래',
                   kind: 'talent',
                   note: '칠흑의 힘 2초 연장',
+                  affects: [
+                    '395152',
+                    '395160',
+                    '357208',
+                    '396286',
+                    '403631',
+                  ],
                 },
                 {
                   skillId: '413984',
@@ -696,6 +733,10 @@ const manuscript = {
                   label: '화염 도약',
                   kind: 'talent',
                   note: '불의 숨결 단계 하나당 다음 살아있는 불꽃 대상 하나 추가',
+                  affects: [
+                    '357208',
+                    '361469',
+                  ],
                 },
               ],
             },
@@ -752,12 +793,19 @@ const manuscript = {
                   label: '복제',
                   kind: 'talent',
                   note: '정점 첫 노드 · 미래의 자신이 20초 동안 분출·불의 숨결·지각 변동 사용',
+                  affects: [
+                    '403631',
+                  ],
                 },
                 {
                   skillId: '459537',
                   label: '임박한 파괴',
                   kind: 'talent',
                   note: '다음 여섯 번의 분출 정수 1 감소',
+                  affects: [
+                    '403631',
+                    '395160',
+                  ],
                 },
               ],
             },
@@ -780,6 +828,10 @@ const manuscript = {
                   label: '복제(중간 노드)',
                   kind: 'talent',
                   note: '칠흑의 힘 연장량의 50%만큼 복제도 연장',
+                  affects: [
+                    '395152',
+                    '1259171',
+                  ],
                 },
               ],
             },
@@ -826,10 +878,18 @@ const manuscript = {
                     skillId: '403631',
                     when: '배정된 피해 구간',
                   },
+                  talents: [
+                    '431874',
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '409311',
                   caption: '대상·충전 확인',
+                  talents: [
+                    '431715',
+                    '432004',
+                  ],
                 },
                 {
                   skillId: '357208',
@@ -838,10 +898,18 @@ const manuscript = {
                     skillId: '370553',
                     when: '다음 강화 준비',
                   },
+                  talents: [
+                    '431875',
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '396286',
                   caption: '1단계로 빠르게',
+                  talents: [
+                    '431615',
+                    '431657',
+                  ],
                 },
                 {
                   skillId: '395160',
@@ -850,6 +918,10 @@ const manuscript = {
                     skillId: '404977',
                     when: '골랐고 두 강화 재사용 중',
                   },
+                  talents: [
+                    '408775',
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '431443',
@@ -858,6 +930,9 @@ const manuscript = {
                     skillId: '362969',
                     when: '이동해야 하면 대신',
                   },
+                  talents: [
+                    '431875',
+                  ],
                 },
                 {
                   skillId: '395160',
@@ -877,10 +952,17 @@ const manuscript = {
                 {
                   skillId: '395152',
                   caption: '없거나 약 4초 이하',
+                  talents: [
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '409311',
                   caption: '대상·충전 확인',
+                  talents: [
+                    '412774',
+                    '407869',
+                  ],
                 },
                 {
                   skillId: '357208',
@@ -889,10 +971,17 @@ const manuscript = {
                     skillId: '370553',
                     when: '불의 숨결 사용 가능',
                   },
+                  talents: [
+                    '395153',
+                    '369939',
+                  ],
                 },
                 {
                   skillId: '396286',
                   caption: '단일 1단계',
+                  talents: [
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '395160',
@@ -901,10 +990,17 @@ const manuscript = {
                     skillId: '403631',
                     when: '날개지도자로 당겨지면',
                   },
+                  talents: [
+                    '438587',
+                    '434300',
+                  ],
                 },
                 {
                   skillId: '361469',
                   caption: '화염 도약 준비 시',
+                  talents: [
+                    '369939',
+                  ],
                 },
                 {
                   skillId: '362969',
@@ -924,10 +1020,16 @@ const manuscript = {
                 {
                   skillId: '395152',
                   caption: '시간 감시자 · 시시각각 기회',
+                  talents: [
+                    '431874',
+                  ],
                 },
                 {
                   skillId: '370553',
                   caption: '시간 감시자 · 시간의 폭발 시작',
+                  talents: [
+                    '431695',
+                  ],
                 },
                 {
                   skillId: '404977',
@@ -936,10 +1038,16 @@ const manuscript = {
                 {
                   skillId: '395160',
                   caption: '비늘사령관 · 강화 뒤 분출',
+                  talents: [
+                    '438587',
+                  ],
                 },
                 {
                   skillId: '361469',
                   caption: '비늘사령관 · 화염 도약 불꽃',
+                  talents: [
+                    '369939',
+                  ],
                 },
               ],
             },
@@ -984,31 +1092,57 @@ const manuscript = {
                 {
                   skillId: '431443',
                   caption: '풀링 1.5초 전',
+                  talents: [
+                    '431875',
+                  ],
                 },
                 {
                   skillId: '409311',
                   count: 2,
                   caption: '공격 담당 둘',
+                  talents: [
+                    '431715',
+                    '432004',
+                  ],
                 },
                 {
                   skillId: '403631',
                   caption: '짧고 안전하게 적중',
+                  talents: [
+                    '1259173',
+                    '459537',
+                  ],
                 },
                 {
                   skillId: '395152',
                   caption: '착지 후 즉시',
+                  talents: [
+                    '431874',
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '370553',
                   caption: '불의 숨결 준비됨',
+                  talents: [
+                    '431695',
+                  ],
                 },
                 {
                   skillId: '357208',
                   caption: '즉시 최대 단계',
+                  talents: [
+                    '431875',
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '396286',
                   caption: '단일은 1단계',
+                  talents: [
+                    '431615',
+                    '431657',
+                  ],
                 },
                 {
                   skillId: '404977',
@@ -1034,6 +1168,10 @@ const manuscript = {
                 {
                   skillId: '395160',
                   caption: '이후 단일 우선순위로',
+                  talents: [
+                    '408775',
+                    '395153',
+                  ],
                 },
               ],
               note: '시간 건너뛰기는 고른 경우에만 씁니다. 엮인 실타래 빌드는 그 칸과 뒤의 두 번째 불의 숨결·지각 변동을 건너뛰고 바로 분출로 넘어갑니다. 스조라크 신화 상위 기록 10개 중 9개가 영겁의 숨결 전에 예지를 두 번 썼고, 8개가 시간 건너뛰기 뒤 분출 전에 예지 두 번과 칠흑의 힘을 다시 썼습니다. 다시 거는 칠흑의 힘은 두 번째 불의 숨결 앞과 지각 변동 뒤가 4개씩이라 끝나 가는 때에 맞춥니다. 첫 칠흑의 힘은 10개 중 4개가 영겁의 숨결보다 먼저 걸었습니다.',
@@ -1048,14 +1186,24 @@ const manuscript = {
                 {
                   skillId: '361469',
                   caption: '풀링 1.5초 전',
+                  talents: [
+                    '369939',
+                  ],
                 },
                 {
                   skillId: '395152',
                   caption: '전투 시작',
+                  talents: [
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '409311',
                   caption: '공격 담당 1',
+                  talents: [
+                    '412774',
+                    '407869',
+                  ],
                 },
                 {
                   skillId: '409311',
@@ -1064,6 +1212,10 @@ const manuscript = {
                 {
                   skillId: '403631',
                   caption: '짧고 안전한 경로',
+                  talents: [
+                    '441206',
+                    '1260745',
+                  ],
                 },
                 {
                   skillId: '370553',
@@ -1072,14 +1224,25 @@ const manuscript = {
                 {
                   skillId: '357208',
                   caption: '즉시 최대 단계',
+                  talents: [
+                    '395153',
+                    '369939',
+                  ],
                 },
                 {
                   skillId: '396286',
                   caption: '단일은 빠르게',
+                  talents: [
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '395160',
                   caption: '대규모 분출로 소비',
+                  talents: [
+                    '438587',
+                    '434300',
+                  ],
                 },
               ],
               note: '엮인 실타래를 쓰는 예시라 시간 건너뛰기 칸이 없습니다. 시간 감시자의 착지 후 칠흑의 힘을 이 순서에 더하지 않습니다.',
@@ -1122,34 +1285,64 @@ const manuscript = {
                 {
                   skillId: '409311',
                   caption: '공격할 아군 둘',
+                  talents: [
+                    '431715',
+                    '432004',
+                  ],
                 },
                 {
                   skillId: '395152',
                   caption: '영겁의 숨결 전에',
+                  talents: [
+                    '431874',
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '403631',
                   caption: '적이 모임 · 사용 가능',
+                  talents: [
+                    '1259173',
+                    '459537',
+                  ],
                 },
                 {
                   skillId: '370553',
                   caption: '사용 가능할 때',
+                  talents: [
+                    '431695',
+                  ],
                 },
                 {
                   skillId: '357208',
                   caption: '생존시간·남은 버프',
+                  talents: [
+                    '431875',
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '396286',
                   caption: '필요한 반경까지만',
+                  talents: [
+                    '431615',
+                    '431657',
+                  ],
                 },
                 {
                   skillId: '395160',
                   caption: '칠흑의 힘·발동 상한',
+                  talents: [
+                    '408775',
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '431443',
                   caption: '상위 주문이 없을 때',
+                  talents: [
+                    '431875',
+                  ],
                 },
               ],
               note: '쐐기 풀에서는 레이드 오프닝과 달리 칠흑의 힘을 영겁의 숨결보다 먼저 겁니다. 영겁의 숨결이 재사용 중이면 기다리며 멈추지 말고 지원과 강화를 이어 갑니다.',
@@ -1160,14 +1353,25 @@ const manuscript = {
                 {
                   skillId: '395152',
                   caption: '없음·남은 시간 부족',
+                  talents: [
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '409311',
                   caption: '유효한 공격 담당',
+                  talents: [
+                    '412774',
+                    '407869',
+                  ],
                 },
                 {
                   skillId: '403631',
                   caption: '적이 모임 · 사용 가능',
+                  talents: [
+                    '441206',
+                    '1260745',
+                  ],
                 },
                 {
                   skillId: '370553',
@@ -1176,14 +1380,25 @@ const manuscript = {
                 {
                   skillId: '357208',
                   caption: '적 수명·후속 불꽃',
+                  talents: [
+                    '395153',
+                    '369939',
+                  ],
                 },
                 {
                   skillId: '396286',
                   caption: '무리를 맞힐 단계',
+                  talents: [
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '395160',
                   caption: '대규모 분출 여러 대상',
+                  talents: [
+                    '438587',
+                    '434300',
+                  ],
                 },
                 {
                   skillId: '362969',
@@ -1199,10 +1414,17 @@ const manuscript = {
                 {
                   skillId: '395152',
                   caption: '지원 공백부터',
+                  talents: [
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '409311',
                   caption: '공격 중인 딜러',
+                  talents: [
+                    '412774',
+                    '407869',
+                  ],
                 },
                 {
                   skillId: '357208',
@@ -1211,10 +1433,17 @@ const manuscript = {
                     skillId: '370553',
                     when: '빠른 강화 필요',
                   },
+                  talents: [
+                    '395153',
+                    '369939',
+                  ],
                 },
                 {
                   skillId: '396286',
                   caption: '실제 반경',
+                  talents: [
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '395160',
@@ -1223,10 +1452,17 @@ const manuscript = {
                     skillId: '403631',
                     when: '적중 가능 · 사용 가능',
                   },
+                  talents: [
+                    '408775',
+                    '395153',
+                  ],
                 },
                 {
                   skillId: '361469',
                   caption: '화염 도약 추가 불꽃',
+                  talents: [
+                    '369939',
+                  ],
                 },
               ],
               note: '시간 감시자는 살아있는 불꽃 자리에 시간의 불꽃을 씁니다. 다음 무리까지 아무도 공격하지 않는 시간에는 칠흑의 힘을 억지로 잇지 않습니다.',
@@ -1242,10 +1478,16 @@ const manuscript = {
                 {
                   skillId: '431443',
                   caption: '시간 감시자 · 추가 적중 활용',
+                  talents: [
+                    '431875',
+                  ],
                 },
                 {
                   skillId: '395160',
                   caption: '비늘사령관 · 대규모 분출',
+                  talents: [
+                    '438587',
+                  ],
                 },
                 {
                   skillId: '362969',
@@ -1330,6 +1572,9 @@ const manuscript = {
                     label: '시간의 폭발',
                     kind: 'talent',
                     note: '가속·이동 속도·재사용 회복 30% · 기본 30초에 걸쳐 점차 감소 · 특화로 늘어남',
+                    affects: [
+                      '370553',
+                    ],
                   },
                 ],
               },
@@ -1356,18 +1601,28 @@ const manuscript = {
                     label: '잔상',
                     kind: 'talent',
                     note: '대상에게 시간의 불꽃 최대 세 개 자동 발사',
+                    affects: [
+                      '357208',
+                      '396286',
+                    ],
                   },
                   {
                     skillId: '431615',
                     label: '반향',
                     kind: 'talent',
                     note: '지각 변동에 8초 동안 원래 피해 50%의 지속 피해',
+                    affects: [
+                      '396286',
+                    ],
                   },
                   {
                     skillId: '431657',
                     label: '수위',
                     kind: 'talent',
                     note: '지각 변동 지속 피해 하나당 가속 3% · 최대 9%',
+                    affects: [
+                      '396286',
+                    ],
                   },
                 ],
               },
@@ -1394,6 +1649,9 @@ const manuscript = {
                     label: '시시각각',
                     kind: 'talent',
                     note: '칠흑의 힘·예지 능력치 추가 50%',
+                    affects: [
+                      '395152',
+                    ],
                   },
                 ],
               },
@@ -1545,12 +1803,19 @@ const manuscript = {
                     label: '날개지도자',
                     kind: 'talent',
                     note: '적중 대상 하나당 영겁의 숨결 1.5초 감소',
+                    affects: [
+                      '438587',
+                      '403631',
+                    ],
                   },
                   {
                     skillId: '434300',
                     label: '폭격',
                     kind: 'talent',
                     note: '주 대상에 6초 징표 · 공격하면 확률로 주변에 피해',
+                    affects: [
+                      '438587',
+                    ],
                   },
                 ],
               },
@@ -1577,6 +1842,9 @@ const manuscript = {
                     label: '편대 통솔',
                     kind: 'talent',
                     note: '지원 편대가 최대 여덟 번 기염 발사 · 직접 쓰는 스킬이 아님',
+                    affects: [
+                      '403631',
+                    ],
                   },
                 ],
               },
@@ -1588,6 +1856,11 @@ const manuscript = {
                     label: '검은용군단의 무위',
                     kind: 'talent',
                     note: '검은색 주문 피해 20% · 아군 버프 수치 증가가 아님',
+                    affects: [
+                      '395160',
+                      '396286',
+                      '403631',
+                    ],
                   },
                 ],
               },
@@ -3323,6 +3596,11 @@ const manuscript = {
     video: {
       youtubeId: 'YkvKzuUkmU4',
       title: '한밤 2시즌 12.1.5 증강 기원사 가이드',
+      channel: 'wowmeta 와우메타',
+    },
+    advancedVideo: {
+      youtubeId: 'CwFBJdlmuDk',
+      title: '한밤 2시즌 12.1.5 증강 기원사 심화 가이드',
       channel: 'wowmeta 와우메타',
     },
 };
