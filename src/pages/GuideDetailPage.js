@@ -2687,7 +2687,7 @@ const GUIDE_VIDEO_KINDS = [
 ];
 const isYoutubeId = id => /^[A-Za-z0-9_-]{11}$/.test(String(id || ''));
 
-function GuideVideoSection({ video: basicVideo, advancedVideo }) {
+export function GuideVideoSection({ video: basicVideo, advancedVideo }) {
   const [kind, setKind] = useState('basic');
   const hasAdvanced = isYoutubeId(advancedVideo?.youtubeId);
   const video = hasAdvanced && kind === 'advanced' ? advancedVideo : basicVideo;
@@ -2722,6 +2722,9 @@ function GuideVideoSection({ video: basicVideo, advancedVideo }) {
       <GuideVideoFrame>
         <iframe
           key={youtubeId}
+          width="930"
+          height="523"
+          loading="lazy"
           src={`https://www.youtube.com/embed/${youtubeId}?rel=0`}
           title={video.title || '가이드 영상'}
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
