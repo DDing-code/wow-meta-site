@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { BookOpen, Castle, Compass, Database, Flag, Home, KeyRound, Menu, Newspaper, X } from 'lucide-react';
 import { EDITIONS, getEdition, getEditionSwitchPath } from '../data/gameEditions.js';
+import '../styles/ForeverFonts.css';
 
 // 버전별 강조색: 리테일은 금색, 포에버는 초록(ForeverPage.js의 FOREVER_ACCENT와 같다).
 const EDITION_ACCENT = { retail: '#d2b373', forever: '#8dbb6c' };
@@ -16,12 +17,21 @@ const Nav = styled.nav`
   backdrop-filter: blur(12px);
 
   &[data-edition="forever"] {
-    background: #101a15;
-    border-bottom-color: #364438;
+    font-family: 'Galmuri11', 'Noto Sans KR', sans-serif;
+    font-synthesis: none;
+    background: #142019;
+    backdrop-filter: none;
+    border-bottom-color: #8c784e;
+    box-shadow: 0 3px 0 #080f0b;
     #primary-navigation { background: #101a15; }
     #primary-navigation a { color: #becab9; }
-    #primary-navigation a[aria-current="page"] { color: #f0d59b; }
-    #primary-navigation a:hover { color: #f2eddd; }
+    #primary-navigation a[aria-current="page"] { color: #ffe0a1; border-bottom-color: #d4b16e; }
+    #primary-navigation a:hover { color: #ffe0a1; }
+    [aria-label="게임 버전"], button { border-color: #8c784e; box-shadow: 2px 2px 0 #080f0b; }
+    [aria-label="게임 버전"] a:not([aria-current]) { color: #c1c9b8; }
+    [aria-label="게임 버전"] a[aria-current] { background: #b9cd8b; color: #102016; }
+    a:focus-visible, button:focus-visible { outline-color: #ffe0a1; }
+    @media (min-width: 901px) { #primary-navigation { background: transparent; } }
   }
 `;
 

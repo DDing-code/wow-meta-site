@@ -25,6 +25,12 @@ test('새 안내 네 쪽은 모든 본문·표·목차·공식 근거와 검색 
         expect(element).not.toBeNull();
         expect(container.querySelector(`a[href="#${block.id}"]`)).not.toBeNull();
         expect(element.querySelector('h2').textContent).toBe(block.title);
+        if (block.art) {
+          const image = element.querySelector('img');
+          expect(image.alt).toBe(block.art.alt);
+          expect(image.getAttribute('src')).toContain(`/images/forever/${block.art.id}-`);
+          expect(image.getAttribute('loading')).toBe('lazy');
+        }
         block.items?.forEach(item => expect(element.textContent).toContain(item.body));
         if (block.table) {
           expect(element.querySelectorAll('tbody tr')).toHaveLength(block.table.rows.length);

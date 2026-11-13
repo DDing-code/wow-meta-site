@@ -103,6 +103,9 @@ for (const id of new Set(onDisk)) assert.ok(artIds.has(id), `public/images/forev
 // 새 안내 쪽은 이미 있는 도트 그림을 다시 쓴다.
 for (const [id, page] of Object.entries(guide.foreverGuides)) {
   assert.ok(artIds.has(page.art.id) && page.art.alt.length >= 8, `${id}: 기존 대표 그림·설명 누락`);
+  for (const block of page.sections) {
+    if (block.art) assert.ok(artIds.has(block.art.id) && block.art.alt.length >= 8, `${id}/${block.id}: 본문 그림·설명 누락`);
+  }
 }
 assert.strictEqual(guide.foreverGuides.leveling.sections.find(block => block.id === 'dungeons').table.rows.length, 9, '새 던전 아홉 곳');
 assert.strictEqual(guide.foreverGuides.growth.sections.find(block => block.id === 'facilities').table.rows.length, 10, '첫 캠핑 설비 열 종류');

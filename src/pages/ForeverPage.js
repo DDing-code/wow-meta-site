@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { ArrowRight, Check, ExternalLink, X } from 'lucide-react';
+import '../styles/ForeverFonts.css';
 import {
   FOREVER_ART_NOTE,
   FOREVER_CHECKED_AT,
@@ -14,22 +15,34 @@ import {
   foreverStart,
 } from '../data/foreverGuide.js';
 
-// 포에버 안내 세 장(/forever 한눈에 보기, /forever/start 시작하기, /forever/rules 규칙·진영).
+// 포에버 안내 일곱 쪽. 도트 풍경과 숲빛·청동색 모험 일지 테마를 공유한다.
 // 글은 src/data/foreverGuide.js에 있고 여기서는 그리기만 한다. 리테일 KB·스킬 자료는 읽지 않는다.
 // 숲빛 바탕·금색 제목·초록 이동 표시로 포에버 안내를 구분한다.
 // 그림은 공식 아트·공지 스크린샷을 도트로 다시 그린 것(public/images/forever)이고, 글 자료의 art 항목이 어느 그림인지 정한다.
 
 export const FOREVER_ACCENT = '#8dbb6c';
-const LINE = '#364438';
-const PANEL = '#16231c';
+const LINE = '#475044';
+const PANEL = '#142019 url("/images/forever/ui/bronze-panel.webp") center / 160% 160% no-repeat';
+const PARCHMENT = '#d6bd86 url("/images/forever/ui/parchment.webp") center / cover';
+// 모서리는 고정 크기로 두고 직선 테두리만 늘려 좁거나 긴 상자에서도 장식을 보존한다.
+const bronzeFrame = css`
+  border: 6px solid #8c784e;
+  border-image: url('/images/forever/ui/bronze-panel.webp') 180 / 24px / 0 round;
+  box-shadow: 4px 4px 0 #080f0b;
+`;
 
 const Surface = styled.div`
   background: #101a15;
   color: #e8e9dc;
-  min-height: calc(100vh - 59px);
+  min-height: calc(100dvh - 59px);
 
   a:focus-visible { outline: 2px solid #e4c78b; outline-offset: 4px; }
   ::selection { background: #e4c78b; color: #101a15; }
+  h1, h2, h3, nav, kbd {
+    font-family: 'Galmuri11', 'Noto Sans KR', sans-serif;
+    font-synthesis: none;
+    letter-spacing: 0;
+  }
   @media (prefers-reduced-motion: reduce) {
     a, svg { transition: none; }
     a:hover svg { transform: none; }
@@ -50,10 +63,19 @@ const Page = styled.div`
 
 // 도트 그림 틀. 비율($ratio)에 맞춰 잘라 보이고, 남길 자리는 $focus로 정한다.
 const Frame = styled.div`
+  position: relative;
   overflow: hidden;
   aspect-ratio: ${props => props.$ratio || '3 / 2'};
-  border: 1px solid ${LINE};
+  border: 2px solid #8c784e;
   background: #101a15;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border: 1px solid #d8b67155;
+    pointer-events: none;
+  }
 
   img {
     display: block;
@@ -61,51 +83,76 @@ const Frame = styled.div`
     height: 100%;
     object-fit: cover;
     object-position: ${props => props.$focus || 'center'};
+    image-rendering: pixelated;
   }
 `;
 
 const Hero = styled.header`
+  position: relative;
+  isolation: isolate;
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 420px;
   align-items: center;
-  border: 1px solid ${LINE};
-  border-top: 3px solid #a98b54;
-  background: ${PANEL};
+  border: 1px solid #a98b54;
+  background: #101a15;
+  box-shadow: 6px 6px 0 #080f0b;
 
-  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); }
+  @media (max-width: 760px) { min-height: 0; }
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    ${bronzeFrame}
+  }
 `;
 
 const HeroCopy = styled.div`
   grid-column: 1;
   grid-row: 1;
-  padding: 32px;
-  @media (max-width: 760px) { grid-row: 2; padding: 24px 20px; }
+  position: relative;
+  z-index: 1;
+  width: 56%;
+  padding: 42px;
+  text-shadow: 2px 2px 0 #080f0b;
+  @media (max-width: 760px) { grid-row: 2; width: 100%; padding: 24px 28px 28px; }
 `;
 
 const Banner = styled(Frame)`
-  grid-column: 2;
+  position: absolute;
+  inset: 0;
+  grid-column: 1;
   grid-row: 1;
   align-self: stretch;
   border: 0;
-  border-left: 1px solid ${LINE};
   aspect-ratio: auto;
-  min-height: 340px;
+  &::after {
+    inset: 0;
+    border: 0;
+    background: linear-gradient(90deg, #0b1710 0%, #0b1710f2 27%, #0b1710bb 52%, #0b171030 78%, #0b171000), linear-gradient(0deg, #0b171066, transparent 45%);
+  }
 
   @media (max-width: 760px) {
+    position: relative;
     grid-column: 1;
     min-height: 0;
     border-left: 0;
     border-bottom: 1px solid ${LINE};
     aspect-ratio: 16 / 9;
+    img { object-position: ${props => props.$focus || 'center'}; }
+    &::after { background: linear-gradient(0deg, #101a15, transparent 35%); }
   }
 `;
 
 const PageNav = styled.nav`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  margin-top: 16px;
-  border: 1px solid ${LINE};
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  margin-top: 10px;
+  border: 2px solid #756442;
   background: ${PANEL};
+  box-shadow: 4px 4px 0 #080f0b;
 
   a {
     display: flex;
@@ -115,27 +162,35 @@ const PageNav = styled.nav`
     padding: 8px;
     border-bottom: 3px solid transparent;
     color: #c4cebd;
-    font-size: 0.92rem;
+    font-size: 1rem;
     font-weight: 700;
   }
   a + a { border-left: 1px solid ${LINE}; }
-  a[aria-current="page"] { background: #243728; border-bottom-color: ${FOREVER_ACCENT}; color: #f2eddd; }
-  a:hover { background: #2b3d2e; color: #f2eddd; }
+  a[aria-current="page"] { background: #34432a; border-bottom-color: #d4b16e; color: #ffe3a6; box-shadow: inset 0 2px #637447; }
+  a:hover { background: #2b3d2e; color: #ffe3a6; }
+  @media (max-width: 760px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    a:first-child { grid-column: 1 / -1; }
+    a { border-top: 1px solid ${LINE}; }
+    a:nth-child(even) { border-left: 0; }
+  }
 `;
 
 const Eyebrow = styled.p`
-  color: ${FOREVER_ACCENT};
+  font-family: 'Galmuri11', sans-serif;
+  color: #b8d69d;
   font-size: 0.85rem;
   font-weight: 700;
 `;
 
 const Title = styled.h1`
   margin-top: 14px;
-  color: #f0d59b;
-  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
-  font-weight: 800;
-  line-height: 1.3;
+  color: #ffe0a1;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.5;
   word-break: keep-all;
+  @media (max-width: 760px) { font-size: 1.5rem; }
 `;
 
 const Lead = styled.p`
@@ -152,13 +207,14 @@ const Section = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-  padding: 0 0 14px 14px;
-  border-left: 3px solid #a98b54;
-  border-bottom: 1px solid ${LINE};
-  color: #f0d59b;
-  font-size: 1.3rem;
-  font-weight: 750;
-  line-height: 1.3;
+  padding: 14px 22px;
+  border: 2px solid #9b7d48;
+  background: ${PARCHMENT};
+  color: #2c2518;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  box-shadow: inset 2px 2px 0 #f3dca5, inset -2px -2px 0 #a08550, 4px 4px 0 #080f0b;
 `;
 
 const Facts = styled.dl`
@@ -166,7 +222,9 @@ const Facts = styled.dl`
   grid-template-columns: repeat(4, minmax(0, 1fr));
   margin-top: 24px;
   border: 1px solid ${LINE};
+  border-top-color: #8c784e;
   background: ${PANEL};
+  ${bronzeFrame}
 
   @media (max-width: 760px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -290,8 +348,9 @@ const NextCard = styled(Link)`
   align-items: center;
   padding: 12px 18px 12px 12px;
   border: 1px solid ${LINE};
-  border-left: 3px solid ${FOREVER_ACCENT};
+  border-left: 3px solid #a98b54;
   background: ${PANEL};
+  ${bronzeFrame}
 
   > div:not(:first-child) { display: grid; gap: 2px; min-width: 0; }
 
@@ -300,7 +359,7 @@ const NextCard = styled(Link)`
     gap: 12px;
   }
 
-  strong { color: #f2eddd; font-size: 0.98rem; }
+  strong { color: #f2eddd; font-family: 'Galmuri11', sans-serif; font-size: 1rem; }
   span { color: #b8c4af; font-size: 0.88rem; word-break: keep-all; }
   svg { color: ${FOREVER_ACCENT}; transition: transform 160ms ease; }
 
@@ -312,8 +371,8 @@ const Notice = styled.p`
   margin-top: 28px;
   padding: 14px 16px;
   border-left: 3px solid #a98b54;
-  background: ${PANEL};
-  color: #ccd5c6;
+  background: ${PARCHMENT};
+  color: #2c2518;
   font-size: 0.9rem;
   line-height: 1.7;
   word-break: keep-all;
@@ -321,6 +380,7 @@ const Notice = styled.p`
 
 // 시작하기: 여섯 단계를 한 줄로 먼저 보여 주는 띠. 누르면 그 단계로 내려간다.
 const StepStrip = styled.ol`
+  font-family: 'Galmuri11', sans-serif;
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   margin: 26px 0 0;
@@ -391,13 +451,15 @@ const StepArt = styled(Frame)`
 `;
 
 const StepNumber = styled.span`
+  font-family: 'Galmuri11', sans-serif;
   display: grid;
   place-items: center;
   width: 44px;
   height: 44px;
   border: 1px solid ${FOREVER_ACCENT};
-  background: #243728;
-  color: ${FOREVER_ACCENT};
+  box-shadow: inset 0 0 0 3px #101a15;
+  background: #34432a;
+  color: #ffe0a1;
   font-size: 1.05rem;
   font-weight: 800;
 
@@ -420,7 +482,8 @@ const StepBody = styled.div`
 const TableWrap = styled.div`
   max-width: 620px;
   overflow-x: auto;
-  border: 1px solid ${LINE};
+  background: ${PANEL};
+  ${bronzeFrame}
 `;
 
 const Table = styled.table`
@@ -428,9 +491,12 @@ const Table = styled.table`
   border-collapse: collapse;
   font-size: 1rem;
 
-  th, td { padding: 9px 12px; border-bottom: 1px solid ${LINE}; text-align: left; line-height: 1.45; word-break: keep-all; }
+  th, td { padding: 9px 18px; border-bottom: 1px solid ${LINE}; text-align: left; line-height: 1.45; word-break: keep-all; }
   tr:last-child th, tr:last-child td { border-bottom: 0; }
-  thead th { color: #acb9a6; font-size: 0.78rem; font-weight: 700; background: #243728; }
+  thead { background: ${PARCHMENT}; }
+  thead th { color: #2c2518; font-size: 0.82rem; font-weight: 800; padding-top: 14px; padding-bottom: 14px; }
+  tbody tr:nth-child(even) { background: #ffffff04; }
+  tbody tr:hover { background: #8dbb6c0c; }
   tbody th { color: #b8c4af; font-weight: 600; }
   td { color: #e8e9dc; }
   td:last-child { color: ${FOREVER_ACCENT}; font-weight: 650; }
@@ -548,6 +614,7 @@ const Picker = styled.ul`
   padding: 0;
   border: 1px solid ${LINE};
   background: ${PANEL};
+  ${bronzeFrame}
   list-style: none;
 
   li {
@@ -593,6 +660,7 @@ const RuleCard = styled.li`
   border-top: 2px solid ${props => (props.$later ? 'rgba(168, 178, 188, 0.3)' : FOREVER_ACCENT)};
   grid-column: ${props => (props.$later ? '1 / -1' : 'auto')};
   background: ${PANEL};
+  ${bronzeFrame}
 
   @media (max-width: 720px) {
     grid-template-columns: minmax(0, 1fr);
@@ -684,8 +752,11 @@ const CheckList = styled.ul`
 
 const SourceBox = styled.footer`
   margin-top: 48px;
-  padding-top: 14px;
-  border-top: 1px solid ${LINE};
+  padding: 22px;
+  border: 1px solid ${LINE};
+  border-top-color: #a98b54;
+  background: ${PANEL};
+  ${bronzeFrame}
 
   h2 { color: #acb9a6; font-size: 0.8rem; font-weight: 700; }
 
@@ -772,7 +843,7 @@ function Head({ title, lead, art }) {
     <>
       <Hero>
         <Banner $focus={art.focus}>
-          <Art art={art} sizes="(max-width: 760px) calc(100vw - 32px), 572px" eager />
+          <Art art={art} sizes="(max-width: 1072px) calc(100vw - 32px), 1040px" eager />
         </Banner>
         <HeroCopy>
           <Eyebrow>{FOREVER_NAME}</Eyebrow>
@@ -1037,21 +1108,33 @@ const SECTIONS = { home: HomeSection, start: StartSection, rules: RulesSection }
 const GuideContents = styled.nav`
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 20px;
+  gap: 8px;
   margin-top: 24px;
-  padding: 16px 0;
-  border-block: 1px solid ${LINE};
+  padding: 14px;
+  border: 1px solid ${LINE};
+  background: ${PANEL};
+  ${bronzeFrame}
 
-  a { color: ${FOREVER_ACCENT}; font-size: 0.88rem; line-height: 1.6; }
-  a:hover { color: #eef1f3; }
+  a { display: flex; align-items: center; min-height: 44px; padding: 6px 12px; border: 1px solid #6b6749; color: #d8dfc6; font-size: 0.88rem; line-height: 1.6; }
+  a:hover { background: #34432a; border-color: #d4b16e; color: #ffe3a6; }
 `;
 
 const GuideBlock = styled(Section)`
   scroll-margin-top: 78px;
 
-  > p { margin-top: 14px; color: #c3ccd1; line-height: 1.75; word-break: keep-all; }
-  > a { display: inline-flex; margin-top: 12px; color: #8f9aa2; font-size: 0.8rem; }
-  > a:hover { color: #eef1f3; }
+  > p { margin-top: 14px; color: #ccd5c6; line-height: 1.75; word-break: keep-all; }
+  > a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px; color: #b8c4af; font-size: 0.8rem; }
+  > a:hover { color: #ffe3a6; }
+`;
+
+const GuideIntro = styled.div`
+  display: grid;
+  grid-template-columns: ${props => props.$illustrated ? '280px minmax(0, 1fr)' : 'minmax(0, 1fr)'};
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 18px;
+  p { margin-top: 14px; color: #ccd5c6; line-height: 1.75; word-break: keep-all; }
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); }
 `;
 
 const GuideTableWrap = styled(TableWrap)`
@@ -1060,7 +1143,7 @@ const GuideTableWrap = styled(TableWrap)`
 
   table { min-width: 590px; }
   th:first-child { width: 26%; }
-  td:last-child { color: #c3ccd1; font-weight: 500; }
+  td:last-child { color: #ccd5c6; font-weight: 500; }
   &:focus-visible { outline: 2px solid ${FOREVER_ACCENT}; outline-offset: 3px; }
 `;
 
@@ -1073,8 +1156,13 @@ function GuideSection({ data }) {
       </GuideContents>
       {data.sections.map(block => (
         <GuideBlock key={block.id} id={block.id} aria-labelledby={`${block.id}-title`}>
-          <SectionTitle id={`${block.id}-title`}>{block.title}</SectionTitle>
-          {block.lead ? <p>{block.lead}</p> : null}
+          <GuideIntro $illustrated={Boolean(block.art)}>
+            {block.art ? <Frame $ratio={block.art.kind === 'square' ? '1 / 1' : '3 / 2'} $focus={block.art.focus}><Art art={block.art} sizes="(max-width: 760px) calc(100vw - 32px), 280px" /></Frame> : null}
+            <div>
+              <SectionTitle id={`${block.id}-title`}>{block.title}</SectionTitle>
+              {block.lead ? <p>{block.lead}</p> : null}
+            </div>
+          </GuideIntro>
           {block.items ? (
             <TermList>
               {block.items.map(item => <div key={item.title}><dt>{item.title}</dt><dd>{item.body}</dd></div>)}
