@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { MemoryRouter } from 'react-router-dom';
 import ForeverPage from './ForeverPage.js';
 import Navigation from '../components/Navigation.js';
-import { foreverHome, foreverRules, foreverSources, foreverStart } from '../data/foreverGuide.js';
+import { FOREVER_ART_NOTE, foreverHome, foreverRules, foreverSources, foreverStart } from '../data/foreverGuide.js';
 import { getPageMeta, SITE_ORIGIN } from '../data/siteMeta.js';
 
 let container;
@@ -63,6 +63,31 @@ test('규칙·진영은 규칙 다섯 가지와 진영 제한, 같이 하기 조
   expect(container.textContent).toContain(foreverRules.factionNote);
   expect(container.querySelectorAll('section[aria-labelledby="forever-together"] li')).toHaveLength(foreverRules.together.length);
   expect(container.querySelectorAll('[aria-label="안 됩니다"]')).toHaveLength(2);
+});
+
+test('세 쪽 모두 대표 그림과 항목별 도트 그림을 설명과 함께 보여 준다', () => {
+  const pages = [
+    ['home', 1 + foreverHome.differences.length, foreverHome.next.length],
+    ['start', 1 + foreverStart.steps.length + foreverStart.basics.length + 1, 0],
+    ['rules', 1 + foreverRules.rules.length + 1, 0],
+  ];
+  for (const [section, described, decorative] of pages) {
+    render(<ForeverPage section={section} />, '/forever');
+    const images = [...container.querySelectorAll('img')];
+    expect(images.filter(image => image.alt)).toHaveLength(described);
+    expect(images.filter(image => !image.alt)).toHaveLength(decorative);
+    for (const image of images) {
+      expect(image.getAttribute('src')).toMatch(/^\/images\/forever\/[a-z0-9-]+-\d+\.webp$/);
+      expect(image.getAttribute('srcset')).toContain(image.getAttribute('src'));
+      expect(image.getAttribute('width')).not.toBeNull();
+    }
+    // 맨 위 대표 그림만 바로 받고 나머지는 보일 때 받는다.
+    expect(images[0].getAttribute('loading')).toBe('eager');
+    expect(images.slice(1).every(image => image.getAttribute('loading') === 'lazy')).toBe(true);
+    expect(container.querySelector('footer').textContent).toContain(FOREVER_ART_NOTE);
+  }
+  render(<ForeverPage section="rules" />, '/forever/rules');
+  expect(container.querySelector('section[aria-labelledby="forever-rule-list"] li img').alt).toBe(foreverRules.rules[0].art.alt);
 });
 
 test('토글은 리테일 화면에서 포에버 짝 페이지나 포에버 홈으로 보낸다', () => {

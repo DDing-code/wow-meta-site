@@ -20,7 +20,7 @@ function loadModule(file, names) {
 
 const guideSource = read('src/data/foreverGuide.js');
 const pageSource = read('src/pages/ForeverPage.js');
-const guide = loadModule('src/data/foreverGuide.js', ['foreverSources', 'foreverPages', 'foreverHome', 'foreverStart', 'foreverRules']);
+const guide = loadModule('src/data/foreverGuide.js', ['FOREVER_ART_NOTE', 'foreverSources', 'foreverPages', 'foreverHome', 'foreverStart', 'foreverRules']);
 const editions = loadModule('src/data/gameEditions.js', ['EDITIONS', 'FOREVER_ROOT', 'getEdition', 'getEditionSwitchPath']);
 
 // 1. 근거: 블리자드 한국어 공지만, 항목이 가리키는 근거 이름은 모두 있어야 한다.
@@ -56,6 +56,40 @@ assert.ok(guide.foreverRules.rules.find(rule => rule.name === '하드코어').ta
 assert.strictEqual(guide.foreverStart.steps.length, 6, '시작 단계는 여섯 개');
 assert.strictEqual(guide.foreverStart.steps.filter(step => step.presets).length, 1, '사전 설정 표는 한 단계에만');
 assert.strictEqual(guide.foreverStart.presets.rows.length, 6, '사전 설정 처음 설정 여섯 줄');
+
+// 2-1. 그림: 쪽마다 대표 그림, 항목마다 그림 하나. 파일(작은 판·큰 판)이 있고 설명(alt)이 있어야 한다.
+// 그림은 공식 아트·공지 스크린샷을 도트로 다시 그린 것이라, 실제 게임 화면이 아니라는 안내를 근거 아래에 함께 보여 준다.
+const ART_WIDTHS = { hero: [768, 1536], square: [512, 1024], scene: [640, 1280] };
+const artIds = new Set();
+function checkArt(where, art, { decorative = false } = {}) {
+  assert.ok(art && /^[a-z0-9-]+$/.test(art.id || ''), `${where}: 그림(art.id)이 없음`);
+  const widths = ART_WIDTHS[art.kind || 'scene'];
+  assert.ok(widths, `${where}: 모르는 그림 종류 '${art.kind}'`);
+  for (const width of widths) {
+    const file = `public/images/forever/${art.id}-${width}.webp`;
+    assert.ok(fs.existsSync(path.join(SITE_ROOT, file)), `${where}: 그림 파일이 없음 (${file})`);
+  }
+  if (decorative) assert.strictEqual(art.alt, '', `${where}: 글과 같은 내용을 되풀이하는 그림은 alt를 비운다`);
+  else assert.ok(typeof art.alt === 'string' && art.alt.length >= 8, `${where}: 그림 설명(alt)이 없음`);
+  if (!decorative) {
+    assert.ok(!artIds.has(art.id), `${where}: 같은 그림을 두 번 씀 (${art.id})`);
+    artIds.add(art.id);
+  }
+}
+checkArt('홈 대표 그림', guide.foreverHome.art);
+checkArt('시작하기 대표 그림', guide.foreverStart.art);
+checkArt('규칙·진영 대표 그림', guide.foreverRules.art);
+guide.foreverHome.differences.forEach(item => checkArt(`다른 점 '${item.topic}'`, item.art));
+guide.foreverHome.next.forEach(item => checkArt(`이어서 보기 '${item.title}'`, item.art, { decorative: true }));
+guide.foreverStart.steps.forEach(item => checkArt(`시작 단계 '${item.title}'`, item.art));
+guide.foreverStart.basics.forEach(item => checkArt(`처음 알아둘 것 '${item.title}'`, item.art));
+checkArt('첫 모험 팁', guide.foreverStart.tipsArt);
+guide.foreverRules.rules.forEach(item => checkArt(`규칙 '${item.name}'`, item.art));
+checkArt('친구와 같이 하려면', guide.foreverRules.togetherArt);
+assert.ok(/도트로 다시 그린/.test(guide.FOREVER_ART_NOTE) && /실제 게임 화면과 다릅니다/.test(guide.FOREVER_ART_NOTE), '그림 안내 문구(도트로 다시 그림·실제 화면과 다름)가 없음');
+assert.ok(pageSource.includes('{FOREVER_ART_NOTE}'), '근거 아래에 그림 안내 문구를 보여 주지 않음');
+const onDisk = fs.readdirSync(path.join(SITE_ROOT, 'public/images/forever')).filter(name => name.endsWith('.webp')).map(name => name.replace(/-\d+\.webp$/, ''));
+for (const id of new Set(onDisk)) assert.ok(artIds.has(id), `public/images/forever: 쓰지 않는 그림 (${id})`);
 
 // 3. 사이트 용어·금지어(가이드 용어 규칙과 내부 작업 표시 금지).
 for (const banned of ['우두머리', '졸개', '보스', '로테이션', '오프너', '신화+', '버스트', '임의 번역', '인벤']) {
@@ -103,4 +137,4 @@ assert.strictEqual(getEditionSwitchPath('/forever/rules', 'retail'), '/');
 assert.strictEqual(getEditionSwitchPath('/guide', 'retail'), '/guide');
 assert.strictEqual(getEditionSwitchPath('/forever/rules', 'forever'), '/forever/rules');
 
-console.log(`✅ 포에버 안내 ${guide.foreverPages.length}쪽·근거 ${sourceIds.length}개·토글 주소 규칙 확인`);
+console.log(`✅ 포에버 안내 ${guide.foreverPages.length}쪽·근거 ${sourceIds.length}개·그림 ${artIds.size}장·토글 주소 규칙 확인`);

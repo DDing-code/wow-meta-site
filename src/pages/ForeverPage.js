@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowRight, Check, ExternalLink, X } from 'lucide-react';
 import {
+  FOREVER_ART_NOTE,
   FOREVER_CHECKED_AT,
   FOREVER_NAME,
   foreverHome,
@@ -14,6 +15,7 @@ import {
 // 포에버 안내 세 장(/forever 한눈에 보기, /forever/start 시작하기, /forever/rules 규칙·진영).
 // 글은 src/data/foreverGuide.js에 있고 여기서는 그리기만 한다. 리테일 KB·스킬 자료는 읽지 않는다.
 // 사이트의 평면 디자인(발광·그림자·둥근 모서리 없음)을 따르고, 포에버 쪽 강조색만 초록으로 둔다.
+// 그림은 공식 아트·공지 스크린샷을 도트로 다시 그린 것(public/images/forever)이고, 글 자료의 art 항목이 어느 그림인지 정한다.
 
 export const FOREVER_ACCENT = '#8dbb6c';
 const LINE = 'rgba(168, 178, 188, 0.14)';
@@ -27,6 +29,33 @@ const Page = styled.div`
   @media (max-width: 560px) {
     width: calc(100% - 24px);
     padding-top: 22px;
+  }
+`;
+
+// 도트 그림 틀. 비율($ratio)에 맞춰 잘라 보이고, 남길 자리는 $focus로 정한다.
+const Frame = styled.div`
+  overflow: hidden;
+  aspect-ratio: ${props => props.$ratio || '3 / 2'};
+  border: 1px solid ${LINE};
+  background: #0b0f13;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: ${props => props.$focus || 'center'};
+  }
+`;
+
+// 쪽 맨 위 대표 그림.
+const Banner = styled(Frame)`
+  margin-bottom: 24px;
+  aspect-ratio: 11 / 5;
+
+  @media (max-width: 560px) {
+    margin-bottom: 18px;
+    aspect-ratio: 16 / 9;
   }
 `;
 
@@ -107,26 +136,41 @@ const DiffList = styled.ul`
 
 const DiffRow = styled.li`
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr) minmax(0, 0.82fr);
+  grid-template-columns: 250px minmax(0, 1fr) minmax(0, 0.78fr);
   gap: 22px;
+  align-items: start;
   padding: 18px 0;
   border-bottom: 1px solid ${LINE};
 
   h3 {
     color: ${FOREVER_ACCENT};
-    font-size: 0.96rem;
+    font-size: 1rem;
     font-weight: 750;
     line-height: 1.5;
   }
 
   p { font-size: 0.94rem; line-height: 1.7; word-break: keep-all; }
-  p:first-of-type { color: #e7ebed; }
 
   @media (max-width: 820px) {
     grid-template-columns: minmax(0, 1fr);
-    gap: 6px;
-    padding: 16px 0;
+    gap: 10px;
+    padding: 18px 0;
   }
+`;
+
+const DiffArt = styled(Frame)`
+  @media (max-width: 820px) {
+    aspect-ratio: 16 / 9;
+  }
+`;
+
+const DiffMain = styled.div`
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  min-width: 0;
+
+  p { color: #e7ebed; }
 `;
 
 const Aside = styled.div`
@@ -139,7 +183,7 @@ const Aside = styled.div`
   p { color: #aeb8be; }
 
   @media (max-width: 820px) {
-    margin-top: 4px;
+    margin-top: 2px;
   }
 `;
 
@@ -170,15 +214,21 @@ const NextGrid = styled.div`
 
 const NextCard = styled(Link)`
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 14px;
+  grid-template-columns: 132px minmax(0, 1fr) auto;
+  gap: 16px;
   align-items: center;
-  padding: 16px 18px;
+  padding: 12px 18px 12px 12px;
   border: 1px solid rgba(168, 178, 188, 0.18);
   border-left: 3px solid ${FOREVER_ACCENT};
   background: ${PANEL};
 
-  > div { display: grid; gap: 2px; min-width: 0; }
+  > div:not(:first-child) { display: grid; gap: 2px; min-width: 0; }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 96px minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+
   strong { color: #eef1f3; font-size: 0.98rem; }
   span { color: #aeb8be; font-size: 0.88rem; word-break: keep-all; }
   svg { color: ${FOREVER_ACCENT}; transition: transform 160ms ease; }
@@ -241,15 +291,30 @@ const Steps = styled.ol`
 
 const Step = styled.li`
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr);
-  gap: 16px;
+  grid-template-columns: 44px minmax(0, 1fr) 290px;
+  gap: 16px 20px;
+  align-items: start;
   padding: 22px 0;
   border-bottom: 1px solid ${LINE};
   scroll-margin-top: 78px;
 
+  @media (max-width: 860px) {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 14px 16px;
+  }
+
   @media (max-width: 560px) {
     grid-template-columns: 34px minmax(0, 1fr);
     gap: 12px;
+  }
+`;
+
+// 좁은 화면에서는 그림이 글 아래로 내려간다(번호 칸은 비운다).
+const StepArt = styled(Frame)`
+  @media (max-width: 860px) {
+    grid-column: 2;
+    max-width: 520px;
+    aspect-ratio: 16 / 9;
   }
 `;
 
@@ -354,10 +419,48 @@ const TermList = styled.dl`
   }
 `;
 
+const BasicList = styled.ul`
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: grid;
+    grid-template-columns: 120px 150px minmax(0, 1fr);
+    gap: 4px 18px;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid ${LINE};
+  }
+
+  h3 { color: #eef1f3; font-size: 0.96rem; font-weight: 700; line-height: 1.6; word-break: keep-all; }
+  p { max-width: 74ch; color: #c3ccd1; font-size: 0.94rem; line-height: 1.7; word-break: keep-all; }
+
+  @media (max-width: 640px) {
+    li { grid-template-columns: 84px minmax(0, 1fr); gap: 2px 14px; align-items: start; }
+    li > div { grid-row: 1 / span 2; }
+  }
+`;
+
+const TipsRow = styled.div`
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 24px;
+  align-items: center;
+  margin-top: 16px;
+
+  @media (max-width: 820px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+
+    > div { order: -1; aspect-ratio: 16 / 9; }
+  }
+`;
+
 const Tips = styled.ol`
   display: grid;
   gap: 8px;
-  margin: 16px 0 0;
+  margin: 0;
   padding: 0 0 0 22px;
   color: #c3ccd1;
   font-size: 0.94rem;
@@ -410,14 +513,17 @@ const RuleGrid = styled.ul`
 
 const RuleCard = styled.li`
   display: grid;
+  /* 아직 고를 수 없는 규칙(하드코어)은 맨 아래 한 줄을 다 쓰고, 그림을 왼쪽에 둔다. */
+  grid-template-columns: ${props => (props.$later ? 'minmax(0, 1fr) minmax(0, 1fr)' : 'minmax(0, 1fr)')};
   align-content: start;
-  gap: 8px;
-  padding: 16px 18px;
   border: 1px solid ${LINE};
   border-top: 2px solid ${props => (props.$later ? 'rgba(168, 178, 188, 0.3)' : FOREVER_ACCENT)};
-  /* 아직 고를 수 없는 규칙(하드코어)은 맨 아래 한 줄을 다 쓴다. */
   grid-column: ${props => (props.$later ? '1 / -1' : 'auto')};
   background: ${PANEL};
+
+  @media (max-width: 720px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
 
   h3 {
     display: flex;
@@ -432,6 +538,35 @@ const RuleCard = styled.li`
 
   h3 small { color: #8f9aa2; font-size: 0.78rem; font-weight: 650; }
   p { color: #c3ccd1; font-size: 0.92rem; line-height: 1.7; word-break: keep-all; }
+`;
+
+const RuleArt = styled(Frame)`
+  aspect-ratio: 2 / 1;
+  border: 0;
+  border-bottom: 1px solid ${LINE};
+  /* 아직 열리지 않은 규칙은 그림 색을 조금 뺀다. */
+  filter: ${props => (props.$later ? 'saturate(0.7)' : 'none')};
+
+  @media (min-width: 721px) {
+    border-bottom-width: ${props => (props.$later ? 0 : '1px')};
+    border-right: ${props => (props.$later ? `1px solid ${LINE}` : 0)};
+  }
+`;
+
+const RuleText = styled.div`
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 16px 18px;
+`;
+
+const TogetherArt = styled(Frame)`
+  margin-top: 16px;
+  aspect-ratio: 2 / 1;
+
+  @media (max-width: 560px) {
+    aspect-ratio: 16 / 9;
+  }
 `;
 
 const FactionLine = styled.p`
@@ -503,7 +638,28 @@ const SourceBox = styled.footer`
   a:hover { color: #eef1f3; }
   a svg { flex: 0 0 auto; align-self: center; }
   time { color: #6f7b83; font-size: 0.78rem; white-space: nowrap; }
+  p { margin-top: 10px; color: #8f9aa2; font-size: 0.8rem; line-height: 1.6; word-break: keep-all; }
 `;
+
+const ART_PATH = '/images/forever';
+const ART_WIDTHS = { hero: [768, 1536], square: [512, 1024], scene: [640, 1280] };
+
+// 도트 그림 한 장. 작은 판과 큰 판을 함께 알려 주고 화면 폭에 맞는 쪽을 받게 한다.
+function Art({ art, sizes, eager = false }) {
+  const [small, large] = ART_WIDTHS[art.kind || 'scene'];
+  return (
+    <img
+      src={`${ART_PATH}/${art.id}-${small}.webp`}
+      srcSet={`${ART_PATH}/${art.id}-${small}.webp ${small}w, ${ART_PATH}/${art.id}-${large}.webp ${large}w`}
+      sizes={sizes}
+      alt={art.alt}
+      width={large}
+      height={art.kind === 'square' ? large : Math.round((large * 2) / 3)}
+      loading={eager ? 'eager' : 'lazy'}
+      decoding="async"
+    />
+  );
+}
 
 function collectSources(...groups) {
   const ids = [];
@@ -533,13 +689,17 @@ function Sources({ ids }) {
           );
         })}
       </ul>
+      <p>{FOREVER_ART_NOTE}</p>
     </SourceBox>
   );
 }
 
-function Head({ title, lead }) {
+function Head({ title, lead, art }) {
   return (
     <header>
+      <Banner $focus={art.focus}>
+        <Art art={art} sizes="(max-width: 1072px) calc(100vw - 32px), 1040px" eager />
+      </Banner>
       <Eyebrow>{FOREVER_NAME}</Eyebrow>
       <Title>{title}</Title>
       <Lead>{lead}</Lead>
@@ -551,7 +711,7 @@ function HomeSection() {
   const data = foreverHome;
   return (
     <>
-      <Head title={data.title} lead={data.lead} />
+      <Head title={data.title} lead={data.lead} art={data.art} />
       <Facts>
         {data.facts.map(fact => (
           <Fact key={fact.label}>
@@ -567,8 +727,13 @@ function HomeSection() {
         <DiffList>
           {data.differences.map(item => (
             <DiffRow key={item.topic}>
-              <h3>{item.topic}</h3>
-              <p>{item.forever}</p>
+              <DiffArt $focus={item.art.focus}>
+                <Art art={item.art} sizes="(max-width: 820px) calc(100vw - 32px), 250px" />
+              </DiffArt>
+              <DiffMain>
+                <h3>{item.topic}</h3>
+                <p>{item.forever}</p>
+              </DiffMain>
               <Aside>
                 <p>{item.note}</p>
                 {item.link ? (
@@ -588,6 +753,9 @@ function HomeSection() {
         <NextGrid>
           {data.next.map(item => (
             <NextCard key={item.path} to={item.path}>
+              <Frame>
+                <Art art={item.art} sizes="132px" />
+              </Frame>
               <div>
                 <strong>{item.title}</strong>
                 <span>{item.body}</span>
@@ -608,7 +776,7 @@ function StartSection() {
   const data = foreverStart;
   return (
     <>
-      <Head title={data.title} lead={data.lead} />
+      <Head title={data.title} lead={data.lead} art={data.art} />
       <StepStrip aria-label="시작 여섯 단계">
         {data.steps.map((step, index) => (
           <li key={step.short}>
@@ -653,6 +821,9 @@ function StartSection() {
                   </TextLink>
                 ) : null}
               </StepBody>
+              <StepArt $focus={step.art.focus}>
+                <Art art={step.art} sizes="(max-width: 860px) min(520px, calc(100vw - 80px)), 290px" />
+              </StepArt>
             </Step>
           ))}
         </Steps>
@@ -668,21 +839,29 @@ function StartSection() {
             </li>
           ))}
         </KeyGrid>
-        <TermList>
+        <BasicList>
           {data.basics.map(item => (
-            <div key={item.title}>
-              <dt>{item.title}</dt>
-              <dd>{item.body}</dd>
-            </div>
+            <li key={item.title}>
+              <Frame $ratio="1 / 1">
+                <Art art={item.art} sizes="120px" />
+              </Frame>
+              <h3>{item.title}</h3>
+              <p>{item.body}</p>
+            </li>
           ))}
-        </TermList>
+        </BasicList>
       </Section>
 
       <Section aria-labelledby="forever-tips">
         <SectionTitle id="forever-tips">{data.tipsTitle}</SectionTitle>
-        <Tips>
-          {data.tips.map(tip => <li key={tip}>{tip}</li>)}
-        </Tips>
+        <TipsRow>
+          <Tips>
+            {data.tips.map(tip => <li key={tip}>{tip}</li>)}
+          </Tips>
+          <Frame $focus={data.tipsArt.focus}>
+            <Art art={data.tipsArt} sizes="(max-width: 820px) calc(100vw - 32px), 330px" />
+          </Frame>
+        </TipsRow>
       </Section>
 
       <Sources ids={collectSources(data.steps, data.basicsSources)} />
@@ -694,7 +873,7 @@ function RulesSection() {
   const data = foreverRules;
   return (
     <>
-      <Head title={data.title} lead={data.lead} />
+      <Head title={data.title} lead={data.lead} art={data.art} />
 
       <Section aria-labelledby="forever-picker">
         <SectionTitle id="forever-picker">{data.pickerTitle}</SectionTitle>
@@ -717,15 +896,20 @@ function RulesSection() {
         <RuleGrid>
           {data.rules.map(rule => (
             <RuleCard key={rule.name} $later={Boolean(rule.tag)}>
-              <h3>
-                {rule.name}
-                {rule.tag ? <small>{rule.tag}</small> : null}
-              </h3>
-              <p>{rule.body}</p>
-              <FactionLine>
-                <span>진영</span>
-                {rule.faction}
-              </FactionLine>
+              <RuleArt $later={Boolean(rule.tag)} $focus={rule.art.focus}>
+                <Art art={rule.art} sizes="(max-width: 720px) calc(100vw - 32px), 520px" />
+              </RuleArt>
+              <RuleText>
+                <h3>
+                  {rule.name}
+                  {rule.tag ? <small>{rule.tag}</small> : null}
+                </h3>
+                <p>{rule.body}</p>
+                <FactionLine>
+                  <span>진영</span>
+                  {rule.faction}
+                </FactionLine>
+              </RuleText>
             </RuleCard>
           ))}
         </RuleGrid>
@@ -734,6 +918,9 @@ function RulesSection() {
 
       <Section aria-labelledby="forever-together">
         <SectionTitle id="forever-together">{data.togetherTitle}</SectionTitle>
+        <TogetherArt $focus={data.togetherArt.focus}>
+          <Art art={data.togetherArt} sizes="(max-width: 1072px) calc(100vw - 32px), 1040px" />
+        </TogetherArt>
         <CheckList>
           {data.together.map(item => (
             <li key={item.text}>
