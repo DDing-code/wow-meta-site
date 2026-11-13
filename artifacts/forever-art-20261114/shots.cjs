@@ -24,7 +24,7 @@ const SHOT_WIDTHS = [1440, 768, 390];
     page.on('console', message => { if (message.type() === 'error') errors.push(`${width} ${message.text()}`); });
     page.on('pageerror', error => errors.push(`${width} ${error.message}`));
     for (const [id, route] of PAGES) {
-      await page.goto(base + route, { waitUntil: 'networkidle' });
+      await page.goto(base + route, { waitUntil: 'load', timeout: 60000 });
       await page.waitForSelector(`[data-forever-section="${id}"] h1`);
       // 보일 때 받는 그림까지 모두 받게 끝까지 내렸다가 올라온다.
       await page.evaluate(async () => {

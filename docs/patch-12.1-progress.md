@@ -1398,3 +1398,13 @@ Devourer Demon Hunter, Arcane Mage, Balance Druid, Devastation Evoker, Mistweave
 - 검사: `npm run validate:forever`(근거 주소·확인한 사실·금지어·리테일 자료 분리·주소 연결·토글 규칙)를 `validate`·`prebuild`에 넣었다. `src/pages/ForeverPage.test.js` 8개, 전체 검증 14단계 통과. 검색 제목 세 개와 사이트맵(86개 주소)을 더했다.
 - 배포: 사이트 `ea85290c`. 다른 작업의 미커밋 변경(사격 견본)이 있어 커밋된 판만 `git archive`로 꺼내 빌드했다(`artifacts/forever-20261114/release`, `main.0ff4ed59.js`, 820개 파일, 소스맵 403). `vercel deploy --prebuilt --prod`로 올렸고 운영 번들 SHA-256이 로컬과 같다. 운영 주소에서 `artifacts/forever-20261114/shots.cjs`(포에버 21화면·리테일 메뉴 12폭·토글 이동 7건, 캡처 `live/`) 통과.
 - 남은 결정: 포에버 다음 단계(레벨별 지역·던전, 유산·캠핑, 직업별 달라진 점, 레이드 입장 준비)와 영상, 포에버 KB 위치, 소식 탭 알림, 리테일 홈에 포에버 안내 줄을 둘지.
+
+## 2026-11-14 포에버 세 쪽에 도트 그림 29장
+
+- 요청: "이미지(공식 아트 픽셀아트로 재창조해서) 많이 넣어줘". 대상은 직전에 만든 포에버 세 쪽(`/forever`, `/forever/start`, `/forever/rules`)으로 잡았다. 리테일 페이지는 건드리지 않았다.
+- 그림: 블리자드 한국어 공지 여섯 편에 실린 공식 아트·스크린샷을 참고 그림으로 붙여 codex 그림 생성으로 도트 그림 29장을 만들었다(쪽마다 대표 그림 1장, 다른 점 8장, 시작 단계 6장, 처음 알아둘 것 5장, 팁 1장, 규칙 5장, 친구와 같이 1장). 공식 그림을 그대로 다시 그린 것이 14장, 공식 그림이 없어 새로 그린 장면이 15장이다. 글자·로고는 넣지 않았다.
+- 다시 그린 5장: 규칙 선택 화면(원본에 없는 두건 쓴 사람 제거), 직업(배경의 판다리아풍 건물 제거), 계정·이용권과 규칙 이정표(한쪽 진영 문장 제거), 롤플레이 PvP(두 진영이 한 천막에 있던 것을 한 진영으로).
+- 화면: `foreverGuide.js`의 `art`(id·alt·focus)가 그림을 정하고 `ForeverPage.js`가 그린다. 대표 그림은 11:5 띠, 다른 점은 왼쪽 250px, 단계는 오른쪽 290px, 규칙 카드는 위쪽 2:1. 좁은 화면에서는 글 위·아래로 내려간다. 근거 아래에 "실제 게임 화면과 다릅니다" 안내를 넣었다.
+- 파일: `public/images/forever/` webp 58개(그림마다 작은 판·큰 판, 합계 11MB, 맨 위 그림만 바로 받고 나머지는 보일 때 받는다). 도구는 `artifacts/forever-art-20261114/`의 `gen.py`(생성, `--force <이름>`), `build.py`(변환·모음 `sheet.jpg`), `shots.cjs`(화면 확인). 원본은 `raw/`, 참고한 공식 그림은 `ref/`(커밋하지 않음).
+- 검사: `validate:forever`에 그림 파일·alt·안 쓰는 그림 검사를 더했다. `ForeverPage.test.js` 9개, 전체 검증 14단계 통과.
+- 배포: 사이트 `4c24c99f`. 커밋된 판만 `git archive`로 꺼내 빌드했다(`main.3d7955da.js`, 878개 파일, 소스맵 403). `vercel deploy --prebuilt --prod` 뒤 운영 번들·그림 SHA-256이 로컬과 같고, 운영 주소에서 `shots.cjs`(세 쪽 × 14폭, 깨진 그림·가로 넘침·콘솔 오류 없음, 캡처 `live/`) 통과.
