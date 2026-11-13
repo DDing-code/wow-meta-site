@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowRight, Check, ExternalLink, X } from 'lucide-react';
 import {
@@ -7,6 +7,7 @@ import {
   FOREVER_CHECKED_AT,
   FOREVER_NAME,
   foreverHome,
+  foreverPages,
   foreverRules,
   foreverSources,
   foreverStart,
@@ -14,17 +15,31 @@ import {
 
 // 포에버 안내 세 장(/forever 한눈에 보기, /forever/start 시작하기, /forever/rules 규칙·진영).
 // 글은 src/data/foreverGuide.js에 있고 여기서는 그리기만 한다. 리테일 KB·스킬 자료는 읽지 않는다.
-// 사이트의 평면 디자인(발광·그림자·둥근 모서리 없음)을 따르고, 포에버 쪽 강조색만 초록으로 둔다.
+// 숲빛 바탕·금색 제목·초록 이동 표시로 포에버 안내를 구분한다.
 // 그림은 공식 아트·공지 스크린샷을 도트로 다시 그린 것(public/images/forever)이고, 글 자료의 art 항목이 어느 그림인지 정한다.
 
 export const FOREVER_ACCENT = '#8dbb6c';
-const LINE = 'rgba(168, 178, 188, 0.14)';
-const PANEL = 'rgba(13, 18, 22, 0.62)';
+const LINE = '#364438';
+const PANEL = '#16231c';
+
+const Surface = styled.div`
+  background: #101a15;
+  color: #e8e9dc;
+  min-height: calc(100vh - 59px);
+
+  a:focus-visible { outline: 2px solid #e4c78b; outline-offset: 4px; }
+  ::selection { background: #e4c78b; color: #101a15; }
+  @media (prefers-reduced-motion: reduce) {
+    a, svg { transition: none; }
+    a:hover svg { transform: none; }
+  }
+`;
 
 const Page = styled.div`
   width: min(1040px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 34px 0 96px;
+  padding: 32px 0 80px;
+  overflow-wrap: anywhere;
 
   @media (max-width: 560px) {
     width: calc(100% - 24px);
@@ -37,7 +52,7 @@ const Frame = styled.div`
   overflow: hidden;
   aspect-ratio: ${props => props.$ratio || '3 / 2'};
   border: 1px solid ${LINE};
-  background: #0b0f13;
+  background: #101a15;
 
   img {
     display: block;
@@ -48,49 +63,99 @@ const Frame = styled.div`
   }
 `;
 
-// 쪽 맨 위 대표 그림.
-const Banner = styled(Frame)`
-  margin-bottom: 24px;
-  aspect-ratio: 11 / 5;
+const Hero = styled.header`
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: center;
+  border: 1px solid ${LINE};
+  border-top: 3px solid #a98b54;
+  background: ${PANEL};
 
-  @media (max-width: 560px) {
-    margin-bottom: 18px;
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); }
+`;
+
+const HeroCopy = styled.div`
+  grid-column: 1;
+  grid-row: 1;
+  padding: 32px;
+  @media (max-width: 760px) { grid-row: 2; padding: 24px 20px; }
+`;
+
+const Banner = styled(Frame)`
+  grid-column: 2;
+  grid-row: 1;
+  align-self: stretch;
+  border: 0;
+  border-left: 1px solid ${LINE};
+  aspect-ratio: auto;
+  min-height: 340px;
+
+  @media (max-width: 760px) {
+    grid-column: 1;
+    min-height: 0;
+    border-left: 0;
+    border-bottom: 1px solid ${LINE};
     aspect-ratio: 16 / 9;
   }
 `;
 
+const PageNav = styled.nav`
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 16px;
+  border: 1px solid ${LINE};
+  background: ${PANEL};
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 8px;
+    border-bottom: 3px solid transparent;
+    color: #c4cebd;
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+  a + a { border-left: 1px solid ${LINE}; }
+  a[aria-current="page"] { background: #243728; border-bottom-color: ${FOREVER_ACCENT}; color: #f2eddd; }
+  a:hover { background: #2b3d2e; color: #f2eddd; }
+`;
+
 const Eyebrow = styled.p`
   color: ${FOREVER_ACCENT};
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
 `;
 
 const Title = styled.h1`
-  margin-top: 6px;
-  color: #eef1f3;
-  font-size: clamp(1.7rem, 4.4vw, 2.3rem);
+  margin-top: 14px;
+  color: #f0d59b;
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
   font-weight: 800;
-  line-height: 1.25;
+  line-height: 1.3;
+  word-break: keep-all;
 `;
 
 const Lead = styled.p`
   max-width: 74ch;
-  margin-top: 12px;
-  color: #c3ccd1;
+  margin-top: 18px;
+  color: #ccd5c6;
   font-size: 1rem;
   line-height: 1.75;
   word-break: keep-all;
 `;
 
 const Section = styled.section`
-  margin-top: 40px;
+  margin-top: 48px;
 `;
 
 const SectionTitle = styled.h2`
-  padding-bottom: 10px;
+  padding: 0 0 14px 14px;
+  border-left: 3px solid #a98b54;
   border-bottom: 1px solid ${LINE};
-  color: #eef1f3;
-  font-size: 1.16rem;
+  color: #f0d59b;
+  font-size: 1.3rem;
   font-weight: 750;
   line-height: 1.3;
 `;
@@ -98,7 +163,7 @@ const SectionTitle = styled.h2`
 const Facts = styled.dl`
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin-top: 26px;
+  margin-top: 24px;
   border: 1px solid ${LINE};
   background: ${PANEL};
 
@@ -110,15 +175,15 @@ const Facts = styled.dl`
 const Fact = styled.div`
   display: grid;
   align-content: start;
-  gap: 2px;
-  padding: 16px 18px;
+  gap: 7px;
+  padding: 20px 18px;
   border-left: 1px solid ${LINE};
 
   &:first-child { border-left: 0; }
 
-  dt { color: #8f9aa2; font-size: 0.78rem; font-weight: 650; }
-  dd { color: #eef1f3; font-size: 1.12rem; font-weight: 750; line-height: 1.35; word-break: keep-all; }
-  dd + dd { color: #aeb8be; font-size: 0.84rem; font-weight: 500; }
+  dt { color: #acb9a6; font-size: 0.78rem; font-weight: 650; }
+  dd { color: #f2eddd; font-size: 1.12rem; font-weight: 750; line-height: 1.35; word-break: keep-all; }
+  dd + dd { color: #b8c4af; font-size: 0.84rem; font-weight: 500; }
 
   @media (max-width: 760px) {
     padding: 14px;
@@ -136,20 +201,20 @@ const DiffList = styled.ul`
 
 const DiffRow = styled.li`
   display: grid;
-  grid-template-columns: 250px minmax(0, 1fr) minmax(0, 0.78fr);
-  gap: 22px;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 12px 28px;
   align-items: start;
-  padding: 18px 0;
+  padding: 28px 0;
   border-bottom: 1px solid ${LINE};
 
   h3 {
     color: ${FOREVER_ACCENT};
-    font-size: 1rem;
+    font-size: 1.16rem;
     font-weight: 750;
     line-height: 1.5;
   }
 
-  p { font-size: 0.94rem; line-height: 1.7; word-break: keep-all; }
+  p { font-size: 1rem; line-height: 1.8; word-break: keep-all; }
 
   @media (max-width: 820px) {
     grid-template-columns: minmax(0, 1fr);
@@ -159,7 +224,9 @@ const DiffRow = styled.li`
 `;
 
 const DiffArt = styled(Frame)`
+  grid-row: span 2;
   @media (max-width: 820px) {
+    grid-row: auto;
     aspect-ratio: 16 / 9;
   }
 `;
@@ -167,10 +234,10 @@ const DiffArt = styled(Frame)`
 const DiffMain = styled.div`
   display: grid;
   align-content: start;
-  gap: 4px;
+  gap: 8px;
   min-width: 0;
 
-  p { color: #e7ebed; }
+  p { color: #e8e9dc; }
 `;
 
 const Aside = styled.div`
@@ -178,9 +245,9 @@ const Aside = styled.div`
   align-content: start;
   gap: 8px;
   padding-left: 14px;
-  border-left: 2px solid rgba(168, 178, 188, 0.2);
+  border-left: 2px solid ${LINE};
 
-  p { color: #aeb8be; }
+  p { color: #b8c4af; }
 
   @media (max-width: 820px) {
     margin-top: 2px;
@@ -193,10 +260,13 @@ const TextLink = styled(Link)`
   gap: 5px;
   justify-self: start;
   color: ${FOREVER_ACCENT};
-  font-size: 0.86rem;
+  min-height: 44px;
+  font-size: 1rem;
   font-weight: 700;
 
-  &:hover { color: #eef1f3; }
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  &:hover { color: #f2eddd; }
   &:hover svg { transform: translateX(3px); }
   svg { transition: transform 160ms ease; }
 `;
@@ -218,7 +288,7 @@ const NextCard = styled(Link)`
   gap: 16px;
   align-items: center;
   padding: 12px 18px 12px 12px;
-  border: 1px solid rgba(168, 178, 188, 0.18);
+  border: 1px solid ${LINE};
   border-left: 3px solid ${FOREVER_ACCENT};
   background: ${PANEL};
 
@@ -229,19 +299,20 @@ const NextCard = styled(Link)`
     gap: 12px;
   }
 
-  strong { color: #eef1f3; font-size: 0.98rem; }
-  span { color: #aeb8be; font-size: 0.88rem; word-break: keep-all; }
+  strong { color: #f2eddd; font-size: 0.98rem; }
+  span { color: #b8c4af; font-size: 0.88rem; word-break: keep-all; }
   svg { color: ${FOREVER_ACCENT}; transition: transform 160ms ease; }
 
-  &:hover { background: rgba(168, 178, 188, 0.045); }
+  &:hover { background: #243728; border-color: ${FOREVER_ACCENT}; }
   &:hover svg { transform: translateX(3px); }
 `;
 
 const Notice = styled.p`
   margin-top: 28px;
   padding: 14px 16px;
-  border: 1px solid ${LINE};
-  color: #c3ccd1;
+  border-left: 3px solid #a98b54;
+  background: ${PANEL};
+  color: #ccd5c6;
   font-size: 0.9rem;
   line-height: 1.7;
   word-break: keep-all;
@@ -265,14 +336,14 @@ const StepStrip = styled.ol`
     gap: 4px;
     height: 100%;
     padding: 12px 12px 13px;
-    color: #cdd4d8;
+    color: #d7dece;
     font-size: 0.86rem;
     font-weight: 650;
     line-height: 1.35;
     word-break: keep-all;
   }
 
-  a:hover { background: rgba(168, 178, 188, 0.06); color: #eef1f3; }
+  a:hover { background: #243728; color: #f2eddd; }
 
   b { color: ${FOREVER_ACCENT}; font-size: 0.74rem; font-weight: 750; }
 
@@ -294,7 +365,7 @@ const Step = styled.li`
   grid-template-columns: 44px minmax(0, 1fr) 290px;
   gap: 16px 20px;
   align-items: start;
-  padding: 22px 0;
+  padding: 30px 0;
   border-bottom: 1px solid ${LINE};
   scroll-margin-top: 78px;
 
@@ -324,6 +395,7 @@ const StepNumber = styled.span`
   width: 44px;
   height: 44px;
   border: 1px solid ${FOREVER_ACCENT};
+  background: #243728;
   color: ${FOREVER_ACCENT};
   font-size: 1.05rem;
   font-weight: 800;
@@ -340,8 +412,8 @@ const StepBody = styled.div`
   gap: 10px;
   min-width: 0;
 
-  h3 { color: #eef1f3; font-size: 1.04rem; font-weight: 750; line-height: 1.4; }
-  p { max-width: 74ch; color: #c3ccd1; font-size: 0.94rem; line-height: 1.75; word-break: keep-all; }
+  h3 { color: #f2eddd; font-size: 1.04rem; font-weight: 750; line-height: 1.4; }
+  p { max-width: 74ch; color: #ccd5c6; font-size: 1rem; line-height: 1.75; word-break: keep-all; }
 `;
 
 const TableWrap = styled.div`
@@ -353,13 +425,13 @@ const TableWrap = styled.div`
 const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.88rem;
+  font-size: 1rem;
 
   th, td { padding: 9px 12px; border-bottom: 1px solid ${LINE}; text-align: left; line-height: 1.45; word-break: keep-all; }
   tr:last-child th, tr:last-child td { border-bottom: 0; }
-  thead th { color: #8f9aa2; font-size: 0.78rem; font-weight: 700; background: rgba(168, 178, 188, 0.05); }
-  tbody th { color: #aeb8be; font-weight: 600; }
-  td { color: #e7ebed; }
+  thead th { color: #acb9a6; font-size: 0.78rem; font-weight: 700; background: #243728; }
+  tbody th { color: #b8c4af; font-weight: 600; }
+  td { color: #e8e9dc; }
   td:last-child { color: ${FOREVER_ACCENT}; font-weight: 650; }
 `;
 
@@ -378,7 +450,7 @@ const KeyGrid = styled.ul`
     padding: 12px;
     border: 1px solid ${LINE};
     background: ${PANEL};
-    color: #cdd4d8;
+    color: #d7dece;
     font-size: 0.84rem;
     line-height: 1.35;
     word-break: keep-all;
@@ -388,7 +460,7 @@ const KeyGrid = styled.ul`
     min-width: 30px;
     padding: 2px 8px;
     border: 1px solid rgba(168, 178, 188, 0.4);
-    color: #eef1f3;
+    color: #f2eddd;
     font-family: inherit;
     font-size: 0.9rem;
     font-weight: 750;
@@ -411,8 +483,8 @@ const TermList = styled.dl`
     border-bottom: 1px solid ${LINE};
   }
 
-  dt { color: #eef1f3; font-size: 0.94rem; font-weight: 700; line-height: 1.6; word-break: keep-all; }
-  dd { max-width: 74ch; color: #c3ccd1; font-size: 0.94rem; line-height: 1.7; word-break: keep-all; }
+  dt { color: #f2eddd; font-size: 1rem; font-weight: 700; line-height: 1.6; word-break: keep-all; }
+  dd { max-width: 74ch; color: #ccd5c6; font-size: 1rem; line-height: 1.7; word-break: keep-all; }
 
   @media (max-width: 640px) {
     > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
@@ -433,8 +505,8 @@ const BasicList = styled.ul`
     border-bottom: 1px solid ${LINE};
   }
 
-  h3 { color: #eef1f3; font-size: 0.96rem; font-weight: 700; line-height: 1.6; word-break: keep-all; }
-  p { max-width: 74ch; color: #c3ccd1; font-size: 0.94rem; line-height: 1.7; word-break: keep-all; }
+  h3 { color: #f2eddd; font-size: 0.96rem; font-weight: 700; line-height: 1.6; word-break: keep-all; }
+  p { max-width: 74ch; color: #ccd5c6; font-size: 1rem; line-height: 1.7; word-break: keep-all; }
 
   @media (max-width: 640px) {
     li { grid-template-columns: 84px minmax(0, 1fr); gap: 2px 14px; align-items: start; }
@@ -462,8 +534,8 @@ const Tips = styled.ol`
   gap: 8px;
   margin: 0;
   padding: 0 0 0 22px;
-  color: #c3ccd1;
-  font-size: 0.94rem;
+  color: #ccd5c6;
+  font-size: 1rem;
   line-height: 1.7;
 
   li::marker { color: ${FOREVER_ACCENT}; font-weight: 750; }
@@ -487,10 +559,10 @@ const Picker = styled.ul`
   }
 
   li:first-child { border-top: 0; }
-  li > span { color: #cdd4d8; font-size: 0.94rem; line-height: 1.5; word-break: keep-all; }
-  li > svg { color: #6f7b83; }
+  li > span { color: #d7dece; font-size: 1rem; line-height: 1.5; word-break: keep-all; }
+  li > svg { color: #acb9a6; }
   strong { color: ${FOREVER_ACCENT}; font-size: 1rem; font-weight: 800; }
-  em { margin-left: 8px; color: #8f9aa2; font-size: 0.8rem; font-style: normal; white-space: nowrap; }
+  em { margin-left: 8px; color: #acb9a6; font-size: 0.8rem; font-style: normal; white-space: nowrap; }
 
   @media (max-width: 560px) {
     li { grid-template-columns: minmax(0, 1fr); gap: 2px; padding: 12px 14px; }
@@ -530,14 +602,14 @@ const RuleCard = styled.li`
     flex-wrap: wrap;
     align-items: baseline;
     gap: 4px 10px;
-    color: #eef1f3;
+    color: #f2eddd;
     font-size: 1.06rem;
     font-weight: 780;
     line-height: 1.4;
   }
 
-  h3 small { color: #8f9aa2; font-size: 0.78rem; font-weight: 650; }
-  p { color: #c3ccd1; font-size: 0.92rem; line-height: 1.7; word-break: keep-all; }
+  h3 small { color: #acb9a6; font-size: 0.78rem; font-weight: 650; }
+  p { color: #ccd5c6; font-size: 1rem; line-height: 1.8; word-break: keep-all; }
 `;
 
 const RuleArt = styled(Frame)`
@@ -573,14 +645,14 @@ const FactionLine = styled.p`
   padding-top: 8px;
   border-top: 1px solid ${LINE};
 
-  && { color: #e7ebed; font-size: 0.86rem; font-weight: 650; }
-  span { margin-right: 8px; color: #8f9aa2; font-weight: 600; }
+  && { color: #e8e9dc; font-size: 0.86rem; font-weight: 650; }
+  span { margin-right: 8px; color: #acb9a6; font-weight: 600; }
 `;
 
 const FootNote = styled.p`
   max-width: 78ch;
   margin-top: 12px;
-  color: #aeb8be;
+  color: #b8c4af;
   font-size: 0.86rem;
   line-height: 1.7;
   word-break: keep-all;
@@ -600,8 +672,8 @@ const CheckList = styled.ul`
     align-items: start;
     padding: 12px 0;
     border-bottom: 1px solid ${LINE};
-    color: #e7ebed;
-    font-size: 0.94rem;
+    color: #e8e9dc;
+    font-size: 1rem;
     line-height: 1.6;
     word-break: keep-all;
   }
@@ -614,7 +686,7 @@ const SourceBox = styled.footer`
   padding-top: 14px;
   border-top: 1px solid ${LINE};
 
-  h2 { color: #8f9aa2; font-size: 0.8rem; font-weight: 700; }
+  h2 { color: #acb9a6; font-size: 0.8rem; font-weight: 700; }
 
   ul {
     display: grid;
@@ -629,16 +701,16 @@ const SourceBox = styled.footer`
     flex-wrap: wrap;
     align-items: baseline;
     gap: 0 6px;
-    color: #aeb8be;
+    color: #b8c4af;
     font-size: 0.84rem;
     line-height: 1.5;
     word-break: keep-all;
   }
 
-  a:hover { color: #eef1f3; }
+  a:hover { color: #f2eddd; }
   a svg { flex: 0 0 auto; align-self: center; }
-  time { color: #6f7b83; font-size: 0.78rem; white-space: nowrap; }
-  p { margin-top: 10px; color: #8f9aa2; font-size: 0.8rem; line-height: 1.6; word-break: keep-all; }
+  time { color: #acb9a6; font-size: 0.78rem; white-space: nowrap; }
+  p { margin-top: 10px; color: #acb9a6; font-size: 0.8rem; line-height: 1.6; word-break: keep-all; }
 `;
 
 const ART_PATH = '/images/forever';
@@ -696,14 +768,23 @@ function Sources({ ids }) {
 
 function Head({ title, lead, art }) {
   return (
-    <header>
-      <Banner $focus={art.focus}>
-        <Art art={art} sizes="(max-width: 1072px) calc(100vw - 32px), 1040px" eager />
-      </Banner>
-      <Eyebrow>{FOREVER_NAME}</Eyebrow>
-      <Title>{title}</Title>
-      <Lead>{lead}</Lead>
-    </header>
+    <>
+      <Hero>
+        <Banner $focus={art.focus}>
+          <Art art={art} sizes="(max-width: 760px) calc(100vw - 32px), 572px" eager />
+        </Banner>
+        <HeroCopy>
+          <Eyebrow>{FOREVER_NAME}</Eyebrow>
+          <Title>{title}</Title>
+          <Lead>{lead}</Lead>
+        </HeroCopy>
+      </Hero>
+      <PageNav aria-label="포에버 안내">
+        {foreverPages.map(page => (
+          <NavLink key={page.id} to={page.path} end>{page.label}</NavLink>
+        ))}
+      </PageNav>
+    </>
   );
 }
 
@@ -955,8 +1036,10 @@ const SECTIONS = { home: HomeSection, start: StartSection, rules: RulesSection }
 export default function ForeverPage({ section = 'home' }) {
   const Content = SECTIONS[section] || HomeSection;
   return (
-    <Page data-forever-section={section}>
-      <Content />
-    </Page>
+    <Surface>
+      <Page data-forever-section={section}>
+        <Content />
+      </Page>
+    </Surface>
   );
 }

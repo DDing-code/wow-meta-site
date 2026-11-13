@@ -131,3 +131,17 @@ test('포에버 세 쪽은 검색에 노출되는 제목과 대표 주소를 가
   expect(new Set(titles).size).toBe(3);
   expect(getPageMeta('/forever/unknown').index).toBe(false);
 });
+
+
+test('포에버 안내 메뉴는 현재 페이지를 표시하고 세 페이지를 연결한다', () => {
+  for (const [section, path] of [['home', '/forever'], ['start', '/forever/start'], ['rules', '/forever/rules']]) {
+    act(() => root.unmount());
+    root = createRoot(container);
+    render(<ForeverPage section={section} />, path);
+    const nav = container.querySelector('nav[aria-label="포에버 안내"]');
+    expect([...nav.querySelectorAll('a')].map(link => link.getAttribute('href')))
+      .toEqual(['/forever', '/forever/start', '/forever/rules']);
+    expect(nav.querySelectorAll('[aria-current="page"]')).toHaveLength(1);
+    expect(nav.querySelector('[aria-current="page"]').getAttribute('href')).toBe(path);
+  }
+});

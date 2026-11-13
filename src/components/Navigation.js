@@ -14,6 +14,15 @@ const Nav = styled.nav`
   border-bottom: 1px solid rgba(168, 178, 188, 0.14);
   background: rgba(9, 12, 15, 0.94);
   backdrop-filter: blur(12px);
+
+  &[data-edition="forever"] {
+    background: #101a15;
+    border-bottom-color: #364438;
+    #primary-navigation { background: #101a15; }
+    #primary-navigation a { color: #becab9; }
+    #primary-navigation a[aria-current="page"] { color: #f0d59b; }
+    #primary-navigation a:hover { color: #f2eddd; }
+  }
 `;
 
 const NavInner = styled.div`
@@ -227,7 +236,7 @@ function Navigation() {
   const home = EDITIONS.find(item => item.id === edition).home;
 
   return (
-    <Nav>
+    <Nav data-edition={edition}>
       <NavInner>
         <Left>
           <Brand to={home} onClick={() => setOpen(false)}>
