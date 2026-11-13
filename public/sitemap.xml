@@ -16,6 +16,25 @@
   <url><loc>https://wowmeta.vercel.app/forever/growth</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever/classes</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever/raids</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/warrior</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/paladin</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/hunter</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/rogue</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/priest</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/shaman</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/mage</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/warlock</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/druid</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/leveling/human</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/leveling/dwarf</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/leveling/gnome</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/leveling/night-elf</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/leveling/orc</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/leveling/troll</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/leveling/tauren</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/leveling/undead</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/leveling/skyborne-alliance</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/leveling/skyborne-horde</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/warrior/protection</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/paladin/protection</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/deathknight/blood</loc></url>

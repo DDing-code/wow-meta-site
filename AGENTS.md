@@ -33,7 +33,8 @@
 ## 포에버 (2026-11-14)
 
 - 사이트는 상단 토글 `[리테일 | 포에버]`로 게임 버전을 가른다. 버전은 저장하지 않고 주소로만 정한다(`/forever` 아래는 포에버, 나머지는 리테일). 규칙은 `src/data/gameEditions.js`에 있다: 짝이 있는 페이지(`/`↔`/forever`, `/beginner`↔`/forever/start`)는 짝으로, 없으면 그 버전의 홈으로 보낸다. 기존 리테일 주소는 바꾸지 않는다.
-- 포에버 글은 `src/data/foreverGuide.js`, 화면은 `src/pages/ForeverPage.js`, 포에버 메뉴는 `Navigation.js`의 `foreverNavItems`다. 근거는 블리자드 한국어 공지만 쓰고 항목마다 `sources`를 단다.
+- 포에버 글은 `src/data/foreverGuide.js`, 화면은 `src/pages/ForeverPage.js`, 포에버 메뉴는 `Navigation.js`의 `foreverNavItems`다. 공식 사실은 블리자드 한국어 공지로 확인한다. 직업별 특성·종족별 레벨업 안내는 실제 읽은 포에버 전용 외부 가이드도 추려 재구성한다(2026-11-14 사용자 요청). 항목마다 `sources`를 달고 추천·추정과 공식 사실을 구분한다. 읽지 못한 원문을 근거로 쓰지 않는다.
+- 직업별 상세는 `/forever/classes/<id>`, 종족별 상세는 `/forever/leveling/<id>`이며 `foreverDetailGuides`가 정본이다. 기존 일곱 쪽 메뉴는 유지하고 상위 목록에서 각 상세로 연결한다. 새 상세는 `siteMeta.js`의 `STATIC_PAGES`와 사이트맵에도 넣는다. 특성 표의 분야별 합계는 연결한 계산기 견본과 같아야 하며 `validate:forever`가 검사한다.
 - 포에버 자료를 리테일 KB(`08-직업별-Knowledge-Base`)·`kb-skills.json`·`kb-synergies.json`에 넣지 않는다. 리테일 KB는 주문 번호 하나로 색인해서 서로 덮어쓴다. 포에버 직업·스킬 자료를 만들 때는 KB를 따로 둘 자리부터 정한다.
 - 포에버 그림은 블리자드 공식 아트·공지 스크린샷을 도트로 다시 그린 것이다(2026-11-14 요청). 파일은 `public/images/forever/<id>-<폭>.webp`, 어느 그림을 어디에 쓰는지는 `foreverGuide.js`의 `art`(id·alt·focus)가 정한다. 새 그림은 `artifacts/forever-art-20261114/gen.py`에 지시문을 더해 만들고 `build.py`로 변환한다. 그림에 글자·로고를 넣지 않고, 근거 아래 '실제 게임 화면과 다릅니다' 안내(`FOREVER_ART_NOTE`)를 지우지 않는다. `validate:forever`가 파일·alt·안 쓰는 그림을 검사한다.
 - 포에버 페이지를 더하면 `App.js` 경로, `foreverPages`, `foreverNavItems`, `siteMeta.js`의 `STATIC_PAGES`, `npm run seo:sitemap`을 함께 고친다. 검사는 `npm run validate:forever`와 `src/pages/ForeverPage.test.js`, 화면 확인은 `artifacts/forever-20261114/shots.cjs`.

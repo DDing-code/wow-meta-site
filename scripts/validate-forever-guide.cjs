@@ -20,13 +20,13 @@ function loadModule(file, names) {
 
 const guideSource = read('src/data/foreverGuide.js');
 const pageSource = read('src/pages/ForeverPage.js');
-const guide = loadModule('src/data/foreverGuide.js', ['FOREVER_ART_NOTE', 'foreverSources', 'foreverPages', 'foreverHome', 'foreverStart', 'foreverRules', 'foreverGuides']);
+const guide = loadModule('src/data/foreverGuide.js', ['FOREVER_ART_NOTE', 'foreverSources', 'foreverPages', 'foreverHome', 'foreverStart', 'foreverRules', 'foreverGuides', 'foreverDetailGuides']);
 const editions = loadModule('src/data/gameEditions.js', ['EDITIONS', 'FOREVER_ROOT', 'getEdition', 'getEditionSwitchPath']);
 
 // 1. 근거: 블리자드 한국어 공지만, 항목이 가리키는 근거 이름은 모두 있어야 한다.
 const sourceIds = Object.keys(guide.foreverSources);
 for (const [id, source] of Object.entries(guide.foreverSources)) {
-  assert.ok(/^https:\/\/(worldofwarcraft\.blizzard\.com\/ko-kr\/news\/\d+|news\.blizzard\.com\/ko-kr\/article\/\d+\/)$/.test(source.url), `근거 ${id}: 블리자드 한국어 공지 주소가 아님 (${source.url})`);
+  assert.ok(/^https:\/\/(worldofwarcraft\.blizzard\.com\/ko-kr\/news\/\d+|news\.blizzard\.com\/ko-kr\/article\/\d+\/|forever-tavern\.com\/guides\/[a-z-]+\/|foreverdb\.net\/guide\/[a-z-]+)$/.test(source.url), `근거 ${id}: 허용한 포에버 근거 주소가 아님 (${source.url})`);
   assert.ok(source.label, `근거 ${id}: 제목 없음`);
 }
 const used = new Set();
@@ -44,20 +44,30 @@ checkSources('시작하기 처음 알아둘 것', guide.foreverStart.basicsSourc
 guide.foreverRules.rules.forEach(item => checkSources(`규칙 '${item.name}'`, item.sources));
 checkSources('친구와 같이 하려면', guide.foreverRules.togetherSources);
 checkSources('고른 뒤에 바꿀 수 있나요', guide.foreverRules.limitsSources);
-for (const [id, page] of Object.entries(guide.foreverGuides)) {
+const allGuides = { ...guide.foreverGuides, ...guide.foreverDetailGuides };
+for (const [id, page] of Object.entries(allGuides)) {
   assert.ok(page.title && page.lead && page.sections.length, `${id}: 빈 안내`);
   assert.strictEqual(new Set(page.sections.map(block => block.id)).size, page.sections.length, `${id}: 중복 목차`);
   page.sections.forEach(block => {
     checkSources(`${id}/${block.id}`, block.sources);
-    assert.ok(block.title && (block.items?.length || block.table?.rows.length), `${id}/${block.id}: 빈 본문`);
+    assert.ok(block.title && (block.items?.length || block.table?.rows.length || block.links?.length), `${id}/${block.id}: 빈 본문`);
     block.items?.forEach(item => assert.ok(item.title && item.body, `${id}/${block.id}: 빈 항목`));
     block.table?.rows.forEach(row => assert.ok(row.length === block.table.columns.length && row.every(Boolean), `${id}/${block.id}: 표 열 불일치·빈 칸`));
+    block.links?.forEach(link => {
+      assert.ok(link.label && (/^\/forever(?:\/|#|$)/.test(link.path) || /^https:\/\/(forever-tavern\.com|foreverdb\.net)\//.test(link.path)), `${id}/${block.id}: 잘못된 연결`);
+      if (link.path.startsWith('/forever/')) {
+        const [pathname, hash] = link.path.split('#');
+        const target = allGuides[pathname.slice('/forever/'.length)];
+        assert.ok(target, `${id}: 없는 포에버 가이드 연결 (${link.path})`);
+        if (hash) assert.ok(target.sections.some(section => section.id === hash), `${id}: 없는 목차 연결 (${link.path})`);
+      }
+    });
   });
 }
 for (const id of sourceIds) assert.ok(used.has(id), `근거 ${id}: 어느 항목도 쓰지 않음`);
 
 // 2. 공지에서 확인한 사실이 바뀌지 않게 붙잡아 둔다(고치려면 공지를 다시 확인한 뒤 여기와 함께 고친다).
-const text = JSON.stringify([guide.foreverHome, guide.foreverStart, guide.foreverRules, guide.foreverGuides]);
+const text = JSON.stringify([guide.foreverHome, guide.foreverStart, guide.foreverRules, allGuides]);
 for (const fact of ['2026년 11월 5일', '오전 8시(한국 시간)', '1~60레벨', '12월 10일', '지하 심굴 10인', '하이잘 정상 20인', '오닉시아의 둥지 40인', '비룡불꽃 아뮬렛', '16점', '언데드 성기사', '스카이본', '영웅 꾸러미']) {
   assert.ok(text.includes(fact), `공지에서 확인한 내용이 빠짐: ${fact}`);
 }
@@ -101,7 +111,7 @@ assert.ok(pageSource.includes('{FOREVER_ART_NOTE}'), '근거 아래에 그림 �
 const onDisk = fs.readdirSync(path.join(SITE_ROOT, 'public/images/forever')).filter(name => name.endsWith('.webp')).map(name => name.replace(/-\d+\.webp$/, ''));
 for (const id of new Set(onDisk)) assert.ok(artIds.has(id), `public/images/forever: 쓰지 않는 그림 (${id})`);
 // 새 안내 쪽은 이미 있는 도트 그림을 다시 쓴다.
-for (const [id, page] of Object.entries(guide.foreverGuides)) {
+for (const [id, page] of Object.entries(allGuides)) {
   assert.ok(artIds.has(page.art.id) && page.art.alt.length >= 8, `${id}: 기존 대표 그림·설명 누락`);
   for (const block of page.sections) {
     if (block.art) assert.ok(artIds.has(block.art.id) && block.art.alt.length >= 8, `${id}/${block.id}: 본문 그림·설명 누락`);
@@ -143,6 +153,27 @@ for (const page of guide.foreverPages) {
   assert.ok(siteMeta.includes(`'${page.path}': {`), `siteMeta.js STATIC_PAGES에 ${page.path}가 없음`);
 }
 const nav = read('src/components/Navigation.js');
+assert.strictEqual(Object.values(guide.foreverDetailGuides).filter(page => page.parent === 'classes').length, 9, '직업별 가이드 아홉 쪽');
+assert.strictEqual(Object.values(guide.foreverDetailGuides).filter(page => page.parent === 'leveling').length, 10, '종족별 가이드 열 쪽');
+assert.ok(app.includes('Object.keys(foreverDetailGuides).map'), '상세 가이드 주소 연결 누락');
+for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
+  assert.ok(siteMeta.includes(`'/forever/${id}': {`), `${id}: 검색 주소 누락`);
+  assert.ok(guide.foreverGuides[page.parent].sections.some(block => block.links?.some(link => link.path === `/forever/${id}`)), `${id}: 목록에서 찾을 수 없음`);
+  if (page.parent === 'classes') {
+    const block = page.sections.find(item => item.id === 'talents');
+    for (const [level, distribution, total] of block.table.rows) {
+      const points = distribution.split(' / ').map(Number);
+      assert.strictEqual(points.reduce((sum, n) => sum + n, 0), Number(level.replace('레벨', '')) - 9, `${id}/${level}: 기본 특성 점수`);
+      assert.strictEqual(Number(total.replace('점', '')), points.reduce((sum, n) => sum + n, 0));
+      const link = block.links.find(item => item.label.startsWith(level));
+      assert.ok(link, `${id}/${level}: 견본 연결 누락`);
+      const build = JSON.parse(Buffer.from(new URL(link.path).searchParams.get('build').slice(3), 'base64url').toString('utf8'));
+      assert.strictEqual(build.level, Number(level.replace('레벨', '')));
+      assert.strictEqual(build.legacy, 0);
+      assert.deepStrictEqual(build.talents.map(tree => tree.reduce((sum, [, n]) => sum + n, 0)), points, `${id}/${level}: 계산기와 배분 표 불일치`);
+    }
+  }
+}
 assert.ok(nav.includes('getEditionSwitchPath(location.pathname, item.id)') && nav.includes('aria-label="게임 버전"'), '상단 메뉴에 리테일/포에버 토글이 없음');
 for (const page of guide.foreverPages) assert.ok(nav.includes(`path: '${page.path}'`), `포에버 메뉴에 ${page.path}가 없음`);
 
@@ -163,4 +194,4 @@ assert.strictEqual(getEditionSwitchPath('/forever/rules', 'retail'), '/');
 assert.strictEqual(getEditionSwitchPath('/guide', 'retail'), '/guide');
 assert.strictEqual(getEditionSwitchPath('/forever/rules', 'forever'), '/forever/rules');
 
-console.log(`✅ 포에버 안내 ${guide.foreverPages.length}쪽·근거 ${sourceIds.length}개·그림 ${artIds.size}장·토글 주소 규칙 확인`);
+console.log(`✅ 포에버 안내 ${guide.foreverPages.length + Object.keys(guide.foreverDetailGuides).length}쪽·근거 ${sourceIds.length}개·그림 ${artIds.size}장·특성 배분·주소 규칙 확인`);

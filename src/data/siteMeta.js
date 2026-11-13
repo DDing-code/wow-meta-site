@@ -67,12 +67,88 @@ const STATIC_PAGES = {
     description: '작은 모닥불과 캠핑 설비 열 종류, 전문 기술 조건, 유산 해제와 점수 획득·캐릭터별 16점 투자, 하드코어 예외를 안내합니다.',
   },
   '/forever/classes': {
-    title: `와우 포에버 직업 선택 전에 | ${SITE_NAME}`,
-    description: '리테일과 다른 포에버 직업 선택 안내. 사냥꾼의 변화, 새 종족·직업 조합 여섯 가지와 스카이본의 진영·이용 조건을 정리했습니다.',
+    title: `와우 포에버 직업·특성 가이드 | ${SITE_NAME}`,
+    description: '포에버 아홉 직업의 레벨링 특성 경로와 레벨별 배분 견본, 장비·운용 요령과 종족 조합을 따로 찾아볼 수 있습니다.',
   },
   '/forever/raids': {
     title: `와우 포에버 첫 레이드 준비 | ${SITE_NAME}`,
     description: '12월 10일 개방하는 60레벨 레이드 세 곳의 인원·위치, 오닉시아의 둥지 진영별 비룡불꽃 아뮬렛 퀘스트와 출발 전 준비를 안내합니다.',
+  },
+  '/forever/classes/warrior': {
+    title: "포에버 전사 특성·레벨링 | wowmeta",
+    description: "방패를 든 보호 경로를 먼저 살펴보세요. 혼자 하는 퀘스트와 던전 탱킹을 같은 특성으로 이어 가기 좋은 견본입니다.",
+  },
+  '/forever/classes/paladin': {
+    title: "포에버 성기사 특성·레벨링 | wowmeta",
+    description: "일반적인 혼자 퀘스트에는 징벌, 정기적으로 던전 탱킹을 한다면 보호를 비교합니다. 두 경로 모두 마나를 얼마나 남기는지가 중요합니다.",
+  },
+  '/forever/classes/hunter': {
+    title: "포에버 사냥꾼 특성·레벨링 | wowmeta",
+    description: "소환수가 먼저 적을 붙잡고 자신은 거리를 두는 야수 경로를 기본 견본으로 삼았습니다. 소환수 관리와 보급이 레벨링의 일부입니다.",
+  },
+  '/forever/classes/rogue': {
+    title: "포에버 도적 특성·레벨링 | wowmeta",
+    description: "일상적인 혼자 퀘스트에는 전투 경로를, 은신과 전투 선택권을 더 중시한다면 잠행을 비교합니다. 손에 든 무기가 전투 방식에 맞아야 합니다.",
+  },
+  '/forever/classes/priest': {
+    title: "포에버 사제 특성·레벨링 | wowmeta",
+    description: "혼자 퀘스트하는 시간이 길다면 암흑, 던전 치유를 자주 섞는다면 수양을 비교합니다. 마법봉과 회복 주기가 초반 진행에 큰 영향을 줍니다.",
+  },
+  '/forever/classes/shaman': {
+    title: "포에버 주술사 특성·레벨링 | wowmeta",
+    description: "양손 무기를 쓰는 고양 경로를 혼자 퀘스트용 견본으로 정리했습니다. 모든 토템과 주문을 매번 쓰기보다 필요한 것만 고릅니다.",
+  },
+  '/forever/classes/mage': {
+    title: "포에버 마법사 특성·레벨링 | wowmeta",
+    description: "혼자 진행하는 첫 경로에는 단일 대상 냉기를 기본 견본으로 삼았습니다. 적과의 거리를 유지하고 회복 시간을 예측하는 쪽에 초점을 둡니다.",
+  },
+  '/forever/classes/warlock': {
+    title: "포에버 흑마법사 특성·레벨링 | wowmeta",
+    description: "일반적인 혼자 퀘스트는 지속 피해와 흡수를 활용하는 고통을, 소환수 생존과 방어를 더 중시하면 악마를 비교합니다.",
+  },
+  '/forever/classes/druid': {
+    title: "포에버 드루이드 특성·레벨링 | wowmeta",
+    description: "야성 한 경로에서 표범으로 퀘스트하고 곰으로 적 무리와 던전에 대응하는 견본입니다. 변신을 배우는 직업 퀘스트가 진행의 전환점입니다.",
+  },
+  '/forever/leveling/human': {
+    title: "포에버 인간 레벨업 길잡이 | wowmeta",
+    description: "얼라이언스 인간의 출발지부터 30레벨 안팎까지 이어 가는 지역 후보입니다. 시작 지역에서 훈련과 정비를 익힌 뒤 가까운 다음 지역으로 옮깁니다.",
+  },
+  '/forever/leveling/dwarf': {
+    title: "포에버 드워프 레벨업 길잡이 | wowmeta",
+    description: "얼라이언스 드워프의 출발지부터 30레벨 안팎까지 이어 가는 지역 후보입니다. 시작 지역에서 훈련과 정비를 익힌 뒤 가까운 다음 지역으로 옮깁니다.",
+  },
+  '/forever/leveling/gnome': {
+    title: "포에버 노움 레벨업 길잡이 | wowmeta",
+    description: "얼라이언스 노움의 출발지부터 30레벨 안팎까지 이어 가는 지역 후보입니다. 시작 지역에서 훈련과 정비를 익힌 뒤 가까운 다음 지역으로 옮깁니다.",
+  },
+  '/forever/leveling/night-elf': {
+    title: "포에버 나이트 엘프 레벨업 길잡이 | wowmeta",
+    description: "얼라이언스 나이트 엘프의 출발지부터 30레벨 안팎까지 이어 가는 지역 후보입니다. 시작 지역에서 훈련과 정비를 익힌 뒤 가까운 다음 지역으로 옮깁니다.",
+  },
+  '/forever/leveling/orc': {
+    title: "포에버 오크 레벨업 길잡이 | wowmeta",
+    description: "호드 오크의 출발지부터 30레벨 안팎까지 이어 가는 지역 후보입니다. 시작 지역에서 훈련과 정비를 익힌 뒤 가까운 다음 지역으로 옮깁니다.",
+  },
+  '/forever/leveling/troll': {
+    title: "포에버 트롤 레벨업 길잡이 | wowmeta",
+    description: "호드 트롤의 출발지부터 30레벨 안팎까지 이어 가는 지역 후보입니다. 시작 지역에서 훈련과 정비를 익힌 뒤 가까운 다음 지역으로 옮깁니다.",
+  },
+  '/forever/leveling/tauren': {
+    title: "포에버 타우렌 레벨업 길잡이 | wowmeta",
+    description: "호드 타우렌의 출발지부터 30레벨 안팎까지 이어 가는 지역 후보입니다. 시작 지역에서 훈련과 정비를 익힌 뒤 가까운 다음 지역으로 옮깁니다.",
+  },
+  '/forever/leveling/undead': {
+    title: "포에버 언데드 레벨업 길잡이 | wowmeta",
+    description: "호드 언데드의 출발지부터 30레벨 안팎까지 이어 가는 지역 후보입니다. 시작 지역에서 훈련과 정비를 익힌 뒤 가까운 다음 지역으로 옮깁니다.",
+  },
+  '/forever/leveling/skyborne-alliance': {
+    title: "포에버 고등 마법원 스카이본 레벨업 길잡이 | wowmeta",
+    description: "얼라이언스 고등 마법원 스카이본의 출발지부터 30레벨 안팎까지 이어 가는 지역 후보입니다. 두 진영 모두 제프라스 섬에서 시작합니다.",
+  },
+  '/forever/leveling/skyborne-horde': {
+    title: "포에버 바람구체자 스카이본 레벨업 길잡이 | wowmeta",
+    description: "호드 바람구체자 스카이본의 출발지부터 30레벨 안팎까지 이어 가는 지역 후보입니다. 두 진영 모두 제프라스 섬에서 시작합니다.",
   },
 };
 

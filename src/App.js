@@ -13,6 +13,7 @@ import MythicPlusGuidePage from './pages/MythicPlusGuidePage.js';
 import NewsPage from './pages/NewsPage.js';
 import MockupsPage from './pages/MockupsPage.js';
 import ForeverPage from './pages/ForeverPage.js';
+import { foreverDetailGuides } from './data/foreverGuide.js';
 import SpellDatabasePage from './pages/WoWSpellDatabasePage.js';
 import GuideDetailPage from './pages/GuideDetailPage.js';
 import PreservationLogReportPage, { VenomousDepthsComparisonPage } from './pages/PreservationLogReportPage.js';
@@ -158,6 +159,7 @@ function App() {
               <Route path="/forever/growth" element={<ForeverPage section="growth" />} />
               <Route path="/forever/classes" element={<ForeverPage section="classes" />} />
               <Route path="/forever/raids" element={<ForeverPage section="raids" />} />
+              {Object.keys(foreverDetailGuides).map(id => <Route key={id} path={`/forever/${id}`} element={<ForeverPage section={id} />} />)}
               <Route path="/forever/*" element={<Navigate to="/forever" replace />} />
               <Route path="/spells" element={<SpellDatabasePage />} />
               <Route path="/logs" element={<LogAnalysisPage />} />

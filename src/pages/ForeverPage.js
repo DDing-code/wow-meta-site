@@ -9,6 +9,7 @@ import {
   FOREVER_NAME,
   foreverHome,
   foreverGuides,
+  foreverDetailGuides,
   foreverPages,
   foreverRules,
   foreverSources,
@@ -818,7 +819,7 @@ function collectSources(...groups) {
 function Sources({ ids }) {
   return (
     <SourceBox>
-      <h2>근거 · 블리자드 한국어 공지 ({FOREVER_CHECKED_AT} 확인)</h2>
+      <h2>근거 · 공식 안내와 참고 가이드 ({FOREVER_CHECKED_AT} 확인)</h2>
       <ul>
         {ids.map(id => {
           const source = foreverSources[id];
@@ -853,7 +854,7 @@ function Head({ title, lead, art }) {
       </Hero>
       <PageNav aria-label="포에버 안내">
         {foreverPages.map(page => (
-          <NavLink key={page.id} to={page.path} end>{page.label}</NavLink>
+          <NavLink key={page.id} to={page.path} end={page.id === 'home'}>{page.label}</NavLink>
         ))}
       </PageNav>
     </>
@@ -1119,6 +1120,10 @@ const GuideContents = styled.nav`
   a:hover { background: #34432a; border-color: #d4b16e; color: #ffe3a6; }
 `;
 
+const GuideLinks = styled(GuideContents)`
+  a { overflow-wrap: anywhere; }
+`;
+
 const GuideBlock = styled(Section)`
   scroll-margin-top: 78px;
 
@@ -1151,6 +1156,7 @@ function GuideSection({ data }) {
   return (
     <>
       <Head title={data.title} lead={data.lead} art={data.art} />
+      {data.parent ? <GuideLinks aria-label="가이드 목록으로"><Link to={`/forever/${data.parent}`}>← {data.parent === 'classes' ? '직업별 특성 가이드' : '종족별 레벨업 가이드'} 목록</Link></GuideLinks> : null}
       <GuideContents aria-label="이 페이지 목차">
         {data.sections.map(block => <a key={block.id} href={`#${block.id}`}>{block.title}</a>)}
       </GuideContents>
@@ -1181,7 +1187,10 @@ function GuideSection({ data }) {
               </GuideTableWrap>
             </>
           ) : null}
-          <a href={foreverSources[block.sources[0]].url} target="_blank" rel="noopener noreferrer" aria-label={`${block.title} 공식 근거`}>블리자드 공식 안내 ↗</a>
+          {block.links ? <GuideLinks aria-label={`${block.title} 관련 안내`}>{block.links.map(link => link.path.startsWith('/')
+            ? <Link key={link.path} to={link.path}>{link.label}</Link>
+            : <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer">{link.label}</a>)}</GuideLinks> : null}
+          <a href={foreverSources[block.sources[0]].url} target="_blank" rel="noopener noreferrer" aria-label={`${block.title} 근거 원문`}>{foreverSources[block.sources[0]].label} ↗</a>
         </GuideBlock>
       ))}
       <Sources ids={collectSources(data.sections)} />
@@ -1191,7 +1200,7 @@ function GuideSection({ data }) {
 
 export default function ForeverPage({ section = 'home' }) {
   const Content = SECTIONS[section] || HomeSection;
-  const guide = foreverGuides[section];
+  const guide = foreverGuides[section] || foreverDetailGuides[section];
   return (
     <Surface>
       <Page data-forever-section={section}>

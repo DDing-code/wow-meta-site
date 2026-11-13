@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { MemoryRouter } from 'react-router-dom';
 import ForeverPage from './ForeverPage.js';
 import Navigation from '../components/Navigation.js';
-import { foreverGuides, foreverPages, foreverSources } from '../data/foreverGuide.js';
+import { foreverDetailGuides, foreverGuides, foreverPages, foreverSources } from '../data/foreverGuide.js';
 import { getPageMeta, SITE_ORIGIN } from '../data/siteMeta.js';
 
 test('새 안내 네 쪽은 모든 본문·표·목차·공식 근거와 검색 주소를 연결한다', () => {
@@ -40,6 +40,39 @@ test('새 안내 네 쪽은 모든 본문·표·목차·공식 근거와 검색 
         for (const source of block.sources) expect(container.querySelector(`footer a[href="${foreverSources[source].url}"]`)).not.toBeNull();
       }
       expect(getPageMeta(path)).toMatchObject({ index: true, canonical: `${SITE_ORIGIN}${path}` });
+      expect(container.querySelectorAll('a[href^="/guide/"]')).toHaveLength(0);
+    }
+  } finally {
+    act(() => root.unmount());
+    container.remove();
+  }
+});
+
+test('직업·종족 상세 가이드는 목록·특성 견본·원문·검색 주소를 연결한다', () => {
+  global.IS_REACT_ACT_ENVIRONMENT = true;
+  const container = document.createElement('div');
+  document.body.appendChild(container);
+  const root = createRoot(container);
+  try {
+    for (const [id, data] of Object.entries(foreverDetailGuides)) {
+      const path = `/forever/${id}`;
+      act(() => root.render(<MemoryRouter key={id} initialEntries={[path]} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}><Navigation /><ForeverPage section={id} /></MemoryRouter>));
+      expect(container.querySelector('h1').textContent).toBe(data.title);
+      expect(container.querySelector('nav[aria-label="가이드 목록으로"] a').getAttribute('href')).toBe(`/forever/${data.parent}`);
+      expect(container.querySelector('nav[aria-label="포에버 안내"] [aria-current="page"]').getAttribute('href')).toBe(`/forever/${data.parent}`);
+      expect(getPageMeta(path)).toMatchObject({ index: true, title: `${data.title} | wowmeta`, canonical: `${SITE_ORIGIN}${path}` });
+      for (const block of data.sections) {
+        const section = container.querySelector(`#${block.id}`);
+        expect(section.querySelector('h2').textContent).toBe(block.title);
+        expect(container.querySelector(`a[href="#${block.id}"]`)).not.toBeNull();
+        for (const link of block.links || []) {
+          const anchor = section.querySelector(`a[href="${link.path}"]`);
+          expect(anchor.textContent).toBe(link.label);
+          if (link.path.startsWith('https:')) expect(anchor.rel).toBe('noopener noreferrer');
+        }
+        if (block.table) expect(section.querySelectorAll('tbody tr')).toHaveLength(block.table.rows.length);
+        for (const source of block.sources) expect(container.querySelector(`footer a[href="${foreverSources[source].url}"]`)).not.toBeNull();
+      }
       expect(container.querySelectorAll('a[href^="/guide/"]')).toHaveLength(0);
     }
   } finally {
