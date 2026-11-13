@@ -7,6 +7,7 @@ import {
   FOREVER_CHECKED_AT,
   FOREVER_NAME,
   foreverHome,
+  foreverGuides,
   foreverPages,
   foreverRules,
   foreverSources,
@@ -101,7 +102,7 @@ const Banner = styled(Frame)`
 
 const PageNav = styled.nav`
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   margin-top: 16px;
   border: 1px solid ${LINE};
   background: ${PANEL};
@@ -1033,12 +1034,80 @@ function RulesSection() {
 
 const SECTIONS = { home: HomeSection, start: StartSection, rules: RulesSection };
 
+const GuideContents = styled.nav`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 24px;
+  padding: 16px 0;
+  border-block: 1px solid ${LINE};
+
+  a { color: ${FOREVER_ACCENT}; font-size: 0.88rem; line-height: 1.6; }
+  a:hover { color: #eef1f3; }
+`;
+
+const GuideBlock = styled(Section)`
+  scroll-margin-top: 78px;
+
+  > p { margin-top: 14px; color: #c3ccd1; line-height: 1.75; word-break: keep-all; }
+  > a { display: inline-flex; margin-top: 12px; color: #8f9aa2; font-size: 0.8rem; }
+  > a:hover { color: #eef1f3; }
+`;
+
+const GuideTableWrap = styled(TableWrap)`
+  max-width: 100%;
+  margin-top: 16px;
+
+  table { min-width: 590px; }
+  th:first-child { width: 26%; }
+  td:last-child { color: #c3ccd1; font-weight: 500; }
+  &:focus-visible { outline: 2px solid ${FOREVER_ACCENT}; outline-offset: 3px; }
+`;
+
+function GuideSection({ data }) {
+  return (
+    <>
+      <Head title={data.title} lead={data.lead} art={data.art} />
+      <GuideContents aria-label="이 페이지 목차">
+        {data.sections.map(block => <a key={block.id} href={`#${block.id}`}>{block.title}</a>)}
+      </GuideContents>
+      {data.sections.map(block => (
+        <GuideBlock key={block.id} id={block.id} aria-labelledby={`${block.id}-title`}>
+          <SectionTitle id={`${block.id}-title`}>{block.title}</SectionTitle>
+          {block.lead ? <p>{block.lead}</p> : null}
+          {block.items ? (
+            <TermList>
+              {block.items.map(item => <div key={item.title}><dt>{item.title}</dt><dd>{item.body}</dd></div>)}
+            </TermList>
+          ) : null}
+          {block.table ? (
+            <>
+              <FootNote>좁은 화면에서는 표를 좌우로 밀어 볼 수 있습니다.</FootNote>
+              <GuideTableWrap tabIndex={0} role="region" aria-label={`${block.title} 표 · 좌우로 이동 가능`}>
+                <Table aria-labelledby={`${block.id}-title`}>
+                  <thead><tr>{block.table.columns.map(column => <th key={column} scope="col">{column}</th>)}</tr></thead>
+                  <tbody>{block.table.rows.map(([label, ...cells]) => (
+                    <tr key={[label, ...cells].join('|')}><th scope="row">{label}</th>{cells.map((cell, index) => <td key={index}>{cell}</td>)}</tr>
+                  ))}</tbody>
+                </Table>
+              </GuideTableWrap>
+            </>
+          ) : null}
+          <a href={foreverSources[block.sources[0]].url} target="_blank" rel="noopener noreferrer" aria-label={`${block.title} 공식 근거`}>블리자드 공식 안내 ↗</a>
+        </GuideBlock>
+      ))}
+      <Sources ids={collectSources(data.sections)} />
+    </>
+  );
+}
+
 export default function ForeverPage({ section = 'home' }) {
   const Content = SECTIONS[section] || HomeSection;
+  const guide = foreverGuides[section];
   return (
     <Surface>
       <Page data-forever-section={section}>
-        <Content />
+      {guide ? <GuideSection data={guide} /> : <Content />}
       </Page>
     </Surface>
   );

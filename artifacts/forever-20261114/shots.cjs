@@ -1,4 +1,4 @@
-// 포에버 세 쪽과 리테일/포에버 토글 화면 확인. 폭마다 가로 넘침·콘솔 오류·토글 이동을 검사하고 캡처한다.
+// 포에버 안내와 리테일/포에버 토글 화면 확인. 폭마다 가로 넘침·콘솔 오류·토글 이동을 검사하고 캡처한다.
 // 사용: node artifacts/forever-20261114/shots.cjs [origin=http://127.0.0.1:4517]   (SHOTS_DIR=live 로 운영 결과를 따로 저장)
 const path = require('path');
 const fs = require('fs');
@@ -9,7 +9,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4517';
 const out = path.join(__dirname, process.env.SHOTS_DIR || 'shots');
 fs.mkdirSync(out, { recursive: true });
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36';
-const PAGES = [['home', '/forever'], ['start', '/forever/start'], ['rules', '/forever/rules']];
+const PAGES = [['home', '/forever'], ['start', '/forever/start'], ['rules', '/forever/rules'], ['leveling', '/forever/leveling'], ['growth', '/forever/growth'], ['classes', '/forever/classes'], ['raids', '/forever/raids']];
 const WIDTHS = [1440, 1041, 901, 900, 768, 390, 320];
 // 리테일 메뉴(일곱 칸)가 토글과 함께 한 줄에 들어가는지 볼 폭.
 const RETAIL_WIDTHS = [1440, 1280, 1161, 1160, 1041, 1040, 960, 901, 900, 781, 390, 320];
@@ -44,6 +44,15 @@ const RETAIL_WIDTHS = [1440, 1280, 1161, 1160, 1041, 1040, 960, 901, 900, 781, 3
       assert.ok(info.navHeight <= 60, `${width}px ${route}: 상단 메뉴 높이 ${info.navHeight}`);
       result.pages.push({ width, route, ...info });
       if ([1440, 768, 390, 320].includes(width)) await page.screenshot({ path: path.join(out, `${id}-${width}.png`), fullPage: true });
+      if (['leveling', 'growth', 'classes', 'raids'].includes(id) && [1440, 390, 320].includes(width)) {
+        const broken = await page.$$eval('img', images => images.filter(img => img.complete && !img.naturalWidth).map(img => img.src));
+        assert.deepStrictEqual(broken, [], `${route}: 그림 누락`);
+        for (const section of await page.locator('[data-forever-section] > section[id]').all()) {
+          await section.scrollIntoViewIfNeeded();
+          const sectionId = await section.getAttribute('id');
+          await page.screenshot({ path: path.join(out, `${id}-${width}-${sectionId}.png`) });
+        }
+      }
     }
     await context.close();
   }
@@ -112,7 +121,7 @@ const RETAIL_WIDTHS = [1440, 1280, 1161, 1160, 1041, 1040, 960, 901, 900, 781, 3
 
   // 포에버 화면에는 포에버 메뉴만 보이고, 없는 포에버 주소는 포에버 홈으로 간다.
   await page.goto(base + '/forever', { waitUntil: 'networkidle' });
-  assert.deepStrictEqual(await page.$$eval('#primary-navigation a', links => links.map(a => a.textContent)), ['포에버 홈', '시작하기', '규칙·진영']);
+  assert.deepStrictEqual(await page.$$eval('#primary-navigation a', links => links.map(a => a.textContent)), ['포에버 홈', '시작하기', '규칙·진영', '지역·던전', '캠핑·유산', '직업 선택', '레이드 준비']);
   await page.goto(base + '/forever/unknown', { waitUntil: 'networkidle' });
   await page.waitForFunction(() => window.location.pathname === '/forever');
 

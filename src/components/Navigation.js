@@ -212,6 +212,10 @@ const foreverNavItems = [
   { path: '/forever', label: '포에버 홈', icon: Home, exact: true },
   { path: '/forever/start', label: '시작하기', icon: Compass },
   { path: '/forever/rules', label: '규칙·진영', icon: Flag },
+  { path: '/forever/leveling', label: '지역·던전', icon: Compass },
+  { path: '/forever/growth', label: '캠핑·유산', icon: KeyRound },
+  { path: '/forever/classes', label: '직업 선택', icon: BookOpen },
+  { path: '/forever/raids', label: '레이드 준비', icon: Castle },
 ];
 
 const NAV_ITEMS = { retail: retailNavItems, forever: foreverNavItems };

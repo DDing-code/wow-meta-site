@@ -58,6 +58,22 @@ const STATIC_PAGES = {
     title: `와우 포에버 규칙·진영 고르기 | ${SITE_NAME}`,
     description: '월드 오브 워크래프트: 포에버의 일반·PvP·롤플레이·롤플레이 PvP·하드코어 규칙 차이와 진영 제한, 친구와 같이 하려면 맞춰야 할 것을 정리했습니다.',
   },
+  '/forever/leveling': {
+    title: `와우 포에버 지역·던전 길잡이 | ${SITE_NAME}`,
+    description: '포에버 새 지역과 신규 5인 던전 아홉 곳의 레벨·위치, 달라란 입장 퀘스트와 육성 준비를 블리자드 공식 한국어 공지로 정리했습니다.',
+  },
+  '/forever/growth': {
+    title: `와우 포에버 캠핑·유산 성장 | ${SITE_NAME}`,
+    description: '작은 모닥불과 캠핑 설비 열 종류, 전문 기술 조건, 유산 해제와 점수 획득·캐릭터별 16점 투자, 하드코어 예외를 안내합니다.',
+  },
+  '/forever/classes': {
+    title: `와우 포에버 직업 선택 전에 | ${SITE_NAME}`,
+    description: '리테일과 다른 포에버 직업 선택 안내. 사냥꾼의 변화, 새 종족·직업 조합 여섯 가지와 스카이본의 진영·이용 조건을 정리했습니다.',
+  },
+  '/forever/raids': {
+    title: `와우 포에버 첫 레이드 준비 | ${SITE_NAME}`,
+    description: '12월 10일 개방하는 60레벨 레이드 세 곳의 인원·위치, 오닉시아의 둥지 진영별 비룡불꽃 아뮬렛 퀘스트와 출발 전 준비를 안내합니다.',
+  },
 };
 
 function normalizePath(pathname) {

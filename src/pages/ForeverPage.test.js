@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { MemoryRouter } from 'react-router-dom';
 import ForeverPage from './ForeverPage.js';
 import Navigation from '../components/Navigation.js';
-import { FOREVER_ART_NOTE, foreverHome, foreverRules, foreverSources, foreverStart } from '../data/foreverGuide.js';
+import { FOREVER_ART_NOTE, foreverHome, foreverPages, foreverRules, foreverSources, foreverStart } from '../data/foreverGuide.js';
 import { getPageMeta, SITE_ORIGIN } from '../data/siteMeta.js';
 
 let container;
@@ -109,7 +109,7 @@ test('포에버 화면에서는 포에버 메뉴만 보이고 토글이 리테�
   render(<Navigation />, '/forever/rules');
   expect(toggle('forever').getAttribute('aria-current')).toBe('true');
   expect(toggle('retail').getAttribute('href')).toBe('/');
-  expect(menuLabels()).toEqual(['포에버 홈', '시작하기', '규칙·진영']);
+  expect(menuLabels()).toEqual(foreverPages.map(page => page.label));
   expect(container.querySelector('#primary-navigation a[aria-current="page"]').textContent).toBe('규칙·진영');
   // 로고는 지금 버전의 홈으로 간다.
   expect(container.querySelector('nav a').getAttribute('href')).toBe('/forever');
@@ -140,7 +140,7 @@ test('포에버 안내 메뉴는 현재 페이지를 표시하고 세 페이지�
     render(<ForeverPage section={section} />, path);
     const nav = container.querySelector('nav[aria-label="포에버 안내"]');
     expect([...nav.querySelectorAll('a')].map(link => link.getAttribute('href')))
-      .toEqual(['/forever', '/forever/start', '/forever/rules']);
+      .toEqual(foreverPages.map(page => page.path));
     expect(nav.querySelectorAll('[aria-current="page"]')).toHaveLength(1);
     expect(nav.querySelector('[aria-current="page"]').getAttribute('href')).toBe(path);
   }

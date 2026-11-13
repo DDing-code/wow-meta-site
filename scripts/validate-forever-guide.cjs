@@ -20,7 +20,7 @@ function loadModule(file, names) {
 
 const guideSource = read('src/data/foreverGuide.js');
 const pageSource = read('src/pages/ForeverPage.js');
-const guide = loadModule('src/data/foreverGuide.js', ['FOREVER_ART_NOTE', 'foreverSources', 'foreverPages', 'foreverHome', 'foreverStart', 'foreverRules']);
+const guide = loadModule('src/data/foreverGuide.js', ['FOREVER_ART_NOTE', 'foreverSources', 'foreverPages', 'foreverHome', 'foreverStart', 'foreverRules', 'foreverGuides']);
 const editions = loadModule('src/data/gameEditions.js', ['EDITIONS', 'FOREVER_ROOT', 'getEdition', 'getEditionSwitchPath']);
 
 // 1. 근거: 블리자드 한국어 공지만, 항목이 가리키는 근거 이름은 모두 있어야 한다.
@@ -44,10 +44,20 @@ checkSources('시작하기 처음 알아둘 것', guide.foreverStart.basicsSourc
 guide.foreverRules.rules.forEach(item => checkSources(`규칙 '${item.name}'`, item.sources));
 checkSources('친구와 같이 하려면', guide.foreverRules.togetherSources);
 checkSources('고른 뒤에 바꿀 수 있나요', guide.foreverRules.limitsSources);
+for (const [id, page] of Object.entries(guide.foreverGuides)) {
+  assert.ok(page.title && page.lead && page.sections.length, `${id}: 빈 안내`);
+  assert.strictEqual(new Set(page.sections.map(block => block.id)).size, page.sections.length, `${id}: 중복 목차`);
+  page.sections.forEach(block => {
+    checkSources(`${id}/${block.id}`, block.sources);
+    assert.ok(block.title && (block.items?.length || block.table?.rows.length), `${id}/${block.id}: 빈 본문`);
+    block.items?.forEach(item => assert.ok(item.title && item.body, `${id}/${block.id}: 빈 항목`));
+    block.table?.rows.forEach(row => assert.ok(row.length === block.table.columns.length && row.every(Boolean), `${id}/${block.id}: 표 열 불일치·빈 칸`));
+  });
+}
 for (const id of sourceIds) assert.ok(used.has(id), `근거 ${id}: 어느 항목도 쓰지 않음`);
 
 // 2. 공지에서 확인한 사실이 바뀌지 않게 붙잡아 둔다(고치려면 공지를 다시 확인한 뒤 여기와 함께 고친다).
-const text = JSON.stringify([guide.foreverHome, guide.foreverStart, guide.foreverRules]);
+const text = JSON.stringify([guide.foreverHome, guide.foreverStart, guide.foreverRules, guide.foreverGuides]);
 for (const fact of ['2026년 11월 5일', '오전 8시(한국 시간)', '1~60레벨', '12월 10일', '지하 심굴 10인', '하이잘 정상 20인', '오닉시아의 둥지 40인', '비룡불꽃 아뮬렛', '16점', '언데드 성기사', '스카이본', '영웅 꾸러미']) {
   assert.ok(text.includes(fact), `공지에서 확인한 내용이 빠짐: ${fact}`);
 }
@@ -90,10 +100,23 @@ assert.ok(/도트로 다시 그린/.test(guide.FOREVER_ART_NOTE) && /실제 게�
 assert.ok(pageSource.includes('{FOREVER_ART_NOTE}'), '근거 아래에 그림 안내 문구를 보여 주지 않음');
 const onDisk = fs.readdirSync(path.join(SITE_ROOT, 'public/images/forever')).filter(name => name.endsWith('.webp')).map(name => name.replace(/-\d+\.webp$/, ''));
 for (const id of new Set(onDisk)) assert.ok(artIds.has(id), `public/images/forever: 쓰지 않는 그림 (${id})`);
+// 새 안내 쪽은 이미 있는 도트 그림을 다시 쓴다.
+for (const [id, page] of Object.entries(guide.foreverGuides)) {
+  assert.ok(artIds.has(page.art.id) && page.art.alt.length >= 8, `${id}: 기존 대표 그림·설명 누락`);
+}
+assert.strictEqual(guide.foreverGuides.leveling.sections.find(block => block.id === 'dungeons').table.rows.length, 9, '새 던전 아홉 곳');
+assert.strictEqual(guide.foreverGuides.growth.sections.find(block => block.id === 'facilities').table.rows.length, 10, '첫 캠핑 설비 열 종류');
+assert.strictEqual(guide.foreverGuides.classes.sections.find(block => block.id === 'combinations').table.rows.length, 6, '새 종족·직업 조합 여섯 가지');
+for (const id of ['alliance-attunement', 'horde-attunement']) {
+  const block = guide.foreverGuides.raids.sections.find(block => block.id === id);
+  assert.ok(block?.items.length && block.items.some(item => item.body.includes('드라키사스')), `${id}: 진영별 입장 퀘스트 누락`);
+}
 
 // 3. 사이트 용어·금지어(가이드 용어 규칙과 내부 작업 표시 금지).
+// 공식 고유명사 '엠버스트라이프'의 일부는 금지어 '버스트'가 아니다.
+const copyText = text.replaceAll('엠버스트라이프', '');
 for (const banned of ['우두머리', '졸개', '보스', '로테이션', '오프너', '신화+', '버스트', '임의 번역', '인벤']) {
-  assert.ok(!text.includes(banned), `쓰지 않는 말: ${banned}`);
+  assert.ok(!copyText.includes(banned), `쓰지 않는 말: ${banned}`);
 }
 const mark = text.match(/사용자 ?(확인|결정|요청|지정|정정|지시|확정|지적|원칙)|사용자가 (정한|보낸|확인)/);
 assert.ok(!mark, `내부 작업 표시: ${mark && mark[0]}`);
@@ -111,7 +134,7 @@ for (const file of ['src/data/kb-skills.json', 'src/data/kb-synergies.json']) {
 // 5. 주소·메뉴·검색 제목 연결.
 const app = read('src/App.js');
 const siteMeta = read('src/data/siteMeta.js');
-assert.deepStrictEqual(guide.foreverPages.map(page => page.path), ['/forever', '/forever/start', '/forever/rules'], '포에버 페이지 주소');
+assert.deepStrictEqual(guide.foreverPages.map(page => page.path), ['/forever', '/forever/start', '/forever/rules', '/forever/leveling', '/forever/growth', '/forever/classes', '/forever/raids'], '포에버 페이지 주소');
 for (const page of guide.foreverPages) {
   assert.ok(app.includes(`path="${page.path}" element={<ForeverPage section="${page.id}" />}`), `App.js에 ${page.path} 경로가 없음`);
   assert.ok(siteMeta.includes(`'${page.path}': {`), `siteMeta.js STATIC_PAGES에 ${page.path}가 없음`);

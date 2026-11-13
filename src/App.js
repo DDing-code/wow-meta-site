@@ -154,6 +154,10 @@ function App() {
               <Route path="/forever" element={<ForeverPage section="home" />} />
               <Route path="/forever/start" element={<ForeverPage section="start" />} />
               <Route path="/forever/rules" element={<ForeverPage section="rules" />} />
+              <Route path="/forever/leveling" element={<ForeverPage section="leveling" />} />
+              <Route path="/forever/growth" element={<ForeverPage section="growth" />} />
+              <Route path="/forever/classes" element={<ForeverPage section="classes" />} />
+              <Route path="/forever/raids" element={<ForeverPage section="raids" />} />
               <Route path="/forever/*" element={<Navigate to="/forever" replace />} />
               <Route path="/spells" element={<SpellDatabasePage />} />
               <Route path="/logs" element={<LogAnalysisPage />} />
