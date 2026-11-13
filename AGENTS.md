@@ -29,3 +29,10 @@
 - 심화편 줄과 기본편 칸의 '심화편' 링크는 원고의 `advancedVideo`를 그대로 읽는다(따로 적지 않음). 영상은 계속 늘거나 바뀌므로 홈에 영상·편 개수를 적지 않는다(2026-11-02 지시, `validate:home`이 막는다).
 - 영상·재생목록 번호는 `src/data/youtubePlaylists.js` 하나에 있고 ai-hub `outputs/pixel-guides/youtube-playlists.json`과 같아야 한다. 영상을 바꾸면 둘을 함께 고친다. `npm run validate:home`이 검사한다.
 - 로그 분석(`/logs`, `/guide/.../log-analysis/...`)은 상단 메뉴와 가이드 페이지에서 뺐고 주소(링크)로만 연다. 다시 붙이지 않는다(`validate:home`이 막는다).
+
+## 포에버 (2026-11-14)
+
+- 사이트는 상단 토글 `[리테일 | 포에버]`로 게임 버전을 가른다. 버전은 저장하지 않고 주소로만 정한다(`/forever` 아래는 포에버, 나머지는 리테일). 규칙은 `src/data/gameEditions.js`에 있다: 짝이 있는 페이지(`/`↔`/forever`, `/beginner`↔`/forever/start`)는 짝으로, 없으면 그 버전의 홈으로 보낸다. 기존 리테일 주소는 바꾸지 않는다.
+- 포에버 글은 `src/data/foreverGuide.js`, 화면은 `src/pages/ForeverPage.js`, 포에버 메뉴는 `Navigation.js`의 `foreverNavItems`다. 근거는 블리자드 한국어 공지만 쓰고 항목마다 `sources`를 단다.
+- 포에버 자료를 리테일 KB(`08-직업별-Knowledge-Base`)·`kb-skills.json`·`kb-synergies.json`에 넣지 않는다. 리테일 KB는 주문 번호 하나로 색인해서 서로 덮어쓴다. 포에버 직업·스킬 자료를 만들 때는 KB를 따로 둘 자리부터 정한다.
+- 포에버 페이지를 더하면 `App.js` 경로, `foreverPages`, `foreverNavItems`, `siteMeta.js`의 `STATIC_PAGES`, `npm run seo:sitemap`을 함께 고친다. 검사는 `npm run validate:forever`와 `src/pages/ForeverPage.test.js`, 화면 확인은 `artifacts/forever-20261114/shots.cjs`.

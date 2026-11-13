@@ -46,6 +46,18 @@ const STATIC_PAGES = {
     title: `소식 | ${SITE_NAME}`,
     description: DEFAULT_DESCRIPTION,
   },
+  '/forever': {
+    title: `와우 포에버 한눈에 보기 | ${SITE_NAME}`,
+    description: '월드 오브 워크래프트: 포에버가 리테일과 무엇이 다른지 공식 한국어 공지를 바탕으로 정리했습니다. 규칙 선택, 60레벨, 새 종족·직업 조합, 유산, 캠핑, 첫 레이드 일정.',
+  },
+  '/forever/start': {
+    title: `와우 포에버 시작하기 | ${SITE_NAME}`,
+    description: '월드 오브 워크래프트: 포에버를 처음 시작하는 여섯 단계. 설치, 플레이 환경 사전 설정(클래식·강화됨), 규칙, 진영·종족·직업, 이름 짓기를 차례로 안내합니다.',
+  },
+  '/forever/rules': {
+    title: `와우 포에버 규칙·진영 고르기 | ${SITE_NAME}`,
+    description: '월드 오브 워크래프트: 포에버의 일반·PvP·롤플레이·롤플레이 PvP·하드코어 규칙 차이와 진영 제한, 친구와 같이 하려면 맞춰야 할 것을 정리했습니다.',
+  },
 };
 
 function normalizePath(pathname) {

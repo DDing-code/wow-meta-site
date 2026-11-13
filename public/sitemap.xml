@@ -9,6 +9,9 @@
   <url><loc>https://wowmeta.vercel.app/spells</loc></url>
   <url><loc>https://wowmeta.vercel.app/logs</loc></url>
   <url><loc>https://wowmeta.vercel.app/news</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/start</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/rules</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/warrior/protection</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/paladin/protection</loc></url>
   <url><loc>https://wowmeta.vercel.app/guide/deathknight/blood</loc></url>

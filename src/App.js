@@ -12,6 +12,7 @@ import RaidGuidePage from './pages/RaidGuidePage.js';
 import MythicPlusGuidePage from './pages/MythicPlusGuidePage.js';
 import NewsPage from './pages/NewsPage.js';
 import MockupsPage from './pages/MockupsPage.js';
+import ForeverPage from './pages/ForeverPage.js';
 import SpellDatabasePage from './pages/WoWSpellDatabasePage.js';
 import GuideDetailPage from './pages/GuideDetailPage.js';
 import PreservationLogReportPage, { VenomousDepthsComparisonPage } from './pages/PreservationLogReportPage.js';
@@ -149,6 +150,11 @@ function App() {
               <Route path="/mythicplus" element={<MythicPlusGuidePage />} />
               <Route path="/mythicplus/:dungeonId" element={<MythicPlusGuidePage />} />
               <Route path="/news" element={<NewsPage />} />
+              {/* 포에버(다른 게임 버전)는 /forever 아래에만 둔다. 상단 토글이 이 주소로 버전을 가른다. */}
+              <Route path="/forever" element={<ForeverPage section="home" />} />
+              <Route path="/forever/start" element={<ForeverPage section="start" />} />
+              <Route path="/forever/rules" element={<ForeverPage section="rules" />} />
+              <Route path="/forever/*" element={<Navigate to="/forever" replace />} />
               <Route path="/spells" element={<SpellDatabasePage />} />
               <Route path="/logs" element={<LogAnalysisPage />} />
               <Route path="/logs/:guideId" element={<LogAnalysisPage />} />
