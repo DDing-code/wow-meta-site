@@ -15,7 +15,6 @@ export default function LevelingJourney({ race, early, later }) {
   const [reduced, setReduced] = useState(false);
   const [visible, setVisible] = useState(false);
   const frame = useRef(null);
-  const strip = useRef(null);
   const arrowId = useId().replace(/:/g, '');
   const plan = atlas.journeys[race];
   const isLater = phase === 'later';
@@ -68,13 +67,6 @@ export default function LevelingJourney({ race, early, later }) {
     return () => clearInterval(timer);
   }, [playing, visible, current, route]);
 
-  useEffect(() => {
-    // 좁은 화면에서 가로로 넘기는 단계 띠는 지금 단계가 보이게 옆으로만 옮긴다(세로 스크롤은 건드리지 않음).
-    const list = strip.current, item = list?.children[current];
-    if (!item || list.scrollWidth <= list.clientWidth) return;
-    list.scrollTo?.({ left: item.offsetLeft - (list.clientWidth - item.offsetWidth) / 2, behavior: reduced ? 'auto' : 'smooth' });
-  }, [current, phase, reduced]);
-
   const chooseStep = next => { setStep(next.step); setLeg(next.leg); setPlaying(false); };
   const choosePhase = next => { setPhase(next); setStep(0); setLeg(0); setPlaying(false); };
   const play = () => { if (!playing && finished) { setStep(0); setLeg(0); } setPlaying(!playing); };
@@ -85,8 +77,8 @@ export default function LevelingJourney({ race, early, later }) {
       <button type="button" aria-pressed={!isLater} onClick={() => choosePhase('early')}>1~30 · 종족별 출발</button>
       <button type="button" aria-pressed={isLater} onClick={() => choosePhase('later')}>30~60 · 추천 후보 · 추정</button>
     </div>
-    <ol className="fv-journey-steps" ref={strip} aria-label="레벨별 이동 순서">{route.map((item, index) => <li key={`${item.step}-${item.leg}`}>
-      <button type="button" data-stage={item.step} data-leg={item.leg} title={`${rows[item.step][0]} · ${item.path.map(place => place.name).join(' → ')}`} aria-current={index === current ? 'step' : undefined} onClick={() => chooseStep(item)}><span>{String(index + 1).padStart(2, '0')}</span><strong>{rows[item.step][0]}</strong><small>{item.path.at(-1).name}</small></button>
+    <ol className="fv-journey-steps" style={{ '--stages': stages.length }} aria-label="레벨별 이동 순서">{stages.map((item, index) => <li key={index} data-complete={index < step}>
+      <button type="button" data-stage={index} data-leg={index === step ? leg : 0} aria-label={`${rows[index][0]} · ${item.points.map(name).join(' → ')}`} title={`${rows[index][0]} · ${item.points.map(name).join(' → ')}`} aria-current={index === step ? 'step' : undefined} onClick={() => chooseStep({ step: index, leg: 0 })}><span>{String(index + 1).padStart(2, '0')}</span><strong>{rows[index][0]}</strong><small>{name(isLater ? choices[index] || item.points[0] : item.points.at(-1))}</small></button>
     </li>)}</ol>
     <div className="fv-journey-heading" aria-live={playing ? 'off' : 'polite'}>
       <h3>{row[0]} · {row[1]}</h3>
@@ -111,11 +103,12 @@ export default function LevelingJourney({ race, early, later }) {
             const from = path[index];
             const distance = Math.hypot(place.x - from.x, place.y - from.y);
             const inset = Math.min(w * 0.022, distance / 4);
-            const dx = (place.x - from.x) / distance * inset, dy = (place.y - from.y) / distance * inset;
+            const dx = distance ? (place.x - from.x) / distance * inset : 0, dy = distance ? (place.y - from.y) / distance * inset : 0;
             const line = { x1: from.x + dx, y1: from.y + dy, x2: place.x - dx, y2: place.y - dy };
             return <g key={routeKey}>
               <defs><mask id={`${arrowId}-reveal`} maskUnits="userSpaceOnUse" x="0" y="0" width="903" height="640"><line {...line} pathLength="1" className="fv-journey-reveal" stroke="white" strokeWidth={w / 30} /></mask></defs>
               <g mask={`url(#${arrowId}-reveal)`}><line {...line} stroke="#101216" strokeWidth={w / 95} /><line {...line} stroke="#fff0a6" strokeWidth={w / 240} strokeDasharray={isLater ? `${w / 80} ${w / 130}` : undefined} markerEnd={`url(#${arrowId})`} /></g>
+              {!reduced && <circle className="fv-journey-traveler" aria-hidden="true" cx={place.x} cy={place.y} r={w / 80} style={{ '--travel-x': `${from.x - place.x}px`, '--travel-y': `${from.y - place.y}px` }} fill="#fff8da" stroke="#17212a" strokeWidth={w / 240} />}
             </g>;
           })}
         </svg>

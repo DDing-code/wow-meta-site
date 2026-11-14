@@ -59,7 +59,7 @@ test('종족 열 쪽의 단계 선택은 실제 경유지와 확대 지도에 �
   }
 });
 
-test('지도 위아래의 조작·안내 줄을 빼고 재생·세계 지도는 지도 위 단추로 둔다', () => {
+test('레벨 구간은 한 점씩 표시하고 선택한 구간의 경로에 이동 표식을 둔다', () => {
   render(<ForeverPage section="leveling/human" />, '/forever/leveling/human');
   const journey = container.querySelector('.fv-journey');
   expect(journey.querySelector('.fv-journey-controls')).toBeNull();
@@ -68,10 +68,22 @@ test('지도 위아래의 조작·안내 줄을 빼고 재생·세계 지도는 
   expect(journey.querySelectorAll('ol')).toHaveLength(1);
   expect(journey.querySelector('.fv-journey-stops')).toBeNull();
   expect(journey.querySelectorAll('[aria-current="step"]')).toHaveLength(1);
-  const transfer = journey.querySelector('.fv-journey-steps button[data-stage="3"][data-leg="2"]');
+  expect(journey.querySelectorAll('.fv-journey-steps button')).toHaveLength(7);
+  const transfer = journey.querySelector('.fv-journey-steps button[data-stage="3"]');
   act(() => transfer.click());
   expect(transfer.getAttribute('aria-current')).toBe('step');
-  expect(journey.querySelector('svg').getAttribute('aria-label')).toContain('아이언포지 → 모단 호수');
+  expect(journey.querySelector('svg').getAttribute('aria-label')).toContain('붉은마루 산맥 → 스톰윈드');
+  expect(journey.querySelectorAll('li[data-complete=true]')).toHaveLength(3);
+  const traveler = journey.querySelector('.fv-journey-traveler');
+  const pins = [...journey.querySelectorAll('.fv-journey-pin')];
+  const point = pin => [parseFloat(pin.style.left) * 903 / 100, parseFloat(pin.style.top) * 640 / 100];
+  const [from, to] = pins.map(point);
+  expect(Number(traveler.getAttribute('cx'))).toBeCloseTo(to[0]);
+  expect(Number(traveler.getAttribute('cy'))).toBeCloseTo(to[1]);
+  expect(parseFloat(traveler.style.getPropertyValue('--travel-x'))).toBeCloseTo(from[0] - to[0]);
+  expect(parseFloat(traveler.style.getPropertyValue('--travel-y'))).toBeCloseTo(from[1] - to[1]);
+  clickStep(0);
+  expect(journey.querySelector('.fv-journey-traveler')).toBeNull();
 });
 
 test('배·차원문 경유를 한 구간씩 재생하고 일시정지·직접 선택 때 멈춘다', () => {
@@ -107,6 +119,7 @@ test('동작 줄이기 설정과 지도 로딩 실패에서도 이동 설명을 
     clickJourney('경로 재생');
     expect(container.querySelector('.fv-journey-map').dataset.running).toBe('true');
     clickStep(1);
+    expect(container.querySelector('.fv-journey-traveler')).toBeNull();
     expect(container.querySelector('.fv-journey-instructions').textContent).toContain('은빛소나무 숲 직행 배');
     act(() => container.querySelector('.fv-journey-map image').dispatchEvent(new Event('error')));
     expect(container.querySelector('.fv-journey [role=status]').textContent).toContain('지도를 불러오지 못했습니다');
