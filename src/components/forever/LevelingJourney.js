@@ -119,7 +119,7 @@ export default function LevelingJourney({ race, early, later }) {
             </g>;
           })}
         </svg>
-        {path.map((place, index) => <span key={`${index}-${place.id}`} className={`fv-journey-pin ${index === path.length - 1 ? 'is-destination' : ''} ${(place.x - x) / w < 0.23 ? 'is-left' : (place.x - x) / w > 0.77 ? 'is-right' : ''} ${(place.y - y) / h > 0.7 ? 'is-bottom' : ''}`} style={{ left: `${place.x / 903 * 100}%`, top: `${place.y / 640 * 100}%`, '--arrival-delay': path.length > 1 ? '1500ms' : '600ms' }}><b key={routeKey}>{current === 0 && index === 0 && path.length > 1 ? '?' : current + index + (path.length === 1 ? 1 : 0)}</b><span>{place.name}</span></span>)}
+        {path.map((place, index) => <span key={`${index}-${place.id}`} className={`fv-journey-pin ${index === path.length - 1 ? 'is-destination' : ''} ${(place.x - x) / w < 0.23 ? 'is-left' : (place.x - x) / w > 0.77 ? 'is-right' : ''} ${(place.y - y) / h > 0.7 ? 'is-bottom' : ''}`} style={{ left: `${place.x / 903 * 100}%`, top: `${place.y / 640 * 100}%`, '--arrival-delay': path.length > 1 ? '1500ms' : '600ms' }}><b key={routeKey}>{current === 0 && index === 0 && path.length > 1 ? '·' : current + index + (path.length === 1 ? 1 : 0)}</b><span>{place.name}</span></span>)}
         </div>
         <span className="fv-north" aria-hidden="true">↑ 북</span>
         </div>

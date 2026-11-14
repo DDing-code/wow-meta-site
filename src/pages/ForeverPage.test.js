@@ -49,6 +49,7 @@ test('종족 열 쪽의 단계 선택은 실제 경유지와 확대 지도에 �
     expect(container.querySelector('.fv-journey').dataset.phase).toBe('later');
     expect(container.querySelectorAll('.fv-journey-steps button')).toHaveLength(7);
     expect(container.querySelector('.fv-journey-heading').textContent).toContain('추정');
+    expect(container.querySelector('.fv-journey-pin b').textContent).toBe(container.querySelectorAll('.fv-journey-pin').length > 1 ? '·' : '1');
     clickJourney('가시덤불 골짜기');
     expect(container.querySelector('.fv-journey-map svg').getAttribute('aria-label')).toContain('가시덤불 골짜기');
     clickStep(1);
