@@ -26,23 +26,23 @@ afterEach(() => {
 const toggle = id => container.querySelector(`[aria-label="게임 버전"] a[data-edition="${id}"]`);
 const menuLabels = () => [...container.querySelectorAll('#primary-navigation a')].map(link => link.textContent);
 
-const clickStep = index => act(() => container.querySelectorAll('.fv-journey-steps button')[index].click());
+const clickStep = index => act(() => container.querySelector(`.fv-journey-steps button[data-stage="${index}"]`).click());
 const clickJourney = text => act(() => [...container.querySelectorAll('.fv-journey button')].find(button => button.textContent === text).click());
 
 test('종족 열 쪽의 단계 선택은 실제 경유지와 확대 지도에 연결된다', () => {
   for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'leveling')) {
     render(<ForeverPage section={id} />, `/forever/${id}`);
     const rows = page.sections.find(block => block.id === 'route').table.rows;
-    const buttons = [...container.querySelectorAll('.fv-journey-steps button')];
+    const buttons = [...container.querySelectorAll('.fv-journey-steps button[data-leg="0"]')];
     expect(buttons).toHaveLength(rows.length);
     buttons.forEach((button, index) => {
       act(() => button.click());
       expect(container.querySelector('.fv-journey-heading').textContent).toContain(rows[index][1]);
       expect(container.querySelector('.fv-journey-instructions').textContent).toContain(rows[index][2]);
       const svg = container.querySelector('.fv-journey-map svg');
-      const [x, y, w, h] = svg.getAttribute('viewBox').split(' ').map(Number);
+      const [x, y, w, h] = container.querySelector('.fv-journey-camera').dataset.viewbox.split(' ').map(Number);
       expect(x).toBeGreaterThanOrEqual(0); expect(y).toBeGreaterThanOrEqual(0);
-      expect(x + w).toBeLessThanOrEqual(903); expect(y + h).toBeLessThanOrEqual(640);
+      expect(x + w).toBeLessThanOrEqual(903.000001); expect(y + h).toBeLessThanOrEqual(640.000001);
       expect(svg.getAttribute('aria-label')).not.toMatch(/undefined|NaN/);
     });
     clickJourney('30~60레벨 추천 후보로 이어 보기 →');
@@ -64,7 +64,13 @@ test('지도 위아래의 조작·안내 줄을 빼고 재생·세계 지도는 
   expect(journey.querySelector('.fv-journey-controls')).toBeNull();
   expect(journey.textContent).not.toMatch(/동작 재생|다음 →|← 이전|6초마다/);
   expect([...journey.querySelectorAll('.fv-journey-map .fv-journey-tools button')].map(button => button.textContent)).toEqual(['경로 재생', '세계 지도']);
-  expect(journey.querySelector('.fv-journey-steps').style.getPropertyValue('--steps')).toBe('7');
+  expect(journey.querySelectorAll('ol')).toHaveLength(1);
+  expect(journey.querySelector('.fv-journey-stops')).toBeNull();
+  expect(journey.querySelectorAll('[aria-current="step"]')).toHaveLength(1);
+  const transfer = journey.querySelector('.fv-journey-steps button[data-stage="3"][data-leg="2"]');
+  act(() => transfer.click());
+  expect(transfer.getAttribute('aria-current')).toBe('step');
+  expect(journey.querySelector('svg').getAttribute('aria-label')).toContain('아이언포지 → 모단 호수');
 });
 
 test('배·차원문 경유를 한 구간씩 재생하고 일시정지·직접 선택 때 멈춘다', () => {
@@ -77,6 +83,7 @@ test('배·차원문 경유를 한 구간씩 재생하고 일시정지·직접 �
     clickJourney('경로 재생');
     act(() => jest.advanceTimersByTime(6000));
     expect(svg().getAttribute('aria-label')).toContain('달라란 (경유) → 스톰윈드');
+    expect(container.querySelector('[aria-current="step"]').dataset.leg).toBe('1');
     clickJourney('일시정지');
     act(() => jest.advanceTimersByTime(12000));
     expect(container.querySelector('.fv-journey').dataset.step).toBe('1');
@@ -86,7 +93,7 @@ test('배·차원문 경유를 한 구간씩 재생하고 일시정지·직접 �
     clickStep(0);
     expect(container.querySelector('.fv-journey-map').dataset.running).toBe('false');
     clickJourney('세계 지도');
-    expect(svg().getAttribute('viewBox')).toBe('0 0 903 640');
+    expect(container.querySelector('.fv-journey-camera').dataset.viewbox).toBe('0 0 903 640');
   } finally { jest.useRealTimers(); }
 });
 
@@ -102,7 +109,7 @@ test('동작 줄이기 설정과 지도 로딩 실패에서도 이동 설명을 
     expect(container.querySelector('.fv-journey-instructions').textContent).toContain('은빛소나무 숲 직행 배');
     act(() => container.querySelector('.fv-journey-map image').dispatchEvent(new Event('error')));
     expect(container.querySelector('.fv-journey [role=status]').textContent).toContain('지도를 불러오지 못했습니다');
-    expect(container.querySelector('.fv-journey-stops').textContent).toContain('멀고어·잊혀진 땅 사이 고원');
+    expect(container.querySelector('.fv-journey-steps [aria-current="step"]').textContent).toContain('멀고어·잊혀진 땅 사이 고원');
   } finally { window.matchMedia = old; }
 });
 

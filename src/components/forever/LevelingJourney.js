@@ -23,21 +23,25 @@ export default function LevelingJourney({ race, early, later }) {
   const stages = isLater ? atlas.laterJourneys[plan.faction] : plan.stages;
   const stage = stages[step];
   const row = rows[step];
-  const previous = isLater
-    ? (step ? choices[step - 1] || stages[step - 1].points[0] : plan.stages.at(-1).points.at(-1))
-    : (step ? stages[step - 1].points.at(-1) : null);
-  const targets = isLater ? [choices[step] || stage.points[0]] : stage.points;
-  const ids = [previous, ...targets].filter((id, index, all) => id && id !== all[index - 1]);
-  const stops = ids.map(id => places.get(id));
-  const path = stops.slice(leg, leg + 2);
+  const route = stages.flatMap((item, index) => {
+    const previous = isLater
+      ? (index ? choices[index - 1] || stages[index - 1].points[0] : plan.stages.at(-1).points.at(-1))
+      : (index ? stages[index - 1].points.at(-1) : null);
+    const targets = isLater ? [choices[index] || item.points[0]] : item.points;
+    const stops = [previous, ...targets].filter((id, i, all) => id && id !== all[i - 1]).map(id => places.get(id));
+    return Array.from({ length: Math.max(1, stops.length - 1) }, (_, leg) => ({ step: index, leg, path: stops.slice(leg, leg + 2) }));
+  });
+  const current = route.findIndex(item => item.step === step && item.leg === leg);
+  const { path } = route[current];
+  const routeKey = `${phase}-${step}-${leg}-${path.at(-1).id}`;
   const xs = path.map(place => place.x), ys = path.map(place => place.y);
   // 지도 범위를 잇는 선이며 실제 도로나 승강장 좌표가 아니다.
   const width = Math.min(903, Math.max(190, Math.max(...xs) - Math.min(...xs) + 100, (Math.max(...ys) - Math.min(...ys) + 90) * 1.5));
-  const height = Math.min(640, width / 1.5);
+  const height = width * 640 / 903;
   const zoom = [Math.max(0, Math.min(903 - width, (Math.max(...xs) + Math.min(...xs) - width) / 2)), Math.max(0, Math.min(640 - height, (Math.max(...ys) + Math.min(...ys) - height) / 2)), width, height];
   const [x, y, w, h] = wholeMap ? [0, 0, 903, 640] : zoom;
   const transport = isLater ? '후보 비교 · 추정' : path.length === 1 ? '출발·퀘스트 진행' : atlas.journeyTransports[path.map(place => place.id).join('>')] || '지역 이동';
-  const finished = step === stages.length - 1 && leg >= stops.length - 2;
+  const finished = current === route.length - 1;
 
   useEffect(() => {
     const query = window.matchMedia?.('(prefers-reduced-motion: reduce)');
@@ -57,21 +61,21 @@ export default function LevelingJourney({ race, early, later }) {
     if (!playing || !visible) return;
     const timer = setInterval(() => {
       if (document.hidden) return;
-      if (leg < stops.length - 2) setLeg(leg + 1);
-      else if (step < stages.length - 1) { setStep(step + 1); setLeg(0); }
+      const next = route[current + 1];
+      if (next) { setStep(next.step); setLeg(next.leg); }
       else setPlaying(false);
     }, 6000);
     return () => clearInterval(timer);
-  }, [playing, visible, step, stages.length, leg, stops.length]);
+  }, [playing, visible, current, route]);
 
   useEffect(() => {
     // 좁은 화면에서 가로로 넘기는 단계 띠는 지금 단계가 보이게 옆으로만 옮긴다(세로 스크롤은 건드리지 않음).
-    const list = strip.current, item = list?.children[step];
+    const list = strip.current, item = list?.children[current];
     if (!item || list.scrollWidth <= list.clientWidth) return;
     list.scrollTo?.({ left: item.offsetLeft - (list.clientWidth - item.offsetWidth) / 2, behavior: reduced ? 'auto' : 'smooth' });
-  }, [step, phase, reduced]);
+  }, [current, phase, reduced]);
 
-  const chooseStep = next => { setStep(next); setLeg(0); setPlaying(false); };
+  const chooseStep = next => { setStep(next.step); setLeg(next.leg); setPlaying(false); };
   const choosePhase = next => { setPhase(next); setStep(0); setLeg(0); setPlaying(false); };
   const play = () => { if (!playing && finished) { setStep(0); setLeg(0); } setPlaying(!playing); };
   const name = id => places.get(id).name;
@@ -81,24 +85,26 @@ export default function LevelingJourney({ race, early, later }) {
       <button type="button" aria-pressed={!isLater} onClick={() => choosePhase('early')}>1~30 · 종족별 출발</button>
       <button type="button" aria-pressed={isLater} onClick={() => choosePhase('later')}>30~60 · 추천 후보 · 추정</button>
     </div>
-    <ol className="fv-journey-steps" ref={strip} style={{ '--steps': rows.length }} aria-label="레벨별 이동 순서">{rows.map(([level, title], index) => <li key={index}>
-      <button type="button" title={`${level} · ${title}`} aria-current={index === step ? 'step' : undefined} onClick={() => chooseStep(index)}><span>{String(index + 1).padStart(2, '0')}</span><strong>{level}</strong><small>{title}</small></button>
+    <ol className="fv-journey-steps" ref={strip} aria-label="레벨별 이동 순서">{route.map((item, index) => <li key={`${item.step}-${item.leg}`}>
+      <button type="button" data-stage={item.step} data-leg={item.leg} title={`${rows[item.step][0]} · ${item.path.map(place => place.name).join(' → ')}`} aria-current={index === current ? 'step' : undefined} onClick={() => chooseStep(item)}><span>{String(index + 1).padStart(2, '0')}</span><strong>{rows[item.step][0]}</strong><small>{item.path.at(-1).name}</small></button>
     </li>)}</ol>
     <div className="fv-journey-heading" aria-live={playing ? 'off' : 'polite'}>
       <h3>{row[0]} · {row[1]}</h3>
-      <span>{isLater ? '추천 후보 · 이동 연결은 추정' : '외부 퀘스트 가이드 견본'} · {step + 1} / {stages.length}</span>
+      <span>{isLater ? '추천 후보 · 이동 연결은 추정' : '외부 퀘스트 가이드 견본'}</span>
     </div>
     <div className="fv-journey-leg">
       <strong>{transport}</strong>
-      {isLater
-        ? <div className="fv-journey-options" aria-label="이 구간의 지역 후보"><span>{name(previous)}에서 →</span>{stage.points.map(id => <button type="button" key={id} aria-pressed={targets[0] === id} onClick={() => { setChoices({ ...choices, [step]: id }); setLeg(0); setPlaying(false); }}>{name(id)}</button>)}</div>
-        : <ol className="fv-journey-stops" aria-label="선택 구간의 이동 지점">{stops.map((place, index) => <li key={`${index}-${place.id}`}>{stops.length > 2
-          ? <button type="button" aria-pressed={index === leg || index === leg + 1} aria-label={`${place.name} 이동 구간 보기`} onClick={() => { setLeg(Math.min(index, stops.length - 2)); setPlaying(false); }}><b>{index + 1}</b>{place.name}</button>
-          : <span><b>{index + 1}</b>{place.name}</span>}{index < stops.length - 1 && <i aria-hidden="true">→</i>}</li>)}</ol>}
+      {isLater && <div className="fv-journey-options" aria-label="이 구간의 지역 후보">{stage.points.map(id => <button type="button" key={id} aria-pressed={path.at(-1).id === id} onClick={() => { setChoices({ ...choices, [step]: id }); setLeg(0); setPlaying(false); }}>{name(id)}</button>)}</div>}
     </div>
-    <div className="fv-journey-map" data-running={playing && visible && !failed} style={{ aspectRatio: `${w} / ${h}` }}>
+    <div className="fv-journey-map" data-running={playing && visible && !failed}>
       {!failed ? <>
-        <svg viewBox={`${x} ${y} ${w} ${h}`} role="img" aria-label={`${row[0]} 지역 이동: ${path.map(place => place.name).join(' → ')}`}>
+        <div className="fv-journey-tools">
+          <button type="button" aria-pressed={playing} onClick={play}>{playing ? '일시정지' : finished ? '다시 재생' : '경로 재생'}</button>
+          <button type="button" aria-pressed={wholeMap} onClick={() => setWholeMap(!wholeMap)}>{wholeMap ? '구간 확대' : '세계 지도'}</button>
+        </div>
+        <div className="fv-journey-viewport">
+        <div className="fv-journey-camera" data-viewbox={`${x} ${y} ${w} ${h}`} style={{ transform: `translate(${-x / w * 100}%, ${-y / h * 100}%) scale(${903 / w})`, '--pin-scale': w / 903 }}>
+        <svg viewBox="0 0 903 640" role="img" aria-label={`${row[0]} 지역 이동: ${path.map(place => place.name).join(' → ')}`}>
           <defs><marker id={arrowId} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#fff0a6" /></marker></defs>
           <image href="/images/forever/world-atlas-1536.webp" width="903" height="640" onError={() => { setFailed(true); setPlaying(false); }} />
           {path.slice(1).map((place, index) => {
@@ -107,19 +113,19 @@ export default function LevelingJourney({ race, early, later }) {
             const inset = Math.min(w * 0.022, distance / 4);
             const dx = (place.x - from.x) / distance * inset, dy = (place.y - from.y) / distance * inset;
             const line = { x1: from.x + dx, y1: from.y + dy, x2: place.x - dx, y2: place.y - dy };
-            return <g key={`${index}-${place.id}`}><line {...line} stroke="#101216" strokeWidth={w / 95} /><line {...line} stroke="#fff0a6" strokeWidth={w / 240} strokeDasharray={isLater ? `${w / 80} ${w / 130}` : undefined} markerEnd={`url(#${arrowId})`} /></g>;
+            return <g key={routeKey}>
+              <defs><mask id={`${arrowId}-reveal`} maskUnits="userSpaceOnUse" x="0" y="0" width="903" height="640"><line {...line} pathLength="1" className="fv-journey-reveal" stroke="white" strokeWidth={w / 30} /></mask></defs>
+              <g mask={`url(#${arrowId}-reveal)`}><line {...line} stroke="#101216" strokeWidth={w / 95} /><line {...line} stroke="#fff0a6" strokeWidth={w / 240} strokeDasharray={isLater ? `${w / 80} ${w / 130}` : undefined} markerEnd={`url(#${arrowId})`} /></g>
+            </g>;
           })}
         </svg>
-        <span key={`${phase}-${step}-${leg}-${targets.join('-')}`} aria-hidden="true" className="fv-journey-traveler" style={{ '--start-x': `${(path[0].x - x) / w * 100}%`, '--start-y': `${(path[0].y - y) / h * 100}%`, '--end-x': `${(path.at(-1).x - x) / w * 100}%`, '--end-y': `${(path.at(-1).y - y) / h * 100}%` }}/>
-        {path.map((place, index) => <span key={`${index}-${place.id}`} className={`fv-journey-pin ${index === path.length - 1 ? 'is-destination' : ''} ${(place.x - x) / w < 0.23 ? 'is-left' : (place.x - x) / w > 0.77 ? 'is-right' : ''} ${(place.y - y) / h > 0.7 ? 'is-bottom' : ''}`} style={{ left: `${(place.x - x) / w * 100}%`, top: `${(place.y - y) / h * 100}%` }}><b>{leg + index + 1}</b><span>{place.name}</span></span>)}
-        <div className="fv-journey-tools">
-          <button type="button" aria-pressed={playing} onClick={play}>{playing ? '일시정지' : finished ? '다시 재생' : '경로 재생'}</button>
-          <button type="button" aria-pressed={wholeMap} onClick={() => setWholeMap(!wholeMap)}>{wholeMap ? '구간 확대' : '세계 지도'}</button>
+        {path.map((place, index) => <span key={`${index}-${place.id}`} className={`fv-journey-pin ${index === path.length - 1 ? 'is-destination' : ''} ${(place.x - x) / w < 0.23 ? 'is-left' : (place.x - x) / w > 0.77 ? 'is-right' : ''} ${(place.y - y) / h > 0.7 ? 'is-bottom' : ''}`} style={{ left: `${place.x / 903 * 100}%`, top: `${place.y / 640 * 100}%`, '--arrival-delay': path.length > 1 ? '1500ms' : '600ms' }}><b key={routeKey}>{current === 0 && index === 0 && path.length > 1 ? '?' : current + index + (path.length === 1 ? 1 : 0)}</b><span>{place.name}</span></span>)}
         </div>
         <span className="fv-north" aria-hidden="true">↑ 북</span>
+        </div>
       </> : <p className="fv-map-error" role="status">지도를 불러오지 못했습니다. 위 이동 순서와 아래 안내로 확인하세요.</p>}
     </div>
-    <div className="fv-journey-instructions">
+    <div className="fv-journey-instructions" key={routeKey}>
       <div><h4>{step === 0 && !isLater ? '이곳에서 시작' : '이 구간에서 할 일'}</h4><p>{row[2]}</p></div>
       <div><h4>다음 지역으로 가는 방법</h4><p>{stage.travel}</p></div>
     </div>

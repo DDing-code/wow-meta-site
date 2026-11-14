@@ -143,8 +143,9 @@
 .fv-journey button[aria-pressed=true],.fv-journey button[aria-current=step] { color:#f3fbff; border-color:#8dd9f5; background:#304854; }
 .fv-journey-phases { display:flex; gap:6px; margin-bottom:6px; }
 .fv-journey-phases button { flex:1; font-size:14px; font-weight:700; line-height:1.4; }
-/* 종족별 출발 단계는 한 줄 띠로 둔다. 좁은 화면에서는 옆으로 넘긴다. */
-.fv-journey-steps { list-style:none; margin:0; padding:0; position:relative; display:grid; grid-template-columns:repeat(var(--steps,7),minmax(0,1fr)); gap:4px; }
+/* 레벨 구간과 그 안의 경유지를 하나의 이동 띠로 보여 준다. */
+.fv-journey-steps { list-style:none; margin:0; padding:0 0 6px; position:relative; display:grid; grid-auto-flow:column; grid-auto-columns:156px; gap:4px; overflow-x:auto; scroll-snap-type:x proximity; scrollbar-width:thin; }
+.fv-journey-steps li { scroll-snap-align:start; }
 .fv-journey-steps button { width:100%; height:100%; display:grid; grid-template-columns:auto minmax(0,1fr); align-content:center; gap:0 6px; text-align:left; padding:4px 8px; }
 .fv-journey-steps span { color:#8dd9f5; font:12px/1.5 'Galmuri11',sans-serif; }
 .fv-journey-steps strong { font-size:13px; line-height:1.5; font-variant-numeric:tabular-nums; }
@@ -154,36 +155,31 @@
 .fv-journey-heading>span { font-size:13px; color:#8dd9f5; }
 .fv-journey-leg { display:flex; flex-wrap:wrap; align-items:center; gap:6px 12px; margin:0 0 10px; font-size:14px; }
 .fv-journey-leg>strong { background:#fff0a6; color:#17212a; padding:2px 10px; font-size:13px; }
-.fv-journey-stops { list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; align-items:center; gap:6px; }
-.fv-journey-stops li { display:flex; align-items:center; gap:6px; min-width:0; }
-.fv-journey-stops li>span,.fv-journey-stops button { display:flex; align-items:center; gap:6px; }
-.fv-journey .fv-journey-stops button { min-height:32px; padding:3px 9px; }
-.fv-journey-stops b { color:#8dd9f5; font:12px 'Galmuri11',sans-serif; }
-.fv-journey-stops i { font-style:normal; color:#8a99a6; }
 .fv-journey-options { display:flex; align-items:center; flex-wrap:wrap; gap:6px; }
-.fv-journey-options>span { color:#c5bb9e; }
 .fv-journey .fv-journey-options button { min-height:32px; padding:3px 10px; }
 /* 단계 띠·제목과 함께 한 화면에 들어오도록 지도 높이를 화면 높이에 맞춘다(폭은 비율대로 줄어듦). */
-.fv-journey-map { width:100%; max-width:max(320px,calc((100svh - 290px) * 1.42)); margin-inline:auto; position:relative; overflow:hidden; border:2px solid #677b89; background:#0a1e2a; }
-.fv-journey-map>svg { width:100%; height:100%; display:block; image-rendering:pixelated; }
-.fv-journey-tools { position:absolute; left:8px; top:8px; display:flex; gap:6px; }
+.fv-journey-map { width:100%; max-width:max(320px,calc((100svh - 334px) * 1.42)); margin-inline:auto; position:relative; overflow:hidden; border:2px solid #677b89; background:#0a1e2a; }
+.fv-journey-viewport { position:relative; aspect-ratio:903/640; overflow:hidden; }
+.fv-journey-camera { position:absolute; inset:0; transform-origin:0 0; transition:transform 600ms cubic-bezier(.16,1,.3,1); }
+.fv-journey-camera>svg { width:100%; height:100%; display:block; image-rendering:pixelated; }
+.fv-journey-reveal { stroke-dasharray:1; animation:fv-route-reveal 900ms ease-out 600ms both; }
+@keyframes fv-route-reveal { from { stroke-dashoffset:1; } to { stroke-dashoffset:0; } }
+.fv-journey-tools { display:flex; gap:6px; padding:6px; background:#101820; border-bottom:1px solid #677b89; }
 .fv-journey .fv-journey-tools button { min-height:32px; padding:3px 10px; font-size:13px; background:#101216e0; border-color:#7d8f9c; }
 .fv-journey .fv-journey-tools button[aria-pressed=true] { background:#304854; border-color:#8dd9f5; }
-.fv-journey-traveler { position:absolute; width:14px; height:14px; border:2px solid #17212a; background:#fff7cb; transform:translate(-50%,-50%) rotate(45deg); pointer-events:none; animation:fv-travel 4s linear infinite; animation-play-state:paused; }
-.fv-journey-map[data-running=true] .fv-journey-traveler { animation-play-state:running; }
-@keyframes fv-travel { from { left:var(--start-x); top:var(--start-y); } to { left:var(--end-x); top:var(--end-y); } }
-.fv-journey-pin { position:absolute; transform:translate(-50%,-50%); display:grid; place-items:center; width:28px; height:28px; pointer-events:none; }
+.fv-journey-pin { position:absolute; transform:translate(-50%,-50%) scale(var(--pin-scale)); transition:transform 600ms cubic-bezier(.16,1,.3,1); display:grid; place-items:center; width:28px; height:28px; pointer-events:none; }
 .fv-journey-pin>b { display:grid; place-items:center; width:28px; height:28px; color:#e9f5fc; background:#12202c; border:2px solid #9fb7c9; font:13px 'Galmuri11',sans-serif; }
 .fv-journey-pin>span { position:absolute; top:34px; width:max-content; max-width:155px; text-align:center; color:#fff7d7; background:#111820ed; padding:5px 8px; font-size:14px; line-height:1.5; }
-.fv-journey-pin.is-destination>b { color:#12191d; background:#fff0a6; border-color:#fff8da; }
+.fv-journey-pin.is-destination>b { color:#12191d; background:#fff0a6; border-color:#fff8da; animation:fv-arrive 220ms ease-out var(--arrival-delay) both; }
+@keyframes fv-arrive { 0% { transform:scale(.86); } 65% { transform:scale(1.08); } 100% { transform:scale(1); } }
 .fv-journey-pin.is-left>span { left:0; }.fv-journey-pin.is-right>span { right:0; }.fv-journey-pin.is-bottom>span { top:auto; bottom:34px; }
-.fv-journey-instructions { display:grid; grid-template-columns:1fr 1fr; gap:24px; border-top:1px solid #536471; margin-top:16px; padding-top:14px; }
+.fv-journey-instructions { display:grid; grid-template-columns:1fr 1fr; gap:24px; border-top:1px solid #536471; margin-top:16px; padding-top:14px; animation:fv-instructions-in 180ms ease-out; }
+@keyframes fv-instructions-in { from { opacity:0; } to { opacity:1; } }
 .fv-journey-instructions h4 { color:#8dd9f5; font-size:15px; margin:0 0 8px; }.fv-journey-instructions p { font-size:15px; line-height:1.8; margin:0; }
 .fv-journey .fv-caption { line-height:1.7; margin-top:14px; }
 .fv-journey-continue { margin-top:12px; width:100%; }
 @media(max-width:760px) {
- .fv-journey-steps { grid-template-columns:none; grid-auto-flow:column; grid-auto-columns:minmax(112px,34%); overflow-x:auto; scroll-snap-type:x proximity; scrollbar-width:thin; padding-bottom:4px; }
- .fv-journey-steps li { scroll-snap-align:start; }
+ .fv-journey-steps { grid-auto-columns:minmax(132px,40%); }
 }
 @media(max-width:600px) {
  .fv-journey button { min-height:40px; }
@@ -192,10 +188,8 @@
  .fv-journey-pin>span { max-width:100px; font-size:12px; padding:3px 5px; }
  .fv-journey-heading h3 { font-size:16px; }
  .fv-journey .fv-journey-tools button { min-height:30px; padding:2px 8px; font-size:12px; }
- .fv-journey-tools { left:6px; top:6px; }
 }
 @media(prefers-reduced-motion:reduce) {
- .fv-journey-map:not([data-running=true]) .fv-journey-traveler { display:none; }
- /* 동작 줄이기 중에도 명시적으로 재생을 눌렀을 때만 움직인다. */
- .fv-journey-map[data-running=true] .fv-journey-traveler { animation-duration:4s !important; animation-iteration-count:infinite !important; }
+ .fv-journey-camera,.fv-journey-pin { transition:none; }
+ .fv-journey-reveal,.fv-journey-pin.is-destination>b,.fv-journey-instructions { animation:none; }
 }
