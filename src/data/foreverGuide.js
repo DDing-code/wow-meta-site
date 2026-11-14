@@ -1604,7 +1604,7 @@ for (const [id, spells] of Object.entries(foreverTalents.classes)) {
     url: `https://www.wowhead.com/forever/ko/talent-calc/${id}`,
   };
   page.sections.splice(2, 0, {
-    id: 'talent-effects', title: '육성 중 살펴볼 핵심 특성 효과',
+    id: 'talent-effects', title: '핵심 특성 효과',
     lead: '각 특성의 1등급과 연결한 주문 페이지의 표시 등급 기준입니다. 레벨·배운 주문 등급에 따라 수치가 달라지며, 아래 효과 목록이 위 견본에 모두 포함되는 것은 아닙니다. 이름이나 아이콘을 누르면 한국어 원문을 볼 수 있습니다. 확인이 끝나지 않은 설명은 비워 두었습니다.',
     spells,
     sources: [source],
@@ -1638,7 +1638,7 @@ for (const [id, page] of Object.entries(foreverDetailGuides)) {
   const alliance = ['human', 'dwarf', 'gnome', 'night-elf', 'skyborne-alliance'].includes(id.split('/')[1]);
   page.lead = page.lead.replace('출발지부터 30레벨 안팎까지', '출발지부터 60레벨까지');
   const block = page.sections.find(section => section.id === 'after-30');
-  block.title = '30~60레벨 · 다음 지역과 새 던전';
+  block.title = '30~60레벨 동선';
   block.lead = '30레벨 뒤에는 같은 진영의 지역 후보를 함께 씁니다. 아래 순서는 ForeverDB의 추정 자료를 추린 추천이며, 지역별 퀘스트를 직접 끝까지 검증한 최단 동선은 아닙니다. 강물터와 새 던전의 레벨 범위만 공식 소개로 확인했습니다. 주황·빨강 퀘스트가 많으면 이전 지역의 남은 퀘스트부터 확인하세요.';
   block.table = { columns: ['구간', '이어서 갈 지역·던전', '근거와 선택 기준'], rows: laterRoutes[alliance ? 'alliance' : 'horde'] };
   block.items = [
