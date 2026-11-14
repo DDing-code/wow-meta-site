@@ -2229,7 +2229,8 @@ for (const page of [foreverGuides.classes,...Object.values(foreverDetailGuides).
   for (const block of page.sections) for (const link of block.links || []) {
     const target=foreverDetailGuides[link.path.slice('/forever/'.length)];
     if (target?.parent==='classes') link.art=target.art;
-    if (target?.specialization) link.icon=target.sections.find(s=>s.milestones).milestones[0].spell.icon;
+    // 전문화 칸의 아이콘은 목록과 같은 도트 그림(public/images/forever/icons/spec-<직업>-<전문화>.png)이다.
+    if (target?.specialization) link.icon=`spec-${link.path.split('/').slice(3).join('-')}`;
   }
 }
 
@@ -2243,10 +2244,11 @@ foreverGuides.classes.index = {
   groups: detailEntries.filter(([, page]) => page.parent === 'classes').map(([id, page]) => {
     const classId = id.split('/')[1];
     return {
-      id: classId, label: page.label, path: `/forever/${id}`, color: CLASS_COLORS[classId], art: page.art,
+      // 아이콘은 public/images/forever/icons/<icon>.png 도트 그림이다(직업: 공식 직업 아이콘, 전문화: 리테일 목록의 전문화 아이콘).
+      id: classId, label: page.label, path: `/forever/${id}`, color: CLASS_COLORS[classId], icon: `class-${classId}`,
       items: detailEntries.filter(([, spec]) => spec.parent === id).map(([specId, spec]) => ({
         label: spec.label.replace(` ${page.label}`, ''), path: `/forever/${specId}`, description: spec.lead,
-        icon: spec.sections.find(block => block.milestones).milestones[0].spell.icon,
+        icon: `spec-${classId}-${specId.split('/')[2]}`,
       })),
     };
   }),

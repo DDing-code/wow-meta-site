@@ -142,6 +142,27 @@ for (const [id, page] of Object.entries(allGuides)) {
 }
 assert.deepStrictEqual(guide.foreverGuides.classes.index.groups.map(group => group.items.length), Array(9).fill(3), '직업 가이드 목록: 아홉 직업 × 전문화 셋');
 assert.deepStrictEqual(guide.foreverGuides.races.index.groups.map(group => group.items.length), [5, 5], '레벨링 가이드 목록: 진영별 다섯 종족');
+// 직업 가이드 목록·직업 페이지의 직업·전문화 아이콘은 도트 그림 파일이다(artifacts/forever-class-icons-20261114/make-icons.py).
+{
+  const iconDir = path.join(SITE_ROOT, 'public/images/forever/icons');
+  const used = new Set();
+  for (const group of guide.foreverGuides.classes.index.groups) {
+    assert.strictEqual(group.icon, `class-${group.id}`, `직업 가이드 목록 ${group.id}: 직업 아이콘 누락`);
+    used.add(group.icon);
+    for (const item of group.items) {
+      assert.strictEqual(item.icon, `spec-${item.path.split('/').slice(3).join('-')}`, `직업 가이드 목록 ${item.path}: 전문화 아이콘 누락`);
+      used.add(item.icon);
+    }
+  }
+  for (const [id, page] of Object.entries(guide.foreverDetailGuides).filter(([, page]) => page.parent === 'classes')) {
+    const links = page.sections.flatMap(block => block.links || []).filter(link => guide.foreverDetailGuides[link.path.slice('/forever/'.length)]?.specialization);
+    assert.strictEqual(links.length, 3, `${id}: 전문화 칸 셋`);
+    for (const link of links) assert.ok(used.has(link.icon), `${id}: 전문화 칸 아이콘이 목록과 다름 (${link.path})`);
+  }
+  assert.deepStrictEqual(fs.readdirSync(iconDir).sort(), [...used].map(icon => `${icon}.png`).sort(), 'public/images/forever/icons: 아이콘 파일이 목록과 다름');
+  const page = fs.readFileSync(path.join(SITE_ROOT, 'src/pages/ForeverPage.js'), 'utf8');
+  assert.ok(!/zamimg[^`]*\$\{(item|link|group)\.icon\}/.test(page), '직업·전문화 아이콘을 외부 특성 아이콘으로 되돌림');
+}
 for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
   const listed = indexPaths.filter(item => item === `/forever/${id}`).length;
   if (page.specialization || page.parent === 'leveling') assert.strictEqual(listed, 1, `${id}: 탭 목록에 한 번만 있어야 함`);
