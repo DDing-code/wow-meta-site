@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import atlas from '../../data/foreverVisuals.json';
 import '../../styles/ForeverVisuals.css';
 
-const bounds = { world: [0, 0, 903, 640], west: [130, 50, 260, 450], east: [600, 135, 240, 410], island: [450, 70, 140, 150] };
+const bounds = { world: [0, 0, 903, 640], west: [130, 0, 290, 530], east: [600, 100, 250, 450], island: [450, 70, 140, 150] };
 const continents = { world: '세계', west: '칼림도어', east: '동부 왕국', island: '제프라스 섬' };
 const continent = place => place.x < 400 ? 'west' : place.x > 600 ? 'east' : 'island';
 export function mapPlaces(config) {

@@ -41,7 +41,6 @@ export default function ForeverSpell({ spell, id, size = 24 }) {
     if (dialog.current?.open && dialog.current.close) dialog.current.close();
     setPinned(false); setHover(false);
     trigger.current?.focus();
-    restoringFocus.current = false;
   };
 
   useLayoutEffect(() => {
@@ -72,8 +71,8 @@ export default function ForeverSpell({ spell, id, size = 24 }) {
   return <>
     <button ref={trigger} type="button" className="fv-spell" data-spell-id={data.id}
       aria-haspopup="dialog" aria-describedby={hover && !pinned ? uid : undefined}
-      onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}
-      onFocus={() => { if (!restoringFocus.current) setHover(true); }} onBlur={() => setHover(false)} onClick={() => { setHover(false); setPinned(true); }}>
+      onMouseEnter={() => { if (!restoringFocus.current) setHover(true); }} onMouseLeave={() => { restoringFocus.current = false; setHover(false); }}
+      onFocus={() => { if (!restoringFocus.current) setHover(true); }} onBlur={() => { restoringFocus.current = false; setHover(false); }} onClick={() => { setHover(false); setPinned(true); }}>
       <SpellIcon spell={data} size={size} /><strong>{data.name}</strong>
     </button>
     {hover && !pinned && createPortal(<div ref={tip} id={uid} role="tooltip" className="fv-tooltip" style={position}><SpellDescription spell={data} /></div>, document.body)}

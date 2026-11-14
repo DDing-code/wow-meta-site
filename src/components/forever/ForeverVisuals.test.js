@@ -29,6 +29,11 @@ test('터치 상세창은 원문·실제 등급을 보이며 Escape로 닫고 �
  expect(document.querySelector('dialog')).toBeNull();
  expect(document.activeElement).toBe(trigger);
  expect(document.querySelector('[role=tooltip]')).toBeNull();
+ act(()=>trigger.dispatchEvent(new MouseEvent('mouseover',{bubbles:true})));
+ expect(document.querySelector('[role=tooltip]')).toBeNull();
+ act(()=>trigger.dispatchEvent(new MouseEvent('mouseout',{bubbles:true,relatedTarget:document.body})));
+ act(()=>trigger.dispatchEvent(new MouseEvent('mouseover',{bubbles:true})));
+ expect(document.querySelector('[role=tooltip]')).not.toBeNull();
 });
 
 test('본문은 긴 주문 이름부터 연결하고 아이콘 오류에도 이름을 보존한다',()=>{

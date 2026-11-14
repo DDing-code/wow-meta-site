@@ -2970,7 +2970,7 @@
       "id": "teldrassil",
       "name": "텔드랏실",
       "x": 200,
-      "y": 82,
+      "y": 50,
       "kind": "route",
       "zone": "텔드랏실",
       "level": "지역 후보",

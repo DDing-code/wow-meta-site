@@ -25,8 +25,7 @@
 .fv-flow > li:not(:last-child)::after { content:'→'; position:absolute; z-index:1; right:-15px; top:18px; color:#8dd9f5; background:#101216; font-size:20px; }
 .fv-flow .fv-step { color:#8dd9f5; font:13px 'Galmuri11',sans-serif; display:block; margin-bottom:8px; }
 .fv-flow p { margin-top:8px; color:#c4c8cf; font-size:.93rem; line-height:1.75; }
-.fv-flow .fv-spell { display:flex; flex-wrap:wrap; padding:0; }
-.fv-flow .fv-spell img { width:40px; height:40px; }
+.fv-flow > li > .fv-spell { display:flex; flex-wrap:wrap; padding:0; }
 .fv-flow .fv-relation { display:block; margin-top:12px; font-size:12px; color:#9edff7; border-top:1px solid #353a43; padding-top:8px; }
 .fv-skill-groups { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; margin-top:24px; }
 .fv-skill-group { padding:18px; background:#191c22; border:1px solid #353a43; }
@@ -88,4 +87,4 @@
 @media(max-width:600px) { .fv-map-canvas[data-view=world] .fv-map-pin:not([aria-pressed=true]) { display:none; }.fv-small-map-note { display:block; margin-top:6px; }.fv-compact-hero>div:first-child img { object-position:center; } }
 @media(max-width:980px) { .fv-guide-layout { grid-template-columns:minmax(0,1fr); gap:28px; }.fv-guide-toc { position:static; }.fv-guide-toc nav { grid-template-columns:repeat(2,minmax(0,1fr)); }.fv-map-layout { grid-template-columns:minmax(0,1fr); }.fv-map-detail { display:block; }.fv-map-zoom { max-width:360px; }.fv-place-list { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:420px) { .fv-guide-toc nav,.fv-place-list { grid-template-columns:minmax(0,1fr); }.fv-map-tabs button { flex:1 1 40%; }.fv-map-pin span { width:22px; height:22px; font-size:10px; } }
-@media(max-width:600px) { .fv-skill-groups,.fv-facilities { grid-template-columns:minmax(0,1fr); }.fv-flow { display:grid; grid-template-columns:minmax(0,1fr); gap:16px; }.fv-flow>li:not(:last-child)::after { content:'↓'; top:auto; right:20px; bottom:-18px; }.fv-flow .fv-spell { flex-wrap:nowrap; }.fv-decision { grid-template-columns:minmax(0,1fr); gap:8px; }.fv-facility { grid-template-columns:86px minmax(0,1fr); } }
+@media(max-width:600px) { .fv-skill-groups,.fv-facilities { grid-template-columns:minmax(0,1fr); }.fv-flow { display:grid; grid-template-columns:minmax(0,1fr); gap:16px; }.fv-flow>li:not(:last-child)::after { content:'↓'; top:auto; right:20px; bottom:-18px; }.fv-flow > li > .fv-spell { flex-wrap:nowrap; }.fv-decision { grid-template-columns:minmax(0,1fr); gap:8px; }.fv-facility { grid-template-columns:86px minmax(0,1fr); } }
