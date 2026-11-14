@@ -12,7 +12,8 @@ export default function LevelingJourney({ race, early, later }) {
   const [step, setStep] = useState(0);
   const [choices, setChoices] = useState({});
   const [failed, setFailed] = useState(false);
-  const [reduced, setReduced] = useState(false);
+  const [reduced, setReduced] = useState(() => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches || false);
+  const [motionRequest, setMotionRequest] = useState(0);
   const [visible, setVisible] = useState(false);
   const frame = useRef(null);
   const traveler = useRef(null);
@@ -33,7 +34,7 @@ export default function LevelingJourney({ race, early, later }) {
   const path = [previous, ...(isLater ? [pick(step)] : stage.points)]
     .filter((id, i, all) => id && id !== all[i - 1]).map(id => places.get(id));
   const legs = path.slice(1).map((place, index) => ({ from: path[index], to: place }));
-  const routeKey = `${phase}-${step}-${path.map(place => place.id).join('>')}`;
+  const routeKey = `${phase}-${step}-${path.map(place => place.id).join('>')}-${motionRequest}`;
   const xs = path.map(place => place.x), ys = path.map(place => place.y);
   // 지도 범위를 잇는 선이며 실제 도로나 승강장 좌표가 아니다.
   const w = Math.min(903, Math.max(190, Math.max(...xs) - Math.min(...xs) + 100, (Math.max(...ys) - Math.min(...ys) + 90) * 1.5));
@@ -50,8 +51,7 @@ export default function LevelingJourney({ race, early, later }) {
   useEffect(() => {
     const query = window.matchMedia?.('(prefers-reduced-motion: reduce)');
     if (!query) return;
-    const update = () => setReduced(query.matches);
-    update();
+    const update = () => { setReduced(query.matches); setMotionRequest(0); };
     query.addEventListener('change', update);
     return () => query.removeEventListener('change', update);
   }, []);
@@ -70,10 +70,12 @@ export default function LevelingJourney({ race, early, later }) {
   }, [failed]);
   // 지도가 처음 보일 때 그 구간의 이동을 한 번만 보여 준다(화면 밖에 있으면 기다린다).
   const [motionKey, setMotionKey] = useState(null);
-  const moving = !reduced && motionKey === routeKey;
+  // 동작 줄이기에서는 자동 효과를 끄되, 직접 고른 경로의 이동은 보여 준다.
+  const canMove = !reduced || motionRequest > 0;
+  const moving = canMove && motionKey === routeKey;
   useLayoutEffect(() => {
-    if (!reduced && visible && motionKey !== routeKey) setMotionKey(routeKey);
-  }, [routeKey, visible, reduced, motionKey]);
+    if (canMove && visible && motionKey !== routeKey) setMotionKey(routeKey);
+  }, [routeKey, visible, canMove, motionKey]);
   // 표식이 출발지에서 경유지를 하나씩 거쳐 도착지까지 간다.
   useLayoutEffect(() => {
     const token = traveler.current;
@@ -86,8 +88,8 @@ export default function LevelingJourney({ race, early, later }) {
     return () => animation.cancel();
   }, [moving, routeKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const chooseStep = index => setStep(index);
-  const choosePhase = next => { setPhase(next); setStep(0); };
+  const chooseStep = index => { setStep(index); setMotionRequest(request => request + 1); };
+  const choosePhase = next => { setPhase(next); chooseStep(0); };
 
   return <div className="fv-journey" ref={frame} data-phase={phase} data-step={step} data-moving={moving}>
     <div className="fv-journey-phases" aria-label="레벨 구간">
@@ -103,7 +105,7 @@ export default function LevelingJourney({ race, early, later }) {
     </div>
     <div className="fv-journey-leg">
       <strong>{transport}</strong>
-      {isLater && <div className="fv-journey-options" aria-label="이 구간의 지역 후보">{stage.points.map(id => <button type="button" key={id} aria-pressed={path.at(-1).id === id} onClick={() => setChoices({ ...choices, [step]: id })}>{name(id)}</button>)}</div>}
+      {isLater && <div className="fv-journey-options" aria-label="이 구간의 지역 후보">{stage.points.map(id => <button type="button" key={id} aria-pressed={path.at(-1).id === id} onClick={() => { setChoices({ ...choices, [step]: id }); chooseStep(step); }}>{name(id)}</button>)}</div>}
     </div>
     <div className="fv-journey-map">
       {!failed ? <div className="fv-journey-viewport" ref={viewport}>

@@ -120,19 +120,34 @@ test('구간을 고르면 표식이 출발지에서 경유지를 차례로 거�
     clickStep(2);
     expect(calls.length).toBe(count + 1);
     expect(container.querySelector('.fv-journey-map svg').getAttribute('aria-label')).toContain('스톰윈드 → 서부 몰락지대');
+    clickStep(2);
+    expect(calls.length).toBe(count + 2);
   } finally { Element.prototype.animate = original; }
 });
 
-test('동작 줄이기 설정과 지도 로딩 실패에서도 이동 설명을 읽을 수 있다', () => {
+test('동작 줄이기는 자동 재생만 막고 직접 고른 구간은 다시 재생한다', () => {
   const old = window.matchMedia;
   const original = Element.prototype.animate;
   Element.prototype.animate = jest.fn(() => ({ cancel: jest.fn() }));
-  window.matchMedia = () => ({ matches: true, addEventListener: jest.fn(), removeEventListener: jest.fn() });
+  const preference = { matches: true, addEventListener: jest.fn(), removeEventListener: jest.fn() };
+  window.matchMedia = () => preference;
   try {
     render(<ForeverPage section="leveling/skyborne-horde" />);
-    clickStep(1);
     expect(container.querySelector('.fv-journey').dataset.moving).toBe('false');
     expect(Element.prototype.animate).not.toHaveBeenCalled();
+    clickStep(1);
+    expect(container.querySelector('.fv-journey').dataset.moving).toBe('true');
+    expect(Element.prototype.animate).toHaveBeenCalledTimes(1);
+    const first = Element.prototype.animate.mock.results[0].value;
+    const pins = [...container.querySelectorAll('.fv-journey-pin')];
+    expect(Element.prototype.animate.mock.calls[0][0].map(frame => [frame.left, frame.top])).toEqual(pins.map(pin => [pin.style.left, pin.style.top]));
+    clickStep(1);
+    expect(first.cancel).toHaveBeenCalledTimes(1);
+    expect(Element.prototype.animate).toHaveBeenCalledTimes(2);
+    const updatePreference = preference.addEventListener.mock.calls[0][1];
+    act(() => updatePreference());
+    expect(container.querySelector('.fv-journey').dataset.moving).toBe('false');
+    expect(Element.prototype.animate.mock.results[1].value.cancel).toHaveBeenCalledTimes(1);
     expect(container.querySelector('.fv-journey-instructions').textContent).toContain('은빛소나무 숲 직행 배');
     act(() => container.querySelector('.fv-journey-map image').dispatchEvent(new Event('error')));
     expect(container.querySelector('.fv-journey [role=status]').textContent).toContain('지도를 불러오지 못했습니다');
