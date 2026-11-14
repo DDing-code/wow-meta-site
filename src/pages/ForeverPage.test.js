@@ -176,6 +176,8 @@ test('종족별 출발 여덟 경로와 스카이본 이동을 구분하고 합�
   expect(new Set(races.map(([id]) => JSON.stringify(rows(id.split('/')[1])))).size).toBe(8);
   expect(rows('dwarf')).toEqual(rows('gnome'));
   expect(rows('orc')).toEqual(rows('troll'));
+  for (const race of ['human', 'dwarf', 'gnome', 'skyborne-alliance']) expect(rows(race).at(-1)[0]).toBe('27~30');
+  expect(rows('night-elf').at(-1)[0]).toBe('28~30');
   expect(rows('orc')[1][1]).toBe('티리스팔 숲');
   expect(rows('tauren')[1][1]).toBe('은빛소나무 숲 · 언더시티');
   expect(rows('night-elf').some(row => row[1] === '저습지')).toBe(true);
@@ -197,6 +199,9 @@ test('종족별 출발 여덟 경로와 스카이본 이동을 구분하고 합�
   render(<ForeverPage section="leveling/skyborne-horde" />, '/forever/leveling/skyborne-horde');
   expect(container.querySelector('#start').textContent).toContain('은빛소나무 숲에 바로 도착하지');
   expect(container.querySelector('#route').textContent).toContain('멀고어·잊혀진 땅 사이 고원');
+  render(<ForeverPage section="leveling/human" />, '/forever/leveling/human');
+  clickStep(rows('human').length - 1);
+  expect(container.querySelector('.fv-journey-leg').textContent).toContain('메네실 항구 → 사우스쇼어 경유 → 아우버다인 배');
 });
 
 test('27개 전문화의 추천 순서와 KB 툴팁은 중복 ID 없이 연결된다', () => {
