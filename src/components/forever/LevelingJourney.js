@@ -3,7 +3,7 @@ import atlas from '../../data/foreverVisuals.json';
 import '../../styles/ForeverVisuals.css';
 
 const places = new Map([...atlas.regions, ...atlas.places].map(place => [place.id, place]));
-// 카메라가 새 구간으로 옮겨 간 뒤 표식이 출발한다. 한 구간(지역 → 지역)마다 같은 시간이 걸린다.
+// 출발지를 잠깐 보여 준 뒤 이동한다. 한 구간(지역 → 지역)마다 같은 시간이 걸린다.
 export const JOURNEY_TIMING = { camera: 600, leg: 1100 };
 const at = place => ({ left: `${place.x / 903 * 100}%`, top: `${place.y / 640 * 100}%` });
 
@@ -17,6 +17,7 @@ export default function LevelingJourney({ race, early, later }) {
   const [visible, setVisible] = useState(false);
   const frame = useRef(null);
   const traveler = useRef(null);
+  const camera = useRef(null);
   const viewport = useRef(null);
   const [mapWidth, setMapWidth] = useState(860);
   const maskId = useId().replace(/:/g, '');
@@ -36,11 +37,13 @@ export default function LevelingJourney({ race, early, later }) {
   const legs = path.slice(1).map((place, index) => ({ from: path[index], to: place }));
   const routeKey = `${phase}-${step}-${path.map(place => place.id).join('>')}-${motionRequest}`;
   const xs = path.map(place => place.x), ys = path.map(place => place.y);
-  // 지도 범위를 잇는 선이며 실제 도로나 승강장 좌표가 아니다.
-  const w = Math.min(903, Math.max(190, Math.max(...xs) - Math.min(...xs) + 100, (Math.max(...ys) - Math.min(...ys) + 90) * 1.5));
+  // 플레이어 주변만 보여 주되, 지도 가장자리에서도 빈 공간 없이 중앙을 유지한다.
+  const w = Math.min(240, Math.min(...xs) * 2, (903 - Math.max(...xs)) * 2,
+    Math.min(...ys) * 2 * 903 / 640, (640 - Math.max(...ys)) * 2 * 903 / 640);
   const h = w * 640 / 903;
-  const x = Math.max(0, Math.min(903 - w, (Math.max(...xs) + Math.min(...xs) - w) / 2));
-  const y = Math.max(0, Math.min(640 - h, (Math.max(...ys) + Math.min(...ys) - h) / 2));
+  const x = path.at(-1).x - w / 2;
+  const y = path.at(-1).y - h / 2;
+  const cameraAt = place => ({ transform: `translate(${50 - place.x / w * 100}%, ${50 - place.y / h * 100}%) scale(${903 / w})` });
   const transports = legs.map(({ from, to }) => atlas.journeyTransports[`${from.id}>${to.id}`] || '지역 이동').filter((item, i, all) => item !== all[i - 1]);
   const transport = isLater ? '후보 비교 · 추정' : legs.length ? transports.join(' → ') : '출발·퀘스트 진행';
   const name = id => places.get(id).name;
@@ -76,7 +79,7 @@ export default function LevelingJourney({ race, early, later }) {
   useLayoutEffect(() => {
     if (canMove && visible && motionKey !== routeKey) setMotionKey(routeKey);
   }, [routeKey, visible, canMove, motionKey]);
-  // 표식이 출발지에서 경유지를 하나씩 거쳐 도착지까지 간다.
+  // 표식과 카메라에 같은 시간·속도를 적용해 이동 내내 플레이어를 중앙에 둔다.
   useLayoutEffect(() => {
     const token = traveler.current;
     if (!moving || !token?.animate) return;
@@ -85,7 +88,9 @@ export default function LevelingJourney({ race, early, later }) {
     const animation = legs.length
       ? token.animate(path.map((place, index) => ({ ...at(place), offset: index / legs.length, easing: 'cubic-bezier(.45,0,.2,1)' })), { ...options, duration: legs.length * JOURNEY_TIMING.leg })
       : token.animate([{ transform: `${scale} translateY(-30px)`, opacity: 0 }, { transform: scale, opacity: 1 }], { ...options, duration: 520, easing: 'cubic-bezier(.3,1.5,.5,1)' });
-    return () => animation.cancel();
+    const follow = legs.length ? camera.current.animate(path.map((place, index) => ({ ...cameraAt(place), offset: index / legs.length, easing: 'cubic-bezier(.45,0,.2,1)' })), { ...options, duration: legs.length * JOURNEY_TIMING.leg }) : null;
+    if (follow) animation.startTime = follow.startTime = document.timeline.currentTime;
+    return () => { animation.cancel(); follow?.cancel(); };
   }, [moving, routeKey]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const chooseStep = index => { setStep(index); setMotionRequest(request => request + 1); };
@@ -109,7 +114,7 @@ export default function LevelingJourney({ race, early, later }) {
     </div>
     <div className="fv-journey-map">
       {!failed ? <div className="fv-journey-viewport" ref={viewport}>
-        <div className="fv-journey-camera" data-viewbox={`${x} ${y} ${w} ${h}`} style={{ transform: `translate(${-x / w * 100}%, ${-y / h * 100}%) scale(${903 / w})`, '--pin-scale': w / 903 }}>
+        <div ref={camera} className="fv-journey-camera" data-viewbox={`${x} ${y} ${w} ${h}`} style={{ ...cameraAt(path.at(-1)), '--pin-scale': w / 903 }}>
           <svg viewBox="0 0 903 640" role="img" aria-label={`${row[0]} 지역 이동: ${path.map(place => place.name).join(' → ')}`}>
             <defs><marker id={`${maskId}-arrow`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#fff0a6" /></marker></defs>
             <image href="/images/forever/world-atlas-1536.webp" width="903" height="640" onError={() => setFailed(true)} />

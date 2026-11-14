@@ -14,6 +14,7 @@ const render = (node, path = '/') => act(() => root.render(
 
 beforeEach(() => {
   global.IS_REACT_ACT_ENVIRONMENT = true;
+  document.timeline = { currentTime: 42 };
   container = document.createElement('div');
   document.body.appendChild(container);
   root = createRoot(container);
@@ -21,6 +22,7 @@ beforeEach(() => {
 afterEach(() => {
   act(() => root.unmount());
   container.remove();
+  delete document.timeline;
 });
 
 const toggle = id => container.querySelector(`[aria-label="게임 버전"] a[data-edition="${id}"]`);
@@ -43,6 +45,10 @@ test('종족 열 쪽의 단계 선택은 실제 경유지와 확대 지도에 �
       const [x, y, w, h] = container.querySelector('.fv-journey-camera').dataset.viewbox.split(' ').map(Number);
       expect(x).toBeGreaterThanOrEqual(0); expect(y).toBeGreaterThanOrEqual(0);
       expect(x + w).toBeLessThanOrEqual(903.000001); expect(y + h).toBeLessThanOrEqual(640.000001);
+      const traveler = container.querySelector('.fv-journey-traveler');
+      expect(x + w / 2).toBeCloseTo(parseFloat(traveler.style.left) * 903 / 100);
+      expect(y + h / 2).toBeCloseTo(parseFloat(traveler.style.top) * 640 / 100);
+      expect(w).toBeLessThanOrEqual(240);
       expect(svg.getAttribute('aria-label')).not.toMatch(/undefined|NaN/);
     });
     clickJourney('30~60레벨 추천 후보로 이어 보기 →');
@@ -89,10 +95,10 @@ test('레벨 구간은 한 점씩 표시하고 고른 구간의 경로를 표식
   expect(journey.querySelectorAll('.fv-journey-pin')).toHaveLength(1);
 });
 
-test('구간을 고르면 표식이 출발지에서 경유지를 차례로 거쳐 도착지까지 움직인다', () => {
+test('구간을 고르면 표식과 지도가 같은 속도로 움직여 플레이어를 중앙에 유지한다', () => {
   const calls = [];
   const original = Element.prototype.animate;
-  Element.prototype.animate = function animate(keyframes, options) { calls.push({ target: this, keyframes, options }); return { cancel: jest.fn() }; };
+  Element.prototype.animate = function animate(keyframes, options) { const animation = { cancel: jest.fn() }; calls.push({ target: this, keyframes, options, animation }); return animation; };
   try {
     render(<ForeverPage section="leveling/skyborne-alliance" />);
     expect(container.querySelector('.fv-journey').dataset.moving).toBe('true');
@@ -102,26 +108,41 @@ test('구간을 고르면 표식이 출발지에서 경유지를 차례로 거�
     expect(svg.getAttribute('aria-label')).toContain('제프라스 섬 → 달라란 (경유) → 스톰윈드');
     expect(container.querySelector('.fv-journey-leg').textContent).toContain('배 → 스카이본 전용 차원문');
     const pins = [...container.querySelectorAll('.fv-journey-pin')];
-    const { target, keyframes, options } = calls.at(-1);
+    const { target, keyframes, options, animation } = calls.at(-2);
+    const follow = calls.at(-1);
     expect(target).toBe(container.querySelector('.fv-journey-traveler'));
     expect(keyframes.map(frame => [frame.left, frame.top])).toEqual(pins.map(pin => [pin.style.left, pin.style.top]));
     expect(keyframes.map(frame => frame.offset)).toEqual([0, 0.5, 1]);
     expect(options).toMatchObject({ delay: 600, duration: 2200, fill: 'backwards' });
+    expect(follow.target).toBe(container.querySelector('.fv-journey-camera'));
+    expect(follow.options).toEqual(options);
+    expect(animation.startTime).toBe(42);
+    expect(follow.animation.startTime).toBe(animation.startTime);
     expect(pins.map(pin => pin.style.getPropertyValue('--arrival-delay'))).toEqual(['0ms', '1700ms', '2800ms']);
-    const [x, y, w, h] = container.querySelector('.fv-journey-camera').dataset.viewbox.split(' ').map(Number);
-    for (const pin of pins) {
+    const [, , w, h] = container.querySelector('.fv-journey-camera').dataset.viewbox.split(' ').map(Number);
+    pins.forEach((pin, index) => {
       const px = parseFloat(pin.style.left) * 903 / 100, py = parseFloat(pin.style.top) * 640 / 100;
-      expect(px).toBeGreaterThanOrEqual(x); expect(px).toBeLessThanOrEqual(x + w);
-      expect(py).toBeGreaterThanOrEqual(y); expect(py).toBeLessThanOrEqual(y + h);
-    }
+      const frame = follow.keyframes[index];
+      const [, tx, ty, zoom] = frame.transform.match(/translate\(([-\d.]+)%, ([-\d.]+)%\) scale\(([-\d.]+)\)/).map(Number);
+      expect(tx + px / 903 * zoom * 100).toBeCloseTo(50);
+      expect(ty + py / 640 * zoom * 100).toBeCloseTo(50);
+      expect(frame.offset).toBe(keyframes[index].offset);
+      expect(frame.easing).toBe(keyframes[index].easing);
+      expect(px - w / 2).toBeGreaterThanOrEqual(0);
+      expect(py - h / 2).toBeGreaterThanOrEqual(0);
+      expect(px + w / 2).toBeLessThanOrEqual(903.000001);
+      expect(py + h / 2).toBeLessThanOrEqual(640.000001);
+    });
     const count = calls.length;
     act(() => container.querySelector('.fv-journey-heading').click());
     expect(calls).toHaveLength(count);
     clickStep(2);
-    expect(calls.length).toBe(count + 1);
+    expect(calls.length).toBe(count + 2);
+    expect(animation.cancel).toHaveBeenCalledTimes(1);
+    expect(follow.animation.cancel).toHaveBeenCalledTimes(1);
     expect(container.querySelector('.fv-journey-map svg').getAttribute('aria-label')).toContain('스톰윈드 → 서부 몰락지대');
     clickStep(2);
-    expect(calls.length).toBe(count + 2);
+    expect(calls.length).toBe(count + 4);
   } finally { Element.prototype.animate = original; }
 });
 
@@ -137,17 +158,20 @@ test('동작 줄이기는 자동 재생만 막고 직접 고른 구간은 다시
     expect(Element.prototype.animate).not.toHaveBeenCalled();
     clickStep(1);
     expect(container.querySelector('.fv-journey').dataset.moving).toBe('true');
-    expect(Element.prototype.animate).toHaveBeenCalledTimes(1);
+    expect(Element.prototype.animate).toHaveBeenCalledTimes(2);
     const first = Element.prototype.animate.mock.results[0].value;
+    const firstCamera = Element.prototype.animate.mock.results[1].value;
     const pins = [...container.querySelectorAll('.fv-journey-pin')];
     expect(Element.prototype.animate.mock.calls[0][0].map(frame => [frame.left, frame.top])).toEqual(pins.map(pin => [pin.style.left, pin.style.top]));
     clickStep(1);
     expect(first.cancel).toHaveBeenCalledTimes(1);
-    expect(Element.prototype.animate).toHaveBeenCalledTimes(2);
+    expect(firstCamera.cancel).toHaveBeenCalledTimes(1);
+    expect(Element.prototype.animate).toHaveBeenCalledTimes(4);
     const updatePreference = preference.addEventListener.mock.calls[0][1];
     act(() => updatePreference());
     expect(container.querySelector('.fv-journey').dataset.moving).toBe('false');
-    expect(Element.prototype.animate.mock.results[1].value.cancel).toHaveBeenCalledTimes(1);
+    expect(Element.prototype.animate.mock.results[2].value.cancel).toHaveBeenCalledTimes(1);
+    expect(Element.prototype.animate.mock.results[3].value.cancel).toHaveBeenCalledTimes(1);
     expect(container.querySelector('.fv-journey-instructions').textContent).toContain('은빛소나무 숲 직행 배');
     act(() => container.querySelector('.fv-journey-map image').dispatchEvent(new Event('error')));
     expect(container.querySelector('.fv-journey [role=status]').textContent).toContain('지도를 불러오지 못했습니다');
