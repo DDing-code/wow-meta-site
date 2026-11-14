@@ -2211,7 +2211,7 @@ for (const [key,page] of Object.entries(foreverDetailGuides)) {
     page.sections.splice(page.sections.findIndex(s=>s.id==='talent-effects'),0,{id:'combat-decisions',title:'실전에서 달라지는 판단',items:combat.tips,decisions:true,sources:[`wowhead-${classId}`,`db-${classId}`]});
     page.sections.find(s=>s.id==='talents').growth=true;
   }
-  if (page.parent==='leveling') page.sections.unshift({ id:'starting-map',title:`${page.label} · 지도로 따라가는 레벨업`,lead:'레벨 구간을 고르면 지도가 그 구간으로 확대됩니다. 지도 왼쪽 위 경로 재생을 누르면 화살표를 따라 경유지를 차례로 보여 줍니다.',journey:key.split('/')[1],sources:['world-map',`bof-${foreverVisuals.journeys[key.split('/')[1]].faction}`,'method-travel','routes'] });
+  if (page.parent==='leveling') page.sections.unshift({ id:'starting-map',title:`${page.label} · 지도로 따라가는 레벨업`,lead:'레벨 구간을 고르면 지도가 그 구간으로 확대됩니다. 노란 표식이 출발지에서 경유지를 거쳐 도착지까지 움직입니다.',journey:key.split('/')[1],sources:['world-map',`bof-${foreverVisuals.journeys[key.split('/')[1]].faction}`,'method-travel','routes'] });
 }
 foreverGuides.leveling.sections.find(s=>s.id==='zones').map={kind:'zone'};
 foreverGuides.leveling.sections.find(s=>s.id==='zones').sources.push('world-map');

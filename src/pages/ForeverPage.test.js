@@ -33,7 +33,7 @@ test('종족 열 쪽의 단계 선택은 실제 경유지와 확대 지도에 �
   for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'leveling')) {
     render(<ForeverPage section={id} />, `/forever/${id}`);
     const rows = page.sections.find(block => block.id === 'route').table.rows;
-    const buttons = [...container.querySelectorAll('.fv-journey-steps button[data-leg="0"]')];
+    const buttons = [...container.querySelectorAll('.fv-journey-steps button')];
     expect(buttons).toHaveLength(rows.length);
     buttons.forEach((button, index) => {
       act(() => button.click());
@@ -49,7 +49,7 @@ test('종족 열 쪽의 단계 선택은 실제 경유지와 확대 지도에 �
     expect(container.querySelector('.fv-journey').dataset.phase).toBe('later');
     expect(container.querySelectorAll('.fv-journey-steps button')).toHaveLength(7);
     expect(container.querySelector('.fv-journey-heading').textContent).toContain('추정');
-    expect(container.querySelector('.fv-journey-pin b').textContent).toBe(container.querySelectorAll('.fv-journey-pin').length > 1 ? '·' : '1');
+    expect(container.querySelector('.fv-journey-traveler').textContent).toBe('01');
     clickJourney('가시덤불 골짜기');
     expect(container.querySelector('.fv-journey-map svg').getAttribute('aria-label')).toContain('가시덤불 골짜기');
     clickStep(1);
@@ -59,72 +59,85 @@ test('종족 열 쪽의 단계 선택은 실제 경유지와 확대 지도에 �
   }
 });
 
-test('레벨 구간은 한 점씩 표시하고 선택한 구간의 경로에 이동 표식을 둔다', () => {
+test('레벨 구간은 한 점씩 표시하고 고른 구간의 경로를 표식이 따라간다', () => {
   render(<ForeverPage section="leveling/human" />, '/forever/leveling/human');
   const journey = container.querySelector('.fv-journey');
   expect(journey.querySelector('.fv-journey-controls')).toBeNull();
-  expect(journey.textContent).not.toMatch(/동작 재생|다음 →|← 이전|6초마다/);
-  expect([...journey.querySelectorAll('.fv-journey-map .fv-journey-tools button')].map(button => button.textContent)).toEqual(['경로 재생', '세계 지도']);
+  expect(journey.querySelector('.fv-journey-tools')).toBeNull();
+  expect(container.querySelector('#starting-map').textContent).not.toContain('경로 재생');
+  expect(journey.textContent).not.toMatch(/동작 재생|경로 재생|일시정지|세계 지도|다음 →|← 이전|6초마다/);
   expect(journey.querySelectorAll('ol')).toHaveLength(1);
   expect(journey.querySelector('.fv-journey-stops')).toBeNull();
   expect(journey.querySelectorAll('[aria-current="step"]')).toHaveLength(1);
   expect(journey.querySelectorAll('.fv-journey-steps button')).toHaveLength(7);
+  expect(journey.querySelector('.fv-journey-traveler').textContent).toBe('01');
   const transfer = journey.querySelector('.fv-journey-steps button[data-stage="3"]');
   act(() => transfer.click());
   expect(transfer.getAttribute('aria-current')).toBe('step');
   expect(journey.querySelector('svg').getAttribute('aria-label')).toContain('붉은마루 산맥 → 스톰윈드');
   expect(journey.querySelectorAll('li[data-complete=true]')).toHaveLength(3);
-  const traveler = journey.querySelector('.fv-journey-traveler');
   const pins = [...journey.querySelectorAll('.fv-journey-pin')];
-  const point = pin => [parseFloat(pin.style.left) * 903 / 100, parseFloat(pin.style.top) * 640 / 100];
-  const [from, to] = pins.map(point);
-  expect(Number(traveler.getAttribute('cx'))).toBeCloseTo(to[0]);
-  expect(Number(traveler.getAttribute('cy'))).toBeCloseTo(to[1]);
-  expect(parseFloat(traveler.style.getPropertyValue('--travel-x'))).toBeCloseTo(from[0] - to[0]);
-  expect(parseFloat(traveler.style.getPropertyValue('--travel-y'))).toBeCloseTo(from[1] - to[1]);
+  const traveler = journey.querySelector('.fv-journey-traveler');
+  expect(traveler.textContent).toBe('04');
+  expect(pins[0].classList.contains('is-origin')).toBe(true);
+  expect(pins.at(-1).classList.contains('is-destination')).toBe(true);
+  expect(Number(traveler.dataset.legs)).toBe(pins.length - 1);
+  expect([traveler.style.left, traveler.style.top]).toEqual([pins.at(-1).style.left, pins.at(-1).style.top]);
+  expect(journey.querySelectorAll('.fv-journey-leg-line')).toHaveLength(pins.length - 1);
   clickStep(0);
-  expect(journey.querySelector('.fv-journey-traveler')).toBeNull();
+  expect(journey.querySelectorAll('.fv-journey-leg-line')).toHaveLength(0);
+  expect(journey.querySelectorAll('.fv-journey-pin')).toHaveLength(1);
 });
 
-test('배·차원문 경유를 한 구간씩 재생하고 일시정지·직접 선택 때 멈춘다', () => {
-  jest.useFakeTimers();
+test('구간을 고르면 표식이 출발지에서 경유지를 차례로 거쳐 도착지까지 움직인다', () => {
+  const calls = [];
+  const original = Element.prototype.animate;
+  Element.prototype.animate = function animate(keyframes, options) { calls.push({ target: this, keyframes, options }); return { cancel: jest.fn() }; };
   try {
     render(<ForeverPage section="leveling/skyborne-alliance" />);
+    expect(container.querySelector('.fv-journey').dataset.moving).toBe('true');
+    expect(calls.at(-1).keyframes[0].opacity).toBe(0);
     clickStep(1);
-    const svg = () => container.querySelector('.fv-journey-map svg');
-    expect(svg().getAttribute('aria-label')).toContain('제프라스 섬 → 달라란 (경유)');
-    clickJourney('경로 재생');
-    act(() => jest.advanceTimersByTime(6000));
-    expect(svg().getAttribute('aria-label')).toContain('달라란 (경유) → 스톰윈드');
-    expect(container.querySelector('[aria-current="step"]').dataset.leg).toBe('1');
-    clickJourney('일시정지');
-    act(() => jest.advanceTimersByTime(12000));
-    expect(container.querySelector('.fv-journey').dataset.step).toBe('1');
-    clickJourney('경로 재생');
-    act(() => jest.advanceTimersByTime(6000));
-    expect(svg().getAttribute('aria-label')).toContain('스톰윈드 → 서부 몰락지대');
-    clickStep(0);
-    expect(container.querySelector('.fv-journey-map').dataset.running).toBe('false');
-    clickJourney('세계 지도');
-    expect(container.querySelector('.fv-journey-camera').dataset.viewbox).toBe('0 0 903 640');
-  } finally { jest.useRealTimers(); }
+    const svg = container.querySelector('.fv-journey-map svg');
+    expect(svg.getAttribute('aria-label')).toContain('제프라스 섬 → 달라란 (경유) → 스톰윈드');
+    expect(container.querySelector('.fv-journey-leg').textContent).toContain('배 → 스카이본 전용 차원문');
+    const pins = [...container.querySelectorAll('.fv-journey-pin')];
+    const { target, keyframes, options } = calls.at(-1);
+    expect(target).toBe(container.querySelector('.fv-journey-traveler'));
+    expect(keyframes.map(frame => [frame.left, frame.top])).toEqual(pins.map(pin => [pin.style.left, pin.style.top]));
+    expect(keyframes.map(frame => frame.offset)).toEqual([0, 0.5, 1]);
+    expect(options).toMatchObject({ delay: 600, duration: 2200, fill: 'backwards' });
+    expect(pins.map(pin => pin.style.getPropertyValue('--arrival-delay'))).toEqual(['0ms', '1700ms', '2800ms']);
+    const [x, y, w, h] = container.querySelector('.fv-journey-camera').dataset.viewbox.split(' ').map(Number);
+    for (const pin of pins) {
+      const px = parseFloat(pin.style.left) * 903 / 100, py = parseFloat(pin.style.top) * 640 / 100;
+      expect(px).toBeGreaterThanOrEqual(x); expect(px).toBeLessThanOrEqual(x + w);
+      expect(py).toBeGreaterThanOrEqual(y); expect(py).toBeLessThanOrEqual(y + h);
+    }
+    const count = calls.length;
+    act(() => container.querySelector('.fv-journey-heading').click());
+    expect(calls).toHaveLength(count);
+    clickStep(2);
+    expect(calls.length).toBe(count + 1);
+    expect(container.querySelector('.fv-journey-map svg').getAttribute('aria-label')).toContain('스톰윈드 → 서부 몰락지대');
+  } finally { Element.prototype.animate = original; }
 });
 
 test('동작 줄이기 설정과 지도 로딩 실패에서도 이동 설명을 읽을 수 있다', () => {
   const old = window.matchMedia;
+  const original = Element.prototype.animate;
+  Element.prototype.animate = jest.fn(() => ({ cancel: jest.fn() }));
   window.matchMedia = () => ({ matches: true, addEventListener: jest.fn(), removeEventListener: jest.fn() });
   try {
     render(<ForeverPage section="leveling/skyborne-horde" />);
-    expect(container.querySelector('.fv-journey-map').dataset.running).toBe('false');
-    clickJourney('경로 재생');
-    expect(container.querySelector('.fv-journey-map').dataset.running).toBe('true');
     clickStep(1);
-    expect(container.querySelector('.fv-journey-traveler')).toBeNull();
+    expect(container.querySelector('.fv-journey').dataset.moving).toBe('false');
+    expect(Element.prototype.animate).not.toHaveBeenCalled();
     expect(container.querySelector('.fv-journey-instructions').textContent).toContain('은빛소나무 숲 직행 배');
     act(() => container.querySelector('.fv-journey-map image').dispatchEvent(new Event('error')));
     expect(container.querySelector('.fv-journey [role=status]').textContent).toContain('지도를 불러오지 못했습니다');
     expect(container.querySelector('.fv-journey-steps [aria-current="step"]').textContent).toContain('멀고어·잊혀진 땅 사이 고원');
-  } finally { window.matchMedia = old; }
+  } finally { window.matchMedia = old; Element.prototype.animate = original; }
 });
 
 test('퀘스트의 위협은 도적 스킬로 연결하지 않고 전사 본문은 전사 스킬을 연결한다', () => {
