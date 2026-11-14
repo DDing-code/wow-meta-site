@@ -20,10 +20,12 @@ test('터치 상세창은 원문·실제 등급을 보이며 Escape로 닫고 �
  click(trigger);
  expect(document.querySelector('[role=tooltip]')).toBeNull();
  const dialog=document.querySelector('dialog');
+ dialog.close=jest.fn(()=>dialog.removeAttribute('open'));
  expect(dialog.textContent).toContain(spell.description);
  expect(dialog.querySelector('a').href).toBe(spell.source);
  expect(dialog.querySelector('a').dataset.wowhead).toBe('ignore');
  act(()=>dialog.dispatchEvent(new Event('cancel',{bubbles:true,cancelable:true})));
+ expect(dialog.close).toHaveBeenCalledTimes(1);
  expect(document.querySelector('dialog')).toBeNull();
  expect(document.activeElement).toBe(trigger);
  expect(document.querySelector('[role=tooltip]')).toBeNull();

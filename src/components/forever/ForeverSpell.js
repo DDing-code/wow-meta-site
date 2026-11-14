@@ -35,7 +35,14 @@ export default function ForeverSpell({ spell, id, size = 24 }) {
   const [hover, setHover] = useState(false);
   const [pinned, setPinned] = useState(false);
   const [position, setPosition] = useState({ left: 8, top: 8, visibility: 'hidden' });
-  const close = () => { setPinned(false); setHover(false); restoringFocus.current = true; trigger.current?.focus(); restoringFocus.current = false; };
+  const close = () => {
+    restoringFocus.current = true;
+    // 브라우저의 모달 잠금을 먼저 풀어야 원래 버튼으로 초점을 옮길 수 있다.
+    if (dialog.current?.open && dialog.current.close) dialog.current.close();
+    setPinned(false); setHover(false);
+    trigger.current?.focus();
+    restoringFocus.current = false;
+  };
 
   useLayoutEffect(() => {
     if (!hover || pinned || !tip.current) return undefined;
