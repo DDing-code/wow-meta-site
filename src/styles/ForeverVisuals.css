@@ -190,6 +190,29 @@
 .fv-journey-instructions h4 { color:#8dd9f5; font-size:15px; margin:0 0 8px; }.fv-journey-instructions p { font-size:15px; line-height:1.8; margin:0; }
 .fv-journey .fv-caption { line-height:1.7; margin-top:14px; }
 .fv-journey-continue { margin-top:12px; width:100%; }
+.fv-journey-region { pointer-events:none; }
+.fv-journey-border-key { position:absolute; left:10px; bottom:10px; padding:4px 8px; color:#bcecff; background:#111820ed; border-left:3px solid #8dd9f5; font-size:12px; }
+.fv-zone-route { margin-top:24px; padding-top:18px; border-top:1px solid #536471; }
+.fv-zone-route header { display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 16px; margin-bottom:12px; }
+.fv-zone-route h4 { margin:0; color:#edf0f3; font-size:18px; }
+.fv-zone-route header span { color:#aeb9c7; font-size:13px; }
+.fv-zone-summary { margin:10px 0; font-size:14px; color:#c4c8cf; }
+.fv-zone-summary strong { color:#fff0a6; }
+.fv-zone-layout { display:grid; grid-template-columns:minmax(0,1.7fr) minmax(200px,1fr); gap:18px; align-items:start; }
+.fv-zone-map { position:relative; aspect-ratio:1002/668; border:1px solid #677b89; background:#182028; }
+.fv-zone-map>img,.fv-zone-map>svg { display:block; width:100%; height:100%; }
+.fv-zone-map>svg { position:absolute; inset:0; pointer-events:none; }
+.fv-journey .fv-zone-pin { position:absolute; transform:translate(-50%,-50%); width:36px; height:36px; min-height:36px; padding:0; border:2px solid #fff0a6; border-radius:50%; background:#17212a; color:#fff0a6; font-size:14px; font-weight:800; }
+.fv-journey .fv-zone-pin[aria-pressed=true] { z-index:1; color:#17212a; background:#fff0a6; outline:3px solid #17212a; }
+.fv-zone-stops { display:grid; gap:4px; list-style:none; margin:0; padding:0; }
+.fv-journey .fv-zone-stops button { display:flex; align-items:center; gap:10px; width:100%; min-height:44px; text-align:left; padding:7px 10px; border-color:transparent; background:none; font-size:14px; line-height:1.5; }
+.fv-zone-stops b { color:#fff0a6; font-variant-numeric:tabular-nums; }
+.fv-journey .fv-zone-stops button[aria-pressed=true] { border-color:#8dd9f5; background:#304854; }
+.fv-zone-instruction { margin-top:14px; padding:12px 16px; border-left:3px solid #fff0a6; background:#1c252e; }
+.fv-zone-instruction strong { color:#fff0a6; }
+.fv-zone-instruction p { margin:6px 0 0; font-size:15px; line-height:1.8; }
+.fv-zone-route .fv-caption a { color:#8dd9f5; text-decoration:underline; }
+@media(max-width:760px) { .fv-zone-layout { grid-template-columns:minmax(0,1fr); }.fv-zone-stops { grid-template-columns:repeat(2,minmax(0,1fr)); }.fv-journey .fv-zone-pin { width:30px; height:30px; min-height:30px; font-size:12px; } }
 @media(max-width:760px) {
  .fv-journey-steps { grid-template-columns:repeat(4,minmax(0,1fr)); }
  .fv-journey-steps li:nth-child(4n)::after { display:none; }

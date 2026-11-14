@@ -17,7 +17,7 @@ const watchMode = args.includes('--watch');
 const passThroughArgs = args.filter(arg => arg !== '--watch');
 
 // 포에버는 주문 번호가 같은 리테일 자료를 덮어쓰지 않도록 별도 KB에서 복사한다.
-for (const [file, output] of [['talents.json', 'foreverTalents.json'], ['spells.json', 'foreverSpells.json']]) {
+for (const [file, output] of [['talents.json', 'foreverTalents.json'], ['spells.json', 'foreverSpells.json'], ['leveling-routes.json', 'foreverLevelingRoutes.json']]) {
   const foreverSource = path.join(repoRoot, 'WoW-Meta-Knowledge', '09-포에버', file);
   if (fs.existsSync(foreverSource)) {
     const source = fs.readFileSync(foreverSource, 'utf8');

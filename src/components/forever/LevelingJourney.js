@@ -1,5 +1,7 @@
 import React, { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import atlas from '../../data/foreverVisuals.json';
+import leveling from '../../data/foreverLevelingRoutes.json';
+import ZoneLevelingRoute from './ZoneLevelingRoute';
 import '../../styles/ForeverVisuals.css';
 
 const places = new Map([...atlas.regions, ...atlas.places].map(place => [place.id, place]));
@@ -28,6 +30,7 @@ export default function LevelingJourney({ race, early, later }) {
   const stage = stages[step];
   const row = rows[step];
   const pick = index => choices[index] || stages[index].points[0];
+  const zoneIds = isLater ? [pick(step)] : stage.points;
   const previous = isLater
     ? (step ? pick(step - 1) : plan.stages.at(-1).points.at(-1))
     : (step ? stages[step - 1].points.at(-1) : null);
@@ -120,6 +123,7 @@ export default function LevelingJourney({ race, early, later }) {
           <svg viewBox="0 0 903 640" role="img" aria-label={`${row[0]} 지역 이동: ${path.map(place => place.name).join(' → ')}`}>
             <defs><marker id={`${maskId}-arrow`} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#fff0a6" /></marker></defs>
             <image href="/images/forever/world-atlas-1536.webp" width="903" height="640" onError={() => setFailed(true)} />
+            {zoneIds.filter(id => leveling.outlines[id]).map(id => <polygon key={id} className="fv-journey-region" data-region={id} points={leveling.outlines[id].map(point => point.join(',')).join(' ')} fill="#8dd9f51f" stroke="#8dd9f5" strokeWidth={px(2.5)} strokeLinejoin="round"><title>{name(id)} · 지역 범위 (개략)</title></polygon>)}
             {legs.map(({ from, to }, index) => {
               const distance = Math.hypot(to.x - from.x, to.y - from.y);
               const inset = Math.min(px(24), distance / 3);
@@ -139,13 +143,15 @@ export default function LevelingJourney({ race, early, later }) {
           <span ref={traveler} key={routeKey} className="fv-journey-traveler" data-legs={legs.length} aria-hidden="true" style={{ ...at(path.at(-1)), '--arrive': `${delay(legs.length)}ms` }}>{String(step + 1).padStart(2, '0')}</span>
         </div>
         <span className="fv-north" aria-hidden="true">↑ 북</span>
+        <span className="fv-journey-border-key">파란 테두리 · 현재 구간 지역</span>
       </div> : <p className="fv-map-error" role="status">지도를 불러오지 못했습니다. 위 이동 순서와 아래 안내로 확인하세요.</p>}
     </div>
     <div className="fv-journey-instructions" key={routeKey}>
       <div><h4>{step === 0 && !isLater ? '이곳에서 시작' : '이 구간에서 할 일'}</h4><p>{row[2]}</p></div>
       <div><h4>다음 지역으로 가는 방법</h4><p>{stage.travel}</p></div>
     </div>
-    <p className="fv-caption">{isLater ? '점선은 고른 지역 후보를 잇는 추정 연결입니다. ' : '화살표는 지역·경유지의 방문 순서입니다. '}표식은 지역 범위이며 실제 도로·항로·승강장 위치가 아닙니다.</p>
+    <p className="fv-caption">{isLater ? '점선은 고른 지역 후보를 잇는 추정 연결입니다. ' : '화살표는 지역·경유지의 방문 순서입니다. '}파란 테두리는 도트 지도에 맞춘 대략적인 지역 범위입니다. 실제 지역 경계·도로·항로·승강장 위치와는 다릅니다.</p>
+    <ZoneLevelingRoute key={`${phase}-${step}-${zoneIds.join('-')}`} zoneIds={zoneIds} faction={plan.faction} />
     {step === stages.length - 1 && !isLater && <button className="fv-journey-continue" type="button" onClick={() => choosePhase('later')}>30~60레벨 추천 후보로 이어 보기 →</button>}
   </div>;
 }

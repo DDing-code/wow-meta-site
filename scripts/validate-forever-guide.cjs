@@ -32,6 +32,27 @@ if (fs.existsSync(talentSource)) assert.deepStrictEqual(talents, JSON.parse(fs.r
 assert.deepStrictEqual(Object.keys(talents.classes).sort(), Object.entries(guide.foreverDetailGuides).filter(([, page]) => page.parent === 'classes').map(([id]) => id.split('/')[1]).sort());
 const spellIds = new Set();
 const abilities = JSON.parse(read('src/data/foreverSpells.json'));
+const levelingRoutes = JSON.parse(read('src/data/foreverLevelingRoutes.json'));
+assert.strictEqual(levelingRoutes.metadata.edition, 'forever');
+assert.strictEqual(levelingRoutes.metadata.kbSource, '09-포에버/leveling-routes.json');
+const routesSource = path.resolve(SITE_ROOT, '../WoW-Meta-Knowledge', levelingRoutes.metadata.kbSource);
+if (fs.existsSync(routesSource)) assert.deepStrictEqual(levelingRoutes, JSON.parse(fs.readFileSync(routesSource, 'utf8')), '포에버 지역 경로 정본과 생성본 불일치');
+const routeAtlas = JSON.parse(read('src/data/foreverVisuals.json'));
+const atlasPlaces = new Set([...routeAtlas.regions, ...routeAtlas.places].map(place => place.id));
+for (const [id, points] of Object.entries(levelingRoutes.outlines)) {
+  assert.ok(atlasPlaces.has(id) && points.length >= 3, `${id}: 지역 테두리 누락`);
+  for (const [x, y] of points) assert.ok(Number.isFinite(x) && Number.isFinite(y) && x >= 0 && x <= 903 && y >= 0 && y <= 640, `${id}: 테두리 좌표 범위`);
+}
+for (const [id, routes] of Object.entries(levelingRoutes.routes)) {
+  assert.ok(atlasPlaces.has(id) && levelingRoutes.outlines[id], `${id}: 세부 경로의 지역 누락`);
+  assert.strictEqual(new Set(routes.map(route => route.faction)).size, routes.length, `${id}: 진영 중복`);
+  for (const route of routes) {
+    assert.ok(['alliance', 'horde'].includes(route.faction) && route.levels && route.note && route.stops.length >= 2, `${id}: 세부 경로 안내 누락`);
+    assert.ok(/^https:\/\/bindonforever\.com\/zones\/[a-z-]+$/.test(route.source), `${id}: 지역별 근거 누락`);
+    assert.ok(/^\/images\/forever\/zones\/[a-z-]+\.webp$/.test(route.image) && fs.existsSync(path.join(SITE_ROOT, 'public', route.image)), `${id}: 지역 지도 누락`);
+    for (const stop of route.stops) assert.ok(stop.name && stop.note && Number.isFinite(stop.x) && Number.isFinite(stop.y) && stop.x >= 0 && stop.x <= 100 && stop.y >= 0 && stop.y <= 100, `${id}: 거점·좌표 누락`);
+  }
+}
 assert.strictEqual(abilities.metadata.edition, 'forever');
 const abilitySource = path.resolve(SITE_ROOT, '../WoW-Meta-Knowledge', abilities.metadata.kbSource);
 if (fs.existsSync(abilitySource)) assert.deepStrictEqual(abilities, JSON.parse(fs.readFileSync(abilitySource, 'utf8')), '포에버 일반 주문 정본과 생성본 불일치');

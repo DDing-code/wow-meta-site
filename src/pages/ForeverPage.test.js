@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import { MemoryRouter } from 'react-router-dom';
 import ForeverPage from './ForeverPage.js';
 import Navigation from '../components/Navigation.js';
+import { arrangeRouteLabels } from '../components/forever/ZoneLevelingRoute';
+import levelingRoutes from '../data/foreverLevelingRoutes.json';
 import { FOREVER_ART_NOTE, foreverDetailGuides, foreverHome, foreverPages, foreverRules, foreverSources, foreverStart } from '../data/foreverGuide.js';
 import { getPageMeta, SITE_ORIGIN } from '../data/siteMeta.js';
 
@@ -31,7 +33,65 @@ const toggle = id => container.querySelector(`[aria-label="게임 버전"] a[dat
 const menuLabels = () => [...container.querySelectorAll('#primary-navigation a')].map(link => link.textContent);
 
 const clickStep = index => act(() => container.querySelector(`.fv-journey-steps button[data-stage="${index}"]`).click());
+test('지역 거점 번호는 좁은 지도에서도 겹치지 않고 지도 안에 남는다', () => {
+  for (const width of [260, 320, 600]) for (const route of Object.values(levelingRoutes.routes).flat()) {
+    const before = JSON.stringify(route.stops);
+    const points = arrangeRouteLabels(route.stops, width).map(p => ({ x: p.x * width / 100, y: p.y * width * 668 / 1002 / 100 }));
+    points.forEach((point, i) => {
+      expect(point.x).toBeGreaterThanOrEqual(19.999);
+      expect(point.x).toBeLessThanOrEqual(width - 19.999);
+      expect(point.y).toBeGreaterThanOrEqual(19.999);
+      expect(point.y).toBeLessThanOrEqual(width * 668 / 1002 - 19.999);
+      points.slice(0, i).forEach(other => expect(Math.hypot(point.x - other.x, point.y - other.y)).toBeGreaterThanOrEqual(39.999));
+    });
+    expect(JSON.stringify(route.stops)).toBe(before);
+  }
+});
 const clickJourney = text => act(() => [...container.querySelectorAll('.fv-journey button')].find(button => button.textContent === text).click());
+
+test('현재 구간의 지역 테두리와 세부 거점 선택을 함께 표시한다', () => {
+  render(<ForeverPage section="leveling/human" />, '/forever/leveling/human');
+  const regions = () => [...container.querySelectorAll('.fv-journey-region')].map(p => p.dataset.region);
+  expect(regions()).toEqual(['elwynn']);
+  expect(container.querySelector('.fv-zone-instruction').textContent).toContain('북녘골');
+  const stops = [...container.querySelectorAll('.fv-zone-stops button')];
+  act(() => stops.at(-1).click());
+  expect(container.querySelector('.fv-zone-instruction').textContent).toContain('동부 벌목지');
+  expect(container.querySelector('.fv-zone-pin[aria-pressed=true]').textContent).toBe(String(stops.length));
+  act(() => container.querySelector('.fv-zone-pin').click());
+  expect(container.querySelector('.fv-zone-instruction').textContent).toContain('북녘골');
+  clickStep(2);
+  expect(regions()).toEqual(['elwynn', 'redridge']);
+  expect(container.querySelector('.fv-zone-summary').textContent).toContain('붉은마루 산맥');
+  clickJourney('엘윈 숲');
+  expect(container.querySelector('.fv-zone-instruction').textContent).toContain('북녘골');
+  clickJourney('30~60 · 추천 후보 · 추정');
+  clickJourney('가시덤불 골짜기');
+  expect(regions()).toEqual(['stranglethorn']);
+  expect(container.querySelector('.fv-zone-route')).toBeNull();
+  expect(container.textContent).toContain('확인된 지역 안 세부 경로가 아직 없습니다');
+});
+
+test('지역 지도 오류에도 거점 안내를 읽고 구간을 바꿀 수 있다', () => {
+  render(<ForeverPage section="leveling/human" />, '/forever/leveling/human');
+  act(() => container.querySelector('.fv-zone-map img').dispatchEvent(new Event('error')));
+  expect(container.querySelector('.fv-zone-route [role=status]').textContent).toContain('지역 지도를 불러오지 못했습니다');
+  act(() => container.querySelectorAll('.fv-zone-stops button')[1].click());
+  expect(container.querySelector('.fv-zone-instruction').textContent).toContain('골드샤이어');
+  clickStep(1);
+  expect(container.querySelector('.fv-zone-map img').getAttribute('src')).toContain('westfall');
+});
+
+test('돌발톱 산맥 세부 동선은 진영에 맞는 거점을 고른다', () => {
+  render(<ForeverPage section="leveling/human" />, '/forever/leveling/human');
+  clickStep(6);
+  expect(container.querySelector('.fv-zone-summary').textContent).toContain('돌발톱 산맥');
+  expect(container.querySelector('.fv-zone-stops').textContent).not.toContain('해바위');
+  render(<ForeverPage section="leveling/orc" />, '/forever/leveling/orc');
+  clickStep(4);
+  clickJourney('돌발톱 산맥');
+  expect(container.querySelector('.fv-zone-stops').textContent).toContain('해바위');
+});
 
 test('종족 열 쪽의 단계 선택은 실제 경유지와 확대 지도에 연결된다', () => {
   for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'leveling')) {
@@ -74,7 +134,7 @@ test('레벨 구간은 한 점씩 표시하고 고른 구간의 경로를 표식
   expect(journey.querySelector('.fv-journey-tools')).toBeNull();
   expect(container.querySelector('#starting-map').textContent).not.toContain('경로 재생');
   expect(journey.textContent).not.toMatch(/동작 재생|경로 재생|일시정지|세계 지도|다음 →|← 이전|6초마다/);
-  expect(journey.querySelectorAll('ol')).toHaveLength(1);
+  expect(journey.querySelectorAll('.fv-journey-steps')).toHaveLength(1);
   expect(journey.querySelector('.fv-journey-stops')).toBeNull();
   expect(journey.querySelectorAll('[aria-current="step"]')).toHaveLength(1);
   expect(journey.querySelectorAll('.fv-journey-steps button')).toHaveLength(7);
