@@ -1,0 +1,576 @@
+{
+  "url": "https://www.wowhead.com/forever/ko/world-map#1.5/26368/18944/l=@transport,@instance/m=/f=0/c=all",
+  "width": 903,
+  "height": 640,
+  "tiles": [
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/kalimdor/2/2/2.webp",
+      "x": 231.28784370422363,
+      "y": 262.7056579589844,
+      "w": 181.0193328857422,
+      "h": 181.01939392089844
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/kalimdor/2/1/2.webp",
+      "x": 231.28784370422363,
+      "y": 81.68630981445312,
+      "w": 181.0193328857422,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/kalimdor/2/1/3.webp",
+      "x": 412.3071765899658,
+      "y": 81.68630981445312,
+      "w": 181.0193328857422,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/kalimdor/2/3/2.webp",
+      "x": 231.28784370422363,
+      "y": 443.7250061035156,
+      "w": 181.0193328857422,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/kalimdor/2/2/1.webp",
+      "x": 50.268503189086914,
+      "y": 262.7056579589844,
+      "w": 181.0193328857422,
+      "h": 181.01939392089844
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/kalimdor/2/1/1.webp",
+      "x": 50.268503189086914,
+      "y": 81.68630981445312,
+      "w": 181.0193328857422,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/kalimdor/2/3/1.webp",
+      "x": 50.268503189086914,
+      "y": 443.7250061035156,
+      "w": 181.0193328857422,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/kalimdor/2/0/2.webp",
+      "x": 231.28784370422363,
+      "y": -99.33303833007812,
+      "w": 181.0193328857422,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/kalimdor/2/0/1.webp",
+      "x": 50.268503189086914,
+      "y": -99.33303833007812,
+      "w": 181.0193328857422,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/zephras-isle/2/0/0.webp",
+      "x": 412.3071765899658,
+      "y": 81.68630981445312,
+      "w": 181.0193328857422,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/eastern-kingdoms/2/1/0.webp",
+      "x": 593.3265247344971,
+      "y": 262.7056579589844,
+      "w": 181.0193328857422,
+      "h": 181.01939392089844
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/eastern-kingdoms/2/0/0.webp",
+      "x": 593.3265247344971,
+      "y": 81.68630981445312,
+      "w": 181.0193328857422,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/eastern-kingdoms/2/2/0.webp",
+      "x": 593.3265247344971,
+      "y": 443.7250061035156,
+      "w": 181.0193328857422,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/eastern-kingdoms/2/1/1.webp",
+      "x": 774.3458728790283,
+      "y": 262.7056579589844,
+      "w": 181.019287109375,
+      "h": 181.01939392089844
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/eastern-kingdoms/2/0/1.webp",
+      "x": 774.3458728790283,
+      "y": 81.68630981445312,
+      "w": 181.019287109375,
+      "h": 181.0193328857422
+    },
+    {
+      "src": "https://wow.zamimg.com/images/wow/classicplus/world-map/v3/eastern-kingdoms/2/2/1.webp",
+      "x": 774.3458728790283,
+      "y": 443.7250061035156,
+      "w": 181.019287109375,
+      "h": 181.0193328857422
+    }
+  ],
+  "markers": [
+    {
+      "name": "[To 무법항]",
+      "style": "translate3d(313px, 284px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 톱니항]",
+      "style": "translate3d(683px, 521px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 그롬골 주둔지]",
+      "style": "translate3d(329px, 234px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-zeppelin leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 오그리마]",
+      "style": "translate3d(690px, 482px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-zeppelin leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 그롬골 주둔지]",
+      "style": "translate3d(690px, 174px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-zeppelin leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 메네실 항구]",
+      "style": "translate3d(332px, 348px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 아우버다인]",
+      "style": "translate3d(209px, 82px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "페더문 함선",
+      "style": "translate3d(161px, 352px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 테라모어 섬]",
+      "style": "translate3d(707px, 301px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 루테란 마을]",
+      "style": "translate3d(215px, 123px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 화약심지 항구]",
+      "style": "translate3d(336px, 410px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 가젯잔]",
+      "style": "translate3d(818px, 392px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 발라나르]",
+      "style": "translate3d(223px, 280px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-zeppelin leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "Alcaz Prison",
+      "style": "translate3d(338px, 319px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "검은아귀 요새",
+      "style": "translate3d(343px, 173px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "구체자의 정원",
+      "style": "translate3d(257px, 385px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "달라란",
+      "style": "translate3d(688px, 213px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "크롤도크 보루",
+      "style": "translate3d(785px, 373px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "검은심연 나락",
+      "style": "translate3d(215px, 173px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "악마벼락 협곡",
+      "style": "translate3d(298px, 227px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "혈투의 전장",
+      "style": "translate3d(207px, 346px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "마라우돈",
+      "style": "translate3d(169px, 293px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "줄파락",
+      "style": "translate3d(292px, 407px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "검은바위 나락",
+      "style": "translate3d(715px, 370px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "검은바위 첨탑",
+      "style": "translate3d(721px, 377px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "죽음의 폐광",
+      "style": "translate3d(659px, 456px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "스칼로맨스",
+      "style": "translate3d(749px, 191px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "그림자송곳니 성채",
+      "style": "translate3d(662px, 223px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "아탈학카르 신전",
+      "style": "translate3d(780px, 434px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "성난불길 협곡",
+      "style": "translate3d(325px, 224px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "가시덩굴 구릉",
+      "style": "translate3d(285px, 362px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "통곡의 동굴",
+      "style": "translate3d(278px, 279px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "Drowned City",
+      "style": "translate3d(627px, 507px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "발굴 현장: 저습지",
+      "style": "translate3d(737px, 299px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "놈리건",
+      "style": "translate3d(675px, 327px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "붉은십자군 수도원",
+      "style": "translate3d(712px, 156px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "스톰윈드 지하감옥",
+      "style": "translate3d(677px, 404px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "스트라솔름",
+      "style": "translate3d(767px, 146px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "울다만",
+      "style": "translate3d(758px, 346px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-dungeon leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "안퀴라즈 사원",
+      "style": "translate3d(199px, 435px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-raid leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "오닉시아의 둥지",
+      "style": "translate3d(311px, 364px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-raid leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "검은날개 둥지",
+      "style": "translate3d(721px, 380px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-raid leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "낙스라마스",
+      "style": "translate3d(774px, 151px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-raid leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "줄구룹",
+      "style": "translate3d(721px, 471px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-raid leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "Barrow Deeps",
+      "style": "translate3d(294px, 157px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-raid leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 달라란]",
+      "style": "translate3d(524px, 156px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-zeppelin leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 사우스쇼어]",
+      "style": "translate3d(707px, 296px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 아우버다인]",
+      "style": "translate3d(666px, 401px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 아우버다인]",
+      "style": "translate3d(707px, 241px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-ship leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 발라나르 하늘부두]",
+      "style": "translate3d(686px, 206px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-zeppelin leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 아이언포지]",
+      "style": "translate3d(684px, 395px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-tram leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "[To 스톰윈드]",
+      "style": "translate3d(723px, 320px, 0px)",
+      "kind": "leaflet-marker-icon world-map-poi world-map-poi-tram leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "ALCAZ PRISON",
+      "style": "translate3d(338px, 319px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc world-map-label-at-right leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "검은심연 나락",
+      "style": "translate3d(215px, 173px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc world-map-label-at-left leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "안퀴라즈 사원",
+      "style": "translate3d(199px, 435px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "놈리건",
+      "style": "translate3d(675px, 327px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "스톰윈드",
+      "style": "translate3d(677px, 400px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-capital leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "오그리마",
+      "style": "translate3d(324px, 225px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-capital leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "언더시티",
+      "style": "translate3d(687px, 185px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-capital leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "다르나서스",
+      "style": "translate3d(180px, 53px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-capital leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "썬더 블러프",
+      "style": "translate3d(231px, 288px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-capital leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "아이언포지",
+      "style": "translate3d(718px, 320px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-capital leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "페랄라스",
+      "style": "translate3d(189px, 362px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "타나리스",
+      "style": "translate3d(309px, 436px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "강물터",
+      "style": "translate3d(786px, 389px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "여명의 설원",
+      "style": "translate3d(313px, 132px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "텔드랏실",
+      "style": "translate3d(204px, 48px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone world-map-label-nudge-up leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "아즈샤라",
+      "style": "translate3d(354px, 186px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "제프라스 섬",
+      "style": "translate3d(506px, 129px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "잊혀진 땅",
+      "style": "translate3d(189px, 285px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone world-map-label-nudge-up leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "가시덤불 골짜기",
+      "style": "translate3d(715px, 500px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "실리더스",
+      "style": "translate3d(214px, 414px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "티리스팔 숲",
+      "style": "translate3d(678px, 168px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone world-map-label-nudge-up leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "불모의 땅",
+      "style": "translate3d(283px, 300px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone world-map-label-nudge-down leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "저습지",
+      "style": "translate3d(747px, 293px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone world-map-label-nudge-up leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "악령의 숲",
+      "style": "translate3d(257px, 152px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone world-map-label-nudge-down leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "어둠의 해안",
+      "style": "translate3d(238px, 133px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "그늘숲",
+      "style": "translate3d(706px, 443px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "먼지진흙 습지대",
+      "style": "translate3d(307px, 343px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone world-map-label-nudge-up leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "동부 내륙지",
+      "style": "translate3d(769px, 214px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone world-map-label-nudge-up leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "은빛소나무 숲",
+      "style": "translate3d(666px, 212px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone world-map-label-nudge-down leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "달의 숲",
+      "style": "translate3d(285px, 99px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone world-map-label-nudge-up leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "슬픔의 늪",
+      "style": "translate3d(766px, 438px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-zone leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "마법 동물원",
+      "style": "translate3d(690px, 214px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-landmark leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "크롤도크 보루",
+      "style": "translate3d(785px, 373px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc world-map-label-at-above leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "마라우돈",
+      "style": "translate3d(169px, 293px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc world-map-label-at-left leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "죽음의 폐광",
+      "style": "translate3d(659px, 456px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc world-map-label-at-left leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "오닉시아의 둥지",
+      "style": "translate3d(311px, 364px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc world-map-label-at-right leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "낙스라마스",
+      "style": "translate3d(774px, 151px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc world-map-label-at-above leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "DROWNED CITY",
+      "style": "translate3d(627px, 507px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc world-map-label-at-left leaflet-zoom-animated leaflet-interactive"
+    },
+    {
+      "name": "발굴 현장: 저습지",
+      "style": "translate3d(737px, 299px, 0px)",
+      "kind": "leaflet-marker-icon world-map-label world-map-label-npc world-map-label-at-right leaflet-zoom-animated leaflet-interactive"
+    }
+  ]
+}

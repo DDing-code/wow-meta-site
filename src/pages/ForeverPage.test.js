@@ -32,13 +32,15 @@ test('전문화 27쪽은 별도 KB의 한국어 설명과 아이콘·키보드 �
     const spells = page.sections.find(block => block.id === 'talent-effects').spells;
     const block = container.querySelector('#talent-effects');
     for (const spell of spells) {
-      const link = block.querySelector(`a[href="${spell.source}"]`);
+      const link = block.querySelector(`button[data-spell-id="${spell.id}"]`);
       expect(link.querySelector('img').src).toContain(spell.icon);
       expect(link.textContent).toContain(spell.name);
+      act(() => link.dispatchEvent(new FocusEvent('focusin', { bubbles: true })));
       const tooltip = document.getElementById(link.getAttribute('aria-describedby'));
       expect(tooltip.getAttribute('role')).toBe('tooltip');
       expect(tooltip.textContent).toContain(spell.verified ? spell.description : '한국어 설명 확인 전');
       expect(link.closest('dt').nextElementSibling.textContent).toContain(spell.verified ? spell.description : spell.reason);
+      act(() => link.dispatchEvent(new FocusEvent('focusout', { bubbles: true })));
     }
   }
 });
@@ -68,9 +70,11 @@ test('27개 전문화의 추천 순서와 KB 툴팁은 중복 ID 없이 연결�
       const block = container.querySelector(`#${spec.id}`);
       expect(block.querySelectorAll('ol li')).toHaveLength(spec.milestones.length);
       for (const { spell, reason } of spec.milestones) {
-        const link = block.querySelector(`a[href="${spell.source}"]`);
+        const link = block.querySelector(`button[data-spell-id="${spell.id}"]`);
         expect(link.querySelector('img')).not.toBeNull();
+        act(() => link.dispatchEvent(new FocusEvent('focusin', { bubbles: true })));
         expect(document.getElementById(link.getAttribute('aria-describedby')).textContent).toContain(spell.verified ? spell.description : '한국어 설명 확인 전');
+        act(() => link.dispatchEvent(new FocusEvent('focusout', { bubbles: true })));
         expect(block.textContent).toContain(reason);
       }
       for (const source of spec.sources) expect(block.querySelector(`a[href="${foreverSources[source].url}"]`)).not.toBeNull();
@@ -80,10 +84,31 @@ test('27개 전문화의 추천 순서와 KB 툴팁은 중복 ID 없이 연결�
   }
 });
 
+test('모든 전문화는 배분표와 레벨별 계산기를 보여 주며 추가 견본은 한계를 알린다', () => {
+  let added = 0;
+  for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.specialization)) {
+    render(<ForeverPage section={id} />, `/forever/${id}`);
+    const block = container.querySelector('#talents');
+    expect(block).not.toBeNull();
+    const data = page.sections.find(section => section.id === 'talents');
+    expect(block.querySelectorAll('tbody tr')).toHaveLength(data.table.rows.length);
+    for (const link of data.links) expect(block.querySelector(`a[href="${link.path}"]`).textContent).toBe(link.label);
+    if (data.links[0].path.startsWith('https://foreverdb.net/')) {
+      added++;
+      expect(data.table.rows.map(row => row[0])).toEqual(['20레벨', '30레벨', '40레벨', '50레벨', '60레벨']);
+      expect(block.textContent).toContain('실전 검증');
+      expect(block.textContent).toContain('초기화');
+    }
+  }
+  expect(added).toBe(18);
+});
+
 test('힘의 전환의 원문 표시 문제는 설명과 툴팁 모두에 남는다', () => {
   render(<ForeverPage section="classes/druid/feral" />, '/forever/classes/druid/feral');
-  const link = container.querySelector('#talent-effects a[href*="spell=1322605/"]');
+  const link = container.querySelector('#talent-effects button[data-spell-id="1322605"]');
   expect(link.closest('dt').nextElementSibling.textContent).toContain('기본 마나의 55%');
+  expect(link.closest('dt').nextElementSibling.textContent).toContain('마나 실소모량 미확인');
+  act(() => link.dispatchEvent(new FocusEvent('focusin', { bubbles: true })));
   expect(document.getElementById(link.getAttribute('aria-describedby')).textContent).toContain('0의 마나');
 });
 
@@ -144,7 +169,7 @@ test('규칙·진영은 규칙 다섯 가지와 진영 제한, 같이 하기 조
 
 test('세 쪽 모두 대표 그림과 항목별 도트 그림을 설명과 함께 보여 준다', () => {
   const pages = [
-    ['home', 1 + foreverHome.differences.length, foreverHome.next.length],
+    ['home', 2 + foreverHome.differences.length, foreverHome.next.length],
     ['start', 1 + foreverStart.steps.length + foreverStart.basics.length + 1, 0],
     ['rules', 1 + foreverRules.rules.length + 1, 0],
   ];

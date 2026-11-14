@@ -3,6 +3,9 @@ import { Link, NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import { ArrowRight, Check, ExternalLink, X } from 'lucide-react';
 import '../styles/ForeverFonts.css';
+import ForeverSpell, { ForeverText } from '../components/forever/ForeverSpell';
+import ForeverMap from '../components/forever/ForeverMap';
+import { Flow, SkillGroups, TalentGrowth, Facilities } from '../components/forever/ForeverVisuals';
 import {
   FOREVER_ART_NOTE,
   FOREVER_CHECKED_AT,
@@ -51,7 +54,7 @@ const Surface = styled.div`
 `;
 
 const Page = styled.div`
-  width: min(1040px, calc(100% - 32px));
+  width: min(1240px, calc(100% - 32px));
   margin: 0 auto;
   padding: 32px 0 80px;
   overflow-wrap: anywhere;
@@ -93,7 +96,7 @@ const Hero = styled.header`
   isolation: isolate;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  min-height: 420px;
+  min-height: ${props => props.$compact ? '240px' : '420px'};
   align-items: center;
   border: 1px solid #58616e;
   background: #101216;
@@ -840,10 +843,10 @@ function Sources({ ids }) {
   );
 }
 
-function Head({ title, lead, art }) {
+function Head({ title, lead, art, compact = false }) {
   return (
     <>
-      <Hero>
+      <Hero $compact={compact} className={compact ? 'fv-compact-hero' : undefined}>
         <Banner $focus={art.focus}>
           <Art art={art} sizes="(max-width: 1072px) calc(100vw - 32px), 1040px" eager />
         </Banner>
@@ -867,6 +870,7 @@ function HomeSection() {
   return (
     <>
       <Head title={data.title} lead={data.lead} art={data.art} />
+      <Link to="/forever/leveling#dungeons" className="fv-home-atlas"><img src="/images/forever/world-atlas-768.webp" srcSet="/images/forever/world-atlas-768.webp 768w, /images/forever/world-atlas-1536.webp 1536w" alt="새 지역과 던전 위치를 찾아볼 수 있는 포에버 도트 세계 지도" width="768" height="544" loading="lazy"/><span>도트 지도에서 지역·던전 찾기 →</span></Link>
       <Facts>
         {data.facts.map(fact => (
           <Fact key={fact.label}>
@@ -1161,120 +1165,48 @@ const GuideTableWrap = styled(TableWrap)`
   &:focus-visible { outline: 2px solid ${FOREVER_ACCENT}; outline-offset: 3px; }
 `;
 
-const SpellName = styled.a`
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 44px;
-  color: #bcecff;
-
-  img { width: 28px; height: 28px; border: 1px solid #454a53; }
-  [role='tooltip'] {
-    position: absolute;
-    bottom: calc(100% + 8px);
-    left: 0;
-    z-index: 5;
-    width: min(340px, 72vw);
-    padding: 14px;
-    border: 2px solid #454a53;
-    background: #191c22;
-    color: #e5e7eb;
-    box-shadow: 4px 4px 0 #090b0e;
-    font-weight: 400;
-    white-space: pre-line;
-    visibility: hidden;
-  }
-  &:hover [role='tooltip'], &:focus-visible [role='tooltip'] { visibility: visible; }
-`;
-
 const TalentSteps = styled.ol`
-  margin: 24px 0;
-  padding-left: 28px;
-  li { padding: 0 0 20px 4px; }
-  li::marker { color: ${FOREVER_ACCENT}; font-weight: 800; }
-  p { margin-top: 8px; max-width: 74ch; line-height: 1.75; word-break: keep-all; }
+  list-style: none; padding: 0; margin: 24px 0;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;
+  li { padding: 18px; background: #191c22; border-top: 2px solid #8dd9f5; }
+  p { margin-top: 10px; line-height: 1.75; }
+  @media(max-width: 600px) { grid-template-columns: minmax(0, 1fr); }
 `;
-
-function TalentLink({ spell, context }) {
-  const tooltipId = `${context}-spell-${spell.id}`;
-  return (
-    <SpellName href={spell.source} target="_blank" rel="noopener noreferrer" aria-describedby={tooltipId}>
-      <img src={`https://wow.zamimg.com/images/wow/icons/medium/${spell.icon}.jpg`} alt="" width="28" height="28" loading="lazy" />
-      <strong>{spell.name}</strong>
-      <span role="tooltip" id={tooltipId}>{spell.name}{' · 1등급\n'}{spell.verified ? spell.description : `한국어 설명 확인 전\n${spell.reason}`}{spell.note ? `\n원문 표시 주의 · ${spell.note}` : ''}</span>
-    </SpellName>
-  );
-}
 
 function GuideSection({ data }) {
-  return (
-    <>
-      <Head title={data.title} lead={data.lead} art={data.art} />
-      {data.parent ? <GuideLinks aria-label="가이드 목록으로"><Link to={`/forever/${data.parent}`}>← {data.parentLabel || (data.parent === 'classes' ? '직업별 특성 가이드 목록' : '종족별 레벨업 가이드 목록')}</Link></GuideLinks> : null}
-      <GuideContents aria-label="이 페이지 목차">
-        {data.sections.map(block => <a key={block.id} href={`#${block.id}`}>{block.title}</a>)}
-      </GuideContents>
-      {data.sections.map(block => (
-        <GuideBlock key={block.id} id={block.id} aria-labelledby={`${block.id}-title`}>
-          <GuideIntro $illustrated={Boolean(block.art)}>
-            {block.art ? <Frame $ratio={block.art.kind === 'square' ? '1 / 1' : '3 / 2'} $focus={block.art.focus}><Art art={block.art} sizes="(max-width: 760px) calc(100vw - 32px), 280px" /></Frame> : null}
-            <div>
-              <SectionTitle id={`${block.id}-title`}>{block.title}</SectionTitle>
-              {block.lead ? <p>{block.lead}</p> : null}
-            </div>
-          </GuideIntro>
-          {block.spells ? (
-            <TermList>
-              {block.spells.map(spell => (
-                <div key={spell.id}>
-                  <dt>
-                    <TalentLink spell={spell} context={block.id} />
-                  </dt>
-                  <dd>{spell.verified ? spell.description : `한국어 설명 확인 전 · ${spell.reason}`}{spell.note ? <p>원문 표시 주의 · {spell.note}</p> : null}</dd>
-                </div>
-              ))}
-            </TermList>
-          ) : null}
-          {block.items ? (
-            <TermList>
-              {block.items.map(item => <div key={item.title}><dt>{item.title}</dt><dd>{item.body}</dd></div>)}
-            </TermList>
-          ) : null}
-          {block.milestones ? (
-            <TalentSteps aria-label={`${block.title} 추천 순서`}>
-              {block.milestones.map(({ spell, reason }) => (
-                <li key={spell.id}>
-                  <TalentLink spell={spell} context={block.id} />
-                  <p>{reason}</p>
-                </li>
-              ))}
-            </TalentSteps>
-          ) : null}
-          {block.table ? (
-            <>
-              <FootNote>좁은 화면에서는 표를 좌우로 밀어 볼 수 있습니다.</FootNote>
-              <GuideTableWrap tabIndex={0} role="region" aria-label={`${block.title} 표 · 좌우로 이동 가능`}>
-                <Table aria-labelledby={`${block.id}-title`}>
-                  <thead><tr>{block.table.columns.map(column => <th key={column} scope="col">{column}</th>)}</tr></thead>
-                  <tbody>{block.table.rows.map(([label, ...cells]) => (
-                    <tr key={[label, ...cells].join('|')}><th scope="row">{label}</th>{cells.map((cell, index) => <td key={index}>{cell}</td>)}</tr>
-                  ))}</tbody>
-                </Table>
-              </GuideTableWrap>
-            </>
-          ) : null}
-          {block.links ? <GuideLinks $cards={block.links.some(link => link.description)} aria-label={`${block.title} 관련 안내`}>{block.links.map(link => link.path.startsWith('/')
-            ? <Link key={link.path} to={link.path}>{link.description ? <><strong>{link.label}</strong><span>{link.description}</span></> : link.label}</Link>
-            : <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer">{link.label}</a>)}</GuideLinks> : null}
-          <GuideLinks aria-label={`${block.title} 근거 원문`}>
-            {block.sources.map(source => <a key={source} href={foreverSources[source].url} target="_blank" rel="noopener noreferrer">{foreverSources[source].label} ↗</a>)}
-          </GuideLinks>
-        </GuideBlock>
-      ))}
-      <Sources ids={collectSources(data.sections)} />
-    </>
-  );
+  return <>
+    <Head title={data.title} lead={data.lead} art={data.art} compact />
+    {data.parent && <GuideLinks aria-label="가이드 목록으로"><Link to={`/forever/${data.parent}`}>← {data.parentLabel || (data.parent === 'classes' ? '직업별 특성 가이드 목록' : '종족별 레벨업 가이드 목록')}</Link></GuideLinks>}
+    <div className="fv-guide-layout">
+      <details className="fv-guide-toc" open><summary>이 페이지 목차</summary><nav aria-label="이 페이지 목차">{data.sections.map(block=><a key={block.id} href={`#${block.id}`}>{block.title}</a>)}</nav></details>
+      <div className="fv-guide-body">
+      {data.sections.map(block=><GuideBlock key={block.id} id={block.id} aria-labelledby={`${block.id}-title`}>
+        <GuideIntro $illustrated={Boolean(block.art)}>
+          {block.art && <Frame $ratio={block.art.kind==='square'?'1 / 1':'3 / 2'} $focus={block.art.focus}><Art art={block.art} sizes="(max-width: 760px) calc(100vw - 32px), 280px" /></Frame>}
+          <div><SectionTitle id={`${block.id}-title`}>{block.title}</SectionTitle>{block.lead && <p><ForeverText>{block.lead}</ForeverText></p>}</div>
+        </GuideIntro>
+        {block.combat && <SkillGroups combat={block.combat}/>}
+        {block.map && <ForeverMap config={block.map}/>}
+        {block.flows?.map(flow=><Flow key={flow.title} {...flow}/>)}
+        {block.facilities && <Facilities table={block.table} arts={block.facilities}/>}
+        {block.growth && <TalentGrowth table={block.table}/>}
+        {block.spells && <details className="fv-effect-list"><summary>한국어 효과 원문 {block.spells.length}개 펼쳐 읽기</summary><TermList>{block.spells.map(spell=><div key={spell.id}><dt><ForeverSpell spell={spell}/></dt><dd>{spell.verified ? spell.description : `한국어 설명 확인 전 · ${spell.reason}`}{spell.note && <p>원문 표시 주의 · {spell.note}</p>}</dd></div>)}</TermList></details>}
+        {block.items && !block.diagramItems && (block.decisions ? block.items.map(item=><div className="fv-decision" key={item.title}><strong>{item.title}</strong><p><ForeverText>{item.body}</ForeverText></p></div>) : <TermList>{block.items.map(item=><div key={item.title}><dt><ForeverText>{item.title}</ForeverText></dt><dd><ForeverText>{item.body}</ForeverText></dd></div>)}</TermList>)}
+        {block.milestones && <TalentSteps aria-label={`${block.title} 추천 순서`}>{block.milestones.map(({spell,reason},i)=><li key={spell.id}><span className="fv-muted">핵심 이정표 {i+1}</span><br/><ForeverSpell spell={spell} size={40}/><p><ForeverText>{reason}</ForeverText></p></li>)}</TalentSteps>}
+        {block.table && <>
+          <FootNote>좁은 화면에서는 표를 좌우로 밀어 볼 수 있습니다.</FootNote>
+          <GuideTableWrap tabIndex={0} role="region" aria-label={`${block.title} 표 · 좌우로 이동 가능`}><Table aria-labelledby={`${block.id}-title`}>
+            <thead><tr>{block.table.columns.map(column=><th key={column} scope="col">{column}</th>)}</tr></thead>
+            <tbody>{block.table.rows.map(([label,...cells])=><tr key={[label,...cells].join('|')}><th scope="row"><ForeverText>{label}</ForeverText></th>{cells.map((cell,i)=><td key={i}><ForeverText>{cell}</ForeverText></td>)}</tr>)}</tbody>
+          </Table></GuideTableWrap>
+        </>}
+        {block.links && <GuideLinks $cards={block.links.some(link=>link.description || link.art)} aria-label={`${block.title} 관련 안내`}>{block.links.map(link=>link.path.startsWith('/') ? <Link key={link.path} to={link.path} className={link.art?'fv-class-card':undefined}>{link.art && <img src={`/images/forever/${link.art.id}-512.webp`} alt="" loading="lazy"/>}{link.icon && <img className="fv-spec-emblem" src={`https://wow.zamimg.com/images/wow/icons/medium/${link.icon}.jpg`} alt="" loading="lazy"/>}{link.description || link.art ? <><strong>{link.label}</strong>{link.description && <span>{link.description}</span>}</> : link.label}</Link> : <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer">{link.label}</a>)}</GuideLinks>}
+        <GuideLinks aria-label={`${block.title} 근거 원문`}>{block.sources.map(source=><a key={source} href={foreverSources[source].url} target="_blank" rel="noopener noreferrer">{foreverSources[source].label} ↗</a>)}</GuideLinks>
+      </GuideBlock>)}
+      <Sources ids={collectSources(data.sections)}/>
+      </div>
+    </div>
+  </>;
 }
 
 export default function ForeverPage({ section = 'home' }) {
@@ -1283,7 +1215,7 @@ export default function ForeverPage({ section = 'home' }) {
   return (
     <Surface>
       <Page data-forever-section={section}>
-      {guide ? <GuideSection data={guide} /> : <Content />}
+      {guide ? <GuideSection key={section} data={guide} /> : <Content />}
       </Page>
     </Surface>
   );

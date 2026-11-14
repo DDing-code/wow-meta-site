@@ -22,7 +22,8 @@
         "rank": 1,
         "description": "방어 태세일 때도 돌진을 사용할 수 있게 됩니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=1310317/%EC%84%A0%EB%B4%89%EB%8C%80?def=135497&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 23922,
@@ -87,7 +88,8 @@
         "rank": 1,
         "description": "신성한 일격의 공격력이 20%만큼 증가하며, 사용 시 대상에게 걸린 모든 심판 효과가 갱신됩니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=1311087/%EC%84%B1%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%8B%AC%ED%8C%90%EA%B4%80?def=135230&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 1310735,
@@ -96,7 +98,8 @@
         "rank": 1,
         "description": "근접 공격이 활성화된 문장을 15초 동안 최대 3중첩 저장합니다. 다른 문장으로 공격을 적중시키면 모든 중첩이 소모되고, 저장된 문장이 통상적인 확률로 중첩당 한 번씩 활성화되게 합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=1310735/%EB%B6%84%EB%85%B8-%EB%B4%89%EC%9D%B8-%ED%95%B4%EC%A0%9C?def=135222&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 20210,
@@ -105,7 +108,8 @@
         "rank": 1,
         "description": "빛의 섬광이나 성스러운 빛, 빛의 경계, 신성 충격의 치유 효과가 극대화 효과를 발휘하면 20%의 확률로 해당 주문의 기본 마나 소모량의 50%에 해당하는 마나를 회복합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=20210/%EA%B3%84%EC%8B%9C?def=134824&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 1311606,
@@ -132,7 +136,8 @@
         "rank": 1,
         "description": "방패의 피해 흡수량이 15%만큼 증가합니다. 또한 방패 막기 성공 시 50%의 확률로 최대 마나의 4%를 회복합니다. 3초에 한 번씩만 발동합니다.\n(3초 재사용 대기시간)",
         "source": "https://www.wowhead.com/forever/ko/spell=20150/%EB%B0%A9%ED%8C%A8-%EC%A0%84%EB%AC%B8%ED%99%94?def=142626&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 20925,
@@ -151,7 +156,7 @@
         "description": "",
         "source": "https://www.wowhead.com/forever/ko/spell=1328544/%EB%B0%A9%ED%8C%A8%EC%84%9C%EC%95%BD%EC%9E%90?def=142627&rank=1",
         "verified": false,
-        "reason": "한국어 주문 페이지의 효과 설명이 영어로 표시되어 한국어 설명을 확인하지 못했습니다."
+        "reason": "2026년 11월 14일 한국어 개별 주문 화면을 재확인했습니다. 이름은 한국어지만 효과 설명은 영어로 표시되어 한국어 원문은 미확인입니다."
       }
     ],
     "hunter": [
@@ -162,7 +167,8 @@
         "rank": 1,
         "description": "야수의 이동 속도가 30%만큼 증가합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=19596/%EC%95%BC%EC%88%98%EC%9D%98-%EC%8B%A0%EC%86%8D%ED%95%A8?def=134432&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 19577,
@@ -189,7 +195,8 @@
         "rank": 1,
         "description": "전투력이 지능의 20%만큼 증가합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=1223984/%EC%8B%A0%EC%A4%91%ED%95%9C-%EC%A1%B0%EC%A4%80?def=134473&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 1299346,
@@ -216,7 +223,8 @@
         "rank": 1,
         "description": "모든 근접 능력의 치명타 및 극대화율이 2%만큼 증가합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=19159/%EC%95%BC%EC%83%9D%EC%9D%98-%EC%9D%BC%EA%B2%A9?def=134458&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 19306,
@@ -254,7 +262,8 @@
         "rank": 1,
         "description": "절개에 소비되는 기력이 15만큼 감소합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=1310711/%EC%99%84%EB%B2%BD%ED%95%9C-%EC%B2%98%ED%98%95?def=138268&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 13877,
@@ -309,7 +318,7 @@
         "description": "",
         "source": "https://www.wowhead.com/forever/ko/spell=1316709/%EC%A3%BD%EC%9D%8C%EC%9D%98-%EC%A7%95%ED%91%9C?def=142618&rank=1",
         "verified": false,
-        "reason": "한국어 원문에 미해결 계산식이 남아 있어 설명과 최종 수치를 확정하지 않았습니다."
+        "reason": "2026년 11월 14일 한국어 개별 주문 화면을 재확인했습니다. 피해 상한에 $mcrit 미해결 계산식이 남아 있어 설명과 최종 수치는 미확인입니다."
       }
     ],
     "priest": [
@@ -347,7 +356,8 @@
         "rank": 1,
         "description": "마법봉의 공격력이 13%만큼 증가합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=14524/%EB%A7%88%EB%B2%95%EB%B4%89%EB%A5%98-%EC%A0%84%EB%AC%B8%ED%99%94?def=135380&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 402174,
@@ -365,7 +375,8 @@
         "rank": 1,
         "description": "치유 주문을 시전할 때, 이전에 다른 주문으로 치유한 경우 이번 치유 주문의 기본 마나 소비량의 5%에 해당하는 마나를 회복합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=1317006/%EB%B9%9B%EC%9D%98-%EA%B8%B0%EB%8F%84%EB%AC%B8?def=135385&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 401859,
@@ -395,7 +406,8 @@
         "rank": 1,
         "description": "충격 계열 주문과 번개 보호막에 소비되는 마나가 45%만큼 감소합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=1223030/%EC%A3%BC%EC%88%A0%EC%9D%98-%EC%A7%91%EC%A4%91?def=134210&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 17364,
@@ -422,7 +434,8 @@
         "rank": 1,
         "description": "번개 화살과 연쇄 번개 주문의 시전 시간이 0.17초만큼 감소합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=16578/%EC%A0%95%EA%B8%B0%EC%9D%98-%EA%B8%B0%EB%AF%BC%ED%95%A8?def=134232&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 16166,
@@ -488,7 +501,8 @@
         "rank": 1,
         "description": "비전 작렬 시전 시 20%의 확률로, 비전 격노, 화염구, 얼음 화살, 냉기화염 화살 시전 시 10%의 확률로 다음 신비한 화살 주문의 정신 집중 지속시간이 50%만큼, 마나 소모량이 100%만큼 감소하며, 0.5초마다 화살을 발사합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=400588/%ED%99%94%EC%82%B4-%ED%83%84%EB%A7%89?def=135339&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 400574,
@@ -515,7 +529,8 @@
         "rank": 1,
         "description": "화염 주문이 치명타로 적중했을 때, 입힌 피해의 8%에 해당하는 추가 피해를 4초에 걸쳐 입힙니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=11119/%EC%9E%91%EC%97%B4?def=135324&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 400624,
@@ -524,7 +539,8 @@
         "rank": 1,
         "description": "화염구, 얼음불꽃 화살, 화염 작렬, 불태우기로 비주기적인 치명타 및 극대화 효과를 발휘하면 20초 내로 다음에 시전하는 불덩이 작렬의 시전 시간이 25%만큼 감소하며, 최대 3번까지 중첩됩니다. 화염 작렬로 피해를 입힐 때마다 추가로 중첩됩니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=400624/%EC%97%B4%EA%B8%B0?def=135316&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 11129,
@@ -580,7 +596,8 @@
         "rank": 1,
         "description": "다른 악마 소환수를 소환해도 악마의 제물 효과가 취소되지 않습니다. 단, 제물로 바친 소환수를 재소환하는 경우에는 효과가 취소됩니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=425464/%EC%95%85%EB%A7%88%EC%9D%98-%EC%84%9C%EC%95%BD?def=135421&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 1293817,
@@ -609,7 +626,8 @@
         "rank": 1,
         "description": "곰 변신, 광포한 곰 변신, 표범 변신 시 치명타 및 극대화율이 3%만큼 증가합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=16942/%EB%82%A0%EC%B9%B4%EB%A1%9C%EC%9A%B4-%EB%B0%9C%ED%86%B1?def=134407&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 16972,
@@ -618,7 +636,8 @@
         "rank": 1,
         "description": "표범 변신과 곰 변신, 광포한 곰 변신 기술의 근접 전투력이 레벨의 50%만큼 증가합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=16972/%EC%95%BC%EC%83%9D%EC%9D%98-%ED%8F%AC%EC%8B%9D%EC%9E%90?def=134413&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 17007,
@@ -627,7 +646,8 @@
         "rank": 1,
         "description": "표범 변신, 곰 변신 또는 광포한 곰 변신 상태에서 무리의 우두머리가 주위 45미터 내에 있는 모든 파티원 또는 공격대원의 치명타 및 극대화율을 3%만큼 증가시킵니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=17007/%EB%AC%B4%EB%A6%AC%EC%9D%98-%EC%9A%B0%EB%91%90%EB%A8%B8%EB%A6%AC?def=134416&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 1328613,
@@ -647,7 +667,7 @@
         "description": "표범 변신 필요\n0의 마나를 40의 기력으로 즉시 전환합니다. 변신의 비용을 감소시키는 효과로 인해 힘의 전환의 비용이 감소합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=1322605/%ED%9E%98%EC%9D%98-%EC%A0%84%ED%99%98?def=145859&rank=1",
         "verified": true,
-        "note": "원문에 “0의 마나”로 표시되지만 비용 칸은 기본 마나의 55%입니다. 무료로 쓸 수 있다는 뜻으로 읽지 마세요. 실제 소모량은 게임 내 확인이 필요합니다."
+        "note": "마나 실소모량 미확인 · 2026년 11월 14일 재확인한 툴팁 상단과 주문 세부사항의 비용은 모두 기본 마나의 55%입니다. 본문은 여전히 “0의 마나”로 표시됩니다. 무료로 쓸 수 있다는 뜻으로 읽지 마세요. 비용 감소 효과를 적용한 실제 소모량은 게임 내 확인이 필요합니다."
       },
       {
         "id": 16814,
@@ -656,7 +676,8 @@
         "rank": 1,
         "description": "천벌 주문의 시전 시간이 0.1초만큼, 마나 소모량은 10%만큼 감소합니다.",
         "source": "https://www.wowhead.com/forever/ko/spell=16814/%EC%B2%9C%EB%B2%8C-%EC%97%B0%EB%A7%88?def=134384&rank=1",
-        "verified": true
+        "verified": true,
+        "passive": true
       },
       {
         "id": 24858,

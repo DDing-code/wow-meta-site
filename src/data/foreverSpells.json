@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "edition": "forever",
+    "checkedAt": "2026-11-14",
+    "kbSource": "09-포에버/spells.json"
+  },
+  "classes": {
+    "warrior": [
+      {
+        "id": 100,
+        "name": "돌진",
+        "icon": "ability_warrior_charge",
+        "rank": 1,
+        "description": "적에게 돌진하여 9의 분노를 얻고 1초 동안 기절시킵니다. 전투 중에는 사용할 수 없습니다.",
+        "conditions": "1 등급\n8 - 25 야드 사정거리\n즉시\t15 초 재사용 대기시간\n전사 필요\n요구 레벨 4\n\n전투 태세 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=100/%EB%8F%8C%EC%A7%84",
+        "verified": true
+      },
+      {
+        "id": 78,
+        "name": "영웅의 일격",
+        "icon": "ability_rogue_ambush",
+        "rank": null,
+        "description": "적을 강하게 내리쳐 11의 추가 피해를 입힙니다. 위협 수준이 크게 증가합니다.",
+        "conditions": "분노 15\t근접 사정거리\n다음 근접\n전사 필요\n요구 레벨 1\n\n근접 무기 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=78/%EC%98%81%EC%9B%85%EC%9D%98-%EC%9D%BC%EA%B2%A9",
+        "verified": true
+      },
+      {
+        "id": 772,
+        "name": "분쇄",
+        "icon": "ability_gouge",
+        "rank": null,
+        "description": "적에게 깊은 상처를 입혀 출혈을 일으킵니다. 9초에 걸쳐 총 15의 피해를 입힙니다.",
+        "conditions": "분노 10\t근접 사정거리\n즉시\n전사 필요\n요구 레벨 4\n\n근접 무기 필요\n전투 태세, 방어 태세 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=772/%EB%B6%84%EC%87%84",
+        "verified": true
+      },
+      {
+        "id": 6572,
+        "name": "복수",
+        "icon": "ability_warrior_revenge",
+        "rank": null,
+        "description": "즉시 적의 공격에 반격하여 [20.3077 + ((0.25 * 1) * 전투력)]$null~[23.6923 + ((0.25 * 1) * 전투력)]의 피해를 입히고 높은 위협 수준을 생성합니다. 적의 공격을 방어하거나 피하거나 막은 직후에만 사용할 수 있습니다.",
+        "conditions": "분노 5\t근접 사정거리\n즉시\t5 초 재사용 대기시간\n전사 필요\n요구 레벨 14\n\n근접 무기 필요\n방어 태세 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=6572/%EB%B3%B5%EC%88%98",
+        "verified": true
+      },
+      {
+        "id": 2565,
+        "name": "방패 막기",
+        "icon": "ability_defend",
+        "rank": null,
+        "description": "7초 동안 적의 공격을 방어할 확률이 75%만큼 증가합니다. 단, 2회만 방어할 수 있습니다.",
+        "conditions": "분노 10\n즉시\t5 초 재사용 대기시간\n전사 필요\n요구 레벨 16\n\n방어 태세 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=2565/%EB%B0%A9%ED%8C%A8-%EB%A7%89%EA%B8%B0",
+        "verified": true
+      },
+      {
+        "id": 71,
+        "name": "방어 태세",
+        "icon": "ability_warrior_defensivestance",
+        "rank": null,
+        "description": "안정된 방어 태세입니다. 받는 피해가 10%만큼, 공격력이 10%만큼 감소합니다. 모든 위협 수준 생성량이 80%만큼 증가합니다.",
+        "conditions": "즉시\t1 초 재사용 대기시간\n전사 필요\n요구 레벨 10",
+        "source": "https://www.wowhead.com/forever/ko/spell=71/%EB%B0%A9%EC%96%B4-%ED%83%9C%EC%84%B8",
+        "verified": true
+      },
+      {
+        "id": 355,
+        "name": "도발",
+        "icon": "spell_nature_reincarnation",
+        "rank": null,
+        "description": "적을 도발하여 자신을 공격하도록 만듭니다. 이미 자신을 공격하고 있다면 아무런 효과를 발휘하지 못합니다.",
+        "conditions": "근접 사정거리\n즉시\t8 초 재사용 대기시간\n전사 필요\n요구 레벨 10\n\n방어 태세 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=355/%EB%8F%84%EB%B0%9C",
+        "verified": true
+      },
+      {
+        "id": 1680,
+        "name": "소용돌이",
+        "icon": "ability_whirlwind",
+        "rank": null,
+        "description": "강철의 소용돌이가 주위를 휩쓸어 8미터 반경 내에 있는 최대 4명의 적에게 두 근접 무기 모두의 공격력에 해당하는 피해를 입힙니다.",
+        "conditions": "분노 25\n즉시\t10 초 재사용 대기시간\n전사 필요\n요구 레벨 36\n\n근접 무기 필요\n광폭 태세 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=1680/%EC%86%8C%EC%9A%A9%EB%8F%8C%EC%9D%B4",
+        "verified": true
+      },
+      {
+        "id": 5308,
+        "name": "마무리 일격",
+        "icon": "inv_sword_48",
+        "rank": 1,
+        "description": "상처 입은 적에게 마무리 일격을 시도하여 125의 피해를 입히고 나머지 분노를 모두 소모하여 분노당 3의 피해를 추가로 입힙니다. 생명력이 20%미만인 적에게만 사용할 수 있습니다.",
+        "conditions": "1 등급\n분노 15\t근접 사정거리\n즉시\n전사 필요\n요구 레벨 24\n\n근접 무기 필요\n전투 태세, 광폭 태세 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=5308/%EB%A7%88%EB%AC%B4%EB%A6%AC-%EC%9D%BC%EA%B2%A9",
+        "verified": true
+      }
+    ],
+    "paladin": [
+      {
+        "id": 635,
+        "name": "성스러운 빛",
+        "icon": "spell_holy_holybolt",
+        "rank": null,
+        "description": "대상의 생명력을 42 에서 50만큼 회복시킵니다.",
+        "conditions": "레벨 60\n마나 35\t40 야드 사정거리\n2.5 초 주문 시전 시간\n성기사 필요\n요구 레벨 1",
+        "source": "https://www.wowhead.com/forever/ko/spell=635/%EC%84%B1%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EB%B9%9B",
+        "verified": true
+      },
+      {
+        "id": 19750,
+        "name": "빛의 섬광",
+        "icon": "spell_holy_flashheal",
+        "rank": null,
+        "description": "대상의 생명력을 48 에서 54만큼 회복시킵니다.",
+        "conditions": "레벨 60\n마나 35\t40 야드 사정거리\n1.5 초 주문 시전 시간\n성기사 필요\n요구 레벨 20",
+        "source": "https://www.wowhead.com/forever/ko/spell=19750/%EB%B9%9B%EC%9D%98-%EC%84%AC%EA%B4%91",
+        "verified": true
+      },
+      {
+        "id": 21084,
+        "name": "정의의 문장",
+        "icon": "ability_thunderbolt",
+        "rank": 2,
+        "description": "30초 동안 성기사를 성령의 기운으로 감싸 매 근접 공격 시 [(216 / 87 + (0.0765 * 주문력))]$null~[(216 / 25 + (0.12 * 주문력))]의 추가 신성 피해를 입힙니다. 느린 무기일수록 매 타격 시 더 많은 신성 피해를 입힙니다. 성기사마다 하나의 문장만 효력을 발휘합니다.\n\n문장의 에너지를 폭발시키면 적에게 25 에서 26의 신성 피해를 입힙니다.",
+        "conditions": "레벨 60\n2 등급\n마나 20\n즉시\n성기사 필요\n요구 레벨 1",
+        "source": "https://www.wowhead.com/forever/ko/spell=21084/%EC%A0%95%EC%9D%98%EC%9D%98-%EB%AC%B8%EC%9E%A5",
+        "verified": true
+      },
+      {
+        "id": 20271,
+        "name": "심판",
+        "icon": "spell_holy_righteousfury",
+        "rank": null,
+        "description": "문장의 에너지를 적에게 폭발시킵니다. 문장을 소모하지 않습니다. 효과는 문장에 따라 달라집니다.",
+        "conditions": "6% (기본 마나 중)\t10 야드 사정거리\n즉시\t10 초 재사용 대기시간\n성기사 필요\n요구 레벨 4",
+        "source": "https://www.wowhead.com/forever/ko/spell=20271/%EC%8B%AC%ED%8C%90",
+        "verified": true
+      },
+      {
+        "id": 26573,
+        "name": "신성화",
+        "icon": "spell_holy_innerfire",
+        "rank": null,
+        "description": "성기사가 서 있는 땅을 신성화하여 해당 지역에 들어서는 적에게 8초에 걸쳐 16의 신성 피해를 입힙니다. 가장 먼저 해당 지역에 들어서는 적 4명은 8초에 걸쳐 32의 추가 피해를 받습니다.",
+        "conditions": "마나 135\n즉시\t8 초 재사용 대기시간\n성기사 필요\n요구 레벨 20",
+        "source": "https://www.wowhead.com/forever/ko/spell=26573/%EC%8B%A0%EC%84%B1%ED%99%94",
+        "verified": true
+      },
+      {
+        "id": 25780,
+        "name": "정의의 격노",
+        "icon": "spell_holy_sealoffury",
+        "rank": null,
+        "description": "생성되는 모든 위협 수준이 33%만큼 증가하고, 신성 공격으로 인해 생성되는 모든 위협 수준이 추가로 90%만큼 증가합니다. 30분 동안 지속됩니다.",
+        "conditions": "30% (기본 마나 중)\n즉시\n성기사 필요\n요구 레벨 10",
+        "source": "https://www.wowhead.com/forever/ko/spell=25780/%EC%A0%95%EC%9D%98%EC%9D%98-%EA%B2%A9%EB%85%B8",
+        "verified": true
+      },
+      {
+        "id": 498,
+        "name": "신의 가호",
+        "icon": "spell_holy_restoration",
+        "rank": null,
+        "description": "6초 동안 어떠한 주문이나 물리 공격에도 피해를 받지 않습니다. 하지만 이 동안 공격하거나 물리 능력을 사용할 수 없습니다. 1분 동안 참을성이 부여됩니다. 참을성이 활성화된 동안에는 시전할 수 없습니다.",
+        "conditions": "마나 15\n즉시\t5 분 재사용 대기시간\n성기사 필요\n요구 레벨 6",
+        "source": "https://www.wowhead.com/forever/ko/spell=498/%EC%8B%A0%EC%9D%98-%EA%B0%80%ED%98%B8",
+        "verified": true
+      }
+    ],
+    "hunter": [
+      {
+        "id": 75,
+        "name": "자동 사격",
+        "icon": "ability_whirlwind",
+        "rank": null,
+        "description": "취소할 때까지 자동으로 적을 공격합니다.",
+        "conditions": "8 - 35 야드 사정거리\n즉시\n사냥꾼 필요\n요구 레벨 1\n\n원거리 무기 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=75/%EC%9E%90%EB%8F%99-%EC%82%AC%EA%B2%A9",
+        "verified": true
+      },
+      {
+        "id": 1978,
+        "name": "독사 쐐기",
+        "icon": "ability_hunter_quickshot",
+        "rank": null,
+        "description": "쐐기를 대상에게 발사하여 15초에 걸쳐 총 15의 자연 피해를 입힙니다. 사냥꾼마다 한 대상에 동시에 하나의 쐐기만 사용할 수 있습니다.",
+        "conditions": "마나 15\t8 - 35 야드 사정거리\n사냥꾼 필요\n요구 레벨 4\n\n원거리 무기 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=1978/%EB%8F%85%EC%82%AC-%EC%90%90%EA%B8%B0",
+        "verified": true
+      },
+      {
+        "id": 3044,
+        "name": "신비한 사격",
+        "icon": "ability_impalingbolt",
+        "rank": null,
+        "description": "즉시 사격하여 25의 비전 피해를 입힙니다.",
+        "conditions": "11% (기본 마나 중)\t8 - 35 야드 사정거리\n6 초 재사용 대기시간\n사냥꾼 필요\n요구 레벨 6\n\n원거리 무기 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=3044/%EC%8B%A0%EB%B9%84%ED%95%9C-%EC%82%AC%EA%B2%A9",
+        "verified": true
+      },
+      {
+        "id": 1130,
+        "name": "사냥꾼의 징표",
+        "icon": "ability_hunter_snipershot",
+        "rank": null,
+        "description": "사냥꾼의 징표를 대상에게 걸어 대상을 공격하는 모든 아군의 원거리 전투력을 26만큼 증가시킵니다. 이 능력에 걸린 대상은 은신이나 투명 상태에도 사냥꾼의 시야에 보이게 되며 미니맵에 표시됩니다. 2분 동안 지속됩니다.",
+        "conditions": "마나 15\t100 야드 사정거리\n즉시\n사냥꾼 필요\n요구 레벨 6",
+        "source": "https://www.wowhead.com/forever/ko/spell=1130/%EC%82%AC%EB%83%A5%EA%BE%BC%EC%9D%98-%EC%A7%95%ED%91%9C",
+        "verified": true
+      },
+      {
+        "id": 2974,
+        "name": "날개 절단",
+        "icon": "ability_rogue_trip",
+        "rank": null,
+        "description": "5의 피해를 입히고 10초 동안 적의 이동 속도를 50%만큼 감소시킵니다.",
+        "conditions": "마나 40\t근접 사정거리\n즉시\n사냥꾼 필요\n요구 레벨 12\n\n근접 무기 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=2974/%EB%82%A0%EA%B0%9C-%EC%A0%88%EB%8B%A8",
+        "verified": true
+      },
+      {
+        "id": 1499,
+        "name": "빙결 덫",
+        "icon": "spell_frost_chainsofice",
+        "rank": null,
+        "description": "냉기의 덫을 설치합니다. 적이 다가오면 얼려서 최대 10초 동안 모든 행동을 불가능하게 만듭니다. 덫에 걸린 적이 피해를 입으면 효과가 풀립니다. 덫은 1분 동안 지속되며, 한 개만 놓아둘 수 있습니다.",
+        "conditions": "마나 50\n즉시\t30 초 재사용 대기시간\n사냥꾼 필요\n요구 레벨 20",
+        "source": "https://www.wowhead.com/forever/ko/spell=1499/%EB%B9%99%EA%B2%B0-%EB%8D%AB",
+        "verified": true
+      },
+      {
+        "id": 1515,
+        "name": "야수 길들이기",
+        "icon": "ability_hunter_beasttaming",
+        "rank": null,
+        "description": "야수를 길들여 친구로 만듭니다. 야수를 길들이는 데 집중하는 20초 동안은 방어도가 100%만큼 감소합니다. 만약 이 동안 어떤 이유로든 야수의 주의가 딴데로 돌아가게 된다면 길들이는 것은 실패하게 됩니다. 길들이는 데 성공하면 만족도와 충성도가 매우 낮습니다. 즉시 먹을 것을 줘서 만족도를 높이도록 하십시오.",
+        "conditions": "60% (기본 마나 중)\t30 야드 사정거리\n집중 (20 초 주문 시전 시간)\n사냥꾼 필요\n요구 레벨 10",
+        "source": "https://www.wowhead.com/forever/ko/spell=1515/%EC%95%BC%EC%88%98-%EA%B8%B8%EB%93%A4%EC%9D%B4%EA%B8%B0",
+        "verified": true
+      }
+    ],
+    "rogue": [
+      {
+        "id": 1752,
+        "name": "사악한 일격",
+        "icon": "spell_shadow_ritualofsacrifice",
+        "rank": null,
+        "description": "대상을 순간적으로 공격하여 3의 추가 피해를 입힙니다. 1의 연계 포인트가 주어집니다.",
+        "conditions": "기력 45\t근접 사정거리\n즉시\n도적 필요\n요구 레벨 1\n\n근접 무기 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=1752/%EC%82%AC%EC%95%85%ED%95%9C-%EC%9D%BC%EA%B2%A9",
+        "verified": true
+      },
+      {
+        "id": 2098,
+        "name": "절개",
+        "icon": "ability_rogue_eviscerate",
+        "rank": null,
+        "description": "적에게 마무리 일격을 날립니다. 연계 점수와 전투력에 따라 피해가 증가합니다.\n  연계 점수 1점: 6$null~10의 피해\n  연계 점수 2점: 11$null~15의 피해\n  연계 점수 3점: 16$null~20의 피해\n  연계 점수 4점: 21$null~25의 피해\n  연계 점수 5점: 26$null~30의 피해",
+        "conditions": "기력 35 / 1의 5 연계 점수\t근접 사정거리\n즉시\n도적 필요\n요구 레벨 1\n\n근접 무기 필요",
+        "source": "https://www.wowhead.com/forever/ko/spell=2098/%EC%A0%88%EA%B0%9C",
+        "verified": true
+      },
+      {
+        "id": 5171,
+        "name": "난도질",
+        "icon": "ability_rogue_slicedice",
+        "rank": 1,
+        "description": "마무리 일격을 시도하여 근접 공격 속도를 20%만큼 증가시킵니다. 연계 점수에 따라 지속시간이 증가합니다.\n  연계 점수 1점: 9초\n  연계 점수 2점: 12초\n  연계 점수 3점: 15초\n  연계 점수 4점: 18초\n  연계 점수 5점: 21초",
+        "conditions": "1 등급\n기력 25 / 1의 5 연계 점수\t100 야드 사정거리\n즉시\n도적 필요\n요구 레벨 10",
+        "source": "https://www.wowhead.com/forever/ko/spell=5171/%EB%82%9C%EB%8F%84%EC%A7%88",
+        "verified": true
+      },
+      {
+        "id": 53,
+        "name": "기습",
+        "icon": "ability_backstab",
+        "rank": null,
+        "description": "적을 기습하여 무기 공격력의 150%에 10의 추가 피해를 입힙니다. 주장비에 단검을 착용해야 하며 적의 배후에서 공격해야 합니다. 1의 연계 점수를 얻습니다.",
+        "conditions": "기력 60\t근접 사정거리\n즉시\n도적 필요\n요구 레벨 4",
+        "source": "https://www.wowhead.com/forever/ko/spell=53/%EA%B8%B0%EC%8A%B5",
+        "verified": true
+      },
+      {
+        "id": 1784,
+        "name": "은신",
+        "icon": "ability_stealth",
+        "rank": 1,
+        "description": "은신한 상태로 이동할 수 있지만 이동 속도가 50%만큼 감소합니다. 취소할 때까지 지속됩니다.",
+        "conditions": "1 등급\n즉시\t10 초 재사용 대기시간\n도적 필요\n요구 레벨 1",
+        "source": "https://www.wowhead.com/forever/ko/spell=1784/%EC%9D%80%EC%8B%A0",
+        "verified": true
+      },
+      {
+        "id": 1966,
+        "name": "교란",
+        "icon": "ability_rogue_feint",
+        "rank": 1,
+        "description": "교란 동작을 취합니다. 피해는 주지 않지만 적의 위협 수준을 약간 감소시켜 자신을 공격할 확률을 낮춥니다.",
+        "conditions": "1 등급\n기력 20\t근접 사정거리\n즉시\t10 초 재사용 대기시간\n도적 필요\n요구 레벨 16",
+        "source": "https://www.wowhead.com/forever/ko/spell=1966/%EA%B5%90%EB%9E%80",
+        "verified": true
+      },
+      {
+        "id": 5277,
+        "name": "회피",
+        "icon": "spell_shadow_shadowward",
+        "rank": null,
+        "description": "15초 동안 회피할 확률이 50%만큼 향상됩니다.",
+        "conditions": "즉시\t5 분 재사용 대기시간\n도적 필요\n요구 레벨 8",
+        "source": "https://www.wowhead.com/forever/ko/spell=5277/%ED%9A%8C%ED%94%BC",
+        "verified": true
+      }
+    ],
+    "priest": [
+      {
+        "id": 585,
+        "name": "성스러운 일격",
+        "icon": "spell_holy_holysmite",
+        "rank": null,
+        "description": "적을 강타하여 14 에서 18의 신성 피해를 입힙니다.",
+        "conditions": "레벨 60\n마나 20\t30 야드 사정거리\n1.5 초 주문 시전 시간\n사제 필요\n요구 레벨 1",
+        "source": "https://www.wowhead.com/forever/ko/spell=585/%EC%84%B1%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%9D%BC%EA%B2%A9",
+        "verified": true
+      },
+      {
+        "id": 589,
+        "name": "어둠의 권능: 고통",
+        "icon": "spell_shadow_shadowwordpain",
+        "rank": null,
+        "description": "어둠의 힘으로 18초에 걸쳐 총 30의 암흑 피해를 입힙니다.",
+        "conditions": "마나 25\t30 야드 사정거리\n즉시\n사제 필요\n요구 레벨 4",
+        "source": "https://www.wowhead.com/forever/ko/spell=589/%EC%96%B4%EB%91%A0%EC%9D%98-%EA%B6%8C%EB%8A%A5-%EA%B3%A0%ED%86%B5",
+        "verified": true
+      }
+    ]
+  }
+}

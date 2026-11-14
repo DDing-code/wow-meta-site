@@ -9,6 +9,13 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+# 2026-11-14 추가판은 내장 imagegen으로 생성하고 ../forever-visual-20261114/export-art.py로 자른다.
+VISUAL_PROMPTS = {
+    "map": "Redraw the supplied top-down world map as precise 16-bit pixel terrain. Preserve coastline, continent outlines, islands, relative positions and north-up orientation exactly. Navy ocean, forests, mountain ranges, deserts. No labels, symbols, pins, text or logos. Keep the entire source canvas and aspect ratio.",
+    "classes": "A precise 3 by 3 sprite illustration sheet, equal square cells with no gutters or words. Row one: orc warrior with axe and shield, human paladin with holy hammer and book, dwarf hunter with bow and wolf. Row two: rogue with paired daggers, luminous priest, tauren shaman with lightning and totems. Row three: mage with frost and book, undead warlock with green fire and imp, night elf druid with bear and cat. Rich 16-bit fantasy pixel art, distinct scenes, dark charcoal backgrounds, consistent pixel grid, no text or logos.",
+    "camp": "Five columns and two rows of separate equal square camping equipment illustrations. Row one: first aid kit, fishing bowl, blue mana well, grinding wheel, enchanted lute. Row two: material robot, aromatic candle, leather tent, camping chair, tailoring banner. Each is clearly distinct on a dark charcoal background, crisp detailed fantasy 16-bit pixel art, no words, labels or logos.",
+    "raids": "Three equally sized square fantasy pixel illustrations in one horizontal strip: ancient barrow cave with emerald light; giant world tree on the summit of a wooded mountain; black dragon lair with a skull-shaped stone entrance and warm volcanic glow. Illustrative mood scenes, not claimed to be exact game entrances. Crisp 16-bit pixel art, no text, map pins or logos.",
+}
 RAW = os.path.join(HERE, "raw")
 WORK = os.path.join(HERE, "work")
 REF = os.path.join(HERE, "ref")

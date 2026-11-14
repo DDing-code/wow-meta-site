@@ -3,6 +3,7 @@
 // 리테일 KB·kb-skills.json과 섞지 않는다(리테일 KB는 주문 번호 하나로 색인해서 포에버 자료가 들어가면 서로 덮어쓴다).
 // 검사: npm run validate:forever (scripts/validate-forever-guide.cjs), src/pages/ForeverPage.test.js
 import foreverTalents from './foreverTalents.json';
+import foreverVisuals from './foreverVisuals.json';
 
 export const FOREVER_NAME = '월드 오브 워크래프트: 포에버';
 export const FOREVER_CHECKED_AT = '2026-11-14';
@@ -10,7 +11,7 @@ export const FOREVER_CHECKED_AT = '2026-11-14';
 // 그림(art): 블리자드 공식 아트·공지 스크린샷을 바탕으로 도트로 다시 그린 것. 파일은 public/images/forever/<id>-<폭>.webp
 // (kind 'hero' 768·1536, 'square' 512·1024, 나머지 640·1280). focus는 잘라 보일 때 남길 자리(object-position).
 // 만드는 도구: artifacts/forever-art-20261114/gen.py(그림 생성) → build.py(사이트용 변환). 검사가 파일과 alt를 확인한다.
-export const FOREVER_ART_NOTE = '그림은 블리자드 공식 아트와 공지 스크린샷을 바탕으로 도트로 다시 그린 것이며, 실제 게임 화면과 다릅니다.';
+export const FOREVER_ART_NOTE = '기존 그림은 공식 아트와 공지 화면을 도트로 다시 그린 것입니다. 직업·설비·레이드 삽화는 설명을 위한 창작 그림이며 실제 게임 화면과 다릅니다. 지도는 와우헤드 지형을 바탕으로 다시 그렸고, 표식과 이동 경로의 확인 범위를 각각 표시했습니다.';
 
 export const foreverSources = {
   launch: {
@@ -1740,6 +1741,211 @@ const talentPaths = {
   ],
 };
 
+// ForeverDB의 직업별 Builds 화면에서 읽은 견본. 분야 합계는 링크의 실제 투자와 대조한다.
+const additionalTalentBuilds = {
+  'warrior/arms': [
+    [20, '11 / 0 / 0', '0a9a63.3202301'],
+    [30, '21 / 0 / 0', '0a9a63.3232321103001'],
+    [40, '31 / 0 / 0', '0a9a63.32323213030015201'],
+    [50, '36 / 5 / 0', '0a9a63.33323213032215201-05'],
+    [60, '37 / 14 / 0', '0a9a63.34323213032215201-0505013'],
+  ],
+  'warrior/fury': [
+    [20, '0 / 11 / 0', '0a9a63.-050501'],
+    [30, '0 / 21 / 0', '0a9a63.-0515013500001'],
+    [40, '0 / 31 / 0', '0a9a63.-251501350002100231'],
+    [50, '3 / 38 / 0', '0a9a63.3-551501350022120231'],
+    [60, '11 / 40 / 0', '0a9a63.3202301-552501350122120231'],
+  ],
+  'paladin/holy': [
+    [20, '11 / 0 / 0', 'e20535.5032001'],
+    [30, '21 / 0 / 0', 'e20535.50320115002101'],
+    [40, '31 / 0 / 0', 'e20535.50320215012101251'],
+    [50, '31 / 2 / 8', 'e20535.50320215012101251-2-0503'],
+    [60, '34 / 9 / 8', 'e20535.50320215222101251-50022-0503'],
+  ],
+  'paladin/protection': [
+    [20, '0 / 11 / 0', 'e20535.-053021'],
+    [30, '0 / 21 / 0', 'e20535.-05302102213101'],
+    [40, '0 / 31 / 0', 'e20535.-05302102513401031'],
+    [50, '0 / 41 / 0', 'e20535.-25302102513521531'],
+    [60, '0 / 49 / 2', 'e20535.-55322132513521531-2'],
+  ],
+  'hunter/marksmanship': [
+    [20, '0 / 11 / 0', '7336f6.-0050501'],
+    [30, '0 / 21 / 0', '7336f6.-005055200121'],
+    [40, '0 / 31 / 0', '7336f6.-0050552001520051'],
+    [50, '0 / 41 / 0', '7336f6.-0052552501523051'],
+    [60, '9 / 42 / 0', '7336f6.522-0053552501523051'],
+  ],
+  'hunter/survival': [
+    [20, '0 / 0 / 11', '7336f6.--500230001'],
+    [30, '0 / 0 / 21', '7336f6.--5002500310400001'],
+    [40, '0 / 0 / 31', '7336f6.--500250031040220151'],
+    [50, '0 / 5 / 36', '7336f6.-005-530250031051220151'],
+    [60, '5 / 8 / 38', '7336f6.5-00503-530250031051222151'],
+  ],
+  'rogue/assassination': [
+    [20, '11 / 0 / 0', '1260df.025300001'],
+    [30, '21 / 0 / 0', '1260df.02530120201401'],
+    [40, '31 / 0 / 0', '1260df.02530120201551031'],
+    [50, '36 / 5 / 0', '1260df.02530120251551031-302'],
+    [60, '38 / 13 / 0', '1260df.02530120251551231-30230302'],
+  ],
+  'rogue/subtlety': [
+    [20, '0 / 0 / 11', '1260df.--005023001'],
+    [30, '0 / 0 / 21', '1260df.--2050230313010001'],
+    [40, '0 / 0 / 31', '1260df.--305133031301001151'],
+    [50, '0 / 10 / 31', '1260df.-322003-305133031301001151'],
+    [60, '10 / 10 / 31', '1260df.0253-322003-305133031301001151'],
+  ],
+  'priest/discipline': [
+    [20, '11 / 0 / 0', '9832cf.0250300001'],
+    [30, '21 / 0 / 0', '9832cf.523020020330001'],
+    [40, '31 / 0 / 0', '9832cf.525033031330011001'],
+    [50, '36 / 0 / 5', '9832cf.525035031330011031--005'],
+    [60, '41 / 0 / 10', '9832cf.525035231333011031--30502'],
+  ],
+  'priest/holy': [
+    [20, '0 / 11 / 0', '9832cf.-032051'],
+    [30, '0 / 21 / 0', '9832cf.-0350510203011'],
+    [40, '0 / 31 / 0', '9832cf.-03505102030121521'],
+    [50, '8 / 33 / 0', '9832cf.005003-03505103030121531'],
+    [60, '18 / 33 / 0', '9832cf.00510503103-03505103030121531'],
+  ],
+  'shaman/elemental': [
+    [20, '11 / 0 / 0', '8e4ade.5200031'],
+    [30, '21 / 0 / 0', '8e4ade.55003310021001'],
+    [40, '31 / 0 / 0', '8e4ade.5500331003101351'],
+    [50, '36 / 5 / 0', '8e4ade.5503331003121351-05'],
+    [60, '41 / 5 / 5', '8e4ade.5505331303121351-05-05'],
+  ],
+  'shaman/restoration': [
+    [20, '0 / 0 / 11', '8e4ade.--523000001'],
+    [30, '0 / 0 / 21', '8e4ade.--5332000114011'],
+    [40, '0 / 0 / 31', '8e4ade.--5432000115013051'],
+    [50, '0 / 0 / 41', '8e4ade.--5533100215513151'],
+    [60, '0 / 0 / 51', '8e4ade.--5533523315513151'],
+  ],
+  'mage/arcane': [
+    [20, '11 / 0 / 0', '500823.0500050001'],
+    [30, '21 / 0 / 0', '500823.050005123100301'],
+    [40, '31 / 0 / 0', '500823.050005123100311531'],
+    [50, '41 / 0 / 0', '500823.253205223120311531'],
+    [60, '45 / 5 / 1', '500823.253225223122311531-5-001'],
+  ],
+  'mage/fire': [
+    [20, '0 / 11 / 0', '500823.-25300001'],
+    [30, '0 / 21 / 0', '500823.-355000012001301'],
+    [40, '0 / 31 / 0', '500823.-55500101200133131'],
+    [50, '0 / 41 / 0', '500823.-55523331200133131'],
+    [60, '0 / 41 / 10', '500823.-55523331200133131-2030023'],
+  ],
+  'warlock/demonology': [
+    [20, '0 / 11 / 0', '2040ae.-00500302001'],
+    [30, '0 / 21 / 0', '2040ae.-1050233201201001'],
+    [40, '0 / 31 / 0', '2040ae.-2050233201201001351'],
+    [50, '3 / 38 / 0', '2040ae.003-2055233201221001351'],
+    [60, '13 / 38 / 0', '2040ae.235003-2055233201221001351'],
+  ],
+  'warlock/destruction': [
+    [20, '0 / 0 / 11', '2040ae.--00523001'],
+    [30, '0 / 0 / 21', '2040ae.--00553011231'],
+    [40, '0 / 0 / 31', '2040ae.--0055301123101351'],
+    [50, '0 / 0 / 41', '2040ae.--0055355133101351'],
+    [60, '0 / 1 / 50', '2040ae.-001-2555355133121351'],
+  ],
+  'druid/balance': [
+    [20, '11 / 0 / 0', 'd04714.50302001'],
+    [30, '21 / 0 / 0', 'd04714.5030223110301'],
+    [40, '31 / 0 / 0', 'd04714.5032223110501051'],
+    [50, '41 / 0 / 0', 'd04714.5032223115521351'],
+    [60, '41 / 0 / 10', 'd04714.5032223115521351--505'],
+  ],
+  'druid/restoration': [
+    [20, '0 / 0 / 11', 'd04714.--5051'],
+    [30, '0 / 0 / 21', 'd04714.--505300300311'],
+    [40, '0 / 0 / 31', 'd04714.--5053005003113041'],
+    [50, '0 / 0 / 41', 'd04714.--5053015153113251'],
+    [60, '3 / 0 / 48', 'd04714.03--5553035153113251'],
+  ],
+};
+
+const additionalTalentAdvice = {
+  "warrior/arms": [
+    "무기에 31점까지 먼저 모아 양손 무기 사냥의 중심을 갖춥니다.",
+    "50레벨부터 분노를 보완하고, 60레벨에는 무기 37점·분노 14점으로 이어 갑니다."
+  ],
+  "warrior/fury": [
+    "40레벨까지 분노에 집중하며 쌍수 사냥을 준비합니다.",
+    "50레벨부터 무기에도 투자합니다. 공격을 이어 갈 자원과 전투 사이 정비를 함께 고려한 견본입니다."
+  ],
+  "paladin/holy": [
+    "혼자 근접 사냥하는 신성 견본 대신 던전 치유 견본을 골랐습니다.",
+    "40레벨 뒤에는 보호·징벌도 보완합니다. 신성 분야에만 끝까지 투자하는 구성은 아닙니다."
+  ],
+  "paladin/protection": [
+    "방패를 사용하는 던전 탱커 견본입니다. 50레벨까지 보호 분야를 먼저 채웁니다.",
+    "60레벨에는 보호 49점과 징벌 2점을 사용합니다. 방패서약자의 한국어 효과는 아직 미확인입니다."
+  ],
+  "hunter/marksmanship": [
+    "40레벨까지 사격에 집중하는 원거리 사냥 견본입니다.",
+    "50레벨에도 사격을 보완하고, 60레벨에는 야수 9점을 더해 소환수와 함께 운용합니다."
+  ],
+  "hunter/survival": [
+    "초반에는 원거리로 시작해 근접으로 마무리하고, 30레벨부터 근접 장비와 운용을 갖추는 견본입니다.",
+    "50레벨부터 사격, 60레벨에는 야수까지 보완합니다. 원거리 전용 사격 견본과 구분하세요."
+  ],
+  "rogue/assassination": [
+    "40레벨까지 암살에 집중해 두 무기와 독을 쓰는 사냥을 준비합니다.",
+    "50레벨부터 전투를 보완하며, 60레벨에는 암살 38점·전투 13점으로 맞춥니다."
+  ],
+  "rogue/subtlety": [
+    "은신 진입을 쓰는 사냥 견본으로, 40레벨까지 잠행에 모읍니다.",
+    "50레벨에는 전투, 60레벨에는 암살을 더합니다. 죽음의 징표 피해 상한은 원문의 계산식 문제로 미확인입니다."
+  ],
+  "priest/discipline": [
+    "마법봉과 주문으로 혼자 사냥하는 견본입니다. 던전 치유 전용 견본과 구분하세요.",
+    "20→30레벨 견본 사이에 기존 점수를 회수하는 항목이 있습니다. 그대로 점수만 더하지 말고 초기화 여부부터 확인하세요."
+  ],
+  "priest/holy": [
+    "신성 주문 사냥용이 아닌 던전 치유 견본을 골랐습니다.",
+    "40레벨 이후 수양을 보완합니다. 60레벨 기준 수양 18점·신성 33점으로 구성합니다."
+  ],
+  "shaman/elemental": [
+    "40레벨까지 정기에 집중하는 원거리 주문 사냥 견본입니다.",
+    "50레벨에는 고양 5점, 60레벨에는 복원 5점도 보완합니다. 주력은 정기 41점입니다."
+  ],
+  "shaman/restoration": [
+    "혼자 사냥하기보다 파티 치유를 계속 맡는 경우의 견본입니다.",
+    "60레벨까지 복원 분야 안에서 보완합니다. 최종 배분은 복원 51점입니다."
+  ],
+  "mage/arcane": [
+    "40레벨까지 비전에 집중하는 주문 사냥 견본입니다.",
+    "50레벨에는 비전을 보완하고, 60레벨에는 화염 5점·냉기 1점을 더합니다."
+  ],
+  "mage/fire": [
+    "40레벨까지 화염 분야를 먼저 갖추는 사냥 견본입니다.",
+    "50레벨에는 화염을 보완하고, 60레벨에는 냉기 10점을 더해 사냥 대응 수단을 준비합니다."
+  ],
+  "warlock/demonology": [
+    "소환수와 함께 안전하게 사냥하려는 견본으로, 40레벨까지 악마에 집중합니다.",
+    "50레벨부터 고통을 더합니다. 60레벨에는 고통 13점·악마 38점으로 이어 갑니다."
+  ],
+  "warlock/destruction": [
+    "40레벨까지 파괴 분야를 먼저 갖추는 직접 시전 중심의 사냥 견본입니다.",
+    "50레벨에도 파괴를 보완하고, 60레벨에는 파괴 50점·악마 1점으로 마무리합니다."
+  ],
+  "druid/balance": [
+    "40레벨까지 조화에 집중하는 원거리 주문 사냥 견본입니다.",
+    "50레벨에는 조화를 보완하고, 60레벨에는 복원 10점을 더합니다. 야성 사냥 장비와 구분하세요."
+  ],
+  "druid/restoration": [
+    "던전 치유를 맡는 견본으로, 50레벨까지 복원에 집중합니다.",
+    "60레벨에는 조화 3점·복원 48점입니다. 혼자 사냥할 시간이 많다면 야성 경로와 비교하세요."
+  ]
+};
+
 const levelingPresetSpecs = { warrior: 'protection', paladin: 'retribution', hunter: 'beast-mastery', rogue: 'combat', priest: 'shadow', shaman: 'enhancement', mage: 'frost', warlock: 'affliction', druid: 'feral' };
 const additionalSpecSpells = { 'rogue/combat': [1310711], 'priest/shadow': [15487], 'druid/feral': [1328613, 1322605] };
 
@@ -1756,9 +1962,15 @@ for (const [id, spells] of Object.entries(foreverTalents.classes)) {
     label: `ForeverDB · ${page.label} 전문화별 안내 (영문)`,
     url: `https://foreverdb.net/class/${id[0].toUpperCase()}${id.slice(1)}`,
   };
+  const buildsSource = `db-builds-${id}`;
+  foreverSources[buildsSource] = {
+    label: `ForeverDB · ${page.label} 레벨별 특성 견본 (영문)`,
+    url: `${foreverSources[dbSource].url}/builds`,
+  };
   const specLinks = talentPaths[id].map(spec => ({ label: `${spec.name} ${page.label}`, description: spec.use, path: `/forever/classes/${id}/${spec.id}` }));
   for (const spec of talentPaths[id]) {
     const specId = `classes/${id}/${spec.id}`;
+    const builds = additionalTalentBuilds[`${id}/${spec.id}`];
     const spellIds = [...spec.steps.map(([spellId]) => spellId), ...(additionalSpecSpells[`${id}/${spec.id}`] || [])];
     foreverDetailGuides[specId] = {
       parent: `classes/${id}`, parentLabel: `${page.label} 전문화 목록`, specialization: true,
@@ -1770,9 +1982,20 @@ for (const [id, spells] of Object.entries(foreverTalents.classes)) {
           lead: '추천하는 핵심 특성의 순서와 선택 이유입니다. 효과 설명은 아이콘이나 이름에서 확인하세요.',
           items: [{ title: '추천 순서 읽는 법', body: '매 레벨의 모든 점수를 나열한 배분표가 아닌 핵심 이정표입니다. 다음 목표로 가기 전에 계산기의 선행 특성과 해당 분야의 요구 점수를 채우세요.' }],
           milestones: spec.steps.map(([spellId, reason]) => ({ spell: spells.find(spell => spell.id === spellId), reason })),
-          sources: [source, dbSource, `tavern-${id}`],
+          sources: [source, dbSource, buildsSource, `tavern-${id}`],
         },
         ...(spec.id === levelingPresetSpecs[id] ? page.sections.filter(block => ['talents', 'practice'].includes(block.id)) : []),
+        ...(builds ? [{
+          id: 'talents', title: `${spec.name} 특성 배분 견본`,
+          lead: '유산 추가 점수 없이 해당 레벨에 완성하는 외부 가이드 추천 견본입니다. 각 숫자는 분야별 누적 투자이며, 세부 배치는 레벨별 계산기 링크에서 확인하세요. 40레벨 이후 견본은 원문도 출시 전 실전 검증을 거치지 않은 자료라고 명시합니다. 레벨 사이에 기존 점수를 회수하는 견본은 특성 초기화가 필요할 수 있습니다.',
+          items: additionalTalentAdvice[`${id}/${spec.id}`].map((body, index) => ({ title: index ? '후반 투자와 주의점' : '이 견본을 고른 이유', body })),
+          table: {
+            columns: ['레벨', talentPaths[id].map(item => item.name).join(' / '), '총 투자'],
+            rows: builds.map(([level, points]) => [`${level}레벨`, points, `${level - 9}점`]),
+          },
+          links: builds.map(([level, , code]) => ({ label: `${level}레벨 ${spec.name} 견본 ↗`, path: `${foreverSources[dbSource].url}/talents?lvl=${level}&t=${code}` })),
+          sources: [buildsSource, source],
+        }] : []),
         {
           id: 'talent-effects', title: '특성 효과와 원문',
           lead: '연결한 주문 화면의 1등급 원문입니다. 레벨·배운 주문 등급에 따라 수치가 달라집니다. 확인 전인 설명은 비워 두었고 원문에 표시 문제가 있는 경우 따로 안내합니다. 아래 목록 전체가 하나의 배분 견본을 뜻하지는 않습니다.',
@@ -1799,6 +2022,10 @@ foreverSources['wowhead-zones'] = {
   label: '와우헤드 · 포에버 새 지역 개요 (영문)',
   url: 'https://www.wowhead.com/forever/ko/guide/zones-maps-locations-rewards',
 };
+foreverSources['bof-leveling'] = {
+  label: 'Bind on Forever · 지역 레벨·종족별 육성 경로 (영문)',
+  url: 'https://bindonforever.com/leveling',
+};
 
 // 30레벨 뒤 외부 자료는 추정 후보다. 공식 범위가 있는 새 지역·던전과 구분한다.
 const laterRoutes = {
@@ -1806,14 +2033,14 @@ const laterRoutes = {
     ['30~35 안팎', '가시덤불 골짜기 · 잊혀진 땅', '외부 가이드 추정 · 적과 퀘스트 레벨을 현장에서 확인'],
     ['35~45', '강물터 · 가라앉은 도시(35~40) · 크롤도크 보루(40~45)', '공식 소개 범위 · 강물터 퀘스트와 새 던전 파티를 함께 준비'],
     ['40~50 안팎', '가시덤불 골짜기 → 타나리스 · 페랄라스', '외부 가이드 추정 · 강물터를 마친 레벨에 맞춰 선택'],
-    ['50~55 안팎', '운고로 분화구 · 악령의 숲 · 여명의 설원', '외부 가이드 추정 · 알카즈 감옥은 공식 48~53레벨 범위'],
+    ['50~55 안팎', '운고로 분화구 · 악령의 숲 → 53레벨 이후 여명의 설원', '외부 가이드 추정 · 여명의 설원은 다른 가이드의 53~60 범위도 대조'],
     ['55~60 안팎', '서부 역병지대 · 동부 역병지대', '외부 가이드 추정 · 60레벨까지 보장되는 검증 동선은 아님'],
   ],
   horde: [
     ['30~35 안팎', '가시덤불 골짜기 · 버섯구름 봉우리', '외부 가이드 추정 · 적과 퀘스트 레벨을 현장에서 확인'],
     ['35~45', '강물터 · 가라앉은 도시(35~40) · 크롤도크 보루(40~45)', '공식 소개 범위 · 강물터 퀘스트와 새 던전 파티를 함께 준비'],
     ['40~50 안팎', '가시덤불 골짜기 → 타나리스 · 페랄라스', '외부 가이드 추정 · 강물터를 마친 레벨에 맞춰 선택'],
-    ['50~55 안팎', '운고로 분화구 · 여명의 설원 · 악령의 숲', '외부 가이드 추정 · 알카즈 감옥은 공식 48~53레벨 범위'],
+    ['50~55 안팎', '운고로 분화구 · 악령의 숲 → 53레벨 이후 여명의 설원', '외부 가이드 추정 · 여명의 설원은 다른 가이드의 53~60 범위도 대조'],
     ['55~60 안팎', '동부 역병지대 · 실리더스', '외부 가이드 추정 · 60레벨까지 보장되는 검증 동선은 아님'],
   ],
 };
@@ -1849,6 +2076,9 @@ for (const [id, page] of Object.entries(foreverDetailGuides)) {
   block.lead = '30레벨 뒤에는 같은 진영의 지역 후보를 함께 씁니다. 아래 순서는 ForeverDB의 추정 자료를 추린 추천이며, 지역별 퀘스트를 직접 끝까지 검증한 최단 동선은 아닙니다. 강물터와 새 던전의 레벨 범위만 공식 소개로 확인했습니다. 주황·빨강 퀘스트가 많으면 이전 지역의 남은 퀘스트부터 확인하세요.';
   block.table = { columns: ['구간', '이어서 갈 지역·던전', '근거와 선택 기준'], rows: laterRoutes[alliance ? 'alliance' : 'horde'] };
   block.items = [
+    { title: '서로 다른 레벨 범위를 읽는 법', body: '와우헤드는 강물터를 35~45레벨로 소개하지만, Bind on Forever의 30레벨 이후 표는 게임의 파티 찾기 구간을 사용해 강물터를 33~54로 표시합니다. 소개 범위와 파티 찾기 범위는 서로 다른 기준이므로, 더 넓은 수치를 퀘스트 진행 보장 범위로 바꾸지 않았습니다.' },
+    { title: '40~60레벨 후보를 고르는 기준', body: '타나리스·페랄라스는 두 외부 가이드가 겹치는 중반 후보입니다. 운고로 분화구·악령의 숲에서 이어 갈 곳을 고를 때 여명의 설원은 다른 가이드의 53~60레벨 범위도 참고하세요. 동부 역병지대·실리더스도 53~60 후보로 제시되지만, 모든 퀘스트를 잇는 동선이 검증됐다는 뜻은 아닙니다.' },
+    { title: '추정 표시를 유지한 이유', body: '11월 14일 재확인한 ForeverDB의 31~59레벨 목록은 여전히 추정 또는 미확인입니다. 다른 가이드와 지역 후보가 겹쳐도 연속 퀘스트의 수락 조건·이동 순서까지 확인된 것은 아니므로 추정 표시를 유지합니다. 알카즈 감옥의 48~53레벨 범위는 공식 던전 소개에서 따로 확인할 수 있습니다.' },
     { title: '55레벨부터 던전 파티도 준비', body: '검은아귀 요새(아즈샤라)는 55~60레벨, 구체자의 정원(운고로 분화구)은 58~60레벨 범위입니다. 던전 퀘스트와 동료의 진행을 맞춘 뒤 이동하세요. 이 범위는 공식 소개의 콘텐츠 범위이며 최소 입장 레벨을 뜻하지 않습니다.' },
     { title: '새 지역의 범위는 따로 확인', body: '셴드랄라스는 멀고어와 잊혀진 땅 사이에 있지만, 읽은 원문만으로 레벨 구간을 확정하지 않았습니다. 하이잘 산은 와우헤드에서 60레벨 지역으로 소개하므로, 50레벨대의 빈 구간을 채우는 필수 경로로 잡지 않습니다.' },
   ];
@@ -1856,12 +2086,12 @@ for (const [id, page] of Object.entries(foreverDetailGuides)) {
     { label: '새 던전 위치·입장 준비', path: '/forever/leveling#dungeons' },
     { label: '원문의 30~60레벨 추정 자료 보기 (영문) ↗', path: 'https://foreverdb.net/guide/leveling#from-30-to-60' },
   ];
-  block.sources = ['routes', 'launch', 'dungeons', 'wowhead-zones'];
+  block.sources = ['routes', 'launch', 'dungeons', 'wowhead-zones', 'bof-leveling'];
 }
 
 foreverGuides.classes.sections.unshift({
   id: 'class-guides', title: '직업별 특성·레벨링 가이드',
-  lead: '직업을 고른 뒤 전문화별 페이지로 이동하세요. 27개 전문화의 추천 특성 순서와 한국어 효과 설명을 따로 정리했고, 기본 육성 경로에는 레벨별 배분 견본도 연결했습니다.',
+  lead: '직업을 고른 뒤 전문화별 페이지로 이동하세요. 27개 전문화 모두에 추천 특성 순서·선택 이유·레벨별 배분 견본을 정리했습니다. 한국어 효과 설명이 미확인인 특성과 외부 가이드의 실전 검증 전 견본은 따로 표시합니다.',
   links: Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'classes').map(([id, page]) => ({ label: page.label, path: '/forever/' + id })),
   sources: ["tavern-warrior","tavern-paladin","tavern-hunter","tavern-rogue","tavern-priest","tavern-shaman","tavern-mage","tavern-warlock","tavern-druid"],
 });
@@ -1871,3 +2101,45 @@ foreverGuides.leveling.sections.unshift({
   links: Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'leveling').map(([id, page]) => ({ label: page.label, path: '/forever/' + id })),
   sources: ['routes', 'newPlayer'],
 });
+
+foreverSources['world-map'] = { label: '와우헤드 · 포에버 세계 지도와 던전 표식', url: 'https://www.wowhead.com/forever/ko/world-map' };
+export const foreverVisualArt = [
+  { id: 'world-atlas', kind: 'hero', alt: '칼림도어·동부 왕국·제프라스 섬의 해안선과 산맥을 나타낸 도트 지도' },
+  ...Object.keys(foreverTalents.classes).map(id => ({ id: `class-${id}`, kind: 'square', alt: `${foreverDetailGuides[`classes/${id}`].label}의 무기와 전투 방식을 표현한 도트 삽화` })),
+  ...['first-aid','fishing','alchemy','blacksmithing','enchanting','engineering','herbalism','leatherworking','skinning','tailoring'].map((id,i) => ({ id: `facility-${id}`, kind: 'square', alt: `${foreverGuides.growth.sections.find(s=>s.id==='facilities').table.rows[i][1]}의 용도를 표현한 도트 삽화` })),
+  ...['barrow','hyjal','onyxia'].map(id => ({ id:`raid-${id}`, kind:'square', alt:`${foreverVisuals.places.find(p=>p.id===id).name}의 분위기를 표현한 도트 삽화` })),
+];
+for (const [key,page] of Object.entries(foreverDetailGuides)) {
+  const [,classId,specId] = key.split('/');
+  if (key.startsWith('classes/')) page.art = foreverVisualArt.find(a=>a.id===`class-${classId}`);
+  if (page.specialization) {
+    const combat=foreverVisuals.combat[`${classId}/${specId}`];
+    page.sections.unshift(
+      { id:'combat-skills', title:'내 스킬 한눈에 보기', lead:'전투를 이루는 기술과 특성을 용도에 따라 함께 읽어 보세요.', combat, sources:[`wowhead-${classId}`,`db-${classId}`] },
+      { id:'combat-principle', title:'전투 원리', lead:'확인된 효과의 조건을 운용 관점에서 풀어 쓴 해설입니다.', flows:[{title:`${page.label}의 핵심 연결`,steps:combat.principle}], sources:[`wowhead-${classId}`,`db-${classId}`] },
+      { id:'combat-flow', title:'상황별 전투 흐름', lead:'기술을 배운 뒤 익힐 판단 순서입니다. 모든 기술을 연속으로 누르라는 고정 딜사이클이나 실측 최적 순위가 아닙니다.', flows:combat.flows, sources:[`wowhead-${classId}`,`tavern-${classId}`] },
+    );
+    page.sections.splice(page.sections.findIndex(s=>s.id==='talent-effects'),0,{id:'combat-decisions',title:'실전에서 달라지는 판단',items:combat.tips,decisions:true,sources:[`wowhead-${classId}`,`db-${classId}`]});
+    page.sections.find(s=>s.id==='talents').growth=true;
+  }
+  if (page.parent==='leveling') page.sections.unshift({ id:'starting-map',title:`${page.label} 출발 지도`,lead:'출발 지역과 이후 지역 후보를 선택해서 비교하세요. 표식은 지역 범위이며 상세 퀘스트 경로가 아닙니다.',map:{race:key.split('/')[1]},sources:['world-map','routes','newPlayer'] });
+}
+foreverGuides.leveling.sections.find(s=>s.id==='zones').map={kind:'zone'};
+foreverGuides.leveling.sections.find(s=>s.id==='zones').sources.push('world-map');
+foreverGuides.leveling.sections.find(s=>s.id==='dungeons').map={kind:'dungeon'};
+foreverGuides.leveling.sections.find(s=>s.id==='dungeons').sources.push('world-map');
+foreverGuides.raids.sections.find(s=>s.id==='raid-overview').map={kind:'raid'};
+foreverGuides.raids.sections.find(s=>s.id==='raid-overview').sources.push('world-map');
+foreverGuides.growth.sections.find(s=>s.id==='facilities').facilities=foreverVisualArt.filter(a=>a.id.startsWith('facility-'));
+for (const [pageId,blockId] of [['growth','camping'],['growth','legacy'],['raids','alliance-attunement'],['raids','horde-attunement'],['leveling','dalaran']]) {
+  const block=foreverGuides[pageId].sections.find(s=>s.id===blockId);
+  block.flows=[{title:block.title,steps:block.items.map(item=>({title:item.title.replace(/^\d · /,''),body:item.body}))}];
+  block.diagramItems=true;
+}
+for (const page of [foreverGuides.classes,...Object.values(foreverDetailGuides).filter(p=>p.parent==='classes')]) {
+  for (const block of page.sections) for (const link of block.links || []) {
+    const target=foreverDetailGuides[link.path.slice('/forever/'.length)];
+    if (target?.parent==='classes') link.art=target.art;
+    if (target?.specialization) link.icon=target.sections.find(s=>s.milestones).milestones[0].spell.icon;
+  }
+}
