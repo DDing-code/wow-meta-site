@@ -26,8 +26,8 @@ afterEach(() => {
 const toggle = id => container.querySelector(`[aria-label="게임 버전"] a[data-edition="${id}"]`);
 const menuLabels = () => [...container.querySelectorAll('#primary-navigation a')].map(link => link.textContent);
 
-test('직업 아홉 쪽은 별도 KB의 한국어 설명과 아이콘·키보드 툴팁을 연결한다', () => {
-  for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'classes')) {
+test('전문화 27쪽은 별도 KB의 한국어 설명과 아이콘·키보드 툴팁을 연결한다', () => {
+  for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.specialization)) {
     render(<ForeverPage section={id} />, `/forever/${id}`);
     const spells = page.sections.find(block => block.id === 'talent-effects').spells;
     const block = container.querySelector('#talent-effects');
@@ -58,10 +58,12 @@ test('종족 열 쪽은 30~60레벨 추정 후보와 공식 던전 범위를 구
 });
 
 test('27개 전문화의 추천 순서와 KB 툴팁은 중복 ID 없이 연결된다', () => {
-  for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'classes')) {
+  const specializations = Object.entries(foreverDetailGuides).filter(([, page]) => page.specialization);
+  expect(specializations).toHaveLength(27);
+  for (const [id, page] of specializations) {
     render(<ForeverPage section={id} />, `/forever/${id}`);
     const paths = page.sections.filter(block => block.id.startsWith('talent-guide-'));
-    expect(paths).toHaveLength(3);
+    expect(paths).toHaveLength(1);
     for (const spec of paths) {
       const block = container.querySelector(`#${spec.id}`);
       expect(block.querySelectorAll('ol li')).toHaveLength(spec.milestones.length);
@@ -79,10 +81,26 @@ test('27개 전문화의 추천 순서와 KB 툴팁은 중복 ID 없이 연결�
 });
 
 test('힘의 전환의 원문 표시 문제는 설명과 툴팁 모두에 남는다', () => {
-  render(<ForeverPage section="classes/druid" />, '/forever/classes/druid');
+  render(<ForeverPage section="classes/druid/feral" />, '/forever/classes/druid/feral');
   const link = container.querySelector('#talent-effects a[href*="spell=1322605/"]');
   expect(link.closest('dt').nextElementSibling.textContent).toContain('기본 마나의 55%');
   expect(document.getElementById(link.getAttribute('aria-describedby')).textContent).toContain('0의 마나');
+});
+
+test('직업 선택에서 각 전문화의 별도 주소로 이동한다', () => {
+  for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'classes')) {
+    render(<ForeverPage section={id} />, `/forever/${id}`);
+    const links = [...container.querySelectorAll('#specializations a[href^="/forever/classes/"]')];
+    expect(links).toHaveLength(3);
+    for (const link of links) {
+      const target = foreverDetailGuides[link.getAttribute('href').slice('/forever/'.length)];
+      expect(target.parent).toBe(id);
+      expect(target.specialization).toBe(true);
+      expect(link.querySelector('strong').textContent).toBe(target.label);
+      expect(getPageMeta(link.getAttribute('href')).index).toBe(true);
+    }
+    expect(container.querySelector('[id^="talent-guide-"]')).toBeNull();
+  }
 });
 
 test('포에버 홈은 요약 네 칸과 리테일과 다른 점, 근거 공지를 보여 준다', () => {

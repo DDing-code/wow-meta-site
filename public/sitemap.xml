@@ -25,6 +25,33 @@
   <url><loc>https://wowmeta.vercel.app/forever/classes/mage</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever/classes/warlock</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever/classes/druid</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/warrior/arms</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/warrior/fury</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/warrior/protection</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/paladin/holy</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/paladin/protection</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/paladin/retribution</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/hunter/beast-mastery</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/hunter/marksmanship</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/hunter/survival</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/rogue/assassination</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/rogue/combat</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/rogue/subtlety</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/priest/discipline</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/priest/holy</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/priest/shadow</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/shaman/elemental</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/shaman/enhancement</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/shaman/restoration</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/mage/arcane</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/mage/fire</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/mage/frost</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/warlock/affliction</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/warlock/demonology</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/warlock/destruction</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/druid/balance</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/druid/feral</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/classes/druid/restoration</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever/leveling/human</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever/leveling/dwarf</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever/leveling/gnome</loc></url>

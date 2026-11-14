@@ -601,7 +601,7 @@ export const foreverDetailGuides = {
     "title": "포에버 전사 특성·레벨링",
     "label": "전사",
     "parent": "classes",
-    "lead": "방패를 든 보호 경로를 먼저 살펴보세요. 혼자 하는 퀘스트와 던전 탱킹을 같은 특성으로 이어 가기 좋은 견본입니다.",
+    "lead": "방패를 든 방어 경로를 먼저 살펴보세요. 혼자 하는 퀘스트와 던전 탱킹을 같은 특성으로 이어 가기 좋은 견본입니다.",
     "art": {"id":"basic-trainer","kind":"square","alt":"마법책을 펼친 모험가에게 직업 상급자가 능력을 가르치는 도트 그림"},
     "sections": [
       {
@@ -609,7 +609,7 @@ export const foreverDetailGuides = {
         "title": "내 활동에 맞는 특성 경로",
         "lead": "아래 추천은 Forever Tavern의 레벨링 견본을 추린 것입니다. 레이드·PvP의 최종 순위나 모든 상황의 정답을 뜻하지 않습니다.",
         "items": [
-          {"title":"보호 · 방패와 반격","body":"방어 행동에서 분노를 얻고 반격하는 경로입니다. 던전을 자주 가거나 여러 적에게 둘러싸였을 때의 여유를 원한다면 먼저 비교하세요."},
+          {"title":"방어 · 방패와 반격","body":"방어 행동에서 분노를 얻고 반격하는 경로입니다. 던전을 자주 가거나 여러 적에게 둘러싸였을 때의 여유를 원한다면 먼저 비교하세요."},
           {"title":"무기 · 양손 무기","body":"큰 단발 공격을 선호할 때 살펴봅니다. 공격이 빗나가 분노가 모자랄 때의 전투 흐름도 익혀야 합니다."},
           {"title":"분노 · 쌍수","body":"공격적인 경로입니다. 빠른 처치만 보지 말고 전투 뒤 체력 회복에 드는 시간까지 비교하세요."}
         ],
@@ -617,24 +617,24 @@ export const foreverDetailGuides = {
       },
       {
         "id": "talents",
-        "title": "보호 특성 배분 견본",
-        "lead": "표는 유산으로 특성 점수를 앞당기지 않은 기준입니다. 배분 숫자는 무기 / 분노 / 보호 순서이며 각 분야의 누적 점수입니다. 같은 합계여도 세부 배치가 다를 수 있으니, 해당 레벨의 계산기에서 찍는 순서와 각 효과를 함께 확인하세요.",
-        "table": {"columns":["레벨","무기 / 분노 / 보호","총 투자"],"rows":[["20레벨","0 / 0 / 11","11점"],["30레벨","0 / 0 / 21","21점"],["40레벨","0 / 0 / 31","31점"],["60레벨","7 / 10 / 34","51점"]]},
+        "title": "방어 특성 배분 견본",
+        "lead": "표는 유산으로 특성 점수를 앞당기지 않은 기준입니다. 배분 숫자는 무기 / 분노 / 방어 순서이며 각 분야의 누적 점수입니다. 같은 합계여도 세부 배치가 다를 수 있으니, 해당 레벨의 계산기에서 찍는 순서와 각 효과를 함께 확인하세요.",
+        "table": {"columns":["레벨","무기 / 분노 / 방어","총 투자"],"rows":[["20레벨","0 / 0 / 11","11점"],["30레벨","0 / 0 / 21","21점"],["40레벨","0 / 0 / 31","31점"],["60레벨","7 / 10 / 34","51점"]]},
         "links": [
           {
-            "label": "20레벨 보호 견본 ↗",
+            "label": "20레벨 방어 견본 ↗",
             "path": "https://forever-tavern.com/talents/?build=v3.eyJ2IjozLCJjbGFzcyI6IldhcnJpb3IiLCJsZXZlbCI6MjAsImxlZ2FjeSI6MCwiZGF0YVJldmlzaW9uIjoiY2xpZW50LXJlZmVyZW5jZS0yMDI2LTExLTA0IiwidGFsZW50cyI6W1tdLFtdLFtbIlNoaWVsZCBTcGVjaWFsaXphdGlvbiIsNV0sWyJJbXByb3ZlZCBSZXZlbmdlIiwzXSxbIkltcHJvdmVkIFRodW5kZXIgQ2xhcCIsMl0sWyJNYXN0ZXIgb2YgRGVmZW5zZSIsMV1dXX0"
           },
           {
-            "label": "30레벨 보호 견본 ↗",
+            "label": "30레벨 방어 견본 ↗",
             "path": "https://forever-tavern.com/talents/?build=v3.eyJ2IjozLCJjbGFzcyI6IldhcnJpb3IiLCJsZXZlbCI6MzAsImxlZ2FjeSI6MCwiZGF0YVJldmlzaW9uIjoiY2xpZW50LXJlZmVyZW5jZS0yMDI2LTExLTA0IiwidGFsZW50cyI6W1tdLFtdLFtbIlNoaWVsZCBTcGVjaWFsaXphdGlvbiIsNV0sWyJJbXByb3ZlZCBSZXZlbmdlIiwzXSxbIkltcHJvdmVkIFRodW5kZXIgQ2xhcCIsM10sWyJMYXN0IFN0YW5kIiwxXSxbIk1hc3RlciBvZiBEZWZlbnNlIiwyXSxbIkRlZmlhbmNlIiwzXSxbIkltcHJvdmVkIFN1bmRlciBBcm1vciIsMl0sWyJWYW5ndWFyZCIsMV0sWyJDb25jdXNzaW9uIEJsb3ciLDFdXV19"
           },
           {
-            "label": "40레벨 보호 견본 ↗",
+            "label": "40레벨 방어 견본 ↗",
             "path": "https://forever-tavern.com/talents/?build=v3.eyJ2IjozLCJjbGFzcyI6IldhcnJpb3IiLCJsZXZlbCI6NDAsImxlZ2FjeSI6MCwiZGF0YVJldmlzaW9uIjoiY2xpZW50LXJlZmVyZW5jZS0yMDI2LTExLTA0IiwidGFsZW50cyI6W1tdLFtdLFtbIlNoaWVsZCBTcGVjaWFsaXphdGlvbiIsNV0sWyJJbXByb3ZlZCBSZXZlbmdlIiwzXSxbIkltcHJvdmVkIFRodW5kZXIgQ2xhcCIsM10sWyJMYXN0IFN0YW5kIiwxXSxbIk1hc3RlciBvZiBEZWZlbnNlIiwyXSxbIkRlZmlhbmNlIiwzXSxbIkltcHJvdmVkIFN1bmRlciBBcm1vciIsM10sWyJWYW5ndWFyZCIsMV0sWyJDb25jdXNzaW9uIEJsb3ciLDFdLFsiRm9jdXNlZCBSYWdlIiwzXSxbIkJhc3Rpb24iLDVdLFsiU2hpZWxkIFNsYW0iLDFdXV19"
           },
           {
-            "label": "60레벨 보호 견본 ↗",
+            "label": "60레벨 방어 견본 ↗",
             "path": "https://forever-tavern.com/talents/?build=v3.eyJ2IjozLCJjbGFzcyI6IldhcnJpb3IiLCJsZXZlbCI6NjAsImxlZ2FjeSI6MCwiZGF0YVJldmlzaW9uIjoiY2xpZW50LXJlZmVyZW5jZS0yMDI2LTExLTA0IiwidGFsZW50cyI6W1tbIkRlZmxlY3Rpb24iLDVdLFsiSW1wcm92ZWQgQ2hhcmdlIiwyXV0sW1siQ3J1ZWx0eSIsNV0sWyJVbmJyaWRsZWQgV3JhdGgiLDVdXSxbWyJJbXByb3ZlZCBCbG9vZHJhZ2UiLDFdLFsiU2hpZWxkIFNwZWNpYWxpemF0aW9uIiw1XSxbIkltcHJvdmVkIFJldmVuZ2UiLDNdLFsiSW1wcm92ZWQgVGh1bmRlciBDbGFwIiwzXSxbIkxhc3QgU3RhbmQiLDFdLFsiTWFzdGVyIG9mIERlZmVuc2UiLDJdLFsiRGVmaWFuY2UiLDNdLFsiSW1wcm92ZWQgU3VuZGVyIEFybW9yIiwzXSxbIlZhbmd1YXJkIiwxXSxbIkltcHJvdmVkIFNoaWVsZCBXYWxsIiwyXSxbIkNvbmN1c3Npb24gQmxvdyIsMV0sWyJGb2N1c2VkIFJhZ2UiLDNdLFsiQmFzdGlvbiIsNV0sWyJTaGllbGQgU2xhbSIsMV1dXX0"
           }
         ],
@@ -644,7 +644,7 @@ export const foreverDetailGuides = {
         "id": "practice",
         "title": "육성 중 먼저 익힐 것",
         "items": [
-          {"title":"무기부터 비교","body":"무기의 초당 공격력과 사용 가능한 무기 종류를 먼저 확인합니다. 보호는 방패의 방어도와 피해 방어량도 비교하세요."},
+          {"title":"무기부터 비교","body":"무기의 초당 공격력과 사용 가능한 무기 종류를 먼저 확인합니다. 방어는 방패의 방어도와 피해 방어량도 비교하세요."},
           {"title":"태세와 장비 준비","body":"10레벨과 30레벨의 직업 퀘스트를 상급자에게 확인합니다. 다른 경로를 골라도 한손 무기와 방패를 보관하면 대응 수단이 늘어납니다."},
           {"title":"분노를 다 쓰지 않기","body":"다음 공격과 방어에 필요한 자원을 남깁니다. 위험한 적은 원거리에서 한 마리씩 유인하고 시야를 끊어 가까이 오게 하세요."}
         ],
@@ -1740,6 +1740,9 @@ const talentPaths = {
   ],
 };
 
+const levelingPresetSpecs = { warrior: 'protection', paladin: 'retribution', hunter: 'beast-mastery', rogue: 'combat', priest: 'shadow', shaman: 'enhancement', mage: 'frost', warlock: 'affliction', druid: 'feral' };
+const additionalSpecSpells = { 'rogue/combat': [1310711], 'priest/shadow': [15487], 'druid/feral': [1328613, 1322605] };
+
 // 한국어 설명은 개별 주문 화면에서 대조한 별도 포에버 KB의 문장 그대로다.
 for (const [id, spells] of Object.entries(foreverTalents.classes)) {
   const source = `wowhead-${id}`;
@@ -1753,19 +1756,43 @@ for (const [id, spells] of Object.entries(foreverTalents.classes)) {
     label: `ForeverDB · ${page.label} 전문화별 안내 (영문)`,
     url: `https://foreverdb.net/class/${id[0].toUpperCase()}${id.slice(1)}`,
   };
-  page.sections.splice(2, 0, ...talentPaths[id].map(spec => ({
-    id: `talent-guide-${spec.id}`, title: `${spec.name} 특성 가이드`,
-    lead: spec.use,
-    items: [{ title: '추천 순서 읽는 법', body: '아래는 가이드를 비교해 추린 핵심 이정표 순서입니다. 매 레벨의 모든 점수를 나열한 배분표는 아닙니다. 다음 목표로 가기 전에 계산기의 선행 특성과 해당 분야의 요구 점수를 채우세요. 특성 효과는 아이콘이나 이름에 마우스를 올리거나 키보드로 선택하면 볼 수 있습니다.' }],
-    milestones: spec.steps.map(([spellId, reason]) => ({ spell: spells.find(spell => spell.id === spellId), reason })),
-    sources: [source, dbSource, `tavern-${id}`],
-  })));
-  page.sections.push({
-    id: 'talent-effects', title: '핵심 특성 효과',
-    lead: '각 특성의 1등급과 연결한 주문 페이지의 표시 등급 기준입니다. 레벨·배운 주문 등급에 따라 수치가 달라지며, 아래 효과 목록이 위 견본에 모두 포함되는 것은 아닙니다. 이름이나 아이콘을 누르면 한국어 원문을 볼 수 있습니다. 확인이 끝나지 않은 설명은 비워 두었습니다.',
-    spells,
-    sources: [source],
-  });
+  const specLinks = talentPaths[id].map(spec => ({ label: `${spec.name} ${page.label}`, description: spec.use, path: `/forever/classes/${id}/${spec.id}` }));
+  for (const spec of talentPaths[id]) {
+    const specId = `classes/${id}/${spec.id}`;
+    const spellIds = [...spec.steps.map(([spellId]) => spellId), ...(additionalSpecSpells[`${id}/${spec.id}`] || [])];
+    foreverDetailGuides[specId] = {
+      parent: `classes/${id}`, parentLabel: `${page.label} 전문화 목록`, specialization: true,
+      label: `${spec.name} ${page.label}`, title: `포에버 ${spec.name} ${page.label} 특성 가이드`,
+      lead: spec.use, art: page.art,
+      sections: [
+        {
+          id: `talent-guide-${spec.id}`, title: `${spec.name} 특성 가이드`,
+          lead: '추천하는 핵심 특성의 순서와 선택 이유입니다. 효과 설명은 아이콘이나 이름에서 확인하세요.',
+          items: [{ title: '추천 순서 읽는 법', body: '매 레벨의 모든 점수를 나열한 배분표가 아닌 핵심 이정표입니다. 다음 목표로 가기 전에 계산기의 선행 특성과 해당 분야의 요구 점수를 채우세요.' }],
+          milestones: spec.steps.map(([spellId, reason]) => ({ spell: spells.find(spell => spell.id === spellId), reason })),
+          sources: [source, dbSource, `tavern-${id}`],
+        },
+        ...(spec.id === levelingPresetSpecs[id] ? page.sections.filter(block => ['talents', 'practice'].includes(block.id)) : []),
+        {
+          id: 'talent-effects', title: '특성 효과와 원문',
+          lead: '연결한 주문 화면의 1등급 원문입니다. 레벨·배운 주문 등급에 따라 수치가 달라집니다. 확인 전인 설명은 비워 두었고 원문에 표시 문제가 있는 경우 따로 안내합니다. 아래 목록 전체가 하나의 배분 견본을 뜻하지는 않습니다.',
+          spells: spells.filter(spell => spellIds.includes(spell.id)), sources: [source],
+        },
+        {
+          id: 'next', title: '다른 전문화와 레벨업 안내',
+          links: [...specLinks.filter(link => !link.path.endsWith(`/${spec.id}`)).map(({ label, path }) => ({ label, path })), { label: '종족별 레벨업 가이드', path: '/forever/leveling#race-guides' }],
+          sources: [dbSource, 'routes'],
+        },
+      ],
+    };
+  }
+  page.title = `포에버 ${page.label} 전문화 선택`;
+  page.lead = `${page.label}의 전문화를 골라 별도 페이지에서 추천 특성 순서·선택 이유·한국어 효과 설명을 확인하세요.`;
+  page.sections = [
+    { id: 'specializations', title: '전문화별 특성 가이드', links: specLinks, sources: [source, dbSource] },
+    page.sections.find(block => block.id === 'path'),
+    page.sections.find(block => block.id === 'next'),
+  ];
 }
 
 foreverSources['wowhead-zones'] = {
@@ -1834,7 +1861,7 @@ for (const [id, page] of Object.entries(foreverDetailGuides)) {
 
 foreverGuides.classes.sections.unshift({
   id: 'class-guides', title: '직업별 특성·레벨링 가이드',
-  lead: '직업을 골라 추천 경로와 레벨별 특성 배분, 장비·운용 요령을 확인하세요. 각 페이지에 원문과 특성 계산기를 연결했습니다.',
+  lead: '직업을 고른 뒤 전문화별 페이지로 이동하세요. 27개 전문화의 추천 특성 순서와 한국어 효과 설명을 따로 정리했고, 기본 육성 경로에는 레벨별 배분 견본도 연결했습니다.',
   links: Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'classes').map(([id, page]) => ({ label: page.label, path: '/forever/' + id })),
   sources: ["tavern-warrior","tavern-paladin","tavern-hunter","tavern-rogue","tavern-priest","tavern-shaman","tavern-mage","tavern-warlock","tavern-druid"],
 });

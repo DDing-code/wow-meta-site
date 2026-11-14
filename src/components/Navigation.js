@@ -19,16 +19,16 @@ const Nav = styled.nav`
   &[data-edition="forever"] {
     font-family: 'Galmuri11', 'Noto Sans KR', sans-serif;
     font-synthesis: none;
-    background: #142b3d;
+    background: #191c22;
     backdrop-filter: none;
-    border-bottom-color: #527c91;
-    box-shadow: 0 3px 0 #07111c;
-    #primary-navigation { background: #0e1c2a; }
-    #primary-navigation a { color: #bfd8e7; }
+    border-bottom-color: #454a53;
+    box-shadow: 0 3px 0 #090b0e;
+    #primary-navigation { background: #101216; }
+    #primary-navigation a { color: #c8cdd4; }
     #primary-navigation a[aria-current="page"] { color: #bcecff; border-bottom-color: #83d5f5; }
     #primary-navigation a:hover { color: #bcecff; }
-    [aria-label="게임 버전"], button { border-color: #527c91; box-shadow: 2px 2px 0 #07111c; }
-    [aria-label="게임 버전"] a:not([aria-current]) { color: #c1d8e8; }
+    [aria-label="게임 버전"], button { border-color: #454a53; box-shadow: 2px 2px 0 #090b0e; }
+    [aria-label="게임 버전"] a:not([aria-current]) { color: #c8cdd4; }
     [aria-label="게임 버전"] a[aria-current] { background: #8dd9f5; color: #102738; }
     a:focus-visible, button:focus-visible { outline-color: #bcecff; }
     @media (min-width: 901px) { #primary-navigation { background: transparent; } }

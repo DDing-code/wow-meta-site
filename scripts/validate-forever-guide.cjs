@@ -181,13 +181,20 @@ for (const page of guide.foreverPages) {
 const nav = read('src/components/Navigation.js');
 assert.strictEqual(Object.values(guide.foreverDetailGuides).filter(page => page.parent === 'classes').length, 9, '직업별 가이드 아홉 쪽');
 assert.strictEqual(Object.values(guide.foreverDetailGuides).filter(page => page.parent === 'leveling').length, 10, '종족별 가이드 열 쪽');
+assert.strictEqual(Object.values(guide.foreverDetailGuides).filter(page => page.specialization).length, 27, '전문화별 가이드 27쪽');
+assert.strictEqual(Object.values(guide.foreverDetailGuides).filter(page => page.specialization && page.sections.some(block => block.id === 'talents')).length, 9, '기존 육성 배분 견본 아홉 개 보존');
 assert.ok(app.includes('Object.keys(foreverDetailGuides).map'), '상세 가이드 주소 연결 누락');
+const displayedSpellIds = new Set();
 for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
-  assert.ok(siteMeta.includes(`'/forever/${id}': {`), `${id}: 검색 주소 누락`);
-  assert.ok(guide.foreverGuides[page.parent].sections.some(block => block.links?.some(link => link.path === `/forever/${id}`)), `${id}: 목록에서 찾을 수 없음`);
+  assert.ok(siteMeta.includes(`\n  '/forever/${id}': {`), `${id}: 검색 주소 누락`);
+  assert.ok(allGuides[page.parent].sections.some(block => block.links?.some(link => link.path === `/forever/${id}`)), `${id}: 목록에서 찾을 수 없음`);
   if (page.parent === 'classes') {
+    const links = page.sections.find(block => block.id === 'specializations')?.links;
+    assert.strictEqual(links?.length, 3, `${id}: 전문화 세 개 연결 누락`);
+    assert.ok(links.every(link => allGuides[link.path.slice('/forever/'.length)]?.parent === id), `${id}: 다른 직업 전문화를 연결함`);
+  } else if (page.specialization) {
     const paths = page.sections.filter(block => block.id.startsWith('talent-guide-'));
-    assert.strictEqual(paths.length, 3, `${id}: 전문화별 특성 가이드 세 구역 누락`);
+    assert.strictEqual(paths.length, 1, `${id}: 선택한 전문화의 특성 가이드만 표시`);
     for (const spec of paths) {
       assert.ok(spec.title.includes('특성 가이드') && spec.milestones.length >= 2, `${id}/${spec.id}: 추천 순서 누락`);
       assert.ok(spec.sources.includes(`wowhead-${id.split('/')[1]}`) && spec.sources.includes(`db-${id.split('/')[1]}`), `${id}/${spec.id}: 교차 근거 누락`);
@@ -197,9 +204,15 @@ for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
         assert.deepStrictEqual(step.spell, talents.classes[id.split('/')[1]].find(spell => spell.id === step.spell.id), `${id}/${spec.id}: KB 원문과 다름`);
       }
     }
-    assert.deepStrictEqual(page.sections.find(item => item.id === 'talent-effects')?.spells, talents.classes[id.split('/')[1]], `${id}: 핵심 특성 설명 연결 누락`);
+    const effects = page.sections.find(item => item.id === 'talent-effects')?.spells;
+    assert.ok(effects?.length, `${id}: 특성 효과 누락`);
+    for (const spell of effects) {
+      assert.deepStrictEqual(spell, talents.classes[id.split('/')[1]].find(item => item.id === spell.id), `${id}: KB 원문과 다름`);
+      displayedSpellIds.add(spell.id);
+    }
+    assert.ok(paths[0].milestones.every(step => effects.some(spell => spell.id === step.spell.id)), `${id}: 추천한 특성 효과 누락`);
     const block = page.sections.find(item => item.id === 'talents');
-    for (const [level, distribution, total] of block.table.rows) {
+    for (const [level, distribution, total] of block?.table.rows || []) {
       const points = distribution.split(' / ').map(Number);
       assert.strictEqual(points.reduce((sum, n) => sum + n, 0), Number(level.replace('레벨', '')) - 9, `${id}/${level}: 기본 특성 점수`);
       assert.strictEqual(Number(total.replace('점', '')), points.reduce((sum, n) => sum + n, 0));
@@ -210,7 +223,7 @@ for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
       assert.strictEqual(build.legacy, 0);
       assert.deepStrictEqual(build.talents.map(tree => tree.reduce((sum, [, n]) => sum + n, 0)), points, `${id}/${level}: 계산기와 배분 표 불일치`);
     }
-  } else {
+  } else if (page.parent === 'leveling') {
     const leveling = page.sections.find(item => item.id === 'leveling-guide');
     assert.ok(leveling?.title.includes('레벨업 가이드') && leveling.items.length >= 3, `${id}: 별도 레벨업 가이드 누락`);
     assert.ok(leveling.items.some(item => item.title.includes('30~60') && item.title.includes('추정')), `${id}: 후반 동선 추정 안내 누락`);
@@ -220,6 +233,7 @@ for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
     assert.ok(later.table.rows.filter(row => !row[1].startsWith('강물터')).every(row => row[2].includes('추정')), `${id}: 추정 경로를 확정으로 표시함`);
   }
 }
+assert.deepStrictEqual([...displayedSpellIds].sort(), [...spellIds].sort(), '전문화 분리 뒤 KB 특성 설명이 누락됨');
 assert.ok(nav.includes('getEditionSwitchPath(location.pathname, item.id)') && nav.includes('aria-label="게임 버전"'), '상단 메뉴에 리테일/포에버 토글이 없음');
 for (const page of guide.foreverPages) assert.ok(nav.includes(`path: '${page.path}'`), `포에버 메뉴에 ${page.path}가 없음`);
 

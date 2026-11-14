@@ -59,7 +59,7 @@ test('직업·종족 상세 가이드는 목록·특성 견본·원문·검색 �
       act(() => root.render(<MemoryRouter key={id} initialEntries={[path]} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}><Navigation /><ForeverPage section={id} /></MemoryRouter>));
       expect(container.querySelector('h1').textContent).toBe(data.title);
       expect(container.querySelector('nav[aria-label="가이드 목록으로"] a').getAttribute('href')).toBe(`/forever/${data.parent}`);
-      expect(container.querySelector('nav[aria-label="포에버 안내"] [aria-current="page"]').getAttribute('href')).toBe(`/forever/${data.parent}`);
+      expect(container.querySelector('nav[aria-label="포에버 안내"] [aria-current="page"]').getAttribute('href')).toBe(`/forever/${data.parent.split('/')[0]}`);
       expect(getPageMeta(path)).toMatchObject({ index: true, title: `${data.title} | wowmeta`, canonical: `${SITE_ORIGIN}${path}` });
       for (const block of data.sections) {
         const section = container.querySelector(`#${block.id}`);
@@ -67,7 +67,7 @@ test('직업·종족 상세 가이드는 목록·특성 견본·원문·검색 �
         expect(container.querySelector(`a[href="#${block.id}"]`)).not.toBeNull();
         for (const link of block.links || []) {
           const anchor = section.querySelector(`a[href="${link.path}"]`);
-          expect(anchor.textContent).toBe(link.label);
+          expect(anchor.textContent).toBe(link.label + (link.description || ''));
           if (link.path.startsWith('https:')) expect(anchor.rel).toBe('noopener noreferrer');
         }
         if (block.table) expect(section.querySelectorAll('tbody tr')).toHaveLength(block.table.rows.length);

@@ -75,40 +75,148 @@ const STATIC_PAGES = {
     description: '12월 10일 개방하는 60레벨 레이드 세 곳의 인원·위치, 오닉시아의 둥지 진영별 비룡불꽃 아뮬렛 퀘스트와 출발 전 준비를 안내합니다.',
   },
   '/forever/classes/warrior': {
-    title: "포에버 전사 특성·레벨링 | wowmeta",
-    description: "방패를 든 보호 경로를 먼저 살펴보세요. 혼자 하는 퀘스트와 던전 탱킹을 같은 특성으로 이어 가기 좋은 견본입니다.",
+    title: "포에버 전사 전문화 선택 | wowmeta",
+    description: "전사의 전문화를 골라 별도 페이지에서 추천 특성 순서·선택 이유·한국어 효과 설명을 확인하세요.",
   },
   '/forever/classes/paladin': {
-    title: "포에버 성기사 특성·레벨링 | wowmeta",
-    description: "일반적인 혼자 퀘스트에는 징벌, 정기적으로 던전 탱킹을 한다면 보호를 비교합니다. 두 경로 모두 마나를 얼마나 남기는지가 중요합니다.",
+    title: "포에버 성기사 전문화 선택 | wowmeta",
+    description: "성기사의 전문화를 골라 별도 페이지에서 추천 특성 순서·선택 이유·한국어 효과 설명을 확인하세요.",
   },
   '/forever/classes/hunter': {
-    title: "포에버 사냥꾼 특성·레벨링 | wowmeta",
-    description: "소환수가 먼저 적을 붙잡고 자신은 거리를 두는 야수 경로를 기본 견본으로 삼았습니다. 소환수 관리와 보급이 레벨링의 일부입니다.",
+    title: "포에버 사냥꾼 전문화 선택 | wowmeta",
+    description: "사냥꾼의 전문화를 골라 별도 페이지에서 추천 특성 순서·선택 이유·한국어 효과 설명을 확인하세요.",
   },
   '/forever/classes/rogue': {
-    title: "포에버 도적 특성·레벨링 | wowmeta",
-    description: "일상적인 혼자 퀘스트에는 전투 경로를, 은신과 전투 선택권을 더 중시한다면 잠행을 비교합니다. 손에 든 무기가 전투 방식에 맞아야 합니다.",
+    title: "포에버 도적 전문화 선택 | wowmeta",
+    description: "도적의 전문화를 골라 별도 페이지에서 추천 특성 순서·선택 이유·한국어 효과 설명을 확인하세요.",
   },
   '/forever/classes/priest': {
-    title: "포에버 사제 특성·레벨링 | wowmeta",
-    description: "혼자 퀘스트하는 시간이 길다면 암흑, 던전 치유를 자주 섞는다면 수양을 비교합니다. 마법봉과 회복 주기가 초반 진행에 큰 영향을 줍니다.",
+    title: "포에버 사제 전문화 선택 | wowmeta",
+    description: "사제의 전문화를 골라 별도 페이지에서 추천 특성 순서·선택 이유·한국어 효과 설명을 확인하세요.",
   },
   '/forever/classes/shaman': {
-    title: "포에버 주술사 특성·레벨링 | wowmeta",
-    description: "양손 무기를 쓰는 고양 경로를 혼자 퀘스트용 견본으로 정리했습니다. 모든 토템과 주문을 매번 쓰기보다 필요한 것만 고릅니다.",
+    title: "포에버 주술사 전문화 선택 | wowmeta",
+    description: "주술사의 전문화를 골라 별도 페이지에서 추천 특성 순서·선택 이유·한국어 효과 설명을 확인하세요.",
   },
   '/forever/classes/mage': {
-    title: "포에버 마법사 특성·레벨링 | wowmeta",
-    description: "혼자 진행하는 첫 경로에는 단일 대상 냉기를 기본 견본으로 삼았습니다. 적과의 거리를 유지하고 회복 시간을 예측하는 쪽에 초점을 둡니다.",
+    title: "포에버 마법사 전문화 선택 | wowmeta",
+    description: "마법사의 전문화를 골라 별도 페이지에서 추천 특성 순서·선택 이유·한국어 효과 설명을 확인하세요.",
   },
   '/forever/classes/warlock': {
-    title: "포에버 흑마법사 특성·레벨링 | wowmeta",
-    description: "일반적인 혼자 퀘스트는 지속 피해와 흡수를 활용하는 고통을, 소환수 생존과 방어를 더 중시하면 악마를 비교합니다.",
+    title: "포에버 흑마법사 전문화 선택 | wowmeta",
+    description: "흑마법사의 전문화를 골라 별도 페이지에서 추천 특성 순서·선택 이유·한국어 효과 설명을 확인하세요.",
   },
   '/forever/classes/druid': {
-    title: "포에버 드루이드 특성·레벨링 | wowmeta",
-    description: "야성 한 경로에서 표범으로 퀘스트하고 곰으로 적 무리와 던전에 대응하는 견본입니다. 변신을 배우는 직업 퀘스트가 진행의 전환점입니다.",
+    title: "포에버 드루이드 전문화 선택 | wowmeta",
+    description: "드루이드의 전문화를 골라 별도 페이지에서 추천 특성 순서·선택 이유·한국어 효과 설명을 확인하세요.",
+  },
+  '/forever/classes/warrior/arms': {
+    title: "포에버 무기 전사 특성 가이드 | wowmeta",
+    description: "양손 무기로 퀘스트를 진행할 때 고릅니다. 둘 이상을 상대하는 상황과 한 대상 전투를 모두 준비하는 방향입니다.",
+  },
+  '/forever/classes/warrior/fury': {
+    title: "포에버 분노 전사 특성 가이드 | wowmeta",
+    description: "쌍수 무기를 갖추고 근접 공격을 이어 가는 선택입니다. 무기 교체가 늦어지면 현재 장비로 사냥이 편한지부터 확인하세요.",
+  },
+  '/forever/classes/warrior/protection': {
+    title: "포에버 방어 전사 특성 가이드 | wowmeta",
+    description: "던전에서 탱커를 맡을 때 추천합니다. 혼자 퀘스트를 할 시간과 파티를 기다릴 시간을 함께 고려하세요.",
+  },
+  '/forever/classes/paladin/holy': {
+    title: "포에버 신성 성기사 특성 가이드 | wowmeta",
+    description: "회복 담당자로 던전을 자주 갈 때 고릅니다. 혼자 사냥하는 시간이 길다면 징벌 안내와 비교하세요.",
+  },
+  '/forever/classes/paladin/protection': {
+    title: "포에버 보호 성기사 특성 가이드 | wowmeta",
+    description: "방패를 들고 던전 탱커를 맡는 경로입니다. 파티 사냥을 계속할 수 있을 때 우선 고려합니다.",
+  },
+  '/forever/classes/paladin/retribution': {
+    title: "포에버 징벌 성기사 특성 가이드 | wowmeta",
+    description: "혼자 퀘스트를 진행하는 기본 추천입니다. 양손 무기와 근접 전투를 중심으로 준비합니다.",
+  },
+  '/forever/classes/hunter/beast-mastery': {
+    title: "포에버 야수 사냥꾼 특성 가이드 | wowmeta",
+    description: "소환수와 함께 혼자 퀘스트를 진행하는 기본 추천입니다. 소환수의 생존과 이동을 꾸준히 관리하세요.",
+  },
+  '/forever/classes/hunter/marksmanship': {
+    title: "포에버 사격 사냥꾼 특성 가이드 | wowmeta",
+    description: "자신의 원거리 공격을 중심으로 성장하는 경로입니다. 포에버에서는 이 경로에서도 소환수를 함께 운용합니다.",
+  },
+  '/forever/classes/hunter/survival': {
+    title: "포에버 생존 사냥꾼 특성 가이드 | wowmeta",
+    description: "근접 무기 중심으로 사냥하려는 경우의 선택입니다. 야수·사격과 장비와 전투 거리가 다릅니다.",
+  },
+  '/forever/classes/rogue/assassination': {
+    title: "포에버 암살 도적 특성 가이드 | wowmeta",
+    description: "독과 근접 공격을 중심으로 성장하는 경로입니다. 두 손의 무기를 함께 마련할 계획으로 선택하세요.",
+  },
+  '/forever/classes/rogue/combat': {
+    title: "포에버 전투 도적 특성 가이드 | wowmeta",
+    description: "혼자 퀘스트를 하거나 던전을 함께 도는 기본 추천입니다. 정면 근접전을 안정적으로 이어 가는 방향입니다.",
+  },
+  '/forever/classes/rogue/subtlety': {
+    title: "포에버 잠행 도적 특성 가이드 | wowmeta",
+    description: "은신 진입과 전투 위치를 직접 조절하는 플레이에 맞습니다. 정면 사냥을 반복한다면 전투 경로부터 비교하세요.",
+  },
+  '/forever/classes/priest/discipline': {
+    title: "포에버 수양 사제 특성 가이드 | wowmeta",
+    description: "마법봉 사냥과 던전 치유를 함께 하는 선택입니다. 치유 장비와 사냥 장비를 함께 준비하세요.",
+  },
+  '/forever/classes/priest/holy': {
+    title: "포에버 신성 사제 특성 가이드 | wowmeta",
+    description: "던전 치유에 집중하는 경로입니다. 혼자 퀘스트를 마치는 속도보다 파티 운영을 우선할 때 고릅니다.",
+  },
+  '/forever/classes/priest/shadow': {
+    title: "포에버 암흑 사제 특성 가이드 | wowmeta",
+    description: "혼자 퀘스트를 진행하는 기본 추천입니다. 파티 치유를 자주 맡는다면 형상을 완성하기 전에 역할부터 정하세요.",
+  },
+  '/forever/classes/shaman/elemental': {
+    title: "포에버 정기 주술사 특성 가이드 | wowmeta",
+    description: "원거리 주문 중심으로 성장하는 경로입니다. 주문 장비와 물을 준비할 수 있을 때 고려하세요.",
+  },
+  '/forever/classes/shaman/enhancement': {
+    title: "포에버 고양 주술사 특성 가이드 | wowmeta",
+    description: "근접 무기로 퀘스트를 진행하는 기본 추천입니다. 현재 무기의 품질을 확인하며 성장하세요.",
+  },
+  '/forever/classes/shaman/restoration': {
+    title: "포에버 복원 주술사 특성 가이드 | wowmeta",
+    description: "던전에서 회복을 맡는 경로입니다. 퀘스트를 혼자 진행하는 시간도 많다면 고양과 비교하세요.",
+  },
+  '/forever/classes/mage/arcane': {
+    title: "포에버 비전 마법사 특성 가이드 | wowmeta",
+    description: "주문을 묶어서 쓰는 운용을 익히고 싶은 경우의 선택입니다. 긴 전투에서 자원이 충분한지 먼저 살피세요.",
+  },
+  '/forever/classes/mage/fire': {
+    title: "포에버 화염 마법사 특성 가이드 | wowmeta",
+    description: "화염 주문 중심으로 성장하려는 선택입니다. 적과 거리를 유지할 수 있는 사냥터에서 시작하세요.",
+  },
+  '/forever/classes/mage/frost': {
+    title: "포에버 냉기 마법사 특성 가이드 | wowmeta",
+    description: "처음 혼자 퀘스트를 할 때의 기본 추천입니다. 여러 적을 모으는 사냥은 지형과 적의 종류를 익힌 뒤 시도하세요.",
+  },
+  '/forever/classes/warlock/affliction': {
+    title: "포에버 고통 흑마법사 특성 가이드 | wowmeta",
+    description: "지속 피해를 중심으로 혼자 퀘스트를 진행하는 기본 추천입니다. 무리하게 여러 적을 끌어오지 말고 자원 회복 흐름부터 익히세요.",
+  },
+  '/forever/classes/warlock/demonology': {
+    title: "포에버 악마 흑마법사 특성 가이드 | wowmeta",
+    description: "소환수와 함께 안정적인 전투를 준비하는 경로입니다. 소환수의 상태를 계속 살피는 플레이에 맞습니다.",
+  },
+  '/forever/classes/warlock/destruction': {
+    title: "포에버 파괴 흑마법사 특성 가이드 | wowmeta",
+    description: "직접 시전하는 화염 주문을 중심으로 성장하는 선택입니다. 안전하게 시전할 거리와 자원 준비가 필요합니다.",
+  },
+  '/forever/classes/druid/balance': {
+    title: "포에버 조화 드루이드 특성 가이드 | wowmeta",
+    description: "원거리 주문 중심으로 성장하는 경로입니다. 주문용 장비와 마나 준비를 전제로 선택하세요.",
+  },
+  '/forever/classes/druid/feral': {
+    title: "포에버 야성 드루이드 특성 가이드 | wowmeta",
+    description: "표범으로 혼자 사냥하고 곰으로 던전 탱커도 맡는 기본 추천입니다. 포에버의 야성 분야 안에서 두 역할을 함께 준비합니다.",
+  },
+  '/forever/classes/druid/restoration': {
+    title: "포에버 복원 드루이드 특성 가이드 | wowmeta",
+    description: "던전 회복 담당자로 성장하는 선택입니다. 혼자 퀘스트를 오래 할 계획이라면 야성 경로와 비교하세요.",
   },
   '/forever/leveling/human': {
     title: "포에버 인간 레벨업 길잡이 | wowmeta",
