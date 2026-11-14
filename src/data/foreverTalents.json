@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "edition": "forever",
+    "checkedAt": "2026-11-14",
+    "kbSource": "09-포에버/talents.json"
+  },
+  "classes": {
+    "warrior": [
+      {
+        "id": 12975,
+        "name": "최후의 저항",
+        "icon": "spell_holy_ashestoashes",
+        "rank": 1,
+        "description": "활성화 시 일시적으로 최대 생명력이 30%만큼 증가합니다. 20초 동안 지속되며 지속시간이 끝나면 임시 생명력은 사라집니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=12975/%EC%B5%9C%ED%9B%84%EC%9D%98-%EC%A0%80%ED%95%AD?def=135501&rank=1",
+        "verified": true
+      },
+      {
+        "id": 1310317,
+        "name": "선봉대",
+        "icon": "ability_warrior_shieldcharge",
+        "rank": 1,
+        "description": "방어 태세일 때도 돌진을 사용할 수 있게 됩니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=1310317/%EC%84%A0%EB%B4%89%EB%8C%80?def=135497&rank=1",
+        "verified": true
+      },
+      {
+        "id": 23922,
+        "name": "방패 밀쳐내기",
+        "icon": "inv_shield_05",
+        "rank": 1,
+        "description": "대상을 방패로 가격해 421 에서 439의 피해를 입힙니다. 이 피해는 피해 방어량에 비례하며, 50%의 확률로 대상에게 걸린 마법 효과 1개를 무효화합니다. 위협 수준을 크게 증가시킵니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=23922/%EB%B0%A9%ED%8C%A8-%EB%B0%80%EC%B3%90%EB%82%B4%EA%B8%B0?def=135490&rank=1",
+        "verified": true
+      }
+    ],
+    "paladin": [
+      {
+        "id": 20066,
+        "name": "참회",
+        "icon": "spell_holy_prayerofhealing",
+        "rank": 1,
+        "description": "적을 최대 6초 동안 회고의 시간을 가지게 하여 행동 불가 상태로 만듭니다. 대상이 피해를 입으면 깨어납니다. 인간형에게만 사용할 수 있습니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=20066/%EC%B0%B8%ED%9A%8C?def=135224&rank=1",
+        "verified": true
+      },
+      {
+        "id": 1311087,
+        "name": "성스러운 심판관",
+        "icon": "inv_sword_08",
+        "rank": 1,
+        "description": "신성한 일격의 공격력이 20%만큼 증가하며, 사용 시 대상에게 걸린 모든 심판 효과가 갱신됩니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=1311087/%EC%84%B1%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EC%8B%AC%ED%8C%90%EA%B4%80?def=135230&rank=1",
+        "verified": true
+      },
+      {
+        "id": 1310735,
+        "name": "분노 봉인 해제",
+        "icon": "spell_holy_blessedresillience",
+        "rank": 1,
+        "description": "근접 공격이 활성화된 문장을 15초 동안 최대 3중첩 저장합니다. 다른 문장으로 공격을 적중시키면 모든 중첩이 소모되고, 저장된 문장이 통상적인 확률로 중첩당 한 번씩 활성화되게 합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=1310735/%EB%B6%84%EB%85%B8-%EB%B4%89%EC%9D%B8-%ED%95%B4%EC%A0%9C?def=135222&rank=1",
+        "verified": true
+      }
+    ],
+    "hunter": [
+      {
+        "id": 19596,
+        "name": "야수의 신속함",
+        "icon": "ability_druid_dash",
+        "rank": 1,
+        "description": "야수의 이동 속도가 30%만큼 증가합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=19596/%EC%95%BC%EC%88%98%EC%9D%98-%EC%8B%A0%EC%86%8D%ED%95%A8?def=134432&rank=1",
+        "verified": true
+      },
+      {
+        "id": 19577,
+        "name": "위협",
+        "icon": "ability_devour",
+        "rank": 1,
+        "description": "야수에게 명령해 다음 공격 적중 시 대상을 3초 동안 기절시키고, 해당 공격의 치명타 및 극대화율을 100%만큼 증가시킵니다. 위협 수준이 크게 증가합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=19577/%EC%9C%84%ED%98%91?def=134426&rank=1",
+        "verified": true
+      },
+      {
+        "id": 19574,
+        "name": "야수의 격노",
+        "icon": "ability_druid_ferociousbite",
+        "rank": 1,
+        "description": "야수를 광폭하게 만들어 18초 동안 공격력을 50%만큼 증가시킵니다. 광포한 동안엔 어떠한 방법으로도 공격을 저지할 수 없습니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=19574/%EC%95%BC%EC%88%98%EC%9D%98-%EA%B2%A9%EB%85%B8?def=134423&rank=1",
+        "verified": true
+      }
+    ],
+    "rogue": [
+      {
+        "id": 14251,
+        "name": "반격",
+        "icon": "ability_warrior_challange",
+        "rank": 1,
+        "description": "이 효과는 적의 공격을 무기로 막아낸 후에 활성화됩니다. 다음 공격은 무기 공격력의 150%에 해당하는 피해를 입히고 대상을 6초 동안 무장 해제시킵니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=14251/%EB%B0%98%EA%B2%A9?def=135265&rank=1",
+        "verified": true
+      },
+      {
+        "id": 1310711,
+        "name": "완벽한 처형",
+        "icon": "inv_sword_35",
+        "rank": 1,
+        "description": "절개에 소비되는 기력이 15만큼 감소합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=1310711/%EC%99%84%EB%B2%BD%ED%95%9C-%EC%B2%98%ED%98%95?def=138268&rank=1",
+        "verified": true
+      },
+      {
+        "id": 13877,
+        "name": "폭풍의 칼날",
+        "icon": "ability_warrior_punishingblow",
+        "rank": 1,
+        "description": "근접 공격 속도가 20%만큼 증가합니다. 추가로 근접 공격 시 주위의 적 하나를 추가로 공격합니다. 15초 동안 지속됩니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=13877/%ED%8F%AD%ED%92%8D%EC%9D%98-%EC%B9%BC%EB%82%A0?def=135258&rank=1",
+        "verified": true
+      },
+      {
+        "id": 13750,
+        "name": "아드레날린 촉진",
+        "icon": "spell_shadow_shadowworddominate",
+        "rank": 1,
+        "description": "15초 동안 기력의 회복 속도가 100%만큼 증가됩니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=13750/%EC%95%84%EB%93%9C%EB%A0%88%EB%82%A0%EB%A6%B0-%EC%B4%89%EC%A7%84?def=135254&rank=1",
+        "verified": true
+      }
+    ],
+    "priest": [
+      {
+        "id": 15407,
+        "name": "정신의 채찍",
+        "icon": "spell_shadow_siphonmana",
+        "rank": 1,
+        "description": "대상의 정신을 암흑의 기운으로 공격하여, 3초에 걸쳐 63의 암흑 피해를 입히고 이동 속도를 50%만큼 감소시킵니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=15407/%EC%A0%95%EC%8B%A0%EC%9D%98-%EC%B1%84%EC%B0%8D?def=135356&rank=1",
+        "verified": true
+      },
+      {
+        "id": 15286,
+        "name": "흡혈의 선물",
+        "icon": "spell_shadow_unsummonbuilding",
+        "rank": 1,
+        "description": "대상을 암흑의 기운으로 감싸 자신이 입히는 암흑 주문 피해의 20%만큼 모든 파티원의 생명력을 회복시킵니다. 30초 동안 지속됩니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=15286/%ED%9D%A1%ED%98%88%EC%9D%98-%EC%84%A0%EB%AC%BC?def=135350&rank=1",
+        "verified": true
+      },
+      {
+        "id": 15487,
+        "name": "침묵",
+        "icon": "spell_shadow_impphaseshift",
+        "rank": 1,
+        "description": "대상을 침묵시켜 5초 동안 주문을 시전하지 못하게 하고 3초 동안 주문 시전을 방해합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=15487/%EC%B9%A8%EB%AC%B5?def=135354&rank=1",
+        "verified": true
+      }
+    ],
+    "shaman": [
+      {
+        "id": 1223030,
+        "name": "주술의 집중",
+        "icon": "spell_nature_elementalabsorption",
+        "rank": 1,
+        "description": "충격 계열 주문과 번개 보호막에 소비되는 마나가 45%만큼 감소합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=1223030/%EC%A3%BC%EC%88%A0%EC%9D%98-%EC%A7%91%EC%A4%91?def=134210&rank=1",
+        "verified": true
+      },
+      {
+        "id": 17364,
+        "name": "폭풍의 일격",
+        "icon": "ability_shaman_stormstrike",
+        "rank": 1,
+        "description": "즉시 적을 공격하여 무기 공격력의 150%에 해당하는 피해를 입히고, 12초 동안 대상이 자신의 다음 번개 화살 또는 연쇄 번개, 대지 충격으로 받는 피해를 20%만큼 증가시킵니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=17364/%ED%8F%AD%ED%92%8D%EC%9D%98-%EC%9D%BC%EA%B2%A9?def=134204&rank=1",
+        "verified": true
+      },
+      {
+        "id": 425336,
+        "name": "선견자의 분노",
+        "icon": "spell_nature_bloodlust",
+        "rank": 1,
+        "description": "25초 동안 공격 속도가 30%만큼 증가합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=425336/%EC%84%A0%EA%B2%AC%EC%9E%90%EC%9D%98-%EB%B6%84%EB%85%B8?def=134201&rank=1",
+        "verified": true
+      }
+    ],
+    "mage": [
+      {
+        "id": 1312002,
+        "name": "얼음창",
+        "icon": "spell_frost_frostblast",
+        "rank": 1,
+        "description": "적 대상에게 28 에서 32의 냉기 피해를 입힙니다. 얼어붙은 대상에게는 300%의 추가 피해를 입힙니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=1312002/%EC%96%BC%EC%9D%8C%EC%B0%BD?def=135297&rank=1",
+        "verified": true
+      },
+      {
+        "id": 11958,
+        "name": "얼음 방패",
+        "icon": "spell_frost_frost",
+        "rank": 1,
+        "description": "커다란 얼음 덩어리에 둘러싸여 10초 동안 모든 물리 공격과 주문으로부터 보호받습니다. 하지만 이 동안은 공격하거나 이동하거나 마법을 사용하지 못합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=11958/%EC%96%BC%EC%9D%8C-%EB%B0%A9%ED%8C%A8?def=135299&rank=1",
+        "verified": true
+      },
+      {
+        "id": 12472,
+        "name": "한파",
+        "icon": "spell_frost_wizardmark",
+        "rank": 1,
+        "description": "다른 모든 냉기 주문의 남은 재사용 대기시간이 초기화됩니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=12472/%ED%95%9C%ED%8C%8C?def=135296&rank=1",
+        "verified": true
+      }
+    ],
+    "warlock": [
+      {
+        "id": 18265,
+        "name": "생명력 착취",
+        "icon": "spell_shadow_requiem",
+        "rank": 1,
+        "description": "대상으로부터 3초마다 11의 생명력을 흡수합니다. 30초 동안 지속됩니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=18265/%EC%83%9D%EB%AA%85%EB%A0%A5-%EC%B0%A9%EC%B7%A8?def=135443&rank=1",
+        "verified": true
+      },
+      {
+        "id": 1316697,
+        "name": "괴멸",
+        "icon": "ability_deathknight_hemorrhagicfever",
+        "rank": 1,
+        "description": "대상을 내부로부터 찢어 1초마다 60의 암흑 피해를 입히고, 대상이 자신의 다른 암흑 지속 피해 효과로 입는 피해를 6초 동안 100%만큼 증가시킵니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=1316697/%EA%B4%B4%EB%A9%B8?def=135440&rank=1",
+        "verified": true
+      },
+      {
+        "id": 18708,
+        "name": "마의 지배",
+        "icon": "spell_nature_removecurse",
+        "rank": 1,
+        "description": "다음 임프와 공허방랑자, 서큐버스, 인큐버스, 지옥사냥개 소환 주문의 시전 시간이 6초만큼 단축되고 소비되는 마나가 50%만큼 감소합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=18708/%EB%A7%88%EC%9D%98-%EC%A7%80%EB%B0%B0?def=135426&rank=1",
+        "verified": true
+      }
+    ],
+    "druid": [
+      {
+        "id": 16942,
+        "name": "날카로운 발톱",
+        "icon": "inv_misc_monsterclaw_04",
+        "rank": 1,
+        "description": "곰 변신, 광포한 곰 변신, 표범 변신 시 치명타 및 극대화율이 3%만큼 증가합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=16942/%EB%82%A0%EC%B9%B4%EB%A1%9C%EC%9A%B4-%EB%B0%9C%ED%86%B1?def=134407&rank=1",
+        "verified": true
+      },
+      {
+        "id": 16972,
+        "name": "야생의 포식자",
+        "icon": "ability_hunter_pet_cat",
+        "rank": 1,
+        "description": "표범 변신과 곰 변신, 광포한 곰 변신 기술의 근접 전투력이 레벨의 50%만큼 증가합니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=16972/%EC%95%BC%EC%83%9D%EC%9D%98-%ED%8F%AC%EC%8B%9D%EC%9E%90?def=134413&rank=1",
+        "verified": true
+      },
+      {
+        "id": 17007,
+        "name": "무리의 우두머리",
+        "icon": "spell_nature_unyeildingstamina",
+        "rank": 1,
+        "description": "표범 변신, 곰 변신 또는 광포한 곰 변신 상태에서 무리의 우두머리가 주위 45미터 내에 있는 모든 파티원 또는 공격대원의 치명타 및 극대화율을 3%만큼 증가시킵니다.",
+        "source": "https://www.wowhead.com/forever/ko/spell=17007/%EB%AC%B4%EB%A6%AC%EC%9D%98-%EC%9A%B0%EB%91%90%EB%A8%B8%EB%A6%AC?def=134416&rank=1",
+        "verified": true
+      },
+      {
+        "id": 1328613,
+        "name": "Predatory Discipline",
+        "icon": "spell_druid_savagery",
+        "rank": 1,
+        "description": "",
+        "source": "https://www.wowhead.com/forever/ko/spell=1328613/predatory-discipline?def=134412&rank=1",
+        "verified": false,
+        "reason": "한국어 페이지의 이름과 설명이 영문으로 표시됩니다."
+      },
+      {
+        "id": 1322605,
+        "name": "힘의 전환",
+        "icon": "spell_druid_displacement",
+        "rank": 1,
+        "description": "",
+        "source": "https://www.wowhead.com/forever/ko/spell=1322605/%ED%9E%98%EC%9D%98-%EC%A0%84%ED%99%98?def=145859&rank=1",
+        "verified": false,
+        "reason": "계산기에 마나 비용이 0으로 표시되어 실제 비용 확인이 필요합니다."
+      }
+    ]
+  }
+}

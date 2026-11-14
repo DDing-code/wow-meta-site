@@ -16,6 +16,14 @@ const args = process.argv.slice(2);
 const watchMode = args.includes('--watch');
 const passThroughArgs = args.filter(arg => arg !== '--watch');
 
+// 포에버는 주문 번호가 같은 리테일 자료를 덮어쓰지 않도록 별도 KB에서 복사한다.
+const foreverSource = path.join(repoRoot, 'WoW-Meta-Knowledge', '09-포에버', 'talents.json');
+if (fs.existsSync(foreverSource)) {
+  const source = fs.readFileSync(foreverSource, 'utf8');
+  if (JSON.parse(source).metadata.edition !== 'forever') throw new Error('포에버 KB 버전 불일치');
+  fs.writeFileSync(path.join(__dirname, '..', 'src', 'data', 'foreverTalents.json'), source);
+}
+
 for (const [source, output] of [
   ['00-공통/공용/Meta/beginner-consumables.json', 'beginnerConsumables.json'],
   ['00-공통/공용/Meta/beginner-crafting.json', 'beginnerCrafting.json'],

@@ -1152,6 +1152,33 @@ const GuideTableWrap = styled(TableWrap)`
   &:focus-visible { outline: 2px solid ${FOREVER_ACCENT}; outline-offset: 3px; }
 `;
 
+const SpellName = styled.a`
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: #ffe0a1;
+
+  img { width: 28px; height: 28px; border: 1px solid #8c784e; }
+  [role='tooltip'] {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 0;
+    z-index: 5;
+    width: min(340px, 72vw);
+    padding: 14px;
+    border: 2px solid #8c784e;
+    background: #142019;
+    color: #e8e9dc;
+    box-shadow: 4px 4px 0 #080f0b;
+    font-weight: 400;
+    white-space: pre-line;
+    visibility: hidden;
+  }
+  &:hover [role='tooltip'], &:focus-visible [role='tooltip'] { visibility: visible; }
+`;
+
 function GuideSection({ data }) {
   return (
     <>
@@ -1169,6 +1196,22 @@ function GuideSection({ data }) {
               {block.lead ? <p>{block.lead}</p> : null}
             </div>
           </GuideIntro>
+          {block.spells ? (
+            <TermList>
+              {block.spells.map(spell => (
+                <div key={spell.id}>
+                  <dt>
+                    <SpellName href={spell.source} target="_blank" rel="noopener noreferrer" aria-describedby={`forever-spell-${spell.id}`}>
+                      <img src={`https://wow.zamimg.com/images/wow/icons/medium/${spell.icon}.jpg`} alt="" width="28" height="28" loading="lazy" />
+                      <strong>{spell.name}</strong>
+                      <span role="tooltip" id={`forever-spell-${spell.id}`}>{spell.name}{' · 1등급\n'}{spell.verified ? spell.description : `한국어 설명 확인 전\n${spell.reason}`}</span>
+                    </SpellName>
+                  </dt>
+                  <dd>{spell.verified ? spell.description : `한국어 설명 확인 전 · ${spell.reason}`}</dd>
+                </div>
+              ))}
+            </TermList>
+          ) : null}
           {block.items ? (
             <TermList>
               {block.items.map(item => <div key={item.title}><dt>{item.title}</dt><dd>{item.body}</dd></div>)}

@@ -2,6 +2,7 @@
 // 공식 사실은 블리자드 한국어 공지, 추천 경로는 실제 확인한 포에버 전용 가이드를 근거로 항목마다 sources를 단다.
 // 리테일 KB·kb-skills.json과 섞지 않는다(리테일 KB는 주문 번호 하나로 색인해서 포에버 자료가 들어가면 서로 덮어쓴다).
 // 검사: npm run validate:forever (scripts/validate-forever-guide.cjs), src/pages/ForeverPage.test.js
+import foreverTalents from './foreverTalents.json';
 
 export const FOREVER_NAME = '월드 오브 워크래프트: 포에버';
 export const FOREVER_CHECKED_AT = '2026-11-14';
@@ -1594,6 +1595,63 @@ export const foreverDetailGuides = {
   }
 };
 
+// 한국어 설명은 개별 주문 화면에서 대조한 별도 포에버 KB의 문장 그대로다.
+for (const [id, spells] of Object.entries(foreverTalents.classes)) {
+  const source = `wowhead-${id}`;
+  const page = foreverDetailGuides[`classes/${id}`];
+  foreverSources[source] = {
+    label: `와우헤드 · ${page.label} 포에버 한국어 특성 계산기`,
+    url: `https://www.wowhead.com/forever/ko/talent-calc/${id}`,
+  };
+  page.sections.splice(2, 0, {
+    id: 'talent-effects', title: '육성 중 살펴볼 핵심 특성 효과',
+    lead: '각 특성의 1등급과 연결한 주문 페이지의 표시 등급 기준입니다. 레벨·배운 주문 등급에 따라 수치가 달라지며, 아래 효과 목록이 위 견본에 모두 포함되는 것은 아닙니다. 이름이나 아이콘을 누르면 한국어 원문을 볼 수 있습니다. 확인이 끝나지 않은 설명은 비워 두었습니다.',
+    spells,
+    sources: [source],
+  });
+}
+
+foreverSources['wowhead-zones'] = {
+  label: '와우헤드 · 포에버 새 지역 개요 (영문)',
+  url: 'https://www.wowhead.com/forever/ko/guide/zones-maps-locations-rewards',
+};
+
+// 30레벨 뒤 외부 자료는 추정 후보다. 공식 범위가 있는 새 지역·던전과 구분한다.
+const laterRoutes = {
+  alliance: [
+    ['30~35 안팎', '가시덤불 골짜기 · 잊혀진 땅', '외부 가이드 추정 · 적과 퀘스트 레벨을 현장에서 확인'],
+    ['35~45', '강물터 · 가라앉은 도시(35~40) · 크롤도크 보루(40~45)', '공식 소개 범위 · 강물터 퀘스트와 새 던전 파티를 함께 준비'],
+    ['40~50 안팎', '가시덤불 골짜기 → 타나리스 · 페랄라스', '외부 가이드 추정 · 강물터를 마친 레벨에 맞춰 선택'],
+    ['50~55 안팎', '운고로 분화구 · 악령의 숲 · 여명의 설원', '외부 가이드 추정 · 알카즈 감옥은 공식 48~53레벨 범위'],
+    ['55~60 안팎', '서부 역병지대 · 동부 역병지대', '외부 가이드 추정 · 60레벨까지 보장되는 검증 동선은 아님'],
+  ],
+  horde: [
+    ['30~35 안팎', '가시덤불 골짜기 · 버섯구름 봉우리', '외부 가이드 추정 · 적과 퀘스트 레벨을 현장에서 확인'],
+    ['35~45', '강물터 · 가라앉은 도시(35~40) · 크롤도크 보루(40~45)', '공식 소개 범위 · 강물터 퀘스트와 새 던전 파티를 함께 준비'],
+    ['40~50 안팎', '가시덤불 골짜기 → 타나리스 · 페랄라스', '외부 가이드 추정 · 강물터를 마친 레벨에 맞춰 선택'],
+    ['50~55 안팎', '운고로 분화구 · 여명의 설원 · 악령의 숲', '외부 가이드 추정 · 알카즈 감옥은 공식 48~53레벨 범위'],
+    ['55~60 안팎', '동부 역병지대 · 실리더스', '외부 가이드 추정 · 60레벨까지 보장되는 검증 동선은 아님'],
+  ],
+};
+for (const [id, page] of Object.entries(foreverDetailGuides)) {
+  if (page.parent !== 'leveling') continue;
+  const alliance = ['human', 'dwarf', 'gnome', 'night-elf', 'skyborne-alliance'].includes(id.split('/')[1]);
+  page.lead = page.lead.replace('출발지부터 30레벨 안팎까지', '출발지부터 60레벨까지');
+  const block = page.sections.find(section => section.id === 'after-30');
+  block.title = '30~60레벨 · 다음 지역과 새 던전';
+  block.lead = '30레벨 뒤에는 같은 진영의 지역 후보를 함께 씁니다. 아래 순서는 ForeverDB의 추정 자료를 추린 추천이며, 지역별 퀘스트를 직접 끝까지 검증한 최단 동선은 아닙니다. 강물터와 새 던전의 레벨 범위만 공식 소개로 확인했습니다. 주황·빨강 퀘스트가 많으면 이전 지역의 남은 퀘스트부터 확인하세요.';
+  block.table = { columns: ['구간', '이어서 갈 지역·던전', '근거와 선택 기준'], rows: laterRoutes[alliance ? 'alliance' : 'horde'] };
+  block.items = [
+    { title: '55레벨부터 던전 파티도 준비', body: '검은아귀 요새(아즈샤라)는 55~60레벨, 구체자의 정원(운고로 분화구)은 58~60레벨 범위입니다. 던전 퀘스트와 동료의 진행을 맞춘 뒤 이동하세요. 이 범위는 공식 소개의 콘텐츠 범위이며 최소 입장 레벨을 뜻하지 않습니다.' },
+    { title: '새 지역의 범위는 따로 확인', body: '셴드랄라스는 멀고어와 잊혀진 땅 사이에 있지만, 읽은 원문만으로 레벨 구간을 확정하지 않았습니다. 하이잘 산은 와우헤드에서 60레벨 지역으로 소개하므로, 50레벨대의 빈 구간을 채우는 필수 경로로 잡지 않습니다.' },
+  ];
+  block.links = [
+    { label: '새 던전 위치·입장 준비', path: '/forever/leveling#dungeons' },
+    { label: '원문의 30~60레벨 추정 자료 보기 (영문) ↗', path: 'https://foreverdb.net/guide/leveling#from-30-to-60' },
+  ];
+  block.sources = ['routes', 'launch', 'dungeons', 'wowhead-zones'];
+}
+
 foreverGuides.classes.sections.unshift({
   id: 'class-guides', title: '직업별 특성·레벨링 가이드',
   lead: '직업을 골라 추천 경로와 레벨별 특성 배분, 장비·운용 요령을 확인하세요. 각 페이지에 원문과 특성 계산기를 연결했습니다.',
@@ -1602,7 +1660,7 @@ foreverGuides.classes.sections.unshift({
 });
 foreverGuides.leveling.sections.unshift({
   id: 'race-guides', title: '종족별 레벨업 가이드',
-  lead: '종족별로 첫 30레벨의 지역 후보와 다음 거점을 정리했습니다. ForeverDB의 범위는 옛 클래식 퀘스트 레벨을 대조한 참고값이며 새 퀘스트 전체를 검증한 요구 레벨은 아닙니다. 30레벨 이후 원문에는 추정·미확인이 남아 있어 확정 동선으로 옮기지 않았습니다. 스카이본은 선택한 진영의 페이지를 읽으세요.',
+  lead: '종족별 출발지부터 60레벨까지 지역 후보와 새 던전을 정리했습니다. 첫 30레벨의 범위는 옛 클래식 퀘스트 레벨을 대조한 참고값이며 새 퀘스트 전체를 검증한 요구 레벨은 아닙니다. 30레벨 뒤에는 진영별 추정 후보와 공식 확인된 새 지역·던전을 구분했습니다. 스카이본은 선택한 진영의 페이지를 읽으세요.',
   links: Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'leveling').map(([id, page]) => ({ label: page.label, path: '/forever/' + id })),
   sources: ['routes', 'newPlayer'],
 });

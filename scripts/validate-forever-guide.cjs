@@ -15,7 +15,7 @@ function loadModule(file, names) {
     .replace(/^import .*$/gm, '')
     .replace(/\bexport const\b/g, 'const')
     .replace(/\bexport function\b/g, 'function');
-  return new Function(`${source}\nreturn { ${names.join(', ')} };`)();
+  return new Function('foreverTalents', `${source}\nreturn { ${names.join(', ')} };`)(JSON.parse(read('src/data/foreverTalents.json')));
 }
 
 const guideSource = read('src/data/foreverGuide.js');
@@ -23,10 +23,36 @@ const pageSource = read('src/pages/ForeverPage.js');
 const guide = loadModule('src/data/foreverGuide.js', ['FOREVER_ART_NOTE', 'foreverSources', 'foreverPages', 'foreverHome', 'foreverStart', 'foreverRules', 'foreverGuides', 'foreverDetailGuides']);
 const editions = loadModule('src/data/gameEditions.js', ['EDITIONS', 'FOREVER_ROOT', 'getEdition', 'getEditionSwitchPath']);
 
+// 별도 KB의 원문과 생성 파일, 미확인 설명의 빈칸을 유지한다.
+const talents = JSON.parse(read('src/data/foreverTalents.json'));
+assert.strictEqual(talents.metadata.edition, 'forever');
+assert.strictEqual(talents.metadata.kbSource, '09-포에버/talents.json');
+const talentSource = path.resolve(SITE_ROOT, '../WoW-Meta-Knowledge', talents.metadata.kbSource);
+if (fs.existsSync(talentSource)) assert.deepStrictEqual(talents, JSON.parse(fs.readFileSync(talentSource, 'utf8')), '포에버 KB와 생성 특성 설명 불일치');
+assert.deepStrictEqual(Object.keys(talents.classes).sort(), Object.entries(guide.foreverDetailGuides).filter(([, page]) => page.parent === 'classes').map(([id]) => id.split('/')[1]).sort());
+const spellIds = new Set();
+for (const [id, spells] of Object.entries(talents.classes)) {
+  assert.ok(spells.filter(spell => spell.verified).length >= 3, `${id}: 확인된 핵심 특성 설명 부족`);
+  for (const spell of spells) {
+    assert.ok(Number.isInteger(spell.id) && spell.id > 0 && !spellIds.has(spell.id), `${id}: 주문 번호 누락·중복`);
+    spellIds.add(spell.id);
+    assert.ok(spell.name && /^[a-z0-9_]+$/.test(spell.icon), `${id}/${spell.id}: 이름·아이콘 누락`);
+    assert.strictEqual(spell.rank, 1);
+    const source = new URL(spell.source);
+    assert.strictEqual(source.origin, 'https://www.wowhead.com');
+    assert.ok(source.pathname.startsWith(`/forever/ko/spell=${spell.id}/`), `${id}/${spell.id}: 포에버 한국어 원문이 아님`);
+    assert.strictEqual(source.searchParams.get('rank'), '1');
+    assert.ok(/^\d+$/.test(source.searchParams.get('def')), `${id}/${spell.id}: 특성 정의 번호 누락`);
+    assert.strictEqual(typeof spell.verified, 'boolean');
+    if (spell.verified) assert.ok(/[가-힣]/.test(spell.description) && !/[<>$]/.test(spell.description), `${id}/${spell.id}: 한국어 원문 누락·수식 미해결`);
+    else assert.ok(spell.description === '' && spell.reason, `${id}/${spell.id}: 미확인 설명을 채우면 안 됨`);
+  }
+}
+
 // 1. 근거: 블리자드 한국어 공지만, 항목이 가리키는 근거 이름은 모두 있어야 한다.
 const sourceIds = Object.keys(guide.foreverSources);
 for (const [id, source] of Object.entries(guide.foreverSources)) {
-  assert.ok(/^https:\/\/(worldofwarcraft\.blizzard\.com\/ko-kr\/news\/\d+|news\.blizzard\.com\/ko-kr\/article\/\d+\/|forever-tavern\.com\/guides\/[a-z-]+\/|foreverdb\.net\/guide\/[a-z-]+)$/.test(source.url), `근거 ${id}: 허용한 포에버 근거 주소가 아님 (${source.url})`);
+  assert.ok(/^https:\/\/(worldofwarcraft\.blizzard\.com\/ko-kr\/news\/\d+|news\.blizzard\.com\/ko-kr\/article\/\d+\/|forever-tavern\.com\/guides\/[a-z-]+\/|foreverdb\.net\/guide\/[a-z-]+|www\.wowhead\.com\/forever\/ko\/(talent-calc\/[a-z]+|guide\/zones-maps-locations-rewards))$/.test(source.url), `근거 ${id}: 허용한 포에버 근거 주소가 아님 (${source.url})`);
   assert.ok(source.label, `근거 ${id}: 제목 없음`);
 }
 const used = new Set();
@@ -50,7 +76,7 @@ for (const [id, page] of Object.entries(allGuides)) {
   assert.strictEqual(new Set(page.sections.map(block => block.id)).size, page.sections.length, `${id}: 중복 목차`);
   page.sections.forEach(block => {
     checkSources(`${id}/${block.id}`, block.sources);
-    assert.ok(block.title && (block.items?.length || block.table?.rows.length || block.links?.length), `${id}/${block.id}: 빈 본문`);
+    assert.ok(block.title && (block.items?.length || block.table?.rows.length || block.links?.length || block.spells?.length), `${id}/${block.id}: 빈 본문`);
     block.items?.forEach(item => assert.ok(item.title && item.body, `${id}/${block.id}: 빈 항목`));
     block.table?.rows.forEach(row => assert.ok(row.length === block.table.columns.length && row.every(Boolean), `${id}/${block.id}: 표 열 불일치·빈 칸`));
     block.links?.forEach(link => {
@@ -127,7 +153,7 @@ for (const id of ['alliance-attunement', 'horde-attunement']) {
 
 // 3. 사이트 용어·금지어(가이드 용어 규칙과 내부 작업 표시 금지).
 // 공식 고유명사 '엠버스트라이프'의 일부는 금지어 '버스트'가 아니다.
-const copyText = text.replaceAll('엠버스트라이프', '');
+const copyText = text.replaceAll('엠버스트라이프', '').replaceAll('무리의 우두머리', '');
 for (const banned of ['우두머리', '졸개', '보스', '로테이션', '오프너', '신화+', '버스트', '임의 번역', '인벤']) {
   assert.ok(!copyText.includes(banned), `쓰지 않는 말: ${banned}`);
 }
@@ -160,6 +186,7 @@ for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
   assert.ok(siteMeta.includes(`'/forever/${id}': {`), `${id}: 검색 주소 누락`);
   assert.ok(guide.foreverGuides[page.parent].sections.some(block => block.links?.some(link => link.path === `/forever/${id}`)), `${id}: 목록에서 찾을 수 없음`);
   if (page.parent === 'classes') {
+    assert.deepStrictEqual(page.sections.find(item => item.id === 'talent-effects')?.spells, talents.classes[id.split('/')[1]], `${id}: 핵심 특성 설명 연결 누락`);
     const block = page.sections.find(item => item.id === 'talents');
     for (const [level, distribution, total] of block.table.rows) {
       const points = distribution.split(' / ').map(Number);
@@ -172,6 +199,11 @@ for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
       assert.strictEqual(build.legacy, 0);
       assert.deepStrictEqual(build.talents.map(tree => tree.reduce((sum, [, n]) => sum + n, 0)), points, `${id}/${level}: 계산기와 배분 표 불일치`);
     }
+  } else {
+    const later = page.sections.find(item => item.id === 'after-30');
+    assert.strictEqual(later.table.rows.length, 5, `${id}: 30~60레벨 후보 표 누락`);
+    assert.ok(later.lead.includes('추정') && later.sources.includes('routes') && later.sources.includes('dungeons'), `${id}: 추정·공식 근거 구분 누락`);
+    assert.ok(later.table.rows.filter(row => !row[1].startsWith('강물터')).every(row => row[2].includes('추정')), `${id}: 추정 경로를 확정으로 표시함`);
   }
 }
 assert.ok(nav.includes('getEditionSwitchPath(location.pathname, item.id)') && nav.includes('aria-label="게임 버전"'), '상단 메뉴에 리테일/포에버 토글이 없음');

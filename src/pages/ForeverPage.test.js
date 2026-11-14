@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { MemoryRouter } from 'react-router-dom';
 import ForeverPage from './ForeverPage.js';
 import Navigation from '../components/Navigation.js';
-import { FOREVER_ART_NOTE, foreverHome, foreverPages, foreverRules, foreverSources, foreverStart } from '../data/foreverGuide.js';
+import { FOREVER_ART_NOTE, foreverDetailGuides, foreverHome, foreverPages, foreverRules, foreverSources, foreverStart } from '../data/foreverGuide.js';
 import { getPageMeta, SITE_ORIGIN } from '../data/siteMeta.js';
 
 let container;
@@ -25,6 +25,35 @@ afterEach(() => {
 
 const toggle = id => container.querySelector(`[aria-label="게임 버전"] a[data-edition="${id}"]`);
 const menuLabels = () => [...container.querySelectorAll('#primary-navigation a')].map(link => link.textContent);
+
+test('직업 아홉 쪽은 별도 KB의 한국어 설명과 아이콘·키보드 툴팁을 연결한다', () => {
+  for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'classes')) {
+    render(<ForeverPage section={id} />, `/forever/${id}`);
+    const spells = page.sections.find(block => block.id === 'talent-effects').spells;
+    const block = container.querySelector('#talent-effects');
+    for (const spell of spells) {
+      const link = block.querySelector(`a[href="${spell.source}"]`);
+      expect(link.querySelector('img').src).toContain(spell.icon);
+      expect(link.textContent).toContain(spell.name);
+      const tooltip = document.getElementById(link.getAttribute('aria-describedby'));
+      expect(tooltip.getAttribute('role')).toBe('tooltip');
+      expect(tooltip.textContent).toContain(spell.verified ? spell.description : '한국어 설명 확인 전');
+      expect(link.closest('dt').nextElementSibling.textContent).toContain(spell.verified ? spell.description : spell.reason);
+    }
+  }
+});
+
+test('종족 열 쪽은 30~60레벨 추정 후보와 공식 던전 범위를 구분한다', () => {
+  for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'leveling')) {
+    render(<ForeverPage section={id} />, `/forever/${id}`);
+    const block = container.querySelector('#after-30');
+    expect(block.querySelectorAll('tbody tr')).toHaveLength(5);
+    expect(block.textContent).toContain('추정');
+    expect(block.textContent).toContain('공식 소개 범위');
+    expect(block.textContent).toContain('검은아귀 요새');
+    expect(block.querySelector('a[href*="from-30-to-60"]')).not.toBeNull();
+  }
+});
 
 test('포에버 홈은 요약 네 칸과 리테일과 다른 점, 근거 공지를 보여 준다', () => {
   render(<ForeverPage section="home" />, '/forever');
