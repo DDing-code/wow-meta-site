@@ -77,12 +77,14 @@ export default function LevelingJourney({ race, early, later }) {
   const canMove = !reduced || motionRequest > 0;
   const moving = canMove && motionKey === routeKey;
   useLayoutEffect(() => {
-    if (canMove && visible && motionKey !== routeKey) setMotionKey(routeKey);
-  }, [routeKey, visible, canMove, motionKey]);
+    if (canMove && (visible || motionRequest > 0) && motionKey !== routeKey) setMotionKey(routeKey);
+  }, [routeKey, visible, canMove, motionKey, motionRequest]);
   // 표식과 카메라에 같은 시간·속도를 적용해 이동 내내 플레이어를 중앙에 둔다.
   useLayoutEffect(() => {
     const token = traveler.current;
     if (!moving || !token?.animate) return;
+    // 구간 버튼만 보이는 위치에서 누르더라도 지도 밖에서 이동이 끝나지 않도록 한다.
+    if (motionRequest > 0) viewport.current?.scrollIntoView({ block: 'nearest', behavior: 'instant' });
     const scale = `translate(-50%,-50%) scale(${w / 903})`;
     const options = { delay: JOURNEY_TIMING.camera, fill: 'backwards' };
     const animation = legs.length

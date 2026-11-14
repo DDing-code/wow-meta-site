@@ -15,6 +15,7 @@ const render = (node, path = '/') => act(() => root.render(
 beforeEach(() => {
   global.IS_REACT_ACT_ENVIRONMENT = true;
   document.timeline = { currentTime: 42 };
+  Element.prototype.scrollIntoView = jest.fn();
   container = document.createElement('div');
   document.body.appendChild(container);
   root = createRoot(container);
@@ -23,6 +24,7 @@ afterEach(() => {
   act(() => root.unmount());
   container.remove();
   delete document.timeline;
+  delete Element.prototype.scrollIntoView;
 });
 
 const toggle = id => container.querySelector(`[aria-label="게임 버전"] a[data-edition="${id}"]`);
@@ -144,6 +146,33 @@ test('구간을 고르면 표식과 지도가 같은 속도로 움직여 플레�
     clickStep(2);
     expect(calls.length).toBe(count + 4);
   } finally { Element.prototype.animate = original; }
+});
+
+test.each([false, true])('지도가 화면 밖이면 먼저 보이게 한 뒤 클릭한 이동을 재생한다 (동작 줄이기: %s)', reduced => {
+  const oldQuery = window.matchMedia;
+  const oldObserver = window.IntersectionObserver;
+  const oldAnimate = Element.prototype.animate;
+  const events = [];
+  window.matchMedia = () => ({ matches: reduced, addEventListener: jest.fn(), removeEventListener: jest.fn() });
+  window.IntersectionObserver = jest.fn(() => ({ observe: jest.fn(), disconnect: jest.fn() }));
+  Element.prototype.scrollIntoView.mockImplementation(function scroll(options) { events.push({ target: this, options }); });
+  Element.prototype.animate = jest.fn(() => { events.push('animate'); return { cancel: jest.fn() }; });
+  try {
+    render(<ForeverPage section="leveling/human" />);
+    expect(events).toHaveLength(0);
+    clickStep(1);
+    expect(events).toEqual([
+      { target: container.querySelector('.fv-journey-viewport'), options: { block: 'nearest', behavior: 'instant' } },
+      'animate', 'animate',
+    ]);
+    expect(container.querySelector('.fv-journey').dataset.moving).toBe('true');
+    clickStep(1);
+    expect(events.slice(3)).toEqual(events.slice(0, 3));
+  } finally {
+    window.matchMedia = oldQuery;
+    window.IntersectionObserver = oldObserver;
+    Element.prototype.animate = oldAnimate;
+  }
 });
 
 test('동작 줄이기는 자동 재생만 막고 직접 고른 구간은 다시 재생한다', () => {
