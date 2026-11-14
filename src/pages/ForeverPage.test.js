@@ -26,6 +26,117 @@ afterEach(() => {
 const toggle = id => container.querySelector(`[aria-label="게임 버전"] a[data-edition="${id}"]`);
 const menuLabels = () => [...container.querySelectorAll('#primary-navigation a')].map(link => link.textContent);
 
+const clickStep = index => act(() => container.querySelectorAll('.fv-journey-steps button')[index].click());
+const clickJourney = text => act(() => [...container.querySelectorAll('.fv-journey button')].find(button => button.textContent === text).click());
+
+test('종족 열 쪽의 단계 선택은 실제 경유지와 확대 지도에 연결된다', () => {
+  for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'leveling')) {
+    render(<ForeverPage section={id} />, `/forever/${id}`);
+    const rows = page.sections.find(block => block.id === 'route').table.rows;
+    const buttons = [...container.querySelectorAll('.fv-journey-steps button')];
+    expect(buttons).toHaveLength(rows.length);
+    buttons.forEach((button, index) => {
+      act(() => button.click());
+      expect(container.querySelector('.fv-journey-heading').textContent).toContain(rows[index][1]);
+      expect(container.querySelector('.fv-journey-instructions').textContent).toContain(rows[index][2]);
+      const svg = container.querySelector('.fv-journey-map svg');
+      const [x, y, w, h] = svg.getAttribute('viewBox').split(' ').map(Number);
+      expect(x).toBeGreaterThanOrEqual(0); expect(y).toBeGreaterThanOrEqual(0);
+      expect(x + w).toBeLessThanOrEqual(903); expect(y + h).toBeLessThanOrEqual(640);
+      expect(svg.getAttribute('aria-label')).not.toMatch(/undefined|NaN/);
+    });
+    clickJourney('30~60레벨 추천 후보로 이어 보기 →');
+    expect(container.querySelector('.fv-journey').dataset.phase).toBe('later');
+    expect(container.querySelectorAll('.fv-journey-steps button')).toHaveLength(7);
+    expect(container.querySelector('.fv-journey-heading').textContent).toContain('추정');
+    clickJourney('가시덤불 골짜기');
+    expect(container.querySelector('.fv-journey-map svg').getAttribute('aria-label')).toContain('가시덤불 골짜기');
+    clickStep(1);
+    expect(container.querySelector('.fv-journey-map svg').getAttribute('aria-label')).toContain('가시덤불 골짜기');
+    clickJourney('1~30 · 종족별 출발');
+    expect(container.querySelector('.fv-journey').dataset.step).toBe('0');
+  }
+});
+
+test('지도 위아래의 조작·안내 줄을 빼고 재생·세계 지도는 지도 위 단추로 둔다', () => {
+  render(<ForeverPage section="leveling/human" />, '/forever/leveling/human');
+  const journey = container.querySelector('.fv-journey');
+  expect(journey.querySelector('.fv-journey-controls')).toBeNull();
+  expect(journey.textContent).not.toMatch(/동작 재생|다음 →|← 이전|6초마다/);
+  expect([...journey.querySelectorAll('.fv-journey-map .fv-journey-tools button')].map(button => button.textContent)).toEqual(['경로 재생', '세계 지도']);
+  expect(journey.querySelector('.fv-journey-steps').style.getPropertyValue('--steps')).toBe('7');
+});
+
+test('배·차원문 경유를 한 구간씩 재생하고 일시정지·직접 선택 때 멈춘다', () => {
+  jest.useFakeTimers();
+  try {
+    render(<ForeverPage section="leveling/skyborne-alliance" />);
+    clickStep(1);
+    const svg = () => container.querySelector('.fv-journey-map svg');
+    expect(svg().getAttribute('aria-label')).toContain('제프라스 섬 → 달라란 (경유)');
+    clickJourney('경로 재생');
+    act(() => jest.advanceTimersByTime(6000));
+    expect(svg().getAttribute('aria-label')).toContain('달라란 (경유) → 스톰윈드');
+    clickJourney('일시정지');
+    act(() => jest.advanceTimersByTime(12000));
+    expect(container.querySelector('.fv-journey').dataset.step).toBe('1');
+    clickJourney('경로 재생');
+    act(() => jest.advanceTimersByTime(6000));
+    expect(svg().getAttribute('aria-label')).toContain('스톰윈드 → 서부 몰락지대');
+    clickStep(0);
+    expect(container.querySelector('.fv-journey-map').dataset.running).toBe('false');
+    clickJourney('세계 지도');
+    expect(svg().getAttribute('viewBox')).toBe('0 0 903 640');
+  } finally { jest.useRealTimers(); }
+});
+
+test('동작 줄이기 설정과 지도 로딩 실패에서도 이동 설명을 읽을 수 있다', () => {
+  const old = window.matchMedia;
+  window.matchMedia = () => ({ matches: true, addEventListener: jest.fn(), removeEventListener: jest.fn() });
+  try {
+    render(<ForeverPage section="leveling/skyborne-horde" />);
+    expect(container.querySelector('.fv-journey-map').dataset.running).toBe('false');
+    clickJourney('경로 재생');
+    expect(container.querySelector('.fv-journey-map').dataset.running).toBe('true');
+    clickStep(1);
+    expect(container.querySelector('.fv-journey-instructions').textContent).toContain('은빛소나무 숲 직행 배');
+    act(() => container.querySelector('.fv-journey-map image').dispatchEvent(new Event('error')));
+    expect(container.querySelector('.fv-journey [role=status]').textContent).toContain('지도를 불러오지 못했습니다');
+    expect(container.querySelector('.fv-journey-stops').textContent).toContain('멀고어·잊혀진 땅 사이 고원');
+  } finally { window.matchMedia = old; }
+});
+
+test('퀘스트의 위협은 도적 스킬로 연결하지 않고 전사 본문은 전사 스킬을 연결한다', () => {
+  render(<ForeverPage section="raids" />, '/forever/raids');
+  expect(container.querySelector('#alliance-attunement').textContent).toContain('용혈족의 위협');
+  expect(container.querySelector('#alliance-attunement .fv-spell')).toBeNull();
+  render(<ForeverPage section="classes/warrior/arms" />, '/forever/classes/warrior/arms');
+  expect(container.querySelector('#combat-principle p [data-spell-id="12294"]')).not.toBeNull();
+});
+
+test('전투 흐름은 순서와 스킬 버튼을 유지하고 표는 좁은 화면용 항목명을 갖는다', () => {
+  render(<ForeverPage section="classes/warrior/arms" />, '/forever/classes/warrior/arms');
+  const flows = container.querySelectorAll('#combat-flow .fv-flow');
+  expect(flows).toHaveLength(3);
+  for (const flow of flows) {
+    expect(flow.querySelectorAll('.fv-flow-node')).toHaveLength(flow.children.length);
+    expect(flow.querySelector('.fv-flow-node button[data-spell-id]')).not.toBeNull();
+  }
+  const table = container.querySelector('#talents table');
+  const headings = [...table.querySelectorAll('thead th')].map(th => th.textContent);
+  for (const row of table.querySelectorAll('tbody tr')) {
+    expect([...row.querySelectorAll('td')].map(td => td.dataset.label)).toEqual(headings.slice(1));
+  }
+  const sources = container.querySelector('#combat-flow .fv-block-sources');
+  expect(sources.open).toBe(false);
+  expect(sources.querySelectorAll('a').length).toBeGreaterThan(0);
+
+  render(<ForeverPage section="raids" />, '/forever/raids');
+  const longFlow = container.querySelector('#alliance-attunement .fv-flow-long');
+  expect(longFlow.children.length).toBeGreaterThan(3);
+  expect(longFlow.querySelectorAll('.fv-action-node')).toHaveLength(longFlow.children.length);
+});
+
 test('전문화 27쪽은 별도 KB의 한국어 설명과 아이콘·키보드 툴팁을 연결한다', () => {
   for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.specialization)) {
     render(<ForeverPage section={id} />, `/forever/${id}`);
@@ -51,12 +162,41 @@ test('종족 열 쪽은 30~60레벨 추정 후보와 공식 던전 범위를 구
     expect(container.querySelector('#leveling-guide h2').textContent).toContain('레벨업 가이드');
     expect(container.querySelector('#leveling-guide').textContent).toContain('30~60레벨 · 추정');
     const block = container.querySelector('#after-30');
-    expect(block.querySelectorAll('tbody tr')).toHaveLength(5);
+    expect(block.querySelectorAll('tbody tr')).toHaveLength(7);
     expect(block.textContent).toContain('추정');
-    expect(block.textContent).toContain('공식 소개 범위');
+    expect(container.querySelector('#route-notes').textContent).toContain('공식 소개 범위');
     expect(block.textContent).toContain('검은아귀 요새');
     expect(block.querySelector('a[href*="from-30-to-60"]')).not.toBeNull();
   }
+});
+
+test('종족별 출발 여덟 경로와 스카이본 이동을 구분하고 합류 뒤 60까지 잇는다', () => {
+  const rows = race => foreverDetailGuides[`leveling/${race}`].sections.find(block => block.id === 'route').table.rows;
+  const races = Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'leveling');
+  expect(new Set(races.map(([id]) => JSON.stringify(rows(id.split('/')[1])))).size).toBe(8);
+  expect(rows('dwarf')).toEqual(rows('gnome'));
+  expect(rows('orc')).toEqual(rows('troll'));
+  expect(rows('orc')[1][1]).toBe('티리스팔 숲');
+  expect(rows('tauren')[1][1]).toBe('은빛소나무 숲 · 언더시티');
+  expect(rows('night-elf').some(row => row[1] === '저습지')).toBe(true);
+  for (const [id, page] of races) {
+    const early = page.sections.find(block => block.id === 'route');
+    const late = page.sections.find(block => block.id === 'after-30');
+    expect(early.table.rows[0][0]).toMatch(/^1~/);
+    expect(early.table.rows[early.table.rows.length - 1][0]).toContain('30');
+    expect(late.table.rows.map(row => row[0])).toEqual(['30~35 안팎', '35~40 안팎', '40~45 안팎', '45~50 안팎', '50~53 안팎', '53~55 안팎', '55~60 안팎']);
+    expect(late.lead).toContain(early.table.rows[early.table.rows.length - 1][1]);
+    render(<ForeverPage section={id} />, `/forever/${id}`);
+    expect(container.querySelector('#route tbody').textContent).toContain(early.table.rows[1][1]);
+    expect(container.querySelector('#leveling-guide').textContent).toMatch(/합류|합쳐/);
+    expect(container.querySelector('#start').textContent).not.toContain('도착지를 확정하지');
+  }
+  render(<ForeverPage section="leveling/skyborne-alliance" />, '/forever/leveling/skyborne-alliance');
+  expect(container.querySelector('#start').textContent).toContain('전용 차원문');
+  expect(container.querySelector('#route').textContent).toContain('던전 진행이 아님');
+  render(<ForeverPage section="leveling/skyborne-horde" />, '/forever/leveling/skyborne-horde');
+  expect(container.querySelector('#start').textContent).toContain('은빛소나무 숲에 바로 도착하지');
+  expect(container.querySelector('#route').textContent).toContain('멀고어·잊혀진 땅 사이 고원');
 });
 
 test('27개 전문화의 추천 순서와 KB 툴팁은 중복 ID 없이 연결된다', () => {

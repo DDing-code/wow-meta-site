@@ -59,13 +59,23 @@ export const foreverSources = {
   },
 };
 
+// 탭이 켜지는 주소. exact는 그 주소만, match는 덧붙인 주소 아래도 켠다.
+export function isForeverPageActive(page, pathname) {
+  const path = pathname.replace(/\/+$/, '') || '/';
+  if (path === page.path) return true;
+  if (page.exact || page.id === 'home') return false;
+  return path.startsWith(`${page.path}/`) || (page.match || []).some(prefix => path.startsWith(prefix));
+}
+
 export const foreverPages = [
   { id: 'home', path: '/forever', label: '포에버 홈' },
   { id: 'start', path: '/forever/start', label: '시작하기' },
   { id: 'rules', path: '/forever/rules', label: '규칙·진영' },
-  { id: 'leveling', path: '/forever/leveling', label: '지역·던전' },
+  { id: 'classes', path: '/forever/classes', label: '직업 가이드' },
+  // 종족별 상세는 예전 주소(/forever/leveling/<종족>)를 그대로 쓰므로 그 아래 주소도 이 탭으로 본다.
+  { id: 'races', path: '/forever/races', label: '레벨링 가이드', match: ['/forever/leveling/'] },
+  { id: 'leveling', path: '/forever/leveling', label: '지역·던전', exact: true },
   { id: 'growth', path: '/forever/growth', label: '캠핑·유산' },
-  { id: 'classes', path: '/forever/classes', label: '직업 선택' },
   { id: 'raids', path: '/forever/raids', label: '레이드 준비' },
 ];
 
@@ -410,10 +420,11 @@ export const foreverHome = {
     { path: '/forever/rules', title: '규칙·진영 고르기', body: '친구와 같이 하려면 먼저 맞출 것', art: { id: 'hero-rules', kind: 'hero', alt: '' } },
     { path: '/forever/leveling', title: '지역·던전', body: '새 지역과 5인 던전 아홉 곳의 레벨·입장 준비', art: { id: 'diff-zones', alt: '' } },
     { path: '/forever/growth', title: '캠핑·유산', body: '설비를 놓는 법부터 유산 점수 투자까지', art: { id: 'diff-camping', alt: '' } },
-    { path: '/forever/classes', title: '직업 선택', body: '새 종족 조합과 리테일과 달라진 점', art: { id: 'diff-classes', alt: '' } },
+    { path: '/forever/classes', title: '직업 가이드', body: '아홉 직업 27개 전문화의 특성 순서와 배분 견본', art: { id: 'diff-classes', alt: '' } },
+    { path: '/forever/races', title: '레벨링 가이드', body: '종족별 출발지부터 60레벨까지 지역 후보', art: { id: 'diff-races', alt: '' } },
     { path: '/forever/raids', title: '첫 레이드 준비', body: '12월 10일 전에 진영별 입장 퀘스트 확인', art: { id: 'diff-raids', alt: '' } },
   ],
-  notice: '직업별 레벨링 특성 견본은 직업 선택에서, 종족별 출발 동선은 지역·던전에서 확인하세요. 레이드 네임드별 실전 전투 공략은 개방 뒤 다룹니다.',
+  notice: '직업별 특성 견본은 직업 가이드에서, 종족별 출발 동선은 레벨링 가이드에서 확인하세요. 레이드 네임드별 실전 전투 공략은 개방 뒤 다룹니다.',
 };
 
 export const foreverStart = {
@@ -655,7 +666,7 @@ export const foreverDetailGuides = {
         "id": "next",
         "title": "다음 지역과 던전 준비",
         "items": [{"title":"훈련비와 보급품","body":"새 레벨에서는 상급자와 마법책을 확인하고, 음식·음료·수리·이동 비용을 남겨 둡니다. 장비는 자신의 직업과 무기에 맞는지 비교하세요."}],
-        "links": [{"label":"종족별 레벨업 동선","path":"/forever/leveling#race-guides"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
+        "links": [{"label":"종족별 레벨업 동선","path":"/forever/races"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
         "sources": ["newPlayer","camping","legacy"]
       }
     ]
@@ -723,7 +734,7 @@ export const foreverDetailGuides = {
         "id": "next",
         "title": "다음 지역과 던전 준비",
         "items": [{"title":"훈련비와 보급품","body":"새 레벨에서는 상급자와 마법책을 확인하고, 음식·음료·수리·이동 비용을 남겨 둡니다. 장비는 자신의 직업과 무기에 맞는지 비교하세요."}],
-        "links": [{"label":"종족별 레벨업 동선","path":"/forever/leveling#race-guides"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
+        "links": [{"label":"종족별 레벨업 동선","path":"/forever/races"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
         "sources": ["newPlayer","camping","legacy"]
       }
     ]
@@ -785,7 +796,7 @@ export const foreverDetailGuides = {
         "id": "next",
         "title": "다음 지역과 던전 준비",
         "items": [{"title":"훈련비와 보급품","body":"새 레벨에서는 상급자와 마법책을 확인하고, 음식·음료·수리·이동 비용을 남겨 둡니다. 장비는 자신의 직업과 무기에 맞는지 비교하세요."}],
-        "links": [{"label":"종족별 레벨업 동선","path":"/forever/leveling#race-guides"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
+        "links": [{"label":"종족별 레벨업 동선","path":"/forever/races"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
         "sources": ["newPlayer","camping","legacy"]
       }
     ]
@@ -853,7 +864,7 @@ export const foreverDetailGuides = {
         "id": "next",
         "title": "다음 지역과 던전 준비",
         "items": [{"title":"훈련비와 보급품","body":"새 레벨에서는 상급자와 마법책을 확인하고, 음식·음료·수리·이동 비용을 남겨 둡니다. 장비는 자신의 직업과 무기에 맞는지 비교하세요."}],
-        "links": [{"label":"종족별 레벨업 동선","path":"/forever/leveling#race-guides"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
+        "links": [{"label":"종족별 레벨업 동선","path":"/forever/races"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
         "sources": ["newPlayer","camping","legacy"]
       }
     ]
@@ -921,7 +932,7 @@ export const foreverDetailGuides = {
         "id": "next",
         "title": "다음 지역과 던전 준비",
         "items": [{"title":"훈련비와 보급품","body":"새 레벨에서는 상급자와 마법책을 확인하고, 음식·음료·수리·이동 비용을 남겨 둡니다. 장비는 자신의 직업과 무기에 맞는지 비교하세요."}],
-        "links": [{"label":"종족별 레벨업 동선","path":"/forever/leveling#race-guides"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
+        "links": [{"label":"종족별 레벨업 동선","path":"/forever/races"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
         "sources": ["newPlayer","camping","legacy"]
       }
     ]
@@ -983,7 +994,7 @@ export const foreverDetailGuides = {
         "id": "next",
         "title": "다음 지역과 던전 준비",
         "items": [{"title":"훈련비와 보급품","body":"새 레벨에서는 상급자와 마법책을 확인하고, 음식·음료·수리·이동 비용을 남겨 둡니다. 장비는 자신의 직업과 무기에 맞는지 비교하세요."}],
-        "links": [{"label":"종족별 레벨업 동선","path":"/forever/leveling#race-guides"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
+        "links": [{"label":"종족별 레벨업 동선","path":"/forever/races"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
         "sources": ["newPlayer","camping","legacy"]
       }
     ]
@@ -1051,7 +1062,7 @@ export const foreverDetailGuides = {
         "id": "next",
         "title": "다음 지역과 던전 준비",
         "items": [{"title":"훈련비와 보급품","body":"새 레벨에서는 상급자와 마법책을 확인하고, 음식·음료·수리·이동 비용을 남겨 둡니다. 장비는 자신의 직업과 무기에 맞는지 비교하세요."}],
-        "links": [{"label":"종족별 레벨업 동선","path":"/forever/leveling#race-guides"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
+        "links": [{"label":"종족별 레벨업 동선","path":"/forever/races"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
         "sources": ["newPlayer","camping","legacy"]
       }
     ]
@@ -1119,7 +1130,7 @@ export const foreverDetailGuides = {
         "id": "next",
         "title": "다음 지역과 던전 준비",
         "items": [{"title":"훈련비와 보급품","body":"새 레벨에서는 상급자와 마법책을 확인하고, 음식·음료·수리·이동 비용을 남겨 둡니다. 장비는 자신의 직업과 무기에 맞는지 비교하세요."}],
-        "links": [{"label":"종족별 레벨업 동선","path":"/forever/leveling#race-guides"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
+        "links": [{"label":"종족별 레벨업 동선","path":"/forever/races"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
         "sources": ["newPlayer","camping","legacy"]
       }
     ]
@@ -1180,7 +1191,7 @@ export const foreverDetailGuides = {
         "id": "next",
         "title": "다음 지역과 던전 준비",
         "items": [{"title":"훈련비와 보급품","body":"새 레벨에서는 상급자와 마법책을 확인하고, 음식·음료·수리·이동 비용을 남겨 둡니다. 장비는 자신의 직업과 무기에 맞는지 비교하세요."}],
-        "links": [{"label":"종족별 레벨업 동선","path":"/forever/leveling#race-guides"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
+        "links": [{"label":"종족별 레벨업 동선","path":"/forever/races"},{"label":"캠핑·유산으로 성장 이어 가기","path":"/forever/growth"}],
         "sources": ["newPlayer","camping","legacy"]
       }
     ]
@@ -2003,7 +2014,7 @@ for (const [id, spells] of Object.entries(foreverTalents.classes)) {
         },
         {
           id: 'next', title: '다른 전문화와 레벨업 안내',
-          links: [...specLinks.filter(link => !link.path.endsWith(`/${spec.id}`)).map(({ label, path }) => ({ label, path })), { label: '종족별 레벨업 가이드', path: '/forever/leveling#race-guides' }],
+          links: [...specLinks.filter(link => !link.path.endsWith(`/${spec.id}`)).map(({ label, path }) => ({ label, path })), { label: '종족별 레벨링 가이드', path: '/forever/races' }],
           sources: [dbSource, 'routes'],
         },
       ],
@@ -2027,80 +2038,158 @@ foreverSources['bof-leveling'] = {
   url: 'https://bindonforever.com/leveling',
 };
 
-// 30레벨 뒤 외부 자료는 추정 후보다. 공식 범위가 있는 새 지역·던전과 구분한다.
+foreverSources['bof-alliance'] = { label: 'Bind on Forever · 얼라이언스 종족별 퀘스트 경로 (영문)', url: 'https://bindonforever.com/leveling/alliance' };
+foreverSources['bof-horde'] = { label: 'Bind on Forever · 호드 종족별 퀘스트 경로 (영문)', url: 'https://bindonforever.com/leveling/horde' };
+foreverSources['method-travel'] = { label: 'Method · 포에버 배편·비행선·차원문 안내 (영문)', url: 'https://www.method.gg/wow-forever/all-travel-routes-in-wow-forever-boats-zeppelins' };
+
+// 출발지는 여덟 경로다. 원문에서 합쳐지는 구간만 공유한다.
+const allianceRoad = [
+  ['25~27', '그늘숲 · 붉은마루 산맥', '저습지 첫 방문 뒤 돌아와 남은 퀘스트를 진행'],
+  ['27~28', '저습지 재방문', '발굴 현장 파티를 묶어 진행할 시점'],
+  ['28~30', '잿빛 골짜기 · 돌발톱 산맥', '칼림도어로 건너가 남은 퀘스트 진행 · 검은심연 나락 후보'],
+];
+const hordeRoad = [
+  ['24~25', '힐스브래드 구릉지', '타렌 밀농장 쪽 퀘스트 · 그림자송곳니 성채 후보'],
+  ['25~26', '돌발톱 산맥 · 불모의 땅 남부', '칼림도어로 돌아와 두 지역의 진행을 연결'],
+  ['27~28', '잿빛 골짜기', '남은 퀘스트를 마친 뒤 남쪽 구간 준비'],
+  ['28~30', '버섯구름 봉우리', '불모의 땅 남부를 거쳐 이동 · 가시덩굴 우리 후보'],
+];
+const raceLevelingRoutes = {
+  human: {
+    summary: '엘윈 숲 → 서부 몰락지대 → 붉은마루 → 저습지에서 합류',
+    merge: '엘윈 숲에서 서부 몰락지대·붉은마루 산맥을 거쳐 21~24레벨 저습지에서 다른 얼라이언스 경로와 합쳐집니다.',
+    travel: '스톰윈드와 아이언포지는 지하철로 잇습니다. 후반의 잿빛 골짜기로 갈 때는 스톰윈드 항구에서 아우버다인행 배를 이용하는 경로를 비교하세요.',
+    rows: [['1~14', '엘윈 숲', '북녘골 → 골드샤이어'], ['14~18', '서부 몰락지대', '감시의 언덕을 중심으로 진행'], ['17~22', '붉은마루 산맥', '레이크샤이어 · 죽음의 폐광 파티 후보'], ['21~24', '저습지', '다른 얼라이언스 출발 경로와 합류'], ...allianceRoad],
+    dungeon: '엘윈 숲·서부 몰락지대 출발에서는 죽음의 폐광을 먼저 고려합니다. 영주의 전당(13~18)은 아이언포지로 이동할 계획이 있을 때 선택하고, 저습지 재방문 때 발굴 현장(24~29)을 묶으세요.',
+  },
+  dwarf: {
+    summary: '던 모로 → 모단 호수 → 붉은마루·서부 몰락지대 → 저습지에서 합류',
+    merge: '던 모로와 모단 호수에서 시작해 붉은마루 산맥·서부 몰락지대를 거칩니다. 22~24레벨 저습지에서 얼라이언스 공통 구간에 합류합니다.',
+    travel: '아이언포지에서 스톰윈드로 내려갈 때 지하철을 이용할 수 있습니다. 모단 호수에서 곧장 저습지만 돌며 30레벨을 채우는 순서와는 다릅니다.',
+    rows: [['1~12', '던 모로', '눈마루 골짜기 → 카라노스'], ['12~18', '모단 호수', '텔사마 · 영주의 전당 파티 후보'], ['18~22', '붉은마루 산맥 · 서부 몰락지대', '스톰윈드 쪽으로 이동해 두 지역 진행'], ['22~24', '저습지', '다른 얼라이언스 출발 경로와 합류'], ...allianceRoad],
+    dungeon: '출발지 가까운 영주의 전당(13~18)을 먼저 검토합니다. 이후 죽음의 폐광·스톰윈드 지하감옥을 거쳐, 저습지에 돌아올 때 발굴 현장(24~29) 파티를 맞추세요.',
+  },
+  'night-elf': {
+    summary: '텔드랏실 → 어둠해안 → 잿빛·돌발톱 → 저습지에서 합류',
+    merge: '어둠해안 뒤 잿빛 골짜기·돌발톱 산맥을 먼저 돕니다. 이 견본은 칼림도어에만 머무르지 않고 22~24레벨 저습지로 건너가 얼라이언스 경로에 합류합니다.',
+    travel: '루테란 마을에서 아우버다인으로 배를 탑니다. 동부 왕국으로 건널 때 아우버다인 → 메네실 항구 배편을 확인하세요. 이후 다시 칼림도어의 잿빛 골짜기로 돌아오는 경로입니다.',
+    rows: [['1~12', '텔드랏실', '그늘 협곡 → 돌라나르'], ['13~20', '어둠해안', '아우버다인'], ['21~22', '잿빛 골짜기', '아스트라나르 주변 진행'], ['22~23', '돌발톱 산맥', '동부 왕국으로 건너가기 전 구간'], ['22~24', '저습지', '메네실 항구로 건너와 다른 얼라이언스 경로와 합류'], ...allianceRoad],
+    dungeon: '초반 칼림도어 구간에 영주의 전당을 필수로 끼우지 않습니다. 동부 왕국에 건넌 뒤 스톰윈드 지하감옥·발굴 현장(24~29), 칼림도어에 돌아온 뒤 검은심연 나락을 고려하세요.',
+  },
+  orc: {
+    summary: '듀로타 → 티리스팔 숲 → 불모의 땅에서 합류',
+    merge: '듀로타 뒤 곧장 불모의 땅에 머무르는 대신, 이 견본은 13~17레벨 티리스팔 숲을 거친 뒤 불모의 땅에서 호드 경로에 합류합니다.',
+    travel: '오그리마 바깥 비행선과 티리스팔 숲의 언더시티행 거점을 이용해 대륙을 오갑니다. 티리스팔 방문 뒤 다시 칼림도어로 돌아오는 일정입니다.',
+    rows: [['1~13', '듀로타', '시험의 골짜기 → 센진 마을·칼바위 언덕'], ['13~17', '티리스팔 숲', '언더시티 주변 · 로데론의 폐허 후보'], ['17~24', '불모의 땅', '크로스로드에서 다른 호드 출발 경로와 합류'], ...hordeRoad],
+    dungeon: '듀로타 출발에서는 성난불길 협곡을 먼저 검토합니다. 티리스팔 숲에 건너갈 때 로데론의 폐허(15~20)를 묶고, 불모의 땅에서 통곡의 동굴 파티를 찾는 순서입니다.',
+  },
+  tauren: {
+    summary: '멀고어 → 은빛소나무 숲 → 불모의 땅에서 합류',
+    merge: '멀고어에서 시작하지만 이 견본은 12~16레벨 은빛소나무 숲·언더시티를 먼저 방문합니다. 16~24레벨 불모의 땅에서 다른 호드 경로와 합쳐집니다.',
+    travel: '멀고어에서 은빛소나무 숲은 이웃 지역이 아닙니다. 오그리마 쪽으로 이동해 언더시티행 비행선을 탄 뒤 은빛소나무 숲으로 가고, 이후 불모의 땅으로 돌아옵니다.',
+    rows: [['1~12', '멀고어', '나라체 야영지 → 블러드후프 마을'], ['12~16', '은빛소나무 숲 · 언더시티', '동부 왕국으로 이동 · 로데론의 폐허 후보'], ['16~24', '불모의 땅', '칼림도어로 돌아와 다른 호드 출발 경로와 합류'], ...hordeRoad],
+    dungeon: '멀고어에는 이 견본의 새 던전이 없습니다. 은빛소나무 숲·언더시티 방문 중 15레벨 이후 로데론의 폐허(15~20), 불모의 땅 복귀 뒤 통곡의 동굴을 검토합니다.',
+  },
+  undead: {
+    summary: '티리스팔 숲 → 은빛소나무 숲 → 불모의 땅에서 합류',
+    merge: '티리스팔 숲에서 은빛소나무 숲으로 이어 간 뒤 16~24레벨에는 칼림도어의 불모의 땅에서 다른 호드 경로에 합류합니다. 힐스브래드 구릉지는 24~25레벨 재방문 구간입니다.',
+    travel: '언더시티 바깥에서 오그리마행 비행선을 타고 불모의 땅으로 갑니다. 24레벨 전후 힐스브래드 구릉지로 돌아올 때도 같은 대륙 이동을 준비하세요.',
+    rows: [['1~12', '티리스팔 숲 · 언더시티', '죽음의 종소리 마을 → 브릴'], ['13~16', '은빛소나무 숲 · 언더시티', '공동묘지 주변 · 로데론의 폐허 후보'], ['16~24', '불모의 땅', '오그리마행 비행선을 이용해 호드 경로에 합류'], ...hordeRoad],
+    dungeon: '출발지 가까운 로데론의 폐허(15~20)를 은빛소나무 숲 진행과 함께 잡으세요. 그 뒤 불모의 땅에서 통곡의 동굴, 힐스브래드 구릉지 재방문 때 그림자송곳니 성채를 고려합니다.',
+  },
+  'skyborne-alliance': {
+    summary: '제프라스 섬 → 달라란·스톰윈드 → 서부 몰락지대에서 인간 경로 합류',
+    merge: '제프라스 섬을 마치고 달라란행 배와 스카이본 전용 차원문으로 스톰윈드에 도착합니다. 14~18레벨 서부 몰락지대부터 인간 경로와 합쳐집니다.',
+    travel: '섬 남쪽 항구에서 얼라이언스 배편을 확인하세요. 달라란 도착 뒤 스톰윈드로 가는 스카이본 전용 차원문을 이용합니다. 이 경유는 28~33레벨 달라란 던전 입장과 별개입니다.',
+    rows: [['1~13', '제프라스 섬', '공식 소개는 1~12 · 외부 퀘스트 견본은 13까지 진행'], ['13', '달라란 → 스톰윈드', '배 → 스카이본 전용 차원문 · 던전 진행이 아님'], ['14~18', '서부 몰락지대', '인간 출발 경로와 합류'], ['17~22', '붉은마루 산맥', '레이크샤이어 · 죽음의 폐광 후보'], ['21~24', '저습지', '다른 얼라이언스 출발 경로와 합류'], ...allianceRoad],
+    dungeon: '13레벨 달라란 경유를 던전 공략으로 읽지 마세요. 스톰윈드에 도착한 뒤 죽음의 폐광·스톰윈드 지하감옥, 저습지 재방문 때 발굴 현장(24~29)을 검토합니다.',
+  },
+  'skyborne-horde': {
+    summary: '제프라스 섬 → 멀고어·잊혀진 땅 사이 고원 → 은빛소나무 → 불모의 땅 합류',
+    merge: '제프라스 섬을 떠나 멀고어와 잊혀진 땅 사이 고원에 내립니다. 이 견본은 14~16레벨 은빛소나무 숲·언더시티를 거쳐 16~24레벨 불모의 땅에서 합류합니다.',
+    travel: '호드 배는 은빛소나무 숲에 바로 도착하지 않습니다. 칼림도어 고원에서 내린 뒤 오그리마 쪽으로 이동해 언더시티행 비행선을 이용합니다. 호드 도착지에는 오그리마 직행 차원문이 없습니다.',
+    rows: [['1~14', '제프라스 섬', '공식 소개는 1~12 · 외부 퀘스트 견본은 14까지 진행'], ['14 전후 이동', '멀고어·잊혀진 땅 사이 고원', '호드 배 도착지 · 은빛소나무 숲까지 별도 이동'], ['14~16', '은빛소나무 숲 · 언더시티', '로데론의 폐허는 15레벨 이후 후보'], ['16~24', '불모의 땅', '칼림도어로 돌아와 다른 호드 출발 경로와 합류'], ...hordeRoad],
+    dungeon: '섬을 떠난 뒤 로데론의 폐허(15~20)를 보려면 먼저 동부 왕국으로 이동해야 합니다. 이후 불모의 땅에서 통곡의 동굴, 힐스브래드 구릉지 재방문 때 그림자송곳니 성채를 검토합니다.',
+  },
+};
+raceLevelingRoutes.gnome = { ...raceLevelingRoutes.dwarf, merge: '노움은 드워프와 같은 던 모로 출발 경로입니다. 모단 호수 → 붉은마루 산맥·서부 몰락지대를 거쳐 22~24레벨 저습지에서 합류합니다.' };
+raceLevelingRoutes.troll = { ...raceLevelingRoutes.orc, merge: '트롤은 오크와 같은 듀로타 출발 경로입니다. 이 견본은 티리스팔 숲을 먼저 방문한 뒤 17~24레벨 불모의 땅에서 합류합니다.' };
+
+// 후반은 지역 레벨 자료로 고른 추천 조합이며, 연속 퀘스트를 실측한 동선이 아니다.
 const laterRoutes = {
   alliance: [
-    ['30~35 안팎', '가시덤불 골짜기 · 잊혀진 땅', '외부 가이드 추정 · 적과 퀘스트 레벨을 현장에서 확인'],
-    ['35~45', '강물터 · 가라앉은 도시(35~40) · 크롤도크 보루(40~45)', '공식 소개 범위 · 강물터 퀘스트와 새 던전 파티를 함께 준비'],
-    ['40~50 안팎', '가시덤불 골짜기 → 타나리스 · 페랄라스', '외부 가이드 추정 · 강물터를 마친 레벨에 맞춰 선택'],
-    ['50~55 안팎', '운고로 분화구 · 악령의 숲 → 53레벨 이후 여명의 설원', '외부 가이드 추정 · 여명의 설원은 다른 가이드의 53~60 범위도 대조'],
-    ['55~60 안팎', '서부 역병지대 · 동부 역병지대', '외부 가이드 추정 · 60레벨까지 보장되는 검증 동선은 아님'],
+    ['30~35 안팎', '잊혀진 땅 또는 가시덤불 골짜기', '추정 · 30레벨 잿빛 골짜기·돌발톱 산맥 구간 뒤 잊혀진 땅을 후보로 비교. 동부 왕국으로 돌아가면 가시덤불 골짜기 선택'],
+    ['35~40 안팎', '가시덤불 골짜기 · 강물터 시작', '추정 · 가시덤불을 고르면 가라앉은 도시(35~40), 강물터를 고르면 다음 40레벨 구간까지 퀘스트 연결'],
+    ['40~45 안팎', '강물터 계속 또는 타나리스', '추정 · 강물터에 남으면 크롤도크 보루(40~45). 타나리스로 옮길 때는 무법항 → 톱니항 중립 배편도 비교'],
+    ['45~50 안팎', '타나리스 · 페랄라스', '추정 · 두 지역의 남은 퀘스트로 보완. 동부 왕국에 남은 경우 동부 내륙지 후보. 알카즈 감옥(48~53)은 먼지진흙 습지대'],
+    ['50~53 안팎', '운고로 분화구 또는 악령의 숲', '추정 · 타나리스 쪽 진행 뒤에는 운고로, 칼림도어 북부 퀘스트를 이어 가면 악령의 숲 선택'],
+    ['53~55 안팎', '여명의 설원 또는 서부 역병지대', '추정 · 악령의 숲 쪽 진행과 여명의 설원을 연결하거나, 동부 왕국으로 돌아가 서부 역병지대 진행'],
+    ['55~60 안팎', '서부·동부 역병지대 또는 여명의 설원·실리더스', '추정 · 현재 대륙의 남은 퀘스트부터. 아즈샤라에서는 검은아귀 요새(55~60), 운고로에서는 구체자의 정원(58~60) 후보'],
   ],
   horde: [
-    ['30~35 안팎', '가시덤불 골짜기 · 버섯구름 봉우리', '외부 가이드 추정 · 적과 퀘스트 레벨을 현장에서 확인'],
-    ['35~45', '강물터 · 가라앉은 도시(35~40) · 크롤도크 보루(40~45)', '공식 소개 범위 · 강물터 퀘스트와 새 던전 파티를 함께 준비'],
-    ['40~50 안팎', '가시덤불 골짜기 → 타나리스 · 페랄라스', '외부 가이드 추정 · 강물터를 마친 레벨에 맞춰 선택'],
-    ['50~55 안팎', '운고로 분화구 · 악령의 숲 → 53레벨 이후 여명의 설원', '외부 가이드 추정 · 여명의 설원은 다른 가이드의 53~60 범위도 대조'],
-    ['55~60 안팎', '동부 역병지대 · 실리더스', '외부 가이드 추정 · 60레벨까지 보장되는 검증 동선은 아님'],
+    ['30~35 안팎', '버섯구름 봉우리 계속 또는 가시덤불 골짜기', '추정 · 28~30레벨 경로의 남은 퀘스트부터. 가시덤불로 옮기면 오그리마·언더시티 → 그롬골 비행선 이용'],
+    ['35~40 안팎', '가시덤불 골짜기 · 잊혀진 땅 또는 강물터 시작', '추정 · 가시덤불에서는 가라앉은 도시(35~40) 후보. 강물터는 타나리스의 중립 배편으로 접근 가능'],
+    ['40~45 안팎', '강물터 계속 또는 타나리스', '추정 · 강물터 퀘스트와 크롤도크 보루(40~45)를 묶거나, 칼림도어의 타나리스로 이동'],
+    ['45~50 안팎', '타나리스 · 페랄라스', '추정 · 두 지역의 남은 퀘스트로 보완. 동부 왕국에 남은 경우 동부 내륙지 후보. 알카즈 감옥(48~53)은 먼지진흙 습지대'],
+    ['50~53 안팎', '운고로 분화구 또는 악령의 숲', '추정 · 타나리스 쪽 진행 뒤에는 운고로, 칼림도어 북부 퀘스트를 이어 가면 악령의 숲 선택'],
+    ['53~55 안팎', '여명의 설원 또는 서부·동부 역병지대', '추정 · 악령의 숲 쪽 진행과 여명의 설원을 연결하거나, 언더시티 쪽으로 돌아가 역병지대 진행'],
+    ['55~60 안팎', '여명의 설원·실리더스 또는 동부 역병지대', '추정 · 현재 대륙의 남은 퀘스트부터. 아즈샤라에서는 검은아귀 요새(55~60), 운고로에서는 구체자의 정원(58~60) 후보'],
   ],
-};
-const raceLevelingAdvice = {
-  human: '골드샤이어에서 가까운 퀘스트를 함께 마친 뒤 서부 몰락지대로 넘어가세요. 붉은마루 산맥에서 어려운 퀘스트만 남으면 그늘숲이나 저습지의 후보를 비교합니다. 지역 이름의 순서보다 현재 받을 수 있는 퀘스트를 우선하세요.',
-  dwarf: '카라노스에서 출발 준비를 마친 뒤 모단 호수를 첫 후보로 잡습니다. 던 모로의 던전 파티에 합류할 계획이면 멀리 이동하기 전에 일정을 맞추세요. 저습지로 넘어갈 때도 남은 퀘스트와 이동 시간을 비교합니다.',
-  gnome: '드워프와 같은 던 모로 출발 경로를 사용합니다. 종족 때문에 별도의 사냥터로 이동할 필요는 없습니다. 모단 호수에서 진행 가능한 퀘스트를 먼저 마치고, 저습지 이동은 자신의 레벨과 동료의 진행에 맞추세요.',
-  'night-elf': '텔드랏실을 마친 뒤 어둠해안, 잿빛 골짜기를 우선 후보로 삼으면 같은 대륙에서 진행을 잇기 쉽습니다. 동부 왕국 던전 하나를 위해 일찍 건너가기보다 함께 할 파티와 퀘스트가 마련됐는지 먼저 확인하세요.',
-  orc: '듀로타에서 센진 마을과 칼바위 언덕의 가까운 목표를 묶어 진행하세요. 이후 불모의 땅을 중심으로 돌발톱 산맥과 잿빛 골짜기를 비교합니다. 퀘스트 하나만을 위해 먼 지역을 왕복하지 않도록 동선을 모으세요.',
-  troll: '오크와 같은 듀로타 출발 경로를 사용합니다. 센진 마을 주변의 목표를 마무리하고 칼바위 언덕, 불모의 땅으로 이어 가세요. 같은 종족의 파티만 찾기보다 같은 거점에서 진행하는 동료와 퀘스트를 맞추는 편이 수월합니다.',
-  tauren: '나라체 야영지와 블러드후프 마을의 진행을 마친 뒤 불모의 땅을 후보로 잡으세요. 넓은 지역을 오갈 때는 현재 거점으로 돌아오는 퀘스트를 함께 묶습니다. 돌발톱 산맥·잿빛 골짜기·버섯구름 봉우리 중 실제로 받을 수 있는 퀘스트를 비교하세요.',
-  undead: '브릴에서 정비한 뒤 은빛소나무 숲을 먼저 살펴보세요. 이후 힐스브래드 구릉지에 남아 진행할지, 불모의 땅의 동료에게 합류할지 결정합니다. 대륙을 옮기는 선택은 파티 약속과 남은 퀘스트를 함께 보고 하세요.',
-  'skyborne-alliance': '제프라스 섬은 1~12레벨 출발 지역입니다. 얼라이언스 선택은 캐릭터를 시작할 때 정합니다. 섬의 마지막 퀘스트가 안내하는 이동을 따른 뒤, 실제 도착지에서 가까운 얼라이언스 지역을 선택하세요. 아래 후보를 확정 배편이나 필수 도착지로 읽지 마세요.',
-  'skyborne-horde': '제프라스 섬은 1~12레벨 출발 지역입니다. 호드 선택은 캐릭터를 시작할 때 정합니다. 섬의 마지막 퀘스트가 안내하는 이동을 따른 뒤, 실제 도착지에서 가까운 호드 지역으로 이어 가세요. 불모의 땅이나 은빛소나무 숲으로 바로 연결된다고 가정하지 않습니다.',
 };
 for (const [id, page] of Object.entries(foreverDetailGuides)) {
   if (page.parent !== 'leveling') continue;
-  const alliance = ['human', 'dwarf', 'gnome', 'night-elf', 'skyborne-alliance'].includes(id.split('/')[1]);
-  page.lead = page.lead.replace('출발지부터 30레벨 안팎까지', '출발지부터 60레벨까지');
+  const race = id.split('/')[1];
+  const plan = raceLevelingRoutes[race];
+  const alliance = ['human', 'dwarf', 'gnome', 'night-elf', 'skyborne-alliance'].includes(race);
+  const faction = alliance ? 'alliance' : 'horde';
+  const source = `bof-${faction}`;
+  page.lead = `${page.label}의 종족별 출발 순서와 합류 지점, 30~60레벨 추천 지역을 연결했습니다. 1~30은 외부 퀘스트 가이드 견본이며, 30 이후는 추정 후보입니다.`;
   page.sections.unshift({
     id: 'leveling-guide', title: `${page.label} 레벨업 가이드`,
-    lead: '출발지와 지역 후보를 바탕으로 정리한 진행 요령입니다. 종족은 출발 경로를, 직업은 전투 방식과 특성 선택을 결정합니다. 이동 구간은 퀘스트 실측에 따른 최단 경로가 아닌 참고 범위입니다.',
+    lead: '같은 진영도 처음부터 같은 지역을 돌지 않습니다. 아래 출발 순서를 따른 뒤 표시된 지점에서 공통 경로에 합류하세요.',
     items: [
-      { title: '첫 30레벨 · 지역을 바꾸는 기준', body: raceLevelingAdvice[id.split('/')[1]] },
-      { title: '거점에서 묶어서 준비', body: '가까운 퀘스트 목표를 묶고, 돌아왔을 때 판매·능력 훈련·음식과 물 보충을 함께 처리하세요. 정예 퀘스트는 동료와 진행하고, 쉬기 전에는 여관이나 휴식이 가능한 캠핑 장소를 확인합니다.' },
-      { title: '30~60레벨 · 추정 경로', body: '아래 후반 동선 표는 추정 후보입니다. 강물터의 35~45레벨 범위는 와우헤드와 공식 소개를 대조했지만, 그 전후 퀘스트를 잇는 순서는 현장 검증이 필요합니다. 하이잘 산은 60레벨 지역이므로 50레벨대 필수 경로에서 제외합니다.' },
+      { title: '내 종족의 경로와 합류', body: plan.merge },
+      { title: '대륙을 건너는 구간', body: plan.travel },
+      { title: '30~60레벨 · 추정 경로', body: '후반은 공통 지역에서 현재 레벨·진행한 퀘스트에 맞춰 고릅니다. 아래 표는 지역 자료를 연결한 추천 조합이며 퀘스트별 수락 조건까지 검증한 순서는 아닙니다. 같은 레벨의 지역을 전부 돌 필요는 없습니다.' },
     ],
     links: [{ label: '전투 방식과 특성 가이드 고르기', path: '/forever/classes#class-guides' }, { label: '휴식과 캠핑 준비', path: '/forever/growth' }],
-    sources: ['routes', 'wowhead-zones', 'newPlayer'],
+    sources: [source, 'method-travel', 'routes', 'newPlayer'],
   });
+  const route = page.sections.find(section => section.id === 'route');
+  route.title = '1~30레벨 · 내 종족의 퀘스트 경로';
+  route.lead = 'Bind on Forever가 베타에서 퀘스트별로 확인했다고 밝힌 견본을 추렸습니다. 레벨은 원문의 진행 시점으로, 겹치는 구간은 여러 지역을 오가는 순서입니다. 입장 제한이나 모든 퀘스트의 요구 레벨을 뜻하지 않습니다. 출시 후 경험치·퀘스트 변경에 따라 이동 시점은 달라질 수 있습니다.';
+  route.table = { columns: ['구간', '진행 순서', '거점·이동·파티 후보'], rows: plan.rows };
+  route.links = [{ label: '종족별 퀘스트 경로 원문 (영문) ↗', path: foreverSources[source].url }];
+  route.sources = [source, 'method-travel', 'dungeons', 'newPlayer'];
+  const dungeons = page.sections.find(section => section.id === 'dungeons');
+  dungeons.title = '내 경로에서 묶어 갈 던전';
+  dungeons.items = [
+    { title: '출발지에 따라 먼저 고를 곳', body: plan.dungeon },
+    { title: '28~33레벨 · 달라란', body: alliance ? '던전 파티를 꾸렸다면 사우스쇼어에서 입장 연계를 시작합니다. 저습지·그늘숲을 잇는 퀘스트 견본에 자동으로 포함되는 필수 단계는 아닙니다.' : '던전 파티를 꾸렸다면 타렌 밀농장에서 입장 연계를 시작합니다. 24~25레벨 힐스브래드 방문과 던전 공략 시점을 구분하세요.' },
+    { title: '레벨 범위의 기준', body: '새 던전의 괄호 안 레벨은 블리자드 공식 소개 범위입니다. 외부 가이드의 파티 찾기 범위와 다를 수 있으며, 최소 입장 레벨로 단정하지 않습니다.' },
+  ];
+  dungeons.sources = [source, 'dungeons'];
+  if (race.startsWith('skyborne-')) {
+    const start = page.sections.find(section => section.id === 'start');
+    start.items[1] = { title: '섬을 떠난 뒤', body: plan.travel };
+    start.sources.push('method-travel', source);
+  }
   const block = page.sections.find(section => section.id === 'after-30');
-  block.title = '30~60레벨 동선';
-  block.lead = '30레벨 뒤에는 같은 진영의 지역 후보를 함께 씁니다. 아래 순서는 ForeverDB의 추정 자료를 추린 추천이며, 지역별 퀘스트를 직접 끝까지 검증한 최단 동선은 아닙니다. 강물터와 새 던전의 레벨 범위만 공식 소개로 확인했습니다. 주황·빨강 퀘스트가 많으면 이전 지역의 남은 퀘스트부터 확인하세요.';
-  block.table = { columns: ['구간', '이어서 갈 지역·던전', '근거와 선택 기준'], rows: laterRoutes[alliance ? 'alliance' : 'horde'] };
+  block.title = '30~60레벨 · 합류 뒤 이어 가기';
+  block.lead = `${page.label}의 30레벨 경로는 ${plan.rows[plan.rows.length - 1][1]}에서 끝납니다. ${alliance ? '약 22레벨 저습지' : '16~17레벨 불모의 땅'}에서 합류한 뒤에는 같은 진영의 경로를 함께 사용합니다. 아래는 그다음 지역을 고르는 추천 조합이며, 지역 간 연결은 추정입니다.`;
+  block.table = { columns: ['구간', '이어서 갈 지역', '이동·던전 선택'], rows: laterRoutes[faction] };
   block.items = [
-    { title: '서로 다른 레벨 범위를 읽는 법', body: '와우헤드는 강물터를 35~45레벨로 소개하지만, Bind on Forever의 30레벨 이후 표는 게임의 파티 찾기 구간을 사용해 강물터를 33~54로 표시합니다. 소개 범위와 파티 찾기 범위는 서로 다른 기준이므로, 더 넓은 수치를 퀘스트 진행 보장 범위로 바꾸지 않았습니다.' },
-    { title: '40~60레벨 후보를 고르는 기준', body: '타나리스·페랄라스는 두 외부 가이드가 겹치는 중반 후보입니다. 운고로 분화구·악령의 숲에서 이어 갈 곳을 고를 때 여명의 설원은 다른 가이드의 53~60레벨 범위도 참고하세요. 동부 역병지대·실리더스도 53~60 후보로 제시되지만, 모든 퀘스트를 잇는 동선이 검증됐다는 뜻은 아닙니다.' },
-    { title: '추정 표시를 유지한 이유', body: '11월 14일 재확인한 ForeverDB의 31~59레벨 목록은 여전히 추정 또는 미확인입니다. 다른 가이드와 지역 후보가 겹쳐도 연속 퀘스트의 수락 조건·이동 순서까지 확인된 것은 아니므로 추정 표시를 유지합니다. 알카즈 감옥의 48~53레벨 범위는 공식 던전 소개에서 따로 확인할 수 있습니다.' },
-    { title: '55레벨부터 던전 파티도 준비', body: '검은아귀 요새(아즈샤라)는 55~60레벨, 구체자의 정원(운고로 분화구)은 58~60레벨 범위입니다. 던전 퀘스트와 동료의 진행을 맞춘 뒤 이동하세요. 이 범위는 공식 소개의 콘텐츠 범위이며 최소 입장 레벨을 뜻하지 않습니다.' },
-    { title: '새 지역의 범위는 따로 확인', body: '셴드랄라스는 멀고어와 잊혀진 땅 사이에 있지만, 읽은 원문만으로 레벨 구간을 확정하지 않았습니다. 하이잘 산은 와우헤드에서 60레벨 지역으로 소개하므로, 50레벨대의 빈 구간을 채우는 필수 경로로 잡지 않습니다.' },
+    { title: '강물터 · 공식 소개 범위와 추천 순서', body: '강물터는 공식 소개에서 30레벨 중반~40레벨 중반 지역입니다. 가라앉은 도시(35~40)와 크롤도크 보루(40~45)도 공식 소개 범위입니다. 두 던전을 모두 돌아야 다음 지역으로 갈 수 있다는 뜻은 아닙니다.' },
+    { title: '50레벨대 · 대륙을 정하고 마무리', body: '칼림도어에서는 운고로 분화구·악령의 숲을 거쳐 여명의 설원·실리더스를 비교하고, 동부 왕국에서는 서부·동부 역병지대를 비교하세요. 검은아귀 요새(55~60)·구체자의 정원(58~60)은 파티가 있을 때의 선택입니다.' },
+    { title: '새 지역을 빈 구간에 억지로 넣지 않기', body: '하이잘 산은 와우헤드의 60레벨 지역 소개를 따르며, 파티 찾기의 더 넓은 범위만 보고 50레벨대 필수 코스로 넣지 않았습니다. 셴드랄라스도 확인한 퀘스트 동선이 없어 필수 단계에서 제외했습니다.' },
+    { title: '추정 자료의 한계', body: '11월 14일 읽은 ForeverDB의 31~59레벨 표는 추정 또는 미확인이며, Bind on Forever의 후반 구간은 파티 찾기 범위입니다. 표의 후보가 맞더라도 연속 퀘스트의 선행 조건과 60레벨까지 필요한 경험치를 보장하지 않습니다.' },
   ];
-  block.links = [
-    { label: '새 던전 위치·입장 준비', path: '/forever/leveling#dungeons' },
-    { label: '원문의 30~60레벨 추정 자료 보기 (영문) ↗', path: 'https://foreverdb.net/guide/leveling#from-30-to-60' },
-  ];
-  block.sources = ['routes', 'launch', 'dungeons', 'wowhead-zones', 'bof-leveling'];
+  block.links = [{ label: '새 던전 위치·입장 준비', path: '/forever/leveling#dungeons' }, { label: '원문의 30~60레벨 추정 자료 보기 (영문) ↗', path: 'https://foreverdb.net/guide/leveling#from-30-to-60' }];
+  block.sources = [source, 'routes', 'launch', 'dungeons', 'wowhead-zones', 'bof-leveling', 'method-travel'];
+  page.sections.push({ id: 'route-notes', title: '후반 경로와 레벨 범위 읽는 법', items: block.items, sources: [...block.sources] });
+  delete block.items;
 }
 
-foreverGuides.classes.sections.unshift({
-  id: 'class-guides', title: '직업별 특성·레벨링 가이드',
-  lead: '직업을 고른 뒤 전문화별 페이지로 이동하세요. 27개 전문화 모두에 추천 특성 순서·선택 이유·레벨별 배분 견본을 정리했습니다. 한국어 효과 설명이 미확인인 특성과 외부 가이드의 실전 검증 전 견본은 따로 표시합니다.',
-  links: Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'classes').map(([id, page]) => ({ label: page.label, path: '/forever/' + id })),
-  sources: ["tavern-warrior","tavern-paladin","tavern-hunter","tavern-rogue","tavern-priest","tavern-shaman","tavern-mage","tavern-warlock","tavern-druid"],
-});
-foreverGuides.leveling.sections.unshift({
-  id: 'race-guides', title: '종족별 레벨업 가이드',
-  lead: '종족별 출발지부터 60레벨까지 지역 후보와 새 던전을 정리했습니다. 첫 30레벨의 범위는 옛 클래식 퀘스트 레벨을 대조한 참고값이며 새 퀘스트 전체를 검증한 요구 레벨은 아닙니다. 30레벨 뒤에는 진영별 추정 후보와 공식 확인된 새 지역·던전을 구분했습니다. 스카이본은 선택한 진영의 페이지를 읽으세요.',
-  links: Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'leveling').map(([id, page]) => ({ label: page.label, path: '/forever/' + id })),
-  sources: ['routes', 'newPlayer'],
-});
 
 foreverSources['world-map'] = { label: '와우헤드 · 포에버 세계 지도와 던전 표식', url: 'https://www.wowhead.com/forever/ko/world-map' };
 export const foreverVisualArt = [
@@ -2122,7 +2211,7 @@ for (const [key,page] of Object.entries(foreverDetailGuides)) {
     page.sections.splice(page.sections.findIndex(s=>s.id==='talent-effects'),0,{id:'combat-decisions',title:'실전에서 달라지는 판단',items:combat.tips,decisions:true,sources:[`wowhead-${classId}`,`db-${classId}`]});
     page.sections.find(s=>s.id==='talents').growth=true;
   }
-  if (page.parent==='leveling') page.sections.unshift({ id:'starting-map',title:`${page.label} 출발 지도`,lead:'출발 지역과 이후 지역 후보를 선택해서 비교하세요. 표식은 지역 범위이며 상세 퀘스트 경로가 아닙니다.',map:{race:key.split('/')[1]},sources:['world-map','routes','newPlayer'] });
+  if (page.parent==='leveling') page.sections.unshift({ id:'starting-map',title:`${page.label} · 지도로 따라가는 레벨업`,lead:'레벨 구간을 고르면 지도가 그 구간으로 확대됩니다. 지도 왼쪽 위 경로 재생을 누르면 화살표를 따라 경유지를 차례로 보여 줍니다.',journey:key.split('/')[1],sources:['world-map',`bof-${foreverVisuals.journeys[key.split('/')[1]].faction}`,'method-travel','routes'] });
 }
 foreverGuides.leveling.sections.find(s=>s.id==='zones').map={kind:'zone'};
 foreverGuides.leveling.sections.find(s=>s.id==='zones').sources.push('world-map');
@@ -2142,4 +2231,74 @@ for (const page of [foreverGuides.classes,...Object.values(foreverDetailGuides).
     if (target?.parent==='classes') link.art=target.art;
     if (target?.specialization) link.icon=target.sections.find(s=>s.milestones).milestones[0].spell.icon;
   }
+}
+
+// 직업 가이드·레벨링 가이드 탭의 목록(리테일 직업 가이드처럼 탭 → 목록 → 상세).
+// 목록 칸의 글은 상세 쪽 자료에서 그대로 읽는다(목록에만 따로 쓰는 사실이 없게).
+const CLASS_COLORS = { warrior: '#C69B6D', paladin: '#F48CBA', hunter: '#AAD372', rogue: '#FFF468', priest: '#FFFFFF', shaman: '#0070DD', mage: '#3FC7EB', warlock: '#8788EE', druid: '#FF7C0A' };
+const detailEntries = Object.entries(foreverDetailGuides);
+foreverGuides.classes.index = {
+  id: 'class-guides', kind: 'classes', title: '직업별 특성·레벨링 가이드',
+  lead: '전문화를 누르면 추천 특성 순서·선택 이유·레벨별 배분 견본으로 바로 갑니다. 직업 이름을 누르면 세 전문화를 비교하는 직업 페이지가 열립니다. 한국어 효과 설명이 미확인인 특성과 외부 가이드의 실전 검증 전 견본은 각 페이지에 따로 표시합니다.',
+  groups: detailEntries.filter(([, page]) => page.parent === 'classes').map(([id, page]) => {
+    const classId = id.split('/')[1];
+    return {
+      id: classId, label: page.label, path: `/forever/${id}`, color: CLASS_COLORS[classId], art: page.art,
+      items: detailEntries.filter(([, spec]) => spec.parent === id).map(([specId, spec]) => ({
+        label: spec.label.replace(` ${page.label}`, ''), path: `/forever/${specId}`, description: spec.lead,
+        icon: spec.sections.find(block => block.milestones).milestones[0].spell.icon,
+      })),
+    };
+  }),
+  sources: ['tavern-warrior', 'tavern-paladin', 'tavern-hunter', 'tavern-rogue', 'tavern-priest', 'tavern-shaman', 'tavern-mage', 'tavern-warlock', 'tavern-druid'],
+};
+
+const RACE_FACTIONS = [
+  { id: 'alliance', label: '얼라이언스', color: '#5b8fd9', races: ['human', 'dwarf', 'gnome', 'night-elf', 'skyborne-alliance'] },
+  { id: 'horde', label: '호드', color: '#d0533f', races: ['orc', 'troll', 'tauren', 'undead', 'skyborne-horde'] },
+];
+foreverGuides.races = {
+  title: '포에버 종족별 레벨링 가이드',
+  lead: '종족별 1~30레벨 퀘스트 견본과 합류 지점, 30~60레벨 추천 지역을 이어서 봅니다. 후반은 추정 경로입니다. 스카이본은 진영별 배편과 본토 도착지가 다릅니다.',
+  art: { id: 'diff-races', alt: '스카이본 모험가가 마을 앞에 서 있는 도트 그림' },
+  index: {
+    id: 'race-guides', kind: 'races', title: '종족별 레벨링 가이드',
+    lead: '칸에는 출발부터 첫 합류까지를 줄였습니다. 상세에서 전체 순서와 대륙 이동, 합류 뒤 60레벨까지의 추정 후보를 확인하세요.',
+    groups: RACE_FACTIONS.map(faction => ({
+      id: faction.id, label: faction.label, color: faction.color,
+      items: faction.races.map(race => {
+        const page = foreverDetailGuides[`leveling/${race}`];
+        const rows = page.sections.find(block => block.id === 'route').table.rows;
+        return { label: page.label, path: `/forever/leveling/${race}`, start: rows[0][1], description: raceLevelingRoutes[race].summary };
+      }),
+    })),
+    sources: ['bof-alliance', 'bof-horde', 'method-travel'],
+  },
+  sections: [
+    {
+      id: 'reading', title: '레벨링 가이드 읽는 법',
+      items: [
+        { title: '종족별 출발과 합류 지점', body: 'Bind on Forever의 퀘스트 견본을 종족별로 나눴습니다. 얼라이언스는 약 22레벨 저습지, 호드는 16~17레벨 불모의 땅에서 합류합니다. 드워프·노움과 오크·트롤은 출발지부터 같은 경로입니다.' },
+        { title: '30레벨 뒤는 추정 후보', body: '후반은 7개 구간으로 나눠 현재 대륙에서 이어 갈 지역과 던전을 제시합니다. 연속 퀘스트를 끝까지 검증한 길은 아니며, 강물터·새 던전의 공식 소개 범위와 구분해서 읽으세요.' },
+        { title: '종족은 출발 경로, 직업은 전투 방식', body: '종족은 출발 경로를 정하고, 직업은 전투 방식과 특성 선택을 정합니다. 특성 순서는 직업 가이드에서 함께 고르세요.' },
+      ],
+      links: [
+        { label: '직업 가이드에서 특성 고르기', path: '/forever/classes#class-guides' },
+        { label: '새 지역·5인 던전 위치', path: '/forever/leveling' },
+      ],
+      sources: ['bof-alliance', 'bof-horde', 'method-travel', 'routes', 'launch'],
+    },
+  ],
+};
+foreverGuides.leveling.sections.push({
+  id: 'race-guides', title: '종족별 레벨링 가이드',
+  lead: '종족별 출발지부터 60레벨까지의 지역 후보는 레벨링 가이드 탭에 모았습니다. 이 페이지는 새 지역과 5인 던전의 위치·레벨 범위를 다룹니다.',
+  links: [{ label: '종족별 레벨링 가이드 목록', path: '/forever/races' }],
+  sources: ['routes', 'newPlayer'],
+});
+// 상세 쪽 위의 '목록으로' 단추가 돌아갈 곳.
+for (const [, page] of detailEntries) {
+  if (page.parent === 'classes') page.back = { path: '/forever/classes#class-guides', label: '직업 가이드 목록' };
+  else if (page.parent === 'leveling') page.back = { path: '/forever/races', label: '종족별 레벨링 가이드 목록' };
+  else if (page.specialization) page.back = { path: `/forever/${page.parent}`, label: page.parentLabel };
 }

@@ -20,7 +20,7 @@ function loadModule(file, names) {
 
 const guideSource = read('src/data/foreverGuide.js');
 const pageSource = read('src/pages/ForeverPage.js');
-const guide = loadModule('src/data/foreverGuide.js', ['FOREVER_ART_NOTE', 'foreverSources', 'foreverPages', 'foreverHome', 'foreverStart', 'foreverRules', 'foreverGuides', 'foreverDetailGuides', 'foreverVisualArt']);
+const guide = loadModule('src/data/foreverGuide.js', ['FOREVER_ART_NOTE', 'foreverSources', 'foreverPages', 'foreverHome', 'foreverStart', 'foreverRules', 'foreverGuides', 'foreverDetailGuides', 'foreverVisualArt', 'isForeverPageActive']);
 const editions = loadModule('src/data/gameEditions.js', ['EDITIONS', 'FOREVER_ROOT', 'getEdition', 'getEditionSwitchPath']);
 
 // 별도 KB의 원문과 생성 파일, 미확인 설명의 빈칸을 유지한다.
@@ -62,7 +62,7 @@ for (const [id, spells] of Object.entries(talents.classes)) {
 // 1. 근거: 블리자드 한국어 공지만, 항목이 가리키는 근거 이름은 모두 있어야 한다.
 const sourceIds = Object.keys(guide.foreverSources);
 for (const [id, source] of Object.entries(guide.foreverSources)) {
-  assert.ok(/^https:\/\/(worldofwarcraft\.blizzard\.com\/ko-kr\/news\/\d+|news\.blizzard\.com\/ko-kr\/article\/\d+\/|forever-tavern\.com\/guides\/[a-z-]+\/|foreverdb\.net\/(guide\/[a-z-]+|class\/(Warrior|Paladin|Hunter|Rogue|Priest|Shaman|Mage|Warlock|Druid)(\/builds)?)|bindonforever\.com\/leveling|www\.wowhead\.com\/forever\/ko\/(talent-calc\/[a-z]+|guide\/zones-maps-locations-rewards|world-map))$/.test(source.url), `근거 ${id}: 허용한 포에버 근거 주소가 아님 (${source.url})`);
+  assert.ok(/^https:\/\/(worldofwarcraft\.blizzard\.com\/ko-kr\/news\/\d+|news\.blizzard\.com\/ko-kr\/article\/\d+\/|forever-tavern\.com\/guides\/[a-z-]+\/|foreverdb\.net\/(guide\/[a-z-]+|class\/(Warrior|Paladin|Hunter|Rogue|Priest|Shaman|Mage|Warlock|Druid)(\/builds)?)|bindonforever\.com\/leveling(\/(alliance|horde))?|www\.method\.gg\/wow-forever\/all-travel-routes-in-wow-forever-boats-zeppelins|www\.wowhead\.com\/forever\/ko\/(talent-calc\/[a-z]+|guide\/zones-maps-locations-rewards|world-map))$/.test(source.url), `근거 ${id}: 허용한 포에버 근거 주소가 아님 (${source.url})`);
   assert.ok(source.label, `근거 ${id}: 제목 없음`);
 }
 const used = new Set();
@@ -86,19 +86,46 @@ for (const [id, page] of Object.entries(allGuides)) {
   assert.strictEqual(new Set(page.sections.map(block => block.id)).size, page.sections.length, `${id}: 중복 목차`);
   page.sections.forEach(block => {
     checkSources(`${id}/${block.id}`, block.sources);
-    assert.ok(block.title && (block.items?.length || block.table?.rows.length || block.links?.length || block.spells?.length || block.map || block.combat || block.flows?.length), `${id}/${block.id}: 빈 본문`);
+    assert.ok(block.title && (block.items?.length || block.table?.rows.length || block.links?.length || block.spells?.length || block.map || block.journey || block.combat || block.flows?.length), `${id}/${block.id}: 빈 본문`);
     block.items?.forEach(item => assert.ok(item.title && item.body, `${id}/${block.id}: 빈 항목`));
     block.table?.rows.forEach(row => assert.ok(row.length === block.table.columns.length && row.every(Boolean), `${id}/${block.id}: 표 열 불일치·빈 칸`));
     block.links?.forEach(link => {
-      assert.ok(link.label && (/^\/forever(?:\/|#|$)/.test(link.path) || /^https:\/\/(forever-tavern\.com|foreverdb\.net)\//.test(link.path)), `${id}/${block.id}: 잘못된 연결`);
+      assert.ok(link.label && (/^\/forever(?:\/|#|$)/.test(link.path) || /^https:\/\/(forever-tavern\.com|foreverdb\.net)\//.test(link.path) || /^https:\/\/bindonforever\.com\/leveling\/(alliance|horde)$/.test(link.path)), `${id}/${block.id}: 잘못된 연결`);
       if (link.path.startsWith('/forever/')) {
         const [pathname, hash] = link.path.split('#');
         const target = allGuides[pathname.slice('/forever/'.length)];
         assert.ok(target, `${id}: 없는 포에버 가이드 연결 (${link.path})`);
-        if (hash) assert.ok(target.sections.some(section => section.id === hash), `${id}: 없는 목차 연결 (${link.path})`);
+        if (hash) assert.ok(target.sections.some(section => section.id === hash) || target.index?.id === hash, `${id}: 없는 목차 연결 (${link.path})`);
       }
     });
   });
+}
+// 직업 가이드·레벨링 가이드 탭의 목록: 상세 쪽을 빠짐없이 한 번씩, 실제 있는 주소로 연결한다.
+const indexPaths = [];
+const groupPaths = [];
+for (const [id, page] of Object.entries(allGuides)) {
+  if (!page.index) continue;
+  checkSources(`${id}/목록`, page.index.sources);
+  assert.ok(page.index.id && page.index.title && page.index.lead && page.index.groups.length, `${id}: 빈 목록`);
+  for (const group of page.index.groups) {
+    assert.ok(group.label && /^#[0-9a-f]{6}$/i.test(group.color) && group.items.length, `${id}/${group.id}: 목록 묶음 누락`);
+    if (group.path) {
+      assert.ok(allGuides[group.path.slice('/forever/'.length)], `${id}/${group.id}: 없는 묶음 주소`);
+      groupPaths.push(group.path);
+    }
+    for (const item of group.items) {
+      assert.ok(item.label && item.description && allGuides[item.path.slice('/forever/'.length)], `${id}/${group.id}: 목록 칸 누락 (${item.path})`);
+      indexPaths.push(item.path);
+    }
+  }
+}
+assert.deepStrictEqual(guide.foreverGuides.classes.index.groups.map(group => group.items.length), Array(9).fill(3), '직업 가이드 목록: 아홉 직업 × 전문화 셋');
+assert.deepStrictEqual(guide.foreverGuides.races.index.groups.map(group => group.items.length), [5, 5], '레벨링 가이드 목록: 진영별 다섯 종족');
+for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
+  const listed = indexPaths.filter(item => item === `/forever/${id}`).length;
+  if (page.specialization || page.parent === 'leveling') assert.strictEqual(listed, 1, `${id}: 탭 목록에 한 번만 있어야 함`);
+  if (page.parent === 'classes') assert.ok(groupPaths.includes(`/forever/${id}`), `${id}: 직업 가이드 목록의 직업 제목에 연결되지 않음`);
+  assert.ok(page.back && (allGuides[page.back.path.split('#')[0].slice('/forever/'.length)]), `${id}: 목록으로 돌아가는 단추 누락`);
 }
 for (const id of sourceIds) assert.ok(used.has(id), `근거 ${id}: 어느 항목도 쓰지 않음`);
 
@@ -183,7 +210,7 @@ for (const file of ['src/data/kb-skills.json', 'src/data/kb-synergies.json']) {
 // 5. 주소·메뉴·검색 제목 연결.
 const app = read('src/App.js');
 const siteMeta = read('src/data/siteMeta.js');
-assert.deepStrictEqual(guide.foreverPages.map(page => page.path), ['/forever', '/forever/start', '/forever/rules', '/forever/leveling', '/forever/growth', '/forever/classes', '/forever/raids'], '포에버 페이지 주소');
+assert.deepStrictEqual(guide.foreverPages.map(page => page.path), ['/forever', '/forever/start', '/forever/rules', '/forever/classes', '/forever/races', '/forever/leveling', '/forever/growth', '/forever/raids'], '포에버 페이지 주소');
 for (const page of guide.foreverPages) {
   assert.ok(app.includes(`path="${page.path}" element={<ForeverPage section="${page.id}" />}`), `App.js에 ${page.path} 경로가 없음`);
   assert.ok(siteMeta.includes(`'${page.path}': {`), `siteMeta.js STATIC_PAGES에 ${page.path}가 없음`);
@@ -201,6 +228,24 @@ for (const [key, combat] of Object.entries(visuals.combat)) {
   for (const step of [...combat.principle, ...combat.flows.flatMap(flow => flow.steps)]) if (step.id) assert.ok(knownSpells.get(step.id)?.verified, `${key}: 미확인 기술로 전투 설명`);
 }
 assert.strictEqual(Object.keys(visuals.routes).length, 10);
+assert.deepStrictEqual(Object.keys(visuals.journeys).sort(), Object.keys(visuals.routes).sort(), '종족 열 개의 움직이는 경로');
+const mapPlaces = new Map([...visuals.regions, ...visuals.places].map(place => [place.id, place]));
+for (const [race, journey] of Object.entries(visuals.journeys)) {
+  const page = guide.foreverDetailGuides[`leveling/${race}`];
+  assert.strictEqual(page.sections.find(block => block.id === 'starting-map').journey, race);
+  assert.strictEqual(journey.stages.length, page.sections.find(block => block.id === 'route').table.rows.length, `${race}: 초반 지도와 원고 구간 수`);
+  const later = visuals.laterJourneys[journey.faction];
+  assert.strictEqual(later.length, page.sections.find(block => block.id === 'after-30').table.rows.length, `${race}: 후반 지도와 원고 구간 수`);
+  for (const stage of [...journey.stages, ...later]) {
+    assert.ok(stage.travel && stage.points.length, `${race}: 이동 안내 누락`);
+    for (const id of stage.points) assert.ok(mapPlaces.has(id), `${race}: 없는 지도 지점 ${id}`);
+    assert.strictEqual(new Set(stage.points).size, stage.points.length, `${race}: 구간 안 중복 지점`);
+  }
+}
+assert.deepStrictEqual(visuals.journeys.dwarf, visuals.journeys.gnome);
+assert.deepStrictEqual(visuals.journeys.orc, visuals.journeys.troll);
+assert.deepStrictEqual(visuals.journeys['skyborne-alliance'].stages[1].points, ['dalaran-transit', 'stormwind']);
+assert.deepStrictEqual(visuals.journeys['skyborne-horde'].stages[1].points, ['skyborne-landing']);
 assert.strictEqual(visuals.places.filter(p => p.kind === 'dungeon').length, 9);
 assert.strictEqual(visuals.places.filter(p => p.kind === 'raid').length, 3);
 for (const place of [...visuals.places, ...visuals.regions]) assert.ok(place.x >= 0 && place.x <= 903 && place.y >= 0 && place.y <= 640 && typeof place.marker === 'boolean');
@@ -209,7 +254,7 @@ assert.ok(app.includes('Object.keys(foreverDetailGuides).map'), '상세 가이�
 const displayedSpellIds = new Set();
 for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
   assert.ok(siteMeta.includes(`\n  '/forever/${id}': {`), `${id}: 검색 주소 누락`);
-  assert.ok(allGuides[page.parent].sections.some(block => block.links?.some(link => link.path === `/forever/${id}`)), `${id}: 목록에서 찾을 수 없음`);
+  assert.ok(indexPaths.includes(`/forever/${id}`) || groupPaths.includes(`/forever/${id}`) || allGuides[page.parent].sections.some(block => block.links?.some(link => link.path === `/forever/${id}`)), `${id}: 목록에서 찾을 수 없음`);
   if (page.parent === 'classes') {
     const links = page.sections.find(block => block.id === 'specializations')?.links;
     assert.strictEqual(links?.length, 3, `${id}: 전문화 세 개 연결 누락`);
@@ -264,7 +309,11 @@ for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
     assert.ok(leveling?.title.includes('레벨업 가이드') && leveling.items.length >= 3, `${id}: 별도 레벨업 가이드 누락`);
     assert.ok(leveling.items.some(item => item.title.includes('30~60') && item.title.includes('추정')), `${id}: 후반 동선 추정 안내 누락`);
     const later = page.sections.find(item => item.id === 'after-30');
-    assert.strictEqual(later.table.rows.length, 5, `${id}: 30~60레벨 후보 표 누락`);
+    assert.strictEqual(later.table.rows.length, 7, `${id}: 30~60레벨 후보 표 누락`);
+    const early = page.sections.find(item => item.id === 'route');
+    assert.ok(early.table.rows.length >= 7 && early.sources.some(source => /^bof-(alliance|horde)$/.test(source)), `${id}: 종족별 퀘스트 경로 누락`);
+    assert.ok(leveling.items[0].body.includes('합류') || leveling.items[0].body.includes('합쳐'), `${id}: 경로 합류 지점 누락`);
+    assert.ok(!JSON.stringify(page).includes('도착지를 확정하지'), `${id}: 옛 스카이본 도착지 안내가 남음`);
     assert.ok(later.lead.includes('추정') && ['routes', 'dungeons', 'wowhead-zones', 'bof-leveling'].every(source => later.sources.includes(source)), `${id}: 추정·교차 근거 구분 누락`);
     assert.ok(later.table.rows.filter(row => !row[1].startsWith('강물터')).every(row => row[2].includes('추정')), `${id}: 추정 경로를 확정으로 표시함`);
   }
@@ -272,6 +321,12 @@ for (const [id, page] of Object.entries(guide.foreverDetailGuides)) {
 assert.deepStrictEqual([...displayedSpellIds].sort(), [...spellIds].sort(), '전문화 분리 뒤 KB 특성 설명이 누락됨');
 assert.ok(nav.includes('getEditionSwitchPath(location.pathname, item.id)') && nav.includes('aria-label="게임 버전"'), '상단 메뉴에 리테일/포에버 토글이 없음');
 for (const page of guide.foreverPages) assert.ok(nav.includes(`path: '${page.path}'`), `포에버 메뉴에 ${page.path}가 없음`);
+// 종족별 상세(/forever/leveling/<종족>)에서는 지역·던전이 아니라 레벨링 가이드 탭이 켜져야 한다.
+const isActive = guide.isForeverPageActive || (() => true);
+assert.deepStrictEqual(guide.foreverPages.filter(page => isActive(page, '/forever/leveling/human')).map(page => page.id), ['races']);
+assert.deepStrictEqual(guide.foreverPages.filter(page => isActive(page, '/forever/leveling')).map(page => page.id), ['leveling']);
+assert.deepStrictEqual(guide.foreverPages.filter(page => isActive(page, '/forever/classes/warrior/arms')).map(page => page.id), ['classes']);
+assert.ok(nav.includes("path: '/forever/leveling', label: '지역·던전', icon: MapIcon, exact: true") && nav.includes("match: ['/forever/leveling/']"), '상단 메뉴의 레벨링 가이드 탭 판정 누락');
 
 // 6. 토글 주소 규칙.
 const { getEdition, getEditionSwitchPath } = editions;

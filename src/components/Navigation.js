@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { BookOpen, Castle, Compass, Database, Flag, Home, KeyRound, Menu, Newspaper, X } from 'lucide-react';
+import { BookOpen, Castle, Compass, Database, Flag, Home, KeyRound, MapIcon, Menu, Newspaper, Route, X } from 'lucide-react';
 import { EDITIONS, getEdition, getEditionSwitchPath } from '../data/gameEditions.js';
 import '../styles/ForeverFonts.css';
 
@@ -151,6 +151,17 @@ const Links = styled.div`
     }
   }
 
+  /* 포에버 메뉴는 여덟 칸이라 접히기 직전 폭에서 간격·글자를 조금 더 줄인다. */
+  @media (min-width: 901px) and (max-width: 1000px) {
+    nav[data-edition="forever"] & {
+      gap: 9px;
+
+      a {
+        font-size: 0.78rem;
+      }
+    }
+  }
+
   @media (max-width: 900px) {
     position: absolute;
     top: 58px;
@@ -222,9 +233,11 @@ const foreverNavItems = [
   { path: '/forever', label: '포에버 홈', icon: Home, exact: true },
   { path: '/forever/start', label: '시작하기', icon: Compass },
   { path: '/forever/rules', label: '규칙·진영', icon: Flag },
-  { path: '/forever/leveling', label: '지역·던전', icon: Compass },
+  { path: '/forever/classes', label: '직업 가이드', icon: BookOpen },
+  // 종족별 상세는 /forever/leveling/<종족> 주소라 그 아래도 레벨링 가이드 탭으로 본다.
+  { path: '/forever/races', label: '레벨링 가이드', icon: Route, match: ['/forever/leveling/'] },
+  { path: '/forever/leveling', label: '지역·던전', icon: MapIcon, exact: true },
   { path: '/forever/growth', label: '캠핑·유산', icon: KeyRound },
-  { path: '/forever/classes', label: '직업 선택', icon: BookOpen },
   { path: '/forever/raids', label: '레이드 준비', icon: Castle },
 ];
 
@@ -288,7 +301,8 @@ function Navigation() {
             const isLogReport = location.pathname.includes('/log-analysis');
             const active = item.exact
               ? location.pathname === item.path || location.pathname === `${item.path}/`
-              : !isLogReport && (location.pathname === item.path || location.pathname.startsWith(`${item.path}/`));
+              : !isLogReport && (location.pathname === item.path || location.pathname.startsWith(`${item.path}/`)
+                || (item.match || []).some(prefix => location.pathname.startsWith(prefix)));
             return (
               <NavItem
                 key={item.path}

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import { ArrowRight, Check, ExternalLink, X } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Check, ExternalLink, X } from 'lucide-react';
 import '../styles/ForeverFonts.css';
-import ForeverSpell, { ForeverText } from '../components/forever/ForeverSpell';
+import ForeverSpell, { ForeverText, classSpells } from '../components/forever/ForeverSpell';
 import ForeverMap from '../components/forever/ForeverMap';
+import LevelingJourney from '../components/forever/LevelingJourney';
 import { Flow, SkillGroups, TalentGrowth, Facilities } from '../components/forever/ForeverVisuals';
 import {
   FOREVER_ART_NOTE,
@@ -14,25 +15,26 @@ import {
   foreverGuides,
   foreverDetailGuides,
   foreverPages,
+  isForeverPageActive,
   foreverRules,
   foreverSources,
   foreverStart,
 } from '../data/foreverGuide.js';
 
-// 포에버 안내 일곱 쪽. 도트 풍경과 하늘색 모험 일지 테마를 공유한다.
+// 포에버 안내 여덟 쪽. 도트 풍경과 하늘색 모험 일지 테마를 공유한다.
 // 글은 src/data/foreverGuide.js에 있고 여기서는 그리기만 한다. 리테일 KB·스킬 자료는 읽지 않는다.
 // 어두운 무채색 바탕·중립적인 본문·하늘색 이동 표시로 포에버 안내를 구분한다.
 // 그림은 공식 아트·공지 스크린샷을 도트로 다시 그린 것(public/images/forever)이고, 글 자료의 art 항목이 어느 그림인지 정한다.
 
 export const FOREVER_ACCENT = '#8dd9f5';
 const LINE = '#353a43';
-const PANEL = 'linear-gradient(#191c22f5, #191c22f5), url("/images/forever/ui/bronze-panel.webp") center / 160% 160% no-repeat';
-const RAISED_PANEL = 'linear-gradient(#20242bf5, #20242bf5), url("/images/forever/ui/parchment.webp") center / cover';
-// 어두운 이중 테두리와 도트 그림자로 틀을 맞추고 하늘색은 강조에만 쓴다.
+const PANEL = 'var(--fv-panel)';
+const RAISED_PANEL = 'linear-gradient(#30373f, #20252c)';
+// 모서리는 고정하고 직선 부분만 늘려 창 크기가 달라도 장식이 찌그러지지 않는다.
 const pixelFrame = css`
-  border: 6px solid #454a53;
-  border-style: double;
-  box-shadow: 4px 4px 0 #090b0e;
+  border: 10px solid #59636e;
+  border-image: var(--fv-frame) 16% / 26px / 0 stretch;
+  box-shadow: 0 3px 0 #080a0d, inset 0 0 0 1px #080a0d;
 `;
 
 const Surface = styled.div`
@@ -96,7 +98,7 @@ const Hero = styled.header`
   isolation: isolate;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  min-height: ${props => props.$compact ? '240px' : '420px'};
+  min-height: ${props => props.$compact ? '300px' : '420px'};
   align-items: center;
   border: 1px solid #58616e;
   background: #101216;
@@ -152,9 +154,11 @@ const Banner = styled(Frame)`
 
 const PageNav = styled.nav`
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(${foreverPages.length}, minmax(0, 1fr));
   margin-top: 10px;
-  border: 2px solid #3d434d;
+  padding: 6px;
+  gap: 5px;
+  border: 1px solid #697581;
   background: ${PANEL};
   box-shadow: 4px 4px 0 #090b0e;
 
@@ -164,20 +168,17 @@ const PageNav = styled.nav`
     justify-content: center;
     min-height: 48px;
     padding: 8px;
-    border-bottom: 3px solid transparent;
+    border: 1px solid #56616d;
+    box-shadow: inset 1px 1px #626c76, inset -1px -2px #080a0d;
+    background: linear-gradient(#30363e, #1a1e24);
     color: #c8cdd4;
     font-size: 1rem;
     font-weight: 700;
   }
-  a + a { border-left: 1px solid ${LINE}; }
-  a[aria-current="page"] { background: #202b34; border-bottom-color: #83d5f5; color: #bcecff; box-shadow: inset 0 2px #456474; }
-  a:hover { background: #232830; color: #bcecff; }
-  @media (max-width: 760px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    a:first-child { grid-column: 1 / -1; }
-    a { border-top: 1px solid ${LINE}; }
-    a:nth-child(even) { border-left: 0; }
-  }
+  a[aria-current="page"] { background: linear-gradient(#29424f, #16242e); border-color: #83d5f5; color: #d5f3ff; box-shadow: inset 0 2px #10181f, inset 0 -2px #456474; }
+  a:hover { background: #303c47; color: #d5f3ff; }
+  @media (max-width: 1100px) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  @media (max-width: 760px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 `;
 
 const Eyebrow = styled.p`
@@ -844,6 +845,7 @@ function Sources({ ids }) {
 }
 
 function Head({ title, lead, art, compact = false }) {
+  const { pathname } = useLocation();
   return (
     <>
       <Hero $compact={compact} className={compact ? 'fv-compact-hero' : undefined}>
@@ -858,7 +860,7 @@ function Head({ title, lead, art, compact = false }) {
       </Hero>
       <PageNav aria-label="포에버 안내">
         {foreverPages.map(page => (
-          <NavLink key={page.id} to={page.path} end={page.id === 'home'}>{page.label}</NavLink>
+          <Link key={page.id} to={page.path} aria-current={isForeverPageActive(page, pathname) ? 'page' : undefined}>{page.label}</Link>
         ))}
       </PageNav>
     </>
@@ -1126,11 +1128,15 @@ const GuideContents = styled.nav`
 `;
 
 const GuideLinks = styled(GuideContents)`
+  border: 0;
+  box-shadow: none;
+  background: none;
+  padding: 0;
   a { overflow-wrap: anywhere; }
   ${props => props.$cards && css`
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    a { display: block; padding: 20px 16px; }
+    a { display: block; padding: 20px 16px; background: ${PANEL}; box-shadow: inset 0 1px #59636e, 0 3px #080a0d; }
     strong { display: block; color: ${FOREVER_ACCENT}; font-size: 1.08rem; }
     span { display: block; margin-top: 12px; color: #c4c8cf; font-size: 0.95rem; line-height: 1.8; }
     @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); }
@@ -1139,6 +1145,20 @@ const GuideLinks = styled(GuideContents)`
 
 const GuideBlock = styled(Section)`
   scroll-margin-top: 78px;
+  padding: 24px;
+  background: ${PANEL};
+  ${pixelFrame}
+
+  ${SectionTitle} {
+    padding: 0 0 16px;
+    border: 0;
+    border-bottom: 1px solid #4e5a66;
+    background: none;
+    box-shadow: none;
+    color: #d5f3ff;
+    font-size: 1.35rem;
+  }
+  @media (max-width: 600px) { padding: 18px 12px; }
 
   > p { margin-top: 14px; color: #c4c8cf; line-height: 1.75; word-break: keep-all; }
   > a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px; color: #b4bbc5; font-size: 0.8rem; }
@@ -1159,10 +1179,17 @@ const GuideTableWrap = styled(TableWrap)`
   max-width: 100%;
   margin-top: 16px;
 
-  table { min-width: 590px; }
   th:first-child { width: 26%; }
   td:last-child { color: #c4c8cf; font-weight: 500; }
   &:focus-visible { outline: 2px solid ${FOREVER_ACCENT}; outline-offset: 3px; }
+  @media (max-width: 680px) {
+    thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+    table, tbody, tr { display: block; }
+    tbody tr { padding: 14px; border-bottom: 1px solid ${LINE}; }
+    tbody th, tbody td { display: block; width: auto !important; padding: 4px 0; border: 0; }
+    tbody th { color: #d5f3ff; font-size: 1.05rem; }
+    td::before { content: attr(data-label); display: block; margin: 8px 0 4px; color: #aeb9c7; font-size: 0.78rem; }
+  }
 `;
 
 const TalentSteps = styled.ol`
@@ -1173,37 +1200,146 @@ const TalentSteps = styled.ol`
   @media(max-width: 600px) { grid-template-columns: minmax(0, 1fr); }
 `;
 
-function GuideSection({ data }) {
+// 직업 가이드·레벨링 가이드 탭의 목록. 리테일 직업 가이드처럼 묶음 제목 아래 칸을 눌러 상세로 간다.
+const IndexPanel = styled.section`
+  scroll-margin-top: 78px;
+  margin-top: 24px;
+  padding: 24px;
+  background: ${PANEL};
+  ${pixelFrame}
+  @media (max-width: 600px) { padding: 18px 12px; }
+`;
+
+const IndexHead = styled.div`
+  padding-bottom: 16px;
+  border-bottom: 1px solid #4e5a66;
+  h2 { color: #d5f3ff; font-size: 1.35rem; line-height: 1.4; }
+  p { max-width: 74ch; margin-top: 10px; color: #c4c8cf; line-height: 1.75; word-break: keep-all; }
+`;
+
+const IndexGroup = styled.section`
+  padding: 22px 0 6px;
+  & + & { border-top: 1px solid ${LINE}; }
+`;
+
+const GroupTitle = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  img { flex: none; width: 52px; height: 52px; border: 1px solid #080a0d; box-shadow: 0 0 0 1px #4e5a66; image-rendering: pixelated; }
+  h3 { display: flex; align-items: center; gap: 10px; color: #edf0f3; font-size: 1.2rem; line-height: 1.3; }
+  h3::before { content: ''; width: 4px; height: 1.1em; background: ${props => props.$color}; }
+  a { display: inline-flex; align-items: center; gap: 4px; min-height: 44px; margin-left: auto; padding: 0 4px; color: #b4bbc5; font-size: 0.88rem; }
+  a:hover { color: #bcecff; }
+`;
+
+const IndexGrid = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(${props => props.$columns}, minmax(0, 1fr));
+  gap: 12px;
+  @media (max-width: 1000px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 600px) { grid-template-columns: minmax(0, 1fr); }
+`;
+
+const IndexCard = styled(Link)`
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  height: 100%;
+  padding: 14px 14px 16px;
+  border: 1px solid #3d434d;
+  border-left: 3px solid ${props => props.$color};
+  background: #181b21;
+  box-shadow: 0 3px 0 #080a0d;
+  color: inherit;
+  transition: background-color 140ms ease, border-color 140ms ease;
+
+  > div { display: flex; align-items: center; gap: 10px; min-width: 0; }
+  img { flex: none; width: 36px; height: 36px; border: 1px solid #080a0d; }
+  strong { flex: 1; min-width: 0; color: #edf0f3; font-family: 'Galmuri11', 'Noto Sans KR', sans-serif; font-size: 1.05rem; line-height: 1.4; word-break: keep-all; }
+  svg { flex: none; color: #8b95a1; transition: transform 140ms ease, color 140ms ease; }
+  em { color: ${FOREVER_ACCENT}; font-size: 0.82rem; font-style: normal; font-weight: 700; }
+  p { color: #b4bbc5; font-size: 0.9rem; line-height: 1.65; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+  &:hover { background: #202b34; border-color: ${FOREVER_ACCENT}; border-left-color: ${props => props.$color}; }
+  &:hover svg { color: ${FOREVER_ACCENT}; transform: translate(2px, -2px); }
+  @media (prefers-reduced-motion: reduce) { transition: none; &:hover svg { transform: none; } }
+`;
+
+function GuideIndex({ index }) {
+  const columns = index.kind === 'races' ? 5 : 3;
+  return (
+    <IndexPanel id={index.id} aria-labelledby={`${index.id}-title`}>
+      <IndexHead>
+        <h2 id={`${index.id}-title`}>{index.title}</h2>
+        <p>{index.lead}</p>
+      </IndexHead>
+      {index.groups.map(group => (
+        <IndexGroup key={group.id} aria-labelledby={`${index.id}-${group.id}`}>
+          <GroupTitle $color={group.color}>
+            {group.art && <img src={`/images/forever/${group.art.id}-512.webp`} alt="" width="52" height="52" loading="lazy" />}
+            <h3 id={`${index.id}-${group.id}`}>{group.label}</h3>
+            {group.path && <Link to={group.path}>{group.label} 전문화 비교<ArrowRight size={14} aria-hidden="true" /></Link>}
+          </GroupTitle>
+          <IndexGrid $columns={columns}>
+            {group.items.map(item => (
+              <li key={item.path}>
+                <IndexCard to={item.path} $color={group.color}>
+                  <div>
+                    {item.icon && <img src={`https://wow.zamimg.com/images/wow/icons/medium/${item.icon}.jpg`} alt="" width="36" height="36" loading="lazy" />}
+                    <strong>{item.label}</strong>
+                    <ArrowUpRight size={16} aria-hidden="true" />
+                  </div>
+                  {item.start && <em>출발 · {item.start}</em>}
+                  <p>{item.description}</p>
+                </IndexCard>
+              </li>
+            ))}
+          </IndexGrid>
+        </IndexGroup>
+      ))}
+      <details className="fv-block-sources"><summary>참고한 자료</summary><GuideLinks aria-label={`${index.title} 근거 원문`}>{index.sources.map(source => <a key={source} href={foreverSources[source].url} target="_blank" rel="noopener noreferrer">{foreverSources[source].label} ↗</a>)}</GuideLinks></details>
+    </IndexPanel>
+  );
+}
+
+function GuideSection({ data, section }) {
+  const spells = classSpells(section.startsWith('classes/') ? section.split('/')[1] : '');
   return <>
     <Head title={data.title} lead={data.lead} art={data.art} compact />
-    {data.parent && <GuideLinks aria-label="가이드 목록으로"><Link to={`/forever/${data.parent}`}>← {data.parentLabel || (data.parent === 'classes' ? '직업별 특성 가이드 목록' : '종족별 레벨업 가이드 목록')}</Link></GuideLinks>}
-    <div className="fv-guide-layout">
-      <details className="fv-guide-toc" open><summary>이 페이지 목차</summary><nav aria-label="이 페이지 목차">{data.sections.map(block=><a key={block.id} href={`#${block.id}`}>{block.title}</a>)}</nav></details>
+    {data.back && <GuideLinks className="fv-back" aria-label="가이드 목록으로"><Link to={data.back.path}>← {data.back.label}</Link></GuideLinks>}
+    {data.index && <GuideIndex index={data.index} />}
+    <div className={data.sections.length > 1 ? 'fv-guide-layout' : 'fv-guide-layout fv-guide-single'}>
+      {data.sections.length > 1 && <details className="fv-guide-toc" open><summary>이 페이지 목차</summary><nav aria-label="이 페이지 목차">{data.sections.map(block=><a key={block.id} href={`#${block.id}`}>{block.title}</a>)}</nav></details>}
       <div className="fv-guide-body">
       {data.sections.map(block=><GuideBlock key={block.id} id={block.id} aria-labelledby={`${block.id}-title`}>
         <GuideIntro $illustrated={Boolean(block.art)}>
           {block.art && <Frame $ratio={block.art.kind==='square'?'1 / 1':'3 / 2'} $focus={block.art.focus}><Art art={block.art} sizes="(max-width: 760px) calc(100vw - 32px), 280px" /></Frame>}
-          <div><SectionTitle id={`${block.id}-title`}>{block.title}</SectionTitle>{block.lead && <p><ForeverText>{block.lead}</ForeverText></p>}</div>
+          <div><SectionTitle id={`${block.id}-title`}>{block.title}</SectionTitle>{block.lead && <p><ForeverText spells={spells}>{block.lead}</ForeverText></p>}</div>
         </GuideIntro>
         {block.combat && <SkillGroups combat={block.combat}/>}
         {block.map && <ForeverMap config={block.map}/>}
-        {block.flows?.map(flow=><Flow key={flow.title} {...flow}/>)}
+        {block.journey && <LevelingJourney race={block.journey} early={data.sections.find(item => item.id === 'route').table.rows} later={data.sections.find(item => item.id === 'after-30').table.rows}/>}
+        {block.flows?.map(flow=><Flow key={flow.title} {...flow} spells={spells}/>)}
         {block.facilities && <Facilities table={block.table} arts={block.facilities}/>}
         {block.growth && <TalentGrowth table={block.table}/>}
         {block.spells && <details className="fv-effect-list"><summary>한국어 효과 원문 {block.spells.length}개 펼쳐 읽기</summary><TermList>{block.spells.map(spell=><div key={spell.id}><dt><ForeverSpell spell={spell}/></dt><dd>{spell.verified ? spell.description : `한국어 설명 확인 전 · ${spell.reason}`}{spell.note && <p>원문 표시 주의 · {spell.note}</p>}</dd></div>)}</TermList></details>}
-        {block.items && !block.diagramItems && (block.decisions ? block.items.map(item=><div className="fv-decision" key={item.title}><strong>{item.title}</strong><p><ForeverText>{item.body}</ForeverText></p></div>) : <TermList>{block.items.map(item=><div key={item.title}><dt><ForeverText>{item.title}</ForeverText></dt><dd><ForeverText>{item.body}</ForeverText></dd></div>)}</TermList>)}
-        {block.milestones && <TalentSteps aria-label={`${block.title} 추천 순서`}>{block.milestones.map(({spell,reason},i)=><li key={spell.id}><span className="fv-muted">핵심 이정표 {i+1}</span><br/><ForeverSpell spell={spell} size={40}/><p><ForeverText>{reason}</ForeverText></p></li>)}</TalentSteps>}
+        {block.items && !block.diagramItems && (block.decisions ? block.items.map(item=><div className="fv-decision" key={item.title}><strong>{item.title}</strong><p><ForeverText spells={spells}>{item.body}</ForeverText></p></div>) : <TermList>{block.items.map(item=><div key={item.title}><dt><ForeverText spells={spells}>{item.title}</ForeverText></dt><dd><ForeverText spells={spells}>{item.body}</ForeverText></dd></div>)}</TermList>)}
+        {block.milestones && <TalentSteps aria-label={`${block.title} 추천 순서`}>{block.milestones.map(({spell,reason},i)=><li key={spell.id}><span className="fv-muted">핵심 이정표 {i+1}</span><br/><ForeverSpell spell={spell} size={40}/><p><ForeverText spells={spells}>{reason}</ForeverText></p></li>)}</TalentSteps>}
         {block.table && <>
-          <FootNote>좁은 화면에서는 표를 좌우로 밀어 볼 수 있습니다.</FootNote>
-          <GuideTableWrap tabIndex={0} role="region" aria-label={`${block.title} 표 · 좌우로 이동 가능`}><Table aria-labelledby={`${block.id}-title`}>
+          <GuideTableWrap role="region" aria-label={`${block.title} 표`}><Table aria-labelledby={`${block.id}-title`}>
             <thead><tr>{block.table.columns.map(column=><th key={column} scope="col">{column}</th>)}</tr></thead>
-            <tbody>{block.table.rows.map(([label,...cells])=><tr key={[label,...cells].join('|')}><th scope="row"><ForeverText>{label}</ForeverText></th>{cells.map((cell,i)=><td key={i}><ForeverText>{cell}</ForeverText></td>)}</tr>)}</tbody>
+            <tbody>{block.table.rows.map(([label,...cells])=><tr key={[label,...cells].join('|')}><th scope="row"><ForeverText spells={spells}>{label}</ForeverText></th>{cells.map((cell,i)=><td key={i} data-label={block.table.columns[i+1]}><ForeverText spells={spells}>{cell}</ForeverText></td>)}</tr>)}</tbody>
           </Table></GuideTableWrap>
         </>}
         {block.links && <GuideLinks $cards={block.links.some(link=>link.description || link.art)} aria-label={`${block.title} 관련 안내`}>{block.links.map(link=>link.path.startsWith('/') ? <Link key={link.path} to={link.path} className={link.art?'fv-class-card':undefined}>{link.art && <img src={`/images/forever/${link.art.id}-512.webp`} alt="" loading="lazy"/>}{link.icon && <img className="fv-spec-emblem" src={`https://wow.zamimg.com/images/wow/icons/medium/${link.icon}.jpg`} alt="" loading="lazy"/>}{link.description || link.art ? <><strong>{link.label}</strong>{link.description && <span>{link.description}</span>}</> : link.label}</Link> : <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer">{link.label}</a>)}</GuideLinks>}
-        <GuideLinks aria-label={`${block.title} 근거 원문`}>{block.sources.map(source=><a key={source} href={foreverSources[source].url} target="_blank" rel="noopener noreferrer">{foreverSources[source].label} ↗</a>)}</GuideLinks>
+        <details className="fv-block-sources"><summary>참고한 자료</summary><GuideLinks aria-label={`${block.title} 근거 원문`}>{block.sources.map(source=><a key={source} href={foreverSources[source].url} target="_blank" rel="noopener noreferrer">{foreverSources[source].label} ↗</a>)}</GuideLinks></details>
       </GuideBlock>)}
-      <Sources ids={collectSources(data.sections)}/>
+      <Sources ids={collectSources(data.index ? [data.index] : [], data.sections)}/>
       </div>
     </div>
   </>;
@@ -1213,9 +1349,9 @@ export default function ForeverPage({ section = 'home' }) {
   const Content = SECTIONS[section] || HomeSection;
   const guide = foreverGuides[section] || foreverDetailGuides[section];
   return (
-    <Surface>
+    <Surface className="fv-theme">
       <Page data-forever-section={section}>
-      {guide ? <GuideSection key={section} data={guide} /> : <Content />}
+      {guide ? <GuideSection key={section} data={guide} section={section} /> : <Content />}
       </Page>
     </Surface>
   );

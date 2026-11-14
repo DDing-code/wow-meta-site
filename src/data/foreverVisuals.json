@@ -3075,6 +3075,222 @@
       "level": "지역 후보",
       "approach": "이 표식은 지역 범위입니다. 세부 이동은 퀘스트 안내와 게임 지도를 확인하세요.",
       "marker": false
+    },
+    {
+      "id": "stormwind",
+      "name": "스톰윈드",
+      "kind": "route",
+      "zone": "스톰윈드",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 스톰윈드",
+      "x": 677,
+      "y": 400
+    },
+    {
+      "id": "ironforge",
+      "name": "아이언포지",
+      "kind": "route",
+      "zone": "아이언포지",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 아이언포지",
+      "x": 718,
+      "y": 320
+    },
+    {
+      "id": "orgrimmar",
+      "name": "오그리마",
+      "kind": "route",
+      "zone": "오그리마",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 오그리마",
+      "x": 324,
+      "y": 225
+    },
+    {
+      "id": "undercity",
+      "name": "언더시티",
+      "kind": "route",
+      "zone": "언더시티",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 언더시티",
+      "x": 687,
+      "y": 185
+    },
+    {
+      "id": "dalaran-transit",
+      "name": "달라란 (경유)",
+      "kind": "route",
+      "zone": "달라란 (경유)",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 달라란",
+      "x": 688,
+      "y": 213
+    },
+    {
+      "id": "skyborne-landing",
+      "name": "멀고어·잊혀진 땅 사이 고원",
+      "x": 221,
+      "y": 301,
+      "kind": "route",
+      "zone": "멀고어·잊혀진 땅 사이 고원",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json 타일·refs/world.png의 지역 범위 대조"
+    },
+    {
+      "id": "desolace",
+      "name": "잊혀진 땅",
+      "kind": "route",
+      "zone": "잊혀진 땅",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 잊혀진 땅",
+      "x": 189,
+      "y": 285
+    },
+    {
+      "id": "stranglethorn",
+      "name": "가시덤불 골짜기",
+      "kind": "route",
+      "zone": "가시덤불 골짜기",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 가시덤불 골짜기",
+      "x": 715,
+      "y": 500
+    },
+    {
+      "id": "tanaris",
+      "name": "타나리스",
+      "kind": "route",
+      "zone": "타나리스",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 타나리스",
+      "x": 309,
+      "y": 436
+    },
+    {
+      "id": "feralas",
+      "name": "페랄라스",
+      "kind": "route",
+      "zone": "페랄라스",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 페랄라스",
+      "x": 189,
+      "y": 362
+    },
+    {
+      "id": "felwood",
+      "name": "악령의 숲",
+      "kind": "route",
+      "zone": "악령의 숲",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 악령의 숲",
+      "x": 257,
+      "y": 152
+    },
+    {
+      "id": "winterspring",
+      "name": "여명의 설원",
+      "kind": "route",
+      "zone": "여명의 설원",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 여명의 설원",
+      "x": 313,
+      "y": 132
+    },
+    {
+      "id": "silithus",
+      "name": "실리더스",
+      "kind": "route",
+      "zone": "실리더스",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 실리더스",
+      "x": 214,
+      "y": 414
+    },
+    {
+      "id": "hinterlands",
+      "name": "동부 내륙지",
+      "kind": "route",
+      "zone": "동부 내륙지",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json: 동부 내륙지",
+      "x": 769,
+      "y": 214
+    },
+    {
+      "id": "thousand-needles",
+      "name": "버섯구름 봉우리",
+      "x": 285,
+      "y": 377,
+      "kind": "route",
+      "zone": "버섯구름 봉우리",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json 타일·refs/world.png의 지역 범위 대조"
+    },
+    {
+      "id": "ungoro",
+      "name": "운고로 분화구",
+      "x": 260,
+      "y": 414,
+      "kind": "route",
+      "zone": "운고로 분화구",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json 타일·refs/world.png의 지역 범위 대조"
+    },
+    {
+      "id": "western-plaguelands",
+      "name": "서부 역병지대",
+      "x": 733,
+      "y": 176,
+      "kind": "route",
+      "zone": "서부 역병지대",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json 타일·refs/world.png의 지역 범위 대조"
+    },
+    {
+      "id": "eastern-plaguelands",
+      "name": "동부 역병지대",
+      "x": 778,
+      "y": 174,
+      "kind": "route",
+      "zone": "동부 역병지대",
+      "level": "지역·경유 범위",
+      "approach": "표식은 지역 범위입니다. 실제 길과 승강장은 게임 지도에서 확인하세요.",
+      "marker": false,
+      "evidence": "map-evidence.json 타일·refs/world.png의 지역 범위 대조"
     }
   ],
   "routes": {
@@ -3082,51 +3298,758 @@
       "elwynn",
       "westfall",
       "redridge",
-      "duskwood"
+      "wetlands"
     ],
     "dwarf": [
       "dunmorogh",
       "lochmodan",
+      "redridge",
+      "westfall",
       "wetlands"
     ],
     "gnome": [
       "dunmorogh",
       "lochmodan",
+      "redridge",
+      "westfall",
       "wetlands"
     ],
     "night-elf": [
       "teldrassil",
       "darkshore",
-      "ashenvale"
+      "ashenvale",
+      "stonetalon",
+      "wetlands"
     ],
     "orc": [
       "durotar",
-      "barrens",
-      "stonetalon",
-      "ashenvale"
+      "tirisfal",
+      "barrens"
     ],
     "troll": [
       "durotar",
-      "barrens",
-      "stonetalon",
-      "ashenvale"
+      "tirisfal",
+      "barrens"
     ],
     "tauren": [
       "mulgore",
-      "barrens",
-      "stonetalon",
-      "ashenvale"
+      "silverpine",
+      "barrens"
     ],
     "undead": [
       "tirisfal",
       "silverpine",
-      "hillsbrad"
+      "barrens"
     ],
     "skyborne-alliance": [
-      "zephras"
+      "zephras",
+      "westfall",
+      "redridge",
+      "wetlands"
     ],
     "skyborne-horde": [
-      "zephras"
+      "zephras",
+      "silverpine",
+      "barrens"
     ]
+  },
+  "journeys": {
+    "human": {
+      "faction": "alliance",
+      "stages": [
+        {
+          "points": [
+            "elwynn"
+          ],
+          "travel": "북녘골에서 시작해 골드샤이어로 진행합니다. 주변 퀘스트를 마친 뒤 서부 몰락지대로 넘어갑니다."
+        },
+        {
+          "points": [
+            "westfall"
+          ],
+          "travel": "엘윈 숲에서 서부 몰락지대로 이동하고 감시의 언덕을 거점으로 삼습니다."
+        },
+        {
+          "points": [
+            "elwynn",
+            "redridge"
+          ],
+          "travel": "엘윈 숲 쪽을 거쳐 붉은마루 산맥의 레이크샤이어로 갑니다."
+        },
+        {
+          "points": [
+            "stormwind",
+            "ironforge",
+            "lochmodan",
+            "wetlands"
+          ],
+          "travel": "스톰윈드 → 아이언포지는 지하철로 이동할 수 있습니다. 모단 호수 쪽을 거쳐 저습지로 이어 갑니다."
+        },
+        {
+          "points": [
+            "duskwood",
+            "redridge"
+          ],
+          "travel": "저습지 방문을 마친 뒤 그늘숲·붉은마루 산맥에 남은 퀘스트를 이어 갑니다. 두 지역을 모두 비울 필요는 없습니다."
+        },
+        {
+          "points": [
+            "wetlands"
+          ],
+          "travel": "저습지로 돌아갑니다. 발굴 현장 파티가 있다면 이동 일정을 함께 잡으세요."
+        },
+        {
+          "points": [
+            "darkshore",
+            "ashenvale",
+            "stonetalon"
+          ],
+          "travel": "동부 왕국에서 배편으로 아우버다인에 건너간 뒤 잿빛 골짜기·돌발톱 산맥을 연결합니다. 항구에서 목적지를 확인하세요."
+        }
+      ]
+    },
+    "dwarf": {
+      "faction": "alliance",
+      "stages": [
+        {
+          "points": [
+            "dunmorogh"
+          ],
+          "travel": "눈마루 골짜기에서 시작해 카라노스로 진행합니다."
+        },
+        {
+          "points": [
+            "lochmodan"
+          ],
+          "travel": "던 모로에서 모단 호수의 텔사마로 이어 갑니다. 영주의 전당 파티는 출발 전 일정을 맞추세요."
+        },
+        {
+          "points": [
+            "ironforge",
+            "stormwind",
+            "redridge",
+            "westfall"
+          ],
+          "travel": "아이언포지 → 스톰윈드 지하철을 이용한 뒤 붉은마루 산맥·서부 몰락지대의 퀘스트를 진행합니다."
+        },
+        {
+          "points": [
+            "stormwind",
+            "ironforge",
+            "lochmodan",
+            "wetlands"
+          ],
+          "travel": "아이언포지·모단 호수 쪽으로 돌아와 저습지에서 다른 얼라이언스 경로에 합류합니다."
+        },
+        {
+          "points": [
+            "duskwood",
+            "redridge"
+          ],
+          "travel": "저습지 방문을 마친 뒤 그늘숲·붉은마루 산맥에 남은 퀘스트를 이어 갑니다. 두 지역을 모두 비울 필요는 없습니다."
+        },
+        {
+          "points": [
+            "wetlands"
+          ],
+          "travel": "저습지로 돌아갑니다. 발굴 현장 파티가 있다면 이동 일정을 함께 잡으세요."
+        },
+        {
+          "points": [
+            "darkshore",
+            "ashenvale",
+            "stonetalon"
+          ],
+          "travel": "동부 왕국에서 배편으로 아우버다인에 건너간 뒤 잿빛 골짜기·돌발톱 산맥을 연결합니다. 항구에서 목적지를 확인하세요."
+        }
+      ]
+    },
+    "night-elf": {
+      "faction": "alliance",
+      "stages": [
+        {
+          "points": [
+            "teldrassil"
+          ],
+          "travel": "그늘 협곡에서 돌라나르로 진행합니다. 섬을 떠날 때 루테란 마을의 배편을 확인하세요."
+        },
+        {
+          "points": [
+            "darkshore"
+          ],
+          "travel": "루테란 마을 → 아우버다인 배를 타고 어둠해안에 도착합니다."
+        },
+        {
+          "points": [
+            "ashenvale"
+          ],
+          "travel": "어둠해안에서 잿빛 골짜기로 내려가 아스트라나르 주변 퀘스트를 진행합니다."
+        },
+        {
+          "points": [
+            "stonetalon"
+          ],
+          "travel": "잿빛 골짜기에서 돌발톱 산맥 구간을 진행한 뒤 대륙 이동을 준비합니다."
+        },
+        {
+          "points": [
+            "darkshore",
+            "wetlands"
+          ],
+          "travel": "아우버다인으로 돌아가 메네실 항구행 배를 탑니다. 저습지에 도착하면 얼라이언스 공통 구간에 합류합니다."
+        },
+        {
+          "points": [
+            "duskwood",
+            "redridge"
+          ],
+          "travel": "저습지 방문을 마친 뒤 그늘숲·붉은마루 산맥에 남은 퀘스트를 이어 갑니다. 두 지역을 모두 비울 필요는 없습니다."
+        },
+        {
+          "points": [
+            "wetlands"
+          ],
+          "travel": "저습지로 돌아갑니다. 발굴 현장 파티가 있다면 이동 일정을 함께 잡으세요."
+        },
+        {
+          "points": [
+            "darkshore",
+            "ashenvale",
+            "stonetalon"
+          ],
+          "travel": "동부 왕국에서 배편으로 아우버다인에 건너간 뒤 잿빛 골짜기·돌발톱 산맥을 연결합니다. 항구에서 목적지를 확인하세요."
+        }
+      ]
+    },
+    "orc": {
+      "faction": "horde",
+      "stages": [
+        {
+          "points": [
+            "durotar"
+          ],
+          "travel": "시험의 골짜기 → 센진 마을·칼바위 언덕 순서로 진행합니다."
+        },
+        {
+          "points": [
+            "orgrimmar",
+            "undercity",
+            "tirisfal"
+          ],
+          "travel": "오그리마 바깥에서 언더시티행 비행선을 타고 티리스팔 숲 구간을 진행합니다."
+        },
+        {
+          "points": [
+            "undercity",
+            "orgrimmar",
+            "barrens"
+          ],
+          "travel": "오그리마행 비행선으로 돌아온 뒤 불모의 땅 크로스로드에서 합류합니다."
+        },
+        {
+          "points": [
+            "orgrimmar",
+            "undercity",
+            "hillsbrad"
+          ],
+          "travel": "오그리마 → 언더시티 비행선으로 건너간 뒤 타렌 밀농장 쪽으로 이동합니다."
+        },
+        {
+          "points": [
+            "undercity",
+            "orgrimmar",
+            "stonetalon",
+            "barrens"
+          ],
+          "travel": "언더시티 → 오그리마 비행선으로 돌아와 돌발톱 산맥과 불모의 땅 남부를 이어 갑니다."
+        },
+        {
+          "points": [
+            "ashenvale"
+          ],
+          "travel": "칼림도어에 머물며 잿빛 골짜기의 남은 퀘스트를 진행합니다."
+        },
+        {
+          "points": [
+            "barrens",
+            "thousand-needles"
+          ],
+          "travel": "불모의 땅 남부를 거쳐 버섯구름 봉우리로 갑니다. 가시덩굴 우리 파티는 선택입니다."
+        }
+      ]
+    },
+    "tauren": {
+      "faction": "horde",
+      "stages": [
+        {
+          "points": [
+            "mulgore"
+          ],
+          "travel": "나라체 야영지에서 블러드후프 마을로 진행합니다."
+        },
+        {
+          "points": [
+            "orgrimmar",
+            "undercity",
+            "silverpine"
+          ],
+          "travel": "오그리마 쪽으로 이동 → 언더시티행 비행선 → 은빛소나무 숲 순서입니다. 멀고어에서 바로 이어지는 육로가 아닙니다."
+        },
+        {
+          "points": [
+            "undercity",
+            "orgrimmar",
+            "barrens"
+          ],
+          "travel": "언더시티에서 오그리마행 비행선을 타고 불모의 땅으로 돌아와 합류합니다."
+        },
+        {
+          "points": [
+            "orgrimmar",
+            "undercity",
+            "hillsbrad"
+          ],
+          "travel": "오그리마 → 언더시티 비행선으로 건너간 뒤 타렌 밀농장 쪽으로 이동합니다."
+        },
+        {
+          "points": [
+            "undercity",
+            "orgrimmar",
+            "stonetalon",
+            "barrens"
+          ],
+          "travel": "언더시티 → 오그리마 비행선으로 돌아와 돌발톱 산맥과 불모의 땅 남부를 이어 갑니다."
+        },
+        {
+          "points": [
+            "ashenvale"
+          ],
+          "travel": "칼림도어에 머물며 잿빛 골짜기의 남은 퀘스트를 진행합니다."
+        },
+        {
+          "points": [
+            "barrens",
+            "thousand-needles"
+          ],
+          "travel": "불모의 땅 남부를 거쳐 버섯구름 봉우리로 갑니다. 가시덩굴 우리 파티는 선택입니다."
+        }
+      ]
+    },
+    "undead": {
+      "faction": "horde",
+      "stages": [
+        {
+          "points": [
+            "tirisfal"
+          ],
+          "travel": "죽음의 종소리 마을에서 브릴로 이어 갑니다. 언더시티 주변의 퀘스트도 함께 확인하세요."
+        },
+        {
+          "points": [
+            "silverpine"
+          ],
+          "travel": "티리스팔 숲에서 은빛소나무 숲으로 이동해 공동묘지 주변을 진행합니다."
+        },
+        {
+          "points": [
+            "undercity",
+            "orgrimmar",
+            "barrens"
+          ],
+          "travel": "언더시티 바깥의 오그리마행 비행선 → 불모의 땅 순서로 이동합니다."
+        },
+        {
+          "points": [
+            "orgrimmar",
+            "undercity",
+            "hillsbrad"
+          ],
+          "travel": "오그리마 → 언더시티 비행선으로 건너간 뒤 타렌 밀농장 쪽으로 이동합니다."
+        },
+        {
+          "points": [
+            "undercity",
+            "orgrimmar",
+            "stonetalon",
+            "barrens"
+          ],
+          "travel": "언더시티 → 오그리마 비행선으로 돌아와 돌발톱 산맥과 불모의 땅 남부를 이어 갑니다."
+        },
+        {
+          "points": [
+            "ashenvale"
+          ],
+          "travel": "칼림도어에 머물며 잿빛 골짜기의 남은 퀘스트를 진행합니다."
+        },
+        {
+          "points": [
+            "barrens",
+            "thousand-needles"
+          ],
+          "travel": "불모의 땅 남부를 거쳐 버섯구름 봉우리로 갑니다. 가시덩굴 우리 파티는 선택입니다."
+        }
+      ]
+    },
+    "skyborne-alliance": {
+      "faction": "alliance",
+      "stages": [
+        {
+          "points": [
+            "zephras"
+          ],
+          "travel": "제프라스 섬의 시작 퀘스트를 끝내고 남쪽 항구에서 얼라이언스 배를 찾습니다."
+        },
+        {
+          "points": [
+            "dalaran-transit",
+            "stormwind"
+          ],
+          "travel": "제프라스 섬 → 달라란은 배, 달라란 → 스톰윈드는 스카이본 전용 차원문입니다. 달라란 던전에 들어가는 단계가 아닙니다."
+        },
+        {
+          "points": [
+            "westfall"
+          ],
+          "travel": "스톰윈드에서 서부 몰락지대로 이동해 인간 출발 경로에 합류합니다."
+        },
+        {
+          "points": [
+            "elwynn",
+            "redridge"
+          ],
+          "travel": "엘윈 숲 쪽을 거쳐 붉은마루 산맥의 레이크샤이어로 이어 갑니다."
+        },
+        {
+          "points": [
+            "stormwind",
+            "ironforge",
+            "lochmodan",
+            "wetlands"
+          ],
+          "travel": "스톰윈드 → 아이언포지 지하철을 이용하고 모단 호수 쪽을 거쳐 저습지로 이어 갑니다."
+        },
+        {
+          "points": [
+            "duskwood",
+            "redridge"
+          ],
+          "travel": "저습지 방문을 마친 뒤 그늘숲·붉은마루 산맥에 남은 퀘스트를 이어 갑니다. 두 지역을 모두 비울 필요는 없습니다."
+        },
+        {
+          "points": [
+            "wetlands"
+          ],
+          "travel": "저습지로 돌아갑니다. 발굴 현장 파티가 있다면 이동 일정을 함께 잡으세요."
+        },
+        {
+          "points": [
+            "darkshore",
+            "ashenvale",
+            "stonetalon"
+          ],
+          "travel": "동부 왕국에서 배편으로 아우버다인에 건너간 뒤 잿빛 골짜기·돌발톱 산맥을 연결합니다. 항구에서 목적지를 확인하세요."
+        }
+      ]
+    },
+    "skyborne-horde": {
+      "faction": "horde",
+      "stages": [
+        {
+          "points": [
+            "zephras"
+          ],
+          "travel": "섬의 시작 퀘스트를 마친 뒤 호드 배편을 확인합니다. 얼라이언스 배와 목적지가 다릅니다."
+        },
+        {
+          "points": [
+            "skyborne-landing"
+          ],
+          "travel": "배를 타고 멀고어·잊혀진 땅 사이 고원에 내립니다. 은빛소나무 숲 직행 배나 오그리마 직행 차원문이 아닙니다."
+        },
+        {
+          "points": [
+            "orgrimmar",
+            "undercity",
+            "silverpine"
+          ],
+          "travel": "고원에서 오그리마 쪽으로 이동해 언더시티행 비행선을 타고, 은빛소나무 숲으로 이어 갑니다."
+        },
+        {
+          "points": [
+            "undercity",
+            "orgrimmar",
+            "barrens"
+          ],
+          "travel": "오그리마행 비행선으로 돌아와 불모의 땅에서 다른 호드 경로에 합류합니다."
+        },
+        {
+          "points": [
+            "orgrimmar",
+            "undercity",
+            "hillsbrad"
+          ],
+          "travel": "오그리마 → 언더시티 비행선으로 건너간 뒤 타렌 밀농장 쪽으로 이동합니다."
+        },
+        {
+          "points": [
+            "undercity",
+            "orgrimmar",
+            "stonetalon",
+            "barrens"
+          ],
+          "travel": "언더시티 → 오그리마 비행선으로 돌아와 돌발톱 산맥과 불모의 땅 남부를 이어 갑니다."
+        },
+        {
+          "points": [
+            "ashenvale"
+          ],
+          "travel": "칼림도어에 머물며 잿빛 골짜기의 남은 퀘스트를 진행합니다."
+        },
+        {
+          "points": [
+            "barrens",
+            "thousand-needles"
+          ],
+          "travel": "불모의 땅 남부를 거쳐 버섯구름 봉우리로 갑니다. 가시덩굴 우리 파티는 선택입니다."
+        }
+      ]
+    },
+    "gnome": {
+      "faction": "alliance",
+      "stages": [
+        {
+          "points": [
+            "dunmorogh"
+          ],
+          "travel": "눈마루 골짜기에서 시작해 카라노스로 진행합니다."
+        },
+        {
+          "points": [
+            "lochmodan"
+          ],
+          "travel": "던 모로에서 모단 호수의 텔사마로 이어 갑니다. 영주의 전당 파티는 출발 전 일정을 맞추세요."
+        },
+        {
+          "points": [
+            "ironforge",
+            "stormwind",
+            "redridge",
+            "westfall"
+          ],
+          "travel": "아이언포지 → 스톰윈드 지하철을 이용한 뒤 붉은마루 산맥·서부 몰락지대의 퀘스트를 진행합니다."
+        },
+        {
+          "points": [
+            "stormwind",
+            "ironforge",
+            "lochmodan",
+            "wetlands"
+          ],
+          "travel": "아이언포지·모단 호수 쪽으로 돌아와 저습지에서 다른 얼라이언스 경로에 합류합니다."
+        },
+        {
+          "points": [
+            "duskwood",
+            "redridge"
+          ],
+          "travel": "저습지 방문을 마친 뒤 그늘숲·붉은마루 산맥에 남은 퀘스트를 이어 갑니다. 두 지역을 모두 비울 필요는 없습니다."
+        },
+        {
+          "points": [
+            "wetlands"
+          ],
+          "travel": "저습지로 돌아갑니다. 발굴 현장 파티가 있다면 이동 일정을 함께 잡으세요."
+        },
+        {
+          "points": [
+            "darkshore",
+            "ashenvale",
+            "stonetalon"
+          ],
+          "travel": "동부 왕국에서 배편으로 아우버다인에 건너간 뒤 잿빛 골짜기·돌발톱 산맥을 연결합니다. 항구에서 목적지를 확인하세요."
+        }
+      ]
+    },
+    "troll": {
+      "faction": "horde",
+      "stages": [
+        {
+          "points": [
+            "durotar"
+          ],
+          "travel": "시험의 골짜기 → 센진 마을·칼바위 언덕 순서로 진행합니다."
+        },
+        {
+          "points": [
+            "orgrimmar",
+            "undercity",
+            "tirisfal"
+          ],
+          "travel": "오그리마 바깥에서 언더시티행 비행선을 타고 티리스팔 숲 구간을 진행합니다."
+        },
+        {
+          "points": [
+            "undercity",
+            "orgrimmar",
+            "barrens"
+          ],
+          "travel": "오그리마행 비행선으로 돌아온 뒤 불모의 땅 크로스로드에서 합류합니다."
+        },
+        {
+          "points": [
+            "orgrimmar",
+            "undercity",
+            "hillsbrad"
+          ],
+          "travel": "오그리마 → 언더시티 비행선으로 건너간 뒤 타렌 밀농장 쪽으로 이동합니다."
+        },
+        {
+          "points": [
+            "undercity",
+            "orgrimmar",
+            "stonetalon",
+            "barrens"
+          ],
+          "travel": "언더시티 → 오그리마 비행선으로 돌아와 돌발톱 산맥과 불모의 땅 남부를 이어 갑니다."
+        },
+        {
+          "points": [
+            "ashenvale"
+          ],
+          "travel": "칼림도어에 머물며 잿빛 골짜기의 남은 퀘스트를 진행합니다."
+        },
+        {
+          "points": [
+            "barrens",
+            "thousand-needles"
+          ],
+          "travel": "불모의 땅 남부를 거쳐 버섯구름 봉우리로 갑니다. 가시덩굴 우리 파티는 선택입니다."
+        }
+      ]
+    }
+  },
+  "laterJourneys": {
+    "alliance": [
+      {
+        "points": [
+          "desolace",
+          "stranglethorn"
+        ],
+        "travel": "30레벨 잿빛 골짜기·돌발톱 산맥 뒤에는 잊혀진 땅을 비교하고, 동부 왕국으로 돌아가면 가시덤불 골짜기를 후보로 삼습니다."
+      },
+      {
+        "points": [
+          "stranglethorn",
+          "riverglades"
+        ],
+        "travel": "가시덤불 골짜기 또는 강물터의 퀘스트를 비교합니다. 강물터를 고르면 다음 40레벨 구간에도 이어 갈 수 있습니다."
+      },
+      {
+        "points": [
+          "riverglades",
+          "tanaris"
+        ],
+        "travel": "강물터에 남거나 타나리스로 옮기는 선택입니다. 대륙을 바꿀 때는 표의 교통 안내를 함께 보세요. 선택한 후보 사이의 선은 실제 항로가 아닙니다."
+      },
+      {
+        "points": [
+          "tanaris",
+          "feralas",
+          "hinterlands"
+        ],
+        "travel": "현재 대륙의 남은 퀘스트에 맞춰 타나리스·페랄라스 또는 동부 내륙지를 비교합니다."
+      },
+      {
+        "points": [
+          "ungoro",
+          "felwood"
+        ],
+        "travel": "타나리스 쪽에서 이어 가면 운고로 분화구, 북부 퀘스트를 이어 가면 악령의 숲을 비교합니다."
+      },
+      {
+        "points": [
+          "winterspring",
+          "western-plaguelands"
+        ],
+        "travel": "악령의 숲 쪽 경로는 여명의 설원, 동부 왕국으로 돌아가면 역병지대를 비교합니다. 지도 연결은 추정입니다."
+      },
+      {
+        "points": [
+          "western-plaguelands",
+          "eastern-plaguelands",
+          "winterspring",
+          "silithus"
+        ],
+        "travel": "현재 대륙에서 남은 퀘스트를 먼저 진행합니다. 표시된 지역을 전부 도는 필수 순서가 아닙니다."
+      }
+    ],
+    "horde": [
+      {
+        "points": [
+          "thousand-needles",
+          "stranglethorn"
+        ],
+        "travel": "버섯구름 봉우리의 남은 퀘스트를 먼저 봅니다. 가시덤불 골짜기로 옮기면 오그리마·언더시티에서 그롬골행 비행선을 이용합니다."
+      },
+      {
+        "points": [
+          "stranglethorn",
+          "desolace",
+          "riverglades"
+        ],
+        "travel": "가시덤불 골짜기·잊혀진 땅·강물터 중 현재 퀘스트에 맞춰 고릅니다. 강물터는 타나리스의 중립 배편으로 접근할 수 있습니다."
+      },
+      {
+        "points": [
+          "riverglades",
+          "tanaris"
+        ],
+        "travel": "강물터에 남거나 타나리스로 옮기는 선택입니다. 대륙을 바꿀 때는 표의 교통 안내를 함께 보세요. 선택한 후보 사이의 선은 실제 항로가 아닙니다."
+      },
+      {
+        "points": [
+          "tanaris",
+          "feralas",
+          "hinterlands"
+        ],
+        "travel": "현재 대륙의 남은 퀘스트에 맞춰 타나리스·페랄라스 또는 동부 내륙지를 비교합니다."
+      },
+      {
+        "points": [
+          "ungoro",
+          "felwood"
+        ],
+        "travel": "타나리스 쪽에서 이어 가면 운고로 분화구, 북부 퀘스트를 이어 가면 악령의 숲을 비교합니다."
+      },
+      {
+        "points": [
+          "winterspring",
+          "western-plaguelands",
+          "eastern-plaguelands"
+        ],
+        "travel": "악령의 숲 쪽 경로는 여명의 설원, 동부 왕국으로 돌아가면 역병지대를 비교합니다. 지도 연결은 추정입니다."
+      },
+      {
+        "points": [
+          "western-plaguelands",
+          "eastern-plaguelands",
+          "winterspring",
+          "silithus"
+        ],
+        "travel": "현재 대륙에서 남은 퀘스트를 먼저 진행합니다. 표시된 지역을 전부 도는 필수 순서가 아닙니다."
+      }
+    ]
+  },
+  "journeyTransports": {
+    "zephras>dalaran-transit": "배",
+    "dalaran-transit>stormwind": "스카이본 전용 차원문",
+    "zephras>skyborne-landing": "호드 배",
+    "teldrassil>darkshore": "루테란 → 아우버다인 배",
+    "darkshore>wetlands": "아우버다인 → 메네실 항구 배",
+    "wetlands>darkshore": "메네실 항구 → 아우버다인 배",
+    "orgrimmar>undercity": "비행선",
+    "undercity>orgrimmar": "비행선",
+    "stormwind>ironforge": "지하철",
+    "ironforge>stormwind": "지하철"
   }
 }

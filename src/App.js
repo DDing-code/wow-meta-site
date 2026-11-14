@@ -158,6 +158,7 @@ function App() {
               <Route path="/forever/leveling" element={<ForeverPage section="leveling" />} />
               <Route path="/forever/growth" element={<ForeverPage section="growth" />} />
               <Route path="/forever/classes" element={<ForeverPage section="classes" />} />
+              <Route path="/forever/races" element={<ForeverPage section="races" />} />
               <Route path="/forever/raids" element={<ForeverPage section="raids" />} />
               {Object.keys(foreverDetailGuides).map(id => <Route key={id} path={`/forever/${id}`} element={<ForeverPage section={id} />} />)}
               <Route path="/forever/*" element={<Navigate to="/forever" replace />} />

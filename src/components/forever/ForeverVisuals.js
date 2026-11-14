@@ -1,8 +1,21 @@
 import React from 'react';
 import ForeverSpell, { ForeverText } from './ForeverSpell';
 
-export function Flow({ title, steps, note }) {
- return <figure className="fv-visual" aria-label={title}>{title && <h3>{title}</h3>}<ol className="fv-flow">{steps.map((s,i)=><li key={i}><span className="fv-step">{String(i+1).padStart(2,'0')} · {s.title}</span>{s.id && <ForeverSpell id={s.id} size={40}/>}<p><ForeverText>{s.body}</ForeverText></p>{s.relation && <span className="fv-relation">{s.relation}</span>}</li>)}</ol>{note && <figcaption className="fv-caption">{note}</figcaption>}</figure>;
+export function Flow({ title, steps, note, spells }) {
+ return <figure className="fv-visual" aria-label={title}>
+   {title && <h3>{title}</h3>}
+   <ol className={`fv-flow${steps.length > 3 ? ' fv-flow-long' : ''}`}>
+     {steps.map((step, i) => <li key={i}>
+       <span className="fv-step">{String(i + 1).padStart(2, '0')} · {step.title}</span>
+       <div className="fv-flow-node">
+         {step.id ? <ForeverSpell id={step.id} size={48} /> : <span className="fv-action-node" aria-hidden="true">{i + 1}</span>}
+       </div>
+       <p><ForeverText spells={spells}>{step.body}</ForeverText></p>
+       {step.relation && <span className="fv-relation">{step.relation}</span>}
+     </li>)}
+   </ol>
+   {note && <figcaption className="fv-caption">{note}</figcaption>}
+ </figure>;
 }
 export function SkillGroups({ combat }) {
  return <><div className="fv-facts"><span>{combat.role}</span><span>{combat.resource}</span><span>육성·파티 운용</span></div><div className="fv-skill-groups">{[['전투를 이루는 기술·특성',combat.core],['생존·지원·연계',combat.support]].filter(([,ids])=>ids.length).map(([label,ids])=><div className="fv-skill-group" key={label}><h3>{label}</h3>{ids.map(id=><ForeverSpell key={id} id={id} size={32}/>)}</div>)}</div><p className="fv-caption">한국어 원문을 확인한 주요 기술·특성입니다. 아이콘이나 이름을 누르면 설명을 펼칠 수 있습니다. 배우는 시점과 등급은 마법책에서 함께 확인하세요.</p></>;
