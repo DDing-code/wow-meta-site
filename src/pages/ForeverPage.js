@@ -16,29 +16,29 @@ import {
   foreverStart,
 } from '../data/foreverGuide.js';
 
-// 포에버 안내 일곱 쪽. 도트 풍경과 숲빛·청동색 모험 일지 테마를 공유한다.
+// 포에버 안내 일곱 쪽. 도트 풍경과 하늘색 모험 일지 테마를 공유한다.
 // 글은 src/data/foreverGuide.js에 있고 여기서는 그리기만 한다. 리테일 KB·스킬 자료는 읽지 않는다.
-// 숲빛 바탕·금색 제목·초록 이동 표시로 포에버 안내를 구분한다.
+// 남색 바탕·하늘색 제목·이동 표시로 포에버 안내를 구분한다.
 // 그림은 공식 아트·공지 스크린샷을 도트로 다시 그린 것(public/images/forever)이고, 글 자료의 art 항목이 어느 그림인지 정한다.
 
-export const FOREVER_ACCENT = '#8dbb6c';
-const LINE = '#475044';
-const PANEL = '#142019 url("/images/forever/ui/bronze-panel.webp") center / 160% 160% no-repeat';
-const PARCHMENT = '#d6bd86 url("/images/forever/ui/parchment.webp") center / cover';
-// 모서리는 고정 크기로 두고 직선 테두리만 늘려 좁거나 긴 상자에서도 장식을 보존한다.
-const bronzeFrame = css`
-  border: 6px solid #8c784e;
-  border-image: url('/images/forever/ui/bronze-panel.webp') 180 / 24px / 0 round;
-  box-shadow: 4px 4px 0 #080f0b;
+export const FOREVER_ACCENT = '#8dd9f5';
+const LINE = '#385a70';
+const PANEL = 'linear-gradient(#142b3de8, #142b3de8), url("/images/forever/ui/bronze-panel.webp") center / 160% 160% no-repeat';
+const PARCHMENT = 'linear-gradient(#b8e4f2df, #b8e4f2df), url("/images/forever/ui/parchment.webp") center / cover';
+// 얇은 이중 테두리와 도트 그림자로 하늘색 틀을 맞춘다.
+const pixelFrame = css`
+  border: 6px solid #527c91;
+  border-style: double;
+  box-shadow: 4px 4px 0 #07111c;
 `;
 
 const Surface = styled.div`
-  background: #101a15;
-  color: #e8e9dc;
+  background: #0e1c2a;
+  color: #e5f1f7;
   min-height: calc(100dvh - 59px);
 
-  a:focus-visible { outline: 2px solid #e4c78b; outline-offset: 4px; }
-  ::selection { background: #e4c78b; color: #101a15; }
+  a:focus-visible { outline: 2px solid #9edff7; outline-offset: 4px; }
+  ::selection { background: #9edff7; color: #0e1c2a; }
   h1, h2, h3, nav, kbd {
     font-family: 'Galmuri11', 'Noto Sans KR', sans-serif;
     font-synthesis: none;
@@ -67,14 +67,14 @@ const Frame = styled.div`
   position: relative;
   overflow: hidden;
   aspect-ratio: ${props => props.$ratio || '3 / 2'};
-  border: 2px solid #8c784e;
-  background: #101a15;
+  border: 2px solid #527c91;
+  background: #0e1c2a;
 
   &::after {
     content: '';
     position: absolute;
     inset: 3px;
-    border: 1px solid #d8b67155;
+    border: 1px solid #a9def555;
     pointer-events: none;
   }
 
@@ -95,9 +95,9 @@ const Hero = styled.header`
   grid-template-columns: minmax(0, 1fr);
   min-height: 420px;
   align-items: center;
-  border: 1px solid #a98b54;
-  background: #101a15;
-  box-shadow: 6px 6px 0 #080f0b;
+  border: 1px solid #6398b4;
+  background: #0e1c2a;
+  box-shadow: 6px 6px 0 #07111c;
 
   @media (max-width: 760px) { min-height: 0; }
   &::after {
@@ -106,7 +106,7 @@ const Hero = styled.header`
     inset: 0;
     z-index: 2;
     pointer-events: none;
-    ${bronzeFrame}
+    ${pixelFrame}
   }
 `;
 
@@ -117,7 +117,7 @@ const HeroCopy = styled.div`
   z-index: 1;
   width: 56%;
   padding: 42px;
-  text-shadow: 2px 2px 0 #080f0b;
+  text-shadow: 2px 2px 0 #07111c;
   @media (max-width: 760px) { grid-row: 2; width: 100%; padding: 24px 28px 28px; }
 `;
 
@@ -132,7 +132,7 @@ const Banner = styled(Frame)`
   &::after {
     inset: 0;
     border: 0;
-    background: linear-gradient(90deg, #0b1710 0%, #0b1710f2 27%, #0b1710bb 52%, #0b171030 78%, #0b171000), linear-gradient(0deg, #0b171066, transparent 45%);
+    background: linear-gradient(90deg, #0b1b2b 0%, #0b1b2bf2 27%, #0b1b2bbb 52%, #0b1b2b30 78%, #0b1b2b00), linear-gradient(0deg, #0b1b2b66, transparent 45%);
   }
 
   @media (max-width: 760px) {
@@ -143,7 +143,7 @@ const Banner = styled(Frame)`
     border-bottom: 1px solid ${LINE};
     aspect-ratio: 16 / 9;
     img { object-position: ${props => props.$focus || 'center'}; }
-    &::after { background: linear-gradient(0deg, #101a15, transparent 35%); }
+    &::after { background: linear-gradient(0deg, #0e1c2a, transparent 35%); }
   }
 `;
 
@@ -151,9 +151,9 @@ const PageNav = styled.nav`
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
   margin-top: 10px;
-  border: 2px solid #756442;
+  border: 2px solid #42687e;
   background: ${PANEL};
-  box-shadow: 4px 4px 0 #080f0b;
+  box-shadow: 4px 4px 0 #07111c;
 
   a {
     display: flex;
@@ -162,13 +162,13 @@ const PageNav = styled.nav`
     min-height: 48px;
     padding: 8px;
     border-bottom: 3px solid transparent;
-    color: #c4cebd;
+    color: #c4dce9;
     font-size: 1rem;
     font-weight: 700;
   }
   a + a { border-left: 1px solid ${LINE}; }
-  a[aria-current="page"] { background: #34432a; border-bottom-color: #d4b16e; color: #ffe3a6; box-shadow: inset 0 2px #637447; }
-  a:hover { background: #2b3d2e; color: #ffe3a6; }
+  a[aria-current="page"] { background: #20435b; border-bottom-color: #83d5f5; color: #bcecff; box-shadow: inset 0 2px #4a85a3; }
+  a:hover { background: #1d3c52; color: #bcecff; }
   @media (max-width: 760px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     a:first-child { grid-column: 1 / -1; }
@@ -179,14 +179,14 @@ const PageNav = styled.nav`
 
 const Eyebrow = styled.p`
   font-family: 'Galmuri11', sans-serif;
-  color: #b8d69d;
+  color: #9edff7;
   font-size: 0.85rem;
   font-weight: 700;
 `;
 
 const Title = styled.h1`
   margin-top: 14px;
-  color: #ffe0a1;
+  color: #bcecff;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.5;
@@ -197,7 +197,7 @@ const Title = styled.h1`
 const Lead = styled.p`
   max-width: 74ch;
   margin-top: 18px;
-  color: #ccd5c6;
+  color: #c7dae7;
   font-size: 1rem;
   line-height: 1.75;
   word-break: keep-all;
@@ -209,13 +209,13 @@ const Section = styled.section`
 
 const SectionTitle = styled.h2`
   padding: 14px 22px;
-  border: 2px solid #9b7d48;
+  border: 2px solid #5e91ab;
   background: ${PARCHMENT};
-  color: #2c2518;
+  color: #132c40;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5;
-  box-shadow: inset 2px 2px 0 #f3dca5, inset -2px -2px 0 #a08550, 4px 4px 0 #080f0b;
+  box-shadow: inset 2px 2px 0 #e4f6ff, inset -2px -2px 0 #659ab4, 4px 4px 0 #07111c;
 `;
 
 const Facts = styled.dl`
@@ -223,9 +223,9 @@ const Facts = styled.dl`
   grid-template-columns: repeat(4, minmax(0, 1fr));
   margin-top: 24px;
   border: 1px solid ${LINE};
-  border-top-color: #8c784e;
+  border-top-color: #527c91;
   background: ${PANEL};
-  ${bronzeFrame}
+  ${pixelFrame}
 
   @media (max-width: 760px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -241,9 +241,9 @@ const Fact = styled.div`
 
   &:first-child { border-left: 0; }
 
-  dt { color: #acb9a6; font-size: 0.78rem; font-weight: 650; }
-  dd { color: #f2eddd; font-size: 1.12rem; font-weight: 750; line-height: 1.35; word-break: keep-all; }
-  dd + dd { color: #b8c4af; font-size: 0.84rem; font-weight: 500; }
+  dt { color: #a9c5d8; font-size: 0.78rem; font-weight: 650; }
+  dd { color: #eef8ff; font-size: 1.12rem; font-weight: 750; line-height: 1.35; word-break: keep-all; }
+  dd + dd { color: #b4cede; font-size: 0.84rem; font-weight: 500; }
 
   @media (max-width: 760px) {
     padding: 14px;
@@ -297,7 +297,7 @@ const DiffMain = styled.div`
   gap: 8px;
   min-width: 0;
 
-  p { color: #e8e9dc; }
+  p { color: #e5f1f7; }
 `;
 
 const Aside = styled.div`
@@ -307,7 +307,7 @@ const Aside = styled.div`
   padding-left: 14px;
   border-left: 2px solid ${LINE};
 
-  p { color: #b8c4af; }
+  p { color: #b4cede; }
 
   @media (max-width: 820px) {
     margin-top: 2px;
@@ -326,7 +326,7 @@ const TextLink = styled(Link)`
 
   text-decoration: underline;
   text-underline-offset: 4px;
-  &:hover { color: #f2eddd; }
+  &:hover { color: #eef8ff; }
   &:hover svg { transform: translateX(3px); }
   svg { transition: transform 160ms ease; }
 `;
@@ -349,9 +349,9 @@ const NextCard = styled(Link)`
   align-items: center;
   padding: 12px 18px 12px 12px;
   border: 1px solid ${LINE};
-  border-left: 3px solid #a98b54;
+  border-left: 3px solid #6398b4;
   background: ${PANEL};
-  ${bronzeFrame}
+  ${pixelFrame}
 
   > div:not(:first-child) { display: grid; gap: 2px; min-width: 0; }
 
@@ -360,20 +360,20 @@ const NextCard = styled(Link)`
     gap: 12px;
   }
 
-  strong { color: #f2eddd; font-family: 'Galmuri11', sans-serif; font-size: 1rem; }
-  span { color: #b8c4af; font-size: 0.88rem; word-break: keep-all; }
+  strong { color: #eef8ff; font-family: 'Galmuri11', sans-serif; font-size: 1rem; }
+  span { color: #b4cede; font-size: 0.88rem; word-break: keep-all; }
   svg { color: ${FOREVER_ACCENT}; transition: transform 160ms ease; }
 
-  &:hover { background: #243728; border-color: ${FOREVER_ACCENT}; }
+  &:hover { background: #1b3b53; border-color: ${FOREVER_ACCENT}; }
   &:hover svg { transform: translateX(3px); }
 `;
 
 const Notice = styled.p`
   margin-top: 28px;
   padding: 14px 16px;
-  border-left: 3px solid #a98b54;
+  border-left: 3px solid #6398b4;
   background: ${PARCHMENT};
-  color: #2c2518;
+  color: #132c40;
   font-size: 0.9rem;
   line-height: 1.7;
   word-break: keep-all;
@@ -398,14 +398,14 @@ const StepStrip = styled.ol`
     gap: 4px;
     height: 100%;
     padding: 12px 12px 13px;
-    color: #d7dece;
+    color: #d1e6f2;
     font-size: 0.86rem;
     font-weight: 650;
     line-height: 1.35;
     word-break: keep-all;
   }
 
-  a:hover { background: #243728; color: #f2eddd; }
+  a:hover { background: #1b3b53; color: #eef8ff; }
 
   b { color: ${FOREVER_ACCENT}; font-size: 0.74rem; font-weight: 750; }
 
@@ -458,9 +458,9 @@ const StepNumber = styled.span`
   width: 44px;
   height: 44px;
   border: 1px solid ${FOREVER_ACCENT};
-  box-shadow: inset 0 0 0 3px #101a15;
-  background: #34432a;
-  color: #ffe0a1;
+  box-shadow: inset 0 0 0 3px #0e1c2a;
+  background: #20435b;
+  color: #bcecff;
   font-size: 1.05rem;
   font-weight: 800;
 
@@ -476,15 +476,15 @@ const StepBody = styled.div`
   gap: 10px;
   min-width: 0;
 
-  h3 { color: #f2eddd; font-size: 1.04rem; font-weight: 750; line-height: 1.4; }
-  p { max-width: 74ch; color: #ccd5c6; font-size: 1rem; line-height: 1.75; word-break: keep-all; }
+  h3 { color: #eef8ff; font-size: 1.04rem; font-weight: 750; line-height: 1.4; }
+  p { max-width: 74ch; color: #c7dae7; font-size: 1rem; line-height: 1.75; word-break: keep-all; }
 `;
 
 const TableWrap = styled.div`
   max-width: 620px;
   overflow-x: auto;
   background: ${PANEL};
-  ${bronzeFrame}
+  ${pixelFrame}
 `;
 
 const Table = styled.table`
@@ -495,11 +495,11 @@ const Table = styled.table`
   th, td { padding: 9px 18px; border-bottom: 1px solid ${LINE}; text-align: left; line-height: 1.45; word-break: keep-all; }
   tr:last-child th, tr:last-child td { border-bottom: 0; }
   thead { background: ${PARCHMENT}; }
-  thead th { color: #2c2518; font-size: 0.82rem; font-weight: 800; padding-top: 14px; padding-bottom: 14px; }
+  thead th { color: #132c40; font-size: 0.82rem; font-weight: 800; padding-top: 14px; padding-bottom: 14px; }
   tbody tr:nth-child(even) { background: #ffffff04; }
-  tbody tr:hover { background: #8dbb6c0c; }
-  tbody th { color: #b8c4af; font-weight: 600; }
-  td { color: #e8e9dc; }
+  tbody tr:hover { background: #8dd9f50c; }
+  tbody th { color: #b4cede; font-weight: 600; }
+  td { color: #e5f1f7; }
   td:last-child { color: ${FOREVER_ACCENT}; font-weight: 650; }
 `;
 
@@ -518,7 +518,7 @@ const KeyGrid = styled.ul`
     padding: 12px;
     border: 1px solid ${LINE};
     background: ${PANEL};
-    color: #d7dece;
+    color: #d1e6f2;
     font-size: 0.84rem;
     line-height: 1.35;
     word-break: keep-all;
@@ -528,7 +528,7 @@ const KeyGrid = styled.ul`
     min-width: 30px;
     padding: 2px 8px;
     border: 1px solid rgba(168, 178, 188, 0.4);
-    color: #f2eddd;
+    color: #eef8ff;
     font-family: inherit;
     font-size: 0.9rem;
     font-weight: 750;
@@ -551,8 +551,8 @@ const TermList = styled.dl`
     border-bottom: 1px solid ${LINE};
   }
 
-  dt { color: #f2eddd; font-size: 1rem; font-weight: 700; line-height: 1.6; word-break: keep-all; }
-  dd { max-width: 74ch; color: #ccd5c6; font-size: 1rem; line-height: 1.7; word-break: keep-all; }
+  dt { color: #eef8ff; font-size: 1rem; font-weight: 700; line-height: 1.6; word-break: keep-all; }
+  dd { max-width: 74ch; color: #c7dae7; font-size: 1rem; line-height: 1.7; word-break: keep-all; }
 
   @media (max-width: 640px) {
     > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
@@ -573,8 +573,8 @@ const BasicList = styled.ul`
     border-bottom: 1px solid ${LINE};
   }
 
-  h3 { color: #f2eddd; font-size: 0.96rem; font-weight: 700; line-height: 1.6; word-break: keep-all; }
-  p { max-width: 74ch; color: #ccd5c6; font-size: 1rem; line-height: 1.7; word-break: keep-all; }
+  h3 { color: #eef8ff; font-size: 0.96rem; font-weight: 700; line-height: 1.6; word-break: keep-all; }
+  p { max-width: 74ch; color: #c7dae7; font-size: 1rem; line-height: 1.7; word-break: keep-all; }
 
   @media (max-width: 640px) {
     li { grid-template-columns: 84px minmax(0, 1fr); gap: 2px 14px; align-items: start; }
@@ -602,7 +602,7 @@ const Tips = styled.ol`
   gap: 8px;
   margin: 0;
   padding: 0 0 0 22px;
-  color: #ccd5c6;
+  color: #c7dae7;
   font-size: 1rem;
   line-height: 1.7;
 
@@ -615,7 +615,7 @@ const Picker = styled.ul`
   padding: 0;
   border: 1px solid ${LINE};
   background: ${PANEL};
-  ${bronzeFrame}
+  ${pixelFrame}
   list-style: none;
 
   li {
@@ -628,10 +628,10 @@ const Picker = styled.ul`
   }
 
   li:first-child { border-top: 0; }
-  li > span { color: #d7dece; font-size: 1rem; line-height: 1.5; word-break: keep-all; }
-  li > svg { color: #acb9a6; }
+  li > span { color: #d1e6f2; font-size: 1rem; line-height: 1.5; word-break: keep-all; }
+  li > svg { color: #a9c5d8; }
   strong { color: ${FOREVER_ACCENT}; font-size: 1rem; font-weight: 800; }
-  em { margin-left: 8px; color: #acb9a6; font-size: 0.8rem; font-style: normal; white-space: nowrap; }
+  em { margin-left: 8px; color: #a9c5d8; font-size: 0.8rem; font-style: normal; white-space: nowrap; }
 
   @media (max-width: 560px) {
     li { grid-template-columns: minmax(0, 1fr); gap: 2px; padding: 12px 14px; }
@@ -661,7 +661,7 @@ const RuleCard = styled.li`
   border-top: 2px solid ${props => (props.$later ? 'rgba(168, 178, 188, 0.3)' : FOREVER_ACCENT)};
   grid-column: ${props => (props.$later ? '1 / -1' : 'auto')};
   background: ${PANEL};
-  ${bronzeFrame}
+  ${pixelFrame}
 
   @media (max-width: 720px) {
     grid-template-columns: minmax(0, 1fr);
@@ -672,14 +672,14 @@ const RuleCard = styled.li`
     flex-wrap: wrap;
     align-items: baseline;
     gap: 4px 10px;
-    color: #f2eddd;
+    color: #eef8ff;
     font-size: 1.06rem;
     font-weight: 780;
     line-height: 1.4;
   }
 
-  h3 small { color: #acb9a6; font-size: 0.78rem; font-weight: 650; }
-  p { color: #ccd5c6; font-size: 1rem; line-height: 1.8; word-break: keep-all; }
+  h3 small { color: #a9c5d8; font-size: 0.78rem; font-weight: 650; }
+  p { color: #c7dae7; font-size: 1rem; line-height: 1.8; word-break: keep-all; }
 `;
 
 const RuleArt = styled(Frame)`
@@ -715,14 +715,14 @@ const FactionLine = styled.p`
   padding-top: 8px;
   border-top: 1px solid ${LINE};
 
-  && { color: #e8e9dc; font-size: 0.86rem; font-weight: 650; }
-  span { margin-right: 8px; color: #acb9a6; font-weight: 600; }
+  && { color: #e5f1f7; font-size: 0.86rem; font-weight: 650; }
+  span { margin-right: 8px; color: #a9c5d8; font-weight: 600; }
 `;
 
 const FootNote = styled.p`
   max-width: 78ch;
   margin-top: 12px;
-  color: #b8c4af;
+  color: #b4cede;
   font-size: 0.86rem;
   line-height: 1.7;
   word-break: keep-all;
@@ -742,7 +742,7 @@ const CheckList = styled.ul`
     align-items: start;
     padding: 12px 0;
     border-bottom: 1px solid ${LINE};
-    color: #e8e9dc;
+    color: #e5f1f7;
     font-size: 1rem;
     line-height: 1.6;
     word-break: keep-all;
@@ -755,11 +755,11 @@ const SourceBox = styled.footer`
   margin-top: 48px;
   padding: 22px;
   border: 1px solid ${LINE};
-  border-top-color: #a98b54;
+  border-top-color: #6398b4;
   background: ${PANEL};
-  ${bronzeFrame}
+  ${pixelFrame}
 
-  h2 { color: #acb9a6; font-size: 0.8rem; font-weight: 700; }
+  h2 { color: #a9c5d8; font-size: 0.8rem; font-weight: 700; }
 
   ul {
     display: grid;
@@ -774,16 +774,16 @@ const SourceBox = styled.footer`
     flex-wrap: wrap;
     align-items: baseline;
     gap: 0 6px;
-    color: #b8c4af;
+    color: #b4cede;
     font-size: 0.84rem;
     line-height: 1.5;
     word-break: keep-all;
   }
 
-  a:hover { color: #f2eddd; }
+  a:hover { color: #eef8ff; }
   a svg { flex: 0 0 auto; align-self: center; }
-  time { color: #acb9a6; font-size: 0.78rem; white-space: nowrap; }
-  p { margin-top: 10px; color: #acb9a6; font-size: 0.8rem; line-height: 1.6; word-break: keep-all; }
+  time { color: #a9c5d8; font-size: 0.78rem; white-space: nowrap; }
+  p { margin-top: 10px; color: #a9c5d8; font-size: 0.8rem; line-height: 1.6; word-break: keep-all; }
 `;
 
 const ART_PATH = '/images/forever';
@@ -1114,10 +1114,10 @@ const GuideContents = styled.nav`
   padding: 14px;
   border: 1px solid ${LINE};
   background: ${PANEL};
-  ${bronzeFrame}
+  ${pixelFrame}
 
-  a { display: flex; align-items: center; min-height: 44px; padding: 6px 12px; border: 1px solid #6b6749; color: #d8dfc6; font-size: 0.88rem; line-height: 1.6; }
-  a:hover { background: #34432a; border-color: #d4b16e; color: #ffe3a6; }
+  a { display: flex; align-items: center; min-height: 44px; padding: 6px 12px; border: 1px solid #486d82; color: #d1e6f2; font-size: 0.88rem; line-height: 1.6; }
+  a:hover { background: #20435b; border-color: #83d5f5; color: #bcecff; }
 `;
 
 const GuideLinks = styled(GuideContents)`
@@ -1127,9 +1127,9 @@ const GuideLinks = styled(GuideContents)`
 const GuideBlock = styled(Section)`
   scroll-margin-top: 78px;
 
-  > p { margin-top: 14px; color: #ccd5c6; line-height: 1.75; word-break: keep-all; }
-  > a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px; color: #b8c4af; font-size: 0.8rem; }
-  > a:hover { color: #ffe3a6; }
+  > p { margin-top: 14px; color: #c7dae7; line-height: 1.75; word-break: keep-all; }
+  > a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px; color: #b4cede; font-size: 0.8rem; }
+  > a:hover { color: #bcecff; }
 `;
 
 const GuideIntro = styled.div`
@@ -1138,7 +1138,7 @@ const GuideIntro = styled.div`
   align-items: center;
   gap: 20px;
   margin-bottom: 18px;
-  p { margin-top: 14px; color: #ccd5c6; line-height: 1.75; word-break: keep-all; }
+  p { margin-top: 14px; color: #c7dae7; line-height: 1.75; word-break: keep-all; }
   @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); }
 `;
 
@@ -1148,7 +1148,7 @@ const GuideTableWrap = styled(TableWrap)`
 
   table { min-width: 590px; }
   th:first-child { width: 26%; }
-  td:last-child { color: #ccd5c6; font-weight: 500; }
+  td:last-child { color: #c7dae7; font-weight: 500; }
   &:focus-visible { outline: 2px solid ${FOREVER_ACCENT}; outline-offset: 3px; }
 `;
 
@@ -1158,9 +1158,9 @@ const SpellName = styled.a`
   align-items: center;
   gap: 8px;
   min-height: 44px;
-  color: #ffe0a1;
+  color: #bcecff;
 
-  img { width: 28px; height: 28px; border: 1px solid #8c784e; }
+  img { width: 28px; height: 28px; border: 1px solid #527c91; }
   [role='tooltip'] {
     position: absolute;
     bottom: calc(100% + 8px);
@@ -1168,16 +1168,35 @@ const SpellName = styled.a`
     z-index: 5;
     width: min(340px, 72vw);
     padding: 14px;
-    border: 2px solid #8c784e;
-    background: #142019;
-    color: #e8e9dc;
-    box-shadow: 4px 4px 0 #080f0b;
+    border: 2px solid #527c91;
+    background: #142b3d;
+    color: #e5f1f7;
+    box-shadow: 4px 4px 0 #07111c;
     font-weight: 400;
     white-space: pre-line;
     visibility: hidden;
   }
   &:hover [role='tooltip'], &:focus-visible [role='tooltip'] { visibility: visible; }
 `;
+
+const TalentSteps = styled.ol`
+  margin: 24px 0;
+  padding-left: 28px;
+  li { padding: 0 0 20px 4px; }
+  li::marker { color: ${FOREVER_ACCENT}; font-weight: 800; }
+  p { margin-top: 8px; max-width: 74ch; line-height: 1.75; word-break: keep-all; }
+`;
+
+function TalentLink({ spell, context }) {
+  const tooltipId = `${context}-spell-${spell.id}`;
+  return (
+    <SpellName href={spell.source} target="_blank" rel="noopener noreferrer" aria-describedby={tooltipId}>
+      <img src={`https://wow.zamimg.com/images/wow/icons/medium/${spell.icon}.jpg`} alt="" width="28" height="28" loading="lazy" />
+      <strong>{spell.name}</strong>
+      <span role="tooltip" id={tooltipId}>{spell.name}{' · 1등급\n'}{spell.verified ? spell.description : `한국어 설명 확인 전\n${spell.reason}`}{spell.note ? `\n원문 표시 주의 · ${spell.note}` : ''}</span>
+    </SpellName>
+  );
+}
 
 function GuideSection({ data }) {
   return (
@@ -1201,13 +1220,9 @@ function GuideSection({ data }) {
               {block.spells.map(spell => (
                 <div key={spell.id}>
                   <dt>
-                    <SpellName href={spell.source} target="_blank" rel="noopener noreferrer" aria-describedby={`forever-spell-${spell.id}`}>
-                      <img src={`https://wow.zamimg.com/images/wow/icons/medium/${spell.icon}.jpg`} alt="" width="28" height="28" loading="lazy" />
-                      <strong>{spell.name}</strong>
-                      <span role="tooltip" id={`forever-spell-${spell.id}`}>{spell.name}{' · 1등급\n'}{spell.verified ? spell.description : `한국어 설명 확인 전\n${spell.reason}`}</span>
-                    </SpellName>
+                    <TalentLink spell={spell} context={block.id} />
                   </dt>
-                  <dd>{spell.verified ? spell.description : `한국어 설명 확인 전 · ${spell.reason}`}</dd>
+                  <dd>{spell.verified ? spell.description : `한국어 설명 확인 전 · ${spell.reason}`}{spell.note ? <p>원문 표시 주의 · {spell.note}</p> : null}</dd>
                 </div>
               ))}
             </TermList>
@@ -1216,6 +1231,16 @@ function GuideSection({ data }) {
             <TermList>
               {block.items.map(item => <div key={item.title}><dt>{item.title}</dt><dd>{item.body}</dd></div>)}
             </TermList>
+          ) : null}
+          {block.milestones ? (
+            <TalentSteps aria-label={`${block.title} 추천 순서`}>
+              {block.milestones.map(({ spell, reason }) => (
+                <li key={spell.id}>
+                  <TalentLink spell={spell} context={block.id} />
+                  <p>{reason}</p>
+                </li>
+              ))}
+            </TalentSteps>
           ) : null}
           {block.table ? (
             <>
@@ -1233,7 +1258,9 @@ function GuideSection({ data }) {
           {block.links ? <GuideLinks aria-label={`${block.title} 관련 안내`}>{block.links.map(link => link.path.startsWith('/')
             ? <Link key={link.path} to={link.path}>{link.label}</Link>
             : <a key={link.path} href={link.path} target="_blank" rel="noopener noreferrer">{link.label}</a>)}</GuideLinks> : null}
-          <a href={foreverSources[block.sources[0]].url} target="_blank" rel="noopener noreferrer" aria-label={`${block.title} 근거 원문`}>{foreverSources[block.sources[0]].label} ↗</a>
+          <GuideLinks aria-label={`${block.title} 근거 원문`}>
+            {block.sources.map(source => <a key={source} href={foreverSources[source].url} target="_blank" rel="noopener noreferrer">{foreverSources[source].label} ↗</a>)}
+          </GuideLinks>
         </GuideBlock>
       ))}
       <Sources ids={collectSources(data.sections)} />

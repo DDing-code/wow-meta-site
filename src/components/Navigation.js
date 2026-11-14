@@ -5,8 +5,8 @@ import { BookOpen, Castle, Compass, Database, Flag, Home, KeyRound, Menu, Newspa
 import { EDITIONS, getEdition, getEditionSwitchPath } from '../data/gameEditions.js';
 import '../styles/ForeverFonts.css';
 
-// 버전별 강조색: 리테일은 금색, 포에버는 초록(ForeverPage.js의 FOREVER_ACCENT와 같다).
-const EDITION_ACCENT = { retail: '#d2b373', forever: '#8dbb6c' };
+// 버전별 강조색: 리테일은 금색, 포에버는 하늘색(ForeverPage.js의 FOREVER_ACCENT와 같다).
+const EDITION_ACCENT = { retail: '#d2b373', forever: '#8dd9f5' };
 
 const Nav = styled.nav`
   position: sticky;
@@ -19,18 +19,18 @@ const Nav = styled.nav`
   &[data-edition="forever"] {
     font-family: 'Galmuri11', 'Noto Sans KR', sans-serif;
     font-synthesis: none;
-    background: #142019;
+    background: #142b3d;
     backdrop-filter: none;
-    border-bottom-color: #8c784e;
-    box-shadow: 0 3px 0 #080f0b;
-    #primary-navigation { background: #101a15; }
-    #primary-navigation a { color: #becab9; }
-    #primary-navigation a[aria-current="page"] { color: #ffe0a1; border-bottom-color: #d4b16e; }
-    #primary-navigation a:hover { color: #ffe0a1; }
-    [aria-label="게임 버전"], button { border-color: #8c784e; box-shadow: 2px 2px 0 #080f0b; }
-    [aria-label="게임 버전"] a:not([aria-current]) { color: #c1c9b8; }
-    [aria-label="게임 버전"] a[aria-current] { background: #b9cd8b; color: #102016; }
-    a:focus-visible, button:focus-visible { outline-color: #ffe0a1; }
+    border-bottom-color: #527c91;
+    box-shadow: 0 3px 0 #07111c;
+    #primary-navigation { background: #0e1c2a; }
+    #primary-navigation a { color: #bfd8e7; }
+    #primary-navigation a[aria-current="page"] { color: #bcecff; border-bottom-color: #83d5f5; }
+    #primary-navigation a:hover { color: #bcecff; }
+    [aria-label="게임 버전"], button { border-color: #527c91; box-shadow: 2px 2px 0 #07111c; }
+    [aria-label="게임 버전"] a:not([aria-current]) { color: #c1d8e8; }
+    [aria-label="게임 버전"] a[aria-current] { background: #8dd9f5; color: #102738; }
+    a:focus-visible, button:focus-visible { outline-color: #bcecff; }
     @media (min-width: 901px) { #primary-navigation { background: transparent; } }
   }
 `;

@@ -46,6 +46,8 @@ test('직업 아홉 쪽은 별도 KB의 한국어 설명과 아이콘·키보드
 test('종족 열 쪽은 30~60레벨 추정 후보와 공식 던전 범위를 구분한다', () => {
   for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'leveling')) {
     render(<ForeverPage section={id} />, `/forever/${id}`);
+    expect(container.querySelector('#leveling-guide h2').textContent).toContain('레벨업 가이드');
+    expect(container.querySelector('#leveling-guide').textContent).toContain('30~60레벨 · 추정');
     const block = container.querySelector('#after-30');
     expect(block.querySelectorAll('tbody tr')).toHaveLength(5);
     expect(block.textContent).toContain('추정');
@@ -53,6 +55,34 @@ test('종족 열 쪽은 30~60레벨 추정 후보와 공식 던전 범위를 구
     expect(block.textContent).toContain('검은아귀 요새');
     expect(block.querySelector('a[href*="from-30-to-60"]')).not.toBeNull();
   }
+});
+
+test('27개 전문화의 추천 순서와 KB 툴팁은 중복 ID 없이 연결된다', () => {
+  for (const [id, page] of Object.entries(foreverDetailGuides).filter(([, page]) => page.parent === 'classes')) {
+    render(<ForeverPage section={id} />, `/forever/${id}`);
+    const paths = page.sections.filter(block => block.id.startsWith('talent-guide-'));
+    expect(paths).toHaveLength(3);
+    for (const spec of paths) {
+      const block = container.querySelector(`#${spec.id}`);
+      expect(block.querySelectorAll('ol li')).toHaveLength(spec.milestones.length);
+      for (const { spell, reason } of spec.milestones) {
+        const link = block.querySelector(`a[href="${spell.source}"]`);
+        expect(link.querySelector('img')).not.toBeNull();
+        expect(document.getElementById(link.getAttribute('aria-describedby')).textContent).toContain(spell.verified ? spell.description : '한국어 설명 확인 전');
+        expect(block.textContent).toContain(reason);
+      }
+      for (const source of spec.sources) expect(block.querySelector(`a[href="${foreverSources[source].url}"]`)).not.toBeNull();
+    }
+    const ids = [...container.querySelectorAll('[id]')].map(node => node.id);
+    expect(new Set(ids).size).toBe(ids.length);
+  }
+});
+
+test('힘의 전환의 원문 표시 문제는 설명과 툴팁 모두에 남는다', () => {
+  render(<ForeverPage section="classes/druid" />, '/forever/classes/druid');
+  const link = container.querySelector('#talent-effects a[href*="spell=1322605/"]');
+  expect(link.closest('dt').nextElementSibling.textContent).toContain('기본 마나의 55%');
+  expect(document.getElementById(link.getAttribute('aria-describedby')).textContent).toContain('0의 마나');
 });
 
 test('포에버 홈은 요약 네 칸과 리테일과 다른 점, 근거 공지를 보여 준다', () => {
