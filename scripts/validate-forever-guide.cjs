@@ -111,7 +111,7 @@ for (const [id, page] of Object.entries(allGuides)) {
     block.items?.forEach(item => assert.ok(item.title && item.body, `${id}/${block.id}: 빈 항목`));
     block.table?.rows.forEach(row => assert.ok(row.length === block.table.columns.length && row.every(Boolean), `${id}/${block.id}: 표 열 불일치·빈 칸`));
     block.links?.forEach(link => {
-      assert.ok(link.label && (/^\/forever(?:\/|#|$)/.test(link.path) || /^https:\/\/(forever-tavern\.com|foreverdb\.net)\//.test(link.path) || /^https:\/\/bindonforever\.com\/leveling\/(alliance|horde)$/.test(link.path)), `${id}/${block.id}: 잘못된 연결`);
+      assert.ok(link.label && (/^\/forever(?:\/|#|$)/.test(link.path) || /^https:\/\/(forever-tavern\.com|foreverdb\.net)\//.test(link.path) || /^https:\/\/www\.youtube\.com\/watch\?v=[A-Za-z0-9_-]{11}$/.test(link.path) || /^https:\/\/bindonforever\.com\/leveling\/(alliance|horde)$/.test(link.path)), `${id}/${block.id}: 잘못된 연결`);
       if (link.path.startsWith('/forever/')) {
         const [pathname, hash] = link.path.split('#');
         const target = allGuides[pathname.slice('/forever/'.length)];

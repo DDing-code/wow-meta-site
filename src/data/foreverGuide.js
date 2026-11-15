@@ -2304,3 +2304,22 @@ for (const [, page] of detailEntries) {
   else if (page.parent === 'leveling') page.back = { path: '/forever/races', label: '종족별 레벨링 가이드 목록' };
   else if (page.specialization) page.back = { path: `/forever/${page.parent}`, label: page.parentLabel };
 }
+
+const raceLevelingVideos = {
+  human: 'nkoS4-rWjZ8',
+  dwarf: 'A3ZvPOfXlmI',
+  gnome: 'A3ZvPOfXlmI',
+  'night-elf': 'VArGW-Rd4Zk',
+  'skyborne-alliance': 'UA_Y0MwpUDU',
+  orc: 'CnK12Jj64W8',
+  troll: 'CnK12Jj64W8',
+};
+for (const [race, videoId] of Object.entries(raceLevelingVideos)) {
+  const page = foreverDetailGuides[`leveling/${race}`];
+  page.sections.unshift({
+    id: 'video', title: `${page.label} 레벨업 영상`,
+    lead: '30~60레벨의 이동 동선과 구간 연결은 추정입니다. 검증된 확정 공략이 아닌 추천 후보이며, 추가 퀘스트나 사냥이 필요할 수 있습니다.',
+    links: [{ label: '유튜브에서 보기 · wowmeta 와우메타', path: `https://www.youtube.com/watch?v=${videoId}` }],
+    sources: ['bof-leveling'],
+  });
+}
