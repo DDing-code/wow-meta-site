@@ -2313,6 +2313,9 @@ const raceLevelingVideos = {
   'skyborne-alliance': 'UA_Y0MwpUDU',
   orc: 'CnK12Jj64W8',
   troll: 'CnK12Jj64W8',
+  tauren: 'z0kPERK6T6s',
+  undead: '808g9_9BDZk',
+  'skyborne-horde': 'oS-4Kt7e1JQ',
 };
 for (const [race, videoId] of Object.entries(raceLevelingVideos)) {
   const page = foreverDetailGuides[`leveling/${race}`];
