@@ -5,8 +5,6 @@ const path = require('node:path');
 const BASE = 'https://kr.api.blizzard.com/data/wow/ruleset/1/auctions/';
 const DAY = 86400000;
 const HOUSES = [[110, '얼라이언스'], [111, '얼라이언스'], [113, '호드'], [114, '호드']];
-// 기존 차트에서 한국어 이름과 개별 포에버 아이템 번호를 확인한 관심 재료.
-const ITEMS = [[14047, '룬무늬 옷감'], [2770, '구리 광석'], [2589, '리넨 옷감']];
 
 function candles(previous, price, quantity, at, interval) {
   const result = previous.map(row => ({ ...row }));
@@ -28,30 +26,37 @@ function candles(previous, price, quantity, at, interval) {
 function marketSnapshot(houseId, faction, auctions, at, previous) {
   assert.ok(Array.isArray(auctions), '경매 매물 배열 누락');
   assert.ok(Number.isSafeInteger(at) && at > 0 && at <= Date.now(), '공식 자료 시각 오류');
-  const prices = new Map(ITEMS.map(([id]) => [id, { minimum: Infinity, quantity: 0 }]));
+  const prices = new Map();
   for (const row of auctions) {
-    const item = prices.get(row.item?.id);
-    if (!item) continue;
+    const id = row.item?.id;
+    assert.ok(Number.isSafeInteger(id) && id > 0, '아이템 번호 오류');
     assert.ok(Number.isSafeInteger(row.quantity) && row.quantity > 0, '매물 수량 오류');
-    if (row.unit_price === undefined || row.unit_price === 0) continue;
-    assert.ok(Number.isSafeInteger(row.unit_price) && row.unit_price > 0, '개당 즉시구매가 오류');
-    item.minimum = Math.min(item.minimum, row.unit_price);
+    const item = prices.get(id) || { minimum: Infinity, quantity: 0 };
+    prices.set(id, item);
+    const total = row.unit_price ?? row.buyout;
+    if (total === undefined || total === 0) continue;
+    assert.ok(Number.isSafeInteger(total) && total > 0, '즉시구매가 오류');
+    const price = row.unit_price === undefined ? Math.floor(total / row.quantity) : total;
+    assert.ok(price > 0, '개당 즉시구매가 오류');
+    item.minimum = Math.min(item.minimum, price);
     item.quantity += row.quantity;
     assert.ok(Number.isSafeInteger(item.quantity), '매물 수량 범위 초과');
   }
   const market = `forever.house-${houseId}.kr`;
   assert.ok(!previous || previous.market === market, '한국 경매장 이력 불일치');
+  const history = new Map(previous?.items.map(item => [item.id, item]));
   return {
     market, houseId, marketLabel: `한국 · ${faction} · 경매장 ${houseId}`, rulesetVerified: false,
     referenceUrl: 'https://wowfah.com/about', snapshotAt: at,
-    items: ITEMS.map(([id, name]) => {
-      const old = previous?.items.find(item => item.id === id);
+    items: [...new Set([...history.keys(), ...prices.keys()])].map(id => {
+      const old = history.get(id);
       assert.ok(!old?.observedAt || old.observedAt <= at, '오래된 응답으로 이력을 덮어쓸 수 없음');
-      const quote = prices.get(id);
+      const quote = prices.get(id) || { minimum: Infinity, quantity: 0 };
       const available = Number.isFinite(quote.minimum);
       const fresh = available && (!old?.observedAt || old.observedAt < at);
       return {
-        id, name, nameSource: `https://www.wowhead.com/forever/ko/item=${id}`,
+        id, name: old?.name || `아이템 ${id}`, nameVerified: old?.nameVerified ?? Boolean(old?.name),
+        nameSource: old?.nameSource || `https://www.wowhead.com/forever/ko/item=${id}`,
         sourceUrl: 'https://develop.battle.net/', observedAt: available ? at : old?.observedAt || null,
         available, listedQuantity: quote.quantity,
         candles: fresh ? candles(old?.candles || [], quote.minimum, quote.quantity, at, DAY) : old?.candles || [],
@@ -59,6 +64,23 @@ function marketSnapshot(houseId, faction, auctions, at, previous) {
       };
     }),
   };
+}
+
+async function itemNames(markets, read) {
+  const known = new Map(markets.flatMap(m => m.items).filter(item => item.nameVerified).map(item => [item.id, item]));
+  const missing = [...new Set(markets.flatMap(m => m.items).map(item => item.id))].filter(id => !known.has(id));
+  // API에 아직 없는 포에버 품목은 번호로 남기고 다음 수집 때 이름을 다시 확인한다.
+  for (let offset = 0; offset < missing.length; offset += 10) {
+    await Promise.all(missing.slice(offset, offset + 10).map(async id => {
+      const nameSource = `https://kr.api.blizzard.com/data/wow/item/${id}?namespace=static-forever-kr&locale=ko_KR`;
+      const result = await read(`https://kr.api.blizzard.com/data/wow/item/${id}`, 'static-forever-kr', true);
+      if (typeof result?.data.name === 'string' && result.data.name.trim()) known.set(id, { name: result.data.name, nameSource });
+    }));
+  }
+  for (const market of markets) for (const item of market.items) {
+    const metadata = known.get(item.id);
+    if (metadata) Object.assign(item, { name: metadata.name, nameSource: metadata.nameSource, nameVerified: true });
+  }
 }
 
 async function collect(credentials = process.env) {
@@ -71,10 +93,11 @@ async function collect(credentials = process.env) {
   assert.ok(auth.ok, `블리자드 인증 실패: HTTP ${auth.status}`);
   const { access_token: token } = await auth.json();
   assert.ok(typeof token === 'string' && token, '인증 응답 형식 오류');
-  async function read(url) {
-    const response = await fetch(`${url}?namespace=dynamic-forever-kr&locale=ko_KR`, {
+  async function read(url, namespace = 'dynamic-forever-kr', optional = false) {
+    const response = await fetch(`${url}?namespace=${namespace}&locale=ko_KR`, {
       headers: { Authorization: `Bearer ${token}` }, signal: AbortSignal.timeout(60000),
     });
+    if (optional && response.status === 404) return null;
     assert.ok(response.ok, `한국 경매장 요청 실패: HTTP ${response.status}`);
     return { data: await response.json(), at: Date.parse(response.headers.get('last-modified')) };
   }
@@ -86,16 +109,25 @@ async function collect(credentials = process.env) {
   const markets = [];
   for (const [houseId, faction] of HOUSES) {
     assert.ok(index.data.auctions.some(house => house.id === houseId && house.name === `${faction} 경매장`), '공식 경매장 진영 불일치');
-    const { data, at } = await read(`${BASE}${houseId}/commodities`);
-    markets.push(marketSnapshot(houseId, faction, data.auctions, at, previous.markets.find(m => m.houseId === houseId)));
+    const market = previous.markets.find(m => m.houseId === houseId);
+    // 장비와 재료는 서로 다른 응답·갱신 시각을 가지므로 해당 품목 이력만 갱신한다.
+    const parts = await Promise.all([read(`${BASE}${houseId}`), read(`${BASE}${houseId}/commodities`)]);
+    assert.ok(parts.every(part => Array.isArray(part.data.auctions)), '경매 매물 배열 누락');
+    const ids = parts.map(part => new Set(part.data.auctions.map(row => row.item?.id)));
+    assert.ok(![...ids[0]].some(id => ids[1].has(id)), '장비·재료 응답에 품목 중복');
+    const items = parts.flatMap((part, index) => marketSnapshot(houseId, faction, part.data.auctions, part.at, market && {
+      ...market, items: market.items.filter(item => ids[index].has(item.id) || (!ids[1 - index].has(item.id) && (item.auctionKind || 'commodities') === (index ? 'commodities' : 'auctions'))),
+    }).items.map(item => ({ ...item, auctionKind: index ? 'commodities' : 'auctions' })));
+    markets.push({ ...marketSnapshot(houseId, faction, [], Math.max(...parts.map(part => part.at))), items });
   }
+  await itemNames(markets, read);
   const snapshot = { edition: 'forever', region: 'kr', provider: 'blizzard', fetchedAt: new Date().toISOString(), markets };
   // 네 곳이 모두 정상일 때만 교체해 통신 실패 시 기존 자료를 보존한다.
-  fs.writeFileSync(`${output}.tmp`, `${JSON.stringify(snapshot, null, 2)}\n`);
+  fs.writeFileSync(`${output}.tmp`, `${JSON.stringify(snapshot)}\n`);
   fs.renameSync(`${output}.tmp`, output);
   console.log(`한국 경매장 ${markets.length}곳 수집 완료`);
   return { houses: markets.length };
 }
 
 if (require.main === module) collect().catch(error => { console.error(error.message); process.exitCode = 1; });
-module.exports = { candles, marketSnapshot, collect };
+module.exports = { candles, marketSnapshot, itemNames, collect };

@@ -1,0 +1,27 @@
+name: 경매장 전체 품목 시험 수집
+on:
+  push:
+    branches: [codex/auction-search-check-20261123]
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - run: node --test scripts/update-forever-auction-kr.test.cjs
+      - run: node scripts/update-forever-auction-kr.cjs
+        env:
+          BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+          BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: auction-search-prices
+          path: src/data/foreverAuctionKr.json
+          retention-days: 2
