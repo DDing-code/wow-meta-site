@@ -10,6 +10,7 @@
   <url><loc>https://wowmeta.vercel.app/logs</loc></url>
   <url><loc>https://wowmeta.vercel.app/news</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever</loc></url>
+  <url><loc>https://wowmeta.vercel.app/forever/auction</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever/start</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever/rules</loc></url>
   <url><loc>https://wowmeta.vercel.app/forever/leveling</loc></url>

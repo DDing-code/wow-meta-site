@@ -44,6 +44,7 @@
     "validate:seo": "node scripts/generate-sitemap.cjs --check",
     "validate:home": "node scripts/validate-home-videos.cjs",
     "validate:forever": "node scripts/validate-forever-guide.cjs",
+    "auction:update": "node scripts/update-forever-auction.cjs",
     "seo:sitemap": "node scripts/generate-sitemap.cjs"
   },
   "eslintConfig": {

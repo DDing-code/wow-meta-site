@@ -6,6 +6,7 @@ import '../styles/ForeverFonts.css';
 import ForeverSpell, { ForeverText, classSpells } from '../components/forever/ForeverSpell';
 import ForeverMap from '../components/forever/ForeverMap';
 import LevelingJourney from '../components/forever/LevelingJourney';
+import AuctionChart from '../components/forever/AuctionChart';
 import { Flow, SkillGroups, TalentGrowth, Facilities } from '../components/forever/ForeverVisuals';
 import {
   FOREVER_ART_NOTE,
@@ -970,6 +971,8 @@ function HomeSection() {
         ))}
       </Facts>
 
+      <GuideLinks id="auction" aria-label="경매장 바로가기"><Link to="/forever/auction">경매장 시세 보기 →</Link></GuideLinks>
+
       <Section aria-labelledby="forever-differences">
         <SectionTitle id="forever-differences">{data.differencesTitle}</SectionTitle>
         <DiffList>
@@ -1198,7 +1201,17 @@ function RulesSection() {
   );
 }
 
-const SECTIONS = { home: HomeSection, start: StartSection, rules: RulesSection };
+function AuctionSection() {
+  return <>
+    <Head title="포에버 경매장" lead="일반·전쟁 서버와 얼라이언스·호드의 시세를 각각 확인하는 곳입니다." art={foreverHome.art} compact />
+    <AuctionBlock id="auction" aria-labelledby="forever-auction-title">
+      <SectionTitle id="forever-auction-title">한국 경매장 시세</SectionTitle>
+      <AuctionChart />
+    </AuctionBlock>
+  </>;
+}
+
+const SECTIONS = { home: HomeSection, start: StartSection, rules: RulesSection, auction: AuctionSection };
 
 const GuideContents = styled.nav`
   display: flex;
@@ -1392,6 +1405,11 @@ function GuideIndex({ index }) {
     </IndexPanel>
   );
 }
+
+const AuctionBlock = styled(GuideBlock)`
+  scroll-margin-top: 88px;
+  button:focus-visible, summary:focus-visible, [role='region']:focus-visible { outline: 2px solid ${FOREVER_ACCENT}; outline-offset: 3px; }
+`;
 
 function GuideSection({ data, section }) {
   const spells = classSpells(section.startsWith('classes/') ? section.split('/')[1] : '');

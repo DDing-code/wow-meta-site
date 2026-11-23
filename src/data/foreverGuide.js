@@ -77,6 +77,7 @@ export const foreverPages = [
   { id: 'leveling', path: '/forever/leveling', label: '지역·던전', exact: true },
   { id: 'growth', path: '/forever/growth', label: '캠핑·유산' },
   { id: 'raids', path: '/forever/raids', label: '레이드 준비' },
+  { id: 'auction', path: '/forever/auction', label: '경매장' },
 ];
 
 // 입장 준비와 육성 안내. 레벨 범위는 공식 소개의 범위이며 최소 입장 레벨이나 최단 육성 동선이 아니다.
