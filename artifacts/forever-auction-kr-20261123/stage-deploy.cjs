@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '../..');
-const stage = path.join(__dirname, "deploy-final");
+const stage = path.join(__dirname, "deploy-verified");
 assert(stage.startsWith(root + path.sep));
 assert(!fs.existsSync(stage), 'Use a fresh deployment directory');
 const project = JSON.parse(fs.readFileSync(path.join(root, '.vercel/project.json'), 'utf8'));

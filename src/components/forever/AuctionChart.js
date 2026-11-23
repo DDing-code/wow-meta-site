@@ -51,7 +51,7 @@ const Content = styled.div`
   word-break: keep-all;
   min-width: 0;
   .auction-markets { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; font-size: .8rem; color: #bfb4a0; }
-  .auction-markets select { max-width: 100%; min-height: 40px; padding: 8px 30px 8px 12px; border: 1px solid #5c513b; background-color: #211b14; color: #f3dfaa; font: inherit; }
+  .auction-markets select { width: 260px; max-width: 100%; min-height: 40px; padding: 8px 30px 8px 12px; border: 1px solid #5c513b; background-color: #211b14; color: #f3dfaa; font: inherit; }
   .auction-markets select:focus-visible { outline: 2px solid #8dd9f5; outline-offset: 2px; }
   .auction-market { color: #f6cf5f; margin: 0 0 6px; }
   .auction-note { color: #bfb4a0; font-size: .8rem; line-height: 1.8; }
