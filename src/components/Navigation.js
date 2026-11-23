@@ -7,6 +7,7 @@ import '../styles/ForeverFonts.css';
 
 // 버전별 강조색: 리테일은 금색, 포에버는 하늘색(ForeverPage.js의 FOREVER_ACCENT와 같다).
 const EDITION_ACCENT = { retail: '#d2b373', forever: '#8dd9f5' };
+const MENU_BREAKPOINT = { retail: 900, forever: 1280 };
 
 const Nav = styled.nav`
   position: sticky;
@@ -31,7 +32,7 @@ const Nav = styled.nav`
     [aria-label="게임 버전"] a:not([aria-current]) { color: #c8cdd4; }
     [aria-label="게임 버전"] a[aria-current] { background: #8dd9f5; color: #102738; }
     a:focus-visible, button:focus-visible { outline-color: #bcecff; }
-    @media (min-width: 901px) { #primary-navigation { background: transparent; } }
+    @media (min-width: 1281px) { #primary-navigation { background: transparent; } }
   }
 `;
 
@@ -140,10 +141,10 @@ const Patch = styled.span`
 const Links = styled.div`
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: ${props => props.$edition === 'forever' ? 12 : 18}px;
 
   /* 메뉴가 한 줄에 다 들어가지 않는 중간 폭은 아이콘을 빼고 간격을 줄인다. */
-  @media (min-width: 901px) and (max-width: 1160px) {
+  @media (min-width: ${props => MENU_BREAKPOINT[props.$edition] + 1}px) and (max-width: 1160px) {
     gap: 14px;
 
     svg {
@@ -151,18 +152,7 @@ const Links = styled.div`
     }
   }
 
-  /* 포에버 메뉴는 여덟 칸이라 접히기 직전 폭에서 간격·글자를 조금 더 줄인다. */
-  @media (min-width: 901px) and (max-width: 1000px) {
-    nav[data-edition="forever"] & {
-      gap: 9px;
-
-      a {
-        font-size: 0.78rem;
-      }
-    }
-  }
-
-  @media (max-width: 900px) {
+  @media (max-width: ${props => MENU_BREAKPOINT[props.$edition]}px) {
     position: absolute;
     top: 58px;
     right: 0;
@@ -196,7 +186,7 @@ const NavItem = styled(Link)`
     outline-offset: 1px;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: ${props => MENU_BREAKPOINT[props.$edition]}px) {
     justify-content: flex-start;
     min-height: 44px;
     padding: 0 6px;
@@ -212,7 +202,7 @@ const MenuButton = styled.button`
   background: transparent;
   color: #eef1f3;
 
-  @media (max-width: 900px) {
+  @media (max-width: ${props => MENU_BREAKPOINT[props.$edition]}px) {
     display: grid;
     place-items: center;
   }
@@ -295,7 +285,7 @@ function Navigation() {
           </EditionToggle>
         </Left>
 
-        <Links id="primary-navigation" $open={open}>
+        <Links id="primary-navigation" $open={open} $edition={edition}>
           {NAV_ITEMS[edition].map(item => {
             const Icon = item.icon;
             // 로그 분석(/logs, /guide/.../log-analysis)은 메뉴에 없고 링크로만 연다. 그 화면에서는 어느 탭도 켜지 않는다.
@@ -310,6 +300,7 @@ function Navigation() {
                 to={item.path}
                 $active={active}
                 $accent={accent}
+                $edition={edition}
                 aria-current={active ? 'page' : undefined}
                 onClick={() => setOpen(false)}
               >
@@ -321,6 +312,7 @@ function Navigation() {
         </Links>
 
         <MenuButton
+          $edition={edition}
           type="button"
           aria-label="메뉴"
           aria-expanded={open}
