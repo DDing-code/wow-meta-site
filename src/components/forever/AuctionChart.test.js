@@ -4,10 +4,13 @@ import { MemoryRouter } from 'react-router-dom';
 import AuctionChart, { auctionMoney } from './AuctionChart';
 import ForeverPage from '../../pages/ForeverPage';
 import snapshot from '../../data/foreverAuction.json';
+import koreanSnapshot from '../../data/foreverAuctionKr.json';
 
 let container;
 let root;
+const originalFetch = global.fetch;
 beforeEach(() => {
+  global.fetch = jest.fn(() => new Promise(() => {}));
   global.IS_REACT_ACT_ENVIRONMENT = true;
   container = document.createElement('div');
   document.body.appendChild(container);
@@ -16,40 +19,50 @@ beforeEach(() => {
 afterEach(() => {
   act(() => root.unmount());
   container.remove();
+  global.fetch = originalFetch;
 });
 const render = data => act(() => root.render(<AuctionChart data={data} />));
 
-test('경매장 독립 탭은 한국 시장만 보여 주고 미국 시험 가격은 공개하지 않는다', () => {
+test('경매장 독립 탭은 공식 한국 가격만 보여 주고 미국 시험 가격은 공개하지 않는다', () => {
   act(() => root.render(<MemoryRouter initialEntries={['/forever/auction']} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}><ForeverPage section="auction" /></MemoryRouter>));
   const section = container.querySelector('#auction');
   expect(container.querySelector('h1').textContent).toBe('포에버 경매장');
   expect(container.querySelector('a[aria-current="page"]').getAttribute('href')).toBe('/forever/auction');
   expect(section.querySelectorAll('select option')).toHaveLength(4);
-  expect(section.textContent).toContain('한국 시세 수집을 준비 중');
+  expect(section.textContent).toContain('블리자드 한국 경매장');
+  expect(section.textContent).toContain('일반·전쟁 구분 미확인');
   expect(section.textContent).not.toContain('미국');
-  expect(section.querySelector('.auction-plot')).toBeNull();
+  expect(section.querySelector('.auction-plot')).not.toBeNull();
   act(() => root.render(<MemoryRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}><ForeverPage /></MemoryRouter>));
   expect(container.querySelector('#auction a').getAttribute('href')).toBe('/forever/auction');
   expect(container.querySelector('.auction-workspace')).toBeNull();
 });
 
-test('한국 얼라이언스·호드와 일반·전쟁 시장을 나누고 미국 가격을 대신 보여주지 않는다', () => {
+test('미확정 일반·전쟁 이름을 붙이지 않고 한국 네 경매장 가격·수량을 따로 보여 준다', () => {
   act(() => root.render(<AuctionChart />));
   const select = container.querySelector('select');
-  for (const ruleset of ['normal', 'pvp']) {
-    for (const faction of ['alliance', 'horde']) {
+  for (const market of koreanSnapshot.markets) {
       act(() => {
-        select.value = `forever.${ruleset}.${faction}.kr`;
+        select.value = market.market;
         select.dispatchEvent(new Event('change', { bubbles: true }));
       });
-      expect(container.querySelector('.auction-main').textContent).toContain('저장된 가격 자료가 없습니다');
-      expect(container.querySelector('.auction-plot')).toBeNull();
-      expect(container.querySelector('.auction-items').textContent).toBe('');
-      expect(container.querySelector('.auction-empty a').href).toContain(`kr-${ruleset}-${faction}`);
-      expect(container.textContent).not.toContain('4은 89동');
-    }
+      expect(container.querySelector('.auction-market').textContent).toBe(market.marketLabel);
+      expect(container.querySelector('.auction-heading strong').textContent).toBe(auctionMoney(market.items[0].candles.at(-1).close));
+      expect(container.querySelector('.auction-quote').textContent).toContain(`매물 ${market.items[0].listedQuantity.toLocaleString('ko-KR')}개`);
   }
   expect([...select.options].every(option => option.value.endsWith('.kr'))).toBe(true);
+});
+
+test('공개 한국 자료로 갱신하고 다른 지역·망가진 응답·통신 실패에는 마지막 가격을 유지한다', async () => {
+  const newer = { ...koreanSnapshot, fetchedAt: '2026-11-24T00:00:00.000Z', markets: koreanSnapshot.markets.map(m => ({ ...m, items: m.items.map(i => ({ ...i, candles: i.candles.map(c => ({ ...c, open: 12345, high: 12345, low: 12345, close: 12345 })) })) })) };
+  for (const result of [newer, { ...newer, region: 'us' }, { ...newer, markets: [] }, null]) {
+    global.fetch = result ? jest.fn().mockResolvedValue({ ok: true, json: async () => result }) : jest.fn().mockRejectedValue(new Error('연결 실패'));
+    await act(async () => root.render(<AuctionChart key={String(result?.region) + result?.markets.length} />));
+    const valid = result === newer;
+    expect(container.querySelector('.auction-heading strong').textContent).toBe(auctionMoney(valid ? 12345 : koreanSnapshot.markets[0].items[0].candles.at(-1).close));
+    expect(container.textContent.includes('마지막 저장 자료를 표시')).toBe(!valid);
+    expect(global.fetch.mock.calls[0][0]).toContain('/auction-data/forever-auction-kr.json');
+  }
 });
 test('아이템과 날짜를 바꾸면 실제 원본 OHLC와 선택 상태가 함께 바뀐다', () => {
   render(snapshot);

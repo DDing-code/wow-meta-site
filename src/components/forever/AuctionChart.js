@@ -1,14 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { CandlestickChart, TrendingUp, Crosshair, ZoomIn, ZoomOut, RotateCcw, ChevronLeft, ChevronRight } from 'lucide-react';
+import koreanSnapshot from '../../data/foreverAuctionKr.json';
 
 const DAY = 86400000;
-const markets = ['normal', 'pvp'].flatMap(ruleset => ['alliance', 'horde'].map(faction => ({
-  market: `forever.${ruleset}.${faction}.kr`,
-  marketLabel: `한국 · ${ruleset === 'normal' ? '일반' : '전쟁'} · ${faction === 'alliance' ? '얼라이언스' : '호드'}`,
-  items: [],
-  referenceUrl: `https://forevermastery.com/en/prices/kr-${ruleset}-${faction}`,
-})));
+const KOREAN_PRICES = 'https://raw.githubusercontent.com/DDing-code/wow-meta-site/auction-data/forever-auction-kr.json';
 const date = time => new Intl.DateTimeFormat('ko-KR', { timeZone: 'UTC', month: 'numeric', day: 'numeric' }).format(time);
 const hour = time => `${date(time)} ${new Intl.DateTimeFormat('ko-KR', { timeZone: 'UTC', hour: '2-digit', minute: '2-digit', hour12: false }).format(time)}`;
 const stamp = time => new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(time));
@@ -281,8 +277,37 @@ function Candles({ item }) {
   </>;
 }
 
-// shortcut: 한국 전용 수집기 연결 전에는 빈 시장을 유지하며 다른 지역 자료로 채우지 않는다.
-export default function AuctionChart({ data = { markets } }) {
+export default function AuctionChart({ data: suppliedData }) {
+  const [snapshot, setSnapshot] = useState(koreanSnapshot);
+  const [refreshFailed, setRefreshFailed] = useState(false);
+  useEffect(() => {
+    if (suppliedData) return;
+    const controller = new AbortController();
+    let timer;
+    async function refresh() {
+      try {
+        const response = await fetch(KOREAN_PRICES, { cache: 'no-cache', signal: controller.signal });
+        if (!response.ok) throw new Error('시세 요청 실패');
+        const next = await response.json();
+        if (next.edition !== 'forever' || next.region !== 'kr' || next.provider !== 'blizzard' || !Number.isFinite(Date.parse(next.fetchedAt)) ||
+          !Array.isArray(next.markets) || next.markets.length !== 4 ||
+          ![110, 111, 113, 114].every(id => next.markets.some(m => m.houseId === id && m.market === `forever.house-${id}.kr` &&
+            typeof m.marketLabel === 'string' && Array.isArray(m.items) && m.items.every(item =>
+              Number.isSafeInteger(item.id) && typeof item.name === 'string' && Number.isSafeInteger(item.listedQuantity) && item.listedQuantity >= 0 &&
+              typeof item.available === 'boolean' && (item.observedAt === null || (Number.isSafeInteger(item.observedAt) && item.observedAt > 0)) &&
+              ['candles', 'hourlyCandles'].every(key => Array.isArray(item[key]) && item[key].every(candle =>
+                ['time', 'open', 'high', 'low', 'close'].every(field => Number.isSafeInteger(candle[field]) && candle[field] > 0))))))) throw new Error('한국 시세 형식 오류');
+        if (!controller.signal.aborted) { setSnapshot(current => Date.parse(next.fetchedAt) >= Date.parse(current.fetchedAt) ? next : current); setRefreshFailed(false); }
+      } catch {
+        if (!controller.signal.aborted) setRefreshFailed(true);
+      } finally {
+        if (!controller.signal.aborted) timer = setTimeout(refresh, 300000);
+      }
+    }
+    refresh();
+    return () => { controller.abort(); clearTimeout(timer); };
+  }, [suppliedData]);
+  const data = suppliedData || snapshot;
   const availableMarkets = data.markets || [data];
   const [selectedMarket, setSelectedMarket] = useState(availableMarkets[0]?.market);
   const market = availableMarkets.find(entry => entry.market === selectedMarket) || availableMarkets[0];
@@ -294,10 +319,12 @@ export default function AuctionChart({ data = { markets } }) {
       <select aria-label="경매장 선택" value={market.market} onChange={event => { setSelectedMarket(event.target.value); setSelectedId(null); }}>
         {availableMarkets.map(entry => <option value={entry.market} key={entry.market}>{entry.marketLabel}{!entry.items.length ? ' · 연결 대기' : ''}</option>)}
       </select>
-      <span>지역·규칙·진영별 별도 시세</span>
+      <span>{data.provider === 'blizzard' ? '일반·전쟁 구분 미확인 · 경매장 번호별 시세' : '지역·규칙·진영별 별도 시세'}</span>
     </label>}
     <p className="auction-market">{market?.marketLabel}</p>
-    <p className="auction-note">{market?.items.length ? '플레이어가 관측한 최저 즉시구매가입니다. 저장된 시험 자료이며 실시간 가격이 아닙니다.' : '한국 시세 수집을 준비 중입니다. 가격이 연결되면 이곳에 표시됩니다.'}</p>
+    <p className="auction-note">{data.provider === 'blizzard' ? '블리자드 한국 경매장의 개당 최저 즉시구매가입니다. 매시간 수집하며, 일반·전쟁은 게임 매물 대조 전이라 경매장 번호로 표시합니다.' : market?.items.length ? '플레이어가 관측한 최저 즉시구매가입니다. 저장된 시험 자료이며 실시간 가격이 아닙니다.' : '한국 시세 수집을 준비 중입니다. 가격이 연결되면 이곳에 표시됩니다.'}</p>
+    {!suppliedData && refreshFailed && <p className="auction-note" role="status">새 가격을 불러오지 못해 마지막 저장 자료를 표시합니다. 아래 관측 시각을 확인해 주세요.</p>}
+    {data.provider === 'blizzard' && <p className="auction-note">한국 가격 기록은 2026년 11월 23일부터 쌓입니다. 이전 시세와 관측이 없는 시간은 채우지 않습니다.</p>}
     <div className="auction-workspace">
       <div className="auction-main">{item ? <Candles key={`${market.market}:${item.id}`} item={item} /> : <div className="auction-empty" role="status"><p>저장된 가격 자료가 없습니다.</p>{market?.referenceUrl && <p><a href={market.referenceUrl} target="_blank" rel="noopener noreferrer">{market.marketLabel} 외부 시세 확인 ↗</a></p>}</div>}</div>
       <aside className="auction-watchlist" aria-label="관심 재료">
@@ -308,7 +335,7 @@ export default function AuctionChart({ data = { markets } }) {
           const change = dailyChange(entry.candles);
           return <button type="button" key={entry.id} aria-pressed={item.id === entry.id} onClick={() => setSelectedId(entry.id)}><span>{entry.name}</span><span>{close === undefined ? '—' : <Money copper={close} />}</span><span className={change > 0 ? 'auction-up' : 'auction-down'}>{changeText(change)}</span></button>;
         })}</div>
-        {item && <div className="auction-quote"><p>{item.name}</p><strong>{last ? <Money copper={last.close} /> : '—'}</strong><p className="auction-note">마지막 기록의 종가 · 개당</p><p className="auction-note">{market.marketLabel}</p></div>}
+        {item && <div className="auction-quote"><p>{item.name}</p><strong>{last ? <Money copper={last.close} /> : '—'}</strong><p className="auction-note">마지막 기록의 종가 · 개당</p>{item.listedQuantity !== undefined && <p className="auction-note">현재 즉시구매 매물 {item.listedQuantity.toLocaleString('ko-KR')}개{item.available === false ? ' · 마지막 관측 가격 표시' : ''}</p>}<p className="auction-note">{market.marketLabel}</p></div>}
       </aside>
     </div>
     {item && <div className="auction-legend"><span className="auction-up">▲ 상승 · 속이 빈 봉</span><span className="auction-down">▼ 하락 · 채운 봉</span><span className="auction-note">봉을 누르거나 올려 가격 확인 · 키보드 ← → 이동</span></div>}
@@ -316,7 +343,7 @@ export default function AuctionChart({ data = { markets } }) {
     <p className="auction-note">마지막 관측: {item.observedAt ? `${stamp(item.observedAt)} (한국 시간)` : '확인되지 않음'}</p>
     {(!item.observedAt || Date.now() - item.observedAt > DAY) && <p className="auction-note" role="status">하루 이내의 관측이 없습니다. 현재 경매장 가격과 다를 수 있습니다.</p>}
     <details><summary>가격표와 읽는 법</summary>
-      <p className="auction-note">한 봉은 선택한 1일 또는 1시간 동안 관측한 최저 즉시구매가의 첫 값·최고·최저·마지막 값입니다. 거래 체결가나 거래량을 뜻하지 않습니다. 관측이 없는 구간은 빈칸으로 남깁니다. 1분봉은 자료원 접근 권한이 필요해 연결되지 않았습니다.</p>
+      <p className="auction-note">한 봉은 선택한 1일 또는 1시간 동안 관측한 최저 즉시구매가의 첫 값·최고·최저·마지막 값입니다. 거래 체결가나 거래량을 뜻하지 않습니다. 관측이 없는 구간은 빈칸으로 남깁니다. 1분봉은 연결되지 않았습니다.</p>
       <p className="auction-note">날짜는 세계 표준시(UTC), 하루는 한국 시간 오전 9시부터입니다. 전일 대비는 전날 종가와 비교하며, 전날 기록이 없으면 표시하지 않습니다.</p>
       <div className="auction-table" tabIndex="0" role="region" aria-label="날짜별 가격표"><table><caption>{item.name} · 일봉 개당 가격 (100동 = 1은, 100은 = 1금)</caption>
         <thead><tr>{['날짜 (UTC)', '시가', '고가', '저가', '종가'].map(label => <th key={label} scope="col">{label}</th>)}</tr></thead>
@@ -326,5 +353,6 @@ export default function AuctionChart({ data = { markets } }) {
     <p className="auction-note"><a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">가격 원자료 ↗</a> · <a href={item.nameSource} target="_blank" rel="noopener noreferrer">아이템 정보 ↗</a></p>
     </>}
     {market?.source && <p className="auction-note">자료: <a href={market.source} target="_blank" rel="noopener noreferrer">auctionhouse.fyi ↗</a> · 가져온 시각: {stamp(market.fetchedAt)} (한국 시간)</p>}
+    {data.provider === 'blizzard' && <p className="auction-note">자료: <a href="https://develop.battle.net/" target="_blank" rel="noopener noreferrer">블리자드 API ↗</a> · 가져온 시각: {stamp(data.fetchedAt)} (한국 시간)</p>}
   </Content>;
 }

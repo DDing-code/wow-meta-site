@@ -5,7 +5,7 @@ const start = Date.UTC(2026, 10, 22, 3);
 const quote = (price, quantity = 2) => ({ item: { id: 14047 }, unit_price: price, quantity });
 const snapshot = (rows, at = start, old) => marketSnapshot(110, '얼라이언스', rows, at, old);
 
-test('個당 최저가와 현재 수량을 쓰며 같은 공식 관측을 중복 집계하지 않는다', () => {
+test('개당 최저가와 현재 수량을 쓰며 같은 공식 관측을 중복 집계하지 않는다', () => {
   const first = snapshot([quote(701, 20), quote(500, 3), { item: { id: 14047 }, quantity: 1 }]);
   assert.equal(first.items[0].candles[0].close, 500);
   assert.equal(first.items[0].listedQuantity, 23);
