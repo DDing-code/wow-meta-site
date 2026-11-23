@@ -1,0 +1,43 @@
+name: 한국 포에버 경매장 수집
+on:
+  schedule:
+    - cron: '43 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: forever-auction-kr
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          path: source
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+      - run: node --test source/scripts/update-forever-auction-kr.test.cjs
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: auction-data
+          path: prices
+      - name: 한국 공식 시세 수집
+        run: node source/scripts/update-forever-auction-kr.cjs
+        env:
+          BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+          BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+          AUCTION_OUTPUT: prices/forever-auction-kr.json
+      - name: 가격 자료만 저장
+        working-directory: prices
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add forever-auction-kr.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update Korean Forever auction observations'
+            git push origin HEAD:auction-data
+          fi
