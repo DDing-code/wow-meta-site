@@ -54,6 +54,20 @@ const Content = styled.div`
   .auction-markets select { width: 260px; max-width: 100%; min-height: 40px; padding: 8px 30px 8px 12px; border: 1px solid #5c513b; background-color: #211b14; color: #f3dfaa; font: inherit; }
   .auction-markets select:focus-visible { outline: 2px solid #8dd9f5; outline-offset: 2px; }
   .auction-market { color: #f6cf5f; margin: 0 0 6px; }
+  .auction-search { position: relative; border: 1px solid #393b42; background-color: #17191e; margin-bottom: 16px; }
+  .auction-search-field { display: flex; align-items: center; gap: 10px; padding: 10px 14px; }
+  .auction-search-field label { color: #a9e6ff; font-size: .85rem; white-space: nowrap; }
+  .auction-search-field button { flex: none; white-space: nowrap; }
+  .auction-search-field input { width: 100%; min-width: 0; min-height: 36px; border: 0; background-color: transparent; color: #eee9df; font: inherit; font-size: .9rem; }
+  .auction-search-field input:focus-visible { outline: 2px solid #8dd9f5; outline-offset: 2px; }
+  .auction-search-results { border-top: 1px solid #393b42; }
+  .auction-search-tabs { display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 10px; }
+  .auction-search-count { margin: 0; padding: 4px 14px 10px; color: #9ca2b1; font-size: .75rem; }
+  .auction-search-list { max-height: 320px; overflow-y: auto; overscroll-behavior: contain; }
+  .auction-search-list > button { display: grid; grid-template-columns: minmax(0, 1fr) auto; width: 100%; gap: 8px; text-align: left; padding: 10px 14px; border-top: 1px solid #ffffff08; }
+  .auction-search-list small { display: block; color: #9ca2b1; margin-top: 4px; font-size: .7rem; }
+  .auction-search-list .auction-result-price { text-align: right; }
+  .auction-search .auction-search-more { width: 100%; min-height: 44px; color: #a9e6ff; }
   .auction-note { color: #bfb4a0; font-size: .8rem; line-height: 1.8; }
   .auction-workspace { display: grid; grid-template-columns: minmax(0, 1fr) 250px; background-color: #17191e; border: 1px solid #393b42; margin-top: 16px; }
   .auction-main { min-width: 0; }
@@ -122,6 +136,8 @@ const Content = styled.div`
     .auction-quote { display: none; }
   }
   @media (max-width: 560px) {
+    .auction-search-field { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px; }
+    .auction-search-field label { grid-column: 1 / -1; }
     .auction-heading { padding: 12px 10px 2px; }
     .auction-heading strong { font-size: 1.1rem; }
     .auction-date { padding: 0 10px; }
@@ -140,6 +156,53 @@ function dailyChange(candles) {
   return (last.close / previous.close - 1) * 100;
 }
 const changeText = value => value === null ? '—' : `${value > 0 ? '+' : ''}${value.toFixed(2)}%`;
+const WATCHED_ITEMS = [14047, 2770, 2589];
+const searchText = value => value.toLocaleLowerCase('ko-KR').replace(/\s/g, '');
+
+function AuctionSearch({ market, selectedId, onSelect }) {
+  const [query, setQuery] = useState('');
+  const [open, setOpen] = useState(false);
+  const [filter, setFilter] = useState('all');
+  const [limit, setLimit] = useState(40);
+  const input = useRef(null);
+  const term = searchText(query);
+  const matches = market?.items.filter(item =>
+    (filter !== 'available' || item.available !== false) && (filter !== 'watched' || WATCHED_ITEMS.includes(item.id)) &&
+    (searchText(item.name).includes(term) || String(item.id).includes(term)))
+    .sort((a, b) => Number(a.nameVerified === false) - Number(b.nameVerified === false)) || [];
+  const choose = item => { onSelect(item.id); setOpen(false); setQuery(''); input.current.blur(); };
+  return <div className="auction-search" onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false); }}
+    onKeyDown={event => { if (event.key === 'Escape') { input.current.focus(); setOpen(false); } }}>
+    <div className="auction-search-field">
+      <label htmlFor="auction-symbol-search">종목 검색</label>
+      <input ref={input} id="auction-symbol-search" type="search" value={query} placeholder="아이템 이름 또는 번호 검색"
+        aria-controls="auction-symbol-results" autoComplete="off"
+        onFocus={() => setOpen(true)} onClick={() => setOpen(true)} onChange={event => { setQuery(event.target.value); setLimit(40); setOpen(true); }}
+        onKeyDown={event => {
+          if (event.nativeEvent.isComposing) return;
+          if (event.key === 'Enter' && matches.length) { event.preventDefault(); choose(matches[0]); }
+          if (event.key === 'ArrowDown' && open) { event.preventDefault(); input.current.closest('.auction-search').querySelector('.auction-search-list button')?.focus(); }
+        }} />
+      {open && <button type="button" onClick={() => { input.current.focus(); setOpen(false); }} aria-label="종목 검색 닫기">닫기</button>}
+    </div>
+    <div id="auction-symbol-results" className="auction-search-results" hidden={!open}>
+      <div className="auction-search-tabs" role="group" aria-label="종목 범위">
+        {[['all', '전체 품목'], ['available', '즉구 매물'], ['watched', '관심 재료']].map(([key, label]) => <button type="button" key={key} aria-pressed={filter === key} onClick={() => { setFilter(key); setLimit(40); }}>{label}</button>)}
+      </div>
+      <p className="auction-search-count" role="status">{matches.length.toLocaleString('ko-KR')}개 품목 · {market?.marketLabel}{!matches.length ? ' · 검색 결과가 없습니다.' : ''}<br />이름 미확인 품목은 아이템 번호로 검색하세요.</p>
+      <div className="auction-search-list" role="group" aria-label="종목 검색 결과">
+        {matches.slice(0, limit).map(entry => {
+          const close = entry.candles.at(-1)?.close;
+          return <button type="button" key={entry.id} aria-pressed={entry.id === selectedId} onClick={() => choose(entry)}>
+            <span>{entry.name}<small>#{entry.id}{entry.nameVerified === false ? ' · 이름 미확인' : ''}</small></span>
+            <span className="auction-result-price">{close === undefined ? '관측 없음' : <Money copper={close} />}<small>{entry.available === false ? '즉구 매물 없음' : entry.listedQuantity === undefined ? '마지막 관측 가격' : `매물 ${entry.listedQuantity.toLocaleString('ko-KR')}개`}</small></span>
+          </button>;
+        })}
+        {matches.length > limit && <button type="button" className="auction-search-more" onClick={() => setLimit(limit + 40)}>더 보기 ({Math.min(limit, matches.length)} / {matches.length})</button>}
+      </div>
+    </div>
+  </div>;
+}
 
 function Candles({ item }) {
   const host = useRef(null);
@@ -289,7 +352,8 @@ export default function AuctionChart({ data: suppliedData }) {
         const response = await fetch(KOREAN_PRICES, { cache: 'no-cache', signal: controller.signal });
         if (!response.ok) throw new Error('시세 요청 실패');
         const next = await response.json();
-        if (next.edition !== 'forever' || next.region !== 'kr' || next.provider !== 'blizzard' || !Number.isFinite(Date.parse(next.fetchedAt)) ||
+        if (Date.parse(next.fetchedAt) < Date.parse(koreanSnapshot.fetchedAt)) return;
+        if (next.catalogVersion !== 1 || next.edition !== 'forever' || next.region !== 'kr' || next.provider !== 'blizzard' || !Number.isFinite(Date.parse(next.fetchedAt)) ||
           !Array.isArray(next.markets) || next.markets.length !== 4 ||
           ![110, 111, 113, 114].every(id => next.markets.some(m => m.houseId === id && m.market === `forever.house-${id}.kr` &&
             typeof m.marketLabel === 'string' && Array.isArray(m.items) && m.items.every(item =>
@@ -312,9 +376,10 @@ export default function AuctionChart({ data: suppliedData }) {
   const [selectedMarket, setSelectedMarket] = useState(availableMarkets[0]?.market);
   const market = availableMarkets.find(entry => entry.market === selectedMarket) || availableMarkets[0];
   const [selectedId, setSelectedId] = useState(null);
-  const item = market?.items.find(entry => entry.id === selectedId) || market?.items[0];
+  const item = market?.items.find(entry => entry.id === selectedId) || market?.items.find(entry => entry.id === WATCHED_ITEMS[0]) || market?.items[0];
   const last = item?.candles[item.candles.length - 1];
   return <Content>
+    <AuctionSearch key={market?.market} market={market} selectedId={item?.id} onSelect={setSelectedId} />
     {availableMarkets.length > 1 && <label className="auction-markets">경매장
       <select aria-label="경매장 선택" value={market.market} onChange={event => { setSelectedMarket(event.target.value); setSelectedId(null); }}>
         {availableMarkets.map(entry => <option value={entry.market} key={entry.market}>{entry.marketLabel}{!entry.items.length ? ' · 연결 대기' : ''}</option>)}
@@ -325,12 +390,13 @@ export default function AuctionChart({ data: suppliedData }) {
     <p className="auction-note">{data.provider === 'blizzard' ? '블리자드 한국 경매장의 개당 최저 즉시구매가입니다. 매시간 수집하며, 일반·전쟁은 게임 매물 대조 전이라 경매장 번호로 표시합니다.' : market?.items.length ? '플레이어가 관측한 최저 즉시구매가입니다. 저장된 시험 자료이며 실시간 가격이 아닙니다.' : '한국 시세 수집을 준비 중입니다. 가격이 연결되면 이곳에 표시됩니다.'}</p>
     {!suppliedData && refreshFailed && <p className="auction-note" role="status">새 가격을 불러오지 못해 마지막 저장 자료를 표시합니다. 아래 관측 시각을 확인해 주세요.</p>}
     {data.provider === 'blizzard' && <p className="auction-note">한국 가격 기록은 2026년 11월 23일부터 쌓입니다. 이전 시세와 관측이 없는 시간은 채우지 않습니다.</p>}
+    {data.provider === 'blizzard' && <p className="auction-note">검색은 수집한 전체 품목을 대상으로 합니다. 장비는 같은 아이템 번호의 최저가이며 옵션별 가격은 다를 수 있습니다.</p>}
     <div className="auction-workspace">
       <div className="auction-main">{item ? <Candles key={`${market.market}:${item.id}`} item={item} /> : <div className="auction-empty" role="status"><p>저장된 가격 자료가 없습니다.</p>{market?.referenceUrl && <p><a href={market.referenceUrl} target="_blank" rel="noopener noreferrer">{market.marketLabel} 외부 시세 확인 ↗</a></p>}</div>}</div>
       <aside className="auction-watchlist" aria-label="관심 재료">
         <h4>관심 재료</h4>
         <div className="auction-watch-head"><span>아이템</span><span>종가</span><span>전일 대비</span></div>
-        <div className="auction-items" role="group" aria-label="시세 아이템 선택">{market?.items.map(entry => {
+        <div className="auction-items" role="group" aria-label="시세 아이템 선택">{market?.items.filter(entry => WATCHED_ITEMS.includes(entry.id) || entry.id === item?.id).map(entry => {
           const close = entry.candles[entry.candles.length - 1]?.close;
           const change = dailyChange(entry.candles);
           return <button type="button" key={entry.id} aria-pressed={item.id === entry.id} onClick={() => setSelectedId(entry.id)}><span>{entry.name}</span><span>{close === undefined ? '—' : <Money copper={close} />}</span><span className={change > 0 ? 'auction-up' : 'auction-down'}>{changeText(change)}</span></button>;
@@ -350,7 +416,7 @@ export default function AuctionChart({ data: suppliedData }) {
         <tbody>{item.candles.map(candle => <tr key={candle.time}><th scope="row">{date(candle.time)}</th>{['open', 'high', 'low', 'close'].map(key => <td key={key}><Money copper={candle[key]} /></td>)}</tr>)}</tbody>
       </table></div>
     </details>
-    <p className="auction-note"><a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">가격 원자료 ↗</a> · <a href={item.nameSource} target="_blank" rel="noopener noreferrer">아이템 정보 ↗</a></p>
+    <p className="auction-note"><a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">가격 원자료 ↗</a> · <a href={`https://www.wowhead.com/forever/ko/item=${item.id}`} target="_blank" rel="noopener noreferrer">아이템 정보 ↗</a></p>
     </>}
     {market?.source && <p className="auction-note">자료: <a href={market.source} target="_blank" rel="noopener noreferrer">auctionhouse.fyi ↗</a> · 가져온 시각: {stamp(market.fetchedAt)} (한국 시간)</p>}
     {data.provider === 'blizzard' && <p className="auction-note">자료: <a href="https://develop.battle.net/" target="_blank" rel="noopener noreferrer">블리자드 API ↗</a> · 가져온 시각: {stamp(data.fetchedAt)} (한국 시간)</p>}

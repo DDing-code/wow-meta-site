@@ -46,20 +46,21 @@ test('미확정 일반·전쟁 이름을 붙이지 않고 한국 네 경매장 �
         select.value = market.market;
         select.dispatchEvent(new Event('change', { bubbles: true }));
       });
+      const quoted = market.items.find(item => item.id === 14047) || market.items[0];
       expect(container.querySelector('.auction-market').textContent).toBe(market.marketLabel);
-      expect(container.querySelector('.auction-heading strong').textContent).toBe(auctionMoney(market.items[0].candles.at(-1).close));
-      expect(container.querySelector('.auction-quote').textContent).toContain(`매물 ${market.items[0].listedQuantity.toLocaleString('ko-KR')}개`);
+      expect(container.querySelector('.auction-heading strong').textContent).toBe(auctionMoney(quoted.candles.at(-1).close));
+      expect(container.querySelector('.auction-quote').textContent).toContain(`매물 ${quoted.listedQuantity.toLocaleString('ko-KR')}개`);
   }
   expect([...select.options].every(option => option.value.endsWith('.kr'))).toBe(true);
 });
 
 test('공개 한국 자료로 갱신하고 다른 지역·망가진 응답·통신 실패에는 마지막 가격을 유지한다', async () => {
   const newer = { ...koreanSnapshot, fetchedAt: '2026-11-24T00:00:00.000Z', markets: koreanSnapshot.markets.map(m => ({ ...m, items: m.items.map(i => ({ ...i, candles: i.candles.map(c => ({ ...c, open: 12345, high: 12345, low: 12345, close: 12345 })) })) })) };
-  for (const result of [newer, { ...newer, region: 'us' }, { ...newer, markets: [] }, null]) {
+  for (const result of [newer, { ...newer, region: 'us' }, { ...newer, markets: [] }, { ...newer, catalogVersion: undefined }, null]) {
     global.fetch = result ? jest.fn().mockResolvedValue({ ok: true, json: async () => result }) : jest.fn().mockRejectedValue(new Error('연결 실패'));
     await act(async () => root.render(<AuctionChart key={String(result?.region) + result?.markets.length} />));
     const valid = result === newer;
-    expect(container.querySelector('.auction-heading strong').textContent).toBe(auctionMoney(valid ? 12345 : koreanSnapshot.markets[0].items[0].candles.at(-1).close));
+    expect(container.querySelector('.auction-heading strong').textContent).toBe(auctionMoney(valid ? 12345 : koreanSnapshot.markets[0].items.find(item => item.id === 14047).candles.at(-1).close));
     expect(container.textContent.includes('마지막 저장 자료를 표시')).toBe(!valid);
     expect(global.fetch.mock.calls[0][0]).toContain('/auction-data/forever-auction-kr.json');
   }
@@ -73,6 +74,14 @@ test('아이템과 날짜를 바꾸면 실제 원본 OHLC와 선택 상태가 �
   expect(candles[0].getAttribute('aria-pressed')).toBe('true');
   expect([...container.querySelectorAll('.auction-values dd')].map(node => node.textContent)).toEqual(['open', 'high', 'low', 'close'].map(key => auctionMoney(snapshot.items[1].candles[0][key])));
   expect(container.querySelectorAll('tbody tr')).toHaveLength(snapshot.items[1].candles.length);
+});
+
+test('초기 전체 자료보다 오래된 응답은 덮어쓰거나 연결 실패로 표시하지 않는다', async () => {
+  global.fetch = jest.fn().mockResolvedValue({ ok: true, json: async () => ({ ...koreanSnapshot, catalogVersion: undefined, fetchedAt: '2026-11-22T00:00:00Z' }) });
+  await act(async () => root.render(<AuctionChart />));
+  expect(container.textContent).not.toContain('마지막 저장 자료를 표시');
+  search('264114');
+  expect(container.querySelector('.auction-search-list > button').textContent).toContain('264114');
 });
 test('빈 관측은 0원 봉으로 그리지 않고 같은 가격 한 봉도 유한 좌표로 그린다', () => {
   render({ ...snapshot, items: [{ ...snapshot.items[0], candles: [] }] });
@@ -99,6 +108,81 @@ test('누락된 날은 날짜 간격으로 남기고 동을 반올림하지 않�
 
 const button = label => [...container.querySelectorAll('button')].find(node => node.getAttribute('aria-label') === label || node.textContent === label);
 const click = label => act(() => button(label).click());
+
+const search = value => {
+  const input = container.querySelector('input[type=search]');
+  act(() => {
+    input.focus();
+    Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(input, value);
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  });
+  return input;
+};
+
+test('상단 검색은 관심 재료 밖의 이름·번호·띄어쓰기를 검색하고 결과를 차트로 연다', () => {
+  const extra = { ...snapshot.items[0], id: 99999, name: '시험 장비', available: true };
+  const unnamed = { ...extra, id: 88888, name: '아이템 88888', nameVerified: false };
+  render({ ...snapshot, items: [unnamed, ...snapshot.items, extra] });
+  expect(container.querySelector('.auction-search')).toBe(container.firstChild.firstChild);
+  expect(container.querySelectorAll('.auction-items button')).toHaveLength(3);
+  search('');
+  const results = [...container.querySelectorAll('.auction-search-list > button')];
+  expect(results[0].textContent).toContain(snapshot.items[0].name);
+  expect(results.at(-1).textContent).toContain('이름 미확인');
+  search('시험장비');
+  expect(container.querySelectorAll('.auction-search-list > button')).toHaveLength(1);
+  act(() => container.querySelector('.auction-search-list > button').click());
+  expect(container.querySelector('.auction-heading h3').textContent).toBe('시험 장비');
+  expect(container.querySelector('.auction-search-results').hidden).toBe(true);
+  expect(container.querySelectorAll('.auction-items button')).toHaveLength(4);
+  const input = search('99999');
+  expect(container.querySelector('.auction-search-list > button').textContent).toContain('시험 장비');
+  act(() => input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, isComposing: true })));
+  expect(container.querySelector('.auction-search-results').hidden).toBe(false);
+  act(() => input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })));
+  expect(container.querySelector('.auction-search-results').hidden).toBe(true);
+});
+
+test('검색 범위·매물 없음·빈 결과·키보드 이동·닫기를 처리한다', () => {
+  const extra = { ...snapshot.items[0], id: 99999, name: '시험 장비', available: false, listedQuantity: 0 };
+  render({ ...snapshot, items: [...snapshot.items, extra] });
+  let input = search('장비');
+  expect(container.querySelector('.auction-search-list').textContent).toContain('즉구 매물 없음');
+  click('즉구 매물');
+  expect(container.querySelector('.auction-search-count').textContent).toContain('검색 결과가 없습니다');
+  click('전체 품목');
+  act(() => input.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowDown', bubbles: true })));
+  expect(document.activeElement).toBe(container.querySelector('.auction-search-list > button'));
+  act(() => document.activeElement.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true })));
+  expect(container.querySelector('.auction-search-results').hidden).toBe(true);
+  expect(document.activeElement).toBe(input);
+  act(() => input.click());
+  expect(container.querySelector('.auction-search-results').hidden).toBe(false);
+  click('관심 재료');
+  expect(container.querySelector('.auction-search-count').textContent).toContain('검색 결과가 없습니다');
+  click('전체 품목');
+  input = search('없는이름');
+  expect(container.querySelectorAll('.auction-search-list > button')).toHaveLength(0);
+  act(() => input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })));
+  expect(container.querySelector('.auction-heading h3').textContent).toBe(snapshot.items[0].name);
+});
+
+test('전체 품목 결과는 더 보기로 끝까지 열고 시장을 바꾸면 검색 범위를 바꾼다', () => {
+  const items = Array.from({ length: 85 }, (_, index) => ({ ...snapshot.items[0], id: 90000 + index, name: `시험 품목 ${index}` }));
+  const other = { ...snapshot, market: 'other', marketLabel: '다른 경매장', items: [snapshot.items[1]] };
+  render({ markets: [{ ...snapshot, items }, other] });
+  search('시험');
+  expect(container.querySelectorAll('.auction-search-list > button:not(.auction-search-more)')).toHaveLength(40);
+  act(() => container.querySelector('.auction-search-more').click());
+  act(() => container.querySelector('.auction-search-more').click());
+  expect(container.querySelectorAll('.auction-search-list > button')).toHaveLength(85);
+  expect(container.querySelector('.auction-search-more')).toBeNull();
+  const select = container.querySelector('select');
+  act(() => { select.value = 'other'; select.dispatchEvent(new Event('change', { bubbles: true })); });
+  search('구리');
+  expect(container.querySelectorAll('.auction-search-list > button')).toHaveLength(1);
+  expect(container.querySelector('.auction-search-count').textContent).toContain('다른 경매장');
+});
 
 test('선 전환·기간 선택·확대·이동·초기화는 실제 날짜 범위에 적용된다', () => {
   render(snapshot);
