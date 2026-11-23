@@ -230,7 +230,7 @@ function Candles({ item }) {
         const rising = candle.close >= candle.open;
         const color = rising ? '#ef8872' : '#8dd9f5';
         const center = x(candle.time);
-        const bar = step * .7;
+        const bar = Math.min(step * .7, totalBars === 1 ? 14 : Infinity);
         const label = `${labelDate(candle.time)} · UTC · 시가 ${auctionMoney(candle.open)}, 고가 ${auctionMoney(candle.high)}, 저가 ${auctionMoney(candle.low)}, 종가 ${auctionMoney(candle.close)}`;
         return <g key={candle.time} role="button" tabIndex="0" aria-label={label} aria-pressed={selected.time === candle.time}
           onPointerMove={event => {

@@ -52,7 +52,7 @@ const STATIC_PAGES = {
   },
   '/forever/auction': {
     title: `포에버 경매장 | ${SITE_NAME}`,
-    description: '한국 포에버 경매장의 일반·전쟁 서버와 얼라이언스·호드 시세 연결 현황을 확인하세요.',
+    description: '블리자드 한국 포에버 경매장의 실제 가격과 매물 수량을 확인하세요. 일반·전쟁 구분은 확인 전이며 경매장 번호별로 표시합니다.',
   },
   '/forever/start': {
     title: `와우 포에버 시작하기 | ${SITE_NAME}`,

@@ -1203,7 +1203,7 @@ function RulesSection() {
 
 function AuctionSection() {
   return <>
-    <Head title="포에버 경매장" lead="일반·전쟁 서버와 얼라이언스·호드의 시세를 각각 확인하는 곳입니다." art={foreverHome.art} compact />
+    <Head title="포에버 경매장" lead="한국 얼라이언스·호드 경매장의 가격과 매물 수량을 확인하세요." art={foreverHome.art} compact />
     <AuctionBlock id="auction" aria-labelledby="forever-auction-title">
       <SectionTitle id="forever-auction-title">한국 경매장 시세</SectionTitle>
       <AuctionChart />

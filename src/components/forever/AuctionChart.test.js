@@ -81,6 +81,7 @@ test('빈 관측은 0원 봉으로 그리지 않고 같은 가격 한 봉도 유
   render({ ...snapshot, items: [{ ...snapshot.items[0], candles: [{ time: 1794787200000, open: 1, high: 1, low: 1, close: 1, quantity: 0 }] }] });
   expect(container.querySelectorAll('svg [role=button]')).toHaveLength(1);
   expect(container.innerHTML).not.toMatch(/NaN|Infinity/);
+  expect(Number(container.querySelector('.auction-body').getAttribute('width'))).toBeLessThanOrEqual(14);
   expect(container.textContent).toContain('보합');
   render({ ...snapshot, items: [] });
   expect(container.textContent).toContain('저장된 가격 자료가 없습니다');
