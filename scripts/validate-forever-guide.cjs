@@ -252,7 +252,7 @@ for (const file of ['src/data/kb-skills.json', 'src/data/kb-synergies.json']) {
 // 5. 주소·메뉴·검색 제목 연결.
 const app = read('src/App.js');
 const siteMeta = read('src/data/siteMeta.js');
-assert.deepStrictEqual(guide.foreverPages.map(page => page.path), ['/forever', '/forever/start', '/forever/rules', '/forever/classes', '/forever/races', '/forever/leveling', '/forever/growth', '/forever/raids'], '포에버 페이지 주소');
+assert.deepStrictEqual(guide.foreverPages.map(page => page.path), ['/forever', '/forever/start', '/forever/rules', '/forever/classes', '/forever/races', '/forever/leveling', '/forever/growth', '/forever/raids', '/forever/auction'], '포에버 페이지 주소');
 for (const page of guide.foreverPages) {
   assert.ok(app.includes(`path="${page.path}" element={<ForeverPage section="${page.id}" />}`), `App.js에 ${page.path} 경로가 없음`);
   assert.ok(siteMeta.includes(`'${page.path}': {`), `siteMeta.js STATIC_PAGES에 ${page.path}가 없음`);

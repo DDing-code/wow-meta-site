@@ -160,6 +160,7 @@ function App() {
               <Route path="/forever/classes" element={<ForeverPage section="classes" />} />
               <Route path="/forever/races" element={<ForeverPage section="races" />} />
               <Route path="/forever/raids" element={<ForeverPage section="raids" />} />
+              <Route path="/forever/auction" element={<ForeverPage section="auction" />} />
               {Object.keys(foreverDetailGuides).map(id => <Route key={id} path={`/forever/${id}`} element={<ForeverPage section={id} />} />)}
               <Route path="/forever/*" element={<Navigate to="/forever" replace />} />
               <Route path="/spells" element={<SpellDatabasePage />} />

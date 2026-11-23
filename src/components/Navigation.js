@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import { BookOpen, Castle, Compass, Database, Flag, Home, KeyRound, MapIcon, Menu, Newspaper, Route, X } from 'lucide-react';
+import { BookOpen, Castle, Coins, Compass, Database, Flag, Home, KeyRound, MapIcon, Menu, Newspaper, Route, X } from 'lucide-react';
 import { EDITIONS, getEdition, getEditionSwitchPath } from '../data/gameEditions.js';
 import '../styles/ForeverFonts.css';
 
@@ -239,6 +239,7 @@ const foreverNavItems = [
   { path: '/forever/leveling', label: '지역·던전', icon: MapIcon, exact: true },
   { path: '/forever/growth', label: '캠핑·유산', icon: KeyRound },
   { path: '/forever/raids', label: '레이드 준비', icon: Castle },
+  { path: '/forever/auction', label: '경매장', icon: Coins },
 ];
 
 const NAV_ITEMS = { retail: retailNavItems, forever: foreverNavItems };

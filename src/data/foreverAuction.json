@@ -1,0 +1,2322 @@
+{
+  "edition": "forever",
+  "market": "forever.normal.horde.us",
+  "marketLabel": "미국 · 일반 · 호드",
+  "source": "https://auctionhouse.fyi/docs/api",
+  "fetchedAt": "2026-11-23T05:36:43.898Z",
+  "items": [
+    {
+      "id": 14047,
+      "name": "룬무늬 옷감",
+      "nameSource": "https://www.wowhead.com/forever/ko/item=14047",
+      "sourceUrl": "https://auctionhouse.fyi/api/v1/ah/forever.normal.horde.us/14047/candles?res=d1",
+      "observedAt": 1795405751000,
+      "candles": [
+        {
+          "time": 1794787200000,
+          "open": 575,
+          "high": 1075,
+          "low": 540,
+          "close": 659,
+          "quantity": 6502
+        },
+        {
+          "time": 1794873600000,
+          "open": 650,
+          "high": 999,
+          "low": 401,
+          "close": 770,
+          "quantity": 835
+        },
+        {
+          "time": 1794960000000,
+          "open": 715,
+          "high": 715,
+          "low": 560,
+          "close": 610,
+          "quantity": 9752
+        },
+        {
+          "time": 1795046400000,
+          "open": 586,
+          "high": 894,
+          "low": 350,
+          "close": 700,
+          "quantity": 10628
+        },
+        {
+          "time": 1795132800000,
+          "open": 496,
+          "high": 775,
+          "low": 400,
+          "close": 650,
+          "quantity": 19998
+        },
+        {
+          "time": 1795219200000,
+          "open": 401,
+          "high": 650,
+          "low": 401,
+          "close": 499,
+          "quantity": 14647
+        },
+        {
+          "time": 1795305600000,
+          "open": 529,
+          "high": 600,
+          "low": 100,
+          "close": 551,
+          "quantity": 14072
+        },
+        {
+          "time": 1795392000000,
+          "open": 490,
+          "high": 526,
+          "low": 260,
+          "close": 489,
+          "quantity": 17920
+        }
+      ],
+      "hourlyCandles": [
+        {
+          "time": 1794830400000,
+          "open": 700,
+          "high": 700,
+          "low": 700,
+          "close": 700,
+          "quantity": 3091
+        },
+        {
+          "time": 1794837600000,
+          "open": 740,
+          "high": 740,
+          "low": 740,
+          "close": 740,
+          "quantity": 4738
+        },
+        {
+          "time": 1794852000000,
+          "open": 729,
+          "high": 729,
+          "low": 729,
+          "close": 729,
+          "quantity": 5717
+        },
+        {
+          "time": 1794855600000,
+          "open": 700,
+          "high": 730,
+          "low": 700,
+          "close": 730,
+          "quantity": 3330
+        },
+        {
+          "time": 1794859200000,
+          "open": 737,
+          "high": 740,
+          "low": 737,
+          "close": 740,
+          "quantity": 1981
+        },
+        {
+          "time": 1794862800000,
+          "open": 717,
+          "high": 717,
+          "low": 717,
+          "close": 717,
+          "quantity": 3486
+        },
+        {
+          "time": 1794866400000,
+          "open": 659,
+          "high": 659,
+          "low": 659,
+          "close": 659,
+          "quantity": 6502
+        },
+        {
+          "time": 1794877200000,
+          "open": 650,
+          "high": 650,
+          "low": 401,
+          "close": 401,
+          "quantity": 11188
+        },
+        {
+          "time": 1794888000000,
+          "open": 638,
+          "high": 638,
+          "low": 638,
+          "close": 638,
+          "quantity": 9021
+        },
+        {
+          "time": 1794895200000,
+          "open": 550,
+          "high": 550,
+          "low": 550,
+          "close": 550,
+          "quantity": 591
+        },
+        {
+          "time": 1794924000000,
+          "open": 698,
+          "high": 698,
+          "low": 698,
+          "close": 698,
+          "quantity": 946
+        },
+        {
+          "time": 1794931200000,
+          "open": 700,
+          "high": 700,
+          "low": 698,
+          "close": 698,
+          "quantity": 898
+        },
+        {
+          "time": 1794934800000,
+          "open": 694,
+          "high": 696,
+          "low": 694,
+          "close": 696,
+          "quantity": 5123
+        },
+        {
+          "time": 1794938400000,
+          "open": 705,
+          "high": 705,
+          "low": 401,
+          "close": 401,
+          "quantity": 2149
+        },
+        {
+          "time": 1794942000000,
+          "open": 999,
+          "high": 999,
+          "low": 800,
+          "close": 800,
+          "quantity": 5429
+        },
+        {
+          "time": 1794945600000,
+          "open": 903,
+          "high": 903,
+          "low": 900,
+          "close": 900,
+          "quantity": 4447
+        },
+        {
+          "time": 1794949200000,
+          "open": 786,
+          "high": 898,
+          "low": 786,
+          "close": 898,
+          "quantity": 5661
+        },
+        {
+          "time": 1794952800000,
+          "open": 893,
+          "high": 893,
+          "low": 770,
+          "close": 770,
+          "quantity": 835
+        },
+        {
+          "time": 1794960000000,
+          "open": 715,
+          "high": 715,
+          "low": 633,
+          "close": 667,
+          "quantity": 14124
+        },
+        {
+          "time": 1794963600000,
+          "open": 618,
+          "high": 618,
+          "low": 618,
+          "close": 618,
+          "quantity": 18410
+        },
+        {
+          "time": 1794967200000,
+          "open": 618,
+          "high": 618,
+          "low": 618,
+          "close": 618,
+          "quantity": 17546
+        },
+        {
+          "time": 1794970800000,
+          "open": 599,
+          "high": 599,
+          "low": 560,
+          "close": 560,
+          "quantity": 16083
+        },
+        {
+          "time": 1795010400000,
+          "open": 638,
+          "high": 638,
+          "low": 638,
+          "close": 638,
+          "quantity": 1264
+        },
+        {
+          "time": 1795014000000,
+          "open": 653,
+          "high": 653,
+          "low": 653,
+          "close": 653,
+          "quantity": 3810
+        },
+        {
+          "time": 1795021200000,
+          "open": 646,
+          "high": 646,
+          "low": 639,
+          "close": 639,
+          "quantity": 4635
+        },
+        {
+          "time": 1795024800000,
+          "open": 635,
+          "high": 635,
+          "low": 635,
+          "close": 635,
+          "quantity": 6730
+        },
+        {
+          "time": 1795028400000,
+          "open": 637,
+          "high": 637,
+          "low": 585,
+          "close": 585,
+          "quantity": 3944
+        },
+        {
+          "time": 1795032000000,
+          "open": 615,
+          "high": 619,
+          "low": 615,
+          "close": 618,
+          "quantity": 6442
+        },
+        {
+          "time": 1795035600000,
+          "open": 616,
+          "high": 616,
+          "low": 615,
+          "close": 615,
+          "quantity": 8604
+        },
+        {
+          "time": 1795042800000,
+          "open": 610,
+          "high": 610,
+          "low": 610,
+          "close": 610,
+          "quantity": 9752
+        },
+        {
+          "time": 1795046400000,
+          "open": 586,
+          "high": 586,
+          "low": 585,
+          "close": 585,
+          "quantity": 11060
+        },
+        {
+          "time": 1795050000000,
+          "open": 550,
+          "high": 550,
+          "low": 350,
+          "close": 350,
+          "quantity": 14207
+        },
+        {
+          "time": 1795064400000,
+          "open": 510,
+          "high": 510,
+          "low": 510,
+          "close": 510,
+          "quantity": 17766
+        },
+        {
+          "time": 1795068000000,
+          "open": 500,
+          "high": 526,
+          "low": 500,
+          "close": 526,
+          "quantity": 14384
+        },
+        {
+          "time": 1795071600000,
+          "open": 490,
+          "high": 490,
+          "low": 490,
+          "close": 490,
+          "quantity": 14294
+        },
+        {
+          "time": 1795082400000,
+          "open": 612,
+          "high": 612,
+          "low": 612,
+          "close": 612,
+          "quantity": 1005
+        },
+        {
+          "time": 1795089600000,
+          "open": 611,
+          "high": 611,
+          "low": 611,
+          "close": 611,
+          "quantity": 1014
+        },
+        {
+          "time": 1795093200000,
+          "open": 637,
+          "high": 637,
+          "low": 637,
+          "close": 637,
+          "quantity": 1632
+        },
+        {
+          "time": 1795096800000,
+          "open": 642,
+          "high": 643,
+          "low": 620,
+          "close": 620,
+          "quantity": 2564
+        },
+        {
+          "time": 1795100400000,
+          "open": 894,
+          "high": 894,
+          "low": 614,
+          "close": 764,
+          "quantity": 5643
+        },
+        {
+          "time": 1795104000000,
+          "open": 614,
+          "high": 763,
+          "low": 614,
+          "close": 763,
+          "quantity": 6812
+        },
+        {
+          "time": 1795107600000,
+          "open": 735,
+          "high": 735,
+          "low": 689,
+          "close": 689,
+          "quantity": 5990
+        },
+        {
+          "time": 1795114800000,
+          "open": 698,
+          "high": 698,
+          "low": 682,
+          "close": 682,
+          "quantity": 5870
+        },
+        {
+          "time": 1795118400000,
+          "open": 688,
+          "high": 688,
+          "low": 688,
+          "close": 688,
+          "quantity": 11982
+        },
+        {
+          "time": 1795122000000,
+          "open": 746,
+          "high": 746,
+          "low": 700,
+          "close": 700,
+          "quantity": 10628
+        },
+        {
+          "time": 1795132800000,
+          "open": 496,
+          "high": 496,
+          "low": 496,
+          "close": 496,
+          "quantity": 12355
+        },
+        {
+          "time": 1795143600000,
+          "open": 599,
+          "high": 630,
+          "low": 599,
+          "close": 630,
+          "quantity": 6662
+        },
+        {
+          "time": 1795147200000,
+          "open": 400,
+          "high": 525,
+          "low": 400,
+          "close": 525,
+          "quantity": 17622
+        },
+        {
+          "time": 1795161600000,
+          "open": 670,
+          "high": 670,
+          "low": 670,
+          "close": 670,
+          "quantity": 3539
+        },
+        {
+          "time": 1795176000000,
+          "open": 500,
+          "high": 549,
+          "low": 500,
+          "close": 549,
+          "quantity": 13123
+        },
+        {
+          "time": 1795179600000,
+          "open": 550,
+          "high": 560,
+          "low": 550,
+          "close": 560,
+          "quantity": 12096
+        },
+        {
+          "time": 1795183200000,
+          "open": 596,
+          "high": 672,
+          "low": 596,
+          "close": 672,
+          "quantity": 1976
+        },
+        {
+          "time": 1795186800000,
+          "open": 644,
+          "high": 644,
+          "low": 644,
+          "close": 644,
+          "quantity": 3306
+        },
+        {
+          "time": 1795194000000,
+          "open": 489,
+          "high": 775,
+          "low": 489,
+          "close": 775,
+          "quantity": 5449
+        },
+        {
+          "time": 1795197600000,
+          "open": 721,
+          "high": 721,
+          "low": 674,
+          "close": 674,
+          "quantity": 11709
+        },
+        {
+          "time": 1795201200000,
+          "open": 549,
+          "high": 549,
+          "low": 549,
+          "close": 549,
+          "quantity": 3369
+        },
+        {
+          "time": 1795204800000,
+          "open": 754,
+          "high": 754,
+          "low": 694,
+          "close": 694,
+          "quantity": 14082
+        },
+        {
+          "time": 1795208400000,
+          "open": 549,
+          "high": 549,
+          "low": 549,
+          "close": 549,
+          "quantity": 2969
+        },
+        {
+          "time": 1795212000000,
+          "open": 753,
+          "high": 753,
+          "low": 650,
+          "close": 650,
+          "quantity": 19998
+        },
+        {
+          "time": 1795219200000,
+          "open": 401,
+          "high": 650,
+          "low": 401,
+          "close": 649,
+          "quantity": 19429
+        },
+        {
+          "time": 1795230000000,
+          "open": 520,
+          "high": 520,
+          "low": 520,
+          "close": 520,
+          "quantity": 25005
+        },
+        {
+          "time": 1795233600000,
+          "open": 509,
+          "high": 509,
+          "low": 509,
+          "close": 509,
+          "quantity": 26046
+        },
+        {
+          "time": 1795237200000,
+          "open": 524,
+          "high": 524,
+          "low": 524,
+          "close": 524,
+          "quantity": 22329
+        },
+        {
+          "time": 1795266000000,
+          "open": 514,
+          "high": 527,
+          "low": 514,
+          "close": 527,
+          "quantity": 6218
+        },
+        {
+          "time": 1795269600000,
+          "open": 500,
+          "high": 500,
+          "low": 500,
+          "close": 500,
+          "quantity": 6476
+        },
+        {
+          "time": 1795276800000,
+          "open": 527,
+          "high": 600,
+          "low": 527,
+          "close": 600,
+          "quantity": 9150
+        },
+        {
+          "time": 1795280400000,
+          "open": 575,
+          "high": 575,
+          "low": 575,
+          "close": 575,
+          "quantity": 11901
+        },
+        {
+          "time": 1795287600000,
+          "open": 495,
+          "high": 495,
+          "low": 495,
+          "close": 495,
+          "quantity": 3194
+        },
+        {
+          "time": 1795302000000,
+          "open": 523,
+          "high": 523,
+          "low": 499,
+          "close": 499,
+          "quantity": 14647
+        },
+        {
+          "time": 1795309200000,
+          "open": 529,
+          "high": 529,
+          "low": 529,
+          "close": 529,
+          "quantity": 3703
+        },
+        {
+          "time": 1795312800000,
+          "open": 508,
+          "high": 587,
+          "low": 508,
+          "close": 587,
+          "quantity": 2231
+        },
+        {
+          "time": 1795316400000,
+          "open": 515,
+          "high": 515,
+          "low": 515,
+          "close": 515,
+          "quantity": 14432
+        },
+        {
+          "time": 1795320000000,
+          "open": 515,
+          "high": 515,
+          "low": 405,
+          "close": 500,
+          "quantity": 2367
+        },
+        {
+          "time": 1795327200000,
+          "open": 100,
+          "high": 509,
+          "low": 100,
+          "close": 509,
+          "quantity": 21060
+        },
+        {
+          "time": 1795341600000,
+          "open": 502,
+          "high": 502,
+          "low": 502,
+          "close": 502,
+          "quantity": 1619
+        },
+        {
+          "time": 1795352400000,
+          "open": 544,
+          "high": 544,
+          "low": 544,
+          "close": 544,
+          "quantity": 1379
+        },
+        {
+          "time": 1795356000000,
+          "open": 559,
+          "high": 559,
+          "low": 559,
+          "close": 559,
+          "quantity": 2968
+        },
+        {
+          "time": 1795363200000,
+          "open": 600,
+          "high": 600,
+          "low": 600,
+          "close": 600,
+          "quantity": 6555
+        },
+        {
+          "time": 1795370400000,
+          "open": 567,
+          "high": 567,
+          "low": 567,
+          "close": 567,
+          "quantity": 12286
+        },
+        {
+          "time": 1795374000000,
+          "open": 565,
+          "high": 565,
+          "low": 565,
+          "close": 565,
+          "quantity": 12145
+        },
+        {
+          "time": 1795377600000,
+          "open": 403,
+          "high": 403,
+          "low": 403,
+          "close": 403,
+          "quantity": 12928
+        },
+        {
+          "time": 1795384800000,
+          "open": 521,
+          "high": 521,
+          "low": 521,
+          "close": 521,
+          "quantity": 9219
+        },
+        {
+          "time": 1795388400000,
+          "open": 260,
+          "high": 551,
+          "low": 260,
+          "close": 551,
+          "quantity": 14072
+        },
+        {
+          "time": 1795392000000,
+          "open": 490,
+          "high": 490,
+          "low": 260,
+          "close": 260,
+          "quantity": 18239
+        },
+        {
+          "time": 1795395600000,
+          "open": 526,
+          "high": 526,
+          "low": 526,
+          "close": 526,
+          "quantity": 13856
+        },
+        {
+          "time": 1795399200000,
+          "open": 522,
+          "high": 522,
+          "low": 522,
+          "close": 522,
+          "quantity": 13613
+        },
+        {
+          "time": 1795402800000,
+          "open": 489,
+          "high": 489,
+          "low": 489,
+          "close": 489,
+          "quantity": 17920
+        }
+      ]
+    },
+    {
+      "id": 2770,
+      "name": "구리 광석",
+      "nameSource": "https://www.wowhead.com/forever/ko/item=2770",
+      "sourceUrl": "https://auctionhouse.fyi/api/v1/ah/forever.normal.horde.us/2770/candles?res=d1",
+      "observedAt": 1795405751000,
+      "candles": [
+        {
+          "time": 1794787200000,
+          "open": 124,
+          "high": 249,
+          "low": 100,
+          "close": 155,
+          "quantity": 10767
+        },
+        {
+          "time": 1794873600000,
+          "open": 144,
+          "high": 170,
+          "low": 110,
+          "close": 115,
+          "quantity": 1000
+        },
+        {
+          "time": 1794960000000,
+          "open": 123,
+          "high": 399,
+          "low": 112,
+          "close": 140,
+          "quantity": 6029
+        },
+        {
+          "time": 1795046400000,
+          "open": 135,
+          "high": 260,
+          "low": 120,
+          "close": 149,
+          "quantity": 4930
+        },
+        {
+          "time": 1795132800000,
+          "open": 148,
+          "high": 600,
+          "low": 110,
+          "close": 158,
+          "quantity": 5503
+        },
+        {
+          "time": 1795219200000,
+          "open": 121,
+          "high": 152,
+          "low": 121,
+          "close": 145,
+          "quantity": 6006
+        },
+        {
+          "time": 1795305600000,
+          "open": 180,
+          "high": 319,
+          "low": 100,
+          "close": 149,
+          "quantity": 7334
+        },
+        {
+          "time": 1795392000000,
+          "open": 148,
+          "high": 148,
+          "low": 122,
+          "close": 130,
+          "quantity": 11502
+        }
+      ],
+      "hourlyCandles": [
+        {
+          "time": 1794830400000,
+          "open": 133,
+          "high": 133,
+          "low": 133,
+          "close": 133,
+          "quantity": 4374
+        },
+        {
+          "time": 1794837600000,
+          "open": 249,
+          "high": 249,
+          "low": 249,
+          "close": 249,
+          "quantity": 862
+        },
+        {
+          "time": 1794852000000,
+          "open": 175,
+          "high": 175,
+          "low": 175,
+          "close": 175,
+          "quantity": 7581
+        },
+        {
+          "time": 1794855600000,
+          "open": 176,
+          "high": 185,
+          "low": 176,
+          "close": 185,
+          "quantity": 6619
+        },
+        {
+          "time": 1794859200000,
+          "open": 174,
+          "high": 174,
+          "low": 172,
+          "close": 172,
+          "quantity": 7993
+        },
+        {
+          "time": 1794862800000,
+          "open": 160,
+          "high": 160,
+          "low": 160,
+          "close": 160,
+          "quantity": 10089
+        },
+        {
+          "time": 1794866400000,
+          "open": 155,
+          "high": 155,
+          "low": 155,
+          "close": 155,
+          "quantity": 10767
+        },
+        {
+          "time": 1794877200000,
+          "open": 144,
+          "high": 144,
+          "low": 110,
+          "close": 110,
+          "quantity": 10307
+        },
+        {
+          "time": 1794888000000,
+          "open": 114,
+          "high": 114,
+          "low": 114,
+          "close": 114,
+          "quantity": 10233
+        },
+        {
+          "time": 1794895200000,
+          "open": 111,
+          "high": 111,
+          "low": 111,
+          "close": 111,
+          "quantity": 1198
+        },
+        {
+          "time": 1794924000000,
+          "open": 150,
+          "high": 150,
+          "low": 150,
+          "close": 150,
+          "quantity": 1017
+        },
+        {
+          "time": 1794931200000,
+          "open": 137,
+          "high": 149,
+          "low": 135,
+          "close": 149,
+          "quantity": 1148
+        },
+        {
+          "time": 1794934800000,
+          "open": 120,
+          "high": 123,
+          "low": 120,
+          "close": 123,
+          "quantity": 5360
+        },
+        {
+          "time": 1794938400000,
+          "open": 170,
+          "high": 170,
+          "low": 135,
+          "close": 135,
+          "quantity": 5830
+        },
+        {
+          "time": 1794942000000,
+          "open": 135,
+          "high": 144,
+          "low": 135,
+          "close": 144,
+          "quantity": 3766
+        },
+        {
+          "time": 1794945600000,
+          "open": 142,
+          "high": 142,
+          "low": 140,
+          "close": 141,
+          "quantity": 4217
+        },
+        {
+          "time": 1794949200000,
+          "open": 145,
+          "high": 147,
+          "low": 145,
+          "close": 147,
+          "quantity": 5378
+        },
+        {
+          "time": 1794952800000,
+          "open": 135,
+          "high": 150,
+          "low": 115,
+          "close": 115,
+          "quantity": 1000
+        },
+        {
+          "time": 1794960000000,
+          "open": 123,
+          "high": 130,
+          "low": 123,
+          "close": 128,
+          "quantity": 8057
+        },
+        {
+          "time": 1794963600000,
+          "open": 133,
+          "high": 133,
+          "low": 133,
+          "close": 133,
+          "quantity": 5913
+        },
+        {
+          "time": 1794967200000,
+          "open": 112,
+          "high": 112,
+          "low": 112,
+          "close": 112,
+          "quantity": 8256
+        },
+        {
+          "time": 1794970800000,
+          "open": 129,
+          "high": 130,
+          "low": 129,
+          "close": 130,
+          "quantity": 6159
+        },
+        {
+          "time": 1795010400000,
+          "open": 399,
+          "high": 399,
+          "low": 399,
+          "close": 399,
+          "quantity": 210
+        },
+        {
+          "time": 1795014000000,
+          "open": 136,
+          "high": 136,
+          "low": 136,
+          "close": 136,
+          "quantity": 7847
+        },
+        {
+          "time": 1795021200000,
+          "open": 135,
+          "high": 148,
+          "low": 135,
+          "close": 148,
+          "quantity": 3896
+        },
+        {
+          "time": 1795024800000,
+          "open": 144,
+          "high": 144,
+          "low": 144,
+          "close": 144,
+          "quantity": 5120
+        },
+        {
+          "time": 1795028400000,
+          "open": 166,
+          "high": 166,
+          "low": 151,
+          "close": 151,
+          "quantity": 5618
+        },
+        {
+          "time": 1795032000000,
+          "open": 153,
+          "high": 153,
+          "low": 145,
+          "close": 145,
+          "quantity": 5554
+        },
+        {
+          "time": 1795035600000,
+          "open": 155,
+          "high": 155,
+          "low": 145,
+          "close": 145,
+          "quantity": 4743
+        },
+        {
+          "time": 1795042800000,
+          "open": 140,
+          "high": 140,
+          "low": 140,
+          "close": 140,
+          "quantity": 6029
+        },
+        {
+          "time": 1795046400000,
+          "open": 135,
+          "high": 139,
+          "low": 135,
+          "close": 139,
+          "quantity": 6411
+        },
+        {
+          "time": 1795050000000,
+          "open": 135,
+          "high": 135,
+          "low": 132,
+          "close": 132,
+          "quantity": 9383
+        },
+        {
+          "time": 1795064400000,
+          "open": 125,
+          "high": 125,
+          "low": 125,
+          "close": 125,
+          "quantity": 10753
+        },
+        {
+          "time": 1795068000000,
+          "open": 133,
+          "high": 136,
+          "low": 133,
+          "close": 136,
+          "quantity": 7959
+        },
+        {
+          "time": 1795071600000,
+          "open": 125,
+          "high": 125,
+          "low": 125,
+          "close": 125,
+          "quantity": 8718
+        },
+        {
+          "time": 1795082400000,
+          "open": 199,
+          "high": 199,
+          "low": 199,
+          "close": 199,
+          "quantity": 2013
+        },
+        {
+          "time": 1795089600000,
+          "open": 191,
+          "high": 191,
+          "low": 191,
+          "close": 191,
+          "quantity": 2818
+        },
+        {
+          "time": 1795093200000,
+          "open": 120,
+          "high": 120,
+          "low": 120,
+          "close": 120,
+          "quantity": 5698
+        },
+        {
+          "time": 1795096800000,
+          "open": 140,
+          "high": 150,
+          "low": 138,
+          "close": 150,
+          "quantity": 4927
+        },
+        {
+          "time": 1795100400000,
+          "open": 160,
+          "high": 237,
+          "low": 158,
+          "close": 158,
+          "quantity": 5682
+        },
+        {
+          "time": 1795104000000,
+          "open": 260,
+          "high": 260,
+          "low": 140,
+          "close": 154,
+          "quantity": 5417
+        },
+        {
+          "time": 1795107600000,
+          "open": 155,
+          "high": 199,
+          "low": 155,
+          "close": 199,
+          "quantity": 3422
+        },
+        {
+          "time": 1795114800000,
+          "open": 168,
+          "high": 170,
+          "low": 168,
+          "close": 170,
+          "quantity": 3326
+        },
+        {
+          "time": 1795118400000,
+          "open": 168,
+          "high": 168,
+          "low": 168,
+          "close": 168,
+          "quantity": 3858
+        },
+        {
+          "time": 1795122000000,
+          "open": 163,
+          "high": 163,
+          "low": 149,
+          "close": 149,
+          "quantity": 4930
+        },
+        {
+          "time": 1795132800000,
+          "open": 148,
+          "high": 148,
+          "low": 148,
+          "close": 148,
+          "quantity": 6039
+        },
+        {
+          "time": 1795143600000,
+          "open": 131,
+          "high": 170,
+          "low": 131,
+          "close": 170,
+          "quantity": 2495
+        },
+        {
+          "time": 1795147200000,
+          "open": 110,
+          "high": 145,
+          "low": 110,
+          "close": 145,
+          "quantity": 8620
+        },
+        {
+          "time": 1795161600000,
+          "open": 162,
+          "high": 162,
+          "low": 162,
+          "close": 162,
+          "quantity": 2231
+        },
+        {
+          "time": 1795176000000,
+          "open": 135,
+          "high": 135,
+          "low": 130,
+          "close": 130,
+          "quantity": 7209
+        },
+        {
+          "time": 1795179600000,
+          "open": 139,
+          "high": 139,
+          "low": 139,
+          "close": 139,
+          "quantity": 6777
+        },
+        {
+          "time": 1795183200000,
+          "open": 135,
+          "high": 153,
+          "low": 135,
+          "close": 153,
+          "quantity": 4168
+        },
+        {
+          "time": 1795186800000,
+          "open": 157,
+          "high": 157,
+          "low": 157,
+          "close": 157,
+          "quantity": 4015
+        },
+        {
+          "time": 1795194000000,
+          "open": 147,
+          "high": 167,
+          "low": 147,
+          "close": 167,
+          "quantity": 4626
+        },
+        {
+          "time": 1795197600000,
+          "open": 149,
+          "high": 160,
+          "low": 149,
+          "close": 160,
+          "quantity": 4386
+        },
+        {
+          "time": 1795201200000,
+          "open": 137,
+          "high": 137,
+          "low": 137,
+          "close": 137,
+          "quantity": 1421
+        },
+        {
+          "time": 1795204800000,
+          "open": 159,
+          "high": 159,
+          "low": 135,
+          "close": 135,
+          "quantity": 4089
+        },
+        {
+          "time": 1795208400000,
+          "open": 600,
+          "high": 600,
+          "low": 600,
+          "close": 600,
+          "quantity": 41
+        },
+        {
+          "time": 1795212000000,
+          "open": 187,
+          "high": 187,
+          "low": 158,
+          "close": 158,
+          "quantity": 5503
+        },
+        {
+          "time": 1795219200000,
+          "open": 121,
+          "high": 150,
+          "low": 121,
+          "close": 150,
+          "quantity": 4824
+        },
+        {
+          "time": 1795230000000,
+          "open": 139,
+          "high": 139,
+          "low": 139,
+          "close": 139,
+          "quantity": 8309
+        },
+        {
+          "time": 1795233600000,
+          "open": 138,
+          "high": 138,
+          "low": 138,
+          "close": 138,
+          "quantity": 8714
+        },
+        {
+          "time": 1795237200000,
+          "open": 140,
+          "high": 140,
+          "low": 140,
+          "close": 140,
+          "quantity": 6073
+        },
+        {
+          "time": 1795266000000,
+          "open": 150,
+          "high": 152,
+          "low": 150,
+          "close": 152,
+          "quantity": 7211
+        },
+        {
+          "time": 1795269600000,
+          "open": 145,
+          "high": 145,
+          "low": 145,
+          "close": 145,
+          "quantity": 6488
+        },
+        {
+          "time": 1795276800000,
+          "open": 150,
+          "high": 150,
+          "low": 125,
+          "close": 125,
+          "quantity": 5790
+        },
+        {
+          "time": 1795280400000,
+          "open": 149,
+          "high": 149,
+          "low": 149,
+          "close": 149,
+          "quantity": 5697
+        },
+        {
+          "time": 1795287600000,
+          "open": 149,
+          "high": 149,
+          "low": 149,
+          "close": 149,
+          "quantity": 814
+        },
+        {
+          "time": 1795302000000,
+          "open": 125,
+          "high": 145,
+          "low": 125,
+          "close": 145,
+          "quantity": 6006
+        },
+        {
+          "time": 1795309200000,
+          "open": 180,
+          "high": 180,
+          "low": 180,
+          "close": 180,
+          "quantity": 1312
+        },
+        {
+          "time": 1795312800000,
+          "open": 110,
+          "high": 130,
+          "low": 110,
+          "close": 124,
+          "quantity": 2219
+        },
+        {
+          "time": 1795316400000,
+          "open": 134,
+          "high": 134,
+          "low": 134,
+          "close": 134,
+          "quantity": 9720
+        },
+        {
+          "time": 1795320000000,
+          "open": 115,
+          "high": 134,
+          "low": 100,
+          "close": 134,
+          "quantity": 1010
+        },
+        {
+          "time": 1795327200000,
+          "open": 134,
+          "high": 134,
+          "low": 130,
+          "close": 130,
+          "quantity": 8099
+        },
+        {
+          "time": 1795341600000,
+          "open": 188,
+          "high": 188,
+          "low": 188,
+          "close": 188,
+          "quantity": 2013
+        },
+        {
+          "time": 1795352400000,
+          "open": 319,
+          "high": 319,
+          "low": 319,
+          "close": 319,
+          "quantity": 3143
+        },
+        {
+          "time": 1795356000000,
+          "open": 139,
+          "high": 139,
+          "low": 139,
+          "close": 139,
+          "quantity": 8819
+        },
+        {
+          "time": 1795363200000,
+          "open": 135,
+          "high": 135,
+          "low": 135,
+          "close": 135,
+          "quantity": 9094
+        },
+        {
+          "time": 1795370400000,
+          "open": 148,
+          "high": 148,
+          "low": 148,
+          "close": 148,
+          "quantity": 6019
+        },
+        {
+          "time": 1795374000000,
+          "open": 149,
+          "high": 149,
+          "low": 149,
+          "close": 149,
+          "quantity": 5650
+        },
+        {
+          "time": 1795377600000,
+          "open": 150,
+          "high": 150,
+          "low": 150,
+          "close": 150,
+          "quantity": 4830
+        },
+        {
+          "time": 1795384800000,
+          "open": 125,
+          "high": 125,
+          "low": 125,
+          "close": 125,
+          "quantity": 5777
+        },
+        {
+          "time": 1795388400000,
+          "open": 156,
+          "high": 156,
+          "low": 149,
+          "close": 149,
+          "quantity": 7334
+        },
+        {
+          "time": 1795392000000,
+          "open": 148,
+          "high": 148,
+          "low": 138,
+          "close": 143,
+          "quantity": 8758
+        },
+        {
+          "time": 1795395600000,
+          "open": 135,
+          "high": 135,
+          "low": 135,
+          "close": 135,
+          "quantity": 9527
+        },
+        {
+          "time": 1795399200000,
+          "open": 122,
+          "high": 122,
+          "low": 122,
+          "close": 122,
+          "quantity": 8597
+        },
+        {
+          "time": 1795402800000,
+          "open": 130,
+          "high": 130,
+          "low": 130,
+          "close": 130,
+          "quantity": 11502
+        }
+      ]
+    },
+    {
+      "id": 2589,
+      "name": "리넨 옷감",
+      "nameSource": "https://www.wowhead.com/forever/ko/item=2589",
+      "sourceUrl": "https://auctionhouse.fyi/api/v1/ah/forever.normal.horde.us/2589/candles?res=d1",
+      "observedAt": 1795405751000,
+      "candles": [
+        {
+          "time": 1794787200000,
+          "open": 22,
+          "high": 28,
+          "low": 15,
+          "close": 25,
+          "quantity": 12850
+        },
+        {
+          "time": 1794873600000,
+          "open": 24,
+          "high": 28,
+          "low": 13,
+          "close": 20,
+          "quantity": 3603
+        },
+        {
+          "time": 1794960000000,
+          "open": 22,
+          "high": 28,
+          "low": 18,
+          "close": 20,
+          "quantity": 13432
+        },
+        {
+          "time": 1795046400000,
+          "open": 25,
+          "high": 27,
+          "low": 15,
+          "close": 25,
+          "quantity": 22119
+        },
+        {
+          "time": 1795132800000,
+          "open": 23,
+          "high": 34,
+          "low": 8,
+          "close": 27,
+          "quantity": 15080
+        },
+        {
+          "time": 1795219200000,
+          "open": 27,
+          "high": 27,
+          "low": 17,
+          "close": 24,
+          "quantity": 21205
+        },
+        {
+          "time": 1795305600000,
+          "open": 22,
+          "high": 150,
+          "low": 14,
+          "close": 20,
+          "quantity": 26878
+        },
+        {
+          "time": 1795392000000,
+          "open": 21,
+          "high": 24,
+          "low": 19,
+          "close": 24,
+          "quantity": 24778
+        }
+      ],
+      "hourlyCandles": [
+        {
+          "time": 1794830400000,
+          "open": 23,
+          "high": 23,
+          "low": 23,
+          "close": 23,
+          "quantity": 14786
+        },
+        {
+          "time": 1794837600000,
+          "open": 25,
+          "high": 25,
+          "low": 25,
+          "close": 25,
+          "quantity": 12539
+        },
+        {
+          "time": 1794852000000,
+          "open": 28,
+          "high": 28,
+          "low": 28,
+          "close": 28,
+          "quantity": 15165
+        },
+        {
+          "time": 1794855600000,
+          "open": 19,
+          "high": 25,
+          "low": 19,
+          "close": 25,
+          "quantity": 10252
+        },
+        {
+          "time": 1794859200000,
+          "open": 26,
+          "high": 26,
+          "low": 25,
+          "close": 25,
+          "quantity": 7881
+        },
+        {
+          "time": 1794862800000,
+          "open": 25,
+          "high": 25,
+          "low": 25,
+          "close": 25,
+          "quantity": 11995
+        },
+        {
+          "time": 1794866400000,
+          "open": 25,
+          "high": 25,
+          "low": 25,
+          "close": 25,
+          "quantity": 12850
+        },
+        {
+          "time": 1794877200000,
+          "open": 24,
+          "high": 24,
+          "low": 20,
+          "close": 20,
+          "quantity": 27076
+        },
+        {
+          "time": 1794888000000,
+          "open": 13,
+          "high": 13,
+          "low": 13,
+          "close": 13,
+          "quantity": 36067
+        },
+        {
+          "time": 1794895200000,
+          "open": 24,
+          "high": 24,
+          "low": 24,
+          "close": 24,
+          "quantity": 2092
+        },
+        {
+          "time": 1794924000000,
+          "open": 27,
+          "high": 27,
+          "low": 27,
+          "close": 27,
+          "quantity": 1082
+        },
+        {
+          "time": 1794931200000,
+          "open": 28,
+          "high": 28,
+          "low": 25,
+          "close": 25,
+          "quantity": 1443
+        },
+        {
+          "time": 1794934800000,
+          "open": 28,
+          "high": 28,
+          "low": 22,
+          "close": 26,
+          "quantity": 16838
+        },
+        {
+          "time": 1794938400000,
+          "open": 28,
+          "high": 28,
+          "low": 27,
+          "close": 27,
+          "quantity": 15991
+        },
+        {
+          "time": 1794942000000,
+          "open": 28,
+          "high": 28,
+          "low": 25,
+          "close": 26,
+          "quantity": 18704
+        },
+        {
+          "time": 1794945600000,
+          "open": 26,
+          "high": 26,
+          "low": 23,
+          "close": 23,
+          "quantity": 15487
+        },
+        {
+          "time": 1794949200000,
+          "open": 20,
+          "high": 23,
+          "low": 20,
+          "close": 23,
+          "quantity": 17595
+        },
+        {
+          "time": 1794952800000,
+          "open": 25,
+          "high": 25,
+          "low": 20,
+          "close": 20,
+          "quantity": 3603
+        },
+        {
+          "time": 1794960000000,
+          "open": 22,
+          "high": 22,
+          "low": 20,
+          "close": 22,
+          "quantity": 23807
+        },
+        {
+          "time": 1794963600000,
+          "open": 25,
+          "high": 25,
+          "low": 25,
+          "close": 25,
+          "quantity": 27340
+        },
+        {
+          "time": 1794967200000,
+          "open": 18,
+          "high": 18,
+          "low": 18,
+          "close": 18,
+          "quantity": 31770
+        },
+        {
+          "time": 1794970800000,
+          "open": 24,
+          "high": 24,
+          "low": 20,
+          "close": 20,
+          "quantity": 29182
+        },
+        {
+          "time": 1795010400000,
+          "open": 28,
+          "high": 28,
+          "low": 28,
+          "close": 28,
+          "quantity": 766
+        },
+        {
+          "time": 1795014000000,
+          "open": 25,
+          "high": 25,
+          "low": 25,
+          "close": 25,
+          "quantity": 19079
+        },
+        {
+          "time": 1795021200000,
+          "open": 23,
+          "high": 27,
+          "low": 23,
+          "close": 27,
+          "quantity": 13407
+        },
+        {
+          "time": 1795024800000,
+          "open": 21,
+          "high": 21,
+          "low": 21,
+          "close": 21,
+          "quantity": 14423
+        },
+        {
+          "time": 1795028400000,
+          "open": 25,
+          "high": 25,
+          "low": 23,
+          "close": 23,
+          "quantity": 17159
+        },
+        {
+          "time": 1795032000000,
+          "open": 26,
+          "high": 26,
+          "low": 20,
+          "close": 20,
+          "quantity": 10608
+        },
+        {
+          "time": 1795035600000,
+          "open": 23,
+          "high": 24,
+          "low": 23,
+          "close": 24,
+          "quantity": 14644
+        },
+        {
+          "time": 1795042800000,
+          "open": 20,
+          "high": 20,
+          "low": 20,
+          "close": 20,
+          "quantity": 13432
+        },
+        {
+          "time": 1795046400000,
+          "open": 25,
+          "high": 25,
+          "low": 15,
+          "close": 15,
+          "quantity": 15641
+        },
+        {
+          "time": 1795050000000,
+          "open": 23,
+          "high": 23,
+          "low": 23,
+          "close": 23,
+          "quantity": 18844
+        },
+        {
+          "time": 1795064400000,
+          "open": 23,
+          "high": 23,
+          "low": 23,
+          "close": 23,
+          "quantity": 25813
+        },
+        {
+          "time": 1795068000000,
+          "open": 18,
+          "high": 23,
+          "low": 18,
+          "close": 23,
+          "quantity": 23780
+        },
+        {
+          "time": 1795071600000,
+          "open": 22,
+          "high": 22,
+          "low": 22,
+          "close": 22,
+          "quantity": 21301
+        },
+        {
+          "time": 1795082400000,
+          "open": 22,
+          "high": 22,
+          "low": 22,
+          "close": 22,
+          "quantity": 4913
+        },
+        {
+          "time": 1795089600000,
+          "open": 25,
+          "high": 25,
+          "low": 25,
+          "close": 25,
+          "quantity": 5908
+        },
+        {
+          "time": 1795093200000,
+          "open": 24,
+          "high": 24,
+          "low": 24,
+          "close": 24,
+          "quantity": 18404
+        },
+        {
+          "time": 1795096800000,
+          "open": 25,
+          "high": 25,
+          "low": 22,
+          "close": 24,
+          "quantity": 13852
+        },
+        {
+          "time": 1795100400000,
+          "open": 27,
+          "high": 27,
+          "low": 26,
+          "close": 26,
+          "quantity": 10911
+        },
+        {
+          "time": 1795104000000,
+          "open": 27,
+          "high": 27,
+          "low": 23,
+          "close": 25,
+          "quantity": 12772
+        },
+        {
+          "time": 1795107600000,
+          "open": 26,
+          "high": 26,
+          "low": 25,
+          "close": 25,
+          "quantity": 3556
+        },
+        {
+          "time": 1795114800000,
+          "open": 25,
+          "high": 25,
+          "low": 24,
+          "close": 24,
+          "quantity": 4476
+        },
+        {
+          "time": 1795118400000,
+          "open": 27,
+          "high": 27,
+          "low": 27,
+          "close": 27,
+          "quantity": 20384
+        },
+        {
+          "time": 1795122000000,
+          "open": 25,
+          "high": 25,
+          "low": 25,
+          "close": 25,
+          "quantity": 22119
+        },
+        {
+          "time": 1795132800000,
+          "open": 23,
+          "high": 23,
+          "low": 23,
+          "close": 23,
+          "quantity": 22630
+        },
+        {
+          "time": 1795143600000,
+          "open": 24,
+          "high": 28,
+          "low": 24,
+          "close": 28,
+          "quantity": 15875
+        },
+        {
+          "time": 1795147200000,
+          "open": 18,
+          "high": 21,
+          "low": 18,
+          "close": 21,
+          "quantity": 24454
+        },
+        {
+          "time": 1795161600000,
+          "open": 25,
+          "high": 25,
+          "low": 25,
+          "close": 25,
+          "quantity": 2624
+        },
+        {
+          "time": 1795176000000,
+          "open": 26,
+          "high": 27,
+          "low": 26,
+          "close": 27,
+          "quantity": 15237
+        },
+        {
+          "time": 1795179600000,
+          "open": 24,
+          "high": 25,
+          "low": 24,
+          "close": 25,
+          "quantity": 13292
+        },
+        {
+          "time": 1795183200000,
+          "open": 29,
+          "high": 34,
+          "low": 29,
+          "close": 34,
+          "quantity": 9612
+        },
+        {
+          "time": 1795186800000,
+          "open": 28,
+          "high": 28,
+          "low": 28,
+          "close": 28,
+          "quantity": 13916
+        },
+        {
+          "time": 1795194000000,
+          "open": 27,
+          "high": 27,
+          "low": 25,
+          "close": 25,
+          "quantity": 19074
+        },
+        {
+          "time": 1795197600000,
+          "open": 23,
+          "high": 28,
+          "low": 23,
+          "close": 28,
+          "quantity": 16543
+        },
+        {
+          "time": 1795201200000,
+          "open": 8,
+          "high": 8,
+          "low": 8,
+          "close": 8,
+          "quantity": 8959
+        },
+        {
+          "time": 1795204800000,
+          "open": 24,
+          "high": 27,
+          "low": 24,
+          "close": 27,
+          "quantity": 12863
+        },
+        {
+          "time": 1795208400000,
+          "open": 24,
+          "high": 24,
+          "low": 24,
+          "close": 24,
+          "quantity": 8876
+        },
+        {
+          "time": 1795212000000,
+          "open": 34,
+          "high": 34,
+          "low": 27,
+          "close": 27,
+          "quantity": 15080
+        },
+        {
+          "time": 1795219200000,
+          "open": 27,
+          "high": 27,
+          "low": 19,
+          "close": 22,
+          "quantity": 23896
+        },
+        {
+          "time": 1795230000000,
+          "open": 20,
+          "high": 20,
+          "low": 20,
+          "close": 20,
+          "quantity": 26913
+        },
+        {
+          "time": 1795233600000,
+          "open": 22,
+          "high": 22,
+          "low": 22,
+          "close": 22,
+          "quantity": 26308
+        },
+        {
+          "time": 1795237200000,
+          "open": 19,
+          "high": 19,
+          "low": 19,
+          "close": 19,
+          "quantity": 28055
+        },
+        {
+          "time": 1795266000000,
+          "open": 18,
+          "high": 23,
+          "low": 18,
+          "close": 23,
+          "quantity": 19357
+        },
+        {
+          "time": 1795269600000,
+          "open": 23,
+          "high": 23,
+          "low": 23,
+          "close": 23,
+          "quantity": 18554
+        },
+        {
+          "time": 1795276800000,
+          "open": 17,
+          "high": 20,
+          "low": 17,
+          "close": 20,
+          "quantity": 13874
+        },
+        {
+          "time": 1795280400000,
+          "open": 24,
+          "high": 24,
+          "low": 24,
+          "close": 24,
+          "quantity": 10916
+        },
+        {
+          "time": 1795287600000,
+          "open": 24,
+          "high": 24,
+          "low": 24,
+          "close": 24,
+          "quantity": 6499
+        },
+        {
+          "time": 1795302000000,
+          "open": 17,
+          "high": 24,
+          "low": 17,
+          "close": 24,
+          "quantity": 21205
+        },
+        {
+          "time": 1795309200000,
+          "open": 22,
+          "high": 22,
+          "low": 22,
+          "close": 22,
+          "quantity": 11663
+        },
+        {
+          "time": 1795312800000,
+          "open": 20,
+          "high": 23,
+          "low": 14,
+          "close": 14,
+          "quantity": 4141
+        },
+        {
+          "time": 1795316400000,
+          "open": 19,
+          "high": 19,
+          "low": 19,
+          "close": 19,
+          "quantity": 30485
+        },
+        {
+          "time": 1795320000000,
+          "open": 23,
+          "high": 23,
+          "low": 19,
+          "close": 20,
+          "quantity": 2113
+        },
+        {
+          "time": 1795327200000,
+          "open": 18,
+          "high": 20,
+          "low": 18,
+          "close": 20,
+          "quantity": 34794
+        },
+        {
+          "time": 1795341600000,
+          "open": 20,
+          "high": 20,
+          "low": 20,
+          "close": 20,
+          "quantity": 2885
+        },
+        {
+          "time": 1795352400000,
+          "open": 150,
+          "high": 150,
+          "low": 150,
+          "close": 150,
+          "quantity": 948
+        },
+        {
+          "time": 1795356000000,
+          "open": 21,
+          "high": 21,
+          "low": 21,
+          "close": 21,
+          "quantity": 18133
+        },
+        {
+          "time": 1795363200000,
+          "open": 20,
+          "high": 20,
+          "low": 20,
+          "close": 20,
+          "quantity": 20850
+        },
+        {
+          "time": 1795370400000,
+          "open": 18,
+          "high": 18,
+          "low": 18,
+          "close": 18,
+          "quantity": 19975
+        },
+        {
+          "time": 1795374000000,
+          "open": 15,
+          "high": 15,
+          "low": 15,
+          "close": 15,
+          "quantity": 26171
+        },
+        {
+          "time": 1795377600000,
+          "open": 20,
+          "high": 20,
+          "low": 20,
+          "close": 20,
+          "quantity": 29443
+        },
+        {
+          "time": 1795384800000,
+          "open": 19,
+          "high": 19,
+          "low": 19,
+          "close": 19,
+          "quantity": 26055
+        },
+        {
+          "time": 1795388400000,
+          "open": 23,
+          "high": 23,
+          "low": 20,
+          "close": 20,
+          "quantity": 26878
+        },
+        {
+          "time": 1795392000000,
+          "open": 21,
+          "high": 24,
+          "low": 21,
+          "close": 24,
+          "quantity": 21777
+        },
+        {
+          "time": 1795395600000,
+          "open": 19,
+          "high": 19,
+          "low": 19,
+          "close": 19,
+          "quantity": 25982
+        },
+        {
+          "time": 1795399200000,
+          "open": 23,
+          "high": 23,
+          "low": 23,
+          "close": 23,
+          "quantity": 27716
+        },
+        {
+          "time": 1795402800000,
+          "open": 24,
+          "high": 24,
+          "low": 24,
+          "close": 24,
+          "quantity": 24778
+        }
+      ]
+    }
+  ]
+}
